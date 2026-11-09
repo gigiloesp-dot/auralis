@@ -1,10 +1,14 @@
 import { Save } from '../systems/save.js';
 import { createCharacter } from '../characters/Character.js';
 import { updateHud } from '../ui/hud.js';
-const WORLD=2400, TILE=120;
+import { TouchControls } from '../input/TouchControls.js';
+import { queueAssets } from '../assets/AssetLoader.js';
+import { GAME_CONFIG } from '../config/gameConfig.js';
+const WORLD=GAME_CONFIG.worldPreviewSize;
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 export class WorldScene extends Phaser.Scene{
  constructor(){super('world');this.axis={x:0,y:0};this.facing=0;this.lastSave=0;this.attackUntil=0;}
+ preload(){queueAssets(this);}
  create(){
   this.cameras.main.setBackgroundColor('#426b3b');
   this.ground=this.add.graphics().setDepth(-50);
@@ -19,7 +23,7 @@ export class WorldScene extends Phaser.Scene{
   this.cameras.main.setBounds(0,0,WORLD,WORLD);
   this.cameras.main.setZoom(clamp(Math.min(innerWidth/840,innerHeight/460),.7,1.3));
   this.setupControls();
-  this.events.once('shutdown',()=>this.save());
+  this.events.once('shutdown',()=>{this.save();this.controls?.destroy();});
   window.addEventListener('pagehide',()=>this.save());
   document.addEventListener('visibilitychange',()=>{if(document.hidden)this.save();});
   this.refreshHud();
@@ -58,15 +62,8 @@ export class WorldScene extends Phaser.Scene{
   this.weapon=this.add.rectangle(27,-25,5,35,0xb6c0c6);this.weapon.rotation=.3;b.add(this.weapon);
   b.add(this.add.triangle(0,-39,-5,0,0,5,5,0,0x3a302a));
  }
- setupControls(){
-  const joy=document.getElementById('joy'),nub=document.getElementById('nub');let active=null;
-  const move=e=>{if(active!==e.pointerId)return;const r=joy.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=e.clientX-cx,dy=e.clientY-cy,m=Math.hypot(dx,dy),max=r.width*.33,k=Math.min(1,max/(m||1));this.axis.x=dx*k/max;this.axis.y=dy*k/max;nub.style.transform='translate('+dx*k+'px,'+dy*k+'px)';};
-  joy.addEventListener('pointerdown',e=>{if(active!==null)return;active=e.pointerId;joy.setPointerCapture(active);move(e);});
-  joy.addEventListener('pointermove',move);
-  const end=e=>{if(e.pointerId!==active)return;active=null;this.axis.x=0;this.axis.y=0;nub.style.transform='';};
-  joy.addEventListener('pointerup',end);joy.addEventListener('pointercancel',end);
-  const attack=document.getElementById('attack');attack.addEventListener('pointerdown',e=>{e.preventDefault();this.attackUntil=this.time.now+220;});
- }
+ setupControls(){this.controls=new TouchControls();this.axis=this.controls.axis;}
+
  update(now,delta){
   const dt=Math.min(delta,40)/1000,h=this.hero;if(!h)return;
   const mag=Math.hypot(this.axis.x,this.axis.y),speed=h.speed;
@@ -83,8 +80,8 @@ export class WorldScene extends Phaser.Scene{
   this.body.x=h.x;this.body.y=h.y;this.body.setDepth(h.y+2);
   this.shadow.setPosition(h.x,h.y+7).setDepth(h.y-1);
   this.body.scaleX=Math.cos(this.facing)<-.1?-1:1;
-  this.weapon.rotation=now<this.attackUntil?Math.sin(now*.045)*1.2:.3;
-  if(now-this.lastSave>5000){this.lastSave=now;this.save();this.refreshHud();}
+  this.weapon.rotation=this.controls?.attacking?Math.sin(now*.045)*1.2:.3;
+  if(now-this.lastSave>GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();this.refreshHud();}
  }
  save(){if(this.hero)Save.write(this.hero);}
  refreshHud(){updateHud(this.hero);}
