@@ -1,4 +1,6 @@
 import { Save } from '../systems/save.js';
+import { createCharacter } from '../characters/Character.js';
+import { updateHud } from '../ui/hud.js';
 const WORLD=2400, TILE=120;
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 export class WorldScene extends Phaser.Scene{
@@ -9,7 +11,7 @@ export class WorldScene extends Phaser.Scene{
   this.drawGround();
   this.addLandmarks();
   const saved=Save.load();
-  this.hero={x:clamp(saved?.x??WORLD/2,45,WORLD-45),y:clamp(saved?.y??WORLD/2,45,WORLD-45),hp:saved?.hp??100,level:saved?.level??1};
+  this.hero=createCharacter({classId:saved?.classId??'warrior',x:clamp(saved?.x??WORLD/2,45,WORLD-45),y:clamp(saved?.y??WORLD/2,45,WORLD-45),hp:saved?.hp??100,level:saved?.level??1});
   this.shadow=this.add.ellipse(0,0,32,13,0x071d13,.4).setDepth(10);
   this.body=this.add.container(0,0).setDepth(12);
   this.drawHero();
@@ -67,7 +69,7 @@ export class WorldScene extends Phaser.Scene{
  }
  update(now,delta){
   const dt=Math.min(delta,40)/1000,h=this.hero;if(!h)return;
-  const mag=Math.hypot(this.axis.x,this.axis.y),speed=225;
+  const mag=Math.hypot(this.axis.x,this.axis.y),speed=h.speed;
   if(mag>.08){
    let dx=this.axis.x/mag*speed*dt,dy=this.axis.y/mag*speed*dt;
    const allowed=(x,y)=>!this.obstacles.some(o=>Math.hypot(x-o.x,y-o.y)<o.r+12);
@@ -85,5 +87,5 @@ export class WorldScene extends Phaser.Scene{
   if(now-this.lastSave>5000){this.lastSave=now;this.save();this.refreshHud();}
  }
  save(){if(this.hero)Save.write(this.hero);}
- refreshHud(){const h=this.hero;document.getElementById('coords').textContent='Уровень '+h.level+' · X '+Math.round(h.x)+' / Y '+Math.round(h.y)+' · автосохранение';document.getElementById('hpbar').style.width=h.hp+'%';}
+ refreshHud(){updateHud(this.hero);}
 }
