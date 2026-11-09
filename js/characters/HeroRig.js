@@ -21,7 +21,7 @@ export class HeroRig{
   this.face=part(this.neck,0,-9);
   this.face.add(scene.add.ellipse(0,3,9,5,0xd59b76));
   this.face.add(scene.add.circle(-4,-3,1.5,0x302820));
-  this.face.add(scene.add.circle(4,-3,1.5,0x302820));
+  this.farEye=scene.add.circle(4,-3,1.5,0x302820);this.face.add(this.farEye);
   this.backHair=scene.add.ellipse(0,-10,24,25,0x503927);
   this.neck.add(this.backHair);this.backHair.setVisible(false);
   this.leftArm=bone(this.torso,-16,-25,10,16,0xcba47f);
@@ -79,10 +79,17 @@ export class HeroRig{
   const dy=Math.sin(this.direction),dx=Math.cos(this.direction);
   const back=Math.max(0,-dy),side=Math.abs(dx);
   this.root.scaleX=1; // Never mirror the rig: the sword stays in the right hand.
-  this.torso.scaleX=1-.07*side;
-  this.neck.scaleX=1-.06*side;
+  // Narrow silhouette in profile without mirroring the weapon hand.
+  this.torso.scaleX=1-.34*side;
+  this.neck.scaleX=1-.28*side;
+  this.leftArm.x=-16+6*side;
+  this.rightArm.x=16-6*side;
+  this.leftThigh.x=-7+3*side;
+  this.rightThigh.x=7-3*side;
   this.face.setVisible(back<.45);
-  this.face.x=dx*3;
+  this.face.x=dx*7;
+  this.face.scaleX=1-.4*side;
+  this.farEye.setVisible(side<.75);
   this.backHair.setVisible(back>.45);
   this.backHair.alpha=Math.min(1,(back-.45)*3);
   this.torso.y=-3+back*2;
