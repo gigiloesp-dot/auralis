@@ -1,0 +1,66 @@
+// Procedural jointed 2.5D hero. All limbs rotate at anatomical pivots.
+const lerpAngle=(a,b,t)=>a+Math.atan2(Math.sin(b-a),Math.cos(b-a))*t;
+export class HeroRig{
+ constructor(scene,root){
+  this.root=root;this.t=0;this.blend=0;this.attackPhase=0;this.wasAttacking=false;this.direction=0;
+  const part=(parent,x,y)=>{const c=scene.add.container(x,y);parent.add(c);return c;};
+  const bone=(parent,x,y,w,h,color)=>{const pivot=part(parent,x,y);pivot.add(scene.add.rectangle(0,h/2,w,h,color).setOrigin(.5,.5));pivot.add(scene.add.circle(0,0,w*.54,color));return pivot;};
+  this.hips=part(root,0,-17);
+  this.leftThigh=bone(this.hips,-7,0,11,17,0x45404a);
+  this.leftShin=bone(this.leftThigh,0,16,9,16,0x302e36);
+  this.leftShin.add(scene.add.ellipse(0,17,15,8,0x302b27));
+  this.rightThigh=bone(this.hips,7,0,11,17,0x45404a);
+  this.rightShin=bone(this.rightThigh,0,16,9,16,0x302e36);
+  this.rightShin.add(scene.add.ellipse(0,17,15,8,0x302b27));
+  this.torso=part(this.hips,0,-3);
+  this.torso.add(scene.add.ellipse(0,-12,29,33,0x536e87));
+  this.torso.add(scene.add.ellipse(0,-15,21,22,0x657e91,.5));
+  this.neck=part(this.torso,0,-31);
+  this.neck.add(scene.add.ellipse(0,-9,23,26,0xe5b68e));
+  this.neck.add(scene.add.ellipse(0,-20,26,12,0x503927));
+  this.leftArm=bone(this.torso,-16,-25,10,16,0xcba47f);
+  this.leftForearm=bone(this.leftArm,0,15,9,16,0xd4ac86);
+  this.rightArm=bone(this.torso,16,-25,10,16,0xcba47f);
+  this.rightForearm=bone(this.rightArm,0,15,9,16,0xd4ac86);
+  this.hand=part(this.rightForearm,0,17);
+  this.hand.add(scene.add.circle(0,0,5,0xd4ac86));
+  this.hand.add(scene.add.rectangle(0,0,7,9,0x634c37));
+  this.sword=part(this.hand,0,2);
+  this.sword.add(scene.add.rectangle(0,15,5,35,0xb9cbd3));
+  this.sword.add(scene.add.triangle(0,34,-3,0,0,10,3,0,0xe5eef0));
+  this.sword.add(scene.add.rectangle(0,-3,19,4,0x9a7d4e));
+ }
+ update(dt,axis,attacking,angle){
+  const m=Math.min(1,Math.hypot(axis.x,axis.y));
+  this.blend+=(m-this.blend)*Math.min(1,dt*10);
+  this.t+=dt*(3+this.blend*10);
+  const s=Math.sin(this.t),c=Math.cos(this.t);
+  const run=this.blend;
+  this.hips.y=-17+Math.abs(s)*2.5*run;
+  this.hips.rotation=.035*s*run;
+  this.torso.rotation=-.055*s*run;
+  this.neck.rotation=.025*s*run;
+  const left=s*.62*run,right=-s*.62*run;
+  this.leftThigh.rotation=left;
+  this.rightThigh.rotation=right;
+  this.leftShin.rotation=Math.max(0,-s)*.95*run;
+  this.rightShin.rotation=Math.max(0,s)*.95*run;
+  this.leftArm.rotation=-left*.65+.12;
+  this.leftForearm.rotation=-.15-Math.max(0,s)*.24*run;
+  this.rightArm.rotation=-right*.65-.12;
+  this.rightForearm.rotation=-.25-Math.max(0,-s)*.24*run;
+  if(attacking&&!this.wasAttacking){this.attackPhase=.001;}
+  this.wasAttacking=attacking;
+  if(this.attackPhase>0){
+   this.attackPhase+=dt*3.8;
+   if(this.attackPhase>=1)this.attackPhase=attacking?.001:0;
+   const p=this.attackPhase;
+   const swing=p<.3?p/.3:p<.75?1-(p-.3)/.45:0;
+   this.rightArm.rotation=-1.45+2.65*swing;
+   this.rightForearm.rotation=-.85+.95*swing;
+   this.torso.rotation+=(-.19+.38*swing);
+  }
+  this.direction=lerpAngle(this.direction,angle,Math.min(1,dt*11));
+  this.root.scaleX=Math.cos(this.direction)<-.1?-1:1;
+ }
+}
