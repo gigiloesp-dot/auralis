@@ -57,26 +57,24 @@ export class HeroRig{
   this.rightForearm.rotation=-.25-Math.max(0,-s)*.24*run;
   if(attacking&&!this.wasAttacking){this.attackPhase=.001;}
   this.wasAttacking=attacking;
-  // Blade and shoulder change pose with facing, including upward strikes.
-  const up=Math.max(0,-Math.sin(this.direction));
-  const down=Math.max(0,Math.sin(this.direction));
-  this.sword.rotation=0;
+  // Rotate toward the joystick direction before posing the weapon.
+  this.direction=lerpAngle(this.direction,angle,Math.min(1,dt*11));
   this.sword.y=2;
-  this.rightArm.rotation+=-.25*up;
-  this.rightForearm.rotation+=-.2*up;
+  this.sword.rotation=0;
   if(this.attackPhase>0){
    this.attackPhase+=dt*3.8;
    if(this.attackPhase>=1)this.attackPhase=attacking?.001:0;
    const p=this.attackPhase;
-   const swing=p<.3?p/.3:p<.75?1-(p-.3)/.45:0;
-   // Directional swing is articulated at shoulder and elbow; no blade flipping.
-   const lift=up*(-2.55+1.35*swing);
-   this.rightArm.rotation=(-1.45+2.65*swing)*(1-up)+lift;
-   this.rightForearm.rotation=(-.85+.95*swing)*(1-up)+up*(-.2+.65*swing);
-   this.sword.rotation=(.6-1.2*swing)*(1-up)+up*(-.25+.5*swing);
-   this.torso.rotation+=(-.19+.38*swing);
+   // Wind-up -> forward strike -> recovery, centered on actual facing angle.
+   const arc=p<.22?-.65+(p/.22)*.3:p<.68?-.35+((p-.22)/.46)*1.05:.7-(p-.68)/.32*.7;
+   // A hanging arm points down (+PI/2). Align its tip with the facing vector.
+   // Keep all rotations on the SAME right shoulder / forearm / hand chain.
+   const aim=this.direction-Math.PI/2;
+   this.rightArm.rotation=aim+arc-this.hips.rotation-this.torso.rotation;
+   this.rightForearm.rotation=-arc*.22;
+   this.sword.rotation=arc*.16;
+   this.torso.rotation+=Math.sin(Math.min(1,p)*Math.PI)*.1;
   }
-  this.direction=lerpAngle(this.direction,angle,Math.min(1,dt*11));
   // Front, back and three-quarter views with smooth orientation blending.
   const dy=Math.sin(this.direction),dx=Math.cos(this.direction);
   const back=Math.max(0,-dy),side=Math.abs(dx);
