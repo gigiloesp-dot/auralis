@@ -132,3 +132,7 @@
 
 /* HUD v0.7: shift the entire skill crescent 10px toward attack, preserving spacing. */
 #skills{transform:translate(10px,10px)}
+
+/* HUD v0.8: adjust endpoints of skill arc by exactly 7px. */
+#skills .skill:nth-child(1){transform:translateY(-7px)}
+#skills .skill:nth-child(4){transform:translateY(7px)}
