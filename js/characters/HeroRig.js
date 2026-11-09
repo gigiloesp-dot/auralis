@@ -20,6 +20,7 @@ export class HeroRig{
   this.neck.add(scene.add.ellipse(0,-20,26,12,0x503927));
   this.face=part(this.neck,0,-9);
   this.face.add(scene.add.ellipse(0,3,9,5,0xd59b76));
+  this.profileNose=scene.add.ellipse(0,-7,7,6,0xd59b76);this.neck.add(this.profileNose);
   this.face.add(scene.add.circle(-4,-3,1.5,0x302820));
   this.farEye=scene.add.circle(4,-3,1.5,0x302820);this.face.add(this.farEye);
   this.backHair=scene.add.ellipse(0,-10,24,25,0x503927);
@@ -47,15 +48,16 @@ export class HeroRig{
   this.torso.rotation=-.055*s*run;
   this.neck.rotation=.025*s*run;
   const sideRun=Math.abs(Math.cos(this.direction));
-  const stride=(.62+.20*sideRun)*run;
+  const travelSign=Math.cos(this.direction)<0?-1:1;
+  const stride=(.58+.09*sideRun)*run;
   const left=s*stride,right=-s*stride;
-  this.leftThigh.rotation=left;
-  this.rightThigh.rotation=right;
-  this.leftShin.rotation=Math.max(0,-s)*( .95+.22*sideRun)*run;
-  this.rightShin.rotation=Math.max(0,s)*( .95+.22*sideRun)*run;
-  this.leftArm.rotation=-left*(.65+.23*sideRun)+.12;
+  this.leftThigh.rotation=left*(1-sideRun)+left*travelSign*sideRun;
+  this.rightThigh.rotation=right*(1-sideRun)+right*travelSign*sideRun;
+  this.leftShin.rotation=Math.max(0,-s*travelSign)*(.9+.1*sideRun)*run;
+  this.rightShin.rotation=Math.max(0,s*travelSign)*(.9+.1*sideRun)*run;
+  this.leftArm.rotation=-left*(.65+.12*sideRun)*((1-sideRun)+travelSign*sideRun)+.12;
   this.leftForearm.rotation=-.15-Math.max(0,s)*.24*run;
-  this.rightArm.rotation=-right*(.65+.23*sideRun)-.12;
+  this.rightArm.rotation=-right*(.65+.12*sideRun)*((1-sideRun)+travelSign*sideRun)-.12;
   this.rightForearm.rotation=-.25-Math.max(0,-s)*.24*run;
   if(attacking&&!this.wasAttacking){this.attackPhase=.001;}
   this.wasAttacking=attacking;
@@ -89,15 +91,19 @@ export class HeroRig{
   this.leftThigh.x=-7+4*side;
   this.rightThigh.x=7-4*side;
   // Side running: alternate forward/back foot reach and shoulder swing.
-  this.leftThigh.x+=s*3.2*side*run;
-  this.rightThigh.x-=s*3.2*side*run;
-  this.leftArm.x+=s*2*side*run;
-  this.rightArm.x-=s*2*side*run;
-  this.face.setVisible(back<.45);
+  this.leftThigh.x+=s*1.4*side*run*travelSign;
+  this.rightThigh.x-=s*1.4*side*run*travelSign;
+  this.leftArm.x+=s*1.2*side*run*travelSign;
+  this.rightArm.x-=s*1.2*side*run*travelSign;
+  this.face.setVisible(back<.45 && side<.82);
+  this.profileNose.setVisible(side>.55);
+  this.profileNose.x=Math.sign(dx||1)*(9+2*side);
+  this.profileNose.alpha=Math.min(1,(side-.55)*4);
   this.face.x=dx*7;
   this.face.scaleX=1-.4*side;
-  this.farEye.setVisible(side<.75);
+  this.farEye.setVisible(side<.55);
   this.backHair.setVisible(back>.45);
+  this.backHair.scaleX=1-.12*side;
   this.backHair.alpha=Math.min(1,(back-.45)*3);
   this.torso.y=-3+back*2;
   this.hips.scaleX=1-.04*side;
