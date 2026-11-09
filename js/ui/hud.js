@@ -1,0 +1,1 @@
+export function updateHud(character){const e=document.getElementById('coords');if(e)e.textContent='Уровень '+character.level+' · X '+Math.round(character.x)+' / Y '+Math.round(character.y)+' · автосохранение';const b=document.getElementById('hpbar');if(b)b.style.width=Math.max(0,Math.min(100,100*character.hp/(character.maxHp||100)))+'%';}
