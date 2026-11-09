@@ -1,1 +1,22 @@
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#10251c;color:#fff;font-family:system-ui,Arial,sans-serif;touch-action:none}#game{position:fixed;inset:0}canvas{display:block}#hud{position:fixed;top:env(safe-area-inset-top,0px);left:12px;right:12px;pointer-events:none;text-shadow:0 2px 3px #000}#brand{font-size:18px;font-weight:900;letter-spacing:3px;color:#ffe6a0}#brand small{font-size:9px;letter-spacing:1px;color:#fff8;vertical-align:middle}#status{font-size:12px;margin-top:2px}#health{width:160px;height:10px;background:#230b0b;border:1px solid #fdd8;border-radius:8px;margin-top:6px;overflow:hidden}#hpbar{display:block;width:100%;height:100%;background:linear-gradient(90deg,#a72627,#ed6a48)}#coords{font-size:11px;margin-top:3px;color:#f7efb9}#joy{position:fixed;left:45px;bottom:25px;width:124px;height:124px;border-radius:50%;border:2px solid #e5f4e955;background:#203e3490;box-shadow:inset 0 0 22px #091a18;touch-action:none}#nub{position:absolute;left:35px;top:35px;width:50px;height:50px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e4e5bc,#768a75);border:2px solid #fff8;box-shadow:0 3px 9px #0009}#actions{position:fixed;right:26px;bottom:26px;display:flex;align-items:flex-end;gap:7px}#actions button{border:2px solid #d6c99c88;border-radius:50%;background:#47352dca;color:#fff;box-shadow:0 3px 10px #0008;font-size:20px;width:43px;height:43px;touch-action:none}#actions #attack{width:78px;height:78px;background:#8d3f2bcf;font-size:36px}#actions button:disabled{opacity:.4}#notice{position:fixed;bottom:6px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:10px;color:#f7f5d0a0;pointer-events:none}#error{position:fixed;top:30%;left:10%;right:10%;padding:20px;background:#4b1111;border-radius:12px;z-index:9}@media(max-width:650px){#joy{left:20px;bottom:20px;width:108px;height:108px}#nub{left:29px;top:29px;width:46px;height:46px}#actions{right:12px;bottom:22px;gap:4px}#actions #attack{width:64px;height:64px}#actions button{width:34px;height:34px;font-size:15px}#notice{display:none}}
+/* Landscape HUD: four skills to the LEFT of the attack button. */
+#actions{right:max(12px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));align-items:center;gap:12px;z-index:5}
+#skills{display:grid;grid-template-columns:repeat(2,46px);grid-template-rows:repeat(2,46px);gap:8px}
+#actions #attack{flex:none;width:82px;height:82px}
+#actions #skills .skill{width:46px;height:46px}
+#joy{left:max(22px,env(safe-area-inset-left));bottom:max(18px,env(safe-area-inset-bottom));z-index:5}
+#rotate-hint{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#10251cf5;color:#ffe6a0;font-size:20px;text-align:center;padding:24px}
+#rotate-hint[hidden]{display:none!important}
+#rotate-hint div{font-size:55px}
+@media(max-height:450px) and (orientation:landscape){
+ #brand{font-size:14px}#status,#coords{font-size:10px}#health{width:135px;height:8px}
+ #joy{width:100px;height:100px}#nub{left:27px;top:27px;width:42px;height:42px}
+ #actions{gap:8px}#skills{grid-template-columns:repeat(2,38px);grid-template-rows:repeat(2,38px);gap:6px}
+ #actions #skills .skill{width:38px;height:38px;font-size:14px}#actions #attack{width:72px;height:72px;font-size:30px}
+}
+@media(max-height:320px) and (orientation:landscape){
+ #joy{width:84px;height:84px}#nub{left:22px;top:22px;width:36px;height:36px}
+ #skills{grid-template-columns:repeat(2,32px);grid-template-rows:repeat(2,32px);gap:4px}
+ #actions #skills .skill{width:32px;height:32px}#actions #attack{width:62px;height:62px}
+}
+@media(orientation:portrait){#rotate-hint{display:flex}}
