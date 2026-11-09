@@ -114,3 +114,18 @@
  #skills .skill:nth-child(3){right:77px;bottom:101px}
  #skills .skill:nth-child(4){right:34px;bottom:121px}
 }
+
+/* HUD v0.6: user-verified fine tuning of crescent skill heights. */
+#skills .skill:nth-child(1){bottom:13px}
+#skills .skill:nth-child(2){bottom:78px}
+#skills .skill:nth-child(4){bottom:168px}
+@media(max-height:450px) and (orientation:landscape){
+ #skills .skill:nth-child(1){bottom:10px}
+ #skills .skill:nth-child(2){bottom:69px}
+ #skills .skill:nth-child(4){bottom:153px}
+}
+@media(max-height:320px) and (orientation:landscape){
+ #skills .skill:nth-child(1){bottom:6px}
+ #skills .skill:nth-child(2){bottom:59px}
+ #skills .skill:nth-child(4){bottom:136px}
+}
