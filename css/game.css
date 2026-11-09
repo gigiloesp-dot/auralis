@@ -87,3 +87,30 @@
  #joy{width:153px;height:153px}
  #nub{width:64px;height:64px;left:calc(50% - 32px);top:calc(50% - 32px)}
 }
+
+/* HUD v0.5: precise circular arc, attack lifted into thumb reach. */
+#actions{right:max(18px,env(safe-area-inset-right));bottom:max(46px,calc(env(safe-area-inset-bottom) + 34px));width:270px;height:230px}
+#actions #attack{right:0;bottom:0;width:98px;height:98px}
+#actions #skills .skill{width:53px;height:53px}
+#skills .skill:nth-child(1){right:155px;bottom:33px}
+#skills .skill:nth-child(2){right:138px;bottom:88px}
+#skills .skill:nth-child(3){right:98px;bottom:128px}
+#skills .skill:nth-child(4){right:43px;bottom:153px}
+@media(max-height:450px) and (orientation:landscape){
+ #actions{right:max(18px,env(safe-area-inset-right));bottom:max(32px,calc(env(safe-area-inset-bottom) + 24px));width:245px;height:205px}
+ #actions #attack{width:88px;height:88px}
+ #actions #skills .skill{width:48px;height:48px}
+ #skills .skill:nth-child(1){right:140px;bottom:30px}
+ #skills .skill:nth-child(2){right:124px;bottom:79px}
+ #skills .skill:nth-child(3){right:88px;bottom:115px}
+ #skills .skill:nth-child(4){right:39px;bottom:138px}
+}
+@media(max-height:320px) and (orientation:landscape){
+ #actions{bottom:max(25px,calc(env(safe-area-inset-bottom) + 18px));width:215px;height:178px}
+ #actions #attack{width:78px;height:78px}
+ #actions #skills .skill{width:42px;height:42px}
+ #skills .skill:nth-child(1){right:123px;bottom:26px}
+ #skills .skill:nth-child(2){right:109px;bottom:69px}
+ #skills .skill:nth-child(3){right:77px;bottom:101px}
+ #skills .skill:nth-child(4){right:34px;bottom:121px}
+}
