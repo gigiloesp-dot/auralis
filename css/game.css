@@ -129,3 +129,6 @@
  #skills .skill:nth-child(2){bottom:59px}
  #skills .skill:nth-child(4){bottom:136px}
 }
+
+/* HUD v0.7: shift the entire skill crescent 10px toward attack, preserving spacing. */
+#skills{transform:translate(10px,10px)}
