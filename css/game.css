@@ -54,3 +54,36 @@
  #joy{width:109px;height:109px}
  #nub{width:46px;height:46px;left:calc(50% - 23px);top:calc(50% - 23px)}
 }
+
+/* HUD v0.4: evenly spaced quarter-circle skill arc and larger controls. */
+#actions{width:280px;height:224px;right:max(10px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom))}
+#actions #attack{width:98px;height:98px;font-size:42px}
+#actions #skills .skill{width:53px;height:53px;font-size:19px}
+#skills .skill:nth-child(1){right:128px;bottom:4px}
+#skills .skill:nth-child(2){right:172px;bottom:58px}
+#skills .skill:nth-child(3){right:158px;bottom:123px}
+#skills .skill:nth-child(4){right:91px;bottom:162px}
+#joy{width:225px;height:225px}
+#nub{width:91px;height:91px;left:calc(50% - 45.5px);top:calc(50% - 45.5px)}
+@media(max-height:450px) and (orientation:landscape){
+ #actions{width:258px;height:201px}
+ #actions #attack{width:88px;height:88px;font-size:39px}
+ #actions #skills .skill{width:48px;height:48px;font-size:17px}
+ #skills .skill:nth-child(1){right:115px;bottom:3px}
+ #skills .skill:nth-child(2){right:153px;bottom:51px}
+ #skills .skill:nth-child(3){right:141px;bottom:108px}
+ #skills .skill:nth-child(4){right:81px;bottom:143px}
+ #joy{width:182px;height:182px}
+ #nub{width:76px;height:76px;left:calc(50% - 38px);top:calc(50% - 38px)}
+}
+@media(max-height:320px) and (orientation:landscape){
+ #actions{width:224px;height:174px}
+ #actions #attack{width:78px;height:78px;font-size:35px}
+ #actions #skills .skill{width:42px;height:42px;font-size:16px}
+ #skills .skill:nth-child(1){right:100px;bottom:2px}
+ #skills .skill:nth-child(2){right:132px;bottom:44px}
+ #skills .skill:nth-child(3){right:122px;bottom:94px}
+ #skills .skill:nth-child(4){right:70px;bottom:123px}
+ #joy{width:153px;height:153px}
+ #nub{width:64px;height:64px;left:calc(50% - 32px);top:calc(50% - 32px)}
+}
