@@ -46,14 +46,16 @@ export class HeroRig{
   this.hips.rotation=.035*s*run;
   this.torso.rotation=-.055*s*run;
   this.neck.rotation=.025*s*run;
-  const left=s*.62*run,right=-s*.62*run;
+  const sideRun=Math.abs(Math.cos(this.direction));
+  const stride=(.62+.20*sideRun)*run;
+  const left=s*stride,right=-s*stride;
   this.leftThigh.rotation=left;
   this.rightThigh.rotation=right;
-  this.leftShin.rotation=Math.max(0,-s)*.95*run;
-  this.rightShin.rotation=Math.max(0,s)*.95*run;
-  this.leftArm.rotation=-left*.65+.12;
+  this.leftShin.rotation=Math.max(0,-s)*( .95+.22*sideRun)*run;
+  this.rightShin.rotation=Math.max(0,s)*( .95+.22*sideRun)*run;
+  this.leftArm.rotation=-left*(.65+.23*sideRun)+.12;
   this.leftForearm.rotation=-.15-Math.max(0,s)*.24*run;
-  this.rightArm.rotation=-right*.65-.12;
+  this.rightArm.rotation=-right*(.65+.23*sideRun)-.12;
   this.rightForearm.rotation=-.25-Math.max(0,-s)*.24*run;
   if(attacking&&!this.wasAttacking){this.attackPhase=.001;}
   this.wasAttacking=attacking;
@@ -84,8 +86,13 @@ export class HeroRig{
   this.neck.scaleX=1-.28*side;
   this.leftArm.x=-16+6*side;
   this.rightArm.x=16-6*side;
-  this.leftThigh.x=-7+3*side;
-  this.rightThigh.x=7-3*side;
+  this.leftThigh.x=-7+4*side;
+  this.rightThigh.x=7-4*side;
+  // Side running: alternate forward/back foot reach and shoulder swing.
+  this.leftThigh.x+=s*3.2*side*run;
+  this.rightThigh.x-=s*3.2*side*run;
+  this.leftArm.x+=s*2*side*run;
+  this.rightArm.x-=s*2*side*run;
   this.face.setVisible(back<.45);
   this.face.x=dx*7;
   this.face.scaleX=1-.4*side;
