@@ -1,4 +1,5 @@
 import { Save } from '../systems/save.js';
+import { HeroRig } from '../characters/HeroRig.js';
 import { createCharacter } from '../characters/Character.js';
 import { updateHud } from '../ui/hud.js';
 import { TouchControls } from '../input/TouchControls.js';
@@ -53,18 +54,7 @@ export class WorldScene extends Phaser.Scene{
   npc(935,1080,'Мира · торговец',0x466aa1);npc(1090,1000,'Борин · кузнец',0x9b5c40);
   this.add.text(1180,1180,'ЛЕСНАЯ ДОЛИНА',{fontFamily:'Georgia',fontSize:'28px',color:'#fff4ca',stroke:'#243521',strokeThickness:5}).setOrigin(.5).setDepth(10000);
  }
- drawHero(){
-  const b=this.body;b.removeAll(true);
-  b.add(this.add.ellipse(0,-15,27,36,0x4d6483));
-  b.add(this.add.ellipse(0,-41,24,27,0xe6b78d));
-  b.add(this.add.ellipse(0,-52,28,14,0x503927));
-  this.leftLeg=this.add.rectangle(-7,8,10,25,0x463c37);this.rightLeg=this.add.rectangle(7,8,10,25,0x463c37);
-  b.addAt(this.leftLeg,0);b.addAt(this.rightLeg,1);
-  this.leftArm=this.add.rectangle(-19,-17,10,28,0xc7a37f);this.rightArm=this.add.rectangle(19,-17,10,28,0xc7a37f);
-  b.add(this.leftArm);b.add(this.rightArm);
-  this.weapon=this.add.rectangle(27,-25,5,35,0xb6c0c6);this.weapon.rotation=.3;b.add(this.weapon);
-  b.add(this.add.triangle(0,-39,-5,0,0,5,5,0,0x3a302a));
- }
+ drawHero(){this.body.removeAll(true);this.rig=new HeroRig(this,this.body);}
  setupControls(){this.controls=new TouchControls();this.axis=this.controls.axis;}
 
  update(now,delta){
@@ -77,13 +67,9 @@ export class WorldScene extends Phaser.Scene{
    if(allowed(h.x,h.y+dy))h.y=clamp(h.y+dy,20,WORLD-20);
    this.facing=Math.atan2(dy,dx);
   }
-  const walk=mag>.08?Math.sin(now*.013)*8:0;
-  this.leftLeg.y=8+walk;this.rightLeg.y=8-walk;
-  this.leftArm.rotation=walk*.025;this.rightArm.rotation=-walk*.025;
   this.body.x=h.x;this.body.y=h.y;this.body.setDepth(h.y+2);
   this.shadow.setPosition(h.x,h.y+7).setDepth(h.y-1);
-  this.body.scaleX=Math.cos(this.facing)<-.1?-1:1;
-  this.weapon.rotation=this.controls?.attacking?Math.sin(now*.045)*1.2:.3;
+  this.rig.update(dt,this.axis,this.controls?.attacking??false,this.facing);
   if(now-this.lastSave>GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();this.refreshHud();}
  }
  save(){if(this.hero)Save.write(this.hero);}
