@@ -18,6 +18,12 @@ export class HeroRig{
   this.neck=part(this.torso,0,-31);
   this.neck.add(scene.add.ellipse(0,-9,23,26,0xe5b68e));
   this.neck.add(scene.add.ellipse(0,-20,26,12,0x503927));
+  this.face=part(this.neck,0,-9);
+  this.face.add(scene.add.ellipse(0,3,9,5,0xd59b76));
+  this.face.add(scene.add.circle(-4,-3,1.5,0x302820));
+  this.face.add(scene.add.circle(4,-3,1.5,0x302820));
+  this.backHair=scene.add.ellipse(0,-10,24,25,0x503927);
+  this.neck.add(this.backHair);this.backHair.setVisible(false);
   this.leftArm=bone(this.torso,-16,-25,10,16,0xcba47f);
   this.leftForearm=bone(this.leftArm,0,15,9,16,0xd4ac86);
   this.rightArm=bone(this.torso,16,-25,10,16,0xcba47f);
@@ -61,6 +67,17 @@ export class HeroRig{
    this.torso.rotation+=(-.19+.38*swing);
   }
   this.direction=lerpAngle(this.direction,angle,Math.min(1,dt*11));
-  this.root.scaleX=Math.cos(this.direction)<-.1?-1:1;
+  // Front, back and three-quarter views with smooth orientation blending.
+  const dy=Math.sin(this.direction),dx=Math.cos(this.direction);
+  const back=Math.max(0,-dy),side=Math.abs(dx);
+  this.root.scaleX=dx<-.12?-1:1;
+  this.torso.scaleX=1-.26*side;
+  this.neck.scaleX=1-.22*side;
+  this.face.setVisible(back<.45);
+  this.face.x=side*3;
+  this.backHair.setVisible(back>.45);
+  this.backHair.alpha=Math.min(1,(back-.45)*3);
+  this.torso.y=-3+back*2;
+  this.neck.rotation+=dx*.035;
  }
 }
