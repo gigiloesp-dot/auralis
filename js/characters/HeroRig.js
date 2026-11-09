@@ -60,29 +60,31 @@ export class HeroRig{
   // Blade and shoulder change pose with facing, including upward strikes.
   const up=Math.max(0,-Math.sin(this.direction));
   const down=Math.max(0,Math.sin(this.direction));
-  this.sword.rotation=Math.PI*up;
-  this.sword.y=2-4*up;
-  this.rightArm.rotation+=-.3*up;
-  this.rightForearm.rotation+=-.4*up;
+  this.sword.rotation=0;
+  this.sword.y=2;
+  this.rightArm.rotation+=-.25*up;
+  this.rightForearm.rotation+=-.2*up;
   if(this.attackPhase>0){
    this.attackPhase+=dt*3.8;
    if(this.attackPhase>=1)this.attackPhase=attacking?.001:0;
    const p=this.attackPhase;
    const swing=p<.3?p/.3:p<.75?1-(p-.3)/.45:0;
-   this.rightArm.rotation=(-1.45+2.65*swing)*(1-up)+(-.9+1.5*swing)*up;
-   this.rightForearm.rotation=(-.85+.95*swing)*(1-up)+(-.7+1.1*swing)*up;
-   this.sword.rotation=Math.PI*up+(.6-1.2*swing)*(1-up*.55);
+   // Directional swing is articulated at shoulder and elbow; no blade flipping.
+   const lift=up*(-2.55+1.35*swing);
+   this.rightArm.rotation=(-1.45+2.65*swing)*(1-up)+lift;
+   this.rightForearm.rotation=(-.85+.95*swing)*(1-up)+up*(-.2+.65*swing);
+   this.sword.rotation=(.6-1.2*swing)*(1-up)+up*(-.25+.5*swing);
    this.torso.rotation+=(-.19+.38*swing);
   }
   this.direction=lerpAngle(this.direction,angle,Math.min(1,dt*11));
   // Front, back and three-quarter views with smooth orientation blending.
   const dy=Math.sin(this.direction),dx=Math.cos(this.direction);
   const back=Math.max(0,-dy),side=Math.abs(dx);
-  this.root.scaleX=dx<-.12?-1:1;
+  this.root.scaleX=1; // Never mirror the rig: the sword stays in the right hand.
   this.torso.scaleX=1-.07*side;
   this.neck.scaleX=1-.06*side;
   this.face.setVisible(back<.45);
-  this.face.x=side*3;
+  this.face.x=dx*3;
   this.backHair.setVisible(back>.45);
   this.backHair.alpha=Math.min(1,(back-.45)*3);
   this.torso.y=-3+back*2;
