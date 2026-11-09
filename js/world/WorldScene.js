@@ -21,13 +21,16 @@ export class WorldScene extends Phaser.Scene{
   this.drawHero();
   this.cameras.main.startFollow(this.body,true,.12,.12);
   this.cameras.main.setBounds(0,0,WORLD,WORLD);
-  this.cameras.main.setZoom(clamp(Math.min(innerWidth/840,innerHeight/460),.7,1.3));
+  this.resizeViewport(this.scale.width,this.scale.height);
+  this.scale.on('resize',this.onGameResize,this);
   this.setupControls();
-  this.events.once('shutdown',()=>{this.save();this.controls?.destroy();});
+  this.events.once('shutdown',()=>{this.save();this.controls?.destroy();this.scale.off('resize',this.onGameResize,this);});
   window.addEventListener('pagehide',()=>this.save());
   document.addEventListener('visibilitychange',()=>{if(document.hidden)this.save();});
   this.refreshHud();
  }
+ onGameResize(gameSize){this.resizeViewport(gameSize.width,gameSize.height);}
+ resizeViewport(width,height){if(!width||!height)return;const camera=this.cameras.main;camera.setSize(width,height);camera.setZoom(clamp(Math.min(width/840,height/460),.7,1.3));camera.setBounds(0,0,WORLD,WORLD);if(this.hero)camera.centerOn(this.hero.x,this.hero.y);}
  drawGround(){
   const g=this.ground;g.fillStyle(0x527b43);g.fillRect(0,0,WORLD,WORLD);
   for(let i=0;i<1900;i++){const x=(i*7919+29)%WORLD,y=(i*3929+67)%WORLD,r=2+(i%5);g.fillStyle(i%3?0x668c50:0x3f6e3d,.3);g.fillEllipse(x,y,r*2,r);}
