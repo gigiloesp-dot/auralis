@@ -140,3 +140,6 @@
 /* HUD v0.9: final tiny arc adjustments, preserving attack and joystick. */
 #skills .skill:nth-child(1){transform:translate(5px,-7px)}
 #skills .skill:nth-child(4){transform:translate(5px,10px)}
+
+/* HUD v0.10: lower skill 1 by exactly 5px; leave all other controls unchanged. */
+#skills .skill:nth-child(1){transform:translate(5px,-2px)}
