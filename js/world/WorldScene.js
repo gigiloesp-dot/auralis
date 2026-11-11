@@ -1,3 +1,4 @@
+import { AttackCycle } from '../combat/attackTiming.js';
 import { respawnAtTown } from './towns.js';
 import { MonsterSystem } from '../monsters/MonsterSystem.js';
 import { drawTerrain } from './render/Terrain.js';
@@ -30,7 +31,7 @@ export class WorldScene extends Phaser.Scene{
   this.scale.on('resize',this.onGameResize,this);
   this.setupControls();
   this.monsters=new MonsterSystem(this,this.hero,()=>{this.refreshHud();this.save();});
-  this.lastAttackHeld=false;
+  this.attackCycle=new AttackCycle();
   this.events.once('shutdown',()=>{this.save();this.controls?.destroy();this.monsters?.destroy();this.scale.off('resize',this.onGameResize,this);});
   window.addEventListener('pagehide',()=>this.save());
   document.addEventListener('visibilitychange',()=>{if(document.hidden)this.save();});
@@ -54,9 +55,10 @@ export class WorldScene extends Phaser.Scene{
   this.body.x=h.x;this.body.y=h.y;this.body.setDepth(h.y+2);
   this.shadow.setPosition(h.x,h.y+7).setDepth(h.y-1);
   const held=this.controls?.attacking??false;
-  this.rig.update(dt,this.axis,held,this.facing);
-  if(held&&!this.lastAttackHeld)this.monsters.attack(now,this.facing);
-  this.lastAttackHeld=held;
+  if(held)this.attackCycle.start(now,h);
+  const swing=this.attackCycle.state(now);
+  if(swing.impact)this.monsters.attack(now,this.facing);
+  this.rig.update(dt,this.axis,swing,this.facing);
   this.monsters.update(now,dt);
   if(h.hp<=0){respawnAtTown(h);this.save();this.refreshHud();}
   if(now-this.lastSave>GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();this.refreshHud();}
