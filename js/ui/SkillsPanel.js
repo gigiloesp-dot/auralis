@@ -7,7 +7,7 @@ const button=(label,callback,cls='')=>{const b=el('button',label,cls);b.type='bu
 export class SkillsPanel{
  constructor(scene){this.scene=scene;this.root=document.getElementById('skills-panel');this.button=document.getElementById('skills-btn');this.opened=false;this.selected=0;this.detailId=null;this.onClick=()=>this.toggle();this.button?.addEventListener('click',this.onClick);this.onEscape=e=>{if(e.key==='Escape'&&this.opened)this.close();};document.addEventListener('keydown',this.onEscape);}
  toggle(){this.opened?this.close():this.show();}
- show(){this.scene.storagePanel?.close();this.scene.npcPanel?.close();this.scene.controls?.reset?.();this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.render();}
+ show(){this.scene.savePanel?.close();this.scene.storagePanel?.close();this.scene.npcPanel?.close();this.scene.controls?.reset?.();this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.render();}
  close(){this.opened=false;this.detailId=null;this.root.hidden=true;}
  selectSkill(id){this.detailId=id;this.render();}
  render(){

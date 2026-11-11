@@ -1,3 +1,4 @@
+import {SavePanel} from '../ui/SavePanel.js';
 import {SharedStorage} from '../systems/storage.js';
 import {StoragePanel} from '../ui/StoragePanel.js';
 import {usePotion} from '../systems/potions.js';
@@ -51,6 +52,8 @@ export class WorldScene extends Phaser.Scene{
   this.skillsPanel=new SkillsPanel(this);
   this.npcPanel=new NpcPanel(this);
   this.storagePanel=new StoragePanel(this);
+  this.canRestoreCharacter=data=>data.region==='forest'&&data.x>=0&&data.y>=0&&data.x<=WORLD&&data.y<=WORLD;
+  this.savePanel=new SavePanel(this);
   this.bindSkills();
   this.bindPotions();
   this.minimap=new Minimap(this,WORLD);
@@ -61,7 +64,7 @@ export class WorldScene extends Phaser.Scene{
   document.addEventListener('visibilitychange',this.onVisibilityChange);
   this.events.once('shutdown',()=>{
    this.save();this.closed=true;this.controls?.destroy();this.monsters?.destroy();
-   this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.skillsPanel?.destroy();this.npcPanel?.destroy();this.storagePanel?.destroy();this.minimap?.destroy();this.potionRoot?.remove();
+   this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.skillsPanel?.destroy();this.npcPanel?.destroy();this.storagePanel?.destroy();this.savePanel?.destroy();this.minimap?.destroy();this.potionRoot?.remove();
    this.skillBindings.forEach(([b,fn])=>b.removeEventListener('click',fn));
    window.removeEventListener('pagehide',this.onPageHide);
    document.removeEventListener('visibilitychange',this.onVisibilityChange);
@@ -78,7 +81,7 @@ export class WorldScene extends Phaser.Scene{
   const dt=Math.min(delta,40)/1000,h=this.hero;if(!h)return;
   if(now-this.lastSave>=GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();}
   this.npcPanel?.update();this.storagePanel?.update();
-  if(this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened){this.controls?.reset();return;}
+  if(this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened||this.savePanel?.opened){this.controls?.reset();return;}
   this.playNow+=dt*1000;
   const combatNow=this.playNow;
   const mag=Math.hypot(this.axis.x,this.axis.y),speed=h.speed;
@@ -104,7 +107,7 @@ export class WorldScene extends Phaser.Scene{
   this.skillBindings=[];
   document.querySelectorAll('#skills .skill').forEach((b,i)=>{
    const fn=()=>{
-    if(this.closed||this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened||!this.sys.isActive())return;
+    if(this.closed||this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened||this.savePanel?.opened||!this.sys.isActive())return;
     const id=normalizeSkillSlots(this.hero)[i];
     if(id){const result=this.monsters.useSkill(id,this.playNow);if(!result.ok&&['target','mana'].includes(result.reason))this.notify(text(result.reason==='target'?'noTarget':'mana',this.language));this.refreshSkillSlots();this.refreshHud();}
    };
@@ -128,7 +131,7 @@ export class WorldScene extends Phaser.Scene{
   for(const resource of ['hp','mp']){
    const button=document.createElement('button');button.type='button';button.className='potion '+resource;
    button.setAttribute('aria-label',text(resource+'Potion',this.language));
-   button.onclick=()=>{if(this.sys.isActive()&&!this.inventoryPanel?.opened&&!this.characterPanel?.opened&&!this.skillsPanel?.opened&&!this.npcPanel?.opened&&!this.storagePanel?.opened&&usePotion(this.hero,resource,this.playNow,this.potionState)){this.save();this.refreshHud();this.refreshPotions();}};
+   button.onclick=()=>{if(this.sys.isActive()&&!this.inventoryPanel?.opened&&!this.characterPanel?.opened&&!this.skillsPanel?.opened&&!this.npcPanel?.opened&&!this.storagePanel?.opened&&!this.savePanel?.opened&&usePotion(this.hero,resource,this.playNow,this.potionState)){this.save();this.refreshHud();this.refreshPotions();}};
    this.potionButtons[resource]=button;this.potionRoot.append(button);
   }
   document.body.append(this.potionRoot);this.refreshPotions();

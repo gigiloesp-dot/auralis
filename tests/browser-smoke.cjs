@@ -59,6 +59,30 @@ await run('pause closes overlays and resume restores active scene',async()=>{
  assert.equal(await scene(()=>Auralis.game.scene.getScene('world').npcPanel.opened),false);
  await p.getByRole('button',{name:'Продолжить',exact:true}).click();assert.equal(await scene(()=>Auralis.game.scene.isActive('world')),true);
 });
+await run('save backup rejects invalid input without changing character',async()=>{
+ await p.getByRole('button',{name:'Резервные копии',exact:true}).click();
+ await p.getByLabel('Или вставь JSON сохранения').fill('{broken');await p.getByRole('button',{name:'Проверить сохранение',exact:true}).click();
+ assert.ok((await p.locator('.save-status').innerText()).includes('JSON'));
+ assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.name),'Persisted');
+ await p.getByLabel('Или вставь JSON сохранения').fill(JSON.stringify({version:999,x:100,y:100}));await p.getByRole('button',{name:'Проверить сохранение',exact:true}).click();
+ assert.ok((await p.locator('.save-status').innerText()).includes('не поддерживается'));
+ await p.getByLabel('Или вставь JSON сохранения').fill(JSON.stringify({version:2,region:'north',x:9000,y:9000}));await p.getByRole('button',{name:'Проверить сохранение',exact:true}).click();
+ assert.ok((await p.locator('.save-status').innerText()).includes('недоступна'));
+ assert.equal(await scene(()=>Auralis.Save.load(1).name),'Persisted');
+ await p.locator('.save-panel header button').click();
+});
+await run('download and confirmed import restore the character across scene restart',async()=>{
+ await p.getByRole('button',{name:'Резервные копии',exact:true}).click();
+ const downloading=p.waitForEvent('download');await p.getByRole('button',{name:'Скачать персонажа',exact:true}).click();
+ const download=await downloading;const data=JSON.parse(fs.readFileSync(await download.path(),'utf8'));assert.equal(data.name,'Persisted');assert.equal(data.equipment.weapon.id,'rustySword');
+ data.name='BackupHero';data.gold=1234;
+ await p.getByLabel('Или вставь JSON сохранения').fill(JSON.stringify(data));await p.getByRole('button',{name:'Проверить сохранение',exact:true}).click();
+ assert.equal(await p.getByRole('button',{name:'Заменить персонажа',exact:true}).isDisabled(),true);
+ await p.getByRole('checkbox').check();await p.getByRole('button',{name:'Заменить персонажа',exact:true}).click();
+ await p.waitForFunction(()=>Auralis.game.scene.getScene('world').hero?.name==='BackupHero');
+ assert.equal(await scene(()=>Auralis.Save.load(1).gold),1234);assert.equal(await scene(()=>JSON.parse(Auralis.Save.exportReplacementBackup(1)).name),'Persisted');
+ assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.equipment.weapon.id),'rustySword');
+});
 fs.mkdirSync(path.join(root,'work/browser'),{recursive:true});
 await p.screenshot({path:path.join(root,'work/browser/smoke-final.png')});assert.deepEqual(errors,[]);console.log('PASS no page errors');
 }finally{await b.close();await new Promise(resolve=>server.close(resolve));}

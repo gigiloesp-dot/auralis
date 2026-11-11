@@ -18,7 +18,7 @@ export class NpcPanel{
   const p=questProgress(this.scene.hero);this.journal.hidden=blocked||this.opened||!['active','completed'].includes(p.state);
   this.journal.textContent=`${this.text.journal}: ${p.progress}/${p.required}`;
  }
- show(){this.scene.storagePanel?.close();if(!this.nearby())return;this.scene.controls?.reset?.();this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;this.render();}
+ show(){this.scene.savePanel?.close();this.scene.storagePanel?.close();if(!this.nearby())return;this.scene.controls?.reset?.();this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;this.render();}
  close(){this.opened=false;this.root.hidden=true;}
  render(message=''){
   const t=this.text,p=questProgress(this.scene.hero);this.root.replaceChildren();const heading=element('div','','npc-heading');heading.append(element('h2',t.name));
