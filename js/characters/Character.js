@@ -1,14 +1,21 @@
 import {normalizeInventory} from '../equipment/items.js';
 import {maxResources} from '../systems/attributes.js';
-import {getClass} from './classes.js';
+import {getClass,CLASSES} from './classes.js';
+import {GAME_CONFIG} from '../config/gameConfig.js';
 const DEFAULT_STATS=Object.freeze({strength:5,endurance:5,agility:5,luck:5,intelligence:5});
 const object=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
 export function createCharacter(data={}){
- const {id='hero',classId='warrior',x=1200,y=1200,level=1,hp=100,mp=100,xp=0,region='forest',skillPoints=0}=data;
+ const number=(value,fallback)=>Number.isFinite(value)?value:fallback;
+ const {id='hero',region='forest'}=data;
+ const classId=Object.hasOwn(CLASSES,data.classId)?data.classId:'warrior';
+ const x=number(data.x,1200),y=number(data.y,1200),level=Math.max(1,Math.min(GAME_CONFIG.maxLevel,Math.floor(number(data.level,1))));
+ const stats=Object.fromEntries(Object.entries(DEFAULT_STATS).map(([key,value])=>[key,Math.max(0,number(data.stats?.[key],value))]));
+ const resources=maxResources({level,stats});
+ const hp=Math.max(0,Math.min(resources.maxHp,number(data.hp,resources.maxHp))),mp=Math.max(0,Math.min(resources.maxMp,number(data.mp,resources.maxMp)));
+ const xp=Math.max(0,number(data.xp,0)),skillPoints=Math.max(0,Math.floor(number(data.skillPoints,0)));
  return {
-  id,name:typeof data.name==='string'?data.name:'',classId,x,y,level,hp,mp,xp,region,skillPoints,attributePoints:Math.max(0,Number(data.attributePoints)||0),
-  ...maxResources({level,stats:data.stats}),
-  stats:{...DEFAULT_STATS,...(object(data.stats)?data.stats:{})},
+  id,name:typeof data.name==='string'?data.name:'',classId,x,y,level,hp,mp,xp,region,skillPoints,attributePoints:Math.max(0,Math.floor(number(data.attributePoints,0))),
+  ...resources,stats,
   equipment:object(data.equipment)?{...data.equipment}:{},
   inventory:normalizeInventory(Array.isArray(data.inventory)?data.inventory:[]),
   quests:object(data.quests)?{...data.quests}:{},

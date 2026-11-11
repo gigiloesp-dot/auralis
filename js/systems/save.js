@@ -1,5 +1,5 @@
 import {GAME_CONFIG} from '../config/gameConfig.js';
-const PREFIX='auralis_save_v2_slot_',LEGACY='auralis_save_v1';
+const PREFIX='auralis_save_v2_slot_',LEGACY='auralis_save_v1',MIGRATED='auralis_save_v1_migrated';
 const obj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
 const num=(x,d)=>Number.isFinite(x)?x:d;
 const slotOK=s=>Number.isInteger(s)&&s>=1&&s<=GAME_CONFIG.saveSlots;
@@ -13,10 +13,10 @@ export const Save={
  hp:Math.max(0,num(d.hp,100)),mp:Math.max(0,num(d.mp,100)),equipment:obj(d.equipment)?d.equipment:{},
  inventory:Array.isArray(d.inventory)?d.inventory:[],quests:obj(d.quests)?d.quests:{},
  stats:obj(d.stats)?d.stats:{},attributePoints:Math.max(0,num(d.attributePoints,Math.max(0,(num(d.level,1)-1)*3))),skillPoints:Math.max(0,num(d.skillPoints,0)),skills:Array.isArray(d.skills)?d.skills:[],learnedSkills:obj(d.learnedSkills)?d.learnedSkills:{},skillSlots:Array.isArray(d.skillSlots)?d.skillSlots.slice(0,4):[null,null,null,null]};},
- load(s=this.activeSlot){try{let raw=localStorage.getItem(this.key(s));if(!raw&&s===1){const old=localStorage.getItem(LEGACY);if(old){const migrated=this.normalize(JSON.parse(old));if(migrated){this.write(migrated,s);raw=localStorage.getItem(this.key(s));}}}if(!raw)return null;const data=JSON.parse(raw);return data.version===2?this.normalize(data):null;}catch{return null;}},
+ load(s=this.activeSlot){try{let raw=localStorage.getItem(this.key(s));if(!raw&&s===1&&!localStorage.getItem(MIGRATED)){const old=localStorage.getItem(LEGACY);if(old){const migrated=this.normalize(JSON.parse(old));if(migrated){if(this.write(migrated,s)){localStorage.setItem(MIGRATED,'1');raw=localStorage.getItem(this.key(s));}}}}if(!raw)return null;const data=JSON.parse(raw);return data.version===2?this.normalize(data):null;}catch{return null;}},
  write(data,s=this.activeSlot){try{const d=this.normalize(data);if(!d)return false;d.updatedAt=Date.now();localStorage.setItem(this.key(s),JSON.stringify(d));return true;}catch{return false;}},
  list(){return Array.from({length:GAME_CONFIG.saveSlots},(_,i)=>{const slot=i+1,d=this.load(slot);return {slot,exists:!!d,level:d?.level??null,classId:d?.classId??null,name:d?.name??null,updatedAt:d?.updatedAt??null};});},
- delete(s){try{localStorage.removeItem(this.key(s));return true;}catch{return false;}},
+ delete(s){try{const key=this.key(s);if(s===1)localStorage.setItem(MIGRATED,'1');localStorage.removeItem(key);return true;}catch{return false;}},
  export(s=this.activeSlot){const d=this.load(s);return d?JSON.stringify(d,null,2):null;},
  import(json,s=this.activeSlot){try{const d=this.normalize(JSON.parse(json));return d?this.write(d,s):false;}catch{return false;}}
 };
