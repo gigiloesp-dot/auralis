@@ -31,3 +31,28 @@
 @media(max-width:550px){.inventory-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.inventory-layout{grid-template-columns:minmax(0,1fr) minmax(125px,.8fr)}}
 
 .inventory-cell{position:relative}.inventory-cell .stack-count{position:absolute;bottom:1px;right:3px;font-size:12px;font-weight:900;color:#fff3d1;text-shadow:0 1px 3px #000,0 0 3px #000;pointer-events:none}
+
+/* 0.7.1 fullscreen inventory, fixed navigation and contextual tooltip */
+#inventory-panel{inset:0!important;width:100vw;height:100dvh;max-width:none;max-height:none;border-radius:0;padding:0;display:flex;flex-direction:column;overflow:visible;box-sizing:border-box;background:#14271efb}
+#inventory-panel[hidden]{display:none!important}
+#inventory-panel .inventory-heading{flex:none;min-height:44px;padding:5px 18px;background:#273c2e;box-sizing:border-box;border-bottom:1px solid #9d865a}
+#inventory-panel .inventory-heading strong{font-size:18px;color:#f5ddaa}
+#inventory-panel .inventory-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:none;padding:8px 18px;background:#1b3025}
+#inventory-panel .inventory-tabs button{border:1px solid #8e7953;border-radius:8px;background:#2b3e32;color:#e4d6b6;padding:10px 12px;font-size:15px;font-weight:700;touch-action:manipulation}
+#inventory-panel .inventory-tabs button.active{background:#755a34;border-color:#f2d598;color:#fff6d9}
+#inventory-panel .inventory-page{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:12px max(18px,4vw) 22px;box-sizing:border-box}
+#inventory-panel .inventory-page h2{font-size:20px;margin:5px 0 12px;color:#f3dba5}
+#inventory-panel .equipment-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 14px}
+#inventory-panel .equipment-summary span{padding:8px 10px;border:1px solid #716f52;border-radius:7px;background:#2b4032}
+#inventory-panel .equipment-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:720px;gap:9px}
+#inventory-panel .equipment-grid .equipment-cell{min-height:94px}
+#inventory-panel .inventory-grid{grid-template-columns:repeat(10,minmax(0,1fr));gap:6px;max-width:950px}
+#inventory-panel .inventory-grid .inventory-cell{min-height:0;aspect-ratio:1}
+#inventory-panel .item-detail{position:fixed;z-index:40;box-sizing:border-box;max-height:calc(100dvh - 16px);overflow-y:auto;background:#293c30;border:2px solid #d5b77b;border-radius:11px;padding:10px;box-shadow:0 10px 35px #000c}
+#inventory-panel .detail-heading{display:flex;align-items:center;gap:9px}
+#inventory-panel .detail-heading .item-art-wrap{width:56px;height:56px}
+#inventory-panel .detail-heading h3{font-size:17px;margin:0}
+#inventory-panel .item-detail p{font-size:13px}
+#inventory-panel .inventory-message{position:absolute;bottom:5px;left:18px;background:#49372e;color:#ffd0a0;border-radius:5px;padding:0 6px}
+@media(max-height:480px){#inventory-panel .inventory-heading{min-height:35px}#inventory-panel .inventory-tabs{padding:4px 12px}#inventory-panel .inventory-tabs button{padding:5px;font-size:13px}#inventory-panel .inventory-page{padding:5px 12px 12px}#inventory-panel .inventory-page h2{font-size:16px;margin:3px 0 6px}#inventory-panel .equipment-grid .equipment-cell{min-height:66px}#inventory-panel .equipment-summary{margin-bottom:6px;gap:4px}#inventory-panel .equipment-summary span{padding:4px 8px;font-size:12px}}
+@media(max-width:700px){#inventory-panel .inventory-grid{grid-template-columns:repeat(8,minmax(0,1fr))}}
