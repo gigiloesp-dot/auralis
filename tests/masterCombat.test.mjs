@@ -47,3 +47,15 @@ test('boss cycles through three telegraphed patterns and paladin third hit stuns
 test('isometric display projects entity coordinates while combat stays in world coordinates',()=>{
  const {system}=setup('warrior',null,{}, {project:(x,y)=>({x:x-y,y:(x+y)/2})});const m=system.monsters[0];system.update(0,0);assert.equal(m.body.x,m.x-m.y);assert.ok(Math.abs(m.body.y-(m.x+m.y)/2)<2);
 });
+test('charged cannon and meteors delay damage while arrow storm schedules several impacts',()=>{
+ for(const [classId,index,delay] of [['cannoneer',0,1000],['mage',4,900],['archer',4,0]]){
+  const {hero,system}=setup(classId,null,{level:42,learnedSkills:{[classId+'_'+index]:1}});for(const m of system.monsters.slice(1))m.alive=false;const m=system.monsters[0];m.hp=m.maxHp=10000;hero.mp=hero.maxMp;
+  assert.equal(system.useSkill(classId+'_'+index,100).ok,true);assert.equal(m.hp,10000);assert.ok(system.pendingEffects.length>0);
+  if(delay){system.now=100+delay-1;system.tickEffects(system.now);assert.equal(m.hp,10000);}
+  system.now=100+delay;system.tickEffects(system.now);assert.ok(m.hp<10000);if(classId==='archer')assert.equal(system.pendingEffects.length,3);
+ }
+});
+test('ice shield absorbs hits and powder buff adds real nearby splash damage',()=>{
+ const mage=setup('mage',null,{level:42,learnedSkills:{mage_1:1}});mage.hero.mp=mage.hero.maxMp;assert.equal(mage.system.useSkill('mage_1',100).ok,true);const hp=mage.hero.hp;mage.system.hurtHero(20,200);assert.equal(mage.hero.hp,hp);assert.ok(mage.system.buffs.iceWard>0);
+ const {hero,system}=setup('cannoneer',null,{level:42,learnedSkills:{cannoneer_3:1}});hero.mp=hero.maxMp;const [a,b]=system.monsters;a.hp=a.maxHp=10000;b.hp=b.maxHp=10000;b.x=a.x+20;b.y=a.y;system.useSkill('cannoneer_3',100);system.now=200;system.strike(a,200,1,false,false);assert.ok(b.hp<10000);
+});
