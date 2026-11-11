@@ -1,3 +1,4 @@
+import { gaitPose } from './animations/gait.js';
 // Procedural jointed 2.5D hero. All limbs rotate at anatomical pivots.
 const lerpAngle=(a,b,t)=>a+Math.atan2(Math.sin(b-a),Math.cos(b-a))*t;
 export class HeroRig{
@@ -47,18 +48,14 @@ export class HeroRig{
   this.hips.rotation=.035*s*run;
   this.torso.rotation=-.055*s*run;
   this.neck.rotation=.025*s*run;
-  // Determine horizontal travel from the current joystick, not the previous facing.
-  // A leftward stride must reverse both knee bend and horizontal foot travel.
-  const facingX=Math.cos(angle);
-  const sideRun=Math.abs(facingX);
-  const travelSign=facingX<0?-1:1;
-  const stride=(.58+.09*sideRun)*run;
-  const left=s*stride,right=-s*stride;
-  this.leftThigh.rotation=left*(1-sideRun)+left*travelSign*sideRun;
-  this.rightThigh.rotation=right*(1-sideRun)+right*travelSign*sideRun;
-  this.leftShin.rotation=Math.max(0,-s*travelSign)*(.9+.1*sideRun)*run;
-  this.rightShin.rotation=Math.max(0,s*travelSign)*(.9+.1*sideRun)*run;
-  this.leftArm.rotation=-left*(.65+.12*sideRun)*((1-sideRun)+travelSign*sideRun)+.12;
+  const pose=gaitPose(this.t,angle,run);
+  this.leftThigh.rotation=pose.leftHip;
+  this.rightThigh.rotation=pose.rightHip;
+  this.leftShin.rotation=pose.leftKnee;
+  this.rightShin.rotation=pose.rightKnee;
+  this.leftArm.rotation=pose.leftArmSwing+.12;
+  this.rightArm.rotation=pose.rightArmSwing-.12;
+  const travelSign=Math.cos(angle)<0?-1:1;
   this.leftForearm.rotation=-.15-Math.max(0,s)*.24*run;
   this.rightArm.rotation=-right*(.65+.12*sideRun)*((1-sideRun)+travelSign*sideRun)-.12;
   this.rightForearm.rotation=-.25-Math.max(0,-s)*.24*run;
@@ -94,8 +91,8 @@ export class HeroRig{
   this.leftThigh.x=-7+4*side;
   this.rightThigh.x=7-4*side;
   // Side running: alternate forward/back foot reach and shoulder swing.
-  this.leftThigh.x+=s*5.5*side*run*travelSign;
-  this.rightThigh.x-=s*5.5*side*run*travelSign;
+  this.leftThigh.x+=pose.leftFootX;
+  this.rightThigh.x+=pose.rightFootX;
   this.leftArm.x+=s*1.2*side*run*travelSign;
   this.rightArm.x-=s*1.2*side*run*travelSign;
   this.face.setVisible(back<.45 && side<.82);
