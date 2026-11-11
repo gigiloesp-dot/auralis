@@ -1,6 +1,7 @@
 import {MONSTER_TYPES} from './monsters.js';
 import {calculateDamage} from '../combat/combat.js';
 import {grantXp} from '../systems/progression.js';
+import {nearestTarget} from '../combat/targeting.js';
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 const spawnPoints=[[1370,1240],[1450,1320],[1530,1220],[1320,1430],[1600,1450],[1770,1250],[1770,1600],[1430,1660]];
 export class MonsterSystem{
@@ -43,9 +44,9 @@ export class MonsterSystem{
  attack(now,facing){
   if(now-this.lastStrike<450)return false;
   this.lastStrike=now;
-  const candidates=this.monsters.filter(m=>m.alive&&distance(m,this.hero)<100&&Math.cos(Math.atan2(m.y-this.hero.y,m.x-this.hero.x)-facing)>.25);
-  candidates.sort((a,b)=>distance(a,this.hero)-distance(b,this.hero));
-  const m=candidates[0];if(!m)return true;
+  const m=nearestTarget(this.hero,this.monsters,100);
+  if(!m)return true;
+  this.scene.facing=Math.atan2(m.y-this.hero.y,m.x-this.hero.x);
   const damage=calculateDamage({attack:12+this.hero.level*2});
   m.hp=Math.max(0,m.hp-damage);
   const label=this.scene.add.text(m.x,m.y-67,'-'+damage,{fontFamily:'Arial',fontSize:'20px',fontStyle:'bold',color:'#fff1a0',stroke:'#332317',strokeThickness:3}).setOrigin(.5).setDepth(99999);
