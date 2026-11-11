@@ -12,3 +12,20 @@
 .item-actions button{border:1px solid #d1b57c;background:#3e4a35;color:#fff3d6;border-radius:7px;padding:8px 12px}
 .item-actions .primary{background:#477043}.item-actions .danger{background:#7e3833}
 @media(max-width:690px){#inventory-panel{inset:3% 4%;padding:8px 10px}.inventory-layout{grid-template-columns:minmax(0,1fr) minmax(140px,.85fr);gap:7px}.equipment-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.inventory-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.item-actions button{padding:6px 8px}}
+
+/* Illustrated RPG slot grid */
+.equipment-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.equipment-grid .equipment-cell{min-height:83px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:5px;background:linear-gradient(145deg,#314539,#192a23)}
+.equipment-cell small{font-size:11px;color:#e3d7ba}
+.item-art-wrap{display:inline-flex;width:47px;height:47px;align-items:center;justify-content:center;flex:none}
+.item-art{width:100%;height:100%;filter:drop-shadow(0 2px 2px #0008)}
+.empty-slot-icon{font-size:26px;line-height:47px;color:#8c947f}
+.inventory-grid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px}
+.inventory-grid .inventory-cell{aspect-ratio:1;min-height:0;min-width:0;padding:2px;border:1px solid #756e57;background:#23362b;display:grid;place-items:center}
+.inventory-grid .inventory-cell.occupied{background:radial-gradient(circle,#455b47,#23362b)}
+.inventory-cell .item-art-wrap{width:min(100%,42px);height:auto;aspect-ratio:1}
+.empty-cell{width:100%;height:100%;background:linear-gradient(145deg,#ffffff08,#00000015);border-radius:3px}
+.item-detail>.item-art-wrap{width:66px;height:66px;float:left;margin-right:9px}
+.item-detail{min-width:0}
+@media(max-width:800px){.inventory-grid{grid-template-columns:repeat(8,minmax(0,1fr))}.equipment-grid .equipment-cell{min-height:65px}.equipment-cell .item-art-wrap{width:34px;height:34px}.equipment-cell small{font-size:9px}}
+@media(max-width:550px){.inventory-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.inventory-layout{grid-template-columns:minmax(0,1fr) minmax(125px,.8fr)}}
