@@ -12,7 +12,7 @@ export const Save={
  x:d.x,y:d.y,level:Math.max(1,Math.min(GAME_CONFIG.maxLevel,Math.trunc(num(d.level,1)))),xp:Math.max(0,num(d.xp,0)),
  hp:Math.max(0,num(d.hp,100)),mp:Math.max(0,num(d.mp,100)),equipment:obj(d.equipment)?d.equipment:{},
  inventory:Array.isArray(d.inventory)?d.inventory:[],quests:obj(d.quests)?d.quests:{},
- stats:obj(d.stats)?d.stats:{},attributePoints:Math.max(0,num(d.attributePoints,Math.max(0,(num(d.level,1)-1)*3))),skillPoints:Math.max(0,num(d.skillPoints,0)),skills:Array.isArray(d.skills)?d.skills:[]};},
+ stats:obj(d.stats)?d.stats:{},attributePoints:Math.max(0,num(d.attributePoints,Math.max(0,(num(d.level,1)-1)*3))),skillPoints:Math.max(0,num(d.skillPoints,0)),skills:Array.isArray(d.skills)?d.skills:[],learnedSkills:obj(d.learnedSkills)?d.learnedSkills:{}};},
  load(s=this.activeSlot){try{let raw=localStorage.getItem(this.key(s));if(!raw&&s===1){const old=localStorage.getItem(LEGACY);if(old){const migrated=this.normalize(JSON.parse(old));if(migrated){this.write(migrated,s);raw=localStorage.getItem(this.key(s));}}}if(!raw)return null;const data=JSON.parse(raw);return data.version===2?this.normalize(data):null;}catch{return null;}},
  write(data,s=this.activeSlot){try{const d=this.normalize(data);if(!d)return false;d.updatedAt=Date.now();localStorage.setItem(this.key(s),JSON.stringify(d));return true;}catch{return false;}},
  list(){return Array.from({length:GAME_CONFIG.saveSlots},(_,i)=>{const slot=i+1,d=this.load(slot);return {slot,exists:!!d,level:d?.level??null,classId:d?.classId??null,name:d?.name??null,updatedAt:d?.updatedAt??null};});},
