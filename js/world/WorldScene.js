@@ -1,3 +1,4 @@
+import { SkillsPanel } from '../ui/SkillsPanel.js';
 import { CharacterPanel } from '../ui/CharacterPanel.js';
 import { InventoryPanel } from '../ui/InventoryPanel.js';
 import { AttackCycle } from '../combat/attackTiming.js';
@@ -36,7 +37,8 @@ export class WorldScene extends Phaser.Scene{
   this.attackCycle=new AttackCycle();
   this.inventoryPanel=new InventoryPanel(this);
   this.characterPanel=new CharacterPanel(this);
-  this.events.once('shutdown',()=>{this.save();this.controls?.destroy();this.monsters?.destroy();this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.scale.off('resize',this.onGameResize,this);});
+  this.skillsPanel=new SkillsPanel(this);
+  this.events.once('shutdown',()=>{this.save();this.controls?.destroy();this.monsters?.destroy();this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.skillsPanel?.destroy();this.scale.off('resize',this.onGameResize,this);});
   window.addEventListener('pagehide',()=>this.save());
   document.addEventListener('visibilitychange',()=>{if(document.hidden)this.save();});
   this.refreshHud();
@@ -48,7 +50,7 @@ export class WorldScene extends Phaser.Scene{
 
  update(now,delta){
   const dt=Math.min(delta,40)/1000,h=this.hero;if(!h)return;
-  if(this.inventoryPanel?.opened||this.characterPanel?.opened)return;
+  if(this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened)return;
   const mag=Math.hypot(this.axis.x,this.axis.y),speed=h.speed;
   if(mag>.08){
    let dx=this.axis.x/mag*speed*dt,dy=this.axis.y/mag*speed*dt;
