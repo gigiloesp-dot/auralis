@@ -87,3 +87,10 @@
 - Class selection and save slots have class-specific temporary silhouettes; future real 3D/2.5D character previews must reflect class and equipped items.
 - Future skills UI: tabbed skill tree with profession tiers, unlock requirements, skill icons and point allocation. Do not imply skill buttons are implemented until active skills work.
 - Future unified RPG shortcut toolbar: character, bag, skills, settings, with icon-led controls.
+
+## Skills screen (0.9)
+- Three tabs, five skills per class across six classes, with rank 0–5 and required character levels 1/5/12/20/30.
+- Spend earned skill points to learn or rank up skills; learnedSkills is persisted in save slots and loaded into hero.
+- Skills screen pauses world simulation and is mutually exclusive with bag and attribute panels.
+- Compact top-right toolbar links character, bag and skills. Pause/settings remains separate.
+- Skill effects and activation from the four combat HUD buttons are **not implemented**; current tree is allocation and persistence only.
