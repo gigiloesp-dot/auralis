@@ -1,7 +1,6 @@
 // Decorative buildings, trees and preview NPCs. Returns collision circles.
 export function createLandmarks(scene){
  const obstacles=[];
-  obstacles=[];
   const house=(x,y)=>{const base=scene.add.graphics().setPosition(x,y).setDepth(y);
    base.fillStyle(0x000000,.22).fillEllipse(0,17,132,40);
    base.fillStyle(0xcab58b).fillRoundedRect(-53,-54,106,70,6);
