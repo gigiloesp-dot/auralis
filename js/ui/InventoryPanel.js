@@ -10,7 +10,7 @@ const btn=(text,callback,cls)=>{const b=el('button',text,cls);b.type='button';b.
 export class InventoryPanel{
  constructor(scene){this.scene=scene;this.root=document.getElementById('inventory-panel');this.button=document.getElementById('inventory-btn');this.opened=false;this.selected=null;this.onButton=()=>this.toggle();this.button?.addEventListener('click',this.onButton);this.onEscape=e=>{if(e.key==='Escape'&&this.opened)this.close();};document.addEventListener('keydown',this.onEscape);}
  toggle(){this.opened?this.close():this.show();}
- show(){this.opened=true;this.root.hidden=false;this.selected=null;this.render();}
+ show(){this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.selected=null;this.render();}
  close(){this.opened=false;this.selected=null;this.root.hidden=true;}
  select(source,key){this.selected={source,key};this.render();}
  item(){const h=this.scene.hero;return this.selected?.source==='bag'?h.inventory[this.selected.key]:this.selected?.source==='equip'?h.equipment[this.selected.key]:null;}
