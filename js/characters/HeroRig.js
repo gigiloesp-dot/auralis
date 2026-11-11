@@ -1,3 +1,4 @@
+import {SpriteAnimator} from '../assets/SpriteAnimator.js';
 import { swingPose } from '../combat/attackTiming.js';
 import { gaitPose } from './animations/gait.js';
 // Procedural jointed 2.5D hero. All limbs rotate at anatomical pivots.
@@ -5,6 +6,8 @@ const lerpAngle=(a,b,t)=>a+Math.atan2(Math.sin(b-a),Math.cos(b-a))*t;
 export class HeroRig{
  constructor(scene,root){
   this.hero=scene.hero;this.classId=scene.hero?.classId||'warrior';this.root=root;this.t=0;this.blend=0;this.attackPhase=0;this.wasAttacking=false;this.direction=0;
+  this.scene=scene;this.elapsed=0;this.deathElapsed=0;this.animationState='idle';
+  this.spriteAnimator=SpriteAnimator.create(scene,root,this.classId);if(this.spriteAnimator)return;
   const part=(parent,x,y)=>{const c=scene.add.container(x,y);parent.add(c);return c;};
   const bone=(parent,x,y,w,h,color)=>{const pivot=part(parent,x,y);pivot.add(scene.add.rectangle(0,h/2,w,h,color).setOrigin(.5,.5));pivot.add(scene.add.circle(0,0,w*.54,color));return pivot;};
   this.hips=part(root,0,-17);
@@ -62,6 +65,10 @@ export class HeroRig{
   this.gearSignature='';
  }
  update(dt,axis,attacking,angle){
+  this.elapsed+=Math.max(0,dt);const now=Number.isFinite(this.scene.playNow)?this.scene.playNow:this.elapsed*1000;
+  const dead=this.hero?.hp<=0,hurt=!dead&&(this.hero?.hurtUntil||0)>now;
+  this.animationState=dead?'death':hurt?'hurt':attacking?.active?'attack':Math.hypot(axis.x,axis.y)>.08?'run':'idle';
+  if(this.spriteAnimator){this.spriteAnimator.update(this.animationState,angle,hurt);return;}
   this.updateEquipment();
   const m=Math.min(1,Math.hypot(axis.x,axis.y));
   this.blend+=(m-this.blend)*Math.min(1,dt*10);
@@ -105,7 +112,10 @@ export class HeroRig{
     this.torso.rotation+=torso;
     this.leftArm.rotation=this.classId==='assassin'?aim-arc*.8:-.3-Math.sin(progress*Math.PI)*.25;
     if(this.classId==='assassin')this.leftForearm.rotation=arc*.25;
-    if(this.classId==='paladin')this.leftForearm.rotation=-.7;
+    if(this.classId==='paladin'){
+     this.leftForearm.rotation=-.7;
+     if(attacking.index%3===2){const thrust=Math.sin(progress*Math.PI);this.leftArm.rotation=aim-.3;this.leftForearm.rotation=-.7+thrust*.9;this.shield.y=12+thrust*13;this.rightArm.rotation=.4;this.torso.rotation-=thrust*.18;}else this.shield.y=12;
+    }
    }
   }else if(this.magicOrb)this.magicOrb.alpha=1;
   // Front, back and three-quarter views with smooth orientation blending.
@@ -137,6 +147,12 @@ export class HeroRig{
   this.torso.y=-3+back*2;
   this.hips.scaleX=1-.04*side;
   this.neck.rotation+=dx*.035;
+  if(!attacking?.active&&this.shield)this.shield.y=12;
+  // Hurt and death keep the entire joint hierarchy connected instead of moving
+  // disconnected limbs. The world delays respawn until this pose is visible.
+  if(dead){this.deathElapsed+=Math.max(0,dt);const progress=Math.min(1,this.deathElapsed/.55);this.root.rotation=progress*1.2;this.root.alpha=1-progress*.35;this.leftArm.rotation=-.8;this.rightArm.rotation=.8;this.leftThigh.rotation=.25;this.rightThigh.rotation=-.15;}
+  else{this.deathElapsed=0;this.root.rotation=hurt?Math.sin(now*.055)*.08:0;this.root.alpha=hurt ? .72+.28*Math.abs(Math.sin(now*.07)):1;if(hurt)this.torso.rotation+=.12;}
+
  }
  updateEquipment(){
   const gear=this.hero?.equipment||{};
