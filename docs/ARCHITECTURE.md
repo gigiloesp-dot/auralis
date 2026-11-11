@@ -94,3 +94,9 @@
 - Skills screen pauses world simulation and is mutually exclusive with bag and attribute panels.
 - Compact top-right toolbar links character, bag and skills. Pause/settings remains separate.
 - Skill effects and activation from the four combat HUD buttons are **not implemented**; current tree is allocation and persistence only.
+
+## Skill loadout (0.9.1)
+- Clicking a skill card opens a detail panel showing description, rank, level requirement, provisional mana/cooldown/power, and slot assignment controls.
+- Only learned skills may be assigned to combat slots 1–4. Assigning a skill to a new slot clears its prior slot; assigning into an occupied slot replaces the previous skill.
+- Equipped skills show slot numbers and may be unequipped from their details. Four HUD buttons display the selected skill icon but remain disabled until actual skill combat behavior is implemented.
+- skillSlots array persists per save slot; invalid or duplicate assignments are sanitized on use.
