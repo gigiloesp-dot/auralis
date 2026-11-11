@@ -31,7 +31,7 @@ test('every listed quest can be accepted, completed through its real event type 
   assert.equal(questProgress(hero,q.id).state,'completed',q.id);
   assert.equal(claimQuest(hero,q.id,'wrong-npc').ok,false,q.id);assert.equal(claimQuest(hero,q.id,q.turnInNpcId||q.npcId).ok,true,q.id);
   const snapshot=JSON.stringify(hero);assert.equal(claimQuest(hero,q.id).ok,false,q.id);assert.equal(JSON.stringify(hero),snapshot,q.id);
-  if(q.type==='deliver')assert.ok(!hero.inventory.some(item=>item.id===q.itemId),q.id);
+  if(['deliver','collect'].includes(q.type))assert.ok(!hero.inventory.some(item=>item.id===q.itemId),q.id);
  }
 });
 test('contract kills require the specific camp and region, not a matching monster elsewhere',()=>{

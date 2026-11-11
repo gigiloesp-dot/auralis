@@ -23,7 +23,7 @@ export const questDescription=(q,lang='ru')=>q.description?.[lang]||q.descriptio
 export function questProgress(hero,id='forestWolves'){
  const q=questDefinition(id);if(!q)return null;
  const saved=hero.quests?.[id];
- const progress=q.type==='collect'?Math.min(required(q),hasItems(hero,q.itemId)):Math.max(0,Math.min(required(q),Math.trunc(Number(saved?.progress)||0)));
+ const progress=saved?.state==='claimed'?required(q):q.type==='collect'?Math.min(required(q),hasItems(hero,q.itemId)):Math.max(0,Math.min(required(q),Math.trunc(Number(saved?.progress)||0)));
  const prerequisites=(q.requires||[]).every(key=>hero.quests?.[key]?.state==='claimed');
  let state=saved?.state==='claimed'?'claimed':saved?.state==='active'||saved?.state==='completed'?(progress>=required(q)?'completed':'active'):(hero.level||1)<(q.level||1)||!prerequisites?'locked':'available';
  if(state==='completed'&&q.type==='deliver'&&hasItems(hero,q.itemId)<(q.quantity||1))state='active';
@@ -62,8 +62,8 @@ export function updateQuestProgress(scene){
 export function claimQuest(hero,id='forestWolves',npcId){
  const q=questDefinition(id);if(!q||questProgress(hero,id).state!=='completed'||npcId&&(q.turnInNpcId||q.npcId)!==npcId)return {ok:false,reason:'state'};
  const preview={inventory:(hero.inventory||[]).map(item=>({...item}))};
- if(q.type==='deliver'){
-  let left=q.quantity||1;if(hasItems(hero,q.itemId)<left)return {ok:false,reason:'items'};
+ if(q.type==='deliver'||q.type==='collect'){
+  let left=q.type==='collect'?required(q):q.quantity||1;if(hasItems(hero,q.itemId)<left)return {ok:false,reason:'items'};
   for(let i=preview.inventory.length-1;i>=0&&left;i--){const item=preview.inventory[i];if(item.id!==q.itemId)continue;const count=itemCount(item),used=Math.min(count,left);left-=used;if(used===count)preview.inventory.splice(i,1);else item.quantity=count-used;}
  }
  if(q.reward&&!addItem(preview,q.reward))return {ok:false,reason:'full'};
