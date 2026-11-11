@@ -52,3 +52,10 @@
 - Equipment checks required level and class, keeps replaced item in bag, and contributes attack/defense to actual damage calculations.
 - Wolves can drop wolf materials and starter equipment; items and equipped slots are saved per character slot.
 - Loot balance, detailed item icons, visual equipment and NPC vendors are future phases.
+
+## Item interactions (0.5.1)
+- Inventory trigger and overlay must be outside #hud because HUD disables pointer events.
+- Classic fantasy leather backpack SVG icon; avoid modern emoji backpack.
+- Tapping a bag item opens a detail panel showing rarity, type, required level, attack/defense, class restrictions.
+- Detail actions: equip (equipment only), discard with explicit confirmation, close. Equipped items offer unequip.
+- No selling items from inventory. Selling is exclusively via future merchant NPC interactions.
