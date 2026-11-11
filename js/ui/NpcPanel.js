@@ -9,6 +9,7 @@ export class NpcPanel{
   this.journal=element('div','','quest-tracker');this.journal.hidden=true;
   this.root=element('section','','npc-panel');this.root.hidden=true;this.root.setAttribute('role','dialog');this.root.setAttribute('aria-modal','true');this.root.setAttribute('aria-label',this.text.name);
   document.body.append(this.button,this.journal,this.root);
+  this.onKey=e=>{if(e.key==='Escape'&&this.opened)this.close();};document.addEventListener('keydown',this.onKey);
  }
  nearby(){const h=this.scene.hero;return h&&h.hp>0&&(!h.region||h.region==='forest')&&Math.hypot(h.x-935,h.y-1080)<150;}
  update(){
@@ -17,7 +18,7 @@ export class NpcPanel{
   const p=questProgress(this.scene.hero);this.journal.hidden=blocked||this.opened||!['active','completed'].includes(p.state);
   this.journal.textContent=`${this.text.journal}: ${p.progress}/${p.required}`;
  }
- show(){if(!this.nearby())return;this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;this.render();}
+ show(){if(!this.nearby())return;this.scene.controls?.reset?.();this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;this.render();}
  close(){this.opened=false;this.root.hidden=true;}
  render(message=''){
   const t=this.text,p=questProgress(this.scene.hero);this.root.replaceChildren();const heading=element('div','','npc-heading');heading.append(element('h2',t.name));
@@ -37,5 +38,5 @@ export class NpcPanel{
   if(!any)this.root.append(element('p',t.emptyShop));if(message)this.root.append(element('p',message,'npc-status'));
  }
  persistTrade(){this.scene.save();this.scene.refreshHud();this.scene.refreshPotions?.();this.render();}
- destroy(){this.button.remove();this.journal.remove();this.root.remove();this.opened=false;}
+ destroy(){document.removeEventListener('keydown',this.onKey);this.button.remove();this.journal.remove();this.root.remove();this.opened=false;}
 }
