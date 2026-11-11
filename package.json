@@ -1,1 +1,10 @@
-{"name":"auralis-rpg","version":"0.2.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","check":"node --check js/main.js && node --check js/world/WorldScene.js && node --check js/systems/save.js && node --check js/input/TouchControls.js && node --check js/assets/AssetLoader.js && npm test"}}
+{
+  "name": "auralis-rpg",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check js/main.js && node --check js/world/WorldScene.js && node --check js/world/render/Terrain.js && node --check js/world/render/Landmarks.js && node --check js/monsters/MonsterSystem.js && node --check js/characters/HeroRig.js && node --check js/systems/save.js && node --check js/input/TouchControls.js && node --check js/assets/AssetLoader.js"
+  }
+}
