@@ -1,3 +1,5 @@
+import {normalizeSkillSlots} from '../skills/skillSlots.js';
+import {getSkills} from '../skills/skillData.js';
 import { SkillsPanel } from '../ui/SkillsPanel.js';
 import { CharacterPanel } from '../ui/CharacterPanel.js';
 import { InventoryPanel } from '../ui/InventoryPanel.js';
@@ -38,6 +40,7 @@ export class WorldScene extends Phaser.Scene{
   this.inventoryPanel=new InventoryPanel(this);
   this.characterPanel=new CharacterPanel(this);
   this.skillsPanel=new SkillsPanel(this);
+  this.refreshSkillSlots();
   this.events.once('shutdown',()=>{this.save();this.controls?.destroy();this.monsters?.destroy();this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.skillsPanel?.destroy();this.scale.off('resize',this.onGameResize,this);});
   window.addEventListener('pagehide',()=>this.save());
   document.addEventListener('visibilitychange',()=>{if(document.hidden)this.save();});
@@ -70,6 +73,7 @@ export class WorldScene extends Phaser.Scene{
   if(h.hp<=0){respawnAtTown(h);this.save();this.refreshHud();}
   if(now-this.lastSave>GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();this.refreshHud();}
  }
+ refreshSkillSlots(){if(!this.hero)return;const ids=normalizeSkillSlots(this.hero),skills=getSkills(this.hero.classId);document.querySelectorAll('#skills .skill').forEach((b,i)=>{const skill=skills.find(s=>s.id===ids[i]);b.textContent=skill?skill.icon:String(i+1);b.title=skill?skill.name:'Пустой слот '+(i+1);b.setAttribute('aria-label',b.title);b.disabled=!skill||true;});}
  save(){if(this.hero)Save.write(this.hero);}
  refreshHud(){updateHud(this.hero);}
 }
