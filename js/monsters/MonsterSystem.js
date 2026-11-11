@@ -1,3 +1,5 @@
+import { rollWolfLoot } from './loot.js';
+import { equipmentStats } from '../equipment/items.js';
 import {MONSTER_TYPES} from './monsters.js';
 import {calculateDamage} from '../combat/combat.js';
 import {grantXp} from '../systems/progression.js';
@@ -33,7 +35,7 @@ export class MonsterSystem{
    const d=Math.hypot(tx-m.x,ty-m.y);
    if(d>45){m.x+=(tx-m.x)/d*Math.min(d,speed*dt);m.y+=(ty-m.y)/d*Math.min(d,speed*dt);}
    if(dist<38&&now-m.lastHit>1500&&this.hero.hp>0){
-    m.lastHit=now;this.hero.hp=Math.max(0,this.hero.hp-calculateDamage({attack:m.attack}));
+    m.lastHit=now;this.hero.hp=Math.max(0,this.hero.hp-calculateDamage({attack:m.attack,defense:equipmentStats(this.hero).defense}));
     this.onChange();
    }
    m.body.setPosition(m.x,m.y+Math.sin(now*.007+m.phase)*1.5).setDepth(m.y);
@@ -45,13 +47,13 @@ export class MonsterSystem{
   const m=nearestTarget(this.hero,this.monsters,100);
   if(!m)return true;
   this.scene.facing=Math.atan2(m.y-this.hero.y,m.x-this.hero.x);
-  const damage=calculateDamage({attack:12+this.hero.level*2});
+  const damage=calculateDamage({attack:12+this.hero.level*2+equipmentStats(this.hero).attack});
   m.hp=Math.max(0,m.hp-damage);
   const label=this.scene.add.text(m.x,m.y-67,'-'+damage,{fontFamily:'Arial',fontSize:'20px',fontStyle:'bold',color:'#fff1a0',stroke:'#332317',strokeThickness:3}).setOrigin(.5).setDepth(99999);
   this.scene.tweens.add({targets:label,y:label.y-35,alpha:0,duration:600,onComplete:()=>label.destroy()});
   if(m.hp===0){
    m.alive=false;m.respawnAt=now+11000;m.body.setVisible(false);m.shadow.setVisible(false);m.hpBar.setVisible(false);
-   grantXp(this.hero,15);this.onChange();
+   grantXp(this.hero,15);const drops=rollWolfLoot(this.hero);if(drops.length){this.scene.inventoryPanel?.opened&&this.scene.inventoryPanel.render();}this.onChange();
   }
   return true;
  }
