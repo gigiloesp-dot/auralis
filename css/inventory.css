@@ -56,3 +56,21 @@
 #inventory-panel .inventory-message{position:absolute;bottom:5px;left:18px;background:#49372e;color:#ffd0a0;border-radius:5px;padding:0 6px}
 @media(max-height:480px){#inventory-panel .inventory-heading{min-height:35px}#inventory-panel .inventory-tabs{padding:4px 12px}#inventory-panel .inventory-tabs button{padding:5px;font-size:13px}#inventory-panel .inventory-page{padding:5px 12px 12px}#inventory-panel .inventory-page h2{font-size:16px;margin:3px 0 6px}#inventory-panel .equipment-grid .equipment-cell{min-height:66px}#inventory-panel .equipment-summary{margin-bottom:6px;gap:4px}#inventory-panel .equipment-summary span{padding:4px 8px;font-size:12px}}
 @media(max-width:700px){#inventory-panel .inventory-grid{grid-template-columns:repeat(8,minmax(0,1fr))}}
+
+/* 0.8: comparison and RPG character-sheet layout */
+#inventory-panel .equipment-layout{display:grid;grid-template-columns:minmax(260px,1.15fr) minmax(210px,.85fr);gap:18px;align-items:start;max-width:1200px}
+#inventory-panel .equipment-layout .equipment-grid{max-width:none}
+#inventory-panel .equipment-layout .equipment-summary{display:flex;flex-direction:column;gap:0;margin:0;background:#203429;border:1px solid #9a8056;border-radius:9px;padding:10px}
+#inventory-panel .equipment-summary h3{margin:2px 0 9px;color:#f1d59e;font-size:17px}
+#inventory-panel .equipment-summary .stat-line{display:flex;justify-content:space-between;gap:10px;padding:8px 5px;border-bottom:1px solid #ffffff1b;font-size:13px}
+#inventory-panel .equipment-summary .stat-line strong{color:#f1d59e;white-space:nowrap}
+#inventory-panel .item-detail{width:min(310px,calc(100vw - 16px));max-height:calc(100dvh - 16px)}
+#inventory-panel .detail-status{display:inline-block;font-weight:800;letter-spacing:.08em;color:#a8e6a1;font-size:11px;padding:4px 6px;background:#2c563b;border:1px solid #71b57d;border-radius:4px;margin-bottom:7px}
+#inventory-panel .item-comparison{margin-top:10px;padding:8px;background:#192c23;border:1px solid #80714f;border-radius:7px}
+#inventory-panel .item-comparison h4{margin:0 0 8px;color:#e9ce92}
+#inventory-panel .item-comparison .detail-heading .item-art-wrap{width:38px;height:38px}
+#inventory-panel .compare-better{color:#79df8e}
+#inventory-panel .compare-worse{color:#ff9b8d}
+#inventory-panel .compare-equal{color:#d8d1bb}
+@media(max-width:700px){#inventory-panel .equipment-layout{grid-template-columns:minmax(0,1fr) minmax(165px,.8fr);gap:8px}#inventory-panel .equipment-summary .stat-line{padding:5px 2px;font-size:11px}}
+@media(max-height:430px){#inventory-panel .equipment-layout .equipment-summary{padding:5px}#inventory-panel .equipment-summary .stat-line{padding:3px 2px}}
