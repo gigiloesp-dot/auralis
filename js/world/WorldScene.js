@@ -73,7 +73,7 @@ export class WorldScene extends Phaser.Scene{
   if(h.hp<=0){respawnAtTown(h);this.save();this.refreshHud();}
   if(now-this.lastSave>GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();this.refreshHud();}
  }
- refreshSkillSlots(){if(!this.hero)return;const ids=normalizeSkillSlots(this.hero),skills=getSkills(this.hero.classId);document.querySelectorAll('#skills .skill').forEach((b,i)=>{const skill=skills.find(s=>s.id===ids[i]);b.textContent=skill?skill.icon:String(i+1);b.title=skill?skill.name:'Пустой слот '+(i+1);b.setAttribute('aria-label',b.title);b.disabled=!skill||true;});}
+ refreshSkillSlots(){if(!this.hero)return;const ids=normalizeSkillSlots(this.hero),skills=getSkills(this.hero.classId);document.querySelectorAll('#skills .skill').forEach((b,i)=>{const skill=skills.find(s=>s.id===ids[i]);b.textContent=skill?skill.icon:String(i+1);b.title=skill?skill.name:'Пустой слот '+(i+1);b.setAttribute('aria-label',b.title);b.disabled=true;});}
  save(){if(this.hero)Save.write(this.hero);}
  refreshHud(){updateHud(this.hero);}
 }
