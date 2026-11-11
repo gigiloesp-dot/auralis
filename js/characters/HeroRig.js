@@ -1,3 +1,4 @@
+import { swingPose } from '../combat/attackTiming.js';
 import { gaitPose } from './animations/gait.js';
 // Procedural jointed 2.5D hero. All limbs rotate at anatomical pivots.
 const lerpAngle=(a,b,t)=>a+Math.atan2(Math.sin(b-a),Math.cos(b-a))*t;
@@ -58,25 +59,19 @@ export class HeroRig{
   const travelSign=Math.cos(angle)<0?-1:1;
   this.leftForearm.rotation=-.15-Math.max(0,s)*.24*run;
   this.rightForearm.rotation=-.25-Math.max(0,-s)*.24*run;
-  if(attacking&&!this.wasAttacking){this.attackPhase=.001;}
-  this.wasAttacking=attacking;
+  // Attack timing is controlled by AttackCycle; the rig only draws the pose.
   // Rotate toward the joystick direction before posing the weapon.
   this.direction=lerpAngle(this.direction,angle,Math.min(1,dt*11));
   this.sword.y=2;
   this.sword.rotation=0;
-  if(this.attackPhase>0){
-   this.attackPhase+=dt*3.8;
-   if(this.attackPhase>=1)this.attackPhase=attacking?.001:0;
-   const p=this.attackPhase;
-   // Wind-up -> forward strike -> recovery, centered on actual facing angle.
-   const arc=p<.22?-.65+(p/.22)*.3:p<.68?-.35+((p-.22)/.46)*1.05:.7-(p-.68)/.32*.7;
-   // A hanging arm points down (+PI/2). Align its tip with the facing vector.
-   // Keep all rotations on the SAME right shoulder / forearm / hand chain.
+  if(attacking?.active){
+   const {arc,torso}=swingPose(attacking.progress,attacking.index);
    const aim=this.direction-Math.PI/2;
    this.rightArm.rotation=aim+arc-this.hips.rotation-this.torso.rotation;
-   this.rightForearm.rotation=-arc*.22;
-   this.sword.rotation=arc*.16;
-   this.torso.rotation+=Math.sin(Math.min(1,p)*Math.PI)*.1;
+   this.rightForearm.rotation=-arc*.25;
+   this.sword.rotation=arc*.18;
+   this.torso.rotation+=torso;
+   this.leftArm.rotation=-.3-Math.sin(attacking.progress*Math.PI)*.25;
   }
   // Front, back and three-quarter views with smooth orientation blending.
   const dy=Math.sin(this.direction),dx=Math.cos(this.direction);
