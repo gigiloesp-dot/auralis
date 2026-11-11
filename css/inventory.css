@@ -29,3 +29,5 @@
 .item-detail{min-width:0}
 @media(max-width:800px){.inventory-grid{grid-template-columns:repeat(8,minmax(0,1fr))}.equipment-grid .equipment-cell{min-height:65px}.equipment-cell .item-art-wrap{width:34px;height:34px}.equipment-cell small{font-size:9px}}
 @media(max-width:550px){.inventory-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.inventory-layout{grid-template-columns:minmax(0,1fr) minmax(125px,.8fr)}}
+
+.inventory-cell{position:relative}.inventory-cell .stack-count{position:absolute;bottom:1px;right:3px;font-size:12px;font-weight:900;color:#fff3d1;text-shadow:0 1px 3px #000,0 0 3px #000;pointer-events:none}
