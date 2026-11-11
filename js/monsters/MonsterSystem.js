@@ -134,7 +134,7 @@ export class MonsterSystem{
   const spec=combatSpec(this.hero.classId),m=this.nearest(spec.range+(this.buffs.focus>now?70:0));if(!m||this.hero.hp<=0)return false;
   this.scene.facing=Math.atan2(m.y-this.hero.y,m.x-this.hero.x);this.combo=(this.combo+1)%3;
   if(Math.random()<(spec.missChance??.05)&&!(this.buffs.focus>now)){this.label(m.x,m.y,'·');return true;}
-  const shield=this.hero.classId==='paladin'&&this.combo===0;this.scene.lastComboAttack=shield?'shield':this.combo===0?'finisher':'strike';
+  const shield=this.hero.classId==='paladin'&&this.combo===0;this.scene.lastComboAttack=shield?'shield':this.combo===0?'finisher':'strike';this.hero.lastComboAttack=this.scene.lastComboAttack;
   this.strike(m,now,shield?1.45:1);if(shield){m.stunUntil=now+900;this.label(m.x,m.y,'◇','#e6edff');}
   if(Math.random()<derivedAttributes(this.hero).doubleHitChance/100)this.strike(m,now,.5);return true;
  }
