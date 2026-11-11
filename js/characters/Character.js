@@ -1,3 +1,4 @@
+import {normalizePersistentProgress} from '../systems/progressState.js';
 import {normalizeInventory} from '../equipment/items.js';
 import {maxResources} from '../systems/attributes.js';
 import {getClass,CLASSES} from './classes.js';
@@ -14,6 +15,7 @@ export function createCharacter(data={}){
  const hp=Math.max(0,Math.min(resources.maxHp,number(data.hp,resources.maxHp))),mp=Math.max(0,Math.min(resources.maxMp,number(data.mp,resources.maxMp)));
  const xp=Math.max(0,number(data.xp,0)),skillPoints=Math.max(0,Math.floor(number(data.skillPoints,0)));
  return {
+  ...normalizePersistentProgress(data),
   id,name:typeof data.name==='string'?data.name:'',classId,x,y,level,hp,mp,xp,region,skillPoints,attributePoints:Math.max(0,Math.floor(number(data.attributePoints,0))),
   ...resources,stats,storageTransaction:typeof data.storageTransaction==='string'?data.storageTransaction.slice(0,128):null,gold:Math.max(0,Math.floor(number(data.gold,0))),potions:{hp:Math.max(0,Math.floor(number(data.potions?.hp,3))),mp:Math.max(0,Math.floor(number(data.potions?.mp,3)))},
   equipment:object(data.equipment)?{...data.equipment}:{},
