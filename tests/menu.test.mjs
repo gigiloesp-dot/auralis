@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createCharacter} from '../js/characters/Character.js';import {CLASSES} from '../js/characters/classes.js';
+test('all six classes can create characters',()=>{assert.equal(Object.keys(CLASSES).length,6);for(const classId of Object.keys(CLASSES)){const hero=createCharacter({name:'Hero123',classId});assert.equal(hero.classId,classId);assert.equal(hero.name,'Hero123');}});
