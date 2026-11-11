@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {itemIcon} from '../js/ui/itemIcons.js';import {ITEM_DEFS} from '../js/equipment/items.js';
+test('every defined item has an illustrated SVG',()=>{for(const [id,def] of Object.entries(ITEM_DEFS)){const svg=itemIcon({id,rarity:'rare'},def);assert.match(svg,/<svg/);assert.match(svg,/<path|<circle/);assert.ok(!svg.includes('fill="F"'));}});
+test('boot artwork changes with item level',()=>{const a=itemIcon({id:'leatherBoots'},{slot:'boots',level:1}),b=itemIcon({id:'leatherBoots'},{slot:'boots',level:35});assert.notEqual(a,b);});
