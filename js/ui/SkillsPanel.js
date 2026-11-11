@@ -4,7 +4,7 @@ import {skillDescription} from './skillDescriptions.js';
 import {getSkills,skillRank,learnSkill} from '../skills/skillData.js';
 import {assignSkillSlot,removeSkillSlot,equippedSkillSlot,normalizeSkillSlots} from '../skills/skillSlots.js';
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
-const iconNode=(skill,cls='skill-icon')=>{const node=el('div',undefined,cls);node.innerHTML=skill.iconSvg;return node;};
+const iconNode=(skill,cls='skill-icon')=>{const node=el('div',undefined,cls);node.innerHTML=skill.iconSvg;if(cls==='skill-slot-icon'){node.style.width='22px';node.style.height='22px';node.style.display='inline-block';node.style.verticalAlign='middle';}return node;};
 const button=(label,callback,cls='')=>{const b=el('button',label,cls);b.type='button';b.onclick=callback;return b;};
 export class SkillsPanel{
  constructor(scene){this.scene=scene;this.root=document.getElementById('skills-panel');this.button=document.getElementById('skills-btn');this.opened=false;this.selected=0;this.detailId=null;this.onClick=()=>this.toggle();this.button?.addEventListener('click',this.onClick);this.onEscape=e=>{if(e.key==='Escape'&&this.opened)this.close();};document.addEventListener('keydown',this.onEscape);}
