@@ -15,7 +15,7 @@ export function createCharacter(data={}){
  const xp=Math.max(0,number(data.xp,0)),skillPoints=Math.max(0,Math.floor(number(data.skillPoints,0)));
  return {
   id,name:typeof data.name==='string'?data.name:'',classId,x,y,level,hp,mp,xp,region,skillPoints,attributePoints:Math.max(0,Math.floor(number(data.attributePoints,0))),
-  ...resources,stats,
+  ...resources,stats,gold:Math.max(0,Math.floor(number(data.gold,0))),potions:{hp:Math.max(0,Math.floor(number(data.potions?.hp,3))),mp:Math.max(0,Math.floor(number(data.potions?.mp,3)))},
   equipment:object(data.equipment)?{...data.equipment}:{},
   inventory:normalizeInventory(Array.isArray(data.inventory)?data.inventory:[]),
   quests:object(data.quests)?{...data.quests}:{},
