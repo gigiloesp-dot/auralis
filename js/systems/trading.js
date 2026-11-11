@@ -62,3 +62,13 @@ export function sellItem(hero,index,quantity=1){
  if(!Number.isSafeInteger(funds(hero)+gold))return {ok:false,reason:'invalid'};
  hero.inventory.splice(index,1);hero.gold=funds(hero)+gold;return {ok:true,gold};
 }
+// UI trades are committed to browser storage before success is announced.
+// Pure pricing/buy/sell operations remain reusable without a persistence backend.
+export function commitTrade(hero,operation,persist){
+ const before={gold:hero.gold,potions:hero.potions?{...hero.potions}:undefined,inventory:hero.inventory?.map(item=>({...item}))};
+ let result;
+ try{result=operation();if(!result?.ok)return result||{ok:false,reason:'invalid'};if(persist()!==false)return result;}catch{}
+ hero.gold=before.gold;if(before.potions===undefined)delete hero.potions;else hero.potions=before.potions;
+ if(before.inventory===undefined)delete hero.inventory;else hero.inventory=before.inventory;
+ return {ok:false,reason:'storage'};
+}

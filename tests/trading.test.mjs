@@ -31,3 +31,11 @@ test('special merchant has explicit high-cost legendary stock and equipment sale
  const hero={classId:'mage',level:42,gold:9999999,inventory:[]},npc={role:'specialMerchant',minLevel:35,maxLevel:42};
  const offer=merchantStock(hero,npc).find(item=>item.rarity==='legendary');assert.ok(offer);assert.equal(buyEquipment(hero,npc,offer.offerId).ok,true);const price=equipmentPrice(hero.inventory[0]);const oldGold=hero.gold;assert.equal(sellItem(hero,0,1).ok,true);assert.equal(hero.inventory.length,0);assert.equal(hero.gold,oldGold+Math.floor(price*.25));assert.equal(sellItem(hero,0,1).ok,false);
 });
+test('failed trade persistence rolls back gold, potions and inventory before any success message',async()=>{
+ const {commitTrade,buyEquipment}=await import('../js/systems/trading.js');
+ const h={gold:2000,classId:'warrior',level:1,potions:{hp:3,mp:3},inventory:[{id:'wolfFang',rarity:'common',quantity:4}]},snapshot=JSON.stringify(h);
+ assert.equal(commitTrade(h,()=>buyPotion(h,'hp'),()=>false).reason,'storage');assert.equal(JSON.stringify(h),snapshot);
+ assert.equal(commitTrade(h,()=>sellMaterial(h,0,4),()=>{throw Error('quota');}).reason,'storage');assert.equal(JSON.stringify(h),snapshot);
+ assert.equal(commitTrade(h,()=>buyEquipment(h,{role:'merchant',minLevel:1,maxLevel:1},'weapon_warrior_0:common'),()=>false).reason,'storage');assert.equal(JSON.stringify(h),snapshot);
+ assert.equal(commitTrade(h,()=>buyPotion(h,'mp'),()=>true).ok,true);assert.equal(h.potions.mp,4);assert.equal(h.gold,1990);
+});
