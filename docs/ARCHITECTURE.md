@@ -28,3 +28,12 @@
 - HUD resource bars vertically stacked: HP red, MP light blue, XP gold. XP bar tracks progress toward next level.
 - Attack button: automatic nearest living enemy targeting within current weapon range; prototype melee range 100. Future class-specific targeting, line-of-sight and projectile handling belong in combat modules.
 - Keep all these rules when expanding or replacing scenes.
+
+## Menu and character flow (0.4)
+- Boot to menu, not directly to world.
+- Main menu -> 3 independent slots -> select one of 6 classes -> Latin/digit name (3-16 chars) -> world.
+- Each slot stores its own name, class, position, progression and inventory.
+- Existing slot continues without resetting progress. Delete requires typed DELETE.
+- Pause button saves and pauses the world; resume continues; exit stops world and returns to slot selection.
+- RU/EN/ES menu translations selected under settings; gameplay text localization remains future work.
+- Existing saves from previous versions remain available in slot 1 through migration.
