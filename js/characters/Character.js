@@ -12,7 +12,7 @@ export function createCharacter(data={}){
   equipment:object(data.equipment)?{...data.equipment}:{},
   inventory:normalizeInventory(Array.isArray(data.inventory)?data.inventory:[]),
   quests:object(data.quests)?{...data.quests}:{},
-  skills:Array.isArray(data.skills)?[...data.skills]:[],learnedSkills:object(data.learnedSkills)?{...data.learnedSkills}:{},
+  skills:Array.isArray(data.skills)?[...data.skills]:[],learnedSkills:object(data.learnedSkills)?{...data.learnedSkills}:{},skillSlots:Array.isArray(data.skillSlots)?data.skillSlots.slice(0,4):[null,null,null,null],
   animation:'idle',facing:2,speed:225*getClass(classId).speed
  };
 }
