@@ -1,3 +1,4 @@
+import { InventoryPanel } from '../ui/InventoryPanel.js';
 import { AttackCycle } from '../combat/attackTiming.js';
 import { respawnAtTown } from './towns.js';
 import { MonsterSystem } from '../monsters/MonsterSystem.js';
@@ -32,7 +33,8 @@ export class WorldScene extends Phaser.Scene{
   this.setupControls();
   this.monsters=new MonsterSystem(this,this.hero,()=>{this.refreshHud();this.save();});
   this.attackCycle=new AttackCycle();
-  this.events.once('shutdown',()=>{this.save();this.controls?.destroy();this.monsters?.destroy();this.scale.off('resize',this.onGameResize,this);});
+  this.inventoryPanel=new InventoryPanel(this);
+  this.events.once('shutdown',()=>{this.save();this.controls?.destroy();this.monsters?.destroy();this.inventoryPanel?.destroy();this.scale.off('resize',this.onGameResize,this);});
   window.addEventListener('pagehide',()=>this.save());
   document.addEventListener('visibilitychange',()=>{if(document.hidden)this.save();});
   this.refreshHud();
@@ -44,6 +46,7 @@ export class WorldScene extends Phaser.Scene{
 
  update(now,delta){
   const dt=Math.min(delta,40)/1000,h=this.hero;if(!h)return;
+  if(this.inventoryPanel?.opened)return;
   const mag=Math.hypot(this.axis.x,this.axis.y),speed=h.speed;
   if(mag>.08){
    let dx=this.axis.x/mag*speed*dt,dy=this.axis.y/mag*speed*dt;
