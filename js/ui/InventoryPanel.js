@@ -32,7 +32,7 @@ export class InventoryPanel{
   box.style.width=width+'px';
   const measured=box.getBoundingClientRect(),height=measured.height;
   const left=rect.right+width+10<=window.innerWidth-8?rect.right+8:rect.left-width-8>=8?rect.left-width-8:Math.max(8,Math.min(rect.left,window.innerWidth-width-8));
-  const top=Math.max(8,Math.min(rect.top,window.innerHeight-height-8));
+  const top=Math.max(8,Math.min(rect.top,Math.max(8,window.innerHeight-height-8)));
   box.style.left=left+'px';box.style.top=top+'px';
  }
  renderDetail(){
