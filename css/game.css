@@ -64,3 +64,6 @@ button{touch-action:manipulation}
 @media(max-height:330px){#minimap{width:96px;height:72px}}
 #minimap{top:60px}#notice{bottom:64px;max-width:38vw;white-space:normal;text-align:center}.quest-tracker{top:150px}
 @media(max-height:330px){#minimap{top:58px}.quest-tracker{top:140px;font-size:11px}}
+
+#notice{bottom:auto;top:12px;max-width:28vw}
+.menu-open .storage-interact{display:none}

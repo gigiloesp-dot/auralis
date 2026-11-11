@@ -13,12 +13,12 @@ export class NpcPanel{
  }
  nearby(){const h=this.scene.hero;return h&&h.hp>0&&(!h.region||h.region==='forest')&&Math.hypot(h.x-935,h.y-1080)<150;}
  update(){
-  const blocked=this.scene.inventoryPanel?.opened||this.scene.characterPanel?.opened||this.scene.skillsPanel?.opened;
+  const blocked=this.scene.storagePanel?.opened||this.scene.inventoryPanel?.opened||this.scene.characterPanel?.opened||this.scene.skillsPanel?.opened;
   this.button.hidden=this.opened||blocked||!this.nearby();
   const p=questProgress(this.scene.hero);this.journal.hidden=blocked||this.opened||!['active','completed'].includes(p.state);
   this.journal.textContent=`${this.text.journal}: ${p.progress}/${p.required}`;
  }
- show(){if(!this.nearby())return;this.scene.controls?.reset?.();this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;this.render();}
+ show(){this.scene.storagePanel?.close();if(!this.nearby())return;this.scene.controls?.reset?.();this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;this.render();}
  close(){this.opened=false;this.root.hidden=true;}
  render(message=''){
   const t=this.text,p=questProgress(this.scene.hero);this.root.replaceChildren();const heading=element('div','','npc-heading');heading.append(element('h2',t.name));

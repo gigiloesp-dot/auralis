@@ -24,7 +24,7 @@ else {
     else if(game.scene.isPaused('world'))game.scene.resume('world');
   });
   document.getElementById('pause-btn').addEventListener('click',()=>{
-    if(game.scene.isActive('world')){game.scene.getScene('world').save();game.scene.getScene('world').controls?.reset();game.scene.pause('world');menu.show('pause');}
+    if(game.scene.isActive('world')){game.scene.getScene('world').save();game.scene.getScene('world').controls?.reset();for(const name of ['inventoryPanel','characterPanel','skillsPanel','npcPanel','storagePanel'])game.scene.getScene('world')[name]?.close();game.scene.pause('world');menu.show('pause');}
   });
   window.Auralis={game,Save,GAME_CONFIG,menu};
 }

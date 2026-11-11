@@ -1,3 +1,5 @@
+import {SharedStorage} from '../systems/storage.js';
+import {StoragePanel} from '../ui/StoragePanel.js';
 import {usePotion} from '../systems/potions.js';
 import {text} from '../i18n/messages.js';
 import {Minimap} from '../ui/Minimap.js';
@@ -10,7 +12,7 @@ import { InventoryPanel } from '../ui/InventoryPanel.js';
 import { AttackCycle } from '../combat/attackTiming.js';
 import { respawnAtTown } from './towns.js';
 import { MonsterSystem } from '../monsters/MonsterSystem.js';
-import { drawTerrain } from './render/Terrain.js';
+import { createTerrain } from './render/Terrain.js';
 import { createLandmarks } from './render/Landmarks.js';
 import { Save } from '../systems/save.js';
 import { HeroRig } from '../characters/HeroRig.js';
@@ -26,12 +28,12 @@ export class WorldScene extends Phaser.Scene{
  preload(){queueAssets(this);}
  create(){
   this.cameras.main.setBackgroundColor('#426b3b');
-  this.ground=this.add.graphics().setDepth(-50);
-  drawTerrain(this.ground,WORLD);
-  this.obstacles=createLandmarks(this);
+  this.ground=createTerrain(this,WORLD);
   this.language=localStorage.getItem('auralis_language')||'ru';
+  this.obstacles=createLandmarks(this);
   this.saveSlot=Save.activeSlot;
   this.playNow=0;this.lastSave=0;this.lastHud=0;this.closed=false;
+  SharedStorage.load();
   const saved=Save.load(this.saveSlot);
   this.hero=createCharacter({...saved,x:clamp(saved?.x??WORLD/2,45,WORLD-45),y:clamp(saved?.y??WORLD/2,45,WORLD-45)});
   this.shadow=this.add.ellipse(0,0,32,13,0x071d13,.4).setDepth(10);
@@ -48,6 +50,7 @@ export class WorldScene extends Phaser.Scene{
   this.characterPanel=new CharacterPanel(this);
   this.skillsPanel=new SkillsPanel(this);
   this.npcPanel=new NpcPanel(this);
+  this.storagePanel=new StoragePanel(this);
   this.bindSkills();
   this.bindPotions();
   this.minimap=new Minimap(this,WORLD);
@@ -58,7 +61,7 @@ export class WorldScene extends Phaser.Scene{
   document.addEventListener('visibilitychange',this.onVisibilityChange);
   this.events.once('shutdown',()=>{
    this.save();this.closed=true;this.controls?.destroy();this.monsters?.destroy();
-   this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.skillsPanel?.destroy();this.npcPanel?.destroy();this.minimap?.destroy();this.potionRoot?.remove();
+   this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.skillsPanel?.destroy();this.npcPanel?.destroy();this.storagePanel?.destroy();this.minimap?.destroy();this.potionRoot?.remove();
    this.skillBindings.forEach(([b,fn])=>b.removeEventListener('click',fn));
    window.removeEventListener('pagehide',this.onPageHide);
    document.removeEventListener('visibilitychange',this.onVisibilityChange);
@@ -74,8 +77,8 @@ export class WorldScene extends Phaser.Scene{
  update(now,delta){
   const dt=Math.min(delta,40)/1000,h=this.hero;if(!h)return;
   if(now-this.lastSave>=GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();}
-  this.npcPanel?.update();
-  if(this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened){this.controls?.reset();return;}
+  this.npcPanel?.update();this.storagePanel?.update();
+  if(this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened){this.controls?.reset();return;}
   this.playNow+=dt*1000;
   const combatNow=this.playNow;
   const mag=Math.hypot(this.axis.x,this.axis.y),speed=h.speed;
@@ -101,7 +104,7 @@ export class WorldScene extends Phaser.Scene{
   this.skillBindings=[];
   document.querySelectorAll('#skills .skill').forEach((b,i)=>{
    const fn=()=>{
-    if(this.closed||this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||!this.sys.isActive())return;
+    if(this.closed||this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened||!this.sys.isActive())return;
     const id=normalizeSkillSlots(this.hero)[i];
     if(id){const result=this.monsters.useSkill(id,this.playNow);if(!result.ok&&['target','mana'].includes(result.reason))this.notify(text(result.reason==='target'?'noTarget':'mana',this.language));this.refreshSkillSlots();this.refreshHud();}
    };
@@ -125,7 +128,7 @@ export class WorldScene extends Phaser.Scene{
   for(const resource of ['hp','mp']){
    const button=document.createElement('button');button.type='button';button.className='potion '+resource;
    button.setAttribute('aria-label',text(resource+'Potion',this.language));
-   button.onclick=()=>{if(this.sys.isActive()&&!this.inventoryPanel?.opened&&!this.characterPanel?.opened&&!this.skillsPanel?.opened&&!this.npcPanel?.opened&&usePotion(this.hero,resource,this.playNow,this.potionState)){this.save();this.refreshHud();this.refreshPotions();}};
+   button.onclick=()=>{if(this.sys.isActive()&&!this.inventoryPanel?.opened&&!this.characterPanel?.opened&&!this.skillsPanel?.opened&&!this.npcPanel?.opened&&!this.storagePanel?.opened&&usePotion(this.hero,resource,this.playNow,this.potionState)){this.save();this.refreshHud();this.refreshPotions();}};
    this.potionButtons[resource]=button;this.potionRoot.append(button);
   }
   document.body.append(this.potionRoot);this.refreshPotions();
