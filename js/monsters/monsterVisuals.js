@@ -17,5 +17,14 @@ export function drawMonster(scene,body,type,boss=false){
  else{
   const ice=type==='iceWolf';add([a.ellipse(0,-13,38,23,ice?0x86a8b7:0x68584b),a.ellipse(17,-20,20,18,ice?0xa2c6d5:0x796758),a.triangle(12,-31,-5,8,0,-9,5,8,0x5c5046),a.triangle(23,-31,-5,8,0,-9,5,8,0x5c5046),a.circle(21,-23,2,ice?0x9cffff:0xf5ce6a)]);
  }
- if(boss)body.setScale?.(1.45);
+ if(boss){
+  // Extra geometry, not just a recolour or scaled ordinary creature. The crest
+  // follows the family silhouette so a wolf, spider and humanoid stay distinct.
+  const top=type==='arcaneWisp'?-61:['bear','forestRaider','skeleton'].includes(type)?-79:['frostGolem','ancientSentinel','forestGuardian'].includes(type)?-116:-55;
+  add([a.rectangle(0,top+9,34,5,0xe8bb60),a.triangle(-12,top,-6,8,0,-8,6,8,0xe8bb60),a.triangle(0,top-4,-7,10,0,-10,7,10,0xffdc86),a.triangle(12,top,-6,8,0,-8,6,8,0xe8bb60),a.circle(0,top+8,4,0x8071be)]);
+  if(type==='ancientSentinel')add([a.rectangle(-33,-55,6,18,0xb6a8e5),a.rectangle(33,-55,6,18,0xb6a8e5)]);
+  if(type==='frostGolem')add([a.triangle(-39,-65,-9,8,0,-14,9,8,0xc0eaff),a.triangle(39,-65,-9,8,0,-14,9,8,0xc0eaff)]);
+  body.setScale?.(1.45);
+ }
+
 }
