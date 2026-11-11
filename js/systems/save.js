@@ -1,3 +1,4 @@
+import {STORAGE_KEY} from './storageKeys.js';
 import {GAME_CONFIG} from '../config/gameConfig.js';
 const PREFIX='auralis_save_v2_slot_',LEGACY='auralis_save_v1',MIGRATED='auralis_save_v1_migrated';
 const obj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
@@ -20,7 +21,8 @@ export const Save={
  load(s=this.activeSlot){try{let raw=localStorage.getItem(this.key(s));if(!raw&&s===1&&!localStorage.getItem(MIGRATED)){const old=localStorage.getItem(LEGACY);if(old){const migrated=this.normalize(JSON.parse(old));if(migrated){if(this.write(migrated,s)){localStorage.setItem(MIGRATED,'1');raw=localStorage.getItem(this.key(s));}}}}if(!raw)return null;try{this.backup(s);}catch{}const data=JSON.parse(raw);return data.version===2?this.normalize(data):null;}catch{return null;}},
  write(data,s=this.activeSlot){try{const d=this.normalize(data);if(!d)return false;this.backup(s);d.updatedAt=Date.now();localStorage.setItem(this.key(s),JSON.stringify(d));return true;}catch{return false;}},
  list(){return Array.from({length:GAME_CONFIG.saveSlots},(_,i)=>{const slot=i+1,d=this.load(slot);return {slot,exists:!!d,level:d?.level??null,classId:d?.classId??null,name:d?.name??null,updatedAt:d?.updatedAt??null};});},
- delete(s){try{const key=this.key(s);this.backup(s);if(s===1)localStorage.setItem(MIGRATED,'1');localStorage.removeItem(key);return true;}catch{return false;}},
+ resolveStorage(s){try{const raw=localStorage.getItem(STORAGE_KEY);if(!raw)return true;let state;try{state=JSON.parse(raw);}catch{return true;}const pending=state?.pending;if(!pending||pending.slot!==s)return true;const applied=typeof pending.transactionId==='string'&&this.load(s)?.storageTransaction===pending.transactionId;if(!applied&&!this.write(pending.hero,s))return false;delete state.pending;localStorage.setItem(STORAGE_KEY,JSON.stringify(state));return true;}catch{return false;}},
+ delete(s){try{const key=this.key(s);if(!this.resolveStorage(s))return false;this.backup(s);if(s===1)localStorage.setItem(MIGRATED,'1');localStorage.removeItem(key);return true;}catch{return false;}},
  export(s=this.activeSlot){const d=this.load(s);return d?JSON.stringify(d,null,2):null;},
- import(json,s=this.activeSlot){try{const d=this.normalize(JSON.parse(json));return d?this.write(d,s):false;}catch{return false;}}
+ import(json,s=this.activeSlot){try{const d=this.normalize(JSON.parse(json));return d&&this.resolveStorage(s)?this.write(d,s):false;}catch{return false;}}
 };

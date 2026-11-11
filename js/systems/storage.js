@@ -1,8 +1,9 @@
+import {STORAGE_KEY} from './storageKeys.js';
+export {STORAGE_KEY} from './storageKeys.js';
 import {Save} from './save.js';
 import {itemDefinition,INVENTORY_CAPACITY} from '../equipment/items.js';
 import {insertStack} from '../equipment/stacking.js';
 export const STORAGE_CAPACITY=100;
-export const STORAGE_KEY='auralis_shared_storage_v1';
 let transactionSequence=0;
 const transactionId=()=>Date.now().toString(36)+'-'+(++transactionSequence).toString(36)+'-'+Math.random().toString(36).slice(2);
 const copy=items=>items.map(item=>({...item}));
