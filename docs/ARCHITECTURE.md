@@ -66,3 +66,11 @@
 - Three unspent attribute points awarded per level-up. Existing characters migrate with unspent points for previous levels, while allocated stats persist.
 - Attribute point allocation immediately saves, updates derived HP/MP, and updates combat damage and protection.
 - Critical hits, double hits and loot chance effects are displayed as future-derived stats; they are not yet active in combat.
+
+## Item catalogue and loot (0.7)
+- All six classes have nine weapon tiers (levels 1,4,8,15,22,27,33,38,42). Armor and jewelry have nine tiers (1,5,9,14,21,28,32,37,42), with shields restricted to warrior/paladin.
+- Stackable materials share one bag slot up to 100 units only when item ID, rarity, level and variant match. Different rarities never merge. Equipment stays individually slotted. Full stacks spill into another free slot.
+- Old save materials are compacted into stacks on character creation/load; saving keeps stack counts.
+- Normal-monster equipment roll: common 15%, uncommon 4%, rare 1%, epic 0.1%; legendary cannot drop from normal monsters.
+- Luck adds a small chance multiplier to loot. Boss/elite loot APIs are prepared, but world bosses and dungeons are not yet wired.
+- Selling remains exclusively NPC-based; there is no sell-from-bag action.
