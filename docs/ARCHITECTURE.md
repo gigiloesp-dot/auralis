@@ -80,3 +80,10 @@
 - Item detail opens beside the clicked slot, clamped to the screen; it does not require scrolling to the top.
 - Wolf fang icon is ivory curved tooth; wolf pelt is a brown fur hide, visually distinct from equipment.
 - Item interactions and saves are preserved; no remote selling.
+
+## UI reference direction (0.8)
+- Bag item detail compares with equipped item of the same slot; show explicit EQUIPPED status and green/red numerical differences. Material items have no equipment comparison.
+- Equipment tab: item icons left, combat stats right; HP and MP are only in the main HUD, not repeated in the equipment summary.
+- Class selection and save slots have class-specific temporary silhouettes; future real 3D/2.5D character previews must reflect class and equipped items.
+- Future skills UI: tabbed skill tree with profession tiers, unlock requirements, skill icons and point allocation. Do not imply skill buttons are implemented until active skills work.
+- Future unified RPG shortcut toolbar: character, bag, skills, settings, with icon-led controls.
