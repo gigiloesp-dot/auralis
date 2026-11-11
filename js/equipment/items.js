@@ -1,3 +1,4 @@
+import {localizedItemName} from '../i18n/entityNames.js';
 import {GENERATED_ITEMS} from './catalog.js';
 import {insertStack,compactStacks,itemCount} from './stacking.js';
 import {canEquip,EQUIPMENT_SLOTS} from './armor.js';
@@ -14,7 +15,7 @@ export const ITEM_DEFS=Object.freeze({...GENERATED_ITEMS,
  wolfPelt:{name:'Волчья шкура',slot:null,level:1}
 });
 export const itemDefinition=item=>ITEM_DEFS[item?.id]||null;
-export const itemName=item=>itemDefinition(item)?.name||item?.id||'Предмет';
+export const itemName=(item,language='ru')=>localizedItemName(item,itemDefinition(item),language);
 export function addItem(hero,item){if(!hero||!Array.isArray(hero.inventory)||!itemDefinition(item))return false;return insertStack(hero.inventory,{...item,rarity:item.rarity||'common'},itemDefinition(item),INVENTORY_CAPACITY).remainder===0;}
 export function normalizeInventory(items){return compactStacks(items,itemDefinition,INVENTORY_CAPACITY);}
 export {itemCount};
