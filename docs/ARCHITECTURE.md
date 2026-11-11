@@ -74,3 +74,9 @@
 - Normal-monster equipment roll: common 15%, uncommon 4%, rare 1%, epic 0.1%; legendary cannot drop from normal monsters.
 - Luck adds a small chance multiplier to loot. Boss/elite loot APIs are prepared, but world bosses and dungeons are not yet wired.
 - Selling remains exclusively NPC-based; there is no sell-from-bag action.
+
+## Inventory layout (0.7.1)
+- Full viewport inventory, two tabs: I equipment and character summary, II bag with 60 cells.
+- Item detail opens beside the clicked slot, clamped to the screen; it does not require scrolling to the top.
+- Wolf fang icon is ivory curved tooth; wolf pelt is a brown fur hide, visually distinct from equipment.
+- Item interactions and saves are preserved; no remote selling.
