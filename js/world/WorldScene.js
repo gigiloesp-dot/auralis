@@ -1,3 +1,4 @@
+import { respawnAtTown } from './towns.js';
 import { MonsterSystem } from '../monsters/MonsterSystem.js';
 import { drawTerrain } from './render/Terrain.js';
 import { createLandmarks } from './render/Landmarks.js';
@@ -57,7 +58,7 @@ export class WorldScene extends Phaser.Scene{
   if(held&&!this.lastAttackHeld)this.monsters.attack(now,this.facing);
   this.lastAttackHeld=held;
   this.monsters.update(now,dt);
-  if(h.hp<=0){h.hp=Math.max(40,Math.round(h.maxHp*.4));h.x=WORLD/2;h.y=WORLD/2;this.save();this.refreshHud();}
+  if(h.hp<=0){respawnAtTown(h);this.save();this.refreshHud();}
   if(now-this.lastSave>GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();this.refreshHud();}
  }
  save(){if(this.hero)Save.write(this.hero);}
