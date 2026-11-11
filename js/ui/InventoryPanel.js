@@ -3,46 +3,91 @@ import {EQUIPMENT_SLOTS} from '../equipment/armor.js';
 import {INVENTORY_CAPACITY,itemName,itemDefinition,equipItem,unequipItem,equipmentStats,itemCount} from '../equipment/items.js';
 const SLOT_NAMES={weapon:'Оружие',helmet:'Шлем',chest:'Броня',gloves:'Перчатки',pants:'Штаны',boots:'Обувь',ring:'Кольцо',amulet:'Амулет',shield:'Щит'};
 const RARITY_NAMES={common:'Обычный',uncommon:'Необычный',rare:'Редкий',epic:'Эпический',legendary:'Легендарный'};
-const RARITY_COLORS={common:'#e4e4db',uncommon:'#6ed68b',rare:'#75b8ff',epic:'#d89aff',legendary:'#ffce62'};
+const RARITY_COLORS={common:'#ded9c8',uncommon:'#6ed68b',rare:'#75b8ff',epic:'#d89aff',legendary:'#ffce62'};
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
-const art=(item)=>{const node=el('span',undefined,'item-art-wrap');node.innerHTML=itemIcon(item,itemDefinition(item));return node;};
-const btn=(text,callback,cls)=>{const b=el('button',text,cls);b.type='button';b.onclick=callback;return b;};
+const btn=(text,fn,cls)=>{const b=el('button',text,cls);b.type='button';b.onclick=fn;return b;};
+const art=item=>{const node=el('span',undefined,'item-art-wrap');node.innerHTML=itemIcon(item,itemDefinition(item));return node;};
 export class InventoryPanel{
- constructor(scene){this.scene=scene;this.root=document.getElementById('inventory-panel');this.button=document.getElementById('inventory-btn');this.opened=false;this.selected=null;this.onButton=()=>this.toggle();this.button?.addEventListener('click',this.onButton);this.onEscape=e=>{if(e.key==='Escape'&&this.opened)this.close();};document.addEventListener('keydown',this.onEscape);}
+ constructor(scene){
+  this.scene=scene;this.root=document.getElementById('inventory-panel');this.button=document.getElementById('inventory-btn');
+  this.opened=false;this.page='equipment';this.selected=null;this.anchor=null;
+  this.onButton=()=>this.toggle();this.button?.addEventListener('click',this.onButton);
+  this.onEscape=e=>{if(e.key==='Escape'&&this.opened)this.close();};
+  this.onResize=()=>this.positionDetail();
+  document.addEventListener('keydown',this.onEscape);window.addEventListener('resize',this.onResize);
+ }
  toggle(){this.opened?this.close():this.show();}
- show(){this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.selected=null;this.render();}
- close(){this.opened=false;this.selected=null;this.root.hidden=true;}
- select(source,key){this.selected={source,key};this.render();}
+ show(){this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.page='equipment';this.selected=null;this.render();}
+ close(){this.opened=false;this.selected=null;this.anchor=null;this.root.hidden=true;}
+ changePage(page){if(this.page===page)return;this.page=page;this.selected=null;this.anchor=null;this.render();}
+ select(source,key,button){
+  this.selected={source,key};this.anchor=button;this.renderDetail();
+ }
  item(){const h=this.scene.hero;return this.selected?.source==='bag'?h.inventory[this.selected.key]:this.selected?.source==='equip'?h.equipment[this.selected.key]:null;}
- detail(container){const item=this.item();if(!item)return;const def=itemDefinition(item);if(!def)return;const box=el('section',undefined,'item-detail');container.append(box);
- box.append(art(item));box.append(el('h3',itemName(item)));const rarity=el('p',RARITY_NAMES[item.rarity]||RARITY_NAMES.common);rarity.style.color=RARITY_COLORS[item.rarity]||'#fff';box.append(rarity);
- const props=[['Тип',def.slot?SLOT_NAMES[def.slot]:'Материал'],['Требуемый уровень',String(def.level||1)]];if(!def.slot)props.push(['Количество',itemCount(item)+' / 100']);
- if(def.attack)props.push(['Атака','+'+def.attack]);if(def.defense)props.push(['Защита','+'+def.defense]);
- if(def.allowedClasses)props.push(['Классы',def.allowedClasses.join(', ')]);
- for(const [k,v] of props)box.append(el('p',k+': '+v));
- const actions=el('div',undefined,'item-actions');box.append(actions);
- const h=this.scene.hero;
- if(this.selected.source==='bag'&&def.slot){actions.append(btn('Надеть',()=>{const result=equipItem(h,this.selected.key);if(!result.ok){this.notice({level:'Недостаточный уровень',class:'Не подходит классу',notEquipment:'Нельзя надеть'}[result.reason]||'Недоступно');return;}this.selected=null;this.scene.save();this.render();},'primary'));}
- if(this.selected.source==='equip'){actions.append(btn('Снять',()=>{if(!unequipItem(h,this.selected.key)){this.notice('В сумке нет места');return;}this.selected=null;this.scene.save();this.render();},'primary'));}
- if(this.selected.source==='bag'){actions.append(btn('Выкинуть',()=>this.confirmDiscard(),'danger'));}
- actions.append(btn('Закрыть',()=>{this.selected=null;this.render();}));
+ positionDetail(){
+  const box=this.root.querySelector('.item-detail');if(!box||!this.anchor?.isConnected)return;
+  const rect=this.anchor.getBoundingClientRect();
+  const width=Math.min(300,Math.max(220,window.innerWidth-20));
+  box.style.width=width+'px';
+  const measured=box.getBoundingClientRect(),height=measured.height;
+  const left=rect.right+width+10<=window.innerWidth-8?rect.right+8:rect.left-width-8>=8?rect.left-width-8:Math.max(8,Math.min(rect.left,window.innerWidth-width-8));
+  const top=Math.max(8,Math.min(rect.top,window.innerHeight-height-8));
+  box.style.left=left+'px';box.style.top=top+'px';
  }
- confirmDiscard(){const item=this.item();if(!item)return;const index=this.selected.key;const name=itemName(item);const box=this.root.querySelector('.item-detail');if(!box)return;box.replaceChildren(el('h3','Выкинуть «'+name+'»?'),el('p','Предмет исчезнет без возможности вернуть его.'));
- const actions=el('div',undefined,'item-actions');box.append(actions);
- actions.append(btn('Да, выкинуть',()=>{if(this.scene.hero.inventory[index]!==item){this.selected=null;this.render();return;}this.scene.hero.inventory.splice(index,1);this.selected=null;this.scene.save();this.render();},'danger'));
- actions.append(btn('Отмена',()=>this.render()));}
+ renderDetail(){
+  this.root.querySelector('.item-detail')?.remove();
+  const item=this.item();if(!item||!this.anchor?.isConnected)return;
+  const def=itemDefinition(item);if(!def)return;
+  const box=el('section',undefined,'item-detail');box.setAttribute('role','dialog');box.setAttribute('aria-label','Сведения о предмете');this.root.append(box);
+  const head=el('div',undefined,'detail-heading');head.append(art(item),el('h3',itemName(item)));box.append(head);
+  const rarity=el('p',RARITY_NAMES[item.rarity]||RARITY_NAMES.common);rarity.style.color=RARITY_COLORS[item.rarity]||'#fff';box.append(rarity);
+  const props=[['Тип',def.slot?SLOT_NAMES[def.slot]:'Материал'],['Требуемый уровень',String(def.level||1)]];
+  if(!def.slot)props.push(['Количество',itemCount(item)+' / 100']);
+  const multiplier={common:1,uncommon:1.12,rare:1.28,epic:1.5,legendary:1.85}[item.rarity]||1;
+  if(def.attack)props.push(['Атака','+'+Math.round(def.attack*multiplier)]);
+  if(def.defense)props.push(['Защита','+'+Math.round(def.defense*multiplier)]);
+  if(def.allowedClasses)props.push(['Классы',def.allowedClasses.join(', ')]);
+  for(const [k,v] of props)box.append(el('p',k+': '+v));
+  const actions=el('div',undefined,'item-actions');box.append(actions);
+  const h=this.scene.hero;
+  if(this.selected.source==='bag'&&def.slot)actions.append(btn('Надеть',()=>{const result=equipItem(h,this.selected.key);if(!result.ok){this.notice({level:'Недостаточный уровень',class:'Не подходит классу'}[result.reason]||'Нельзя надеть');return;}this.selected=null;this.anchor=null;this.scene.save();this.render();},'primary'));
+  if(this.selected.source==='equip')actions.append(btn('Снять',()=>{if(!unequipItem(h,this.selected.key)){this.notice('Сумка заполнена');return;}this.selected=null;this.anchor=null;this.scene.save();this.render();},'primary'));
+  if(this.selected.source==='bag')actions.append(btn('Выкинуть',()=>this.confirmDiscard(),'danger'));
+  actions.append(btn('Закрыть',()=>{this.selected=null;this.anchor=null;box.remove();}));
+  this.positionDetail();
+ }
+ confirmDiscard(){
+  const item=this.item(),index=this.selected?.key;if(!item)return;
+  const box=this.root.querySelector('.item-detail');if(!box)return;
+  box.replaceChildren(el('h3','Выкинуть «'+itemName(item)+'»?'),el('p','Предмет исчезнет без возможности вернуть его.'));
+  const actions=el('div',undefined,'item-actions');box.append(actions);
+  actions.append(btn('Да, выкинуть',()=>{if(this.scene.hero.inventory[index]!==item){this.selected=null;this.render();return;}this.scene.hero.inventory.splice(index,1);this.selected=null;this.anchor=null;this.scene.save();this.render();},'danger'));
+  actions.append(btn('Отмена',()=>this.renderDetail()));
+  this.positionDetail();
+ }
  notice(message){const e=this.root.querySelector('.inventory-message');if(e)e.textContent=message;}
- render(){const h=this.scene.hero,r=this.root;r.replaceChildren();
- const heading=el('div',undefined,'inventory-heading');heading.append(el('span','Снаряжение и инвентарь'),btn('✕',()=>this.close()));r.append(heading);
- const stats=equipmentStats(h);r.append(el('p',(h.name||'Герой')+' · Ур. '+h.level+' · Атака +'+stats.attack+' · Защита +'+stats.defense));
- const layout=el('div',undefined,'inventory-layout'),main=el('div',undefined,'inventory-main');layout.append(main);r.append(layout);
- const grid=el('div',undefined,'equipment-grid');main.append(grid);
- for(const slot of EQUIPMENT_SLOTS){const item=h.equipment[slot];const b=btn('',()=>{if(item)this.select('equip',slot);},'equipment-cell');b.setAttribute('aria-label',SLOT_NAMES[slot]+': '+(item?itemName(item):'пусто'));b.append(item?art(item):el('span','+','empty-slot-icon'));b.append(el('small',SLOT_NAMES[slot]));if(item)b.style.borderColor=RARITY_COLORS[item.rarity]||'#fff';grid.append(b);}
- main.append(el('h3','Сумка '+h.inventory.length+'/'+INVENTORY_CAPACITY));
- const items=el('div',undefined,'inventory-grid');main.append(items);
- for(let i=0;i<INVENTORY_CAPACITY;i++){const item=h.inventory[i];const b=btn('',()=>{if(item)this.select('bag',i);},'inventory-cell'+(item?' occupied':''));b.setAttribute('aria-label',item?itemName(item):'Пустая ячейка '+(i+1));if(item){b.append(art(item));if(!itemDefinition(item)?.slot&&itemCount(item)>1)b.append(el('span',String(itemCount(item)),'stack-count'));b.title=itemName(item)+' ×'+itemCount(item);b.style.borderColor=RARITY_COLORS[item.rarity]||'#fff';}else b.append(el('span',undefined,'empty-cell'));items.append(b);}
- if(this.selected&&this.item())this.detail(layout);
- r.append(el('p',undefined,'inventory-message'));
+ render(){
+  const h=this.scene.hero,r=this.root;r.replaceChildren();
+  const header=el('header',undefined,'inventory-heading');header.append(el('strong','AURALIS · Персонаж и сумка'),btn('✕',()=>this.close()));r.append(header);
+  const tabs=el('nav',undefined,'inventory-tabs');
+  for(const [page,label] of [['equipment','I · Снаряжение и характеристики'],['bag','II · Рюкзак']]){
+   const tab=btn(label,()=>this.changePage(page),this.page===page?'active':'');tab.setAttribute('aria-pressed',String(this.page===page));tabs.append(tab);
+  }
+  r.append(tabs);
+  const content=el('main',undefined,'inventory-page');r.append(content);
+  if(this.page==='equipment'){
+   const stats=equipmentStats(h);content.append(el('h2',(h.name||'Герой')+' · Уровень '+h.level));
+   const summary=el('div',undefined,'equipment-summary');
+   for(const [k,v] of [['Атака от вещей','+'+stats.attack],['Защита от вещей','+'+stats.defense],['Здоровье',Math.floor(h.hp)+' / '+h.maxHp],['Мана',Math.floor(h.mp)+' / '+h.maxMp]])summary.append(el('span',k+': '+v));
+   content.append(summary);
+   const grid=el('div',undefined,'equipment-grid');content.append(grid);
+   for(const slot of EQUIPMENT_SLOTS){const item=h.equipment[slot];const b=btn('',()=>{if(item)this.select('equip',slot,b);},'equipment-cell');b.setAttribute('aria-label',SLOT_NAMES[slot]+': '+(item?itemName(item):'пусто'));b.append(item?art(item):el('span','+','empty-slot-icon'));b.append(el('small',SLOT_NAMES[slot]));if(item)b.style.borderColor=RARITY_COLORS[item.rarity]||'#fff';grid.append(b);}
+  }else{
+   content.append(el('h2','Рюкзак · '+h.inventory.length+' / '+INVENTORY_CAPACITY+' ячеек'));
+   const grid=el('div',undefined,'inventory-grid');content.append(grid);
+   for(let i=0;i<INVENTORY_CAPACITY;i++){const item=h.inventory[i];const b=btn('',()=>{if(item)this.select('bag',i,b);},'inventory-cell'+(item?' occupied':''));b.setAttribute('aria-label',item?itemName(item):'Пустая ячейка '+(i+1));if(item){b.append(art(item));if(!itemDefinition(item)?.slot&&itemCount(item)>1)b.append(el('span',String(itemCount(item)),'stack-count'));b.title=itemName(item);b.style.borderColor=RARITY_COLORS[item.rarity]||'#fff';}else b.append(el('span',undefined,'empty-cell'));grid.append(b);}
+  }
+  r.append(el('p',undefined,'inventory-message'));
  }
- destroy(){this.button?.removeEventListener('click',this.onButton);document.removeEventListener('keydown',this.onEscape);this.close();}
+ destroy(){this.button?.removeEventListener('click',this.onButton);document.removeEventListener('keydown',this.onEscape);window.removeEventListener('resize',this.onResize);this.close();}
 }
