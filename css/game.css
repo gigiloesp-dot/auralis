@@ -143,3 +143,11 @@
 
 /* HUD v0.10: lower skill 1 by exactly 5px; leave all other controls unchanged. */
 #skills .skill:nth-child(1){transform:translate(5px,-2px)}
+
+/* Resource bars: HP red, MP blue, XP gold. */
+#hud .resource-bar{width:160px;height:10px;border:1px solid #e8e1c480;border-radius:8px;overflow:hidden;margin-top:4px;background:#17221eaa}
+#hud .resource-bar span{display:block;height:100%;width:100%;transition:width .15s linear}
+#hpbar{background:linear-gradient(90deg,#a72627,#ed6a48)}
+#mpbar{background:linear-gradient(90deg,#1977c8,#5cd4f6)}
+#xpbar{background:linear-gradient(90deg,#b47c19,#ffda61)}
+@media(max-height:450px) and (orientation:landscape){#hud .resource-bar{width:135px;height:8px;margin-top:3px}}
