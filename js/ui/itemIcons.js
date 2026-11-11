@@ -9,8 +9,9 @@ const shapes={
  ring:'<circle cx="24" cy="27" r="13" fill="none" stroke="S" stroke-width="7"/><path d="M24 5l10 10-10 9-10-9z" fill="F" stroke="S" stroke-width="2"/>',
  amulet:'<path d="M10 6q14 27 28 0" fill="none" stroke="S" stroke-width="3"/><path d="M24 18l12 11-12 15-12-15z" fill="F" stroke="S" stroke-width="2"/>',
  shield:'<path d="M24 4L42 12v14q-2 13-18 19Q8 39 6 26V12z" fill="F" stroke="S" stroke-width="2"/><path d="M24 10v27M12 24h24" stroke="S" stroke-width="2"/>',
- wolfFang:'<path d="M13 6q14 10 23 0-2 23-18 36 3-20-5-36z" fill="F" stroke="S" stroke-width="2"/>',
- wolfPelt:'<path d="M10 5l10 8 9-7 10 4-3 12 8 15-13-2-8 9-8-9-12 2 8-16z" fill="F" stroke="S" stroke-width="2"/>'
+ wolfFang:'<path d="M13 5Q20 10 35 6Q34 21 24 40Q19 47 17 42Q19 27 13 5Z" fill="#f6e9c9" stroke="#6c5942" stroke-width="2"/><path d="M14 7Q21 14 19 29" fill="none" stroke="#fffaf0" stroke-width="2"/><path d="M26 13Q26 26 20 39" fill="none" stroke="#b4a88c" stroke-width="1.5"/>',
+ wolfPelt:'<path d="M7 4L15 10L24 7L33 10L41 4L39 18L45 35L35 32L31 44L24 38L17 44L13 32L3 35L9 18Z" fill="#8b6a4c" stroke="#392c24" stroke-width="2"/><path d="M12 15L17 21L24 16L31 21L36 15L34 29L28 26L24 34L20 26L14 29Z" fill="#c4a27a" stroke="#5d4736" stroke-width="1.5"/><path d="M7 5L14 12M41 5L34 12M13 33L17 39M35 33L31 39" stroke="#dbc09b" stroke-width="2"/>'
+
 };
 export function itemIcon(item,def){
  const kind=def?.slot||item?.id||'wolfFang';
@@ -21,5 +22,5 @@ export function itemIcon(item,def){
  const fill=colors[tier],stroke=tier>=3?'#f8e3a5':'#332b25';
  const rarity={common:'#7e786d',uncommon:'#4ebf6b',rare:'#448fdd',epic:'#ae63e4',legendary:'#e6b943'}[item?.rarity]||'#7e786d';
  const marks=tier?'<path d="M16 46h'+(tier*4+8)+'" stroke="'+rarity+'" stroke-width="2"/>':'';
- return '<svg class="item-art" viewBox="0 0 48 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">'+shape.replaceAll('F',fill).replaceAll('S',stroke)+marks+'</svg>';
+ return '<svg class="item-art" viewBox="0 0 48 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">'+shape.replaceAll('fill="F"','fill="'+fill+'"').replaceAll('stroke="S"','stroke="'+stroke+'"')+marks+'</svg>';
 }
