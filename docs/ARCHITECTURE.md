@@ -37,3 +37,11 @@
 - Pause button saves and pauses the world; resume continues; exit stops world and returns to slot selection.
 - RU/EN/ES menu translations selected under settings; gameplay text localization remains future work.
 - Existing saves from previous versions remain available in slot 1 through migration.
+
+## Sword basic attacks (0.4.1)
+- Holding the attack button repeats attacks automatically; tapping starts one complete attack.
+- Starting warrior base interval: 1250 ms, gradually reduced by level, agility and later equipment bonuses; minimum 480 ms.
+- Four distinct swings rotate in sequence: right slash, left slash, overhead, diagonal.
+- Wind-up, impact and recovery belong to one shared AttackCycle. Damage is applied only on the designated impact frame, once per swing.
+- MonsterSystem does not maintain a second independent attack cooldown. Target selection remains automatic within weapon range.
+- Animations are temporary rig poses; final sprites will need visual polish without changing combat timing.
