@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {getSkills,learnSkill,skillRank} from '../js/skills/skillData.js';
+test('all classes have five distinct skills',()=>{for(const id of ['warrior','archer','mage','paladin','assassin','cannoneer']){const skills=getSkills(id);assert.equal(skills.length,5);assert.equal(new Set(skills.map(s=>s.id)).size,5);}});
+test('skill requires level and points',()=>{const h={classId:'warrior',level:1,skillPoints:2};assert.equal(learnSkill(h,'warrior_1'),false);assert.equal(learnSkill(h,'warrior_0'),true);assert.equal(skillRank(h,'warrior_0'),1);assert.equal(h.skillPoints,1);});
+test('skills cap at rank five',()=>{const h={classId:'mage',level:42,skillPoints:10};for(let i=0;i<5;i++)assert.equal(learnSkill(h,'mage_0'),true);assert.equal(learnSkill(h,'mage_0'),false);});
