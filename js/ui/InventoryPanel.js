@@ -1,3 +1,4 @@
+import {derivedAttributes} from '../systems/attributes.js';
 import {itemIcon} from './itemIcons.js';
 import {EQUIPMENT_SLOTS} from '../equipment/armor.js';
 import {INVENTORY_CAPACITY,itemName,itemDefinition,equipItem,unequipItem,equipmentStats,itemCount} from '../equipment/items.js';
@@ -39,6 +40,7 @@ export class InventoryPanel{
   const item=this.item();if(!item||!this.anchor?.isConnected)return;
   const def=itemDefinition(item);if(!def)return;
   const box=el('section',undefined,'item-detail');box.setAttribute('role','dialog');box.setAttribute('aria-label','Сведения о предмете');this.root.append(box);
+  box.append(el('div',this.selected.source==='equip'?'ЭКИПИРОВАНО':'В РЮКЗАКЕ','detail-status'));
   const head=el('div',undefined,'detail-heading');head.append(art(item),el('h3',itemName(item)));box.append(head);
   const rarity=el('p',RARITY_NAMES[item.rarity]||RARITY_NAMES.common);rarity.style.color=RARITY_COLORS[item.rarity]||'#fff';box.append(rarity);
   const props=[['Тип',def.slot?SLOT_NAMES[def.slot]:'Материал'],['Требуемый уровень',String(def.level||1)]];
@@ -48,6 +50,7 @@ export class InventoryPanel{
   if(def.defense)props.push(['Защита','+'+Math.round(def.defense*multiplier)]);
   if(def.allowedClasses)props.push(['Классы',def.allowedClasses.join(', ')]);
   for(const [k,v] of props)box.append(el('p',k+': '+v));
+  if(this.selected.source==='bag'&&def.slot){const equipped=this.scene.hero.equipment?.[def.slot];const comparison=el('section',undefined,'item-comparison');comparison.append(el('h4','Сравнение · '+SLOT_NAMES[def.slot]));if(equipped){comparison.append(el('div','ЭКИПИРОВАНО','detail-status'));const row=el('div',undefined,'detail-heading');row.append(art(equipped),el('strong',itemName(equipped)));comparison.append(row);const old=itemDefinition(equipped),oldMult={common:1,uncommon:1.12,rare:1.28,epic:1.5,legendary:1.85}[equipped.rarity]||1;for(const [label,key] of [['Атака','attack'],['Защита','defense']]){const oldVal=Math.round((old?.[key]||0)*oldMult),newVal=Math.round((def[key]||0)*multiplier);if(oldVal||newVal){const diff=newVal-oldVal;const line=el('p',label+': '+oldVal+' → '+newVal+' ('+(diff>0?'+':'')+diff+')');line.className=diff>0?'compare-better':diff<0?'compare-worse':'compare-equal';comparison.append(line);}}}else comparison.append(el('p','Ничего не экипировано в этот слот'));box.append(comparison);}
   const actions=el('div',undefined,'item-actions');box.append(actions);
   const h=this.scene.hero;
   if(this.selected.source==='bag'&&def.slot)actions.append(btn('Надеть',()=>{const result=equipItem(h,this.selected.key);if(!result.ok){this.notice({level:'Недостаточный уровень',class:'Не подходит классу'}[result.reason]||'Нельзя надеть');return;}this.selected=null;this.anchor=null;this.scene.save();this.render();},'primary'));
@@ -76,12 +79,12 @@ export class InventoryPanel{
   r.append(tabs);
   const content=el('main',undefined,'inventory-page');r.append(content);
   if(this.page==='equipment'){
-   const stats=equipmentStats(h);content.append(el('h2',(h.name||'Герой')+' · Уровень '+h.level));
-   const summary=el('div',undefined,'equipment-summary');
-   for(const [k,v] of [['Атака от вещей','+'+stats.attack],['Защита от вещей','+'+stats.defense],['Здоровье',Math.floor(h.hp)+' / '+h.maxHp],['Мана',Math.floor(h.mp)+' / '+h.maxMp]])summary.append(el('span',k+': '+v));
-   content.append(summary);
-   const grid=el('div',undefined,'equipment-grid');content.append(grid);
+   const stats=equipmentStats(h),derived=derivedAttributes(h);content.append(el('h2',(h.name||'Герой')+' · Уровень '+h.level));
+   const columns=el('div',undefined,'equipment-layout');content.append(columns);
+   const grid=el('div',undefined,'equipment-grid');columns.append(grid);
    for(const slot of EQUIPMENT_SLOTS){const item=h.equipment[slot];const b=btn('',()=>{if(item)this.select('equip',slot,b);},'equipment-cell');b.setAttribute('aria-label',SLOT_NAMES[slot]+': '+(item?itemName(item):'пусто'));b.append(item?art(item):el('span','+','empty-slot-icon'));b.append(el('small',SLOT_NAMES[slot]));if(item)b.style.borderColor=RARITY_COLORS[item.rarity]||'#fff';grid.append(b);}
+   const summary=el('aside',undefined,'equipment-summary');summary.append(el('h3','Характеристики персонажа'));
+   for(const [k,v] of [['Физическая атака',derived.physicalAttack+stats.attack],['Магическая атака',derived.magicAttack+stats.attack],['Защита',derived.defense+stats.defense],['Шанс критического удара',derived.criticalChance+'%'],['Двойной удар',derived.doubleHitChance+'%'],['Скорость атаки','+'+Math.round(derived.attackSpeedBonus*100)+'%'],['Бонус добычи',derived.lootBonus+'%']]){const row=el('div',undefined,'stat-line');row.append(el('span',k),el('strong',String(v)));summary.append(row);}columns.append(summary);
   }else{
    content.append(el('h2','Рюкзак · '+h.inventory.length+' / '+INVENTORY_CAPACITY+' ячеек'));
    const grid=el('div',undefined,'inventory-grid');content.append(grid);
