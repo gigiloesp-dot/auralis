@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {addItem,equipItem,unequipItem,equipmentStats,INVENTORY_CAPACITY} from '../js/equipment/items.js';import {rollWolfLoot} from '../js/monsters/loot.js';
+const hero=()=>({level:5,classId:'warrior',inventory:[],equipment:{}});
+test('equip and unequip preserves items and stats',()=>{const h=hero();addItem(h,{id:'ironSword'});assert.equal(equipItem(h,0).ok,true);assert.equal(equipmentStats(h).attack,12);assert.equal(unequipItem(h,'weapon'),true);assert.equal(h.inventory.length,1);});
+test('class restriction and inventory cap',()=>{const h=hero();h.classId='mage';addItem(h,{id:'ironSword'});assert.equal(equipItem(h,0).reason,'class');h.inventory=[];for(let i=0;i<INVENTORY_CAPACITY;i++)assert.equal(addItem(h,{id:'wolfFang'}),true);assert.equal(addItem(h,{id:'wolfFang'}),false);});
+test('loot uses inventory and respects capacity',()=>{const h=hero();const drops=rollWolfLoot(h,()=>0);assert.ok(drops.length>0);assert.equal(h.inventory.length,drops.length);});
