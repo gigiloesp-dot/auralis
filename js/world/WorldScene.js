@@ -16,7 +16,7 @@ export class WorldScene extends Phaser.Scene{
   this.drawGround();
   this.addLandmarks();
   const saved=Save.load();
-  this.hero=createCharacter({classId:saved?.classId??'warrior',x:clamp(saved?.x??WORLD/2,45,WORLD-45),y:clamp(saved?.y??WORLD/2,45,WORLD-45),hp:saved?.hp??100,level:saved?.level??1});
+  this.hero=createCharacter({...saved,x:clamp(saved?.x??WORLD/2,45,WORLD-45),y:clamp(saved?.y??WORLD/2,45,WORLD-45)});
   this.shadow=this.add.ellipse(0,0,32,13,0x071d13,.4).setDepth(10);
   this.body=this.add.container(0,0).setDepth(12);
   this.drawHero();
