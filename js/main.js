@@ -17,10 +17,10 @@ else {
   window.addEventListener('orientationchange',()=>{requestAnimationFrame(fit);setTimeout(fit,250);setTimeout(fit,700);});
   game.scene.add('world',WorldScene,false);
   const menu=new Menu(()=>{
-    if(game.scene.isActive('world'))game.scene.stop('world');
+    if(game.scene.isActive('world')||game.scene.isPaused('world'))game.scene.stop('world');
     game.scene.start('world');
   },(exit)=>{
-    if(exit){if(game.scene.isActive('world')){game.scene.getScene('world').save();game.scene.stop('world');}}
+    if(exit){if(game.scene.isActive('world')||game.scene.isPaused('world')){game.scene.getScene('world').save();game.scene.stop('world');}}
     else if(game.scene.isPaused('world'))game.scene.resume('world');
   });
   document.getElementById('pause-btn').addEventListener('click',()=>{
