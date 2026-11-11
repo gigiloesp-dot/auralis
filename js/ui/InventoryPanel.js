@@ -18,7 +18,7 @@ export class InventoryPanel{
   document.addEventListener('keydown',this.onEscape);window.addEventListener('resize',this.onResize);
  }
  toggle(){this.opened?this.close():this.show();}
- show(){this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.page='equipment';this.selected=null;this.render();}
+ show(){this.scene.skillsPanel?.close();this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.page='equipment';this.selected=null;this.render();}
  close(){this.opened=false;this.selected=null;this.anchor=null;this.root.hidden=true;}
  changePage(page){if(this.page===page)return;this.page=page;this.selected=null;this.anchor=null;this.render();}
  select(source,key,button){
