@@ -57,7 +57,7 @@ export class HeroRig{
   this.rightArm.rotation=pose.rightArmSwing-.12;
   const travelSign=Math.cos(angle)<0?-1:1;
   this.leftForearm.rotation=-.15-Math.max(0,s)*.24*run;
-  this.rightArm.rotation=-right*(.65+.12*sideRun)*((1-sideRun)+travelSign*sideRun)-.12;
+  this.rightArm.rotation=pose.rightArmSwing-.12;
   this.rightForearm.rotation=-.25-Math.max(0,-s)*.24*run;
   if(attacking&&!this.wasAttacking){this.attackPhase=.001;}
   this.wasAttacking=attacking;
