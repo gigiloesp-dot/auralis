@@ -1,3 +1,4 @@
+import {normalizeInventory} from '../equipment/items.js';
 import {maxResources} from '../systems/attributes.js';
 import {getClass} from './classes.js';
 const DEFAULT_STATS=Object.freeze({strength:5,endurance:5,agility:5,luck:5,intelligence:5});
@@ -9,7 +10,7 @@ export function createCharacter(data={}){
   ...maxResources({level,stats:data.stats}),
   stats:{...DEFAULT_STATS,...(object(data.stats)?data.stats:{})},
   equipment:object(data.equipment)?{...data.equipment}:{},
-  inventory:Array.isArray(data.inventory)?[...data.inventory]:[],
+  inventory:normalizeInventory(Array.isArray(data.inventory)?data.inventory:[]),
   quests:object(data.quests)?{...data.quests}:{},
   skills:Array.isArray(data.skills)?[...data.skills]:[],
   animation:'idle',facing:2,speed:225*getClass(classId).speed
