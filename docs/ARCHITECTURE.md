@@ -59,3 +59,10 @@
 - Tapping a bag item opens a detail panel showing rarity, type, required level, attack/defense, class restrictions.
 - Detail actions: equip (equipment only), discard with explicit confirmation, close. Equipped items offer unequip.
 - No selling items from inventory. Selling is exclusively via future merchant NPC interactions.
+
+## Character attributes (0.6)
+- Character status panel is accessible from the top-right crest button; opening it suspends world simulation and closes inventory.
+- Five stats: Strength (physical attack), Endurance (HP/defense), Agility (attack speed/crit), Luck (loot/double hit), Intelligence (MP/magic attack).
+- Three unspent attribute points awarded per level-up. Existing characters migrate with unspent points for previous levels, while allocated stats persist.
+- Attribute point allocation immediately saves, updates derived HP/MP, and updates combat damage and protection.
+- Critical hits, double hits and loot chance effects are displayed as future-derived stats; they are not yet active in combat.
