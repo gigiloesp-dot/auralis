@@ -1,6 +1,8 @@
+import {GENERATED_ITEMS} from './catalog.js';
+import {insertStack,compactStacks,itemCount} from './stacking.js';
 import {canEquip,EQUIPMENT_SLOTS} from './armor.js';
 export const INVENTORY_CAPACITY=60;
-export const ITEM_DEFS=Object.freeze({
+export const ITEM_DEFS=Object.freeze({...GENERATED_ITEMS,
  rustySword:{name:'Ржавый меч',slot:'weapon',attack:7,level:1,allowedClasses:['warrior','paladin']},
  ironSword:{name:'Железный меч',slot:'weapon',attack:12,level:4,allowedClasses:['warrior','paladin']},
  leatherVest:{name:'Кожаный жилет',slot:'chest',defense:3,level:1},
@@ -13,7 +15,9 @@ export const ITEM_DEFS=Object.freeze({
 });
 export const itemDefinition=item=>ITEM_DEFS[item?.id]||null;
 export const itemName=item=>itemDefinition(item)?.name||item?.id||'Предмет';
-export function addItem(hero,item){if(!hero||!Array.isArray(hero.inventory)||hero.inventory.length>=INVENTORY_CAPACITY||!itemDefinition(item))return false;hero.inventory.push({...item,rarity:item.rarity||'common'});return true;}
+export function addItem(hero,item){if(!hero||!Array.isArray(hero.inventory)||!itemDefinition(item))return false;return insertStack(hero.inventory,{...item,rarity:item.rarity||'common'},itemDefinition(item),INVENTORY_CAPACITY).remainder===0;}
+export function normalizeInventory(items){return compactStacks(items,itemDefinition,INVENTORY_CAPACITY);}
+export {itemCount};
 export function equipItem(hero,index){
  if(!Number.isInteger(index)||index<0||index>=hero.inventory.length)return {ok:false,reason:'invalid'};
  const item=hero.inventory[index],def=itemDefinition(item);
