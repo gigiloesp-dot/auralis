@@ -47,8 +47,11 @@ export class HeroRig{
   this.hips.rotation=.035*s*run;
   this.torso.rotation=-.055*s*run;
   this.neck.rotation=.025*s*run;
-  const sideRun=Math.abs(Math.cos(this.direction));
-  const travelSign=Math.cos(this.direction)<0?-1:1;
+  // Determine horizontal travel from the current joystick, not the previous facing.
+  // A leftward stride must reverse both knee bend and horizontal foot travel.
+  const facingX=Math.cos(angle);
+  const sideRun=Math.abs(facingX);
+  const travelSign=facingX<0?-1:1;
   const stride=(.58+.09*sideRun)*run;
   const left=s*stride,right=-s*stride;
   this.leftThigh.rotation=left*(1-sideRun)+left*travelSign*sideRun;
@@ -91,8 +94,8 @@ export class HeroRig{
   this.leftThigh.x=-7+4*side;
   this.rightThigh.x=7-4*side;
   // Side running: alternate forward/back foot reach and shoulder swing.
-  this.leftThigh.x+=s*1.4*side*run*travelSign;
-  this.rightThigh.x-=s*1.4*side*run*travelSign;
+  this.leftThigh.x+=s*5.5*side*run*travelSign;
+  this.rightThigh.x-=s*5.5*side*run*travelSign;
   this.leftArm.x+=s*1.2*side*run*travelSign;
   this.rightArm.x-=s*1.2*side*run*travelSign;
   this.face.setVisible(back<.45 && side<.82);
