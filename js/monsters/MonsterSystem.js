@@ -42,8 +42,6 @@ export class MonsterSystem{
   }
  }
  attack(now,facing){
-  if(now-this.lastStrike<450)return false;
-  this.lastStrike=now;
   const m=nearestTarget(this.hero,this.monsters,100);
   if(!m)return true;
   this.scene.facing=Math.atan2(m.y-this.hero.y,m.x-this.hero.x);
