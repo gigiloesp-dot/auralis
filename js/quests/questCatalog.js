@@ -1,3 +1,4 @@
+import {buildRegionalContracts} from './questContracts.js';
 // Concrete objectives are attached to the real region NPCs/camps, not to menu-only content.
 // Additional quest types are supported by the engine but only reachable content is listed here.
 const text=(ru,en,es)=>({ru,en,es});
@@ -18,5 +19,5 @@ export function buildQuestCatalog(contentByRegion={}){
   if(town)list.push({id:prefix+'scout',npcId:giver.id,region,type:'explore',target:town.id,required:1,level:level+1,requires:camp?[huntId]:[],xp:120+level*25,gold:40+level*4,title:text('Проверить дорогу','Survey the road','Reconocer el camino'),description:text('Дойди до другого поселения и вернись с вестями.','Reach the other settlement and return with news.','Llega al otro poblado y regresa con noticias.'),location:{x:town.spawn.x,y:town.spawn.y,region,radius:130}});
   if(boss)list.push({id:prefix+'guardian',npcId:giver.id,region,type:'boss',target:boss.id,required:1,level:Math.max(level,boss.level-1),requires:camp?[huntId]:[],xp:300+boss.level*50,gold:100+boss.level*15,title:text('Угроза на границе','Threat at the frontier','Amenaza en la frontera'),description:text('Победи указанного мини-босса и вернись за наградой.','Defeat the indicated miniboss and return for a reward.','Derrota al minijefe indicado y vuelve por tu recompensa.'),location:{x:boss.x,y:boss.y,region}});
  }
- return list;
+ return [...list,...buildRegionalContracts(contentByRegion)];
 }

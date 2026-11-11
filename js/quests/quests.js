@@ -13,7 +13,8 @@ export const QUEST_TEXT=Object.freeze({
 const regions=Object.fromEntries(Object.keys(REGIONS).map(id=>[id,getRegionContent(id)]));
 export const QUESTS=Object.freeze(buildQuestCatalog(regions));
 export const STARTER_QUESTS=Object.freeze(QUESTS.filter(q=>q.id==='forestWolves'));
-export const questDefinition=id=>QUESTS.find(q=>q.id===id);
+const QUEST_INDEX=new Map(QUESTS.map(quest=>[quest.id,quest]));
+export const questDefinition=id=>QUEST_INDEX.get(id);
 const required=q=>Math.max(1,q.required||1);
 const hasItems=(hero,id)=>hero.inventory?.filter(i=>i.id===id).reduce((sum,i)=>sum+itemCount(i),0)||0;
 const matchesType=(a,b)=>a===b||({forestWolf:'wolf',wildBoar:'boar',forestRaider:'raider'}[a]||a)===({forestWolf:'wolf',wildBoar:'boar',forestRaider:'raider'}[b]||b);

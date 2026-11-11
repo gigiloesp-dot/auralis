@@ -17,3 +17,17 @@ test('invalid sale never mutates inventory or gold',()=>{
  const h={gold:3,inventory:[{id:'wolfPelt',quantity:2}]},before=JSON.stringify(h);
  for(const [index,quantity] of [[0,3],[0,-1],[0,.5],[-1,1],[9,1]])assert.equal(sellMaterial(h,index,quantity).ok,false);assert.equal(JSON.stringify(h),before);
 });
+
+test('normal equipment merchants never offer epic or legendary, and purchases are transactional',async()=>{
+ const {merchantStock,buyEquipment}=await import('../js/systems/trading.js');
+ const h={classId:'warrior',level:15,gold:999999,inventory:[]},npc={role:'merchant',minLevel:1,maxLevel:18};
+ const stock=merchantStock(h,npc);assert.ok(stock.length>0);assert.ok(stock.every(item=>['common','uncommon','rare'].includes(item.rarity)));
+ const offer=stock[0],before=h.gold;assert.equal(buyEquipment(h,npc,offer.offerId).ok,true);assert.equal(h.gold,before-offer.price);assert.deepEqual(h.inventory[0],{id:offer.id,rarity:offer.rarity,quantity:1});
+ h.inventory=Array.from({length:60},()=>({id:'rustySword'}));const snapshot=JSON.stringify(h);assert.equal(buyEquipment(h,npc,offer.offerId).reason,'full');assert.equal(JSON.stringify(h),snapshot);
+ assert.equal(buyEquipment(h,npc,'forged:legendary').reason,'invalid');assert.equal(JSON.stringify(h),snapshot);
+});
+test('special merchant has explicit high-cost legendary stock and equipment sale removes only owned item',async()=>{
+ const {merchantStock,buyEquipment,sellItem,equipmentPrice}=await import('../js/systems/trading.js');
+ const hero={classId:'mage',level:42,gold:9999999,inventory:[]},npc={role:'specialMerchant',minLevel:35,maxLevel:42};
+ const offer=merchantStock(hero,npc).find(item=>item.rarity==='legendary');assert.ok(offer);assert.equal(buyEquipment(hero,npc,offer.offerId).ok,true);const price=equipmentPrice(hero.inventory[0]);const oldGold=hero.gold;assert.equal(sellItem(hero,0,1).ok,true);assert.equal(hero.inventory.length,0);assert.equal(hero.gold,oldGold+Math.floor(price*.25));assert.equal(sellItem(hero,0,1).ok,false);
+});
