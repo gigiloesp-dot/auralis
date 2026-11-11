@@ -22,3 +22,9 @@
 
 ## Правило
 Не создавать дублирующие определения классов, оружия или предметов внутри сцен. Сцены постепенно переводятся на импорт отдельных модулей. Некоторые модули пока являются подготовленной структурой, а не реализованными игровыми механиками.
+
+## Approved gameplay rules (2026-11-11)
+- Death: respawn in the nearest eligible town, NEVER at arbitrary map center. Current prototype uses forest village spawn (1030,1140), 40% HP/MP; later extend to seven towns and map-aware nearest safe settlement.
+- HUD resource bars vertically stacked: HP red, MP light blue, XP gold. XP bar tracks progress toward next level.
+- Attack button: automatic nearest living enemy targeting within current weapon range; prototype melee range 100. Future class-specific targeting, line-of-sight and projectile handling belong in combat modules.
+- Keep all these rules when expanding or replacing scenes.
