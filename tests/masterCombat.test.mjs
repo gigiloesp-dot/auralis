@@ -59,3 +59,7 @@ test('ice shield absorbs hits and powder buff adds real nearby splash damage',()
  const mage=setup('mage',null,{level:42,learnedSkills:{mage_1:1}});mage.hero.mp=mage.hero.maxMp;assert.equal(mage.system.useSkill('mage_1',100).ok,true);const hp=mage.hero.hp;mage.system.hurtHero(20,200);assert.equal(mage.hero.hp,hp);assert.ok(mage.system.buffs.iceWard>0);
  const {hero,system}=setup('cannoneer',null,{level:42,learnedSkills:{cannoneer_3:1}});hero.mp=hero.maxMp;const [a,b]=system.monsters;a.hp=a.maxHp=10000;b.hp=b.maxHp=10000;b.x=a.x+20;b.y=a.y;system.useSkill('cannoneer_3',100);system.now=200;system.strike(a,200,1,false,false);assert.ok(b.hp<10000);
 });
+test('dungeon floor walls block targets without collision circles and hurt fields drive rig state',()=>{
+ const content={id:'dungeon-test',dungeon:true,camps:[{id:'camp',spawns:[{id:'a',type:'forestWolf',x:1570,y:1240,level:1}]}],bosses:[],towns:[]};
+ const {hero,system}=setup('mage',content,{}, {world:{isWalkable:x=>x<1450||x>1460}});assert.equal(system.attack(100),false);assert.equal(system.useSkill('mage_0',100).reason,'target');system.hurtHero(100,300);assert.equal(hero.lastHitAt,300);assert.equal(hero.hurtUntil,520);
+});
