@@ -1,162 +1,69 @@
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#10251c;color:#fff;font-family:system-ui,Arial,sans-serif;touch-action:none}#game{position:fixed;inset:0}canvas{display:block}#hud{position:fixed;top:env(safe-area-inset-top,0px);left:12px;right:12px;pointer-events:none;text-shadow:0 2px 3px #000}#brand{font-size:18px;font-weight:900;letter-spacing:3px;color:#ffe6a0}#brand small{font-size:9px;letter-spacing:1px;color:#fff8;vertical-align:middle}#status{font-size:12px;margin-top:2px}#health{width:160px;height:10px;background:#230b0b;border:1px solid #fdd8;border-radius:8px;margin-top:6px;overflow:hidden}#hpbar{display:block;width:100%;height:100%;background:linear-gradient(90deg,#a72627,#ed6a48)}#coords{font-size:11px;margin-top:3px;color:#f7efb9}#joy{position:fixed;left:45px;bottom:25px;width:124px;height:124px;border-radius:50%;border:2px solid #e5f4e955;background:#203e3490;box-shadow:inset 0 0 22px #091a18;touch-action:none}#nub{position:absolute;left:35px;top:35px;width:50px;height:50px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e4e5bc,#768a75);border:2px solid #fff8;box-shadow:0 3px 9px #0009}#actions{position:fixed;right:26px;bottom:26px;display:flex;align-items:flex-end;gap:7px}#actions button{border:2px solid #d6c99c88;border-radius:50%;background:#47352dca;color:#fff;box-shadow:0 3px 10px #0008;font-size:20px;width:43px;height:43px;touch-action:none}#actions #attack{width:78px;height:78px;background:#8d3f2bcf;font-size:36px}#actions button:disabled{opacity:.4}#notice{position:fixed;bottom:6px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:10px;color:#f7f5d0a0;pointer-events:none}#error{position:fixed;top:30%;left:10%;right:10%;padding:20px;background:#4b1111;border-radius:12px;z-index:9}@media(max-width:650px){#joy{left:20px;bottom:20px;width:108px;height:108px}#nub{left:29px;top:29px;width:46px;height:46px}#actions{right:12px;bottom:22px;gap:4px}#actions #attack{width:64px;height:64px}#actions button{width:34px;height:34px;font-size:15px}#notice{display:none}}
-/* Landscape HUD: four skills to the LEFT of the attack button. */
-#actions{right:max(12px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));align-items:center;gap:12px;z-index:5}
-#skills{display:grid;grid-template-columns:repeat(2,46px);grid-template-rows:repeat(2,46px);gap:8px}
-#actions #attack{flex:none;width:82px;height:82px}
-#actions #skills .skill{width:46px;height:46px}
-#joy{left:max(22px,env(safe-area-inset-left));bottom:max(18px,env(safe-area-inset-bottom));z-index:5}
-#rotate-hint{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#10251cf5;color:#ffe6a0;font-size:20px;text-align:center;padding:24px}
-#rotate-hint[hidden]{display:none!important}
-#rotate-hint div{font-size:55px}
-@media(max-height:450px) and (orientation:landscape){
- #brand{font-size:14px}#status,#coords{font-size:10px}#health{width:135px;height:8px}
- #joy{width:100px;height:100px}#nub{left:27px;top:27px;width:42px;height:42px}
- #actions{gap:8px}#skills{grid-template-columns:repeat(2,38px);grid-template-rows:repeat(2,38px);gap:6px}
- #actions #skills .skill{width:38px;height:38px;font-size:14px}#actions #attack{width:72px;height:72px;font-size:30px}
-}
-@media(max-height:320px) and (orientation:landscape){
- #joy{width:84px;height:84px}#nub{left:22px;top:22px;width:36px;height:36px}
- #skills{grid-template-columns:repeat(2,32px);grid-template-rows:repeat(2,32px);gap:4px}
- #actions #skills .skill{width:32px;height:32px}#actions #attack{width:62px;height:62px}
-}
-@media(orientation:portrait){#rotate-hint{display:flex}}
-
-/* HUD v0.3: radial skill crescent around the attack button; transparent 130% joystick. */
-#actions{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));width:248px;height:192px;display:block;pointer-events:none;z-index:5}
-#actions #attack{position:absolute;right:0;bottom:0;width:78px;height:78px;pointer-events:auto}
-#skills{position:absolute;inset:0;display:block;pointer-events:none}
-#actions #skills .skill{position:absolute;width:44px;height:44px;pointer-events:auto}
-#skills .skill:nth-child(1){right:112px;bottom:2px}
-#skills .skill:nth-child(2){right:143px;bottom:48px}
-#skills .skill:nth-child(3){right:111px;bottom:100px}
-#skills .skill:nth-child(4){right:49px;bottom:124px}
-#joy{width:161px;height:161px;left:max(18px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom));border:2px solid rgba(230,245,234,.16);background:rgba(32,62,52,.08);box-shadow:inset 0 0 16px rgba(9,26,24,.07);opacity:.45}
-#nub{width:65px;height:65px;left:calc(50% - 32.5px);top:calc(50% - 32.5px);background:radial-gradient(circle at 35% 30%,rgba(228,229,188,.36),rgba(118,138,117,.13));border:2px solid rgba(255,255,255,.28);box-shadow:none}
-@media(max-height:450px) and (orientation:landscape){
- #actions{width:220px;height:165px}
- #actions #attack{width:70px;height:70px}
- #actions #skills .skill{width:40px;height:40px}
- #skills .skill:nth-child(1){right:100px;bottom:0}
- #skills .skill:nth-child(2){right:126px;bottom:42px}
- #skills .skill:nth-child(3){right:98px;bottom:88px}
- #skills .skill:nth-child(4){right:42px;bottom:110px}
- #joy{width:130px;height:130px}
- #nub{width:54px;height:54px;left:calc(50% - 27px);top:calc(50% - 27px)}
-}
-@media(max-height:320px) and (orientation:landscape){
- #actions{width:193px;height:140px}
- #actions #attack{width:62px;height:62px}
- #actions #skills .skill{width:35px;height:35px}
- #skills .skill:nth-child(1){right:88px;bottom:0}
- #skills .skill:nth-child(2){right:112px;bottom:36px}
- #skills .skill:nth-child(3){right:88px;bottom:76px}
- #skills .skill:nth-child(4){right:38px;bottom:96px}
- #joy{width:109px;height:109px}
- #nub{width:46px;height:46px;left:calc(50% - 23px);top:calc(50% - 23px)}
-}
-
-/* HUD v0.4: evenly spaced quarter-circle skill arc and larger controls. */
-#actions{width:280px;height:224px;right:max(10px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom))}
-#actions #attack{width:98px;height:98px;font-size:42px}
-#actions #skills .skill{width:53px;height:53px;font-size:19px}
-#skills .skill:nth-child(1){right:128px;bottom:4px}
-#skills .skill:nth-child(2){right:172px;bottom:58px}
-#skills .skill:nth-child(3){right:158px;bottom:123px}
-#skills .skill:nth-child(4){right:91px;bottom:162px}
-#joy{width:225px;height:225px}
-#nub{width:91px;height:91px;left:calc(50% - 45.5px);top:calc(50% - 45.5px)}
-@media(max-height:450px) and (orientation:landscape){
- #actions{width:258px;height:201px}
- #actions #attack{width:88px;height:88px;font-size:39px}
- #actions #skills .skill{width:48px;height:48px;font-size:17px}
- #skills .skill:nth-child(1){right:115px;bottom:3px}
- #skills .skill:nth-child(2){right:153px;bottom:51px}
- #skills .skill:nth-child(3){right:141px;bottom:108px}
- #skills .skill:nth-child(4){right:81px;bottom:143px}
- #joy{width:182px;height:182px}
- #nub{width:76px;height:76px;left:calc(50% - 38px);top:calc(50% - 38px)}
-}
-@media(max-height:320px) and (orientation:landscape){
- #actions{width:224px;height:174px}
- #actions #attack{width:78px;height:78px;font-size:35px}
- #actions #skills .skill{width:42px;height:42px;font-size:16px}
- #skills .skill:nth-child(1){right:100px;bottom:2px}
- #skills .skill:nth-child(2){right:132px;bottom:44px}
- #skills .skill:nth-child(3){right:122px;bottom:94px}
- #skills .skill:nth-child(4){right:70px;bottom:123px}
- #joy{width:153px;height:153px}
- #nub{width:64px;height:64px;left:calc(50% - 32px);top:calc(50% - 32px)}
-}
-
-/* HUD v0.5: precise circular arc, attack lifted into thumb reach. */
-#actions{right:max(18px,env(safe-area-inset-right));bottom:max(46px,calc(env(safe-area-inset-bottom) + 34px));width:270px;height:230px}
-#actions #attack{right:0;bottom:0;width:98px;height:98px}
-#actions #skills .skill{width:53px;height:53px}
-#skills .skill:nth-child(1){right:155px;bottom:33px}
-#skills .skill:nth-child(2){right:138px;bottom:88px}
-#skills .skill:nth-child(3){right:98px;bottom:128px}
-#skills .skill:nth-child(4){right:43px;bottom:153px}
-@media(max-height:450px) and (orientation:landscape){
- #actions{right:max(18px,env(safe-area-inset-right));bottom:max(32px,calc(env(safe-area-inset-bottom) + 24px));width:245px;height:205px}
- #actions #attack{width:88px;height:88px}
- #actions #skills .skill{width:48px;height:48px}
- #skills .skill:nth-child(1){right:140px;bottom:30px}
- #skills .skill:nth-child(2){right:124px;bottom:79px}
- #skills .skill:nth-child(3){right:88px;bottom:115px}
- #skills .skill:nth-child(4){right:39px;bottom:138px}
-}
-@media(max-height:320px) and (orientation:landscape){
- #actions{bottom:max(25px,calc(env(safe-area-inset-bottom) + 18px));width:215px;height:178px}
- #actions #attack{width:78px;height:78px}
- #actions #skills .skill{width:42px;height:42px}
- #skills .skill:nth-child(1){right:123px;bottom:26px}
- #skills .skill:nth-child(2){right:109px;bottom:69px}
- #skills .skill:nth-child(3){right:77px;bottom:101px}
- #skills .skill:nth-child(4){right:34px;bottom:121px}
-}
-
-/* HUD v0.6: user-verified fine tuning of crescent skill heights. */
-#skills .skill:nth-child(1){bottom:13px}
-#skills .skill:nth-child(2){bottom:78px}
-#skills .skill:nth-child(4){bottom:168px}
-@media(max-height:450px) and (orientation:landscape){
- #skills .skill:nth-child(1){bottom:10px}
- #skills .skill:nth-child(2){bottom:69px}
- #skills .skill:nth-child(4){bottom:153px}
-}
-@media(max-height:320px) and (orientation:landscape){
- #skills .skill:nth-child(1){bottom:6px}
- #skills .skill:nth-child(2){bottom:59px}
- #skills .skill:nth-child(4){bottom:136px}
-}
-
-/* HUD v0.7: shift the entire skill crescent 10px toward attack, preserving spacing. */
-#skills{transform:translate(10px,10px)}
-
-/* HUD v0.8: adjust endpoints of skill arc by exactly 7px. */
-#skills .skill:nth-child(1){transform:translateY(-7px)}
-#skills .skill:nth-child(4){transform:translateY(7px)}
-
-/* HUD v0.9: final tiny arc adjustments, preserving attack and joystick. */
-#skills .skill:nth-child(1){transform:translate(5px,-7px)}
-#skills .skill:nth-child(4){transform:translate(5px,10px)}
-
-/* HUD v0.10: lower skill 1 by exactly 5px; leave all other controls unchanged. */
-#skills .skill:nth-child(1){transform:translate(5px,-2px)}
-
-/* Resource bars: HP red, MP blue, XP gold. */
-#hud .resource-bar{width:160px;height:10px;border:1px solid #e8e1c480;border-radius:8px;overflow:hidden;margin-top:4px;background:#17221eaa}
-#hud .resource-bar span{display:block;height:100%;width:100%;transition:width .15s linear}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#10251c;color:#fff;font-family:system-ui,Arial,sans-serif;touch-action:none}
+#game{position:fixed;inset:0}canvas{display:block}
+button{touch-action:manipulation}
+#hud{position:fixed;top:env(safe-area-inset-top,0px);left:12px;right:12px;pointer-events:none;text-shadow:0 2px 3px #000}
+#brand{font-size:18px;font-weight:900;letter-spacing:3px;color:#ffe6a0}
+#brand small{font-size:9px;letter-spacing:1px;color:#fff8;vertical-align:middle}
+#status{font-size:12px;margin-top:2px}
+#hud .resource-bar{position:relative;width:238px;height:19px;margin-top:5px;border:1px solid #e8e1c480;border-radius:6px;overflow:hidden;background:#17221eaa;isolation:isolate}
+#hud .resource-bar>span{position:absolute;left:0;top:0;width:100%;height:100%;z-index:0;transition:width .15s linear}
 #hpbar{background:linear-gradient(90deg,#a72627,#ed6a48)}
 #mpbar{background:linear-gradient(90deg,#1977c8,#5cd4f6)}
 #xpbar{background:linear-gradient(90deg,#b47c19,#ffda61)}
-@media(max-height:450px) and (orientation:landscape){#hud .resource-bar{width:135px;height:8px;margin-top:3px}}
-
-/* Numeric HUD resource labels and larger standalone level */
-#hud .resource-bar{position:relative;width:238px;height:19px;margin-top:5px;border-radius:6px;isolation:isolate}
-#hud .resource-bar>span{position:absolute;left:0;top:0;height:100%;z-index:0}
 #hud .resource-bar .bar-text{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;letter-spacing:.4px;font-weight:800;text-shadow:0 1px 3px #000,0 0 2px #000}
 #hud .hud-bottom{display:flex;align-items:center;gap:10px;margin-top:5px}
 #hero-level{font-size:19px;color:#ffe3a1;text-shadow:0 2px 4px #000}
-#hud #coords{margin:0}
-@media(max-height:450px) and (orientation:landscape){#hud .resource-bar{width:205px;height:17px;margin-top:4px}#hero-level{font-size:17px}}
+#coords{font-size:11px;color:#f7efb9;margin:0}
+#joy{position:fixed;left:max(18px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom));width:225px;height:225px;border-radius:50%;border:2px solid rgba(230,245,234,.16);background:rgba(32,62,52,.08);box-shadow:inset 0 0 16px rgba(9,26,24,.07);touch-action:none;opacity:.45;z-index:5}
+#nub{position:absolute;width:91px;height:91px;left:calc(50% - 45.5px);top:calc(50% - 45.5px);border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(228,229,188,.36),rgba(118,138,117,.13));border:2px solid rgba(255,255,255,.28)}
+#actions{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(46px,calc(env(safe-area-inset-bottom) + 34px));width:270px;height:230px;pointer-events:none;z-index:5}
+#actions button{position:absolute;border:2px solid #d6c99c88;border-radius:50%;background:#47352dca;color:#fff;box-shadow:0 3px 10px #0008;touch-action:none;pointer-events:auto}
+#actions button:disabled{opacity:.4}
+#actions #attack{right:0;bottom:0;width:98px;height:98px;background:#8d3f2bcf;font-size:42px}
+#skills{position:absolute;inset:0;pointer-events:none;transform:translate(10px,10px)}
+#actions #skills .skill{width:53px;height:53px;font-size:19px}
+#skills .skill:nth-child(1){right:155px;bottom:13px;transform:translate(5px,-2px)}
+#skills .skill:nth-child(2){right:138px;bottom:78px}
+#skills .skill:nth-child(3){right:98px;bottom:128px}
+#skills .skill:nth-child(4){right:43px;bottom:168px;transform:translate(5px,10px)}
+#notice{position:fixed;bottom:6px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:10px;color:#f7f5d0a0;pointer-events:none}
+#error{position:fixed;top:30%;left:10%;right:10%;padding:20px;background:#4b1111;border-radius:12px;z-index:19}
+#rotate-hint{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#10251cf5;color:#ffe6a0;font-size:20px;text-align:center;padding:24px}
+#rotate-hint[hidden]{display:none!important}#rotate-hint div{font-size:55px}
+@media(max-height:450px) and (orientation:landscape){
+ #brand{font-size:14px}#status,#coords{font-size:10px}
+ #hud .resource-bar{width:205px;height:17px;margin-top:4px}#hero-level{font-size:17px}
+ #joy{width:182px;height:182px}#nub{width:76px;height:76px;left:calc(50% - 38px);top:calc(50% - 38px)}
+ #actions{bottom:max(32px,calc(env(safe-area-inset-bottom) + 24px));width:245px;height:205px}
+ #actions #attack{width:88px;height:88px;font-size:39px}
+ #actions #skills .skill{width:48px;height:48px;font-size:17px}
+ #skills .skill:nth-child(1){right:140px;bottom:10px}
+ #skills .skill:nth-child(2){right:124px;bottom:69px}
+ #skills .skill:nth-child(3){right:88px;bottom:115px}
+ #skills .skill:nth-child(4){right:39px;bottom:153px}
+}
+@media(max-height:320px) and (orientation:landscape){
+ #joy{width:153px;height:153px}#nub{width:64px;height:64px;left:calc(50% - 32px);top:calc(50% - 32px)}
+ #actions{bottom:max(25px,calc(env(safe-area-inset-bottom) + 18px));width:215px;height:178px}
+ #actions #attack{width:78px;height:78px;font-size:35px}
+ #actions #skills .skill{width:44px;height:44px;font-size:16px}
+ #skills .skill:nth-child(1){right:123px;bottom:6px}
+ #skills .skill:nth-child(2){right:109px;bottom:59px}
+ #skills .skill:nth-child(3){right:77px;bottom:101px}
+ #skills .skill:nth-child(4){right:34px;bottom:136px}
+}
+@media(max-width:650px){#notice{display:none}}
+/* Keep panel actions reachable by a fingertip even on short landscape displays. */
+#skills-panel button,#character-panel button,#inventory-panel button,.rpg-toolbar button{min-width:44px;min-height:44px}
+#minimap{position:fixed;right:76px;top:max(8px,env(safe-area-inset-top));width:120px;height:90px;border:1px solid #c1aa74;border-radius:9px;pointer-events:none;box-shadow:0 3px 15px #0008;z-index:3}
+#potions{position:fixed;left:50%;bottom:max(14px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:10px;z-index:5}
+#potions button{min-width:52px;min-height:44px;border:1px solid #d8bd80;border-radius:12px;color:#fff;font-weight:800;background:#592d30;box-shadow:0 2px 8px #0008;touch-action:none}
+#potions .mp{background:#244e6a}#potions button:disabled{opacity:.4}
+.menu-open #minimap,.menu-open #potions,.menu-open .npc-interact,.menu-open .quest-tracker{display:none}
+@media(max-height:330px){#minimap{width:96px;height:72px}}
+#minimap{top:60px}#notice{bottom:64px;max-width:38vw;white-space:normal;text-align:center}.quest-tracker{top:150px}
+@media(max-height:330px){#minimap{top:58px}.quest-tracker{top:140px;font-size:11px}}
+
+#notice{bottom:auto;top:12px;max-width:28vw}
+.menu-open .storage-interact{display:none}

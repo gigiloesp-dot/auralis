@@ -23,3 +23,11 @@ export function rollLoot(hero,{type='wolf',elite=false,boss=false,level=1}={},rn
  return drops;
 }
 export function rollWolfLoot(hero,rng=Math.random){return rollLoot(hero,{type:'wolf',level:hero.level||1},rng);}
+
+// Minibosses guarantee a real equipment reward if there is a free inventory cell.
+export function rollMonsterLoot(hero,kind,rng=Math.random){
+ const level=Math.max(1,Math.min(hero.level||1,kind.level));
+ const drops=rollLoot(hero,{type:kind.loot,level},rng);
+ if(kind.boss){const options=equipmentForLevel(level,'weapon',hero.classId);if(options.length){const reward={id:options[0],rarity:'rare',quantity:1};if(addItem(hero,reward))drops.push(reward);}}
+ return drops;
+}

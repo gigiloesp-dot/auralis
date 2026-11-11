@@ -1,102 +1,27 @@
-# Auralis — структура проекта
-- index.html — только оболочка приложения
-- css/game.css — стили интерфейса
-- js/main.js — точка входа и настройка движка
-- js/world/WorldScene.js — текущая первая сцена (будет разделена на renderer, input, world streaming)
-- js/world/worldData.js — параметры регионов
-- js/characters/Character.js — данные персонажа
-- js/characters/classes.js — шесть классов
-- js/characters/animations.js — направления и названия анимаций
-- js/equipment/weapons.js — оружие
-- js/equipment/armor.js — броня, редкость, слоты
-- js/combat/combat.js — формулы боя
-- js/combat/projectiles.js — типы снарядов
-- js/monsters/monsters.js — монстры
-- js/npc/npcData.js — NPC
-- js/quests/quests.js — квесты
-- js/ui/hud.js — интерфейс
-- js/systems/save.js — автосохранение
-- assets/sprites/ — персонажи, NPC, монстры, эффекты
-- assets/world/ — окружение
-- assets/equipment/ — визуальные предметы
+# Текущая архитектура
 
-## Правило
-Не создавать дублирующие определения классов, оружия или предметов внутри сцен. Сцены постепенно переводятся на импорт отдельных модулей. Некоторые модули пока являются подготовленной структурой, а не реализованными игровыми механиками.
+В проекте сохранён существующий стек: браузерные ES modules и Phaser3.90. Runtime-зависимости не добавлены. Playwright используется только при разработке.
 
-## Approved gameplay rules (2026-11-11)
-- Death: respawn in the nearest eligible town, NEVER at arbitrary map center. Current prototype uses forest village spawn (1030,1140), 40% HP/MP; later extend to seven towns and map-aware nearest safe settlement.
-- HUD resource bars vertically stacked: HP red, MP light blue, XP gold. XP bar tracks progress toward next level.
-- Attack button: automatic nearest living enemy targeting within current weapon range; prototype melee range 100. Future class-specific targeting, line-of-sight and projectile handling belong in combat modules.
-- Keep all these rules when expanding or replacing scenes.
+- `WorldScene` связывает ввод, интерфейс и симуляцию. Каждый запуск захватывает свой `saveSlot`, поэтому смена глобального выбранного слота не перенаправляет завершающее сохранение старого героя.
+- `TouchControls` владеет отдельными pointer ID джойстика и атаки, захватывает указатель и сбрасывает управление при blur/потере видимости/открытии окон/паузы.
+- `playNow` — время активной симуляции. Окна останавливают бой, снаряды, статусы и перезарядки. Автосохранение использует время сцены и продолжает работать в открытых игровых панелях; системная пауза сохраняет сразу.
+- `AttackCycle` — единый источник момента попадания обычной атаки. `MonsterSystem` отвечает за цели, летящие снаряды, AI, статусы, урон и награды. `skillRuntime` проверяет изучение/уровень/MP/cooldown перед применением. Неуспешное применение без цели не расходует ману.
+- `HeroRig` — простой векторный суставной персонаж. Оружие и стойка зависят от класса; экипировка добавляет визуальные элементы. Это временная художественная реализация.
+- `Terrain.createTerrain` растрирует землю в переиспользуемые текстуры размером не более1024px. Монстры дальше700единиц отключают AI и отображение. Это оптимизация текущей зоны, а не полный streaming трёх больших карт.
+- `items`/`stacking` — единые правила экипировки и стаков. Новые транзакции наград, торговли и хранилища предварительно проверяют ёмкость.
+- `quests` — сохраняемый цикл принятие→прогресс→завершение→однократная награда. Сейчас одна реальная цепочка; другие типы заданий не реализованы.
+- Панели взаимоисключающие; все слушатели, DOM-элементы и игровые объекты снимаются при shutdown. Меню паузы закрывает игровые панели.
 
-## Menu and character flow (0.4)
-- Boot to menu, not directly to world.
-- Main menu -> 3 independent slots -> select one of 6 classes -> Latin/digit name (3-16 chars) -> world.
-- Each slot stores its own name, class, position, progression and inventory.
-- Existing slot continues without resetting progress. Delete requires typed DELETE.
-- Pause button saves and pauses the world; resume continues; exit stops world and returns to slot selection.
-- RU/EN/ES menu translations selected under settings; gameplay text localization remains future work.
-- Existing saves from previous versions remain available in slot 1 through migration.
+## Сохранения
 
-## Sword basic attacks (0.4.1)
-- Holding the attack button repeats attacks automatically; tapping starts one complete attack.
-- Starting warrior base interval: 1250 ms, gradually reduced by level, agility and later equipment bonuses; minimum 480 ms.
-- Four distinct swings rotate in sequence: right slash, left slash, overhead, diagonal.
-- Wind-up, impact and recovery belong to one shared AttackCycle. Damage is applied only on the designated impact frame, once per swing.
-- MonsterSystem does not maintain a second independent attack cooldown. Target selection remains automatic within weapon range.
-- Animations are temporary rig poses; final sprites will need visual polish without changing combat timing.
+Ключи персонажей остаются `auralis_save_v2_slot_1..3`. Legacy `auralis_save_v1` переносится в слот1 однократно и сохраняется как исходный резерв. Старое удалённое сохранение больше не появляется повторно. Первая исходная запись каждого слота хранится в `<ключ>_backup`, доступна через `Save.exportBackup(slot)`. Ограничение: это исходный снимок, а не история версий; неизвестные предметы не доступны в игре, но остаются в резерве.
 
-## Inventory and equipment (0.5)
-- Bag capacity 60; equipment slots weapon, helmet, chest, gloves, pants, boots, ring, amulet, shield.
-- Tap bag button to open; tap an equipment item to equip; tap an equipped slot to unequip.
-- Equipment checks required level and class, keeps replaced item in bag, and contributes attack/defense to actual damage calculations.
-- Wolves can drop wolf materials and starter equipment; items and equipped slots are saved per character slot.
-- Loot balance, detailed item icons, visual equipment and NPC vendors are future phases.
+`Save` хранит имя/класс/координаты, ресурсы, опыт/уровень, характеристики/очки, экипировку/инвентарь, навыки/слоты, задания, золото и зелья. Восстановление персонажа ограничивает некорректные значения. Нельзя считать localStorage облачной резервной копией: очистка данных сайта удаляет его.
 
-## Item interactions (0.5.1)
-- Inventory trigger and overlay must be outside #hud because HUD disables pointer events.
-- Classic fantasy leather backpack SVG icon; avoid modern emoji backpack.
-- Tapping a bag item opens a detail panel showing rarity, type, required level, attack/defense, class restrictions.
-- Detail actions: equip (equipment only), discard with explicit confirmation, close. Equipped items offer unequip.
-- No selling items from inventory. Selling is exclusively via future merchant NPC interactions.
+Общее хранилище находится в `auralis_shared_storage_v1`, независимо от трёх героев. Атомарная запись содержит предметы и pending-журнал нового инвентаря героя; загрузка восстанавливает прерванный перенос перед чтением персонажа. Сохранённый маркер делает повторное применение идемпотентным и не откатывает более свежий прогресс; удаление/импорт слота сначала завершают журнал и отклоняются, если очистка не удалась. Изначальное содержимое также резервируется. Повреждённые/неизвестные версии блокируют перенос вместо очистки.
 
-## Character attributes (0.6)
-- Character status panel is accessible from the top-right crest button; opening it suspends world simulation and closes inventory.
-- Five stats: Strength (physical attack), Endurance (HP/defense), Agility (attack speed/crit), Luck (loot/double hit), Intelligence (MP/magic attack).
-- Three unspent attribute points awarded per level-up. Existing characters migrate with unspent points for previous levels, while allocated stats persist.
-- Attribute point allocation immediately saves, updates derived HP/MP, and updates combat damage and protection.
-- Critical hits, double hits and loot chance effects are displayed as future-derived stats; they are not yet active in combat.
+Перезарядки, активные временные эффекты и состояние врагов сохраняются только в текущем сеансе. Регенерация не выполняется офлайн.
 
-## Item catalogue and loot (0.7)
-- All six classes have nine weapon tiers (levels 1,4,8,15,22,27,33,38,42). Armor and jewelry have nine tiers (1,5,9,14,21,28,32,37,42), with shields restricted to warrior/paladin.
-- Stackable materials share one bag slot up to 100 units only when item ID, rarity, level and variant match. Different rarities never merge. Equipment stays individually slotted. Full stacks spill into another free slot.
-- Old save materials are compacted into stacks on character creation/load; saving keeps stack counts.
-- Normal-monster equipment roll: common 15%, uncommon 4%, rare 1%, epic 0.1%; legendary cannot drop from normal monsters.
-- Luck adds a small chance multiplier to loot. Boss/elite loot APIs are prepared, but world bosses and dungeons are not yet wired.
-- Selling remains exclusively NPC-based; there is no sell-from-bag action.
+## Расширение
 
-## Inventory layout (0.7.1)
-- Full viewport inventory, two tabs: I equipment and character summary, II bag with 60 cells.
-- Item detail opens beside the clicked slot, clamped to the screen; it does not require scrolling to the top.
-- Wolf fang icon is ivory curved tooth; wolf pelt is a brown fur hide, visually distinct from equipment.
-- Item interactions and saves are preserved; no remote selling.
-
-## UI reference direction (0.8)
-- Bag item detail compares with equipped item of the same slot; show explicit EQUIPPED status and green/red numerical differences. Material items have no equipment comparison.
-- Equipment tab: item icons left, combat stats right; HP and MP are only in the main HUD, not repeated in the equipment summary.
-- Class selection and save slots have class-specific temporary silhouettes; future real 3D/2.5D character previews must reflect class and equipped items.
-- Future skills UI: tabbed skill tree with profession tiers, unlock requirements, skill icons and point allocation. Do not imply skill buttons are implemented until active skills work.
-- Future unified RPG shortcut toolbar: character, bag, skills, settings, with icon-led controls.
-
-## Skills screen (0.9)
-- Three tabs, five skills per class across six classes, with rank 0–5 and required character levels 1/5/12/20/30.
-- Spend earned skill points to learn or rank up skills; learnedSkills is persisted in save slots and loaded into hero.
-- Skills screen pauses world simulation and is mutually exclusive with bag and attribute panels.
-- Compact top-right toolbar links character, bag and skills. Pause/settings remains separate.
-- Skill effects and activation from the four combat HUD buttons are **not implemented**; current tree is allocation and persistence only.
-
-## Skill loadout (0.9.1)
-- Clicking a skill card opens a detail panel showing description, rank, level requirement, provisional mana/cooldown/power, and slot assignment controls.
-- Only learned skills may be assigned to combat slots 1–4. Assigning a skill to a new slot clears its prior slot; assigning into an occupied slot replaces the previous skill.
-- Equipped skills show slot numbers and may be unequipped from their details. Four HUD buttons display the selected skill icon but remain disabled until actual skill combat behavior is implemented.
-- skillSlots array persists per save slot; invalid or duplicate assignments are sanitized on use.
+Сначала нужны профилирование на Android и полноценная система чанков/переходов. Определения размеров регионов в `worldData` пока являются планом; менять `worldPreviewSize` на12000 без streaming нельзя. Логика новых подземелий должна выделяться из `WorldScene`, а не добавляться в неё большим монолитом.
