@@ -45,3 +45,10 @@
 - Wind-up, impact and recovery belong to one shared AttackCycle. Damage is applied only on the designated impact frame, once per swing.
 - MonsterSystem does not maintain a second independent attack cooldown. Target selection remains automatic within weapon range.
 - Animations are temporary rig poses; final sprites will need visual polish without changing combat timing.
+
+## Inventory and equipment (0.5)
+- Bag capacity 60; equipment slots weapon, helmet, chest, gloves, pants, boots, ring, amulet, shield.
+- Tap bag button to open; tap an equipment item to equip; tap an equipped slot to unequip.
+- Equipment checks required level and class, keeps replaced item in bag, and contributes attack/defense to actual damage calculations.
+- Wolves can drop wolf materials and starter equipment; items and equipped slots are saved per character slot.
+- Loot balance, detailed item icons, visual equipment and NPC vendors are future phases.
