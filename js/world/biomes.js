@@ -1,3 +1,4 @@
+import {naturalRoadPoints} from './roadPaths.js';
 // A small authored geography layer over deterministic chunk decoration. Terrain
 // patches remain in world coordinates, so their edges continue across chunks.
 const zone=(id,type,x,y,rx,ry,color,names)=>Object.freeze({id,type,x,y,rx,ry,color,names:Object.freeze(names)});
@@ -27,7 +28,8 @@ const PATHS=Object.freeze({
  ancient:[{id:'ancient-pilgrim-trail',width:40,secondary:true,points:[{x:1600,y:1800},{x:3700,y:4200},{x:6900,y:8100},{x:10900,y:12400},{x:11700,y:11400}]}]
 });
 export const biomeZones=content=>content.dungeon?[]:ZONES[content.id]||[];
-export const biomeSidePaths=content=>content.dungeon?[]:PATHS[content.id]||[];
+const EMPTY_PATHS=Object.freeze([]),sidePathCache=new WeakMap();
+export function biomeSidePaths(content){if(content.dungeon||!PATHS[content.id])return EMPTY_PATHS;const cached=sidePathCache.get(content);if(cached)return cached;const paths=PATHS[content.id].map(path=>({...path,points:naturalRoadPoints(path,content),curved:true}));sidePathCache.set(content,paths);return paths;}
 export function biomeAt(content,x,y){
  const zones=biomeZones(content);for(let i=zones.length-1;i>=0;i--){const z=zones[i];if(((x-z.x)/z.rx)**2+((y-z.y)/z.ry)**2<=1)return z;}return null;
 }

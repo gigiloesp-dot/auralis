@@ -1,3 +1,4 @@
+import {curveRegionRoads} from './roadPaths.js';
 // Persistent descriptors only: these counts do not imply that the runtime has
 // switched from its legacy preview to full-region streaming yet.
 import {REGIONS} from './worldData.js';
@@ -43,5 +44,5 @@ export function getRegionContent(id='forest'){
  if(remaining!==0)throw new Error('Incorrect monster budget');
  const bosses=BOSSES[id].map(([type,ru,en,es],i)=>{const p=position(),bossType=i<4?'mini':'world',level=Math.min(region.maxLevel,region.minLevel+4+i*3);const themes={forest:['roots','venom','tusk','pack','oakstorm','outcast'],north:['frostRush','iceQuake','rimeVolley','avalanche','whiteout','haunt'],ancient:['bronzeShock','ashVenom','runeSlash','oracleBlink','colossusQuake','voidRift']};return {id:id+'-'+bossType+'-'+i,region:id,type,bossType,bossTheme:themes[id][i],level,...p,patterns:[['slam','volley'],['volley','charge'],['charge','slam']][i%3],names:{ru,en,es}};});
  const landmarks=id==='ancient'?[{id:'fallen-observatory',x:3700,y:4200,names:{ru:'Разрушенная обсерватория',en:'Fallen observatory',es:'Observatorio caído'}},{id:'moon-garden',x:6900,y:8100,names:{ru:'Лунный сад',en:'Moon garden',es:'Jardín lunar'}},{id:'elder-gate',x:10900,y:12400,names:{ru:'Врата предков',en:'Elder gate',es:'Puerta ancestral'}}]:[];
- const content={...region,towns,npcs,camps,bosses,portals,roads,landmarks};cache.set(id,content);return content;
+ const content=curveRegionRoads({...region,towns,npcs,camps,bosses,portals,roads,landmarks});cache.set(id,content);return content;
 }

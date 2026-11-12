@@ -1,3 +1,5 @@
+import {PaintedActor} from './PaintedActor.js';
+import {ACTOR_ART} from '../assets/actorArt.js';
 import {itemDefinition} from '../equipment/items.js';
 import {SpriteAnimator} from '../assets/SpriteAnimator.js';
 import { swingPose } from '../combat/attackTiming.js';
@@ -68,11 +70,13 @@ export class HeroRig{
   this.amulet=scene.add.ellipse(0,-7,7,10,0xe3c172).setVisible(false);this.torso.add(this.amulet);
   this.weaponAccent=scene.add.circle(0,-3,4,0xb4c8ce).setVisible(false);this.sword.add(this.weaponAccent);
   this.gearSignature='';
+  const entry=ACTOR_ART[this.classId];if(entry&&scene.actorTextures){const fallback=[...root.list];this.painted=new PaintedActor(scene,root,entry,this.hero);this.painted.ready.then(ready=>{if(ready){for(const child of fallback)child.destroy();this.paintedActive=true;}});}
  }
  update(dt,axis,attacking,angle){
   this.elapsed+=Math.max(0,dt);const now=Number.isFinite(this.scene.playNow)?this.scene.playNow:this.elapsed*1000;
   const dead=this.hero?.hp<=0,hurt=!dead&&(this.hero?.hurtUntil||0)>now;
   this.animationState=dead?'death':hurt?'hurt':attacking?.active?(attacking.special?'special':'attack'):Math.hypot(axis.x,axis.y)>.08?'run':'idle';
+  if(this.paintedActive){this.root.rotation=0;this.root.alpha=1;this.painted.update(this.animationState,angle,dt,attacking);return;}
   if(this.spriteAnimator){this.spriteAnimator.update(this.animationState,angle,hurt,attacking?.cycleId??attacking?.index);return;}
   this.updateEquipment();
   const m=Math.min(1,Math.hypot(axis.x,axis.y));
@@ -160,11 +164,13 @@ export class HeroRig{
 
  }
  weaponMuzzleScreen(){
+  if(this.paintedActive)return this.painted.weaponMuzzleScreen();
   if(this.spriteAnimator)return this.spriteAnimator.weaponMuzzleScreen();
   const matrix=this.sword?.getWorldTransformMatrix?.();if(!matrix?.transformPoint)return null;
   const length=this.classId==='mage'?47:this.classId==='archer'?20:this.classId==='cannoneer'?33:35;
   return matrix.transformPoint(0,length,{});
  }
+ destroy(){this.painted?.destroy();}
  updateEquipment(){
   const gear=this.hero?.equipment||{};
   const signature=JSON.stringify(['weapon','helmet','chest','gloves','pants','boots','ring','amulet','shield'].map(slot=>[gear[slot]?.id,gear[slot]?.rarity]));
