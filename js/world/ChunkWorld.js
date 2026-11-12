@@ -1,3 +1,4 @@
+import {bakeTexture} from '../assets/bakeTexture.js';
 import {biomeZones,paintBiomes} from './biomes.js';
 import {CHUNK_SIZE,visibleChunkCoordinates,chunkDistance,describeChunk,regionRoads,riverX,riverBlocked,dungeonFloorContains} from './chunkGeometry.js';
 import {project,unproject} from './projection.js';
@@ -28,7 +29,7 @@ export class ChunkWorld{
     if(kind==='oak'){g.fillStyle(0x315b39).fillEllipse(58,76,74,82);g.fillStyle(0x54864b).fillEllipse(91,57,81,90);g.fillStyle(0x66975a).fillEllipse(71,38,72,65);}
     else{g.fillStyle(kind==='pine'?0x3e6d58:0x4c6453).fillTriangle(31,122,80,12,130,122);g.fillStyle(0x668870).fillTriangle(41,84,80,4,115,84);}
    }
-   g.generateTexture(key,160,176);g.destroy();
+   bakeTexture(g,key,160,176);
   }
   if(scene.textures.createCanvas){
    const atlas=scene.textures.createCanvas(atlasKey,640,Math.ceil(kinds.length/4)*176);
@@ -58,7 +59,7 @@ export class ChunkWorld{
    g.lineStyle((c.river?.halfWidth||24)*2,palette.water);g.beginPath();for(let y=data.y-40;y<data.y+data.height+40;y+=12){const x=riverX(c,y)-data.x;if(y===data.y-40)g.moveTo(x,y-data.y);else g.lineTo(x,y-data.y);}g.strokePath();
    for(const road of regionRoads(c)){g.lineStyle(road.width,road.secondary?0xb1a17a:palette.road,road.secondary?.75:1);g.beginPath().moveTo(road.from.x-data.x,road.from.y-data.y).lineTo(road.to.x-data.x,road.to.y-data.y).strokePath();}
   }
-  g.generateTexture(key,data.width,data.height);g.destroy();const at=project(data.x,data.y,c.height),ground=s.add.container(at.x,at.y).setScale(1,.5).setDepth(-100000);ground.add(s.add.image(0,0,key).setOrigin(0).setRotation(Math.PI/4));
+  bakeTexture(g,key,data.width,data.height);const at=project(data.x,data.y,c.height),ground=s.add.container(at.x,at.y).setScale(1,.5).setDepth(-100000);ground.add(s.add.image(0,0,key).setOrigin(0).setRotation(Math.PI/4));
   const objects=[ground];
   for(const d of data.decorations){const p=project(d.x,d.y,c.height);objects.push(s.add.image(p.x,p.y,this.artTexture||'world-art-'+d.kind,this.artTexture?d.kind:undefined).setOrigin(.5,145/176).setScale(d.scale).setDepth(d.x+d.y));}
   for(const bridge of data.bridges){const p=project(bridge.x,bridge.y,c.height),b=s.add.graphics().setPosition(p.x,p.y).setDepth(-99000);b.fillStyle(0x806445).fillPoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);b.lineStyle(2,0xcfb98d).strokePoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);objects.push(b);}

@@ -2,6 +2,7 @@
 // not a physical Android performance certification or a manual full playthrough.
 const {chromium}=require('playwright'),assert=require('node:assert/strict');
 const {startServer,launchOptions,root}=require('./browserHarness.cjs');
+const cycles=Math.max(7,Math.min(120,Math.floor(Number(process.env.AURALIS_SOAK_CYCLES)||7))),started=Date.now();
 const path=require('node:path');
 (async()=>{const hosting=await startServer();let browser;
  try{
@@ -32,7 +33,7 @@ const path=require('node:path');
   await page.waitForFunction(()=>{const c=Auralis.game.scene.getScene('world').controls;return c.pointerId===null&&c.attackPointerId===null&&!c.attacking&&c.axis.x===0&&c.axis.y===0;});
   console.log('PASS simultaneous real CDP joystick and attack touch pointers; movement, damage and release reset');
   const samples=[];
-  for(let cycle=0;cycle<7;cycle++){
+  for(let cycle=0;cycle<cycles;cycle++){
    const peak=await page.evaluate(async()=>{
     const s=Auralis.game.scene.getScene('world'),{DUNGEONS}=await import('/js/dungeons/dungeonSystem.js');let chunks=0,monsters=0;
     for(const region of ['forest','north','ancient']){
@@ -50,8 +51,8 @@ const path=require('node:path');
    });
    await cdp.send('HeapProfiler.collectGarbage');
    const metrics=(await cdp.send('Performance.getMetrics')).metrics;
-   const sample=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world');return {children:s.children.list.length,textures:s.textures.getTextureKeys().length,dom:document.querySelectorAll('*').length,loadedChunks:s.world.diagnostics.loadedChunks,loadedMonsters:s.monsters.monsters.length};});
-   sample.heap=metrics.find(m=>m.name==='JSHeapUsedSize').value;sample.cycle=cycle;sample.peakChunks=peak.chunks;sample.peakMonsters=peak.monsters;samples.push(sample);
+   const sample=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world');return {children:s.children.list.length,textures:s.textures.getTextureKeys().length,dom:document.querySelectorAll('*').length,loadedChunks:s.world.diagnostics.loadedChunks,loadedMonsters:s.monsters.monsters.length,textureScratchReferences:Phaser.GameObjects.Graphics.TargetCamera.renderList.length};});
+   sample.heap=metrics.find(m=>m.name==='JSHeapUsedSize').value;sample.cycle=cycle;sample.peakChunks=peak.chunks;sample.peakMonsters=peak.monsters;samples.push(sample);assert.equal(sample.textureScratchReferences,0,'Offscreen camera retains baked Graphics objects');
    assert.ok(peak.chunks<=55,'Chunk bound: '+JSON.stringify(sample));assert.ok(peak.monsters<100,'Entity bound: '+JSON.stringify(sample));
    console.log('PASS resource cycle',JSON.stringify(sample));
   }
@@ -63,6 +64,6 @@ const path=require('node:path');
   const frames=await page.evaluate(async()=>{const delta=[];let before=performance.now();for(let i=0;i<60;i++){await new Promise(requestAnimationFrame);const now=performance.now();delta.push(now-before);before=now;}return {samples:delta.length,meanMs:delta.reduce((a,b)=>a+b,0)/delta.length,p95Ms:[...delta].sort((a,b)=>a-b)[Math.floor(delta.length*.95)]};});
   console.log('OBSERVED desktop headless Chromium frame timing (not Android)',JSON.stringify(frames));
   assert.deepEqual(errors,[]);await page.screenshot({path:path.join(root,'work/browser/soak-mobile.png')});
-  console.log('PASS7 resource cycles,21 regional dungeon entries/exits; no JavaScript errors');
+  console.log('PASS'+cycles+' resource cycles,'+(cycles*3)+' regional dungeon entries/exits; no JavaScript errors; elapsedSeconds='+Math.round((Date.now()-started)/1000));
  }finally{if(browser)await browser.close();await hosting.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
