@@ -1,3 +1,7 @@
+import {movementProfile,blockingObstacles,tickMonsterAbility,cancelMonsterAbility,applyHeroAffliction,tickHeroAfflictions} from './movementProfiles.js';
+import {PaintedActor} from '../characters/PaintedActor.js';
+import {ACTOR_ART} from '../assets/actorArt.js';
+import {projectAngle} from '../world/projection.js';
 import {recoverLivingMonster,restoredLivingHp,MONSTER_RECOVERY_DELAY} from './health.js';
 import {placeTrap,tickClassEffects,guardBlock,guardResponse,clearClassEffects} from '../combat/classEffects.js';
 import {derivedAttributes} from '../systems/attributes.js';
@@ -5,7 +9,7 @@ import {rollMonsterLoot} from './loot.js';
 import {equipmentStats} from '../equipment/items.js';
 import {MONSTER_TYPES,MONSTER_CAMPS,MONSTER_ACTIVATION_RADIUS,clearDashPosition,monsterKind} from './monsters.js';
 import {MonsterStream} from './MonsterStream.js';
-import {drawMonster} from './monsterVisuals.js';
+import {drawMonster,animateMonsterParts} from './monsterVisuals.js';
 import {calculateDamage} from '../combat/combat.js';
 import {grantXp} from '../systems/progression.js';
 import {nearestTarget} from '../combat/targeting.js';
@@ -26,7 +30,7 @@ export class MonsterSystem{
  }
  view(x,y){return this.scene.project?this.scene.project(x,y):{x,y};}
  depth(x,y){return this.scene.project?x+y:y;}
- sight(a,b,radius=0){if(!lineClear(a,b,this.obstacles,radius))return false;if(this.content?.dungeon&&this.scene.world?.isWalkable){const length=distance(a,b),steps=Math.max(1,Math.ceil(length/8));for(let i=0;i<=steps;i++)if(!this.scene.world.isWalkable(a.x+(b.x-a.x)*i/steps,a.y+(b.y-a.y)*i/steps,radius))return false;}return true;}
+ sight(a,b,radius=0){const kind=a.kind||a.source?.kind||b.kind,obstacles=kind?blockingObstacles(this.obstacles,kind):this.obstacles;if(!lineClear(a,b,obstacles,radius))return false;if(this.content?.dungeon&&this.scene.world?.isWalkable){const length=distance(a,b),steps=Math.max(1,Math.ceil(length/8));for(let i=0;i<=steps;i++)if(!this.scene.world.isWalkable(a.x+(b.x-a.x)*i/steps,a.y+(b.y-a.y)*i/steps,radius))return false;}return true;}
  nearest(range){return nearestTarget(this.hero,this.monsters.filter(m=>this.canSee(m)),range,this.obstacles);}
  canSee(m){return m.alive&&m.active!==false&&this.sight(this.hero,m)&&!this.scene.world?.occludes?.(m);}
  select(m,now=this.now||this.scene.playNow||0){if(!m?.alive||!this.monsters.includes(m)||!this.canSee(m))return false;this.selected=m;this.scene.onTarget?.(m,now);return true;}
@@ -45,9 +49,10 @@ export class MonsterSystem{
   const nameLabel=this.scene.add.text(point.x,point.y-(kind.boss?(kind.visualScale||1.45)*110:76),name+' · '+kind.level,{fontFamily:'Arial',fontSize:kind.boss?'13px':'10px',color:kind.boss?'#ffd47b':'#e5d9ba',stroke:'#15251a',strokeThickness:3}).setOrigin(.5).setDepth(depth+2);
   const alive=!(saved?.deadUntil>Date.now());
   const m={...d,key,kind,nameLabel,active:false,x,y,homeX:x,homeY:y,hp:alive?restoredLivingHp(saved,kind.hp):0,maxHp:kind.hp,lastEngagedAt:(this.scene.playNow||0)-MONSTER_RECOVERY_DELAY+Math.max(0,(saved?.recoverAfter||0)-Date.now()),attack:kind.attack,alive,body,shadow,hpBar,lastHit:0,respawnAt:alive?0:(this.content?saved.deadUntil:Math.max(0,saved.deadUntil-Date.now())),phase:(d.i||0)*.7};
+  if(type==='forestWolf'&&this.scene.actorTextures&&ACTOR_ART.forestWolf){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,ACTOR_ART.forestWolf);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;});}
   this.monsters.push(m);this.setMonsterVisible(m,distance(this.hero,m)<=MONSTER_ACTIVATION_RADIUS);return m;
  }
- removeMonster(m){this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
+ removeMonster(m){m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
  setMonsterVisible(m,active){m.active=active;for(const key of ['body','shadow'])m[key]?.setVisible(active&&(m.alive||m.dyingUntil>(this.now||0)));this.syncAnnotations(m);}
  cancelWindup(m){m.warning?.destroy();m.warning=null;m.windup=null;}
  schedule(at,run){this.pendingEffects.push({at,run});}
@@ -68,7 +73,13 @@ export class MonsterSystem{
   const label=this.scene.add.text(point.x,point.y-60,text,{fontFamily:'Arial',fontSize:'14px',fontStyle:'bold',color,stroke:'#332317',strokeThickness:3}).setOrigin(.5).setDepth(this.depth(x,y)+4);
   this.scene.tweens.add({targets:label,y:label.y-35,alpha:0,duration:600,onComplete:()=>label.destroy()});
  }
- move(m,x,y,amount){const old={x:m.x,y:m.y};moveWithCollision(m,x,y,amount,this.obstacles,14,(x,y)=>!this.scene.world?.isWalkable||this.scene.world.isWalkable(x,y,14));if(this.scene.world?.isWalkable&&!this.scene.world.isWalkable(m.x,m.y,14))Object.assign(m,old);}
+ canOccupy(m,x,y,radius=movementProfile(m.kind).collisionRadius){const world=this.scene.world,flight=movementProfile(m.kind).movement==='flight',check=flight?(world?.isFlightWalkable||world?.isWalkable):world?.isWalkable;return !check||check.call(world,x,y,radius);}
+ move(m,x,y,amount){const old={x:m.x,y:m.y},radius=movementProfile(m.kind).collisionRadius;moveWithCollision(m,x,y,amount,blockingObstacles(this.obstacles,m.kind),radius,(x,y)=>this.canOccupy(m,x,y,radius));if(!this.canOccupy(m,m.x,m.y,radius))Object.assign(m,old);}
+ warnAbility(config){const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
+ abilityEffect(config){const point=this.view(config.x,config.y),ring=this.scene.add.circle(point.x,point.y,config.radius,config.kind==='blink'?0xb891ed:0xe0b17b,.25).setDepth(this.depth(config.x,config.y)+1);if(this.scene.project)ring.setScale?.(1,.5);this.scene.tweens.add({targets:ring,alpha:0,duration:350,onComplete:()=>ring.destroy()});if(config.kind==='stomp')this.scene.cameras?.main?.shake?.(130,.003);}
+ shootHostile(m,shot){const angle=Math.atan2(shot.targetY-shot.y,shot.targetX-shot.x)+(shot.angleOffset||0),p={...shot,vx:Math.cos(angle)*shot.speed,vy:Math.sin(angle)*shot.speed,remaining:shot.range||600,source:m};const screen=this.view(p.x,p.y);p.body=this.scene.add.circle(screen.x,screen.y-18,shot.magic?6:4,shot.status?.type==='poison'?0x9ac76b:shot.magic?0xb49aeb:0xd5b98a).setDepth(this.depth(p.x,p.y)+5);this.hostileProjectiles.push(p);}
+ tickAbility(m,now,dt,engaged){return tickMonsterAbility({monster:m,hero:this.hero,now,dt,engaged,safe:this.safe(),canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config)});}
+
  beginBossAttack(m,now){
   const basic=m.patterns?.length?m.patterns:['slam'],patterns=m.bossType==='world'&&m.hp/m.maxHp<.5?[...new Set([...basic,'slam','charge','volley'])]:basic,effect=patterns[(m.attackSequence||0)%patterns.length];m.attackSequence=(m.attackSequence||0)+1;
   m.lastSlam=now;m.windup={effect,x:this.hero.x,y:this.hero.y,at:now+(effect==='charge'?850:1200)};
@@ -84,27 +95,30 @@ export class MonsterSystem{
   }else if(distance(this.hero,center)<=(m.bossType==='world'?140:100))this.hurtHero(m.attack*2,now,false,m);
  }
  update(now,dt){
-  this.now=now;this.stream?.update();this.tickEffects(now);if(this.hero.hp>0)tickClassEffects(this,now);
+  this.now=now;this.stream?.update();this.tickEffects(now);tickHeroAfflictions(this.hero,now,(attack,magic)=>this.hurtHero(attack,now,magic));if(this.hero.hp>0)tickClassEffects(this,now);
   for(const m of this.monsters){
    const active=distance(m,this.hero)<=MONSTER_ACTIVATION_RADIUS;if(active!==m.active)this.setMonsterVisible(m,active);
-   if(!active){this.cancelWindup(m);continue;}
-   if(!m.alive){if((this.content?Date.now():now)<m.respawnAt){const fraction=Math.max(0,Math.min(1,((m.dyingUntil||0)-now)/350));m.body.alpha=fraction;m.body.rotation=(1-fraction)*1.1;if(!fraction){m.body.setVisible(false);m.shadow.setVisible(false);}continue;}m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=m.homeX;m.y=m.homeY;m.poison=null;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);}
+   if(!active){this.cancelWindup(m);cancelMonsterAbility(m);continue;}
+   if(!m.alive){if((this.content?Date.now():now)<m.respawnAt){m.painted?.update('death',projectAngle(m.facing||0),dt);const fraction=Math.max(0,Math.min(1,((m.dyingUntil||0)-now)/350));m.body.alpha=fraction;m.body.rotation=(1-fraction)*1.1;if(!fraction){m.body.setVisible(false);m.shadow.setVisible(false);}continue;}m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=m.homeX;m.y=m.homeY;m.poison=null;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);}
    if(this.hero.hp>0&&m.poison&&now<m.poison.until&&now>=m.poison.next){m.poison.next=now+1000;this.hit(m,m.poison.damage,now);if(!m.alive)continue;}
-   const dist=distance(m,this.hero),homeDist=Math.hypot(m.x-m.homeX,m.y-m.homeY);let tx=m.homeX,ty=m.homeY,speed=62;
+   const profile=movementProfile(m.kind),dist=distance(m,this.hero),homeDist=Math.hypot(m.x-m.homeX,m.y-m.homeY);let tx=m.homeX,ty=m.homeY,speed=62;
    if(homeDist>=295||this.safe())m.returning=true;if(m.returning&&homeDist<35){m.returning=false;}
-   if(!m.returning&&!this.safe()&&dist<190&&homeDist<300&&this.hero.hp>0&&this.sight(m,this.hero)){tx=this.hero.x;ty=this.hero.y;speed=m.kind.speed;this.lastCombat=now;m.lastEngagedAt=now;}
+   const engaged=!m.returning&&!this.safe()&&dist<Math.max(190,profile.range)&&homeDist<300&&this.hero.hp>0&&this.sight(m,this.hero);
+   if(engaged){tx=this.hero.x;ty=this.hero.y;speed=m.kind.speed;this.lastCombat=now;m.lastEngagedAt=now;if(profile.preferredDistance){if(dist<profile.preferredDistance*.65){tx=m.x+(m.x-this.hero.x);ty=m.y+(m.y-this.hero.y);speed*=.65;}else if(dist<profile.preferredDistance){tx=m.x;ty=m.y;}}}
+   const controlled=now<(m.rootUntil||0)||now<(m.stunUntil||0);if(controlled)cancelMonsterAbility(m);
+   const ability=this.tickAbility(m,now,dt,engaged&&!controlled);if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
    if(now<(m.rootUntil||0)||now<(m.stunUntil||0))speed=0;else if(now<(m.slowUntil||0))speed*=.45;
    if(m.windup){if(m.returning||this.safe()||this.hero.hp<=0)this.cancelWindup(m);else if(now>=m.windup.at)this.finishBossAttack(m,now);speed=0;}
    const interval=m.hp/m.maxHp<.5?4200:6000;
-   if(m.kind.boss&&!m.windup&&!m.returning&&!this.safe()&&dist<260&&now-(m.lastSlam||0)>interval&&this.hero.hp>0&&this.sight(m,this.hero)){this.beginBossAttack(m,now);speed=0;}
+   if(m.kind.boss&&!m.specialState&&!ability.fired&&!m.windup&&!m.returning&&!this.safe()&&dist<260&&now-(m.lastSlam||0)>interval&&this.hero.hp>0&&this.sight(m,this.hero)){this.beginBossAttack(m,now);speed=0;}
    const previous={x:m.x,y:m.y};if(Math.hypot(tx-m.x,ty-m.y)>32){m.facing=Math.atan2(ty-m.y,tx-m.x);this.move(m,tx,ty,speed*dt);}
    if(dt>0)for(const other of this.monsters){if(other===m||!other.alive||other.active===false)continue;const d=distance(m,other);if(d>0&&d<24)this.move(m,m.x+(m.x-other.x)/d*4,m.y+(m.y-other.y)/d*4,Math.min(3,24-d));}
-   const walking=distance(previous,m)>.01;m.body.alpha=m.hurtUntil>now?.6:1;m.body.rotation=m.hurtUntil>now?Math.sin(now*.05)*.09:now-m.lastHit<240?Math.sin((now-m.lastHit)/240*Math.PI)*.12:0;m.body.scaleX=(Math.cos(m.facing||0)<0?-1:1)*(m.kind.visualScale||(m.kind.boss?1.45:1));m.body.scaleY=(m.kind.visualScale||(m.kind.boss?1.45:1))*(walking?1+Math.sin(now*.012)*.035:1);
-   if(recoverLivingMonster(m,now,dt,!m.returning&&!this.safe()&&dist<190&&this.hero.hp>0&&this.sight(m,this.hero)))this.persistHealth(m,now);
-   if(!m.returning&&!this.safe()&&dist<42&&now-m.lastHit>1500&&this.hero.hp>0&&this.sight(m,this.hero)){m.lastHit=now;this.hurtHero(m.attack,now,m.kind.magic,m);}
+   const walking=distance(previous,m)>.01;animateMonsterParts(m,now,walking,profile);const state=m.hurtUntil>now?'hurt':m.specialState?'special':now-m.lastHit<240?'attack':walking?'run':'idle';m.painted?.update(state,projectAngle(m.facing||0),dt,{progress:m.specialState?(now-m.specialState.releaseAt+profile.windup)/profile.windup:(now-m.lastHit)/240});m.body.alpha=m.hurtUntil>now?.6:1;m.body.rotation=m.hurtUntil>now?Math.sin(now*.05)*.09:now-m.lastHit<240?Math.sin((now-m.lastHit)/240*Math.PI)*.12:0;m.body.scaleX=(m.paintedActive?1:Math.cos(m.facing||0)<0?-1:1)*(m.kind.visualScale||(m.kind.boss?1.45:1));m.body.scaleY=(m.kind.visualScale||(m.kind.boss?1.45:1))*(walking?1+Math.sin(now*.012)*.035:1);
+   if(recoverLivingMonster(m,now,dt,engaged))this.persistHealth(m,now);
+   if(!ability.busy&&!m.windup&&!controlled&&!m.returning&&!this.safe()&&dist<42&&now-m.lastHit>1500&&this.hero.hp>0&&this.sight(m,this.hero)){m.lastHit=now;this.hurtHero(m.attack,now,m.kind.magic,m);}
    const point=this.view(m.x,m.y),depth=this.depth(m.x,m.y);
-   m.body.setPosition(point.x,point.y+Math.sin(now*.007+m.phase)*1.5).setDepth(depth);m.shadow.setPosition(point.x,point.y+5).setDepth(depth-1);
-   m.hpBar.setPosition(point.x,point.y-(m.kind.boss?(m.kind.visualScale||1.45)*93:48)).setDepth(depth+1).setScale((m.kind.boss?2.5:1)*m.hp/m.maxHp,1);m.nameLabel.setPosition(point.x,point.y-(m.kind.boss?(m.kind.visualScale||1.45)*110:76)).setDepth(depth+2);this.syncAnnotations(m);
+   const elevation=profile.elevation||0,bob=Math.sin(now*(profile.locomotion==='winged'?.016:.007)+m.phase)*(elevation?4:1.5);m.body.setPosition(point.x,point.y-elevation+bob).setDepth(depth);m.shadow.scaleX=elevation?.72:1;m.shadow.alpha=elevation?.24:.35;m.shadow.setPosition(point.x,point.y+5).setDepth(depth-1);
+   m.hpBar.setPosition(point.x,point.y-elevation-(m.kind.boss?(m.kind.visualScale||1.45)*93:48)).setDepth(depth+1).setScale((m.kind.boss?2.5:1)*m.hp/m.maxHp,1);m.nameLabel.setPosition(point.x,point.y-elevation-(m.kind.boss?(m.kind.visualScale||1.45)*110:76)).setDepth(depth+2);this.syncAnnotations(m);
   }
   for(const p of [...this.projectiles]){
    if(!p.target.alive||!this.monsters.includes(p.target)||this.hero.hp<=0){this.removeProjectile(p);continue;}
@@ -115,7 +129,7 @@ export class MonsterSystem{
   for(const p of [...this.hostileProjectiles]){
    const next={x:p.x+p.vx*dt,y:p.y+p.vy*dt};p.remaining-=Math.hypot(p.vx*dt,p.vy*dt);
    const blocked=!this.sight(p,next,7),hit=!this.safe()&&segmentDistanceSquared(p,next,this.hero)<21**2;
-   if(blocked||hit||p.remaining<=0||this.hero.hp<=0){if(hit&&!blocked)this.hurtHero(p.damage,now,p.magic,p.source);p.body.destroy();this.hostileProjectiles=this.hostileProjectiles.filter(q=>q!==p);}else{Object.assign(p,next);const screen=this.view(p.x,p.y);p.body.setPosition(screen.x,screen.y-18).setDepth(this.depth(p.x,p.y)+5);}
+   if(blocked||hit||p.remaining<=0||this.hero.hp<=0){if(hit&&!blocked){this.hurtHero(p.damage,now,p.magic,p.source);applyHeroAffliction(this.hero,p.status,now);}p.body.destroy();this.hostileProjectiles=this.hostileProjectiles.filter(q=>q!==p);}else{Object.assign(p,next);const screen=this.view(p.x,p.y);p.body.setPosition(screen.x,screen.y-18).setDepth(this.depth(p.x,p.y)+5);}
   }
   if(now-this.lastCombat>=10000&&this.hero.hp>0&&now-this.lastRegen>=1000){this.lastRegen=now;const h=this.hero,old=h.hp+h.mp;h.hp=Math.min(h.maxHp,h.hp+Math.max(1,Math.round(h.maxHp*.07)));h.mp=Math.min(h.maxMp,h.mp+Math.max(1,Math.round(h.maxMp*.04)));if(h.hp+h.mp!==old)this.onChange();}
  }
@@ -132,8 +146,8 @@ export class MonsterSystem{
   return {magic,damage:calculateDamage({attack:attack*multiplier,critical})+(critical?Math.round((magic?this.hero.stats.intelligence:this.hero.stats.strength)*.3):0),critical};
  }
  hit(m,amount,now,critical=false){
-  if(!m.alive)return;this.lastCombat=now;m.lastEngagedAt=now;this.select(m,now);m.hp=Math.max(0,m.hp-amount);m.hurtUntil=now+180;this.label(m.x,m.y,'-'+amount+(critical?'!':''),critical?'#ffb45c':'#fff1a0');
-  this.persistHealth(m,now);this.syncAnnotations(m);if(m.hp===0){m.alive=false;if(this.selected===m)this.selected=null;this.scene.onTargetLost?.(m);m.dyingUntil=now+350;const deadUntil=Date.now()+(m.kind.respawnMs||11000);m.respawnAt=this.content?deadUntil:now+(m.kind.respawnMs||11000);this.hero.worldState.monsters[m.key]={deadUntil,killedAt:Date.now()};this.cancelWindup(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;rollMonsterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.onChange();}
+  if(!m.alive)return;this.lastCombat=now;m.lastEngagedAt=now;if(!this.selected?.alive||this.selected===m)this.select(m,now);m.hp=Math.max(0,m.hp-amount);m.hurtUntil=now+180;this.label(m.x,m.y,'-'+amount+(critical?'!':''),critical?'#ffb45c':'#fff1a0');
+  this.persistHealth(m,now);this.syncAnnotations(m);if(m.hp===0){m.alive=false;if(this.selected===m)this.selected=null;this.scene.onTargetLost?.(m);m.dyingUntil=now+350;const deadUntil=Date.now()+(m.kind.respawnMs||11000);m.respawnAt=this.content?deadUntil:now+(m.kind.respawnMs||11000);this.hero.worldState.monsters[m.key]={deadUntil,killedAt:Date.now()};this.cancelWindup(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;rollMonsterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.onChange();}
  }
  strike(m,now,multiplier=1,critical=false,projectile=true,after=()=>{},magicOverride){
   const roll=this.damage(multiplier,critical,now,magicOverride),impact=target=>{if(!this.sight(this.hero,target)&&!projectile)return;this.hit(target,Math.max(1,roll.damage-Math.round((target.kind[roll.magic?'magicDefense':'defense']||0)*(target.armorBreakUntil>(this.now??now)&&!roll.magic?.5:1)*.45)),this.now??now,roll.critical);if(this.hero.classId==='cannoneer'&&this.buffs.powder>(this.now??now))for(const other of this.monsters)if(other!==target&&other.alive&&distance(other,target)<55&&this.sight(target,other))this.hit(other,Math.max(1,Math.round(roll.damage*.25)),this.now??now);after(target);};

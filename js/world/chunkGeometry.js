@@ -5,7 +5,9 @@ export const LOAD_DISTANCE=500;
 export const UNLOAD_DISTANCE=700;
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 export const distanceToSegment=(p,a,b)=>{const dx=b.x-a.x,dy=b.y-a.y,d=dx*dx+dy*dy,t=d?clamp(((p.x-a.x)*dx+(p.y-a.y)*dy)/d,0,1):0;return Math.hypot(p.x-a.x-t*dx,p.y-a.y-t*dy);};
-export function regionRoads(content){return [...(content.roads||[]),...biomeSidePaths(content)].flatMap((r,i)=>{const points=r.points||[r.from,r.to];return points.slice(1).map((b,j)=>({id:r.id||`road-${i}-${j}`,from:points[j],to:b,width:r.width||70,secondary:r.secondary===true}));}).filter(r=>r.from&&r.to);}
+const emptyRoads=Object.freeze([]),roadSegmentCache=new WeakMap();
+export function regionRoads(content){const main=content.roads||emptyRoads,side=biomeSidePaths(content),cached=roadSegmentCache.get(content);if(cached&&cached.main===main&&cached.side===side)return cached.segments;const segments=[...main,...side].flatMap((r,i)=>{const points=r.points||[r.from,r.to];return points.slice(1).map((b,j)=>({id:r.id||`road-${i}-${j}`,from:points[j],to:b,width:r.width||70,secondary:r.secondary===true}));}).filter(r=>r.from&&r.to);roadSegmentCache.set(content,{main,side,segments});return segments;}
+export function roadsForChunk(content,chunk){return regionRoads(content).filter(r=>{const pad=r.width;return Math.max(r.from.x,r.to.x)+pad>=chunk.x&&Math.min(r.from.x,r.to.x)-pad<=chunk.x+chunk.width&&Math.max(r.from.y,r.to.y)+pad>=chunk.y&&Math.min(r.from.y,r.to.y)-pad<=chunk.y+chunk.height;});}
 export const riverX=(content,y)=>(content.river?.baseX??content.width*.58)+Math.sin(y/(content.river?.wavelength||850))*(content.river?.amplitude??48);
 export function riverBlocked(content,x,y,radius=12){if(content.dungeon||content.river===false)return false;const half=content.river?.halfWidth??24;if(Math.abs(x-riverX(content,y))>=half+radius)return false;return !regionRoads(content).some(road=>distanceToSegment({x,y},road.from,road.to)<=Math.max(10,road.width/2-radius));}
 export function areaFor(hero,camera){const v=camera?.worldView;if(v&&v.width>0&&v.height>0)return {x:v.x,y:v.y,width:v.width,height:v.height};return {x:hero.x,y:hero.y,width:0,height:0};}
@@ -49,19 +51,19 @@ export function describeChunk(content,cx,cy){
    const kind=biomeDecoration(content,p.x,p.y,roll);if(!kind)continue;
    const r=(kind==='rock'?19:kind==='cliff'?32:kind==='ice'?20:kind.startsWith('ruin')?30:22)*scale;
    if(decorations.some(d=>Math.hypot(d.x-p.x,d.y-p.y)<d.r+r+16))continue;
-   decorations.push({...p,kind,scale,r});obstacles.push({...p,r});
+   decorations.push({...p,kind,scale,r});obstacles.push({...p,r,kind,flightBlocked:['oak','pine','cypress','cliff','ruin','ruin1','ruin2'].includes(kind)});
   }
   for(const town of content.towns||[]){
    const center=town.spawn||town,positions=town.id==='forestVillage'?[{x:865,y:885},{x:990,y:885},{x:865,y:1010}]:[[-170,-150],[150,-170],[-170,150],[155,145]].map(([dx,dy])=>({x:center.x+dx,y:center.y+dy}));
    for(const p of positions){if(!owned(p,cx,cy)||p.x<70||p.y<100||p.x>content.width-70||p.y>content.height-70)continue;
     if((content.npcs||[]).some(n=>Math.hypot(n.x-p.x,n.y-(p.y-14))<100)||(content.portals||[]).some(n=>Math.hypot(n.x-p.x,n.y-p.y)<150)||regionRoads(content).some(r=>distanceToSegment(p,r.from,r.to)<r.width/2+68))continue;
-    decorations.push({...p,kind:'house',scale:1,r:55});obstacles.push({x:p.x,y:p.y-14,r:55});
+    decorations.push({...p,kind:'house',scale:1,r:55});obstacles.push({x:p.x,y:p.y-14,r:55,kind:'house',flightBlocked:true});
    }
   }
  }
  for(const landmark of content.landmarks||[]){
   const layout=[[-100,-35],[0,-90],[100,-10],[-40,80]];
-  layout.forEach(([dx,dy],i)=>{const p={x:landmark.x+dx,y:landmark.y+dy};if(!owned(p,cx,cy)||reserved(content,p,25))return;decorations.push({...p,kind:['ruin','ruin1','ruin2'][i%3],scale:1,r:30});obstacles.push({...p,r:30});});
+  layout.forEach(([dx,dy],i)=>{const p={x:landmark.x+dx,y:landmark.y+dy};if(!owned(p,cx,cy)||reserved(content,p,25))return;decorations.push({...p,kind:['ruin','ruin1','ruin2'][i%3],scale:1,r:30});obstacles.push({...p,r:30,kind:'ruin',flightBlocked:true});});
  }
  for(const obstacle of content.obstacles||[])if(obstacle.r&&owned(obstacle,cx,cy))obstacles.push({...obstacle});
  return {key:`${cx},${cy}`,cx,cy,x,y,width,height,decorations,obstacles,npcs:(content.npcs||[]).filter(p=>owned(p,cx,cy)),portals:(content.portals||[]).filter(p=>owned(p,cx,cy)),bridges:bridgeDescriptors(content).filter(p=>owned(p,cx,cy))};

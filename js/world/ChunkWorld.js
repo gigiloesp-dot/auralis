@@ -1,7 +1,8 @@
+import {blockingObstacles} from '../monsters/movementProfiles.js';
 import {ENVIRONMENT_ART,environmentFrame} from '../assets/environmentArt.js';
 import {bakeTexture} from '../assets/bakeTexture.js';
 import {biomeZones,paintBiomes} from './biomes.js';
-import {CHUNK_SIZE,visibleChunkCoordinates,chunkDistance,describeChunk,regionRoads,riverX,riverBlocked,dungeonFloorContains} from './chunkGeometry.js';
+import {CHUNK_SIZE,visibleChunkCoordinates,chunkDistance,describeChunk,roadsForChunk,riverX,riverBlocked,dungeonFloorContains} from './chunkGeometry.js';
 import {project,unproject} from './projection.js';
 const named=(o,lang)=>o.names?.[lang]||o.names?.ru||o.name||o.id;
 export class ChunkWorld{
@@ -58,7 +59,7 @@ export class ChunkWorld{
    paintBiomes(g,c,data);
    for(let i=0;i<70;i++){g.fillStyle(palette.detail||0x849078,.2).fillEllipse((i*149+cx*71)%512,(i*251+cy*41)%512,7,3);}
    g.lineStyle((c.river?.halfWidth||24)*2,palette.water);g.beginPath();for(let y=data.y-40;y<data.y+data.height+40;y+=12){const x=riverX(c,y)-data.x;if(y===data.y-40)g.moveTo(x,y-data.y);else g.lineTo(x,y-data.y);}g.strokePath();
-   for(const road of regionRoads(c)){g.lineStyle(road.width,road.secondary?0xb1a17a:palette.road,road.secondary?.75:1);g.beginPath().moveTo(road.from.x-data.x,road.from.y-data.y).lineTo(road.to.x-data.x,road.to.y-data.y).strokePath();}
+   for(const road of roadsForChunk(c,data)){g.lineStyle(road.width,road.secondary?0xb1a17a:palette.road,road.secondary?.75:1);g.beginPath().moveTo(road.from.x-data.x,road.from.y-data.y).lineTo(road.to.x-data.x,road.to.y-data.y).strokePath();}
   }
   bakeTexture(g,key,data.width,data.height);const at=project(data.x,data.y,c.height),ground=s.add.container(at.x,at.y).setScale(1,.5).setDepth(-100000);ground.add(s.add.image(0,0,key).setOrigin(0).setScale((data.width+1)/data.width,(data.height+1)/data.height).setRotation(Math.PI/4));
   const objects=[ground],occluders=[];
@@ -68,12 +69,13 @@ export class ChunkWorld{
   for(const npc of data.npcs){const p=project(npc.x,npc.y,c.height),b=s.add.container(p.x,p.y).setDepth(npc.x+npc.y);b.add([s.add.ellipse(0,3,30,12,0x0d211a,.3),s.add.ellipse(0,-24,23,34,npc.roles?.includes('merchant')?0x537da4:0x967349),s.add.circle(0,-48,11,0xddb893),s.add.text(0,-77,named(npc,s.language),{fontSize:'13px',color:'#ffe4ac',stroke:'#152b22',strokeThickness:3}).setOrigin(.5)]);objects.push(b);}
   const markers=[...data.portals,...(c.dungeons||[]).filter(p=>Math.floor(p.x/512)===cx&&Math.floor(p.y/512)===cy),...(c.dungeon&&!(c.portals||[]).some(p=>Math.hypot(p.x-c.exit.x,p.y-c.exit.y)<1)?[c.exit].filter(p=>p&&Math.floor(p.x/512)===cx&&Math.floor(p.y/512)===cy):[])];
   for(const marker of markers){const p=project(marker.x,marker.y,c.height),b=s.add.container(p.x,p.y).setDepth(marker.x+marker.y);b.add([s.add.ellipse(0,0,55,25,0x85cfca,.45),s.add.rectangle(0,-33,40,65,0x394d62).setStrokeStyle(3,0xd5c485),s.add.ellipse(0,-33,26,49,0x51a5bb,.7),s.add.text(0,-90,named(marker,s.language),{fontSize:'13px',color:'#b6f1ee',stroke:'#17232e',strokeThickness:3}).setOrigin(.5)]);objects.push(b);}
-  this.chunks.set(data.key,{data,objects,key,occluders});
+  this.chunks.set(data.key,{data,objects,key,occluders});this.obstacleCache=null;
  }
- unload(key){const chunk=this.chunks.get(key);if(!chunk)return;for(const o of chunk.objects)o.destroy();this.scene.textures.remove(chunk.key);this.chunks.delete(key);}
+ unload(key){const chunk=this.chunks.get(key);if(!chunk)return;for(const o of chunk.objects)o.destroy();this.scene.textures.remove(chunk.key);this.chunks.delete(key);this.obstacleCache=null;}
  occludes(target){const p=project(target.x,target.y,this.content.height);for(const chunk of this.chunks.values())for(const {decoration:d,bounds:b}of chunk.occluders||[]){if(d.x+d.y<=target.x+target.y+10)continue;const inset=d.kind==='cypress'?.36:d.kind==='pine'?.24:.12,x=p.x,y=p.y-28;if(x>b.x+b.width*inset&&x<b.x+b.width*(1-inset)&&y>b.y+b.height*.08&&y<b.y+b.height*(d.kind==='house'?.96:.78))return true;}return false;}
- get obstacles(){return [...this.chunks.values()].flatMap(c=>c.data.obstacles);}
+ get obstacles(){return this.obstacleCache??= [...this.chunks.values()].flatMap(c=>c.data.obstacles);}
  isWalkable(x,y,radius=12){const c=this.content;if(!Number.isFinite(x)||!Number.isFinite(y)||x<radius||y<radius||x>c.width-radius||y>c.height-radius)return false;if(c.dungeon&&!dungeonFloorContains(c,x,y,radius)||riverBlocked(c,x,y,radius))return false;return !this.obstacles.some(o=>Math.hypot(x-o.x,y-o.y)<o.r+radius);}
+ isFlightWalkable(x,y,radius=12){const c=this.content;if(!Number.isFinite(x)||!Number.isFinite(y)||x<radius||y<radius||x>c.width-radius||y>c.height-radius)return false;if(c.dungeon&&!dungeonFloorContains(c,x,y,radius))return false;return !blockingObstacles(this.obstacles,{movementProfile:'bat'}).some(o=>Math.hypot(x-o.x,y-o.y)<o.r+radius);}
  get diagnostics(){return {loadedChunks:this.chunks.size,chunkTextures:this.chunks.size,objects:[...this.chunks.values()].reduce((n,c)=>n+c.objects.length,0)};}
  destroy(){for(const key of [...this.chunks.keys()])this.unload(key);}
 }
