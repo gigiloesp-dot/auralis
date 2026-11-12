@@ -6,7 +6,7 @@ export const ACTOR_ART=Object.freeze({
  paladin:{key:'actor-paladin',url:'assets/actors/heroes/paladin.png',atlasURL:'assets/actors/heroes/paladin.json',scale:.52,baselines:{idle:230,'run-a':212,'run-b':198,attack:182},equipment:true,weaponType:'sword'},
  assassin:{key:'actor-assassin',url:'assets/actors/heroes/assassin.png',atlasURL:'assets/actors/heroes/assassin.json',scale:.47,baselines:{idle:237,'run-a':218,'run-b':209,attack:201},equipment:true,weaponType:'dagger'},
  cannoneer:{key:'actor-cannoneer',url:'assets/actors/heroes/cannoneer.png',atlasURL:'assets/actors/heroes/cannoneer.json',scale:.50,baselines:{idle:231,'run-a':220,'run-b':210,attack:200},equipment:true,weaponType:'cannon',equipmentScaleY:.78},
- forestWolf:{key:'actor-forest-wolf',url:'assets/actors/monsters/forestWolf.png',atlasURL:'assets/actors/monsters/forestWolf.json',scale:.35,baselines:{idle:225,'run-a':225,'run-b':225,attack:225}}
+ forestWolf:{key:'actor-forest-wolf',url:'assets/actors/monsters/forestWolf.png',atlasURL:'assets/actors/monsters/forestWolf.json',scale:.48,baselines:{idle:201,'run-a':183,'run-b':175,attack:176}}
 });
 export const ACTOR_DIRECTIONS=Object.freeze(['e','se','s','sw','w','nw','n','ne']);
 export function actorPose(state,angle,elapsed,progress=0){
