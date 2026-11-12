@@ -24,11 +24,36 @@ jobs:
           test -x "$chrome_path"
           "$chrome_path" --version
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
-      - name: Full browser integration suite
-        run: npm run test:browser
+      - name: Core browser integration suite
+        run: npm run test:browser:core
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: browser-smoke
+          path: work/browser/
+          if-no-files-found: ignore
+
+  first_dungeon:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Earn progression and clear first dungeon without fixtures
+        run: npm run test:browser:first-dungeon
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-first-dungeon
           path: work/browser/
           if-no-files-found: ignore
