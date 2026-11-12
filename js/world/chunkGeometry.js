@@ -1,10 +1,11 @@
+import {biomeSidePaths,biomeDecoration} from './biomes.js';
 // Deterministic, renderer-independent descriptions. No world-sized geometry cache.
 export const CHUNK_SIZE=512;
 export const LOAD_DISTANCE=500;
 export const UNLOAD_DISTANCE=700;
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 export const distanceToSegment=(p,a,b)=>{const dx=b.x-a.x,dy=b.y-a.y,d=dx*dx+dy*dy,t=d?clamp(((p.x-a.x)*dx+(p.y-a.y)*dy)/d,0,1):0;return Math.hypot(p.x-a.x-t*dx,p.y-a.y-t*dy);};
-export function regionRoads(content){return (content.roads||[]).flatMap((r,i)=>{const points=r.points||[r.from,r.to];return points.slice(1).map((b,j)=>({id:r.id||`road-${i}-${j}`,from:points[j],to:b,width:r.width||70}));}).filter(r=>r.from&&r.to);}
+export function regionRoads(content){return [...(content.roads||[]),...biomeSidePaths(content)].flatMap((r,i)=>{const points=r.points||[r.from,r.to];return points.slice(1).map((b,j)=>({id:r.id||`road-${i}-${j}`,from:points[j],to:b,width:r.width||70,secondary:r.secondary===true}));}).filter(r=>r.from&&r.to);}
 export const riverX=(content,y)=>(content.river?.baseX??content.width*.58)+Math.sin(y/(content.river?.wavelength||850))*(content.river?.amplitude??48);
 export function riverBlocked(content,x,y,radius=12){if(content.dungeon||content.river===false)return false;const half=content.river?.halfWidth??24;if(Math.abs(x-riverX(content,y))>=half+radius)return false;return !regionRoads(content).some(road=>distanceToSegment({x,y},road.from,road.to)<=Math.max(10,road.width/2-radius));}
 export function areaFor(hero,camera){const v=camera?.worldView;if(v&&v.width>0&&v.height>0)return {x:v.x,y:v.y,width:v.width,height:v.height};return {x:hero.x,y:hero.y,width:0,height:0};}
@@ -45,8 +46,8 @@ export function describeChunk(content,cx,cy){
   for(let i=0;i<count;i++){
    const p={x:x+random()*width,y:y+random()*height},scale=.75+random()*.45,roll=random();
    if(reserved(content,p,20))continue;
-   const kind=content.id==='ancient'?(roll<.55?'rock':'cypress'):content.id==='north'?(roll<.25?'rock':'pine'):(roll<.12?'rock':roll<.58?'oak':'pine');
-   const r=(kind==='rock'?19:kind==='ruin'?36:22)*scale;
+   const kind=biomeDecoration(content,p.x,p.y,roll);if(!kind)continue;
+   const r=(kind==='rock'?19:kind==='cliff'?32:kind==='ice'?20:kind.startsWith('ruin')?30:22)*scale;
    if(decorations.some(d=>Math.hypot(d.x-p.x,d.y-p.y)<d.r+r+16))continue;
    decorations.push({...p,kind,scale,r});obstacles.push({...p,r});
   }
