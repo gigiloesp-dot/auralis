@@ -105,7 +105,7 @@ export class MonsterSystem{
    if(homeDist>=295||this.safe())m.returning=true;if(m.returning&&homeDist<35){m.returning=false;}
    const engaged=!m.returning&&!this.safe()&&dist<Math.max(190,profile.range)&&homeDist<300&&this.hero.hp>0&&this.sight(m,this.hero);
    if(engaged){tx=this.hero.x;ty=this.hero.y;speed=m.kind.speed;this.lastCombat=now;m.lastEngagedAt=now;if(profile.preferredDistance){if(dist<profile.preferredDistance*.65){tx=m.x+(m.x-this.hero.x);ty=m.y+(m.y-this.hero.y);speed*=.65;}else if(dist<profile.preferredDistance){tx=m.x;ty=m.y;}}}
-   const controlled=now<(m.rootUntil||0)||now<(m.stunUntil||0);if(controlled)cancelMonsterAbility(m);
+   const controlled=now<(m.rootUntil||0)||now<(m.stunUntil||0);if(controlled){cancelMonsterAbility(m);m.abilityBlockedUntil=Math.max(m.rootUntil||0,m.stunUntil||0)+250;}
    const ability=this.tickAbility(m,now,dt,engaged&&!controlled);if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
    if(now<(m.rootUntil||0)||now<(m.stunUntil||0))speed=0;else if(now<(m.slowUntil||0))speed*=.45;
    if(m.windup){if(m.returning||this.safe()||this.hero.hp<=0)this.cancelWindup(m);else if(now>=m.windup.at)this.finishBossAttack(m,now);speed=0;}

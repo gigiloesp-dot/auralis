@@ -58,3 +58,8 @@ test('all23 regional species are reachable while exact encounter budgets and sav
  assert.equal(types.size,23);assert.equal(camps,254);assert.equal(spawns,1145);assert.equal(bosses,18);assert.equal(themes.size,18);
  const first=getRegionContent('forest').camps[0];assert.equal(first.id,'forest-starter-wolves');assert.equal(first.type,'forestWolf');assert.deepEqual(first.spawns.map(s=>s.id),Array.from({length:8},(_,i)=>'forest-starter-wolf-'+i));
 });
+
+test('crowd-control recovery gives pursuit a short step before another movement ability can wind up',()=>{
+ const {ctx,monster}=context('forestWolf');monster.abilityBlockedUntil=ctx.now+250;assert.equal(tickMonsterAbility(ctx).busy,false);assert.equal(monster.specialState,undefined);
+ ctx.move(ctx.hero.x,ctx.hero.y,9);assert.equal(monster.x,109);ctx.now+=251;assert.equal(tickMonsterAbility(ctx).busy,true);assert.equal(monster.specialState.ability,'pounce');
+});

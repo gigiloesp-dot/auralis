@@ -70,7 +70,7 @@ export function tickMonsterAbility(context){
   }
   m.lastAttackAt=now;return {busy:false,fired:state.ability};
  }
- if(m.windup||distance(m,h)>p.range||!visible(m,h)||now-(m.lastAbilityAt??0)<p.cooldown)return {busy:false};
+ if(m.windup||now<(m.abilityBlockedUntil||0)||distance(m,h)>p.range||!visible(m,h)||now-(m.lastAbilityAt??0)<p.cooldown)return {busy:false};
  if(['pounce','charge','dive'].includes(ability)&&distance(m,h)<65)return {busy:false};
  m.lastAbilityAt=now;
  const target=ability==='stomp'?{x:m.x,y:m.y}:{x:h.x,y:h.y};
