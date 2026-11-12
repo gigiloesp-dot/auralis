@@ -23,6 +23,12 @@ test('all thirty runtime skills reject rank0 and rank5 casts consume resources a
   const hero=createCharacter({classId,level:42,x:1370,y:1240}),{system}=setup(hero);const target=system.monsters[0];target.x=hero.x+45;target.hp=target.maxHp=100000;for(const m of system.monsters.slice(1))m.alive=false;
   assert.equal(system.useSkill(skill.id,100).reason,'unlearned');hero.learnedSkills[skill.id]=5;hero.hp=Math.round(hero.maxHp*.5);hero.mp=hero.maxMp;
   const hp=hero.hp,mp=hero.mp;assert.equal(system.useSkill(skill.id,100).ok,true,skill.id);assert.equal(hero.mp,mp-skill.mana,skill.id);assert.equal(system.skillRemaining(skill.id,100),skill.cooldown,skill.id);
+  if(skill.id==='archer_1'){
+   assert.equal(target.hp,target.maxHp,'placing a trap must not deal immediate damage');
+   system.update(101,0);
+   assert.ok(target.hp<target.maxHp&&target.rootUntil>101,'the trap must damage and root an enemy standing on it');
+   assert.equal(system.traps.length,0,'triggered traps are consumed');
+  }
   const effect=target.hp<target.maxHp||hero.hp>hp||system.projectiles.length>0||system.pendingEffects.length>0||Object.keys(system.buffs).length>0;assert.equal(effect,true,skill.id);system.now=2000;system.tickEffects(2000);system.update(2000,.5);system.destroy();
  }
 });
