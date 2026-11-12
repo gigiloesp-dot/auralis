@@ -1,5 +1,6 @@
 // Russian source labels are stable lookup keys for the existing UI.
 export const UI_TRANSLATIONS={
+ 'Сортировка':['Sort','Ordenar'],'По типу':['By type','Por tipo'],'По редкости':['By rarity','Por rareza'],'По уровню':['By level','Por nivel'],
  ' · Ур. ':[' · Lv. ',' · Nv. '],'Не удалось сохранить персонажа':['Could not save character','No se pudo guardar el personaje'],'FANTASY ACTION RPG':['FANTASY ACTION RPG','RPG DE ACCIÓN FANTÁSTICA'],
  'Герой':['Hero','Héroe'],'Ур. ':['Lv. ','Nv. '],'Уровень ':['Level ','Nivel '],'Уровень':['Level','Nivel'],'Свободных очков характеристик: ':['Unspent attribute points: ','Puntos de atributo libres: '],'Увеличить ':['Increase ','Aumentar '],
  'Сила':['Strength','Fuerza'],'Выносливость':['Endurance','Resistencia'],'Ловкость':['Agility','Agilidad'],'Удача':['Luck','Suerte'],'Интеллект':['Intelligence','Inteligencia'],

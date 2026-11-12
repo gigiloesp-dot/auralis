@@ -7,6 +7,18 @@ import {INVENTORY_CAPACITY,itemName,itemDefinition,equipItem,unequipItem,equipme
 const SLOT_NAMES={weapon:'Оружие',helmet:'Шлем',chest:'Броня',gloves:'Перчатки',pants:'Штаны',boots:'Обувь',ring:'Кольцо',amulet:'Амулет',shield:'Щит'};
 const RARITY_NAMES={common:'Обычный',uncommon:'Необычный',rare:'Редкий',epic:'Эпический',legendary:'Легендарный'};
 const RARITY_COLORS={common:'#ded9c8',uncommon:'#6ed68b',rare:'#75b8ff',epic:'#d89aff',legendary:'#ffce62'};
+const SORT_MODES=['type','rarity','level'];
+const rarityRank={common:0,uncommon:1,rare:2,epic:3,legendary:4};
+// Return the same item objects in a stable order; sorting never merges stacks.
+export function sortedInventory(items,mode='type',language='ru'){
+ if(!SORT_MODES.includes(mode))return [...items];
+ const slot=item=>{const i=EQUIPMENT_SLOTS.indexOf(itemDefinition(item)?.slot);return i<0?EQUIPMENT_SLOTS.length:i;};
+ const rarity=item=>rarityRank[item.rarity]??0,level=item=>itemDefinition(item)?.level||1;
+ return items.map((item,index)=>({item,index})).sort((a,b)=>{
+  const x=a.item,y=b.item,type=slot(x)-slot(y),rare=rarity(y)-rarity(x),tier=level(y)-level(x);
+  return (mode==='rarity'?rare||type||tier:mode==='level'?tier||type||rare:type||rare||tier)||itemName(x,language).localeCompare(itemName(y,language),language)||a.index-b.index;
+ }).map(entry=>entry.item);
+}
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const btn=(text,fn,cls)=>{const b=el('button',text,cls);b.type='button';b.onclick=fn;return b;};
 const art=item=>{const node=el('span',undefined,'item-art-wrap');node.innerHTML=itemIcon(item,itemDefinition(item));return node;};
@@ -24,6 +36,11 @@ export class InventoryPanel{
  toggle(){this.opened?this.close():this.show();}
  show(){this.scene.closePanels?.(this);this.scene.mapPanel?.close();this.scene.dungeonPanel?.close();this.scene.travelPanel?.close();this.scene.savePanel?.close();this.scene.storagePanel?.close();this.scene.npcPanel?.close();this.scene.controls?.reset?.();this.scene.skillsPanel?.close();this.scene.characterPanel?.close();this.opened=true;this.root.hidden=false;this.page='equipment';this.selected=null;this.render();}
  close(){this.opened=false;this.selected=null;this.anchor=null;this.root.hidden=true;}
+ sort(mode){
+  const h=this.scene.hero,before=h.inventory;h.inventory=sortedInventory(before,mode,this.language);let saved=false;
+  try{saved=this.scene.save()!==false;}catch{}
+  if(!saved)h.inventory=before;this.selected=null;this.anchor=null;this.render();if(!saved)this.notice(this.t('Save failed'));return saved;
+ }
  changePage(page){if(this.page===page)return;this.page=page;this.selected=null;this.anchor=null;this.render();}
  select(source,key,button){
   this.selected={source,key};this.anchor=button;this.renderDetail();
@@ -91,6 +108,8 @@ export class InventoryPanel{
    for(const [k,v] of [[this.t('Физическая атака'),derived.physicalAttack+stats.attack],[this.t('Магическая атака'),derived.magicAttack+stats.attack],[this.t('Защита'),derived.defense+stats.defense],[this.t('Шанс критического удара'),derived.criticalChance+'%'],[this.t('Двойной удар'),derived.doubleHitChance+'%'],[this.t('Скорость атаки'),'+'+Math.round(derived.attackSpeedBonus*100)+'%'],[this.t('Бонус добычи'),derived.lootBonus+'%']]){const row=el('div',undefined,'stat-line');row.append(el('span',k),el('strong',String(v)));summary.append(row);}columns.append(summary);
   }else{
    content.append(el('h2',this.t('Рюкзак · ')+h.inventory.length+' / '+INVENTORY_CAPACITY+this.t(' ячеек')));
+   const sorting=el('nav',undefined,'inventory-tabs');sorting.setAttribute('aria-label',this.t('Сортировка'));
+   for(const [mode,label]of [['type','По типу'],['rarity','По редкости'],['level','По уровню']])sorting.append(btn(this.t(label),()=>this.sort(mode)));content.append(sorting);
    const grid=el('div',undefined,'inventory-grid');content.append(grid);
    for(let i=0;i<INVENTORY_CAPACITY;i++){const item=h.inventory[i];const b=btn('',()=>{if(item)this.select('bag',i,b);},'inventory-cell'+(item?' occupied':''));b.setAttribute('aria-label',item?itemName(item,this.language):this.t('Пустая ячейка ')+(i+1));if(item){b.append(art(item));if(!itemDefinition(item)?.slot&&itemCount(item)>1)b.append(el('span',String(itemCount(item)),'stack-count'));b.title=itemName(item,this.language);b.style.borderColor=RARITY_COLORS[item.rarity]||'#fff';}else b.append(el('span',undefined,'empty-cell'));grid.append(b);}
   }
