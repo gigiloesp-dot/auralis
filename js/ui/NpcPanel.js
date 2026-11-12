@@ -31,7 +31,7 @@ export class NpcPanel{
  }
  name(npc){return npc.names?.[this.language]||npc.name||npc.id;}
  residents(){return (this.scene.regionContent?.npcs||NPCS).filter(n=>(!n.region||n.region===(this.scene.hero.region||'forest'))&&Math.hypot(this.scene.hero.x-n.x,this.scene.hero.y-n.y)<=150).sort((a,b)=>Math.hypot(this.scene.hero.x-a.x,this.scene.hero.y-a.y)-Math.hypot(this.scene.hero.x-b.x,this.scene.hero.y-b.y));}
- nearest(){const list=this.residents();const starter=questProgress(this.scene.hero);return starter.state!=='claimed'&&list.some(n=>n.id==='mira')?list.find(n=>n.id==='mira'):list[0];}
+ nearest(){return this.residents()[0];}
  nearby(){return !!this.nearest()&&this.scene.hero.hp>0;}
  update(){
   if(this.messageUntil&&Date.now()>=this.messageUntil){this.messageUntil=0;this.root.querySelectorAll('.npc-status').forEach(node=>node.remove());}
@@ -44,7 +44,7 @@ export class NpcPanel{
   this.journal.textContent=active.slice(0,3).map(q=>{const p=questProgress(this.scene.hero,q.id);return `${questTitle(q,this.language)}: ${p.progress}/${p.required}`;}).join(' · ');
  }
  show(npc=this.nearest()){
-  if(!npc||this.scene.hero.hp<=0)return;this.scene.savePanel?.close();this.scene.storagePanel?.close();this.scene.mapPanel?.close();this.scene.dungeonPanel?.close();this.scene.controls?.reset?.();
+  if(!npc||this.scene.hero.hp<=0||!this.residents().some(n=>n.id===npc.id))return;this.scene.closePanels?.(this);this.scene.interactions?.hide();this.scene.savePanel?.close();this.scene.storagePanel?.close();this.scene.mapPanel?.close();this.scene.dungeonPanel?.close();this.scene.controls?.reset?.();
   this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.npc=npc;this.tab='quest';this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;
   if(recordEvent(this.scene.hero,'talk',{npcId:npc.id,region:this.scene.hero.region}))this.scene.save();this.render();
  }
