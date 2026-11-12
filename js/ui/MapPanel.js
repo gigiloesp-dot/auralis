@@ -1,3 +1,4 @@
+import {questMapTargets} from '../quests/questTargets.js';
 import {biomeZones} from '../world/biomes.js';
 import {regionRoads,riverX} from '../world/chunkGeometry.js';
 const labels={ru:{title:'Карта региона',open:'Карта',close:'Закрыть',town:'Поселения',dungeon:'Подземелья',target:'Цель'},en:{title:'Region map',open:'Map',close:'Close',town:'Settlements',dungeon:'Dungeons',target:'Objective'},es:{title:'Mapa de la región',open:'Mapa',close:'Cerrar',town:'Poblados',dungeon:'Mazmorras',target:'Objetivo'}};
@@ -11,7 +12,8 @@ export class MapPanel{
  if(!c.dungeon&&c.river!==false){const points=[];for(let y=0;y<=c.height;y+=100)points.push(riverX(c,y)+','+y);node('polyline',{points:points.join(' '),fill:'none',stroke:'#69a6be','stroke-width':(c.river?.halfWidth||24)*2});}
  for(const road of regionRoads(c))node('polyline',{points:[road.from,road.to].map(p=>p.x+','+p.y).join(' '),fill:'none',stroke:road.secondary?'#8b916b':'#baa675','stroke-width':road.width});
  const marker=(p,color,r)=>{const n=node('circle',{cx:p.x??p.spawn?.x,cy:p.y??p.spawn?.y,r,fill:color});const title=document.createElementNS(ns,'title');title.textContent=p.names?.[s.language]||p.name||p.id;n.append(title);};
- for(const p of c.camps||[])marker(p,'#c37a5f',55);for(const p of c.landmarks||[])marker(p,'#c6c5a1',120);for(const p of c.bosses||[])marker(p,'#df4e7b',100);for(const p of c.towns||[])marker(p,'#88d09d',130);for(const p of c.portals||[])marker(p,'#8edbe9',115);for(const p of c.dungeons||[])marker(p,'#cdb6ee',100);marker(s.hero,'#fff0a2',110);
+ for(const p of c.camps||[])marker(p,'#c37a5f',55);for(const p of c.landmarks||[])marker(p,'#c6c5a1',120);for(const p of c.bosses||[])marker(p,'#df4e7b',100);for(const p of c.towns||[])marker(p,'#88d09d',130);for(const p of c.portals||[])marker(p,'#8edbe9',115);for(const p of c.dungeons||[])marker(p,'#cdb6ee',100);
+ const objectives=questMapTargets(s.hero,c,s.language);for(const p of objectives)marker(p,p.ready?'#afffa6':'#ffe17d',125);marker(s.hero,'#fff0a2',110);if(objectives.length){const journal=document.createElement('p');journal.className='map-quest-objectives';journal.textContent=t.target+': '+objectives.map(p=>p.name+' '+p.progress+'/'+p.required+' · X '+Math.round(p.x)+' / Y '+Math.round(p.y)).join(' | ');this.root.append(journal);}
  const legend=document.createElement('p');legend.textContent=`${t.town}: ${(c.towns||[]).map(p=>p.names?.[s.language]||p.name).join(' · ')} | ${t.dungeon}: ${(c.dungeons||[]).map(p=>(p.names?.[s.language]||p.id)+' ('+p.level+')').join(' · ')} | X ${Math.round(s.hero.x)} / Y ${Math.round(s.hero.y)}`;this.root.append(legend);
  }
  close(){this.opened=false;this.root.hidden=true;}

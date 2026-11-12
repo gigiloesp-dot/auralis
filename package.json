@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "check": "node scripts/check.mjs",
-    "test:browser": "node tests/browser-smoke.cjs && node tests/browser-world.cjs && node tests/browser-npcs.cjs && node tests/browser-quests.cjs && node tests/browser-dungeons.cjs && node tests/browser-locales.cjs && node tests/browser-classes.cjs && node tests/browser-soak.cjs",
+    "test:browser": "node tests/browser-smoke.cjs && node tests/browser-world.cjs && node tests/browser-npcs.cjs && node tests/browser-quests.cjs && node tests/browser-dungeons.cjs && node tests/browser-locales.cjs && node tests/browser-classes.cjs && node tests/browser-soak.cjs && node tests/browser-journey.cjs",
     "test:browser:smoke": "node tests/browser-smoke.cjs",
     "test:browser:world": "node tests/browser-world.cjs",
     "test:browser:npcs": "node tests/browser-npcs.cjs",
@@ -14,7 +14,8 @@
     "test:browser:dungeons": "node tests/browser-dungeons.cjs",
     "test:browser:locales": "node tests/browser-locales.cjs",
     "test:browser:classes": "node tests/browser-classes.cjs",
-    "test:browser:soak": "node tests/browser-soak.cjs"
+    "test:browser:soak": "node tests/browser-soak.cjs",
+    "test:browser:journey": "node tests/browser-journey.cjs"
   },
   "devDependencies": {
     "playwright": "^1.65.0"

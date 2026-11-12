@@ -1,3 +1,4 @@
+import {text as message} from '../i18n/messages.js';
 import {QUEST_TEXT,QUESTS,questProgress,questTitle,questDescription,questsForNpc,acceptQuest,claimQuest,recordEvent} from '../quests/quests.js';
 import {buyPotion,sellItem,materialPrice,equipmentPrice,merchantStock,buyEquipment,commitTrade,POTION_PRICE} from '../systems/trading.js';
 import {itemCount,itemName,itemDefinition} from '../equipment/items.js';
@@ -23,7 +24,7 @@ export class NpcPanel{
   this.scene=scene;this.opened=false;this.tab='quest';this.npc=null;this.messageUntil=0;
   this.language=scene.language||document.documentElement.lang||'ru';this.text=QUEST_TEXT[this.language]||QUEST_TEXT.ru;this.t=NPC_UI_TEXT[this.language]||NPC_UI_TEXT.ru;
   this.button=element('button','','npc-interact');this.button.hidden=true;this.button.onclick=()=>this.show();
-  this.journal=element('div','','quest-tracker');this.journal.hidden=true;
+  this.journal=element('div','','quest-tracker');this.journal.hidden=true;this.journal.setAttribute('role','button');this.journal.tabIndex=0;this.journal.setAttribute('aria-label',message('questMap',this.language));this.journal.title=message('questMap',this.language);this.journal.onclick=()=>this.scene.mapPanel?.show();this.journal.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();this.scene.mapPanel?.show();}};
   this.root=element('section','','npc-panel');this.root.hidden=true;this.root.setAttribute('role','dialog');this.root.setAttribute('aria-modal','true');
   document.body.append(this.button,this.journal,this.root);
   this.onKey=e=>{if(e.key==='Escape'&&this.opened)this.close();};document.addEventListener('keydown',this.onKey);
