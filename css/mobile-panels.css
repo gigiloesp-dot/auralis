@@ -1,0 +1,92 @@
+/* Shared mobile panel rules. Text can shrink; controls retain a44px touch area. */
+#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map{font-family:system-ui,Arial,sans-serif;font-size:13px;line-height:1.35;overflow-wrap:anywhere;overscroll-behavior:contain}
+#inventory-panel button,#skills-panel button,#character-panel button,.npc-panel button,.storage-panel button,.save-panel button,.dungeon-panel button,.world-map button{min-height:44px;min-width:44px;max-width:100%;font-size:12px;line-height:1.25;white-space:normal;overflow-wrap:anywhere;touch-action:manipulation;box-sizing:border-box}
+#inventory-panel[hidden],#skills-panel[hidden],#character-panel[hidden],.npc-panel[hidden],.storage-panel[hidden],.save-panel[hidden],.dungeon-panel[hidden],.world-map[hidden]{display:none!important}
+#inventory-panel h2,#skills-panel h2,#character-panel h2,.npc-panel h2,.storage-panel h2,.save-panel h2,.dungeon-panel h2,.world-map h2{font-size:15px;line-height:1.25;min-width:0;overflow-wrap:anywhere}
+#inventory-panel h3,#skills-panel h3,#character-panel h3,.npc-panel h3,.storage-panel h3,.save-panel h3,.dungeon-panel h3{font-size:14px;line-height:1.3}
+.npc-panel,.save-panel,.dungeon-panel,#character-panel{inset:8px max(64px,calc(env(safe-area-inset-right) + 56px)) 8px max(8px,env(safe-area-inset-left));max-height:calc(100dvh - 16px);padding:0 12px 12px;overflow-x:hidden;overflow-y:auto;box-sizing:border-box}
+.npc-heading,.save-panel>header,.dungeon-panel>header,.character-heading{position:sticky;top:0;z-index:4;min-height:54px;flex:none;margin:0 -12px 7px;padding:5px 12px;gap:8px;background:#22392e;border-bottom:1px solid #b99c6766;box-sizing:border-box}
+.npc-heading h2,.save-panel>header h2,.dungeon-panel>header h2,.character-heading h2{flex:1;margin:0;max-width:calc(100% - 58px)}
+.npc-heading>button,.save-panel>header>button,.dungeon-panel>header>button,.character-heading>button{flex:none;min-width:44px;padding:7px 10px}
+.npc-panel p,.save-panel p,.dungeon-panel p{margin:7px 0;font-size:12px;line-height:1.4}
+.npc-panel .npc-tabs{gap:6px;margin:7px 0}.npc-panel .npc-tabs button{flex:1;min-width:0;padding:7px 9px}
+.npc-selector{font-size:12px;gap:8px;margin:7px 0}.npc-selector select{min-width:0;max-width:72%;min-height:44px;padding:6px;font-size:12px}
+.npc-shop-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(74px,auto);gap:10px;align-items:center;margin:0;padding:8px 0;border-bottom:1px solid #9c895544;min-width:0}
+.npc-shop-row>button{max-width:150px;min-width:74px;padding:7px 9px;justify-self:end}
+.item-summary{display:flex;align-items:center;gap:9px;min-width:0;text-align:left;width:100%}
+.item-summary>.item-art-wrap{width:40px;height:40px;flex:none;float:none;margin:0}
+.item-summary-copy{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0;overflow-wrap:anywhere}
+.item-summary-name{display:block;font-size:12px;line-height:1.3;font-weight:700;min-width:0}
+.item-summary-meta,.item-summary-price{display:block;font-size:11px;line-height:1.35;color:#d3c8ad;min-width:0;white-space:normal}
+.item-summary-price{color:#f1d594}
+.npc-quest{padding:9px 0}.npc-quest h3{font-size:14px}.npc-quest .npc-target{font-size:11px}.npc-quest>button{margin:3px 0;max-width:100%}
+#inventory-panel{overflow:hidden!important}
+#inventory-panel .inventory-heading{min-height:54px;padding:5px 12px;gap:8px}
+#inventory-panel .inventory-heading strong{font-size:15px;line-height:1.25;min-width:0}
+#inventory-panel .inventory-heading button{flex:none;min-width:44px;font-size:18px}
+#inventory-panel .inventory-tabs{padding:5px 12px;gap:6px;min-height:54px}
+#inventory-panel .inventory-tabs button{font-size:12px;padding:6px 8px;min-width:0;min-height:44px}
+#inventory-panel .inventory-page{padding:6px 12px 18px;overflow-x:hidden;scroll-padding-bottom:12px}
+#inventory-panel .inventory-page h2{font-size:15px;margin:2px 0 7px}
+#inventory-panel .equipment-layout{grid-template-columns:minmax(0,1fr) minmax(165px,.72fr);gap:10px}
+#inventory-panel .equipment-grid{gap:6px}
+#inventory-panel .equipment-grid .equipment-cell{min-height:74px;padding:5px;overflow:hidden}
+#inventory-panel .equipment-cell .item-art-wrap{width:36px;height:36px}
+#inventory-panel .equipment-cell small{font-size:11px;line-height:1.2;max-width:100%;overflow-wrap:anywhere}
+#inventory-panel .equipment-layout .equipment-summary{padding:6px;min-width:0}
+#inventory-panel .equipment-summary h3{font-size:13px;margin:0 0 5px}
+#inventory-panel .equipment-summary .stat-line{font-size:11px;padding:6px 2px;gap:8px;min-width:0}
+#inventory-panel .equipment-summary .stat-line span{min-width:0}.equipment-summary .stat-line strong{white-space:normal!important;overflow-wrap:anywhere;text-align:right}
+#inventory-panel .inventory-grid{gap:5px}
+#inventory-panel .inventory-grid .inventory-cell{min-height:44px;min-width:44px;padding:2px}
+#inventory-panel .inventory-cell .item-art-wrap{width:min(100%,42px);height:auto;aspect-ratio:1}
+#inventory-panel .item-detail{display:flex;flex-direction:column;overflow:hidden!important;padding:0;max-height:calc(100dvh - 16px)}
+#inventory-panel .item-detail-body{flex:1;min-height:0;overflow-x:hidden;overflow-y:auto;padding:10px;touch-action:pan-y;overscroll-behavior:contain}
+#inventory-panel .detail-heading{min-width:0;gap:8px}
+#inventory-panel .detail-heading .item-art-wrap{width:44px;height:44px;flex:none}
+#inventory-panel .detail-heading h3{font-size:14px;line-height:1.3;min-width:0;overflow-wrap:anywhere}
+#inventory-panel .item-detail p{font-size:12px;line-height:1.35;margin:5px 0}
+#inventory-panel .item-actions{display:flex;flex-wrap:wrap;gap:6px;flex:none;margin:0;padding:7px;background:#20372b;border-top:1px solid #b6a16b66}
+#inventory-panel .item-actions button{flex:1 1 90px;padding:7px 9px}
+#inventory-panel .detail-status{font-size:10px;max-width:100%;overflow-wrap:anywhere}
+#inventory-panel .inventory-message:empty{display:none}
+.skill-heading{min-height:54px;padding:5px 12px;gap:8px;flex:none}
+.skill-heading h2{font-size:15px;flex:1;min-width:0}
+.skill-heading span{font-size:11px;max-width:30%;margin-left:0;min-width:0}
+.skill-heading button{flex:none;padding:7px 10px}
+.skill-tabs{gap:6px;padding:4px 12px;flex:none}.skill-tabs button{min-width:0;padding:5px}
+#skills-panel .skill-equipped-slots{min-height:48px;padding:2px 12px;gap:6px;flex:none}
+#skills-panel .skill-equipped-slots strong{font-size:12px;min-width:0}
+#skills-panel .skill-equipped-slots button{height:44px;min-width:44px;font-size:16px;padding:4px}
+#skills-panel .skill-layout{grid-template-columns:minmax(0,1fr) minmax(200px,.82fr);padding:5px 12px 8px;gap:8px}
+#skills-panel .skill-list{min-width:0;overflow-x:hidden}
+#skills-panel .skill-card{padding:7px;gap:8px;min-height:66px;font-size:12px}
+#skills-panel .skill-icon{width:36px;height:36px;flex:none}
+#skills-panel .skill-info{min-width:0}.skill-info strong{font-size:12px}.skill-info small{font-size:11px;line-height:1.3}.skill-info span{font-size:10px}
+#skills-panel .skill-detail{padding:8px;min-width:0;overflow-x:hidden}
+#skills-panel .skill-detail h3{font-size:14px;margin:5px 0}.skill-detail h4{font-size:12px}
+#skills-panel .skill-stat,#skills-panel .skill-note{font-size:11px;line-height:1.35;padding:0;overflow-wrap:anywhere}
+#skills-panel .skill-slot-choices{gap:5px}
+#skills-panel .skill-slot-choices button{font-size:11px;padding:6px;min-width:0}
+#skills-panel .skill-learn,#skills-panel .skill-remove{font-size:12px;padding:7px}
+.attribute-grid{gap:6px}.attribute-row{padding:6px;min-width:0;gap:7px}.attribute-row>div{min-width:0}.attribute-row strong{font-size:13px}.attribute-row small{font-size:11px;line-height:1.3}.attribute-row button{font-size:18px;min-width:44px;flex:none}
+.character-summary{font-size:11px;gap:5px;grid-template-columns:repeat(2,minmax(0,1fr))}.character-summary span{min-width:0;padding:6px}.attribute-points{font-size:12px}
+.storage-panel{padding:0 12px 8px;overflow:hidden}
+.storage-panel>header{min-height:54px;padding:5px 0;gap:8px;flex:none}
+.storage-panel>header h2{flex:1;min-width:0;font-size:15px}.storage-panel>header button{flex:none}
+.storage-hint{font-size:11px;line-height:1.35;margin:3px 0 6px;flex:none}.storage-message:empty{display:none}.storage-message{font-size:11px;min-height:0;flex:none}
+.storage-columns{gap:8px;overflow:hidden}.storage-columns h3{font-size:13px;margin:3px 0 6px;flex:none}.storage-items{overflow-x:hidden;gap:5px;padding-bottom:8px}
+.storage-items .storage-item{gap:6px;padding:6px;min-width:0;overflow:hidden;flex-shrink:0}
+.storage-item .item-summary{flex:1;min-width:0}.storage-item .item-summary>.item-art-wrap{width:34px;height:34px}.storage-item .item-summary-name{font-size:11px}.storage-item .item-summary-meta,.storage-item .item-summary-price{font-size:10px}
+.storage-item>small{display:block!important;flex:none;max-width:64px;font-size:10px;overflow-wrap:anywhere}
+.save-panel h3{font-size:14px}.save-panel textarea{min-height:75px;max-width:100%;font-size:11px}.save-panel label{font-size:12px}.save-downloads{gap:6px}
+.dungeon-difficulties{gap:7px}.dungeon-difficulties button{flex:1;min-width:0}
+.rpg-toolbar button,.rpg-toolbar #character-btn,.rpg-toolbar #inventory-btn,.rpg-toolbar #skills-btn{width:44px;height:44px;min-width:44px;min-height:44px}
+.rpg-toolbar{top:max(5px,env(safe-area-inset-top));right:62px;gap:5px}
+#pause-btn{width:44px;height:44px;top:max(5px,env(safe-area-inset-top));right:12px}
+.active-interaction{position:fixed!important;left:50%!important;bottom:max(74px,calc(env(safe-area-inset-bottom) + 68px))!important;transform:translateX(-50%)!important;max-width:min(220px,34vw)!important;min-height:44px!important;padding:6px 10px!important;font:600 12px/1.2 system-ui,Arial,sans-serif!important;text-align:center;white-space:normal;overflow-wrap:anywhere;z-index:11}
+@media(max-width:700px){#inventory-panel .inventory-grid{grid-template-columns:repeat(8,minmax(44px,1fr))}#inventory-panel .equipment-layout{gap:7px;grid-template-columns:minmax(0,1fr) minmax(150px,.75fr)}#skills-panel .skill-layout{grid-template-columns:minmax(0,1fr) minmax(190px,.82fr)}.npc-shop-row{gap:7px}.npc-shop-row>button{max-width:120px}.item-summary>.item-art-wrap{width:36px;height:36px}}
+#skills-panel .skill-detail{display:flex;flex-direction:column;overflow:hidden;padding:0}
+#skills-panel .skill-detail-body{flex:1;min-height:0;overflow-x:hidden;overflow-y:auto;touch-action:pan-y;overscroll-behavior:contain;padding:8px}
+#skills-panel .skill-detail-actions{flex:none;display:flex;gap:5px;flex-wrap:wrap;background:#20372b;padding:6px;border-top:1px solid #ab946b55}
+#skills-panel .skill-detail-actions button{flex:1 1 100px;margin:0;min-height:44px}

@@ -40,6 +40,7 @@ export class SkillsPanel{
    detail.append(choices);
    if(slot)detail.append(button(this.t('Снять из слота ')+slot,()=>{if(removeSkillSlot(h,skill.id)){this.scene.save();this.scene.refreshSkillSlots?.();this.render();}},'skill-remove'));
   }else detail.append(el('p',this.t('Сначала изучи навык, чтобы добавить его в боевой слот.')));
+  const actions=el('div',undefined,'skill-detail-actions');for(const action of detail.querySelectorAll('.skill-learn,.skill-remove'))actions.append(action);const body=el('div',undefined,'skill-detail-body');while(detail.firstChild)body.append(detail.firstChild);detail.replaceChildren(body);if(actions.childNodes.length)detail.append(actions);
  }
  destroy(){document.removeEventListener('keydown',this.onEscape);this.button?.removeEventListener('click',this.onClick);this.close();}
 }

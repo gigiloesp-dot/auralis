@@ -24,10 +24,11 @@ test('every static UI label used by the three panels is translated',()=>{
  }
 });
 class Node{
- constructor(tag='div'){this.tag=tag;this.children=[];this.style={};this.attrs={};this.hidden=false;this.isConnected=true;this._text='';}
+ constructor(tag='div'){this.tag=tag;this.children=[];this.style={};this.attrs={};this.dataset={};this.parentNode=null;this.hidden=false;this.isConnected=true;this._text='';}
  set textContent(t){this._text=String(t);this.children=[];}get textContent(){return this._text+this.children.map(c=>c.textContent??String(c)).join(' ');}
- append(...nodes){this.children.push(...nodes);}replaceChildren(...nodes){this._text='';this.children=nodes;}
- addEventListener(){}removeEventListener(){}setAttribute(k,v){this.attrs[k]=v;}querySelector(){return null;}getBoundingClientRect(){return {left:0,right:40,top:0,height:40};}
+ append(...nodes){for(const n of nodes){if(n&&typeof n==='object'){n.remove?.();n.parentNode=this;}this.children.push(n);}}prepend(...nodes){for(const n of [...nodes].reverse()){n.remove?.();n.parentNode=this;this.children.unshift(n);}}replaceChildren(...nodes){this._text='';for(const child of this.children)if(child&&typeof child==='object')child.parentNode=null;this.children=[];this.append(...nodes);}
+ get childNodes(){return this.children;}get firstChild(){return this.children[0]||null;}remove(){if(this.parentNode){this.parentNode.children=this.parentNode.children.filter(n=>n!==this);this.parentNode=null;}}
+ addEventListener(){}removeEventListener(){}setAttribute(k,v){this.attrs[k]=v;}querySelectorAll(selector){const classes=selector.split(',').map(s=>s.trim().slice(1)),result=[];const visit=n=>{for(const c of n.children||[]){if(classes.some(k=>(c.className||'').split(' ').includes(k)))result.push(c);visit(c);}};visit(this);return result;}querySelector(selector){return this.querySelectorAll(selector)[0]||null;}getBoundingClientRect(){return {left:0,right:40,top:0,height:40};}
 }
 test('English and Spanish panels render translated text and keep stat/skill actions functional',()=>{
  const previous={document:globalThis.document,window:globalThis.window,localStorage:globalThis.localStorage};
@@ -38,7 +39,7 @@ test('English and Spanish panels render translated text and keep stat/skill acti
    const scene={language:lang,hero:createCharacter({classId:'warrior',name:'Tester',level:5,skillPoints:2,attributePoints:3,inventory:[{id:'rustySword',rarity:'common'}]}),save(){},refreshHud(){},refreshSkillSlots(){}};
    const cp=new CharacterPanel(scene);cp.show();assert.equal(cyrillic.test(cp.root.textContent),false);const row=cp.root.children.find(x=>x.className==='attribute-grid').children[0];row.children[1].onclick();assert.equal(scene.hero.stats.strength,6);
    const ip=new InventoryPanel(scene);ip.show();assert.equal(cyrillic.test(ip.root.textContent),false);ip.changePage('bag');assert.ok(ip.root.textContent.includes(lang==='en'?'Backpack':'Mochila'));ip.select('bag',0,new Node('button'));assert.equal(cyrillic.test(ip.root.textContent),false);
-   const sp=new SkillsPanel(scene);sp.show();sp.selectSkill('warrior_0');assert.equal(cyrillic.test(sp.root.textContent),false);const learn=sp.root.children.find(x=>x.className==='skill-layout').children[1].children.find(x=>x.className==='skill-learn');learn.onclick();assert.equal(scene.hero.learnedSkills.warrior_0,1);assert.equal(cyrillic.test(sp.root.textContent),false);
+   const sp=new SkillsPanel(scene);sp.show();sp.selectSkill('warrior_0');assert.equal(cyrillic.test(sp.root.textContent),false);const learn=sp.root.querySelector('.skill-learn');assert.ok(sp.root.querySelector('.skill-detail-body'));assert.ok(sp.root.querySelector('.skill-detail-actions'));learn.onclick();assert.equal(scene.hero.learnedSkills.warrior_0,1);assert.equal(cyrillic.test(sp.root.textContent),false);
    cp.destroy();ip.destroy();sp.destroy();
   }
  }finally{Object.assign(globalThis,previous);}

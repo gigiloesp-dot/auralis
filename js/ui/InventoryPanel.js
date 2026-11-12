@@ -1,7 +1,7 @@
 import {className} from '../characters/classes.js';
 import {uiText,uiLanguage} from '../i18n/uiText.js';
 import {derivedAttributes} from '../systems/attributes.js';
-import {itemIcon} from './itemIcons.js';
+import {itemArt,itemSaleText} from './itemPresentation.js';
 import {EQUIPMENT_SLOTS} from '../equipment/armor.js';
 import {INVENTORY_CAPACITY,itemName,itemDefinition,equipItem,unequipItem,equipmentStats,itemCount} from '../equipment/items.js';
 const SLOT_NAMES={weapon:'Оружие',helmet:'Шлем',chest:'Броня',gloves:'Перчатки',pants:'Штаны',boots:'Обувь',ring:'Кольцо',amulet:'Амулет',shield:'Щит'};
@@ -21,7 +21,7 @@ export function sortedInventory(items,mode='type',language='ru'){
 }
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const btn=(text,fn,cls)=>{const b=el('button',text,cls);b.type='button';b.onclick=fn;return b;};
-const art=item=>{const node=el('span',undefined,'item-art-wrap');node.innerHTML=itemIcon(item,itemDefinition(item));return node;};
+const art=item=>itemArt(item);
 export class InventoryPanel{
  constructor(scene){
   this.scene=scene;this.root=document.getElementById('inventory-panel');this.button=document.getElementById('inventory-btn');
@@ -64,6 +64,7 @@ export class InventoryPanel{
   box.append(el('div',this.selected.source==='equip'?this.t('ЭКИПИРОВАНО'):this.t('В РЮКЗАКЕ'),'detail-status'));
   const head=el('div',undefined,'detail-heading');head.append(art(item),el('h3',itemName(item,this.language)));box.append(head);
   const rarity=el('p',this.t(RARITY_NAMES[item.rarity]||RARITY_NAMES.common));rarity.style.color=RARITY_COLORS[item.rarity]||'#fff';box.append(rarity);
+  box.append(el('p',itemSaleText(item,this.language),'item-sale-value'));
   const props=[[this.t('Тип'),def.slot?this.t(SLOT_NAMES[def.slot]):this.t('Материал')],[this.t('Требуемый уровень'),String(def.level||1)]];
   if(!def.slot)props.push([this.t('Количество'),itemCount(item)+' / 100']);
   const multiplier={common:1,uncommon:1.12,rare:1.28,epic:1.5,legendary:1.85}[item.rarity]||1;
@@ -78,8 +79,9 @@ export class InventoryPanel{
   if(this.selected.source==='equip')actions.append(btn(this.t('Снять'),()=>{if(!unequipItem(h,this.selected.key)){this.notice(this.t('Сумка заполнена'));return;}this.selected=null;this.anchor=null;this.scene.save();this.render();},'primary'));
   if(this.selected.source==='bag')actions.append(btn(this.t('Выкинуть'),()=>this.confirmDiscard(),'danger'));
   actions.append(btn(this.t('Закрыть'),()=>{this.selected=null;this.anchor=null;box.remove();}));
-  this.positionDetail();
+  this.wrapDetailContent(box,actions);this.positionDetail();
  }
+ wrapDetailContent(box,actions){const body=el('div',undefined,'item-detail-body');for(const child of [...box.childNodes])if(child!==actions)body.append(child);box.replaceChildren(body,actions);}
  confirmDiscard(){
   const item=this.item(),index=this.selected?.key;if(!item)return;
   const box=this.root.querySelector('.item-detail');if(!box)return;
@@ -87,7 +89,7 @@ export class InventoryPanel{
   const actions=el('div',undefined,'item-actions');box.append(actions);
   actions.append(btn(this.t('Да, выкинуть'),()=>{if(this.scene.hero.inventory[index]!==item){this.selected=null;this.render();return;}this.scene.hero.inventory.splice(index,1);this.selected=null;this.anchor=null;this.scene.save();this.render();},'danger'));
   actions.append(btn(this.t('Отмена'),()=>this.renderDetail()));
-  this.positionDetail();
+  this.wrapDetailContent(box,actions);this.positionDetail();
  }
  notice(message){const e=this.root.querySelector('.inventory-message');if(e)e.textContent=message;}
  render(){
