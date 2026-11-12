@@ -6,6 +6,18 @@ import {REGIONS} from '../world/worldData.js';
 import {NPC_UI_TEXT} from './npcText.js';
 const element=(tag,text,className)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(className)e.className=className;return e;};
 const roles=npc=>npc.roles||[npc.role];
+// Keep the live hero identity used by combat, but make quest acceptance and
+// rewards atomic with their durable save (including level-up side effects).
+export function commitQuestChange(hero,operation,persist){
+ let before;try{before=JSON.parse(JSON.stringify(hero));}catch{return {ok:false,reason:'storage'};}
+ const rollback=()=>{for(const key of Object.keys(hero))if(!Object.hasOwn(before,key))delete hero[key];Object.assign(hero,before);};
+ try{
+  const changed=operation(),result=typeof changed==='boolean'?{ok:changed}:changed||{ok:false,reason:'state'};
+  if(!result.ok){rollback();return result;}
+  if(persist()!==false)return result;
+ }catch{}
+ rollback();return {ok:false,reason:'storage'};
+}
 export class NpcPanel{
  constructor(scene){
   this.scene=scene;this.opened=false;this.tab='quest';this.npc=null;this.messageUntil=0;
@@ -54,8 +66,8 @@ export class NpcPanel{
    card.append(element('h3',questTitle(quest,this.language)),element('p',questDescription(quest,this.language)),element('p',`${t.level}: ${quest.level||1} · ${p.progress}/${p.required}`));
    if(quest.location){const region=REGIONS[quest.location.region];card.append(element('p',`${t.target}: ${region?.names?.[this.language]||quest.location.region} · X ${Math.round(quest.location.x)} / Y ${Math.round(quest.location.y)}`,'npc-target'));}
    const reward=[`${quest.xp||0} ${t.xp}`,`${quest.gold||0} ${t.gold}`];if(quest.reward)reward.push(`${itemName(quest.reward,this.language)} ×${quest.reward.quantity||1}`);card.append(element('p',t.reward+': '+reward.join(' · ')));
-   if(p.state==='available'&&quest.npcId===npc.id){const button=this.action(this.text.accept,()=>{if(acceptQuest(h,quest.id,npc.id)){this.scene.save();this.render();}});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.accept+': '+questTitle(quest,this.language));card.append(button);}
-   else if(p.state==='completed'&&(quest.turnInNpcId||quest.npcId)===npc.id){const button=this.action(this.text.claim,()=>{const result=claimQuest(h,quest.id,npc.id);if(result.ok){this.scene.save();this.scene.refreshHud();this.render();}else this.render(t.full);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.claim+': '+questTitle(quest,this.language));card.append(button);}
+   if(p.state==='available'&&quest.npcId===npc.id){const button=this.action(this.text.accept,()=>{const result=commitQuestChange(h,()=>acceptQuest(h,quest.id,npc.id),()=>this.scene.save());if(result.ok)this.render();else this.render(result.reason==='storage'?t.storageFailure:t.invalid);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.accept+': '+questTitle(quest,this.language));card.append(button);}
+   else if(p.state==='completed'&&(quest.turnInNpcId||quest.npcId)===npc.id){const button=this.action(this.text.claim,()=>{const result=commitQuestChange(h,()=>claimQuest(h,quest.id,npc.id),()=>this.scene.save());this.scene.refreshHud();if(result.ok)this.render();else this.render(result.reason==='storage'?t.storageFailure:t.full);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.claim+': '+questTitle(quest,this.language));card.append(button);}
    else{card.append(element('p',t[p.state]||t.active));if(p.state==='locked'&&quest.requires?.length)card.append(element('p',t.requires+': '+quest.requires.map(id=>questTitle(QUESTS.find(q=>q.id===id)||{id},this.language)).join(', ')));if(['active','completed'].includes(p.state)){const target=NPCS.find(n=>n.id===(quest.turnInNpcId||quest.npcId));if(target)card.append(element('p',`${t.returnTo}: ${this.name(target)} · X ${target.x} / Y ${target.y}`));}}
    this.root.append(card);
   }
