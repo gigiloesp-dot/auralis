@@ -59,7 +59,7 @@ export class ChunkWorld{
    g.lineStyle((c.river?.halfWidth||24)*2,palette.water);g.beginPath();for(let y=data.y-40;y<data.y+data.height+40;y+=12){const x=riverX(c,y)-data.x;if(y===data.y-40)g.moveTo(x,y-data.y);else g.lineTo(x,y-data.y);}g.strokePath();
    for(const road of regionRoads(c)){g.lineStyle(road.width,road.secondary?0xb1a17a:palette.road,road.secondary?.75:1);g.beginPath().moveTo(road.from.x-data.x,road.from.y-data.y).lineTo(road.to.x-data.x,road.to.y-data.y).strokePath();}
   }
-  bakeTexture(g,key,data.width,data.height);const at=project(data.x,data.y,c.height),ground=s.add.container(at.x,at.y).setScale(1,.5).setDepth(-100000);ground.add(s.add.image(0,0,key).setOrigin(0).setRotation(Math.PI/4));
+  bakeTexture(g,key,data.width,data.height);const at=project(data.x,data.y,c.height),ground=s.add.container(at.x,at.y).setScale(1,.5).setDepth(-100000);ground.add(s.add.image(0,0,key).setOrigin(0).setScale((data.width+1)/data.width,(data.height+1)/data.height).setRotation(Math.PI/4));
   const objects=[ground];
   for(const d of data.decorations){const p=project(d.x,d.y,c.height);objects.push(s.add.image(p.x,p.y,this.artTexture||'world-art-'+d.kind,this.artTexture?d.kind:undefined).setOrigin(.5,145/176).setScale(d.scale).setDepth(d.x+d.y));}
   for(const bridge of data.bridges){const p=project(bridge.x,bridge.y,c.height),b=s.add.graphics().setPosition(p.x,p.y).setDepth(-99000);b.fillStyle(0x806445).fillPoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);b.lineStyle(2,0xcfb98d).strokePoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);objects.push(b);}

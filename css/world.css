@@ -5,3 +5,5 @@
 .rpg-toolbar button>svg,#pause-btn>svg{display:block;width:30px;height:30px;margin:auto}#actions #attack>svg{display:block;width:64%;height:64%;margin:auto}
 
 .quest-tracker[role=button]{pointer-events:auto;cursor:pointer;min-height:44px;box-sizing:border-box;touch-action:manipulation}.quest-tracker[role=button]:focus-visible{outline:2px solid #ffe17d}@media(max-height:330px){.quest-tracker{max-height:44px}}
+
+#hud-portrait{width:40px;height:40px}#hud-portrait.has-portrait{background-repeat:no-repeat}#hud-portrait.has-portrait svg{visibility:hidden}#hud{padding-left:50px}
