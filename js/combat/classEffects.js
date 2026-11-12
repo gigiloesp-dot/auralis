@@ -20,7 +20,7 @@ export function guardBlock(system,damage,now){
  if(system.hero.classId==='paladin'&&system.buffs.guard>now&&system.buffs.guardCharges>0){system.buffs.guardCharges--;return 0;}return damage;
 }
 export function guardResponse(system,now){
- if(system.buffs.guard<=now||system.hero.hp<=0)return;const rank=system.buffs.guardRank||1;
+ if(!(system.buffs.guard>now)||system.hero.hp<=0)return;const rank=system.buffs.guardRank||1;
  for(const m of system.monsters)if(m.alive&&m.active!==false&&Math.hypot(m.x-system.hero.x,m.y-system.hero.y)<80&&system.sight(system.hero,m)){
   if(system.hero.classId==='warrior')system.hit(m,rank*2+Math.max(1,Math.round((system.hero.stats.endurance||5)*.2)),now);
   if(system.hero.classId==='cannoneer')m.slowUntil=now+700+rank*100;

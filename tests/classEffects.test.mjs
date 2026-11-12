@@ -92,3 +92,11 @@ test('saving paused combat cooldowns restores remaining simulation time on a new
  const restored=new MonsterSystem(scene,createCharacter(JSON.parse(JSON.stringify(hero))),()=>{},{id:'test',towns:[],bosses:[],camps:[]});
  assert.ok(Math.abs(restored.skillRemaining('warrior_1',90000)-remaining)<.1);assert.equal(restored.useSkill('warrior_1',90000).reason,'cooldown');restored.destroy();
 });
+
+
+test('incoming hits cannot retaliate or slow enemies before guard is activated or after expiry',()=>{
+ for(const classId of ['warrior','cannoneer']){
+  const {hero,system,target}=setup(classId),hp=target.hp;system.hurtHero(40,100);assert.ok(hero.hp<hero.maxHp);assert.equal(target.hp,hp,'unactivated guard does not retaliate');assert.equal(target.slowUntil,undefined,'unactivated armor does not slow');
+  assert.ok(system.useSkill(classId+'_1',200).ok);system.hurtHero(40,300);const guardedHp=target.hp,slow=target.slowUntil;system.hurtHero(40,system.buffs.guard);assert.equal(target.hp,guardedHp,'expired guard cannot retaliate');assert.equal(target.slowUntil,slow,'expired armor cannot slow');system.destroy();
+ }
+});
