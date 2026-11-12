@@ -1,20 +1,20 @@
 // Movement and abilities describe real simulation actions. Rendering can use the
 // same locomotion/elevation data without making collision decisions itself.
-const profile=(movement,locomotion,ability,options={})=>Object.freeze({movement,locomotion,ability,elevation:movement==='flight'?34:0,cooldown:6500,windup:650,range:190,radius:65,multiplier:1.2,...options});
+const profile=(movement,locomotion,ability,options={})=>Object.freeze({movement,locomotion,ability,collisionRadius:14,elevation:movement==='flight'?34:0,cooldown:6500,windup:650,range:190,radius:65,multiplier:1.2,...options});
 export const MOVEMENT_PROFILES=Object.freeze({
  predator:profile('ground','quadruped','pounce',{cooldown:6500,windup:420,range:235,radius:48,multiplier:1.25}),
- charger:profile('ground','quadruped','charge',{cooldown:7200,windup:650,range:240,radius:55,multiplier:1.5}),
- mauler:profile('ground','quadruped','stomp',{cooldown:8500,windup:900,range:110,radius:80,multiplier:1.4}),
+ charger:profile('ground','quadruped','charge',{cooldown:7200,windup:650,range:240,radius:55,collisionRadius:18,multiplier:1.5}),
+ mauler:profile('ground','quadruped','stomp',{cooldown:8500,windup:900,range:110,radius:80,collisionRadius:24,multiplier:1.4}),
  fighter:profile('ground','biped','cleave',{cooldown:6500,windup:650,range:105,radius:85,multiplier:1.4}),
  skirmisher:profile('ground','biped','shot',{cooldown:4000,windup:450,range:270,radius:20,multiplier:1,preferredDistance:145}),
- crawler:profile('ground','crawler','venom',{cooldown:6500,windup:550,range:190,radius:20,multiplier:.8}),
- serpent:profile('ground','serpent','pounce',{cooldown:5800,windup:600,range:160,radius:44,multiplier:1.1,status:'poison'}),
- bat:profile('flight','winged','dive',{cooldown:5700,windup:550,range:250,radius:44,multiplier:1.1,elevation:40}),
- ghost:profile('flight','hover','haunt',{cooldown:6000,windup:750,range:255,multiplier:1.05,elevation:34,preferredDistance:140}),
- heavy:profile('ground','heavy','stomp',{cooldown:8000,windup:1100,range:145,radius:115,multiplier:1.65}),
+ crawler:profile('ground','crawler','venom',{cooldown:6500,windup:550,range:190,radius:20,collisionRadius:10,multiplier:.8}),
+ serpent:profile('ground','serpent','pounce',{cooldown:5800,windup:600,range:160,radius:44,collisionRadius:9,multiplier:1.1,status:'poison'}),
+ bat:profile('flight','winged','dive',{cooldown:5700,windup:550,range:250,radius:44,multiplier:1.1,collisionRadius:10,elevation:40}),
+ ghost:profile('flight','hover','haunt',{cooldown:6000,windup:750,range:255,multiplier:1.05,collisionRadius:12,elevation:34,preferredDistance:140}),
+ heavy:profile('ground','heavy','stomp',{cooldown:8000,windup:1100,range:145,radius:115,collisionRadius:24,multiplier:1.65}),
  elemental:profile('flight','hover','blink',{cooldown:8500,windup:800,range:290,multiplier:1.05,elevation:28,preferredDistance:155}),
- scarab:profile('ground','crawler','burrow',{cooldown:7500,windup:850,range:200,radius:55,multiplier:1.15}),
- gargoyle:profile('flight','winged','dive',{cooldown:7500,windup:900,range:250,radius:65,multiplier:1.5,elevation:45})
+ scarab:profile('ground','crawler','burrow',{cooldown:7500,windup:850,range:200,radius:55,collisionRadius:17,multiplier:1.15}),
+ gargoyle:profile('flight','winged','dive',{cooldown:7500,windup:900,range:250,radius:65,multiplier:1.5,collisionRadius:20,elevation:45})
 });
 const THEMES=Object.freeze({roots:'roots',venom:'venom',tusk:'charge',pack:'pounce',oakstorm:'roots',outcast:'fan',frostRush:'charge',iceQuake:'stomp',rimeVolley:'fan',avalanche:'stomp',whiteout:'frost',haunt:'haunt',bronzeShock:'fan',ashVenom:'venom',runeSlash:'cleave',oracleBlink:'blink',colossusQuake:'stomp',voidRift:'blink'});
 export function movementProfile(kind={}){
