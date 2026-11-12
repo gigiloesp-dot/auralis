@@ -35,8 +35,8 @@ export function monsterKind(descriptor){
  const level=Math.max(1,Math.min(42,Math.floor(descriptor.level||base.level)));
  const delta=Math.max(0,level-base.level),boss=!!descriptor.bossType||base.boss;
  const hp=(base.hp+delta*16+delta*delta*.55)*(descriptor.bossType?(base.boss?(descriptor.bossType==='world'?4:descriptor.bossType==='dungeon'?2:1):(descriptor.bossType==='world'?12:descriptor.bossType==='dungeon'?8:6)):1);
- return {...base,...(descriptor.names?{names:descriptor.names}:{}),level,boss,defense:(base.defense||0)+delta*.8,
-  hp:Math.round(hp*(descriptor.hpMultiplier||1)),attack:Math.round((base.attack+delta*2)*(descriptor.damageMultiplier||1)),
+ return {...base,assetSize:descriptor.bossType==='world'?360:boss?280:220,visualScale:descriptor.bossType==='world'?1.9:boss?1.45:1,...(descriptor.names?{names:descriptor.names}:{}),level,boss,bossType:descriptor.bossType||(base.boss?'mini':null),defense:(base.defense||0)+delta*.8,
+  magicDefense:Math.round((base.magicDefense??((base.defense||0)*.6))+delta*.65),hp:Math.round(hp*(descriptor.hpMultiplier||1)),attack:Math.round((base.attack+delta*2)*(descriptor.damageMultiplier||1)),
   xp:descriptor.xp||Math.round((base.xp+delta*12)*(boss?3:1)),gold:descriptor.gold||Math.round((base.gold+delta)*(boss?7:1)),
   respawnMs:descriptor.respawnMs||(boss?2400000:11000)};
 }

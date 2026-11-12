@@ -25,8 +25,9 @@ export function recordDungeonBossKill(hero,id,difficulty,bossId,now=Date.now()){
  const d=dungeonDefinition(id);if(!d||!Object.hasOwn(DIFFICULTIES,difficulty)||!Number.isFinite(now)||now<0)return {ok:false,reason:'invalid'};
  const content=createDungeonContent(id,difficulty);if(!content.bosses.some(b=>b.id===bossId))return {ok:false,reason:'boss'};
  const key=id+':'+difficulty;hero.dungeonProgress??={};const old=hero.dungeonProgress[key];
- if(old?.readyAt>now&&old.killed?.includes(bossId))return {ok:false,reason:'cooldown'};
- const inCycle=old&&old.readyAt>now,progress=inCycle?{...old,killed:[...old.killed]}:{killed:[],readyAt:now+DUNGEON_RESPAWN_MS,completed:false,rewarded:false};
+ const validIds=new Set(content.bosses.map(b=>b.id)),oldKilled=Array.isArray(old?.killed)?[...new Set(old.killed.filter(id=>validIds.has(id)))]:[];
+ if(old?.readyAt>now&&oldKilled.includes(bossId))return {ok:false,reason:'cooldown'};
+ const inCycle=old&&Number.isFinite(old.readyAt)&&old.readyAt>now,completeBefore=content.bosses.every(b=>oldKilled.includes(b.id)),progress=inCycle?{killed:oldKilled,readyAt:old.readyAt,completed:completeBefore,rewarded:old.rewarded===true&&completeBefore}:{killed:[],readyAt:now+DUNGEON_RESPAWN_MS,completed:false,rewarded:false};
  if(progress.killed.includes(bossId))return {ok:false,reason:'duplicate'};
  progress.killed.push(bossId);progress.completed=content.bosses.every(b=>progress.killed.includes(b.id));
  hero.worldState??={monsters:{}};hero.worldState.monsters??={};hero.worldState.monsters[content.id+':'+bossId]={deadUntil:now+DUNGEON_RESPAWN_MS,killedAt:now,hp:0};

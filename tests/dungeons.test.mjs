@@ -40,3 +40,10 @@ test('boss kills, completion rewards and hour respawns are independent across di
 test('dungeon session and per-difficulty completion state survive character serialization',()=>{
  const d=DUNGEONS[2],h=heroAt(d);const entered=enterDungeon(h,d.id,'hard');h.region=entered.destination.region;recordDungeonBossKill(h,d.id,'hard',entered.content.bosses[0].id,1000000);const restored=createCharacter(JSON.parse(JSON.stringify(h)));assert.deepEqual(restored.dungeonSession,h.dungeonSession);assert.deepEqual(restored.dungeonProgress,h.dungeonProgress);assert.deepEqual(restored.worldState,h.worldState);assert.deepEqual(leaveDungeon(restored).destination,{region:d.region,x:d.x,y:d.y+80});
 });
+
+test('malformed imported dungeon progress cannot crash a real boss completion',()=>{
+ const hero=createCharacter({level:42,x:1820,y:1780,region:'forest',dungeonProgress:{'dungeon1:easy':{readyAt:Date.now()+100000,killed:'invalid-array'}}});
+ const content=createDungeonContent('dungeon1','easy');let result;
+ assert.doesNotThrow(()=>{result=recordDungeonBossKill(hero,'dungeon1','easy',content.bosses[0].id);});
+ assert.equal(result.ok,true);assert.equal(result.completed,true);assert.deepEqual(hero.dungeonProgress['dungeon1:easy'].killed,[content.bosses[0].id]);
+});

@@ -7,6 +7,11 @@ const CONFIG={forest:{camps:94,monsters:425,types:['forestWolf','wildBoar','fore
 const PORTALS={forest:[{id:'forest-north',x:11200,y:10800,toRegion:'north',toX:1500,toY:1900}],north:[{id:'north-forest',x:1500,y:1600,toRegion:'forest',toX:11200,toY:10950},{id:'north-ancient',x:12500,y:12600,toRegion:'ancient',toX:1600,toY:1900}],ancient:[{id:'ancient-north',x:1600,y:1600,toRegion:'north',toX:12500,toY:12750}]};
 const seedFor=id=>{let n=0;for(const char of id)n=(Math.imul(n,31)+char.charCodeAt(0))>>>0;return ()=>{n=(Math.imul(n,1664525)+1013904223)>>>0;return n/4294967296;};};
 const segmentDistance=(p,a,b)=>{const dx=b.x-a.x,dy=b.y-a.y,d=dx*dx+dy*dy,t=d?Math.max(0,Math.min(1,((p.x-a.x)*dx+(p.y-a.y)*dy)/d)):0;return Math.hypot(p.x-a.x-t*dx,p.y-a.y-t*dy);};
+const BOSSES={
+ forest:[['forestGuardian','Терновый страж','Thornback guardian','Guardián de espinas'],['spider','Матка ежевики','Briar mother','Madre de las zarzas'],['wildBoar','Старый клык','Old tusk','Colmillo viejo'],['forestWolf','Серая грива','Grey mane','Melena gris'],['forestGuardian','Сердце дубравы','Oakheart','Corazón del roble'],['forestRaider','Король изгнанников','Outcast king','Rey de los exiliados']],
+ north:[['iceWolf','Белый оскал','White fang','Colmillo blanco'],['frostGolem','Кулак ледника','Glacier fist','Puño del glaciar'],['skeleton','Жнец инея','Rime reaver','Segador de escarcha'],['bear','Страж перевала','Peak watcher','Vigía del paso'],['frostGolem','Король метели','Blizzard king','Rey de la ventisca'],['arcaneWisp','Снежный призрак','Snow wraith','Espectro de nieve']],
+ ancient:[['ancientSentinel','Бронзовый дозорный','Bronze sentinel','Centinela de bronce'],['spider','Ткач пепла','Ash weaver','Tejedor de ceniza'],['skeleton','Хранитель рун','Rune keeper','Guardián de runas'],['arcaneWisp','Забытый оракул','Lost oracle','Oráculo perdido'],['ancientSentinel','Колосс Ауралиса','Colossus of Auralis','Coloso de Auralis'],['arcaneWisp','Владыка пустоты','Void sovereign','Soberano del vacío']]
+};
 const cache=new Map();
 export function getRegionContent(id='forest'){
  if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);
@@ -35,6 +40,7 @@ export function getRegionContent(id='forest'){
   camps.push({id:campId,region:id,type,level,...p,spawns});remaining-=count;
  }
  if(remaining!==0)throw new Error('Incorrect monster budget');
- const bosses=Array.from({length:6},(_,i)=>{const p=position(),bossType=i<4?'mini':'world',level=Math.min(region.maxLevel,region.minLevel+4+i*3),name=id==='forest'?'Страж долины':id==='north'?'Владыка мороза':'Хранитель руин';return {id:id+'-'+bossType+'-'+i,region:id,type:id==='forest'?'forestGuardian':id==='north'?'frostGolem':'ancientSentinel',bossType,level,...p,patterns:i%2?['charge','slam']:['slam','volley'],names:{ru:name+' '+(i+1),en:'Guardian '+(i+1),es:'Guardián '+(i+1)}};});
- const content={...region,towns,npcs,camps,bosses,portals,roads,landmarks:[]};cache.set(id,content);return content;
+ const bosses=BOSSES[id].map(([type,ru,en,es],i)=>{const p=position(),bossType=i<4?'mini':'world',level=Math.min(region.maxLevel,region.minLevel+4+i*3);return {id:id+'-'+bossType+'-'+i,region:id,type,bossType,level,...p,patterns:[['slam','volley'],['volley','charge'],['charge','slam']][i%3],names:{ru,en,es}};});
+ const landmarks=id==='ancient'?[{id:'fallen-observatory',x:3700,y:4200,names:{ru:'Разрушенная обсерватория',en:'Fallen observatory',es:'Observatorio caído'}},{id:'moon-garden',x:6900,y:8100,names:{ru:'Лунный сад',en:'Moon garden',es:'Jardín lunar'}},{id:'elder-gate',x:10900,y:12400,names:{ru:'Врата предков',en:'Elder gate',es:'Puerta ancestral'}}]:[];
+ const content={...region,towns,npcs,camps,bosses,portals,roads,landmarks};cache.set(id,content);return content;
 }

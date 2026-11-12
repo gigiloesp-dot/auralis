@@ -21,3 +21,7 @@ test('joystick and attack can be used simultaneously and reset safely',()=>{
  controls.reset();assert.equal(controls.axis.x,0);assert.equal(nub.style.transform,'');
  controls.destroy();attack.send('pointerdown',3);assert.equal(controls.attacking,false);
 });
+test('a short tap survives a missed render frame but a canceled touch never queues a strike',()=>{
+ const attack=new Element(),controls=new TouchControls({joystick:null,nub:null,attack});attack.send('pointerdown',1);attack.send('pointerup',1);assert.equal(controls.attacking,false);assert.equal(controls.consumeAttack(),true);assert.equal(controls.consumeAttack(),false);
+ attack.send('pointerdown',2);attack.send('pointercancel',2);assert.equal(controls.consumeAttack(),false);attack.send('pointerdown',3);controls.reset();assert.equal(controls.consumeAttack(),false);controls.destroy();
+});

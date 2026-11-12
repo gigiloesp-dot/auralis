@@ -17,6 +17,7 @@ function reserved(content,p,clearance=0){
  if(regionRoads(content).some(r=>distanceToSegment(p,r.from,r.to)<r.width/2+45+clearance))return true;
  if((content.towns||[]).some(t=>Math.hypot(p.x-(t.x??t.spawn.x),p.y-(t.y??t.spawn.y))<235+clearance))return true;
  if((content.npcs||[]).some(n=>Math.hypot(p.x-n.x,p.y-n.y)<80+clearance))return true;
+ if((content.dungeons||[]).some(n=>Math.hypot(p.x-n.x,p.y-n.y)<160+clearance))return true;
  if((content.portals||[]).some(n=>Math.hypot(p.x-n.x,p.y-n.y)<120+clearance))return true;
  if((content.camps||[]).some(c=>Math.hypot(p.x-c.x,p.y-c.y)<145+clearance||(c.spawns||[]).some(s=>Math.hypot(p.x-s.x,p.y-s.y)<68+clearance)))return true;
  if((content.bosses||[]).some(b=>Math.hypot(p.x-b.x,p.y-b.y)<190+clearance))return true;
@@ -44,7 +45,7 @@ export function describeChunk(content,cx,cy){
   for(let i=0;i<count;i++){
    const p={x:x+random()*width,y:y+random()*height},scale=.75+random()*.45,roll=random();
    if(reserved(content,p,20))continue;
-   const kind=content.id==='ancient'?(roll<.24?'ruin':roll<.55?'rock':'cypress'):content.id==='north'?(roll<.25?'rock':'pine'):(roll<.12?'rock':roll<.58?'oak':'pine');
+   const kind=content.id==='ancient'?(roll<.55?'rock':'cypress'):content.id==='north'?(roll<.25?'rock':'pine'):(roll<.12?'rock':roll<.58?'oak':'pine');
    const r=(kind==='rock'?19:kind==='ruin'?36:22)*scale;
    if(decorations.some(d=>Math.hypot(d.x-p.x,d.y-p.y)<d.r+r+16))continue;
    decorations.push({...p,kind,scale,r});obstacles.push({...p,r});
@@ -56,6 +57,10 @@ export function describeChunk(content,cx,cy){
     decorations.push({...p,kind:'house',scale:1,r:55});obstacles.push({x:p.x,y:p.y-14,r:55});
    }
   }
+ }
+ for(const landmark of content.landmarks||[]){
+  const layout=[[-100,-35],[0,-90],[100,-10],[-40,80]];
+  layout.forEach(([dx,dy],i)=>{const p={x:landmark.x+dx,y:landmark.y+dy};if(!owned(p,cx,cy)||reserved(content,p,25))return;decorations.push({...p,kind:['ruin','ruin1','ruin2'][i%3],scale:1,r:30});obstacles.push({...p,r:30});});
  }
  for(const obstacle of content.obstacles||[])if(obstacle.r&&owned(obstacle,cx,cy))obstacles.push({...obstacle});
  return {key:`${cx},${cy}`,cx,cy,x,y,width,height,decorations,obstacles,npcs:(content.npcs||[]).filter(p=>owned(p,cx,cy)),portals:(content.portals||[]).filter(p=>owned(p,cx,cy)),bridges:bridgeDescriptors(content).filter(p=>owned(p,cx,cy))};

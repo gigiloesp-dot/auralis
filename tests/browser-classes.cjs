@@ -1,0 +1,17 @@
+// Fresh class creation through UI; level/ranks/resources/targets are fixtures.
+// Every skill is pressed on the HUD and its actual runtime result is awaited.
+const {chromium}=require('playwright'),assert=require('node:assert/strict');
+const {startServer,launchOptions}=require('./browserHarness.cjs');
+(async()=>{const hosting=await startServer();let browser;try{browser=await chromium.launch(launchOptions);const errors=[];
+ for(const classId of ['warrior','archer','mage','paladin','assassin','cannoneer']){
+  const context=await browser.newContext({viewport:{width:844,height:390},hasTouch:true,isMobile:true}),p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(hosting.url);await p.getByRole('button',{name:'Играть',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('.class-card:has(.hero-'+classId+')').click();await p.locator('input').fill('Test'+classId);await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.hero);
+  assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.classId),classId);
+  for(let index=0;index<5;index++){
+   const before=await p.evaluate(async({classId,index})=>{const s=Auralis.game.scene.getScene('world'),h=s.hero,{getSkills}=await import('/js/skills/skillData.js'),{skillEffect}=await import('/js/combat/skillRuntime.js');h.level=42;h.maxHp=1000;h.hp=500;h.maxMp=1000;h.mp=1000;h.x=1330;h.y=1240;s.world.chunkWorld.update(h);s.obstacles=s.world.chunkWorld.obstacles;s.monsters.update(s.playNow,0);const m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');if(!m)throw Error('No active target');m.alive=true;m.returning=false;m.x=m.homeX=1370;m.y=m.homeY=1240;m.hp=m.maxHp=200000;const skill=getSkills(classId)[index];h.learnedSkills[skill.id]=5;h.skillSlots=[skill.id,null,null,null];s.monsters.cooldowns.delete(skill.id);s.refreshSkillSlots();return {skillId:skill.id,effect:skillEffect(classId,index),hp:h.hp,targetHp:m.hp};},{classId,index});
+   await p.locator('#skills .skill').first().click();assert.ok(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.mp)<1000);assert.equal(await p.locator('#skills .skill').first().isDisabled(),true);
+   await p.waitForFunction(before=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');if(before.effect==='heal')return s.hero.hp>before.hp;if(['guard','rage','focus','aura','evade'].includes(before.effect))return s.monsters.buffs[before.effect]>s.playNow;return m&&m.hp<before.targetHp;},before,{timeout:15000});console.log('PASS class skill',classId,index,before.effect);
+  }
+  await context.close();
+ }
+ assert.deepEqual(errors,[]);console.log('PASS6 actual class creations and30 HUD skill effects; no JavaScript errors');
+ }finally{if(browser)await browser.close();await hosting.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

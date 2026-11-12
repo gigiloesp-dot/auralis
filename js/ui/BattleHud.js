@@ -1,0 +1,12 @@
+import {normalizeSkillSlots} from '../skills/skillSlots.js';
+import {getSkills} from '../skills/skillData.js';
+import {usePotion} from '../systems/potions.js';
+import {text} from '../i18n/messages.js';
+export class BattleHud{
+ constructor(scene){this.scene=scene;this.bindings=[];this.potionState={};
+  document.querySelectorAll('#skills .skill').forEach((button,index)=>{const fn=()=>{if(scene.panelsOpen()||!scene.sys.isActive())return;const id=normalizeSkillSlots(scene.hero)[index];if(id){const result=scene.monsters.useSkill(id,scene.playNow);if(!result.ok&&['target','mana'].includes(result.reason))scene.notify(text(result.reason==='target'?'noTarget':'mana',scene.language));this.update();scene.refreshHud();}};button.addEventListener('click',fn);this.bindings.push([button,fn]);});
+  this.root=document.createElement('div');this.root.id='potions';this.buttons={};for(const resource of ['hp','mp']){const b=document.createElement('button');b.type='button';b.className='potion '+resource;b.setAttribute('aria-label',text(resource+'Potion',scene.language));b.onclick=()=>{if(!scene.panelsOpen()&&scene.sys.isActive()&&usePotion(scene.hero,resource,scene.playNow,this.potionState)){scene.save();scene.refreshHud();this.update();}};this.root.append(b);this.buttons[resource]=b;}document.body.append(this.root);this.update();
+ }
+ update(){const s=this.scene,h=s.hero,skills=getSkills(h.classId,s.language),ids=normalizeSkillSlots(h);document.querySelectorAll('#skills .skill').forEach((b,i)=>{const skill=skills.find(k=>k.id===ids[i]),remaining=skill?s.monsters.skillRemaining(skill.id,s.playNow):0;const iconState=skill&&remaining<=0&&skill.iconSvg?skill.id:String(remaining>0?Math.ceil(remaining):i+1);if(b.dataset.iconState!==iconState){if(skill&&remaining<=0&&skill.iconSvg)b.innerHTML=skill.iconSvg;else b.textContent=remaining>0?Math.ceil(remaining):skill?skill.icon:i+1;b.dataset.iconState=iconState;}b.title=skill?skill.name:text('emptySkill',s.language)+' '+(i+1);b.setAttribute('aria-label',b.title);b.disabled=!skill||remaining>0||h.mp<skill.mana||h.hp<=0;});for(const [resource,b]of Object.entries(this.buttons)){const left=Math.max(0,Math.ceil(((this.potionState.readyAt||0)-s.playNow)/1000));b.textContent=resource.toUpperCase()+' '+(left||h.potions?.[resource]||0);b.disabled=left>0||!(h.potions?.[resource]>0)||h[resource]>=h[resource==='hp'?'maxHp':'maxMp'];}}
+ destroy(){for(const [b,fn]of this.bindings)b.removeEventListener('click',fn);this.root.remove();}
+}

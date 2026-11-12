@@ -1,0 +1,15 @@
+const labels={ru:{title:'Карта региона',open:'Карта',close:'Закрыть',town:'Поселения',dungeon:'Подземелья',target:'Цель'},en:{title:'Region map',open:'Map',close:'Close',town:'Settlements',dungeon:'Dungeons',target:'Objective'},es:{title:'Mapa de la región',open:'Mapa',close:'Cerrar',town:'Poblados',dungeon:'Mazmorras',target:'Objetivo'}};
+const ns='http://www.w3.org/2000/svg';
+export class MapPanel{
+ constructor(scene){this.scene=scene;this.opened=false;this.button=document.createElement('button');this.button.className='map-open';this.button.type='button';this.button.textContent=(labels[scene.language]||labels.ru).open;this.button.onclick=()=>this.opened?this.close():this.show();document.querySelector('.rpg-toolbar').append(this.button);this.root=document.createElement('section');this.root.className='world-map';this.root.hidden=true;document.body.append(this.root);this.escape=e=>{if(e.key==='Escape')this.close();};document.addEventListener('keydown',this.escape);}
+ show(){const s=this.scene;s.closePanels(this);this.opened=true;this.root.hidden=false;this.render();}
+ render(){const s=this.scene,c=s.regionContent,t=labels[s.language]||labels.ru;this.root.replaceChildren();const header=document.createElement('header'),title=document.createElement('h2'),close=document.createElement('button');title.textContent=t.title+' · '+(c.names?.[s.language]||c.name);close.textContent=t.close;close.onclick=()=>this.close();header.append(title,close);this.root.append(header);const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox',`0 0 ${c.width} ${c.height}`);svg.setAttribute('aria-label',t.title);this.root.append(svg);
+ const node=(tag,attrs)=>{const n=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))n.setAttribute(k,String(v));svg.append(n);return n;};node('rect',{x:0,y:0,width:c.width,height:c.height,fill:'#223b32'});
+ for(const road of c.roads||[]){const points=road.points||[road.from,road.to];node('polyline',{points:points.map(p=>p.x+','+p.y).join(' '),fill:'none',stroke:'#baa675','stroke-width':45});}
+ const marker=(p,color,r)=>{const n=node('circle',{cx:p.x??p.spawn?.x,cy:p.y??p.spawn?.y,r,fill:color});const title=document.createElementNS(ns,'title');title.textContent=p.names?.[s.language]||p.name||p.id;n.append(title);};
+ for(const p of c.camps||[])marker(p,'#c37a5f',55);for(const p of c.landmarks||[])marker(p,'#c6c5a1',120);for(const p of c.bosses||[])marker(p,'#df4e7b',100);for(const p of c.towns||[])marker(p,'#88d09d',130);for(const p of c.portals||[])marker(p,'#8edbe9',115);for(const p of c.dungeons||[])marker(p,'#cdb6ee',100);marker(s.hero,'#fff0a2',110);
+ const legend=document.createElement('p');legend.textContent=`${t.town}: ${(c.towns||[]).map(p=>p.names?.[s.language]||p.name).join(' · ')} | ${t.dungeon}: ${(c.dungeons||[]).map(p=>(p.names?.[s.language]||p.id)+' ('+p.level+')').join(' · ')} | X ${Math.round(s.hero.x)} / Y ${Math.round(s.hero.y)}`;this.root.append(legend);
+ }
+ close(){this.opened=false;this.root.hidden=true;}
+ destroy(){this.root.remove();this.button.remove();document.removeEventListener('keydown',this.escape);}
+}

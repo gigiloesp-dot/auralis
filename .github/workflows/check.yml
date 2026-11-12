@@ -6,7 +6,7 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,7 +24,7 @@ jobs:
           test -x "$chrome_path"
           "$chrome_path" --version
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
-      - name: Browser smoke tests
+      - name: Full browser integration suite
         run: npm run test:browser
       - uses: actions/upload-artifact@v4
         if: always()

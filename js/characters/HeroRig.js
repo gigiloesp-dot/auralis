@@ -1,3 +1,4 @@
+import {itemDefinition} from '../equipment/items.js';
 import {SpriteAnimator} from '../assets/SpriteAnimator.js';
 import { swingPose } from '../combat/attackTiming.js';
 import { gaitPose } from './animations/gait.js';
@@ -5,7 +6,7 @@ import { gaitPose } from './animations/gait.js';
 const lerpAngle=(a,b,t)=>a+Math.atan2(Math.sin(b-a),Math.cos(b-a))*t;
 export class HeroRig{
  constructor(scene,root){
-  this.hero=scene.hero;this.classId=scene.hero?.classId||'warrior';this.root=root;this.t=0;this.blend=0;this.attackPhase=0;this.wasAttacking=false;this.direction=0;
+  this.scene=scene;this.hero=scene.hero;this.classId=scene.hero?.classId||'warrior';this.root=root;this.t=0;this.blend=0;this.attackPhase=0;this.wasAttacking=false;this.direction=0;
   this.scene=scene;this.elapsed=0;this.deathElapsed=0;this.animationState='idle';
   this.spriteAnimator=SpriteAnimator.create(scene,root,this.classId);if(this.spriteAnimator)return;
   const part=(parent,x,y)=>{const c=scene.add.container(x,y);parent.add(c);return c;};
@@ -62,6 +63,10 @@ export class HeroRig{
    blade(this.sword);
    if(this.classId==='paladin'){this.shield=part(this.leftForearm,0,12);this.shield.add(scene.add.ellipse(0,5,28,36,0x9c8750));this.shield.add(scene.add.ellipse(0,5,21,29,0x586b83));this.shield.add(scene.add.rectangle(0,5,4,22,0xe0d4a0));this.shield.add(scene.add.rectangle(0,1,15,4,0xe0d4a0));}
   }
+  if(this.classId==='warrior'){this.shield=part(this.leftForearm,0,12);this.shield.add(scene.add.ellipse(0,5,25,32,0x8b7858));}
+  this.ring=scene.add.circle(0,13,4,0xe3c172).setStrokeStyle(1,0xffe4a3).setVisible(false);this.leftForearm.add(this.ring);
+  this.amulet=scene.add.ellipse(0,-7,7,10,0xe3c172).setVisible(false);this.torso.add(this.amulet);
+  this.weaponAccent=scene.add.circle(0,-3,4,0xb4c8ce).setVisible(false);this.sword.add(this.weaponAccent);
   this.gearSignature='';
  }
  update(dt,axis,attacking,angle){
@@ -154,11 +159,21 @@ export class HeroRig{
   else{this.deathElapsed=0;this.root.rotation=hurt?Math.sin(now*.055)*.08:0;this.root.alpha=hurt ? .72+.28*Math.abs(Math.sin(now*.07)):1;if(hurt)this.torso.rotation+=.12;}
 
  }
+ weaponMuzzleScreen(){
+  const matrix=this.sword.getWorldTransformMatrix?.();if(!matrix?.transformPoint)return null;
+  const length=this.classId==='mage'?47:this.classId==='archer'?20:this.classId==='cannoneer'?33:35;
+  return matrix.transformPoint(0,length,{});
+ }
  updateEquipment(){
   const gear=this.hero?.equipment||{};
-  const signature=JSON.stringify(['chest','helmet','boots','gloves','pants'].map(slot=>[gear[slot]?.id,gear[slot]?.rarity]));
+  const signature=JSON.stringify(['weapon','helmet','chest','gloves','pants','boots','ring','amulet','shield'].map(slot=>[gear[slot]?.id,gear[slot]?.rarity]));
   if(signature===this.gearSignature)return;this.gearSignature=signature;
   const color=item=>({common:0x84919a,uncommon:0x66876c,rare:0x547ba4,epic:0x8b64a6,legendary:0xb79c51}[item?.rarity]||0x84919a);
+  this.ring.setVisible(!!gear.ring);if(gear.ring)this.ring.setFillStyle(color(gear.ring));
+  this.amulet.setVisible(!!gear.amulet);if(gear.amulet)this.amulet.setFillStyle(color(gear.amulet));
+  this.weaponAccent.setVisible(!!gear.weapon);if(gear.weapon)this.weaponAccent.setFillStyle(color(gear.weapon));
+  this.sword.scaleX=this.sword.scaleY=1+Math.min(42,itemDefinition(gear.weapon)?.level||0)/420;
+  if(this.shield){this.shield.setVisible(this.classId==='paladin'||!!gear.shield);for(const shape of this.shield.list)if(shape.setFillStyle)shape.setFillStyle(gear.shield?color(gear.shield):0x9c8750);}
   this.chestArmor.setVisible(!!gear.chest);if(gear.chest)this.chestArmor.setFillStyle(color(gear.chest));
   this.helmet.setVisible(!!gear.helmet);if(gear.helmet)this.helmet.setFillStyle(color(gear.helmet));
   this.leftBoot.setFillStyle(gear.boots?color(gear.boots):0x302b27);this.rightBoot.setFillStyle(gear.boots?color(gear.boots):0x302b27);

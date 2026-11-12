@@ -1,14 +1,15 @@
+import {text} from './i18n/messages.js';
 import { Menu } from './ui/Menu.js';
 import { Save } from './systems/save.js';
 import { GAME_CONFIG } from './config/gameConfig.js';
 import { WorldScene } from './world/WorldScene.js';
-const fail=(message)=>{const e=document.getElementById('error');e.hidden=false;e.textContent='Ошибка запуска Auralis: '+message;};
+const fail=(message)=>{const e=document.getElementById('error');e.hidden=false;e.textContent=text('startupError',localStorage.getItem('auralis_language')||'ru')+message;};
 window.addEventListener('error',e=>fail(e.message));
 window.addEventListener('unhandledrejection',e=>fail(String(e.reason)));
 const rotateHint=document.getElementById('rotate-hint');
 const syncOrientation=()=>{const portrait=window.innerHeight>window.innerWidth;rotateHint.hidden=!portrait;document.getElementById('actions').style.pointerEvents=portrait?'none':'';document.getElementById('joy').style.pointerEvents=portrait?'none':'';};
 window.addEventListener('resize',syncOrientation);window.addEventListener('orientationchange',syncOrientation);syncOrientation();
-if(!window.Phaser){fail('не удалось загрузить игровой движок Phaser');}
+if(!window.Phaser){fail(text('engineMissing',localStorage.getItem('auralis_language')||'ru'));}
 else {
   const game=new Phaser.Game({type:Phaser.AUTO,parent:'game',backgroundColor:'#25452c',scale:{mode:Phaser.Scale.RESIZE,width:window.innerWidth,height:window.innerHeight,autoCenter:Phaser.Scale.CENTER_BOTH},render:{pixelArt:false,antialias:GAME_CONFIG.performance.renderAntialias},scene:[]});
   const fit=()=>{const width=document.documentElement.clientWidth||window.innerWidth,height=document.documentElement.clientHeight||window.innerHeight;game.scale.resize(width,height);game.scene.getScene('world')?.resizeViewport?.(width,height);};
@@ -24,7 +25,7 @@ else {
     else if(game.scene.isPaused('world'))game.scene.resume('world');
   });
   document.getElementById('pause-btn').addEventListener('click',()=>{
-    if(game.scene.isActive('world')){game.scene.getScene('world').save();game.scene.getScene('world').controls?.reset();for(const name of ['inventoryPanel','characterPanel','skillsPanel','npcPanel','storagePanel','savePanel'])game.scene.getScene('world')[name]?.close();game.scene.pause('world');menu.show('pause');}
+    if(game.scene.isActive('world')){game.scene.getScene('world').save();game.scene.getScene('world').controls?.reset();for(const name of ['inventoryPanel','characterPanel','skillsPanel','npcPanel','storagePanel','savePanel','mapPanel','dungeonPanel'])game.scene.getScene('world')[name]?.close();game.scene.pause('world');menu.show('pause');}
   });
   window.Auralis={game,Save,GAME_CONFIG,menu};
 }
