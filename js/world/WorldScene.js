@@ -69,7 +69,7 @@ export class WorldScene extends Phaser.Scene{
   }
   if(now-this.lastHud>100){this.lastHud=now;this.refreshHud();this.battleHud.update();this.minimap.update();}
  }
- updateTargetPanel(){this.targetPanel?.update(this.targetState.update(Date.now(),{hero:this.hero,monsters:this.monsters.monsters,visible:m=>this.monsters.canSee(m)}));}
+ updateTargetPanel(){const previous=this.targetState.target,next=this.targetState.update(Date.now(),{hero:this.hero,monsters:this.monsters.monsters,visible:m=>this.monsters.canSee(m)});if(previous&&!next&&this.monsters.selected===previous)this.monsters.selected=null;this.targetPanel?.update(next);}
  enterDungeon(id,difficulty){return this.world.enterDungeon(id,difficulty);}
  leaveDungeon(){return this.world.leaveDungeon();}
  onTarget(m,now){if(this.hero?.hp>0){this.targetState?.engage(m,Date.now());this.targetPanel?.update(m);}}

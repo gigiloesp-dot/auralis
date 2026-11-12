@@ -14,8 +14,8 @@ export class ActorTextureCache{
   if(!record.loaded&&!this.scene.load.isLoading())this.scene.load.start();
   return {ready:record.ready,release:()=>{if(released)return;released=true;record.refs=Math.max(0,record.refs-1);if(!record.refs&&record.loaded)this.remove(entry.key,record);}};
  }
- flush(){for(const [key,record]of this.entries){if(record.loaded)continue;record.loaded=this.scene.textures.exists(key);record.resolve(record.loaded&&!this.closed);if(!record.refs||!record.loaded)this.remove(key,record);}}
+ flush(){if(this.closed){for(const key of this.lateKeys||[])if(this.scene.textures.exists(key))this.scene.textures.remove(key);this.lateKeys=null;this.scene.load.off('complete',this.complete);return;}for(const [key,record]of this.entries){if(record.loaded)continue;record.loaded=this.scene.textures.exists(key);record.resolve(record.loaded&&!this.closed);if(!record.refs||!record.loaded)this.remove(key,record);}}
  remove(key,record){if(this.entries.get(key)!==record)return;if(this.scene.textures.exists(key))this.scene.textures.remove(key);this.entries.delete(key);}
  get diagnostics(){return {actorAtlases:[...this.entries.values()].filter(e=>e.loaded).length,actorLeases:[...this.entries.values()].reduce((n,e)=>n+e.refs,0),actorPending:[...this.entries.values()].filter(e=>!e.loaded).length};}
- destroy(){this.closed=true;this.scene.load.off('complete',this.complete);for(const [key,record]of this.entries){record.resolve(false);this.remove(key,record);}this.entries.clear();}
+ destroy(){if(this.closed)return;this.closed=true;this.lateKeys=[...this.entries].filter(([,r])=>!r.loaded).map(([key])=>key);if(!this.lateKeys.length)this.scene.load.off('complete',this.complete);for(const [key,record]of this.entries){record.resolve(false);this.remove(key,record);}this.entries.clear();}
 }

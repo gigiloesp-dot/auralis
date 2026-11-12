@@ -1,3 +1,4 @@
+import {PaintedNpc} from '../characters/PaintedNpc.js';
 import {blockingObstacles} from '../monsters/movementProfiles.js';
 import {ENVIRONMENT_ART,environmentFrame} from '../assets/environmentArt.js';
 import {bakeTexture} from '../assets/bakeTexture.js';
@@ -47,6 +48,7 @@ export class ChunkWorld{
   return {x:Math.min(minX,hero.x-100),y:Math.min(minY,hero.y-100),width:Math.max(...corners.map(p=>p.x),hero.x+100)-Math.min(minX,hero.x-100),height:Math.max(...corners.map(p=>p.y),hero.y+100)-Math.min(minY,hero.y-100)};
  }
  update(hero,camera){
+  const now=this.scene.time?.now||0,dt=Math.min(.05,Math.max(0,(now-(this.npcLastUpdate??now))/1000));this.npcLastUpdate=now;for(const chunk of this.chunks.values())for(const actor of chunk.npcActors||[])actor.update(hero,dt);
   const area=this.area(hero,camera),stamp=[area.x,area.y,area.width,area.height].map(n=>Math.round(n/64)).join(',');if(stamp===this.lastArea)return;this.lastArea=stamp;
   for(const [key,c]of this.chunks)if(chunkDistance(c.data.cx,c.data.cy,area)>700)this.unload(key);
   for(const coord of visibleChunkCoordinates(this.content,area,500))if(!this.chunks.has(coord.key))this.load(coord.cx,coord.cy);
@@ -62,16 +64,16 @@ export class ChunkWorld{
    for(const road of roadsForChunk(c,data)){g.lineStyle(road.width,road.secondary?0xb1a17a:palette.road,road.secondary?.75:1);g.beginPath().moveTo(road.from.x-data.x,road.from.y-data.y).lineTo(road.to.x-data.x,road.to.y-data.y).strokePath();}
   }
   bakeTexture(g,key,data.width,data.height);const at=project(data.x,data.y,c.height),ground=s.add.container(at.x,at.y).setScale(1,.5).setDepth(-100000);ground.add(s.add.image(0,0,key).setOrigin(0).setScale((data.width+1)/data.width,(data.height+1)/data.height).setRotation(Math.PI/4));
-  const objects=[ground],occluders=[];
+  const objects=[ground],occluders=[],npcActors=[];
   for(const d of data.decorations){const p=project(d.x,d.y,c.height),painted=this.paintedArt&&environmentFrame(d.kind);const image=s.add.image(p.x,p.y,painted?.texture||this.artTexture||'world-art-'+d.kind,painted?.frame||(this.artTexture?d.kind:undefined)).setOrigin(painted?.originX??.5,painted?.originY??145/176).setScale(d.scale*(painted?.scale||1)).setDepth(d.x+d.y);objects.push(image);if(['oak','pine','cypress','house','cliff','ruin','ruin1','ruin2'].includes(d.kind)&&image.getBounds)occluders.push({decoration:d,bounds:image.getBounds()});}
   for(const bridge of data.bridges){const p=project(bridge.x,bridge.y,c.height),b=s.add.graphics().setPosition(p.x,p.y).setDepth(-99000);b.fillStyle(0x806445).fillPoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);b.lineStyle(2,0xcfb98d).strokePoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);objects.push(b);}
   for(const z of biomeZones(c))if(Math.floor(z.x/512)===cx&&Math.floor(z.y/512)===cy){const p=project(z.x,z.y,c.height);objects.push(s.add.text(p.x,p.y-55,z.names[s.language]||z.names.ru,{fontSize:'15px',color:'#e1e5bd',stroke:'#24392d',strokeThickness:3}).setOrigin(.5).setDepth(z.x+z.y));}
-  for(const npc of data.npcs){const p=project(npc.x,npc.y,c.height),b=s.add.container(p.x,p.y).setDepth(npc.x+npc.y);b.add([s.add.ellipse(0,3,30,12,0x0d211a,.3),s.add.ellipse(0,-24,23,34,npc.roles?.includes('merchant')?0x537da4:0x967349),s.add.circle(0,-48,11,0xddb893),s.add.text(0,-77,named(npc,s.language),{fontSize:'13px',color:'#ffe4ac',stroke:'#152b22',strokeThickness:3}).setOrigin(.5)]);objects.push(b);}
+  for(const npc of data.npcs){const p=project(npc.x,npc.y,c.height),b=s.add.container(p.x,p.y).setDepth(npc.x+npc.y),torso=s.add.ellipse(0,-24,23,34,npc.roles?.includes('merchant')?0x537da4:0x967349),head=s.add.circle(0,-48,11,0xddb893);b.add([s.add.ellipse(0,3,30,12,0x0d211a,.3),torso,head,s.add.text(0,-94,named(npc,s.language),{fontSize:'11px',color:'#ffe4ac',stroke:'#152b22',strokeThickness:3}).setOrigin(.5)]);const painted=PaintedNpc.create(s,b,npc,[torso,head]);if(painted)npcActors.push(painted);objects.push(b);}
   const markers=[...data.portals,...(c.dungeons||[]).filter(p=>Math.floor(p.x/512)===cx&&Math.floor(p.y/512)===cy),...(c.dungeon&&!(c.portals||[]).some(p=>Math.hypot(p.x-c.exit.x,p.y-c.exit.y)<1)?[c.exit].filter(p=>p&&Math.floor(p.x/512)===cx&&Math.floor(p.y/512)===cy):[])];
   for(const marker of markers){const p=project(marker.x,marker.y,c.height),b=s.add.container(p.x,p.y).setDepth(marker.x+marker.y);b.add([s.add.ellipse(0,0,55,25,0x85cfca,.45),s.add.rectangle(0,-33,40,65,0x394d62).setStrokeStyle(3,0xd5c485),s.add.ellipse(0,-33,26,49,0x51a5bb,.7),s.add.text(0,-90,named(marker,s.language),{fontSize:'13px',color:'#b6f1ee',stroke:'#17232e',strokeThickness:3}).setOrigin(.5)]);objects.push(b);}
-  this.chunks.set(data.key,{data,objects,key,occluders});this.obstacleCache=null;
+  this.chunks.set(data.key,{data,objects,key,occluders,npcActors});this.obstacleCache=null;
  }
- unload(key){const chunk=this.chunks.get(key);if(!chunk)return;for(const o of chunk.objects)o.destroy();this.scene.textures.remove(chunk.key);this.chunks.delete(key);this.obstacleCache=null;}
+ unload(key){const chunk=this.chunks.get(key);if(!chunk)return;for(const actor of chunk.npcActors||[])actor.destroy();for(const o of chunk.objects)o.destroy();this.scene.textures.remove(chunk.key);this.chunks.delete(key);this.obstacleCache=null;}
  occludes(target){const p=project(target.x,target.y,this.content.height);for(const chunk of this.chunks.values())for(const {decoration:d,bounds:b}of chunk.occluders||[]){if(d.x+d.y<=target.x+target.y+10)continue;const inset=d.kind==='cypress'?.36:d.kind==='pine'?.24:.12,x=p.x,y=p.y-28;if(x>b.x+b.width*inset&&x<b.x+b.width*(1-inset)&&y>b.y+b.height*.08&&y<b.y+b.height*(d.kind==='house'?.96:.78))return true;}return false;}
  get obstacles(){return this.obstacleCache??= [...this.chunks.values()].flatMap(c=>c.data.obstacles);}
  isWalkable(x,y,radius=12){const c=this.content;if(!Number.isFinite(x)||!Number.isFinite(y)||x<radius||y<radius||x>c.width-radius||y>c.height-radius)return false;if(c.dungeon&&!dungeonFloorContains(c,x,y,radius)||riverBlocked(c,x,y,radius))return false;return !this.obstacles.some(o=>Math.hypot(x-o.x,y-o.y)<o.r+radius);}
