@@ -54,7 +54,7 @@ export class WorldScene extends Phaser.Scene{
   const p=this.project(h.x,h.y);this.body.setPosition(p.x,p.y).setDepth(h.x+h.y+2);this.shadow.setPosition(p.x,p.y+7).setDepth(h.x+h.y-1);
   let swing=this.attackCycle.state(this.playNow);if(swing.impact)this.monsters.attack(this.playNow,this.facing,swing.index);
   const pressed=this.controls.consumeAttack();if(h.hp>0&&(this.controls.attacking||pressed)&&this.attackCycle.start(this.playNow,h))swing=this.attackCycle.state(this.playNow);
-  const cast=h.castAnimation,pose=cast?.until>this.playNow?{active:true,progress:(this.playNow-cast.startedAt)/(cast.until-cast.startedAt),index:cast.index}:swing;
+  const cast=h.castAnimation,pose=cast?.until>this.playNow?{active:true,special:true,cycleId:cast.startedAt,progress:(this.playNow-cast.startedAt)/(cast.until-cast.startedAt),index:cast.index}:{...swing,cycleId:this.attackCycle.startedAt};
   this.rig.update(dt,this.axis,pose,projectAngle(this.facing));this.monsters.update(this.playNow,dt);
   if(updateQuestProgress(this))this.save();
   if(h.hp<=0){

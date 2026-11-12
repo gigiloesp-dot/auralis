@@ -72,8 +72,8 @@ export class HeroRig{
  update(dt,axis,attacking,angle){
   this.elapsed+=Math.max(0,dt);const now=Number.isFinite(this.scene.playNow)?this.scene.playNow:this.elapsed*1000;
   const dead=this.hero?.hp<=0,hurt=!dead&&(this.hero?.hurtUntil||0)>now;
-  this.animationState=dead?'death':hurt?'hurt':attacking?.active?'attack':Math.hypot(axis.x,axis.y)>.08?'run':'idle';
-  if(this.spriteAnimator){this.spriteAnimator.update(this.animationState,angle,hurt);return;}
+  this.animationState=dead?'death':hurt?'hurt':attacking?.active?(attacking.special?'special':'attack'):Math.hypot(axis.x,axis.y)>.08?'run':'idle';
+  if(this.spriteAnimator){this.spriteAnimator.update(this.animationState,angle,hurt,attacking?.cycleId??attacking?.index);return;}
   this.updateEquipment();
   const m=Math.min(1,Math.hypot(axis.x,axis.y));
   this.blend+=(m-this.blend)*Math.min(1,dt*10);
@@ -160,7 +160,8 @@ export class HeroRig{
 
  }
  weaponMuzzleScreen(){
-  const matrix=this.sword.getWorldTransformMatrix?.();if(!matrix?.transformPoint)return null;
+  if(this.spriteAnimator)return this.spriteAnimator.weaponMuzzleScreen();
+  const matrix=this.sword?.getWorldTransformMatrix?.();if(!matrix?.transformPoint)return null;
   const length=this.classId==='mage'?47:this.classId==='archer'?20:this.classId==='cannoneer'?33:35;
   return matrix.transformPoint(0,length,{});
  }
