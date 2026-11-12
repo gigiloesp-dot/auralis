@@ -2,6 +2,15 @@
 
 Обновлено 2026-11-12. Ветка `codex/auralis-master-development`, [draft PR #2](https://github.com/gigiloesp-dot/auralis/pull/2). Прочитать MASTER_SPEC.md, IMPLEMENTATION_STATUS.md и TEST_RESULTS.md. `main`, stable-alpha и прежний alpha-test не менять; merge не выполнять.
 
+## Активная точка продолжения Android
+
+Продолжать текущие изменения после `0ee0e08`, `652ec68`, `5a44b4e`, `8593d73`, `ede46cf`, `f31b8d7`, `e592402`, `c412bd8`, `16f3851`, `bf9624d`. Основные Android UI/health/target/AI/дороги уже подключены — не переписывать их заново.
+
+1. Довести производство/интеграцию реальных actor atlas: warrior/forestWolf/4 NPC уже подключены; остальные пять героев и восемь семейств производят независимые агенты. Проверять фактические файлы/manifest/объекты, а не только каталог.
+2. Сохранить все предыдущие UI/test исправления; завершить обновлённые smoke/mobile/quest/dungeon/actors/soak/classes/естественные journeys. Старые проверки не ослаблять. Новые Android suites включаются отдельным CI job.
+3. Обновить точные результаты, push только master-development, проверить все CI jobs PR#2; затем экспорт committed source и обновить ТОЛЬКО существующий master-test. Проверить `/build.json`, SHA256 всех runtime-файлов и реальный публичный запуск с touch/новым target HUD/рисованными спрайтами.
+4. После публикации продолжать финальные анимации/9 gear layers/недостающие виды/уникальных боссов/NPC всех поселений и баланс1–42. Четыре painted pose banks плюс runtime hurt/death нельзя считать всеми отдельно нарисованными clips.
+
 ## Проверенный исходный пункт
 
 Runtime `7d32be284eaa06d13e49daeb0884ebb866ffdede`: 132 файла check, 162 unit и все девять браузерных suites успешно прошли [CI43176539509](https://github.com/gigiloesp-dot/auralis/actions/runs/43176539509). Все три карты, 254 лагеря /1145 обычных врагов, 7 поселений /21 NPC, 18 открытых боссов, 12 подземелий /36 вариантов, 104 задания и 30 навыков интегрированы. Не начинать заново ChunkWorld, NPC или первое подземелье.
