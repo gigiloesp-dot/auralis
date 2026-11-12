@@ -13,7 +13,7 @@ export class PaintedActor{
  }
  update(state,angle,dt,pose={}){
   if(!this.sprite||this.destroyed)return;this.elapsed+=Math.max(0,dt);
-  const p=actorPose(state,angle,this.elapsed,pose.progress||0);this.currentFrame=p.frame;
+  const p=actorPose(state,angle,this.elapsed,pose.progress||0);this.currentFrame=p.frame;this.poseBank=p.bank;this.directionAngle=angle;
   this.sprite.setFrame(p.frame).setOrigin(.5,(this.entry.baselines?.[p.bank]||225)/256);
   const breath=state==='idle'?Math.sin(this.elapsed*3)*.008:0;
   this.sprite.setScale(this.entry.scale,this.entry.scale*(1+breath));this.sprite.y=state==='run'?-Math.abs(Math.sin(this.elapsed*9*Math.PI))*1.6:0;
@@ -24,7 +24,7 @@ export class PaintedActor{
  }
  drawEquipment(direction,state){
   const g=this.gear,items=this.hero?.equipment||{},back=['nw','n','ne'].includes(direction),side=direction==='e'?1:direction==='w'?-1:direction.endsWith('e')?.7:direction.endsWith('w')?-.7:0;
-  g.clear();g.alpha=state==='death'?.5:state==='hurt'?.65:1;g.rotation=this.sprite.rotation;
+  g.clear();g.alpha=state==='death'?.5:state==='hurt'?.65:1;g.rotation=this.sprite.rotation;const crouch=this.poseBank==='attack'?({paladin:.74,assassin:.77,archer:.85}[this.hero.classId]||1):1;g.setScale(this.entry.gearScale||1,(this.entry.gearScale||1)*(this.entry.equipmentScaleY||1)*crouch);g.y=this.sprite.y+(this.entry.gearOffsetY||0);
   const color=i=>({common:0xa7b5bd,uncommon:0x79aa7d,rare:0x729fd1,epic:0xb68bd4,legendary:0xe9c66b}[i?.rarity]||0xa7b5bd);
   const plate=(item,points)=>{if(!item)return;g.fillStyle(color(item),.9).lineStyle(1,0x35414b,1).beginPath().moveTo(...points[0]);for(const p of points.slice(1))g.lineTo(...p);g.closePath().fillPath().strokePath();};
   // Equipment follows the painted body's anatomical landmarks, in world pixels.
@@ -38,8 +38,14 @@ export class PaintedActor{
   plate(items.shield,[[x-17,-48],[x-8,-43],[x-10,-28],[x-17,-22],[x-24,-28],[x-26,-43]]);
   // Original blade stays in the painted right hand; rarity is an actual blade
   // edge and hilt accent rather than replacing the entire actor with a tint.
-  if(items.weapon){g.lineStyle(2,color(items.weapon),.95);const sign=side<0?-1:1;g.beginPath().moveTo(x+sign*16,-31).lineTo(x+sign*29,-18).strokePath();g.fillStyle(color(items.weapon)).fillCircle(x+sign*15,-32,2.5);}
+  if(items.weapon){g.lineStyle(2,color(items.weapon),.95);const sign=side<0?-1:1,c=this.entry.weaponType||({archer:'bow',mage:'staff',cannoneer:'cannon',assassin:'dagger'}[this.hero.classId]||'sword');
+   if(c==='bow'){g.beginPath().arc(x+sign*15,-39,15,-Math.PI/2,Math.PI/2,sign<0).strokePath();}
+   else if(c==='staff'){g.fillStyle(color(items.weapon),.8).fillCircle(x+sign*17,-75,3.5);}
+   else if(c==='cannon'){g.lineStyle(3,color(items.weapon)).strokeRect(x+sign*12-5,-38,15,9);}
+   else{g.beginPath().moveTo(x+sign*16,-31).lineTo(x+sign*29,-18).strokePath();if(c==='dagger')g.beginPath().moveTo(x-sign*14,-31).lineTo(x-sign*23,-20).strokePath();}
+   g.fillStyle(color(items.weapon)).fillCircle(x+sign*15,-32,2.5);
+  }
  }
- weaponMuzzleScreen(){const m=this.sprite?.getWorldTransformMatrix?.();return m?.transformPoint?.(45,70,{});}
+ weaponMuzzleScreen(){const m=this.sprite?.getWorldTransformMatrix?.(),angle=this.directionAngle||0,socket=this.entry.weaponSocket||{reach:85,height:130};return m?.transformPoint?.(Math.cos(angle)*socket.reach,-socket.height+Math.sin(angle)*45,{});}
  destroy(){if(this.destroyed)return;this.destroyed=true;this.sprite?.destroy();this.gear?.destroy();this.lease.release();}
 }

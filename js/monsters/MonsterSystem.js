@@ -1,6 +1,6 @@
 import {movementProfile,blockingObstacles,tickMonsterAbility,cancelMonsterAbility,applyHeroAffliction,tickHeroAfflictions} from './movementProfiles.js';
 import {PaintedActor} from '../characters/PaintedActor.js';
-import {ACTOR_ART} from '../assets/actorArt.js';
+import {monsterArt} from '../assets/monsterArt.js';
 import {projectAngle} from '../world/projection.js';
 import {recoverLivingMonster,restoredLivingHp,MONSTER_RECOVERY_DELAY} from './health.js';
 import {placeTrap,tickClassEffects,guardBlock,guardResponse,clearClassEffects} from '../combat/classEffects.js';
@@ -49,7 +49,7 @@ export class MonsterSystem{
   const nameLabel=this.scene.add.text(point.x,point.y-(kind.boss?(kind.visualScale||1.45)*110:76),name+' · '+kind.level,{fontFamily:'Arial',fontSize:kind.boss?'13px':'10px',color:kind.boss?'#ffd47b':'#e5d9ba',stroke:'#15251a',strokeThickness:3}).setOrigin(.5).setDepth(depth+2);
   const alive=!(saved?.deadUntil>Date.now());
   const m={...d,key,kind,nameLabel,active:false,x,y,homeX:x,homeY:y,hp:alive?restoredLivingHp(saved,kind.hp):0,maxHp:kind.hp,lastEngagedAt:(this.scene.playNow||0)-MONSTER_RECOVERY_DELAY+Math.max(0,(saved?.recoverAfter||0)-Date.now()),attack:kind.attack,alive,body,shadow,hpBar,lastHit:0,respawnAt:alive?0:(this.content?saved.deadUntil:Math.max(0,saved.deadUntil-Date.now())),phase:(d.i||0)*.7};
-  if(type==='forestWolf'&&this.scene.actorTextures&&ACTOR_ART.forestWolf){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,ACTOR_ART.forestWolf);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;});}
+  const paintedEntry=monsterArt(type,kind);if(paintedEntry&&this.scene.actorTextures){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,paintedEntry);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;m.annotationHeight=(paintedEntry.annotationHeight||paintedEntry.scale*170)*(kind.visualScale||1);});}
   this.monsters.push(m);this.setMonsterVisible(m,distance(this.hero,m)<=MONSTER_ACTIVATION_RADIUS);return m;
  }
  removeMonster(m){m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
@@ -118,7 +118,7 @@ export class MonsterSystem{
    if(!ability.busy&&!m.windup&&!controlled&&!m.returning&&!this.safe()&&dist<42&&now-m.lastHit>1500&&this.hero.hp>0&&this.sight(m,this.hero)){m.lastHit=now;this.hurtHero(m.attack,now,m.kind.magic,m);}
    const point=this.view(m.x,m.y),depth=this.depth(m.x,m.y);
    const elevation=profile.elevation||0,bob=Math.sin(now*(profile.locomotion==='winged'?.016:.007)+m.phase)*(elevation?4:1.5);m.body.setPosition(point.x,point.y-elevation+bob).setDepth(depth);m.shadow.scaleX=elevation?.72:1;m.shadow.alpha=elevation?.24:.35;m.shadow.setPosition(point.x,point.y+5).setDepth(depth-1);
-   m.hpBar.setPosition(point.x,point.y-elevation-(m.kind.boss?(m.kind.visualScale||1.45)*93:48)).setDepth(depth+1).setScale((m.kind.boss?2.5:1)*m.hp/m.maxHp,1);m.nameLabel.setPosition(point.x,point.y-elevation-(m.kind.boss?(m.kind.visualScale||1.45)*110:76)).setDepth(depth+2);this.syncAnnotations(m);
+   m.hpBar.setPosition(point.x,point.y-elevation-(m.annotationHeight??(m.kind.boss?(m.kind.visualScale||1.45)*93:48))).setDepth(depth+1).setScale((m.kind.boss?2.5:1)*m.hp/m.maxHp,1);m.nameLabel.setPosition(point.x,point.y-elevation-(m.annotationHeight?m.annotationHeight+17:m.kind.boss?(m.kind.visualScale||1.45)*110:76)).setDepth(depth+2);this.syncAnnotations(m);
   }
   for(const p of [...this.projectiles]){
    if(!p.target.alive||!this.monsters.includes(p.target)||this.hero.hp<=0){this.removeProjectile(p);continue;}
