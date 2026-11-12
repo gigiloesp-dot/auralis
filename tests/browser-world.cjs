@@ -4,6 +4,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
 const {startServer,launchOptions,root}=require('./browserHarness.cjs');
 const fs=require('node:fs'),path=require('node:path');
 (async()=>{const hosting=await startServer();let browser;try{browser=await chromium.launch(launchOptions);const p=await browser.newPage({viewport:{width:844,height:390},hasTouch:true,isMobile:true});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(hosting.url);await p.getByRole('button',{name:'Играть',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('input').fill('WorldQA');await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.world);
+ const art=await p.evaluate(()=>{const s=Auralis.game.scene.getScene('world');return {frames:s.textures.get('paintedEnvironment').getFrameNames().sort(),painted:s.world.chunkWorld.paintedArt,objects:[...s.world.chunkWorld.chunks.values()].flatMap(c=>c.objects).filter(o=>o.texture?.key==='paintedEnvironment').length};});assert.deepEqual(art.frames,['cypress','house','oak','pine','rock','ruin']);assert.ok(art.painted&&art.objects>0);console.log('PASS real painted environment atlas and streamed props',JSON.stringify(art));
  const totals={normal:0,bosses:0,camps:0,towns:0,npcs:0};
  for(const region of ['forest','north','ancient']){
   const result=await p.evaluate(async region=>{

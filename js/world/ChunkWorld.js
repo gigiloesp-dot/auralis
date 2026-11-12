@@ -1,3 +1,4 @@
+import {ENVIRONMENT_ART,environmentFrame} from '../assets/environmentArt.js';
 import {bakeTexture} from '../assets/bakeTexture.js';
 import {biomeZones,paintBiomes} from './biomes.js';
 import {CHUNK_SIZE,visibleChunkCoordinates,chunkDistance,describeChunk,regionRoads,riverX,riverBlocked,dungeonFloorContains} from './chunkGeometry.js';
@@ -6,7 +7,7 @@ const named=(o,lang)=>o.names?.[lang]||o.names?.ru||o.name||o.id;
 export class ChunkWorld{
  constructor(scene,content){this.scene=scene;this.content=content;this.chunks=new Map();this.serial=0;this.lastArea='';this.makeArt();}
  makeArt(){
-  const scene=this.scene,atlasKey='world-art-atlas-2',kinds=['oak','pine','cypress','rock','ruin','ruin1','ruin2','house','cliff','ice'];
+  const scene=this.scene;this.paintedArt=scene.textures.exists(ENVIRONMENT_ART.key);const atlasKey='world-art-atlas-2',kinds=['oak','pine','cypress','rock','ruin','ruin1','ruin2','house','cliff','ice'];
   if(scene.textures.exists(atlasKey)){this.artTexture=atlasKey;return;}
   for(const kind of kinds){
    const key='world-art-'+kind;if(scene.textures.exists(key))continue;const g=scene.make.graphics({add:false});
@@ -61,7 +62,7 @@ export class ChunkWorld{
   }
   bakeTexture(g,key,data.width,data.height);const at=project(data.x,data.y,c.height),ground=s.add.container(at.x,at.y).setScale(1,.5).setDepth(-100000);ground.add(s.add.image(0,0,key).setOrigin(0).setScale((data.width+1)/data.width,(data.height+1)/data.height).setRotation(Math.PI/4));
   const objects=[ground];
-  for(const d of data.decorations){const p=project(d.x,d.y,c.height);objects.push(s.add.image(p.x,p.y,this.artTexture||'world-art-'+d.kind,this.artTexture?d.kind:undefined).setOrigin(.5,145/176).setScale(d.scale).setDepth(d.x+d.y));}
+  for(const d of data.decorations){const p=project(d.x,d.y,c.height),painted=this.paintedArt&&environmentFrame(d.kind);objects.push(s.add.image(p.x,p.y,painted?.texture||this.artTexture||'world-art-'+d.kind,painted?.frame||(this.artTexture?d.kind:undefined)).setOrigin(painted?.originX??.5,painted?.originY??145/176).setScale(d.scale*(painted?.scale||1)).setDepth(d.x+d.y));}
   for(const bridge of data.bridges){const p=project(bridge.x,bridge.y,c.height),b=s.add.graphics().setPosition(p.x,p.y).setDepth(-99000);b.fillStyle(0x806445).fillPoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);b.lineStyle(2,0xcfb98d).strokePoints([{x:-52,y:0},{x:0,y:-24},{x:52,y:0},{x:0,y:24}],true);objects.push(b);}
   for(const z of biomeZones(c))if(Math.floor(z.x/512)===cx&&Math.floor(z.y/512)===cy){const p=project(z.x,z.y,c.height);objects.push(s.add.text(p.x,p.y-55,z.names[s.language]||z.names.ru,{fontSize:'15px',color:'#e1e5bd',stroke:'#24392d',strokeThickness:3}).setOrigin(.5).setDepth(z.x+z.y));}
   for(const npc of data.npcs){const p=project(npc.x,npc.y,c.height),b=s.add.container(p.x,p.y).setDepth(npc.x+npc.y);b.add([s.add.ellipse(0,3,30,12,0x0d211a,.3),s.add.ellipse(0,-24,23,34,npc.roles?.includes('merchant')?0x537da4:0x967349),s.add.circle(0,-48,11,0xddb893),s.add.text(0,-77,named(npc,s.language),{fontSize:'13px',color:'#ffe4ac',stroke:'#152b22',strokeThickness:3}).setOrigin(.5)]);objects.push(b);}

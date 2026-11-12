@@ -28,7 +28,7 @@ const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const PANEL_NAMES=['inventoryPanel','characterPanel','skillsPanel','npcPanel','storagePanel','savePanel','mapPanel','dungeonPanel'];
 export class WorldScene extends Phaser.Scene{
  constructor(){super('world');}
- preload(){queueAssets(this);}
+ preload(){const notice=document.getElementById('notice'),language=localStorage.getItem('auralis_language')||'ru',progress=value=>{if(notice)notice.textContent=text('loadingWorld',language)+' '+Math.round(value*100)+'%';};this.load.on('progress',progress);this.load.once('complete',()=>{this.load.off('progress',progress);if(notice)notice.textContent=text('startHint',language);});progress(0);queueAssets(this);}
  create(){
   this.language=localStorage.getItem('auralis_language')||'ru';this.saveSlot=Save.activeSlot;this.closed=false;this.playNow=0;this.lastSave=0;this.lastHud=0;this.facing=0;
   SharedStorage.load();this.hero=createCharacter(Save.load(this.saveSlot)||{x:1030,y:1140});
