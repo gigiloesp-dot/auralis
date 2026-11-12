@@ -34,6 +34,7 @@ export class WorldRuntime{
   s.attackCycle&&(s.attackCycle.startedAt=-Infinity);s.controls?.reset();s.refreshHud();s.battleHud?.update();s.mapPanel?.close();s.save();
  }
  update(){const s=this.scene;this.chunkWorld.update(s.hero,s.cameras.main);s.obstacles=this.chunkWorld.obstacles;this.portal=this.content.portals.find(p=>Math.hypot(p.x-s.hero.x,p.y-s.hero.y)<140);this.button.hidden=!this.portal||s.panelsOpen();if(this.portal){const t=names[s.language]||names.ru;this.button.textContent=t.travel+' · '+(this.portal.names?.[s.language]||REGIONS[this.portal.toRegion]?.names?.[s.language]||this.portal.toRegion);}}
+ occludes(target){return this.chunkWorld.occludes(target);}
  isWalkable(x,y,r=12){return this.chunkWorld.isWalkable(x,y,r);}
  move(axis,speed,dt){const dir=screenDirection(axis.x,axis.y),h=this.scene.hero,dx=dir.x*speed*dt,dy=dir.y*speed*dt;if(this.isWalkable(h.x+dx,h.y))h.x+=dx;if(this.isWalkable(h.x,h.y+dy))h.y+=dy;return Math.atan2(dir.y,dir.x);}
  travel(){if(!this.portal||this.scene.panelsOpen())return false;const p=this.portal;if(p.toRegion==='arena')this.scene.hero.returnLocation={region:this.scene.hero.region,x:p.x,y:p.y+80};else if(this.content.arena)this.scene.hero.returnLocation=null;this.load({region:p.toRegion,x:p.toX,y:p.toY});return true;}

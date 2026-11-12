@@ -23,7 +23,7 @@ export function normalizeWorldState(value){
  if(plain(value?.monsters))for(const [id,state] of Object.entries(value.monsters).slice(0,5000)){
   if(!safeKey(id)||!plain(state))continue;
   const normalized={};
-  for(const key of ['deadUntil','killedAt']){const timestamp=time(state[key]);if(timestamp!==null)normalized[key]=timestamp;}
+  for(const key of ['deadUntil','killedAt','healthAt','recoverAfter']){const timestamp=time(state[key]);if(timestamp!==null)normalized[key]=timestamp;}
   if(Number.isFinite(state.hp)&&state.hp>=0)normalized.hp=state.hp;
   if(Object.keys(normalized).length)result.monsters[id]=normalized;
  }
