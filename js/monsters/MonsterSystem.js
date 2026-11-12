@@ -60,7 +60,7 @@ export class MonsterSystem{
  blast(x,y,radius,multiplier,now,after=()=>{}){for(const m of this.monsters.filter(m=>m.alive&&m.active!==false&&distance(m,{x,y})<=radius&&this.sight({x,y},m)))this.strike(m,now,multiplier,false,false,after);const screen=this.view(x,y),ring=this.scene.add.circle(screen.x,screen.y,radius,combatSpec(this.hero.classId).color,.2).setDepth(this.depth(x,y));if(this.scene.project)ring.setScale?.(1,.5);this.scene.tweens.add({targets:ring,alpha:0,duration:400,onComplete:()=>ring.destroy()});}
  hurtHero(attack,now,magic=false,source=null){
   if(this.hero.hp<=0||this.safe())return;
-  if(source){source.lastEngagedAt=now;this.select(source,now);}this.lastCombat=now;const evade=this.buffs.evade>now&&Math.random()<.65,spec=combatSpec(this.hero.classId);
+  if(source){source.lastEngagedAt=now;if(!this.selected?.alive||!this.canSee(this.selected)||this.selected===source)this.select(source,now);}this.lastCombat=now;const evade=this.buffs.evade>now&&Math.random()<.65,spec=combatSpec(this.hero.classId);
   let damage=evade?0:calculateDamage({attack,defense:magic?Math.round(equipmentStats(this.hero).defense*.35+(this.hero.stats.intelligence||5)*.4+spec.magicDefense):equipmentStats(this.hero).defense+derivedAttributes(this.hero).defense+spec.defense});
   if(this.buffs.guard>now)damage=Math.ceil(damage*(this.hero.classId==='paladin'?.35:this.hero.classId==='cannoneer'?.65:.55));
   if(this.buffs.aura>now)damage=Math.ceil(damage*.55);
