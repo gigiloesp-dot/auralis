@@ -51,9 +51,11 @@ await run('all game panels close by touch and portrait hint works',async()=>{
   await p.locator(trigger).click();await p.locator(header+' button').last().click();
   assert.equal(await scene(()=>{const s=Auralis.game.scene.getScene('world');return !!(s.inventoryPanel.opened||s.characterPanel.opened||s.skillsPanel.opened);}),false);
  }
- await p.setViewportSize({width:390,height:844});assert.equal(await p.locator('#rotate-hint').isVisible(),true);
+ await p.setViewportSize({width:390,height:844});await p.locator('#rotate-hint').waitFor({state:'visible'});assert.equal(await p.locator('#rotate-hint').isVisible(),true);
  const pausedClock=await scene(()=>Auralis.game.scene.getScene('world').playNow);await p.waitForTimeout(300);assert.equal(await scene(()=>Auralis.game.scene.getScene('world').playNow),pausedClock);
- await p.setViewportSize({width:844,height:390});assert.equal(await p.locator('#rotate-hint').isVisible(),false);
+ // CDP viewport acknowledgement precedes delivery of the page's resize event.
+ // Wait for the actual orientation response, retaining the visibility check.
+ await p.setViewportSize({width:844,height:390});await p.locator('#rotate-hint').waitFor({state:'hidden'});assert.equal(await p.locator('#rotate-hint').isVisible(),false);
 });
 await run('pause closes overlays and resume restores active scene',async()=>{
  await scene(()=>{const s=Auralis.game.scene.getScene('world');s.hero.x=935;s.hero.y=1080;});
