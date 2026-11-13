@@ -5,6 +5,9 @@ const cyr=/[А-Яа-яЁё]/;
 (async()=>{const hosting=await startServer();let b;try{b=await chromium.launch(launchOptions);
 for(const lang of ['en','es']){
  const context=await b.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true});await context.addInitScript(lang=>localStorage.setItem('auralis_language',lang),lang);const p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(hosting.url,{waitUntil:'networkidle'});
+ // Network idleness can precede module evaluation and Menu construction on a
+ // busy runner. Scan the ready home screen, after the actual menu is rendered.
+ await p.waitForFunction(()=>window.Auralis?.menu?.page==='home');await p.getByRole('button',{name:lang==='en'?'Play':'Jugar',exact:true}).waitFor({state:'visible'});
  const scan=async(label,selector='body')=>{const text=await p.locator(selector).innerText();assert.equal(cyr.test(text),false,lang+' '+label+' has untranslated text: '+text);if(!cyr.test(text)) console.log('PASS',lang,label);};
  await scan('home');await p.getByRole('button',{name:lang==='en'?'Play':'Jugar',exact:true}).click();await p.getByRole('button',{name:lang==='en'?'Create character':'Crear personaje',exact:true}).first().click();await scan('six class menu','.class-grid');assert.equal(await p.locator('.class-card').count(),6);await p.locator('input').fill('LocaleTest');await p.getByRole('button',{name:lang==='en'?'Begin adventure':'Comenzar aventura',exact:true}).click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world').hero?.name==='LocaleTest');await p.waitForTimeout(250);await scan('HUD');
  await p.evaluate(async()=>{const s=Auralis.game.scene.getScene('world'),{grantXp}=await import('/js/systems/progression.js');grantXp(s.hero,1000000);s.hero.skillPoints=50;const{addItem}=await import('/js/equipment/items.js');addItem(s.hero,{id:'rustySword',rarity:'common'});});
