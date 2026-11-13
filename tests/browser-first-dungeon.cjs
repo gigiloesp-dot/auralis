@@ -21,7 +21,7 @@ const path=require('node:path');
   const read=()=>page.evaluate(async()=>{
    const {itemDefinition,itemName}=await import('/js/equipment/items.js');
    const s=Auralis.game.scene.getScene('world'),h=s.hero;
-   return {x:h.x,y:h.y,hp:h.hp,maxHp:h.maxHp,mp:h.mp,maxMp:h.maxMp,dead:Object.keys(h.worldState?.monsters||{}),level:h.level,xp:h.xp,gold:h.gold,attributePoints:h.attributePoints,skillPoints:h.skillPoints,stats:{...h.stats},potions:{...h.potions},quests:JSON.parse(JSON.stringify(h.quests)),learnedSkills:{...h.learnedSkills},skillSlots:[...h.skillSlots],region:h.region,dungeonProgress:JSON.parse(JSON.stringify(h.dungeonProgress||{})),inventory:h.inventory.map((item,index)=>({index,...item,...itemDefinition(item),name:itemName(item)})),equipment:JSON.parse(JSON.stringify(h.equipment)),monsters:s.monsters.monsters.filter(m=>m.alive).map(m=>({id:m.id,campId:m.campId,x:m.x,y:m.y,hp:m.hp,boss:!!m.kind.boss})),wolves:s.monsters.monsters.filter(m=>m.alive&&m.type==='forestWolf').map(m=>({id:m.id,x:m.x,y:m.y,hp:m.hp})),axis:{...s.controls.axis},attacking:s.controls.attacking};
+   return {deathStartedAt:h.deathStartedAt??null,x:h.x,y:h.y,hp:h.hp,maxHp:h.maxHp,mp:h.mp,maxMp:h.maxMp,dead:Object.entries(h.worldState?.monsters||{}).filter(([,state])=>state.killedAt>0&&state.deadUntil>0).map(([id])=>id),level:h.level,xp:h.xp,gold:h.gold,attributePoints:h.attributePoints,skillPoints:h.skillPoints,stats:{...h.stats},potions:{...h.potions},quests:JSON.parse(JSON.stringify(h.quests)),learnedSkills:{...h.learnedSkills},skillSlots:[...h.skillSlots],region:h.region,dungeonProgress:JSON.parse(JSON.stringify(h.dungeonProgress||{})),inventory:h.inventory.map((item,index)=>({index,...item,...itemDefinition(item),name:itemName(item)})),equipment:JSON.parse(JSON.stringify(h.equipment)),monsters:s.monsters.monsters.filter(m=>m.alive).map(m=>({id:m.id,campId:m.campId,x:m.x,y:m.y,hp:m.hp,boss:!!m.kind.boss})),wolves:s.monsters.monsters.filter(m=>m.alive&&m.type==='forestWolf').map(m=>({id:m.id,x:m.x,y:m.y,hp:m.hp})),axis:{...s.controls.axis},attacking:s.controls.attacking};
   });
   assert.equal((await read()).level,1);assert.deepEqual((await read()).quests,{});
   await openNpc(page,'mira');
@@ -39,8 +39,11 @@ const path=require('node:path');
    const length=Math.hypot(dx-dy,(dx+dy)/2),scale=length?joy.width*.24/length:0;
    const points=[{id:1,x:centre.x+(dx-dy)*scale,y:centre.y+(dx+dy)/2*scale}];
    if(holdAttack)points.push({id:2,...attackPoint});
-   const type=!touching||holdAttack&&!attacking?'touchStart':!holdAttack&&attacking?'touchEnd':'touchMove';
-   await cdp.send('Input.dispatchTouchEvent',{type,touchPoints:points});touching=true;attacking=holdAttack;
+   // Add fingers individually, as on a phone and in the independent soak test.
+   // A batched initial touchStart can leave Chromium's second capture inactive.
+   if(!touching){await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[points[0]]});if(holdAttack)await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:points});}
+   else{const type=holdAttack&&!attacking?'touchStart':!holdAttack&&attacking?'touchEnd':'touchMove';await cdp.send('Input.dispatchTouchEvent',{type,touchPoints:points});}
+   touching=true;attacking=holdAttack;
   };
   const release=async()=>{if(touching)await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});touching=false;attacking=false;};
   const directionTo=async target=>page.evaluate(target=>{
@@ -70,25 +73,29 @@ const path=require('node:path');
    waypoint=route.find(p=>clear(h,p))||route.at(-2);
    return {x:waypoint.x-h.x,y:waypoint.y-h.y};
   },target);
+  let maintainWalkingHealth=null;
   const walkTo=async(target,tolerance=30)=>{
-   const deadline=Date.now()+45000;
+   const deadline=Date.now()+45000,expectedRegion=(await read()).region;
    while(Date.now()<deadline){
-    const h=await read();if(Math.hypot(h.x-target.x,h.y-target.y)<=tolerance){await release();return;}
-    const dir=await directionTo(target);await touch(dir.x,dir.y,false);await page.waitForTimeout(100);await release();
+    const h=await read();assert.equal(h.region,expectedRegion,'Unexpected transition or death while walking');assert.ok(h.hp>0&&h.deathStartedAt===null,'Hero died while walking');
+    if(Math.hypot(h.x-target.x,h.y-target.y)<=tolerance){await release();return;}
+    const threatened=h.region.startsWith('dungeon:')&&h.monsters.some(m=>Math.hypot(m.x-h.x,m.y-h.y)<220);
+    if(maintainWalkingHealth)await maintainWalkingHealth(h,threatened);
+    const dir=await directionTo(target);await touch(dir.x,dir.y,threatened);await page.waitForTimeout(100);await release();
    }
    await release();throw Error('Walking timed out: '+JSON.stringify({target,hero:await read()}));
   };
   await walkTo({x:1270,y:1240});
-  const combatDeadline=Date.now()+65000;let lastProgress=-1,multitouch=false;
+  const combatDeadline=Date.now()+65000;let lastProgress=-1,multitouch=false,touchSampled=false;
   while(Date.now()<combatDeadline){
    const h=await read(),progress=h.quests.forestWolves.progress;
    if(progress!==lastProgress){console.log('JOURNEY hunt',JSON.stringify({progress,hp:h.hp,level:h.level,gold:h.gold,x:Math.round(h.x),y:Math.round(h.y)}));lastProgress=progress;}
    if(progress>=5)break;
    assert.ok(h.hp>0,'fresh hero should survive starter hunt');
    const target=h.wolves.filter(m=>m.id.startsWith('forest-starter-wolf-')).sort((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)-Math.hypot(b.x-h.x,b.y-h.y))[0];assert.ok(target,'starter camp must have reachable living wolves');
-   if(Math.hypot(target.x-h.x,target.y-h.y)>65){const dir=await directionTo(target);await touch(dir.x,dir.y,true);}
+   if(!multitouch||Math.hypot(target.x-h.x,target.y-h.y)>65){const dir=await directionTo(target);await touch(dir.x,dir.y,true);}
    else await touch(0,0,true);
-   const state=await read();multitouch ||= state.attacking&&Math.hypot(state.axis.x,state.axis.y)>.1;
+   await page.waitForTimeout(60);const state=await read();if(!touchSampled){console.log('JOURNEY initial touch',JSON.stringify({attacking:state.attacking,axis:state.axis}));touchSampled=true;}multitouch ||= state.attacking&&Math.hypot(state.axis.x,state.axis.y)>.1;
    await page.waitForTimeout(150);
   }
   await release();assert.equal((await read()).quests.forestWolves.progress,5,'five kills must come from held basic attack');assert.equal(multitouch,true,'joystick and attack should work simultaneously');
@@ -122,19 +129,35 @@ const path=require('node:path');
    await page.locator('.skill-heading button').click();
   };
   await spend();
-  const clickReady=async locator=>{if(!await locator.isEnabled())return;try{await locator.click({timeout:1200});}catch(error){if(await locator.isEnabled())throw error;}};
+  const clickReady=async locator=>{if(!await locator.isEnabled())return;await release();try{await locator.click({timeout:5000});}catch(error){if(await locator.isEnabled())throw error;}};
   const useCombatUI=async()=>{
    const h=await read();
-   if(h.hp<h.maxHp*.55)await clickReady(page.getByRole('button',{name:'Зелье здоровья',exact:true}));
+   if(h.hp<h.maxHp*.65)await clickReady(page.getByRole('button',{name:'Зелье здоровья',exact:true}));
    else if(h.mp<h.maxMp*.25&&h.hp>h.maxHp*.7)await clickReady(page.getByRole('button',{name:'Зелье маны',exact:true}));
    await clickReady(page.locator('#skills .skill').first());
    if(h.learnedSkills.warrior_1)await clickReady(page.locator('#skills .skill').nth(1));
   };
-  const fightUntil=async(predicate,label,filter=()=>true,maxMs=90000)=>{
-   const deadline=Date.now()+maxMs;let lastLevel=0;
+  maintainWalkingHealth=async(h,threatened)=>{
+   if(h.hp<h.maxHp*.75)await clickReady(page.getByRole('button',{name:'Зелье здоровья',exact:true}));
+   if(threatened)await useCombatUI();
+  };
+  const recoverBeforeAdvance=async label=>{
+   await release();const expectedRegion=(await read()).region,deadline=Date.now()+60000;
    while(Date.now()<deadline){
-    const h=await read();if(predicate(h)){await release();console.log('PASS',label,JSON.stringify({level:h.level,xp:h.xp,gold:h.gold,hp:h.hp,seconds:Math.round((Date.now()-started)/1000)}));return;}
-    assert.ok(h.hp>0,'hero died during '+label);
+    const h=await read();assert.equal(h.region,expectedRegion,'Unexpected transition or death while resting');assert.ok(h.hp>0&&h.deathStartedAt===null,'Hero died while resting');
+    if(h.hp>=h.maxHp*.90&&h.mp>=h.maxMp*.40){console.log('PASS rested before '+label,JSON.stringify({hp:h.hp,maxHp:h.maxHp,mp:h.mp}));return;}
+    const threatened=h.monsters.some(m=>Math.hypot(m.x-h.x,m.y-h.y)<290);
+    if(threatened){await maintainWalkingHealth(h,true);return;}
+    if(h.hp<h.maxHp*.60)await clickReady(page.getByRole('button',{name:'Зелье здоровья',exact:true}));
+    await page.waitForTimeout(350);
+   }
+   throw Error('Real regeneration did not recover hero before '+label+' '+JSON.stringify(await read()));
+  };
+  const fightUntil=async(predicate,label,filter=()=>true,maxMs=90000)=>{
+   const deadline=Date.now()+maxMs,expectedRegion=(await read()).region;let lastLevel=0;
+   while(Date.now()<deadline){
+    const h=await read();assert.equal(h.region,expectedRegion,'Unexpected transition or death during '+label);if(predicate(h)){await release();console.log('PASS',label,JSON.stringify({level:h.level,xp:h.xp,gold:h.gold,hp:h.hp,seconds:Math.round((Date.now()-started)/1000)}));return;}
+    assert.ok(h.hp>0&&h.deathStartedAt===null,'hero died during '+label);
     if(h.level!==lastLevel){console.log('DUNGEON JOURNEY',label,JSON.stringify({level:h.level,xp:h.xp,gold:h.gold,hp:h.hp}));lastLevel=h.level;}
     const target=h.monsters.filter(filter).sort((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)-Math.hypot(b.x-h.x,b.y-h.y))[0];
     if(!target){await release();await page.waitForTimeout(250);continue;}
@@ -162,25 +185,29 @@ const path=require('node:path');
   const weapon=page.getByRole('button',{name:'Купить: Стальной меч · Обычный',exact:true});
   if(await weapon.isEnabled())await weapon.click();
   const goldAfterGear=(await read()).gold;
-  while((await read()).potions.hp<8&&(await read()).gold>=10)await page.locator('.npc-shop-row').first().getByRole('button',{name:'Купить',exact:true}).click();
+  while((await read()).potions.hp<12&&(await read()).gold>=10)await page.locator('.npc-shop-row').first().getByRole('button',{name:'Купить',exact:true}).click();
   await page.locator('.npc-heading button').click();
   const sword=(await read()).inventory.find(i=>i.id==='weapon_warrior_1');
   if(sword){await page.locator('#inventory-btn').click();await page.getByRole('button',{name:'II · Рюкзак',exact:true}).click();await page.getByRole('button',{name:'Стальной меч',exact:true}).click();await page.getByRole('button',{name:'Надеть',exact:true}).click();await page.locator('.inventory-heading button').click();}
   console.log('PASS earned gold spent on dungeon supplies',JSON.stringify({gear:(await read()).equipment,goldAfterGear,potions:(await read()).potions}));
+  await recoverBeforeAdvance('first dungeon approach');
   for(const target of [{x:1530,y:1220},{x:1770,y:1600},{x:1820,y:1780}])await walkTo(target,35);
+  await recoverBeforeAdvance('first dungeon entry');
   await page.locator('.dungeon-interact').click();await page.getByRole('button',{name:'Лёгкая · HP/ATK ×1',exact:true}).click();
   assert.equal((await read()).region,'dungeon:dungeon1:easy');console.log('PASS entered first dungeon by real level gate and entrance UI');
   const roomData=await page.evaluate(()=>{const c=Auralis.game.scene.getScene('world').regionContent;return c.rooms.map((r,index)=>({id:r.id,x:r.x+r.width/2,y:r.y+r.height/2,spawnIds:c.camps.find(camp=>camp.id==='dungeon1-room-'+index)?.spawns.map(m=>m.id)||[]}));});
+  const originalMobIds=roomData.slice(0,-1).flatMap(room=>room.spawnIds),defeatedOriginalIds=new Set();assert.equal(originalMobIds.length,18,'The full first dungeon must contain18 original ordinary enemies');
   for(let index=0;index<roomData.length;index++){
-   const room=roomData[index];await useCombatUI();if(index){const previous=roomData[index-1];await walkTo({x:room.x,y:previous.y},24);}await walkTo(room,40);
+   const room=roomData[index];await recoverBeforeAdvance('dungeon room '+index);await useCombatUI();if(index){const previous=roomData[index-1];await walkTo({x:room.x,y:previous.y},24);}await walkTo(room,40);
    const campId='dungeon1-room-'+index;
    if(index<roomData.length-1){
     const defeated=new Set();
-    await fightUntil(h=>{for(const id of room.spawnIds)if(h.dead.some(key=>key.endsWith(':'+id)))defeated.add(id);return defeated.size===room.spawnIds.length;},'defeat every original enemy in real dungeon room '+index,m=>m.campId===campId&&!defeated.has(m.id),85000);
+    await fightUntil(h=>{for(const id of room.spawnIds)if(h.dead.some(key=>key.endsWith(':'+id))){defeated.add(id);defeatedOriginalIds.add(id);}return defeated.size===room.spawnIds.length;},'defeat every original enemy in real dungeon room '+index,m=>m.campId===campId&&!defeated.has(m.id),85000);
    }
    else await fightUntil(h=>h.dungeonProgress['dungeon1:easy']?.completed===true,'defeat real first dungeon boss',m=>m.boss,110000);
    if((await read()).attributePoints>0||(await read()).skillPoints>0)await spend();
   }
+  assert.deepEqual([...defeatedOriginalIds].sort(),[...originalMobIds].sort(),'All18 original enemies must have actual kill records, not injury records');
   const completed=await read();assert.equal(completed.dungeonProgress['dungeon1:easy'].rewarded,true);assert.deepEqual(completed.dungeonProgress['dungeon1:easy'].killed,['dungeon1-boss-0']);
   await page.screenshot({path:path.join(root,'work/browser/first-dungeon-earned-victory.png')});
   for(let index=roomData.length-2;index>=0;index--){await useCombatUI();await walkTo({x:roomData[index+1].x,y:roomData[index].y},25);await walkTo(roomData[index],30);}
@@ -189,5 +216,5 @@ const path=require('node:path');
   const restored=await read();assert.equal(restored.region,'forest');assert.equal(restored.dungeonProgress['dungeon1:easy'].completed,true);assert.equal(restored.dungeonProgress['dungeon1:easy'].rewarded,true);assert.equal(restored.dungeonProgress['dungeon1:easy'].readyAt,completed.dungeonProgress['dungeon1:easy'].readyAt);assert.ok(restored.level>=5);assert.deepEqual(errors,[]);
   console.log('PASS first dungeon genuinely cleared, exited and restored without runtime-state writes or fixture damage');
   console.log('FIRST DUNGEON RESULT',JSON.stringify({seconds:Math.round((Date.now()-started)/1000),level:restored.level,xp:restored.xp,gold:restored.gold,completed:restored.dungeonProgress['dungeon1:easy']}));
- }catch(error){if(page){console.error('DUNGEON FAILURE STATE',await page.evaluate(()=>{const s=window.Auralis?.game.scene.getScene('world');return s?{hero:s.hero,monsters:s.monsters.monsters.map(m=>({id:m.id,x:m.x,y:m.y,hp:m.hp,alive:m.alive}))}:null;}).catch(()=>null));await page.screenshot({path:path.join(root,'work/browser/first-dungeon-failure.png')}).catch(()=>{});}throw error;}finally{if(browser)await browser.close();await hosting.close();}
+ }catch(error){if(page){console.error('DUNGEON FAILURE STATE',await page.evaluate(()=>{const s=window.Auralis?.game.scene.getScene('world');return s?{hero:s.hero,controls:{axis:{...s.controls.axis},pointerId:s.controls.pointerId,attackPointerId:s.controls.attackPointerId,attacking:s.controls.attacking},monsters:s.monsters.monsters.map(m=>({id:m.id,x:m.x,y:m.y,hp:m.hp,alive:m.alive}))}:null;}).catch(()=>null));await page.screenshot({path:path.join(root,'work/browser/first-dungeon-failure.png')}).catch(()=>{});}throw error;}finally{if(browser)await browser.close();await hosting.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
