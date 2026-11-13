@@ -22,10 +22,11 @@
     "test:browser:mobile-panels": "node tests/browser-mobile-panels.cjs",
     "test:browser:bestiary": "node tests/browser-bestiary.cjs",
     "test:browser:actors": "node tests/browser-actors.cjs",
-    "test:browser:android": "npm run test:browser:android-combat && npm run test:browser:mobile-panels && npm run test:browser:bestiary && npm run test:browser:actors",
+    "test:browser:android": "npm run test:browser:android-combat && npm run test:browser:mobile-panels && npm run test:browser:bestiary && npm run test:browser:actors && npm run test:browser:boss-art",
     "test:browser:core:world": "node tests/browser-smoke.cjs && node tests/browser-world.cjs && node tests/browser-npcs.cjs",
     "test:browser:core:quests": "node tests/browser-quests.cjs && node tests/browser-dungeons.cjs && node tests/browser-journey.cjs",
-    "test:browser:core:ui": "node tests/browser-locales.cjs && node tests/browser-classes.cjs && node tests/browser-soak.cjs"
+    "test:browser:core:ui": "node tests/browser-locales.cjs && node tests/browser-classes.cjs && node tests/browser-soak.cjs",
+    "test:browser:boss-art": "node tests/browser-boss-art.cjs"
   },
   "devDependencies": {
     "playwright": "^1.65.0"

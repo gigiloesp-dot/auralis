@@ -91,6 +91,58 @@ export const BOSS_ART=Object.freeze({
    "attack": 215
   }
  },
+ "dungeon10-boss-0": {
+  "key": "actor-boss-dungeon10-boss-0",
+  "url": "assets/actors/bosses/dungeon10-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon10-boss-0.json",
+  "scale": 0.523,
+  "annotationHeight": 83.84,
+  "baselines": {
+   "idle": 209,
+   "run-a": 210,
+   "run-b": 203,
+   "attack": 202.5
+  }
+ },
+ "dungeon10-boss-1": {
+  "key": "actor-boss-dungeon10-boss-1",
+  "url": "assets/actors/bosses/dungeon10-boss-1.png",
+  "atlasURL": "assets/actors/bosses/dungeon10-boss-1.json",
+  "scale": 0.323,
+  "annotationHeight": 83.91,
+  "baselines": {
+   "idle": 244,
+   "run-a": 234.5,
+   "run-b": 236.5,
+   "attack": 235
+  }
+ },
+ "dungeon10-boss-2": {
+  "key": "actor-boss-dungeon10-boss-2",
+  "url": "assets/actors/bosses/dungeon10-boss-2.png",
+  "atlasURL": "assets/actors/bosses/dungeon10-boss-2.json",
+  "scale": 0.355,
+  "annotationHeight": 83.79,
+  "baselines": {
+   "idle": 236,
+   "run-a": 229.5,
+   "run-b": 231,
+   "attack": 233
+  }
+ },
+ "dungeon11-boss-0": {
+  "key": "actor-boss-dungeon11-boss-0",
+  "url": "assets/actors/bosses/dungeon11-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon11-boss-0.json",
+  "scale": 0.419,
+  "annotationHeight": 83.84,
+  "baselines": {
+   "idle": 230,
+   "run-a": 222,
+   "run-b": 223,
+   "attack": 220.5
+  }
+ },
  "dungeon11-boss-1": {
   "key": "actor-boss-dungeon11-boss-1",
   "url": "assets/actors/bosses/dungeon11-boss-1.png",
@@ -117,6 +169,45 @@ export const BOSS_ART=Object.freeze({
    "attack": 209
   }
  },
+ "dungeon12-boss-0": {
+  "key": "actor-boss-dungeon12-boss-0",
+  "url": "assets/actors/bosses/dungeon12-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon12-boss-0.json",
+  "scale": 0.347,
+  "annotationHeight": 83.82,
+  "baselines": {
+   "idle": 242,
+   "run-a": 230.5,
+   "run-b": 227,
+   "attack": 237
+  }
+ },
+ "dungeon12-boss-1": {
+  "key": "actor-boss-dungeon12-boss-1",
+  "url": "assets/actors/bosses/dungeon12-boss-1.png",
+  "atlasURL": "assets/actors/bosses/dungeon12-boss-1.json",
+  "scale": 0.343,
+  "annotationHeight": 83.8,
+  "baselines": {
+   "idle": 243,
+   "run-a": 236,
+   "run-b": 229.5,
+   "attack": 233
+  }
+ },
+ "dungeon12-boss-2": {
+  "key": "actor-boss-dungeon12-boss-2",
+  "url": "assets/actors/bosses/dungeon12-boss-2.png",
+  "atlasURL": "assets/actors/bosses/dungeon12-boss-2.json",
+  "scale": 0.418,
+  "annotationHeight": 83.87,
+  "baselines": {
+   "idle": 231,
+   "run-a": 217,
+   "run-b": 209,
+   "attack": 207
+  }
+ },
  "dungeon2-boss-0": {
   "key": "actor-boss-dungeon2-boss-0",
   "url": "assets/actors/bosses/dungeon2-boss-0.png",
@@ -130,6 +221,71 @@ export const BOSS_ART=Object.freeze({
    "attack": 202
   }
  },
+ "dungeon3-boss-0": {
+  "key": "actor-boss-dungeon3-boss-0",
+  "url": "assets/actors/bosses/dungeon3-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon3-boss-0.json",
+  "scale": 0.516,
+  "annotationHeight": 83.85,
+  "baselines": {
+   "idle": 223,
+   "run-a": 226,
+   "run-b": 221,
+   "attack": 216
+  }
+ },
+ "dungeon4-boss-0": {
+  "key": "actor-boss-dungeon4-boss-0",
+  "url": "assets/actors/bosses/dungeon4-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon4-boss-0.json",
+  "scale": 0.66,
+  "annotationHeight": 83.9,
+  "baselines": {
+   "idle": 214,
+   "run-a": 198,
+   "run-b": 188.5,
+   "attack": 187
+  }
+ },
+ "dungeon4-boss-1": {
+  "key": "actor-boss-dungeon4-boss-1",
+  "url": "assets/actors/bosses/dungeon4-boss-1.png",
+  "atlasURL": "assets/actors/bosses/dungeon4-boss-1.json",
+  "scale": 0.68,
+  "annotationHeight": 83.82,
+  "baselines": {
+   "idle": 216,
+   "run-a": 192,
+   "run-b": 174.5,
+   "attack": 176.5
+  }
+ },
+ "dungeon5-boss-0": {
+  "key": "actor-boss-dungeon5-boss-0",
+  "url": "assets/actors/bosses/dungeon5-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon5-boss-0.json",
+  "scale": 0.612,
+  "annotationHeight": 83.89,
+  "baselines": {
+   "idle": 219.5,
+   "run-a": 214,
+   "run-b": 208.5,
+   "attack": 208.5
+  }
+ },
+ "dungeon5-boss-1": {
+  "key": "actor-boss-dungeon5-boss-1",
+  "url": "assets/actors/bosses/dungeon5-boss-1.png",
+  "atlasURL": "assets/actors/bosses/dungeon5-boss-1.json",
+  "scale": 0.513,
+  "annotationHeight": 83.92,
+  "baselines": {
+   "idle": 219,
+   "run-a": 218,
+   "run-b": 215.5,
+   "attack": 211
+  }
+ },
  "dungeon6-boss-0": {
   "key": "actor-boss-dungeon6-boss-0",
   "url": "assets/actors/bosses/dungeon6-boss-0.png",
@@ -141,6 +297,84 @@ export const BOSS_ART=Object.freeze({
    "run-a": 229,
    "run-b": 222,
    "attack": 222
+  }
+ },
+ "dungeon6-boss-1": {
+  "key": "actor-boss-dungeon6-boss-1",
+  "url": "assets/actors/bosses/dungeon6-boss-1.png",
+  "atlasURL": "assets/actors/bosses/dungeon6-boss-1.json",
+  "scale": 0.486,
+  "annotationHeight": 83.82,
+  "baselines": {
+   "idle": 220,
+   "run-a": 209,
+   "run-b": 206,
+   "attack": 202
+  }
+ },
+ "dungeon7-boss-0": {
+  "key": "actor-boss-dungeon7-boss-0",
+  "url": "assets/actors/bosses/dungeon7-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon7-boss-0.json",
+  "scale": 0.506,
+  "annotationHeight": 83.9,
+  "baselines": {
+   "idle": 226,
+   "run-a": 220,
+   "run-b": 212,
+   "attack": 222
+  }
+ },
+ "dungeon7-boss-1": {
+  "key": "actor-boss-dungeon7-boss-1",
+  "url": "assets/actors/bosses/dungeon7-boss-1.png",
+  "atlasURL": "assets/actors/bosses/dungeon7-boss-1.json",
+  "scale": 0.54,
+  "annotationHeight": 83.87,
+  "baselines": {
+   "idle": 223,
+   "run-a": 199,
+   "run-b": 177,
+   "attack": 176
+  }
+ },
+ "dungeon8-boss-0": {
+  "key": "actor-boss-dungeon8-boss-0",
+  "url": "assets/actors/bosses/dungeon8-boss-0.png",
+  "atlasURL": "assets/actors/bosses/dungeon8-boss-0.json",
+  "scale": 0.418,
+  "annotationHeight": 83.87,
+  "baselines": {
+   "idle": 245.5,
+   "run-a": 234,
+   "run-b": 217.5,
+   "attack": 209
+  }
+ },
+ "dungeon8-boss-1": {
+  "key": "actor-boss-dungeon8-boss-1",
+  "url": "assets/actors/bosses/dungeon8-boss-1.png",
+  "atlasURL": "assets/actors/bosses/dungeon8-boss-1.json",
+  "scale": 0.419,
+  "annotationHeight": 83.84,
+  "baselines": {
+   "idle": 224,
+   "run-a": 214,
+   "run-b": 219.5,
+   "attack": 221.5
+  }
+ },
+ "dungeon8-boss-2": {
+  "key": "actor-boss-dungeon8-boss-2",
+  "url": "assets/actors/bosses/dungeon8-boss-2.png",
+  "atlasURL": "assets/actors/bosses/dungeon8-boss-2.json",
+  "scale": 0.375,
+  "annotationHeight": 83.94,
+  "baselines": {
+   "idle": 232,
+   "run-a": 230.5,
+   "run-b": 228.5,
+   "attack": 215
   }
  },
  "dungeon9-boss-0": {

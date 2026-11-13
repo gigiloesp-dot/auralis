@@ -18,7 +18,18 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
     const sprite=rig.painted.sprite,f=sprite.frame,canvas=document.createElement('canvas');canvas.width=f.cutWidth;canvas.height=f.cutHeight;const ctx=canvas.getContext('2d');ctx.drawImage(sprite.texture.getSourceImage(),f.cutX,f.cutY,f.cutWidth,f.cutHeight,0,0,f.cutWidth,f.cutHeight);const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;let minY=256,maxY=0;for(let y=0;y<canvas.height;y++)for(let x=0;x<canvas.width;x++)if(pixels[(y*canvas.width+x)*4+3]>96){minY=Math.min(minY,y);maxY=Math.max(maxY,y);}return {visibleHeight:(maxY-minY)*sprite.scaleY,frames,runA,runB,attack,hurt,key:rig.painted.sprite.texture.key,children:s.body.list.length,width:rig.painted.sprite.displayWidth,height:rig.painted.sprite.displayHeight,muzzle:rig.weaponMuzzleScreen(),atlases:s.actorTextures.diagnostics};
    });
    assert.deepEqual(art.frames,['idle/e','idle/se','idle/s','idle/sw','idle/w','idle/nw','idle/n','idle/ne']);assert.notEqual(art.runA,art.runB);assert.equal(art.attack,'attack/s');assert.equal(art.hurt,'hurt');assert.equal(art.key,'actor-'+classId);assert.ok(art.width>40&&art.height>60&&art.visibleHeight>45&&art.visibleHeight<115);assert.equal(art.children,2,'Temporary joint rig must be replaced by painted body and gear');assert.ok(Number.isFinite(art.muzzle.x)&&Number.isFinite(art.muzzle.y));
-   await page.screenshot({path:root+'/work/browser/painted-'+classId+'.png'});console.log('PASS actual painted class body,8directions,opposite strides,attack,hurt and socket',classId);
+   const equipment=await page.evaluate(async()=>{
+    const s=Auralis.game.scene.getScene('world'),h=s.hero,{ITEM_DEFS,equipItem,unequipItem}=await import('/js/equipment/items.js'),originalGear=h.equipment,originalBag=h.inventory;
+    h.equipment={};h.inventory=[];const draw=()=>{s.rig.update(0,{x:0,y:0},{active:false},0);return s.rig.painted.gear.commandBuffer.length;},baseline=draw(),result=[];let previous=baseline;
+    for(const slot of ['weapon','helmet','chest','gloves','pants','boots','ring','amulet','shield']){
+     const pair=Object.entries(ITEM_DEFS).find(([,d])=>d.slot===slot&&d.level<=h.level&&(!d.allowedClasses||d.allowedClasses.includes(h.classId)));if(!pair)continue;
+     h.inventory=[{id:pair[0],rarity:'rare',quantity:1}];if(!equipItem(h,0).ok)throw Error('Real equipment rules rejected '+slot);const commands=draw();result.push({slot,previous,commands});previous=commands;
+    }
+    for(const slot of Object.keys(h.equipment))if(!unequipItem(h,slot))throw Error('Real unequip failed '+slot);
+    const cleared=draw();h.equipment=originalGear;h.inventory=originalBag;draw();return {baseline,cleared,result};
+   });
+   assert.ok(equipment.result.length>=8);for(const e of equipment.result)assert.ok(e.commands>e.previous,'Painted equipment layer did not change for '+classId+'/'+e.slot);assert.equal(equipment.cleared,equipment.baseline,'Unequipping must clear every visible gear layer');
+   await page.screenshot({path:root+'/work/browser/painted-'+classId+'.png'});console.log('PASS actual painted class body,8directions,opposite strides,attack,hurt,socket and all allowed equipped slots',classId);
    if(classId==='warrior'){
     const checkResidency=async()=>{
      await page.waitForFunction(()=>Auralis.game.scene.getScene('world').actorTextures.diagnostics.actorPending===0);
