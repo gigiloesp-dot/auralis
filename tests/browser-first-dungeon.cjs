@@ -21,7 +21,7 @@ const path=require('node:path');
   const read=()=>page.evaluate(async()=>{
    const {itemDefinition,itemName}=await import('/js/equipment/items.js');
    const s=Auralis.game.scene.getScene('world'),h=s.hero;
-   return {deathStartedAt:h.deathStartedAt??null,x:h.x,y:h.y,hp:h.hp,maxHp:h.maxHp,mp:h.mp,maxMp:h.maxMp,dead:Object.entries(h.worldState?.monsters||{}).filter(([,state])=>state.killedAt>0&&state.deadUntil>0).map(([id])=>id),level:h.level,xp:h.xp,gold:h.gold,attributePoints:h.attributePoints,skillPoints:h.skillPoints,stats:{...h.stats},potions:{...h.potions},quests:JSON.parse(JSON.stringify(h.quests)),learnedSkills:{...h.learnedSkills},skillSlots:[...h.skillSlots],region:h.region,dungeonProgress:JSON.parse(JSON.stringify(h.dungeonProgress||{})),inventory:h.inventory.map((item,index)=>({index,...item,...itemDefinition(item),name:itemName(item)})),equipment:JSON.parse(JSON.stringify(h.equipment)),monsters:s.monsters.monsters.filter(m=>m.alive).map(m=>({id:m.id,campId:m.campId,x:m.x,y:m.y,hp:m.hp,boss:!!m.kind.boss})),wolves:s.monsters.monsters.filter(m=>m.alive&&m.type==='forestWolf').map(m=>({id:m.id,x:m.x,y:m.y,hp:m.hp})),axis:{...s.controls.axis},attacking:s.controls.attacking};
+   return {deathStartedAt:h.deathStartedAt??null,x:h.x,y:h.y,hp:h.hp,maxHp:h.maxHp,mp:h.mp,maxMp:h.maxMp,dead:Object.entries(h.worldState?.monsters||{}).filter(([,state])=>state.killedAt>0&&state.deadUntil>0).map(([id])=>id),level:h.level,xp:h.xp,gold:h.gold,attributePoints:h.attributePoints,skillPoints:h.skillPoints,stats:{...h.stats},potions:{...h.potions},quests:JSON.parse(JSON.stringify(h.quests)),learnedSkills:{...h.learnedSkills},skillSlots:[...h.skillSlots],region:h.region,dungeonProgress:JSON.parse(JSON.stringify(h.dungeonProgress||{})),inventory:h.inventory.map((item,index)=>({index,...item,...itemDefinition(item),name:itemName(item)})),equipment:JSON.parse(JSON.stringify(h.equipment)),monsters:s.monsters.monsters.filter(m=>m.alive).map(m=>({id:m.id,campId:m.campId,x:m.x,y:m.y,hp:m.hp,boss:!!m.kind.boss})),wolves:s.monsters.monsters.filter(m=>m.alive&&m.type==='forestWolf').map(m=>({id:m.id,x:m.x,y:m.y,hp:m.hp})),axis:{...s.controls.axis},pointerId:s.controls.pointerId,attackPointerId:s.controls.attackPointerId,attacking:s.controls.attacking};
   });
   assert.equal((await read()).level,1);assert.deepEqual((await read()).quests,{});
   await openNpc(page,'mira');
@@ -75,15 +75,35 @@ const path=require('node:path');
   },target);
   let maintainWalkingHealth=null;
   const walkTo=async(target,tolerance=30)=>{
-   const deadline=Date.now()+45000,expectedRegion=(await read()).region;
+   const deadline=Date.now()+45000,expectedRegion=(await read()).region,trace=[];
+   // Hold the same captured finger while steering. Repeated full-speed100ms
+   // press/release pulses can skip an18px arrival radius on a slower runner.
+   // Sample progress on animation frames, then verify the final released point.
+   const settleRadius=Math.max(5,tolerance-12);
    while(Date.now()<deadline){
     const h=await read();assert.equal(h.region,expectedRegion,'Unexpected transition or death while walking');assert.ok(h.hp>0&&h.deathStartedAt===null,'Hero died while walking');
-    if(Math.hypot(h.x-target.x,h.y-target.y)<=tolerance){await release();return;}
+    if(Math.hypot(h.x-target.x,h.y-target.y)<=tolerance){
+     await release();const settled=await read();
+     if(Math.hypot(settled.x-target.x,settled.y-target.y)<=tolerance){
+      const captured=trace.find(sample=>sample.pointerId!==null&&Math.hypot(sample.axis.x,sample.axis.y)>.08);
+      console.log('JOURNEY walked',JSON.stringify({target,tolerance,x:settled.x,y:settled.y,captured:captured?{pointerId:captured.pointerId,axis:captured.axis}:null}));return;
+     }
+     continue;
+    }
+    // Panels and browser capture cancellation can end a gesture independently
+    // of the driver. Reacquire through a real touchStart rather than writing axis.
+    if(touching&&h.pointerId===null)await release();
     const threatened=h.region.startsWith('dungeon:')&&h.monsters.some(m=>Math.hypot(m.x-h.x,m.y-h.y)<220);
     if(maintainWalkingHealth)await maintainWalkingHealth(h,threatened);
-    const dir=await directionTo(target);await touch(dir.x,dir.y,threatened);await page.waitForTimeout(100);await release();
+    const dir=await directionTo(target);await touch(dir.x,dir.y,threatened);
+    await page.waitForFunction(({target,settleRadius,start,expectedRegion})=>{
+     const s=Auralis.game.scene.getScene('world'),h=s.hero;
+     if(h.hp<=0||h.deathStartedAt!=null||h.region!==expectedRegion)return true;
+     return Math.hypot(h.x-target.x,h.y-target.y)<=settleRadius||Math.hypot(h.x-start.x,h.y-start.y)>=18||s.controls.pointerId===null;
+    },{target,settleRadius,start:{x:h.x,y:h.y},expectedRegion},{polling:'raf',timeout:1500}).then(handle=>handle.dispose()).catch(error=>{if(error.name!=='TimeoutError')throw error;});
+    const observed=await read();trace.push({x:observed.x,y:observed.y,axis:observed.axis,pointerId:observed.pointerId,attackPointerId:observed.attackPointerId});if(trace.length>12)trace.shift();
    }
-   await release();throw Error('Walking timed out: '+JSON.stringify({target,hero:await read()}));
+   await release();throw Error('Walking timed out: '+JSON.stringify({target,trace,hero:await read()}));
   };
   await walkTo({x:1270,y:1240});
   const combatDeadline=Date.now()+65000;let lastProgress=-1,multitouch=false,touchSampled=false;
