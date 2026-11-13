@@ -1,15 +1,16 @@
 # Точка продолжения Auralis
 
-Обновлено 2026-11-12. Ветка `codex/auralis-master-development`, [draft PR #2](https://github.com/gigiloesp-dot/auralis/pull/2). Прочитать MASTER_SPEC.md, IMPLEMENTATION_STATUS.md и TEST_RESULTS.md. `main`, stable-alpha и прежний alpha-test не менять; merge не выполнять.
+Обновлено 2026-11-13. Ветка `codex/auralis-master-development`, [draft PR #2](https://github.com/gigiloesp-dot/auralis/pull/2). Прочитать MASTER_SPEC.md, IMPLEMENTATION_STATUS.md и TEST_RESULTS.md. `main`, stable-alpha и прежний alpha-test не менять; merge не выполнять.
 
-## Активная точка продолжения Android
+## Активная точка продолжения13ноября
 
-Продолжать текущие изменения после `0ee0e08`, `652ec68`, `5a44b4e`, `8593d73`, `ede46cf`, `f31b8d7`, `e592402`, `c412bd8`, `16f3851`, `bf9624d`. Основные Android UI/health/target/AI/дороги уже подключены — не переписывать их заново.
+Не начинать заново: текущая ветка сохраняет исходный checkpoint0ee0e08, все предыдущие частичные файлы, AndroidUI/health/target/nearestNPC/23speciesAI/кривые дороги. Реально подключены79PNG:6героев,23вида,6NPC-паков(21персонаж),44босса. Реестры actorArt/monsterArt/npcArt/bossArt и сцены работают, не являются каталогом. Последние смысловые коммиты: b4c2c1a (боевойLOSиарт),5583944(строгие18киллов),4dee7ad(тканевыйпаладин),681f3f5(5минrespawn),23e507b(большойexport),69f7a1f(CIготовностьлокализованногоменю).
 
-1. Довести производство/интеграцию реальных actor atlas: warrior/forestWolf/4 NPC уже подключены; остальные пять героев и восемь семейств производят независимые агенты. Проверять фактические файлы/manifest/объекты, а не только каталог.
-2. Сохранить все предыдущие UI/test исправления; завершить обновлённые smoke/mobile/quest/dungeon/actors/soak/classes/естественные journeys. Старые проверки не ослаблять. Новые Android suites включаются отдельным CI job.
-3. Обновить точные результаты, push только master-development, проверить все CI jobs PR#2; затем экспорт committed source и обновить ТОЛЬКО существующий master-test. Проверить `/build.json`, SHA256 всех runtime-файлов и реальный публичный запуск с touch/новым target HUD/рисованными спрайтами.
-4. После публикации продолжать финальные анимации/9 gear layers/недостающие виды/уникальных боссов/NPC всех поселений и баланс1–42. Четыре painted pose banks плюс runtime hurt/death нельзя считать всеми отдельно нарисованными clips.
+1. Завершить финальный CI всех15suites:6jobs (unit/check,3coreгруппы,first-dungeon,Android+actors+boss-art). Первая удалённая попытка43426205296:5PASS,1ui race; исправленный localUI прошёл. Не ослаблять assertions и не возвращать apt/playwright --with-deps.
+2. После успеха экспортировать exact committed source, обновить ТОЛЬКО существующий master-test appgprj_6af567346ebc8191accf1485254403da, проверить build.json/всеSHA256/реальное управление/новые изображения/targetHUD по публичномуHTTPS. Alpha/main/merge не трогать. Export теперь поддерживает пакеты>64MiB.
+3. Отразить фактическую публикацию/CI/sourceSHA в TEST_RESULTS/NEXT_ACTIONS/DEPLOYMENT. Текущая онлайн version4 остаётся до новой доставки; не выдавать локальное изображение за опубликованное.
+4. Далее художественная доводка отдельных hurt/death/specialclip и нарисованных gear-layers: сейчас4нарисованных банка+6работающихruntime-состояний/позиционные слои9слотов. Не утверждать, что каждый clip независимо нарисован. Продолжать ручную оценку1–42 всеми6классами и редактуруRU/EN/ES; автоматические fixtures отдельно от реального прохождения.
+5. Физическая Android-приёмка FPS/нагрев/сон/жесты/30мин игры всё ещё требует устройства. Functional CDP multitouch/4размера/60-cycle memory soak прошли; software headlessFPS не является Androidсертификацией.
 
 ## Проверенный исходный пункт
 
