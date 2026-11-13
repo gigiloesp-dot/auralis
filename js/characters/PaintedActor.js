@@ -1,4 +1,5 @@
 import {actorPose} from '../assets/actorArt.js';
+import {CharacterEquipmentLayers} from './CharacterEquipmentLayers.js';
 // Four hand-painted pose banks. Hurt/death/skill transitions also use transforms;
 // they are deliberately not described as six independently painted clips.
 export class PaintedActor{
@@ -8,7 +9,10 @@ export class PaintedActor{
   this.ready=this.lease.ready.then(loaded=>{
    if(!loaded||this.destroyed||!root.scene)return false;
    this.sprite=scene.add.image(0,0,entry.key,'idle/s').setOrigin(.5,(entry.baselines?.idle||225)/256).setScale(entry.scale);
-   root.add(this.sprite);this.gear=entry.equipment?scene.add.graphics():null;if(this.gear)root.add(this.gear);return true;
+   root.add(this.sprite);
+   if(entry.baseBody&&entry.equipment){this.layers=new CharacterEquipmentLayers(scene,hero,entry);this.gear=this.layers.root;}
+   else this.gear=entry.equipment?scene.add.graphics():null;
+   if(this.gear)root.add(this.gear);return true;
   });
  }
  update(state,angle,dt,pose={}){
@@ -20,7 +24,8 @@ export class PaintedActor{
   if(state==='death'){this.deathTime+=dt;this.sprite.rotation=Math.min(1,this.deathTime/.5)*1.2;this.sprite.alpha=1-Math.min(1,this.deathTime/.5)*.35;}
   else{this.deathTime=0;this.sprite.rotation=state==='hurt'?Math.sin(this.elapsed*55)*.07:0;this.sprite.alpha=1;}
   if(state==='hurt')this.sprite.setTint(0xffb3a3);else if(state==='special')this.sprite.setTint(0xc9e8ff);else this.sprite.clearTint();
-  if(this.gear)this.drawEquipment(p.direction,state);
+  if(this.layers)this.layers.update(p.frame,p.direction,state,{...pose,aimAngle:angle},{rotation:this.sprite.rotation,y:this.sprite.y});
+  else if(this.gear)this.drawEquipment(p.direction,state);
  }
  drawEquipment(direction,state){
   const g=this.gear,items=this.hero?.equipment||{},back=['nw','n','ne'].includes(direction),side=direction==='e'?1:direction==='w'?-1:direction.endsWith('e')?.7:direction.endsWith('w')?-.7:0;
@@ -36,8 +41,8 @@ export class PaintedActor{
   for(const dx of [-14,14])plate(items.gloves,[[x+dx-3,-40],[x+dx+3,-40],[x+dx+4,-32],[x+dx-4,-32]]);
   if(!back){if(items.amulet)g.fillStyle(color(items.amulet)).fillCircle(x,-49,2.6);if(items.ring)g.lineStyle(1.6,color(items.ring)).strokeCircle(x-14,-32,2);}
   plate(items.shield,[[x-17,-48],[x-8,-43],[x-10,-28],[x-17,-22],[x-24,-28],[x-26,-43]]);
-  // Original blade stays in the painted right hand; rarity is an actual blade
-  // edge and hilt accent rather than replacing the entire actor with a tint.
+  // Legacy dressed appearances keep their previous accent renderer. Neutral
+  // base bodies always use CharacterEquipmentLayers and contain no baked blade.
   if(items.weapon){g.lineStyle(2,color(items.weapon),.95);const sign=side<0?-1:1,c=this.entry.weaponType||({archer:'bow',mage:'staff',cannoneer:'cannon',assassin:'dagger'}[this.hero.classId]||'sword');
    if(c==='bow'){g.beginPath().arc(x+sign*15,-39,15,-Math.PI/2,Math.PI/2,sign<0).strokePath();}
    else if(c==='staff'){g.fillStyle(color(items.weapon),.8).fillCircle(x+sign*17,-75,3.5);}
@@ -46,6 +51,7 @@ export class PaintedActor{
    g.fillStyle(color(items.weapon)).fillCircle(x+sign*15,-32,2.5);
   }
  }
- weaponMuzzleScreen(){const m=this.sprite?.getWorldTransformMatrix?.(),angle=this.directionAngle||0,socket=this.entry.weaponSocket||{reach:85,height:130};return m?.transformPoint?.(Math.cos(angle)*socket.reach,-socket.height+Math.sin(angle)*45,{});}
- destroy(){if(this.destroyed)return;this.destroyed=true;this.sprite?.destroy();this.gear?.destroy();this.lease.release();}
+ get equipmentCommandCount(){return this.layers?this.layers.commandCount:this.gear?.commandBuffer?.length||0;}
+ weaponMuzzleScreen(){if(this.layers)return this.layers.weaponMuzzleScreen();const m=this.sprite?.getWorldTransformMatrix?.(),angle=this.directionAngle||0,socket=this.entry.weaponSocket||{reach:85,height:130};return m?.transformPoint?.(Math.cos(angle)*socket.reach,-socket.height+Math.sin(angle)*45,{});}
+ destroy(){if(this.destroyed)return;this.destroyed=true;this.sprite?.destroy();if(this.layers)this.layers.destroy();else this.gear?.destroy();this.lease.release();}
 }

@@ -70,7 +70,9 @@ export class CharacterEquipmentLayers{
   const kind=weapon.definition.kind||({archer:'bow',mage:'staff',assassin:'daggers',cannoneer:'cannon'}[classId]||'sword');
   const hand=kind==='bow'?a.leftHand:a.rightHand,attack=a.bank==='attack';
   primary.x=hand.x;primary.y=hand.y;secondary.x=a.leftHand.x;secondary.y=a.leftHand.y;
-  const aim=Math.atan2(Math.sin(a.angle)*.45,Math.cos(a.angle));
+  // HeroRig has already projected the world direction onto the screen. Do not
+  // compress its vertical component a second time when orienting a weapon.
+  const aim=Number.isFinite(pose.aimAngle)?pose.aimAngle:a.angle;
   primary.rotation=kind==='staff'?(attack?aim:-Math.PI/2):kind==='bow'||kind==='cannon'?aim:attack?aim:Math.PI*.35;
   secondary.rotation=attack?aim:Math.PI*.65;
   const color=weapon.color,length=h*(kind==='daggers'?.24:kind==='staff'?.52:kind==='cannon'?.34:.36);

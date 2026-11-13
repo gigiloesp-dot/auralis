@@ -28,7 +28,7 @@ export function bodyAttachments(entry={},frame='idle/s',direction=frame.split('/
  }
  // The cannon is supported along its barrel with the anatomical left hand.
  if(entry.weaponType==='cannon'){
-  const aim=Math.atan2(dy*.45,dx);
+  const aim=Number.isFinite(pose.aimAngle)?pose.aimAngle:angle;
   leftHand=point(rightHand.x+Math.cos(aim)*height*.18,rightHand.y+Math.sin(aim)*height*.18+height*.055);
  }
  const footSpread=width*(Math.abs(dx)>.9?.12:.23);

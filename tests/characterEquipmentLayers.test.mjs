@@ -87,6 +87,18 @@ test('unknown items and items stored in the wrong slot never create baked-equipm
  assert.notEqual(JSON.stringify(layers.primary.commandBuffer),common,'rarity visibly changes the weapon geometry styling');
 });
 
+test('projected screen aim is preserved by the visible weapon and the cannon support hand',()=>{
+ const aim=Math.atan2(.5,1),hero=createCharacter({classId:'cannoneer',level:42,inventory:[{id:'weapon_cannoneer_4',rarity:'rare'}]});
+ assert.equal(equipItem(hero,0).ok,true);
+ const layers=new CharacterEquipmentLayers(sceneFixture(),hero,ACTOR_ART.cannoneer);
+ layers.update('attack/se','se','attack',{aimAngle:aim,progress:.6});
+ assert.equal(layers.primary.rotation,aim,'do not project an already projected screen angle twice');
+ const a=layers.anchors,offsetY=a.height*.055;
+ assert.ok(Math.abs(Math.atan2(a.leftHand.y-a.rightHand.y-offsetY,a.leftHand.x-a.rightHand.x)-aim)<1e-10);
+ layers.update('attack/se','se','attack',{progress:.6});
+ assert.equal(layers.primary.rotation,Math.PI/4,'directional frame supplies the fallback angle');
+});
+
 test('anatomical right remains on the correct side front/back and pose heights register to the feet',()=>{
  const entry={bodyHeight:80,bodyWidth:34,poseHeights:{idle:80,attack:60,'run-a':72,'run-b':72}};
  const front=bodyAttachments(entry,'idle/s'),back=bodyAttachments(entry,'idle/n');

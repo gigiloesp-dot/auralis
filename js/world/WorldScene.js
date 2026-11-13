@@ -1,3 +1,4 @@
+import {ACTOR_ART} from '../assets/actorArt.js';
 import {ActorTextureCache} from '../assets/ActorTextureCache.js';
 import {heroMovementMultiplier} from '../monsters/movementProfiles.js';
 import {TargetState} from '../combat/targetState.js';
@@ -33,7 +34,7 @@ const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const PANEL_NAMES=['inventoryPanel','characterPanel','skillsPanel','npcPanel','storagePanel','savePanel','mapPanel','dungeonPanel'];
 export class WorldScene extends Phaser.Scene{
  constructor(){super('world');}
- preload(){const notice=document.getElementById('notice'),language=localStorage.getItem('auralis_language')||'ru',progress=value=>{if(notice)notice.textContent=text('loadingWorld',language)+' '+Math.round(value*100)+'%';};this.load.on('progress',progress);this.load.once('complete',()=>{this.load.off('progress',progress);if(notice)notice.textContent=text('startHint',language);});progress(0);queueAssets(this);}
+ preload(){const notice=document.getElementById('notice'),language=localStorage.getItem('auralis_language')||'ru',progress=value=>{if(notice)notice.textContent=text('loadingWorld',language)+' '+Math.round(value*100)+'%';};this.load.on('progress',progress);this.load.once('complete',()=>{this.load.off('progress',progress);if(notice)notice.textContent=text('startHint',language);});progress(0);queueAssets(this);const entry=ACTOR_ART[Save.load(Save.activeSlot)?.classId||'warrior'];if(entry?.baseBody&&!this.textures.exists(entry.key))this.load.atlas(entry.key,entry.url,entry.atlasURL);}
  create(){
   this.language=localStorage.getItem('auralis_language')||'ru';this.saveSlot=Save.activeSlot;this.closed=false;this.playNow=0;this.lastSave=0;this.lastHud=0;this.facing=0;
   SharedStorage.load();this.actorTextures=new ActorTextureCache(this);this.hero=createCharacter(Save.load(this.saveSlot)||{x:1030,y:1140});
