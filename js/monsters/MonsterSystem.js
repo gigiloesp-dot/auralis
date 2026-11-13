@@ -31,10 +31,11 @@ export class MonsterSystem{
  view(x,y){return this.scene.project?this.scene.project(x,y):{x,y};}
  depth(x,y){return this.scene.project?x+y:y;}
  sight(a,b,radius=0){const kind=a.kind||a.source?.kind||b.kind,obstacles=kind?blockingObstacles(this.obstacles,kind):this.obstacles;if(!lineClear(a,b,obstacles,radius))return false;if(this.content?.dungeon&&this.scene.world?.isWalkable){const length=distance(a,b),steps=Math.max(1,Math.ceil(length/8));for(let i=0;i<=steps;i++)if(!this.scene.world.isWalkable(a.x+(b.x-a.x)*i/steps,a.y+(b.y-a.y)*i/steps,radius))return false;}return true;}
- nearest(range){return nearestTarget(this.hero,this.monsters.filter(m=>this.canSee(m)),range,this.obstacles);}
- canSee(m){return m.alive&&m.active!==false&&this.sight(this.hero,m)&&!this.scene.world?.occludes?.(m);}
+ nearest(range){return nearestTarget(this.hero,this.monsters.filter(m=>this.canFight(m)),range);}
+ canFight(m){return m.alive&&m.active!==false&&this.sight(this.hero,m);}
+ canSee(m){return this.canFight(m)&&!this.scene.world?.occludes?.(m);}
  select(m,now=this.now||this.scene.playNow||0){if(!m?.alive||!this.monsters.includes(m)||!this.canSee(m))return false;this.selected=m;this.scene.onTarget?.(m,now);return true;}
- preferred(range){const m=this.selected;if(m?.alive&&this.monsters.includes(m)&&distance(this.hero,m)<=range&&this.canSee(m))return m;return this.nearest(range);}
+ preferred(range){const m=this.selected;if(m?.alive&&this.monsters.includes(m)&&distance(this.hero,m)<=range&&this.canFight(m))return m;return this.nearest(range);}
  persistHealth(m,now=this.now??this.scene.playNow??0){if(!m.alive||this.hero.worldState.monsters[m.key]?.deadUntil>Date.now())return;if(m.hp>=m.maxHp){delete this.hero.worldState.monsters[m.key];return;}this.hero.worldState.monsters[m.key]={hp:m.hp,healthAt:Date.now(),recoverAfter:Date.now()+Math.max(0,MONSTER_RECOVERY_DELAY-(now-(m.lastEngagedAt??now)))};}
  syncAnnotations(m){const visible=this.canSee(m)&&m.hp<m.maxHp; m.hpBar.setVisible(visible);m.nameLabel.setVisible(visible);}
  get obstacles(){return this.scene.obstacles||[];}
@@ -49,7 +50,7 @@ export class MonsterSystem{
   const nameLabel=this.scene.add.text(point.x,point.y-(kind.boss?(kind.visualScale||1.45)*110:76),name+' · '+kind.level,{fontFamily:'Arial',fontSize:kind.boss?'13px':'10px',color:kind.boss?'#ffd47b':'#e5d9ba',stroke:'#15251a',strokeThickness:3}).setOrigin(.5).setDepth(depth+2);
   const alive=!(saved?.deadUntil>Date.now());
   const m={...d,key,kind,nameLabel,active:false,x,y,homeX:x,homeY:y,hp:alive?restoredLivingHp(saved,kind.hp):0,maxHp:kind.hp,lastEngagedAt:(this.scene.playNow||0)-MONSTER_RECOVERY_DELAY+Math.max(0,(saved?.recoverAfter||0)-Date.now()),attack:kind.attack,alive,body,shadow,hpBar,lastHit:0,respawnAt:alive?0:(this.content?saved.deadUntil:Math.max(0,saved.deadUntil-Date.now())),phase:(d.i||0)*.7};
-  const paintedEntry=monsterArt(type,kind);if(paintedEntry&&this.scene.actorTextures){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,paintedEntry);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;m.annotationHeight=(paintedEntry.annotationHeight||paintedEntry.scale*170)*(kind.visualScale||1);});}
+  const paintedEntry=monsterArt(type,kind,d);if(paintedEntry&&this.scene.actorTextures){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,paintedEntry);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;body.scaleX=Math.abs(body.scaleX);m.annotationHeight=(paintedEntry.annotationHeight||paintedEntry.scale*170)*(kind.visualScale||1);});}
   this.monsters.push(m);this.setMonsterVisible(m,distance(this.hero,m)<=MONSTER_ACTIVATION_RADIUS);return m;
  }
  removeMonster(m){m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
@@ -99,7 +100,7 @@ export class MonsterSystem{
   for(const m of this.monsters){
    const active=distance(m,this.hero)<=MONSTER_ACTIVATION_RADIUS;if(active!==m.active)this.setMonsterVisible(m,active);
    if(!active){this.cancelWindup(m);cancelMonsterAbility(m);continue;}
-   if(!m.alive){if((this.content?Date.now():now)<m.respawnAt){m.painted?.update('death',projectAngle(m.facing||0),dt);const fraction=Math.max(0,Math.min(1,((m.dyingUntil||0)-now)/350));m.body.alpha=fraction;m.body.rotation=(1-fraction)*1.1;if(!fraction){m.body.setVisible(false);m.shadow.setVisible(false);}continue;}m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=m.homeX;m.y=m.homeY;m.poison=null;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);}
+   if(!m.alive){if((this.content?Date.now():now)<m.respawnAt){m.painted?.update('death',projectAngle(m.facing||0),dt);const fraction=Math.max(0,Math.min(1,((m.dyingUntil||0)-now)/350));m.body.alpha=fraction;m.body.rotation=m.paintedActive?0:(1-fraction)*1.1;if(!fraction){m.body.setVisible(false);m.shadow.setVisible(false);}continue;}m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=m.homeX;m.y=m.homeY;m.poison=null;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);}
    if(this.hero.hp>0&&m.poison&&now<m.poison.until&&now>=m.poison.next){m.poison.next=now+1000;this.hit(m,m.poison.damage,now);if(!m.alive)continue;}
    const profile=movementProfile(m.kind),dist=distance(m,this.hero),homeDist=Math.hypot(m.x-m.homeX,m.y-m.homeY);let tx=m.homeX,ty=m.homeY,speed=62;
    if(homeDist>=295||this.safe())m.returning=true;if(m.returning&&homeDist<35){m.returning=false;}

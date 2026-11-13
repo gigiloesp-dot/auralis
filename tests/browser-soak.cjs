@@ -28,7 +28,7 @@ const path=require('node:path');
   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[finger1,finger2]});
   finger1.x+=joy.width/4;
   await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[finger1,finger2]});
-  await page.waitForFunction(start=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');return s.controls.pointerId!==null&&s.controls.attackPointerId!==null&&s.controls.attacking&&Math.hypot(s.hero.x-start.x,s.hero.y-start.y)>5&&m.hp<start.targetHp;},start,{timeout:10000});
+  await page.waitForFunction(start=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');return s.controls.pointerId!==null&&s.controls.attackPointerId!==null&&s.controls.attacking&&Math.hypot(s.hero.x-start.x,s.hero.y-start.y)>5&&m.hp<start.targetHp;},start,{timeout:10000}).catch(async error=>{console.error('TOUCH STATE',await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),c=s.controls;return {hero:{x:s.hero.x,y:s.hero.y,hp:s.hero.hp},axis:s.axis,controls:{pointerId:c.pointerId,attackPointerId:c.attackPointerId,attacking:c.attacking},target:s.monsters.selected?.id,monsters:s.monsters.monsters.map(m=>({id:m.id,hp:m.hp,x:m.x,y:m.y,alive:m.alive,visible:s.monsters.canSee(m)}))};}));throw error;});
   await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
   await page.waitForFunction(()=>{const c=Auralis.game.scene.getScene('world').controls;return c.pointerId===null&&c.attackPointerId===null&&!c.attacking&&c.axis.x===0&&c.axis.y===0;});
   console.log('PASS simultaneous real CDP joystick and attack touch pointers; movement, damage and release reset');
