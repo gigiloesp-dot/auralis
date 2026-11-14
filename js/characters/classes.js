@@ -1,3 +1,4 @@
+export {className} from '../i18n/entityNames.js';
 export const CLASSES=Object.freeze({
  warrior:{name:'Воин',weapon:'sword',speed:1},
  archer:{name:'Лучник',weapon:'bow',speed:1.07},

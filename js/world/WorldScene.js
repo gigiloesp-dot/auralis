@@ -1,141 +1,105 @@
+import {biomeZones} from './biomes.js';
+import {EffectsHud} from '../ui/EffectsHud.js';
+import {applyShellLocale} from '../i18n/messages.js';
+import {ACTOR_ART} from '../assets/actorArt.js';
+import {ActorTextureCache} from '../assets/ActorTextureCache.js';
+import {GroundLootSystem} from '../loot/GroundLootSystem.js';
+import {DungeonExitPortal} from '../dungeons/DungeonExitPortal.js';
+import {heroMovementMultiplier} from '../monsters/movementProfiles.js';
+import {TargetState} from '../combat/targetState.js';
+import {TargetPanel} from '../ui/TargetPanel.js';
+import {InteractionController} from './InteractionController.js';
+import {SavePanel} from '../ui/SavePanel.js';
 import {SharedStorage} from '../systems/storage.js';
 import {StoragePanel} from '../ui/StoragePanel.js';
-import {usePotion} from '../systems/potions.js';
-import {text} from '../i18n/messages.js';
+import {NpcPanel} from '../ui/NpcPanel.js';
+import {SkillsPanel} from '../ui/SkillsPanel.js';
+import {CharacterPanel} from '../ui/CharacterPanel.js';
+import {InventoryPanel} from '../ui/InventoryPanel.js';
+import {DungeonPanel} from '../ui/DungeonPanel.js';
 import {Minimap} from '../ui/Minimap.js';
-import { NpcPanel } from '../ui/NpcPanel.js';
-import {normalizeSkillSlots} from '../skills/skillSlots.js';
-import {getSkills} from '../skills/skillData.js';
-import { SkillsPanel } from '../ui/SkillsPanel.js';
-import { CharacterPanel } from '../ui/CharacterPanel.js';
-import { InventoryPanel } from '../ui/InventoryPanel.js';
-import { AttackCycle } from '../combat/attackTiming.js';
-import { respawnAtTown } from './towns.js';
-import { MonsterSystem } from '../monsters/MonsterSystem.js';
-import { createTerrain } from './render/Terrain.js';
-import { createLandmarks } from './render/Landmarks.js';
-import { Save } from '../systems/save.js';
-import { HeroRig } from '../characters/HeroRig.js';
-import { createCharacter } from '../characters/Character.js';
-import { updateHud } from '../ui/hud.js';
-import { TouchControls } from '../input/TouchControls.js';
-import { queueAssets } from '../assets/AssetLoader.js';
-import { GAME_CONFIG } from '../config/gameConfig.js';
-const WORLD=GAME_CONFIG.worldPreviewSize;
+import {MapPanel} from '../ui/MapPanel.js';
+import {BattleHud} from '../ui/BattleHud.js';
+import {AttackCycle} from '../combat/attackTiming.js';
+import {Save} from '../systems/save.js';
+import {HeroRig} from '../characters/HeroRig.js';
+import {createCharacter} from '../characters/Character.js';
+import {updateHud} from '../ui/hud.js';
+import {TouchControls} from '../input/TouchControls.js';
+import {queueAssets} from '../assets/AssetLoader.js';
+import {GAME_CONFIG} from '../config/gameConfig.js';
+import {text} from '../i18n/messages.js';
+import {WorldRuntime} from './WorldRuntime.js';
+import {generateArenaContent} from './arena.js';
+import {REGIONS} from './worldData.js';
+import {projectAngle} from './projection.js';
+import {dungeonContentForHero} from '../dungeons/dungeonSystem.js';
+import {updateQuestProgress} from '../quests/quests.js';
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const PANEL_NAMES=['inventoryPanel','characterPanel','skillsPanel','npcPanel','storagePanel','savePanel','mapPanel','dungeonPanel'];
 export class WorldScene extends Phaser.Scene{
- constructor(){super('world');this.axis={x:0,y:0};this.facing=0;this.lastSave=0;this.attackUntil=0;}
- preload(){queueAssets(this);}
+ constructor(){super('world');}
+ preload(){const notice=document.getElementById('notice'),language=localStorage.getItem('auralis_language')||'ru',progress=value=>{if(notice)notice.textContent=text('loadingWorld',language)+' '+Math.round(value*100)+'%';};this.load.on('progress',progress);this.load.once('complete',()=>{this.load.off('progress',progress);if(notice)notice.textContent=text('startHint',language);});progress(0);queueAssets(this);const entry=ACTOR_ART[Save.load(Save.activeSlot)?.classId||'warrior'];if(entry?.baseBody&&!this.textures.exists(entry.key))this.load.atlas(entry.key,entry.url,entry.atlasURL);}
  create(){
-  this.cameras.main.setBackgroundColor('#426b3b');
-  this.ground=createTerrain(this,WORLD);
-  this.language=localStorage.getItem('auralis_language')||'ru';
-  this.obstacles=createLandmarks(this);
-  this.saveSlot=Save.activeSlot;
-  this.playNow=0;this.lastSave=0;this.lastHud=0;this.closed=false;
-  SharedStorage.load();
-  const saved=Save.load(this.saveSlot);
-  this.hero=createCharacter({...saved,x:clamp(saved?.x??WORLD/2,45,WORLD-45),y:clamp(saved?.y??WORLD/2,45,WORLD-45)});
-  this.shadow=this.add.ellipse(0,0,32,13,0x071d13,.4).setDepth(10);
-  this.body=this.add.container(0,0).setDepth(12);
-  this.drawHero();
-  this.cameras.main.startFollow(this.body,true,.12,.12);
-  this.cameras.main.setBounds(0,0,WORLD,WORLD);
-  this.resizeViewport(this.scale.width,this.scale.height);
-  this.scale.on('resize',this.onGameResize,this);
-  this.setupControls();
-  this.monsters=new MonsterSystem(this,this.hero,()=>{this.refreshHud();this.save();});
-  this.attackCycle=new AttackCycle();
-  this.inventoryPanel=new InventoryPanel(this);
-  this.characterPanel=new CharacterPanel(this);
-  this.skillsPanel=new SkillsPanel(this);
-  this.npcPanel=new NpcPanel(this);
-  this.storagePanel=new StoragePanel(this);
-  this.bindSkills();
-  this.bindPotions();
-  this.minimap=new Minimap(this,WORLD);
-  this.refreshSkillSlots();
-  this.onPageHide=()=>this.save();
-  this.onVisibilityChange=()=>{if(document.hidden){this.controls?.reset();this.save();}};
-  window.addEventListener('pagehide',this.onPageHide);
-  document.addEventListener('visibilitychange',this.onVisibilityChange);
-  this.events.once('shutdown',()=>{
-   this.save();this.closed=true;this.controls?.destroy();this.monsters?.destroy();
-   this.inventoryPanel?.destroy();this.characterPanel?.destroy();this.skillsPanel?.destroy();this.npcPanel?.destroy();this.storagePanel?.destroy();this.minimap?.destroy();this.potionRoot?.remove();
-   this.skillBindings.forEach(([b,fn])=>b.removeEventListener('click',fn));
-   window.removeEventListener('pagehide',this.onPageHide);
-   document.removeEventListener('visibilitychange',this.onVisibilityChange);
-   this.scale.off('resize',this.onGameResize,this);
-  });
-  this.refreshHud();
+  this.language=localStorage.getItem('auralis_language')||'ru';this.saveSlot=Save.activeSlot;this.closed=false;this.playNow=0;this.lastSave=0;this.lastHud=0;this.facing=0;
+  SharedStorage.load();this.actorTextures=new ActorTextureCache(this);this.hero=createCharacter(Save.load(this.saveSlot)||{x:1030,y:1140});
+  this.cameras.main.setBackgroundColor('#263b39');this.shadow=this.add.ellipse(0,0,32,13,0x071d13,.4);this.body=this.add.container(0,0);this.rig=new HeroRig(this,this.body);
+  this.targetState=new TargetState();this.controls=new TouchControls();this.axis=this.controls.axis;this.attackCycle=new AttackCycle();this.world=new WorldRuntime(this);this.groundLoot=new GroundLootSystem(this,this.hero);this.exitPortal=new DungeonExitPortal(this);this.cameras.main.startFollow(this.body,true,.16,.16);this.resizeViewport(this.scale.width,this.scale.height);this.scale.on('resize',this.onGameResize,this);
+  this.inventoryPanel=new InventoryPanel(this);this.characterPanel=new CharacterPanel(this);this.skillsPanel=new SkillsPanel(this);this.npcPanel=new NpcPanel(this);this.storagePanel=new StoragePanel(this);this.dungeonPanel=new DungeonPanel(this);this.mapPanel=new MapPanel(this);
+  this.canRestoreCharacter=data=>{const c=(data.region==='arena'?generateArenaContent(data):dungeonContentForHero(data))||REGIONS[data.region];return !!c&&data.x>=0&&data.y>=0&&data.x<=c.width&&data.y<=c.height;};this.savePanel=new SavePanel(this);this.battleHud=new BattleHud(this);this.effectsHud=new EffectsHud(this);this.minimap=new Minimap(this);this.targetPanel=new TargetPanel(this);this.interactions=new InteractionController(this);this.interactions.update();
+  this.onSelectPointer=pointer=>{if(this.panelsOpen()||this.hero.hp<=0)return;const p=pointer.positionToCamera(this.cameras.main);const hit=this.monsters.monsters.filter(m=>this.monsters.canSee(m)&&m.body.getBounds?.().contains(p.x,p.y)).sort((a,b)=>(b.x+b.y)-(a.x+a.y))[0];if(hit)this.monsters.select(hit,this.playNow);};this.input.on('pointerdown',this.onSelectPointer);
+  this.onPageHide=()=>this.save();this.onVisibilityChange=()=>{if(document.hidden){this.controls.reset();this.save();}};window.addEventListener('pagehide',this.onPageHide);document.addEventListener('visibilitychange',this.onVisibilityChange);
+  this.events.once('shutdown',()=>{this.save();this.closed=true;this.input.off('pointerdown',this.onSelectPointer);this.interactions.destroy();this.groundLoot.destroy();this.exitPortal.destroy();this.targetState.clear();this.targetPanel.destroy();this.controls.destroy();this.monsters.destroy();this.world.destroy();this.rig.destroy();this.actorTextures.destroy();for(const name of PANEL_NAMES){this[name]?.destroy();this[name]=null;}this.battleHud.destroy();this.effectsHud.destroy();this.minimap.destroy();window.removeEventListener('pagehide',this.onPageHide);document.removeEventListener('visibilitychange',this.onVisibilityChange);this.scale.off('resize',this.onGameResize,this);});this.refreshHud();this.events.once('create',()=>window.Auralis?.pauseInterface?.onSceneReady(this));
  }
- onGameResize(gameSize){this.resizeViewport(gameSize.width,gameSize.height);}
- resizeViewport(width,height){if(!width||!height)return;const camera=this.cameras.main;camera.setSize(width,height);camera.setZoom(clamp(Math.min(width/840,height/460),.7,1.3));camera.setBounds(0,0,WORLD,WORLD);if(this.hero)camera.centerOn(this.hero.x,this.hero.y);}
- drawHero(){this.body.removeAll(true);this.rig=new HeroRig(this,this.body);}
- setupControls(){this.controls=new TouchControls();this.axis=this.controls.axis;}
-
+ panelsOpen(){return PANEL_NAMES.some(name=>this[name]?.opened);}
+ closePanels(except){for(const name of PANEL_NAMES)if(this[name]!==except)this[name]?.close();this.controls?.reset();}
+ onGameResize(size){this.resizeViewport(size.width,size.height);}
+ resizeViewport(width,height){if(!width||!height)return;this.cameras.main.setSize(width,height);this.cameras.main.setZoom(clamp(Math.min(width/840,height/460),.7,1.3));}
  update(now,delta){
-  const dt=Math.min(delta,40)/1000,h=this.hero;if(!h)return;
+  const h=this.hero;if(!h||this.closed)return;if(window.Auralis?.pauseInterface?.active){this.controls.reset();this.input.enabled=false;this.scene.pause();return;}const dt=Math.min(delta,40)/1000;
   if(now-this.lastSave>=GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();}
-  this.npcPanel?.update();this.storagePanel?.update();
-  if(this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened){this.controls?.reset();return;}
+  if(document.hidden||window.innerHeight>window.innerWidth){this.controls.reset();this.updateTargetPanel();return;}
+  this.world.update();this.npcPanel.update();this.storagePanel.update();this.dungeonPanel.update();this.interactions.update();this.groundLoot.update();this.exitPortal.update();
+  if(this.panelsOpen()){this.controls.reset();this.updateTargetPanel();return;}
   this.playNow+=dt*1000;
-  const combatNow=this.playNow;
-  const mag=Math.hypot(this.axis.x,this.axis.y),speed=h.speed;
-  if(mag>.08){
-   let dx=this.axis.x/mag*speed*dt,dy=this.axis.y/mag*speed*dt;
-   const allowed=(x,y)=>!this.obstacles.some(o=>Math.hypot(x-o.x,y-o.y)<o.r+12);
-   if(allowed(h.x+dx,h.y))h.x=clamp(h.x+dx,20,WORLD-20);
-   if(allowed(h.x,h.y+dy))h.y=clamp(h.y+dy,20,WORLD-20);
-   this.facing=Math.atan2(dy,dx);
+  if(h.hp>0&&Math.hypot(this.axis.x,this.axis.y)>.08)this.facing=this.world.move(this.axis,h.speed*heroMovementMultiplier(h,this.playNow),dt);
+  const p=this.project(h.x,h.y);this.body.setPosition(p.x,p.y).setDepth(h.x+h.y+2);this.shadow.setPosition(p.x,p.y+7).setDepth(h.x+h.y-1);
+  let swing=this.attackCycle.state(this.playNow);if(swing.impact)this.monsters.attack(this.playNow,this.facing,swing.index);
+  const pressed=this.controls.consumeAttack();if(h.hp>0&&(this.controls.attacking||pressed)&&this.attackCycle.start(this.playNow,h))swing=this.attackCycle.state(this.playNow);
+  const cast=h.castAnimation,pose=cast?.until>this.playNow?{active:true,special:true,cycleId:cast.startedAt,progress:(this.playNow-cast.startedAt)/(cast.until-cast.startedAt),index:cast.index}:{...swing,cycleId:this.attackCycle.startedAt};
+  this.rig.update(dt,this.axis,pose,projectAngle(this.facing));this.monsters.update(this.playNow,dt);this.updateTargetPanel();
+  if(updateQuestProgress(this))this.save();
+  if(h.hp<=0){this.clearTarget();
+   h.deathStartedAt??=this.playNow;this.controls.reset();this.rig.update(dt,{x:0,y:0},{active:false},projectAngle(this.facing));this.refreshHud();
+   if(this.playNow-h.deathStartedAt>=650){delete h.deathStartedAt;this.world.respawn();this.attackCycle=new AttackCycle();this.save();}
   }
-  this.body.x=h.x;this.body.y=h.y;this.body.setDepth(h.y+2);
-  this.shadow.setPosition(h.x,h.y+7).setDepth(h.y-1);
-  const held=this.controls?.attacking??false;
-  if(held)this.attackCycle.start(combatNow,h);
-  const swing=this.attackCycle.state(combatNow);
-  if(swing.impact)this.monsters.attack(combatNow,this.facing);
-  this.rig.update(dt,this.axis,swing,this.facing);
-  this.monsters.update(combatNow,dt);
-  if(h.hp<=0){respawnAtTown(h);this.attackCycle=new AttackCycle();this.controls?.reset();this.save();this.refreshHud();}
-  if(now-this.lastHud>100){this.lastHud=now;this.refreshHud();this.refreshSkillSlots();this.refreshPotions();this.minimap?.update();}
+  if(now-this.lastHud>100){this.lastHud=now;this.refreshHud();this.battleHud.update();this.minimap.update();}
  }
- bindSkills(){
-  this.skillBindings=[];
-  document.querySelectorAll('#skills .skill').forEach((b,i)=>{
-   const fn=()=>{
-    if(this.closed||this.inventoryPanel?.opened||this.characterPanel?.opened||this.skillsPanel?.opened||this.npcPanel?.opened||this.storagePanel?.opened||!this.sys.isActive())return;
-    const id=normalizeSkillSlots(this.hero)[i];
-    if(id){const result=this.monsters.useSkill(id,this.playNow);if(!result.ok&&['target','mana'].includes(result.reason))this.notify(text(result.reason==='target'?'noTarget':'mana',this.language));this.refreshSkillSlots();this.refreshHud();}
-   };
-   b.addEventListener('click',fn);this.skillBindings.push([b,fn]);
-  });
+ updateTargetPanel(){const previous=this.targetState.target,next=this.targetState.update(Date.now(),{hero:this.hero,monsters:this.monsters.monsters,visible:m=>this.monsters.canSee(m)});if(previous&&!next&&this.monsters.selected===previous)this.monsters.selected=null;this.targetPanel?.update(next);}
+ enterDungeon(id,difficulty){return this.world.enterDungeon(id,difficulty);}
+ leaveDungeon(){return this.world.leaveDungeon();}
+ onTarget(m,now){if(this.hero?.hp>0){this.targetState?.engage(m,Date.now());this.targetPanel?.update(m);}}
+ onTargetLost(m){if(!m.alive&&this.targetState?.clear(m))this.targetPanel?.update(null);}
+ clearTarget(){this.targetState?.clear();if(this.monsters)this.monsters.selected=null;this.targetPanel?.update(null);}
+ onMonsterKilled(m){this.world?.onKill(m);}
+ refreshSkillSlots(){this.battleHud?.update();}
+ refreshPotions(){this.battleHud?.update();}
+ setLanguage(language){
+  if(!['ru','en','es'].includes(language)||!this.hero||this.closed)return;
+  const named=(entry,lang)=>entry?.names?.[lang]||entry?.names?.ru||entry?.name||entry?.id,content=this.regionContent;
+  const labels=new Map([...content.npcs||[],...content.portals||[],...content.dungeons||[],content.exit,...biomeZones(content)].filter(Boolean).map(entry=>[named(entry,this.language),named(entry,language)]));
+  const translate=node=>{if(node.type==='Text'&&labels.has(node.text))node.setText(labels.get(node.text));if(Array.isArray(node.list))for(const child of node.list)translate(child);};
+  for(const chunk of this.world.chunkWorld.chunks.values())for(const object of chunk.objects)translate(object);
+  this.closePanels();this.language=language;applyShellLocale(language);
+  // Rebuild only locale-cached UI. Actors, timers, world and hero are retained.
+  for(const [name,Type]of [['npcPanel',NpcPanel],['storagePanel',StoragePanel],['savePanel',SavePanel],['dungeonPanel',DungeonPanel],['mapPanel',MapPanel]]){this[name]?.destroy();this[name]=new Type(this);}
+  this.minimap?.destroy();this.minimap=new Minimap(this);this.targetPanel?.destroy();this.targetPanel=new TargetPanel(this);
+  for(const m of this.monsters.monsters){const name=m.kind.names?.[language]||m.kind.name||m.name||m.type;m.nameLabel.setText(name+' · '+m.kind.level);}
+  for(const [resource,button]of Object.entries(this.battleHud.buttons))button.setAttribute('aria-label',text(resource+'Potion',language));
+  this.battleHud.update();this.refreshHud();
  }
- refreshSkillSlots(){
-  if(!this.hero)return;
-  const ids=normalizeSkillSlots(this.hero),skills=getSkills(this.hero.classId);
-  document.querySelectorAll('#skills .skill').forEach((b,i)=>{
-   const skill=skills.find(s=>s.id===ids[i]);
-   const remaining=skill?this.monsters.skillRemaining(skill.id,this.playNow):0;
-   b.textContent=remaining>0?String(Math.ceil(remaining)):skill?skill.icon:String(i+1);
-   b.title=skill?skill.name:text('emptySkill',this.language)+' '+(i+1);b.setAttribute('aria-label',b.title);
-   b.disabled=!skill||remaining>0||this.hero.mp<skill.mana||this.hero.hp<=0;
-  });
- }
- bindPotions(){
-  this.potionState={};this.potionRoot=document.createElement('div');this.potionRoot.id='potions';
-  this.potionButtons={};
-  for(const resource of ['hp','mp']){
-   const button=document.createElement('button');button.type='button';button.className='potion '+resource;
-   button.setAttribute('aria-label',text(resource+'Potion',this.language));
-   button.onclick=()=>{if(this.sys.isActive()&&!this.inventoryPanel?.opened&&!this.characterPanel?.opened&&!this.skillsPanel?.opened&&!this.npcPanel?.opened&&!this.storagePanel?.opened&&usePotion(this.hero,resource,this.playNow,this.potionState)){this.save();this.refreshHud();this.refreshPotions();}};
-   this.potionButtons[resource]=button;this.potionRoot.append(button);
-  }
-  document.body.append(this.potionRoot);this.refreshPotions();
- }
- refreshPotions(){for(const [resource,b] of Object.entries(this.potionButtons||{})){const left=Math.max(0,Math.ceil(((this.potionState.readyAt||0)-this.playNow)/1000));b.textContent=resource.toUpperCase()+' '+(left||this.hero.potions?.[resource]||0);b.disabled=left>0||!(this.hero.potions?.[resource]>0)||this.hero[resource]>=this.hero[resource==='hp'?'maxHp':'maxMp'];}}
- notify(message){const notice=document.getElementById('notice');notice.textContent=message;}
- save(){if(this.hero&&!this.closed){const ok=Save.write(this.hero,this.saveSlot);if(!ok)this.notify(text('saveFailed',this.language));return ok;}return false;}
-
- refreshHud(){updateHud(this.hero);}
+ requestReload(){this.scene.restart();}
+ notify(message){const notice=document.getElementById('notice');notice.textContent=message;this.noticeUntil=Date.now()+3000;}
+ save(){if(!this.hero||this.closed)return false;if(this.monsters?.hero===this.hero)this.monsters.persistCooldowns(this.playNow);const ok=Save.write(this.hero,this.saveSlot);if(!ok)this.notify(text('saveFailed',this.language));return ok;}
+ refreshHud(){if(this.hero)updateHud(this.hero,this.language,this.regionContent);this.effectsHud?.update();if(this.noticeUntil&&Date.now()>this.noticeUntil){document.getElementById('notice').textContent='';this.noticeUntil=0;}}
 }

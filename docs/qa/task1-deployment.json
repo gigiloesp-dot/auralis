@@ -1,0 +1,45 @@
+{
+  "deployment": {
+    "id": "appgdep_6af855d4b0ac8191ba8aa70045c0a27c",
+    "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+    "title": "Auralis — Master Development Test",
+    "version_id": "appgprj_6af567346ebc8191accf1485254403da~appgver_51d8a68ab3308191b9e2d8b93652afde",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6af567346ebc8191accf1485254403da",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-14T12:36:53.455972+00:00"
+  },
+  "saved": {
+    "id": "appgprj_6af567346ebc8191accf1485254403da~appgver_51d8a68ab3308191b9e2d8b93652afde",
+    "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+    "version_number": 8,
+    "source": {
+      "commit_sha": "acc07740de97b6c67e47d89ca8caef20078728bb"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000a5c481f482b532ce703d111b",
+      "content_hash": "sha256:6f4ea246857f0fa55f603d7ec95cfbb91eae32283e8abcb4c839f34ff8aabef7",
+      "size_bytes": 188774400,
+      "file_count": 313
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "gameSource": "ce787351fed4d24653a92d1e65a314c741ee5787",
+  "ci": "43594992219",
+  "protectedGitHubRefs": {
+    "main": "274e79d37250a31232d5c2cdca94ff1d85dd00d9",
+    "stableAlpha": "536e776c8ea65a6948889ed7b917fad7996ae87f"
+  },
+  "oldAlpha": {
+    "id": "appgprj_6af49c6754e08191b77d4d9e91fec53f",
+    "version": 1,
+    "url": "https://auralis-alpha-test.alertpine18.chatgpt.site"
+  }
+}

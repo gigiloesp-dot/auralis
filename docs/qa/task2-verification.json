@@ -1,0 +1,73 @@
+{
+  "gameSource": "468499ffbbdc4038fe1d71044af01b7afdb21fe6",
+  "rollback": "0ec6306aff4c51974f34ab2639f9b083aaae87ff",
+  "physicalAndroid": false,
+  "unit": 262,
+  "syntaxFiles": 202,
+  "browserSuites": 22,
+  "classLanguageCombinations": 18,
+  "publicInterfaceCombinations": 3,
+  "protectedPathsUnchanged": [
+    "assets",
+    "js/quests",
+    "js/npc",
+    "js/combat",
+    "js/monsters",
+    "js/characters",
+    "js/equipment",
+    "js/systems",
+    "js/skills/skillData.js",
+    "js/skills/skillSlots.js",
+    "js/world/regionContent.js",
+    "js/world/worldData.js",
+    "js/world/ChunkWorld.js",
+    "js/input/TouchControls.js"
+  ],
+  "logs": [
+    {
+      "file": "docs/qa/task2-unit-full.log",
+      "sha256": "7a38c5ff41da235bdaf6d2861b2be8b0852c86a990cca18c517ee2f4b9b3868d",
+      "result": "ℹ duration_ms 88865.679076"
+    },
+    {
+      "file": "docs/qa/task2-check-integrated.log",
+      "sha256": "ceb9630386696e17d9a6492716e42148f73e0d3410d38c46cba5acd6f9a1fa47",
+      "result": "Syntax checked 202 source and test files"
+    },
+    {
+      "file": "docs/qa/task2-smoke.log",
+      "sha256": "07ceddcb0af27e52432f9be8f5fe2e50fa354dec607fbdd72279a2e415c8e63c",
+      "result": "PASS no page errors"
+    },
+    {
+      "file": "docs/qa/task2-ui.log",
+      "sha256": "96e83dc7437a337d0a57c29e412a06fe4ddcd251022b62a3d8583dcf2858338d",
+      "result": "PASS task2 all 18 class/language combinations, four phone sizes; no JavaScript errors"
+    },
+    {
+      "file": "docs/qa/task2-strengthened-warrior.log",
+      "sha256": "70d55149375678707f5cd5e513b9258b419c18e9712f3d5812669c2ac6e5ff2f",
+      "result": "PASS task2 all 1 class/language combinations, four phone sizes; no JavaScript errors"
+    },
+    {
+      "file": "docs/qa/task2-world-labels.log",
+      "sha256": "70d55149375678707f5cd5e513b9258b419c18e9712f3d5812669c2ac6e5ff2f",
+      "result": "PASS task2 all 1 class/language combinations, four phone sizes; no JavaScript errors"
+    },
+    {
+      "file": "docs/qa/task2-final-layout.log",
+      "sha256": "70d55149375678707f5cd5e513b9258b419c18e9712f3d5812669c2ac6e5ff2f",
+      "result": "PASS task2 all 1 class/language combinations, four phone sizes; no JavaScript errors"
+    },
+    {
+      "file": "docs/qa/task2-public-final-runtime.log",
+      "sha256": "899bb5dce0d7c1f982691ee9eaaff69ec3752dcfa4c02345eb5196029d46cdbe",
+      "result": "PASS real game creation, touch, quest, save/reload, three regions and three hard dungeon entries; no JavaScript errors [{\"region\":\"forest\",\"width\":12000,\"camps\":94,\"normal\":895},{\"region\":\"north\",\"width\":14000,\"camps\":85,\"normal\":805},{\"region\":\"ancient\",\"width\":15000,\"camps\":75,\"normal\":715}]"
+    },
+    {
+      "file": "docs/qa/task2-public-final-interface.log",
+      "sha256": "dd6051f6e0b2d2bb2def19645cd8ae7033f9057b3467d66d20900941c9ad0e39",
+      "result": "PASS task2 all 3 class/language combinations, four phone sizes; no JavaScript errors"
+    }
+  ]
+}

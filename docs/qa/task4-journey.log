@@ -1,0 +1,13 @@
+PASS fresh warrior accepted Mira quest through UI
+JOURNEY hunt {"progress":0,"hp":99,"level":1,"gold":0,"x":1258,"y":1235}
+JOURNEY hunt {"progress":1,"hp":97,"level":1,"gold":2,"x":1258,"y":1235}
+JOURNEY hunt {"progress":2,"hp":94,"level":1,"gold":4,"x":1258,"y":1235}
+JOURNEY hunt {"progress":3,"hp":93,"level":1,"gold":6,"x":1258,"y":1235}
+JOURNEY hunt {"progress":4,"hp":93,"level":1,"gold":8,"x":1420,"y":1226}
+JOURNEY hunt {"progress":5,"hp":84,"level":1,"gold":10,"x":1508,"y":1328}
+PASS five wolves defeated by real multitouch movement and basic attacks
+JOURNEY physically collected anonymous drops 1
+PASS wolf reward and earned fangs delivered to Borin through UI
+PASS legitimately earned attribute and skill points spent through UI
+PASS earned progress, purchase and two claimed quests survive reload; no runtime-state writes or fixture damage
+JOURNEY RESULT {"seconds":152,"level":3,"xp":30,"gold":25,"quests":["forestWolves","forestFangs"],"strength":6,"skill":"warrior_0","hpPotions":4}

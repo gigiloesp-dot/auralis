@@ -1,0 +1,5 @@
+PASS real kill drops three separate anonymous objects without inventory insertion
+PASS drops survive unloading, region transition and actual page reload
+PASS out-of-range and full-inventory touches retain the same ground object
+PASS quota failure rolls back, successful real touch identifies and saves the item
+PASS no duplicate pickup after reload; no JavaScript errors

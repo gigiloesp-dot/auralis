@@ -1,0 +1,68 @@
+{
+  "sourceCommit": "b5ac2e939b70485b9516e66617637b6189a4b360",
+  "checkpoint": "756ed8ffaa7974d6ce5efd9cd94f90e642cd0049",
+  "ci": 43611818625,
+  "nativeVersion": 15,
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "physicalAndroidTested": false,
+  "runtimeFilesVerified": 305,
+  "protectedBranches": {
+    "main": "274e79d37250a31232d5c2cdca94ff1d85dd00d9",
+    "codex/auralis-stable-alpha": "536e776c8ea65a6948889ed7b917fad7996ae87f"
+  },
+  "alphaVersion": 1,
+  "proofs": {
+    "docs/qa/medieval-ci-source.json": {
+      "sha256": "06e686ad2431a2497f63d9a0f5e338800bfefb4998eccfe7839e8d266d5d29b4",
+      "bytes": 11866
+    },
+    "docs/qa/medieval-classes.log": {
+      "sha256": "48a11fcb7b94d0cd1008283a877ce57639a6d22870354ef9109bffe449b59e99",
+      "bytes": 1066
+    },
+    "docs/qa/medieval-deployment.json": {
+      "sha256": "3b4db66b0166723c61aa4667d2f1f280641f22d896c5606b99664564024490ef",
+      "bytes": 967
+    },
+    "docs/qa/medieval-first-dungeon.log": {
+      "sha256": "85c959e6ee7c1b8419e7368791f991e6b6a78828e46b6332b6a549a1f63fda3b",
+      "bytes": 10655
+    },
+    "docs/qa/medieval-home-1280.png": {
+      "sha256": "4f8ca522c70f2540e81938d6b0d89fce2d91cbe38f71336ad9c130b71a1ffba7",
+      "bytes": 1489128
+    },
+    "docs/qa/medieval-home-740.png": {
+      "sha256": "ef4d00d513a7a71e1b9b067eba3e3c778628cff3ad902c3bda2b31ea1dcefff2",
+      "bytes": 378748
+    },
+    "docs/qa/medieval-inventory-ru.png": {
+      "sha256": "77759f721460945e35b85db41106f416d58d7cf6c41a15a834f8cc08c2052fcc",
+      "bytes": 95596
+    },
+    "docs/qa/medieval-menu-local.log": {
+      "sha256": "2338f4186611e667e6e567ebbd9b210697ebd817b47551164a88872ffdac0f63",
+      "bytes": 345
+    },
+    "docs/qa/medieval-menu-public.log": {
+      "sha256": "2338f4186611e667e6e567ebbd9b210697ebd817b47551164a88872ffdac0f63",
+      "bytes": 345
+    },
+    "docs/qa/medieval-public.log": {
+      "sha256": "9efa312d8626b2a637f6c67f8fab712b750cfcc82d268dd98a773297fce6f82b",
+      "bytes": 726
+    },
+    "docs/qa/medieval-soak.log": {
+      "sha256": "053bfea3c71ca1175d2f0dedc21438f716c03c80c3b60c42b89d4d329c9ef93f",
+      "bytes": 1632
+    },
+    "docs/qa/medieval-task2-warrior.log": {
+      "sha256": "60ef2fbeaaf7cf4c7267b761268b1ee7c5c99f90b0fa285093fa97771add3c19",
+      "bytes": 305
+    },
+    "docs/qa/medieval-unit.log": {
+      "sha256": "2701c0b4463fa87a19e839efb40ae7a6c5d9703659ba519625babd2911bb6fd8",
+      "bytes": 25397
+    }
+  }
+}

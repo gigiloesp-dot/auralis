@@ -1,0 +1,18 @@
+/* Keep the existing combat controls and their geometry intact. */
+#hud{top:max(5px,env(safe-area-inset-top));left:max(8px,env(safe-area-inset-left));right:auto;width:196px;padding-left:34px}
+#hud #brand{font-size:10px;line-height:12px;letter-spacing:1.5px}#hud #brand small{font-size:6px;letter-spacing:.4px}
+#hud #status{font-size:9px;line-height:11px;margin-top:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#hud #hud-portrait{width:29px;height:33px;left:0;top:1px;margin:0;border-radius:5px}
+#hud .resource-bar{width:160px;margin-top:3px;border-radius:4px}
+#hud #health{height:16px}#hud #mana{height:12px}#hud #experience{height:11px}
+#hud .resource-bar .bar-text{font-size:9px;line-height:10px;letter-spacing:0}
+#hud #health .bar-text{font-size:10px}
+#hud .hud-bottom{gap:5px;margin-top:3px;min-height:13px}#hud #coords{font-size:9px;line-height:12px;white-space:nowrap}
+#hud #hero-level{position:absolute;left:0;top:38px;font-size:11px;line-height:16px;min-width:29px;text-align:center;color:#ffe3a1;background:#10231fda;border:1px solid #b6a57560;border-radius:4px}
+#active-effects{position:absolute;top:0;left:202px;display:flex;gap:3px;flex-wrap:wrap;max-width:112px;pointer-events:none}
+#active-effects[hidden]{display:none}.temporary-effect{position:relative;display:block;width:25px;height:34px;border:1px solid #bba365;border-radius:4px;background:#173629e8;overflow:hidden;text-align:center}
+.temporary-effect .effect-icon{display:block;width:23px;height:23px}.effect-icon svg{width:100%;height:100%;display:block}.effect-time{display:block;font-size:9px;line-height:10px;text-shadow:0 1px 2px #000;color:#fff8d9;font-variant-numeric:tabular-nums}
+.temporary-effect.negative{border-color:#c27870;background:#47292ce8}
+@media(max-width:700px){#active-effects{max-width:104px}.temporary-effect{width:23px}.temporary-effect .effect-icon{width:21px}}
+
+#notice{top:98px;left:12px;transform:none;max-width:190px;text-align:left;font-size:9px}

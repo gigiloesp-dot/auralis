@@ -14,3 +14,17 @@ test('equipment visuals follow real equipped items and clear when unequipped',()
  hero.equipment={helmet:{id:'helmet',rarity:'rare'},chest:{id:'chest',rarity:'epic'},boots:{id:'boots',rarity:'rare'}};rig.update(0,{x:0,y:0},null,0);assert.equal(rig.helmet.visible,true);assert.equal(rig.chestArmor.visible,true);assert.equal(rig.leftBoot.fillColor,0x547ba4);
  hero.equipment={};rig.update(0,{x:0,y:0},null,0);assert.equal(rig.helmet.visible,false);assert.equal(rig.chestArmor.visible,false);assert.equal(rig.leftBoot.fillColor,0x302b27);
 });
+test('paladin third swing advances the shield and restores the guard afterward',()=>{
+ const {rig}=makeRig('paladin');rig.update(.016,{x:0,y:0},{active:true,progress:.5,index:2},0);assert.ok(rig.shield.y>12);assert.equal(rig.rightArm.rotation,.4);rig.update(.016,{x:0,y:0},null,0);assert.equal(rig.shield.y,12);
+});
+test('hurt and death states animate the connected rig and clear after revival',()=>{
+ const {hero,rig,root}=makeRig('warrior');hero.hp=40;hero.hurtUntil=300;rig.update(.1,{x:0,y:0},null,0);assert.equal(rig.animationState,'hurt');assert.ok(root.alpha<1);
+ hero.hp=0;for(let i=0;i<6;i++)rig.update(.1,{x:0,y:0},null,0);assert.equal(rig.animationState,'death');assert.ok(root.rotation>1);assert.ok(root.alpha<.8);finiteTree(root);
+ hero.hp=40;rig.update(.1,{x:0,y:0},null,0);assert.equal(rig.animationState,'idle');assert.equal(root.rotation,0);assert.equal(root.alpha,1);
+});
+test('weapon, shield and jewelry reflect equipped slots without changing the class rig',()=>{
+ const {hero,rig}=makeRig('warrior');rig.update(0,{x:0,y:0},null,0);assert.equal(rig.shield.visible,false);assert.equal(rig.ring.visible,false);
+ hero.equipment={weapon:{id:'ironSword',rarity:'rare'},shield:{id:'shield',rarity:'epic'},ring:{id:'ring',rarity:'legendary'},amulet:{id:'amulet',rarity:'uncommon'}};rig.update(0,{x:0,y:0},null,0);
+ assert.equal(rig.shield.visible,true);assert.equal(rig.ring.visible,true);assert.equal(rig.amulet.visible,true);assert.equal(rig.weaponAccent.visible,true);assert.ok(rig.sword.scaleX>1);
+ hero.equipment={};rig.update(0,{x:0,y:0},null,0);assert.equal(rig.shield.visible,false);assert.equal(rig.ring.visible,false);assert.equal(rig.amulet.visible,false);assert.equal(rig.sword.scaleX,1);
+});

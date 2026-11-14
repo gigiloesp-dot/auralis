@@ -6,7 +6,7 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -16,19 +16,166 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm test
-      # GitHub's Ubuntu image already includes Chrome and its runtime libraries.
-      # Avoid apt/browser downloads: mirror DNS failures must not block browser QA.
+
+  core_browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [world, quests, ui]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      # Use runner Chrome; no apt or browser download is needed.
       - name: Verify runner Chrome
         run: |
           chrome_path="$(command -v google-chrome)"
           test -x "$chrome_path"
           "$chrome_path" --version
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
-      - name: Browser smoke tests
-        run: npm run test:browser
+      - name: Existing browser checks
+        run: npm run test:browser:core:${{ matrix.group }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: browser-smoke
+          name: browser-${{ matrix.group }}
+          path: work/browser/
+          if-no-files-found: ignore
+
+  first_dungeon:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Earn progression and clear first dungeon without fixtures
+        run: npm run test:browser:first-dungeon
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-first-dungeon
+          path: work/browser/
+          if-no-files-found: ignore
+
+  android_ui_and_art:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Phone panels, combat indicators, bestiary and streamed painted actors
+        run: npm run test:browser:android && npm run test:browser:menu
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-android
+          path: work/browser/
+          if-no-files-found: ignore
+
+  task1_combat_loot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Dungeon visits, ground loot, combat AI, viewport streaming and multiple touch pointers
+        run: npm run test:browser:task1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-task1
+          path: |
+            work/browser/
+            work/stream-benchmark/
+          if-no-files-found: ignore
+
+  task2_interface:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ru, en, es]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Six classes and three languages, compact HUD, timed effects and paused panels
+        run: npm run test:browser:task2
+        env:
+          AURALIS_TASK2_LANGS: ${{ matrix.language }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-task2-${{ matrix.language }}
+          path: work/browser/
+          if-no-files-found: ignore
+
+  task4_loot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Grouped loot window, durable single and bulk pickup, world radius and touch controls
+        run: npm run test:browser:task4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-task4
           path: work/browser/
           if-no-files-found: ignore
