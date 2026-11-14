@@ -27,9 +27,11 @@ const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-
  const attack=await p.locator('#attack').boundingBox();await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{id:2,x:attack.x+attack.width/2,y:attack.y+attack.height/2}]});await p.waitForFunction(()=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');return m.hp<1000&&m.hpBar.visible&&!document.getElementById('target-panel').hidden&&document.getElementById('target-panel').dataset.monsterId===m.id;});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});console.log('PASS published touch attack damages painted wolf and updates selected target HP');
  // Explicit HP/RNG/position fixture; death and collection still use the
  // published attack and the real Phaser ground marker's touch handler.
+ // The ground-loot fixture isolates its one target from neighbour aggro and
+ // freezes its movement ability, without changing any damage/death/pickup API.
  // Scope deterministic RNG to loot rolls: Phaser texture UUIDs must retain real
  // randomness while actual attack and damage-label frames run.
- const beforeLoot=await p.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');m.hp=1;window.publicOriginalRandom=Math.random;Math.random=()=>new Error().stack.includes('/js/monsters/loot.js')?.1:window.publicOriginalRandom();return s.hero.inventory.length;});
+ const beforeLoot=await p.evaluate(async()=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0'),{cancelMonsterAbility}=await import('/js/monsters/movementProfiles.js');for(const other of [...s.monsters.monsters])if(other!==m)s.monsters.removeMonster(other);s.monsters.stream=null;cancelMonsterAbility(m);m.x=m.homeX=1370;m.y=m.homeY=1240;m.rootUntil=s.playNow+60000;m.lastAbilityAt=s.playNow+60000;m.hp=1;window.publicOriginalRandom=Math.random;Math.random=()=>new Error().stack.includes('/js/monsters/loot.js')?.1:window.publicOriginalRandom();return s.hero.inventory.length;});
  try{
   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{id:2,x:attack.x+attack.width/2,y:attack.y+attack.height/2}]});
   try{await p.waitForFunction(()=>!Auralis.game.scene.getScene('world').monsters.monsters.find(m=>m.id==='forest-starter-wolf-0')?.alive);}
