@@ -39,3 +39,16 @@
 #menu[data-page=home] .medieval-menu-button:before{content:'';position:absolute;inset:3px;pointer-events:none;border:1px solid #b68a4f;clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%)}
 @media(max-height:430px){#menu[data-page=home] h1{height:29dvh}}
 @media(max-height:340px){#menu[data-page=home] h1{height:22dvh}}
+/* Strong legacy selectors still inherit these shared surface tokens. Important
+   is limited to decorative backgrounds, never item colours or resource fills. */
+:is(#menu,#inventory-panel,#character-panel,#skills-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel) button{background:var(--ui-button)!important}
+:is(#menu,#inventory-panel,#skills-panel,.npc-panel,.storage-panel) button:is(.active,.selected){background:linear-gradient(#78532b,#4a301a)!important}
+:is(#menu,#inventory-panel) button.danger{background:linear-gradient(#773a2b,#471e18)!important}
+#inventory-panel :is(.equipment-summary,.equipment-summary span,.item-detail,.item-comparison),.skill-detail,.skill-info,.storage-item,.npc-quest,.npc-shop-row,.attribute-row,.character-summary span{background:var(--ui-inset)!important}
+#menu[data-page=home] .medieval-menu-button{background:url('../assets/ui/medieval-button.svg') center/100% 100% no-repeat,linear-gradient(#57361f,#28160d 52%,#432817)!important;border:0;box-shadow:0 3px 5px #000c;clip-path:polygon(5% 0,95% 0,100% 50%,95% 100%,5% 100%,0 50%)}
+#menu[data-page=home] .medieval-menu-button:before{display:none}
+.skill-heading,.npc-heading,.save-panel>header,.dungeon-panel>header,.character-heading,#inventory-panel .item-actions,#skills-panel .skill-detail-actions{background:#302015;border-color:var(--ui-edge)}
+.npc-selector select{background:#24180f;color:var(--ui-ink);border-color:var(--ui-edge)}
+.target-panel{background:#281b11e8;border-color:var(--ui-gold)}
+#menu .menu-content>button{min-height:44px}
+#menu[data-page=home] .medieval-menu-button:focus-visible{outline-offset:-6px}
