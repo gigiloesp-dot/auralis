@@ -1,3 +1,4 @@
+const {openPausePanel,resumeGame}=require('./panelNavigation.cjs');
 const {startServer,launchOptions,root,openNpc,collectNearbyLoot,pulseJoystick}=require('./browserHarness.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
@@ -103,12 +104,12 @@ const path=require('node:path');
   console.log('PASS wolf reward and earned fangs delivered to Borin through UI');
 
   const beforeSpend=await read();assert.ok(beforeSpend.attributePoints>=3&&beforeSpend.skillPoints>=1);
-  await page.locator('#character-btn').click();
+  await openPausePanel(page,'character');
   await page.getByRole('button',{name:'Увеличить Сила',exact:true}).click();
-  await page.locator('.character-heading button').click();
-  await page.locator('#skills-btn').click();await page.locator('.skill-select').first().click();
+  await page.locator('.character-heading button').click();await resumeGame(page);
+  await openPausePanel(page,'skills');await page.locator('.skill-select').first().click();
   await page.getByRole('button',{name:'Изучить / улучшить (+1)',exact:true}).click();
-  await page.locator('.skill-slot-choices button').first().click();await page.locator('.skill-heading button').click();
+  await page.locator('.skill-slot-choices button').first().click();await page.locator('.skill-heading button').click();await resumeGame(page);
   const afterSpend=await read();assert.equal(afterSpend.stats.strength,beforeSpend.stats.strength+1);assert.equal(afterSpend.attributePoints,beforeSpend.attributePoints-1);assert.equal(afterSpend.skillPoints,beforeSpend.skillPoints-1);assert.equal(afterSpend.learnedSkills.warrior_0,1);assert.equal(afterSpend.skillSlots[0],'warrior_0');
   console.log('PASS legitimately earned attribute and skill points spent through UI');
   await walkTo({x:1000,y:1120},25);await page.locator('.npc-interact').click();

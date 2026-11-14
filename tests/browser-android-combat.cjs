@@ -1,3 +1,4 @@
+const {openMap}=require('./panelNavigation.cjs');
 // Android HUD integration. Character/monster positions, resources and selected
 // timer steps are fixtures; selection, attacks, skills, recovery and transitions
 // run through the real Phaser scene and visible controls.
@@ -47,7 +48,7 @@ const path=require('node:path');
   // Keep every protected HUD element separate at real landscape sizes.
   for(const [width,height]of [[844,390],[640,360],[740,320],[915,412]]){await page.setViewportSize({width,height});await page.waitForTimeout(80);await page.evaluate(id=>{const s=Auralis.game.scene.getScene('world');s.monsters.select(s.monsters.monsters.find(m=>m.id===id),s.playNow);s.targetPanel.position();},ids.b);const box=await panel.boundingBox();assert.ok(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width&&box.y+box.height<=height);for(const selector of ['#health','#minimap','.rpg-toolbar','#attack','#potions']){const r=await page.locator(selector).boundingBox();if(!r)continue;assert.ok(box.x+box.width<=r.x||r.x+r.width<=box.x||box.y+box.height<=r.y||r.y+r.height<=box.y,'Target panel overlaps '+selector+' at '+width+'x'+height);}}
   await page.setViewportSize({width:844,height:390});console.log('PASS target panel stays clear of HUD, minimap, toolbar, potions and attack on four phone sizes');
-  await page.locator('#skills-btn').click();await page.waitForFunction(()=>document.getElementById('target-panel').hidden,null,{timeout:7000});assert.equal(await page.evaluate(()=>Auralis.game.scene.getScene('world').targetState.target),null);await page.locator('.skill-heading button').click();console.log('PASS target timeout continues while a gameplay panel is open');
+  await openMap(page);await page.waitForFunction(()=>document.getElementById('target-panel').hidden,null,{timeout:7000});assert.equal(await page.evaluate(()=>Auralis.game.scene.getScene('world').targetState.target),null);await page.locator('.world-map header button').click();console.log('PASS target timeout continues while a gameplay panel is open');
   // Recovery uses actual system updates. Clock advancement is a timing fixture;
   // HP itself is not assigned between injury, gradual heal and complete heal.
   // The hit now correctly provokes pursuit: leave its remembered target/leash

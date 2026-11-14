@@ -36,6 +36,6 @@ export class LootPanel{
   }
   this.list.scrollTop=scroll;
  }
- close(){this.opened=false;this.root.hidden=true;this.signature='';}
+ close(){this.opened=false;this.root.hidden=true;this.signature='';this.list.replaceChildren();this.status.textContent='';}
  destroy(){this.close();this.observer.disconnect();document.removeEventListener('keydown',this.escape);document.removeEventListener('visibilitychange',this.visibility);window.removeEventListener('resize',this.resize);for(const name of ['pointerdown','pointerup','click'])this.root.removeEventListener(name,this.stop);this.root.remove();}
 }

@@ -1,3 +1,4 @@
+const {openPausePanel,resumeGame}=require('./panelNavigation.cjs');
 const {startServer,launchOptions,root,openNpc,collectNearbyLoot,pulseJoystick}=require('./browserHarness.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
@@ -148,16 +149,16 @@ const path=require('node:path');
   console.log('PASS wolf reward and earned fangs delivered to Borin through UI');
 
   const spend=async()=>{
-   await page.locator('#character-btn').click();
+   await openPausePanel(page,'character');
    while((await read()).attributePoints>0){const h=await read(),attribute=h.stats.endurance<=h.stats.strength?'Выносливость':'Сила';await page.getByRole('button',{name:'Увеличить '+attribute,exact:true}).click();}
-   await page.locator('.character-heading button').click();
-   await page.locator('#skills-btn').click();await page.locator('.skill-select').first().click();
+   await page.locator('.character-heading button').click();await resumeGame(page);
+   await openPausePanel(page,'skills');await page.locator('.skill-select').first().click();
    while((await read()).skillPoints>0&&((await read()).learnedSkills.warrior_0||0)<2)await page.getByRole('button',{name:'Изучить / улучшить (+1)',exact:true}).click();
    await page.locator('.skill-slot-choices button').first().click();
    if((await read()).level>=5&&(await read()).skillPoints>0){
     await page.locator('.skill-select').nth(1).click();while((await read()).skillPoints>0&&((await read()).learnedSkills.warrior_1||0)<5)await page.getByRole('button',{name:'Изучить / улучшить (+1)',exact:true}).click();await page.locator('.skill-slot-choices button').nth(1).click();
    }
-   await page.locator('.skill-heading button').click();
+   await page.locator('.skill-heading button').click();await resumeGame(page);
   };
   await spend();
   const clickReady=async locator=>{if(!await locator.isEnabled())return;await release();try{await locator.click({timeout:5000});}catch(error){if(await locator.isEnabled())throw error;}};
@@ -207,9 +208,9 @@ const path=require('node:path');
   await walkTo({x:1000,y:1120},25);
   const eligible=(await read()).inventory.filter(item=>item.slot&&item.level<=(5)&&(!item.allowedClasses||item.allowedClasses.includes('warrior')));
   if(eligible.length){
-   await page.locator('#inventory-btn').click();await page.getByRole('button',{name:'II · Рюкзак',exact:true}).click();
+   await openPausePanel(page,'inventory');await page.getByRole('button',{name:'II · Рюкзак',exact:true}).click();
    for(const item of eligible){await page.locator('.inventory-grid').getByRole('button',{name:item.name,exact:true}).first().click();await page.getByRole('button',{name:'Надеть',exact:true}).click();}
-   await page.locator('.inventory-heading button').click();
+   await page.locator('.inventory-heading button').click();await resumeGame(page);
   }
   await page.locator('.npc-interact').click();if(await page.locator('.npc-selector select').count())await page.locator('.npc-selector select').selectOption('mira');await page.getByRole('button',{name:'Торговля',exact:true}).click();
   while(await page.locator('.npc-shop-row').getByRole('button',{name:/^Продать/}).count())await page.locator('.npc-shop-row').getByRole('button',{name:/^Продать/}).first().click();
@@ -219,7 +220,7 @@ const path=require('node:path');
   while((await read()).potions.hp<12&&(await read()).gold>=10)await page.locator('.npc-shop-row').first().getByRole('button',{name:'Купить',exact:true}).click();
   await page.locator('.npc-heading button').click();
   const sword=(await read()).inventory.find(i=>i.id==='weapon_warrior_1');
-  if(sword){await page.locator('#inventory-btn').click();await page.getByRole('button',{name:'II · Рюкзак',exact:true}).click();await page.getByRole('button',{name:'Стальной меч',exact:true}).click();await page.getByRole('button',{name:'Надеть',exact:true}).click();await page.locator('.inventory-heading button').click();}
+  if(sword){await openPausePanel(page,'inventory');await page.getByRole('button',{name:'II · Рюкзак',exact:true}).click();await page.getByRole('button',{name:'Стальной меч',exact:true}).click();await page.getByRole('button',{name:'Надеть',exact:true}).click();await page.locator('.inventory-heading button').click();await resumeGame(page);}
   console.log('PASS earned gold spent on dungeon supplies',JSON.stringify({gear:(await read()).equipment,goldAfterGear,potions:(await read()).potions}));
   await recoverBeforeAdvance('first dungeon approach');
   for(const target of [{x:1530,y:1220},{x:1770,y:1600},{x:1820,y:1780}])await walkTo(target,35);

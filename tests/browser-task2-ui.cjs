@@ -1,3 +1,4 @@
+const {openPausePanel,resumeGame}=require('./panelNavigation.cjs');
 // Explicit level/skill-point fixtures unlock coverage. Learning, assignments,
 // casting, pause panels, locale changes and save restoration use real UI.
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
@@ -13,13 +14,13 @@ assert.ok(languages.length&&languages.every(l=>Object.hasOwn(words,l)));assert.o
   const p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));const w=words[language];await p.goto(host.url);await p.getByRole('button',{name:w.play,exact:true}).click();await p.getByRole('button',{name:w.create,exact:true}).first().click();await p.locator('.class-card:has(.hero-'+classId+')').click();await p.locator('input').fill('InterfaceQA');await p.getByRole('button',{name:w.start,exact:true}).click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.hero?.name==='InterfaceQA');
   await p.evaluate(()=>{const s=Auralis.game.scene.getScene('world');s.hero.level=42;s.hero.skillPoints=25;s.refreshHud();});
   assert.equal(await p.locator('#active-effects').isVisible(),false,'permanent passives and cooldowns must not create timed badges');
-  await p.locator('#skills-btn').click();await p.locator('#skills-tab-active').click();assert.equal(await p.locator('.skill-select').count(),5);
+  await openPausePanel(p,'skills');await p.locator('#skills-tab-active').click();assert.equal(await p.locator('.skill-select').count(),5);
   const assigned=[0,1,3,4];
   for(let slot=0;slot<4;slot++){await p.locator('[data-skill-id="'+classId+'_'+assigned[slot]+'"]').click();await p.locator('.skill-learn').click();await p.locator('.skill-slot-choices button').nth(slot).click();}
   await p.locator('[data-skill-id="'+classId+'_0"]').click();await p.locator('.skill-remove').click();assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.skillSlots[0]),null);await p.locator('.skill-slot-choices button').first().click();
   await p.locator('#skills-tab-passive').click();assert.equal(await p.locator('.skill-select').count(),2);await p.locator('.skill-select').first().click();assert.equal(await p.locator('.skill-learn,.skill-slot-choices,.skill-remove').count(),0,'automatic properties must not spend points or occupy active slots');
   const skillText=await p.locator('#skills-panel').innerText();if(language!=='ru')assert.doesNotMatch(skillText,/[А-Яа-яЁё]/);assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.skillPoints),21);
-  await p.locator('.skill-heading button').click();
+  await p.locator('.skill-heading button').click();await resumeGame(p);
   const effectIndex=classId==='archer'?3:1,effectId=classId+'_'+effectIndex,buttonIndex=assigned.indexOf(effectIndex);await p.locator('#skills .skill').nth(buttonIndex).tap();
   await p.locator('[data-effect-id="'+effectId+'"]').waitFor({state:'visible'});const badge=p.locator('[data-effect-id="'+effectId+'"]');assert.match(await badge.innerText(),/^\d+(?::\d{2})?$/);assert.equal(await badge.locator('svg').count(),1);assert.ok(await badge.getAttribute('aria-label'));if(language==='ru'&&classId==='warrior')await p.screenshot({path:root+'/work/browser/task2-hud.png'});
   if(language==='ru')for(const [width,height]of [[844,390],[640,360],[740,320],[915,412]]){

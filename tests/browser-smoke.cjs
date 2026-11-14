@@ -1,3 +1,4 @@
+const {openPausePanel,resumeGame,closeToGame,openMap}=require('./panelNavigation.cjs');
 const {openNpc,openStorage}=require('./browserHarness.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
@@ -20,12 +21,12 @@ await run('NPC quest accept',async()=>{await scene(()=>{const s=Auralis.game.sce
 await run('quest tracker opens actual objective coordinates on map',async()=>{await p.getByRole('button',{name:'Открыть цели заданий на карте',exact:true}).click();assert.ok((await p.locator('.map-quest-objectives').textContent()).includes('X 1500 / Y 1400'));await p.locator('.world-map header button').click()});
 await run('basic attack hold and loot',async()=>{await scene(()=>{const s=Auralis.game.scene.getScene('world');const m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');s.hero.x=1300;s.hero.y=1240;m.x=m.homeX=1330;m.y=m.homeY=1240;m.hp=1;m.returning=false;m.patrolTarget=null;for(const other of s.monsters.monsters.filter(other=>other!==m)){other.x=2200;other.y=2200;}});await down('#attack');await p.waitForFunction(()=>Auralis.game.scene.getScene('world').hero.xp>=15,null,{timeout:20000});await up();assert.ok(await scene(()=>Auralis.game.scene.getScene('world').hero.xp)>=15);assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.quests.forestWolves.progress),1)});
 await run('damage and death respawn',async()=>{await scene(()=>{const s=Auralis.game.scene.getScene('world');s.hero.x=1450;s.hero.y=1320;const m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-1');m.x=1450;m.y=1320;m.homeX=1450;m.homeY=1320;m.lastHit=-99999;m.returning=false;});const old=await scene(()=>Auralis.game.scene.getScene('world').hero.hp);await p.waitForFunction(old=>Auralis.game.scene.getScene('world').hero.hp<old,old);await scene(()=>Auralis.game.scene.getScene('world').hero.hp=0);await p.waitForFunction(()=>Auralis.game.scene.getScene('world').hero.x===1030);assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.x),1030)});
-await run('XP level and stat allocation UI',async()=>{await p.evaluate(async()=>{const {grantXp}=await import('/js/systems/progression.js');const s=Auralis.game.scene.getScene('world');grantXp(s.hero,80);s.refreshHud()});assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.level),2);await p.locator('#character-btn').click();await p.getByRole('button',{name:'Увеличить Сила'}).click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.stats.strength),6);await p.keyboard.press('Escape')});
-await run('learn and assign skill UI',async()=>{await p.locator('#skills-btn').click();await p.locator('.skill-select').first().click();await p.getByRole('button',{name:'Изучить / улучшить (+1)',exact:true}).click();await p.locator('.skill-slot-choices button').first().click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.skillSlots[0]),'warrior_0');await p.keyboard.press('Escape');assert.equal(await p.locator('#skills .skill').first().isEnabled(),true)});
+await run('XP level and stat allocation UI',async()=>{await p.evaluate(async()=>{const {grantXp}=await import('/js/systems/progression.js');const s=Auralis.game.scene.getScene('world');grantXp(s.hero,80);s.refreshHud()});assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.level),2);await openPausePanel(p,'character');await p.getByRole('button',{name:'Увеличить Сила'}).click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.stats.strength),6);await closeToGame(p)});
+await run('learn and assign skill UI',async()=>{await openPausePanel(p,'skills');await p.locator('.skill-select').first().click();await p.getByRole('button',{name:'Изучить / улучшить (+1)',exact:true}).click();await p.locator('.skill-slot-choices button').first().click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.skillSlots[0]),'warrior_0');await closeToGame(p);assert.equal(await p.locator('#skills .skill').first().isEnabled(),true)});
 await run('skill uses mana cooldown and damage',async()=>{await scene(()=>{const s=Auralis.game.scene.getScene('world');s.hero.x=1450;s.hero.y=1320;s.hero.mp=100;const m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-1');m.hp=100;m.maxHp=100;m.x=1490;m.y=1320;s.refreshSkillSlots()});await p.locator('#skills .skill').first().click();assert.ok(await scene(()=>Auralis.game.scene.getScene('world').hero.mp)<100);assert.equal(await p.locator('#skills .skill').first().isDisabled(),true)});
-await run('equip item UI',async()=>{await p.evaluate(async()=>{const {addItem}=await import('/js/equipment/items.js');addItem(Auralis.game.scene.getScene('world').hero,{id:'rustySword',rarity:'common'});});await p.locator('#inventory-btn').click();await p.getByRole('button',{name:'II · Рюкзак',exact:true}).click();await p.getByRole('button',{name:'Ржавый меч',exact:true}).click();await p.getByRole('button',{name:'Надеть',exact:true}).click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.equipment.weapon.id),'rustySword');await p.keyboard.press('Escape')});
+await run('equip item UI',async()=>{await p.evaluate(async()=>{const {addItem}=await import('/js/equipment/items.js');addItem(Auralis.game.scene.getScene('world').hero,{id:'rustySword',rarity:'common'});});await openPausePanel(p,'inventory');await p.getByRole('button',{name:'II · Рюкзак',exact:true}).click();await p.getByRole('button',{name:'Ржавый меч',exact:true}).click();await p.getByRole('button',{name:'Надеть',exact:true}).click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.equipment.weapon.id),'rustySword');await closeToGame(p)});
 await run('potion consumable',async()=>{await scene(()=>{const s=Auralis.game.scene.getScene('world');s.hero.x=1030;s.hero.y=1140;s.hero.hp=20;s.refreshPotions()});await p.getByRole('button',{name:'Зелье здоровья',exact:true}).click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.potions.hp),2)});
-await run('autosave while panel open',async()=>{await p.locator('#skills-btn').click();await scene(()=>Auralis.game.scene.getScene('world').hero.name='Persisted');await p.waitForTimeout(5300);assert.equal(await scene(()=>Auralis.Save.load(1).name),'Persisted');await p.keyboard.press('Escape')});
+await run('autosave while panel open',async()=>{await openMap(p);await scene(()=>Auralis.game.scene.getScene('world').hero.name='Persisted');await p.waitForTimeout(5300);assert.equal(await scene(()=>Auralis.Save.load(1).name),'Persisted');await closeToGame(p)});
 await run('reload restores full hero',async()=>{await p.reload();await p.getByRole('button',{name:'Продолжить',exact:true}).click();await p.getByRole('button',{name:'Продолжить',exact:true}).first().click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.hero?.name==='Persisted');const h=await scene(()=>Auralis.game.scene.getScene('world').hero);assert.equal(h.name,'Persisted');assert.equal(h.equipment.weapon.id,'rustySword');assert.equal(h.skillSlots[0],'warrior_0');assert.equal(h.potions.hp,2);assert.equal(h.quests.forestWolves.progress,1);assert.equal(h.stats.strength,6)});
 await run('mobile viewport no overflow and 44px skill targets',async()=>{for(const [width,height] of [[844,390],[640,360],[740,320]]){await p.setViewportSize({width,height});await p.waitForTimeout(150);assert.ok(await scene(()=>document.documentElement.scrollWidth<=innerWidth));const r=await p.locator('#skills .skill').first().boundingBox();assert.ok(r.width>=44&&r.height>=44)}});
 await run('quest completion, reward and merchant',async()=>{
@@ -37,18 +38,18 @@ await run('quest completion, reward and merchant',async()=>{
  await scene(()=>{const s=Auralis.game.scene.getScene('world');s.hero.gold+=20;s.npcPanel.render();});
  const count=await scene(()=>Auralis.game.scene.getScene('world').hero.potions.hp);
  await p.locator('.npc-panel').getByRole('button',{name:'Купить',exact:true}).first().click();
- assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.potions.hp),count+1);await p.keyboard.press('Escape');
+ assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.potions.hp),count+1);await closeToGame(p);
 });
 await run('shared storage deposit and withdraw',async()=>{
  await p.evaluate(async()=>{const {addItem}=await import('/js/equipment/items.js');const s=Auralis.game.scene.getScene('world');s.hero.x=1090;s.hero.y=1050;addItem(s.hero,{id:'leatherBoots',rarity:'common'});});
  await p.waitForTimeout(200);await openStorage(p,'borin');
  await p.getByRole('button',{name:'Положить: Кожаные сапоги',exact:true}).click();
  assert.equal(await p.evaluate(async()=>{const {SharedStorage}=await import('/js/systems/storage.js');return SharedStorage.load().some(i=>i.id==='leatherBoots');}),true);
- await p.getByRole('button',{name:'Забрать: Кожаные сапоги',exact:true}).click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.inventory.some(i=>i.id==='leatherBoots')),true);await p.keyboard.press('Escape');
+ await p.getByRole('button',{name:'Забрать: Кожаные сапоги',exact:true}).click();assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.inventory.some(i=>i.id==='leatherBoots')),true);await closeToGame(p);
 });
 await run('all game panels close by touch and portrait hint works',async()=>{
- for(const [trigger,header] of [['#inventory-btn','.inventory-heading'],['#character-btn','.character-heading'],['#skills-btn','.skill-heading']]){
-  await p.locator(trigger).click();await p.locator(header+' button').last().click();
+ for(const [trigger,header] of [['inventory','.inventory-heading'],['character','.character-heading'],['skills','.skill-heading']]){
+  await openPausePanel(p,trigger);await p.locator(header+' button').last().click();await resumeGame(p);
   assert.equal(await scene(()=>{const s=Auralis.game.scene.getScene('world');return !!(s.inventoryPanel.opened||s.characterPanel.opened||s.skillsPanel.opened);}),false);
  }
  await p.setViewportSize({width:390,height:844});await p.locator('#rotate-hint').waitFor({state:'visible'});assert.equal(await p.locator('#rotate-hint').isVisible(),true);
@@ -65,7 +66,7 @@ await run('pause closes overlays and resume restores active scene',async()=>{
  await p.getByRole('button',{name:'Продолжить',exact:true}).click();assert.equal(await scene(()=>Auralis.game.scene.isActive('world')),true);
 });
 await run('save backup rejects invalid input without changing character',async()=>{
- await p.getByRole('button',{name:'Резервные копии',exact:true}).click();
+ await openPausePanel(p,'backups');
  await p.getByLabel('Или вставь JSON сохранения').fill('{broken');await p.getByRole('button',{name:'Проверить сохранение',exact:true}).click();
  assert.ok((await p.locator('.save-status').innerText()).includes('JSON'));
  assert.equal(await scene(()=>Auralis.game.scene.getScene('world').hero.name),'Persisted');
@@ -74,10 +75,10 @@ await run('save backup rejects invalid input without changing character',async()
  await p.getByLabel('Или вставь JSON сохранения').fill(JSON.stringify({version:2,region:'unknown',x:9000,y:9000}));await p.getByRole('button',{name:'Проверить сохранение',exact:true}).click();
  assert.ok((await p.locator('.save-status').innerText()).includes('недоступна'));
  assert.equal(await scene(()=>Auralis.Save.load(1).name),'Persisted');
- await p.locator('.save-panel header button').click();
+ await p.locator('.save-panel header button').click();await resumeGame(p);
 });
 await run('download and confirmed import restore the character across scene restart',async()=>{
- await p.getByRole('button',{name:'Резервные копии',exact:true}).click();
+ await openPausePanel(p,'backups');
  const downloading=p.waitForEvent('download');await p.getByRole('button',{name:'Скачать персонажа',exact:true}).click();
  const download=await downloading;const data=JSON.parse(fs.readFileSync(await download.path(),'utf8'));assert.equal(data.name,'Persisted');assert.equal(data.equipment.weapon.id,'rustySword');
  data.name='BackupHero';data.gold=1234;
