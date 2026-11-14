@@ -17,7 +17,7 @@ export class Menu{
  button(text,fn,cls=''){const b=this.element('button',text,cls);b.type='button';b.addEventListener('click',fn);return b;}
  render(){applyShellLocale(this.lang);document.documentElement.lang=this.lang;const root=this.root;root.dataset.page=this.page;root.dataset.fromPause=String(this.settingsReturn==='pause');root.replaceChildren();const panel=this.element('section',undefined,'menu-panel');root.append(panel);panel.append(this.element('h1','AURALIS'));panel.append(this.element('p',uiText('FANTASY ACTION RPG',this.lang),'menu-subtitle'));const row=this.element('div',undefined,'menu-content');panel.append(row);
  if(this.page==='home'){
- const title=panel.querySelector('h1');title.replaceChildren();const logo=this.element('img');logo.src='./assets/ui/auralis-logo.webp';logo.alt='AURALIS';logo.width=2172;logo.height=724;logo.fetchPriority='high';title.append(logo);
+ const title=panel.querySelector('h1');title.replaceChildren();const logo=this.element('img');logo.src='./assets/ui/auralis-logo.webp';logo.alt='AURALIS';logo.width=1302;logo.height=434;logo.fetchPriority='high';title.append(logo);
  const actions={new:()=>{const free=Save.list().find(item=>!item.exists);if(free){this.slot=free.slot;this.draftName='';this.show('create');}else this.show('slots');},continue:()=>this.show('slots'),settings:()=>{this.settingsReturn='home';this.show('settings');},credits:()=>this.show('credits'),exit:()=>this.show('exit')};
  for(const [action,fn] of Object.entries(actions)){const b=this.button('',fn,'medieval-menu-button');b.dataset.menuAction=action;b.innerHTML=menuIcon(action);b.append(this.element('span',MENU_COPY[this.lang][action]));row.append(b);}
  }
