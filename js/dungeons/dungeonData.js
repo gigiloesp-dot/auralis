@@ -5,9 +5,9 @@ const titles=[
 ];
 // Entrances lie beside the region roads. World geometry reserves these clearings.
 const locations=[['forest',5,1820,1780],['forest',10,4880,4860],['forest',18,9050,8950],['north',22,1960,2240],['north',25,4100,4460],['north',29,7500,7820],['north',33,10580,10870],['ancient',35,2060,2240],['ancient',36,4400,4440],['ancient',38,6940,6900],['ancient',40,9550,9300],['ancient',42,11960,11720]];
-// Cleared rooms remain usable for recovery and backtracking. Outdoor creatures
-// retain their short timer; dungeon bosses keep their separate one-hour timer.
-export const DUNGEON_MINION_RESPAWN_MS=5*60*1000;
+// No ordinary creature respawns during a visit. A finite far-future value keeps
+// v2 saves compatible; the session killed-ID ledger is the authoritative rule.
+export const DUNGEON_MINION_RESPAWN_MS=8640000000000000;
 export const DIFFICULTIES=Object.freeze({easy:{id:'easy',multiplier:1,names:{ru:'Лёгкая',en:'Easy',es:'Fácil'}},medium:{id:'medium',multiplier:1.2,names:{ru:'Средняя',en:'Medium',es:'Media'}},hard:{id:'hard',multiplier:1.3,names:{ru:'Сложная',en:'Hard',es:'Difícil'}}});
 export const DUNGEONS=Object.freeze(locations.map(([region,level,x,y],index)=>Object.freeze({id:'dungeon'+(index+1),number:index+1,region,level,x,y,names:{ru:titles[index][0],en:titles[index][1],es:titles[index][2]},size:index<3?'small':index<7?'medium':'large',bossCount:index<3?1:index<7?2:3})));
 export const dungeonDefinition=id=>DUNGEONS.find(d=>d.id===id);
