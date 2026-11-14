@@ -49,6 +49,13 @@ const path=require('node:path');
     s.world.load({region:'forest',x:1030,y:1140});await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);
     return {chunks,monsters};
    });
+   // Region changes can queue atlas downloads beyond the two rendering frames.
+   // Compare resident resources only after all pending loads have completed and
+   // their zero-owner leases have been released. Keep every original bound.
+   await page.waitForFunction(()=>{const s=Auralis.game.scene.getScene('world');return !s.load.isLoading()&&s.actorTextures.diagnostics.actorPending===0;});
+   const ownership=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),expected=new Map(),keep=e=>{if(e)expected.set(e.key,(expected.get(e.key)||0)+1);};keep(s.rig.painted?.entry);for(const c of s.world.chunkWorld.chunks.values())for(const a of c.npcActors||[])keep(a.entry);for(const m of s.monsters.monsters)keep(m.painted?.entry);return {expected:[...expected].sort(),actual:[...s.actorTextures.entries].map(([key,r])=>[key,r.refs]).sort(),textures:s.textures.getTextureKeys().filter(key=>key.startsWith('actor-')).sort()};});
+   assert.deepEqual(ownership.actual,ownership.expected,'Every atlas lease must have exactly its live owners');
+   assert.deepEqual(ownership.textures,ownership.expected.map(([key])=>key),'Released or orphan actor textures must not survive loader completion');
    await cdp.send('HeapProfiler.collectGarbage');
    const metrics=(await cdp.send('Performance.getMetrics')).metrics;
    const sample=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world');return {children:s.children.list.length,textures:s.textures.getTextureKeys().length,dom:document.querySelectorAll('*').length,loadedChunks:s.world.diagnostics.loadedChunks,loadedMonsters:s.monsters.monsters.length,textureScratchReferences:Phaser.GameObjects.Graphics.TargetCamera.renderList.length};});

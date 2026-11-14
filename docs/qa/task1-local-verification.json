@@ -63,6 +63,12 @@
       "archivedFile": "docs/qa/task1-public-release8-verified.log",
       "sha256": "e3ee48310c4eb7accc8781fc12965bcea3063938b40ee56f67ac088df407cfef",
       "result": "PASS real game creation, touch, quest, save/reload, three regions and three hard dungeon entries; no JavaScript errors [{\"region\":\"forest\",\"width\":12000,\"camps\":94,\"normal\":895},{\"region\":\"north\",\"width\":14000,\"camps\":85,\"normal\":805},{\"region\":\"ancient\",\"width\":15000,\"camps\":75,\"normal\":715}]"
+    },
+    {
+      "file": "work/browser/task1-soak-settled-final.log",
+      "archivedFile": "docs/qa/task1-soak-settled-final.log",
+      "sha256": "2e9372f117a6908d057238418feaafa116ccc44c35d0d2bc3b157f5c7df9085c",
+      "result": "PASS7 resource cycles,21 regional dungeon entries/exits; no JavaScript errors; elapsedSeconds=42"
     }
   ],
   "finalTestedHead": "ce787351fed4d24653a92d1e65a314c741ee5787"
