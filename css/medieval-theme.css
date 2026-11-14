@@ -63,3 +63,8 @@
 :is(#menu,#inventory-panel,#skills-panel,.npc-panel,.storage-panel) button:is([aria-pressed=true],.filled){background:linear-gradient(#78532b,#4a301a)!important}
 #skills-panel .skill-remove{background:linear-gradient(#773a2b,#471e18)!important}
 #menu .slot-row button{min-height:44px}
+/* Public component classes for future windows, without layout assumptions. */
+.auralis-panel{box-sizing:border-box;border:1px solid var(--ui-gold);padding:14px;box-shadow:inset 0 0 0 2px #1a110c,0 12px 36px #0009}
+.auralis-button{box-sizing:border-box;border:1px solid var(--ui-gold);min-height:44px;padding:8px 14px;font:inherit}
+.auralis-card{box-sizing:border-box;border:1px solid var(--ui-edge);border-radius:var(--ui-radius);padding:10px}
+@media(orientation:landscape) and (max-height:430px){#menu[data-page=slots] .slot-row{padding:4px 7px}}

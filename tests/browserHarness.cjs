@@ -36,7 +36,22 @@ async function collectNearbyLoot(page,walkTo){
  for(const d of candidates){
   const current=await page.evaluate(id=>{const s=Auralis.game.scene.getScene('world'),d=s.groundLoot.visibleDrops().find(d=>d.id===id);return d?{distance:Math.hypot(d.x-s.hero.x,d.y-s.hero.y),slots:s.hero.inventory.length}:null;},d.id);
   if(!current||current.slots>=60)continue;
-  if(current.distance>75){if(!walkTo)continue;await walkTo({x:d.x,y:d.y},30);}
+  if(current.distance>75){
+   if(!walkTo)continue;
+   // Loot can lie beside scenery. Reach a walkable point inside the real
+   // pickup radius rather than requiring the character to stand on its centre.
+   const approach=await page.evaluate(drop=>{
+    const s=Auralis.game.scene.getScene('world'),origin={x:s.hero.x,y:s.hero.y},step=12;
+    const clear=(a,b)=>{for(let i=1;i<=4;i++)if(!s.world.isWalkable(a.x+(b.x-a.x)*i/4,a.y+(b.y-a.y)*i/4))return false;return true;};
+    const queue=[origin],seen=new Set(['0,0']);
+    for(let i=0;i<queue.length&&i<3000;i++){
+     const p=queue[i];if(Math.hypot(p.x-drop.x,p.y-drop.y)<=50)return p;
+     for(const [dx,dy]of [[step,0],[-step,0],[0,step],[0,-step]]){const next={x:p.x+dx,y:p.y+dy},key=Math.round((next.x-origin.x)/step)+','+Math.round((next.y-origin.y)/step);if(seen.has(key)||Math.hypot(next.x-origin.x,next.y-origin.y)>260||!clear(p,next))continue;seen.add(key);queue.push(next);}
+    }
+    throw Error('No reachable loot pickup point: '+drop.id);
+   },d);
+   await walkTo(approach,15);
+  }
   await tapGroundDrop(page,d.id);
   await page.waitForFunction(id=>!Auralis.game.scene.getScene('world').hero.worldState.groundLoot.drops[id],d.id,{timeout:3000});collected++;
  }
