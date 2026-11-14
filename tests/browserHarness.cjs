@@ -42,4 +42,14 @@ async function collectNearbyLoot(page,walkTo){
  }
  return collected;
 }
-module.exports={startServer,launchOptions,root,openNpc,openStorage,tapGroundDrop,collectNearbyLoot};
+// Schedule the native release independently of the touchStart acknowledgement.
+// Under software rendering its ACK can arrive several frames late; awaiting it
+// before releasing turns a short approach gesture into a long full-speed run.
+async function pulseJoystick(cdp,centre,attackPoint,joyWidth,dx,dy,holdAttack=false,duration=70){
+ const length=Math.hypot(dx-dy,(dx+dy)/2),scale=length?joyWidth*.24/length:0,point={id:1,x:centre.x+(dx-dy)*scale,y:centre.y+(dx+dy)/2*scale};
+ const actions=[cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]})];
+ if(holdAttack)actions.push(cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point,{id:2,...attackPoint}]}));
+ actions.push(new Promise((resolve,reject)=>setTimeout(()=>cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]}).then(resolve,reject),duration)));
+ await Promise.all(actions);
+}
+module.exports={startServer,launchOptions,root,openNpc,openStorage,tapGroundDrop,collectNearbyLoot,pulseJoystick};

@@ -1,4 +1,4 @@
-const {startServer,launchOptions,root,openNpc,collectNearbyLoot}=require('./browserHarness.cjs');
+const {startServer,launchOptions,root,openNpc,collectNearbyLoot,pulseJoystick}=require('./browserHarness.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const path=require('node:path');
@@ -89,6 +89,15 @@ const path=require('node:path');
       console.log('JOURNEY walked',JSON.stringify({target,tolerance,x:settled.x,y:settled.y,captured:captured?{pointerId:captured.pointerId,axis:captured.axis}:null}));return;
      }
      continue;
+    }
+    if(Math.hypot(h.x-target.x,h.y-target.y)<90){
+     await release();const close=await read();
+     if(Math.hypot(close.x-target.x,close.y-target.y)<=tolerance)continue;
+     const threatened=close.region.startsWith('dungeon:')&&close.monsters.some(m=>Math.hypot(m.x-close.x,m.y-close.y)<220);
+     if(maintainWalkingHealth)await maintainWalkingHealth(close,threatened);
+     const dir=await directionTo(target);await pulseJoystick(cdp,centre,attackPoint,joy.width,dir.x,dir.y,threatened);
+     const stopped=await read();assert.equal(stopped.pointerId,null);assert.equal(stopped.attackPointerId,null);
+     trace.push({x:stopped.x,y:stopped.y,axis:stopped.axis,pointerId:stopped.pointerId,attackPointerId:stopped.attackPointerId});if(trace.length>12)trace.shift();continue;
     }
     // Panels and browser capture cancellation can end a gesture independently
     // of the driver. Reacquire through a real touchStart rather than writing axis.
