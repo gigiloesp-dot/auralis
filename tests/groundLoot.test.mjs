@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createCharacter} from '../js/characters/Character.js';
 import {Save} from '../js/systems/save.js';
 import {rollMonsterLoot,rollLoot} from '../js/monsters/loot.js';
-import {createGroundDrops,groundLootState,normalizeGroundLoot,lootCategory,pickupGroundDrop,materializeGroundDrops,LOOT_PICKUP_RADIUS} from '../js/loot/groundLoot.js';
+import {createGroundDrops,groundLootState,normalizeGroundLoot,lootCategory,pickupGroundDrop,materializeGroundDrops,LOOT_PICKUP_RADIUS,nearbyGroundDrops,pickupNearbyGroundDrops} from '../js/loot/groundLoot.js';
 import {project} from '../js/world/projection.js';
 import {GroundLootSystem} from '../js/loot/GroundLootSystem.js';
 const hero=extra=>createCharacter({x:1000,y:1000,...extra});
@@ -16,7 +16,7 @@ test('loot rolls preserve independent material/equipment checks without touching
  const h=hero(),before=JSON.stringify(h),items=rollMonsterLoot(h,{loot:'wolf',level:1},()=>0);
  assert.equal(items.length,3);assert.deepEqual(items.map(i=>i.id),['wolfFang','wolfPelt','weapon_warrior_0']);assert.ok(items.every(i=>i.rarity==='epic'));assert.equal(JSON.stringify(h),before);
  const sequence=(...values)=>()=>values.shift()??.99;
- for(const [r,rarity]of [[0,'epic'],[.005,'rare'],[.02,'uncommon'],[.1,'common']])assert.equal(rollLoot(h,{type:'other',level:1},sequence(r,0,0))[0].rarity,rarity);
+ for(const [r,rarity]of [[0,'epic'],[.0005,'rare'],[.002,'uncommon'],[.008,'common']])assert.equal(rollLoot(h,{type:'other',level:1},sequence(r,0,0))[0].rarity,rarity);
  assert.deepEqual(rollLoot(h,{type:'other',level:1},()=>.99),[]);
 });
 test('weapon and armor families share anonymous silhouettes, remaining items use wooden chests',()=>{
@@ -76,4 +76,33 @@ test('blocked pending placements have a two-second, single-job, nearby-only retr
  system.update(true);const once=checks;assert.ok(once>0&&once<=2400);
  for(let now=150;now<2000;now+=150){scene.playNow=now;system.update(true);}assert.equal(checks,once);
  scene.playNow=2000;system.update(true);assert.equal(state.pending.empty,undefined,'the second job gets its own turn');assert.ok(state.pending.blocked&&state.pending.far);assert.equal(checks,once,'far sources and empty jobs do not perform floor searches');system.destroy();
+});
+
+
+test('task4 nearby query groups corpses by real world distance180, never screen distance',()=>{
+ const h=hero();assert.equal(LOOT_PICKUP_RADIUS,180);
+ const a=drop(h,[sword],1).ids[0],b=drop(h,[sword],2).ids[0],c=drop(h,[sword],3).ids[0],state=groundLootState(h);
+ Object.assign(state.drops[a],{x:h.x+180,y:h.y});Object.assign(state.drops[b],{x:h.x,y:h.y+180.01});Object.assign(state.drops[c],{x:h.x,y:h.y,region:'north'});
+ assert.deepEqual(nearbyGroundDrops(h).map(d=>d.id),[a]);assert.equal(pickupGroundDrop(h,b,{radius:9999}).reason,'distance');
+ assert.equal(pickupGroundDrop(h,a).ok,true);assert.ok(state.drops[b]&&state.drops[c]);
+});
+test('take-all retains equipment that cannot fit but still merges eligible material stacks',()=>{
+ const h=hero({inventory:[...Array.from({length:59},()=>({...sword})),{id:'wolfFang',rarity:'common',quantity:99}]}),state=groundLootState(h);
+ const ids=drop(h,[sword,{id:'wolfFang',rarity:'common',quantity:3}]).ids;for(const id of ids)Object.assign(state.drops[id],{x:h.x,y:h.y});
+ const r=pickupNearbyGroundDrops(h);assert.equal(r.picked.length,1);assert.equal(r.picked[0].item.quantity,1);assert.equal(r.picked[0].remaining,2);assert.equal(h.inventory.at(-1).quantity,100);
+ assert.ok(state.drops[ids[0]]);assert.equal(state.drops[ids[1]].item.quantity,2);assert.equal(pickupNearbyGroundDrops(h).picked.length,0);
+ h.inventory.shift();assert.equal(pickupNearbyGroundDrops(h).picked.length,1);assert.equal(h.inventory.length,60);assert.ok(state.drops[ids[1]],'still-full material remains');
+});
+test('take-all saves each actual transfer and ignores repeated calls after reload',()=>{
+ memoryStorage();const h=hero(),state=groundLootState(h),ids=drop(h,[sword,{id:'wolfFang',rarity:'common',quantity:2}]).ids;for(const id of ids)Object.assign(state.drops[id],{x:h.x,y:h.y});
+ let saves=0;const result=pickupNearbyGroundDrops(h,{save:()=>{saves++;return Save.write(h,1);}});assert.equal(result.picked.length,2);assert.equal(saves,2);assert.equal(h.inventory.length,2);
+ const restored=createCharacter(Save.load(1));assert.equal(pickupNearbyGroundDrops(restored).picked.length,0);assert.equal(restored.inventory.length,2);assert.equal(Object.keys(groundLootState(restored).drops).length,0);
+});
+test('partial take-all rolls back exactly on quota failure and rejects reentrant pickup',()=>{
+ const h=hero({inventory:[...Array.from({length:59},()=>({...sword})),{id:'wolfFang',rarity:'common',quantity:99}]}),id=drop(h,[{id:'wolfFang',rarity:'common',quantity:3}]).ids[0],before=JSON.stringify(h);
+ assert.equal(pickupNearbyGroundDrops(h,{save:()=>false}).failed[0].reason,'save');assert.equal(JSON.stringify(h),before);
+ const result=pickupGroundDrop(h,id,{allowPartial:true,save:()=>{assert.equal(pickupGroundDrop(h,id).reason,'busy');return true;}});assert.equal(result.ok,true);assert.equal(result.remaining,2);assert.equal(h.inventory.at(-1).quantity,100);
+});
+test('an open-window snapshot cannot authorize take-all after movement or region change',()=>{
+ const h=hero(),id=drop(h).ids[0];assert.equal(nearbyGroundDrops(h).length,1);h.x+=500;assert.equal(pickupNearbyGroundDrops(h).picked.length,0);assert.equal(pickupGroundDrop(h,id).reason,'distance');h.x-=500;h.region='north';assert.equal(pickupNearbyGroundDrops(h).picked.length,0);assert.ok(groundLootState(h).drops[id]);
 });

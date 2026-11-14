@@ -154,3 +154,28 @@ jobs:
           name: browser-task2-${{ matrix.language }}
           path: work/browser/
           if-no-files-found: ignore
+
+  task4_loot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Grouped loot window, durable single and bulk pickup, world radius and touch controls
+        run: npm run test:browser:task4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-task4
+          path: work/browser/
+          if-no-files-found: ignore

@@ -32,9 +32,9 @@ test('non-wolf kills do not advance wolf quest and rewards happen once',()=>{
  system.hit(boar,999,101);assert.equal(hero.gold,4);
  const wolf=system.monsters[0];system.hit(wolf,999,102);assert.equal(questProgress(hero).progress,1);assert.equal(hero.gold,6);
 });
-test('guardian guarantees rare class equipment even when ordinary loot roll misses',()=>{
+test('guardian uses independent boss chances and never auto-inserts rewards',()=>{
  const hero=createCharacter({classId:'mage',level:5});const drops=rollMonsterLoot(hero,MONSTER_TYPES.forestGuardian,()=>.99);
- assert.equal(drops.length,1);assert.equal(drops[0].rarity,'rare');assert.equal(hero.inventory.length,0,'reward stays on ground until picked up');
+ assert.deepEqual(drops,[],'new mini-boss table can miss every independent group');const success=rollMonsterLoot(hero,MONSTER_TYPES.forestGuardian,()=>0);assert.ok(success.length>=3);assert.ok(success.every(i=>i.rarity!=='legendary'));assert.equal(hero.inventory.length,0,'reward stays on ground until picked up');
 });
 test('dash sweep stops before obstacles, handles coincident targets and reaches clear destination',()=>{
  const start={x:100,y:100},target={x:300,y:100};

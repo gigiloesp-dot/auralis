@@ -1,6 +1,6 @@
 // Run separately after publication: URL plus exact exported source commit.
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
-const {launchOptions,root,openNpc,tapGroundDrop}=require('./browserHarness.cjs');
+const {launchOptions,root,openNpc,pickGroundDrop}=require('./browserHarness.cjs');
 const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-9a-f]{40}$/.test(commit||''))throw Error('Usage: node tests/browser-public.cjs https://public-origin exact-source-SHA');
 (async()=>{const browser=await chromium.launch(launchOptions);try{
  const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
@@ -31,7 +31,7 @@ const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-
  // freezes its movement ability, without changing any damage/death/pickup API.
  // Scope deterministic RNG to loot rolls: Phaser texture UUIDs must retain real
  // randomness while actual attack and damage-label frames run.
- const beforeLoot=await p.evaluate(async()=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0'),{cancelMonsterAbility}=await import('/js/monsters/movementProfiles.js');for(const other of [...s.monsters.monsters])if(other!==m)s.monsters.removeMonster(other);s.monsters.stream=null;cancelMonsterAbility(m);m.x=m.homeX=1370;m.y=m.homeY=1240;m.rootUntil=s.playNow+60000;m.lastAbilityAt=s.playNow+60000;m.hp=1;window.publicOriginalRandom=Math.random;Math.random=()=>new Error().stack.includes('/js/monsters/loot.js')?.1:window.publicOriginalRandom();return s.hero.inventory.length;});
+ const beforeLoot=await p.evaluate(async()=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0'),{cancelMonsterAbility}=await import('/js/monsters/movementProfiles.js');for(const other of [...s.monsters.monsters])if(other!==m)s.monsters.removeMonster(other);s.monsters.stream=null;cancelMonsterAbility(m);m.x=m.homeX=1370;m.y=m.homeY=1240;m.rootUntil=s.playNow+60000;m.lastAbilityAt=s.playNow+60000;m.hp=1;window.publicOriginalRandom=Math.random;Math.random=()=>new Error().stack.includes('/js/monsters/loot.js')?0:window.publicOriginalRandom();return s.hero.inventory.length;});
  try{
   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{id:2,x:attack.x+attack.width/2,y:attack.y+attack.height/2}]});
   try{await p.waitForFunction(()=>!Auralis.game.scene.getScene('world').monsters.monsters.find(m=>m.id==='forest-starter-wolf-0')?.alive);}
@@ -42,7 +42,7 @@ const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-
  const dropId=publicLoot.ids[0];await p.evaluate(id=>{const s=Auralis.game.scene.getScene('world'),d=s.hero.worldState.groundLoot.drops[id];s.hero.x=d.x;s.hero.y=d.y;const point=s.project(d.x,d.y);s.body.setPosition(point.x,point.y);s.cameras.main.centerOn(point.x,point.y);s.groundLoot.update(true);},dropId);
  await p.waitForFunction(()=>Auralis.game.scene.getScene('world').groundLoot.markers.size===3);
  assert.equal(await p.evaluate(()=>[...Auralis.game.scene.getScene('world').groundLoot.markers.values()].every(m=>m.root.list.every(child=>child.type!=='Text'))),true);
- await tapGroundDrop(p,dropId);await p.waitForFunction(id=>!Auralis.game.scene.getScene('world').hero.worldState.groundLoot.drops[id],dropId);
+ await pickGroundDrop(p,dropId);await p.waitForFunction(id=>!Auralis.game.scene.getScene('world').hero.worldState.groundLoot.drops[id],dropId);
  assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.inventory.length),beforeLoot+1);
  await p.reload({waitUntil:'networkidle'});await p.getByRole('button',{name:'Продолжить',exact:true}).click();await p.getByRole('button',{name:'Продолжить',exact:true}).first().click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.groundLoot);
  assert.deepEqual(await p.evaluate(id=>{const s=Auralis.game.scene.getScene('world');return {inventory:s.hero.inventory.length,remaining:Object.keys(s.hero.worldState.groundLoot.drops).length,picked:!!s.hero.worldState.groundLoot.drops[id]};},dropId),{inventory:beforeLoot+1,remaining:2,picked:false});

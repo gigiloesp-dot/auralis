@@ -24,11 +24,17 @@ async function tapGroundDrop(page,id){
  do{
   await page.evaluate(()=>new Promise(requestAnimationFrame));
   point=await page.evaluate(id=>{const s=Auralis.game.scene.getScene('world'),m=s.groundLoot.markers.get(id),c=s.cameras.main;if(!m)return null;return {x:(m.root.x-c.worldView.x)*c.zoom+c.x,y:(m.root.y-7-c.worldView.y)*c.zoom+c.y};},id);
-  if(!point||previous&&Math.hypot(point.x-previous.x,point.y-previous.y)<.7)break;previous=point;
+  if(point&&previous&&Math.hypot(point.x-previous.x,point.y-previous.y)<.7)break;previous=point;
  }while(Date.now()<deadline);
  if(!point)throw Error('No rendered loot marker '+id);
  const viewport=page.viewportSize();if(point.x<0||point.y<0||point.x>viewport.width||point.y>viewport.height)throw Error('Loot marker outside viewport '+JSON.stringify(point));
  await page.touchscreen.tap(point.x,point.y);
+}
+// A marker tap opens details; acquiring an item requires its real pickup button.
+async function pickGroundDrop(page,id,{close=true}={}){
+ await tapGroundDrop(page,id);
+ const row=page.locator('.loot-panel [data-loot-id="'+id+'"]');await row.locator('[data-loot-action=pickup]').tap();
+ const button=page.locator('.loot-panel [data-loot-action=close]');if(close&&await button.isVisible())await button.tap();
 }
 async function collectNearbyLoot(page,walkTo){
  let collected=0;
@@ -52,7 +58,7 @@ async function collectNearbyLoot(page,walkTo){
    },d);
    await walkTo(approach,15);
   }
-  await tapGroundDrop(page,d.id);
+  await pickGroundDrop(page,d.id);
   await page.waitForFunction(id=>!Auralis.game.scene.getScene('world').hero.worldState.groundLoot.drops[id],d.id,{timeout:3000});collected++;
  }
  return collected;
@@ -72,4 +78,4 @@ async function pulseJoystick(page,cdp,centre,attackPoint,joyWidth,dx,dy,holdAtta
  if(movementError)throw movementError;
 }
 
-module.exports={startServer,launchOptions,root,openNpc,openStorage,tapGroundDrop,collectNearbyLoot,pulseJoystick};
+module.exports={startServer,launchOptions,root,openNpc,openStorage,tapGroundDrop,pickGroundDrop,collectNearbyLoot,pulseJoystick};

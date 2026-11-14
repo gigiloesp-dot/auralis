@@ -1,5 +1,6 @@
-import {addItem,itemDefinition} from '../equipment/items.js';
-export const LOOT_PICKUP_RADIUS=90;
+import {insertStack} from '../equipment/stacking.js';
+import {addItem,itemDefinition,INVENTORY_CAPACITY} from '../equipment/items.js';
+export const LOOT_PICKUP_RADIUS=180;
 const rarities=new Set(['common','uncommon','rare','epic','legendary']);
 const safeKey=s=>typeof s==='string'&&s.length>0&&s.length<=160&&!['__proto__','constructor','prototype'].includes(s);
 const plain=x=>x&&typeof x==='object'&&!Array.isArray(x)&&(Object.getPrototypeOf(x)===Object.prototype||Object.getPrototypeOf(x)===null);
@@ -57,16 +58,40 @@ export function createGroundDrops(hero,monster,items,deathAt,{region=hero.region
  if(!result.ok)state.pending['pending-'+state.nextId++]=job;
  return result;
 }
-// Inventory and the persistent removal share one synchronous durable save.
-// addItem can partially merge a stack on failure, so it operates on a copy.
-export function pickupGroundDrop(hero,id,{save=()=>true,radius=LOOT_PICKUP_RADIUS}={}){
+// Query persistent world coordinates, independently of streamed marker visibility.
+export function nearbyGroundDrops(hero,radius=LOOT_PICKUP_RADIUS){
+ if(!hero||hero.hp<=0||!Number.isFinite(hero.x)||!Number.isFinite(hero.y))return [];
+ const limit=Math.max(0,Math.min(LOOT_PICKUP_RADIUS,Number(radius)||0));
+ return Object.values(groundLootState(hero).drops).filter(d=>d.region===hero.region&&distance(hero,d)<=limit).sort((a,b)=>distance(hero,a)-distance(hero,b)||a.id.localeCompare(b.id));
+}
+const transactions=new WeakSet();
+// Inventory and persistent removal/remainder share one synchronous durable save.
+// Copies keep failed stack merges and quota failures from consuming ground loot.
+export function pickupGroundDrop(hero,id,{save=()=>true,radius=LOOT_PICKUP_RADIUS,allowPartial=false}={}){
+ if(transactions.has(hero))return {ok:false,reason:'busy'};
  const state=groundLootState(hero),drop=state.drops[id];
  if(!drop)return {ok:false,reason:'missing'};
- if(hero.hp<=0||hero.region!==drop.region||distance(hero,drop)>radius)return {ok:false,reason:'distance'};
+ const limit=Math.max(0,Math.min(LOOT_PICKUP_RADIUS,Number(radius)||0));
+ if(hero.hp<=0||hero.region!==drop.region||!Number.isFinite(hero.x)||!Number.isFinite(hero.y)||distance(hero,drop)>limit)return {ok:false,reason:'distance'};
  const original=hero.inventory,working={...hero,inventory:original.map(i=>({...i}))};
- if(!addItem(working,drop.item))return {ok:false,reason:'full'};
- hero.inventory=working.inventory;delete state.drops[id];
- let committed=false;try{committed=save()!==false;}catch{}
- if(!committed){hero.inventory=original;state.drops[id]=drop;return {ok:false,reason:'save'};}
- return {ok:true,item:{...drop.item}};
+ let quantity=drop.item.quantity||1,remainder=0;
+ if(allowPartial){const inserted=insertStack(working.inventory,{...drop.item},itemDefinition(drop.item),INVENTORY_CAPACITY);if(!inserted.added)return {ok:false,reason:'full'};quantity=inserted.added;remainder=inserted.remainder;}
+ else if(!addItem(working,drop.item))return {ok:false,reason:'full'};
+ transactions.add(hero);
+ try{
+  hero.inventory=working.inventory;
+  if(remainder)state.drops[id]={...drop,item:{...drop.item,quantity:remainder}};else delete state.drops[id];
+  let committed=false;try{committed=save()!==false;}catch{}
+  if(!committed){hero.inventory=original;state.drops[id]=drop;return {ok:false,reason:'save'};}
+  return {ok:true,item:{...drop.item,quantity},remaining:remainder};
+ }finally{transactions.delete(hero);}
+}
+export function pickupNearbyGroundDrops(hero,{save=()=>true}={}){
+ const picked=[],failed=[];
+ for(const {id}of nearbyGroundDrops(hero)){
+  const result=pickupGroundDrop(hero,id,{save,allowPartial:true});
+  if(result.ok)picked.push({id,item:result.item,remaining:result.remaining});else failed.push({id,reason:result.reason});
+  if(result.reason==='save'||result.reason==='busy')break;
+ }
+ return {picked,failed};
 }
