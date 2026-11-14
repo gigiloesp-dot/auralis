@@ -1,4 +1,5 @@
 import {text} from './i18n/messages.js';
+import {PauseInterface} from './ui/PauseInterface.js';
 import { Menu } from './ui/Menu.js';
 import { Save } from './systems/save.js';
 import { GAME_CONFIG } from './config/gameConfig.js';
@@ -17,15 +18,12 @@ else {
   window.addEventListener('resize',()=>requestAnimationFrame(fit));
   window.addEventListener('orientationchange',()=>{requestAnimationFrame(fit);setTimeout(fit,250);setTimeout(fit,700);});
   game.scene.add('world',WorldScene,false);
+  let pauseInterface;
   const menu=new Menu(()=>{
     if(game.scene.isActive('world')||game.scene.isPaused('world'))game.scene.stop('world');
     game.scene.start('world');
-  },(exit)=>{
-    if(exit){if(game.scene.isActive('world')||game.scene.isPaused('world')){game.scene.getScene('world').save();game.scene.stop('world');}}
-    else if(game.scene.isPaused('world'))game.scene.resume('world');
-  });
-  document.getElementById('pause-btn').addEventListener('click',()=>{
-    if(game.scene.isActive('world')){game.scene.getScene('world').save();game.scene.getScene('world').controls?.reset();for(const name of ['inventoryPanel','characterPanel','skillsPanel','npcPanel','storagePanel','savePanel','mapPanel','dungeonPanel'])game.scene.getScene('world')[name]?.close();game.scene.pause('world');menu.show('pause');}
-  });
-  window.Auralis={game,Save,GAME_CONFIG,menu};
+  },exit=>exit?pauseInterface.exit():pauseInterface.resume(),language=>game.scene.getScene('world')?.setLanguage?.(language));
+  pauseInterface=new PauseInterface(game,menu);
+  document.getElementById('pause-btn').addEventListener('click',()=>pauseInterface.pause());
+  window.Auralis={game,Save,GAME_CONFIG,menu,pauseInterface};
 }

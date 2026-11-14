@@ -1,3 +1,5 @@
+import {EffectsHud} from '../ui/EffectsHud.js';
+import {applyShellLocale} from '../i18n/messages.js';
 import {ACTOR_ART} from '../assets/actorArt.js';
 import {ActorTextureCache} from '../assets/ActorTextureCache.js';
 import {GroundLootSystem} from '../loot/GroundLootSystem.js';
@@ -43,17 +45,17 @@ export class WorldScene extends Phaser.Scene{
   this.cameras.main.setBackgroundColor('#263b39');this.shadow=this.add.ellipse(0,0,32,13,0x071d13,.4);this.body=this.add.container(0,0);this.rig=new HeroRig(this,this.body);
   this.targetState=new TargetState();this.controls=new TouchControls();this.axis=this.controls.axis;this.attackCycle=new AttackCycle();this.world=new WorldRuntime(this);this.groundLoot=new GroundLootSystem(this,this.hero);this.exitPortal=new DungeonExitPortal(this);this.cameras.main.startFollow(this.body,true,.16,.16);this.resizeViewport(this.scale.width,this.scale.height);this.scale.on('resize',this.onGameResize,this);
   this.inventoryPanel=new InventoryPanel(this);this.characterPanel=new CharacterPanel(this);this.skillsPanel=new SkillsPanel(this);this.npcPanel=new NpcPanel(this);this.storagePanel=new StoragePanel(this);this.dungeonPanel=new DungeonPanel(this);this.mapPanel=new MapPanel(this);
-  this.canRestoreCharacter=data=>{const c=(data.region==='arena'?generateArenaContent(data):dungeonContentForHero(data))||REGIONS[data.region];return !!c&&data.x>=0&&data.y>=0&&data.x<=c.width&&data.y<=c.height;};this.savePanel=new SavePanel(this);this.battleHud=new BattleHud(this);this.minimap=new Minimap(this);this.targetPanel=new TargetPanel(this);this.interactions=new InteractionController(this);this.interactions.update();
+  this.canRestoreCharacter=data=>{const c=(data.region==='arena'?generateArenaContent(data):dungeonContentForHero(data))||REGIONS[data.region];return !!c&&data.x>=0&&data.y>=0&&data.x<=c.width&&data.y<=c.height;};this.savePanel=new SavePanel(this);this.battleHud=new BattleHud(this);this.effectsHud=new EffectsHud(this);this.minimap=new Minimap(this);this.targetPanel=new TargetPanel(this);this.interactions=new InteractionController(this);this.interactions.update();
   this.onSelectPointer=pointer=>{if(this.panelsOpen()||this.hero.hp<=0)return;const p=pointer.positionToCamera(this.cameras.main);const hit=this.monsters.monsters.filter(m=>this.monsters.canSee(m)&&m.body.getBounds?.().contains(p.x,p.y)).sort((a,b)=>(b.x+b.y)-(a.x+a.y))[0];if(hit)this.monsters.select(hit,this.playNow);};this.input.on('pointerdown',this.onSelectPointer);
   this.onPageHide=()=>this.save();this.onVisibilityChange=()=>{if(document.hidden){this.controls.reset();this.save();}};window.addEventListener('pagehide',this.onPageHide);document.addEventListener('visibilitychange',this.onVisibilityChange);
-  this.events.once('shutdown',()=>{this.save();this.closed=true;this.input.off('pointerdown',this.onSelectPointer);this.interactions.destroy();this.groundLoot.destroy();this.exitPortal.destroy();this.targetState.clear();this.targetPanel.destroy();this.controls.destroy();this.monsters.destroy();this.world.destroy();this.rig.destroy();this.actorTextures.destroy();for(const name of PANEL_NAMES){this[name]?.destroy();this[name]=null;}this.battleHud.destroy();this.minimap.destroy();window.removeEventListener('pagehide',this.onPageHide);document.removeEventListener('visibilitychange',this.onVisibilityChange);this.scale.off('resize',this.onGameResize,this);});this.refreshHud();
+  this.events.once('shutdown',()=>{this.save();this.closed=true;this.input.off('pointerdown',this.onSelectPointer);this.interactions.destroy();this.groundLoot.destroy();this.exitPortal.destroy();this.targetState.clear();this.targetPanel.destroy();this.controls.destroy();this.monsters.destroy();this.world.destroy();this.rig.destroy();this.actorTextures.destroy();for(const name of PANEL_NAMES){this[name]?.destroy();this[name]=null;}this.battleHud.destroy();this.effectsHud.destroy();this.minimap.destroy();window.removeEventListener('pagehide',this.onPageHide);document.removeEventListener('visibilitychange',this.onVisibilityChange);this.scale.off('resize',this.onGameResize,this);});this.refreshHud();this.events.once('create',()=>window.Auralis?.pauseInterface?.onSceneReady(this));
  }
  panelsOpen(){return PANEL_NAMES.some(name=>this[name]?.opened);}
  closePanels(except){for(const name of PANEL_NAMES)if(this[name]!==except)this[name]?.close();this.controls?.reset();}
  onGameResize(size){this.resizeViewport(size.width,size.height);}
  resizeViewport(width,height){if(!width||!height)return;this.cameras.main.setSize(width,height);this.cameras.main.setZoom(clamp(Math.min(width/840,height/460),.7,1.3));}
  update(now,delta){
-  const h=this.hero;if(!h||this.closed)return;const dt=Math.min(delta,40)/1000;
+  const h=this.hero;if(!h||this.closed)return;if(window.Auralis?.pauseInterface?.active){this.controls.reset();this.input.enabled=false;this.scene.pause();return;}const dt=Math.min(delta,40)/1000;
   if(now-this.lastSave>=GAME_CONFIG.autosaveMs){this.lastSave=now;this.save();}
   if(document.hidden||window.innerHeight>window.innerWidth){this.controls.reset();this.updateTargetPanel();return;}
   this.world.update();this.npcPanel.update();this.storagePanel.update();this.dungeonPanel.update();this.interactions.update();this.groundLoot.update();this.exitPortal.update();
@@ -81,8 +83,18 @@ export class WorldScene extends Phaser.Scene{
  onMonsterKilled(m){this.world?.onKill(m);}
  refreshSkillSlots(){this.battleHud?.update();}
  refreshPotions(){this.battleHud?.update();}
+ setLanguage(language){
+  if(!['ru','en','es'].includes(language)||!this.hero||this.closed)return;
+  this.closePanels();this.language=language;applyShellLocale(language);
+  // Rebuild only locale-cached UI. Actors, timers, world and hero are retained.
+  for(const [name,Type]of [['npcPanel',NpcPanel],['storagePanel',StoragePanel],['savePanel',SavePanel],['dungeonPanel',DungeonPanel],['mapPanel',MapPanel]]){this[name]?.destroy();this[name]=new Type(this);}
+  this.minimap?.destroy();this.minimap=new Minimap(this);this.targetPanel?.destroy();this.targetPanel=new TargetPanel(this);
+  for(const m of this.monsters.monsters){const name=m.kind.names?.[language]||m.kind.name||m.name||m.type;m.nameLabel.setText(name+' · '+m.kind.level);}
+  for(const [resource,button]of Object.entries(this.battleHud.buttons))button.setAttribute('aria-label',text(resource+'Potion',language));
+  this.battleHud.update();this.refreshHud();
+ }
  requestReload(){this.scene.restart();}
  notify(message){const notice=document.getElementById('notice');notice.textContent=message;this.noticeUntil=Date.now()+3000;}
  save(){if(!this.hero||this.closed)return false;if(this.monsters?.hero===this.hero)this.monsters.persistCooldowns(this.playNow);const ok=Save.write(this.hero,this.saveSlot);if(!ok)this.notify(text('saveFailed',this.language));return ok;}
- refreshHud(){if(this.hero)updateHud(this.hero,this.language,this.regionContent);if(this.noticeUntil&&Date.now()>this.noticeUntil){document.getElementById('notice').textContent='';this.noticeUntil=0;}}
+ refreshHud(){if(this.hero)updateHud(this.hero,this.language,this.regionContent);this.effectsHud?.update();if(this.noticeUntil&&Date.now()>this.noticeUntil){document.getElementById('notice').textContent='';this.noticeUntil=0;}}
 }

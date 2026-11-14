@@ -2,6 +2,10 @@
 
 Обновлено 14 ноября 2026. Ветка `codex/auralis-master-development`, [draft PR #2](https://github.com/gigiloesp-dot/auralis/pull/2). Сначала прочитать [MASTER_SPEC.md](MASTER_SPEC.md), [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md), [TEST_RESULTS.md](TEST_RESULTS.md) и [CHARACTER_LAYERING.md](CHARACTER_LAYERING.md). `main`, stable-alpha и прежний alpha-test не менять; merge не выполнять.
 
+## Активное задание №2
+
+Продолжать только компактный HUD / временные эффекты / вкладки навыков / меню паузы. Контрольный коммит `0ec6306aff4c51974f34ab2639f9b083aaae87ff`; результаты прерванного агента навыков сохранены и интегрированы. Точный реализованный объём и текущие незавершённые проверки — [TASK_2_STATUS.md](TASK_2_STATUS.md). Не повторять готовое задание №1 и не начинать следующие пакеты. Онлайн пока выпуск 8; новую публикацию выполнять после зелёного CI в том же master-test.
+
 ## Завершённый технический блок: задание №1
 
 Не начинать заново: визиты подземелий, независимые boss cooldown, добровольный портал, агрессия/патрули, 254 лагеря / 2415 обычных монстров, внешний respawn 30 секунд, наземная добыча и multitouch интегрированы и проверены. [CI 43594992219](https://github.com/gigiloesp-dot/auralis/actions/runs/43594992219): 7/7 jobs, 255 unit, 194 check, все 21 браузерный suite PASS.
