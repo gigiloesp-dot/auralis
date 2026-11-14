@@ -2,8 +2,40 @@
 
 ## Задание №1 — интеграция 14 ноября 2026
 
-Текущий приоритет — [TASK_1_STATUS.md](TASK_1_STATUS.md). Код посещений dungeon, агрессии/патрулей,2415 монстров,30-секундного respawn, ground loot и multitouch интегрирован. **253/253 unit PASS, check194 файла PASS**; профильные браузерные проверки и новая memory fixture прошли. Полный браузерный прогон/длинный soak/CI/новый выпуск ещё не завершены. Онлайн пока выпуск5, приведённые ниже результаты его исходного runtime являются исторической проверенной точкой, а не доказательством публикации задания №1.
+Текущий runtime: `9872f13b19c4be3a681f2389daed4313418df8ed`, ветка `codex/auralis-master-development`, [draft PR #2](https://github.com/gigiloesp-dot/auralis/pull/2). Контрольная версия до задания №1: `1a5ffe35105e5ffa91260fbf89b0d081ad9f7d58`. `main`, stable-alpha, прежняя alpha-публикация и графика выпуска 5 сохранены; merge не выполняется.
 
+**Локально: 255/255 unit PASS, check 194 файла PASS.** Все 12 подземелий на трёх сложностях прошли профильную браузерную проверку. Длительные проверки добычи и streaming завершены успешно: по 60 циклов. Полный пакет сохраняет 15 прежних браузерных suites и добавляет шесть новых — всего 21 suite в семи CI jobs.
+
+**Задание №1 проверено и опубликовано.** [CI 43594992219](https://github.com/gigiloesp-dot/auralis/actions/runs/43594992219) на `ce787351fed4d24653a92d1e65a314c741ee5787`: **7/7 jobs success, все 21 браузерный suite, 255 unit и 194 файла check PASS**. Выпуск **8** доступен по https://auralis-master-test.alertpine18.chatgpt.site. После native success чистый мобильный Chromium без аккаунта подтвердил все 293 runtime SHA-256, реальную атаку, три анонимных предмета на земле, 30-секундный таймер, touch-подбор, reload без дублирования, три региона и три hard-входа. Массовые позиции, HP и RNG явно подготовлены fixtures; естественные прохождения проверяются отдельно. Точные native IDs — [DEPLOYMENT.md](DEPLOYMENT.md). Физическое Android-устройство остаётся непроверенной границей.
+
+Подробные механики, доказательства, измерения streaming и следующий шаг — [TASK_1_STATUS.md](TASK_1_STATUS.md).
+
+
+## Проверки задания №1 на конечном runtime
+
+| Сценарий | Подтверждённый результат |
+|---|---|
+| Unit / синтаксис и импорты | 255/255 PASS; 194 файла PASS. Сохранения v1/v2, персистентные визиты/таймеры/агрессия, placement, loot rollback и streaming включены. |
+| `browser-task1-dungeons` | Все 36 вариантов; 78 фактических boss-kill обработчиков; reload в трёх minion-сценариях и в завершённом dungeon12 hard. Визит, отдельные часовые cooldown, добровольный портал, обычный выход и защита повторной награды. Массовые победы используют явные damage fixtures. |
+| `browser-task1-ai` | Настоящий дальний touch-урон вне detection активирует ограниченную погоню; patrol/пауза, безопасный 30-секундный respawn и возвращение. |
+| `browser-ground-loot` | Убийство → три отдельных предмета без auto-inventory → streaming/переход/reload → дальность/full bag → quota rollback → настоящий tap → reload без дублирования. Явные loot fixtures отделены от реального ввода подбора. |
+| `browser-monster-stream` | Нулевые пропуски видимых объектов на трёх размерах; удержание активного боя, сохранённые позиции и ограниченные residency/edge churn. Полный замер — TASK_1_STATUS. |
+| `browser-multitouch` | Четыре мобильных размера; 16 реальных применений навыков с удержанным joystick, три пальца joystick/атака/зелье, cooldown, cancel, portrait, landscape 180°, blur/visibility. Жизненный цикл эмулирован, физический Android не использован. |
+| `browser-loot-soak`, длинный прогон | 60 циклов / 180 регионов / 360 позиций, 607 секунд PASS. Все 54 предмета сохранены; markers/input 18 рядом и 0 вдали. Children 443, fixed 257, textures 81 → 77, DOM 137, scratch 0; post-GC heap 12 045 424 → 12 785 796 bytes. |
+| Прежний `browser-soak`, длинный прогон | 60 циклов / 180 входов-выходов dungeon, 256 секунд PASS. Children 425, textures 77, DOM 137, monsters 42, scratch 0. Mean headless frame 146.89 ms, p95 218.50 ms под нагрузкой среды; это не Android FPS. |
+| Естественная `browser-journey` | 70 секунд PASS: пять реальных убийств, два задания, заработанные очки, два touch-подбора, покупка и reload без runtime-state writes. Отдельный профильный loot-suite подтверждает три выпавших предмета и один ручной подбор. |
+| Естественный `browser-first-dungeon` | **339 секунд PASS** с конечным драйвером: заработанный уровень 5, все 18 обычных врагов и босс, пеший выход, reload; итог уровень 7 / XP 1 / золото 474. Нет state writes, fixture-урона или телепортов. |
+| Повторный `browser-bestiary` | PASS всех механизмов и flight collision после изоляции fixture ID по виду. Проверки способностей не ослаблены. |
+
+Журналы: `work/task1-unit-frozen.log`, `work/task1-check-frozen.log`, `work/browser/task1-loot-soak-frozen-60.log`, `work/browser/task1-stream-soak-frozen-60.log`, `work/browser/task1-bestiary-final.log`, `work/browser/task1-journey-final.log`, `work/browser/task1-first-dungeon-frame-pulse.log`, `work/browser/task1-journey-frame-pulse.log`, `work/browser/task1-public-release8-verified.log`. Локальные журналы в `work/` не являются опубликованными CI-артефактами. Их контрольные суммы и конечные результаты сохранены в [qa/task1-local-verification.json](qa/task1-local-verification.json). Для повторения длинных прогонов: `AURALIS_LOOT_SOAK_CYCLES=60 node tests/browser-loot-soak.cjs` и `AURALIS_SOAK_CYCLES=60 node tests/browser-soak.cjs`. First-dungeon с последним драйвером и общий CI 43594992219 PASS.
+
+## Публичная проверка выпуска 8
+
+`node tests/browser-public.cjs https://auralis-master-test.alertpine18.chatgpt.site ce787351fed4d24653a92d1e65a314c741ee5787` — **PASS**. Чистый Chromium с мобильным Android user agent, без аккаунта. Все 293 runtime-файла совпали с Git SHA-256. Нейтральный герой и пять жителей реально загрузились; настоящий touch-удар обновляет HP; следующий удар создаёт три анонимных ground drops без auto-inventory. Проверены 30-секундный таймер, настоящий подбор одного предмета и reload: один предмет в сумке, два на земле, повторного получения нет. Затем проверены три карты 12000/14000/15000, 94/85/75 лагерей, 895/805/715 обычных врагов и три hard dungeon-входа. JavaScript errors отсутствуют.
+
+Массовые HP/позиции и loot RNG — явные fixtures. RNG фиксируется только внутри loot-модуля: глобальный постоянный RNG нарушал уникальность служебных Phaser texture IDs в первоначальном тесте. Исправлен проверочный сценарий, игровые файлы не менялись. Итоговый полный журнал и его SHA-256 сохранены в docs/qa. Естественные сценарии выше обходятся без записи состояния и fixture-урона.
+
+## Историческая проверенная доставка: выпуск 5
 
 Обновлено 13 ноября 2026. Проверенный и опубликованный игровой source: `77a1e7bfad861a008af458884fadc70fe60fa871`, ветка `codex/auralis-master-development`. Последующие изменения отчётов не меняют игровые файлы. [CI 43488997535](https://github.com/gigiloesp-dot/auralis/actions/runs/43488997535): **6/6 jobs success**. [Draft PR #2](https://github.com/gigiloesp-dot/auralis/pull/2) не объединён.
 

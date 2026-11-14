@@ -1,0 +1,69 @@
+{
+  "runtimeCommit": "9872f13b19c4be3a681f2389daed4313418df8ed",
+  "testedHead": "3d633b94269c0e28757afc557da188d344b88b92",
+  "dateUTC": "2026-11-14",
+  "environment": "Desktop headless Chromium; Android viewport and touch emulation; no physical Android device",
+  "logs": [
+    {
+      "file": "work/browser/task1-loot-soak-frozen-60.log",
+      "sha256": "64112c49ff04f092bdec5a75b637dfa1135b65b2672ec30c725e9ca77e5fe79e",
+      "result": "PASS persistent loot soak {\"cycles\":60,\"regions\":180,\"positions\":360,\"seconds\":607,\"baseline\":{\"children\":443,\"textures\":81,\"dom\":137,\"monsters\":42,\"markers\":18,\"input\":18,\"records\":54,\"scratch\":0,\"heap\":12045424,\"cycle\":1,\"fixedChildren\":257},\"last\":{\"children\":443,\"textures\":77,\"dom\":137,\"monsters\":42,\"markers\":18,\"input\":18,\"records\":54,\"scratch\":0,\"heap\":12785796,\"cycle\":59,\"fixedChildren\":257}}",
+      "archivedFile": "docs/qa/task1-loot-soak-frozen-60.log"
+    },
+    {
+      "file": "work/browser/task1-stream-soak-frozen-60.log",
+      "sha256": "92fd7b139630dc84fe6401c46e7a15d325b4c0ebd40231890b2db2b550aef9ef",
+      "result": "PASS60 resource cycles,180 regional dungeon entries/exits; no JavaScript errors; elapsedSeconds=256",
+      "archivedFile": "docs/qa/task1-stream-soak-frozen-60.log"
+    },
+    {
+      "file": "work/browser/task1-first-dungeon-final-driver.log",
+      "sha256": "8a6abddef19bea69ce356730a921429660e5e8cd2e4bb90809dfbdf602e29d5a",
+      "result": "FIRST DUNGEON RESULT {\"seconds\":400,\"level\":7,\"xp\":20,\"gold\":451,\"completed\":{\"killed\":[\"dungeon1-boss-0\"],\"readyAt\":1794662201332,\"completed\":true,\"rewarded\":true,\"bossReadyAt\":{\"dungeon1-boss-0\":1794662201332},\"completedAt\":1794658601332}}",
+      "archivedFile": "docs/qa/task1-first-dungeon-final-driver.log"
+    },
+    {
+      "file": "work/browser/task1-journey-final.log",
+      "sha256": "9a3a0d2badc8a137dd7f5836abe1ebeea5d52febe23ff20aaaf33c08cdb7ad31",
+      "result": "JOURNEY RESULT {\"seconds\":89,\"level\":3,\"xp\":30,\"gold\":25,\"quests\":[\"forestWolves\",\"forestFangs\"],\"strength\":6,\"skill\":\"warrior_0\",\"hpPotions\":4}",
+      "archivedFile": "docs/qa/task1-journey-final.log"
+    },
+    {
+      "file": "work/browser/task1-bestiary-final.log",
+      "sha256": "d552c2adb39edb46484f0a719fa95f69a99174a87cb5a21b1e8e2d4084a73875",
+      "result": "PASS actual species abilities, statuses, flight collision and telegraph cleanup",
+      "archivedFile": "docs/qa/task1-bestiary-final.log"
+    },
+    {
+      "file": "work/browser/task1-journey-frame-pulse.log",
+      "archivedFile": "docs/qa/task1-journey-frame-pulse.log",
+      "sha256": "0cc7ade257e14cf8c712e3f4e95ddd868410735721fe2774ce5b78c3ffd6cb45",
+      "result": "JOURNEY RESULT {\"seconds\":70,\"level\":3,\"xp\":49,\"gold\":28,\"quests\":[\"forestWolves\",\"forestFangs\"],\"strength\":6,\"skill\":\"warrior_0\",\"hpPotions\":4}"
+    },
+    {
+      "file": "work/browser/task1-first-dungeon-frame-pulse.log",
+      "archivedFile": "docs/qa/task1-first-dungeon-frame-pulse.log",
+      "sha256": "b14393e321bbec6eb5557682fcf0b2626e8d2d15f50216300686e665539f4b88",
+      "result": "FIRST DUNGEON RESULT {\"seconds\":339,\"level\":7,\"xp\":1,\"gold\":474,\"completed\":{\"killed\":[\"dungeon1-boss-0\"],\"readyAt\":1794663224526,\"completed\":true,\"rewarded\":true,\"bossReadyAt\":{\"dungeon1-boss-0\":1794663224526},\"completedAt\":1794659624526}}"
+    },
+    {
+      "file": "work/browser/task1-actors-final.log",
+      "archivedFile": "docs/qa/task1-actors-final.log",
+      "sha256": "8167e60bb73b03d9168103ffd7f564a0c20b534fc1e56061bde1f934d0e5c8a5",
+      "result": "PASS actual lazy actor atlases without JavaScript errors"
+    },
+    {
+      "file": "work/browser/task1-boss-art-final.log",
+      "archivedFile": "docs/qa/task1-boss-art-final.log",
+      "sha256": "68a0f138004771c5fe20cda9732ca979deb1b4744a3be0a8993f65ac60ad3167",
+      "result": "PASS all 44 registered boss encounters with unique loaded artwork and no JavaScript errors"
+    },
+    {
+      "file": "work/browser/task1-public-release8-verified.log",
+      "archivedFile": "docs/qa/task1-public-release8-verified.log",
+      "sha256": "e3ee48310c4eb7accc8781fc12965bcea3063938b40ee56f67ac088df407cfef",
+      "result": "PASS real game creation, touch, quest, save/reload, three regions and three hard dungeon entries; no JavaScript errors [{\"region\":\"forest\",\"width\":12000,\"camps\":94,\"normal\":895},{\"region\":\"north\",\"width\":14000,\"camps\":85,\"normal\":805},{\"region\":\"ancient\",\"width\":15000,\"camps\":75,\"normal\":715}]"
+    }
+  ],
+  "finalTestedHead": "ce787351fed4d24653a92d1e65a314c741ee5787"
+}
