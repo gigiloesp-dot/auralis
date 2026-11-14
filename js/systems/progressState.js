@@ -1,3 +1,4 @@
+import {normalizeGroundLoot} from '../loot/groundLoot.js';
 // Only plain persistent data may cross the save boundary. Phaser/runtime objects
 // are rejected rather than traversed, and oversized trees cannot exhaust storage.
 const plain=value=>value!==null&&typeof value==='object'&&!Array.isArray(value)&&(Object.getPrototypeOf(value)===Object.prototype||Object.getPrototypeOf(value)===null);
@@ -23,11 +24,15 @@ export function normalizeWorldState(value){
  if(plain(value?.monsters))for(const [id,state] of Object.entries(value.monsters).slice(0,5000)){
   if(!safeKey(id)||!plain(state))continue;
   const normalized={};
-  for(const key of ['deadUntil','killedAt','healthAt','recoverAfter']){const timestamp=time(state[key]);if(timestamp!==null)normalized[key]=timestamp;}
+  for(const key of ['deadUntil','killedAt','healthAt','recoverAfter','aggroUntil','lastSeenAt']){const timestamp=time(state[key]);if(timestamp!==null)normalized[key]=timestamp;}
+  for(const key of ['x','y','targetX','targetY'])if(Number.isFinite(state[key])&&Math.abs(state[key])<=100000)normalized[key]=state[key];
+  if(typeof state.returning==='boolean')normalized.returning=state.returning;
+  if(Number.isInteger(state.behaviorSeed)&&state.behaviorSeed>=0&&state.behaviorSeed<=4294967295)normalized.behaviorSeed=state.behaviorSeed;
   if(Number.isFinite(state.hp)&&state.hp>=0)normalized.hp=state.hp;
   if(Object.keys(normalized).length)result.monsters[id]=normalized;
  }
  if(plain(value?.regions))result.regions=copyProgress(value.regions,{maxDepth:5,maxEntries:5000,maxArray:1000})||{};
+ if(plain(value?.groundLoot))result.groundLoot=normalizeGroundLoot(value.groundLoot);
  return result;
 }
 export function normalizeCooldowns(value){

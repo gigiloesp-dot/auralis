@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "check": "node scripts/check.mjs",
-    "test:browser": "npm run test:browser:core && npm run test:browser:first-dungeon && npm run test:browser:android",
+    "test:browser": "npm run test:browser:core && npm run test:browser:first-dungeon && npm run test:browser:android && npm run test:browser:task1",
     "test:browser:smoke": "node tests/browser-smoke.cjs",
     "test:browser:world": "node tests/browser-world.cjs",
     "test:browser:npcs": "node tests/browser-npcs.cjs",
@@ -26,7 +26,8 @@
     "test:browser:core:world": "node tests/browser-smoke.cjs && node tests/browser-world.cjs && node tests/browser-npcs.cjs",
     "test:browser:core:quests": "node tests/browser-quests.cjs && node tests/browser-dungeons.cjs && node tests/browser-journey.cjs",
     "test:browser:core:ui": "node tests/browser-locales.cjs && node tests/browser-classes.cjs && node tests/browser-soak.cjs",
-    "test:browser:boss-art": "node tests/browser-boss-art.cjs"
+    "test:browser:boss-art": "node tests/browser-boss-art.cjs",
+    "test:browser:task1": "node tests/browser-task1-ai.cjs && node tests/browser-ground-loot.cjs && node tests/browser-task1-dungeons.cjs && node tests/browser-monster-stream.cjs && node tests/browser-multitouch.cjs && node tests/browser-loot-soak.cjs"
   },
   "devDependencies": {
     "playwright": "^1.65.0"

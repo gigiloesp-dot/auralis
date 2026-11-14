@@ -35,7 +35,7 @@ test('all region encounter descriptors instantiate on approach with bounded acti
   for(const descriptor of descriptors){hero.x=descriptor.x;hero.y=descriptor.y;system.update(0,0);assert.ok(system.monsters.some(m=>m.id===descriptor.id),descriptor.id);peak=Math.max(peak,system.monsters.length);visited++;}
   system.destroy();assert.equal(system.monsters.length,0);
  }
- assert.equal(visited,1163);assert.ok(peak<80,'must not instantiate whole region: '+peak);
+ assert.equal(visited,2433);assert.ok(peak<80,'must not instantiate whole region: '+peak);
 });
 test('boss cycles through three telegraphed patterns and paladin third hit stuns',()=>{
  const boss={id:'boss',type:'forestGuardian',x:2000,y:2000,level:5,bossType:'mini',patterns:['slam','charge','volley']};

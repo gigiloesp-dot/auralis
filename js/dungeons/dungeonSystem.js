@@ -24,12 +24,12 @@ export function leaveDungeon(hero){
  const point=session.returnLocation;const destination=point&&Number.isFinite(point.x)&&Number.isFinite(point.y)&&point.region===d.region?{...point}:{region:d.region,x:d.x,y:d.y+80};
  hero.dungeonSession=null;hero.returnLocation=null;return {ok:true,destination};
 }
-export function recordDungeonBossKill(hero,id,difficulty,bossId,now=Date.now()){
+export function recordDungeonBossKill(hero,id,difficulty,bossId,now=Date.now(),{deathRecordedAt}={}){
  const d=dungeonDefinition(id);if(!d||!Object.hasOwn(DIFFICULTIES,difficulty)||!Number.isFinite(now)||now<0)return {ok:false,reason:'invalid'};
  const content=createDungeonContent(id,difficulty);if(!content.bosses.some(b=>b.id===bossId))return {ok:false,reason:'boss'};
  const key=id+':'+difficulty;hero.dungeonProgress??={};const old=hero.dungeonProgress[key];
  const validIds=new Set(content.bosses.map(b=>b.id)),oldKilled=Array.isArray(old?.killed)?[...new Set(old.killed.filter(id=>validIds.has(id)))]:[];
- if(dungeonBossReadyAt(hero,content,bossId)>now)return {ok:false,reason:'cooldown'};
+ if(dungeonBossReadyAt(hero,content,bossId,{deathRecordedAt:deathRecordedAt===now?deathRecordedAt:undefined})>now)return {ok:false,reason:'cooldown'};
  const inCycle=old&&Number.isFinite(old.readyAt)&&old.readyAt>now,completeBefore=content.bosses.every(b=>oldKilled.includes(b.id)),progress=inCycle?{killed:oldKilled,readyAt:old.readyAt,completed:completeBefore,rewarded:old.rewarded===true&&completeBefore}:{killed:[],readyAt:now+DUNGEON_RESPAWN_MS,completed:false,rewarded:false};
  if(progress.killed.includes(bossId))return {ok:false,reason:'duplicate'};
  // Preserve every boss's exact hour timer, including when an earlier boss's
@@ -40,7 +40,7 @@ export function recordDungeonBossKill(hero,id,difficulty,bossId,now=Date.now()){
  hero.worldState??={monsters:{}};hero.worldState.monsters??={};hero.worldState.monsters[content.id+':'+bossId]={deadUntil:now+DUNGEON_RESPAWN_MS,killedAt:now,hp:0};
  let rewarded=false;
  if(progress.completed&&!progress.rewarded){const multiplier=DIFFICULTIES[difficulty].multiplier;hero.gold=(hero.gold||0)+Math.round((80+d.level*12)*multiplier);grantXp(hero,Math.round((120+d.level*22)*multiplier));progress.rewarded=true;progress.completedAt=now;rewarded=true;}
- hero.dungeonProgress[key]=progress;const session=recordDungeonVisitBossKill(hero,content,bossId);return {ok:true,completed:progress.completed,visitCompleted:session?.completed===true,rewarded,readyAt:progress.readyAt};
+ hero.dungeonProgress[key]=progress;const session=recordDungeonVisitBossKill(hero,content,bossId,{completionBosses:progress.completed?progress.killed:undefined});return {ok:true,completed:progress.completed,visitCompleted:session?.completed===true,rewarded,readyAt:progress.readyAt};
 }
 export function dungeonContentForHero(hero){
  return restoredDungeonContent(hero);

@@ -1,10 +1,10 @@
-import {addItem,itemDefinition} from '../equipment/items.js';
+import {itemDefinition} from '../equipment/items.js';
 import {equipmentForLevel} from '../equipment/catalog.js';
 const RATES=Object.freeze({common:.15,uncommon:.04,rare:.01,epic:.001});
 export function rollRarity(rng=Math.random,elite=false){const r=rng();if(elite&&r<.001)return 'legendary';if(r<.01)return 'epic';if(r<.08)return 'rare';if(r<.26)return 'uncommon';return 'common';}
 export function rollLoot(hero,{type='wolf',elite=false,boss=false,level=1}={},rng=Math.random){
  const drops=[],luck=Math.max(0,Number(hero?.stats?.luck)||5),bonus=1+Math.max(0,luck-5)*.005;
- const add=(id,rarity='common',quantity=1)=>{const item={id,rarity,quantity};if(addItem(hero,item))drops.push(item);};
+ const add=(id,rarity='common',quantity=1)=>{if(itemDefinition({id}))drops.push({id,rarity,quantity});};
  if(type==='wolf'){if(rng()<Math.min(1,.35*bonus))add('wolfFang',rollRarity(rng));if(rng()<Math.min(1,.2*bonus))add('wolfPelt',rollRarity(rng));}
  // Normal monsters: 15% common, 4% uncommon, 1% rare, 0.1% epic. Never legendary.
  const roll=rng()/bonus;
@@ -42,6 +42,6 @@ export function rollMonsterLoot(hero,kind,rng=Math.random){
  const slot=table.slots[Math.min(table.slots.length-1,Math.floor(rng()*table.slots.length))];
  let options=equipmentForLevel(level,slot,hero.classId).filter(id=>{const d=itemDefinition({id});return !d.allowedClasses||d.allowedClasses.includes(hero.classId);});
  if(!options.length)options=equipmentForLevel(level,'weapon',hero.classId);
- if(options.length){const reward={id:options[0],rarity,quantity:1};if(addItem(hero,reward))drops.push(reward);}
+ if(options.length)drops.push({id:options[0],rarity,quantity:1});
  return drops;
 }

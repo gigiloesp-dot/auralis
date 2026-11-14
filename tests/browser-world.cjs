@@ -22,7 +22,7 @@ const fs=require('node:fs'),path=require('node:path');
    }
   });console.log('PASS full road routes',region);
  }
- assert.deepEqual(totals,{normal:1145,bosses:18,camps:254,towns:7,npcs:21});
+ assert.deepEqual(totals,{normal:2415,bosses:18,camps:254,towns:7,npcs:21});
  for(const region of ['forest','north','ancient']){
   const transitions=await p.evaluate(region=>{const s=Auralis.game.scene.getScene('world');s.world.load({region,x:1030,y:1140});return s.regionContent.portals.filter(p=>p.toRegion!=='arena');},region);
   for(const portal of transitions){await p.evaluate(({region,portal})=>{const s=Auralis.game.scene.getScene('world');s.world.load({region,x:portal.x,y:portal.y});s.world.update();},{region,portal});await p.locator('.world-travel').click();assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.region),portal.toRegion);}

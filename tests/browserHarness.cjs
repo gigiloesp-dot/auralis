@@ -17,4 +17,29 @@ async function openStorage(page,id='borin'){
  await page.locator('.npc-panel').getByRole('button',{name:label,exact:true}).click();
  await page.waitForFunction(()=>Auralis.game.scene.getScene('world').storagePanel.opened);
 }
-module.exports={startServer,launchOptions,root,openNpc,openStorage};
+// Actual canvas touch. Reads only the anonymous marker ID and coordinates;
+// neither this helper nor earned-progression drivers invoke pickup APIs.
+async function tapGroundDrop(page,id){
+ let point=null,previous=null;const deadline=Date.now()+3000;
+ do{
+  await page.evaluate(()=>new Promise(requestAnimationFrame));
+  point=await page.evaluate(id=>{const s=Auralis.game.scene.getScene('world'),m=s.groundLoot.markers.get(id),c=s.cameras.main;if(!m)return null;return {x:(m.root.x-c.worldView.x)*c.zoom+c.x,y:(m.root.y-7-c.worldView.y)*c.zoom+c.y};},id);
+  if(!point||previous&&Math.hypot(point.x-previous.x,point.y-previous.y)<.7)break;previous=point;
+ }while(Date.now()<deadline);
+ if(!point)throw Error('No rendered loot marker '+id);
+ const viewport=page.viewportSize();if(point.x<0||point.y<0||point.x>viewport.width||point.y>viewport.height)throw Error('Loot marker outside viewport '+JSON.stringify(point));
+ await page.touchscreen.tap(point.x,point.y);
+}
+async function collectNearbyLoot(page,walkTo){
+ let collected=0;
+ const candidates=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world');return s.groundLoot.visibleDrops().map(d=>({...d,distance:Math.hypot(d.x-s.hero.x,d.y-s.hero.y)})).filter(d=>d.distance<=140).sort((a,b)=>a.distance-b.distance);});
+ for(const d of candidates){
+  const current=await page.evaluate(id=>{const s=Auralis.game.scene.getScene('world'),d=s.groundLoot.visibleDrops().find(d=>d.id===id);return d?{distance:Math.hypot(d.x-s.hero.x,d.y-s.hero.y),slots:s.hero.inventory.length}:null;},d.id);
+  if(!current||current.slots>=60)continue;
+  if(current.distance>75){if(!walkTo)continue;await walkTo({x:d.x,y:d.y},30);}
+  await tapGroundDrop(page,d.id);
+  await page.waitForFunction(id=>!Auralis.game.scene.getScene('world').hero.worldState.groundLoot.drops[id],d.id,{timeout:3000});collected++;
+ }
+ return collected;
+}
+module.exports={startServer,launchOptions,root,openNpc,openStorage,tapGroundDrop,collectNearbyLoot};

@@ -12,7 +12,7 @@ const names={ru:{travel:'Перейти',exit:'Выход'},en:{travel:'Travel',
 export class WorldRuntime{
  constructor(scene){this.scene=scene;this.button=document.createElement('button');this.button.className='world-travel';this.button.hidden=true;this.button.onclick=()=>this.travel();document.body.append(this.button);this.load();}
  load(destination,provided){
-  const s=this.scene,h=s.hero;s.clearTarget?.();if(destination)Object.assign(h,destination);
+  const s=this.scene,h=s.hero;s.clearTarget?.();s.groundLoot?.clearVisuals();s.exitPortal?.clear();if(destination)Object.assign(h,destination);
   if(s.monsters?.hero===h)s.monsters.persistCooldowns?.(s.playNow);this.chunkWorld?.destroy();s.monsters?.destroy();s.closePanels?.();
   const inside=provided||(h.region==='arena'?generateArenaContent(h):dungeonContentForHero(h));if(!inside&&h.dungeonSession){h.dungeonSession=null;h.returnLocation=null;}if(!inside&&!Object.hasOwn(REGIONS,h.region)){h.region='forest';h.x=1030;h.y=1140;h.dungeonSession=null;}
   this.content=inside?{...inside}: {...getRegionContent(h.region),dungeons:DUNGEONS.filter(d=>d.region===h.region)};
@@ -41,7 +41,7 @@ export class WorldRuntime{
  travel(){if(!this.portal||this.scene.panelsOpen())return false;const p=this.portal;if(p.toRegion==='arena')this.scene.hero.returnLocation={region:this.scene.hero.region,x:p.x,y:p.y+80};else if(this.content.arena)this.scene.hero.returnLocation=null;this.load({region:p.toRegion,x:p.toX,y:p.toY});return true;}
  enterDungeon(id,difficulty){const result=enterDungeon(this.scene.hero,id,difficulty);if(result.ok)this.load(result.destination,result.content);return result;}
  leaveDungeon(){const result=leaveDungeon(this.scene.hero);if(result.ok)this.load(result.destination);return result;}
- onKill(m){const h=this.scene.hero,session=h.dungeonSession;if(!session||!m.kind?.boss)return;const result=recordDungeonBossKill(h,session.dungeonId,session.difficulty,m.id);if(result.completed)recordEvent(h,'dungeon',{id:session.dungeonId,region:this.content.region});}
+ onKill(m){const h=this.scene.hero,session=h.dungeonSession;if(!session||!m.kind?.boss)return;const at=m.deathAt??Date.now(),result=recordDungeonBossKill(h,session.dungeonId,session.difficulty,m.id,at,{deathRecordedAt:at});if(result.completed)recordEvent(h,'dungeon',{id:session.dungeonId,region:this.content.region});}
  respawn(){const h=this.scene.hero;if(this.content.arena){const back=validReturn(h.returnLocation)?h.returnLocation:{region:'forest',x:2280,y:1220};Object.assign(h,back);h.returnLocation=null;respawnAtTown(h);this.load();}else if(h.dungeonSession){this.leaveDungeon();h.hp=Math.round(h.maxHp*.4);h.mp=Math.round(h.maxMp*.4);}else{respawnAtTown(h);this.load();}this.scene.controls?.reset();}
  get diagnostics(){return {...this.chunkWorld.diagnostics,...this.scene.monsters?.diagnostics,region:this.content.id};}
  destroy(){this.chunkWorld.destroy();this.button.remove();}

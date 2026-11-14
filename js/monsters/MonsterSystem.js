@@ -1,3 +1,5 @@
+import {ensureDungeonVisit,dungeonMonsterState,recordDungeonMinionKill,DUNGEON_VISIT_DEAD_UNTIL} from '../dungeons/dungeonSession.js';
+import {markMonsterThreat,monsterIntent,steeringWaypoint,leashRadius} from './monsterBehavior.js';
 import {movementProfile,blockingObstacles,tickMonsterAbility,cancelMonsterAbility,applyHeroAffliction,tickHeroAfflictions} from './movementProfiles.js';
 import {PaintedActor} from '../characters/PaintedActor.js';
 import {monsterArt} from '../assets/monsterArt.js';
@@ -25,7 +27,7 @@ export class MonsterSystem{
   Object.assign(this,{scene,hero,onChange,content,monsters:[],projectiles:[],hostileProjectiles:[],buffs:{},lastCombat:scene.playNow||0,lastRegen:scene.playNow||0,combo:0,pendingEffects:[]});
   this.cooldowns=new Map(Object.entries(hero.combatCooldowns||{}).map(([id,at])=>[id,(scene.playNow||0)+Math.max(0,at-Date.now())]));
   hero.worldState??={monsters:{}};hero.worldState.monsters??={};
-  if(content){this.stream=new MonsterStream(content,hero,d=>this.spawn(d),m=>this.removeMonster(m));this.stream.update();}
+  if(content){if(content.dungeon)ensureDungeonVisit(hero,content);this.stream=new MonsterStream(content,hero,d=>this.spawn(d),m=>this.removeMonster(m),{viewport:()=>scene.cameras?.main?.worldView,project:(x,y)=>this.view(x,y),hot:m=>this.isCombatHot(m)});this.stream.update();}
   else for(let i=0;i<spawnPoints.length;i++)this.spawn({...spawnPoints[i],i});
  }
  view(x,y){return this.scene.project?this.scene.project(x,y):{x,y};}
@@ -36,22 +38,53 @@ export class MonsterSystem{
  canSee(m){return this.canFight(m)&&!this.scene.world?.occludes?.(m);}
  select(m,now=this.now||this.scene.playNow||0){if(!m?.alive||!this.monsters.includes(m)||!this.canSee(m))return false;this.selected=m;this.scene.onTarget?.(m,now);return true;}
  preferred(range){const m=this.selected;if(m?.alive&&this.monsters.includes(m)&&distance(this.hero,m)<=range&&this.canFight(m))return m;return this.nearest(range);}
- persistHealth(m,now=this.now??this.scene.playNow??0){if(!m.alive||this.hero.worldState.monsters[m.key]?.deadUntil>Date.now())return;if(m.hp>=m.maxHp){delete this.hero.worldState.monsters[m.key];return;}this.hero.worldState.monsters[m.key]={hp:m.hp,healthAt:Date.now(),recoverAfter:Date.now()+Math.max(0,MONSTER_RECOVERY_DELAY-(now-(m.lastEngagedAt??now)))};}
+ isCombatHot(m,now=this.now??this.scene.playNow??0){
+  if(!m.alive||this.hero.hp<=0)return false;
+  const closeToTerritory=distance(this.hero,{x:m.homeX,y:m.homeY})<=leashRadius(m)+140;
+  return closeToTerritory&&((m.aggroUntil>now&&!m.returning)||!!m.windup||!!m.specialState||this.projectiles.some(p=>p.target===m)||this.hostileProjectiles.some(p=>p.source===m));
+ }
+ isActive(m){return (m.alive&&(m.returning||m.behaviorState==='chase'))||(this.stream?.shouldActivate?.(m)??distance(m,this.hero)<=MONSTER_ACTIVATION_RADIUS);}
+ persistHealth(m,now=this.now??this.scene.playNow??0){
+  const wallNow=Date.now();if(!m.alive||this.hero.worldState.monsters[m.key]?.deadUntil>wallNow)return;
+  const threat=this.isCombatHot(m,now)&&m.aggroUntil>now;
+  const moved=distance(m,{x:m.homeX,y:m.homeY})>1;
+  if(m.hp>=m.maxHp&&!moved&&!threat&&!m.returning){delete this.hero.worldState.monsters[m.key];return;}
+  this.hero.worldState.monsters[m.key]={hp:m.hp,healthAt:wallNow,recoverAfter:wallNow+Math.max(0,MONSTER_RECOVERY_DELAY-(now-(m.lastEngagedAt??now))),x:m.x,y:m.y,aggroUntil:threat?wallNow+m.aggroUntil-now:0,lastSeenAt:Number.isFinite(m.lastSeenAt)?Math.max(0,wallNow-(now-m.lastSeenAt)):0,targetX:m.targetX,targetY:m.targetY,returning:m.returning===true,behaviorSeed:m.behaviorSeed};
+ }
  syncAnnotations(m){const visible=this.canSee(m)&&m.hp<m.maxHp; m.hpBar.setVisible(visible);m.nameLabel.setVisible(visible);}
  get obstacles(){return this.scene.obstacles||[];}
  get diagnostics(){return this.stream?.diagnostics||{totalDescriptors:spawnPoints.length,loadedMonsters:this.monsters.length};}
  stateKey(d){return `${this.content?.id||'legacy'}:${d.id}`;}
  spawn(d){
-  const {x,y,type}=d,kind=this.content?monsterKind(d):MONSTER_TYPES[type],key=this.stateKey(d),saved=this.hero.worldState.monsters[key];
+  const {x,y,type}=d,kind=this.content?monsterKind(d):MONSTER_TYPES[type],key=this.stateKey(d);
+  let saved=this.content?.dungeon?dungeonMonsterState(this.hero,this.content,d):this.hero.worldState.monsters[key];
+  // Old eleven-second deaths remain the same encounter, but obey the new
+  // thirty-second interval when restored. World boss timestamps are untouched.
+  if(!this.content?.dungeon&&!kind.boss&&Number.isFinite(saved?.killedAt)&&saved.killedAt>0&&saved.deadUntil>0){
+   const deadUntil=Math.max(saved.deadUntil,saved.killedAt+30000);if(deadUntil!==saved.deadUntil){saved={...saved,deadUntil};this.hero.worldState.monsters[key]=saved;}
+  }
   const point=this.view(x,y),depth=this.depth(x,y);
   const shadow=this.scene.add.ellipse(point.x,point.y+5,38,13,0x0b1d12,.35).setDepth(depth-1),body=this.scene.add.container(point.x,point.y).setDepth(depth);
   drawMonster(this.scene,body,type,kind.boss);
   const hpBar=this.scene.add.rectangle(point.x,point.y-48,36,5,0xc94c42).setDepth(depth+1),name=kind.names?.[this.scene.language||'ru']||kind.name;
   const nameLabel=this.scene.add.text(point.x,point.y-(kind.boss?(kind.visualScale||1.45)*110:76),name+' · '+kind.level,{fontFamily:'Arial',fontSize:kind.boss?'13px':'10px',color:kind.boss?'#ffd47b':'#e5d9ba',stroke:'#15251a',strokeThickness:3}).setOrigin(.5).setDepth(depth+2);
-  const alive=!(saved?.deadUntil>Date.now());
+  // An elapsed ordinary death still needs a safe respawn position. Keep it
+  // hidden until update() checks the hero, neighbours and current obstacles.
+  const pendingOrdinaryRespawn=!this.content?.dungeon&&!kind.boss&&saved?.killedAt>0&&saved?.deadUntil>0;
+  const alive=!(saved?.visitKilled||saved?.deadUntil>Date.now()||pendingOrdinaryRespawn);
   const m={...d,key,kind,nameLabel,active:false,x,y,homeX:x,homeY:y,hp:alive?restoredLivingHp(saved,kind.hp):0,maxHp:kind.hp,lastEngagedAt:(this.scene.playNow||0)-MONSTER_RECOVERY_DELAY+Math.max(0,(saved?.recoverAfter||0)-Date.now()),attack:kind.attack,alive,body,shadow,hpBar,lastHit:0,respawnAt:alive?0:(this.content?saved.deadUntil:Math.max(0,saved.deadUntil-Date.now())),phase:(d.i||0)*.7};
+  const clock=this.scene.playNow||0,wallNow=Date.now();
+  m.visitKilled=saved?.visitKilled===true;
+  m.aggroUntil=clock+Math.max(0,(saved?.aggroUntil||0)-wallNow);
+  m.lastSeenAt=clock-Math.max(0,wallNow-(saved?.lastSeenAt||wallNow));
+  m.targetX=Number.isFinite(saved?.targetX)?saved.targetX:undefined;m.targetY=Number.isFinite(saved?.targetY)?saved.targetY:undefined;
+  m.returning=saved?.returning===true;m.behaviorSeed=saved?.behaviorSeed;m.nextPatrolAt=clock+500+(Math.abs(d.x*13+d.y*7)%1200);
+  if(alive&&Number.isFinite(saved?.x)&&Number.isFinite(saved?.y)&&distance(saved,{x,y})<=leashRadius(m)&&this.canOccupy(m,saved.x,saved.y)){m.x=saved.x;m.y=saved.y;}
+  // An expired remembered attacker must send a restored chaser home first.
+  // Zero means an ordinary saved patrol, which keeps its existing behaviour.
+  if(alive&&saved?.aggroUntil>0&&saved.aggroUntil<=wallNow&&distance(m,{x,y})>18)m.returning=true;
   const paintedEntry=monsterArt(type,kind,d);if(paintedEntry&&this.scene.actorTextures){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,paintedEntry);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;body.scaleX=Math.abs(body.scaleX);m.annotationHeight=(paintedEntry.annotationHeight||paintedEntry.scale*170)*(kind.visualScale||1);});}
-  this.monsters.push(m);this.setMonsterVisible(m,distance(this.hero,m)<=MONSTER_ACTIVATION_RADIUS);return m;
+  this.monsters.push(m);this.setMonsterVisible(m,this.isActive(m));return m;
  }
  removeMonster(m){m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
  setMonsterVisible(m,active){m.active=active;for(const key of ['body','shadow'])m[key]?.setVisible(active&&(m.alive||m.dyingUntil>(this.now||0)));this.syncAnnotations(m);}
@@ -75,7 +108,20 @@ export class MonsterSystem{
   this.scene.tweens.add({targets:label,y:label.y-35,alpha:0,duration:600,onComplete:()=>label.destroy()});
  }
  canOccupy(m,x,y,radius=movementProfile(m.kind).collisionRadius){const world=this.scene.world,flight=movementProfile(m.kind).movement==='flight',check=flight?(world?.isFlightWalkable||world?.isWalkable):world?.isWalkable;return !check||check.call(world,x,y,radius);}
- move(m,x,y,amount){const old={x:m.x,y:m.y},radius=movementProfile(m.kind).collisionRadius;moveWithCollision(m,x,y,amount,blockingObstacles(this.obstacles,m.kind),radius,(x,y)=>this.canOccupy(m,x,y,radius));if(!this.canOccupy(m,m.x,m.y,radius))Object.assign(m,old);}
+ move(m,x,y,amount){
+  const old={x:m.x,y:m.y},radius=movementProfile(m.kind).collisionRadius,home={x:m.homeX,y:m.homeY},limit=Math.max(leashRadius(m),distance(old,home)),camp={x:m.campX??m.homeX,y:m.campY??m.homeY},campLimit=Math.max(m.campRadius||90,distance(old,camp));
+  const allowed=(x,y)=>this.canOccupy(m,x,y,radius)&&distance({x,y},home)<=limit+.01&&(!['idle','patrol'].includes(m.behaviorState)||distance({x,y},camp)<=campLimit);
+  moveWithCollision(m,x,y,amount,blockingObstacles(this.obstacles,m.kind),radius,allowed);if(!this.canOccupy(m,m.x,m.y,radius))Object.assign(m,old);
+ }
+ respawnPoint(m,now){
+  const home={x:m.homeX,y:m.homeY};if(m.kind.boss)return home;
+  if(now<(m.nextRespawnCheck||0))return null;m.nextRespawnCheck=now+500;
+  const radius=movementProfile(m.kind).collisionRadius,camp={x:m.campX??m.homeX,y:m.campY??m.homeY},campRadius=m.campRadius||110;
+  const free=p=>distance(p,this.hero)>=radius+44&&distance(p,camp)<=campRadius&&this.canOccupy(m,p.x,p.y,radius)&&this.monsters.every(other=>other===m||!other.alive||distance(other,p)>=radius+movementProfile(other.kind).collisionRadius+4);
+  if(free(home))return home;
+  for(const spread of [32,56,80,104])for(let i=0;i<12;i++){const angle=i*Math.PI/6+(m.phase||0),p={x:home.x+Math.cos(angle)*spread,y:home.y+Math.sin(angle)*spread};if(free(p))return p;}
+  return null;
+ }
  warnAbility(config){const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
  abilityEffect(config){const point=this.view(config.x,config.y),ring=this.scene.add.circle(point.x,point.y,config.radius,config.kind==='blink'?0xb891ed:0xe0b17b,.25).setDepth(this.depth(config.x,config.y)+1);if(this.scene.project)ring.setScale?.(1,.5);this.scene.tweens.add({targets:ring,alpha:0,duration:350,onComplete:()=>ring.destroy()});if(config.kind==='stomp')this.scene.cameras?.main?.shake?.(130,.003);}
  shootHostile(m,shot){const angle=Math.atan2(shot.targetY-shot.y,shot.targetX-shot.x)+(shot.angleOffset||0),p={...shot,vx:Math.cos(angle)*shot.speed,vy:Math.sin(angle)*shot.speed,remaining:shot.range||600,source:m};const screen=this.view(p.x,p.y);p.body=this.scene.add.circle(screen.x,screen.y-18,shot.magic?6:4,shot.status?.type==='poison'?0x9ac76b:shot.magic?0xb49aeb:0xd5b98a).setDepth(this.depth(p.x,p.y)+5);this.hostileProjectiles.push(p);}
@@ -98,22 +144,35 @@ export class MonsterSystem{
  update(now,dt){
   this.now=now;this.stream?.update();this.tickEffects(now);tickHeroAfflictions(this.hero,now,(attack,magic)=>this.hurtHero(attack,now,magic));if(this.hero.hp>0)tickClassEffects(this,now);
   for(const m of this.monsters){
-   const active=distance(m,this.hero)<=MONSTER_ACTIVATION_RADIUS;if(active!==m.active)this.setMonsterVisible(m,active);
+   const active=this.isActive(m);if(active!==m.active)this.setMonsterVisible(m,active);
    if(!active){this.cancelWindup(m);cancelMonsterAbility(m);continue;}
-   if(!m.alive){if((this.content?Date.now():now)<m.respawnAt){m.painted?.update('death',projectAngle(m.facing||0),dt);const fraction=Math.max(0,Math.min(1,((m.dyingUntil||0)-now)/350));m.body.alpha=fraction;m.body.rotation=m.paintedActive?0:(1-fraction)*1.1;if(!fraction){m.body.setVisible(false);m.shadow.setVisible(false);}continue;}m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=m.homeX;m.y=m.homeY;m.poison=null;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);}
+   if(!m.alive){
+    const due=!m.visitKilled&&(this.content?Date.now():now)>=m.respawnAt;
+    const spawn=due?this.respawnPoint(m,now):null;
+    if(!spawn){m.painted?.update('death',projectAngle(m.facing||0),dt);const fraction=Math.max(0,Math.min(1,((m.dyingUntil||0)-now)/350));m.body.alpha=fraction;m.body.rotation=m.paintedActive?0:(1-fraction)*1.1;if(!fraction){m.body.setVisible(false);m.shadow.setVisible(false);}continue;}
+    m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=spawn.x;m.y=spawn.y;m.poison=null;m.returning=false;m.aggroUntil=0;m.patrolTarget=null;m.nextPatrolAt=now+1000;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);
+   }
    if(this.hero.hp>0&&m.poison&&now<m.poison.until&&now>=m.poison.next){m.poison.next=now+1000;this.hit(m,m.poison.damage,now);if(!m.alive)continue;}
-   const profile=movementProfile(m.kind),dist=distance(m,this.hero),homeDist=Math.hypot(m.x-m.homeX,m.y-m.homeY);let tx=m.homeX,ty=m.homeY,speed=62;
-   if(homeDist>=295||this.safe())m.returning=true;if(m.returning&&homeDist<35){m.returning=false;}
-   const engaged=!m.returning&&!this.safe()&&dist<Math.max(190,profile.range)&&homeDist<300&&this.hero.hp>0&&this.sight(m,this.hero);
-   if(engaged){tx=this.hero.x;ty=this.hero.y;speed=m.kind.speed;this.lastCombat=now;m.lastEngagedAt=now;if(profile.preferredDistance){if(dist<profile.preferredDistance*.65){tx=m.x+(m.x-this.hero.x);ty=m.y+(m.y-this.hero.y);speed*=.65;}else if(dist<profile.preferredDistance){tx=m.x;ty=m.y;}}}
+   const profile=movementProfile(m.kind),dist=distance(m,this.hero),visible=this.sight(m,this.hero),intent=monsterIntent(m,this.hero,now,{visible,safe:this.safe(),detection:Math.max(190,profile.range||0),canOccupy:(x,y)=>this.canOccupy(m,x,y)});
+   let {x:tx,y:ty,speed}=intent;const engaged=intent.engaged;
+   if(engaged){this.lastCombat=now;m.lastEngagedAt=now;if(visible&&profile.preferredDistance){if(dist<profile.preferredDistance*.65){tx=m.x+(m.x-this.hero.x);ty=m.y+(m.y-this.hero.y);speed*=.65;}else if(dist<profile.preferredDistance){tx=m.x;ty=m.y;}}}
    const controlled=now<(m.rootUntil||0)||now<(m.stunUntil||0);if(controlled){cancelMonsterAbility(m);m.abilityBlockedUntil=Math.max(m.rootUntil||0,m.stunUntil||0)+250;}
-   const ability=this.tickAbility(m,now,dt,engaged&&!controlled);if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
+   const ability=this.tickAbility(m,now,dt,engaged&&visible&&!controlled);if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
    if(now<(m.rootUntil||0)||now<(m.stunUntil||0))speed=0;else if(now<(m.slowUntil||0))speed*=.45;
    if(m.windup){if(m.returning||this.safe()||this.hero.hp<=0)this.cancelWindup(m);else if(now>=m.windup.at)this.finishBossAttack(m,now);speed=0;}
    const interval=m.hp/m.maxHp<.5?4200:6000;
    if(m.kind.boss&&!m.specialState&&!ability.fired&&!m.windup&&!m.returning&&!this.safe()&&dist<260&&now-(m.lastSlam||0)>interval&&this.hero.hp>0&&this.sight(m,this.hero)){this.beginBossAttack(m,now);speed=0;}
-   const previous={x:m.x,y:m.y};if(Math.hypot(tx-m.x,ty-m.y)>32){m.facing=Math.atan2(ty-m.y,tx-m.x);this.move(m,tx,ty,speed*dt);}
-   if(dt>0)for(const other of this.monsters){if(other===m||!other.alive||other.active===false)continue;const d=distance(m,other);if(d>0&&d<24)this.move(m,m.x+(m.x-other.x)/d*4,m.y+(m.y-other.y)/d*4,Math.min(3,24-d));}
+   const previous={x:m.x,y:m.y};
+   if(speed>0&&Math.hypot(tx-m.x,ty-m.y)>(intent.patrol?8:18)){
+    let target={x:tx,y:ty};
+    if(engaged||m.returning)target=steeringWaypoint(m,target,now,(a,b)=>this.sight({...a,kind:m.kind},b,profile.collisionRadius),(x,y)=>this.canOccupy(m,x,y));
+    m.facing=Math.atan2(target.y-m.y,target.x-m.x);this.move(m,target.x,target.y,speed*dt);
+   }
+   if(dt>0)for(const other of this.monsters){
+    if(other===m||!other.alive||other.active===false)continue;
+    const d=distance(m,other),clearance=profile.collisionRadius+movementProfile(other.kind).collisionRadius+3;
+    if(d<clearance){const sign=String(m.id)<String(other.id)?1:-1,dx=d?(m.x-other.x)/d:sign,dy=d?(m.y-other.y)/d:0;this.move(m,m.x+dx*4,m.y+dy*4,Math.min(3,clearance-d));}
+   }
    const walking=distance(previous,m)>.01;animateMonsterParts(m,now,walking,profile);const state=m.hurtUntil>now?'hurt':m.specialState?'special':now-m.lastHit<240?'attack':walking?'run':'idle';m.painted?.update(state,projectAngle(m.facing||0),dt,{progress:m.specialState?(now-m.specialState.releaseAt+profile.windup)/profile.windup:(now-m.lastHit)/240});m.body.alpha=m.hurtUntil>now?.6:1;m.body.rotation=m.hurtUntil>now?Math.sin(now*.05)*.09:now-m.lastHit<240?Math.sin((now-m.lastHit)/240*Math.PI)*.12:0;m.body.scaleX=(m.paintedActive?1:Math.cos(m.facing||0)<0?-1:1)*(m.kind.visualScale||(m.kind.boss?1.45:1));m.body.scaleY=(m.kind.visualScale||(m.kind.boss?1.45:1))*(walking?1+Math.sin(now*.012)*.035:1);
    if(recoverLivingMonster(m,now,dt,engaged))this.persistHealth(m,now);
    if(!ability.busy&&!m.windup&&!controlled&&!m.returning&&!this.safe()&&dist<42&&now-m.lastHit>1500&&this.hero.hp>0&&this.sight(m,this.hero)){m.lastHit=now;this.hurtHero(m.attack,now,m.kind.magic,m);}
@@ -147,8 +206,16 @@ export class MonsterSystem{
   return {magic,damage:calculateDamage({attack:attack*multiplier,critical})+(critical?Math.round((magic?this.hero.stats.intelligence:this.hero.stats.strength)*.3):0),critical};
  }
  hit(m,amount,now,critical=false){
-  if(!m.alive)return;this.lastCombat=now;m.lastEngagedAt=now;if(!this.selected?.alive||this.selected===m)this.select(m,now);m.hp=Math.max(0,m.hp-amount);m.hurtUntil=now+180;this.label(m.x,m.y,'-'+amount+(critical?'!':''),critical?'#ffb45c':'#fff1a0');
-  this.persistHealth(m,now);this.syncAnnotations(m);if(m.hp===0){m.alive=false;if(this.selected===m)this.selected=null;this.scene.onTargetLost?.(m);m.dyingUntil=now+350;const deadUntil=Date.now()+(m.kind.respawnMs||11000);m.respawnAt=this.content?deadUntil:now+(m.kind.respawnMs||11000);this.hero.worldState.monsters[m.key]={deadUntil,killedAt:Date.now()};this.cancelWindup(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;rollMonsterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.onChange();}
+  if(!m.alive||!Number.isFinite(amount)||amount<=0)return;this.lastCombat=now;m.lastEngagedAt=now;markMonsterThreat(m,this.hero,now);if(!this.selected?.alive||this.selected===m)this.select(m,now);m.hp=Math.max(0,m.hp-amount);m.hurtUntil=now+180;this.label(m.x,m.y,'-'+amount+(critical?'!':''),critical?'#ffb45c':'#fff1a0');
+  this.persistHealth(m,now);this.syncAnnotations(m);
+  if(m.hp===0){
+   const deathAt=m.deathAt=Date.now(),minion=this.content?.dungeon&&!m.kind.boss,respawnMs=m.kind.respawnMs||30000;
+   m.alive=false;m.visitKilled=!!minion;if(this.selected===m)this.selected=null;this.scene.onTargetLost?.(m);m.dyingUntil=now+350;
+   const deadUntil=minion?DUNGEON_VISIT_DEAD_UNTIL:deathAt+respawnMs;m.respawnAt=this.content?deadUntil:now+respawnMs;
+   this.hero.worldState.monsters[m.key]={deadUntil,killedAt:deathAt,hp:0};if(minion)recordDungeonMinionKill(this.hero,this.content,m.id,deathAt);
+   this.cancelWindup(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;
+   const drops=rollMonsterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.scene.groundLoot?.dropMonster(m,drops,deathAt);this.onChange();
+  }
  }
  strike(m,now,multiplier=1,critical=false,projectile=true,after=()=>{},magicOverride){
   const roll=this.damage(multiplier,critical,now,magicOverride),impact=target=>{if(!this.sight(this.hero,target)&&!projectile)return;this.hit(target,Math.max(1,roll.damage-Math.round((target.kind[roll.magic?'magicDefense':'defense']||0)*(target.armorBreakUntil>(this.now??now)&&!roll.magic?.5:1)*.45)),this.now??now,roll.critical);if(this.hero.classId==='cannoneer'&&this.buffs.powder>(this.now??now))for(const other of this.monsters)if(other!==target&&other.alive&&distance(other,target)<55&&this.sight(target,other))this.hit(other,Math.max(1,Math.round(roll.damage*.25)),this.now??now);after(target);};

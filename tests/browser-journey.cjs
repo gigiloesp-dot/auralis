@@ -1,4 +1,4 @@
-const {startServer,launchOptions,root,openNpc}=require('./browserHarness.cjs');
+const {startServer,launchOptions,root,openNpc,collectNearbyLoot}=require('./browserHarness.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const path=require('node:path');
@@ -37,8 +37,9 @@ const path=require('node:path');
    const length=Math.hypot(dx-dy,(dx+dy)/2),scale=length?joy.width*.24/length:0;
    const points=[{id:1,x:centre.x+(dx-dy)*scale,y:centre.y+(dx+dy)/2*scale}];
    if(holdAttack)points.push({id:2,...attackPoint});
-   const type=!touching||holdAttack&&!attacking?'touchStart':!holdAttack&&attacking?'touchEnd':'touchMove';
-   await cdp.send('Input.dispatchTouchEvent',{type,touchPoints:points});touching=true;attacking=holdAttack;
+   if(!touching){await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[points[0]]});if(holdAttack)await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:points});}
+   else if(!holdAttack&&attacking){await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[{id:2,...attackPoint}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[points[0]]});}
+   else await cdp.send('Input.dispatchTouchEvent',{type:holdAttack&&!attacking?'touchStart':'touchMove',touchPoints:points});touching=true;attacking=holdAttack;
   };
   const release=async()=>{if(touching)await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});touching=false;attacking=false;};
   const directionTo=async target=>page.evaluate(target=>{
@@ -84,6 +85,8 @@ const path=require('node:path');
   }
   await release();assert.equal((await read()).quests.forestWolves.progress,5,'five kills must come from held basic attack');assert.equal(multitouch,true,'joystick and attack should work simultaneously');
   console.log('PASS five wolves defeated by real multitouch movement and basic attacks');
+  if((await read()).hp<(await read()).maxHp*.65&&await page.getByRole('button',{name:'Зелье здоровья',exact:true}).isEnabled())await page.getByRole('button',{name:'Зелье здоровья',exact:true}).click();
+  console.log('JOURNEY physically collected anonymous drops',await collectNearbyLoot(page,walkTo));
   await walkTo({x:1000,y:1120},25);
   await openNpc(page,'mira');
   await page.locator('[data-quest-id=forestWolves]').getByRole('button',{name:'Получить награду',exact:true}).click();

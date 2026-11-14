@@ -11,7 +11,7 @@ const uniqueIds=(value,valid)=>Array.isArray(value)?[...new Set(value.filter(id=
 export function newDungeonVisit(content,returnLocation){
  return {dungeonId:content.dungeonId,difficulty:content.difficulty,returnLocation,
   visitId:'visit-'+Date.now().toString(36)+'-'+(++sequence).toString(36)+'-'+Math.random().toString(36).slice(2,10),
-  killedMinions:[],killedBosses:[],completed:false};
+  killedMinions:[],killedBosses:[],completionBosses:[],completed:false};
 }
 export function ensureDungeonVisit(hero,content){
  const session=hero?.dungeonSession;
@@ -21,13 +21,14 @@ export function ensureDungeonVisit(hero,content){
  if(legacy)session.visitId=newDungeonVisit(content,session.returnLocation).visitId;
  session.killedMinions=uniqueIds(session.killedMinions,minions);
  session.killedBosses=uniqueIds(session.killedBosses,bosses);
+ session.completionBosses=uniqueIds(session.completionBosses,bosses);
  // Release 5 sessions have no visit ledger. Preserve any recorded deaths even
  // when their old five-minute timestamp has elapsed, before streaming spawns.
  if(legacy)for(const id of minions){
   const saved=hero.worldState?.monsters?.[content.id+':'+id];
   if(validTime(saved?.killedAt)&&!session.killedMinions.includes(id))session.killedMinions.push(id);
  }
- session.completed=bosses.size>0&&[...bosses].every(id=>session.killedBosses.includes(id));
+ session.completed=bosses.size>0&&[...bosses].every(id=>session.killedBosses.includes(id)||session.completionBosses.includes(id));
  prepared.set(session,{contentId:content.id,minions,bosses});
  return session;
 }
@@ -44,14 +45,18 @@ export function recordDungeonMinionKill(hero,content,id,now=Date.now()){
  hero.worldState.monsters[key]={deadUntil:DUNGEON_VISIT_DEAD_UNTIL,killedAt:duplicate&&validTime(previous?.killedAt)?previous.killedAt:now,hp:0};
  return {ok:true,duplicate};
 }
-export function dungeonBossReadyAt(hero,content,id){
+export function dungeonBossReadyAt(hero,content,id,{deathRecordedAt}={}){
  const progress=hero?.dungeonProgress?.[content.dungeonId+':'+content.difficulty],saved=hero?.worldState?.monsters?.[content.id+':'+id];
  const perBoss=progress?.bossReadyAt?.[id];
  const legacy=Array.isArray(progress?.killed)&&progress.killed.includes(id)&&!validTime(perBoss)?progress.readyAt:0;
- return Math.max(validTime(saved?.deadUntil)?saved.deadUntil:0,validTime(perBoss)?perBoss:0,validTime(legacy)?legacy:0);
+ // MonsterSystem writes the just-killed body's death before its completion
+ // callback. Only the callback's exact death event can discount that new world
+ // record; an existing progress timer is never discounted.
+ const currentDeath=validTime(deathRecordedAt)&&saved?.killedAt===deathRecordedAt&&saved?.deadUntil===deathRecordedAt+3600000;
+ return Math.max(!currentDeath&&validTime(saved?.deadUntil)?saved.deadUntil:0,validTime(perBoss)?perBoss:0,validTime(legacy)?legacy:0);
 }
 export function dungeonMonsterState(hero,content,descriptor,now=Date.now()){
- const key=content.id+':'+descriptor.id,saved=hero?.worldState?.monsters?.[key];
+ const key=(content?.id||'legacy')+':'+descriptor.id,saved=hero?.worldState?.monsters?.[key];
  if(!content?.dungeon)return saved;
  const session=ensureDungeonVisit(hero,content);
  if(!session)return saved;
@@ -63,10 +68,15 @@ export function dungeonMonsterState(hero,content,descriptor,now=Date.now()){
  }
  return saved;
 }
-export function recordDungeonVisitBossKill(hero,content,id){
+export function recordDungeonVisitBossKill(hero,content,id,{completionBosses}={}){
  const session=ensureDungeonVisit(hero,content);if(!session||!prepared.get(session).bosses.has(id))return null;
  if(!session.killedBosses.includes(id))session.killedBosses.push(id);
- session.completed=content.bosses.every(b=>session.killedBosses.includes(b.id));return session;
+ // Completion may be finished in a later visit while earlier bosses retain
+ // their hour cooldown. Credit that successful completion event to this visit,
+ // without copying old completion just because a player re-entered.
+ const valid=prepared.get(session).bosses,credited=uniqueIds(completionBosses,valid);
+ if(credited.includes(id)&&[...valid].every(bossId=>credited.includes(bossId)))session.completionBosses=credited;
+ session.completed=content.bosses.every(b=>session.killedBosses.includes(b.id)||session.completionBosses.includes(b.id));return session;
 }
 export function dungeonExitPortalState(hero,content){
  const session=ensureDungeonVisit(hero,content);

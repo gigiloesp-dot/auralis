@@ -96,3 +96,30 @@ jobs:
           name: browser-android
           path: work/browser/
           if-no-files-found: ignore
+
+  task1_combat_loot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Dungeon visits, ground loot, combat AI, viewport streaming and multiple touch pointers
+        run: npm run test:browser:task1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-task1
+          path: |
+            work/browser/
+            work/stream-benchmark/
+          if-no-files-found: ignore

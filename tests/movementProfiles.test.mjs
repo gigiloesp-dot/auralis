@@ -55,8 +55,8 @@ test('safe zones, lost sight, death and loss of combat cancel abilities without 
 test('all23 regional species are reachable while exact encounter budgets and saved IDs remain stable',()=>{
  const types=new Set(),themes=new Set();let camps=0,spawns=0,bosses=0;
  for(const region of ['forest','north','ancient']){const c=getRegionContent(region);camps+=c.camps.length;spawns+=c.camps.reduce((n,c)=>n+c.spawns.length,0);for(const camp of c.camps){types.add(camp.type);assert.ok(MONSTER_TYPES[camp.type].level<=camp.level);for(const spawn of camp.spawns)assert.ok(spawn.id.startsWith(region+'-'));}for(const b of c.bosses){bosses++;assert.ok(b.id.startsWith(region+'-'+b.bossType+'-'));themes.add(b.bossTheme);assert.equal(monsterKind(b).bossTheme,b.bossTheme);}}
- assert.equal(types.size,23);assert.equal(camps,254);assert.equal(spawns,1145);assert.equal(bosses,18);assert.equal(themes.size,18);
- const first=getRegionContent('forest').camps[0];assert.equal(first.id,'forest-starter-wolves');assert.equal(first.type,'forestWolf');assert.deepEqual(first.spawns.map(s=>s.id),Array.from({length:8},(_,i)=>'forest-starter-wolf-'+i));
+ assert.equal(types.size,23);assert.equal(camps,254);assert.equal(spawns,2415);assert.equal(bosses,18);assert.equal(themes.size,18);
+ const first=getRegionContent('forest').camps[0];assert.equal(first.id,'forest-starter-wolves');assert.equal(first.type,'forestWolf');assert.deepEqual(first.spawns.map(s=>s.id),[...Array.from({length:8},(_,i)=>'forest-starter-wolf-'+i),...Array.from({length:5},(_,i)=>'forest-starter-wolves-reinforcement-'+i)]);
 });
 
 test('crowd-control recovery gives pursuit a short step before another movement ability can wind up',()=>{

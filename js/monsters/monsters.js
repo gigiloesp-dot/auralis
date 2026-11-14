@@ -55,5 +55,5 @@ export function monsterKind(descriptor){
  return {...base,assetSize:descriptor.bossType==='world'?360:boss?280:220,visualScale:descriptor.bossType==='world'?1.9:boss?1.45:1,...(descriptor.names?{names:descriptor.names}:{}),level,boss,bossTheme:descriptor.bossTheme||null,bossType:descriptor.bossType||(base.boss?'mini':null),defense:(base.defense||0)*downscale+delta*.8,
   magicDefense:Math.round((base.magicDefense??((base.defense||0)*.6))*downscale+delta*.65),hp:Math.round(hp*(descriptor.hpMultiplier||1)),attack:Math.round((base.attack*downscale+delta*2)*(descriptor.damageMultiplier||1)),
   xp:descriptor.xp||Math.round((base.xp*downscale+delta*12)*(boss?3:1)),gold:descriptor.gold||Math.round((base.gold*downscale+delta)*(boss?7:1)),
-  respawnMs:descriptor.respawnMs||(boss?2400000:11000)};
+  respawnMs:descriptor.respawnMs||(boss?2400000:30000)};
 }

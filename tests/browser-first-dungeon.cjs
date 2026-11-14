@@ -1,4 +1,4 @@
-const {startServer,launchOptions,root,openNpc}=require('./browserHarness.cjs');
+const {startServer,launchOptions,root,openNpc,collectNearbyLoot}=require('./browserHarness.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const path=require('node:path');
@@ -21,7 +21,7 @@ const path=require('node:path');
   const read=()=>page.evaluate(async()=>{
    const {itemDefinition,itemName}=await import('/js/equipment/items.js');
    const s=Auralis.game.scene.getScene('world'),h=s.hero;
-   return {deathStartedAt:h.deathStartedAt??null,x:h.x,y:h.y,hp:h.hp,maxHp:h.maxHp,mp:h.mp,maxMp:h.maxMp,dead:Object.entries(h.worldState?.monsters||{}).filter(([,state])=>state.killedAt>0&&state.deadUntil>0).map(([id])=>id),level:h.level,xp:h.xp,gold:h.gold,attributePoints:h.attributePoints,skillPoints:h.skillPoints,stats:{...h.stats},potions:{...h.potions},quests:JSON.parse(JSON.stringify(h.quests)),learnedSkills:{...h.learnedSkills},skillSlots:[...h.skillSlots],region:h.region,dungeonProgress:JSON.parse(JSON.stringify(h.dungeonProgress||{})),inventory:h.inventory.map((item,index)=>({index,...item,...itemDefinition(item),name:itemName(item)})),equipment:JSON.parse(JSON.stringify(h.equipment)),monsters:s.monsters.monsters.filter(m=>m.alive).map(m=>({id:m.id,campId:m.campId,x:m.x,y:m.y,hp:m.hp,boss:!!m.kind.boss})),wolves:s.monsters.monsters.filter(m=>m.alive&&m.type==='forestWolf').map(m=>({id:m.id,x:m.x,y:m.y,hp:m.hp})),axis:{...s.controls.axis},pointerId:s.controls.pointerId,attackPointerId:s.controls.attackPointerId,attacking:s.controls.attacking};
+   return {deathStartedAt:h.deathStartedAt??null,x:h.x,y:h.y,hp:h.hp,maxHp:h.maxHp,mp:h.mp,maxMp:h.maxMp,dead:Object.entries(h.worldState?.monsters||{}).filter(([,state])=>state.killedAt>0&&state.deadUntil>0).map(([id])=>id),level:h.level,xp:h.xp,gold:h.gold,attributePoints:h.attributePoints,skillPoints:h.skillPoints,stats:{...h.stats},potions:{...h.potions},quests:JSON.parse(JSON.stringify(h.quests)),learnedSkills:{...h.learnedSkills},skillSlots:[...h.skillSlots],region:h.region,dungeonProgress:JSON.parse(JSON.stringify(h.dungeonProgress||{})),inventory:h.inventory.map((item,index)=>({index,...item,...itemDefinition(item),name:itemName(item)})),equipment:JSON.parse(JSON.stringify(h.equipment)),monsters:s.monsters.monsters.filter(m=>m.alive).map(m=>({id:m.id,campId:m.campId,x:m.x,y:m.y,hp:m.hp,boss:!!m.kind.boss})),wolves:s.monsters.monsters.filter(m=>m.alive&&m.type==='forestWolf').map(m=>({id:m.id,campId:m.campId,x:m.x,y:m.y,hp:m.hp})),axis:{...s.controls.axis},pointerId:s.controls.pointerId,attackPointerId:s.controls.attackPointerId,attacking:s.controls.attacking};
   });
   assert.equal((await read()).level,1);assert.deepEqual((await read()).quests,{});
   await openNpc(page,'mira');
@@ -42,7 +42,7 @@ const path=require('node:path');
    // Add fingers individually, as on a phone and in the independent soak test.
    // A batched initial touchStart can leave Chromium's second capture inactive.
    if(!touching){await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[points[0]]});if(holdAttack)await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:points});}
-   else{const type=holdAttack&&!attacking?'touchStart':!holdAttack&&attacking?'touchEnd':'touchMove';await cdp.send('Input.dispatchTouchEvent',{type,touchPoints:points});}
+   else if(!holdAttack&&attacking){await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[{id:2,...attackPoint}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[points[0]]});}else{await cdp.send('Input.dispatchTouchEvent',{type:holdAttack&&!attacking?'touchStart':'touchMove',touchPoints:points});}
    touching=true;attacking=holdAttack;
   };
   const release=async()=>{if(touching)await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});touching=false;attacking=false;};
@@ -112,7 +112,7 @@ const path=require('node:path');
    if(progress!==lastProgress){console.log('JOURNEY hunt',JSON.stringify({progress,hp:h.hp,level:h.level,gold:h.gold,x:Math.round(h.x),y:Math.round(h.y)}));lastProgress=progress;}
    if(progress>=5)break;
    assert.ok(h.hp>0,'fresh hero should survive starter hunt');
-   const target=h.wolves.filter(m=>m.id.startsWith('forest-starter-wolf-')).sort((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)-Math.hypot(b.x-h.x,b.y-h.y))[0];assert.ok(target,'starter camp must have reachable living wolves');
+   const target=h.wolves.filter(m=>m.campId==='forest-starter-wolves').sort((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)-Math.hypot(b.x-h.x,b.y-h.y))[0];assert.ok(target,'starter camp must have reachable living wolves');
    if(!multitouch||Math.hypot(target.x-h.x,target.y-h.y)>65){const dir=await directionTo(target);await touch(dir.x,dir.y,true);}
    else await touch(0,0,true);
    await page.waitForTimeout(60);const state=await read();if(!touchSampled){console.log('JOURNEY initial touch',JSON.stringify({attacking:state.attacking,axis:state.axis}));touchSampled=true;}multitouch ||= state.attacking&&Math.hypot(state.axis.x,state.axis.y)>.1;
@@ -120,6 +120,8 @@ const path=require('node:path');
   }
   await release();assert.equal((await read()).quests.forestWolves.progress,5,'five kills must come from held basic attack');assert.equal(multitouch,true,'joystick and attack should work simultaneously');
   console.log('PASS five wolves defeated by real multitouch movement and basic attacks');
+  if((await read()).hp<(await read()).maxHp*.65&&await page.getByRole('button',{name:'Зелье здоровья',exact:true}).isEnabled())await page.getByRole('button',{name:'Зелье здоровья',exact:true}).click();
+  console.log('JOURNEY physically collected anonymous drops',await collectNearbyLoot(page,walkTo));
   await walkTo({x:1000,y:1120},25);
   await openNpc(page,'mira');
   await page.locator('[data-quest-id=forestWolves]').getByRole('button',{name:'Получить награду',exact:true}).click();
@@ -176,7 +178,7 @@ const path=require('node:path');
   const fightUntil=async(predicate,label,filter=()=>true,maxMs=90000)=>{
    const deadline=Date.now()+maxMs,expectedRegion=(await read()).region;let lastLevel=0;
    while(Date.now()<deadline){
-    const h=await read();assert.equal(h.region,expectedRegion,'Unexpected transition or death during '+label);if(predicate(h)){await release();console.log('PASS',label,JSON.stringify({level:h.level,xp:h.xp,gold:h.gold,hp:h.hp,seconds:Math.round((Date.now()-started)/1000)}));return;}
+    const h=await read();assert.equal(h.region,expectedRegion,'Unexpected transition or death during '+label);if(predicate(h)){await release();await collectNearbyLoot(page,walkTo);console.log('PASS',label,JSON.stringify({level:h.level,xp:h.xp,gold:h.gold,hp:h.hp,seconds:Math.round((Date.now()-started)/1000)}));return;}
     assert.ok(h.hp>0&&h.deathStartedAt===null,'hero died during '+label);
     if(h.level!==lastLevel){console.log('DUNGEON JOURNEY',label,JSON.stringify({level:h.level,xp:h.xp,gold:h.gold,hp:h.hp}));lastLevel=h.level;}
     const target=h.monsters.filter(filter).sort((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)-Math.hypot(b.x-h.x,b.y-h.y))[0];
@@ -187,9 +189,9 @@ const path=require('node:path');
    await release();throw Error(label+' timed out '+JSON.stringify(await read()));
   };
   await walkTo({x:1360,y:1280});
-  await fightUntil(h=>h.level>=4,'earn level4 from real wolves',m=>m.id.startsWith('forest-starter-wolf-'));
+  await fightUntil(h=>h.level>=4,'earn level4 from real wolves',m=>m.campId==='forest-starter-wolves');
   await spend();
-  await fightUntil(h=>h.level>=5,'earn level5 from real starter-camp wolves',m=>m.id.startsWith('forest-starter-wolf-'),150000);
+  await fightUntil(h=>h.level>=5,'earn level5 from real starter-camp wolves',m=>m.campId==='forest-starter-wolves',150000);
   assert.ok((await read()).level>=5,'dungeon gate is unlocked through earned experience');await spend();
   console.log('PASS earned level5 and allocated all earned attributes and combat skills');
 

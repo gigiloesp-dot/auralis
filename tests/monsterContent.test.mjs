@@ -34,7 +34,7 @@ test('non-wolf kills do not advance wolf quest and rewards happen once',()=>{
 });
 test('guardian guarantees rare class equipment even when ordinary loot roll misses',()=>{
  const hero=createCharacter({classId:'mage',level:5});const drops=rollMonsterLoot(hero,MONSTER_TYPES.forestGuardian,()=>.99);
- assert.equal(drops.length,1);assert.equal(drops[0].rarity,'rare');assert.equal(hero.inventory.length,1);
+ assert.equal(drops.length,1);assert.equal(drops[0].rarity,'rare');assert.equal(hero.inventory.length,0,'reward stays on ground until picked up');
 });
 test('dash sweep stops before obstacles, handles coincident targets and reaches clear destination',()=>{
  const start={x:100,y:100},target={x:300,y:100};

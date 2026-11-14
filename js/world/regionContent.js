@@ -1,6 +1,5 @@
 import {curveRegionRoads} from './roadPaths.js';
-// Persistent descriptors only: these counts do not imply that the runtime has
-// switched from its legacy preview to full-region streaming yet.
+// Stable encounter descriptors are consumed by the existing spatial stream.
 import {REGIONS} from './worldData.js';
 import {MONSTER_TYPES} from '../monsters/monsters.js';
 import {getRegionTowns} from './towns.js';
@@ -55,6 +54,7 @@ function expandCamps(content){
    camp.spawns.push(spawn);existing.push(spawn);
   }
   if(camp.spawns.length!==originalCount+5)throw new Error('Incorrect camp reinforcement budget');
+  camp.radius=Math.max(camp.radius,Math.ceil(Math.max(...camp.spawns.map(p=>distance(p,camp)+radiusFor(p.type)))+15));
  }
  // Check authored spawns as well, rather than only validating new additions.
  for(const spawn of existing){const radius=radiusFor(spawn.type);
