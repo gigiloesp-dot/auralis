@@ -7,3 +7,9 @@
 .quest-tracker[role=button]{pointer-events:auto;cursor:pointer;min-height:44px;box-sizing:border-box;touch-action:manipulation}.quest-tracker[role=button]:focus-visible{outline:2px solid #ffe17d}@media(max-height:330px){.quest-tracker{max-height:44px}}
 
 #hud-portrait{width:40px;height:40px}#hud-portrait.has-portrait{background-repeat:no-repeat}#hud-portrait.has-portrait svg{visibility:hidden}#hud{padding-left:50px}
+
+/* HUD cleanup: these sections are available from the pause menu. Keep their DOM for existing panel handlers. */
+.rpg-toolbar{display:none!important}
+/* Same 120px minimap width, now circular and moved to the top-right. */
+#minimap{width:120px;height:120px;top:max(6px,env(safe-area-inset-top));right:max(70px,calc(env(safe-area-inset-right) + 66px));border-radius:50%;border:2px solid #a98a53;box-shadow:0 2px 12px #000a;overflow:hidden}
+@media(max-height:330px){#minimap{width:120px;height:120px;top:max(4px,env(safe-area-inset-top))}}
