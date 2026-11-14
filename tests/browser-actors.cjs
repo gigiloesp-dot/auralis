@@ -44,8 +44,11 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
      assert.deepEqual(state.actual,state.expected,'Only the actual streamed actors may retain atlas leases');
     };
     await page.waitForFunction(()=>{const s=Auralis.game.scene.getScene('world'),actors=[...s.world.chunkWorld.chunks.values()].flatMap(c=>c.npcActors||[]);return actors.length===5&&actors.every(a=>a.sprite)&&s.monsters.monsters.some(m=>m.type==='forestWolf'&&m.paintedActive);});
+    // The larger camps and viewport streaming can legitimately include another
+    // species here. Verify every atlas and its exact owner/refcount instead of
+    // assuming the previous world's fixed count of four loaded textures.
     const resident=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),actors=[...s.world.chunkWorld.chunks.values()].flatMap(c=>c.npcActors||[]),wolf=s.monsters.monsters.find(m=>m.type==='forestWolf'&&m.paintedActive);return {residents:actors.map(a=>a.sprite.frame.name.split('/')[0]).sort(),wolf:wolf.painted.sprite.texture.key,leases:s.actorTextures.diagnostics};});
-    assert.deepEqual(resident.residents,['aldric','borin','elia','mira','tera']);assert.equal(resident.wolf,'actor-forest-wolf');assert.equal(resident.leases.actorAtlases,4);assert.ok(resident.leases.actorLeases>5);
+    assert.deepEqual(resident.residents,['aldric','borin','elia','mira','tera']);assert.equal(resident.wolf,'actor-forest-wolf');assert.ok(resident.leases.actorLeases>5);await checkResidency();
     // Settlements and wolves really release shared atlases when all consumers leave.
     await page.evaluate(()=>Auralis.game.scene.getScene('world').world.load({region:'north',x:1500,y:1800}));await page.waitForFunction(()=>{const s=Auralis.game.scene.getScene('world');return !s.load.isLoading()&&!s.textures.exists('actor-forest-residents')&&!s.textures.exists('actor-forest-wolf');});
     await checkResidency();

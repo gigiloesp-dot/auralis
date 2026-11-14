@@ -1,6 +1,6 @@
 // Run separately after publication: URL plus exact exported source commit.
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
-const {launchOptions,root,openNpc}=require('./browserHarness.cjs');
+const {launchOptions,root,openNpc,tapGroundDrop}=require('./browserHarness.cjs');
 const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-9a-f]{40}$/.test(commit||''))throw Error('Usage: node tests/browser-public.cjs https://public-origin exact-source-SHA');
 (async()=>{const browser=await chromium.launch(launchOptions);try{
  const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
@@ -25,6 +25,23 @@ const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-
  await p.evaluate(()=>{const s=Auralis.game.scene.getScene('world');s.world.load({region:'forest',x:1330,y:1240});s.hero.hp=s.hero.maxHp=100000;const m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');m.x=m.homeX=1370;m.y=m.homeY=1240;m.alive=true;m.hp=m.maxHp=1000;m.rootUntil=s.playNow+10000;s.monsters.update(s.playNow,0);});
  await p.waitForFunction(()=>Auralis.game.scene.getScene('world').monsters.monsters.find(m=>m.id==='forest-starter-wolf-0')?.paintedActive);
  const attack=await p.locator('#attack').boundingBox();await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{id:2,x:attack.x+attack.width/2,y:attack.y+attack.height/2}]});await p.waitForFunction(()=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');return m.hp<1000&&m.hpBar.visible&&!document.getElementById('target-panel').hidden&&document.getElementById('target-panel').dataset.monsterId===m.id;});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});console.log('PASS published touch attack damages painted wolf and updates selected target HP');
+ // Explicit HP/RNG/position fixture; death and collection still use the
+ // published attack and the real Phaser ground marker's touch handler.
+ const beforeLoot=await p.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),m=s.monsters.monsters.find(m=>m.id==='forest-starter-wolf-0');m.hp=1;window.publicOriginalRandom=Math.random;Math.random=()=>0;return s.hero.inventory.length;});
+ try{
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{id:2,x:attack.x+attack.width/2,y:attack.y+attack.height/2}]});
+  await p.waitForFunction(()=>!Auralis.game.scene.getScene('world').monsters.monsters.find(m=>m.id==='forest-starter-wolf-0')?.alive);
+ }finally{await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await p.evaluate(()=>{Math.random=window.publicOriginalRandom;delete window.publicOriginalRandom;});}
+ const publicLoot=await p.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),state=s.hero.worldState.groundLoot,m=s.hero.worldState.monsters['forest:forest-starter-wolf-0'];return {inventory:s.hero.inventory.length,ids:Object.keys(state.drops),respawn:m.deadUntil-m.killedAt};});
+ assert.equal(publicLoot.inventory,beforeLoot);assert.equal(publicLoot.ids.length,3);assert.equal(publicLoot.respawn,30000);
+ const dropId=publicLoot.ids[0];await p.evaluate(id=>{const s=Auralis.game.scene.getScene('world'),d=s.hero.worldState.groundLoot.drops[id];s.hero.x=d.x;s.hero.y=d.y;const point=s.project(d.x,d.y);s.body.setPosition(point.x,point.y);s.cameras.main.centerOn(point.x,point.y);s.groundLoot.update(true);},dropId);
+ await p.waitForFunction(()=>Auralis.game.scene.getScene('world').groundLoot.markers.size===3);
+ assert.equal(await p.evaluate(()=>[...Auralis.game.scene.getScene('world').groundLoot.markers.values()].every(m=>m.root.list.every(child=>child.type!=='Text'))),true);
+ await tapGroundDrop(p,dropId);await p.waitForFunction(id=>!Auralis.game.scene.getScene('world').hero.worldState.groundLoot.drops[id],dropId);
+ assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.inventory.length),beforeLoot+1);
+ await p.reload({waitUntil:'networkidle'});await p.getByRole('button',{name:'Играть',exact:true}).click();await p.getByRole('button',{name:'Продолжить',exact:true}).first().click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.groundLoot);
+ assert.deepEqual(await p.evaluate(id=>{const s=Auralis.game.scene.getScene('world');return {inventory:s.hero.inventory.length,remaining:Object.keys(s.hero.worldState.groundLoot.drops).length,picked:!!s.hero.worldState.groundLoot.drops[id]};},dropId),{inventory:beforeLoot+1,remaining:2,picked:false});
+ console.log('PASS published real attack produces three anonymous ground drops, 30-second respawn, actual touch pickup and reload without duplication');
  // Teleport/level fixture verifies shipped remote modules and all region/dungeon renderers.
  const loaded=await p.evaluate(async()=>{const s=Auralis.game.scene.getScene('world'),{DUNGEONS}=await import('/js/dungeons/dungeonSystem.js'),out=[];s.hero.level=42;for(const region of ['forest','north','ancient']){const d=DUNGEONS.find(d=>d.region===region);s.world.load({region,x:d.x,y:d.y});await new Promise(requestAnimationFrame);const content=s.regionContent;out.push({region,width:content.width,camps:content.camps.length,normal:content.camps.reduce((n,c)=>n+c.spawns.length,0)});const result=s.enterDungeon(d.id,'hard');if(!result.ok)throw Error(result.reason);await new Promise(requestAnimationFrame);if(!s.leaveDungeon().ok)throw Error('Exit failed');}s.world.load({region:'forest',x:1030,y:1140});return out;});
  assert.deepEqual(loaded.map(r=>r.width),[12000,14000,15000]);assert.deepEqual(loaded.map(r=>r.camps),[94,85,75]);assert.deepEqual(loaded.map(r=>r.normal),[895,805,715]);assert.deepEqual(errors,[]);await p.screenshot({path:root+'/work/browser/public-master.png'});console.log('PASS real game creation, touch, quest, save/reload, three regions and three hard dungeon entries; no JavaScript errors',JSON.stringify(loaded));
