@@ -52,3 +52,11 @@
 .target-panel{background:#281b11e8;border-color:var(--ui-gold)}
 #menu .menu-content>button{min-height:44px}
 #menu[data-page=home] .medieval-menu-button:focus-visible{outline-offset:-6px}
+@media(orientation:landscape) and (max-height:430px){
+ #menu:not([data-page=home]) .menu-subtitle{display:none}
+ #menu:not([data-page=home]) .menu-panel{padding:6px 12px;max-height:calc(100dvh - 12px)}
+ #menu:not([data-page=home]) .menu-panel>h1{font-size:26px;margin:0}
+ #menu[data-page=create] .menu-content{gap:4px}
+ #menu[data-page=create] .class-card{min-height:84px;padding:4px;gap:3px}
+ #menu[data-page=create] .class-card .hero-portrait{width:60px}
+}
