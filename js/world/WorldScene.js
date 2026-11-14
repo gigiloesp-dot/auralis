@@ -1,3 +1,4 @@
+import {biomeZones} from './biomes.js';
 import {EffectsHud} from '../ui/EffectsHud.js';
 import {applyShellLocale} from '../i18n/messages.js';
 import {ACTOR_ART} from '../assets/actorArt.js';
@@ -85,6 +86,10 @@ export class WorldScene extends Phaser.Scene{
  refreshPotions(){this.battleHud?.update();}
  setLanguage(language){
   if(!['ru','en','es'].includes(language)||!this.hero||this.closed)return;
+  const named=(entry,lang)=>entry?.names?.[lang]||entry?.names?.ru||entry?.name||entry?.id,content=this.regionContent;
+  const labels=new Map([...content.npcs||[],...content.portals||[],...content.dungeons||[],content.exit,...biomeZones(content)].filter(Boolean).map(entry=>[named(entry,this.language),named(entry,language)]));
+  const translate=node=>{if(node.type==='Text'&&labels.has(node.text))node.setText(labels.get(node.text));if(Array.isArray(node.list))for(const child of node.list)translate(child);};
+  for(const chunk of this.world.chunkWorld.chunks.values())for(const object of chunk.objects)translate(object);
   this.closePanels();this.language=language;applyShellLocale(language);
   // Rebuild only locale-cached UI. Actors, timers, world and hero are retained.
   for(const [name,Type]of [['npcPanel',NpcPanel],['storagePanel',StoragePanel],['savePanel',SavePanel],['dungeonPanel',DungeonPanel],['mapPanel',MapPanel]]){this[name]?.destroy();this[name]=new Type(this);}
