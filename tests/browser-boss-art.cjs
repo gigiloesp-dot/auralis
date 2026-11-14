@@ -17,7 +17,7 @@ const expectedFrames=banks.flatMap(bank=>directions.map(direction=>bank+'/'+dire
   page.on('pageerror',error=>errors.push(error.message));
   page.on('response',response=>{if(response.status()>=400&&response.url().includes('/assets/actors/bosses/'))failedAssets.push(response.status()+' '+response.url());});
   await page.goto(host.url);
-  await page.getByRole('button',{name:'Играть',exact:true}).click();
+  await page.getByRole('button',{name:'Продолжить',exact:true}).click();
   await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();
   await page.locator('input').fill('BossAtlasIntegration');
   await page.getByRole('button',{name:'Начать приключение',exact:true}).click();

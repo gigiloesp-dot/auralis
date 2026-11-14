@@ -11,7 +11,7 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
   const page=await browser.newPage({viewport:{width:844,height:390},isMobile:true,hasTouch:true}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(host.url);
-  await page.getByRole('button',{name:'Играть',exact:true}).click();
+  await page.getByRole('button',{name:'Продолжить',exact:true}).click();
   await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();
   await page.locator('input').fill('Task1Dungeon');
   await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
@@ -61,7 +61,7 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
    assert.equal(await page.evaluate(id=>Auralis.game.scene.getScene('world').monsters.monsters.find(m=>m.id===id)?.alive,entered.minion.id),false,'returning after more than six minutes must not resurrect a visit minion');
    if(variant.difficulty==='easy'&&[1,4,8].includes(variant.number)){
     await page.evaluate(()=>Auralis.game.scene.getScene('world').save());await page.reload();
-    await page.getByRole('button',{name:'Играть',exact:true}).click();
+    await page.getByRole('button',{name:'Продолжить',exact:true}).click();
     await page.getByRole('button',{name:'Продолжить',exact:true}).first().click();
     await page.waitForFunction(()=>Auralis.game.scene.getScene('world')?.hero?.name==='Task1Dungeon');
     assert.equal(await page.evaluate(()=>Auralis.game.scene.getScene('world').hero.dungeonSession.visitId),entered.visit);
@@ -88,7 +88,7 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
    assert.equal(completion.region,entered.id,'completion does not automatically leave');assert.equal(completion.rewarded,true);
    if(variant.number===12&&variant.difficulty==='hard'){
     await page.evaluate(()=>Auralis.game.scene.getScene('world').save());await page.reload();
-    await page.getByRole('button',{name:'Играть',exact:true}).click();await page.getByRole('button',{name:'Продолжить',exact:true}).first().click();
+    await page.getByRole('button',{name:'Продолжить',exact:true}).click();await page.getByRole('button',{name:'Продолжить',exact:true}).first().click();
     await page.waitForFunction(()=>Auralis.game.scene.getScene('world')?.exitPortal?.root?.visible);
     const restored=await page.evaluate(lastBossId=>{const s=Auralis.game.scene.getScene('world');return {gold:s.hero.gold,portalId:s.exitPortal.state.id,timers:s.hero.dungeonProgress['dungeon12:hard'].bossReadyAt,bossAlive:s.monsters.monsters.find(m=>m.id===lastBossId)?.alive};},entered.bosses.at(-1).id);
     assert.equal(restored.gold,completion.gold);assert.equal(restored.portalId,completion.state.id);assert.deepEqual(restored.timers,completion.timers);assert.equal(restored.bossAlive,false);

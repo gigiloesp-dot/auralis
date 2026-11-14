@@ -9,7 +9,7 @@ const path=require('node:path');
   browser=await chromium.launch(launchOptions);
   const context=await browser.newContext({viewport:{width:844,height:390},hasTouch:true,isMobile:true});
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(hosting.url);await page.getByRole('button',{name:'Играть',exact:true}).click();
+  await page.goto(hosting.url);await page.getByRole('button',{name:'Продолжить',exact:true}).click();
   await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();
   await page.locator('input').fill('TouchSoak');await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
   await page.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.world);

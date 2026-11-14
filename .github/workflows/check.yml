@@ -89,7 +89,7 @@ jobs:
           "$chrome_path" --version
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
       - name: Phone panels, combat indicators, bestiary and streamed painted actors
-        run: npm run test:browser:android
+        run: npm run test:browser:android && npm run test:browser:menu
       - uses: actions/upload-artifact@v4
         if: always()
         with:

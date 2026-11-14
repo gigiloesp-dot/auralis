@@ -4,7 +4,7 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),path=require('node:path');
 (async()=>{const host=await startServer();let browser;try{
  browser=await chromium.launch(launchOptions);const p=await browser.newPage({viewport:{width:844,height:390},hasTouch:true,isMobile:true}),errors=[];p.on('pageerror',e=>errors.push(e.message));
- await p.goto(host.url);await p.getByRole('button',{name:'Играть',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('input').fill('MobilePanels');await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.hero);
+ await p.goto(host.url);await p.getByRole('button',{name:'Продолжить',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('input').fill('MobilePanels');await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.hero);
  assert.equal(await p.locator('link[href$="mobile-panels.css"]').count(),1,'Mobile rules must be linked by the actual application');
  const roots=['#inventory-panel','#skills-panel','#character-panel','.npc-panel','.storage-panel','.save-panel','.dungeon-panel','.world-map'];
  const check=async(selector,closeSelector)=>{

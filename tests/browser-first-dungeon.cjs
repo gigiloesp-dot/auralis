@@ -13,7 +13,7 @@ const path=require('node:path');
   page=await browser.newPage({viewport:{width:844,height:390},hasTouch:true,isMobile:true});
   const errors=[];page.on('pageerror',error=>errors.push(error.message));
   await page.goto(hosting.url);
-  await page.getByRole('button',{name:'Играть',exact:true}).click();
+  await page.getByRole('button',{name:'Продолжить',exact:true}).click();
   await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();
   await page.locator('input').fill('FirstDungeon');
   await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
@@ -243,7 +243,7 @@ const path=require('node:path');
   await page.screenshot({path:path.join(root,'work/browser/first-dungeon-earned-victory.png')});
   for(let index=roomData.length-2;index>=0;index--){await useCombatUI();await walkTo({x:roomData[index+1].x,y:roomData[index].y},25);await walkTo(roomData[index],30);}
   await walkTo({x:170,y:300},30);await page.getByRole('button',{name:'Покинуть подземелье',exact:true}).click();assert.equal((await read()).region,'forest');
-  await page.reload();await page.getByRole('button',{name:'Играть',exact:true}).click();await page.getByRole('button',{name:'Продолжить',exact:true}).first().click();await page.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.world);
+  await page.reload();await page.getByRole('button',{name:'Продолжить',exact:true}).click();await page.getByRole('button',{name:'Продолжить',exact:true}).first().click();await page.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.world);
   const restored=await read();assert.equal(restored.region,'forest');assert.equal(restored.dungeonProgress['dungeon1:easy'].completed,true);assert.equal(restored.dungeonProgress['dungeon1:easy'].rewarded,true);assert.equal(restored.dungeonProgress['dungeon1:easy'].readyAt,completed.dungeonProgress['dungeon1:easy'].readyAt);assert.ok(restored.level>=5);assert.deepEqual(errors,[]);
   console.log('PASS first dungeon genuinely cleared, exited and restored without runtime-state writes or fixture damage');
   console.log('FIRST DUNGEON RESULT',JSON.stringify({seconds:Math.round((Date.now()-started)/1000),level:restored.level,xp:restored.xp,gold:restored.gold,completed:restored.dungeonProgress['dungeon1:easy']}));

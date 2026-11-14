@@ -3,7 +3,7 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict');
 const {startServer,launchOptions}=require('./browserHarness.cjs');
 (async()=>{const host=await startServer();let browser;try{
- browser=await chromium.launch(launchOptions);const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(host.url);await page.getByRole('button',{name:'Играть',exact:true}).click();await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await page.locator('input').fill('Bestiary');await page.getByRole('button',{name:'Начать приключение',exact:true}).click();await page.waitForFunction(()=>Auralis.game.scene.getScene('world').hero);
+ browser=await chromium.launch(launchOptions);const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(host.url);await page.getByRole('button',{name:'Продолжить',exact:true}).click();await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await page.locator('input').fill('Bestiary');await page.getByRole('button',{name:'Начать приключение',exact:true}).click();await page.waitForFunction(()=>Auralis.game.scene.getScene('world').hero);
  const results=await page.evaluate(async()=>{
   const s=Auralis.game.scene.getScene('world'),{movementProfile}=await import('/js/monsters/movementProfiles.js');s.scene.pause();const results=[];
   for(const type of ['forestWolf','wildBoar','forestOrc','spider','forestBat','frostGolem','wraith','iceElemental','scarab','ancientGargoyle']){

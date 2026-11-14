@@ -7,7 +7,7 @@ const path=require('node:path');
 (async()=>{const host=await startServer();let browser;
  try{
   browser=await chromium.launch(launchOptions);const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true}),page=await context.newPage(),errors=[];
-  page.on('pageerror',error=>errors.push(error.message));await page.goto(host.url);await page.getByRole('button',{name:'Играть',exact:true}).click();await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await page.locator('input').fill('AndroidCombat');await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
+  page.on('pageerror',error=>errors.push(error.message));await page.goto(host.url);await page.getByRole('button',{name:'Продолжить',exact:true}).click();await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await page.locator('input').fill('AndroidCombat');await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
   await page.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.targetPanel&&Auralis.game.scene.getScene('world').interactions);
   const panel=page.locator('#target-panel');
   const prepare=async()=>page.evaluate(()=>{

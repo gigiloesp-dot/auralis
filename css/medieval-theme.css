@@ -1,0 +1,41 @@
+/* Auralis theme contract: new panels use .auralis-panel, controls use
+   .auralis-button, inset cards use .auralis-card. Existing components share
+   these tokens here; resource, rarity, warning and combat colours stay semantic. */
+:root{--ui-ink:#f0dfbb;--ui-muted:#c7b18b;--ui-gold:#b68a4f;--ui-edge:#80603b;--ui-wood:#382217;--ui-dark:#20150f;--ui-panel:linear-gradient(120deg,#412b1bf7,#21160ffb 68%,#352317fb);--ui-button:linear-gradient(#563a25,#2d1c12 52%,#432919);--ui-inset:linear-gradient(145deg,#3c2a1e,#281c14);--ui-radius:7px}
+#menu{background:linear-gradient(#140d07a8,#140d07c9),url('../assets/ui/medieval-menu.webp') center/cover no-repeat;color:var(--ui-ink);padding:max(8px,env(safe-area-inset-top)) max(8px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left))}
+#menu[data-page=home]{background-image:url('../assets/ui/medieval-menu.webp');overflow:hidden}
+.auralis-panel,#menu .menu-panel,#inventory-panel,#character-panel,#skills-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel{background:var(--ui-panel);border-color:var(--ui-gold);color:var(--ui-ink);border-radius:var(--ui-radius)}
+#menu .menu-panel{box-shadow:inset 0 0 0 3px #1a110c,0 18px 60px #000b}
+#menu .menu-panel>h1{color:#e9c37b;letter-spacing:.08em;text-shadow:0 2px 4px #000}
+#menu[data-page=home] .menu-panel{display:flex;flex-direction:column;align-items:center;gap:0;background:none;border:0;box-shadow:none;padding:0;width:min(650px,64vw);max-height:none;overflow:visible}
+#menu[data-page=home] h1{margin:0 0 1dvh;width:min(650px,65vw);height:29dvh;display:flex;align-items:center;justify-content:center}
+#menu[data-page=home] h1 img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 4px #000b)}
+#menu[data-page=home] .menu-subtitle{display:none}
+#menu[data-page=home] .menu-content{width:min(400px,42vw);gap:1.2dvh}
+.auralis-button,#menu .menu-content button,:is(#inventory-panel,#character-panel,#skills-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel) button{background:var(--ui-button);border-color:var(--ui-gold);color:var(--ui-ink);border-radius:var(--ui-radius);touch-action:manipulation;cursor:pointer}
+:is(.auralis-button,#menu button,#inventory-panel button,#character-panel button,#skills-panel button,.npc-panel button,.storage-panel button,.save-panel button,.dungeon-panel button,.pause-panel button):focus-visible{outline:2px solid #ffe2a0;outline-offset:2px}
+:is(.auralis-button,#menu button,#inventory-panel button,#character-panel button,#skills-panel button,.npc-panel button,.storage-panel button,.save-panel button,.dungeon-panel button,.pause-panel button):enabled:hover{filter:brightness(1.15)}
+:is(.auralis-button,#menu button,#inventory-panel button,#character-panel button,#skills-panel button,.npc-panel button,.storage-panel button,.save-panel button,.dungeon-panel button,.pause-panel button):enabled:active{filter:brightness(1.3);box-shadow:inset 0 2px 7px #000a}
+#menu[data-page=home] .medieval-menu-button{position:relative;display:grid;grid-template-columns:44px 1fr;align-items:center;min-height:44px;height:8.7dvh;max-height:64px;padding:2px 28px 2px 19px;border:1px solid #d8b36f;border-radius:5px 18px 5px 18px;box-shadow:inset 0 0 0 3px #1e110a,inset 0 0 0 4px #84613a,0 3px 5px #000c;background:linear-gradient(#68432399,#160d08dd 50%,#4b2d17cc);font:clamp(16px,3.6dvh,30px) Georgia,'Times New Roman',serif;text-shadow:0 2px 2px #000;line-height:1.05}
+.medieval-menu-button svg{width:32px;height:32px;fill:none;stroke:#e7bd77;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 2px 1px #000)}
+.medieval-menu-button span{overflow-wrap:anywhere}
+#menu .menu-content input,#menu .menu-content select,:is(.npc-panel,.storage-panel,.save-panel,.dungeon-panel) :is(input,select,textarea){background:#24180f;color:var(--ui-ink);border-color:var(--ui-edge);accent-color:var(--ui-gold)}
+#menu .menu-content .selected,:is(#inventory-panel,#skills-panel,.npc-panel,.storage-panel) button:is(.active,.selected){background:linear-gradient(#78532b,#4a301a);border-color:#f2cd86}
+#menu .menu-content button.danger,#inventory-panel .item-actions .danger{background:linear-gradient(#773a2b,#471e18)}
+.auralis-card,.slot-row,.attribute-row,.character-summary span,.skill-card,.skill-detail,.npc-shop-row,.npc-quest,.storage-item,.save-confirmation,#inventory-panel :is(.item-detail,.item-comparison,.equipment-summary,.equipment-summary span,.equipment-cell,.inventory-cell),#inventory-panel .inventory-cell.occupied{background:var(--ui-inset);border-color:var(--ui-edge)}
+#inventory-panel :is(.inventory-heading,.inventory-tabs){background:#302015;border-color:var(--ui-edge)}
+:is(.rpg-toolbar button,#pause-btn,.npc-interact,.storage-interact,.dungeon-interact,.world-travel){background:var(--ui-button);border-color:var(--ui-gold);color:var(--ui-ink)}
+.quest-tracker,#notice{background:#281b11df;border-color:var(--ui-edge);color:var(--ui-ink)}
+.menu-prose{font-size:14px;line-height:1.6;margin:8px 0;color:var(--ui-ink)}
+#menu a{color:#efcc8d;overflow-wrap:anywhere}
+@media(max-height:430px){#menu[data-page=home] h1{height:25dvh;margin-bottom:1dvh}#menu[data-page=home] .menu-content{gap:1dvh}#menu[data-page=home] .medieval-menu-button{height:10.8dvh;font-size:clamp(16px,4.3dvh,21px)}.menu-prose{font-size:13px;line-height:1.4}}
+@media(max-height:340px){#menu[data-page=home] h1{height:22dvh;margin-bottom:0}#menu[data-page=home] .menu-content{gap:2px}#menu[data-page=home] .medieval-menu-button{height:44px}#menu[data-page=home] .medieval-menu-button svg{width:27px;height:27px}}
+@media(orientation:portrait){#menu[data-page=home] .menu-panel{width:94vw}#menu[data-page=home] h1{width:90vw;height:25dvh}#menu[data-page=home] .menu-content{width:min(400px,85vw)}}
+@media(prefers-reduced-motion:reduce){#menu *{animation:none;transition:none}}
+/* Reset both background layers explicitly when home removes the dimming layer. */
+#menu[data-page=home]{background-size:cover;background-position:center;align-items:start;padding-top:2dvh}
+#menu[data-page=home] h1{height:31dvh}
+#menu[data-page=home] .medieval-menu-button{background:linear-gradient(#57361f,#28160d 52%,#432817);border-radius:2px;clip-path:polygon(5% 0,95% 0,100% 50%,95% 100%,5% 100%,0 50%)}
+#menu[data-page=home] .medieval-menu-button:before{content:'';position:absolute;inset:3px;pointer-events:none;border:1px solid #b68a4f;clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%)}
+@media(max-height:430px){#menu[data-page=home] h1{height:29dvh}}
+@media(max-height:340px){#menu[data-page=home] h1{height:22dvh}}

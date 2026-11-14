@@ -7,7 +7,7 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
   browser=await chromium.launch(launchOptions);const errors=[];
   for(const classId of ['warrior','archer','mage','paladin','assassin','cannoneer']){
    const context=await browser.newContext({viewport:{width:844,height:390},hasTouch:true,isMobile:true}),page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
-   await page.goto(host.url);await page.getByRole('button',{name:'Играть',exact:true}).click();await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await page.locator('.class-card:has(.hero-'+classId+')').click();await page.locator('input').fill('Painted'+classId);await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
+   await page.goto(host.url);await page.getByRole('button',{name:'Продолжить',exact:true}).click();await page.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await page.locator('.class-card:has(.hero-'+classId+')').click();await page.locator('input').fill('Painted'+classId);await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
    await page.waitForFunction(()=>Auralis.game.scene.getScene('world')?.rig?.paintedActive);
    const art=await page.evaluate(()=>{
     const s=Auralis.game.scene.getScene('world'),rig=s.rig,frames=[];

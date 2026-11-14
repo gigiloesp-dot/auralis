@@ -4,7 +4,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
 const {startServer,launchOptions,root}=require('./browserHarness.cjs');
 (async()=>{const host=await startServer();let browser;try{
  browser=await chromium.launch(launchOptions);const context=await browser.newContext({viewport:{width:844,height:390},hasTouch:true,isMobile:true}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
- await p.goto(host.url);await p.getByRole('button',{name:'Играть',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('.class-card:has(.hero-mage)').click();await p.locator('input').fill('ThreatQA');await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.rig?.paintedActive);
+ await p.goto(host.url);await p.getByRole('button',{name:'Продолжить',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('.class-card:has(.hero-mage)').click();await p.locator('input').fill('ThreatQA');await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.rig?.paintedActive);
  const initial=await p.evaluate(()=>{
   const s=Auralis.game.scene.getScene('world');s.world.load({region:'forest',x:1330,y:1240});s.hero.hp=s.hero.maxHp=100000;s.hero.mp=s.hero.maxMp=1000;
   const id='forest-starter-wolf-2';for(const d of s.monsters.stream.descriptors)if(d.id!==id)s.hero.worldState.monsters[s.monsters.stateKey(d)]={deadUntil:Date.now()+3600000,killedAt:Date.now(),hp:0};

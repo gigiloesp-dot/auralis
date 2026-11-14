@@ -2,7 +2,7 @@
 // casting, pause panels, locale changes and save restoration use real UI.
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
 const {startServer,launchOptions,root,openNpc}=require('./browserHarness.cjs');
-const words={ru:{play:'Играть',create:'Создать персонажа',start:'Начать приключение',resume:'Продолжить',back:'Назад',continue:'Продолжить'},en:{play:'Play',create:'Create character',start:'Begin adventure',resume:'Resume',back:'Back',continue:'Continue'},es:{play:'Jugar',create:'Crear personaje',start:'Comenzar aventura',resume:'Continuar',back:'Volver',continue:'Continuar'}};
+const words={ru:{play:'Продолжить',create:'Создать персонажа',start:'Начать приключение',resume:'Продолжить',back:'Назад',continue:'Продолжить'},en:{play:'Continue',create:'Create character',start:'Begin adventure',resume:'Resume',back:'Back',continue:'Continue'},es:{play:'Continuar',create:'Crear personaje',start:'Comenzar aventura',resume:'Continuar',back:'Volver',continue:'Continuar'}};
 const classes=['warrior','archer','mage','paladin','assassin','cannoneer'];
 const languages=process.env.AURALIS_TASK2_LANGS?.split(',')||['ru','en','es'],selectedClasses=process.env.AURALIS_TASK2_CLASSES?.split(',')||classes;
 assert.ok(languages.length&&languages.every(l=>Object.hasOwn(words,l)));assert.ok(selectedClasses.length&&selectedClasses.every(c=>classes.includes(c)));
