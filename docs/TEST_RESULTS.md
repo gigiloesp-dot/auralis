@@ -1,5 +1,13 @@
 # Результаты проверок Auralis
 
+## Задание №4 — проверено и опубликовано
+
+Опубликован **выпуск 16**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `140103da211aac3ad8460d769c240df421bf4e27`. [CI 43633093953](https://github.com/gigiloesp-dot/auralis/actions/runs/43633093953) — **11/11 jobs success, 272 unit, check207 файлов, все 24 browser suites**. Включены 18 сочетаний классов/языков и новый сценарий добычи RU/EN/ES.
+
+Публично: 307 точных хешей и loot UI RU/EN/ES без JS ошибок. Проверки включают отсутствие автоматической выдачи по касанию, grouping, single/all/full/partial, закрытие, range180/181, stale window, repeated touch, quota rollback, reload/streaming, пять редкостей и source restrictions. Прежние unit/browser assertions сохранены, профильные ожидания обновлены под новое ТЗ.
+
+Подробности: [TASK_4_STATUS.md](TASK_4_STATUS.md), [qa/task4-ci-source.json](qa/task4-ci-source.json), [qa/task4-deployment.json](qa/task4-deployment.json), [qa/task4-verification.json](qa/task4-verification.json).
+
 ## Главное меню и средневековая тема — проверено и опубликовано
 
 Выпуск **15**: https://auralis-master-test.alertpine18.chatgpt.site. Source `b5ac2e939b70485b9516e66617637b6189a4b360`, [CI 43611818625](https://github.com/gigiloesp-dot/auralis/actions/runs/43611818625) — **10/10 jobs success: 262 unit, 204 check, 23 браузерных suites**, включая 18 сочетаний классов и языков. Контрольная точка до оформления — `756ed8ffaa7974d6ce5efd9cd94f90e642cd0049`.

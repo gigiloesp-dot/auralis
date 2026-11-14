@@ -1,8 +1,12 @@
 # Точка продолжения Auralis
 
-## В работе: задание №4 — добыча и подбор
+## Задание №4 завершено в пределах доступных проверок
 
-Продолжать текущую реализацию, не начинать заново. Контрольная точка acb0152ff654266f34d898e97ddcd2547064b382 включает оба HUD-коммита из fix/hud-circular-minimap без замены документов master. TASK_4_STATUS.md фиксирует исходные шансы и требования. Модель180/транзакции/частичный take-all, окно и новые roll tables интегрируются; требуются полные unit/browser/CI и публикация только master-test. Старые разделы ниже — история прошлых выпусков.
+Опубликован **выпуск 16**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `140103da211aac3ad8460d769c240df421bf4e27`. [CI 43633093953](https://github.com/gigiloesp-dot/auralis/actions/runs/43633093953) — **11/11 jobs success, 272 unit, check207 файлов, все 24 browser suites**. Включены 18 сочетаний классов/языков и новый сценарий добычи RU/EN/ES.
+
+Не повторять реализованное. TASK_4_STATUS.md содержит исходные и новые вероятности, архитектуру/проверки и границы. Контрольная точка acb0152ff654266f34d898e97ddcd2547064b382 сохраняет оба HUD-коммита; fix/hud-circular-minimap не изменена. Main/stable-alpha/alpha1 сохранены, PR #2 не объединён. Остаётся физическая Android-приёмка; новые игровые блоки без нового задания не начинать. Старые разделы ниже — история.
+
+Подробности: [TASK_4_STATUS.md](TASK_4_STATUS.md), [qa/task4-ci-source.json](qa/task4-ci-source.json), [qa/task4-deployment.json](qa/task4-deployment.json), [qa/task4-verification.json](qa/task4-verification.json).
 
 ## Текущая задача: средневековое меню завершено в пределах доступных проверок
 

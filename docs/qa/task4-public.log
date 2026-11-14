@@ -1,0 +1,5 @@
+PASS public HTTPS without account; exact committed runtime hashes 307 140103da211aac3ad8460d769c240df421bf4e27
+PASS published neutral base hero without baked gear and five distinct village residents actually loaded
+PASS published touch attack damages painted wolf and updates selected target HP
+PASS published real attack produces three anonymous ground drops, 30-second respawn, actual touch pickup and reload without duplication
+PASS real game creation, touch, quest, save/reload, three regions and three hard dungeon entries; no JavaScript errors [{"region":"forest","width":12000,"camps":94,"normal":895},{"region":"north","width":14000,"camps":85,"normal":805},{"region":"ancient","width":15000,"camps":75,"normal":715}]

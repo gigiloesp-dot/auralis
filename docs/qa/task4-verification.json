@@ -1,0 +1,71 @@
+{
+  "sourceCommit": "140103da211aac3ad8460d769c240df421bf4e27",
+  "checkpoint": "acb0152ff654266f34d898e97ddcd2547064b382",
+  "ci": 43633093953,
+  "nativeVersion": 16,
+  "runtimeFilesVerified": 307,
+  "physicalAndroidTested": false,
+  "fixBranchCommit": "aeb181fc02423c6d4c42936d14fd9d9cce010bd8",
+  "preservedHudBlobs": {
+    "js/ui/Minimap.js": "4d8f999bd2cb2e9d0c79adcba5ab275e686b621b",
+    "css/world.css": "d8580cc7bafb53136fda4e5667b60d0cd4bbe1e6"
+  },
+  "proofs": {
+    "docs/qa/task4-browser-local.log": {
+      "sha256": "832edea1acc2462a798d74cd6ff44327745620f176475c4241edd61423447146",
+      "bytes": 1116
+    },
+    "docs/qa/task4-check.log": {
+      "sha256": "54e27ec6deaf5d29306b15202d87f7eb76ca3c76d9e2dc2db0322cba1ad6809c",
+      "bytes": 94
+    },
+    "docs/qa/task4-ci-source.json": {
+      "sha256": "5c513596db599b4c229c6f697a5483e29564f882a7aafe98e2336a6f2af46ff3",
+      "bytes": 13076
+    },
+    "docs/qa/task4-deployment.json": {
+      "sha256": "8a5f41551e9176c84690403b7a1db3fb64bc9d48a5091b71c2ce2883f59d4ad9",
+      "bytes": 967
+    },
+    "docs/qa/task4-first-dungeon.log": {
+      "sha256": "f00fd008b92046a5df417572766292d109ea9cfe880aa8b905cb2401e79490a5",
+      "bytes": 9603
+    },
+    "docs/qa/task4-focused-unit.log": {
+      "sha256": "3b685263046c758b97818a502c1e18d01c0331db0c2508ee12a4ce59a0fbba5b",
+      "bytes": 3438
+    },
+    "docs/qa/task4-ground-regression.log": {
+      "sha256": "24384dec7babec6004ebb5b9a3a25711e93fc5ed43756c8c54512c8fc1ceb07f",
+      "bytes": 371
+    },
+    "docs/qa/task4-journey.log": {
+      "sha256": "f036578fb6e58b44765d5c85b32e345df1fbde839ce9908a92d32ad1492f7828",
+      "bytes": 999
+    },
+    "docs/qa/task4-loot-en.png": {
+      "sha256": "7a6afef0f62f674f08a6f254f9d69e8633094852012e3067e81be6f69c4f78b5",
+      "bytes": 280577
+    },
+    "docs/qa/task4-loot-es.png": {
+      "sha256": "ca8b9332c0e93b4a1dab5e302747e1e224c2a836e3c0116408ff9ff5a9083079",
+      "bytes": 280697
+    },
+    "docs/qa/task4-loot-ru.png": {
+      "sha256": "0a155156dbe745a543b302d8b4190e767a61e285f40701c9d6953a69bfe0f47f",
+      "bytes": 288804
+    },
+    "docs/qa/task4-public-ui.log": {
+      "sha256": "832edea1acc2462a798d74cd6ff44327745620f176475c4241edd61423447146",
+      "bytes": 1116
+    },
+    "docs/qa/task4-public.log": {
+      "sha256": "9c04a6d2111c7ff53a01f8c0b03f21837a2e455ac6a6eaf07e6661f28952c14f",
+      "bytes": 726
+    },
+    "docs/qa/task4-unit.log": {
+      "sha256": "17b2705af270c74e387a3c182bb221414c5760d122c0e3da2e27fb1b5dcf6af2",
+      "bytes": 26433
+    }
+  }
+}

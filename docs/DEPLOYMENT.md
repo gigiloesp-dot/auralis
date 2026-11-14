@@ -1,5 +1,13 @@
 # Проверенная публикация Auralis
 
+## Текущая публикация: задание №4
+
+Опубликован **выпуск 16**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `140103da211aac3ad8460d769c240df421bf4e27`. [CI 43633093953](https://github.com/gigiloesp-dot/auralis/actions/runs/43633093953) — **11/11 jobs success, 272 unit, check207 файлов, все 24 browser suites**. Включены 18 сочетаний классов/языков и новый сценарий добычи RU/EN/ES.
+
+Hosting source `962531e8a364af00204375a5290925ff1a6f50d5`, saved version `appgprj_6af567346ebc8191accf1485254403da~appgver_700413d309c4819182d809419844a4d0`, deployment `appgdep_6af8ba62a408819193f3bbfbccd67b70`. Обновлён только существующий public master-test. Предыдущая публикация15 предшествует интеграции HUD; Git-checkpoint для отката только задания№4 с сохранением круга/HUD — `acb0152ff654266f34d898e97ddcd2547064b382`. Сама fix/hud-circular-minimap и alpha version1 не менялись.
+
+Подробности: [TASK_4_STATUS.md](TASK_4_STATUS.md), [qa/task4-ci-source.json](qa/task4-ci-source.json), [qa/task4-deployment.json](qa/task4-deployment.json), [qa/task4-verification.json](qa/task4-verification.json).
+
 ## Текущая публикация: средневековый интерфейс
 
 Выпуск **15**: https://auralis-master-test.alertpine18.chatgpt.site. Source `b5ac2e939b70485b9516e66617637b6189a4b360`, [CI 43611818625](https://github.com/gigiloesp-dot/auralis/actions/runs/43611818625) — **10/10 jobs success: 262 unit, 204 check, 23 браузерных suites**, включая 18 сочетаний классов и языков. Контрольная точка до оформления — `756ed8ffaa7974d6ce5efd9cd94f90e642cd0049`.

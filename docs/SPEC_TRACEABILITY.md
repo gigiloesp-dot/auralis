@@ -1,5 +1,21 @@
 # MASTER_SPEC: реализация и границы доказательств
 
+## Задание №4 — добыча и подбор
+
+Опубликован **выпуск 16**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `140103da211aac3ad8460d769c240df421bf4e27`. [CI 43633093953](https://github.com/gigiloesp-dot/auralis/actions/runs/43633093953) — **11/11 jobs success, 272 unit, check207 файлов, все 24 browser suites**. Включены 18 сочетаний классов/языков и новый сценарий добычи RU/EN/ES.
+
+| Требование | Реализация / доказательство |
+|---|---|
+| Безопасность/HUD | acb0152 checkpoint; два cherry-pick без замены документов; Minimap.js/world.css совпадают с fix-веткой |
+| Окно | LootPanel.js/loot.css, настоящие item-art/name/rarity/level/quantity, single/all/close, RU/EN/ES |
+| Радиус и поведение | nearbyGroundDrops/pickupGroundDrop: Euclidean180, same-region/HP, частичный take-all, синхронное durable-save/rollback, IDs/death journal |
+| Шансы | NORMAL_EQUIPMENT_RATES .008/.003/.001/.0001/0; материалы .175/.10; mini/world независимые группы и все успехи, world-only legendary |
+| Уровни/классы | Реальные каталожные tier±5 enemy до42, не hero; class-diverse green+; 2268 проверенных комбинаций |
+| Телефон/ресурсы | Немодальное окно, четыре mobile размеры, все контролы доступны, DOM diff/cleanup, прежние SVG без новых игровых текстур |
+| Проверки/доставка | 272 unit/207 syntax/24 browser/11 CI, 307 public hashes и три языка; физический Android ещё не проверен |
+
+Подробности: [TASK_4_STATUS.md](TASK_4_STATUS.md), [qa/task4-ci-source.json](qa/task4-ci-source.json), [qa/task4-deployment.json](qa/task4-deployment.json), [qa/task4-verification.json](qa/task4-verification.json).
+
 ## Новое уточнение: меню и средневековый интерфейс
 
 Выпуск **15**: https://auralis-master-test.alertpine18.chatgpt.site. Source `b5ac2e939b70485b9516e66617637b6189a4b360`, [CI 43611818625](https://github.com/gigiloesp-dot/auralis/actions/runs/43611818625) — **10/10 jobs success: 262 unit, 204 check, 23 браузерных suites**, включая 18 сочетаний классов и языков. Контрольная точка до оформления — `756ed8ffaa7974d6ce5efd9cd94f90e642cd0049`.

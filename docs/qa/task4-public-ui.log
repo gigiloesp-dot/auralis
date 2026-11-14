@@ -1,0 +1,12 @@
+PASS task4 ru grouped corpses, distinct actual icons, single/all, close without pickup, four phone sizes
+PASS task4 ru repeated touches and stale open-window distance check
+PASS task4 ru full/partly free bag, remaining drops and no duplication after reload
+PASS task4 ru partial stack, world-radius180/181, movement+attack, range loss, five rarities, no JavaScript errors
+PASS task4 en grouped corpses, distinct actual icons, single/all, close without pickup, four phone sizes
+PASS task4 en repeated touches and stale open-window distance check
+PASS task4 en full/partly free bag, remaining drops and no duplication after reload
+PASS task4 en partial stack, world-radius180/181, movement+attack, range loss, five rarities, no JavaScript errors
+PASS task4 es grouped corpses, distinct actual icons, single/all, close without pickup, four phone sizes
+PASS task4 es repeated touches and stale open-window distance check
+PASS task4 es full/partly free bag, remaining drops and no duplication after reload
+PASS task4 es partial stack, world-radius180/181, movement+attack, range loss, five rarities, no JavaScript errors
