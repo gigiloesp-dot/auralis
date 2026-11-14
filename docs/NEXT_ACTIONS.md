@@ -1,5 +1,13 @@
 # Точка продолжения Auralis
 
+## Текущая задача: средневековое меню завершено в пределах доступных проверок
+
+Выпуск **15**: https://auralis-master-test.alertpine18.chatgpt.site. Source `b5ac2e939b70485b9516e66617637b6189a4b360`, [CI 43611818625](https://github.com/gigiloesp-dot/auralis/actions/runs/43611818625) — **10/10 jobs success: 262 unit, 204 check, 23 браузерных suites**, включая 18 сочетаний классов и языков. Контрольная точка до оформления — `756ed8ffaa7974d6ce5efd9cd94f90e642cd0049`.
+
+Не начинать заново: пять кнопок, фон/логотип, централизованная тема и защита мобильной разметки интегрированы. История ошибок и проверок — MEDIEVAL_UI_STATUS. Физического Android нет; следующий шаг — проверка на телефоне и пользовательская оценка эталона. Новые игровые системы без отдельного задания не начинать. Main/stable-alpha/alpha version1 неизменны, PR #2 не объединён.
+
+Доказательства: [MEDIEVAL_UI_STATUS.md](MEDIEVAL_UI_STATUS.md), [qa/medieval-ci-source.json](qa/medieval-ci-source.json), [qa/medieval-deployment.json](qa/medieval-deployment.json), [qa/medieval-verification.json](qa/medieval-verification.json).
+
 Обновлено 14 ноября 2026. Ветка `codex/auralis-master-development`, [draft PR #2](https://github.com/gigiloesp-dot/auralis/pull/2). Сначала прочитать [MASTER_SPEC.md](MASTER_SPEC.md), [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md), [TEST_RESULTS.md](TEST_RESULTS.md) и [CHARACTER_LAYERING.md](CHARACTER_LAYERING.md). `main`, stable-alpha и прежний alpha-test не менять; merge не выполнять.
 
 ## Задание №2 завершено в пределах доступных проверок

@@ -1,5 +1,13 @@
 # Проверенная публикация Auralis
 
+## Текущая публикация: средневековый интерфейс
+
+Выпуск **15**: https://auralis-master-test.alertpine18.chatgpt.site. Source `b5ac2e939b70485b9516e66617637b6189a4b360`, [CI 43611818625](https://github.com/gigiloesp-dot/auralis/actions/runs/43611818625) — **10/10 jobs success: 262 unit, 204 check, 23 браузерных suites**, включая 18 сочетаний классов и языков. Контрольная точка до оформления — `756ed8ffaa7974d6ce5efd9cd94f90e642cd0049`.
+
+Hosting source `17f776da62f83792b912d5110e8b8be4de5015e3`; native saved version `appgprj_6af567346ebc8191accf1485254403da~appgver_ab7820da56d48191852360ff298eb488`; deployment `appgdep_6af883d2feb481919bb21af4634de0ae`. Публикация выполнена только в прежний публичный master-test. Версии 13 и 14 были сохранёнными кандидатами и не публиковались; предыдущая опубликованная версия — 12. Старую alpha version1 не меняли. Сохранения в браузере не переносились и не сбрасывались.
+
+Доказательства: [MEDIEVAL_UI_STATUS.md](MEDIEVAL_UI_STATUS.md), [qa/medieval-ci-source.json](qa/medieval-ci-source.json), [qa/medieval-deployment.json](qa/medieval-deployment.json), [qa/medieval-verification.json](qa/medieval-verification.json).
+
 ## Задание №2 — выпуск 12, 14 ноября 2026
 
 Адрес: https://auralis-master-test.alertpine18.chatgpt.site

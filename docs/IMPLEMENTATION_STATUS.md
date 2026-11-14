@@ -1,5 +1,15 @@
 # Master development: фактическое состояние
 
+## Главное меню и единая тема — текущая поставка
+
+Выпуск **15**: https://auralis-master-test.alertpine18.chatgpt.site. Source `b5ac2e939b70485b9516e66617637b6189a4b360`, [CI 43611818625](https://github.com/gigiloesp-dot/auralis/actions/runs/43611818625) — **10/10 jobs success: 262 unit, 204 check, 23 браузерных suites**, включая 18 сочетаний классов и языков. Контрольная точка до оформления — `756ed8ffaa7974d6ce5efd9cd94f90e642cd0049`.
+
+Подключены фон по эталону, отдельный логотип и пять локализованных HTML-кнопок. Централизованы палитра, поверхности, рамки, состояния кнопок и карточки всех существующих окон; доступны классы auralis-panel/button/card для новых компонентов. Данные мира, персонажи, игровые изображения, баланс, дроп и save keys не менялись. Отдельное модальное окно подбора не добавлялось: существующее уведомление и информация о предмете используют тему, а правила анонимной наземной добычи сохранены.
+
+Осталась физическая Android-приёмка и пользовательская визуальная оценка близости к эталону. Это поставка интерфейса, а не заявление о завершении всего MASTER_SPEC.
+
+Доказательства: [MEDIEVAL_UI_STATUS.md](MEDIEVAL_UI_STATUS.md), [qa/medieval-ci-source.json](qa/medieval-ci-source.json), [qa/medieval-deployment.json](qa/medieval-deployment.json), [qa/medieval-verification.json](qa/medieval-verification.json).
+
 ## Задание №2 — проверено и опубликовано
 
 **Выпуск 12**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `468499ffbbdc4038fe1d71044af01b7afdb21fe6`, контрольная точка до задания — `0ec6306aff4c51974f34ab2639f9b083aaae87ff`.

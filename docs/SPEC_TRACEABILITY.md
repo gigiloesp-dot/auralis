@@ -1,5 +1,21 @@
 # MASTER_SPEC: реализация и границы доказательств
 
+## Новое уточнение: меню и средневековый интерфейс
+
+Выпуск **15**: https://auralis-master-test.alertpine18.chatgpt.site. Source `b5ac2e939b70485b9516e66617637b6189a4b360`, [CI 43611818625](https://github.com/gigiloesp-dot/auralis/actions/runs/43611818625) — **10/10 jobs success: 262 unit, 204 check, 23 браузерных suites**, включая 18 сочетаний классов и языков. Контрольная точка до оформления — `756ed8ffaa7974d6ce5efd9cd94f90e642cd0049`.
+
+| Требование | Реализация и доказательство |
+|---|---|
+| Композиция эталона | Раздельные medieval-menu.webp и auralis-logo.webp, скриншоты qa/medieval-home-1280.png и -740.png; генеративное воспроизведение, не исходный файл эталона |
+| Пять действий | Menu.js/menuTheme.js: создание/выбор, настройки, авторы, браузерный выход; browser-medieval-menu, три языка |
+| Общая тема и будущие окна | medieval-theme.css: единые токены и классы auralis-panel/button/card, без копирования в десятки файлов |
+| Внутриигровые окна | Выбор/создание, пауза, инвентарь/сравнение, навыки/характеристики, журнал, NPC/торговля/хранилище, сохранения/подтверждения; прежние mobile-panels и task2 UI |
+| Цвета и механики | HP/MP, редкость и предупреждения сохранены; игровые данные и старые ассеты не менялись; unit/browser/public regression |
+| Android и загрузка | Пять размеров, 44px кнопки меню; блокировка загрузки портретов воспроизводит медленную сеть; два WebP 514736 байт, игровых атласов не добавлено |
+| Безопасность | Контрольная точка, отдельная ветка/PR #2, main/stable-alpha/alpha1 прежние, 305 публичных SHA-256, save/reload; физический Android остаётся непроверенным |
+
+Доказательства: [MEDIEVAL_UI_STATUS.md](MEDIEVAL_UI_STATUS.md), [qa/medieval-ci-source.json](qa/medieval-ci-source.json), [qa/medieval-deployment.json](qa/medieval-deployment.json), [qa/medieval-verification.json](qa/medieval-verification.json).
+
 ## Задание №2 — проверено и опубликовано
 
 **Выпуск 12**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `468499ffbbdc4038fe1d71044af01b7afdb21fe6`, контрольная точка до задания — `0ec6306aff4c51974f34ab2639f9b083aaae87ff`.
