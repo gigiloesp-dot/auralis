@@ -1,4 +1,5 @@
 import {project,unproject} from '../world/projection.js';
+import {leashRadius,MONSTER_LEASH_RADIUS} from './monsterBehavior.js';
 const CELL=512;
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 // Monster residency follows the projected camera footprint. The environment
@@ -21,11 +22,19 @@ export class MonsterStream{
  }
  hot(m){return m.alive!==false&&!!this.options.hot?.(m);}
  shouldActivate(m){if(!this.currentView&&!this.view())return this.hot(m)||distance(m,this.hero)<=700;return this.hot(m)||distance(m,this.hero)<=MONSTER_STREAM_POLICY.loadRadius||this.inView(m,16);}
+ savedPosition(descriptor){
+  const saved=this.hero.worldState?.monsters?.[(this.content.id||'legacy')+':'+descriptor.id];
+  if(!Number.isFinite(saved?.x)||!Number.isFinite(saved?.y)||saved.deadUntil>0||distance(saved,descriptor)>leashRadius({kind:{boss:!!(descriptor.bossType||descriptor.boss)}}))return null;
+  return {x:saved.x,y:saved.y,bossType:descriptor.bossType};
+ }
  cellRange(view){
-  if(!view){const cx=Math.floor(this.hero.x/CELL),cy=Math.floor(this.hero.y/CELL);return {minX:cx-1,maxX:cx+1,minY:cy-1,maxY:cy+1};}
+  // A persisted living actor may be up to one leash away from its authored
+  // cell. Expand only the local query; never scan the whole world each frame.
+  const margin=MONSTER_LEASH_RADIUS;
+  if(!view){const r=500+margin;return {minX:Math.floor((this.hero.x-r)/CELL),maxX:Math.floor((this.hero.x+r)/CELL),minY:Math.floor((this.hero.y-r)/CELL),maxY:Math.floor((this.hero.y+r)/CELL)};}
   const pad=MONSTER_STREAM_POLICY.loadPadding,origin=this.project(this.hero.x,this.hero.y),corners=[];
   for(const x of [view.x-pad-160,view.x+view.width+pad+160])for(const y of [view.y-pad,view.y+view.height+pad+320]){const d=unproject(x-origin.x,y-origin.y);corners.push({x:this.hero.x+d.x,y:this.hero.y+d.y});}
-  return {minX:Math.floor(Math.min(this.hero.x-350,...corners.map(p=>p.x))/CELL),maxX:Math.floor(Math.max(this.hero.x+350,...corners.map(p=>p.x))/CELL),minY:Math.floor(Math.min(this.hero.y-350,...corners.map(p=>p.y))/CELL),maxY:Math.floor(Math.max(this.hero.y+350,...corners.map(p=>p.y))/CELL)};
+  return {minX:Math.floor((Math.min(this.hero.x-350,...corners.map(p=>p.x))-margin)/CELL),maxX:Math.floor((Math.max(this.hero.x+350,...corners.map(p=>p.x))+margin)/CELL),minY:Math.floor((Math.min(this.hero.y-350,...corners.map(p=>p.y))-margin)/CELL),maxY:Math.floor((Math.max(this.hero.y+350,...corners.map(p=>p.y))+margin)/CELL)};
  }
  update(){
   const view=this.currentView=this.view(),policy=MONSTER_STREAM_POLICY;
@@ -35,8 +44,10 @@ export class MonsterStream{
   }
   const bounds=this.cellRange(view);
   for(let x=bounds.minX;x<=bounds.maxX;x++)for(let y=bounds.minY;y<=bounds.maxY;y++)for(const d of this.cells.get(x+','+y)||[]){
-   const wanted=view?(distance(d,this.hero)<=policy.loadRadius||this.inView(d,policy.loadPadding,view)):distance(d,this.hero)<=500;
-   if(!this.loaded.has(d.id)&&wanted){this.loaded.set(d.id,this.create(d));this.created++;}
+   if(this.loaded.has(d.id))continue;
+   const saved=this.savedPosition(d);
+   const wanted=view?(distance(d,this.hero)<=policy.loadRadius||this.inView(d,policy.loadPadding,view)||!!saved&&(distance(saved,this.hero)<=policy.loadRadius||this.inView(saved,policy.loadPadding,view))):distance(d,this.hero)<=500||!!saved&&distance(saved,this.hero)<=500;
+   if(wanted){this.loaded.set(d.id,this.create(d));this.created++;}
   }
  }
  get diagnostics(){return {totalDescriptors:this.descriptors.length,loadedMonsters:this.loaded.size,spatialCells:this.cells.size,monsterCreates:this.created,monsterRemoves:this.removed,monsterStreamMode:this.currentView?'viewport':'radial-fallback'};}

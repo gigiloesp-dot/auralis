@@ -3,7 +3,7 @@ export class TouchControls{
   this.axis={x:0,y:0};this.attacking=false;this.attackQueued=false;this.joystick=joystick;this.nub=nub;this.attack=attack;this.pointerId=null;this.attackPointerId=null;this.cleanup=[];
   if(joystick&&nub)this.bindJoystick();
   if(attack)this.bindAttack();
-  if(typeof window!=='undefined')this.on(window,'blur',()=>this.reset());
+  if(typeof window!=='undefined'){this.on(window,'blur',()=>this.reset());this.on(window,'orientationchange',()=>this.reset());}
   if(typeof document!=='undefined')this.on(document,'visibilitychange',()=>{if(document.hidden)this.reset();});
  }
  on(target,type,handler){target.addEventListener(type,handler,{passive:false});this.cleanup.push(()=>target.removeEventListener(type,handler));}

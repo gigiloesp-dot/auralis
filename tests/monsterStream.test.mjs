@@ -38,3 +38,15 @@ test('headless or legacy callers retain radial fallback and bounded spatial look
  const {stream,hero,removed}=fixture([mob('near',2050,2000),mob('far',2700,2000)]);stream.update();assert.deepEqual([...stream.loaded.keys()],['near']);assert.equal(stream.diagnostics.monsterStreamMode,'radial-fallback');
  hero.x=2900;stream.update();assert.ok(removed.includes('near'));assert.ok(stream.loaded.has('far'));stream.destroy();
 });
+
+test('a saved living position reloads in view even when its home cell lies beyond the narrow camera',()=>{
+ const descriptor=mob('returning-wolf',1000,1550),saved={x:1350,y:1550,hp:18,returning:true},hero={x:1550,y:1550,worldState:{monsters:{'forest:returning-wolf':saved}}};
+ const centre=project(saved.x,saved.y,12000),view={x:centre.x-100,y:centre.y-20,width:200,height:40};
+ const content={id:'forest',height:12000,camps:[{id:'camp',x:1000,y:1550,radius:145,spawns:[descriptor]}],bosses:[]};
+ const stream=new MonsterStream(content,hero,d=>({...d,...hero.worldState.monsters['forest:'+d.id],homeX:d.x,homeY:d.y,alive:true}),()=>{},{viewport:()=>view});
+ assert.equal(stream.inView(descriptor,MONSTER_STREAM_POLICY.loadPadding,view),false,'authored home is outside the load footprint');
+ assert.equal(stream.inView({...descriptor,...saved},0,view),true,'saved body position is actually visible');
+ assert.ok(Math.hypot(saved.x-descriptor.x,saved.y-descriptor.y)<=360,'saved displacement obeys the actual ordinary leash');
+ stream.update();assert.equal(stream.loaded.has(descriptor.id),true,'resident selection must account for the saved living position');
+ const actor=stream.loaded.get(descriptor.id);assert.equal(actor.x,saved.x);assert.equal(actor.homeX,descriptor.x);assert.equal(actor.hp,18);assert.equal(stream.shouldActivate(actor),true);stream.destroy();
+});
