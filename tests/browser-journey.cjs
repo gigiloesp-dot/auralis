@@ -66,7 +66,7 @@ const path=require('node:path');
    const deadline=Date.now()+20000;
    while(Date.now()<deadline){
     const h=await read();if(Math.hypot(h.x-target.x,h.y-target.y)<=tolerance){await release();return;}
-    if(Math.hypot(h.x-target.x,h.y-target.y)<90){await release();const close=await read();if(Math.hypot(close.x-target.x,close.y-target.y)<=tolerance)continue;const dir=await directionTo(target);await pulseJoystick(cdp,centre,attackPoint,joy.width,dir.x,dir.y);const stopped=await read();assert.equal(Math.hypot(stopped.axis.x,stopped.axis.y),0);assert.equal(stopped.attacking,false);continue;}
+    if(Math.hypot(h.x-target.x,h.y-target.y)<90){await release();const close=await read();if(Math.hypot(close.x-target.x,close.y-target.y)<=tolerance)continue;const dir=await directionTo(target);await pulseJoystick(page,cdp,centre,attackPoint,joy.width,dir.x,dir.y);const stopped=await read();assert.equal(Math.hypot(stopped.axis.x,stopped.axis.y),0);assert.equal(stopped.attacking,false);continue;}
     const dir=await directionTo(target);await touch(dir.x,dir.y,false);await page.waitForTimeout(100);
    }
    await release();throw Error('Walking timed out: '+JSON.stringify({target,hero:await read()}));

@@ -42,14 +42,19 @@ async function collectNearbyLoot(page,walkTo){
  }
  return collected;
 }
-// Schedule the native release independently of the touchStart acknowledgement.
-// Under software rendering its ACK can arrive several frames late; awaiting it
-// before releasing turns a short approach gesture into a long full-speed run.
-async function pulseJoystick(cdp,centre,attackPoint,joyWidth,dx,dy,holdAttack=false,duration=70){
+// Release after the first observed movement frame, independently of the input
+// acknowledgement. Fixed 70ms gestures can finish before a software-rendered
+// game frame and move nowhere; awaiting the ACK first can overshoot instead.
+async function pulseJoystick(page,cdp,centre,attackPoint,joyWidth,dx,dy,holdAttack=false){
+ const before=await page.evaluate(()=>{const h=Auralis.game.scene.getScene('world').hero;return {x:h.x,y:h.y};});
  const length=Math.hypot(dx-dy,(dx+dy)/2),scale=length?joyWidth*.24/length:0,point={id:1,x:centre.x+(dx-dy)*scale,y:centre.y+(dx+dy)/2*scale};
  const actions=[cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]})];
  if(holdAttack)actions.push(cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point,{id:2,...attackPoint}]}));
- actions.push(new Promise((resolve,reject)=>setTimeout(()=>cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]}).then(resolve,reject),duration)));
- await Promise.all(actions);
+ let movementError;
+ try{await page.waitForFunction(before=>{const s=Auralis.game.scene.getScene('world');return s.controls.pointerId!==null&&Math.hypot(s.hero.x-before.x,s.hero.y-before.y)>=2;},before,{polling:'raf',timeout:1500}).then(handle=>handle.dispose());}
+ catch(error){movementError=error;}
+ finally{actions.push(cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]}));await Promise.all(actions);}
+ if(movementError)throw movementError;
 }
+
 module.exports={startServer,launchOptions,root,openNpc,openStorage,tapGroundDrop,collectNearbyLoot,pulseJoystick};

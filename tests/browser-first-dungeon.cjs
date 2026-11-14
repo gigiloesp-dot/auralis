@@ -95,7 +95,7 @@ const path=require('node:path');
      if(Math.hypot(close.x-target.x,close.y-target.y)<=tolerance)continue;
      const threatened=close.region.startsWith('dungeon:')&&close.monsters.some(m=>Math.hypot(m.x-close.x,m.y-close.y)<220);
      if(maintainWalkingHealth)await maintainWalkingHealth(close,threatened);
-     const dir=await directionTo(target);await pulseJoystick(cdp,centre,attackPoint,joy.width,dir.x,dir.y,threatened);
+     const dir=await directionTo(target);await pulseJoystick(page,cdp,centre,attackPoint,joy.width,dir.x,dir.y,threatened);
      const stopped=await read();assert.equal(stopped.pointerId,null);assert.equal(stopped.attackPointerId,null);
      trace.push({x:stopped.x,y:stopped.y,axis:stopped.axis,pointerId:stopped.pointerId,attackPointerId:stopped.attackPointerId});if(trace.length>12)trace.shift();continue;
     }
