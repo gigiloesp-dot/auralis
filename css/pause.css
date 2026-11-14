@@ -9,3 +9,5 @@
 .pause-panel[hidden]{display:none}.pause-panel header{display:flex;justify-content:space-between;align-items:center;gap:10px;flex:none}.pause-panel h2{font-size:17px;margin:0}.pause-panel h3{font-size:14px;margin:12px 0 5px}.pause-panel button{min-width:44px;min-height:44px;background:#354f39;border:1px solid #b99b61;border-radius:8px;color:inherit;font:inherit;padding:7px 14px}
 .pause-panel-body{min-height:0;overflow:auto;overscroll-behavior:contain;touch-action:pan-y;line-height:1.4;overflow-wrap:anywhere}.pause-panel article{border-bottom:1px solid #ac985a55;padding-bottom:8px}.pause-panel p{margin:5px 0 10px}
 @media(max-height:340px){#menu[data-page=pause] .menu-panel{width:min(360px,100%);padding:8px 12px}.pause-grid{gap:5px}.menu-content .pause-grid button{min-height:65px;padding:3px;font-size:10px}.pause-grid svg{width:25px;height:25px}#menu[data-page=pause] .menu-content{gap:5px}.pause-panel{inset:2% 5%}}
+
+#menu[data-page=settings][data-from-pause=true] .menu-content>button,#menu[data-page=settings][data-from-pause=true] .menu-content>select{min-height:44px}
