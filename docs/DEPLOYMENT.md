@@ -1,5 +1,26 @@
 # Проверенная публикация Auralis
 
+## Задание №2 — выпуск 12, 14 ноября 2026
+
+Адрес: https://auralis-master-test.alertpine18.chatgpt.site
+
+| Поле | Значение |
+|---|---|
+| Sites / audience / status | 12, public, native deployment succeeded |
+| Игровой source | `468499ffbbdc4038fe1d71044af01b7afdb21fe6` |
+| CI source | [CI 43607069281](https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281): 10/10 jobs, 262 unit, check 202, 22 suites |
+| Project | `appgprj_6af567346ebc8191accf1485254403da` |
+| Hosting source | `bf3173f21d533a5d892e7bb6bc09a7c427dcb5d5` |
+| Saved version ID | `appgprj_6af567346ebc8191accf1485254403da~appgver_19b67263bb088191ad199ac6431ae11c` |
+| Deployment ID | `appgdep_6af876fadc188191b9200fd7c082bacd` |
+| Native timestamp | `2026-11-14T14:58:19.598597+00:00` |
+| Archive | `sha256:fa61f8000d61f85f6f602a30c90ec054e83e3ebde9244411fd4194bcb3d34d8b`, 320 files |
+| Rollback до задания №2 | `0ec6306aff4c51974f34ab2639f9b083aaae87ff`; публикация 8 сохранена ниже |
+
+После native success чистый Chromium без аккаунта проверил все **300 runtime SHA-256**, реальные touch-атаку/добычу/подбор/reload, три региона и три hard dungeon-входа. Новый интерфейс отдельно прошёл по HTTPS на RU/EN/ES (воин): четыре размера, Active/Passive, назначения, эффекты, восемь разделов паузы, локализация подписей мира, quota failure и импорт в паузе. Полная матрица шести классов проверена в CI. Журналы и native provenance — docs/qa/task2-*.
+
+Выпуск 9 был первой опубликованной версией задания №2. Подготовительные 10/11 сохранялись без deployment; они не являются текущей игрой. 12 включает окончательные touch targets настроек, перевод загруженных подписей и восстановление HUD после паузы. Источник отправлен только в существующий hosting project; audience, alpha и GitHub protected refs сохранены. Физического Android нет.
+
 ## Задание №1 — выпуск 8, 14 ноября 2026
 
 Адрес: https://auralis-master-test.alertpine18.chatgpt.site
