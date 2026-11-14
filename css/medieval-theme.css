@@ -60,3 +60,6 @@
  #menu[data-page=create] .class-card{min-height:84px;padding:4px;gap:3px}
  #menu[data-page=create] .class-card .hero-portrait{width:60px}
 }
+:is(#menu,#inventory-panel,#skills-panel,.npc-panel,.storage-panel) button:is([aria-pressed=true],.filled){background:linear-gradient(#78532b,#4a301a)!important}
+#skills-panel .skill-remove{background:linear-gradient(#773a2b,#471e18)!important}
+#menu .slot-row button{min-height:44px}
