@@ -68,3 +68,5 @@
 .auralis-button{box-sizing:border-box;border:1px solid var(--ui-gold);min-height:44px;padding:8px 14px;font:inherit}
 .auralis-card{box-sizing:border-box;border:1px solid var(--ui-edge);border-radius:var(--ui-radius);padding:10px}
 @media(orientation:landscape) and (max-height:430px){#menu[data-page=slots] .slot-row{padding:4px 7px}}
+/* Reserve the final slot portrait size before its asynchronous sheet decode. */
+#menu .slot-row .hero-portrait{width:44px;height:44px;transform:none;margin:0;overflow:hidden}

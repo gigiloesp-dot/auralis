@@ -1,0 +1,10 @@
+PASS simultaneous real CDP joystick and attack touch pointers; movement, damage and release reset
+PASS resource cycle {"children":425,"textures":81,"dom":142,"loadedChunks":25,"loadedMonsters":42,"textureScratchReferences":0,"heap":10566272,"cycle":0,"peakChunks":23,"peakMonsters":43}
+PASS resource cycle {"children":425,"textures":81,"dom":142,"loadedChunks":25,"loadedMonsters":42,"textureScratchReferences":0,"heap":10798948,"cycle":1,"peakChunks":23,"peakMonsters":42}
+PASS resource cycle {"children":425,"textures":81,"dom":142,"loadedChunks":25,"loadedMonsters":42,"textureScratchReferences":0,"heap":10826388,"cycle":2,"peakChunks":23,"peakMonsters":42}
+PASS resource cycle {"children":425,"textures":81,"dom":142,"loadedChunks":25,"loadedMonsters":42,"textureScratchReferences":0,"heap":11131440,"cycle":3,"peakChunks":23,"peakMonsters":42}
+PASS resource cycle {"children":425,"textures":81,"dom":142,"loadedChunks":25,"loadedMonsters":42,"textureScratchReferences":0,"heap":11858228,"cycle":4,"peakChunks":23,"peakMonsters":42}
+PASS resource cycle {"children":425,"textures":81,"dom":142,"loadedChunks":25,"loadedMonsters":42,"textureScratchReferences":0,"heap":10975940,"cycle":5,"peakChunks":23,"peakMonsters":42}
+PASS resource cycle {"children":425,"textures":81,"dom":142,"loadedChunks":25,"loadedMonsters":42,"textureScratchReferences":0,"heap":11025796,"cycle":6,"peakChunks":23,"peakMonsters":42}
+OBSERVED desktop headless Chromium frame timing (not Android) {"samples":60,"meanMs":103.275,"p95Ms":200.80000000074506}
+PASS7 resource cycles,21 regional dungeon entries/exits; no JavaScript errors; elapsedSeconds=87
