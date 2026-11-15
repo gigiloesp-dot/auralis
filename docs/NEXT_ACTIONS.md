@@ -1,5 +1,12 @@
 # Точка продолжения Auralis
 
+## Задание №8 — выпуск 20
+
+https://auralis-master-test.alertpine18.chatgpt.site — source `7e17ebdbdb232920d9bdc932791ef472f0f1edca`, checkpoint `9c7864dfe90fb60172a64167a2232649d3497168`, основа `5565d048b265970004b3f981998567c1fc37d2ca`. Пять кнопок2/3,44px touch, логотип до1.7× с ограничением на низких экранах. Один потоковый NPC-значок: готовность → доступность → прогресс, обычное выше ежедневного при равном статусе. Quest/save/reward-код и каталог сохранены; ежедневных заданий в исходном каталоге нет, зелёные состояния проверены renderer fixtures. CI15/15,295 unit,227 syntax,29 browser suites; публично335 runtime-хешей,task8 RU/EN/ES21 сочетание и cover18/18. [Отчёт](TASK_8_STATUS.md), [скриншоты](qa/task8/README.md), [доставка](qa/task8/deployment.json). Main/stable-alpha/старая alpha сохранены, merge нет. Физическую Android-приёмку выполняет владелец.
+
+Активный блок №8 завершён в указанном объёме. Не создавать ежедневные задания или другие задачи реестра без отдельного разрешения. Ручная Android-приёмка — владельцем. Исторические списки ниже не являются новым поручением.
+
+
 ## Задание №7 — выпуск 19, завершено
 
 https://auralis-master-test.alertpine18.chatgpt.site — source `5b2d2a9e06ae9f5b461db4d207fbeea5b2005409`. Контрольная точка `411f4005fe63f729ca94c6eac80d9f482ef029e1`, исходная ветка после задания6 `cc5c7bb9fa8c6ed3cfd704f2e63563ec3850e077`. Главное меню заполняет экран через cover вместо contain; один runtime CSS-delta. Журнал уже был правильным, код сохранён и подтверждён реальными NPC/reload-тестами RU/EN/ES. 290 unit,223 syntax,CI15/15,28 browser suites; публично333 runtime-хеша,18 сочетаний меню и journal3/3. [Отчёт](TASK_7_STATUS.md), [до/после](qa/task7/README.md), [доставка](qa/task7/deployment.json). Main/stable-alpha и старая alpha сохранены, merge нет. Задание6 и экипировка не изменены. Физический Android не использовался.

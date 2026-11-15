@@ -1,0 +1,13 @@
+✔ ordinary available/progress/reward styles and priority retain all candidates (1.77414ms)
+✔ daily markers use green styles and stage-first mixed priority with ordinary tie break (0.232301ms)
+✔ delivery reward marker appears only at actual recipient, locked receiver stays hidden (0.232771ms)
+✔ real catalogue responds to acceptance, kills, claiming, level/story gates and save reload without mutation (2.716153ms)
+✔ one streamed label changes only when style changes and releases on unload (0.457942ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3168.871103
