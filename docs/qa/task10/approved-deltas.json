@@ -27,7 +27,7 @@
     },
     "js/ui/SavePanel.js": {
       "before": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
-      "after": "26ed10a1f604b16c0302d9eda95cf0770b1bc469278f72b061d14cd1e9653c99"
+      "after": "a79da3f12acc7f7d3941e51be3314bae92318103e1e40eca691458023f3e1782"
     },
     "js/world/ChunkWorld.js": {
       "before": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",

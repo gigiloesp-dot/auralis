@@ -31,8 +31,8 @@ export class SavePanel{
   downloads.append(this.action(t.export,()=>{if(!this.scene.save()){this.status.textContent=t.failed;return;}this.download(Save.export(this.scene.saveSlot),'character');}));
   const original=this.action(t.original,()=>this.download(Save.exportBackup(this.scene.saveSlot),'original'));original.disabled=!Save.exportBackup(this.scene.saveSlot);downloads.append(original);
   const previous=this.action(t.previous,()=>this.download(Save.exportReplacementBackup(this.scene.saveSlot),'before-import'));previous.disabled=!Save.exportReplacementBackup(this.scene.saveSlot);downloads.append(previous);
-  if(Save.exportUpgradeBackup(this.scene.saveSlot))downloads.append(this.action(t.upgrade,()=>this.download(Save.exportUpgradeBackup(this.scene.saveSlot),'before-level56-update')));
-  if(Save.exportLayoutBackup(this.scene.saveSlot))downloads.append(this.action(t.layout,()=>this.download(Save.exportLayoutBackup(this.scene.saveSlot),'before-world-update')));
+  if(Save.exportUpgradeBackup(this.scene.saveSlot)){const button=this.action(t.upgrade,()=>this.download(Save.exportUpgradeBackup(this.scene.saveSlot),'before-level56-update'));button.setAttribute('data-save-backup','level56');downloads.append(button);}
+  if(Save.exportLayoutBackup(this.scene.saveSlot)){const button=this.action(t.layout,()=>this.download(Save.exportLayoutBackup(this.scene.saveSlot),'before-world-update'));button.setAttribute('data-save-backup','world');downloads.append(button);}
   this.root.append(el('h3',t.importTitle));
   const fileLabel=el('label',t.file,'save-file-label'),file=el('input');file.type='file';file.accept='.json,application/json';file.setAttribute('aria-label',t.file);fileLabel.append(file);this.root.append(fileLabel);
   file.onchange=async()=>{const selected=file.files?.[0];if(!selected)return;if(selected.size>2*1024*1024){this.status.textContent=t.size;return;}try{this.preview(await selected.text());}catch{this.status.textContent=t.read;}};
