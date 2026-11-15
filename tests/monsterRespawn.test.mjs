@@ -75,13 +75,13 @@ test('world, dungeon and arena boss cooldown descriptors retain their independen
 
 test('all authored outdoor descriptors have stable unique state IDs and a thirty-second ordinary interval',()=>{
  let count=0;const keys=new Set();
- for(const region of ['forest','north','ancient']){const content=getRegionContent(region);
-  for(const descriptor of [...content.camps.filter(c=>!c.expansion).flatMap(c=>c.spawns),...content.bosses]){
+ for(const region of ['forest','north','ancient','desert']){const content=getRegionContent(region);
+  for(const descriptor of [...content.camps.flatMap(c=>c.spawns),...content.bosses]){
    const key=content.id+':'+descriptor.id;assert.equal(keys.has(key),false,key);keys.add(key);
    const kind=monsterKind(descriptor);if(!kind.boss){assert.equal(kind.respawnMs,30000,key);count++;}
   }
  }
- assert.equal(count,2415);
+ assert.equal(count,2827);
 });
 
 test('an expired legacy death without killedAt still passes the safe respawn check on reload',()=>withWall(setWall=>{

@@ -1,13 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRegionContent} from '../js/world/regionContent.js';
+import {getRelease21RegionContent as getRegionContent} from '../js/world/regionContent.js';
 import {DUNGEONS} from '../js/dungeons/dungeonData.js';
 import {MONSTER_TYPES} from '../js/monsters/monsters.js';
 import {movementProfile} from '../js/monsters/movementProfiles.js';
 import {regionRoads,distanceToSegment,worldWalkable} from '../js/world/chunkGeometry.js';
 
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
-test('existing 254 camps each gain exactly five monsters, all 2415 remain naturally separated and region-appropriate',()=>{
+test('release21 migration baseline: existing 254 camps each gain exactly five monsters, all 2415 remain naturally separated and region-appropriate',()=>{
  const expected={forest:[94,895,1,25],north:[85,805,22,38],ancient:[75,715,35,42]},types=new Set();let camps=0,monsters=0;
  for(const [id,[campCount,population,min,max]]of Object.entries(expected)){
   const raw=getRegionContent(id),c={...raw,camps:raw.camps.filter(c=>!c.expansion)},spawns=c.camps.flatMap(c=>c.spawns),roads=regionRoads(c),entrances=DUNGEONS.filter(d=>d.region===id);

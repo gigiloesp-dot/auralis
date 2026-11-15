@@ -1,3 +1,4 @@
+import {TASK10_LAYOUT} from './task10Layout.js';
 import {createDesertContent} from './desertContent.js';
 import {appendExpandedTerritories,ringGateway} from './worldExpansion.js';
 import {expandSettlements} from './settlementExpansion.js';
@@ -67,11 +68,11 @@ function expandCamps(content){
  }
  return content;
 }
-export function getRegionContent(id='forest'){
+export function getRelease21RegionContent(id='forest'){
  if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);
  if(cache.has(id))return cache.get(id);
- if(id==='desert'){const content=createDesertContent();content.climateRevision=1;content.reliefRevision=1;cache.set(id,content);for(const target of ['forest','ancient']){const outer=getRegionContent(target),gateway=outer.portals.find(p=>p.toRegion==='desert'),portal=content.portals.find(p=>p.toRegion===target);portal.toX=gateway.returnPoint.x;portal.toY=gateway.returnPoint.y;}return content;}
- const region={...REGIONS[id],width:LEGACY_BOUNDS[id],height:LEGACY_BOUNDS[id]},config=CONFIG[id],towns=getRegionTowns(id),npcs=getRegionNpcs(id),portals=PORTALS[id].map(p=>({...p,region:id}));
+ if(id==='desert'){const content=createDesertContent();content.climateRevision=1;content.reliefRevision=1;cache.set(id,content);for(const target of ['forest','ancient']){const outer=getRelease21RegionContent(target),gateway=outer.portals.find(p=>p.toRegion==='desert'),portal=content.portals.find(p=>p.toRegion===target);portal.toX=gateway.returnPoint.x;portal.toY=gateway.returnPoint.y;}return content;}
+ const region={...REGIONS[id],width:LEGACY_BOUNDS[id],height:LEGACY_BOUNDS[id]},config=CONFIG[id],towns=getRegionTowns(id),npcs=TASK10_LAYOUT[id].npcs,portals=PORTALS[id].map(p=>({...p,region:id}));
  const roads=[];const anchors=[...towns.map(t=>t.spawn),...portals];
  for(let i=1;i<anchors.length;i++)roads.push({id:id+'-road-'+i,from:anchors[i-1],to:anchors[i],width:90});
  const random=seedFor(id),occupied=[];
@@ -99,3 +100,6 @@ export function getRegionContent(id='forest'){
  const landmarks=id==='ancient'?[{id:'fallen-observatory',x:3700,y:4200,names:{ru:'Разрушенная обсерватория',en:'Fallen observatory',es:'Observatorio caído'}},{id:'moon-garden',x:6900,y:8100,names:{ru:'Лунный сад',en:'Moon garden',es:'Jardín lunar'}},{id:'elder-gate',x:10900,y:12400,names:{ru:'Врата предков',en:'Elder gate',es:'Puerta ancestral'}}]:[];
  const content=expandCamps(curveRegionRoads({...region,towns,npcs,camps,bosses,portals,roads,landmarks}));content.river={baseX:region.width*.58};content.width=REGIONS[id].width;content.height=REGIONS[id].height;expandSettlements(content);appendExpandedTerritories(content,region.width);if(id==='forest'||id==='ancient')content.portals=[...content.portals,ringGateway(content,'desert')];content.climateRevision=1;cache.set(id,content);return content;
 }
+
+const activeCache=new Map();
+export function getRegionContent(id='forest'){if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);if(!activeCache.has(id)){const c=TASK10_LAYOUT[id];activeCache.set(id,{...c,palette:REGIONS[id].palette,npcs:getRegionNpcs(id)});}return activeCache.get(id);}

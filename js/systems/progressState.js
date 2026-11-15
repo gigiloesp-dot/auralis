@@ -1,3 +1,4 @@
+import {migrateWorldLayout} from './worldLayoutMigration.js';
 import {normalizeGroundLoot} from '../loot/groundLoot.js';
 // Only plain persistent data may cross the save boundary. Phaser/runtime objects
 // are rejected rather than traversed, and oversized trees cannot exhaust storage.
@@ -48,5 +49,5 @@ export function normalizePersistentProgress(data={}){
   discoveredRegions:strings(data.discoveredRegions),discoveredLocations:strings(data.discoveredLocations),returnLocation:null};
  const location=data.returnLocation;
  if(plain(location)&&safeKey(location.region)&&Number.isFinite(location.x)&&Number.isFinite(location.y))result.returnLocation={region:location.region,x:location.x,y:location.y};
- return result;
+ return {...result,...migrateWorldLayout(data,result.worldState,result.discoveredLocations)};
 }

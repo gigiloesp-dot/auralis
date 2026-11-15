@@ -37,7 +37,7 @@ const PATHS=Object.freeze({
 });
 export const biomeZones=content=>content.dungeon?[]:[...(content.climateRevision&&content.id==='ancient'?[]:(ALL_ZONES[content.id]||[]).filter(z=>!(content.climateRevision&&['abandonedCity','volcanic'].includes(climateAt(content,z.x,z.y)?.type)))),...climateLabels(content)];
 const EMPTY_PATHS=Object.freeze([]),sidePathCache=new WeakMap();
-export function biomeSidePaths(content){if(content.dungeon||!PATHS[content.id])return EMPTY_PATHS;const revision=content.climateRevision||0,cached=sidePathCache.get(content);if(cached?.revision===revision)return cached.paths;const paths=[...PATHS[content.id].map(path=>({...path,points:naturalRoadPoints(path,content),curved:true})),...cityPaths(content)];sidePathCache.set(content,{revision,paths});return paths;}
+export function biomeSidePaths(content){if(content.authoredSidePaths)return content.authoredSidePaths;if(content.dungeon||!PATHS[content.id])return EMPTY_PATHS;const revision=content.climateRevision||0,cached=sidePathCache.get(content);if(cached?.revision===revision)return cached.paths;const paths=[...PATHS[content.id].map(path=>({...path,points:naturalRoadPoints(path,content),curved:true})),...cityPaths(content)];sidePathCache.set(content,{revision,paths});return paths;}
 export function biomeAt(content,x,y){
  const climate=content.climateRevision&&climateAt(content,x,y);if(climate&&(['abandonedCity','volcanic'].includes(climate.type)||content.id==='ancient'))return climate;const zones=biomeZones(content);for(let i=zones.length-1;i>=0;i--){const z=zones[i];if(((x-z.x)/z.rx)**2+((y-z.y)/z.ry)**2<=1)return z;}return null;
 }

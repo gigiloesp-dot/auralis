@@ -1,6 +1,7 @@
 import {REGIONS} from '../world/worldData.js';
 import {getRegionContent} from '../world/regionContent.js';
-import {buildQuestCatalog} from './questCatalog.js';
+import {RELEASE21_QUESTS} from './release21QuestData.js';
+import {remapWorldObjectives} from './remapWorldObjectives.js';
 import {itemCount,addItem} from '../equipment/items.js';
 import {grantXp} from '../systems/progression.js';
 export const QUEST_STATES=Object.freeze(['locked','available','active','completed','claimed']);
@@ -9,10 +10,10 @@ export const QUEST_TEXT=Object.freeze({
  en:{talk:'Talk to Mira',name:'Mira · quests',title:'A safer road',body:'Wolves are getting too close to the village. Defeat five wolves in the forest, then return for your reward.',progress:'Wolves defeated',reward:'Reward: 90 XP and 3 wolf fangs',accept:'Accept quest',claim:'Claim reward',active:'Quest accepted. Return after the hunt.',claimed:'Thank you! The road is safer now.',full:'Make room in your inventory for the reward.',close:'Close',journal:'Mira’s request',questsTab:'Quest',shopTab:'Shop',gold:'Gold',hpPotion:'HP potion',mpPotion:'MP potion',buy:'Buy',sell:'Sell',each:'each',emptyShop:'No materials to sell.',funds:'Not enough gold.',limit:'You can carry up to 99 potions of each kind.',wolfFang:'Wolf fang',wolfPelt:'Wolf pelt',common:'Common',uncommon:'Uncommon',rare:'Rare',epic:'Epic',legendary:'Legendary'},
  es:{talk:'Hablar con Mira',name:'Mira · misiones',title:'Un camino seguro',body:'Los lobos se acercan demasiado al pueblo. Derrota a cinco lobos en el bosque y vuelve por tu recompensa.',progress:'Lobos derrotados',reward:'Recompensa: 90 EXP y 3 colmillos de lobo',accept:'Aceptar misión',claim:'Recibir recompensa',active:'Misión aceptada. Vuelve después de la caza.',claimed:'¡Gracias! El camino es más seguro.',full:'Haz espacio en el inventario para la recompensa.',close:'Cerrar',journal:'El encargo de Mira',questsTab:'Misión',shopTab:'Tienda',gold:'Oro',hpPotion:'Poción de HP',mpPotion:'Poción de MP',buy:'Comprar',sell:'Vender',each:'por unidad',emptyShop:'No tienes materiales para vender.',funds:'No tienes suficiente oro.',limit:'Puedes llevar hasta 99 pociones de cada tipo.',wolfFang:'Colmillo de lobo',wolfPelt:'Piel de lobo',common:'Común',uncommon:'Poco común',rare:'Raro',epic:'Épico',legendary:'Legendario'}
 });
-// The catalog references actual NPCs, towns and camp identifiers from the world data.
-// Task9 adds geography only: keep the existing quest catalogue and targets.
-const regions=Object.fromEntries(Object.keys(REGIONS).filter(id=>id!=='desert').map(id=>{const c=getRegionContent(id);return [id,{...c,camps:c.camps.filter(c=>!c.expansion),portals:c.portals.filter(p=>p.toRegion!=='desert'),landmarks:c.landmarks.filter(p=>!p.id.includes('-extension-'))}];}));
-export const QUESTS=Object.freeze(buildQuestCatalog(regions));
+// All104 identities and rewards remain the release21 contract.
+export const LEGACY_QUESTS=Object.freeze(RELEASE21_QUESTS);
+const regions=Object.fromEntries(Object.keys(REGIONS).map(id=>[id,getRegionContent(id)]));
+export const QUESTS=Object.freeze(remapWorldObjectives(LEGACY_QUESTS,regions));
 export const STARTER_QUESTS=Object.freeze(QUESTS.filter(q=>q.id==='forestWolves'));
 const QUEST_INDEX=new Map(QUESTS.map(quest=>[quest.id,quest]));
 export const questDefinition=id=>QUEST_INDEX.get(id);

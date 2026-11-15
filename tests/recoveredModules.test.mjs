@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRegionContent} from '../js/world/regionContent.js';
+import {getRegionContent,getRelease21RegionContent} from '../js/world/regionContent.js';
 import {worldWalkable,visibleChunkCoordinates,describeChunk,CHUNK_SIZE} from '../js/world/chunkGeometry.js';
 import {MonsterStream} from '../js/monsters/MonsterStream.js';
 import {Save} from '../js/systems/save.js';
@@ -9,13 +9,13 @@ import {normalizePersistentProgress} from '../js/systems/progressState.js';
 import {lineClear,moveWithCollision} from '../js/combat/geometry.js';
 import {nearestTarget} from '../js/combat/targeting.js';
 import {QUESTS} from '../js/quests/quests.js';
-test('recovered region data has exact budgets, stable ids and valid references',()=>{
+test('release21 migration baseline: recovered region data has exact budgets, stable ids and valid references',()=>{
  const counts={forest:[94,895,3,11],north:[85,805,2,6],ancient:[75,715,2,4]},ids=new Set();
  for(const [region,[campCount,mobCount,towns,npcs]]of Object.entries(counts)){
-  const raw=getRegionContent(region),c={...raw,camps:raw.camps.filter(c=>!c.expansion)};assert.equal(c.camps.length,campCount);assert.equal(c.camps.flatMap(x=>x.spawns).length,mobCount);assert.equal(c.towns.length,towns);assert.equal(c.npcs.length,npcs);assert.equal(c.bosses.filter(b=>b.bossType==='mini').length,4);assert.equal(c.bosses.filter(b=>b.bossType==='world').length,2);
+  const raw=getRelease21RegionContent(region),c={...raw,camps:raw.camps.filter(c=>!c.expansion)};assert.equal(c.camps.length,campCount);assert.equal(c.camps.flatMap(x=>x.spawns).length,mobCount);assert.equal(c.towns.length,towns);assert.equal(c.npcs.length,npcs);assert.equal(c.bosses.filter(b=>b.bossType==='mini').length,4);assert.equal(c.bosses.filter(b=>b.bossType==='world').length,2);
   for(const p of [...c.camps.flatMap(x=>x.spawns),...c.bosses,...c.npcs,...c.portals]){assert.ok(p.x>=0&&p.y>=0&&p.x<c.width&&p.y<c.height);assert.ok(!ids.has(p.id));ids.add(p.id);}
   for(const p of c.portals){const target=getRegionContent(p.toRegion);assert.ok(p.toX<target.width&&p.toY<target.height);}
-  assert.equal(getRegionContent(region),raw);
+  assert.equal(getRelease21RegionContent(region),raw);
  }
  assert.throws(()=>getRegionContent('missing'),RangeError);
  for(const q of QUESTS){const c=getRegionContent(q.region);assert.ok(c.npcs.some(n=>n.id===q.npcId));if(q.targetCampId)assert.ok(c.camps.some(x=>x.id===q.targetCampId));if(q.type==='boss')assert.ok(c.bosses.some(x=>x.id===q.target));}

@@ -13,6 +13,22 @@
       "before": "f1c7ada80551e55a38520fd6c673fd0a86fb2155c5206fb77253a1894f2412d8",
       "after": "ab3008cf71afa53ec287338a30e21d054cb95adad680925416007382d22c343f"
     },
+    "js/quests/quests.js": {
+      "before": "f4ca9132d592e79b3ee5c153de3ab039d08e9407cad6b8e1cbf3108fdc081096",
+      "after": "0b0b6d4f6542c759a4bb8f9806ef198664c52119b5d826e522c5355e674aa355"
+    },
+    "js/systems/progressState.js": {
+      "before": "67a90fd2412ec0d75891d3f26d0a87bf80fd10d0276b13e7fe2d2486ab8cd127",
+      "after": "a2e5657d2c9e8cbee2d2f76e5f9264f58294f88fdd524c6f10980200962f02bf"
+    },
+    "js/systems/save.js": {
+      "before": "004dbeb9c31b9db92dc0c77594b26101dae1a8f1323fe0957552d73691d3ee55",
+      "after": "e1f28bef48e4d2ad09bfa9635a5de52425fb1e47d6279390277ba2201efb31e2"
+    },
+    "js/ui/SavePanel.js": {
+      "before": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
+      "after": "26ed10a1f604b16c0302d9eda95cf0770b1bc469278f72b061d14cd1e9653c99"
+    },
     "js/world/ChunkWorld.js": {
       "before": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",
       "after": "d0d9c0c13b084601e65b8bfdac78ca5f4c7b9de2fe8f3d2e19a4b971ef7783fc"
@@ -27,7 +43,7 @@
     },
     "js/world/biomes.js": {
       "before": "2d8df8ba0b566d34bd3ebaa98d01446e626809754a7bffcd1ee41bb4206ab1fd",
-      "after": "b8feb970dc88e3c61e3b853c5860d4df274cb2ea1a80d70be283e63c3fb04e17"
+      "after": "0173880594a61f1d94f16f20be81defd1ab2e4e646f1186f974a7ecc6b6ff35f"
     },
     "js/world/chunkGeometry.js": {
       "before": "cd7f1c13d3c5737ac2514645b06ad63a94ff1b509f2878122e40202b61b61992",
@@ -35,7 +51,7 @@
     },
     "js/world/regionContent.js": {
       "before": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
-      "after": "f8f869c0b672fb4415c1a41257c632f10f03c0e8017cf080a1f13ee734469a31"
+      "after": "38b42a9bb2965c8b1dafab7d86adf952c33e1da6c7f212e3eef5f1334e26cfdd"
     },
     "js/world/worldData.js": {
       "before": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",
