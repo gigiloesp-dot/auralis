@@ -1,5 +1,24 @@
 # MASTER_SPEC: реализация и границы доказательств
 
+## Утверждённое задание №9 — четыре региона/уровень56
+
+Это актуальный приоритет; старый черновик про квесты отменён. Source `0e402a7406c7c09a3de3435c32fea241a7098e1c`, checkpoint `feb235e4773bed0951c36f315c6eab035f25a0dd`. [Полный статус](TASK_9_STATUS.md), [доказательства](qa/task9/README.md).
+
+|Требование|Реализация|Проверка|
+|---|---|---|
+|Размеры4 карт и прежние координаты|worldData/regionContent, legacy bounds, desertContent|task9Geography snapshot; task9WorldExpansion; browser-world/ task9-world|
+|7 поселений×2,2 дома/прохода|settlementExpansion,chunkGeometry; только Тера сдвинута|task9Settlements; browser-task9-settlements;7скриншотов|
+|Наполнение новых областей/пустыни|worldExpansion/biomes/desertContent/desertArt,216 новых лагерей1944 существ|реальные PNG,проверки всех4359 обычных/470 лагерей,дорог/коллизий|
+|Только кольцо1↔2↔3↔4↔1|reciprocal gateways, старые порталы сохранены|8 реальных направленных переходов и4 reload|
+|1–56/110 skill points/6 классов|progression/progressionPolicy/Character/monsterKind/HUD|309 unit в полном наборе;18 class/language browser fixtures;42→43/55→56/кап|
+|30 прежних навыков/каталог до42 сохранены|без изменения skill/gear definitions|защищённыеSHA,ранги достижимы,боевыеAPI уровней42/45/50/55/56|
+|Три слота/миграция/rollbackJSON|save version3,разовая коррекция банка,точный backup перед overwrite|legacy3slots/reload/export/download,quota failure,5500 monster states|
+|Streaming/CPU/память|прежняя chunk+actor leasing,один новый4MiB RGBA atlas|12warm+48steady visits,GC delta0.56MiB,peak35chunks/42actors;CI soak|
+|RU/EN/ES,мобильный touch,регрессии|прежние browser suites+4новых|19jobs CI;5–6landscape размеров;physicalAndroid — владелец|
+
+Временные параметры:60/60/96 новых лагерей в лесу/севере/пустыне;4 переиспользованных пустынных вида. Это техническая плотность и временный бестиарий. Новый оазис пока без NPC/торговцев/квестов; следующий пакет не начат. Каталог экипировки43–56 не создавался. Опубликован master-test21 после полного CI19/19; публично342 hashes/4карты/8переходов/level56/backup PASS; предыдущая alpha/main/stable-alpha не меняются. Все старые разделы ниже — исторические, не актуальная конфигурация мира.
+
+
 ## Задание №6 — выпуск 18, комплект воина
 
 Опубликован выпуск **18**: https://auralis-master-test.alertpine18.chatgpt.site. [Игровая лаборатория комплекта](https://auralis-master-test.alertpine18.chatgpt.site/warrior-equipment-lab.html) использует отдельные сохранения. Source `eaf29399db88b51ea22fccafe79a19f48b36cb9b`, контрольная точка `6847769bed1e7e19cf72ca7fd70e7e4718de02df`. [CI 43693685829](https://github.com/gigiloesp-dot/auralis/actions/runs/43693685829) — **15/15 success, 290 unit, 222 syntax, 27 browser suites**.

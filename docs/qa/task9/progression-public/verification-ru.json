@@ -1,0 +1,141 @@
+{
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "records": [
+    {
+      "lang": "ru",
+      "classId": "warrior",
+      "from": 42,
+      "enemy": 42,
+      "level": 43,
+      "xp": 373,
+      "points": 19,
+      "attributes": 12,
+      "hp": 604,
+      "maxHp": 604,
+      "mp": 394,
+      "maxMp": 394,
+      "gear": [
+        "weapon_warrior_8",
+        "helmet_8",
+        "chest_8",
+        "gloves_8",
+        "pants_8",
+        "boots_8",
+        "ring_8",
+        "amulet_8",
+        "shield_8"
+      ],
+      "hud": "Ур. 43"
+    },
+    {
+      "lang": "ru",
+      "classId": "warrior",
+      "from": 55,
+      "enemy": 55,
+      "level": 56,
+      "xp": 527,
+      "points": 19,
+      "attributes": 12,
+      "hp": 760,
+      "maxHp": 760,
+      "mp": 485,
+      "maxMp": 485,
+      "gear": [
+        "weapon_warrior_8",
+        "helmet_8",
+        "chest_8",
+        "gloves_8",
+        "pants_8",
+        "boots_8",
+        "ring_8",
+        "amulet_8",
+        "shield_8"
+      ],
+      "hud": "Ур. 56"
+    },
+    {
+      "lang": "ru",
+      "classId": "warrior",
+      "from": 56,
+      "enemy": 45,
+      "level": 56,
+      "xp": 406,
+      "points": 17,
+      "attributes": 9,
+      "hp": 760,
+      "maxHp": 760,
+      "mp": 485,
+      "maxMp": 485,
+      "gear": [
+        "weapon_warrior_8",
+        "helmet_8",
+        "chest_8",
+        "gloves_8",
+        "pants_8",
+        "boots_8",
+        "ring_8",
+        "amulet_8",
+        "shield_8"
+      ],
+      "hud": "Ур. 56"
+    },
+    {
+      "lang": "ru",
+      "classId": "warrior",
+      "from": 56,
+      "enemy": 50,
+      "level": 56,
+      "xp": 468,
+      "points": 17,
+      "attributes": 9,
+      "hp": 760,
+      "maxHp": 760,
+      "mp": 485,
+      "maxMp": 485,
+      "gear": [
+        "weapon_warrior_8",
+        "helmet_8",
+        "chest_8",
+        "gloves_8",
+        "pants_8",
+        "boots_8",
+        "ring_8",
+        "amulet_8",
+        "shield_8"
+      ],
+      "hud": "Ур. 56"
+    },
+    {
+      "lang": "ru",
+      "classId": "warrior",
+      "from": 56,
+      "enemy": 56,
+      "level": 56,
+      "xp": 542,
+      "points": 17,
+      "attributes": 9,
+      "hp": 760,
+      "maxHp": 760,
+      "mp": 485,
+      "maxMp": 485,
+      "gear": [
+        "weapon_warrior_8",
+        "helmet_8",
+        "chest_8",
+        "gloves_8",
+        "pants_8",
+        "boots_8",
+        "ring_8",
+        "amulet_8",
+        "shield_8"
+      ],
+      "hud": "Ур. 56"
+    }
+  ],
+  "languages": [
+    "ru"
+  ],
+  "classes": [
+    "warrior"
+  ]
+}
