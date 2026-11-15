@@ -9,7 +9,7 @@ import {placeTrap,tickClassEffects,guardBlock,guardResponse,clearClassEffects} f
 import {derivedAttributes} from '../systems/attributes.js';
 import {rollMonsterLoot} from './loot.js';
 import {equipmentStats} from '../equipment/items.js';
-import {MONSTER_TYPES,MONSTER_CAMPS,MONSTER_ACTIVATION_RADIUS,clearDashPosition,monsterKind} from './monsters.js';
+import {MONSTER_TYPES,MONSTER_CAMPS,MONSTER_ACTIVATION_RADIUS,ORDINARY_RESPAWN_MS,clearDashPosition,monsterKind} from './monsters.js';
 import {MonsterStream} from './MonsterStream.js';
 import {drawMonster,animateMonsterParts} from './monsterVisuals.js';
 import {calculateDamage} from '../combat/combat.js';
@@ -61,7 +61,7 @@ export class MonsterSystem{
   // Old eleven-second deaths remain the same encounter, but obey the new
   // thirty-second interval when restored. World boss timestamps are untouched.
   if(!this.content?.dungeon&&!kind.boss&&Number.isFinite(saved?.killedAt)&&saved.killedAt>0&&saved.deadUntil>0){
-   const deadUntil=Math.max(saved.deadUntil,saved.killedAt+30000);if(deadUntil!==saved.deadUntil){saved={...saved,deadUntil};this.hero.worldState.monsters[key]=saved;}
+   const deadUntil=Math.max(saved.deadUntil,saved.killedAt+ORDINARY_RESPAWN_MS);if(deadUntil!==saved.deadUntil){saved={...saved,deadUntil};this.hero.worldState.monsters[key]=saved;}
   }
   const point=this.view(x,y),depth=this.depth(x,y);
   const shadow=this.scene.add.ellipse(point.x,point.y+5,38,13,0x0b1d12,.35).setDepth(depth-1),body=this.scene.add.container(point.x,point.y).setDepth(depth);
@@ -70,9 +70,9 @@ export class MonsterSystem{
   const nameLabel=this.scene.add.text(point.x,point.y-(kind.boss?(kind.visualScale||1.45)*110:76),name+' · '+kind.level,{fontFamily:'Arial',fontSize:kind.boss?'13px':'10px',color:kind.boss?'#ffd47b':'#e5d9ba',stroke:'#15251a',strokeThickness:3}).setOrigin(.5).setDepth(depth+2);
   // An elapsed ordinary death still needs a safe respawn position. Keep it
   // hidden until update() checks the hero, neighbours and current obstacles.
-  const pendingOrdinaryRespawn=!this.content?.dungeon&&!kind.boss&&saved?.killedAt>0&&saved?.deadUntil>0;
+  const pendingOrdinaryRespawn=!this.content?.dungeon&&!kind.boss&&saved?.deadUntil>0;
   const alive=!(saved?.visitKilled||saved?.deadUntil>Date.now()||pendingOrdinaryRespawn);
-  const m={...d,key,kind,nameLabel,active:false,x,y,homeX:x,homeY:y,hp:alive?restoredLivingHp(saved,kind.hp):0,maxHp:kind.hp,lastEngagedAt:(this.scene.playNow||0)-MONSTER_RECOVERY_DELAY+Math.max(0,(saved?.recoverAfter||0)-Date.now()),attack:kind.attack,alive,body,shadow,hpBar,lastHit:0,respawnAt:alive?0:(this.content?saved.deadUntil:Math.max(0,saved.deadUntil-Date.now())),phase:(d.i||0)*.7};
+  const m={...d,key,kind,nameLabel,active:false,x,y,homeX:x,homeY:y,hp:alive?restoredLivingHp(saved,kind.hp):0,maxHp:kind.hp,lastEngagedAt:(this.scene.playNow||0)-MONSTER_RECOVERY_DELAY+Math.max(0,(saved?.recoverAfter||0)-Date.now()),attack:kind.attack,alive,body,shadow,hpBar,lastHit:0,respawnAt:alive?0:saved.deadUntil,phase:(d.i||0)*.7};
   const clock=this.scene.playNow||0,wallNow=Date.now();
   m.visitKilled=saved?.visitKilled===true;
   m.aggroUntil=clock+Math.max(0,(saved?.aggroUntil||0)-wallNow);
@@ -147,7 +147,9 @@ export class MonsterSystem{
    const active=this.isActive(m);if(active!==m.active)this.setMonsterVisible(m,active);
    if(!active){this.cancelWindup(m);cancelMonsterAbility(m);continue;}
    if(!m.alive){
-    const due=!m.visitKilled&&(this.content?Date.now():now)>=m.respawnAt;
+    // Death deadlines are absolute wall timestamps in every content mode.
+    // Scene clocks can pause, reset or already be advanced on reconstruction.
+    const due=!m.visitKilled&&Date.now()>=m.respawnAt;
     const spawn=due?this.respawnPoint(m,now):null;
     if(!spawn){m.painted?.update('death',projectAngle(m.facing||0),dt);const fraction=Math.max(0,Math.min(1,((m.dyingUntil||0)-now)/350));m.body.alpha=fraction;m.body.rotation=m.paintedActive?0:(1-fraction)*1.1;if(!fraction){m.body.setVisible(false);m.shadow.setVisible(false);}continue;}
     m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=spawn.x;m.y=spawn.y;m.poison=null;m.returning=false;m.aggroUntil=0;m.patrolTarget=null;m.nextPatrolAt=now+1000;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);
@@ -209,9 +211,9 @@ export class MonsterSystem{
   if(!m.alive||!Number.isFinite(amount)||amount<=0)return;this.lastCombat=now;m.lastEngagedAt=now;markMonsterThreat(m,this.hero,now);if(!this.selected?.alive||this.selected===m)this.select(m,now);m.hp=Math.max(0,m.hp-amount);m.hurtUntil=now+180;this.label(m.x,m.y,'-'+amount+(critical?'!':''),critical?'#ffb45c':'#fff1a0');
   this.persistHealth(m,now);this.syncAnnotations(m);
   if(m.hp===0){
-   const deathAt=m.deathAt=Date.now(),minion=this.content?.dungeon&&!m.kind.boss,respawnMs=m.kind.respawnMs||30000;
+   const deathAt=m.deathAt=Date.now(),minion=this.content?.dungeon&&!m.kind.boss,respawnMs=m.kind.boss?(m.kind.respawnMs||30000):Math.max(ORDINARY_RESPAWN_MS,m.kind.respawnMs||ORDINARY_RESPAWN_MS);
    m.alive=false;m.visitKilled=!!minion;if(this.selected===m)this.selected=null;this.scene.onTargetLost?.(m);m.dyingUntil=now+350;
-   const deadUntil=minion?DUNGEON_VISIT_DEAD_UNTIL:deathAt+respawnMs;m.respawnAt=this.content?deadUntil:now+respawnMs;
+   const deadUntil=minion?DUNGEON_VISIT_DEAD_UNTIL:deathAt+respawnMs;m.respawnAt=deadUntil;
    this.hero.worldState.monsters[m.key]={deadUntil,killedAt:deathAt,hp:0};if(minion)recordDungeonMinionKill(this.hero,this.content,m.id,deathAt);
    this.cancelWindup(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;
    const drops=rollMonsterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.scene.groundLoot?.dropMonster(m,drops,deathAt);this.onChange();

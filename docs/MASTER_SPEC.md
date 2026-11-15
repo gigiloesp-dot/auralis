@@ -1031,3 +1031,14 @@ Android Chrome в горизонтальной ориентации, RU/EN/ES, �
 Обычная экипировка: common0.8%, uncommon0.3%, rare0.1%, epic0.01%, legendary0. Материальные исходные шансы сначала зафиксировать и уменьшить вдвое независимо от экипировки. Mini/world используют независимые группы: common20%×3–5, uncommon3%×2–3, rare0.7%×1–2, epic0.1%×1, legendary0.01%×1; легендарная экипировка только world. Сохранять все успешные группы, при нескольких green+ предметах по возможности разные классы. Уровни экипировки — существующие уровни каталога в пределах±5 от врага, максимум42, без ограничения уровнем героя и выдуманных tier.
 
 Проверить single/all/full/partial/radius/close/duplicates/reload, категории редкости и legendary-source, независимость boss-бросков, маленькие горизонтальные экраны и touch без JS ошибок. Не менять бой, карты, навыки и другие несвязанные системы. Итог — тестовый HTTPS, отчёт, результаты, source/checkpoint и остатки. Ход работ: TASK_4_STATUS.md.
+
+
+## Задание №5: компактные окна, возрождение и журнал
+
+Приоритетное новое требование от выпуска16: единые CSS-size tokens. Ориентиры: главные кнопки260–320×34–38, текст13–15, gaps5–7; pause tiles48–56, bagcells38–44, listrows30–36, body11–13, headings15–18, actions70–100×32–36. Не обрезать тексты, сохранить достаточные touchareas; длинные контенты могут быть выше ориентира. Проверить все меню/панели RU/EN/ES, внутренний scroll и доступные close/footer. Не уменьшать и не перемещать joystick, attack и четыре live skills, не менять бой/характеристики/данные.
+
+Главное меню: все5кнопок вписываются в реальный Android Chrome viewport, убрать крупные левые иконки, уменьшить флаг пропорционально, сохранить logo/style, показать нижний foreground без растяжения/чрезмерного cover. Проверить уменьшенную browseraddressbar высоту.
+
+Обычные monsters не могут появляться до30s death, при занятомspawn отложить. Причину пользовательского наблюдения установить по respawnMs/timestamps/clocks/stream/reload/instances, не угадывать; отдельные boss/dungeon правила сохранить. Добавить regressions. Journal: active прогресс, completed доclaim — получитьнаграду, claimed сразу скрыт из активного списка, но сохраняется для prerequisite/no-repeat и reload.
+
+Сохранить integrated fix/hud-circular-minimap: hidden duplicate toolbar, круг120сбронзовойрамкой/бирюзовойстрелкой/topright. Размеры640×360,740×320,844×390,915×412,1280×720. Before/after screenshots, unit/browser/CI, проверка saves/combat/loot/quests. Checkpoint/workingbranch; main/stablealpha untouched, no merge. Публиковать следующий existing master-test и честно указатьверсию/source/checkpoint/tests/остатки. Ход — TASK_5_STATUS.md.
