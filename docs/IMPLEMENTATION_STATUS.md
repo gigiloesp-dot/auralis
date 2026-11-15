@@ -1,5 +1,11 @@
 # Master development: фактическое состояние
 
+## Задание №5 — выпуск17
+
+Опубликован **выпуск17**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `28615cbc4fe1288b1aba242aec0cf0baeb7b39bb`. [CI43658226026](https://github.com/gigiloesp-dot/auralis/actions/runs/43658226026) — **14/14 jobs success,284 unit,213 syntax,26 browser suites**. Проверены пять landscape-размеров и RU/EN/ES, все шесть классов, сохранения, бой, добыча, streaming и soak.
+
+Централизован компактный масштаб окон; исправлены фон/флаг/главные кнопки, прокрутка хранилища,44px touch regions, доступность паузы рядом с NPC, абсолютные таймеры обычных монстров и фильтр claimed в журнале. Боевые контролы и круглая мини-карта сохранены. Контрольная точка — `98d7b1a9b46385a07ec4b931e4371e957b592455`. Подробности: [TASK_5_STATUS.md](TASK_5_STATUS.md), [CI](qa/task5-ci-source.json), [доставка](qa/task5-deployment.json), [сравнение скриншотов](qa/task5-screens/README.md). Публично подтверждены310 runtime-хешей, бой/добыча/save/reload/регионы, журнал RU/EN/ES и112 новых RU UI-измерений на пяти разрешениях. [Квитанция проверок](qa/task5-verification.json). Физический Android остаётся для ручной приёмки.
+
 ## Задание №4 — текущая поставка
 
 Опубликован **выпуск 16**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `140103da211aac3ad8460d769c240df421bf4e27`. [CI 43633093953](https://github.com/gigiloesp-dot/auralis/actions/runs/43633093953) — **11/11 jobs success, 272 unit, check207 файлов, все 24 browser suites**. Включены 18 сочетаний классов/языков и новый сценарий добычи RU/EN/ES.

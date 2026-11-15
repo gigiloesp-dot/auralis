@@ -1,0 +1,6 @@
+PASS task5 measured ru 640 360
+PASS task5 measured ru 740 320
+PASS task5 measured ru 844 390
+PASS task5 measured ru 915 412
+PASS task5 measured ru 1280 720
+PASS task5 compact regression: 316 surface records, /workspace/auralis/work/task5-after
