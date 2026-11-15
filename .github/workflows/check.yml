@@ -40,6 +40,9 @@ jobs:
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
       - name: Existing browser checks
         run: npm run test:browser:core:${{ matrix.group }}
+      - name: Full-width home background, six viewports and three languages
+        if: matrix.group == 'ui'
+        run: npm run test:browser:task7
       - name: Quest journal claim and reload in three languages
         if: matrix.group == 'quests'
         run: npm run test:browser:task5-journal

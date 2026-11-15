@@ -59,5 +59,14 @@ test('normal equip, unequip and saved reload preserve the real catalogue stats w
 });
 
 test('the release17 interface, base sprites, maps, creatures, NPCs, quests and loot data remain byte-identical',()=>{
- const manifest=JSON.parse(readFileSync('docs/art/WARRIOR_REFERENCE_PRESERVED.json'));assert.ok(Object.keys(manifest.hashes).length>200);for(const [path,hash]of Object.entries(manifest.hashes))assert.equal(sha(readFileSync(path)),hash,path);
+ const manifest=JSON.parse(readFileSync('docs/art/WARRIOR_REFERENCE_PRESERVED.json'));assert.ok(Object.keys(manifest.hashes).length>200);for(const [path,hash]of Object.entries(manifest.hashes)){
+  if(path==='css/ui-scale.css'){
+   // Task 7 explicitly changes only the final home background sizing rule.
+   // Preserve the old hash assertion, and require the exact one-line delta.
+   const baseline=readFileSync('docs/qa/task7/ui-scale-release18.css','utf8');assert.equal(sha(baseline),hash,path+' original');
+   const old='#menu[data-page=home]{background-image:var(--ui-menu-art),linear-gradient(90deg,#170f0a,#342316 45%,#170f0a);background-size:contain,cover}';
+   const at=baseline.lastIndexOf(old);assert.ok(at>=0);
+   assert.equal(readFileSync(path,'utf8'),baseline.slice(0,at)+old.replace('background-size:contain,cover','background-size:cover,cover')+baseline.slice(at+old.length),path+' only authorized task7 change');
+  }else assert.equal(sha(readFileSync(path)),hash,path);
+ }
 });

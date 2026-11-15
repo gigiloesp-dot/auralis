@@ -132,7 +132,7 @@
 #menu[data-page=settings] .menu-content>select{min-height:44px}
 .attribute-row button{width:34px;height:34px;min-width:34px;min-height:34px;font-size:16px}
 #menu{background-color:#170f0a;background-image:linear-gradient(#140d07a8,#140d07c9),var(--ui-menu-art);background-size:cover,contain;background-position:center;background-repeat:no-repeat}
-#menu[data-page=home]{background-image:var(--ui-menu-art),linear-gradient(90deg,#170f0a,#342316 45%,#170f0a);background-size:contain,cover}
+#menu[data-page=home]{background-image:var(--ui-menu-art),linear-gradient(90deg,#170f0a,#342316 45%,#170f0a);background-size:cover,cover}
 #inventory-panel .equipment-grid .equipment-cell{min-height:44px;padding:2px;gap:1px}
 #inventory-panel .equipment-cell .item-art-wrap{width:24px;height:24px}
 #menu .pause-grid button{font-size:10.5px;overflow-wrap:anywhere}
