@@ -21,7 +21,7 @@ if(!baseline){
  for(const [width,height]of sizes){await p.setViewportSize({width,height});await measure('character-slots','.menu-panel',{footer:'.menu-content>button'});}
  await p.locator('.menu-content>button').click();await p.locator('[data-menu-action=new]').click();
  for(const [width,height]of sizes){await p.setViewportSize({width,height});await measure('character-create','.menu-panel',{footer:'.menu-content>button'});assert.equal(await p.locator('.class-card').count(),6);}
- await p.locator('.menu-content>button').last().click();
+ await p.locator('.menu-content>button').last().click();assert.equal(await p.locator('#menu').getAttribute('data-page'),'slots');await p.locator('.menu-content>button').click();
 }
 await p.locator('[data-menu-action=new]').click();await p.locator('input').fill('CompactHero99999');await p.locator('.menu-content>button.primary').click();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.hero);
 // Inventory, objective and location fixtures only. Never bypass panel navigation.
