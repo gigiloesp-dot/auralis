@@ -14,7 +14,7 @@ const sourceCommit=execFileSync('git',['rev-parse',requested],{encoding:'utf8'})
 const scratch=mkdtempSync(join(tmpdir(),'auralis-export-'));
 try{
  const archive=join(scratch,'runtime.tar');
- execFileSync('git',['archive','--format=tar','--output',archive,sourceCommit,'index.html','css','js','assets']);
+ execFileSync('git',['archive','--format=tar','--output',archive,sourceCommit,'index.html','warrior-equipment-lab.html','css','js','assets']);
  execFileSync('tar',['-x','-f',archive,'-C',target]);
 }finally{rmSync(scratch,{recursive:true,force:true});}
 writeFileSync(resolve(target,'build.json'),JSON.stringify({repository:'gigiloesp-dot/auralis',branch:'codex/auralis-master-development',sourceCommit,exportedAt:new Date().toISOString()},null,2)+'\n');

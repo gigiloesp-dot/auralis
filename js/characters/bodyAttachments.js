@@ -1,3 +1,4 @@
+import {warriorSockets} from './warriorCalibration.js';
 // Approximate anatomical sockets for neutral atlases, in world pixels relative
 // to the body's foot baseline. These are replaceable estimates, not calibrated
 // per-frame art sockets; measured entry.attachments overrides take precedence.
@@ -35,6 +36,7 @@ export function bodyAttachments(entry={},frame='idle/s',direction=frame.split('/
  const rightFoot=point(lateral*footSpread+dx*width*.35*stride,stride>0?-height*.09:0);
  const leftFoot=point(-lateral*footSpread-dx*width*.35*stride,stride<0?-height*.09:0);
  const anchors={height,width,angle,back,bank,head:point(lean*.6,-height*.91),neck:point(lean*.8,-height*.79),chest:point(lean,-height*.65),hips:point(lean*.4,-height*.39),rightHand,leftHand,rightFoot,leftFoot};
+ if(entry.key==='actor-warrior-base'){const measured=warriorSockets(entry,frame);if(measured){Object.assign(anchors,measured);anchors.chest={x:(measured.neck.x+measured.hips.x)/2,y:(measured.neck.y+measured.hips.y)/2};}}
  const overrides=entry.attachments?.[frame];
  if(overrides)for(const [key,value]of Object.entries(overrides)){
   if(value&&typeof value==='object'&&Number.isFinite(value.x)&&Number.isFinite(value.y))anchors[key]={...value};

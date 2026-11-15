@@ -10,7 +10,7 @@ export class PaintedActor{
    if(!loaded||this.destroyed||!root.scene)return false;
    this.sprite=scene.add.image(0,0,entry.key,'idle/s').setOrigin(.5,(entry.baselines?.idle||225)/256).setScale(entry.scale);
    root.add(this.sprite);
-   if(entry.baseBody&&entry.equipment){this.layers=new CharacterEquipmentLayers(scene,hero,entry);this.gear=this.layers.root;}
+   if(entry.baseBody&&entry.equipment){this.layers=new CharacterEquipmentLayers(scene,hero,entry,{sprite:this.sprite,parent:root});this.gear=this.layers.root;}
    else this.gear=entry.equipment?scene.add.graphics():null;
    if(this.gear)root.add(this.gear);return true;
   });
@@ -24,7 +24,7 @@ export class PaintedActor{
   if(state==='death'){this.deathTime+=dt;this.sprite.rotation=Math.min(1,this.deathTime/.5)*1.2;this.sprite.alpha=1-Math.min(1,this.deathTime/.5)*.35;}
   else{this.deathTime=0;this.sprite.rotation=state==='hurt'?Math.sin(this.elapsed*55)*.07:0;this.sprite.alpha=1;}
   if(state==='hurt')this.sprite.setTint(0xffb3a3);else if(state==='special')this.sprite.setTint(0xc9e8ff);else this.sprite.clearTint();
-  if(this.layers)this.layers.update(p.frame,p.direction,state,{...pose,aimAngle:angle},{rotation:this.sprite.rotation,y:this.sprite.y});
+  if(this.layers)this.layers.update(p.frame,p.direction,state,{...pose,aimAngle:angle},{rotation:this.sprite.rotation,y:this.sprite.y,scaleY:1+breath});
   else if(this.gear)this.drawEquipment(p.direction,state);
  }
  drawEquipment(direction,state){

@@ -1,3 +1,4 @@
+import {WarriorReferenceLayers} from './WarriorReferenceLayers.js';
 import {itemDefinition} from '../equipment/items.js';
 import {EQUIPMENT_SLOTS} from '../equipment/armor.js';
 import {bodyAttachments} from './bodyAttachments.js';
@@ -13,27 +14,29 @@ const line=(g,color,width,points)=>{g.lineStyle(width,color,1).beginPath().moveT
 // Each slot owns its draw buffer. Future texture layers can replace individual
 // slot nodes without changing the body's animation or inventory/stat logic.
 export class CharacterEquipmentLayers{
- constructor(scene,hero,entry){
+ constructor(scene,hero,entry,context=null){
   this.hero=hero;this.entry=entry;this.destroyed=false;this.root=scene.add.container(0,0);this.slots={};
   for(const slot of EQUIPMENT_SLOTS.filter(slot=>slot!=='weapon')){this.slots[slot]=scene.add.graphics();this.root.add(this.slots[slot]);}
   const weaponRoot=scene.add.container(0,0),primary=scene.add.graphics(),secondary=scene.add.graphics();
   weaponRoot.add([primary,secondary]);this.root.add(weaponRoot);this.slots.weapon=weaponRoot;
   this.weapon={root:weaponRoot,primary,secondary};this.primary=primary;this.secondary=secondary;
   this.anchors=bodyAttachments(entry);this.muzzlePoint={x:0,y:0};this.hasWeapon=false;
+  this.reference=entry.key==='actor-warrior-base'&&context&&scene.textures?new WarriorReferenceLayers(scene,hero,entry,this.root,context.parent,context.sprite):null;
  }
- get commandCount(){return Object.entries(this.slots).reduce((n,[slot,node])=>n+(slot==='weapon'?this.weapon.primary.commandBuffer.length+this.weapon.secondary.commandBuffer.length:node.commandBuffer.length),0);}
+ get commandCount(){return Object.entries(this.slots).reduce((n,[slot,node])=>n+(slot==='weapon'?this.weapon.primary.commandBuffer.length+this.weapon.secondary.commandBuffer.length:node.commandBuffer.length),0)+(this.reference?.visibleParts||0);}
  update(frame,direction,state,pose={},transform={}){
   if(this.destroyed)return;
   this.root.rotation=Number.isFinite(transform.rotation)?transform.rotation:0;
   this.root.y=Number.isFinite(transform.y)?transform.y:0;
   this.root.alpha=state==='death'?.5:state==='hurt'?.7:1;
+  this.reference?.update(frame,direction,state,pose,transform);
   const a=this.anchors=bodyAttachments(this.entry,frame,direction,state,pose),h=a.height,w=a.width;
   const gear=this.hero?.equipment||{},classId=this.hero?.classId||'warrior';
   const light=['archer','assassin','mage'].includes(classId),dwarf=this.entry.bodyDwarf||this.entry.bodyType==='adult-dwarf';
   const valid=slot=>{const item=gear[slot],definition=itemDefinition(item);return definition?.slot===slot?{item,definition,color:COLORS[item.rarity]||COLORS.common}:null;};
   for(const [slot,node]of Object.entries(this.slots)){
    if(slot==='weapon')continue;
-   node.clear();const item=valid(slot);node.setVisible(!!item);if(!item)continue;
+   node.clear();const item=valid(slot);node.setVisible(!!item);if(!item)continue;if(this.reference?.replaces(slot)){node.setVisible(false);continue;}
    const color=item.color;
    if(slot==='helmet'){
     plate(node,color,a.head.x,a.head.y-h*.025,w*(light?.53:.66),h*.15);
@@ -66,7 +69,7 @@ export class CharacterEquipmentLayers{
   }
   const primary=this.weapon.primary,secondary=this.weapon.secondary;
   primary.clear();secondary.clear();const weapon=valid('weapon');this.hasWeapon=!!weapon;
-  this.weapon.root.setVisible(this.hasWeapon);if(!weapon)return;
+  this.weapon.root.setVisible(this.hasWeapon);if(!weapon)return;if(this.reference?.replaces('weapon')){this.weapon.root.setVisible(false);return;}
   const kind=weapon.definition.kind||({archer:'bow',mage:'staff',assassin:'daggers',cannoneer:'cannon'}[classId]||'sword');
   const hand=kind==='bow'?a.leftHand:a.rightHand,attack=a.bank==='attack';
   primary.x=hand.x;primary.y=hand.y;secondary.x=a.leftHand.x;secondary.y=a.leftHand.y;
@@ -104,8 +107,9 @@ export class CharacterEquipmentLayers{
  }
  weaponMuzzleScreen(){
   if(this.destroyed)return null;
+  const painted=this.reference?.weaponMuzzleScreen();if(painted)return painted;
   if(this.hasWeapon)return this.weapon.primary.getWorldTransformMatrix().transformPoint(this.muzzlePoint.x,this.muzzlePoint.y,{});
   const hand=this.anchors.rightHand;return this.root.getWorldTransformMatrix().transformPoint(hand.x,hand.y,{});
  }
- destroy(){if(this.destroyed)return;this.destroyed=true;this.root.destroy();}
+ destroy(){if(this.destroyed)return;this.destroyed=true;this.reference?.destroy();this.root.destroy();}
 }
