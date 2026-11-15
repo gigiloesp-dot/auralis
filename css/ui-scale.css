@@ -156,3 +156,6 @@
 #skills-panel .skill-slot-choices{gap:13px}
 #inventory-panel .item-actions{gap:13px}
 #inventory-panel .item-actions button{flex:1 1 70px;font-size:11px}
+
+/* Keep expanded action targets inside fixed footer clipping boundaries. */
+#inventory-panel .item-actions,#skills-panel .skill-detail-actions{padding:7px;gap:13px}
