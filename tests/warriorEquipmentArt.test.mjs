@@ -58,7 +58,7 @@ test('normal equip, unequip and saved reload preserve the real catalogue stats w
  const bare=createCharacter({equipment:{},inventory:[]});assert.equal(Save.write(bare,2),true);assert.deepEqual(Save.load(2).inventory,[],'no appearance module injects equipment into ordinary saves');
 });
 
-test('the release17 interface, base sprites, maps, creatures, NPCs, quests and loot data remain byte-identical',()=>{
+test('release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta',()=>{
  const manifest=JSON.parse(readFileSync('docs/art/WARRIOR_REFERENCE_PRESERVED.json'));assert.ok(Object.keys(manifest.hashes).length>200);for(const [path,hash]of Object.entries(manifest.hashes)){
   if(path==='css/ui-scale.css'){
    // Task 7 explicitly changes only the final home background sizing rule.

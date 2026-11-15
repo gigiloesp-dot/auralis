@@ -1,5 +1,10 @@
 # Результаты проверок Auralis
 
+## Задание №7 — выпуск 19, завершено
+
+https://auralis-master-test.alertpine18.chatgpt.site — source `5b2d2a9e06ae9f5b461db4d207fbeea5b2005409`. Контрольная точка `411f4005fe63f729ca94c6eac80d9f482ef029e1`, исходная ветка после задания6 `cc5c7bb9fa8c6ed3cfd704f2e63563ec3850e077`. Главное меню заполняет экран через cover вместо contain; один runtime CSS-delta. Журнал уже был правильным, код сохранён и подтверждён реальными NPC/reload-тестами RU/EN/ES. 290 unit,223 syntax,CI15/15,28 browser suites; публично333 runtime-хеша,18 сочетаний меню и journal3/3. [Отчёт](TASK_7_STATUS.md), [до/после](qa/task7/README.md), [доставка](qa/task7/deployment.json). Main/stable-alpha и старая alpha сохранены, merge нет. Задание6 и экипировка не изменены. Физический Android не использовался.
+
+
 ## Задание №6 — выпуск 18, комплект воина
 
 Опубликован выпуск **18**: https://auralis-master-test.alertpine18.chatgpt.site. [Игровая лаборатория комплекта](https://auralis-master-test.alertpine18.chatgpt.site/warrior-equipment-lab.html) использует отдельные сохранения. Source `eaf29399db88b51ea22fccafe79a19f48b36cb9b`, контрольная точка `6847769bed1e7e19cf72ca7fd70e7e4718de02df`. [CI 43693685829](https://github.com/gigiloesp-dot/auralis/actions/runs/43693685829) — **15/15 success, 290 unit, 222 syntax, 27 browser suites**.
