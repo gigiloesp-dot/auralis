@@ -3,7 +3,8 @@ import {regionRoads} from './chunkGeometry.js';
 import {getRegionContent} from './regionContent.js';
 import {REGIONS} from './worldData.js';
 import {ChunkWorld} from './ChunkWorld.js';
-import {project,unproject,screenDirection} from './projection.js';
+import {screenDirection} from './projection.js';
+import {projectSurface,unprojectSurface,surfaceDepth} from './surface.js';
 import {MonsterSystem} from '../monsters/MonsterSystem.js';
 import {respawnAtTown} from './towns.js';
 import {DUNGEONS,dungeonContentForHero,enterDungeon,leaveDungeon,recordDungeonBossKill} from '../dungeons/dungeonSystem.js';
@@ -22,7 +23,7 @@ export class WorldRuntime{
   else if(h.region==='forest')this.content.portals=[...this.content.portals,{id:'arena-entry',x:2280,y:1140,toRegion:'arena',toX:250,toY:600,names:{ru:'Круг испытаний',en:'Circle of trials',es:'Círculo de pruebas'}}];
   if(this.content.exit)this.content.exit={...this.content.exit,id:'exit',names:{ru:'Выход',en:'Exit',es:'Salida'}};
   this.content.portals=this.content.portals.map(p=>p.names?p:{...p,names:Object.fromEntries(['ru','en','es'].map(lang=>[lang,REGIONS[p.toRegion]?.names?.[lang]||p.toRegion]))});s.regionContent=this.content;
-  const c=this.content;c.terrainRoads=regionRoads(c);s.project=(x,y)=>project(x,y,c.height);s.unproject=(x,y)=>unproject(x,y,c.height);
+  const c=this.content;c.terrainRoads=regionRoads(c);s.project=(x,y)=>projectSurface(x,y,c);s.unproject=(x,y)=>unprojectSurface(x,y,c);s.depthAt=(x,y)=>surfaceDepth(c,x,y);
   h.x=Math.max(20,Math.min(c.width-20,h.x));h.y=Math.max(20,Math.min(c.height-20,h.y));
   this.chunkWorld=new ChunkWorld(s,c);
   const p=s.project(h.x,h.y);s.body.setPosition(p.x,p.y);s.cameras.main.setBounds(0,0,(c.width+c.height)*Math.SQRT1_2,(c.width+c.height)*Math.SQRT1_2/2);s.cameras.main.centerOn(p.x,p.y);

@@ -13,7 +13,7 @@ export class GroundLootSystem{
   if(result.ok||result.reason==='placement'){this.scene.save();this.update(true);}return result;
  }
  createMarker(drop){
-  const s=this.scene,p=s.project(drop.x,drop.y),root=s.add.container(p.x,p.y).setDepth(drop.x+drop.y+2),g=s.add.graphics(),category=lootCategory(drop.item);
+  const s=this.scene,p=s.project(drop.x,drop.y),root=s.add.container(p.x,p.y).setDepth((s.depthAt?.(drop.x,drop.y)??drop.x+drop.y)+2),g=s.add.graphics(),category=lootCategory(drop.item);
   g.fillStyle(0x10170e,.18).fillEllipse(0,4,25,9);
   if(category==='weapon'){
    g.fillStyle(0xd5dcdf,.62).lineStyle(1,0x879397,.6);polygon(g,[[-3,0],[5,-20],[10,-26],[10,-18],[3,3]]);

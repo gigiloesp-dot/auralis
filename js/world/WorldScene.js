@@ -63,7 +63,7 @@ export class WorldScene extends Phaser.Scene{
   if(this.panelsOpen()){this.controls.reset();this.updateTargetPanel();return;}
   this.playNow+=dt*1000;this.world.tickTerrain(dt);
   if(h.hp>0&&Math.hypot(this.axis.x,this.axis.y)>.08)this.facing=this.world.move(this.axis,h.speed*heroMovementMultiplier(h,this.playNow),dt);
-  const p=this.project(h.x,h.y);this.body.setPosition(p.x,p.y).setDepth(h.x+h.y+2);this.shadow.setPosition(p.x,p.y+7).setDepth(h.x+h.y-1);
+  const p=this.project(h.x,h.y);this.body.setPosition(p.x,p.y).setDepth(this.depthAt(h.x,h.y)+2);this.shadow.setPosition(p.x,p.y+7).setDepth(this.depthAt(h.x,h.y)-1);
   let swing=this.attackCycle.state(this.playNow);if(swing.impact)this.monsters.attack(this.playNow,this.facing,swing.index);
   const pressed=this.controls.consumeAttack();if(h.hp>0&&(this.controls.attacking||pressed)&&this.attackCycle.start(this.playNow,h))swing=this.attackCycle.state(this.playNow);
   const cast=h.castAnimation,pose=cast?.until>this.playNow?{active:true,special:true,cycleId:cast.startedAt,progress:(this.playNow-cast.startedAt)/(cast.until-cast.startedAt),index:cast.index}:{...swing,cycleId:this.attackCycle.startedAt};

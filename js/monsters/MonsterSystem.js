@@ -31,7 +31,7 @@ export class MonsterSystem{
   else for(let i=0;i<spawnPoints.length;i++)this.spawn({...spawnPoints[i],i});
  }
  view(x,y){return this.scene.project?this.scene.project(x,y):{x,y};}
- depth(x,y){return this.scene.project?x+y:y;}
+ depth(x,y){return this.scene.depthAt?this.scene.depthAt(x,y):this.scene.project?x+y:y;}
  sight(a,b,radius=0){const kind=a.kind||a.source?.kind||b.kind,obstacles=kind?blockingObstacles(this.obstacles,kind):this.obstacles;if(!lineClear(a,b,obstacles,radius))return false;if(this.content?.dungeon&&this.scene.world?.isWalkable){const length=distance(a,b),steps=Math.max(1,Math.ceil(length/8));for(let i=0;i<=steps;i++)if(!this.scene.world.isWalkable(a.x+(b.x-a.x)*i/steps,a.y+(b.y-a.y)*i/steps,radius))return false;}return true;}
  nearest(range){return nearestTarget(this.hero,this.monsters.filter(m=>this.canFight(m)),range);}
  canFight(m){return m.alive&&m.active!==false&&this.sight(this.hero,m);}

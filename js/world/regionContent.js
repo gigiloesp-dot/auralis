@@ -70,7 +70,7 @@ function expandCamps(content){
 export function getRegionContent(id='forest'){
  if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);
  if(cache.has(id))return cache.get(id);
- if(id==='desert'){const content=createDesertContent();content.climateRevision=1;cache.set(id,content);for(const target of ['forest','ancient']){const outer=getRegionContent(target),gateway=outer.portals.find(p=>p.toRegion==='desert'),portal=content.portals.find(p=>p.toRegion===target);portal.toX=gateway.returnPoint.x;portal.toY=gateway.returnPoint.y;}return content;}
+ if(id==='desert'){const content=createDesertContent();content.climateRevision=1;content.reliefRevision=1;cache.set(id,content);for(const target of ['forest','ancient']){const outer=getRegionContent(target),gateway=outer.portals.find(p=>p.toRegion==='desert'),portal=content.portals.find(p=>p.toRegion===target);portal.toX=gateway.returnPoint.x;portal.toY=gateway.returnPoint.y;}return content;}
  const region={...REGIONS[id],width:LEGACY_BOUNDS[id],height:LEGACY_BOUNDS[id]},config=CONFIG[id],towns=getRegionTowns(id),npcs=getRegionNpcs(id),portals=PORTALS[id].map(p=>({...p,region:id}));
  const roads=[];const anchors=[...towns.map(t=>t.spawn),...portals];
  for(let i=1;i<anchors.length;i++)roads.push({id:id+'-road-'+i,from:anchors[i-1],to:anchors[i],width:90});
