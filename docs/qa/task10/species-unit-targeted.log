@@ -1,0 +1,22 @@
+✔ predator leaps at the telegraphed position, can be dodged, then strikes a target that stays (2.757581ms)
+✔ flying movement passes low rocks while houses, world bounds and dungeon floors remain solid (0.780759ms)
+✔ a bat dives with legal movement and a crawler emits a real poison projectile (1.679197ms)
+✔ heavy stomp warns, shakes the ground and damages only targets remaining in the area (0.268676ms)
+✔ elementals blink to valid visible terrain and launch magic, never through a closed wall (1.408618ms)
+✔ cleaves follow the snapshot facing rather than an arbitrary east direction (0.269727ms)
+✔ poison causes timed damage, frost changes actual movement multiplier and death clears both (0.389829ms)
+✔ safe zones, lost sight, death and loss of combat cancel abilities without damaging the hero (0.286213ms)
+✔ all23 temporary base prototypes remain reachable across257 spots; unique artwork remains a separate requirement (7.998474ms)
+✔ crowd-control recovery gives pursuit a short step before another movement ability can wind up (0.321126ms)
+✔ catalogue honestly distinguishes25 unique primary models,23 legacy models and232 unfinished species (237.658406ms)
+✔ both new species have48 real transparent poses with registered feet and distinct idle,run,attack,hurt and death banks (526.626475ms)
+✔ new hurt/death frames use192px frame height and do not rotate an already drawn corpse; legacy hero frames retain256px behavior (1.169567ms)
+✔ scorpion alternates real venom and burrowing attacks,while cactus fires three physical poison needles then dodgeable roots (1.261161ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1013.915135

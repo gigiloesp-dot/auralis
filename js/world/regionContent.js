@@ -1,3 +1,4 @@
+import {uniqueSpeciesArt} from '../assets/speciesAssets.js';
 import {TASK10_LAYOUT} from './task10Layout.js';
 import {createDesertContent} from './desertContent.js';
 import {appendExpandedTerritories,ringGateway} from './worldExpansion.js';
@@ -102,4 +103,4 @@ export function getRelease21RegionContent(id='forest'){
 }
 
 const activeCache=new Map();
-export function getRegionContent(id='forest'){if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);if(!activeCache.has(id)){const c=TASK10_LAYOUT[id];activeCache.set(id,{...c,palette:REGIONS[id].palette,npcs:getRegionNpcs(id)});}return activeCache.get(id);}
+export function getRegionContent(id='forest'){if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);if(!activeCache.has(id)){const c=TASK10_LAYOUT[id];activeCache.set(id,{...c,palette:REGIONS[id].palette,npcs:getRegionNpcs(id),camps:c.camps.map(camp=>({...camp,speciesId:camp.plannedSpeciesId,temporaryBestiary:!uniqueSpeciesArt(camp.plannedSpeciesId),spawns:camp.spawns.map(s=>({...s,speciesId:s.plannedSpeciesId}))}))});}return activeCache.get(id);}

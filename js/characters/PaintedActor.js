@@ -1,14 +1,14 @@
 import {actorPose} from '../assets/actorArt.js';
 import {CharacterEquipmentLayers} from './CharacterEquipmentLayers.js';
-// Four hand-painted pose banks. Hurt/death/skill transitions also use transforms;
-// they are deliberately not described as six independently painted clips.
+// Legacy actors retain four painted banks and transformed hurt/death. New
+// species may provide actual hurt/death frames; neither path changes hero gear.
 export class PaintedActor{
  constructor(scene,root,entry,hero=null){
   this.scene=scene;this.root=root;this.entry=entry;this.hero=hero;this.elapsed=0;this.deathTime=0;this.destroyed=false;
   this.lease=scene.actorTextures.acquire(entry);
   this.ready=this.lease.ready.then(loaded=>{
    if(!loaded||this.destroyed||!root.scene)return false;
-   this.sprite=scene.add.image(0,0,entry.key,'idle/s').setOrigin(.5,(entry.baselines?.idle||225)/256).setScale(entry.scale);
+   this.sprite=scene.add.image(0,0,entry.key,'idle/s').setOrigin(.5,(entry.footlines?.['idle/s']??entry.baselines?.idle??225)/(entry.frameHeight||256)).setScale(entry.scale);
    root.add(this.sprite);
    if(entry.baseBody&&entry.equipment){this.layers=new CharacterEquipmentLayers(scene,hero,entry,{sprite:this.sprite,parent:root});this.gear=this.layers.root;}
    else this.gear=entry.equipment?scene.add.graphics():null;
@@ -17,11 +17,11 @@ export class PaintedActor{
  }
  update(state,angle,dt,pose={}){
   if(!this.sprite||this.destroyed)return;this.elapsed+=Math.max(0,dt);
-  const p=actorPose(state,angle,this.elapsed,pose.progress||0);this.currentFrame=p.frame;this.poseBank=p.bank;this.directionAngle=angle;
-  this.sprite.setFrame(p.frame).setOrigin(.5,(this.entry.baselines?.[p.bank]||225)/256);
+  const p=actorPose(state,angle,this.elapsed,pose.progress||0);if(['hurt','death'].includes(state)&&this.entry.poseBanks?.includes(state)){p.bank=state;p.frame=state+'/'+p.direction;}this.currentFrame=p.frame;this.poseBank=p.bank;this.directionAngle=angle;
+  this.sprite.setFrame(p.frame).setOrigin(.5,(this.entry.footlines?.[p.frame]??this.entry.baselines?.[p.bank]??225)/(this.entry.frameHeight||256));
   const breath=state==='idle'?Math.sin(this.elapsed*3)*.008:0;
   this.sprite.setScale(this.entry.scale,this.entry.scale*(1+breath));this.sprite.y=state==='run'?-Math.abs(Math.sin(this.elapsed*9*Math.PI))*1.6:0;
-  if(state==='death'){this.deathTime+=dt;this.sprite.rotation=Math.min(1,this.deathTime/.5)*1.2;this.sprite.alpha=1-Math.min(1,this.deathTime/.5)*.35;}
+  if(state==='death'){this.deathTime+=dt;this.sprite.rotation=this.entry.drawnDeath?0:Math.min(1,this.deathTime/.5)*1.2;this.sprite.alpha=1-Math.min(1,this.deathTime/.5)*.35;}
   else{this.deathTime=0;this.sprite.rotation=state==='hurt'?Math.sin(this.elapsed*55)*.07:0;this.sprite.alpha=1;}
   if(state==='hurt')this.sprite.setTint(0xffb3a3);else if(state==='special')this.sprite.setTint(0xc9e8ff);else this.sprite.clearTint();
   if(this.layers)this.layers.update(p.frame,p.direction,state,{...pose,aimAngle:angle},{rotation:this.sprite.rotation,y:this.sprite.y,scaleY:1+breath});

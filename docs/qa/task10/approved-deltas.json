@@ -5,13 +5,29 @@
       "before": "2ac7dc2eac1018dfc63a917a4ea797aa850a6fd296f4aadf09e8386dfe73fa0b",
       "after": "f0e466db3d878eb89302f6e9bfad244bdde3ecf1cff5eb936915f9fc1554af35"
     },
+    "js/assets/monsterArt.js": {
+      "before": "a419ba32df47fe7e57ae6306e1bab41e3d07262315b76c12a2981eb4e0ab5f42",
+      "after": "2bb821c4c95c6f0bf9991c94534357f5724992244528db5d0a9c51498a77908e"
+    },
+    "js/characters/PaintedActor.js": {
+      "before": "90cc468bda556986830612f5d3fac95dfa063da0949fc1286f6253dd8d708a35",
+      "after": "351428b5f260e5d38a33839d5fca284a721c37c3c84e4f6fe06a7d5a9d01e8a2"
+    },
     "js/loot/GroundLootSystem.js": {
       "before": "06de84b5bca9ae2389b78303de8b47bbded0b143bfd6c9a65899b8d20bc56c9b",
       "after": "e2c850c51be0c9b5348e32dbf543f466f38b03460d147ce0f4877892817a5800"
     },
     "js/monsters/MonsterSystem.js": {
       "before": "f1c7ada80551e55a38520fd6c673fd0a86fb2155c5206fb77253a1894f2412d8",
-      "after": "ab3008cf71afa53ec287338a30e21d054cb95adad680925416007382d22c343f"
+      "after": "34c5a88e7e38bccb5235a2be857885feb49e861ab9af04f7bf33caf39f5fe4b1"
+    },
+    "js/monsters/monsters.js": {
+      "before": "35c0b21b0c4a33f5818a681a40329495a02af4098066fe23eb1eba4034a5ee3f",
+      "after": "c3fb94257b6ba2a2c04830ceb7ed3abc00c51a1ebdd5485ab17ab239b71878b2"
+    },
+    "js/monsters/movementProfiles.js": {
+      "before": "067e5bb92422986ebf67668381e3f7e942ad58650d31fc6d01a004aae577ca7f",
+      "after": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4"
     },
     "js/quests/quests.js": {
       "before": "f4ca9132d592e79b3ee5c153de3ab039d08e9407cad6b8e1cbf3108fdc081096",
@@ -51,7 +67,7 @@
     },
     "js/world/regionContent.js": {
       "before": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
-      "after": "38b42a9bb2965c8b1dafab7d86adf952c33e1da6c7f212e3eef5f1334e26cfdd"
+      "after": "9c0cd8885197d5c05b830e46484987ebe254d5c53655a40e6c454c2b53fa25d8"
     },
     "js/world/worldData.js": {
       "before": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",

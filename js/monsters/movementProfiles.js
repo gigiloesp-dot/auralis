@@ -18,7 +18,7 @@ export const MOVEMENT_PROFILES=Object.freeze({
 });
 const THEMES=Object.freeze({roots:'roots',venom:'venom',tusk:'charge',pack:'pounce',oakstorm:'roots',outcast:'fan',frostRush:'charge',iceQuake:'stomp',rimeVolley:'fan',avalanche:'stomp',whiteout:'frost',haunt:'haunt',bronzeShock:'fan',ashVenom:'venom',runeSlash:'cleave',oracleBlink:'blink',colossusQuake:'stomp',voidRift:'blink'});
 export function movementProfile(kind={}){
- const base=MOVEMENT_PROFILES[kind.movementProfile]||MOVEMENT_PROFILES.fighter;
+ const original=MOVEMENT_PROFILES[kind.movementProfile]||MOVEMENT_PROFILES.fighter,base=kind.abilityConfig?{...original,...kind.abilityConfig}:original;
  if(!kind.bossTheme)return base;
  return {...base,ability:THEMES[kind.bossTheme]||base.ability,cooldown:kind.bossType==='world'?12500:10000,windup:Math.max(900,base.windup),range:280,radius:kind.bossType==='world'?145:100,multiplier:kind.bossType==='world'?1.5:1.25};
 }
@@ -35,7 +35,7 @@ function statusFor(ability,attack){return ability==='venom'?{type:'poison',damag
 // canSee(from,to), damage(attack,magic,status), shoot(projectile), warn(config),
 // effect(config). Returns busy=true while an interruptible telegraph is active.
 export function tickMonsterAbility(context){
- const {monster:m,hero:h,now,engaged,safe}=context,p=movementProfile(m.kind),ability=p.ability;
+ const {monster:m,hero:h,now,engaged,safe}=context,p=movementProfile(m.kind),ability=p.abilityPattern?.[(m.abilityStep||0)%p.abilityPattern.length]||p.ability;
  if(!m.alive||h.hp<=0||safe||!engaged){cancelMonsterAbility(m);return {busy:false};}
  const visible=(a,b)=>!context.canSee||context.canSee(a,b);
  if(m.specialState){
@@ -65,10 +65,10 @@ export function tickMonsterAbility(context){
      const from={x:m.x,y:m.y};m.x=point.x;m.y=point.y;context.effect?.({kind:'blink',x:m.x,y:m.y,from,radius:40});break;
     }
    }
-   const offsets=state.ability==='fan'?[-.3,0,.3]:[0];
-   for(const offset of offsets)context.shoot?.({x:m.x,y:m.y,targetX:h.x,targetY:h.y,angleOffset:offset,speed:state.ability==='venom'?185:245,damage:attack,magic:state.ability!=='shot',range:600,status:state.ability==='haunt'?{type:'slow',multiplier:.7,duration:1400}:status});
+   const offsets=state.ability==='fan'?[-.3,0,.3]:[0],projectileStatus=statusFor(p.projectileStatus,m.attack)||(state.ability==='haunt'?{type:'slow',multiplier:.7,duration:1400}:status);
+   for(const offset of offsets)context.shoot?.({x:m.x,y:m.y,targetX:h.x,targetY:h.y,angleOffset:offset,speed:state.ability==='venom'?185:245,damage:attack,magic:p.projectileMagic??(state.ability!=='shot'),range:600,status:projectileStatus});
   }
-  m.lastAttackAt=now;return {busy:false,fired:state.ability};
+  if(p.abilityPattern)m.abilityStep=(m.abilityStep||0)+1;m.lastAttackAt=now;return {busy:false,fired:state.ability};
  }
  if(m.windup||now<(m.abilityBlockedUntil||0)||distance(m,h)>p.range||!visible(m,h)||now-(m.lastAbilityAt??0)<p.cooldown)return {busy:false};
  if(['pounce','charge','dive'].includes(ability)&&distance(m,h)<65)return {busy:false};

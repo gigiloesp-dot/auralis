@@ -315,7 +315,7 @@ jobs:
           test -x "$chrome_path"
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
       - name: Four climates, original anchors and real lava exposure
-        run: npm run test:browser:task10-climate && npm run test:browser:task10-surface && npm run test:browser:task10-performance && npm run test:browser:task10-spots
+        run: npm run test:browser:task10-climate && npm run test:browser:task10-surface && npm run test:browser:task10-performance && npm run test:browser:task10-spots && npm run test:browser:task10-species
       - uses: actions/upload-artifact@v4
         if: always()
         with:

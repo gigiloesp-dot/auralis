@@ -1,0 +1,775 @@
+{
+  "records": [
+    {
+      "speciesId": "desert-species-000",
+      "prepared": {
+        "id": "desert-spot-000-mob-0",
+        "level": 51,
+        "species": "desert-species-000",
+        "names": {
+          "ru": "Скорпион обсидианового жала",
+          "en": "Obsidian-stinger scorpion",
+          "es": "Escorpión de aguijón obsidiano"
+        },
+        "kindType": "ancientSentinel",
+        "atlas": "task10-monster-scorpion"
+      },
+      "poses": [
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/e",
+          "origin": 0.8802083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/se",
+          "origin": 0.875,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/s",
+          "origin": 0.875,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/sw",
+          "origin": 0.875,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/w",
+          "origin": 0.8697916666666666,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/nw",
+          "origin": 0.8802083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/n",
+          "origin": 0.875,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/ne",
+          "origin": 0.8802083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/e",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/se",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/s",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/sw",
+          "origin": 0.8697916666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/w",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/nw",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/n",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/ne",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/e",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/se",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/s",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/sw",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/w",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/nw",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/n",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/ne",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/e",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/se",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/s",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/sw",
+          "origin": 0.8697916666666666,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/w",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/nw",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/n",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/ne",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/e",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/se",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/s",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/sw",
+          "origin": 0.8697916666666666,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/w",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/nw",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/n",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/ne",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/e",
+          "origin": 0.7708333333333334,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/se",
+          "origin": 0.78125,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/s",
+          "origin": 0.7760416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/sw",
+          "origin": 0.7916666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/w",
+          "origin": 0.7760416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/nw",
+          "origin": 0.796875,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/n",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/ne",
+          "origin": 0.7864583333333334,
+          "rotation": 0
+        }
+      ],
+      "shots": [
+        {
+          "ability": null,
+          "poison": "poison",
+          "magic": true,
+          "needle": false,
+          "renderHeight": 52,
+          "bodyType": "Arc"
+        }
+      ],
+      "fired": {
+        "x": 12249.000000000002,
+        "y": 13007,
+        "step": 2,
+        "slow": {
+          "until": 3769.793333333335,
+          "multiplier": 0.6
+        },
+        "hp": 49809
+      },
+      "death": {
+        "deadUntil": 1794768115676,
+        "killedAt": 1794768085676,
+        "hp": 0
+      }
+    },
+    {
+      "speciesId": "desert-species-001",
+      "prepared": {
+        "id": "desert-spot-001-mob-0",
+        "level": 48,
+        "species": "desert-species-001",
+        "names": {
+          "ru": "Игломёт караванных песков",
+          "en": "Caravan needle cactus",
+          "es": "Cactus de agujas de la caravana"
+        },
+        "kindType": "scarab",
+        "atlas": "task10-monster-cactus"
+      },
+      "poses": [
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/e",
+          "origin": 0.875,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/se",
+          "origin": 0.8802083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/s",
+          "origin": 0.8697916666666666,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/sw",
+          "origin": 0.8854166666666666,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/w",
+          "origin": 0.8854166666666666,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/nw",
+          "origin": 0.8802083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/n",
+          "origin": 0.8802083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "idle",
+          "bank": "idle",
+          "frame": "idle/ne",
+          "origin": 0.8802083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/e",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/se",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/s",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/sw",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/w",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/nw",
+          "origin": 0.875,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/n",
+          "origin": 0.8697916666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-a",
+          "frame": "run-a/ne",
+          "origin": 0.8645833333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/e",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/se",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/s",
+          "origin": 0.859375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/sw",
+          "origin": 0.8541666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/w",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/nw",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/n",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "run",
+          "bank": "run-b",
+          "frame": "run-b/ne",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/e",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/se",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/s",
+          "origin": 0.8333333333333334,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/sw",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/w",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/nw",
+          "origin": 0.8333333333333334,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/n",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "attack",
+          "bank": "attack",
+          "frame": "attack/ne",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/e",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/se",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/s",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/sw",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/w",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/nw",
+          "origin": 0.8489583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/n",
+          "origin": 0.84375,
+          "rotation": 0
+        },
+        {
+          "state": "hurt",
+          "bank": "hurt",
+          "frame": "hurt/ne",
+          "origin": 0.8385416666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/e",
+          "origin": 0.8125,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/se",
+          "origin": 0.7864583333333334,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/s",
+          "origin": 0.8072916666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/sw",
+          "origin": 0.7916666666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/w",
+          "origin": 0.8125,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/nw",
+          "origin": 0.8177083333333334,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/n",
+          "origin": 0.8229166666666666,
+          "rotation": 0
+        },
+        {
+          "state": "death",
+          "bank": "death",
+          "frame": "death/ne",
+          "origin": 0.8177083333333334,
+          "rotation": 0
+        }
+      ],
+      "shots": [
+        {
+          "ability": null,
+          "poison": "poison",
+          "magic": false,
+          "needle": true,
+          "renderHeight": 36,
+          "bodyType": "Rectangle"
+        },
+        {
+          "ability": null,
+          "poison": "poison",
+          "magic": false,
+          "needle": true,
+          "renderHeight": 36,
+          "bodyType": "Rectangle"
+        },
+        {
+          "ability": null,
+          "poison": "poison",
+          "magic": false,
+          "needle": true,
+          "renderHeight": 36,
+          "bodyType": "Rectangle"
+        }
+      ],
+      "fired": {
+        "x": 10448.160000000003,
+        "y": 8675.000000792112,
+        "step": 2,
+        "slow": null,
+        "hp": 49929
+      },
+      "death": {
+        "deadUntil": 1794768121660,
+        "killedAt": 1794768091660,
+        "hp": 0
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Only two new species. Other legacy models/prototypes are reported separately."
+}
