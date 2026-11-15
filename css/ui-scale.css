@@ -159,3 +159,5 @@
 
 /* Keep expanded action targets inside fixed footer clipping boundaries. */
 #inventory-panel .item-actions,#skills-panel .skill-detail-actions{padding:7px;gap:13px}
+/* Trading stays live: reserve the existing top-right pause control on phones. */
+.npc-panel{left:max(8px,calc((100vw - 732px)/2));width:min(660px,calc(100vw - 80px))}
