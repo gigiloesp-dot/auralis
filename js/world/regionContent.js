@@ -16,6 +16,8 @@ const BOSSES={
  north:[['iceWolf','Белый оскал','White fang','Colmillo blanco'],['frostGolem','Кулак ледника','Glacier fist','Puño del glaciar'],['skeleton','Жнец инея','Rime reaver','Segador de escarcha'],['snowBear','Страж перевала','Peak watcher','Vigía del paso'],['frostGolem','Король метели','Blizzard king','Rey de la ventisca'],['wraith','Снежный призрак','Snow wraith','Espectro de nieve']],
  ancient:[['ancientSentinel','Бронзовый дозорный','Bronze sentinel','Centinela de bronce'],['scarab','Ткач пепла','Ash weaver','Tejedor de ceniza'],['fallenKnight','Хранитель рун','Rune keeper','Guardián de runas'],['arcaneWisp','Забытый оракул','Lost oracle','Oráculo perdido'],['ancientSentinel','Колосс Ауралиса','Colossus of Auralis','Coloso de Auralis'],['voidElemental','Владыка пустоты','Void sovereign','Soberano del vacío']]
 };
+// Generation bounds are a persisted-world contract, independent of map expansion.
+const LEGACY_BOUNDS={forest:12000,north:14000,ancient:15000};
 const cache=new Map();
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 // Additions use their own random streams so the original encounter, boss and
@@ -65,7 +67,7 @@ function expandCamps(content){
 export function getRegionContent(id='forest'){
  if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);
  if(cache.has(id))return cache.get(id);
- const region=REGIONS[id],config=CONFIG[id],towns=getRegionTowns(id),npcs=getRegionNpcs(id),portals=PORTALS[id].map(p=>({...p,region:id}));
+ const region={...REGIONS[id],width:LEGACY_BOUNDS[id],height:LEGACY_BOUNDS[id]},config=CONFIG[id],towns=getRegionTowns(id),npcs=getRegionNpcs(id),portals=PORTALS[id].map(p=>({...p,region:id}));
  const roads=[];const anchors=[...towns.map(t=>t.spawn),...portals];
  for(let i=1;i<anchors.length;i++)roads.push({id:id+'-road-'+i,from:anchors[i-1],to:anchors[i],width:90});
  const random=seedFor(id),occupied=[];
@@ -91,5 +93,5 @@ export function getRegionContent(id='forest'){
  if(remaining!==0)throw new Error('Incorrect monster budget');
  const bosses=BOSSES[id].map(([type,ru,en,es],i)=>{const p=position(),bossType=i<4?'mini':'world',level=Math.min(region.maxLevel,region.minLevel+4+i*3);const themes={forest:['roots','venom','tusk','pack','oakstorm','outcast'],north:['frostRush','iceQuake','rimeVolley','avalanche','whiteout','haunt'],ancient:['bronzeShock','ashVenom','runeSlash','oracleBlink','colossusQuake','voidRift']};return {id:id+'-'+bossType+'-'+i,region:id,type,bossType,bossTheme:themes[id][i],level,...p,patterns:[['slam','volley'],['volley','charge'],['charge','slam']][i%3],names:{ru,en,es}};});
  const landmarks=id==='ancient'?[{id:'fallen-observatory',x:3700,y:4200,names:{ru:'Разрушенная обсерватория',en:'Fallen observatory',es:'Observatorio caído'}},{id:'moon-garden',x:6900,y:8100,names:{ru:'Лунный сад',en:'Moon garden',es:'Jardín lunar'}},{id:'elder-gate',x:10900,y:12400,names:{ru:'Врата предков',en:'Elder gate',es:'Puerta ancestral'}}]:[];
- const content=expandCamps(curveRegionRoads({...region,towns,npcs,camps,bosses,portals,roads,landmarks}));cache.set(id,content);return content;
+ const content=expandCamps(curveRegionRoads({...region,towns,npcs,camps,bosses,portals,roads,landmarks}));content.river={baseX:region.width*.58};content.width=REGIONS[id].width;content.height=REGIONS[id].height;cache.set(id,content);return content;
 }

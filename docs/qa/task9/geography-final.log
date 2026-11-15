@@ -1,0 +1,18 @@
+✔ existing 254 camps each gain exactly five monsters, all 2415 remain naturally separated and region-appropriate (4184.138708ms)
+✔ expanded boundaries preserve every existing camp, spawn, boss, road, portal and quest (5.600816ms)
+✔ expanded edge chunks are finite, decorated, uniquely owned and remain streamed (4.375901ms)
+✔ equipment catalogue, layers, weapon art and existing skill definitions are untouched (92.39777ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.368879ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (188.221026ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (97.932471ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.592865ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.260615ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (630.585142ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7791.753537

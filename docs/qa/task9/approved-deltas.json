@@ -1,0 +1,12 @@
+{
+  "js/world/worldData.js": {
+    "original": "b5aca9d6548635531896a05399aa969a5c74399f42495d132be59c6be5aeb26e",
+    "current": "adf7f92174d38791726f235573b6d175432dfb958da677205c2085c80a1abe1e",
+    "reason": "Approved task9 geography; legacy anchors and equipment preserved by dedicated tests"
+  },
+  "js/world/regionContent.js": {
+    "original": "54b452f7e6b38f3a797bbbd044dd570f4e88c1a2a79f836f4720aca49f289902",
+    "current": "2406bd938c2f9601ee6b5c264d1a472c5148ce9f3429b1ff58ea5a68bd20c939",
+    "reason": "Approved task9 geography; legacy anchors and equipment preserved by dedicated tests"
+  }
+}
