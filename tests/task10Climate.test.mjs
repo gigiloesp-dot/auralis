@@ -1,0 +1,21 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {readFileSync} from 'node:fs';
+import {getRegionContent} from '../js/world/regionContent.js';import {climateAt,lavaPool,terrainHazard,CLIMATES} from '../js/world/climate.js';import {regionRoads,worldWalkable} from '../js/world/chunkGeometry.js';import {biomeDecoration,biomeSidePaths} from '../js/world/biomes.js';import {TerrainEffects} from '../js/world/terrainEffects.js';import {pngAlpha} from './pngAlpha.mjs';
+test('macro climates cover approximately30% of actual world area, remain deterministic and have all three locales',()=>{
+ for(const id of ['forest','north']){const c=getRegionContent(id),type=id==='forest'?'abandonedCity':'volcanic';let total=0,match=0;for(let y=90;y<c.height;y+=180)for(let x=90;x<c.width;x+=180){total++;if(climateAt(c,x,y).type===type)match++;}assert.ok(Math.abs(match/total-.3)<.02,id+'/'+match/total);assert.deepEqual(climateAt(c,13000,8000),climateAt(c,13000,8000));}
+ const ancient=getRegionContent('ancient'),ids=new Set();for(let y=500;y<15000;y+=1000)for(let x=500;x<15000;x+=1000)ids.add(climateAt(ancient,x,y).id);assert.equal(ids.size,6);for(const c of Object.values(CLIMATES))for(const l of ['ru','en','es'])assert.ok(c.names[l]);
+ const snow=climateAt(getRegionContent('north'),2000,3000).color;assert.ok((snow>>16)>210&&((snow>>8)&255)>210);const sand=climateAt(getRegionContent('desert'),3000,3000).color;assert.ok((sand>>16)>210&&(sand&255)<150);
+});
+test('overgrown city has actual connected street segments outside legacy encounters, real buildings and safe passages',()=>{
+ const c=getRegionContent('forest'),roads=biomeSidePaths(c).filter(r=>r.climateStreet);assert.ok(roads.length>50);for(const r of roads){const a=r.points[0],b=r.points.at(-1);for(let i=0;i<=4;i++){const p={x:a.x+(b.x-a.x)*i/4,y:a.y+(b.y-a.y)*i/4};assert.equal(worldWalkable(c,p.x,p.y,12),true,r.id);}}
+ assert.equal(biomeDecoration(c,15500,9000,.1),'ruinHouse');assert.equal(biomeDecoration(c,15500,9000,.4),'ivyWall');assert.equal(biomeDecoration(c,15500,9000,.6),'ruinTower');assert.equal(biomeDecoration(getRegionContent('north'),4000,2000,.2),'snowPine');
+});
+function exposedPool(c,roads){for(let y=0;y<c.height/420;y++)for(let x=0;x<c.width/420;x++){const p=lavaPool(c,x,y);if(p&&terrainHazard(c,p.x,p.y,roads))return p;}throw Error('No lava pool');}
+test('lava pool appearance and damage share world coordinates; roads, towns, entrances and portals are protected',()=>{
+ const c={...getRegionContent('north')},roads=regionRoads(c),p=exposedPool(c,roads);assert.equal(terrainHazard(c,p.x,p.y,roads).fractionPerSecond,.02);assert.equal(terrainHazard(c,p.x+p.rx+1,p.y,roads),null);
+ for(const r of roads)for(const q of [r.from,r.to])assert.equal(terrainHazard(c,q.x,q.y,roads),null);
+ for(const q of [...c.towns,...c.portals,...c.npcs,...c.bosses])assert.equal(terrainHazard(c,q.x,q.y,roads),null);
+ const hero={x:p.x,y:p.y,hp:100,maxHp:100},scene={hero,regionContent:c,language:'es',playNow:1000,monsters:{},notify(m){this.message=m;},save(){},refreshHud(){}},effect=new TerrainEffects(scene);for(let i=0;i<25;i++)effect.update(.04,roads);assert.equal(hero.hp,98);assert.match(scene.message,/Lava/);effect.update(3600,roads);assert.equal(hero.hp,98,'resuming never applies offline wall-clock damage');hero.x=p.x+p.rx+1;effect.update(.04,roads);assert.equal(effect.exposure,0);assert.equal(hero.hp,98);
+});
+test('eight climate sprites are real RGBA cutouts with separate bounded atlas frames and unchanged old prop sources',()=>{
+ const {width,height,alpha}=pngAlpha('assets/world/climate/props.png');assert.equal(width,1536);assert.equal(height,768);assert.equal(alpha[0],0);assert.ok(alpha.filter(a=>a===0).length>alpha.length*.35);const a=JSON.parse(readFileSync('assets/world/climate/props.json')),hashes=new Set();assert.equal(Object.keys(a.frames).length,8);for(const {frame:f}of Object.values(a.frames)){assert.equal(f.w,384);const values=[];for(let y=0;y<f.h;y++)for(let x=0;x<f.w;x++)values.push(alpha[(f.y+y)*width+f.x+x]);assert.ok(values.some(a=>a>200));assert.ok(values.slice(0,384*10).every(a=>a===0),'transparent gutters');hashes.add(createHash('sha256').update(Buffer.from(values)).digest('hex'));}assert.equal(hashes.size,8);
+});

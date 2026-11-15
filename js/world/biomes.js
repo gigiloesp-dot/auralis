@@ -1,3 +1,5 @@
+import {cityPaths} from './climateRoads.js';
+import {climateAt,climateLabels,paintClimate,lavaPool,protectedTerrain} from './climate.js';
 import {naturalRoadPoints} from './roadPaths.js';
 // A small authored geography layer over deterministic chunk decoration. Terrain
 // patches remain in world coordinates, so their edges continue across chunks.
@@ -33,15 +35,20 @@ const PATHS=Object.freeze({
  north:[{id:'north-basin-trail',width:40,secondary:true,points:[{x:1500,y:1800},{x:3300,y:4100},{x:4000,y:7700},{x:7300,y:7150},{x:10300,y:10600}]}],
  ancient:[{id:'ancient-pilgrim-trail',width:40,secondary:true,points:[{x:1600,y:1800},{x:3700,y:4200},{x:6900,y:8100},{x:10900,y:12400},{x:11700,y:11400}]}]
 });
-export const biomeZones=content=>content.dungeon?[]:ALL_ZONES[content.id]||[];
+export const biomeZones=content=>content.dungeon?[]:[...(content.climateRevision&&content.id==='ancient'?[]:(ALL_ZONES[content.id]||[]).filter(z=>!(content.climateRevision&&['abandonedCity','volcanic'].includes(climateAt(content,z.x,z.y)?.type)))),...climateLabels(content)];
 const EMPTY_PATHS=Object.freeze([]),sidePathCache=new WeakMap();
-export function biomeSidePaths(content){if(content.dungeon||!PATHS[content.id])return EMPTY_PATHS;const cached=sidePathCache.get(content);if(cached)return cached;const paths=PATHS[content.id].map(path=>({...path,points:naturalRoadPoints(path,content),curved:true}));sidePathCache.set(content,paths);return paths;}
+export function biomeSidePaths(content){if(content.dungeon||!PATHS[content.id])return EMPTY_PATHS;const revision=content.climateRevision||0,cached=sidePathCache.get(content);if(cached?.revision===revision)return cached.paths;const paths=[...PATHS[content.id].map(path=>({...path,points:naturalRoadPoints(path,content),curved:true})),...cityPaths(content)];sidePathCache.set(content,{revision,paths});return paths;}
 export function biomeAt(content,x,y){
- const zones=biomeZones(content);for(let i=zones.length-1;i>=0;i--){const z=zones[i];if(((x-z.x)/z.rx)**2+((y-z.y)/z.ry)**2<=1)return z;}return null;
+ const climate=content.climateRevision&&climateAt(content,x,y);if(climate&&(['abandonedCity','volcanic'].includes(climate.type)||content.id==='ancient'))return climate;const zones=biomeZones(content);for(let i=zones.length-1;i>=0;i--){const z=zones[i];if(((x-z.x)/z.rx)**2+((y-z.y)/z.ry)**2<=1)return z;}return null;
 }
 export function biomeDecoration(content,x,y,roll){
  const type=biomeAt(content,x,y)?.type;
- if(content.id==='desert'){if(type==='oasis')return roll<.65?'palm':roll<.78?'rock':null;if(type==='ruinfield'||type==='wastes')return roll<.08?'tower':roll<.23?'wall':roll<.62?'rock':null;return roll<.15?'rock':roll<.175?'wall':null;}
+ if(type==='abandonedCity')return roll<.3?'ruinHouse':roll<.55?'ivyWall':roll<.67?'ruinTower':roll<.8?'oak':null;
+ if(type==='volcanic')return roll<.5?'lavaRock':roll<.66?'charredTree':roll<.8?'rock':null;
+ if(type==='marsh')return roll<.4?'cypress':roll<.6?'rock':null;
+ if(type==='mystic')return roll<.45?'cypress':roll<.63?'ruin':roll<.72?'rock':null;
+ if(content.climateRevision&&content.id==='north'&&!['icebasin','mountainpass'].includes(type))return roll<.58?'snowPine':roll<.8?'snowRock':null;
+ if(content.id==='desert'){if(type==='oasis')return roll<.65?'palm':roll<.78?'rock':null;if(type==='ruinfield'||type==='wastes')return roll<.08?'tower':roll<.23?'wall':roll<.62?'rock':null;return roll<.1?'rock':roll<.2?'cactus':roll<.215?'wall':null;}
  if(type==='clearing')return roll<.12?'oak':null;
  if(type==='grove')return roll<.9?(content.id==='ancient'?'cypress':'oak'):null;
  if(type==='hills')return roll<.32?'rock':roll<.48?'oak':null;
@@ -54,7 +61,9 @@ export function biomeDecoration(content,x,y,roll){
  return content.id==='ancient'?(roll<.55?'rock':'cypress'):content.id==='north'?(roll<.25?'rock':'pine'):(roll<.12?'rock':roll<.58?'oak':'pine');
 }
 export function paintBiomes(graphics,content,chunk){
+ paintClimate(graphics,content,chunk);
  for(const z of biomeZones(content)){
+  if(z.labelOnly||content.climateRevision&&(['abandonedCity','volcanic'].includes(climateAt(content,z.x,z.y)?.type)||content.id==='ancient'))continue;
   if(z.x+z.rx<chunk.x||z.y+z.ry<chunk.y||z.x-z.rx>chunk.x+chunk.width||z.y-z.ry>chunk.y+chunk.height)continue;
   const x=z.x-chunk.x,y=z.y-chunk.y;
   graphics.fillStyle(z.color,.87).fillEllipse(x,y,z.rx*2,z.ry*2);
@@ -72,4 +81,5 @@ export function paintBiomes(graphics,content,chunk){
    for(let i=0;i<12;i++){const px=x-z.rx*.7+(i%4)*z.rx*.42,py=y-z.ry*.5+Math.floor(i/4)*z.ry*.48;graphics.lineStyle(3,0x675b43,.22).beginPath().moveTo(px,py).lineTo(px+120,py+15).lineTo(px+160,py-55).strokePath();}
   }
  }
+ if(content.climateRevision&&content.id==='north')for(let cy=Math.floor(chunk.y/420)-1;cy<=Math.ceil((chunk.y+chunk.height)/420);cy++)for(let cx=Math.floor(chunk.x/420)-1;cx<=Math.ceil((chunk.x+chunk.width)/420);cx++){const p=lavaPool(content,cx,cy);if(!p||protectedTerrain(content,p.x,p.y,content.terrainRoads||content.roads))continue;graphics.fillStyle(0xb9471b,.45).fillEllipse(p.x-chunk.x,p.y-chunk.y,p.rx*2+18,p.ry*2+18);graphics.fillStyle(0xf57422).fillEllipse(p.x-chunk.x,p.y-chunk.y,p.rx*2,p.ry*2);graphics.fillStyle(0xffd368,.75).fillEllipse(p.x-chunk.x-10,p.y-chunk.y-6,p.rx*1.15,p.ry*.8);}
 }

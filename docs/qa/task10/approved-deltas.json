@@ -1,0 +1,37 @@
+{
+  "checkpoint": "c36c8fa34370080479bc6b2ec53fea5e56f159ff",
+  "files": {
+    "js/assets/manifest.js": {
+      "before": "2ac7dc2eac1018dfc63a917a4ea797aa850a6fd296f4aadf09e8386dfe73fa0b",
+      "after": "f0e466db3d878eb89302f6e9bfad244bdde3ecf1cff5eb936915f9fc1554af35"
+    },
+    "js/world/ChunkWorld.js": {
+      "before": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",
+      "after": "717c53cdaae288e40591d6d6716c044c3703f30db8f8e3e5fef833852b1b1aef"
+    },
+    "js/world/WorldRuntime.js": {
+      "before": "bff06788b1191eeccc99c9aaeff746e3510de99d8e7afcc07ca35be35ed5a023",
+      "after": "0dfdae1c427336e273f2bdb9366cbda39f5c6f04c99c2fc0984e6f8cd61c49fb"
+    },
+    "js/world/WorldScene.js": {
+      "before": "d9d5c7cf0e43f839e164746e252f58842a6eb7339acba1893df603732f3e4077",
+      "after": "31429b0507a7334befaf3382cf951f8559b04d238364279bcff8699d40ca0516"
+    },
+    "js/world/biomes.js": {
+      "before": "2d8df8ba0b566d34bd3ebaa98d01446e626809754a7bffcd1ee41bb4206ab1fd",
+      "after": "b8feb970dc88e3c61e3b853c5860d4df274cb2ea1a80d70be283e63c3fb04e17"
+    },
+    "js/world/chunkGeometry.js": {
+      "before": "cd7f1c13d3c5737ac2514645b06ad63a94ff1b509f2878122e40202b61b61992",
+      "after": "1e012112e710b8c4bdf80326c06b6022b4a476abee7415829af52855c5def5ef"
+    },
+    "js/world/regionContent.js": {
+      "before": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
+      "after": "95096da88c28b5077ef1e80775c1b761196148da121aa523966ecec0c780e262"
+    },
+    "js/world/worldData.js": {
+      "before": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",
+      "after": "0aff3a33bdd63f1244ec7a8488ed1158977026121088bbb130f217257c580927"
+    }
+  }
+}

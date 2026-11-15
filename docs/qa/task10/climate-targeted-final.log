@@ -1,0 +1,15 @@
+✔ all outdoor regions have distinct deterministic visible biome areas and localized landmarks (7923.903522ms)
+✔ biome painting uses the same world shapes across neighboring chunk texture boundaries (0.937025ms)
+✔ north cliff and ice props have matching visible collision shapes and leave real trails clear (6038.70456ms)
+✔ macro climates cover approximately30% of actual world area, remain deterministic and have all three locales (10680.597272ms)
+✔ overgrown city has actual connected street segments outside legacy encounters, real buildings and safe passages (1943.424846ms)
+✔ lava pool appearance and damage share world coordinates; roads, towns, entrances and portals are protected (9.586511ms)
+✔ eight climate sprites are real RGBA cutouts with separate bounded atlas frames and unchanged old prop sources (362.23232ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 27216.737903

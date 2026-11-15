@@ -49,9 +49,9 @@ export function describeChunk(content,cx,cy){
    const p={x:x+random()*width,y:y+random()*height},scale=.75+random()*.45,roll=random();
    if(reserved(content,p,20))continue;
    const kind=biomeDecoration(content,p.x,p.y,roll);if(!kind)continue;
-   const r=(kind==='rock'?19:kind==='cliff'||kind==='tower'?32:kind==='ice'?20:kind==='wall'||kind.startsWith('ruin')?30:22)*scale;
+   const r=(kind==='rock'?19:kind==='ruinHouse'?52:kind==='cliff'||kind==='tower'||kind==='ruinTower'?32:kind==='ice'?20:kind==='wall'||kind.startsWith('ruin')?30:22)*scale;
    if(decorations.some(d=>Math.hypot(d.x-p.x,d.y-p.y)<d.r+r+16))continue;
-   decorations.push({...p,kind,scale,r});obstacles.push({...p,r,kind,flightBlocked:['oak','pine','cypress','palm','tower','wall','cliff','ruin','ruin1','ruin2'].includes(kind)});
+   decorations.push({...p,kind,scale,r});obstacles.push({...p,r,kind,flightBlocked:['oak','pine','cypress','palm','tower','wall','cliff','ruin','ruin1','ruin2','ruinHouse','ivyWall','ruinTower','charredTree','lavaRock','snowPine','snowRock','cactus'].includes(kind)});
   }
   for(const town of content.towns||[]){
    const center=town.spawn||town,positions=town.id==='forestVillage'?[{x:865,y:885},{x:990,y:885},{x:865,y:1010}]:[[-170,-150],[150,-170],[-170,150],[155,145]].map(([dx,dy])=>({x:center.x+dx,y:center.y+dy}));

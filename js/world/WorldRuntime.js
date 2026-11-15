@@ -1,3 +1,5 @@
+import {TerrainEffects} from './terrainEffects.js';
+import {regionRoads} from './chunkGeometry.js';
 import {getRegionContent} from './regionContent.js';
 import {REGIONS} from './worldData.js';
 import {ChunkWorld} from './ChunkWorld.js';
@@ -10,17 +12,17 @@ import {recordEvent} from '../quests/quests.js';
 const validReturn=p=>p&&Object.hasOwn(REGIONS,p.region)&&Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=20&&p.y>=20&&p.x<=REGIONS[p.region].width-20&&p.y<=REGIONS[p.region].height-20;
 const names={ru:{travel:'Перейти',exit:'Выход'},en:{travel:'Travel',exit:'Exit'},es:{travel:'Viajar',exit:'Salir'}};
 export class WorldRuntime{
- constructor(scene){this.scene=scene;this.button=document.createElement('button');this.button.className='world-travel';this.button.hidden=true;this.button.onclick=()=>this.travel();document.body.append(this.button);this.load();}
+ constructor(scene){this.scene=scene;this.terrainEffects=new TerrainEffects(scene);this.button=document.createElement('button');this.button.className='world-travel';this.button.hidden=true;this.button.onclick=()=>this.travel();document.body.append(this.button);this.load();}
  load(destination,provided){
   const s=this.scene,h=s.hero;s.clearTarget?.();s.groundLoot?.clearVisuals();s.exitPortal?.clear();if(destination)Object.assign(h,destination);
   if(s.monsters?.hero===h)s.monsters.persistCooldowns?.(s.playNow);this.chunkWorld?.destroy();s.monsters?.destroy();s.closePanels?.();
   const inside=provided||(h.region==='arena'?generateArenaContent(h):dungeonContentForHero(h));if(!inside&&h.dungeonSession){h.dungeonSession=null;h.returnLocation=null;}if(!inside&&!Object.hasOwn(REGIONS,h.region)){h.region='forest';h.x=1030;h.y=1140;h.dungeonSession=null;}
-  this.content=inside?{...inside}: {...getRegionContent(h.region),dungeons:DUNGEONS.filter(d=>d.region===h.region)};
+  this.terrainEffects.reset();this.content=inside?{...inside}: {...getRegionContent(h.region),dungeons:DUNGEONS.filter(d=>d.region===h.region)};
   if(this.content.arena){h.dungeonSession=null;const back=validReturn(h.returnLocation)?h.returnLocation:{region:'forest',x:2280,y:1220};this.content.portals=[{id:'arena-exit',...this.content.exit,toRegion:back.region,toX:back.x,toY:back.y,names:{ru:'Выход с арены',en:'Leave arena',es:'Salir de la arena'}}];}
   else if(h.region==='forest')this.content.portals=[...this.content.portals,{id:'arena-entry',x:2280,y:1140,toRegion:'arena',toX:250,toY:600,names:{ru:'Круг испытаний',en:'Circle of trials',es:'Círculo de pruebas'}}];
   if(this.content.exit)this.content.exit={...this.content.exit,id:'exit',names:{ru:'Выход',en:'Exit',es:'Salida'}};
   this.content.portals=this.content.portals.map(p=>p.names?p:{...p,names:Object.fromEntries(['ru','en','es'].map(lang=>[lang,REGIONS[p.toRegion]?.names?.[lang]||p.toRegion]))});s.regionContent=this.content;
-  const c=this.content;s.project=(x,y)=>project(x,y,c.height);s.unproject=(x,y)=>unproject(x,y,c.height);
+  const c=this.content;c.terrainRoads=regionRoads(c);s.project=(x,y)=>project(x,y,c.height);s.unproject=(x,y)=>unproject(x,y,c.height);
   h.x=Math.max(20,Math.min(c.width-20,h.x));h.y=Math.max(20,Math.min(c.height-20,h.y));
   this.chunkWorld=new ChunkWorld(s,c);
   const p=s.project(h.x,h.y);s.body.setPosition(p.x,p.y);s.cameras.main.setBounds(0,0,(c.width+c.height)*Math.SQRT1_2,(c.width+c.height)*Math.SQRT1_2/2);s.cameras.main.centerOn(p.x,p.y);
@@ -33,6 +35,7 @@ export class WorldRuntime{
   s.monsters=new MonsterSystem(s,h,()=>{s.refreshHud();s.save();},c);
   s.attackCycle&&(s.attackCycle.startedAt=-Infinity);s.controls?.reset();s.refreshHud();s.battleHud?.update();s.mapPanel?.close();s.save();
  }
+ tickTerrain(dt){this.terrainEffects.update(dt,this.content.terrainRoads);}
  update(){const s=this.scene;this.chunkWorld.update(s.hero,s.cameras.main);s.obstacles=this.chunkWorld.obstacles;this.portal=this.content.portals.find(p=>Math.hypot(p.x-s.hero.x,p.y-s.hero.y)<140);this.button.hidden=!this.portal||s.panelsOpen();if(this.portal){const t=names[s.language]||names.ru;this.button.textContent=t.travel+' · '+(this.portal.names?.[s.language]||REGIONS[this.portal.toRegion]?.names?.[s.language]||this.portal.toRegion);}}
  occludes(target){return this.chunkWorld.occludes(target);}
  isFlightWalkable(x,y,r=12){return this.chunkWorld.isFlightWalkable(x,y,r);}

@@ -1,5 +1,10 @@
 # Master development: фактическое состояние
 
+## Активно задание №10 — в работе
+
+Checkpoint `c36c8fa34370080479bc6b2ec53fea5e56f159ff`,основа release21/a13d61f. Климатический этап реализован,unit/browser/fullregression в процессе;после отдельного green commit продолжить с2.5Dрельефа,затем257спотов+миграцияквестов. [Полный пошаговый статус и ещё НЕ выполненные пункты](TASK_10_STATUS.md). Master-test остаётся21,весьTask10не готов. Новое поручение разрешает продолжение после9;историческая инструкция ожидатьTask9приёмку ниже не блокируетTask10.
+
+
 ## Актуально: задание №9
 
 Готовы4 карты/8 поселений/21 NPC/470 лагерей/4359 обычных;cap56/110 skill points,version3 migration и pre-upgrade backup. Выпуск21 опубликован: https://auralis-master-test.alertpine18.chatgpt.site . Game source `0e402a7406c7c09a3de3435c32fea241a7098e1c`; checkpoint `feb235e4773bed0951c36f315c6eab035f25a0dd`. Unit309/309,syntax242,CI43725005224 —19/19 success (33 browser suites),публично342 runtime hashes/4 карты/8 переходов/reload/level56/backup PASS. Ожидать физической Red Magic11 Pro-приёмки владельцем; следующий пакет NPC/квестов не начинать. См. [TASK_9_STATUS.md](TASK_9_STATUS.md). Master-test21; main/stable-alpha/alpha1 прежние,merge нет.

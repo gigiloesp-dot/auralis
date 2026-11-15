@@ -61,7 +61,7 @@ export class WorldScene extends Phaser.Scene{
   if(document.hidden||window.innerHeight>window.innerWidth){this.controls.reset();this.updateTargetPanel();return;}
   this.world.update();this.npcPanel.update();this.storagePanel.update();this.dungeonPanel.update();this.interactions.update();this.groundLoot.update();this.exitPortal.update();
   if(this.panelsOpen()){this.controls.reset();this.updateTargetPanel();return;}
-  this.playNow+=dt*1000;
+  this.playNow+=dt*1000;this.world.tickTerrain(dt);
   if(h.hp>0&&Math.hypot(this.axis.x,this.axis.y)>.08)this.facing=this.world.move(this.axis,h.speed*heroMovementMultiplier(h,this.playNow),dt);
   const p=this.project(h.x,h.y);this.body.setPosition(p.x,p.y).setDepth(h.x+h.y+2);this.shadow.setPosition(p.x,p.y+7).setDepth(h.x+h.y-1);
   let swing=this.attackCycle.state(this.playNow);if(swing.impact)this.monsters.attack(this.playNow,this.facing,swing.index);
