@@ -18,7 +18,7 @@ const owned=(p,cx,cy)=>Math.floor(p.x/CHUNK_SIZE)===cx&&Math.floor(p.y/CHUNK_SIZ
 function reserved(content,p,clearance=0){
  if(p.x<65||p.y<65||p.x>content.width-65||p.y>content.height-65)return true;
  if(regionRoads(content).some(r=>distanceToSegment(p,r.from,r.to)<r.width/2+45+clearance))return true;
- if((content.towns||[]).some(t=>Math.hypot(p.x-(t.x??t.spawn.x),p.y-(t.y??t.spawn.y))<235+clearance))return true;
+ if((content.towns||[]).some(t=>Math.hypot(p.x-(t.x??t.spawn.x),p.y-(t.y??t.spawn.y))<(t.footprintRadius||235)+clearance))return true;
  if((content.npcs||[]).some(n=>Math.hypot(p.x-n.x,p.y-n.y)<80+clearance))return true;
  if((content.dungeons||[]).some(n=>Math.hypot(p.x-n.x,p.y-n.y)<160+clearance))return true;
  if((content.portals||[]).some(n=>Math.hypot(p.x-n.x,p.y-n.y)<120+clearance))return true;
@@ -60,6 +60,9 @@ export function describeChunk(content,cx,cy){
     decorations.push({...p,kind:'house',scale:1,r:55});obstacles.push({x:p.x,y:p.y-14,r:55,kind:'house',flightBlocked:true});
    }
   }
+ }
+ for(const house of content.settlementHouses||[])if(owned(house,cx,cy)){
+  decorations.push({...house,kind:'house',scale:1,r:55});obstacles.push({id:house.id,x:house.x,y:house.y-14,r:55,kind:'house',flightBlocked:true});
  }
  for(const landmark of content.landmarks||[]){
   const layout=[[-100,-35],[0,-90],[100,-10],[-40,80]];

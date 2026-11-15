@@ -6,7 +6,17 @@
   },
   "js/world/regionContent.js": {
     "original": "54b452f7e6b38f3a797bbbd044dd570f4e88c1a2a79f836f4720aca49f289902",
-    "current": "2406bd938c2f9601ee6b5c264d1a472c5148ce9f3429b1ff58ea5a68bd20c939",
-    "reason": "Approved task9 geography; legacy anchors and equipment preserved by dedicated tests"
+    "current": "6ceb306e18af1a4ad67903c102fe0019f58eb0c8a2fae334a42e9899e18313b0",
+    "reason": "Approved task9 settlement footprint/houses/lanes; only crowded Tera moves, all legacy encounter anchors and catalogue protected"
+  },
+  "js/world/chunkGeometry.js": {
+    "original": "7747a4eb8d0df6539cc3d1a3c8ff44303aa74bfb0d37f54a98af284c9d161f36",
+    "current": "1e26883647f37e006f032834f8a5f973bc3d55feff4ba2ba57e5dbb527f7b061",
+    "reason": "Approved task9 settlement footprint/houses/lanes; only crowded Tera moves, all legacy encounter anchors and catalogue protected"
+  },
+  "js/npc/npcData.js": {
+    "original": "cee707614201896778f8bd84c72b9b4fafd7ad8c08462d8613ccc534039791a7",
+    "current": "a7d3beb5486284ac8dbe2643016ea370f993fe4b83af37e413de5c29a2a1380d",
+    "reason": "Approved task9 settlement footprint/houses/lanes; only crowded Tera moves, all legacy encounter anchors and catalogue protected"
   }
 }

@@ -9,7 +9,7 @@ export const NPCS=Object.freeze([
  npc('borin','forestVillage',60,-140,['storage'],{ru:'Борин',en:'Borin',es:'Borin'},1,5),
  npc('aldric','forestVillage',-50,60,['questGiver'],{ru:'Алдрик',en:'Aldric',es:'Aldric'},1,5),
  npc('elia','forestVillage',120,25,['resident'],{ru:'Элия',en:'Elia',es:'Elia'},1,5),
- npc('tera','forestVillage',-90,50,['merchant'],{ru:'Тера',en:'Tera',es:'Tera'},1,8),
+ npc('tera','forestVillage',-145,80,['merchant'],{ru:'Тера',en:'Tera',es:'Tera'},1,8),
  npc('sella','riverhaven',-100,-45,['merchant'],{ru:'Селла',en:'Sella',es:'Sella'},8,18),
  npc('oren','riverhaven',85,-60,['questGiver'],{ru:'Орен',en:'Oren',es:'Oren'},8,18),
  npc('tovis','riverhaven',15,85,['storage'],{ru:'Товис',en:'Tovis',es:'Tovis'},8,18),
