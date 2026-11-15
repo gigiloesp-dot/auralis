@@ -161,3 +161,9 @@
 #inventory-panel .item-actions,#skills-panel .skill-detail-actions{padding:7px;gap:13px}
 /* Trading stays live: reserve the existing top-right pause control on phones. */
 .npc-panel{left:max(8px,calc((100vw - 732px)/2));width:min(660px,calc(100vw - 80px))}
+/* Task8: only the home menu face shrinks; disjoint 44px touch rows remain. */
+#menu[data-page=home]{--ui-menu-w:clamp(173.333333px,25.333333vw,213.333333px);--ui-menu-h:25.333333px;--ui-menu-gap:21px}
+#menu[data-page=home] .menu-panel{width:min(646px,100%)}
+#menu[data-page=home] h1{width:min(646px,95vw);height:min(clamp(40.8px,calc((var(--ui-view-height) - 248px)*1.7),255px),calc(var(--ui-view-height) - 243px));margin:0 0 4px}
+#menu[data-page=home] .medieval-menu-button{padding:1px 10px}
+#menu[data-page=home] .medieval-menu-button:after{inset:-9.333333px 0}

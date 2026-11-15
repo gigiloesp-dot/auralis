@@ -66,7 +66,11 @@ test('release17 assets and gameplay remain byte-identical with only the exact ta
    const baseline=readFileSync('docs/qa/task7/ui-scale-release18.css','utf8');assert.equal(sha(baseline),hash,path+' original');
    const old='#menu[data-page=home]{background-image:var(--ui-menu-art),linear-gradient(90deg,#170f0a,#342316 45%,#170f0a);background-size:contain,cover}';
    const at=baseline.lastIndexOf(old);assert.ok(at>=0);
-   assert.equal(readFileSync(path,'utf8'),baseline.slice(0,at)+old.replace('background-size:contain,cover','background-size:cover,cover')+baseline.slice(at+old.length),path+' only authorized task7 change');
+   const added=readFileSync('docs/qa/task8/menu-overrides.css','utf8');assert.equal(sha(added),'45e433a2d71ebaec28f0fe0113a0c720e9858c19e46d8677057cc9a0081f7ee7');
+   assert.equal(readFileSync(path,'utf8'),baseline.slice(0,at)+old.replace('background-size:contain,cover','background-size:cover,cover')+baseline.slice(at+old.length)+added,path+' only authorized task7/task8 menu changes');
+  }else if(path==='js/world/ChunkWorld.js'){
+   assert.equal(sha(readFileSync('docs/qa/task8/ChunkWorld-release19.js')),hash,path+' original');
+   assert.equal(sha(readFileSync(path)),'7e34d6b20b9455b5fabae62a28f49ebf933bd48102ee275fdb605db13e19deb6',path+' authorized NPC indicator integration');
   }else assert.equal(sha(readFileSync(path)),hash,path);
  }
 });

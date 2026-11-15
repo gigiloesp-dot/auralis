@@ -43,6 +43,9 @@ jobs:
       - name: Full-width home background, six viewports and three languages
         if: matrix.group == 'ui'
         run: npm run test:browser:task7
+      - name: Task8 home scale and streamed NPC quest indicators
+        if: matrix.group == 'ui'
+        run: npm run test:browser:task8
       - name: Quest journal claim and reload in three languages
         if: matrix.group == 'quests'
         run: npm run test:browser:task5-journal

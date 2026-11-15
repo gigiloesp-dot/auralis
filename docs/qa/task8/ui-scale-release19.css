@@ -1,0 +1,163 @@
+/* Task5 size contract. Combat HUD, joystick, attack and four live skill buttons
+   intentionally have no selectors here. These tokens size interface windows. */
+:root{--ui-text:12px;--ui-small:11px;--ui-heading:16px;--ui-space:6px;--ui-pad:8px;--ui-action-h:34px;--ui-action-w:90px;--ui-touch:44px;--ui-menu-w:clamp(260px,38vw,320px);--ui-menu-h:38px;--ui-menu-text:14px;--ui-menu-gap:7px;--ui-pause-cell:54px;--ui-item-cell:42px;--ui-row:34px;--ui-view-height:100vh;--ui-menu-art:url('../assets/ui/medieval-menu-compact.webp')}
+@supports(height:100dvh){:root{--ui-view-height:100dvh}}
+/* Full scene in front, subdued scene at the sides: no stretching or foreground crop. */
+#menu[data-page=home]{background-color:#170f0a;background-image:var(--ui-menu-art),linear-gradient(90deg,#170f0acb,#170f0a99,#170f0acb),var(--ui-menu-art);background-position:center,center,center;background-size:contain,cover,cover;background-repeat:no-repeat;align-items:start;padding:clamp(4px,2dvh,18px) max(6px,env(safe-area-inset-right)) 4px max(6px,env(safe-area-inset-left));overflow:hidden}
+#menu[data-page=home] .menu-panel{width:min(440px,100%);max-height:none;padding:0;gap:0;overflow:visible}
+#menu[data-page=home] h1{width:min(380px,80vw);height:clamp(24px,calc(var(--ui-view-height) - 248px),150px);margin:0 0 4px}
+#menu[data-page=home] h1 img{width:100%;height:100%;object-fit:contain}
+#menu[data-page=home] .menu-content{width:var(--ui-menu-w);max-width:100%;gap:0}
+#menu[data-page=home] .medieval-menu-button{display:flex;align-items:center;justify-content:center;position:relative;isolation:isolate;flex:none;width:100%;height:var(--ui-menu-h);min-height:var(--ui-menu-h);max-height:var(--ui-menu-h);margin:calc(var(--ui-menu-gap)/2) 0;padding:1px 18px;font:var(--ui-menu-text)/1.2 Georgia,serif;clip-path:none;overflow:visible;background:none!important;box-shadow:none}
+#menu[data-page=home] .medieval-menu-button svg{display:none}
+#menu[data-page=home] .medieval-menu-button:before{display:block;content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;border:0;background:url('../assets/ui/medieval-button.svg') center/100% 100% no-repeat,linear-gradient(#57361f,#28160d 52%,#432817);clip-path:polygon(5% 0,95% 0,100% 50%,95% 100%,5% 100%,0 50%)}
+/* 38px visual face +3px each side =44px non-overlapping touch regions. */
+#menu[data-page=home] .medieval-menu-button:after{content:'';position:absolute;inset:-3px 0;background:transparent}
+#menu[data-page=home] .medieval-menu-button span{pointer-events:none}
+#menu[data-page=home] .medieval-menu-button:focus-visible{outline-offset:0}
+/* Scope every generic dimension to panels; live combat controls retain release16 CSS. */
+:is(#menu,#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel){font-size:var(--ui-text);line-height:1.3}
+:is(#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel) h2{font-size:var(--ui-heading);line-height:1.2;margin:0}
+:is(#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel) h3{font-size:15px;margin:5px 0}
+:is(#menu,#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel) button{font-size:var(--ui-text);line-height:1.2;min-height:var(--ui-action-h);padding:5px 9px;max-width:100%;overflow-wrap:anywhere}
+:is(#menu,#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel) :is(input,select,textarea){font-size:var(--ui-text);max-width:100%;min-width:0}
+#menu .menu-panel{width:min(620px,calc(100vw - 16px));padding:8px 12px;max-height:calc(var(--ui-view-height) - 12px)}
+#menu .menu-panel>h1{font-size:26px;margin:0;line-height:1.1}
+#menu:not([data-page=home]) .menu-subtitle{display:none}
+#menu .menu-content{gap:6px}
+#menu .menu-content h2{font-size:var(--ui-heading);margin:2px 0}
+#menu .menu-content>button,#menu .menu-content>select,#menu .menu-content>input{min-height:var(--ui-action-h);padding:5px 9px;font-size:var(--ui-text)}
+#menu .menu-prose{font-size:var(--ui-text);line-height:1.4}
+#menu .slot-row{padding:4px 6px;gap:6px;min-height:44px}
+#menu .slot-row button{min-height:var(--ui-action-h);min-width:70px}
+#menu .slot-row span{min-width:0;font-size:var(--ui-text);overflow-wrap:anywhere}
+#menu .slot-row .hero-portrait{width:34px;height:34px;flex:none}
+#menu[data-page=create] .menu-panel{width:min(760px,calc(100vw - 16px))}
+#menu[data-page=create] .menu-content{gap:4px}
+#menu[data-page=create] .class-grid{gap:5px;grid-template-columns:repeat(6,minmax(0,1fr))}
+#menu[data-page=create] .class-card{min-height:70px;padding:4px 3px;gap:3px}
+#menu[data-page=create] .class-card .hero-portrait{width:46px}
+#menu[data-page=create] .class-card strong{font-size:11px;line-height:1.1}
+#menu[data-page=pause] .menu-panel{width:286px;padding:8px 10px;max-height:calc(var(--ui-view-height) - 12px)}
+#menu[data-page=pause] .menu-content{gap:6px;align-items:center}
+#menu[data-page=pause] .pause-grid{grid-template-columns:repeat(4,var(--ui-pause-cell));gap:6px}
+#menu .pause-grid button{width:var(--ui-pause-cell);height:var(--ui-pause-cell);min-width:var(--ui-pause-cell);min-height:var(--ui-pause-cell);aspect-ratio:1;padding:3px;gap:2px;font-size:10px;line-height:1.05;overflow-wrap:normal}
+.pause-grid svg{width:21px;height:21px}.pause-grid span{min-height:0;line-height:1.05}
+#menu[data-page=pause] .menu-content>button{width:150px;min-height:var(--ui-action-h)}
+#menu[data-page=settings] .menu-panel{width:min(340px,calc(100vw - 16px))}
+#menu[data-page=settings] .menu-content>button,#menu[data-page=settings] .menu-content>select{min-height:var(--ui-action-h)}
+/* Center compact windows without transforms, keeping fixed item popovers in viewport coordinates. */
+#inventory-panel{inset:8px auto auto max(8px,calc((100vw - 760px)/2))!important;width:min(760px,calc(100vw - 16px));height:min(460px,calc(var(--ui-view-height) - 16px));border-radius:7px}
+#skills-panel{inset:8px auto auto max(8px,calc((100vw - 820px)/2));width:min(820px,calc(100vw - 16px));height:min(460px,calc(var(--ui-view-height) - 16px));border:1px solid var(--ui-gold);border-radius:7px}
+.storage-panel{inset:8px auto auto max(8px,calc((100vw - 760px)/2));width:min(760px,calc(100vw - 16px));height:min(440px,calc(var(--ui-view-height) - 16px));padding:0 8px 6px;border:1px solid var(--ui-gold);border-radius:7px}
+.npc-panel,.save-panel,.dungeon-panel,#character-panel{inset:8px auto auto max(8px,calc((100vw - 660px)/2));width:min(660px,calc(100vw - 16px));max-height:calc(var(--ui-view-height) - 16px);padding:0 8px 8px}
+.pause-panel{inset:8px auto auto max(8px,calc((100vw - 620px)/2));width:min(620px,calc(100vw - 16px));max-height:calc(var(--ui-view-height) - 16px);padding:6px 8px}
+.world-map{inset:8px auto auto max(8px,calc((100vw - 900px)/2));width:min(900px,calc(100vw - 16px));height:min(540px,calc(var(--ui-view-height) - 16px));padding:6px 8px;border:1px solid var(--ui-gold);border-radius:7px}
+:is(.npc-heading,.save-panel>header,.dungeon-panel>header,.character-heading){min-height:44px;margin:0 -8px 4px;padding:2px 8px}
+:is(.npc-heading,.save-panel>header,.dungeon-panel>header,.character-heading,.pause-panel>header,.world-map>header,.storage-panel>header)>button{min-width:44px;min-height:44px;padding:4px 7px;flex:none}
+#inventory-panel .inventory-heading,.skill-heading,.storage-panel>header{min-height:44px;padding:2px 8px;gap:6px}
+#inventory-panel .inventory-heading strong{font-size:var(--ui-heading)}
+#inventory-panel .inventory-heading button,.skill-heading button{min-height:44px;min-width:44px;padding:4px 7px}
+#inventory-panel .inventory-tabs{min-height:40px;padding:3px 8px;gap:6px}
+#inventory-panel .inventory-tabs button{min-height:var(--ui-action-h);padding:4px 8px;font-size:var(--ui-text)}
+#inventory-panel .inventory-page{padding:4px 8px 8px}
+#inventory-panel .inventory-page h2{font-size:15px;margin:2px 0 5px}
+#inventory-panel .inventory-grid{grid-template-columns:repeat(auto-fill,var(--ui-item-cell));grid-auto-rows:var(--ui-item-cell);gap:4px;max-width:none;justify-content:start}
+#inventory-panel .inventory-grid .inventory-cell{height:var(--ui-item-cell);width:var(--ui-item-cell);min-height:var(--ui-item-cell);min-width:var(--ui-item-cell);padding:1px;aspect-ratio:1}
+#inventory-panel .inventory-cell .item-art-wrap{width:36px;height:36px}
+#inventory-panel .equipment-layout{grid-template-columns:minmax(0,1fr) minmax(180px,.75fr);gap:8px;max-width:none}
+#inventory-panel .equipment-layout .equipment-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+#inventory-panel .equipment-grid .equipment-cell{min-height:52px;height:auto;padding:3px;gap:2px}
+#inventory-panel .equipment-cell .item-art-wrap{width:28px;height:28px}
+#inventory-panel .equipment-cell small{font-size:11px;line-height:1.1}
+#inventory-panel .equipment-layout .equipment-summary{padding:4px}
+#inventory-panel .equipment-summary h3{font-size:14px;margin:0 0 3px}
+#inventory-panel .equipment-summary .stat-line{padding:3px 2px;font-size:11px;min-height:24px}
+#inventory-panel .item-detail{width:min(280px,calc(100vw - 16px));max-height:calc(var(--ui-view-height) - 16px)}
+#inventory-panel .item-detail-body{padding:7px}
+#inventory-panel .detail-heading .item-art-wrap{width:36px;height:36px}
+#inventory-panel .detail-heading h3{font-size:15px;margin:2px 0}
+#inventory-panel .item-detail p{font-size:var(--ui-text);margin:4px 0}
+#inventory-panel .item-actions{gap:4px;padding:5px}
+#inventory-panel .item-actions button{min-height:var(--ui-action-h);flex:1 1 80px;padding:4px 7px}
+#inventory-panel .item-comparison{padding:5px;margin-top:6px}
+.skill-heading span{font-size:var(--ui-small)}
+#skills-panel .skill-type-tabs{padding:3px 8px;gap:6px}
+#skills-panel .skill-type-tabs button{min-height:var(--ui-action-h);padding:4px 7px}
+#skills-panel .skill-equipped-slots{min-height:38px;padding:2px 8px;gap:5px}
+#skills-panel .skill-equipped-slots button{height:var(--ui-action-h);min-height:var(--ui-action-h);min-width:36px;width:36px;padding:2px;font-size:12px}
+#skills-panel .skill-equipped-slots strong{font-size:var(--ui-text)}
+#skills-panel .skill-layout{grid-template-columns:minmax(0,1fr) minmax(200px,.85fr);padding:3px 8px 6px;gap:6px}
+#skills-panel .skill-card{min-height:44px;padding:4px;gap:6px}
+#skills-panel .skill-icon{width:28px;height:28px}
+#skills-panel .skill-info strong{font-size:12px;line-height:1.2}
+#skills-panel .skill-info small{font-size:11px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#skills-panel .skill-info span{font-size:11px;line-height:1.1}
+#skills-panel .skill-detail{padding:0}
+#skills-panel .skill-detail-body{padding:6px}
+#skills-panel .skill-detail h3{font-size:15px;margin:3px 0}
+#skills-panel .skill-stat,#skills-panel .skill-note{font-size:11px;line-height:1.3;margin:3px 0}
+#skills-panel .skill-detail-actions{padding:4px;gap:4px}
+#skills-panel .skill-slot-choices{gap:4px}
+#skills-panel .skill-slot-choices button,#skills-panel .skill-learn,#skills-panel .skill-remove{min-height:var(--ui-action-h);padding:4px 6px;font-size:11px}
+.attribute-grid{gap:4px}.attribute-row{min-height:44px;padding:4px;gap:5px}.attribute-row strong{font-size:12px}.attribute-row small{font-size:11px;line-height:1.2}.attribute-row button{min-width:44px;min-height:44px;padding:2px;font-size:18px}
+.attribute-points{margin:4px 0;font-size:12px}.character-summary{gap:4px;font-size:11px}.character-summary span{padding:4px}
+.npc-panel p,.save-panel p,.dungeon-panel p{font-size:var(--ui-text);line-height:1.3;margin:5px 0}
+.npc-panel .npc-tabs{margin:4px 0;gap:5px}.npc-panel .npc-tabs button{min-height:var(--ui-action-h);padding:4px 7px}
+.npc-selector{margin:4px 0;font-size:12px}.npc-selector select{min-height:var(--ui-action-h);padding:4px;font-size:12px}
+.npc-shop-row{padding:4px 0;gap:6px;grid-template-columns:minmax(0,1fr) minmax(74px,90px)}
+.npc-shop-row>button{min-width:70px;min-height:var(--ui-action-h);padding:4px 7px;width:90px}
+.item-summary{gap:5px}.item-summary>.item-art-wrap{width:28px;height:28px}.item-summary-copy{gap:1px}.item-summary-name{font-size:12px;line-height:1.2}.item-summary-meta,.item-summary-price{font-size:11px;line-height:1.2}
+.npc-quest{padding:5px 0}.npc-quest h3{font-size:15px}.npc-quest>button{min-height:var(--ui-action-h);padding:4px 7px;margin:2px 0}
+.storage-hint{margin:2px 0 4px;font-size:11px}.storage-message{font-size:11px;margin:2px 0}
+.storage-columns{gap:6px}.storage-columns h3{font-size:15px;margin:2px 0 4px}.storage-items{gap:4px}
+.storage-items .storage-item{min-height:var(--ui-row);padding:3px;gap:4px}
+.storage-item .item-summary>.item-art-wrap{width:26px;height:26px}.storage-item .item-summary-meta,.storage-item .item-summary-price{font-size:11px}
+.save-panel h3{font-size:15px;margin:4px 0}.save-panel label{font-size:12px;margin:6px 0;gap:4px}.save-panel textarea{min-height:60px;padding:6px;font-size:11px}.save-panel .save-confirmation{min-height:var(--ui-action-h)}.save-panel input[type=file]{min-height:var(--ui-action-h);padding:4px 0}.save-downloads{gap:5px}.save-downloads button{min-height:var(--ui-action-h);padding:4px 8px}
+.dungeon-difficulties{gap:5px}.dungeon-difficulties button{min-height:var(--ui-action-h);padding:5px}
+.pause-panel h2{font-size:var(--ui-heading)}.pause-panel h3{font-size:15px;margin:7px 0 3px}.pause-panel-body{font-size:var(--ui-text);line-height:1.3}.pause-panel p{margin:4px 0 7px}.pause-panel article{padding-bottom:4px}
+.world-map p{font-size:11px;margin:3px 0;max-height:42px}
+.loot-panel{width:min(360px,calc(100vw - 408px));font-size:var(--ui-text);padding:4px;gap:3px;max-height:min(260px,calc(var(--ui-view-height) - 134px))}
+.loot-panel header{min-height:44px}.loot-panel h2{font-size:15px}.loot-panel header button{min-height:44px;min-width:44px;width:44px;padding:0}
+.loot-panel .loot-row{grid-template-columns:26px minmax(0,1fr) 52px;gap:4px;padding:3px;min-height:var(--ui-row)}
+.loot-panel .item-art-wrap{width:26px;height:26px}.loot-panel .loot-row button{min-height:var(--ui-action-h);padding:3px 2px;font-size:11px}
+.loot-copy strong,.loot-copy small{font-size:11px;line-height:1.2}.loot-copy small{margin-top:2px}.loot-panel footer button{min-height:var(--ui-action-h);padding:4px 7px}.loot-status{font-size:11px;line-height:1.2}
+@media(max-height:300px){#menu[data-page=home] h1{height:clamp(20px,calc(var(--ui-view-height) - 248px),52px)}#menu .menu-panel>h1{font-size:22px}#menu[data-page=create] .class-card{min-height:60px}#menu[data-page=create] .class-card .hero-portrait{width:38px}}
+@media(max-height:255px){#menu[data-page=home] .medieval-menu-button{height:34px;min-height:34px;max-height:34px}#menu[data-page=home] h1{height:20px}}
+/* Edge fill is plain warm shading: the scene and its small flag appear once. */
+#menu[data-page=home]{background-image:var(--ui-menu-art),linear-gradient(90deg,#170f0a,#342316 45%,#170f0a);background-size:contain,cover;background-position:center;background-repeat:no-repeat}
+:is(#menu,#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel) button:not(.inventory-cell):not(.equipment-cell):not(.class-card):not(.skill-select):not(.medieval-menu-button):not([data-pause-action]){position:relative;isolation:isolate}
+:is(#menu,#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel) button:not(.inventory-cell):not(.equipment-cell):not(.class-card):not(.skill-select):not(.medieval-menu-button):not([data-pause-action]):after{content:'';position:absolute;inset:-6px 0;background:transparent}
+:is(#menu,#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel) :is(header,.npc-heading,.character-heading,.inventory-heading,.skill-heading)>button{min-width:44px;min-height:44px;padding:4px 7px}
+#menu[data-page=settings] .menu-content>select{min-height:44px}
+.attribute-row button{width:34px;height:34px;min-width:34px;min-height:34px;font-size:16px}
+#menu{background-color:#170f0a;background-image:linear-gradient(#140d07a8,#140d07c9),var(--ui-menu-art);background-size:cover,contain;background-position:center;background-repeat:no-repeat}
+#menu[data-page=home]{background-image:var(--ui-menu-art),linear-gradient(90deg,#170f0a,#342316 45%,#170f0a);background-size:cover,cover}
+#inventory-panel .equipment-grid .equipment-cell{min-height:44px;padding:2px;gap:1px}
+#inventory-panel .equipment-cell .item-art-wrap{width:24px;height:24px}
+#menu .pause-grid button{font-size:10.5px;overflow-wrap:anywhere}
+.pause-grid span{width:100%;max-width:100%;min-width:0;display:block;text-align:center;white-space:normal;overflow-wrap:anywhere}
+/* Constrain grid/flex children so long storage lists actually scroll. */
+.storage-columns>section{min-height:0}
+.storage-items{flex:1;min-height:0}
+/* Expanded 34px actions need44px spacing, rather than overlapping neighbours. */
+#menu:not([data-page=home]):not([data-page=pause]) .menu-content{gap:13px}
+#menu[data-page=create] .menu-content{gap:13px}
+.storage-items .storage-item:after{content:none}
+:is(#menu,#inventory-panel,#skills-panel,#character-panel,.npc-panel,.storage-panel,.save-panel,.dungeon-panel,.world-map,.pause-panel,.loot-panel) :is(header,.npc-heading,.character-heading,.inventory-heading,.skill-heading)>button:after{content:none}
+.loot-panel{padding:8px}
+#loot-panel header button{font-size:20px}
+#menu:not([data-page=home]) .menu-content>button{align-self:center;width:fit-content;min-width:90px;max-width:100%;padding:5px 12px}
+#menu[data-page=create] .menu-panel{width:min(660px,calc(100vw - 16px))}
+#menu[data-page=create] .menu-content>input{width:min(360px,100%);align-self:center}
+#inventory-panel{height:min(360px,calc(var(--ui-view-height) - 16px))}
+#skills-panel{height:min(420px,calc(var(--ui-view-height) - 16px))}
+
+#skills-panel .skill-slot-choices{gap:13px}
+#inventory-panel .item-actions{gap:13px}
+#inventory-panel .item-actions button{flex:1 1 70px;font-size:11px}
+
+/* Keep expanded action targets inside fixed footer clipping boundaries. */
+#inventory-panel .item-actions,#skills-panel .skill-detail-actions{padding:7px;gap:13px}
+/* Trading stays live: reserve the existing top-right pause control on phones. */
+.npc-panel{left:max(8px,calc((100vw - 732px)/2));width:min(660px,calc(100vw - 80px))}
