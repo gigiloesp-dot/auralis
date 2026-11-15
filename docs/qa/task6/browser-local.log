@@ -1,0 +1,13 @@
+PASS task6 real inventory equip/unequip,56 state/facing/stride transforms and texture release weapon_warrior_1
+PASS task6 real inventory equip/unequip,56 state/facing/stride transforms and texture release helmet_0
+PASS task6 real inventory equip/unequip,56 state/facing/stride transforms and texture release chest_0
+PASS task6 real inventory equip/unequip,56 state/facing/stride transforms and texture release gloves_0
+PASS task6 real inventory equip/unequip,56 state/facing/stride transforms and texture release pants_0
+PASS task6 real inventory equip/unequip,56 state/facing/stride transforms and texture release boots_0
+PASS task6 real inventory equip/unequip,56 state/facing/stride transforms and texture release shield_1
+PASS task6 seven painted slots persist through real reload; ordinary mage save is byte-identical
+PASS task6 equipment reloads after scene stop/start without retaining a closed texture cache
+PASS task6 20 texture residency cycles:8 equipped images/masks,0 after removal, bounded part objects
+PASS task6 real simultaneous joystick and attack with all seven painted items
+PASS task6 warm renderer benchmark {"samples":2000,"note":"CPU PaintedActor.update only; not an Android or GPU FPS measurement","equippedMsPerUpdate":0.031299999999813734,"unarmedMsPerUpdate":0.009899999999906867,"residentRgbaBytes":11796480}
+PASS task6 gallery idle/two strides/attack/special/hurt/death,8 directions,7 single items/full set and no JavaScript errors

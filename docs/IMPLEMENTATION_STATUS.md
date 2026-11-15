@@ -1,5 +1,14 @@
 # Master development: фактическое состояние
 
+## Задание №6 — выпуск 18, комплект воина
+
+Опубликован выпуск **18**: https://auralis-master-test.alertpine18.chatgpt.site. [Игровая лаборатория комплекта](https://auralis-master-test.alertpine18.chatgpt.site/warrior-equipment-lab.html) использует отдельные сохранения. Source `eaf29399db88b51ea22fccafe79a19f48b36cb9b`, контрольная точка `6847769bed1e7e19cf72ca7fd70e7e4718de02df`. [CI 43693685829](https://github.com/gigiloesp-dot/auralis/actions/runs/43693685829) — **15/15 success, 290 unit, 222 syntax, 27 browser suites**.
+
+Подключены семь прозрачных PNG для реальных ID меча 4-го уровня, начальной брони 1-го уровня и щита 5-го уровня. Крепления измерены для 32 поз и восьми направлений; части ног и обуви следуют суставам, оружие — кистям, передние и задние слои учитывают направление. Другие классы/уровни не создавались. Интерфейс выпуска 17, каталог/бой/карты/NPC/монстры/квесты/обычные сохранения сохранены. Публично прошли 333 runtime-хеша, полный новый набор с 448 комбинациями трансформаций, сохранениями и 20 циклами texture residency, обычный игровой smoke.
+
+[Отчёт и ограничения](TASK_6_STATUS.md), [PNG](qa/task6/assets.json), [восемь направлений](qa/task6/eight-directions-idle.png), [CI](qa/task6/ci-source.json), [публикация](qa/task6/deployment.json), [публичные проверки](qa/task6/public-equipment-verification.json). Новые независимые клипы special/hurt/death не заявляются; физический Android и окончательная художественная приёмка остаются для ручной проверки.
+
+
 ## Задание №5 — выпуск17
 
 Опубликован **выпуск17**: https://auralis-master-test.alertpine18.chatgpt.site. Игровой source `28615cbc4fe1288b1aba242aec0cf0baeb7b39bb`. [CI43658226026](https://github.com/gigiloesp-dot/auralis/actions/runs/43658226026) — **14/14 jobs success,284 unit,213 syntax,26 browser suites**. Проверены пять landscape-размеров и RU/EN/ES, все шесть классов, сохранения, бой, добыча, streaming и soak.
