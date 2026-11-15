@@ -16,6 +16,11 @@ const regions=Object.fromEntries(Object.keys(REGIONS).map(id=>[id,getRegionConte
 export const QUESTS=Object.freeze(remapWorldObjectives(LEGACY_QUESTS,regions));
 export const STARTER_QUESTS=Object.freeze(QUESTS.filter(q=>q.id==='forestWolves'));
 const QUEST_INDEX=new Map(QUESTS.map(quest=>[quest.id,quest]));
+// Unattributed release21 API events remain compatible. Actual engine kills
+// always carry a species ID; camp/spawn IDs also resolve older event producers.
+const speciesByCamp=new Map(),speciesBySpawn=new Map();
+for(const c of Object.values(regions))for(const camp of c.camps){speciesByCamp.set(c.id+':'+camp.id,camp.speciesId);for(const spawn of camp.spawns)speciesBySpawn.set(c.id+':'+spawn.id,spawn.speciesId);}
+const eventSpecies=data=>data.speciesId||speciesByCamp.get(data.region+':'+data.campId)||speciesBySpawn.get(data.region+':'+data.id);
 export const questDefinition=id=>QUEST_INDEX.get(id);
 const required=q=>Math.max(1,q.required||1);
 const hasItems=(hero,id)=>hero.inventory?.filter(i=>i.id===id).reduce((sum,i)=>sum+itemCount(i),0)||0;
@@ -41,7 +46,7 @@ export function recordEvent(hero,type,data={}){
  for(const q of QUESTS){const p=questProgress(hero,q.id);if(p.state!=='active')continue;
  if(q.region&&data.region&&q.region!==data.region)continue;
  let matched=false;
- if(q.type==='kill'&&type==='kill')matched=matchesType(q.target,data.type)&&(!q.targetCampId||q.targetCampId===data.campId);
+ if(q.type==='kill'&&type==='kill')matched=matchesType(q.target,data.type)&&(!q.targetCampId||q.targetCampId===data.campId)&&(!q.targetSpeciesId||!eventSpecies(data)||q.targetSpeciesId===eventSpecies(data));
  if(q.type==='boss'&&type==='boss')matched=q.target===data.id;
  if(q.type==='talk'&&type==='talk')matched=q.target===data.npcId;
  if(q.type==='deliver'&&type==='talk')matched=q.target===data.npcId&&hasItems(hero,q.itemId)>=(q.quantity||1);

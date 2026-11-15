@@ -19,7 +19,7 @@
     },
     "js/monsters/MonsterSystem.js": {
       "before": "f1c7ada80551e55a38520fd6c673fd0a86fb2155c5206fb77253a1894f2412d8",
-      "after": "34c5a88e7e38bccb5235a2be857885feb49e861ab9af04f7bf33caf39f5fe4b1"
+      "after": "8895c581d0569610478843e451acae9e469f11a45d6471f252a1e23003b995ee"
     },
     "js/monsters/monsters.js": {
       "before": "35c0b21b0c4a33f5818a681a40329495a02af4098066fe23eb1eba4034a5ee3f",
@@ -31,7 +31,7 @@
     },
     "js/quests/quests.js": {
       "before": "f4ca9132d592e79b3ee5c153de3ab039d08e9407cad6b8e1cbf3108fdc081096",
-      "after": "0b0b6d4f6542c759a4bb8f9806ef198664c52119b5d826e522c5355e674aa355"
+      "after": "e7b7c55f4ffd5662cc82aa36ff3c5424fa2bf6565b43e0bbad24e40d6e7f2867"
     },
     "js/systems/progressState.js": {
       "before": "67a90fd2412ec0d75891d3f26d0a87bf80fd10d0276b13e7fe2d2486ab8cd127",
@@ -40,6 +40,14 @@
     "js/systems/save.js": {
       "before": "004dbeb9c31b9db92dc0c77594b26101dae1a8f1323fe0957552d73691d3ee55",
       "after": "e1f28bef48e4d2ad09bfa9635a5de52425fb1e47d6279390277ba2201efb31e2"
+    },
+    "js/ui/MapPanel.js": {
+      "before": "f645587f2290f89d68249190bd5fb0829cb024e5889dfc972ea4db5060198a06",
+      "after": "9afe7bf48566f69f4133eeb994d26fb4951cfd7ce102e86ceae0bae5d33f788a"
+    },
+    "js/ui/Minimap.js": {
+      "before": "747e40d2a65e3775a0ceae3fdce60d760472d6d0532d92ed50f8d099eaee31cf",
+      "after": "25dcf46f8050e5097584d98df74980b7b2d77c67951f4fadcf5329f431687623"
     },
     "js/ui/SavePanel.js": {
       "before": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
