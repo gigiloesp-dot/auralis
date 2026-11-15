@@ -6,7 +6,7 @@ const fs=require('node:fs'),path=require('node:path');
 (async()=>{const hosting=await startServer();let browser;try{browser=await chromium.launch(launchOptions);const p=await browser.newPage({viewport:{width:844,height:390},hasTouch:true,isMobile:true});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(hosting.url);await p.getByRole('button',{name:'Продолжить',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('input').fill('WorldQA');await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.world);
  const art=await p.evaluate(()=>{const s=Auralis.game.scene.getScene('world');return {frames:s.textures.get('paintedEnvironment').getFrameNames().sort(),painted:s.world.chunkWorld.paintedArt,objects:[...s.world.chunkWorld.chunks.values()].flatMap(c=>c.objects).filter(o=>o.texture?.key==='paintedEnvironment').length};});assert.deepEqual(art.frames,['cypress','house','oak','pine','rock','ruin']);assert.ok(art.painted&&art.objects>0);console.log('PASS real painted environment atlas and streamed props',JSON.stringify(art));
  const totals={normal:0,bosses:0,camps:0,towns:0,npcs:0};
- for(const region of ['forest','north','ancient']){
+ for(const region of ['forest','north','ancient','desert']){
   const result=await p.evaluate(async region=>{
    const s=Auralis.game.scene.getScene('world');s.hero.level=42;s.hero.maxHp=100000;s.hero.hp=100000;s.world.load({region,x:1030,y:1140});const c=s.regionContent;let peak=0,peakChunks=0,count=0,bosses=0;
    for(const camp of c.camps){s.hero.x=camp.x;s.hero.y=camp.y;s.world.chunkWorld.update(s.hero);s.obstacles=s.world.chunkWorld.obstacles;s.monsters.update(s.playNow,0);for(const spawn of camp.spawns){const m=s.monsters.monsters.find(m=>m.id===spawn.id);if(!m)throw Error('Missing streamed creature '+spawn.id);if(!s.world.isWalkable(spawn.x,spawn.y))throw Error('Blocked spawn '+spawn.id);count++;}peak=Math.max(peak,s.monsters.monsters.length);peakChunks=Math.max(peakChunks,s.world.diagnostics.loadedChunks);await new Promise(requestAnimationFrame);}
@@ -22,8 +22,8 @@ const fs=require('node:fs'),path=require('node:path');
    }
   });console.log('PASS full road routes',region);
  }
- assert.deepEqual(totals,{normal:3495,bosses:18,camps:374,towns:7,npcs:21});
- for(const region of ['forest','north','ancient']){
+ assert.deepEqual(totals,{normal:4359,bosses:18,camps:470,towns:8,npcs:21});
+ for(const region of ['forest','north','ancient','desert']){
   const transitions=await p.evaluate(region=>{const s=Auralis.game.scene.getScene('world');s.world.load({region,x:1030,y:1140});return s.regionContent.portals.filter(p=>p.toRegion!=='arena');},region);
   for(const portal of transitions){await p.evaluate(({region,portal})=>{const s=Auralis.game.scene.getScene('world');s.world.load({region,x:portal.x,y:portal.y});s.world.update();},{region,portal});await p.locator('.world-travel').click();assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.region),portal.toRegion);}
  }

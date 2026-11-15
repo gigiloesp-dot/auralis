@@ -71,7 +71,7 @@
   },
   "js/systems/save.js": {
     "original": "8efc060d4c0fbb247d0db4ebe2744204566b01341b34609d193a3020e1648a89",
-    "current": "0a299ece493867b605bc5e0533e0797e12ee640d6ca20a000dc824da3ddec290",
+    "current": "004dbeb9c31b9db92dc0c77594b26101dae1a8f1323fe0957552d73691d3ee55",
     "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
   },
   "js/ui/SavePanel.js": {

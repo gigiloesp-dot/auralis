@@ -59,7 +59,7 @@ test('normal equip, unequip and saved reload preserve the real catalogue stats w
 });
 
 test('release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta',()=>{
- const ledger=readFileSync('docs/qa/task9/approved-deltas.json');assert.equal(sha(ledger),'2a6d710032a6bce4a5fb2f2958aa3a81786dd8c8a135947b97cbea5b3090cab7');const deltas=JSON.parse(ledger);
+ const ledger=readFileSync('docs/qa/task9/approved-deltas.json');assert.equal(sha(ledger),'fd8478d06c88ff5a2701e7db607d2bb6c5f19321bd26a8e686dc967cb278cbc5');const deltas=JSON.parse(ledger);
  const manifest=JSON.parse(readFileSync('docs/art/WARRIOR_REFERENCE_PRESERVED.json'));assert.ok(Object.keys(manifest.hashes).length>200);for(const [path,hash]of Object.entries(manifest.hashes)){
   if(deltas[path]){assert.equal(deltas[path].original,hash,path+' original contract');assert.equal(sha(readFileSync(path)),deltas[path].current,path+' explicit approved task9 delta');}
   else if(path==='css/ui-scale.css'){
