@@ -6,7 +6,8 @@ export const TOWNS=Object.freeze({
  frostford:town('frostford','north',1500,1800,{ru:'Морозный брод',en:'Frostford',es:'Vado helado'}),
  highpass:town('highpass','north',10300,10600,{ru:'Высокий перевал',en:'Highpass',es:'Paso alto'}),
  dawncamp:town('dawncamp','ancient',1600,1800,{ru:'Лагерь рассвета',en:'Dawn camp',es:'Campamento del alba'}),
- elderSanctum:town('elderSanctum','ancient',11700,11400,{ru:'Древнее святилище',en:'Elder sanctum',es:'Santuario ancestral'})
+ elderSanctum:town('elderSanctum','ancient',11700,11400,{ru:'Древнее святилище',en:'Elder sanctum',es:'Santuario ancestral'}),
+ caravanOasis:town('caravanOasis','desert',1600,1800,{ru:'Караванный оазис',en:'Caravan oasis',es:'Oasis de caravanas'})
 });
 export const getRegionTowns=region=>Object.values(TOWNS).filter(town=>town.region===region);
 export function nearestTown(hero){

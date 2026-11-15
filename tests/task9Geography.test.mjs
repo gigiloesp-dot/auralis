@@ -4,7 +4,7 @@ const previous=JSON.parse(readFileSync('docs/qa/task9/release20-world.json'));
 test('expanded boundaries preserve every existing camp, spawn, boss, road, portal and quest',()=>{
  for(const [id,size]of Object.entries({forest:18000,north:21000,ancient:15000})){
   const c=getRegionContent(id),old=previous.regions[id];assert.equal(REGIONS[id].width,size);assert.equal(c.width,size);assert.equal(c.height,size);
-  for(const key of ['camps','bosses','portals'])assert.deepEqual(c[key],old[key],id+'/'+key);
+  assert.deepEqual(c.camps.filter(c=>!c.expansion),old.camps,id+'/legacy camps');assert.deepEqual(c.bosses,old.bosses);assert.deepEqual(c.portals.filter(p=>p.toRegion!=='desert'),old.portals);
   for(const road of old.roads)assert.deepEqual(c.roads.find(r=>r.id===road.id),road);
   for(const town of old.towns){const actual=c.towns.find(t=>t.id===town.id);for(const key of ['id','x','y','spawn','names'])assert.deepEqual(actual[key],town[key]);}
   assert.deepEqual(c.npcs,old.npcs.map(n=>n.id==='tera'?{...n,x:885,y:1220}:n),'only crowded Tera is moved');

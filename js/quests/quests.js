@@ -10,7 +10,8 @@ export const QUEST_TEXT=Object.freeze({
  es:{talk:'Hablar con Mira',name:'Mira · misiones',title:'Un camino seguro',body:'Los lobos se acercan demasiado al pueblo. Derrota a cinco lobos en el bosque y vuelve por tu recompensa.',progress:'Lobos derrotados',reward:'Recompensa: 90 EXP y 3 colmillos de lobo',accept:'Aceptar misión',claim:'Recibir recompensa',active:'Misión aceptada. Vuelve después de la caza.',claimed:'¡Gracias! El camino es más seguro.',full:'Haz espacio en el inventario para la recompensa.',close:'Cerrar',journal:'El encargo de Mira',questsTab:'Misión',shopTab:'Tienda',gold:'Oro',hpPotion:'Poción de HP',mpPotion:'Poción de MP',buy:'Comprar',sell:'Vender',each:'por unidad',emptyShop:'No tienes materiales para vender.',funds:'No tienes suficiente oro.',limit:'Puedes llevar hasta 99 pociones de cada tipo.',wolfFang:'Colmillo de lobo',wolfPelt:'Piel de lobo',common:'Común',uncommon:'Poco común',rare:'Raro',epic:'Épico',legendary:'Legendario'}
 });
 // The catalog references actual NPCs, towns and camp identifiers from the world data.
-const regions=Object.fromEntries(Object.keys(REGIONS).map(id=>[id,getRegionContent(id)]));
+// Task9 adds geography only: keep the existing quest catalogue and targets.
+const regions=Object.fromEntries(Object.keys(REGIONS).filter(id=>id!=='desert').map(id=>{const c=getRegionContent(id);return [id,{...c,camps:c.camps.filter(c=>!c.expansion),portals:c.portals.filter(p=>p.toRegion!=='desert'),landmarks:c.landmarks.filter(p=>!p.id.includes('-extension-'))}];}));
 export const QUESTS=Object.freeze(buildQuestCatalog(regions));
 export const STARTER_QUESTS=Object.freeze(QUESTS.filter(q=>q.id==='forestWolves'));
 const QUEST_INDEX=new Map(QUESTS.map(quest=>[quest.id,quest]));

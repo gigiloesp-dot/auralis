@@ -10,7 +10,7 @@ const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 test('existing 254 camps each gain exactly five monsters, all 2415 remain naturally separated and region-appropriate',()=>{
  const expected={forest:[94,895,1,25],north:[85,805,22,38],ancient:[75,715,35,42]},types=new Set();let camps=0,monsters=0;
  for(const [id,[campCount,population,min,max]]of Object.entries(expected)){
-  const c=getRegionContent(id),spawns=c.camps.flatMap(c=>c.spawns),roads=regionRoads(c),entrances=DUNGEONS.filter(d=>d.region===id);
+  const raw=getRegionContent(id),c={...raw,camps:raw.camps.filter(c=>!c.expansion)},spawns=c.camps.flatMap(c=>c.spawns),roads=regionRoads(c),entrances=DUNGEONS.filter(d=>d.region===id);
   assert.equal(c.camps.length,campCount);assert.equal(spawns.length,population);camps+=campCount;monsters+=population;
   const ordered=[...c.camps].sort((a,b)=>distance(a,c.spawn)-distance(b,c.spawn));
   assert.equal(Math.min(...ordered.map(c=>c.level)),min);assert.equal(Math.max(...ordered.map(c=>c.level)),max);

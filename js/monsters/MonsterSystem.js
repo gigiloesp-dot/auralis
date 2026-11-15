@@ -101,7 +101,7 @@ export class MonsterSystem{
   if(this.buffs.iceWard>0&&this.buffs.guard>now){const absorbed=Math.min(damage,this.buffs.iceWard);damage-=absorbed;this.buffs.iceWard-=absorbed;for(const m of this.monsters)if(distance(m,this.hero)<100)m.slowUntil=now+1500;}
   damage=guardBlock(this,damage,now);this.hero.hp=Math.max(0,this.hero.hp-damage);guardResponse(this,now);if(damage>0){this.hero.hurtUntil=now+220;this.hero.lastHitAt=now;}this.label(this.hero.x,this.hero.y,damage?'-'+damage:'·','#ff8e82');this.onChange();
  }
- safe(){return (this.content?.towns||Object.values(TOWNS)).some(t=>t.region===this.hero.region&&distance(this.hero,t.spawn||t)<t.safeRadius);}
+ safe(){return (this.content?.towns||Object.values(TOWNS)).some(t=>t.region===this.hero.region&&distance(this.hero,t.spawn||t)<t.safeRadius)||(this.content?.portals||[]).some(p=>p.safeRadius&&distance(this.hero,p)<p.safeRadius);}
  label(x,y,text,color='#fff1a0'){
   const point=this.view(x,y);
   const label=this.scene.add.text(point.x,point.y-60,text,{fontFamily:'Arial',fontSize:'14px',fontStyle:'bold',color,stroke:'#332317',strokeThickness:3}).setOrigin(.5).setDepth(this.depth(x,y)+4);

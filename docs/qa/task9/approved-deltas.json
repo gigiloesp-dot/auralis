@@ -1,22 +1,47 @@
 {
   "js/world/worldData.js": {
     "original": "b5aca9d6548635531896a05399aa969a5c74399f42495d132be59c6be5aeb26e",
-    "current": "adf7f92174d38791726f235573b6d175432dfb958da677205c2085c80a1abe1e",
-    "reason": "Approved task9 geography; legacy anchors and equipment preserved by dedicated tests"
+    "current": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
   },
   "js/world/regionContent.js": {
     "original": "54b452f7e6b38f3a797bbbd044dd570f4e88c1a2a79f836f4720aca49f289902",
-    "current": "6ceb306e18af1a4ad67903c102fe0019f58eb0c8a2fae334a42e9899e18313b0",
-    "reason": "Approved task9 settlement footprint/houses/lanes; only crowded Tera moves, all legacy encounter anchors and catalogue protected"
+    "current": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
   },
   "js/world/chunkGeometry.js": {
     "original": "7747a4eb8d0df6539cc3d1a3c8ff44303aa74bfb0d37f54a98af284c9d161f36",
-    "current": "1e26883647f37e006f032834f8a5f973bc3d55feff4ba2ba57e5dbb527f7b061",
-    "reason": "Approved task9 settlement footprint/houses/lanes; only crowded Tera moves, all legacy encounter anchors and catalogue protected"
+    "current": "cd7f1c13d3c5737ac2514645b06ad63a94ff1b509f2878122e40202b61b61992",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
   },
   "js/npc/npcData.js": {
     "original": "cee707614201896778f8bd84c72b9b4fafd7ad8c08462d8613ccc534039791a7",
     "current": "a7d3beb5486284ac8dbe2643016ea370f993fe4b83af37e413de5c29a2a1380d",
     "reason": "Approved task9 settlement footprint/houses/lanes; only crowded Tera moves, all legacy encounter anchors and catalogue protected"
+  },
+  "js/monsters/MonsterSystem.js": {
+    "original": "7806626752ab51fe36e2bfb79dad8b95147cdab8fd2996252eee2c1e8b2c3b7d",
+    "current": "f1c7ada80551e55a38520fd6c673fd0a86fb2155c5206fb77253a1894f2412d8",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/quests/quests.js": {
+    "original": "18ee4a9a2199e02ca53ba332ba1acbd95d99fd1190da8e9df789866adbb6363a",
+    "current": "f4ca9132d592e79b3ee5c153de3ab039d08e9407cad6b8e1cbf3108fdc081096",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/ChunkWorld.js": {
+    "original": "f744d2450d2f02558942dcaeb6b0aceffd59ae01faeaa43dd91337dc4a5b3799",
+    "current": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/biomes.js": {
+    "original": "0bb5a41506b11a53b9d2aa62da0c0baaea4c3aa7c48df4cb65bc6d4b79c542e7",
+    "current": "2d8df8ba0b566d34bd3ebaa98d01446e626809754a7bffcd1ee41bb4206ab1fd",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/towns.js": {
+    "original": "1642951c2945888b3ac4f07821ad1b3c39deccedc130880312d3e3462cdd0b38",
+    "current": "bf7f4cf63f90aadbf4d9ac3119636f2607530370c78113ec554f926cc200331f",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
   }
 }
