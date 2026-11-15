@@ -1,3 +1,4 @@
+import {GAME_CONFIG} from '../config/gameConfig.js';
 import {applyPortrait} from './Portrait.js';
 import {xpForNextLevel} from '../systems/progression.js';
 export function updateHud(character,language='ru',content){
@@ -9,6 +10,7 @@ export function updateHud(character,language='ru',content){
  const set=(bar,label,current,max)=>{const b=document.getElementById(bar),t=document.getElementById(label);const a=Math.max(0,Math.floor(Number(current)||0)),m=Math.max(1,Math.floor(Number(max)||1));if(b)b.style.width=Math.max(0,Math.min(100,100*a/m))+'%';if(t)t.textContent=a+' / '+m;};
  set('hpbar','hptext',character.hp,character.maxHp);
  set('mpbar','mptext',character.mp,character.maxMp);
- const capped=character.level>=42;set('xpbar','xptext',capped?1:character.xp,capped?1:xpForNextLevel(character.level));
+ const capped=character.level>=GAME_CONFIG.maxLevel;set('xpbar','xptext',capped?1:character.xp,capped?1:xpForNextLevel(character.level));
+ if(capped){const xp=document.getElementById('xptext');if(xp)xp.textContent=Math.floor(character.xp)+' · '+({ru:'МАКС.',en:'MAX',es:'MÁX.'}[language]||'MAX');}
  const status=document.getElementById('status');if(status)status.textContent=content?.names?.[language]||content?.name||'Auralis';
 }

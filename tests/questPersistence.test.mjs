@@ -15,7 +15,7 @@ test('failed reward checkpoint rolls back inventory stacks, XP, level, points an
  const before=structuredClone(hero),reference=hero;let durable=structuredClone(before);
  const fail=commitQuestChange(hero,()=>claimQuest(hero),()=>{assert.equal(hero.level,2);assert.equal(hero.inventory.filter(i=>i.id==='wolfFang').reduce((n,i)=>n+i.quantity,0),101);throw Error('quota');});
  assert.equal(fail.reason,'storage');assert.equal(hero,reference);assert.deepEqual(hero,before);assert.deepEqual(durable,before);
- const success=commitQuestChange(hero,()=>claimQuest(hero),()=>{durable=structuredClone(hero);return true;});assert.equal(success.ok,true);assert.equal(hero.level,2);assert.equal(hero.attributePoints,3);assert.equal(hero.skillPoints,1);assert.equal(durable.quests.forestWolves.state,'claimed');
+ const success=commitQuestChange(hero,()=>claimQuest(hero),()=>{durable=structuredClone(hero);return true;});assert.equal(success.ok,true);assert.equal(hero.level,2);assert.equal(hero.attributePoints,3);assert.equal(hero.skillPoints,2);assert.equal(durable.quests.forestWolves.state,'claimed');
  const once=structuredClone(hero);assert.equal(commitQuestChange(hero,()=>claimQuest(hero),()=>true).ok,false);assert.deepEqual(hero,once);
 });
 test('failed operation does not checkpoint or leak partial newly added fields',()=>{

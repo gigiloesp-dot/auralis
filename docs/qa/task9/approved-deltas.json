@@ -43,5 +43,45 @@
     "original": "1642951c2945888b3ac4f07821ad1b3c39deccedc130880312d3e3462cdd0b38",
     "current": "bf7f4cf63f90aadbf4d9ac3119636f2607530370c78113ec554f926cc200331f",
     "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/characters/Character.js": {
+    "original": "59deb0cb5447757781f5c9ccbd5da939708aea920dd33957d4b831c868144602",
+    "current": "23b17c6289bbaaf5924d92e58d633e63c27a0a83eb808fd0f345bbafc44dd186",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/combat/attackTiming.js": {
+    "original": "32fe8338bb956714a5d89c31d7463e0c0f01cf9cfd5f6424bfa76fcf9b5b3f38",
+    "current": "12f2edc6f87c5615301b91203b80fc6c4fd50dda513efa9dca31cc2bc940ba57",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/monsters/monsters.js": {
+    "original": "8c070658929fcc2516382d24bbd101ed336c0bec00244f130746b57784597070",
+    "current": "35c0b21b0c4a33f5818a681a40329495a02af4098066fe23eb1eba4034a5ee3f",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/systems/progressState.js": {
+    "original": "15c788a7d8042d0eec9cea7981070874d11d09d0dcbb411fb4c7438470a1068f",
+    "current": "67a90fd2412ec0d75891d3f26d0a87bf80fd10d0276b13e7fe2d2486ab8cd127",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/systems/progression.js": {
+    "original": "7384fca4a060e3908ea6da502143a6bd8bb5e7319db844f9e76589d8b934cd58",
+    "current": "cc23747c01b16a7854ba664685d97b68c2317756807831361efb41efcdad942b",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/systems/save.js": {
+    "original": "8efc060d4c0fbb247d0db4ebe2744204566b01341b34609d193a3020e1648a89",
+    "current": "0a299ece493867b605bc5e0533e0797e12ee640d6ca20a000dc824da3ddec290",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/ui/SavePanel.js": {
+    "original": "d6551280bac298292bd1c1b20592e4a7f6c15069a70008827ac694663ce2d265",
+    "current": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/ui/hud.js": {
+    "original": "abf946e093f65721495b8582b7c53c49348456d2ae82e92b86f52ede42584aac",
+    "current": "78a665cfe125850a2815db5e55e0984e3b67941cb6fd2cc167498e5aec9b39e0",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
   }
 }

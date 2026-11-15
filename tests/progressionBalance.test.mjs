@@ -29,7 +29,7 @@ test('all six classes can reach42 using actual XP, gear, allocations and ordinar
    for(let i=0;i<needed;i++){grantXp(hero,kind.xp);kills++;attackSeconds+=attacks*attackIntervalMs(hero)/1000;}
    assert.ok(hero.level>level);assert.equal(hero.hp,hero.maxHp);assert.equal(hero.mp,hero.maxMp);
   }}finally{Math.random=random;system.destroy();}
-  assert.equal(hero.level,42);assert.equal(hero.skillPoints,41);assert.ok(kills<3500);assert.ok(attackSeconds<6*3600,`${classId}: ${attackSeconds}s fighting`);metrics.push({classId,kills,attackMinutes:Math.round(attackSeconds/60)});
+  assert.equal(hero.level,42);assert.equal(hero.skillPoints,82);assert.ok(kills<3500);assert.ok(attackSeconds<6*3600,`${classId}: ${attackSeconds}s fighting`);metrics.push({classId,kills,attackMinutes:Math.round(attackSeconds/60)});
  }
  console.log('Progression budget (excludes quest XP/travel, common gear assumed):',JSON.stringify(metrics));
 });

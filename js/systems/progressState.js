@@ -21,7 +21,7 @@ export function copyProgress(value,{maxDepth=8,maxEntries=12000,maxArray=2000}={
 }
 export function normalizeWorldState(value){
  const result={monsters:{}};
- if(plain(value?.monsters))for(const [id,state] of Object.entries(value.monsters).slice(0,5000)){
+ if(plain(value?.monsters))for(const [id,state] of Object.entries(value.monsters).slice(0,10000)){
   if(!safeKey(id)||!plain(state))continue;
   const normalized={};
   for(const key of ['deadUntil','killedAt','healthAt','recoverAfter','aggroUntil','lastSeenAt']){const timestamp=time(state[key]);if(timestamp!==null)normalized[key]=timestamp;}

@@ -1,3 +1,4 @@
+import {GAME_CONFIG} from '../config/gameConfig.js';
 export const ORDINARY_RESPAWN_MS=30000;
 export const MONSTER_STATES=Object.freeze(['idle','patrol','chase','attack','return','dead']);
 const mechanics=(family,movementProfile,values)=>({family,movementProfile,...values});
@@ -47,7 +48,7 @@ export function clearDashPosition(hero,target,obstacles=[],clearance=12){
 
 export function monsterKind(descriptor){
  const base=MONSTER_TYPES[descriptor.type]||MONSTER_TYPES.forestWolf;
- const level=Math.max(1,Math.min(42,Math.floor(descriptor.level||base.level)));
+ const level=Math.max(1,Math.min(GAME_CONFIG.maxLevel,Math.floor(descriptor.level||base.level)));
  const delta=Math.max(0,level-base.level),downscale=Math.min(1,(level+5)/(base.level+5)),boss=!!descriptor.bossType||base.boss;
  // Dungeon species can be introduced below their outdoor level. A Lv5
  // skeleton must not silently retain Lv14 damage, defence and XP rewards.
