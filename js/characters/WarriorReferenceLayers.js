@@ -71,7 +71,11 @@ export class WarriorReferenceLayers{
   }
   if(available('boots'))for(const side of ['left','right'].sort((s,t)=>a[s+'Foot'].y-a[t+'Foot'].y)){
    const foot=a[side+'Foot'],knee=a[side+'Knee'],ankle=a[side+'Ankle'],half=native[side+'Foot'].x<native[(side==='left'?'right':'left')+'Foot'].x?'left':'right';
-   const n=this.image('boot-'+side,'boots',half+'/'+direction);const pivot=WARRIOR_BOOT_PIVOTS[half+'/'+direction];n.setOrigin(pivot.bootPivot[0]/n.frame.realWidth,pivot.bootPivot[1]/n.frame.realHeight).setPosition(ankle.x,ankle.y+scale).setDisplaySize(n.frame.realWidth/n.frame.realHeight*46*scale,46*scale).setRotation(Math.atan2(ankle.y-knee.y,ankle.x-knee.x)-Math.PI/2-pivot.bootAngle);
+   for(const part of ['calf','foot']){
+    const key=part+'-'+half+'/'+direction,n=this.image('boot-'+part+'-'+side,'boots',key),pivot=WARRIOR_BOOT_PIVOTS[key],from=part==='calf'?knee:ankle,to=part==='calf'?ankle:foot;
+    const factor=Math.max(scale*.45,Math.min(scale*1.25,hypot(from,to)*(part==='calf'?.82:1)/pivot.bootLength));
+    n.setOrigin(pivot.bootPivot[0]/n.frame.realWidth,pivot.bootPivot[1]/n.frame.realHeight).setPosition(ankle.x,ankle.y).setScale(factor).setRotation(Math.atan2(to.y-from.y,to.x-from.x)-pivot.bootAngle);
+   }
   }
   if(available('shield')){
    const n=this.image('shield','shield',frame,!depth.leftNear),hand=a.leftHand,elbow=a.leftElbow;n.setOrigin(.5,.45).setPosition((hand.x+elbow.x)/2,(hand.y+elbow.y)/2+3*scale).setScale(scale*.72);

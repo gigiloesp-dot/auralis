@@ -6,7 +6,7 @@ const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-
  const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
  assert.equal((await p.goto(url,{waitUntil:'networkidle'})).status(),200);assert.equal(new URL(p.url()).origin,new URL(url).origin);
  const build=await p.evaluate(()=>fetch('/build.json').then(r=>r.json()));assert.equal(build.sourceCommit,commit);assert.equal(build.branch,'codex/auralis-master-development');
- const files=execFileSync('git',['ls-tree','-r','--name-only',commit,'index.html','css','js','assets'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>!f.endsWith('.md'));
+ const files=execFileSync('git',['ls-tree','-r','--name-only',commit,'index.html','warrior-equipment-lab.html','css','js','assets'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>!f.endsWith('.md'));
  for(let at=0;at<files.length;at+=8){
   const batch=files.slice(at,at+8),actual=await p.evaluate(async batch=>Promise.all(batch.map(async file=>{const response=await fetch('/'+file,{cache:'no-store'}),bytes=await response.arrayBuffer(),hash=await crypto.subtle.digest('SHA-256',bytes);return {file,status:response.status,sha:[...new Uint8Array(hash)].map(v=>v.toString(16).padStart(2,'0')).join('')};})),batch);
   for(const entry of actual){assert.equal(entry.status,200,entry.file);const expected=crypto.createHash('sha256').update(execFileSync('git',['show',commit+':'+entry.file],{cwd:root,maxBuffer:16*1024*1024})).digest('hex');assert.equal(entry.sha,expected,entry.file);}
