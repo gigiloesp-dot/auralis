@@ -21,9 +21,9 @@ export class Minimap{
   this.canvas.dataset.monsterIds=JSON.stringify(enemies.map(m=>m.id));this.canvas.dataset.placeIds=JSON.stringify(places.map(p=>p.id));
   // Label the nearest visible settlement separately from the current area.
   const town=places.filter(p=>p.mapKind==='town'&&Math.hypot(p.x-h.x,p.y-h.y)<700).sort((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)-Math.hypot(b.x-h.x,b.y-h.y))[0];
-  if(town){const at=xy(town),name=mapName(town,s.language),label=name.length>18?name.slice(0,17)+'…':name,y=Math.hypot(at.x-60,at.y-60)<20?42:Math.max(20,Math.min(93,at.y+11));c.save();c.font='9px system-ui';c.textAlign='center';c.lineWidth=2.5;c.strokeStyle='#21180fe8';c.fillStyle='#fff0c9';c.strokeText(label,60,y,100);c.fillText(label,60,y,100);c.restore();this.canvas.dataset.town=name;}else delete this.canvas.dataset.town;
+  if(town){const at=xy(town),name=mapName(town,s.language),label=name.length>18?name.slice(0,17)+'…':name,y=at.y<=65?42:80;c.save();c.font='9px system-ui';c.textAlign='center';c.lineWidth=2.5;c.strokeStyle='#21180fe8';c.fillStyle='#fff0c9';c.strokeText(label,60,y,100);c.fillText(label,60,y,100);c.restore();this.canvas.dataset.town=name;}else delete this.canvas.dataset.town;
   const area=currentMapArea(content,h,s.language);this.canvas.dataset.area=area;this.canvas.setAttribute('aria-label',text('minimap',s.language)+' · '+area);
-  c.save();c.font='9px system-ui';c.textAlign='center';c.textBaseline='bottom';c.lineWidth=2.5;c.strokeStyle='#21180fe8';c.fillStyle='#fff0c9';const short=area.length>25?area.slice(0,24)+'…':area;c.strokeText(short,60,108,100);c.fillText(short,60,108,100);c.restore();
+  c.save();c.font='9px system-ui';c.textAlign='center';c.textBaseline='bottom';c.lineWidth=2.5;c.strokeStyle='#21180fe8';c.fillStyle='#fff0c9';const short=area.length>25?area.slice(0,24)+'…':area;c.strokeText(short,60,97,86);c.fillText(short,60,97,86);c.restore();
   // Player arrow points in the last movement direction; the minimap stays north-up.
   const angle=Number.isFinite(s.facing)?s.facing:-Math.PI/2;c.save();c.translate(60,60);c.rotate(angle);c.shadowColor='#062b35';c.shadowBlur=3;c.fillStyle='#34edeb';c.strokeStyle='#072e3c';c.lineWidth=1.7;c.beginPath();c.moveTo(9,0);c.lineTo(-6,-5.5);c.lineTo(-3,0);c.lineTo(-6,5.5);c.closePath();c.fill();c.stroke();c.restore();c.restore();
  }

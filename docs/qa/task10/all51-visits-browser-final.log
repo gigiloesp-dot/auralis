@@ -1,0 +1,59 @@
+PASS real page reload retains current visit death forest
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon1 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon1 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon1 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon2 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon2 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon2 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon3 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon3 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon3 hard
+PASS real page reload retains current visit death north
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon4 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon4 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon4 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon5 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon5 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon5 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon6 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon6 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon6 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon7 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon7 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon7 hard
+PASS real page reload retains current visit death ancient
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon8 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon8 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon8 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon9 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon9 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon9 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon10 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon10 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon10 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon11 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon11 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon11 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon12 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon12 medium
+PASS actual completed-visit reload preserves the portal, all boss timers and one-time reward
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon12 hard
+PASS real page reload retains current visit death desert
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon13 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon13 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon13 hard
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon14 easy
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon14 medium
+PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry dungeon14 hard
+AssertionError [ERR_ASSERTION]: dead minion must really unload when moving to another room
+
+true !== false
+
+    at /workspace/auralis/tests/browser-task1-dungeons.cjs:59:11 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: true,
+  expected: false,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

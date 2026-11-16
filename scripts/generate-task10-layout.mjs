@@ -5,7 +5,7 @@ import {getRelease21RegionContent} from '../js/world/regionContent.js';
 import * as quests from '../js/quests/quests.js';
 import {MONSTER_TYPES} from '../js/monsters/monsters.js';
 import {movementProfile} from '../js/monsters/movementProfiles.js';
-import {DUNGEONS} from '../js/dungeons/dungeonData.js';
+import {RELEASE21_DUNGEONS as DUNGEONS} from '../js/dungeons/dungeonData.js';
 import {biomeSidePaths} from '../js/world/biomes.js';
 import {regionRoads,distanceToSegment,riverX,worldWalkable} from '../js/world/chunkGeometry.js';
 const check=process.argv.includes('--check'),output=(file,text)=>{if(check){if(readFileSync(file,'utf8')!==text)throw Error('Non-reproducible layout artifact: '+file);}else writeFileSync(file,text);};

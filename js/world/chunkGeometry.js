@@ -61,6 +61,7 @@ export function describeChunk(content,cx,cy){
    }
   }
  }
+ for(const p of content.dungeonDecorations||[])if(owned(p,cx,cy)){decorations.push({...p});obstacles.push({id:p.id,x:p.x,y:p.y,r:p.r,kind:p.kind,flightBlocked:true});}
  for(const house of content.settlementHouses||[])if(owned(house,cx,cy)){
   decorations.push({...house,kind:'house',scale:1,r:55});obstacles.push({id:house.id,x:house.x,y:house.y-14,r:55,kind:'house',flightBlocked:true});
  }

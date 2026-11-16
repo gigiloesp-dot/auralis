@@ -1,3 +1,4 @@
+import {DESERT_DUNGEONS,createDesertDungeonContent} from './desertDungeons.js';
 const titles=[
  ['Корни под старой мельницей','Roots beneath the old mill','Raíces bajo el molino'],['Паутина каменного колодца','The stone well web','La telaraña del pozo'],['Гробница дубового короля','Tomb of the oak king','Tumba del rey del roble'],
  ['Тоннели морозного брода','Frostford tunnels','Túneles del vado helado'],['Рудник синего льда','Blue ice mine','Mina de hielo azul'],['Крепость белой бури','White storm fortress','Fortaleza de la tormenta'],['Предел северного дозора','The northern watch','La guardia del norte'],
@@ -9,12 +10,14 @@ const locations=[['forest',5,1820,1780],['forest',10,4880,4860],['forest',18,905
 // v2 saves compatible; the session killed-ID ledger is the authoritative rule.
 export const DUNGEON_MINION_RESPAWN_MS=8640000000000000;
 export const DIFFICULTIES=Object.freeze({easy:{id:'easy',multiplier:1,names:{ru:'Лёгкая',en:'Easy',es:'Fácil'}},medium:{id:'medium',multiplier:1.2,names:{ru:'Средняя',en:'Medium',es:'Media'}},hard:{id:'hard',multiplier:1.3,names:{ru:'Сложная',en:'Hard',es:'Difícil'}}});
-export const DUNGEONS=Object.freeze(locations.map(([region,level,x,y],index)=>Object.freeze({id:'dungeon'+(index+1),number:index+1,region,level,x,y,names:{ru:titles[index][0],en:titles[index][1],es:titles[index][2]},size:index<3?'small':index<7?'medium':'large',bossCount:index<3?1:index<7?2:3})));
+export const RELEASE21_DUNGEONS=Object.freeze(locations.map(([region,level,x,y],index)=>Object.freeze({id:'dungeon'+(index+1),number:index+1,region,level,x,y,names:{ru:titles[index][0],en:titles[index][1],es:titles[index][2]},size:index<3?'small':index<7?'medium':'large',bossCount:index<3?1:index<7?2:3})));
+export const DUNGEONS=Object.freeze([...RELEASE21_DUNGEONS,...DESERT_DUNGEONS]);
 export const dungeonDefinition=id=>DUNGEONS.find(d=>d.id===id);
 export const dungeonName=(d,language='ru')=>d?.names?.[language]||d?.names?.ru||d?.id||'';
 export function createDungeonContent(id,difficulty='easy'){
  const definition=dungeonDefinition(id),mode=DIFFICULTIES[difficulty];
  if(!definition||!mode)throw new RangeError('Unknown dungeon or difficulty');
+ if(definition.region==='desert')return createDesertDungeonContent(definition,difficulty,mode,DUNGEON_MINION_RESPAWN_MS);
  const count=definition.bossCount+3+(definition.number%2),rooms=[];
  // A deliberate zigzag of separate chambers, linked by wide two-leg corridors.
  // Chamber positions and encounter locations vary with the dungeon number.

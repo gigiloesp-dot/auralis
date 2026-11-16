@@ -1,0 +1,1920 @@
+{
+  "records": [
+    {
+      "id": "dungeon13",
+      "difficulty": "easy",
+      "language": "ru",
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "initial": {
+        "region": "dungeon:dungeon13:easy",
+        "boss": {
+          "id": "dungeon13-boss-0",
+          "x": 890,
+          "y": 900,
+          "type": "scarab",
+          "region": "dungeon13",
+          "level": 42,
+          "bossType": "dungeon",
+          "bossTheme": "bronzeShock",
+          "patterns": [
+            "slam",
+            "volley"
+          ],
+          "names": {
+            "ru": "Царица запечатанного водоёма",
+            "en": "Queen of the sealed reservoir",
+            "es": "Reina del depósito sellado"
+          },
+          "hpMultiplier": 1,
+          "damageMultiplier": 1,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon13",
+          "difficulty": "easy"
+        },
+        "first": "dungeon13-room-1-mob-0",
+        "killed": true,
+        "chunks": 16
+      },
+      "painted": {
+        "key": "task10-boss-dungeon13-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon13-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7gwns-1-e6saxuoy",
+          "visitId": "visit-mwi7gwns-1-e6saxuoy",
+          "x": 760,
+          "y": 900,
+          "radius": 110
+        },
+        "gold": 944,
+        "state": {
+          "killed": [
+            "dungeon13-boss-0"
+          ],
+          "readyAt": 1794773198321,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon13-boss-0": 1794773198321
+          },
+          "completedAt": 1794769598321
+        },
+        "death": {
+          "deadUntil": 1794773198321,
+          "killedAt": 1794769598321,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 1875,
+        "y": 2616,
+        "gold": 944,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon13",
+      "difficulty": "medium",
+      "language": "en",
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "initial": {
+        "region": "dungeon:dungeon13:medium",
+        "boss": {
+          "id": "dungeon13-boss-0",
+          "x": 890,
+          "y": 900,
+          "type": "scarab",
+          "region": "dungeon13",
+          "level": 42,
+          "bossType": "dungeon",
+          "bossTheme": "bronzeShock",
+          "patterns": [
+            "slam",
+            "volley"
+          ],
+          "names": {
+            "ru": "Царица запечатанного водоёма",
+            "en": "Queen of the sealed reservoir",
+            "es": "Reina del depósito sellado"
+          },
+          "hpMultiplier": 1.2,
+          "damageMultiplier": 1.2,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon13",
+          "difficulty": "medium"
+        },
+        "first": "dungeon13-room-1-mob-0",
+        "killed": true,
+        "chunks": 16
+      },
+      "painted": {
+        "key": "task10-boss-dungeon13-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon13-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7hdpq-2-dmqe3e84",
+          "visitId": "visit-mwi7hdpq-2-dmqe3e84",
+          "x": 760,
+          "y": 900,
+          "radius": 110
+        },
+        "gold": 2005,
+        "state": {
+          "killed": [
+            "dungeon13-boss-0"
+          ],
+          "readyAt": 1794773221915,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon13-boss-0": 1794773221915
+          },
+          "completedAt": 1794769621915
+        },
+        "death": {
+          "deadUntil": 1794773221915,
+          "killedAt": 1794769621915,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 1875,
+        "y": 2616,
+        "gold": 2005,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon13",
+      "difficulty": "hard",
+      "language": "es",
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "initial": {
+        "region": "dungeon:dungeon13:hard",
+        "boss": {
+          "id": "dungeon13-boss-0",
+          "x": 890,
+          "y": 900,
+          "type": "scarab",
+          "region": "dungeon13",
+          "level": 42,
+          "bossType": "dungeon",
+          "bossTheme": "bronzeShock",
+          "patterns": [
+            "slam",
+            "volley"
+          ],
+          "names": {
+            "ru": "Царица запечатанного водоёма",
+            "en": "Queen of the sealed reservoir",
+            "es": "Reina del depósito sellado"
+          },
+          "hpMultiplier": 1.3,
+          "damageMultiplier": 1.3,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon13",
+          "difficulty": "hard"
+        },
+        "first": "dungeon13-room-1-mob-0",
+        "killed": true,
+        "chunks": 16
+      },
+      "painted": {
+        "key": "task10-boss-dungeon13-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon13-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7hyqi-1-f3nciyds",
+          "visitId": "visit-mwi7hyqi-1-f3nciyds",
+          "x": 760,
+          "y": 900,
+          "radius": 110
+        },
+        "gold": 3124,
+        "state": {
+          "killed": [
+            "dungeon13-boss-0"
+          ],
+          "readyAt": 1794773252758,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon13-boss-0": 1794773252758
+          },
+          "completedAt": 1794769652758
+        },
+        "death": {
+          "deadUntil": 1794773252758,
+          "killedAt": 1794769652758,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 1875,
+        "y": 2616,
+        "gold": 3124,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon14",
+      "difficulty": "easy",
+      "language": "ru",
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "initial": {
+        "region": "dungeon:dungeon14:easy",
+        "boss": {
+          "id": "dungeon14-boss-0",
+          "x": 1030,
+          "y": 300,
+          "type": "desertSnake",
+          "region": "dungeon14",
+          "level": 46,
+          "bossType": "dungeon",
+          "bossTheme": "ashVenom",
+          "patterns": [
+            "volley",
+            "charge",
+            "slam"
+          ],
+          "names": {
+            "ru": "Оракул алого жала",
+            "en": "Oracle of the scarlet sting",
+            "es": "Oráculo del aguijón escarlata"
+          },
+          "hpMultiplier": 1,
+          "damageMultiplier": 1,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon14",
+          "difficulty": "easy"
+        },
+        "first": "dungeon14-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon14-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon14-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7ik9j-2-29v4tj4v",
+          "visitId": "visit-mwi7ik9j-2-29v4tj4v",
+          "x": 900,
+          "y": 300,
+          "radius": 110
+        },
+        "gold": 4148,
+        "state": {
+          "killed": [
+            "dungeon14-boss-0"
+          ],
+          "readyAt": 1794773275691,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon14-boss-0": 1794773275691
+          },
+          "completedAt": 1794769675691
+        },
+        "death": {
+          "deadUntil": 1794773275691,
+          "killedAt": 1794769675691,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 6107,
+        "y": 5026,
+        "gold": 4148,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon14",
+      "difficulty": "medium",
+      "language": "en",
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "initial": {
+        "region": "dungeon:dungeon14:medium",
+        "boss": {
+          "id": "dungeon14-boss-0",
+          "x": 1030,
+          "y": 300,
+          "type": "desertSnake",
+          "region": "dungeon14",
+          "level": 46,
+          "bossType": "dungeon",
+          "bossTheme": "ashVenom",
+          "patterns": [
+            "volley",
+            "charge",
+            "slam"
+          ],
+          "names": {
+            "ru": "Оракул алого жала",
+            "en": "Oracle of the scarlet sting",
+            "es": "Oráculo del aguijón escarlata"
+          },
+          "hpMultiplier": 1.2,
+          "damageMultiplier": 1.2,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon14",
+          "difficulty": "medium"
+        },
+        "first": "dungeon14-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon14-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon14-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7j17y-3-g596rzg2",
+          "visitId": "visit-mwi7j17y-3-g596rzg2",
+          "x": 900,
+          "y": 300,
+          "radius": 110
+        },
+        "gold": 5298,
+        "state": {
+          "killed": [
+            "dungeon14-boss-0"
+          ],
+          "readyAt": 1794773289875,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon14-boss-0": 1794773289875
+          },
+          "completedAt": 1794769689875
+        },
+        "death": {
+          "deadUntil": 1794773289875,
+          "killedAt": 1794769689875,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 6107,
+        "y": 5026,
+        "gold": 5298,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon14",
+      "difficulty": "hard",
+      "language": "es",
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "initial": {
+        "region": "dungeon:dungeon14:hard",
+        "boss": {
+          "id": "dungeon14-boss-0",
+          "x": 1030,
+          "y": 300,
+          "type": "desertSnake",
+          "region": "dungeon14",
+          "level": 46,
+          "bossType": "dungeon",
+          "bossTheme": "ashVenom",
+          "patterns": [
+            "volley",
+            "charge",
+            "slam"
+          ],
+          "names": {
+            "ru": "Оракул алого жала",
+            "en": "Oracle of the scarlet sting",
+            "es": "Oráculo del aguijón escarlata"
+          },
+          "hpMultiplier": 1.3,
+          "damageMultiplier": 1.3,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon14",
+          "difficulty": "hard"
+        },
+        "first": "dungeon14-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon14-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon14-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7jcy9-1-j99gub1e",
+          "visitId": "visit-mwi7jcy9-1-j99gub1e",
+          "x": 900,
+          "y": 300,
+          "radius": 110
+        },
+        "gold": 6512,
+        "state": {
+          "killed": [
+            "dungeon14-boss-0"
+          ],
+          "readyAt": 1794773306886,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon14-boss-0": 1794773306886
+          },
+          "completedAt": 1794769706886
+        },
+        "death": {
+          "deadUntil": 1794773306886,
+          "killedAt": 1794769706886,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 6107,
+        "y": 5026,
+        "gold": 6512,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon15",
+      "difficulty": "easy",
+      "language": "ru",
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "initial": {
+        "region": "dungeon:dungeon15:easy",
+        "boss": {
+          "id": "dungeon15-boss-0",
+          "x": 910,
+          "y": 300,
+          "type": "forestGuardian",
+          "region": "dungeon15",
+          "level": 49,
+          "bossType": "dungeon",
+          "bossTheme": "roots",
+          "patterns": [
+            "slam",
+            "volley",
+            "charge"
+          ],
+          "names": {
+            "ru": "Корневая корона гробницы",
+            "en": "Root crown of the tomb",
+            "es": "Corona de raíces de la tumba"
+          },
+          "hpMultiplier": 1,
+          "damageMultiplier": 1,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon15",
+          "difficulty": "easy"
+        },
+        "first": "dungeon15-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon15-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon15-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7jo1a-2-f2hj8oe3",
+          "visitId": "visit-mwi7jo1a-2-f2hj8oe3",
+          "x": 780,
+          "y": 300,
+          "radius": 110
+        },
+        "gold": 8030,
+        "state": {
+          "killed": [
+            "dungeon15-boss-0"
+          ],
+          "readyAt": 1794773317559,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon15-boss-0": 1794773317559
+          },
+          "completedAt": 1794769717559
+        },
+        "death": {
+          "deadUntil": 1794773317559,
+          "killedAt": 1794769717559,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 5094,
+        "y": 11240,
+        "gold": 8030,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon15",
+      "difficulty": "medium",
+      "language": "en",
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "initial": {
+        "region": "dungeon:dungeon15:medium",
+        "boss": {
+          "id": "dungeon15-boss-0",
+          "x": 910,
+          "y": 300,
+          "type": "forestGuardian",
+          "region": "dungeon15",
+          "level": 49,
+          "bossType": "dungeon",
+          "bossTheme": "roots",
+          "patterns": [
+            "slam",
+            "volley",
+            "charge"
+          ],
+          "names": {
+            "ru": "Корневая корона гробницы",
+            "en": "Root crown of the tomb",
+            "es": "Corona de raíces de la tumba"
+          },
+          "hpMultiplier": 1.2,
+          "damageMultiplier": 1.2,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon15",
+          "difficulty": "medium"
+        },
+        "first": "dungeon15-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon15-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon15-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7jvu9-3-3s3dw3fo",
+          "visitId": "visit-mwi7jvu9-3-3s3dw3fo",
+          "x": 780,
+          "y": 300,
+          "radius": 110
+        },
+        "gold": 9682,
+        "state": {
+          "killed": [
+            "dungeon15-boss-0"
+          ],
+          "readyAt": 1794773329372,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon15-boss-0": 1794773329372
+          },
+          "completedAt": 1794769729372
+        },
+        "death": {
+          "deadUntil": 1794773329372,
+          "killedAt": 1794769729372,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 5094,
+        "y": 11240,
+        "gold": 9682,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon15",
+      "difficulty": "hard",
+      "language": "es",
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "initial": {
+        "region": "dungeon:dungeon15:hard",
+        "boss": {
+          "id": "dungeon15-boss-0",
+          "x": 910,
+          "y": 300,
+          "type": "forestGuardian",
+          "region": "dungeon15",
+          "level": 49,
+          "bossType": "dungeon",
+          "bossTheme": "roots",
+          "patterns": [
+            "slam",
+            "volley",
+            "charge"
+          ],
+          "names": {
+            "ru": "Корневая корона гробницы",
+            "en": "Root crown of the tomb",
+            "es": "Corona de raíces de la tumba"
+          },
+          "hpMultiplier": 1.3,
+          "damageMultiplier": 1.3,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon15",
+          "difficulty": "hard"
+        },
+        "first": "dungeon15-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon15-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon15-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7k8td-1-l6dacwvr",
+          "visitId": "visit-mwi7k8td-1-l6dacwvr",
+          "x": 780,
+          "y": 300,
+          "radius": 110
+        },
+        "gold": 11400,
+        "state": {
+          "killed": [
+            "dungeon15-boss-0"
+          ],
+          "readyAt": 1794773348858,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon15-boss-0": 1794773348858
+          },
+          "completedAt": 1794769748858
+        },
+        "death": {
+          "deadUntil": 1794773348858,
+          "killedAt": 1794769748858,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 5094,
+        "y": 11240,
+        "gold": 11400,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon16",
+      "difficulty": "easy",
+      "language": "ru",
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "initial": {
+        "region": "dungeon:dungeon16:easy",
+        "boss": {
+          "id": "dungeon16-boss-0",
+          "x": 2390,
+          "y": 900,
+          "type": "ancientSentinel",
+          "region": "dungeon16",
+          "level": 53,
+          "bossType": "dungeon",
+          "bossTheme": "tusk",
+          "patterns": [
+            "charge",
+            "slam"
+          ],
+          "names": {
+            "ru": "Базальтовый шакал акведука",
+            "en": "Basalt jackal of the aqueduct",
+            "es": "Chacal de basalto del acueducto"
+          },
+          "hpMultiplier": 1,
+          "damageMultiplier": 1,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon16",
+          "difficulty": "easy"
+        },
+        "first": "dungeon16-room-1-mob-0",
+        "killed": true,
+        "chunks": 16
+      },
+      "painted": {
+        "key": "task10-boss-dungeon16-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon16-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7kkb7-2-epp3bpe5",
+          "visitId": "visit-mwi7kkb7-2-epp3bpe5",
+          "x": 2260,
+          "y": 900,
+          "radius": 110
+        },
+        "gold": 12564,
+        "state": {
+          "killed": [
+            "dungeon16-boss-0"
+          ],
+          "readyAt": 1794773359219,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon16-boss-0": 1794773359219
+          },
+          "completedAt": 1794769759219
+        },
+        "death": {
+          "deadUntil": 1794773359219,
+          "killedAt": 1794769759219,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 6843,
+        "y": 15924,
+        "gold": 12564,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon16",
+      "difficulty": "medium",
+      "language": "en",
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "initial": {
+        "region": "dungeon:dungeon16:medium",
+        "boss": {
+          "id": "dungeon16-boss-0",
+          "x": 2390,
+          "y": 900,
+          "type": "ancientSentinel",
+          "region": "dungeon16",
+          "level": 53,
+          "bossType": "dungeon",
+          "bossTheme": "tusk",
+          "patterns": [
+            "charge",
+            "slam"
+          ],
+          "names": {
+            "ru": "Базальтовый шакал акведука",
+            "en": "Basalt jackal of the aqueduct",
+            "es": "Chacal de basalto del acueducto"
+          },
+          "hpMultiplier": 1.2,
+          "damageMultiplier": 1.2,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon16",
+          "difficulty": "medium"
+        },
+        "first": "dungeon16-room-1-mob-0",
+        "killed": true,
+        "chunks": 16
+      },
+      "painted": {
+        "key": "task10-boss-dungeon16-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon16-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7krpy-3-ze20jfh0",
+          "visitId": "visit-mwi7krpy-3-ze20jfh0",
+          "x": 2260,
+          "y": 900,
+          "radius": 110
+        },
+        "gold": 13871,
+        "state": {
+          "killed": [
+            "dungeon16-boss-0"
+          ],
+          "readyAt": 1794773370762,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon16-boss-0": 1794773370762
+          },
+          "completedAt": 1794769770762
+        },
+        "death": {
+          "deadUntil": 1794773370762,
+          "killedAt": 1794769770762,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 6843,
+        "y": 15924,
+        "gold": 13871,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon16",
+      "difficulty": "hard",
+      "language": "es",
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "initial": {
+        "region": "dungeon:dungeon16:hard",
+        "boss": {
+          "id": "dungeon16-boss-0",
+          "x": 2390,
+          "y": 900,
+          "type": "ancientSentinel",
+          "region": "dungeon16",
+          "level": 53,
+          "bossType": "dungeon",
+          "bossTheme": "tusk",
+          "patterns": [
+            "charge",
+            "slam"
+          ],
+          "names": {
+            "ru": "Базальтовый шакал акведука",
+            "en": "Basalt jackal of the aqueduct",
+            "es": "Chacal de basalto del acueducto"
+          },
+          "hpMultiplier": 1.3,
+          "damageMultiplier": 1.3,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon16",
+          "difficulty": "hard"
+        },
+        "first": "dungeon16-room-1-mob-0",
+        "killed": true,
+        "chunks": 16
+      },
+      "painted": {
+        "key": "task10-boss-dungeon16-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon16-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7l45y-1-gv1h6mt9",
+          "visitId": "visit-mwi7l45y-1-gv1h6mt9",
+          "x": 2260,
+          "y": 900,
+          "radius": 110
+        },
+        "gold": 15250,
+        "state": {
+          "killed": [
+            "dungeon16-boss-0"
+          ],
+          "readyAt": 1794773387260,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon16-boss-0": 1794773387260
+          },
+          "completedAt": 1794769787260
+        },
+        "death": {
+          "deadUntil": 1794773387260,
+          "killedAt": 1794769787260,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 6843,
+        "y": 15924,
+        "gold": 15250,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon17",
+      "difficulty": "easy",
+      "language": "ru",
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "initial": {
+        "region": "dungeon:dungeon17:easy",
+        "boss": {
+          "id": "dungeon17-boss-0",
+          "x": 1890,
+          "y": 380,
+          "type": "voidElemental",
+          "region": "dungeon17",
+          "level": 56,
+          "bossType": "dungeon",
+          "bossTheme": "oracleBlink",
+          "patterns": [
+            "volley",
+            "slam",
+            "charge"
+          ],
+          "names": {
+            "ru": "Джинн погасшего солнца",
+            "en": "Djinn of the extinguished sun",
+            "es": "Genio del sol apagado"
+          },
+          "hpMultiplier": 1,
+          "damageMultiplier": 1,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon17",
+          "difficulty": "easy"
+        },
+        "first": "dungeon17-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon17-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon17-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7ldvv-2-42oev0ep",
+          "visitId": "visit-mwi7ldvv-2-42oev0ep",
+          "x": 1740,
+          "y": 380,
+          "radius": 110
+        },
+        "gold": 16497,
+        "state": {
+          "killed": [
+            "dungeon17-boss-0"
+          ],
+          "readyAt": 1794773396426,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon17-boss-0": 1794773396426
+          },
+          "completedAt": 1794769796426
+        },
+        "death": {
+          "deadUntil": 1794773396426,
+          "killedAt": 1794769796426,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 15664,
+        "y": 17467,
+        "gold": 16497,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon17",
+      "difficulty": "medium",
+      "language": "en",
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "initial": {
+        "region": "dungeon:dungeon17:medium",
+        "boss": {
+          "id": "dungeon17-boss-0",
+          "x": 1890,
+          "y": 380,
+          "type": "voidElemental",
+          "region": "dungeon17",
+          "level": 56,
+          "bossType": "dungeon",
+          "bossTheme": "oracleBlink",
+          "patterns": [
+            "volley",
+            "slam",
+            "charge"
+          ],
+          "names": {
+            "ru": "Джинн погасшего солнца",
+            "en": "Djinn of the extinguished sun",
+            "es": "Genio del sol apagado"
+          },
+          "hpMultiplier": 1.2,
+          "damageMultiplier": 1.2,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon17",
+          "difficulty": "medium"
+        },
+        "first": "dungeon17-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon17-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon17-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7lk7o-3-h9tinq5g",
+          "visitId": "visit-mwi7lk7o-3-h9tinq5g",
+          "x": 1740,
+          "y": 380,
+          "radius": 110
+        },
+        "gold": 17894,
+        "state": {
+          "killed": [
+            "dungeon17-boss-0"
+          ],
+          "readyAt": 1794773407260,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon17-boss-0": 1794773407260
+          },
+          "completedAt": 1794769807260
+        },
+        "death": {
+          "deadUntil": 1794773407260,
+          "killedAt": 1794769807260,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 15664,
+        "y": 17467,
+        "gold": 17894,
+        "walkable": true
+      }
+    },
+    {
+      "id": "dungeon17",
+      "difficulty": "hard",
+      "language": "es",
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "initial": {
+        "region": "dungeon:dungeon17:hard",
+        "boss": {
+          "id": "dungeon17-boss-0",
+          "x": 1890,
+          "y": 380,
+          "type": "voidElemental",
+          "region": "dungeon17",
+          "level": 56,
+          "bossType": "dungeon",
+          "bossTheme": "oracleBlink",
+          "patterns": [
+            "volley",
+            "slam",
+            "charge"
+          ],
+          "names": {
+            "ru": "Джинн погасшего солнца",
+            "en": "Djinn of the extinguished sun",
+            "es": "Genio del sol apagado"
+          },
+          "hpMultiplier": 1.3,
+          "damageMultiplier": 1.3,
+          "respawnMs": 3600000,
+          "dungeonId": "dungeon17",
+          "difficulty": "hard"
+        },
+        "first": "dungeon17-room-1-mob-0",
+        "killed": true,
+        "chunks": 12
+      },
+      "painted": {
+        "key": "task10-boss-dungeon17-boss-0",
+        "image": "assets/actors/task10-dungeons/dungeon17-boss-0.png",
+        "poses": [
+          "idle/e",
+          "idle/se",
+          "idle/s",
+          "idle/sw",
+          "idle/w",
+          "idle/nw",
+          "idle/n",
+          "idle/ne",
+          "run-a/e",
+          "run-a/se",
+          "run-a/s",
+          "run-a/sw",
+          "run-a/w",
+          "run-a/nw",
+          "run-a/n",
+          "run-a/ne",
+          "run-b/e",
+          "run-b/se",
+          "run-b/s",
+          "run-b/sw",
+          "run-b/w",
+          "run-b/nw",
+          "run-b/n",
+          "run-b/ne",
+          "attack/e",
+          "attack/se",
+          "attack/s",
+          "attack/sw",
+          "attack/w",
+          "attack/nw",
+          "attack/n",
+          "attack/ne",
+          "hurt/e",
+          "hurt/se",
+          "hurt/s",
+          "hurt/sw",
+          "hurt/w",
+          "hurt/nw",
+          "hurt/n",
+          "hurt/ne",
+          "death/e",
+          "death/se",
+          "death/s",
+          "death/sw",
+          "death/w",
+          "death/nw",
+          "death/n",
+          "death/ne"
+        ],
+        "scale": 0.86
+      },
+      "completion": {
+        "point": {
+          "id": "dungeon-completion-visit-mwi7lvz4-1-ab6apni5",
+          "visitId": "visit-mwi7lvz4-1-ab6apni5",
+          "x": 1740,
+          "y": 380,
+          "radius": 110
+        },
+        "gold": 19367,
+        "state": {
+          "killed": [
+            "dungeon17-boss-0"
+          ],
+          "readyAt": 1794773424064,
+          "completed": true,
+          "rewarded": true,
+          "bossReadyAt": {
+            "dungeon17-boss-0": 1794773424064
+          },
+          "completedAt": 1794769824064
+        },
+        "death": {
+          "deadUntil": 1794773424064,
+          "killedAt": 1794769824064,
+          "hp": 0
+        }
+      },
+      "returned": {
+        "x": 15664,
+        "y": 17467,
+        "gold": 19367,
+        "walkable": true
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "15 real UI entries,5 new boss atlases,48 poses each,prepared positions/level/lethal hits,5 in-dungeon reloads,actual touch completion portals. Not manual combat balance or physical Android."
+}

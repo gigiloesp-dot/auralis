@@ -1,0 +1,9 @@
+PASS five-dungeon lifecycle cycle 1
+PASS five-dungeon lifecycle cycle 2
+PASS five-dungeon lifecycle cycle 3
+PASS five-dungeon lifecycle cycle 4
+PASS five-dungeon lifecycle cycle 5
+PASS five-dungeon lifecycle cycle 6
+PASS five-dungeon lifecycle cycle 7
+PASS five-dungeon lifecycle cycle 8
+PASS40 new dungeon lifecycles with released atlases and bounded objects/JS heap {"scope":"40 actual dungeon/forest lifecycles,10warm+30steady,one new boss atlas at a time,prepared level/position. JS heap excludes native/GPU/browser image cache; no physical Android or FPS claim.","jsHeapBefore":12225924,"jsHeapAfter":12786008,"jsHeapDelta":560084,"peakInstances":23,"peakChunks":16,"peakActorTextures":4,"errors":[]}

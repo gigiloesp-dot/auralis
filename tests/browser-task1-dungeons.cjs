@@ -16,10 +16,10 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
   await page.locator('input').fill('Task1Dungeon');
   await page.getByRole('button',{name:'Начать приключение',exact:true}).click();
   await page.waitForFunction(()=>Auralis.game.scene.getScene('world')?.hero?.name==='Task1Dungeon');
-  const variants=await page.evaluate(async()=>{
+  const variants=await page.evaluate(async regionFilter=>{
    const {DUNGEONS,DIFFICULTIES}=await import('/js/dungeons/dungeonSystem.js');
-   return DUNGEONS.flatMap(d=>Object.keys(DIFFICULTIES).map(difficulty=>({...d,difficulty})));
-  });
+   return DUNGEONS.filter(d=>!regionFilter||d.region===regionFilter).flatMap(d=>Object.keys(DIFFICULTIES).map(difficulty=>({...d,difficulty})));
+  },process.env.AURALIS_DUNGEON_REGION||null);
   const frames=()=>page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
   const moveFixture=async point=>{
    await page.evaluate(point=>{
@@ -41,11 +41,11 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
    const entered=await page.evaluate(variant=>{
     const s=Auralis.game.scene.getScene('world');
     if(window.__task1RealDateNow)Date.now=window.__task1RealDateNow;
-    s.hero.level=42;s.hero.hp=s.hero.maxHp=1000000;s.closePanels();
+    s.hero.level=56;s.hero.hp=s.hero.maxHp=1000000;s.closePanels();
     s.world.load({region:variant.region,x:variant.x,y:variant.y});
     const result=s.enterDungeon(variant.id,variant.difficulty);if(!result.ok)throw Error('Dungeon fixture could not enter '+result.reason);
-    const content=s.regionContent,first=content.camps[0].spawns[0];
-    return {id:content.id,visit:s.hero.dungeonSession.visitId,minion:{id:first.id,x:first.x,y:first.y},far:{x:content.rooms.at(-1).x+160,y:content.rooms.at(-1).y+140},bosses:content.bosses.map(b=>({id:b.id,x:b.x,y:b.y}))};
+    const content=s.regionContent,first=content.camps[0].spawns[0],farPoints=content.rooms.flatMap(r=>[[r.width/2,r.height/2],[32,32],[r.width-32,32],[32,r.height-32],[r.width-32,r.height-32]].map(([dx,dy])=>({x:r.x+dx,y:r.y+dy}))).filter(p=>s.world.isWalkable(p.x,p.y,18)).sort((a,b)=>Math.hypot(b.x-first.x,b.y-first.y)-Math.hypot(a.x-first.x,a.y-first.y));
+    return {id:content.id,visit:s.hero.dungeonSession.visitId,minion:{id:first.id,x:first.x,y:first.y},farPoints,bosses:content.bosses.map(b=>({id:b.id,x:b.x,y:b.y}))};
    },variant);
    await moveFixture(entered.minion);
    const death=await page.evaluate(id=>{
@@ -55,11 +55,11 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
     return {at:m.deathAt,alive:m.alive,ledger:s.hero.dungeonSession.killedMinions.includes(id)};
    },entered.minion.id);
    assert.equal(death.alive,false);assert.equal(death.ledger,true);
-   await moveFixture(entered.far);
+   for(const point of entered.farPoints){await moveFixture(point);if(!await page.evaluate(id=>Auralis.game.scene.getScene('world').monsters.monsters.some(m=>m.id===id),entered.minion.id))break;}
    assert.equal(await page.evaluate(id=>Auralis.game.scene.getScene('world').monsters.monsters.some(m=>m.id===id),entered.minion.id),false,'dead minion must really unload when moving to another room');
    await moveFixture(entered.minion);
    assert.equal(await page.evaluate(id=>Auralis.game.scene.getScene('world').monsters.monsters.find(m=>m.id===id)?.alive,entered.minion.id),false,'returning after more than six minutes must not resurrect a visit minion');
-   if(variant.difficulty==='easy'&&[1,4,8].includes(variant.number)){
+   if(variant.difficulty==='easy'&&[1,4,8,13].includes(variant.number)){
     await page.evaluate(()=>Auralis.game.scene.getScene('world').save());await page.reload();
     await page.getByRole('button',{name:'Продолжить',exact:true}).click();
     await page.getByRole('button',{name:'Продолжить',exact:true}).first().click();
@@ -115,6 +115,6 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
    console.log('PASS visit minion death/unload/time, boss hour timer, voluntary glowing portal/touch, reward and fresh re-entry',variant.id,variant.difficulty);
   }
   assert.deepEqual(errors,[]);await page.screenshot({path:root+'/work/browser/task1-dungeons.png'});
-  console.log('PASS all 36 task1 dungeon variants and four actual in-dungeon page reloads; no JavaScript errors');
+  console.log('PASS all '+variants.length+' task1 dungeon variants and actual in-dungeon reloads; no JavaScript errors');
  }finally{if(browser)await browser.close();await host.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

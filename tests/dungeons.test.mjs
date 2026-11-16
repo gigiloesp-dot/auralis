@@ -8,14 +8,14 @@ import {createCharacter} from '../js/characters/Character.js';
 const heroAt=(d,level=d.level)=>createCharacter({classId:'warrior',level,region:d.region,x:d.x,y:d.y});
 test('cleared dungeon rooms remain clear during recovery while boss and outdoor respawn timers stay independent',()=>{for(const d of DUNGEONS)for(const difficulty of ['easy','medium','hard']){const c=createDungeonContent(d.id,difficulty);for(const mob of c.camps.flatMap(c=>c.spawns))assert.equal(monsterKind(mob).respawnMs,DUNGEON_MINION_RESPAWN_MS);for(const boss of c.bosses)assert.equal(monsterKind(boss).respawnMs,3600000);}assert.equal(DUNGEON_MINION_RESPAWN_MS,8640000000000000);assert.equal(monsterKind({type:'forestWolf',level:1}).respawnMs,30000);});
 function walkSegment(content,a,b){const distance=Math.hypot(b.x-a.x,b.y-a.y),steps=Math.ceil(distance/4);for(let i=0;i<=steps;i++){const t=steps?i/steps:0;assert.equal(dungeonFloorContains(content,a.x+(b.x-a.x)*t,a.y+(b.y-a.y)*t,12),true,`${content.id} floor blocked at ${a.x+(b.x-a.x)*t},${a.y+(b.y-a.y)*t}`);}}
-test('all twelve dungeon interiors have traversable chamber and corridor routes to every boss and exit',()=>{
- assert.deepEqual(DUNGEONS.map(d=>d.level),[5,10,18,22,25,29,33,35,36,38,40,42]);assert.equal(new Set(DUNGEONS.map(d=>d.id)).size,12);
+test('all seventeen dungeon interiors have traversable chamber and corridor routes to every boss and exit',()=>{
+ assert.deepEqual(DUNGEONS.map(d=>d.level),[5,10,18,22,25,29,33,35,36,38,40,42,42,46,49,53,56]);assert.equal(new Set(DUNGEONS.map(d=>d.id)).size,17);
  for(const d of DUNGEONS)for(const mode of Object.keys(DIFFICULTIES)){
   const c=createDungeonContent(d.id,mode);assert.ok(c.dungeon);assert.ok(c.camps.length>=3);assert.equal(c.bosses.length,d.bossCount);assert.ok(c.bosses.length>=1&&c.bosses.length<=3);assert.equal(c.towns.length,0);
-  assert.equal(dungeonFloorContains(c,0,0),false);walkSegment(c,c.entry,{x:c.rooms[0].x+160,y:c.rooms[0].y+140});
-  for(let i=1;i<c.rooms.length;i++){const a={x:c.rooms[i-1].x+160,y:c.rooms[i-1].y+140},b={x:c.rooms[i].x+160,y:c.rooms[i].y+140};walkSegment(c,a,{x:b.x,y:a.y});walkSegment(c,{x:b.x,y:a.y},b);}
+  assert.equal(dungeonFloorContains(c,0,0),false);walkSegment(c,c.entry,{x:c.rooms[0].x+160,y:c.rooms[0].y+c.rooms[0].height/2});
+  if(c.desertDungeon){for(const road of c.roads)for(let i=1;i<road.points.length;i++)walkSegment(c,road.points[i-1],road.points[i]);}else for(let i=1;i<c.rooms.length;i++){const a={x:c.rooms[i-1].x+160,y:c.rooms[i-1].y+140},b={x:c.rooms[i].x+160,y:c.rooms[i].y+140};walkSegment(c,a,{x:b.x,y:a.y});walkSegment(c,{x:b.x,y:a.y},b);}
   for(const spawn of [...c.camps.flatMap(camp=>camp.spawns),...c.bosses])assert.equal(dungeonFloorContains(c,spawn.x,spawn.y,18),true,spawn.id);
-  for(const boss of c.bosses){const room=c.rooms.find(r=>boss.x>=r.x&&boss.x<=r.x+r.width&&boss.y>=r.y&&boss.y<=r.y+r.height);walkSegment(c,{x:room.x+160,y:room.y+140},boss);assert.ok(boss.patterns.length>=2);}
+  for(const boss of c.bosses){const room=c.rooms.find(r=>boss.x>=r.x&&boss.x<=r.x+r.width&&boss.y>=r.y&&boss.y<=r.y+r.height);walkSegment(c,{x:room.x+160,y:room.y+room.height/2},boss);assert.ok(boss.patterns.length>=2);}
   assert.deepEqual(c.exit.x,c.entry.x);assert.deepEqual(c.exit.y,c.entry.y);
  }
 });

@@ -9,7 +9,7 @@ import {REGIONS} from './worldData.js';
 import {MONSTER_TYPES} from '../monsters/monsters.js';
 import {getRegionTowns} from './towns.js';
 import {getRegionNpcs} from '../npc/npcData.js';
-import {DUNGEONS} from '../dungeons/dungeonData.js';
+import {RELEASE21_DUNGEONS as DUNGEONS} from '../dungeons/dungeonData.js';
 import {movementProfile} from '../monsters/movementProfiles.js';
 import {regionRoads,distanceToSegment,worldWalkable} from './chunkGeometry.js';
 const CONFIG={forest:{camps:94,monsters:425,types:['forestWolf','forestBat','wildBoar','forestRaider','thornSnake','bear','spider','forestOrc','skeleton']},north:{camps:85,monsters:380,types:['iceWolf','iceBat','snowRaider','snowBear','frostGolem','iceElemental','wraith']},ancient:{camps:75,monsters:340,types:['desertSnake','scarab','ancientSentinel','fallenKnight','arcaneWisp','ancientGargoyle','voidElemental']}};

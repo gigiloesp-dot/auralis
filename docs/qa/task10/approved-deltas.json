@@ -7,11 +7,15 @@
     },
     "js/assets/monsterArt.js": {
       "before": "a419ba32df47fe7e57ae6306e1bab41e3d07262315b76c12a2981eb4e0ab5f42",
-      "after": "2bb821c4c95c6f0bf9991c94534357f5724992244528db5d0a9c51498a77908e"
+      "after": "6ae97f923cd4012498cd8afa0e83808de016dee5b3cd6fd07813468f17e48e06"
     },
     "js/characters/PaintedActor.js": {
       "before": "90cc468bda556986830612f5d3fac95dfa063da0949fc1286f6253dd8d708a35",
       "after": "351428b5f260e5d38a33839d5fca284a721c37c3c84e4f6fe06a7d5a9d01e8a2"
+    },
+    "js/dungeons/dungeonData.js": {
+      "before": "bfdf982f1e2a99557924cf6b48f21ae228a1b09692d0b1d52a5a066b52f37a07",
+      "after": "afbb46b2a24f11db48a7ee1f2b55afb3e95371af3442af32051f2c8959e6a20c"
     },
     "js/loot/GroundLootSystem.js": {
       "before": "06de84b5bca9ae2389b78303de8b47bbded0b143bfd6c9a65899b8d20bc56c9b",
@@ -47,7 +51,7 @@
     },
     "js/ui/Minimap.js": {
       "before": "747e40d2a65e3775a0ceae3fdce60d760472d6d0532d92ed50f8d099eaee31cf",
-      "after": "25dcf46f8050e5097584d98df74980b7b2d77c67951f4fadcf5329f431687623"
+      "after": "cdc1654b035ad8c214d34324c511d7d67d21ff159df98c81bc1aa782cd193bd3"
     },
     "js/ui/SavePanel.js": {
       "before": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
@@ -55,7 +59,7 @@
     },
     "js/world/ChunkWorld.js": {
       "before": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",
-      "after": "d0d9c0c13b084601e65b8bfdac78ca5f4c7b9de2fe8f3d2e19a4b971ef7783fc"
+      "after": "f141ca6d4013f9aaf9ad739256ed5b88b21c5c427c4c15a91436e9088d413f2f"
     },
     "js/world/WorldRuntime.js": {
       "before": "bff06788b1191eeccc99c9aaeff746e3510de99d8e7afcc07ca35be35ed5a023",
@@ -71,11 +75,11 @@
     },
     "js/world/chunkGeometry.js": {
       "before": "cd7f1c13d3c5737ac2514645b06ad63a94ff1b509f2878122e40202b61b61992",
-      "after": "1e012112e710b8c4bdf80326c06b6022b4a476abee7415829af52855c5def5ef"
+      "after": "a74910a9f3b9f1bd2fef37b258f52aef113731dacdeeee0b9d49e6ec2c36fcc1"
     },
     "js/world/regionContent.js": {
       "before": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
-      "after": "9c0cd8885197d5c05b830e46484987ebe254d5c53655a40e6c454c2b53fa25d8"
+      "after": "4467e2939616eac39323ea8b787a08a711d4172ba51aa929cee5c782b319710f"
     },
     "js/world/worldData.js": {
       "before": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",

@@ -8,10 +8,10 @@ import {dungeonFloorContains} from '../js/world/chunkGeometry.js';
 import {DungeonExitPortal} from '../js/dungeons/DungeonExitPortal.js';
 
 const restore=hero=>createCharacter(Save.normalize(JSON.parse(JSON.stringify(hero))));
-const heroAt=d=>createCharacter({classId:'warrior',level:42,region:d.region,x:d.x,y:d.y});
+const heroAt=d=>createCharacter({classId:'warrior',level:Math.max(42,d.level),region:d.region,x:d.x,y:d.y});
 const enter=(hero,d,difficulty)=>{const result=enterDungeon(hero,d.id,difficulty);assert.equal(result.ok,true);Object.assign(hero,result.destination);return result.content;};
 
-test('all 36 dungeon visits preserve ordinary deaths through time, streamed reconstruction and save migration; only re-entry resets them',()=>{
+test('all 51 dungeon visits preserve ordinary deaths through time, streamed reconstruction and save migration; only re-entry resets them',()=>{
  for(const d of DUNGEONS)for(const difficulty of Object.keys(DIFFICULTIES)){
   const hero=heroAt(d),content=enter(hero,d,difficulty),minion=content.camps[0].spawns[0],now=100000;
   const visitId=hero.dungeonSession.visitId;
@@ -35,7 +35,7 @@ test('all 36 dungeon visits preserve ordinary deaths through time, streamed reco
  }
 });
 
-test('all 36 completions create a voluntary portal only for the completed visit and preserve exact independent boss timers on re-entry',()=>{
+test('all 51 completions create a voluntary portal only for the completed visit and preserve exact independent boss timers on re-entry',()=>{
  for(const d of DUNGEONS)for(const difficulty of Object.keys(DIFFICULTIES)){
   let hero=heroAt(d);const content=enter(hero,d,difficulty),now=1000000,position={x:hero.x,y:hero.y};
   assert.equal(dungeonExitPortalState(hero,content),null);
@@ -64,7 +64,7 @@ test('all 36 completions create a voluntary portal only for the completed visit 
 });
 
 test('boss-specific hour cooldown survives the earlier shared timer expiring and remains separate from other difficulties',()=>{
- const d=DUNGEONS.at(-1),hero=heroAt(d),content=enter(hero,d,'easy'),now=100000;
+ const d=DUNGEONS.filter(d=>d.bossCount>1).at(-1),hero=heroAt(d),content=enter(hero,d,'easy'),now=100000;
  const [first,second]=content.bosses;
  assert.equal(recordDungeonBossKill(hero,d.id,'easy',first.id,now).ok,true);
  assert.equal(recordDungeonBossKill(hero,d.id,'easy',second.id,now+500000).ok,true);

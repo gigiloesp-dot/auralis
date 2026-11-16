@@ -58,8 +58,8 @@ export class ChunkWorld{
  }
  load(cx,cy){
   const s=this.scene,c=this.content,data=describeChunk(c,cx,cy),key=`chunk-${c.id}-${cx}-${cy}-${this.serial++}`,g=s.make.graphics({add:false}),palette=c.palette||{ground:0x323b3a,road:0x777264,water:0x486e86};
-  g.fillStyle(c.dungeon?0x20292a:palette.ground).fillRect(0,0,data.width,data.height);
-  if(c.dungeon){for(const r of c.walkableRects||[]){g.fillStyle(0x706b5b).fillRect(r.x-data.x,r.y-data.y,r.width,r.height);g.lineStyle(2,0xb5aa88,.4).strokeRect(r.x-data.x,r.y-data.y,r.width,r.height);}}
+  g.fillStyle(c.dungeon&&!c.desertDungeon?0x20292a:palette.ground).fillRect(0,0,data.width,data.height);
+  if(c.dungeon){for(const r of c.walkableRects||[]){g.fillStyle(c.desertDungeon?palette.road:0x706b5b).fillRect(r.x-data.x,r.y-data.y,r.width,r.height);g.lineStyle(2,c.desertDungeon?palette.detail:0xb5aa88,.4).strokeRect(r.x-data.x,r.y-data.y,r.width,r.height);}}
   else{
    paintBiomes(g,c,data);
    for(let i=0;i<70;i++){g.fillStyle(palette.detail||0x849078,.2).fillEllipse((i*149+cx*71)%512,(i*251+cy*41)%512,7,3);}
