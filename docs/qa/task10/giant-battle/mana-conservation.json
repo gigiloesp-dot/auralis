@@ -1,0 +1,53 @@
+{
+  "rows": [
+    {
+      "classId": "warrior",
+      "initialMp": 485,
+      "finitePotionRestoration": 1095,
+      "actualSkillCosts": 1577,
+      "remainingMp": 3,
+      "unaccountedMp": 0
+    },
+    {
+      "classId": "archer",
+      "initialMp": 485,
+      "finitePotionRestoration": 1095,
+      "actualSkillCosts": 1577,
+      "remainingMp": 3,
+      "unaccountedMp": 0
+    },
+    {
+      "classId": "mage",
+      "initialMp": 1035,
+      "finitePotionRestoration": 2330,
+      "actualSkillCosts": 3362,
+      "remainingMp": 3,
+      "unaccountedMp": 0
+    },
+    {
+      "classId": "paladin",
+      "initialMp": 485,
+      "finitePotionRestoration": 1095,
+      "actualSkillCosts": 1578,
+      "remainingMp": 2,
+      "unaccountedMp": 0
+    },
+    {
+      "classId": "assassin",
+      "initialMp": 485,
+      "finitePotionRestoration": 1095,
+      "actualSkillCosts": 1574,
+      "remainingMp": 6,
+      "unaccountedMp": 0
+    },
+    {
+      "classId": "cannoneer",
+      "initialMp": 485,
+      "finitePotionRestoration": 1095,
+      "actualSkillCosts": 1577,
+      "remainingMp": 3,
+      "unaccountedMp": 0
+    }
+  ],
+  "note": "All continuous combat runs account for every MP through initial pool,five finite potions and actual assigned skill costs. No injected refills."
+}

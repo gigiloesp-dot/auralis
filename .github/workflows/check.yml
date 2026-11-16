@@ -322,3 +322,51 @@ jobs:
           name: browser-task10-world
           path: work/task10/
           if-no-files-found: ignore
+
+  task10_outdoor_bosses:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Eleven desert bosses, physical trophy, three-phase giant warnings and touch dodges
+        run: npm run test:browser:task10-outdoor-bosses && npm run test:browser:task10-giant-phases
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-task10_outdoor_bosses
+          path: work/task10/
+          if-no-files-found: ignore
+
+  aur192_region_maps:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Four fullscreen artistic maps, exact geography,72 mobile locale cases and bitmap memory soak
+        run: npm run test:browser:aur192 && npm run test:browser:aur192-soak
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-aur192_region_maps
+          path: work/aur192/
+          if-no-files-found: ignore

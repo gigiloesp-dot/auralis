@@ -1,0 +1,20 @@
+{
+  "classId": "archer",
+  "elapsedSeconds": 1200,
+  "bossHp": 57462,
+  "bossMaxHp": 1095000,
+  "hp": 1200,
+  "mp": 3,
+  "potions": {
+    "hp": 10,
+    "mp": 0
+  },
+  "damageTaken": 0,
+  "phase": 3,
+  "casts": {
+    "archer_3": 15,
+    "archer_4": 13,
+    "archer_0": 32,
+    "archer_2": 19
+  }
+}

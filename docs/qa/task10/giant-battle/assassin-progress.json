@@ -1,0 +1,20 @@
+{
+  "classId": "assassin",
+  "elapsedSeconds": 1320,
+  "bossHp": 46384,
+  "bossMaxHp": 1095000,
+  "hp": 939,
+  "mp": 6,
+  "potions": {
+    "hp": 10,
+    "mp": 0
+  },
+  "damageTaken": 261,
+  "phase": 3,
+  "casts": {
+    "assassin_2": 21,
+    "assassin_4": 14,
+    "assassin_3": 16,
+    "assassin_0": 18
+  }
+}

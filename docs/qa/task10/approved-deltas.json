@@ -63,7 +63,7 @@
     },
     "js/ui/MapPanel.js": {
       "before": "f645587f2290f89d68249190bd5fb0829cb024e5889dfc972ea4db5060198a06",
-      "after": "9afe7bf48566f69f4133eeb994d26fb4951cfd7ce102e86ceae0bae5d33f788a"
+      "after": "93191fe1bbf47753de28a182ffc56c56a4e4ea3921065b2580823c16db0335be"
     },
     "js/ui/Minimap.js": {
       "before": "747e40d2a65e3775a0ceae3fdce60d760472d6d0532d92ed50f8d099eaee31cf",

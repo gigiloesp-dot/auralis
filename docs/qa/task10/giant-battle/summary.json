@@ -1,0 +1,121 @@
+{
+  "liveEngine": true,
+  "manualPlaythrough": false,
+  "physicalAndroid": false,
+  "results": [
+    {
+      "classId": "warrior",
+      "outcome": "victory",
+      "elapsedSeconds": 1468.42,
+      "bossHp": 0,
+      "hp": 1200,
+      "potions": {
+        "hp": 10,
+        "mp": 0
+      },
+      "damageTaken": 0,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "aoeDodges": 180,
+      "hostElapsedMs": 3638.458
+    },
+    {
+      "classId": "archer",
+      "outcome": "victory",
+      "elapsedSeconds": 1272.12,
+      "bossHp": 0,
+      "hp": 1200,
+      "potions": {
+        "hp": 10,
+        "mp": 0
+      },
+      "damageTaken": 0,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "aoeDodges": 159,
+      "hostElapsedMs": 3231.616
+    },
+    {
+      "classId": "mage",
+      "outcome": "victory",
+      "elapsedSeconds": 1410.38,
+      "bossHp": 0,
+      "hp": 1200,
+      "potions": {
+        "hp": 10,
+        "mp": 0
+      },
+      "damageTaken": 0,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "aoeDodges": 179,
+      "hostElapsedMs": 3380.676
+    },
+    {
+      "classId": "paladin",
+      "outcome": "victory",
+      "elapsedSeconds": 1727.42,
+      "bossHp": 0,
+      "hp": 827,
+      "potions": {
+        "hp": 9,
+        "mp": 0
+      },
+      "damageTaken": 913,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "aoeDodges": 19,
+      "hostElapsedMs": 3029.507
+    },
+    {
+      "classId": "assassin",
+      "outcome": "victory",
+      "elapsedSeconds": 1386.36,
+      "bossHp": 0,
+      "hp": 939,
+      "potions": {
+        "hp": 10,
+        "mp": 0
+      },
+      "damageTaken": 261,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "aoeDodges": 167,
+      "hostElapsedMs": 3044.399
+    },
+    {
+      "classId": "cannoneer",
+      "outcome": "victory",
+      "elapsedSeconds": 1745.76,
+      "bossHp": 0,
+      "hp": 1200,
+      "potions": {
+        "hp": 10,
+        "mp": 0
+      },
+      "damageTaken": 0,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "aoeDodges": 218,
+      "hostElapsedMs": 4673.407
+    }
+  ]
+}

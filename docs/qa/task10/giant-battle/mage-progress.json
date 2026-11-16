@@ -1,0 +1,20 @@
+{
+  "classId": "mage",
+  "elapsedSeconds": 1320,
+  "bossHp": 55615,
+  "bossMaxHp": 1095000,
+  "hp": 1200,
+  "mp": 3,
+  "potions": {
+    "hp": 10,
+    "mp": 0
+  },
+  "damageTaken": 0,
+  "phase": 3,
+  "casts": {
+    "mage_4": 28,
+    "mage_3": 32,
+    "mage_0": 71,
+    "mage_2": 39
+  }
+}

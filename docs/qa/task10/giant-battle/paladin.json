@@ -1,0 +1,1035 @@
+{
+  "schema": 1,
+  "classId": "paladin",
+  "outcome": "victory",
+  "liveEncounter": true,
+  "controller": "telegraphs",
+  "seed": 1096113684,
+  "elapsedSeconds": 1727.42,
+  "maxDurationSeconds": 3600,
+  "stepMs": 20,
+  "reactionMs": 300,
+  "controllerSpeed": 210,
+  "controllerPreferredRange": 86,
+  "nodeVersion": "24.22.1",
+  "boss": {
+    "id": "desert-world-stone-giant",
+    "initialHp": 1095000,
+    "remainingHp": 0,
+    "attack": 291,
+    "defense": 43.8,
+    "magicDefense": 30,
+    "encounter": "stoneGiant",
+    "home": {
+      "x": 18869,
+      "y": 18697
+    },
+    "final": {
+      "x": 19029.044,
+      "y": 18875.452
+    }
+  },
+  "hero": {
+    "level": 56,
+    "maxHp": 1200,
+    "hp": 827,
+    "maxMp": 485,
+    "mp": 2,
+    "potions": {
+      "hp": 9,
+      "mp": 0
+    },
+    "stats": {
+      "strength": 115,
+      "endurance": 60,
+      "agility": 5,
+      "luck": 5,
+      "intelligence": 5
+    },
+    "attributePoints": 0,
+    "skillPoints": 85,
+    "skillSlots": [
+      "paladin_0",
+      "paladin_1",
+      "paladin_3",
+      "paladin_4"
+    ],
+    "learnedSkills": {
+      "paladin_0": 5,
+      "paladin_1": 5,
+      "paladin_2": 5,
+      "paladin_3": 5,
+      "paladin_4": 5
+    },
+    "equipment": {
+      "weapon": {
+        "id": "weapon_paladin_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "helmet": {
+        "id": "helmet_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "chest": {
+        "id": "chest_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "gloves": {
+        "id": "gloves_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "pants": {
+        "id": "pants_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "boots": {
+        "id": "boots_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "ring": {
+        "id": "ring_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "amulet": {
+        "id": "amulet_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "shield": {
+        "id": "shield_8",
+        "rarity": "rare",
+        "level": 42
+      }
+    },
+    "initialPosition": {
+      "x": 18955,
+      "y": 18697
+    },
+    "finalPosition": {
+      "x": 18975.859,
+      "y": 18853.439
+    }
+  },
+  "damageDealt": 1095000,
+  "bossHealing": 0,
+  "incomingAttempts": 11,
+  "damageTaken": 913,
+  "incomingHits": 11,
+  "incomingTimeline": [
+    {
+      "at": 521180,
+      "damage": 83,
+      "hp": 1117,
+      "hero": {
+        "x": 18952.058,
+        "y": 18405.437
+      },
+      "boss": {
+        "x": 18955.801,
+        "y": 18445.049
+      },
+      "distance": 39.788,
+      "ability": null
+    },
+    {
+      "at": 579540,
+      "damage": 83,
+      "hp": 1034,
+      "hero": {
+        "x": 19168.204,
+        "y": 18593.574
+      },
+      "boss": {
+        "x": 19153.058,
+        "y": 18556.898
+      },
+      "distance": 39.68,
+      "ability": null
+    },
+    {
+      "at": 613380,
+      "damage": 83,
+      "hp": 951,
+      "hero": {
+        "x": 19050.177,
+        "y": 18436.956
+      },
+      "boss": {
+        "x": 19035.22,
+        "y": 18473.065
+      },
+      "distance": 39.084,
+      "ability": null
+    },
+    {
+      "at": 647180,
+      "damage": 83,
+      "hp": 868,
+      "hero": {
+        "x": 19119.589,
+        "y": 18472.192
+      },
+      "boss": {
+        "x": 19135.094,
+        "y": 18509.562
+      },
+      "distance": 40.459,
+      "ability": null
+    },
+    {
+      "at": 681060,
+      "damage": 83,
+      "hp": 785,
+      "hero": {
+        "x": 18777.528,
+        "y": 18769.653
+      },
+      "boss": {
+        "x": 18813.781,
+        "y": 18784.67
+      },
+      "distance": 39.24,
+      "ability": null
+    },
+    {
+      "at": 714860,
+      "damage": 83,
+      "hp": 702,
+      "hero": {
+        "x": 19159.863,
+        "y": 18570.671
+      },
+      "boss": {
+        "x": 19150.172,
+        "y": 18531.403
+      },
+      "distance": 40.447,
+      "ability": null
+    },
+    {
+      "at": 748740,
+      "damage": 83,
+      "hp": 619,
+      "hero": {
+        "x": 19068.51,
+        "y": 18897.71
+      },
+      "boss": {
+        "x": 19040.169,
+        "y": 18869.369
+      },
+      "distance": 40.08,
+      "ability": null
+    },
+    {
+      "at": 817240,
+      "damage": 83,
+      "hp": 1076,
+      "hero": {
+        "x": 18961.517,
+        "y": 18694.053
+      },
+      "boss": {
+        "x": 18939.862,
+        "y": 18726.023
+      },
+      "distance": 38.613,
+      "ability": null
+    },
+    {
+      "at": 851060,
+      "damage": 83,
+      "hp": 993,
+      "hero": {
+        "x": 18713.516,
+        "y": 18491.986
+      },
+      "boss": {
+        "x": 18752.239,
+        "y": 18495.743
+      },
+      "distance": 38.905,
+      "ability": null
+    },
+    {
+      "at": 884920,
+      "damage": 83,
+      "hp": 910,
+      "hero": {
+        "x": 19083.138,
+        "y": 18876.151
+      },
+      "boss": {
+        "x": 19044.963,
+        "y": 18883.438
+      },
+      "distance": 38.864,
+      "ability": null
+    },
+    {
+      "at": 1088920,
+      "damage": 83,
+      "hp": 827,
+      "hero": {
+        "x": 18647.333,
+        "y": 18831.656
+      },
+      "boss": {
+        "x": 18679.303,
+        "y": 18810.001
+      },
+      "distance": 38.613,
+      "ability": null
+    }
+  ],
+  "minimumHp": 619,
+  "minimumMp": 2,
+  "healingObserved": 540,
+  "hpPotionsUsed": 1,
+  "mpPotionsUsed": 5,
+  "casts": {
+    "paladin_3": 16,
+    "paladin_4": 14,
+    "paladin_0": 35,
+    "paladin_1": 22
+  },
+  "castTimeline": [
+    {
+      "id": "paladin_3",
+      "at": 20,
+      "mpBefore": 485,
+      "mpAfter": 456
+    },
+    {
+      "id": "paladin_4",
+      "at": 680,
+      "mpBefore": 456,
+      "mpAfter": 420
+    },
+    {
+      "id": "paladin_0",
+      "at": 1340,
+      "mpBefore": 420,
+      "mpAfter": 412
+    },
+    {
+      "id": "paladin_1",
+      "at": 2000,
+      "mpBefore": 412,
+      "mpAfter": 397
+    },
+    {
+      "id": "paladin_0",
+      "at": 6380,
+      "mpBefore": 397,
+      "mpAfter": 389
+    },
+    {
+      "id": "paladin_1",
+      "at": 10040,
+      "mpBefore": 389,
+      "mpAfter": 374
+    },
+    {
+      "id": "paladin_3",
+      "at": 11060,
+      "mpBefore": 374,
+      "mpAfter": 345
+    },
+    {
+      "id": "paladin_0",
+      "at": 11720,
+      "mpBefore": 345,
+      "mpAfter": 337
+    },
+    {
+      "id": "paladin_4",
+      "at": 13700,
+      "mpBefore": 337,
+      "mpAfter": 301
+    },
+    {
+      "id": "paladin_0",
+      "at": 16760,
+      "mpBefore": 301,
+      "mpAfter": 293
+    },
+    {
+      "id": "paladin_1",
+      "at": 18140,
+      "mpBefore": 293,
+      "mpAfter": 278
+    },
+    {
+      "id": "paladin_0",
+      "at": 21800,
+      "mpBefore": 278,
+      "mpAfter": 270
+    },
+    {
+      "id": "paladin_3",
+      "at": 22460,
+      "mpBefore": 270,
+      "mpAfter": 241
+    },
+    {
+      "id": "paladin_1",
+      "at": 26240,
+      "mpBefore": 241,
+      "mpAfter": 226
+    },
+    {
+      "id": "paladin_4",
+      "at": 26900,
+      "mpBefore": 226,
+      "mpAfter": 190
+    },
+    {
+      "id": "paladin_0",
+      "at": 27560,
+      "mpBefore": 409,
+      "mpAfter": 401
+    },
+    {
+      "id": "paladin_0",
+      "at": 32660,
+      "mpBefore": 401,
+      "mpAfter": 393
+    },
+    {
+      "id": "paladin_3",
+      "at": 33560,
+      "mpBefore": 393,
+      "mpAfter": 364
+    },
+    {
+      "id": "paladin_1",
+      "at": 34340,
+      "mpBefore": 364,
+      "mpAfter": 349
+    },
+    {
+      "id": "paladin_0",
+      "at": 37760,
+      "mpBefore": 349,
+      "mpAfter": 341
+    },
+    {
+      "id": "paladin_4",
+      "at": 39980,
+      "mpBefore": 341,
+      "mpAfter": 305
+    },
+    {
+      "id": "paladin_1",
+      "at": 42440,
+      "mpBefore": 305,
+      "mpAfter": 290
+    },
+    {
+      "id": "paladin_0",
+      "at": 43100,
+      "mpBefore": 290,
+      "mpAfter": 282
+    },
+    {
+      "id": "paladin_3",
+      "at": 44600,
+      "mpBefore": 282,
+      "mpAfter": 253
+    },
+    {
+      "id": "paladin_0",
+      "at": 48140,
+      "mpBefore": 253,
+      "mpAfter": 245
+    },
+    {
+      "id": "paladin_1",
+      "at": 50480,
+      "mpBefore": 245,
+      "mpAfter": 230
+    },
+    {
+      "id": "paladin_4",
+      "at": 53060,
+      "mpBefore": 230,
+      "mpAfter": 194
+    },
+    {
+      "id": "paladin_0",
+      "at": 53720,
+      "mpBefore": 413,
+      "mpAfter": 405
+    },
+    {
+      "id": "paladin_3",
+      "at": 55700,
+      "mpBefore": 405,
+      "mpAfter": 376
+    },
+    {
+      "id": "paladin_1",
+      "at": 58520,
+      "mpBefore": 376,
+      "mpAfter": 361
+    },
+    {
+      "id": "paladin_0",
+      "at": 59180,
+      "mpBefore": 361,
+      "mpAfter": 353
+    },
+    {
+      "id": "paladin_0",
+      "at": 64280,
+      "mpBefore": 353,
+      "mpAfter": 345
+    },
+    {
+      "id": "paladin_4",
+      "at": 66140,
+      "mpBefore": 345,
+      "mpAfter": 309
+    },
+    {
+      "id": "paladin_3",
+      "at": 66800,
+      "mpBefore": 309,
+      "mpAfter": 280
+    },
+    {
+      "id": "paladin_1",
+      "at": 67460,
+      "mpBefore": 280,
+      "mpAfter": 265
+    },
+    {
+      "id": "paladin_0",
+      "at": 69320,
+      "mpBefore": 265,
+      "mpAfter": 257
+    },
+    {
+      "id": "paladin_0",
+      "at": 74420,
+      "mpBefore": 257,
+      "mpAfter": 249
+    },
+    {
+      "id": "paladin_1",
+      "at": 75560,
+      "mpBefore": 249,
+      "mpAfter": 234
+    },
+    {
+      "id": "paladin_3",
+      "at": 77900,
+      "mpBefore": 234,
+      "mpAfter": 205
+    },
+    {
+      "id": "paladin_4",
+      "at": 79160,
+      "mpBefore": 424,
+      "mpAfter": 388
+    },
+    {
+      "id": "paladin_0",
+      "at": 79820,
+      "mpBefore": 388,
+      "mpAfter": 380
+    },
+    {
+      "id": "paladin_1",
+      "at": 83600,
+      "mpBefore": 380,
+      "mpAfter": 365
+    },
+    {
+      "id": "paladin_0",
+      "at": 84860,
+      "mpBefore": 365,
+      "mpAfter": 357
+    },
+    {
+      "id": "paladin_3",
+      "at": 89000,
+      "mpBefore": 357,
+      "mpAfter": 328
+    },
+    {
+      "id": "paladin_0",
+      "at": 89900,
+      "mpBefore": 328,
+      "mpAfter": 320
+    },
+    {
+      "id": "paladin_1",
+      "at": 91640,
+      "mpBefore": 320,
+      "mpAfter": 305
+    },
+    {
+      "id": "paladin_4",
+      "at": 92300,
+      "mpBefore": 305,
+      "mpAfter": 269
+    },
+    {
+      "id": "paladin_0",
+      "at": 95000,
+      "mpBefore": 269,
+      "mpAfter": 261
+    },
+    {
+      "id": "paladin_1",
+      "at": 99740,
+      "mpBefore": 261,
+      "mpAfter": 246
+    },
+    {
+      "id": "paladin_3",
+      "at": 100400,
+      "mpBefore": 246,
+      "mpAfter": 217
+    },
+    {
+      "id": "paladin_0",
+      "at": 101060,
+      "mpBefore": 436,
+      "mpAfter": 428
+    },
+    {
+      "id": "paladin_4",
+      "at": 105320,
+      "mpBefore": 428,
+      "mpAfter": 392
+    },
+    {
+      "id": "paladin_0",
+      "at": 106100,
+      "mpBefore": 392,
+      "mpAfter": 384
+    },
+    {
+      "id": "paladin_1",
+      "at": 107840,
+      "mpBefore": 384,
+      "mpAfter": 369
+    },
+    {
+      "id": "paladin_0",
+      "at": 111140,
+      "mpBefore": 369,
+      "mpAfter": 361
+    },
+    {
+      "id": "paladin_3",
+      "at": 111800,
+      "mpBefore": 361,
+      "mpAfter": 332
+    },
+    {
+      "id": "paladin_1",
+      "at": 115940,
+      "mpBefore": 332,
+      "mpAfter": 317
+    },
+    {
+      "id": "paladin_0",
+      "at": 116600,
+      "mpBefore": 317,
+      "mpAfter": 309
+    },
+    {
+      "id": "paladin_4",
+      "at": 118340,
+      "mpBefore": 309,
+      "mpAfter": 273
+    },
+    {
+      "id": "paladin_0",
+      "at": 121640,
+      "mpBefore": 273,
+      "mpAfter": 265
+    },
+    {
+      "id": "paladin_3",
+      "at": 122900,
+      "mpBefore": 265,
+      "mpAfter": 236
+    },
+    {
+      "id": "paladin_1",
+      "at": 124040,
+      "mpBefore": 236,
+      "mpAfter": 221
+    },
+    {
+      "id": "paladin_0",
+      "at": 126740,
+      "mpBefore": 221,
+      "mpAfter": 213
+    },
+    {
+      "id": "paladin_4",
+      "at": 131360,
+      "mpBefore": 432,
+      "mpAfter": 396
+    },
+    {
+      "id": "paladin_0",
+      "at": 132020,
+      "mpBefore": 396,
+      "mpAfter": 388
+    },
+    {
+      "id": "paladin_1",
+      "at": 132680,
+      "mpBefore": 388,
+      "mpAfter": 373
+    },
+    {
+      "id": "paladin_3",
+      "at": 133940,
+      "mpBefore": 373,
+      "mpAfter": 344
+    },
+    {
+      "id": "paladin_0",
+      "at": 137120,
+      "mpBefore": 344,
+      "mpAfter": 336
+    },
+    {
+      "id": "paladin_1",
+      "at": 140780,
+      "mpBefore": 336,
+      "mpAfter": 321
+    },
+    {
+      "id": "paladin_0",
+      "at": 142160,
+      "mpBefore": 321,
+      "mpAfter": 313
+    },
+    {
+      "id": "paladin_4",
+      "at": 144380,
+      "mpBefore": 313,
+      "mpAfter": 277
+    },
+    {
+      "id": "paladin_3",
+      "at": 145040,
+      "mpBefore": 277,
+      "mpAfter": 248
+    },
+    {
+      "id": "paladin_0",
+      "at": 147260,
+      "mpBefore": 248,
+      "mpAfter": 240
+    },
+    {
+      "id": "paladin_1",
+      "at": 148880,
+      "mpBefore": 240,
+      "mpAfter": 225
+    },
+    {
+      "id": "paladin_0",
+      "at": 152300,
+      "mpBefore": 225,
+      "mpAfter": 217
+    },
+    {
+      "id": "paladin_3",
+      "at": 156080,
+      "mpBefore": 217,
+      "mpAfter": 188
+    },
+    {
+      "id": "paladin_1",
+      "at": 156980,
+      "mpBefore": 188,
+      "mpAfter": 173
+    },
+    {
+      "id": "paladin_4",
+      "at": 157640,
+      "mpBefore": 173,
+      "mpAfter": 137
+    },
+    {
+      "id": "paladin_0",
+      "at": 158300,
+      "mpBefore": 137,
+      "mpAfter": 129
+    },
+    {
+      "id": "paladin_0",
+      "at": 163400,
+      "mpBefore": 129,
+      "mpAfter": 121
+    },
+    {
+      "id": "paladin_1",
+      "at": 165020,
+      "mpBefore": 121,
+      "mpAfter": 106
+    },
+    {
+      "id": "paladin_3",
+      "at": 167120,
+      "mpBefore": 106,
+      "mpAfter": 77
+    },
+    {
+      "id": "paladin_0",
+      "at": 168500,
+      "mpBefore": 77,
+      "mpAfter": 69
+    },
+    {
+      "id": "paladin_4",
+      "at": 170720,
+      "mpBefore": 69,
+      "mpAfter": 33
+    },
+    {
+      "id": "paladin_1",
+      "at": 173060,
+      "mpBefore": 33,
+      "mpAfter": 18
+    },
+    {
+      "id": "paladin_0",
+      "at": 173720,
+      "mpBefore": 18,
+      "mpAfter": 10
+    },
+    {
+      "id": "paladin_0",
+      "at": 178820,
+      "mpBefore": 10,
+      "mpAfter": 2
+    }
+  ],
+  "potionTimeline": [
+    {
+      "at": 27560,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 409,
+      "remaining": {
+        "hp": 10,
+        "mp": 4
+      }
+    },
+    {
+      "at": 53720,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 413,
+      "remaining": {
+        "hp": 10,
+        "mp": 3
+      }
+    },
+    {
+      "at": 78560,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 424,
+      "remaining": {
+        "hp": 10,
+        "mp": 2
+      }
+    },
+    {
+      "at": 101060,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 436,
+      "remaining": {
+        "hp": 10,
+        "mp": 1
+      }
+    },
+    {
+      "at": 127400,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 432,
+      "remaining": {
+        "hp": 10,
+        "mp": 0
+      }
+    },
+    {
+      "at": 748760,
+      "resource": "hp",
+      "hp": 1159,
+      "mp": 2,
+      "remaining": {
+        "hp": 9,
+        "mp": 0
+      }
+    }
+  ],
+  "phases": [
+    1,
+    2,
+    3
+  ],
+  "phaseTimeline": [
+    {
+      "phase": 1,
+      "at": 20,
+      "bossHp": 1095000,
+      "hp": 1200,
+      "mp": 456
+    },
+    {
+      "phase": 2,
+      "at": 520460,
+      "bossHp": 729615,
+      "hp": 1200,
+      "mp": 2
+    },
+    {
+      "phase": 3,
+      "at": 1133300,
+      "bossHp": 364816,
+      "hp": 827,
+      "mp": 2
+    }
+  ],
+  "telegraphs": 386,
+  "aoeDodges": 19,
+  "aoeDangerAtRelease": 0,
+  "cancelledTelegraphs": 350,
+  "basicAttackImpacts": 1838,
+  "successfulBasicInputs": 1836,
+  "playerProjectiles": 0,
+  "hostileProjectiles": 3,
+  "scheduledEffects": 0,
+  "peakPlayerProjectiles": 0,
+  "peakHostileProjectiles": 3,
+  "peakPendingEffects": 0,
+  "movingFrames": 21888,
+  "totalFrames": 86371,
+  "distanceMoved": 91877.43353514164,
+  "maxControllerStep": 4.200000000005104,
+  "skillRepositions": 0,
+  "leashReturns": 0,
+  "rangeRejections": 0,
+  "manaRejections": 51519,
+  "geometryObstacles": 62,
+  "hostElapsedMs": 3029.507,
+  "assumptions": {
+    "preparedCharacter": "Level56,165 legally allocated attributes,existing rare equipment≤42,five learned ranks and four assigned skills from calibrationHero.",
+    "resources": "One continuous initial pool:10HP/5MPpotions,actual45% refill and shared3s cooldown; no resets or artificial HP/MP refill.",
+    "movement": "Actual moveWithCollision,real desert describeChunk obstacles and LOS; delayed boss position and public telegraph observations≥reactionMs. Movement capped at min(210,actual hero.speed) world units/s with the real slow multiplier; actual legal dash/backstab effects still use the engine.",
+    "input": "Held real AttackCycle,one eligible assigned skill input per650ms,HP/MPpotions compete on their shared cooldown.",
+    "rendering": "Scene graphics/tweens are mocked; AI,damage,hurtHero,skills,projectiles,scheduled effects,poison,leash and living recovery run through the real engine."
+  },
+  "limitations": [
+    "An automated controller is not a manual player or proof of an average30-minute fight.",
+    "Only the giant is active in this encounter; other region encounters,NPCs and multiplayer are excluded.",
+    "The controller knows public warning geometry and observed projectile velocity,reacts after300ms by default,and searches local world-space destinations with86-unit melee standoff (the shorter assassin attack range remains80); controller tuning is recorded rather than changing combat rules; this exceeds an inexperienced player’s ability.",
+    "No physical Android,FPS,thermal,GPU or network measurements."
+  ],
+  "sourceSha256": {
+    "js/assets/actorArt.js": "2ff4d7948ba4fbe18def5e3139112b654aa599f3aee55df7d88ff92e1c7abd4d",
+    "js/assets/ActorTextureCache.js": "90437098608d4d7f4ce28bbac7ca5faf4ece3bf02d483d70b5a164cb3daf711a",
+    "js/assets/bossArt.js": "b469159181cfecf04827f903aefd3ff70f671dac31e75a06ceda410657caff72",
+    "js/assets/heroBodies.js": "291e8c586d99eaaa22529bd3d7958fa6686466d124e1a6c1edcf8df9476c98a4",
+    "js/assets/monsterArt.js": "cdeaf40b54720ff86b845d3f71602a786f17c11262388cb9351197591d5e4bf4",
+    "js/assets/skillIcons.js": "dee4987dc25f9845a8c4e16e33d7d29e08392ca55a8396b20de4d57cc9057750",
+    "js/assets/speciesAssets.js": "b45cadc1bf7d6d778ffae61a38485fb60c1bb42bc8960c976db8fae159583cd7",
+    "js/assets/task10DungeonBossArt.js": "d8516d5174a235e8abe4330ae85f17cbc7b86a38e63ab276f3c5633c98a21dcd",
+    "js/assets/task10MonsterArt.js": "5a94d129c411f98442500b4600e0fea1923e2614292888d1a1cd76c289f62060",
+    "js/assets/task10OutdoorBossArt.js": "21d7dc6cae459271d42b14e15f4d7117aacf05d379b1eca1da83cb916c96f333",
+    "js/assets/warriorEquipmentArt.js": "6674df535aa3c6363d8f10df597c13e6a398af323e7e43a782ce07a1d5e1a267",
+    "js/characters/bodyAttachments.js": "3e50054cc7da4c36967f3b14b466fa47edd0cda71b771e5b75671f422c63712c",
+    "js/characters/Character.js": "23b17c6289bbaaf5924d92e58d633e63c27a0a83eb808fd0f345bbafc44dd186",
+    "js/characters/CharacterEquipmentLayers.js": "3edf3f8629f547ae9b117771bcbfc0d1fc97110fd897c7c91263f308526f1ce3",
+    "js/characters/classes.js": "80de6eedc08a46a9910de54a67917d8ab4a9feba131f49207d749c1f1e7b2a50",
+    "js/characters/PaintedActor.js": "351428b5f260e5d38a33839d5fca284a721c37c3c84e4f6fe06a7d5a9d01e8a2",
+    "js/characters/warriorBootPivots.js": "bd410c157208dfd4a621b8570e4c54762c0272233798dda6be45adff9e7a9de0",
+    "js/characters/warriorCalibration.js": "310158c6f9abf261c8d270ec0f471c0c60028fd031601d320336ed83d17971b4",
+    "js/characters/WarriorReferenceLayers.js": "d81b3c99fa2450af779737b31046f8f691167858cf14451f43978ba7430e9974",
+    "js/characters/warriorSwordPivots.js": "c30c20e1801e3d751bf4b8eb3bf8d86d8e857e3faae72a463f89a61c02d3ad20",
+    "js/combat/attackTiming.js": "12f2edc6f87c5615301b91203b80fc6c4fd50dda513efa9dca31cc2bc940ba57",
+    "js/combat/classEffects.js": "5b2f004a757d4eee34b4db3e3b57c93d71cdd21f6be5982688e664b173078215",
+    "js/combat/combat.js": "dd365ac80b2f10c57479f166702e3370e88430766709495c8d81877b286c4c69",
+    "js/combat/geometry.js": "085be5267d3db050b24f4fbf32d7ed872a6f29e28e0f5b07e963751ef2c82f25",
+    "js/combat/projectiles.js": "a6b09902fb063b092d204741a740029e3b242a0bf49c97c3d5fc9fddcae1362f",
+    "js/combat/skillRuntime.js": "a74f2de1f23b76799cf6885ee43fe4aaac863b3309ca14dbdfd14cdb7971464b",
+    "js/combat/targeting.js": "e54e6a612ade2cd6a2d7a8b135de1668610c15f695f86f69352ccf60e9b94f10",
+    "js/config/gameConfig.js": "86046b0c85d4cebee18497a0c1ae0652f73500655fb4692ab2f5e450addcaa3b",
+    "js/dungeons/desertDungeonLayouts.js": "d5c731db3f6026279a3d0dae8b5dab85862fec3babbc2262b697f8004fc87c56",
+    "js/dungeons/desertDungeons.js": "2275d0dddbe990c2b1a173219391fcec6344ec8ba6e4e1c4e224c427c8cd4360",
+    "js/dungeons/dungeonData.js": "afbb46b2a24f11db48a7ee1f2b55afb3e95371af3442af32051f2c8959e6a20c",
+    "js/dungeons/dungeonSession.js": "4427f875988b5392bb0d056b479a7325c2b732c2ac25857b1ca25a6e259771b7",
+    "js/equipment/armor.js": "2fc197ca185514cca709aae0e72ed44839fd31cd4533db53b0b8ddd9348dbf26",
+    "js/equipment/catalog.js": "13b68d2af409be3bca4da484a3786f021aeb196c1a5cf541ccad82595e790d76",
+    "js/equipment/endgameMaterials.js": "2118bdbdbe6d087d5af7cb3b467060d50f5e4cc5580c84efb9a7b213bddcbe15",
+    "js/equipment/items.js": "21609d6fe782d7af1a085679664c89e0d5e377392904699987d7e59fba44f3e5",
+    "js/equipment/stacking.js": "4cd113b7ed1d85b539567b02eb9224625d9a431cc129101df6921a7422b1e650",
+    "js/i18n/entityNames.js": "d3616c6395db5ddeafccb6a6a8179872814d1b91da985407d676ba6ca66e3dda",
+    "js/i18n/skillNames.js": "15f6c0269f2c2a74419379d3d38351fca0ac9f72829c5793de9599e8bc16e847",
+    "js/loot/groundLoot.js": "f42d63ee1b427ec4fd87a133c0e5773877129bc9aee6428d21c87074b9591119",
+    "js/monsters/desertBossData.js": "516d834af7fa9f0f6b1b5f7a7dea3f92f72aed09b701ac10292431743ad0d540",
+    "js/monsters/encounterLoot.js": "40b8b966fac2aefa7ea1edd7a2aa365a5fc7c1125046d94f284fd7c418d62301",
+    "js/monsters/health.js": "abdf992af94fc3a23415b40ef5e04da050d58e252d1d2362521077bc09645aac",
+    "js/monsters/loot.js": "bb51ee7447f7e07441617364155705848cd491478c987b35c25b6b1b7436b076",
+    "js/monsters/monsterBehavior.js": "d031cd877d357995a44539e939de68d7243075ad9212a621798af5b4a8fcc29b",
+    "js/monsters/monsters.js": "0c60ede0c78dd94160244666298c8cf67ae85b840ef51408855c8a7fa4e19905",
+    "js/monsters/MonsterStream.js": "7cd08c2f214493ddb59fbec0ec5429bca0f4a213d4fd77c26e32650cd51349ee",
+    "js/monsters/MonsterSystem.js": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2",
+    "js/monsters/monsterVisuals.js": "b5b7755c8d50ca0f05a52edab2eb5e572c159ccc3e2dff77f300c61d68e5ec14",
+    "js/monsters/movementProfiles.js": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4",
+    "js/monsters/speciesRuntime.js": "c8d503d2fd53d0847d78e8ab4358dfc6e8df54350617eb7ec32a7d65bc6631f9",
+    "js/monsters/stoneGiantEncounter.js": "c48777ca5fca2ed29393a7d8a4b8f6db80cf87a6c5f7ae122857e414876f8bca",
+    "js/monsters/stoneGiantVisuals.js": "4a745d3228761ca06736f542f62527b177da7c0d16d1f98d0103aa3aa0bdc0e3",
+    "js/npc/npcData.js": "a7d3beb5486284ac8dbe2643016ea370f993fe4b83af37e413de5c29a2a1380d",
+    "js/quests/quests.js": "e7b7c55f4ffd5662cc82aa36ff3c5424fa2bf6565b43e0bbad24e40d6e7f2867",
+    "js/quests/release21QuestData.js": "63ae9e440820ac7efec382c109437afa23a52cc4eae1de2d1b53476afd758652",
+    "js/quests/remapWorldObjectives.js": "310e8e557952831aa73ca51466f4bba2ba6dbd60a630cc98abaaf8a50ad38808",
+    "js/skills/skillData.js": "d58ddc821679ce936d923247c1dff15312a3c9da0a1d9944bcf09321a7203e9d",
+    "js/skills/skillSlots.js": "8223c58d7a1d2456303bdee3dcdc06150ef4f1eeae798873b7eaf284f6a40e3d",
+    "js/systems/attributes.js": "745bc0cf2cd4ef9218c99fa5a17b869dc8f39eedde36744f928d9b7c41207045",
+    "js/systems/potions.js": "83d087906ad54f5fce156b512e812a44544f544a8d745f8767d0ef65fb98960b",
+    "js/systems/progression.js": "cc23747c01b16a7854ba664685d97b68c2317756807831361efb41efcdad942b",
+    "js/systems/progressionPolicy.js": "758e47912e7d6ec94e695cf7fdcdc207ac51304a30c27e1214704438c3305a76",
+    "js/systems/progressState.js": "a2e5657d2c9e8cbee2d2f76e5f9264f58294f88fdd524c6f10980200962f02bf",
+    "js/systems/worldLayoutMigration.js": "b50ffaeb4f17d5438c6df807ad998071562a52d9365285cafcba5279523732b0",
+    "js/world/biomes.js": "0173880594a61f1d94f16f20be81defd1ab2e4e646f1186f974a7ecc6b6ff35f",
+    "js/world/campAliases.js": "7595aefb93f1a002e7b807942d83e8bfa7ffe8cf0e4e55a714f40ecec518dbd9",
+    "js/world/chunkGeometry.js": "a74910a9f3b9f1bd2fef37b258f52aef113731dacdeeee0b9d49e6ec2c36fcc1",
+    "js/world/climate.js": "d82076e4a0599d0a9e9480ccb9908702dbfbc1b27a56a63d8d42fefc1f76e440",
+    "js/world/climateRoads.js": "47b6f518b476aaeacf59b44b6474e6f0798b19d744985c095aa3dbae72575bc8",
+    "js/world/desertContent.js": "7583e4268fa00a8f91520f048868de6d519375cf2f9c026e0a2a58e668600272",
+    "js/world/projection.js": "97de467e44a8445defc1cc0ad029bfdfce84f1b0b08644b210ea034afe28facb",
+    "js/world/regionContent.js": "2c57ce7bffc32460eaaff18e6ceeacfc8ab6adf6ea4e9b2c847fb52bef6e8bd0",
+    "js/world/roadPaths.js": "6180cb826673459cecb10318062e65e9fadb7c5553d09a182dbc36fcd76ba4d6",
+    "js/world/settlementExpansion.js": "0215a622c9780ac9308b24366fc0a008fa49d83688988ff357472d8576c35794",
+    "js/world/task10Layout.js": "b77972f432c1bc1adaabf5c4dd7437f7a1c5f3218b63b4dcb60d068f67ca786b",
+    "js/world/towns.js": "bf7f4cf63f90aadbf4d9ac3119636f2607530370c78113ec554f926cc200331f",
+    "js/world/worldData.js": "0aff3a33bdd63f1244ec7a8488ed1158977026121088bbb130f217257c580927",
+    "js/world/worldExpansion.js": "9980a5a709c45a633a990a04160d59b4392b3ee160e698616a498d6d3df60439",
+    "scripts/measure-stone-giant-dps.mjs": "83fe52677d186524eedcd8c65e78137bc578f5308b9c0e4a5ed5d283cf9d0ec4",
+    "scripts/simulate-stone-giant-battle.mjs": "6411346a5f193ec07c01483f195be18b2d3d7fe8f3788e7386206bb64cfb1499"
+  }
+}

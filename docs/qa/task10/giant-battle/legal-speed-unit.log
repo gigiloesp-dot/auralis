@@ -1,0 +1,12 @@
+✔ live battle arena collision matches actual deterministic desert chunks rather than a stationary dummy floor (35.992597ms)
+✔ a stationary real character suffers actual incoming damage and dies after finite HP potions; boss AI and HP are not disabled (170.896267ms)
+✔ all six controller trials use real attacks,assigned four-slot skills,finite resources,300ms reaction and collision-limited movement (780.744409ms)
+✔ seeded live encounter reproduces damage,casts,movement,potions and incoming results without leaking global RNG or clocks (258.593648ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1394.661794

@@ -1,0 +1,21 @@
+✔ AUR-192 all real geographic anchors share the full-viewport affine projection (7.61897ms)
+✔ AUR-192 aspect variants minimize cartographic symbol distortion (0.242346ms)
+✔ AUR-192 no encounter marker or hunting coordinate reaches regional map (0.29149ms)
+✔ AUR-192 owned bitmap is closed on release, including a late decode (6.214829ms)
+✔ AUR-192 eight baked maps match checked manifest hashes and approved region extents (13.181529ms)
+✔ AUR-192 arrivals are exactly existing cross-region portal destinations (0.412514ms)
+✔ AUR-192 both maps receive the same real arrival annotations and deduplicate explicit receivers (5.791079ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.516812ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (134.900159ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (80.073363ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.716682ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.829984ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (220.437221ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 653.395443
