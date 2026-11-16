@@ -20,7 +20,7 @@
         3
       ],
       "aoeDodges": 180,
-      "hostElapsedMs": 3638.458
+      "hostElapsedMs": 5879.452
     },
     {
       "classId": "archer",
@@ -39,7 +39,7 @@
         3
       ],
       "aoeDodges": 159,
-      "hostElapsedMs": 3231.616
+      "hostElapsedMs": 6331.168
     },
     {
       "classId": "mage",
@@ -58,7 +58,7 @@
         3
       ],
       "aoeDodges": 179,
-      "hostElapsedMs": 3380.676
+      "hostElapsedMs": 7114.394
     },
     {
       "classId": "paladin",
@@ -77,7 +77,7 @@
         3
       ],
       "aoeDodges": 19,
-      "hostElapsedMs": 3029.507
+      "hostElapsedMs": 6519.965
     },
     {
       "classId": "assassin",
@@ -96,7 +96,7 @@
         3
       ],
       "aoeDodges": 167,
-      "hostElapsedMs": 3044.399
+      "hostElapsedMs": 5902.734
     },
     {
       "classId": "cannoneer",
@@ -115,7 +115,7 @@
         3
       ],
       "aoeDodges": 218,
-      "hostElapsedMs": 4673.407
+      "hostElapsedMs": 8218.456
     }
   ]
 }

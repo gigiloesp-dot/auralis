@@ -87,7 +87,7 @@ export class WorldScene extends Phaser.Scene{
  setLanguage(language){
   if(!['ru','en','es'].includes(language)||!this.hero||this.closed)return;
   const named=(entry,lang)=>entry?.names?.[lang]||entry?.names?.ru||entry?.name||entry?.id,content=this.regionContent;
-  const labels=new Map([...content.npcs||[],...content.portals||[],...content.dungeons||[],content.exit,...biomeZones(content)].filter(Boolean).map(entry=>[named(entry,this.language),named(entry,language)]));
+  const labels=new Map([...content.npcs||[],...content.portals||[],...content.dungeons||[],...content.receivers||[],content.exit,...biomeZones(content)].filter(Boolean).map(entry=>[named(entry,this.language),named(entry,language)]));
   const translate=node=>{if(node.type==='Text'&&labels.has(node.text))node.setText(labels.get(node.text));if(Array.isArray(node.list))for(const child of node.list)translate(child);};
   for(const chunk of this.world.chunkWorld.chunks.values())for(const object of chunk.objects)translate(object);
   this.closePanels();this.language=language;applyShellLocale(language);

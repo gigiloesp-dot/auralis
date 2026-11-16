@@ -1,10 +1,11 @@
 import {TOWNS} from '../world/towns.js';
-export const NPC_ROLES=Object.freeze(['merchant','questGiver','storage','resident','specialMerchant']);
+import {TASK10_NPCS} from './task10NpcData.js';
+export const NPC_ROLES=Object.freeze(['merchant','questGiver','storage','resident','specialMerchant','teleporter','dailyGiver','story']);
 const npc=(id,townId,dx,dy,roles,names,minLevel,maxLevel)=>{
  const town=TOWNS[townId];
  return Object.freeze({id,townId,region:town.region,x:town.x+dx,y:town.y+dy,name:names.ru,names:Object.freeze(names),role:roles[0],roles:Object.freeze(roles),level:minLevel,minLevel,maxLevel});
 };
-export const NPCS=Object.freeze([
+export const LEGACY_NPCS=Object.freeze([
  npc('mira','forestVillage',-95,-60,['merchant','questGiver'],{ru:'Мира',en:'Mira',es:'Mira'},1,5),
  npc('borin','forestVillage',60,-140,['storage'],{ru:'Борин',en:'Borin',es:'Borin'},1,5),
  npc('aldric','forestVillage',-50,60,['questGiver'],{ru:'Алдрик',en:'Aldric',es:'Aldric'},1,5),
@@ -27,5 +28,6 @@ export const NPCS=Object.freeze([
  npc('orion','elderSanctum',-80,-45,['specialMerchant'],{ru:'Орион',en:'Orion',es:'Orión'},39,42),
  npc('nyx','elderSanctum',85,25,['questGiver'],{ru:'Никс',en:'Nyx',es:'Nyx'},39,42)
 ]);
+export const NPCS=Object.freeze([...LEGACY_NPCS,...TASK10_NPCS]);
 export const STARTER_NPCS=Object.freeze(NPCS.filter(npc=>npc.townId==='forestVillage'));
 export const getRegionNpcs=region=>NPCS.filter(npc=>npc.region===region);

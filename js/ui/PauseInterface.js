@@ -1,6 +1,7 @@
 import {PAUSE_ACTIONS,pauseText} from './pauseText.js';
 import {QUEST_TEXT,questTitle,questDescription} from '../quests/quests.js';
-import {activeJournalEntries} from '../quests/journal.js';
+import {activeJournalEntries,queuedJournalEntries} from '../quests/journal.js';
+import {TASK10_QUEST_TEXT} from '../quests/task10QuestStrings.js';
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 export class PauseInterface{
  constructor(game,menu){this.game=game;this.menu=menu;this.active=false;this.panelOpened=false;menu.pauseAction=action=>this.open(action);this.root=el('section');this.root.className='pause-panel';this.root.hidden=true;this.root.setAttribute('role','dialog');this.root.setAttribute('aria-modal','true');document.body.append(this.root);
@@ -18,7 +19,7 @@ export class PauseInterface{
   this.menu.hide();const target={inventory:'inventoryPanel',skills:'skillsPanel',character:'characterPanel',backups:'savePanel'}[action];if(target){s[target].show();return;}this.showReadOnly(action);
  }
  showReadOnly(action){this.panelOpened=true;this.root.replaceChildren();const head=el('header'),close=el('button',this.t('close'));close.type='button';close.onclick=()=>this.back();head.append(el('h2',this.t(action)),close);const body=el('div');body.className='pause-panel-body';this.root.append(head,body);this.root.setAttribute('aria-label',this.t(action));
-  if(action==='quests'){const list=activeJournalEntries(this.scene().hero);if(!list.length)body.append(el('p',this.t('empty')));for(const {quest:q,progress:p} of list){const card=el('article');card.dataset.questId=q.id;card.append(el('h3',questTitle(q,this.menu.lang)),el('p',questDescription(q,this.menu.lang)),el('p',(p.state==='completed'?(QUEST_TEXT[this.menu.lang]||QUEST_TEXT.ru).claim:this.t(p.state))+' · '+p.progress+' / '+p.required));body.append(card);}body.append(el('p',this.t('return')));}
+  if(action==='quests'){const hero=this.scene().hero,list=activeJournalEntries(hero),queued=queuedJournalEntries(hero),extra=TASK10_QUEST_TEXT[this.menu.lang]||TASK10_QUEST_TEXT.ru;if(!list.length)body.append(el('p',this.t('empty')));for(const {quest:q,progress:p} of list){const card=el('article');card.dataset.questId=q.id;card.append(el('h3',questTitle(q,this.menu.lang)),el('p',questDescription(q,this.menu.lang)),el('p',(p.state==='completed'?(QUEST_TEXT[this.menu.lang]||QUEST_TEXT.ru).claim:this.t(p.state))+' · '+p.progress+' / '+p.required));body.append(card);}if(queued.length){const queue=el('section');queue.dataset.questQueue='legacy';queue.append(el('h3',extra.queueTitle),el('p',extra.queueBody));for(const {quest:q,progress:p}of queued){const card=el('article');card.dataset.queuedQuestId=q.id;card.append(el('h4',questTitle(q,this.menu.lang)),el('p',extra.queued+' · '+p.progress+' / '+p.required));queue.append(card);}body.append(queue);}body.append(el('p',this.t('return')));}
   else for(const [heading,description]of [['movement','movementBody'],['skills','skillsBody'],['loot','lootBody'],['saves','savesBody']])body.append(el('h3',this.t(heading)),el('p',this.t(description)));
   this.root.hidden=false;
  }

@@ -1,6 +1,6 @@
 # Реестр257 видов и фактической готовности
 
-**Задание10не завершено.** Уникальных первичных моделей: 25 (2 новых48-позных и 23 прежних32-позных). Ещё 232 видов используют общие временные модели. Их названия/силуэты — предложения,а не готовые ассеты. Прежние hurt/death используют программные преобразования;это не новые нарисованные клипы. Все RU/EN/ES названия,координаты,актуальные характеристики и точные ссылки находятся в [JSON](TASK_10_SPECIES.json).
+**Задание10не завершено.** Уникальных первичных моделей: 29 (6 новых48-позных и 23 прежних32-позных). Ещё 228 видов используют общие временные модели. Их названия/силуэты — предложения,а не готовые ассеты. Прежние hurt/death используют программные преобразования;это не новые нарисованные клипы. Все RU/EN/ES названия,координаты,актуальные характеристики и точные ссылки находятся в [JSON](TASK_10_SPECIES.json).
 
 |ID / карта|Спот / Lv|Название RU|Готовность|HP / урон / защита / скорость|Способности|Собственная модель|
 |---|---|---|---|---|---|---|
@@ -207,10 +207,10 @@
 |ancient-species-044 / ancient|ancient-spot-044 / 41|Пепельная гадюка «Грибная корона»|prototypeOnly|526 / 66 / 20.8 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
 |desert-species-000 / desert|desert-spot-000 / 51|Скорпион обсидианового жала|newIntegrated|917 / 87 / 39.8 / 82|venom, burrow|[assets/actors/task10/scorpion.png](../../assets/actors/task10/scorpion.png)|
 |desert-species-001 / desert|desert-spot-001 / 48|Игломёт караванных песков|newIntegrated|771 / 78 / 40.4 / 34|fan, roots|[assets/actors/task10/cactus.png](../../assets/actors/task10/cactus.png)|
-|desert-species-002 / desert|desert-spot-002 / 48|Песчаный скорпион «Спинные шипы»|prototypeOnly|711 / 80 / 26.4 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
-|desert-species-003 / desert|desert-spot-003 / 42|Песчаный скорпион «Серповидные когти»|prototypeOnly|484 / 72 / 16 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
-|desert-species-004 / desert|desert-spot-004 / 52|Песчаный скорпион «Ветвистые рога»|prototypeOnly|951 / 89 / 40.6 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
-|desert-species-005 / desert|desert-spot-005 / 55|Песчаный скорпион «Панцирный воротник»|prototypeOnly|1010 / 92 / 46 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
+|desert-species-002 / desert|desert-spot-002 / 48|Рогатая песчаная гадюка|newIntegrated|711 / 80 / 26.4 / 116|pounce|[assets/actors/task10-species/desert-species-002.png](../../assets/actors/task10-species/desert-species-002.png)|
+|desert-species-003 / desert|desert-spot-003 / 42|Дух солнечной пыли|newIntegrated|484 / 72 / 16 / 94|blink|[assets/actors/task10-species/desert-species-003.png](../../assets/actors/task10-species/desert-species-003.png)|
+|desert-species-004 / desert|desert-spot-004 / 52|Терракотовый страж|newIntegrated|951 / 89 / 40.6 / 76|stomp|[assets/actors/task10-species/desert-species-004.png](../../assets/actors/task10-species/desert-species-004.png)|
+|desert-species-005 / desert|desert-spot-005 / 55|Жук-носорог дюн|newIntegrated|1010 / 92 / 46 / 76|burrow|[assets/actors/task10-species/desert-species-005.png](../../assets/actors/task10-species/desert-species-005.png)|
 |desert-species-006 / desert|desert-spot-006 / 52|Живой игольный кактус «Двойной хвост»|prototypeOnly|841 / 88 / 29.6 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
 |desert-species-007 / desert|desert-spot-007 / 50|Живой игольный кактус «Костяная грива»|prototypeOnly|691 / 88 / 22.4 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
 |desert-species-008 / desert|desert-spot-008 / 48|Живой игольный кактус «Спинные шипы»|prototypeOnly|821 / 81 / 37.4 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|

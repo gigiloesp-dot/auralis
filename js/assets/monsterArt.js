@@ -1,6 +1,6 @@
 import {TASK10_OUTDOOR_BOSS_ART} from './task10OutdoorBossArt.js';
 import {TASK10_DUNGEON_BOSS_ART} from './task10DungeonBossArt.js';
-import {task10MonsterArt} from './task10MonsterArt.js';
+import {integratedSpeciesArt as task10MonsterArt} from './speciesArtRegistry.js';
 import {ACTOR_ART} from './actorArt.js';
 import {BOSS_ART} from './bossArt.js';
 // Each species has a distinct produced model and measured per-pose foot registration.

@@ -2,10 +2,10 @@
   "task": 10,
   "totalSpots": 257,
   "totalResidents": 2827,
-  "uniquePrimaryModels": 25,
-  "newSixBankModels": 2,
+  "uniquePrimaryModels": 29,
+  "newSixBankModels": 6,
   "legacyDistinctModels": 23,
-  "unfinishedSpecies": 232,
+  "unfinishedSpecies": 228,
   "complete": false,
   "note": "Names/anatomy of prototypeOnly rows are proposals,not completed unique creatures. Shared fallback art does not count as unique. Actual current stats and abilities are listed separately.",
   "species": [
@@ -9743,17 +9743,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Песчаный скорпион «Спинные шипы»",
-        "en": "Sand scorpion «Spine ridge»",
-        "es": "Escorpión de arena «Lomo espinoso»"
+        "ru": "Рогатая песчаная гадюка",
+        "en": "Horned sand viper",
+        "es": "Víbora cornuda de arena"
       },
       "runtimeNames": {
-        "ru": "Пепельная гадюка",
-        "en": "Ash viper",
-        "es": "Víbora de ceniza"
+        "ru": "Рогатая песчаная гадюка",
+        "en": "Horned sand viper",
+        "es": "Víbora cornuda de arena"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 711,
         "attack": 80,
@@ -9771,11 +9771,20 @@
       "locomotion": "serpent",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/desertSnake.png",
-          "atlas": "assets/actors/monsters/desertSnake.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-species/desert-species-002.png",
+          "atlas": "assets/actors/task10-species/desert-species-002.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -9790,17 +9799,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Песчаный скорпион «Серповидные когти»",
-        "en": "Sand scorpion «Sickle claws»",
-        "es": "Escorpión de arena «Garras de hoz»"
+        "ru": "Дух солнечной пыли",
+        "en": "Solar dust spirit",
+        "es": "Espíritu del polvo solar"
       },
       "runtimeNames": {
-        "ru": "Чародейский огонёк",
-        "en": "Arcane wisp",
-        "es": "Fuego arcano"
+        "ru": "Дух солнечной пыли",
+        "en": "Solar dust spirit",
+        "es": "Espíritu del polvo solar"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Sickle claws;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 484,
         "attack": 72,
@@ -9818,11 +9827,20 @@
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/arcaneWisp.png",
-          "atlas": "assets/actors/monsters/arcaneWisp.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-species/desert-species-003.png",
+          "atlas": "assets/actors/task10-species/desert-species-003.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -9837,17 +9855,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Песчаный скорпион «Ветвистые рога»",
-        "en": "Sand scorpion «Branching antlers»",
-        "es": "Escorpión de arena «Astas ramificadas»"
+        "ru": "Терракотовый страж",
+        "en": "Terracotta warden",
+        "es": "Guardián de terracota"
       },
       "runtimeNames": {
-        "ru": "Древний страж",
-        "en": "Ancient sentinel",
-        "es": "Centinela antiguo"
+        "ru": "Терракотовый страж",
+        "en": "Terracotta warden",
+        "es": "Guardián de terracota"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Branching antlers;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 951,
         "attack": 89,
@@ -9865,11 +9883,20 @@
       "locomotion": "heavy",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/ancientSentinel.png",
-          "atlas": "assets/actors/monsters/ancientSentinel.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-species/desert-species-004.png",
+          "atlas": "assets/actors/task10-species/desert-species-004.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -9884,17 +9911,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Песчаный скорпион «Панцирный воротник»",
-        "en": "Sand scorpion «Shell collar»",
-        "es": "Escorpión de arena «Cuello acorazado»"
+        "ru": "Жук-носорог дюн",
+        "en": "Dune rhinoceros beetle",
+        "es": "Escarabajo rinoceronte de las dunas"
       },
       "runtimeNames": {
-        "ru": "Рунный скарабей",
-        "en": "Rune scarab",
-        "es": "Escarabajo rúnico"
+        "ru": "Жук-носорог дюн",
+        "en": "Dune rhinoceros beetle",
+        "es": "Escarabajo rinoceronte de las dunas"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Shell collar;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 1010,
         "attack": 92,
@@ -9912,11 +9939,20 @@
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/scarab.png",
-          "atlas": "assets/actors/monsters/scarab.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-species/desert-species-005.png",
+          "atlas": "assets/actors/task10-species/desert-species-005.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {

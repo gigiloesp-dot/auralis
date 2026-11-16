@@ -1,0 +1,23 @@
+✔ AUR-192 all real geographic anchors share the full-viewport affine projection (15.329174ms)
+✔ AUR-192 aspect variants minimize cartographic symbol distortion (0.262737ms)
+✔ AUR-192 no encounter marker or hunting coordinate reaches regional map (0.496821ms)
+✔ AUR-192 owned bitmap is closed on release, including a late decode (10.171543ms)
+✔ AUR-192 eight baked maps match checked manifest hashes and approved region extents (34.224527ms)
+✔ AUR-192 arrivals exactly cover existing cross-region destinations without duplicating a real receiver (1.43003ms)
+✔ AUR-192 both maps receive identical real and derived arrivals and deduplicate explicit receivers (16.862857ms)
+✔ all seven settlements double their footprint, retain old homes and receive two safe real houses and lanes (371.859782ms)
+✔ only the crowded resident moves; additions have stable globally unique IDs and positions (1.141895ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (3.106533ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (230.454928ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (137.815641ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.818537ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (2.034594ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (1114.953753ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2345.656714

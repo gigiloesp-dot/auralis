@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "check": "node scripts/check.mjs",
-    "test:browser": "npm run test:browser:core && npm run test:browser:first-dungeon && npm run test:browser:android && npm run test:browser:task1 && npm run test:browser:task2 && npm run test:browser:menu && npm run test:browser:task4 && npm run test:browser:task5 && npm run test:browser:task6 && npm run test:browser:task7 && npm run test:browser:task8 && npm run test:browser:task9 && npm run test:browser:task10-climate && npm run test:browser:task10-surface && npm run test:browser:task10-performance && npm run test:browser:task10-spots && npm run test:browser:task10-species && npm run test:browser:task10-quest-species && npm run test:browser:task10-maps && npm run test:browser:task10-desert-dungeons && npm run test:browser:task10-dungeon-soak && npm run test:browser:task10-outdoor-bosses && npm run test:browser:task10-giant-phases && npm run test:browser:aur192 && npm run test:browser:aur192-soak",
+    "test:browser": "npm run test:browser:core && npm run test:browser:first-dungeon && npm run test:browser:android && npm run test:browser:task1 && npm run test:browser:task2 && npm run test:browser:menu && npm run test:browser:task4 && npm run test:browser:task5 && npm run test:browser:task6 && npm run test:browser:task7 && npm run test:browser:task8 && npm run test:browser:task9 && npm run test:browser:task10-climate && npm run test:browser:task10-surface && npm run test:browser:task10-performance && npm run test:browser:task10-spots && npm run test:browser:task10-species && npm run test:browser:task10-quest-species && npm run test:browser:task10-maps && npm run test:browser:task10-desert-dungeons && npm run test:browser:task10-dungeon-soak && npm run test:browser:task10-outdoor-bosses && npm run test:browser:task10-giant-phases && npm run test:browser:aur192 && npm run test:browser:aur192-soak && npm run test:browser:task10-next-species && npm run test:browser:task10-npc-travel && npm run test:browser:task10-quests && npm run test:browser:task10-dailies",
     "test:browser:smoke": "node tests/browser-smoke.cjs",
     "test:browser:world": "node tests/browser-world.cjs",
     "test:browser:npcs": "node tests/browser-npcs.cjs",
@@ -53,7 +53,11 @@
     "test:browser:task10-outdoor-bosses": "node tests/browser-task10-outdoor-bosses.cjs",
     "test:browser:task10-giant-phases": "node tests/browser-task10-giant-phases.cjs",
     "test:browser:aur192": "node tests/browser-aur192.cjs",
-    "test:browser:aur192-soak": "node tests/browser-aur192-soak.cjs"
+    "test:browser:aur192-soak": "node tests/browser-aur192-soak.cjs",
+    "test:browser:task10-next-species": "node tests/browser-task10-next-species.cjs",
+    "test:browser:task10-npc-travel": "node tests/browser-task10-npc-travel.cjs",
+    "test:browser:task10-quests": "node tests/browser-task10-quests.cjs",
+    "test:browser:task10-dailies": "node tests/browser-task10-dailies.cjs"
   },
   "devDependencies": {
     "playwright": "^1.65.0"

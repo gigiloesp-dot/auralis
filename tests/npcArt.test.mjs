@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
-import {NPC_ART} from '../js/assets/npcArt.js';import {NPCS} from '../js/npc/npcData.js';
+import {NPC_ART} from '../js/assets/npcArt.js';import {LEGACY_NPCS as NPCS} from '../js/npc/npcData.js';
 test('all21 actual residents have their own8painted facings in six lazily shared packs',()=>{
  assert.deepEqual(Object.keys(NPC_ART).sort(),NPCS.map(n=>n.id).sort());assert.equal(new Set(Object.values(NPC_ART).map(e=>e.key)).size,6);
  for(const [id,e]of Object.entries(NPC_ART)){const atlas=JSON.parse(readFileSync(e.atlasURL)),png=readFileSync(e.url);assert.equal(png.readUInt32BE(16),1536);assert.equal(png.readUInt32BE(20),1024);assert.equal(png[25],6);for(const d of ['e','se','s','sw','w','nw','n','ne'])assert.ok(atlas.frames[id+'/'+d],id+'/'+d);assert.ok(e.originY>.85&&e.originY<1);}

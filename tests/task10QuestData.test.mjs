@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {TASK10_QUESTS,TASK10_DAILY_QUESTS,TASK10_DAILY_TIERS} from '../js/quests/task10QuestData.js';
 import {TASK10_NPCS} from '../js/npc/task10NpcData.js';
 import {NPCS} from '../js/npc/npcData.js';
-import {QUESTS,LEGACY_QUESTS} from '../js/quests/quests.js';
+import {QUESTS,LEGACY_QUESTS,LEGACY_RUNTIME_QUESTS} from '../js/quests/quests.js';
 import {getRegionContent} from '../js/world/regionContent.js';
 import {DUNGEONS} from '../js/dungeons/dungeonData.js';
 import {itemDefinition} from '../js/equipment/items.js';
@@ -13,7 +13,7 @@ import {climateAt} from '../js/world/climate.js';
 const all=[...TASK10_QUESTS,...TASK10_DAILY_QUESTS],npcs=[...NPCS,...TASK10_NPCS],types=['kill','explore','talk','collect','deliver','boss','dungeon'];
 const npc=id=>npcs.find(n=>n.id===id);
 test('Task10 additive catalog preserves104 live legacy quests and uses41 separate stable localized identities',()=>{
- assert.equal(LEGACY_QUESTS.length,104);assert.equal(QUESTS.length,104);
+ assert.equal(LEGACY_QUESTS.length,104);assert.equal(LEGACY_RUNTIME_QUESTS.length,104);assert.deepEqual(LEGACY_RUNTIME_QUESTS.map(q=>q.id),LEGACY_QUESTS.map(q=>q.id));assert.equal(QUESTS.length,145);
  assert.equal(TASK10_QUESTS.length,33);assert.equal(TASK10_DAILY_QUESTS.length,8);assert.equal(new Set(all.map(q=>q.id)).size,41);
  assert.ok(Object.isFrozen(TASK10_QUESTS)&&Object.isFrozen(TASK10_DAILY_QUESTS));
  for(const q of all){assert.ok(!LEGACY_QUESTS.some(old=>old.id===q.id));assert.ok(Object.isFrozen(q));assert.ok(npc(q.npcId),q.id);assert.ok(types.includes(q.type));assert.ok(q.level>=1&&q.level<=56);assert.ok(Number.isSafeInteger(q.xp)&&q.xp>0);assert.ok(Number.isSafeInteger(q.gold)&&q.gold>0);assert.ok(q.required>=1);for(const lang of ['ru','en','es']){assert.ok(q.title[lang].length>7,q.id+'/'+lang);assert.ok(q.description[lang].length>40,q.id+'/'+lang);assert.ok(!/TODO:|placeholder|заглушка/i.test(q.description[lang]));}assert.equal(q.classId,undefined);assert.equal(q.allowedClasses,undefined);}

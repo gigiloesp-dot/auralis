@@ -20,7 +20,7 @@ test('all regional quest objectives reference reachable world descriptors and lo
 });
 test('every listed quest can be accepted, completed through its real event type and claimed exactly once',()=>{
  for(const q of QUESTS){
-  const hero=createCharacter({level:42,region:q.region,x:1000,y:1000});for(const id of q.requires||[])hero.quests[id]={state:'claimed',progress:99};
+  const hero=createCharacter({level:q.daily?q.level:Math.max(42,q.level),region:q.region,x:1000,y:1000});for(const id of q.requires||[])hero.quests[id]={state:'claimed',progress:99};
   assert.equal(acceptQuest(hero,q.id,'invalid-npc'),false,q.id);assert.equal(acceptQuest(hero,q.id,q.npcId),true,q.id);
   if(q.type==='kill'){for(let i=0;i<q.required;i++)recordKill(hero,q.target,{campId:q.targetCampId,region:q.region});}
   if(q.type==='boss')recordEvent(hero,'boss',{id:q.target,region:q.region});

@@ -10,6 +10,7 @@ import {respawnAtTown} from './towns.js';
 import {DUNGEONS,dungeonContentForHero,enterDungeon,leaveDungeon,recordDungeonBossKill} from '../dungeons/dungeonSystem.js';
 import {generateArenaContent} from './arena.js';
 import {recordEvent} from '../quests/quests.js';
+import {commitNpcTravel} from './npcTravel.js';
 const validReturn=p=>p&&Object.hasOwn(REGIONS,p.region)&&Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=20&&p.y>=20&&p.x<=REGIONS[p.region].width-20&&p.y<=REGIONS[p.region].height-20;
 const names={ru:{travel:'Перейти',exit:'Выход'},en:{travel:'Travel',exit:'Exit'},es:{travel:'Viajar',exit:'Salir'}};
 export class WorldRuntime{
@@ -43,6 +44,7 @@ export class WorldRuntime{
  isWalkable(x,y,r=12){return this.chunkWorld.isWalkable(x,y,r);}
  move(axis,speed,dt){const dir=screenDirection(axis.x,axis.y),h=this.scene.hero,dx=dir.x*speed*dt,dy=dir.y*speed*dt;if(this.isWalkable(h.x+dx,h.y))h.x+=dx;if(this.isWalkable(h.x,h.y+dy))h.y+=dy;return Math.atan2(dir.y,dir.x);}
  travel(){if(!this.portal||this.scene.panelsOpen())return false;const p=this.portal;if(p.toRegion==='arena')this.scene.hero.returnLocation={region:this.scene.hero.region,x:p.x,y:p.y+80};else if(this.content.arena)this.scene.hero.returnLocation=null;this.load({region:p.toRegion,x:p.toX,y:p.toY});return true;}
+ travelFromNpc(npcId,receiverId){const s=this.scene,result=commitNpcTravel(s.hero,npcId,receiverId,()=>s.save());if(!result.ok)return result;this.load();return result;}
  enterDungeon(id,difficulty){const result=enterDungeon(this.scene.hero,id,difficulty);if(result.ok)this.load(result.destination,result.content);return result;}
  leaveDungeon(){const result=leaveDungeon(this.scene.hero);if(result.ok)this.load(result.destination);return result;}
  onKill(m){const h=this.scene.hero,session=h.dungeonSession;if(!session||!m.kind?.boss)return;const at=m.deathAt??Date.now(),result=recordDungeonBossKill(h,session.dungeonId,session.difficulty,m.id,at,{deathRecordedAt:at});if(result.completed)recordEvent(h,'dungeon',{id:session.dungeonId,region:this.content.region});}

@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {QUESTS,LEGACY_QUESTS,acceptQuest,recordKill,questProgress,claimQuest} from '../js/quests/quests.js';
+import {LEGACY_RUNTIME_QUESTS as QUESTS,LEGACY_QUESTS,acceptQuest,recordKill,questProgress,claimQuest} from '../js/quests/quests.js';
 import {getRegionContent} from '../js/world/regionContent.js';import {createCharacter} from '../js/characters/Character.js';
 import {Save} from '../js/systems/save.js';
 const storage=new Map();globalThis.localStorage={getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};

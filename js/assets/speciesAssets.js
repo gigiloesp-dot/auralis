@@ -1,7 +1,7 @@
 import {TASK10_LAYOUT} from '../world/task10Layout.js';
 import {MONSTER_ART} from './monsterArt.js';
 import {ACTOR_ART} from './actorArt.js';
-import {TASK10_MONSTER_ART} from './task10MonsterArt.js';
+import {INTEGRATED_SPECIES_ART as TASK10_MONSTER_ART} from './speciesArtRegistry.js';
 // A legacy unique model may certify ONE spot only. Other spots displaying the
 // same fallback are explicitly prototypes, never additional finished species.
 const bySpecies=new Map(),seen=new Set();

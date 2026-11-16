@@ -10,6 +10,8 @@ import {REGIONS} from './worldData.js';
 import {MONSTER_TYPES} from '../monsters/monsters.js';
 import {getRegionTowns} from './towns.js';
 import {getRegionNpcs} from '../npc/npcData.js';
+import {TASK10_DESERT_OASIS_SAFE_RADIUS} from '../npc/task10NpcData.js';
+import {regionTravelReceivers} from './npcTravelData.js';
 import {RELEASE21_DUNGEONS as DUNGEONS} from '../dungeons/dungeonData.js';
 import {movementProfile} from '../monsters/movementProfiles.js';
 import {regionRoads,distanceToSegment,worldWalkable} from './chunkGeometry.js';
@@ -104,4 +106,4 @@ export function getRelease21RegionContent(id='forest'){
 }
 
 const activeCache=new Map();
-export function getRegionContent(id='forest'){if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);if(!activeCache.has(id)){const c=TASK10_LAYOUT[id];activeCache.set(id,{...c,palette:REGIONS[id].palette,bosses:id==='desert'?[...c.bosses,...DESERT_BOSSES]:c.bosses,npcs:getRegionNpcs(id),camps:c.camps.map(camp=>({...camp,speciesId:camp.plannedSpeciesId,temporaryBestiary:!uniqueSpeciesArt(camp.plannedSpeciesId),spawns:camp.spawns.map(s=>({...s,speciesId:s.plannedSpeciesId}))}))});}return activeCache.get(id);}
+export function getRegionContent(id='forest'){if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);if(!activeCache.has(id)){const c=TASK10_LAYOUT[id];activeCache.set(id,{...c,palette:REGIONS[id].palette,bosses:id==='desert'?[...c.bosses,...DESERT_BOSSES]:c.bosses,npcs:getRegionNpcs(id),receivers:regionTravelReceivers(id),towns:c.towns.map(t=>t.id==='caravanOasis'?{...t,safeRadius:TASK10_DESERT_OASIS_SAFE_RADIUS}:t),camps:c.camps.map(camp=>({...camp,speciesId:camp.plannedSpeciesId,temporaryBestiary:!uniqueSpeciesArt(camp.plannedSpeciesId),spawns:camp.spawns.map(s=>({...s,speciesId:s.plannedSpeciesId}))}))});}return activeCache.get(id);}

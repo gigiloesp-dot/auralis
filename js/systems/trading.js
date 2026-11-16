@@ -1,6 +1,7 @@
 import {itemDefinition,itemCount,ITEM_DEFS,addItem} from '../equipment/items.js';
 export const POTION_PRICE=10;
 export const POTION_LIMIT=99;
+export const merchantSellsPotions=npc=>!npc?.shopCategories||npc.shopCategories.includes('consumables');
 const funds=hero=>Number.isSafeInteger(hero.gold)&&hero.gold>=0?hero.gold:0;
 export function buyPotion(hero,resource){
  if(!['hp','mp'].includes(resource))return {ok:false,reason:'invalid'};
@@ -35,6 +36,7 @@ export function merchantStock(hero,npc){
  const slots=['weapon','helmet','chest','gloves','pants','boots','ring','amulet','shield'];
  const stock=[];
  for(const slot of slots){
+  if(npc.shopCategories&&!npc.shopCategories.includes(slot==='weapon'?'weapon':'armor'))continue;
   const options=Object.entries(ITEM_DEFS).filter(([,d])=>d.slot===slot&&d.level<=cap&&(!d.allowedClasses||d.allowedClasses.includes(hero.classId))).sort((a,b)=>b[1].level-a[1].level);
   if(!options.length)continue;
   for(const rarity of ['common','uncommon','rare']){const item={id:options[0][0],rarity};stock.push({...item,offerId:item.id+':'+rarity,price:equipmentPrice(item)});}

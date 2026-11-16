@@ -1,0 +1,34 @@
+{
+  "node": "24.22.1",
+  "quests": 145,
+  "scope": "Node CPU: two145-quest views,five nearbyNPC indicators and updateQuestProgress per sample. Not full browser or AndroidFPS.",
+  "results": [
+    {
+      "name": "typical6",
+      "accepted": 6,
+      "active": 6,
+      "samples": 500,
+      "medianMs": 0.16913500000009662,
+      "p95Ms": 5.769034999999803,
+      "maxMs": 52.456560999999965,
+      "meanMs": 1.1628335059999964,
+      "gcHeapDelta": 202840
+    },
+    {
+      "name": "legacyOverflow104",
+      "accepted": 104,
+      "active": 6,
+      "samples": 500,
+      "medianMs": 0.33676900000000387,
+      "p95Ms": 12.859336999999869,
+      "maxMs": 58.45424099999991,
+      "meanMs": 2.486207967999997,
+      "gcHeapDelta": 204768
+    }
+  ],
+  "sourceSha256": {
+    "js/quests/quests.js": "1cde0fe0339e175155e1f3e61ed607648f0e0710887e53dcf4f3de1fa971a153",
+    "js/quests/dailyQuests.js": "7db50aa311268c22c9aeb161073218a76fa6704a985cbc0f86cf1d3f2259d8de",
+    "js/quests/npcQuestIndicator.js": "69350f216d21b16bc6fdb91748a361c229c1336986704d5c540b5556bfb27892"
+  }
+}

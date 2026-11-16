@@ -1,11 +1,13 @@
 import {itemSummary} from './itemPresentation.js';
 import {text as message} from '../i18n/messages.js';
-import {QUEST_TEXT,QUESTS,questProgress,questTitle,questDescription,questsForNpc,acceptQuest,claimQuest,recordEvent} from '../quests/quests.js';
-import {buyPotion,sellItem,materialPrice,equipmentPrice,merchantStock,buyEquipment,commitTrade,POTION_PRICE} from '../systems/trading.js';
+import {QUEST_TEXT,QUESTS,questProgress,questTitle,questDescription,questsForNpc,acceptQuestResult,claimQuest,recordEvent,dailyQuestViewKey} from '../quests/quests.js';
+import {buyPotion,sellItem,materialPrice,equipmentPrice,merchantStock,buyEquipment,commitTrade,POTION_PRICE,merchantSellsPotions} from '../systems/trading.js';
 import {itemCount,itemName,itemDefinition} from '../equipment/items.js';
 import {NPCS} from '../npc/npcData.js';
 import {REGIONS} from '../world/worldData.js';
 import {NPC_UI_TEXT} from './npcText.js';
+import {TASK10_QUEST_TEXT} from '../quests/task10QuestStrings.js';
+import {npcTravelOptions} from '../world/npcTravel.js';
 const element=(tag,text,className)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(className)e.className=className;return e;};
 const roles=npc=>npc.roles||[npc.role];
 // Keep the live hero identity used by combat, but make quest acceptance and
@@ -36,6 +38,7 @@ export class NpcPanel{
  nearby(){return !!this.nearest()&&this.scene.hero.hp>0;}
  update(){
   if(this.messageUntil&&Date.now()>=this.messageUntil){this.messageUntil=0;this.root.querySelectorAll('.npc-status').forEach(node=>node.remove());}
+  if(this.opened&&this.dailyViewKey!==dailyQuestViewKey(this.scene.hero))this.render();
   const blocked=['storagePanel','inventoryPanel','characterPanel','skillsPanel','savePanel','mapPanel','dungeonPanel','travelPanel'].some(key=>this.scene[key]?.opened);
   const npc=this.nearest();this.button.hidden=this.opened||blocked||!npc||this.scene.hero.hp<=0;
   if(npc)this.button.textContent=npc.id==='mira'?this.text.talk:this.t.talk+': '+this.name(npc);
@@ -46,31 +49,31 @@ export class NpcPanel{
  }
  show(npc=this.nearest()){
   if(!npc||this.scene.hero.hp<=0||!this.residents().some(n=>n.id===npc.id))return;this.scene.closePanels?.(this);this.scene.interactions?.hide();this.scene.savePanel?.close();this.scene.storagePanel?.close();this.scene.mapPanel?.close();this.scene.dungeonPanel?.close();this.scene.controls?.reset?.();
-  this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.npc=npc;this.tab='quest';this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;
-  if(recordEvent(this.scene.hero,'talk',{npcId:npc.id,region:this.scene.hero.region}))this.scene.save();this.render();
+  this.scene.inventoryPanel?.close();this.scene.characterPanel?.close();this.scene.skillsPanel?.close();this.npc=npc;this.tab=roles(npc).includes('teleporter')?'travel':npc.shopCategories?'shop':npc.appearanceId&&!roles(npc).includes('questGiver')?'info':'quest';this.opened=true;this.button.hidden=true;this.journal.hidden=true;this.root.hidden=false;
+  if(recordEvent(this.scene.hero,'talk',{npcId:npc.id,region:this.scene.hero.region}))this.scene.save();if(questsForNpc(this.scene.hero,npc.id).some(q=>questProgress(this.scene.hero,q.id).state==='completed'&&(q.turnInNpcId||q.npcId)===npc.id))this.tab='quest';this.render();
  }
  close(){this.opened=false;this.root.hidden=true;}
  action(label,fn){const button=element('button',label);button.type='button';button.onclick=fn;return button;}
  render(message=''){
-  if(!this.npc)return;const t=this.t,npc=this.npc;this.root.replaceChildren();this.root.setAttribute('aria-label',this.name(npc));
+  if(!this.npc)return;this.dailyViewKey=dailyQuestViewKey(this.scene.hero);const t=this.t,npc=this.npc;this.root.replaceChildren();this.root.setAttribute('aria-label',this.name(npc));
   const heading=element('div','','npc-heading');heading.append(element('h2',this.name(npc)),this.action(t.close,()=>this.close()));this.root.append(heading);
   const residents=this.residents();if(residents.length>1){const label=element('label',t.nearby,'npc-selector'),select=element('select');for(const resident of residents){const option=element('option',this.name(resident));option.value=resident.id;select.append(option);}select.value=npc.id;select.onchange=()=>this.show(residents.find(n=>n.id===select.value));label.append(select);this.root.append(label);}
-  const tabs=element('div','','npc-tabs'),available=[['quest',this.text.questsTab],...(roles(npc).some(role=>['merchant','specialMerchant'].includes(role))?[['shop',this.text.shopTab]]:[]),['info',t.info]];
-  for(const [id,label]of available){const button=this.action(label,()=>{this.tab=id;this.render();});button.setAttribute('aria-pressed',String(this.tab===id));tabs.append(button);}this.root.append(tabs);
+  const tabs=element('div','','npc-tabs'),available=[...(!npc.appearanceId||roles(npc).includes('questGiver')||questsForNpc(this.scene.hero,npc.id).length?[['quest',this.text.questsTab]]:[]),...(roles(npc).some(role=>['merchant','specialMerchant'].includes(role))?[['shop',this.text.shopTab]]:[]),...(roles(npc).includes('teleporter')?[['travel',t.travel]]:[]),['info',t.info]];
+  for(const [id,label]of available){const button=this.action(label,()=>{this.tab=id;this.render();});button.dataset.npcTab=id;button.setAttribute('aria-pressed',String(this.tab===id));tabs.append(button);}this.root.append(tabs);
   if(roles(npc).includes('storage'))this.root.append(this.action(t.storage,()=>{this.close();this.scene.storagePanel?.show(npc);}));
-  if(this.tab==='shop')this.renderShop(message);else if(this.tab==='info')this.renderInfo();else this.renderQuests(message);
+  if(this.tab==='shop')this.renderShop(message);else if(this.tab==='travel')this.renderTravel(message);else if(this.tab==='info')this.renderInfo();else this.renderQuests(message);
  }
  renderQuests(message=''){
-  const h=this.scene.hero,t=this.t,npc=this.npc,quests=questsForNpc(h,npc.id);
+  const h=this.scene.hero,t=this.t,npc=this.npc,quests=questsForNpc(h,npc.id),extra=TASK10_QUEST_TEXT[this.language]||TASK10_QUEST_TEXT.ru;
   if(!quests.length){this.root.append(element('p',t.empty));this.renderInfo();return;}
   for(const quest of quests){
    const p=questProgress(h,quest.id),card=element('article','','npc-quest');card.dataset.questId=quest.id;
    card.append(element('h3',questTitle(quest,this.language)),element('p',questDescription(quest,this.language)),element('p',`${t.level}: ${quest.level||1} · ${p.progress}/${p.required}`));
    if(quest.location){const region=REGIONS[quest.location.region];card.append(element('p',`${t.target}: ${region?.names?.[this.language]||quest.location.region} · X ${Math.round(quest.location.x)} / Y ${Math.round(quest.location.y)}`,'npc-target'));}
-   const reward=[`${quest.xp||0} ${t.xp}`,`${quest.gold||0} ${t.gold}`];if(quest.reward)reward.push(`${itemName(quest.reward,this.language)} ×${quest.reward.quantity||1}`);card.append(element('p',t.reward+': '+reward.join(' · ')));
-   if(p.state==='available'&&quest.npcId===npc.id){const button=this.action(this.text.accept,()=>{const result=commitQuestChange(h,()=>acceptQuest(h,quest.id,npc.id),()=>this.scene.save());if(result.ok)this.render();else this.render(result.reason==='storage'?t.storageFailure:t.invalid);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.accept+': '+questTitle(quest,this.language));card.append(button);}
-   else if(p.state==='completed'&&(quest.turnInNpcId||quest.npcId)===npc.id){const button=this.action(this.text.claim,()=>{const result=commitQuestChange(h,()=>claimQuest(h,quest.id,npc.id),()=>this.scene.save());this.scene.refreshHud();if(result.ok)this.render();else this.render(result.reason==='storage'?t.storageFailure:t.full);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.claim+': '+questTitle(quest,this.language));card.append(button);}
-   else{card.append(element('p',t[p.state]||t.active));if(p.state==='locked'&&quest.requires?.length)card.append(element('p',t.requires+': '+quest.requires.map(id=>questTitle(QUESTS.find(q=>q.id===id)||{id},this.language)).join(', ')));if(['active','completed'].includes(p.state)){const target=NPCS.find(n=>n.id===(quest.turnInNpcId||quest.npcId));if(target)card.append(element('p',`${t.returnTo}: ${this.name(target)} · X ${target.x} / Y ${target.y}`));}}
+   const reward=[`${quest.xp||0} ${t.xp}`,`${quest.gold||0} ${t.gold}`];if(quest.daily)reward.push(extra.potionReward);if(quest.reward)reward.push(`${itemName(quest.reward,this.language)} ×${quest.reward.quantity||1}`);card.append(element('p',t.reward+': '+reward.join(' · ')));
+   if(p.state==='available'&&quest.npcId===npc.id){const button=this.action(this.text.accept,()=>{const result=commitQuestChange(h,()=>acceptQuestResult(h,quest.id,npc.id),()=>this.scene.save());if(result.ok)this.render();else this.render(result.reason==='storage'?t.storageFailure:result.reason==='activeLimit'?extra.activeLimit:t.invalid);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.accept+': '+questTitle(quest,this.language));card.append(button);}
+   else if(p.state==='completed'&&(quest.turnInNpcId||quest.npcId)===npc.id){const button=this.action(this.text.claim,()=>{const result=commitQuestChange(h,()=>claimQuest(h,quest.id,npc.id),()=>this.scene.save());this.scene.refreshHud();if(result.ok){this.scene.refreshPotions?.();this.render();}else this.render(result.reason==='storage'?t.storageFailure:result.reason==='potionCapacity'?extra.potionCapacity:t.full);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.claim+': '+questTitle(quest,this.language));card.append(button);}
+   else{card.append(element('p',p.state==='queued'?extra.queued:quest.daily&&p.state==='claimed'?extra.todayClaimed:t[p.state]||t.active));if(p.state==='locked'&&quest.requires?.length)card.append(element('p',t.requires+': '+quest.requires.map(id=>questTitle(QUESTS.find(q=>q.id===id)||{id},this.language)).join(', ')));if(['active','completed'].includes(p.state)){const target=NPCS.find(n=>n.id===(quest.turnInNpcId||quest.npcId));if(target)card.append(element('p',`${t.returnTo}: ${this.name(target)} · X ${target.x} / Y ${target.y}`));}}
    this.root.append(card);
   }
   if(message)this.root.append(element('p',message,'npc-status'));
@@ -78,13 +81,18 @@ export class NpcPanel{
  renderInfo(){
   const content=this.scene.regionContent,t=this.t,npc=this.npc,region=REGIONS[npc.region];
   this.root.append(element('p',`${t.region}: ${region?.names?.[this.language]||npc.region} · X ${npc.x} / Y ${npc.y}`));
-  this.root.append(element('p',roles(npc).map(role=>t[role==='storage'?'storageRole':role]||role).join(' · ')));
+  this.root.append(element('p',npc.roleNames?.[this.language]||roles(npc).map(role=>t[role==='storage'?'storageRole':role]||role).join(' · ')));
+  if(npc.dialogue?.[this.language])this.root.append(element('p',npc.dialogue[this.language],'npc-dialogue'));
   if(content?.towns?.length){this.root.append(element('h3',t.roads));for(const town of content.towns)this.root.append(element('p',`${town.names?.[this.language]||town.name}: X ${town.x??town.spawn.x} / Y ${town.y??town.spawn.y}`));}
   if(content?.portals?.length){this.root.append(element('h3',t.portals));for(const portal of content.portals)this.root.append(element('p',`${REGIONS[portal.toRegion]?.names?.[this.language]||portal.toRegion}: X ${portal.x} / Y ${portal.y}`));}
  }
+ renderTravel(message=''){
+  const npc=this.npc,t=this.t,h=this.scene.hero;if(npc.dialogue?.[this.language])this.root.append(element('p',npc.dialogue[this.language],'npc-dialogue'));this.root.append(element('p',t.arrivalOnly));
+  const list=element('div','','npc-travel-list');for(const receiver of npcTravelOptions(h,npc)){const region=REGIONS[receiver.region],label=(region.names[this.language]||region.name)+' · '+receiver.names[this.language],button=this.action(label,()=>{const result=this.scene.world.travelFromNpc(npc.id,receiver.id);if(!result.ok)this.render(result.reason==='storage'?t.storageFailure:result.reason==='blocked'?t.arrivalBlocked:t.invalid);});button.dataset.travelReceiver=receiver.id;list.append(button);}this.root.append(list);if(message)this.root.append(element('p',message,'npc-status'));
+ }
  renderShop(message=''){
   const h=this.scene.hero,t=this.text,u=this.t;this.root.append(element('h3',`${t.gold}: ${h.gold||0}`));
-  for(const resource of ['hp','mp']){const row=element('div','','npc-shop-row');row.append(itemSummary({id:resource+'Potion',rarity:'common'},{language:this.language,definition:{level:1},name:resource==='hp'?t.hpPotion:t.mpPotion,quantity:h.potions?.[resource]||0,price:POTION_PRICE,currency:t.gold}));const buy=this.action(t.buy,()=>{const result=commitTrade(h,()=>buyPotion(h,resource),()=>this.scene.save());if(result.ok)this.persistTrade(u.bought);else this.render(result.reason==='storage'?u.storageFailure:result.reason==='funds'?u.funds:u.limit);});buy.disabled=(h.gold||0)<POTION_PRICE||(h.potions?.[resource]||0)>=99;row.append(buy);this.root.append(row);}
+  for(const resource of merchantSellsPotions(this.npc)?['hp','mp']:[]){const row=element('div','','npc-shop-row');row.append(itemSummary({id:resource+'Potion',rarity:'common'},{language:this.language,definition:{level:1},name:resource==='hp'?t.hpPotion:t.mpPotion,quantity:h.potions?.[resource]||0,price:POTION_PRICE,currency:t.gold}));const buy=this.action(t.buy,()=>{const result=commitTrade(h,()=>buyPotion(h,resource),()=>this.scene.save());if(result.ok)this.persistTrade(u.bought);else this.render(result.reason==='storage'?u.storageFailure:result.reason==='funds'?u.funds:u.limit);});buy.disabled=(h.gold||0)<POTION_PRICE||(h.potions?.[resource]||0)>=99;row.append(buy);this.root.append(row);}
   h.inventory.forEach((item,index)=>{const price=itemDefinition(item)?.slot?Math.max(1,Math.floor(equipmentPrice(item)*.25)):materialPrice(item);if(!price)return;const quantity=itemCount(item),row=element('div','','npc-shop-row');row.append(itemSummary(item,{language:this.language,quantity,price,currency:t.gold}));const sell=this.action(`${t.sell} ×${quantity} (+${price*quantity})`,()=>{const result=commitTrade(h,()=>sellItem(h,index,quantity),()=>this.scene.save());if(result.ok)this.persistTrade(u.sold);else this.render(result.reason==='storage'?u.storageFailure:u.invalid);});row.append(sell);this.root.append(row);});
   this.root.append(element('p',u.equipped),element('h3',u.goods));
   for(const offer of merchantStock(h,this.npc)){
