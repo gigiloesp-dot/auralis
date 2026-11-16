@@ -59,7 +59,7 @@ test('normal equip, unequip and saved reload preserve the real catalogue stats w
 });
 
 test('release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta',()=>{
- const task10Ledger=readFileSync('docs/qa/task10/approved-deltas.json');assert.equal(sha(task10Ledger),'4b79e7904b44e8a23f6c9db841485256a32d133a20193b45dcae1844deee1a31');const task10=JSON.parse(task10Ledger).files;
+ const task10Ledger=readFileSync('docs/qa/task10/approved-deltas.json');assert.equal(sha(task10Ledger),'79c6672259ff2154eeee6db5a7923fa8c05ad91eb6c421bbce67dd1b3f8a09b7');const task10=JSON.parse(task10Ledger).files;
  const ledger=readFileSync('docs/qa/task9/approved-deltas.json');assert.equal(sha(ledger),'fd8478d06c88ff5a2701e7db607d2bb6c5f19321bd26a8e686dc967cb278cbc5');const deltas=JSON.parse(ledger);
  const manifest=JSON.parse(readFileSync('docs/art/WARRIOR_REFERENCE_PRESERVED.json'));assert.ok(Object.keys(manifest.hashes).length>200);for(const [path,hash]of Object.entries(manifest.hashes)){
   if(task10[path]){assert.equal(task10[path].before,deltas[path]?.current||hash,path+' release21 contract');if(deltas[path])assert.equal(deltas[path].original,hash,path+' historical contract');assert.equal(sha(readFileSync(path)),task10[path].after,path+' exact approved task10 delta');}

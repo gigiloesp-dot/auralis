@@ -1,5 +1,6 @@
 // Vector equipment icons: crisp at mobile sizes; item tier and rarity affect appearance.
 const shapes={
+ stoneGiantCore:'<image href="assets/items/stone-giant-core.png" x="4" y="4" width="40" height="40"/>',
  bow:'<path d="M13 4q33 19 0 40l9-20z" fill="#80582f" stroke="S" stroke-width="2"/><path d="M13 4v40M7 24h33m-7-5 7 5-7 5" fill="none" stroke="#eee0b7" stroke-width="2"/><path d="m17 10 4 5m-4 18 4-5" stroke="#caa66b" stroke-width="2"/>',
  staff:'<path d="m16 45 10-29 5 2-10 29z" fill="#825b36" stroke="S" stroke-width="2"/><path d="m27 3 10 7-5 14-12-4-2-9z" fill="F" stroke="S" stroke-width="2"/><path d="m27 3 1 15 9-8m-9 8-8 2" fill="none" stroke="#e8f3ff" stroke-width="2"/>',
  cannon:'<path d="m7 31 9-17 26 10-7 17z" fill="#65747b" stroke="S" stroke-width="2"/><ellipse cx="39" cy="32" rx="6" ry="10" transform="rotate(22 39 32)" fill="#26383c" stroke="#b99b61" stroke-width="3"/><path d="m7 25-4 11 12 5 5-10m-5-17 5-7 8 4-2 9" fill="F" stroke="S" stroke-width="2"/><path d="m21 20 8 3m-11 3 8 3" stroke="#bacad0" stroke-width="2"/>',

@@ -1,3 +1,4 @@
+import {ENDGAME_MATERIALS} from './endgameMaterials.js';
 import {localizedItemName} from '../i18n/entityNames.js';
 import {GENERATED_ITEMS} from './catalog.js';
 import {insertStack,compactStacks,itemCount} from './stacking.js';
@@ -12,7 +13,8 @@ export const ITEM_DEFS=Object.freeze({...GENERATED_ITEMS,
  leatherPants:{name:'Кожаные штаны',slot:'pants',defense:2,level:1},
  copperRing:{name:'Медное кольцо',slot:'ring',attack:1,level:1},
  wolfFang:{name:'Клык волка',slot:null,level:1},
- wolfPelt:{name:'Волчья шкура',slot:null,level:1}
+ wolfPelt:{name:'Волчья шкура',slot:null,level:1},
+ ...ENDGAME_MATERIALS
 });
 export const itemDefinition=item=>ITEM_DEFS[item?.id]||null;
 export const itemName=(item,language='ru')=>localizedItemName(item,itemDefinition(item),language);

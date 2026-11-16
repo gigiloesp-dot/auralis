@@ -1,3 +1,5 @@
+import {tickStoneGiantEncounter,cancelStoneGiantEncounter} from './stoneGiantEncounter.js';
+import {drawStoneGiantWarning} from './stoneGiantVisuals.js';
 import {ensureDungeonVisit,dungeonMonsterState,recordDungeonMinionKill,DUNGEON_VISIT_DEAD_UNTIL} from '../dungeons/dungeonSession.js';
 import {markMonsterThreat,monsterIntent,steeringWaypoint,leashRadius} from './monsterBehavior.js';
 import {movementProfile,blockingObstacles,tickMonsterAbility,cancelMonsterAbility,applyHeroAffliction,tickHeroAfflictions} from './movementProfiles.js';
@@ -7,7 +9,7 @@ import {projectAngle} from '../world/projection.js';
 import {recoverLivingMonster,restoredLivingHp,MONSTER_RECOVERY_DELAY} from './health.js';
 import {placeTrap,tickClassEffects,guardBlock,guardResponse,clearClassEffects} from '../combat/classEffects.js';
 import {derivedAttributes} from '../systems/attributes.js';
-import {rollMonsterLoot} from './loot.js';
+import {rollEncounterLoot} from './encounterLoot.js';
 import {equipmentStats} from '../equipment/items.js';
 import {MONSTER_TYPES,MONSTER_CAMPS,MONSTER_ACTIVATION_RADIUS,ORDINARY_RESPAWN_MS,clearDashPosition,monsterKind} from './monsters.js';
 import {MonsterStream} from './MonsterStream.js';
@@ -41,7 +43,7 @@ export class MonsterSystem{
  isCombatHot(m,now=this.now??this.scene.playNow??0){
   if(!m.alive||this.hero.hp<=0)return false;
   const closeToTerritory=distance(this.hero,{x:m.homeX,y:m.homeY})<=leashRadius(m)+140;
-  return closeToTerritory&&((m.aggroUntil>now&&!m.returning)||!!m.windup||!!m.specialState||this.projectiles.some(p=>p.target===m)||this.hostileProjectiles.some(p=>p.source===m));
+  return closeToTerritory&&((m.aggroUntil>now&&!m.returning)||!!m.windup||!!m.specialState||!!m.giantEncounter?.attack||this.projectiles.some(p=>p.target===m)||this.hostileProjectiles.some(p=>p.source===m));
  }
  isActive(m){return (m.alive&&(m.returning||m.behaviorState==='chase'))||(this.stream?.shouldActivate?.(m)??distance(m,this.hero)<=MONSTER_ACTIVATION_RADIUS);}
  persistHealth(m,now=this.now??this.scene.playNow??0){
@@ -86,7 +88,7 @@ export class MonsterSystem{
   const paintedEntry=monsterArt(type,kind,d);if(paintedEntry&&this.scene.actorTextures){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,paintedEntry);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;body.scaleX=Math.abs(body.scaleX);m.annotationHeight=(paintedEntry.annotationHeight||paintedEntry.scale*170)*(kind.visualScale||1);});}
   this.monsters.push(m);this.setMonsterVisible(m,this.isActive(m));return m;
  }
- removeMonster(m){m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
+ removeMonster(m){this.cancelGiant(m);m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
  setMonsterVisible(m,active){m.active=active;for(const key of ['body','shadow'])m[key]?.setVisible(active&&(m.alive||m.dyingUntil>(this.now||0)));this.syncAnnotations(m);}
  cancelWindup(m){m.warning?.destroy();m.warning=null;m.windup=null;}
  schedule(at,run){this.pendingEffects.push({at,run});}
@@ -122,10 +124,13 @@ export class MonsterSystem{
   for(const spread of [32,56,80,104])for(let i=0;i<12;i++){const angle=i*Math.PI/6+(m.phase||0),p={x:home.x+Math.cos(angle)*spread,y:home.y+Math.sin(angle)*spread};if(free(p))return p;}
   return null;
  }
- warnAbility(config){const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
- abilityEffect(config){const point=this.view(config.x,config.y),ring=this.scene.add.circle(point.x,point.y,config.radius,config.kind==='blink'?0xb891ed:0xe0b17b,.25).setDepth(this.depth(config.x,config.y)+1);if(this.scene.project)ring.setScale?.(1,.5);this.scene.tweens.add({targets:ring,alpha:0,duration:350,onComplete:()=>ring.destroy()});if(config.kind==='stomp')this.scene.cameras?.main?.shake?.(130,.003);}
- shootHostile(m,shot){const angle=Math.atan2(shot.targetY-shot.y,shot.targetX-shot.x)+(shot.angleOffset||0),p={...shot,vx:Math.cos(angle)*shot.speed,vy:Math.sin(angle)*shot.speed,remaining:shot.range||600,source:m};const screen=this.view(p.x,p.y);p.renderHeight=m.kind.projectileOriginHeight||18;p.needle=m.kind.projectile==='needle';p.body=(p.needle?this.scene.add.rectangle(screen.x,screen.y-p.renderHeight,13,2,0xe6d8a7).setRotation(projectAngle(angle)):this.scene.add.circle(screen.x,screen.y-p.renderHeight,shot.magic?6:4,shot.status?.type==='poison'?0x9ac76b:shot.magic?0xb49aeb:0xd5b98a)).setDepth(this.depth(p.x,p.y)+5);this.hostileProjectiles.push(p);}
- tickAbility(m,now,dt,engaged){return tickMonsterAbility({monster:m,hero:this.hero,now,dt,engaged,safe:this.safe(),canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config)});}
+ warnAbility(config){if(config.kind?.startsWith('stoneGiant-'))return drawStoneGiantWarning(this.scene,config);const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
+ abilityEffect(config){if(config.kind?.startsWith('stoneGiant-')){drawStoneGiantWarning(this.scene,config,{impact:true});if(/quake|hammer|charge/i.test(config.kind))this.scene.cameras?.main?.shake?.(160,.003);return;}const point=this.view(config.x,config.y),ring=this.scene.add.circle(point.x,point.y,config.radius,config.kind==='blink'?0xb891ed:0xe0b17b,.25).setDepth(this.depth(config.x,config.y)+1);if(this.scene.project)ring.setScale?.(1,.5);this.scene.tweens.add({targets:ring,alpha:0,duration:350,onComplete:()=>ring.destroy()});if(config.kind==='stomp')this.scene.cameras?.main?.shake?.(130,.003);}
+ shootHostile(m,shot){const angle=Math.atan2(shot.targetY-shot.y,shot.targetX-shot.x)+(shot.angleOffset||0),p={...shot,vx:Math.cos(angle)*shot.speed,vy:Math.sin(angle)*shot.speed,remaining:shot.range||600,source:m};const screen=this.view(p.x,p.y);p.renderHeight=m.kind.projectileOriginHeight||18;p.stoneBoulder=shot.visual==='stoneBoulder';p.throwDistance=Math.max(1,Math.hypot(shot.targetX-shot.x,shot.targetY-shot.y));p.originHeight=p.renderHeight;p.traveled=0;p.needle=m.kind.projectile==='needle';p.body=(p.stoneBoulder&&this.scene.textures?.exists?.('paintedEnvironment')?this.scene.add.image(screen.x,screen.y-p.renderHeight,'paintedEnvironment','rock').setOrigin(.5).setScale(.065):p.needle?this.scene.add.rectangle(screen.x,screen.y-p.renderHeight,13,2,0xe6d8a7).setRotation(projectAngle(angle)):this.scene.add.circle(screen.x,screen.y-p.renderHeight,shot.magic?6:4,shot.status?.type==='poison'?0x9ac76b:shot.magic?0xb49aeb:0xd5b98a)).setDepth(this.depth(p.x,p.y)+5);this.hostileProjectiles.push(p);return p;}
+ removeHostileProjectile(p){if(!this.hostileProjectiles.includes(p))return;p.body.destroy();this.hostileProjectiles=this.hostileProjectiles.filter(q=>q!==p);}
+ giantContext(m,now=this.now||0,dt=0,engaged=false){return {monster:m,hero:this.hero,participants:[this.hero],now,dt,engaged,safe:this.safe(),leashRadius:leashRadius(m),collisionRadius:movementProfile(m.kind).collisionRadius,canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config),clearProjectile:(p,id)=>{if(p?.source===m&&p.encounterId===id)this.removeHostileProjectile(p);},clearProjectiles:(source,id)=>{for(const p of [...this.hostileProjectiles])if(p.source===source&&p.encounterId===id)this.removeHostileProjectile(p);},onPhase:p=>{m.giantPhase=p.phase;this.label(m.x,m.y,p.names[this.scene.language]||p.names.ru,'#ffd48c');}};}
+ cancelGiant(m){if(m.giantEncounter)cancelStoneGiantEncounter(m,this.giantContext(m));}
+ tickAbility(m,now,dt,engaged){if(m.kind.encounter==='stoneGiant')return tickStoneGiantEncounter(this.giantContext(m,now,dt,engaged));return tickMonsterAbility({monster:m,hero:this.hero,now,dt,engaged,safe:this.safe(),canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config)});}
 
  beginBossAttack(m,now){
   const basic=m.patterns?.length?m.patterns:['slam'],patterns=m.bossType==='world'&&m.hp/m.maxHp<.5?[...new Set([...basic,'slam','charge','volley'])]:basic,effect=patterns[(m.attackSequence||0)%patterns.length];m.attackSequence=(m.attackSequence||0)+1;
@@ -159,11 +164,11 @@ export class MonsterSystem{
    let {x:tx,y:ty,speed}=intent;const engaged=intent.engaged;
    if(engaged){this.lastCombat=now;m.lastEngagedAt=now;if(visible&&profile.preferredDistance){if(dist<profile.preferredDistance*.65){tx=m.x+(m.x-this.hero.x);ty=m.y+(m.y-this.hero.y);speed*=.65;}else if(dist<profile.preferredDistance){tx=m.x;ty=m.y;}}}
    const controlled=now<(m.rootUntil||0)||now<(m.stunUntil||0);if(controlled){cancelMonsterAbility(m);m.abilityBlockedUntil=Math.max(m.rootUntil||0,m.stunUntil||0)+250;}
-   const ability=this.tickAbility(m,now,dt,engaged&&visible&&!controlled);if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
+   const ability=this.tickAbility(m,now,dt,engaged&&visible&&(m.kind.encounter==='stoneGiant'||!controlled));if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
    if(now<(m.rootUntil||0)||now<(m.stunUntil||0))speed=0;else if(now<(m.slowUntil||0))speed*=.45;
    if(m.windup){if(m.returning||this.safe()||this.hero.hp<=0)this.cancelWindup(m);else if(now>=m.windup.at)this.finishBossAttack(m,now);speed=0;}
    const interval=m.hp/m.maxHp<.5?4200:6000;
-   if(m.kind.boss&&!m.specialState&&!ability.fired&&!m.windup&&!m.returning&&!this.safe()&&dist<260&&now-(m.lastSlam||0)>interval&&this.hero.hp>0&&this.sight(m,this.hero)){this.beginBossAttack(m,now);speed=0;}
+   if(m.kind.boss&&m.kind.encounter!=='stoneGiant'&&!m.specialState&&!ability.fired&&!m.windup&&!m.returning&&!this.safe()&&dist<260&&now-(m.lastSlam||0)>interval&&this.hero.hp>0&&this.sight(m,this.hero)){this.beginBossAttack(m,now);speed=0;}
    const previous={x:m.x,y:m.y};
    if(speed>0&&Math.hypot(tx-m.x,ty-m.y)>(intent.patrol?8:18)){
     let target={x:tx,y:ty};
@@ -175,7 +180,7 @@ export class MonsterSystem{
     const d=distance(m,other),clearance=profile.collisionRadius+movementProfile(other.kind).collisionRadius+3;
     if(d<clearance){const sign=String(m.id)<String(other.id)?1:-1,dx=d?(m.x-other.x)/d:sign,dy=d?(m.y-other.y)/d:0;this.move(m,m.x+dx*4,m.y+dy*4,Math.min(3,clearance-d));}
    }
-   const walking=distance(previous,m)>.01;if(profile.faceTarget&&engaged&&visible&&!walking)m.facing=Math.atan2(this.hero.y-m.y,this.hero.x-m.x);animateMonsterParts(m,now,walking,profile);const state=m.hurtUntil>now?'hurt':m.specialState?'special':now-m.lastHit<240?'attack':walking?'run':'idle';m.painted?.update(state,projectAngle(m.facing||0),dt,{progress:m.specialState?(now-m.specialState.releaseAt+profile.windup)/profile.windup:(now-m.lastHit)/240});m.body.alpha=m.hurtUntil>now?.6:1;m.body.rotation=m.hurtUntil>now?Math.sin(now*.05)*.09:now-m.lastHit<240?Math.sin((now-m.lastHit)/240*Math.PI)*.12:0;m.body.scaleX=(m.paintedActive?1:Math.cos(m.facing||0)<0?-1:1)*(m.kind.visualScale||(m.kind.boss?1.45:1));m.body.scaleY=(m.kind.visualScale||(m.kind.boss?1.45:1))*(walking?1+Math.sin(now*.012)*.035:1);
+   const walking=distance(previous,m)>.01;if(profile.faceTarget&&engaged&&visible&&!walking)m.facing=Math.atan2(this.hero.y-m.y,this.hero.x-m.x);animateMonsterParts(m,now,walking,profile);const state=m.hurtUntil>now?'hurt':m.specialState||m.giantEncounter?.attack?'special':now-m.lastHit<240?'attack':walking?'run':'idle';m.painted?.update(state,projectAngle(m.facing||0),dt,{progress:m.specialState?(now-m.specialState.releaseAt+profile.windup)/profile.windup:(now-m.lastHit)/240});m.body.alpha=m.hurtUntil>now?.6:1;if(m.kind.encounter==='stoneGiant'&&this.depth(m.x,m.y)>this.depth(this.hero.x,this.hero.y)){const h=this.view(this.hero.x,this.hero.y);if(m.body.getBounds?.().contains(h.x,h.y-25))m.body.alpha=Math.min(m.body.alpha,.72);}m.body.rotation=m.hurtUntil>now?Math.sin(now*.05)*.09:now-m.lastHit<240?Math.sin((now-m.lastHit)/240*Math.PI)*.12:0;m.body.scaleX=(m.paintedActive?1:Math.cos(m.facing||0)<0?-1:1)*(m.kind.visualScale||(m.kind.boss?1.45:1));m.body.scaleY=(m.kind.visualScale||(m.kind.boss?1.45:1))*(walking?1+Math.sin(now*.012)*.035:1);
    if(recoverLivingMonster(m,now,dt,engaged))this.persistHealth(m,now);
    if(!ability.busy&&!m.windup&&!controlled&&!m.returning&&!this.safe()&&dist<42&&now-m.lastHit>1500&&this.hero.hp>0&&this.sight(m,this.hero)){m.lastHit=now;this.hurtHero(m.attack,now,m.kind.magic,m);}
    const point=this.view(m.x,m.y),depth=this.depth(m.x,m.y);
@@ -191,7 +196,7 @@ export class MonsterSystem{
   for(const p of [...this.hostileProjectiles]){
    const next={x:p.x+p.vx*dt,y:p.y+p.vy*dt};p.remaining-=Math.hypot(p.vx*dt,p.vy*dt);
    const blocked=!this.sight(p,next,7),hit=!this.safe()&&segmentDistanceSquared(p,next,this.hero)<21**2;
-   if(blocked||hit||p.remaining<=0||this.hero.hp<=0){if(hit&&!blocked){this.hurtHero(p.damage,now,p.magic,p.source);applyHeroAffliction(this.hero,p.status,now);}p.body.destroy();this.hostileProjectiles=this.hostileProjectiles.filter(q=>q!==p);}else{Object.assign(p,next);const screen=this.view(p.x,p.y);p.body.setPosition(screen.x,screen.y-(p.renderHeight||18)).setDepth(this.depth(p.x,p.y)+5);}
+   if(blocked||hit||p.remaining<=0||this.hero.hp<=0){if(hit&&!blocked){this.hurtHero(p.damage,now,p.magic,p.source);applyHeroAffliction(this.hero,p.status,now);}this.removeHostileProjectile(p);}else{Object.assign(p,next);p.traveled=(p.traveled||0)+Math.hypot(p.vx*dt,p.vy*dt);if(p.stoneBoulder){const t=Math.min(1,p.traveled/p.throwDistance);p.renderHeight=18+(p.originHeight-18)*(1-t)+Math.sin(t*Math.PI)*35;p.body.rotation=(p.body.rotation||0)+dt*3;}const screen=this.view(p.x,p.y);p.body.setPosition(screen.x,screen.y-(p.renderHeight||18)).setDepth(this.depth(p.x,p.y)+5);}
   }
   if(now-this.lastCombat>=10000&&this.hero.hp>0&&now-this.lastRegen>=1000){this.lastRegen=now;const h=this.hero,old=h.hp+h.mp;h.hp=Math.min(h.maxHp,h.hp+Math.max(1,Math.round(h.maxHp*.07)));h.mp=Math.min(h.maxMp,h.mp+Math.max(1,Math.round(h.maxMp*.04)));if(h.hp+h.mp!==old)this.onChange();}
  }
@@ -215,8 +220,8 @@ export class MonsterSystem{
    m.alive=false;m.visitKilled=!!minion;if(this.selected===m)this.selected=null;this.scene.onTargetLost?.(m);m.dyingUntil=now+350;
    const deadUntil=minion?DUNGEON_VISIT_DEAD_UNTIL:deathAt+respawnMs;m.respawnAt=deadUntil;
    this.hero.worldState.monsters[m.key]={deadUntil,killedAt:deathAt,hp:0};if(minion)recordDungeonMinionKill(this.hero,this.content,m.id,deathAt);
-   this.cancelWindup(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,speciesId:m.kind.speciesId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;
-   const drops=rollMonsterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.scene.groundLoot?.dropMonster(m,drops,deathAt);this.onChange();
+   this.cancelWindup(m);this.cancelGiant(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,speciesId:m.kind.speciesId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;
+   const drops=rollEncounterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.scene.groundLoot?.dropMonster(m,drops,deathAt);this.onChange();
   }
  }
  strike(m,now,multiplier=1,critical=false,projectile=true,after=()=>{},magicOverride){

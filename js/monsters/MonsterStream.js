@@ -8,7 +8,7 @@ export const MONSTER_STREAM_POLICY=Object.freeze({loadRadius:350,unloadRadius:50
 const extents=m=>(m.bossType||m.kind?.boss)?{half:160,tall:320}:{half:72,tall:160};
 export class MonsterStream{
  constructor(content,hero,create,remove,options={}){
-  this.hero=hero;this.create=create;this.remove=remove;this.options=options;this.cells=new Map();this.loaded=new Map();this.content=content;
+  this.hero=hero;this.create=create;this.remove=remove;this.options=options;this.cells=new Map();this.loaded=new Map();this.content=content;this.maxLeash=Math.max(MONSTER_LEASH_RADIUS,...(content.bosses||[]).map(d=>leashRadius({kind:{boss:true,leashRadius:d.leashRadius}})));
   this.project=options.project||((x,y)=>project(x,y,content.height||0));
   this.descriptors=[...content.camps.flatMap(c=>c.spawns.map(s=>({...s,campId:c.id,campX:c.x,campY:c.y,campRadius:c.radius}))),...(content.bosses||[])];
   this.created=0;this.removed=0;
@@ -24,13 +24,13 @@ export class MonsterStream{
  shouldActivate(m){if(!this.currentView&&!this.view())return this.hot(m)||distance(m,this.hero)<=700;return this.hot(m)||distance(m,this.hero)<=MONSTER_STREAM_POLICY.loadRadius||this.inView(m,16);}
  savedPosition(descriptor){
   const saved=this.hero.worldState?.monsters?.[(this.content.id||'legacy')+':'+descriptor.id];
-  if(!Number.isFinite(saved?.x)||!Number.isFinite(saved?.y)||saved.deadUntil>0||distance(saved,descriptor)>leashRadius({kind:{boss:!!(descriptor.bossType||descriptor.boss)}}))return null;
+  if(!Number.isFinite(saved?.x)||!Number.isFinite(saved?.y)||saved.deadUntil>0||distance(saved,descriptor)>leashRadius({kind:{boss:!!(descriptor.bossType||descriptor.boss),leashRadius:descriptor.leashRadius}}))return null;
   return {x:saved.x,y:saved.y,bossType:descriptor.bossType};
  }
  cellRange(view){
   // A persisted living actor may be up to one leash away from its authored
   // cell. Expand only the local query; never scan the whole world each frame.
-  const margin=MONSTER_LEASH_RADIUS;
+  const margin=this.maxLeash;
   if(!view){const r=500+margin;return {minX:Math.floor((this.hero.x-r)/CELL),maxX:Math.floor((this.hero.x+r)/CELL),minY:Math.floor((this.hero.y-r)/CELL),maxY:Math.floor((this.hero.y+r)/CELL)};}
   const pad=MONSTER_STREAM_POLICY.loadPadding,origin=this.project(this.hero.x,this.hero.y),corners=[];
   for(const x of [view.x-pad-160,view.x+view.width+pad+160])for(const y of [view.y-pad,view.y+view.height+pad+320]){const d=unproject(x-origin.x,y-origin.y);corners.push({x:this.hero.x+d.x,y:this.hero.y+d.y});}

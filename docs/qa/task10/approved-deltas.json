@@ -7,7 +7,7 @@
     },
     "js/assets/monsterArt.js": {
       "before": "a419ba32df47fe7e57ae6306e1bab41e3d07262315b76c12a2981eb4e0ab5f42",
-      "after": "6ae97f923cd4012498cd8afa0e83808de016dee5b3cd6fd07813468f17e48e06"
+      "after": "cdeaf40b54720ff86b845d3f71602a786f17c11262388cb9351197591d5e4bf4"
     },
     "js/characters/PaintedActor.js": {
       "before": "90cc468bda556986830612f5d3fac95dfa063da0949fc1286f6253dd8d708a35",
@@ -17,17 +17,29 @@
       "before": "bfdf982f1e2a99557924cf6b48f21ae228a1b09692d0b1d52a5a066b52f37a07",
       "after": "afbb46b2a24f11db48a7ee1f2b55afb3e95371af3442af32051f2c8959e6a20c"
     },
+    "js/equipment/items.js": {
+      "before": "e4fe21fcd1d58d57934507a68278e1305a8bfe7e84cdbdaa3c1707704dba82ef",
+      "after": "21609d6fe782d7af1a085679664c89e0d5e377392904699987d7e59fba44f3e5"
+    },
     "js/loot/GroundLootSystem.js": {
       "before": "06de84b5bca9ae2389b78303de8b47bbded0b143bfd6c9a65899b8d20bc56c9b",
       "after": "e2c850c51be0c9b5348e32dbf543f466f38b03460d147ce0f4877892817a5800"
     },
+    "js/monsters/MonsterStream.js": {
+      "before": "232eaceb6a397c0987787bfa4c0d5877c88f23a77af8549317a663fa8a5f9c8a",
+      "after": "7cd08c2f214493ddb59fbec0ec5429bca0f4a213d4fd77c26e32650cd51349ee"
+    },
     "js/monsters/MonsterSystem.js": {
       "before": "f1c7ada80551e55a38520fd6c673fd0a86fb2155c5206fb77253a1894f2412d8",
-      "after": "8895c581d0569610478843e451acae9e469f11a45d6471f252a1e23003b995ee"
+      "after": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2"
+    },
+    "js/monsters/monsterBehavior.js": {
+      "before": "0e9e7161986a9cbd351cda7eab7da7f433957baa155361927c8e9984d0576aaf",
+      "after": "d031cd877d357995a44539e939de68d7243075ad9212a621798af5b4a8fcc29b"
     },
     "js/monsters/monsters.js": {
       "before": "35c0b21b0c4a33f5818a681a40329495a02af4098066fe23eb1eba4034a5ee3f",
-      "after": "c3fb94257b6ba2a2c04830ceb7ed3abc00c51a1ebdd5485ab17ab239b71878b2"
+      "after": "0c60ede0c78dd94160244666298c8cf67ae85b840ef51408855c8a7fa4e19905"
     },
     "js/monsters/movementProfiles.js": {
       "before": "067e5bb92422986ebf67668381e3f7e942ad58650d31fc6d01a004aae577ca7f",
@@ -45,6 +57,10 @@
       "before": "004dbeb9c31b9db92dc0c77594b26101dae1a8f1323fe0957552d73691d3ee55",
       "after": "e1f28bef48e4d2ad09bfa9635a5de52425fb1e47d6279390277ba2201efb31e2"
     },
+    "js/systems/trading.js": {
+      "before": "e3fde30a03431ab55c4c91fb3d91e05428ec9cc898aa60225828ab8b89a8ced9",
+      "after": "c71ee95d69c427f289ef5cf536ed189a3bc942c69f98a5a0a6f5c6250a0082bb"
+    },
     "js/ui/MapPanel.js": {
       "before": "f645587f2290f89d68249190bd5fb0829cb024e5889dfc972ea4db5060198a06",
       "after": "9afe7bf48566f69f4133eeb994d26fb4951cfd7ce102e86ceae0bae5d33f788a"
@@ -56,6 +72,10 @@
     "js/ui/SavePanel.js": {
       "before": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
       "after": "a79da3f12acc7f7d3941e51be3314bae92318103e1e40eca691458023f3e1782"
+    },
+    "js/ui/itemIcons.js": {
+      "before": "c3c0bcb747e4c083c8b308350da1d893c30c3e531d6ed5d37f73ddd2d0b0517a",
+      "after": "ee7e995a154174da531bbba7ac4e73fddefedd4d4427f5e6fad9bf93e928043e"
     },
     "js/world/ChunkWorld.js": {
       "before": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",
@@ -79,7 +99,7 @@
     },
     "js/world/regionContent.js": {
       "before": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
-      "after": "4467e2939616eac39323ea8b787a08a711d4172ba51aa929cee5c782b319710f"
+      "after": "2c57ce7bffc32460eaaff18e6ceeacfc8ab6adf6ea4e9b2c847fb52bef6e8bd0"
     },
     "js/world/worldData.js": {
       "before": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",

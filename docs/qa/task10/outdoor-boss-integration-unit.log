@@ -1,0 +1,37 @@
+✔ runtime targeting rejects an occluded enemy and projectile sweep hits a newly inserted wall (10.773396ms)
+✔ class multipliers and movement penalties affect real attack rolls and damage protection (20.467644ms)
+✔ streamed death and cooldown survive unloading, reconstruction and a nonzero scene clock (3.311133ms)
+✔ all region encounter descriptors instantiate on approach with bounded active entities (252.344345ms)
+✔ boss cycles through three telegraphed patterns and paladin third hit stuns (1.209317ms)
+✔ isometric display projects entity coordinates while combat stays in world coordinates (0.674759ms)
+✔ charged cannon and meteors delay damage while arrow storm schedules several impacts (1.385874ms)
+✔ ice shield absorbs hits and powder buff adds real nearby splash damage (14.227745ms)
+✔ dungeon floor walls block targets without collision circles and hurt fields drive rig state (0.800699ms)
+✔ desert encounter proposals have exactly8mini,2large/open and one separately identifiable world giant with immutable unique IDs and all three languages (1.937888ms)
+✔ all11 fixed arenas clear real camps,roads,towns,entrances,receivers and reserved settlement locations without moving the17 dungeon definitions or18 existing bosses (4584.360915ms)
+✔ each new outdoor death has its own40-minute timestamp and all11 records survive normal character normalization independently (1.839108ms)
+✔ new large/open encounters use existing nonlegendary boss drops and only the world giant can use the existing legendary group; no gear catalogue is introduced (1.501689ms)
+✔ outgoing calibration fixtures earn165 attributes and110 skill points,learn five real rank5 skills and equip only compatible unchanged rare level42-or-lower items (16.800662ms)
+✔ seeded real combat is reproducible and restores random/time globals after the isolated dummy run (51.561544ms)
+✔ all six180-second simulations use real finite mana,real potion and skill cooldowns,projectiles,scheduled impacts and poison rather than a DPS formula (857.756298ms)
+✔ paladin sensitivity retains judgment and four legal slots in strength and165-point hybrid builds without changing the engine (316.948818ms)
+✔ world-space giant telegraphs retain a genuine safe ring hole and exact line and cone geometry (2.784607ms)
+✔ giant warnings use real surface projection,scene depth and idempotent tween/object cleanup (0.462429ms)
+✔ three HP phases are monotonic during a visit,announce localized names and grant transition recovery;30min remains an unverified balance goal (3.376131ms)
+✔ hammer is locked to a visible world position,actually damages a stationary target and is avoidable by every class (1.173483ms)
+✔ boulders use locked aim and bounded physical projectiles;their disposable leases expire and cancel removes externally owned shots (0.563191ms)
+✔ cone and ring telegraphs have different safe areas and never damage through a changed wall (0.427726ms)
+✔ phase2 faults and charge follow bounded geometry,swept occupancy and the home leash (0.522299ms)
+✔ phase3 double quake has two independently telegraphed dodgeable waves,and rockfall does not stack overlapping hits (0.369187ms)
+✔ participant IDs allow deterministic group targeting,individual safe/dead filters,and cap simultaneous targets without class checks (7.857591ms)
+✔ pause freezes releases even with an advancing caller clock;stalled clocks cancel old attacks rather than burst,and roots interrupt (0.430571ms)
+✔ death,safe zone,disengagement,leash and clock reset clear warnings and projectile leases without mutating boss HP or drops (0.600177ms)
+✔ a long deterministic three-phase timeline keeps markers and projectile ownership bounded,cleans all leases and produces no duplicate event releases (6.196732ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6680.411209

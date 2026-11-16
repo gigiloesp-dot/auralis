@@ -5,7 +5,7 @@ export const MONSTER_LEASH_RADIUS=360;
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 const hash=value=>{let h=2166136261;for(const c of String(value))h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0;};
 const random=monster=>{monster.behaviorSeed=(Math.imul(monster.behaviorSeed??hash(monster.id||monster.key||'mob'),1664525)+1013904223)>>>0;return monster.behaviorSeed/4294967296;};
-export const leashRadius=monster=>monster.kind?.boss?300:MONSTER_LEASH_RADIUS;
+export const leashRadius=monster=>monster.kind?.boss?(Number.isFinite(monster.kind.leashRadius)?Math.max(100,Math.min(800,monster.kind.leashRadius)):300):MONSTER_LEASH_RADIUS;
 export function markMonsterThreat(monster,attacker,now){
  if(!monster.alive||!attacker)return;
  monster.aggroUntil=now+MONSTER_AGGRO_MEMORY_MS;

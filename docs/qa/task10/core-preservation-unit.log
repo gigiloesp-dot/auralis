@@ -1,0 +1,28 @@
+✔ equipment, potions and materials have distinct readable icon categories with rarity styling (1.937417ms)
+✔ equip and unequip preserves items and stats (1.294015ms)
+✔ class restriction and inventory cap (0.583732ms)
+✔ loot is rolled independently and stays out of inventory until pickup (0.639246ms)
+✔ release21 migration baseline: expanded boundaries preserve every existing camp, spawn, boss, road, portal and quest (4327.579108ms)
+✔ expanded edge chunks are finite, decorated, uniquely owned and remain streamed (18.365195ms)
+✔ equipment catalogue, layers, weapon art and existing skill definitions are untouched (158.484872ms)
+✔ buy potion spends actual gold and increments only chosen potion (1.429089ms)
+✔ merchant rejects invalid currency, invalid resource and capped potion stack (0.143277ms)
+✔ selling actual material quantities earns rarity value and removes depleted stack (0.258741ms)
+✔ invalid sale never mutates inventory or gold (0.214895ms)
+✔ normal equipment merchants never offer epic or legendary, and purchases are transactional (2.477783ms)
+✔ special merchant has explicit high-cost legendary stock and equipment sale removes only owned item (0.961392ms)
+✔ failed trade persistence rolls back gold, potions and inventory before any success message (0.961803ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.310741ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (168.806699ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (101.268688ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (1.143557ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.590442ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (763.3608ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5949.753985

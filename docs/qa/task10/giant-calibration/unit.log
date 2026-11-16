@@ -1,0 +1,12 @@
+✔ outgoing calibration fixtures earn165 attributes and110 skill points,learn five real rank5 skills and equip only compatible unchanged rare level42-or-lower items (22.659241ms)
+✔ seeded real combat is reproducible and restores random/time globals after the isolated dummy run (74.886965ms)
+✔ all six180-second simulations use real finite mana,real potion and skill cooldowns,projectiles,scheduled impacts and poison rather than a DPS formula (819.950931ms)
+✔ paladin sensitivity retains judgment and four legal slots in strength and165-point hybrid builds without changing the engine (279.779776ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1373.910684

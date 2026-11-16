@@ -12,6 +12,7 @@ export function buyPotion(hero,resource){
 }
 export function materialPrice(item){
  const definition=itemDefinition(item);if(!definition||definition.slot)return 0;
+ if(Number.isSafeInteger(definition.saleValue)&&definition.saleValue>0)return definition.saleValue;
  return {common:1,uncommon:2,rare:4,epic:8,legendary:16}[item.rarity||'common']||1;
 }
 export function sellMaterial(hero,index,quantity=1){

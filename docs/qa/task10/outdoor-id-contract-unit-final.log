@@ -1,0 +1,22 @@
+✔ predator leaps at the telegraphed position, can be dodged, then strikes a target that stays (2.894262ms)
+✔ flying movement passes low rocks while houses, world bounds and dungeon floors remain solid (0.556651ms)
+✔ a bat dives with legal movement and a crawler emits a real poison projectile (0.464782ms)
+✔ heavy stomp warns, shakes the ground and damages only targets remaining in the area (0.370619ms)
+✔ elementals blink to valid visible terrain and launch magic, never through a closed wall (1.339123ms)
+✔ cleaves follow the snapshot facing rather than an arbitrary east direction (0.455268ms)
+✔ poison causes timed damage, frost changes actual movement multiplier and death clears both (0.592104ms)
+✔ safe zones, lost sight, death and loss of combat cancel abilities without damaging the hero (0.271691ms)
+✔ all23 temporary base prototypes remain reachable across257 spots; unique artwork remains a separate requirement (5.80482ms)
+✔ crowd-control recovery gives pursuit a short step before another movement ability can wind up (0.333804ms)
+✔ desert encounter proposals have exactly8mini,2large/open and one separately identifiable world giant with immutable unique IDs and all three languages (1.942725ms)
+✔ all11 fixed arenas clear real camps,roads,towns,entrances,receivers and reserved settlement locations without moving the17 dungeon definitions or18 existing bosses (4396.238434ms)
+✔ each new outdoor death has its own40-minute timestamp and all11 records survive normal character normalization independently (1.69386ms)
+✔ new large/open encounters use existing nonlegendary boss drops and only the world giant can use the existing legendary group; no gear catalogue is introduced (1.492836ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4610.067526
