@@ -10,6 +10,12 @@ export const NEW_SPECIES=Object.freeze({
  'desert-species-002':Object.freeze({names:{ru:'Рогатая песчаная гадюка',en:'Horned sand viper',es:'Víbora cornuda de arena'}}),
  'desert-species-003':Object.freeze({names:{ru:'Дух солнечной пыли',en:'Solar dust spirit',es:'Espíritu del polvo solar'}}),
  'desert-species-004':Object.freeze({names:{ru:'Терракотовый страж',en:'Terracotta warden',es:'Guardián de terracota'}}),
- 'desert-species-005':Object.freeze({names:{ru:'Жук-носорог дюн',en:'Dune rhinoceros beetle',es:'Escarabajo rinoceronte de las dunas'}})
+ 'desert-species-005':Object.freeze({names:{ru:'Жук-носорог дюн',en:'Dune rhinoceros beetle',es:'Escarabajo rinoceronte de las dunas'}}),
+ // New regional identities reuse the existing bounded ability engine. Only
+ // their combinations differ; HP,damage,XP,speed and drops remain archetypal.
+ 'forest-species-004':Object.freeze({names:{ru:'Плющевой орк руин',en:'Ivybound ruin orc',es:'Orco de las ruinas de hiedra'},abilityConfig:Object.freeze({abilityPattern:['cleave','roots']})}),
+ 'forest-species-006':Object.freeze({names:{ru:'Костегривый волк',en:'Bone-mane wolf',es:'Lobo de crin ósea'},abilityConfig:Object.freeze({abilityPattern:['pounce','venom']})}),
+ 'north-species-003':Object.freeze({names:{ru:'Кристаллический ледяной голем',en:'Crystal ice golem',es:'Gólem de hielo cristalino'},abilityConfig:Object.freeze({abilityPattern:['stomp','frost']})}),
+ 'ancient-species-003':Object.freeze({names:{ru:'Рунический скарабей',en:'Runic scarab',es:'Escarabajo rúnico'},abilityConfig:Object.freeze({abilityPattern:['burrow','fan'],projectileMagic:true})})
 });
 export const speciesTraits=id=>NEW_SPECIES[id]||null;

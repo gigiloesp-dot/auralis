@@ -1,0 +1,16 @@
+✔ buy potion spends actual gold and increments only chosen potion (8.693394ms)
+✔ merchant rejects invalid currency, invalid resource and capped potion stack (0.166722ms)
+✔ selling actual material quantities earns rarity value and removes depleted stack (0.298942ms)
+✔ invalid sale never mutates inventory or gold (0.187994ms)
+✔ normal equipment merchants never offer epic or legendary, and purchases are transactional (7.918383ms)
+✔ special merchant has explicit high-cost legendary stock and equipment sale removes only owned item (5.09652ms)
+✔ failed trade persistence rolls back gold, potions and inventory before any success message (0.88681ms)
+✔ quest plants with explicit zero sale value stay owned and cannot be sold for fallback gold (1.083437ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 268.131456

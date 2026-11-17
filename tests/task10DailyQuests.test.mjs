@@ -9,8 +9,8 @@ import {commitQuestChange} from '../js/ui/NpcPanel.js';
 const day=86400000,base=Date.UTC(2026,10,16,12),daily=TASK10_DAILY_QUESTS[0];
 const clock=fn=>{const real=Date.now;let now=base;Date.now=()=>now;try{return fn(v=>now=v);}finally{Date.now=real;}};
 const finish=(hero,q)=>{for(let i=0;i<q.required;i++)recordKill(hero,q.target,{region:q.region,campId:q.targetCampId,speciesId:q.targetSpeciesId});assert.equal(questProgress(hero,q.id).state,'completed');};
-test('all104 original identities,XP,gold,item rewards and claimed prerequisite records survive the145-definition extension',()=>{
- assert.equal(QUESTS.length,145);assert.equal(LEGACY_RUNTIME_QUESTS.length,104);assert.equal(new Set(QUESTS.map(q=>q.id)).size,145);
+test('all104 original identities,XP,gold,item rewards and claimed prerequisite records survive the149-definition extension',()=>{
+ assert.equal(QUESTS.length,149);assert.equal(LEGACY_RUNTIME_QUESTS.length,104);assert.equal(new Set(QUESTS.map(q=>q.id)).size,149);
  for(const old of LEGACY_QUESTS){const q=questDefinition(old.id);for(const key of ['id','npcId','turnInNpcId','xp','gold','reward','requires'])assert.deepEqual(q[key],old[key],old.id+'/'+key);}
  const hero=createCharacter({level:42,quests:{forestWolves:{state:'claimed',progress:5}}});assert.equal(questProgress(hero,'forestWolves').state,'claimed');assert.equal(questProgress(hero,'forestFangs').state,'available');assert.equal(acceptQuest(hero,'forestWolves'),false);
 });

@@ -1,6 +1,6 @@
 # Реестр257 видов и фактической готовности
 
-**Задание10не завершено.** Уникальных первичных моделей: 29 (6 новых48-позных и 23 прежних32-позных). Ещё 228 видов используют общие временные модели. Их названия/силуэты — предложения,а не готовые ассеты. Прежние hurt/death используют программные преобразования;это не новые нарисованные клипы. Все RU/EN/ES названия,координаты,актуальные характеристики и точные ссылки находятся в [JSON](TASK_10_SPECIES.json).
+**Задание10не завершено.** Уникальных первичных моделей: 33 (10 новых48-позных и 23 прежних32-позных). Ещё 224 видов используют общие временные модели. Их названия/силуэты — предложения,а не готовые ассеты. Прежние hurt/death используют программные преобразования;это не новые нарисованные клипы. Все RU/EN/ES названия,координаты,актуальные характеристики и точные ссылки находятся в [JSON](TASK_10_SPECIES.json).
 
 |ID / карта|Спот / Lv|Название RU|Готовность|HP / урон / защита / скорость|Способности|Собственная модель|
 |---|---|---|---|---|---|---|
@@ -8,9 +8,9 @@
 |forest-species-001 / forest|forest-spot-001 / 17|Дикий кабан|legacyDistinct|397 / 35 / 11.200000000000001 / 72|charge|[assets/actors/monsters/wildBoar.png](../../assets/actors/monsters/wildBoar.png)|
 |forest-species-002 / forest|forest-spot-002 / 11|Терновая змея|legacyDistinct|202 / 24 / 5.800000000000001 / 95|pounce|[assets/actors/monsters/thornSnake.png](../../assets/actors/monsters/thornSnake.png)|
 |forest-species-003 / forest|forest-spot-003 / 13|Дубравный орк|legacyDistinct|213 / 27 / 11.4 / 79|cleave|[assets/actors/monsters/forestOrc.png](../../assets/actors/monsters/forestOrc.png)|
-|forest-species-004 / forest|forest-spot-004 / 23|Руинный охотник «Двойной хвост»|prototypeOnly|461 / 47 / 19.4 / 79|cleave|**не готова**;общий прототип assets/actors/monsters/forestOrc.png|
+|forest-species-004 / forest|forest-spot-004 / 23|Плющевой орк руин|newIntegrated|461 / 47 / 19.4 / 79|cleave, roots|[assets/actors/task10-next-bestiary/forest-species-004.png](../../assets/actors/task10-next-bestiary/forest-species-004.png)|
 |forest-species-005 / forest|forest-spot-005 / 9|Ночная крылатка|legacyDistinct|175 / 19 / 5.6000000000000005 / 138|dive|[assets/actors/monsters/forestBat.png](../../assets/actors/monsters/forestBat.png)|
-|forest-species-006 / forest|forest-spot-006 / 16|Лесной волк «Костяная грива»|prototypeOnly|394 / 34 / 12 / 90|pounce|**не готова**;общий прототип assets/actors/monsters/forestWolf.png|
+|forest-species-006 / forest|forest-spot-006 / 16|Костегривый волк|newIntegrated|394 / 34 / 12 / 90|pounce, venom|[assets/actors/task10-next-bestiary/forest-species-006.png](../../assets/actors/task10-next-bestiary/forest-species-006.png)|
 |forest-species-007 / forest|forest-spot-007 / 14|Скелет|legacyDistinct|190 / 25 / 8 / 83|cleave|[assets/actors/monsters/skeleton.png](../../assets/actors/monsters/skeleton.png)|
 |forest-species-008 / forest|forest-spot-008 / 18|Терновая змея «Костяная грива»|prototypeOnly|387 / 38 / 11.4 / 95|pounce|**не готова**;общий прототип assets/actors/monsters/thornSnake.png|
 |forest-species-009 / forest|forest-spot-009 / 17|Лесной разбойник|legacyDistinct|386 / 36 / 10.4 / 100|shot|[assets/actors/monsters/forestRaider.png](../../assets/actors/monsters/forestRaider.png)|
@@ -87,7 +87,7 @@
 |north-species-000 / north|north-spot-000 / 30|Ледяной хищник|legacyDistinct|423 / 52 / 16.4 / 112|pounce|[assets/actors/monsters/iceWolf.png](../../assets/actors/monsters/iceWolf.png)|
 |north-species-001 / north|north-spot-001 / 35|Ледяной исполин|legacyDistinct|569 / 61 / 27.2 / 52|stomp|[assets/actors/monsters/frostGolem.png](../../assets/actors/monsters/frostGolem.png)|
 |north-species-002 / north|north-spot-002 / 29|Северный налётчик|legacyDistinct|391 / 50 / 16.8 / 100|shot|[assets/actors/monsters/snowRaider.png](../../assets/actors/monsters/snowRaider.png)|
-|north-species-003 / north|north-spot-003 / 27|Ледяной исполин «Двойной хвост»|prototypeOnly|397 / 45 / 20.8 / 52|stomp|**не готова**;общий прототип assets/actors/monsters/frostGolem.png|
+|north-species-003 / north|north-spot-003 / 27|Кристаллический ледяной голем|newIntegrated|397 / 45 / 20.8 / 52|stomp, frost|[assets/actors/task10-next-bestiary/north-species-003.png](../../assets/actors/task10-next-bestiary/north-species-003.png)|
 |north-species-004 / north|north-spot-004 / 31|Стихия льда|legacyDistinct|384 / 52 / 13.6 / 82|blink|[assets/actors/monsters/iceElemental.png](../../assets/actors/monsters/iceElemental.png)|
 |north-species-005 / north|north-spot-005 / 26|Снежный медведь|legacyDistinct|349 / 45 / 17.6 / 66|stomp|[assets/actors/monsters/snowBear.png](../../assets/actors/monsters/snowBear.png)|
 |north-species-006 / north|north-spot-006 / 34|Пепельный крылан «Двойной хвост»|prototypeOnly|518 / 60 / 20.8 / 100|shot|**не готова**;общий прототип assets/actors/monsters/snowRaider.png|
@@ -163,7 +163,7 @@
 |ancient-species-000 / ancient|ancient-spot-000 / 40|Падший рыцарь|legacyDistinct|618 / 66 / 35.2 / 73|cleave|[assets/actors/monsters/fallenKnight.png](../../assets/actors/monsters/fallenKnight.png)|
 |ancient-species-001 / ancient|ancient-spot-001 / 36|Пепельная гадюка|legacyDistinct|427 / 56 / 16.8 / 116|pounce|[assets/actors/monsters/desertSnake.png](../../assets/actors/monsters/desertSnake.png)|
 |ancient-species-002 / ancient|ancient-spot-002 / 39|Рунный скарабей|legacyDistinct|543 / 60 / 33.2 / 76|burrow|[assets/actors/monsters/scarab.png](../../assets/actors/monsters/scarab.png)|
-|ancient-species-003 / ancient|ancient-spot-003 / 40|Рунный скарабей «Костяная грива»|prototypeOnly|564 / 62 / 34 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
+|ancient-species-003 / ancient|ancient-spot-003 / 40|Рунический скарабей|newIntegrated|564 / 62 / 34 / 76|burrow, fan|[assets/actors/task10-next-bestiary/ancient-species-003.png](../../assets/actors/task10-next-bestiary/ancient-species-003.png)|
 |ancient-species-004 / ancient|ancient-spot-004 / 41|Древний страж|legacyDistinct|636 / 67 / 31.8 / 76|stomp|[assets/actors/monsters/ancientSentinel.png](../../assets/actors/monsters/ancientSentinel.png)|
 |ancient-species-005 / ancient|ancient-spot-005 / 39|Пепельная гадюка «Костяная грива»|prototypeOnly|483 / 62 / 19.2 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
 |ancient-species-006 / ancient|ancient-spot-006 / 40|Древняя горгулья|legacyDistinct|554 / 65 / 27.6 / 99|dive|[assets/actors/monsters/ancientGargoyle.png](../../assets/actors/monsters/ancientGargoyle.png)|

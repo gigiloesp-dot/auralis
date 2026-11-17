@@ -23,7 +23,7 @@
     },
     "js/equipment/items.js": {
       "before": "e4fe21fcd1d58d57934507a68278e1305a8bfe7e84cdbdaa3c1707704dba82ef",
-      "after": "21609d6fe782d7af1a085679664c89e0d5e377392904699987d7e59fba44f3e5"
+      "after": "d8aee07849495085b9b66c8e5130fe68b83b78c976eaf9a002c9b0964c57c71f"
     },
     "js/loot/GroundLootSystem.js": {
       "before": "06de84b5bca9ae2389b78303de8b47bbded0b143bfd6c9a65899b8d20bc56c9b",
@@ -63,7 +63,7 @@
     },
     "js/quests/quests.js": {
       "before": "f4ca9132d592e79b3ee5c153de3ab039d08e9407cad6b8e1cbf3108fdc081096",
-      "after": "1cde0fe0339e175155e1f3e61ed607648f0e0710887e53dcf4f3de1fa971a153"
+      "after": "f63472dc0d1257255c41696e3e11dc882fd4d2cbc4c539cf0d8b94f031591058"
     },
     "js/systems/progressState.js": {
       "before": "67a90fd2412ec0d75891d3f26d0a87bf80fd10d0276b13e7fe2d2486ab8cd127",
@@ -75,7 +75,7 @@
     },
     "js/systems/trading.js": {
       "before": "e3fde30a03431ab55c4c91fb3d91e05428ec9cc898aa60225828ab8b89a8ced9",
-      "after": "ec74c82e7fe91c04acbeaf444eda8bb420177785a622c0de10d7a26ad2db9bd2"
+      "after": "1fa8f3d6225dc2e3c9c13b86a295e2ab01779d4a23ef66e5d531f5284ed033be"
     },
     "js/ui/MapPanel.js": {
       "before": "f645587f2290f89d68249190bd5fb0829cb024e5889dfc972ea4db5060198a06",
@@ -87,11 +87,11 @@
     },
     "js/ui/NpcPanel.js": {
       "before": "e500e0cd64414422578105765ef18a8ecb81c17a67378cc4259e438821e618b3",
-      "after": "9ff749d40ebf82f838e6858f269aafbf73d17b2fd44a6a1e91afa3b5a09d8e53"
+      "after": "a650e19df9154f01e329ba5c9346fd3dc6eadf29bebb4a37e52eeeee5bc43ecc"
     },
     "js/ui/PauseInterface.js": {
       "before": "ec080014d10b869ea77becef7b04a7d666594d0f0f5b1a8c7bc1a2054c94643e",
-      "after": "41e2e48c7854c8e55941861db32624e679328845e38e09d6f1feae3367d59be4"
+      "after": "4a2a3b34c225bbd7781b19a4173f6e1a2ed6f12ed080b59144119890dd44724f"
     },
     "js/ui/SavePanel.js": {
       "before": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
@@ -99,7 +99,7 @@
     },
     "js/ui/itemIcons.js": {
       "before": "c3c0bcb747e4c083c8b308350da1d893c30c3e531d6ed5d37f73ddd2d0b0517a",
-      "after": "ee7e995a154174da531bbba7ac4e73fddefedd4d4427f5e6fad9bf93e928043e"
+      "after": "ee9bf1e0d9acefa444b701faaffec73f0703bf242f8b1d1f17fa3b03ef6fe40c"
     },
     "js/ui/npcText.js": {
       "before": "ba3ba728449ed5c33aa3a19e5122d4e058d9d1fff6e79dbb2650633234635eb9",
@@ -111,11 +111,11 @@
     },
     "js/world/WorldRuntime.js": {
       "before": "bff06788b1191eeccc99c9aaeff746e3510de99d8e7afcc07ca35be35ed5a023",
-      "after": "1e8b7f2517a13ca941c1c2b1f24db5f1f6abbebe852b6569e69933275eb9c5bf"
+      "after": "d9124ba621b4bb7285b4cac9930e42ffe1ee695c34174aca9a6d8a49767c1865"
     },
     "js/world/WorldScene.js": {
       "before": "d9d5c7cf0e43f839e164746e252f58842a6eb7339acba1893df603732f3e4077",
-      "after": "43be20b3f4eb07b6b3e69001028e704767a6fd8175e066e4208aa032ef270336"
+      "after": "1c5305a0d3934656704a661f72225890f46d5cdf100b172a9e052bc28bd8f870"
     },
     "js/world/biomes.js": {
       "before": "2d8df8ba0b566d34bd3ebaa98d01446e626809754a7bffcd1ee41bb4206ab1fd",

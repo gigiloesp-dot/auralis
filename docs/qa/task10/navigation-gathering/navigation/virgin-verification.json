@@ -1,0 +1,9 @@
+{
+  "virgin": {
+    "quests": {},
+    "arrows": 1,
+    "huds": 1
+  },
+  "errors": [],
+  "scope": "Fresh page and ordinary world frames; no quest/service metadata before an explicit quest action"
+}

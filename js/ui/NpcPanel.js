@@ -43,9 +43,8 @@ export class NpcPanel{
   const npc=this.nearest();this.button.hidden=this.opened||blocked||!npc||this.scene.hero.hp<=0;
   if(npc)this.button.textContent=npc.id==='mira'?this.text.talk:this.t.talk+': '+this.name(npc);
   if(this.opened&&!this.residents().some(n=>n.id===this.npc?.id))this.close();
-  const active=QUESTS.filter(q=>['active','completed'].includes(questProgress(this.scene.hero,q.id).state));
-  this.journal.hidden=blocked||this.opened||!active.length;
-  this.journal.textContent=active.slice(0,3).map(q=>{const p=questProgress(this.scene.hero,q.id);return `${questTitle(q,this.language)}: ${p.progress}/${p.required}`;}).join(' · ');
+  if(this.scene.questTracker)this.scene.questTracker.update();
+  else{const active=QUESTS.filter(q=>['active','completed'].includes(questProgress(this.scene.hero,q.id).state));this.journal.hidden=blocked||this.opened||!active.length;this.journal.textContent=active.slice(0,3).map(q=>{const p=questProgress(this.scene.hero,q.id);return `${questTitle(q,this.language)}: ${p.progress}/${p.required}`;}).join(' · ');}
  }
  show(npc=this.nearest()){
   if(!npc||this.scene.hero.hp<=0||!this.residents().some(n=>n.id===npc.id))return;this.scene.closePanels?.(this);this.scene.interactions?.hide();this.scene.savePanel?.close();this.scene.storagePanel?.close();this.scene.mapPanel?.close();this.scene.dungeonPanel?.close();this.scene.controls?.reset?.();
@@ -74,6 +73,7 @@ export class NpcPanel{
    if(p.state==='available'&&quest.npcId===npc.id){const button=this.action(this.text.accept,()=>{const result=commitQuestChange(h,()=>acceptQuestResult(h,quest.id,npc.id),()=>this.scene.save());if(result.ok)this.render();else this.render(result.reason==='storage'?t.storageFailure:result.reason==='activeLimit'?extra.activeLimit:t.invalid);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.accept+': '+questTitle(quest,this.language));card.append(button);}
    else if(p.state==='completed'&&(quest.turnInNpcId||quest.npcId)===npc.id){const button=this.action(this.text.claim,()=>{const result=commitQuestChange(h,()=>claimQuest(h,quest.id,npc.id),()=>this.scene.save());this.scene.refreshHud();if(result.ok){this.scene.refreshPotions?.();this.render();}else this.render(result.reason==='storage'?t.storageFailure:result.reason==='potionCapacity'?extra.potionCapacity:t.full);});if(quest.id!=='forestWolves')button.setAttribute('aria-label',this.text.claim+': '+questTitle(quest,this.language));card.append(button);}
    else{card.append(element('p',p.state==='queued'?extra.queued:quest.daily&&p.state==='claimed'?extra.todayClaimed:t[p.state]||t.active));if(p.state==='locked'&&quest.requires?.length)card.append(element('p',t.requires+': '+quest.requires.map(id=>questTitle(QUESTS.find(q=>q.id===id)||{id},this.language)).join(', ')));if(['active','completed'].includes(p.state)){const target=NPCS.find(n=>n.id===(quest.turnInNpcId||quest.npcId));if(target)card.append(element('p',`${t.returnTo}: ${this.name(target)} · X ${target.x} / Y ${target.y}`));}}
+   if(['active','completed'].includes(p.state)){const track=this.scene.questTracker?.createButton(quest.id,()=>this.render());if(track)card.append(track);}
    this.root.append(card);
   }
   if(message)this.root.append(element('p',message,'npc-status'));

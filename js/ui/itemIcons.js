@@ -1,5 +1,9 @@
 // Vector equipment icons: crisp at mobile sizes; item tier and rarity affect appearance.
 const shapes={
+ forestMoonflower:'<image href="assets/world/gathering/moonflower.png" x="4" y="4" width="40" height="40"/>',
+ northFrostHerb:'<image href="assets/world/gathering/frost-herb.png" x="4" y="4" width="40" height="40"/>',
+ ancientStarBloom:'<image href="assets/world/gathering/star-bloom.png" x="4" y="4" width="40" height="40"/>',
+ desertSunleaf:'<image href="assets/world/gathering/sunleaf.png" x="4" y="4" width="40" height="40"/>',
  stoneGiantCore:'<image href="assets/items/stone-giant-core.png" x="4" y="4" width="40" height="40"/>',
  bow:'<path d="M13 4q33 19 0 40l9-20z" fill="#80582f" stroke="S" stroke-width="2"/><path d="M13 4v40M7 24h33m-7-5 7 5-7 5" fill="none" stroke="#eee0b7" stroke-width="2"/><path d="m17 10 4 5m-4 18 4-5" stroke="#caa66b" stroke-width="2"/>',
  staff:'<path d="m16 45 10-29 5 2-10 29z" fill="#825b36" stroke="S" stroke-width="2"/><path d="m27 3 10 7-5 14-12-4-2-9z" fill="F" stroke="S" stroke-width="2"/><path d="m27 3 1 15 9-8m-9 8-8 2" fill="none" stroke="#e8f3ff" stroke-width="2"/>',

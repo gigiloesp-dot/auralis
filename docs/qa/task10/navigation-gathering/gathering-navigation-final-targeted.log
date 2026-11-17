@@ -1,0 +1,31 @@
+✔ exactly32 immutable gathering sites stand beside actual connected roads,clear every existing encounter and retain real walkable approaches (709.54215ms)
+✔ four distinct transparent plant frames,individual icons and actual localized collect objectives are backed by real material and NPC identities (94.745805ms)
+✔ real world radius85,life,region,dungeon and optional obstruction rules are checked on every pickup (0.845958ms)
+✔ single material insertion,full and partial stacks,storage rollback,reentrant taps and persisted regrowth are atomic and never award gold (9.679184ms)
+✔ three actual Save slots retain gathered material records and node deadlines through reload;renderer unloading cannot reset metadata (1.97906ms)
+✔ each regional objective has enough different ready plants to gather three real items without waiting for regrowth (46.841431ms)
+✔ gathering atlas has one shared lease and a loader completion after world destruction removes its texture without recreating actors (37.496029ms)
+✔ virgin and ordinary quest characters keep exact original quest records until explicit tracking selection (3.440568ms)
+✔ all registered existing and new objectives resolve actual camps,NPCs,landmarks,bosses or dungeon entrances with localized text and read-only queries (184.792511ms)
+✔ tracking stores a real active ID in existing quest metadata,rolls back failed checkpoints,and advances after claim without tracking queued or locked quests (0.911116ms)
+✔ all twelve cross-region requests follow only the approved ring and use the nearest valid actual next-hop portal or NPC (6.097342ms)
+✔ ready quests lead to their actual turn-in NPC and arrival compares world distances rather than anisotropic screen positions (0.923906ms)
+✔ inside every one of17dungeons navigation points to remaining real boss or exit and outside goals always use the actual exit (24.686858ms)
+✔ all three real save slots retain tracked IDs,queue and progress through normal character normalization and reload (2.553658ms)
+✔ gathering arrows choose another actual available plant,wait for earliest regrowth only when all eight are exhausted,and lead completed supplies to NPC (62.451706ms)
+✔ buy potion spends actual gold and increments only chosen potion (10.895772ms)
+✔ merchant rejects invalid currency, invalid resource and capped potion stack (0.211429ms)
+✔ selling actual material quantities earns rarity value and removes depleted stack (0.255226ms)
+✔ invalid sale never mutates inventory or gold (0.200803ms)
+✔ normal equipment merchants never offer epic or legendary, and purchases are transactional (7.126947ms)
+✔ special merchant has explicit high-cost legendary stock and equipment sale removes only owned item (5.518117ms)
+✔ failed trade persistence rolls back gold, potions and inventory before any success message (1.333024ms)
+✔ quest plants with explicit zero sale value stay owned and cannot be sold for fallback gold (0.84741ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2497.031729

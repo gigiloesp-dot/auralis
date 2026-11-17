@@ -2,10 +2,10 @@
   "task": 10,
   "totalSpots": 257,
   "totalResidents": 2827,
-  "uniquePrimaryModels": 29,
-  "newSixBankModels": 6,
+  "uniquePrimaryModels": 33,
+  "newSixBankModels": 10,
   "legacyDistinctModels": 23,
-  "unfinishedSpecies": 228,
+  "unfinishedSpecies": 224,
   "complete": false,
   "note": "Names/anatomy of prototypeOnly rows are proposals,not completed unique creatures. Shared fallback art does not count as unique. Actual current stats and abilities are listed separately.",
   "species": [
@@ -237,17 +237,17 @@
       "residents": 11,
       "climate": "abandoned-city",
       "names": {
-        "ru": "Руинный охотник «Двойной хвост»",
-        "en": "Ruin hunter «Twin-tail»",
-        "es": "Cazador de ruinas «Doble cola»"
+        "ru": "Плющевой орк руин",
+        "en": "Ivybound ruin orc",
+        "es": "Orco de las ruinas de hiedra"
       },
       "runtimeNames": {
-        "ru": "Дубравный орк",
-        "en": "Grove orc",
-        "es": "Orco del robledal"
+        "ru": "Плющевой орк руин",
+        "en": "Ivybound ruin orc",
+        "es": "Orco de las ruinas de hiedra"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Twin-tail;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 461,
         "attack": 47,
@@ -259,17 +259,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "cleave"
+        "cleave",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestOrc.png",
-          "atlas": "assets/actors/monsters/forestOrc.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-next-bestiary/forest-species-004.png",
+          "atlas": "assets/actors/task10-next-bestiary/forest-species-004.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -338,17 +348,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Лесной волк «Костяная грива»",
-        "en": "Forest wolf «Bone mane»",
-        "es": "Lobo del bosque «Crin de hueso»"
+        "ru": "Костегривый волк",
+        "en": "Bone-mane wolf",
+        "es": "Lobo de crin ósea"
       },
       "runtimeNames": {
-        "ru": "Лесной волк",
-        "en": "Forest wolf",
-        "es": "Lobo del bosque"
+        "ru": "Костегривый волк",
+        "en": "Bone-mane wolf",
+        "es": "Lobo de crin ósea"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 394,
         "attack": 34,
@@ -360,17 +370,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "venom"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestWolf.png",
-          "atlas": "assets/actors/monsters/forestWolf.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-next-bestiary/forest-species-006.png",
+          "atlas": "assets/actors/task10-next-bestiary/forest-species-006.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4006,17 +4026,17 @@
       "residents": 11,
       "climate": "snow",
       "names": {
-        "ru": "Ледяной исполин «Двойной хвост»",
-        "en": "Frost golem «Twin-tail»",
-        "es": "Gólem de hielo «Doble cola»"
+        "ru": "Кристаллический ледяной голем",
+        "en": "Crystal ice golem",
+        "es": "Gólem de hielo cristalino"
       },
       "runtimeNames": {
-        "ru": "Ледяной исполин",
-        "en": "Frost golem",
-        "es": "Gólem de hielo"
+        "ru": "Кристаллический ледяной голем",
+        "en": "Crystal ice golem",
+        "es": "Gólem de hielo cristalino"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Twin-tail;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 397,
         "attack": 45,
@@ -4028,17 +4048,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "frost"
       ],
       "movement": "ground",
       "locomotion": "heavy",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/frostGolem.png",
-          "atlas": "assets/actors/monsters/frostGolem.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-next-bestiary/north-species-003.png",
+          "atlas": "assets/actors/task10-next-bestiary/north-species-003.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -7627,17 +7657,17 @@
       "residents": 11,
       "climate": "elder-wastes",
       "names": {
-        "ru": "Рунный скарабей «Костяная грива»",
-        "en": "Rune scarab «Bone mane»",
-        "es": "Escarabajo rúnico «Crin de hueso»"
-      },
-      "runtimeNames": {
-        "ru": "Рунный скарабей",
-        "en": "Rune scarab",
+        "ru": "Рунический скарабей",
+        "en": "Runic scarab",
         "es": "Escarabajo rúnico"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "runtimeNames": {
+        "ru": "Рунический скарабей",
+        "en": "Runic scarab",
+        "es": "Escarabajo rúnico"
+      },
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 564,
         "attack": 62,
@@ -7649,17 +7679,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "burrow"
+        "burrow",
+        "fan"
       ],
       "movement": "ground",
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/scarab.png",
-          "atlas": "assets/actors/monsters/scarab.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-next-bestiary/ancient-species-003.png",
+          "atlas": "assets/actors/task10-next-bestiary/ancient-species-003.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {

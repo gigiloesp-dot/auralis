@@ -1,0 +1,1135 @@
+{
+  "records": [
+    {
+      "id": "forest-species-004",
+      "before": {
+        "id": "forest-spot-004-mob-0",
+        "key": "task10-monster-ivybound-ruin-orc",
+        "names": {
+          "ru": "Плющевой орк руин",
+          "en": "Ivybound ruin orc",
+          "es": "Orco de las ruinas de hiedra"
+        },
+        "profile": {
+          "movement": "ground",
+          "locomotion": "biped",
+          "ability": "cleave",
+          "collisionRadius": 14,
+          "elevation": 0,
+          "cooldown": 6500,
+          "windup": 650,
+          "range": 105,
+          "radius": 85,
+          "multiplier": 1.4,
+          "abilityPattern": [
+            "cleave",
+            "roots"
+          ]
+        }
+      },
+      "poses": [
+        {
+          "bank": "idle",
+          "frame": "idle/e",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/se",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/s",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/w",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/n",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/e",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/se",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/s",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/w",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/n",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/e",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/se",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/s",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/w",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/n",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/e",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/se",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/s",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/w",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/n",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/ne",
+          "rotation": 0
+        }
+      ],
+      "after": {
+        "hp": 49814,
+        "fired": [
+          "cleave",
+          "roots"
+        ],
+        "death": {
+          "deadUntil": 1794855696355,
+          "killedAt": 1794855666355,
+          "hp": 0
+        }
+      }
+    },
+    {
+      "id": "forest-species-006",
+      "before": {
+        "id": "forest-spot-006-mob-0",
+        "key": "task10-monster-bone-maned-forest-wolf",
+        "names": {
+          "ru": "Костегривый волк",
+          "en": "Bone-mane wolf",
+          "es": "Lobo de crin ósea"
+        },
+        "profile": {
+          "movement": "ground",
+          "locomotion": "quadruped",
+          "ability": "pounce",
+          "collisionRadius": 14,
+          "elevation": 0,
+          "cooldown": 6500,
+          "windup": 420,
+          "range": 235,
+          "radius": 48,
+          "multiplier": 1.25,
+          "abilityPattern": [
+            "pounce",
+            "venom"
+          ]
+        }
+      },
+      "poses": [
+        {
+          "bank": "idle",
+          "frame": "idle/e",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/se",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/s",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/w",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/n",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/e",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/se",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/s",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/w",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/n",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/e",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/se",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/s",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/w",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/n",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/e",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/se",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/s",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/w",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/n",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/ne",
+          "rotation": 0
+        }
+      ],
+      "after": {
+        "hp": 49924,
+        "fired": [
+          "pounce",
+          "venom"
+        ],
+        "death": {
+          "deadUntil": 1794855703055,
+          "killedAt": 1794855673055,
+          "hp": 0
+        }
+      }
+    },
+    {
+      "id": "north-species-003",
+      "before": {
+        "id": "north-spot-003-mob-0",
+        "key": "task10-monster-glacier-shard-golem",
+        "names": {
+          "ru": "Кристаллический ледяной голем",
+          "en": "Crystal ice golem",
+          "es": "Gólem de hielo cristalino"
+        },
+        "profile": {
+          "movement": "ground",
+          "locomotion": "heavy",
+          "ability": "stomp",
+          "collisionRadius": 24,
+          "elevation": 0,
+          "cooldown": 8000,
+          "windup": 1100,
+          "range": 145,
+          "radius": 115,
+          "multiplier": 1.65,
+          "abilityPattern": [
+            "stomp",
+            "frost"
+          ]
+        }
+      },
+      "poses": [
+        {
+          "bank": "idle",
+          "frame": "idle/e",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/se",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/s",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/w",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/n",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/e",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/se",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/s",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/w",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/n",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/e",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/se",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/s",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/w",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/n",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/e",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/se",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/s",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/w",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/n",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/ne",
+          "rotation": 0
+        }
+      ],
+      "after": {
+        "hp": 49861,
+        "fired": [
+          "stomp",
+          "frost"
+        ],
+        "death": {
+          "deadUntil": 1794855710970,
+          "killedAt": 1794855680970,
+          "hp": 0
+        }
+      }
+    },
+    {
+      "id": "ancient-species-003",
+      "before": {
+        "id": "ancient-spot-003-mob-0",
+        "key": "task10-monster-runewing-elder-scarab",
+        "names": {
+          "ru": "Рунический скарабей",
+          "en": "Runic scarab",
+          "es": "Escarabajo rúnico"
+        },
+        "profile": {
+          "movement": "ground",
+          "locomotion": "crawler",
+          "ability": "burrow",
+          "collisionRadius": 17,
+          "elevation": 0,
+          "cooldown": 7500,
+          "windup": 850,
+          "range": 200,
+          "radius": 55,
+          "multiplier": 1.15,
+          "abilityPattern": [
+            "burrow",
+            "fan"
+          ],
+          "projectileMagic": true
+        }
+      },
+      "poses": [
+        {
+          "bank": "idle",
+          "frame": "idle/e",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/se",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/s",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/w",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/n",
+          "rotation": 0
+        },
+        {
+          "bank": "idle",
+          "frame": "idle/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-a",
+          "frame": "run-a/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/e",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/se",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/s",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/w",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/n",
+          "rotation": 0
+        },
+        {
+          "bank": "run-b",
+          "frame": "run-b/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/e",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/se",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/s",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/w",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/n",
+          "rotation": 0
+        },
+        {
+          "bank": "attack",
+          "frame": "attack/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/e",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/se",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/s",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/w",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/n",
+          "rotation": 0
+        },
+        {
+          "bank": "hurt",
+          "frame": "hurt/ne",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/e",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/se",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/s",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/sw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/w",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/nw",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/n",
+          "rotation": 0
+        },
+        {
+          "bank": "death",
+          "frame": "death/ne",
+          "rotation": 0
+        }
+      ],
+      "after": {
+        "hp": 49731,
+        "fired": [
+          "burrow",
+          "fan"
+        ],
+        "death": {
+          "deadUntil": 1794855717357,
+          "killedAt": 1794855687357,
+          "hp": 0
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Four additional regional species with two actual alternating abilities; prepared HP/positions,real engine and streamed textures; no physical Android claim"
+}

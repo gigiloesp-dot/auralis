@@ -40,7 +40,7 @@ const {startServer,launchOptions,root}=require('./browserHarness.cjs');
    if(classId==='warrior'){
     const checkResidency=async()=>{
      await page.waitForFunction(()=>Auralis.game.scene.getScene('world').actorTextures.diagnostics.actorPending===0);
-     const state=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),expected=new Map(),keep=entry=>{if(entry)expected.set(entry.key,(expected.get(entry.key)||0)+1);};keep(s.rig.painted?.entry);for(const c of s.world.chunkWorld.chunks.values())for(const npc of c.npcActors||[])keep(npc.entry);for(const m of s.monsters.monsters)keep(m.painted?.entry);return {expected:[...expected].sort(),actual:[...s.actorTextures.entries].map(([key,record])=>[key,record.refs]).sort()};});
+     const state=await page.evaluate(()=>{const s=Auralis.game.scene.getScene('world'),expected=new Map(),keep=entry=>{if(entry)expected.set(entry.key,(expected.get(entry.key)||0)+1);};keep(s.rig.painted?.entry);if(s.world.gathering?.lease)keep(s.world.gathering.entry);for(const c of s.world.chunkWorld.chunks.values())for(const npc of c.npcActors||[])keep(npc.entry);for(const m of s.monsters.monsters)keep(m.painted?.entry);return {expected:[...expected].sort(),actual:[...s.actorTextures.entries].map(([key,record])=>[key,record.refs]).sort()};});
      assert.deepEqual(state.actual,state.expected,'Only the actual streamed actors may retain atlas leases');
     };
     await page.waitForFunction(()=>{const s=Auralis.game.scene.getScene('world'),actors=[...s.world.chunkWorld.chunks.values()].flatMap(c=>c.npcActors||[]);return actors.length===6&&actors.filter(a=>!a.npc?.appearanceId).length===5&&actors.every(a=>a.sprite)&&s.monsters.monsters.some(m=>m.type==='forestWolf'&&m.paintedActive);});

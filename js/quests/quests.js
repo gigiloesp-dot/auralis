@@ -5,6 +5,7 @@ import {remapWorldObjectives} from './remapWorldObjectives.js';
 import {itemCount,addItem} from '../equipment/items.js';
 import {grantXp} from '../systems/progression.js';
 import {TASK10_QUESTS,TASK10_DAILY_QUESTS} from './task10QuestData.js';
+import {GATHERING_QUESTS} from './gatheringQuestData.js';
 import {dailyEpoch,dailySnapshot,syncDailyQuests,acceptDailyQuest,claimDailyQuest} from './dailyQuests.js';
 export const QUEST_STATES=Object.freeze(['locked','available','active','completed','claimed','queued']);
 export const QUEST_TEXT=Object.freeze({
@@ -16,7 +17,7 @@ export const QUEST_TEXT=Object.freeze({
 export const LEGACY_QUESTS=Object.freeze(RELEASE21_QUESTS);
 const regions=Object.fromEntries(Object.keys(REGIONS).map(id=>[id,getRegionContent(id)]));
 export const LEGACY_RUNTIME_QUESTS=Object.freeze(remapWorldObjectives(LEGACY_QUESTS,regions));
-export const QUESTS=Object.freeze([...LEGACY_RUNTIME_QUESTS,...TASK10_QUESTS,...TASK10_DAILY_QUESTS]);
+export const QUESTS=Object.freeze([...LEGACY_RUNTIME_QUESTS,...TASK10_QUESTS,...TASK10_DAILY_QUESTS,...GATHERING_QUESTS]);
 export const MAX_ACTIVE_QUESTS=6;
 export const dailyQuestViewKey=hero=>dailyEpoch(hero,TASK10_DAILY_QUESTS)+':'+hero.level;
 export const STARTER_QUESTS=Object.freeze(QUESTS.filter(q=>q.id==='forestWolves'));

@@ -39,3 +39,14 @@ test('failed trade persistence rolls back gold, potions and inventory before any
  assert.equal(commitTrade(h,()=>buyEquipment(h,{role:'merchant',minLevel:1,maxLevel:1},'weapon_warrior_0:common'),()=>false).reason,'storage');assert.equal(JSON.stringify(h),snapshot);
  assert.equal(commitTrade(h,()=>buyPotion(h,'mp'),()=>true).ok,true);assert.equal(h.potions.mp,4);assert.equal(h.gold,1990);
 });
+
+test('quest plants with explicit zero sale value stay owned and cannot be sold for fallback gold',async()=>{
+ const {QUEST_MATERIALS}=await import('../js/equipment/questMaterials.js');
+ for(const id of Object.keys(QUEST_MATERIALS)){
+  const hero={gold:7,inventory:[{id,quantity:3,rarity:'common'}]},before=structuredClone(hero);
+  assert.equal(materialPrice(hero.inventory[0]),0);
+  assert.equal(sellMaterial(hero,0,1).ok,false);
+  assert.deepEqual(hero,before);
+ }
+ assert.equal(materialPrice({id:'wolfFang',rarity:'common'}),1);
+});
