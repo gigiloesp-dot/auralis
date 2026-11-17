@@ -1,0 +1,13 @@
+✔ all six actual class damage paths can hurt the giant and its real telegraphed hammer can be dodged without a class gate (32.169182ms)
+✔ real engine giant uses its independent phase FSM,shape-aware markers and source-owned painted boulders with complete cancellation (2.827242ms)
+✔ a real stationary hammer damages the hero and a killing hit clears phase state,markers and encounter shots before teardown (2.378524ms)
+✔ world-space giant telegraphs retain a genuine safe ring hole and exact line and cone geometry (2.386746ms)
+✔ giant warnings use real surface projection,scene depth and idempotent tween/object cleanup (0.592616ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 253.934124

@@ -1,0 +1,20 @@
+✔ all36 legacy dungeon variants stay byte-identical while five distinct desert definitions extend the real roster to17 (26.286118ms)
+✔ all15 new variants use real floorplans,painted columns,appropriate level and unchanged difficulty multipliers (247.618181ms)
+✔ new dungeon minions stay dead through reload,each boss difficulty keeps its hour timer and rewards and portal cannot duplicate (17.868302ms)
+✔ five new bosses have separate transparent48-pose atlases and real runtime bindings without replacing old boss paintings (1490.652908ms)
+✔ five authored desert floor plans are deterministic, distinct and keep IDs,levels and localised themes stable (6.908636ms)
+✔ all five real floors have radius18 BFS routes from their safe entry to every room,enemy anchor and exit (87.396141ms)
+✔ every authored corridor is at least100 units wide and its complete centerline is traversable; topology supports genuine loops and branches (7.389413ms)
+✔ five stable desert entrances lie on existing caravan roads,clear both old and new camps and allow a safe outdoor return (4473.19585ms)
+✔ minimap enemy disclosure is a350 world-unit circle and accepts only loaded,alive,positive-HP finite positions (1.253835ms)
+✔ all four maps expose actual roads-independent places and localized climate areas without a camp or static boss API (1.79442ms)
+✔ receivers and teleporter NPC markers are rendered from real descriptors and cannot turn an arrival point into an NPC (0.263038ms)
+✔ big map retains quest listing but suppresses kill,boss and any camp-location markers until the real NPC hand-in (1.775923ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6961.587458

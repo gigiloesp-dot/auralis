@@ -1,0 +1,715 @@
+{
+  "physicalAndroid": false,
+  "scope": "Chromium emulated landscape touchscreen; prepared level/position/inventory-capacity/storage/clock fixtures. Every flower originates from actual Canvas touch.",
+  "records": [
+    {
+      "language": "ru",
+      "width": 640,
+      "height": 360,
+      "flows": [
+        {
+          "quest": "task10-moonflower-supplies",
+          "region": "forest",
+          "touches": [
+            {
+              "x": 320.4553571428571,
+              "y": 162.3866517857142,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            },
+            {
+              "x": 320.5364583333333,
+              "y": 162.27857886904755,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            },
+            {
+              "x": 320.46726190476187,
+              "y": 162.50997767857135,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-frost-herb-supplies",
+          "region": "north",
+          "touches": [
+            {
+              "x": 320.75074404761904,
+              "y": 164.70947916666668,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            },
+            {
+              "x": 320.7418154761905,
+              "y": 164.29895089285716,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            },
+            {
+              "x": 320.09449404761904,
+              "y": 164.29123139880954,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "northFrostHerb",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-star-bloom-supplies",
+          "region": "ancient",
+          "touches": [
+            {
+              "x": 320.00372023809524,
+              "y": 161.91242187499992,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            },
+            {
+              "x": 320.5721726190476,
+              "y": 162.27960937499992,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            },
+            {
+              "x": 320.7566964285714,
+              "y": 161.98673363095233,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "ancientStarBloom",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-sunleaf-supplies",
+          "region": "desert",
+          "touches": [
+            {
+              "x": 320.5877976190476,
+              "y": 164.51808779761907,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            },
+            {
+              "x": 320.4754464285714,
+              "y": 164.1815922619048,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            },
+            {
+              "x": 320.3638392857143,
+              "y": 163.8451897321429,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "desertSunleaf",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        }
+      ],
+      "edges": {},
+      "errors": []
+    },
+    {
+      "language": "en",
+      "width": 740,
+      "height": 320,
+      "flows": [
+        {
+          "quest": "task10-moonflower-supplies",
+          "region": "forest",
+          "touches": [
+            {
+              "x": 370.018359375,
+              "y": 143.59273632812494,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            },
+            {
+              "x": 370.09287109375,
+              "y": 143.49344433593743,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            },
+            {
+              "x": 370.029296875,
+              "y": 143.70604199218744,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-frost-herb-supplies",
+          "region": "north",
+          "touches": [
+            {
+              "x": 370.28974609374995,
+              "y": 145.72683398437502,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            },
+            {
+              "x": 370.28154296875,
+              "y": 145.3496611328125,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            },
+            {
+              "x": 369.68681640625,
+              "y": 145.34256884765625,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "northFrostHerb",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-star-bloom-supplies",
+          "region": "ancient",
+          "touches": [
+            {
+              "x": 369.60341796874997,
+              "y": 143.1570375976562,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            },
+            {
+              "x": 370.12568359374995,
+              "y": 143.49439111328118,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            },
+            {
+              "x": 370.29521484375,
+              "y": 143.22531152343743,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "ancientStarBloom",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-sunleaf-supplies",
+          "region": "desert",
+          "touches": [
+            {
+              "x": 370.14003906249997,
+              "y": 145.55099316406253,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            },
+            {
+              "x": 370.03681640624995,
+              "y": 145.24183789062502,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            },
+            {
+              "x": 369.93427734374995,
+              "y": 144.93276806640628,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "desertSunleaf",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        }
+      ],
+      "edges": {
+        "radius86": "rejected actual Canvas tap",
+        "radius85": "accepted",
+        "repeat": "no duplicate",
+        "chunkReload": "deadline preserved",
+        "characterReload": "material and cooldown preserved",
+        "slots": [
+          {
+            "slot": 1,
+            "name": "GatherSlot1",
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 1
+              }
+            ],
+            "meta": {
+              "version": 1,
+              "nodes": {
+                "gather-forest-00": {
+                  "pickedAt": 1794897716187,
+                  "readyAt": 1794898316187
+                },
+                "gather-forest-01": {
+                  "pickedAt": 1794897719053,
+                  "readyAt": 1794898319053
+                },
+                "gather-forest-02": {
+                  "pickedAt": 1794897721779,
+                  "readyAt": 1794898321779
+                },
+                "gather-north-00": {
+                  "pickedAt": 1794897739178,
+                  "readyAt": 1794898339178
+                },
+                "gather-north-01": {
+                  "pickedAt": 1794897742144,
+                  "readyAt": 1794898342144
+                },
+                "gather-north-02": {
+                  "pickedAt": 1794897745248,
+                  "readyAt": 1794898345248
+                },
+                "gather-ancient-00": {
+                  "pickedAt": 1794897765438,
+                  "readyAt": 1794898365438
+                },
+                "gather-ancient-01": {
+                  "pickedAt": 1794897769270,
+                  "readyAt": 1794898369270
+                },
+                "gather-ancient-02": {
+                  "pickedAt": 1794897773253,
+                  "readyAt": 1794898373253
+                },
+                "gather-desert-00": {
+                  "pickedAt": 1794897797695,
+                  "readyAt": 1794898397695
+                },
+                "gather-desert-01": {
+                  "pickedAt": 1794897804554,
+                  "readyAt": 1794898404554
+                },
+                "gather-desert-02": {
+                  "pickedAt": 1794897809469,
+                  "readyAt": 1794898409469
+                },
+                "gather-forest-03": {
+                  "pickedAt": 1794897836940,
+                  "readyAt": 1794898436940
+                }
+              }
+            }
+          },
+          {
+            "slot": 2,
+            "name": "GatherSlot2",
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 1
+              }
+            ],
+            "meta": {
+              "version": 1,
+              "nodes": {
+                "gather-forest-00": {
+                  "pickedAt": 1794897716187,
+                  "readyAt": 1794898316187
+                },
+                "gather-forest-01": {
+                  "pickedAt": 1794897719053,
+                  "readyAt": 1794898319053
+                },
+                "gather-forest-02": {
+                  "pickedAt": 1794897721779,
+                  "readyAt": 1794898321779
+                },
+                "gather-north-00": {
+                  "pickedAt": 1794897739178,
+                  "readyAt": 1794898339178
+                },
+                "gather-north-01": {
+                  "pickedAt": 1794897742144,
+                  "readyAt": 1794898342144
+                },
+                "gather-north-02": {
+                  "pickedAt": 1794897745248,
+                  "readyAt": 1794898345248
+                },
+                "gather-ancient-00": {
+                  "pickedAt": 1794897765438,
+                  "readyAt": 1794898365438
+                },
+                "gather-ancient-01": {
+                  "pickedAt": 1794897769270,
+                  "readyAt": 1794898369270
+                },
+                "gather-ancient-02": {
+                  "pickedAt": 1794897773253,
+                  "readyAt": 1794898373253
+                },
+                "gather-desert-00": {
+                  "pickedAt": 1794897797695,
+                  "readyAt": 1794898397695
+                },
+                "gather-desert-01": {
+                  "pickedAt": 1794897804554,
+                  "readyAt": 1794898404554
+                },
+                "gather-desert-02": {
+                  "pickedAt": 1794897809469,
+                  "readyAt": 1794898409469
+                },
+                "gather-forest-03": {
+                  "pickedAt": 1794897836940,
+                  "readyAt": 1794898436940
+                }
+              }
+            }
+          },
+          {
+            "slot": 3,
+            "name": "GatherSlot3",
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 1
+              }
+            ],
+            "meta": {
+              "version": 1,
+              "nodes": {
+                "gather-forest-00": {
+                  "pickedAt": 1794897716187,
+                  "readyAt": 1794898316187
+                },
+                "gather-forest-01": {
+                  "pickedAt": 1794897719053,
+                  "readyAt": 1794898319053
+                },
+                "gather-forest-02": {
+                  "pickedAt": 1794897721779,
+                  "readyAt": 1794898321779
+                },
+                "gather-north-00": {
+                  "pickedAt": 1794897739178,
+                  "readyAt": 1794898339178
+                },
+                "gather-north-01": {
+                  "pickedAt": 1794897742144,
+                  "readyAt": 1794898342144
+                },
+                "gather-north-02": {
+                  "pickedAt": 1794897745248,
+                  "readyAt": 1794898345248
+                },
+                "gather-ancient-00": {
+                  "pickedAt": 1794897765438,
+                  "readyAt": 1794898365438
+                },
+                "gather-ancient-01": {
+                  "pickedAt": 1794897769270,
+                  "readyAt": 1794898369270
+                },
+                "gather-ancient-02": {
+                  "pickedAt": 1794897773253,
+                  "readyAt": 1794898373253
+                },
+                "gather-desert-00": {
+                  "pickedAt": 1794897797695,
+                  "readyAt": 1794898397695
+                },
+                "gather-desert-01": {
+                  "pickedAt": 1794897804554,
+                  "readyAt": 1794898404554
+                },
+                "gather-desert-02": {
+                  "pickedAt": 1794897809469,
+                  "readyAt": 1794898409469
+                },
+                "gather-forest-03": {
+                  "pickedAt": 1794897836940,
+                  "readyAt": 1794898436940
+                }
+              }
+            }
+          }
+        ],
+        "fullBag": "60 slots remain unchanged; plant remains",
+        "quota": "inventory and deadline atomically restored; stored save unchanged",
+        "pause": "public pause hub plus guarded real actor callback gives no material",
+        "dead": "no gather",
+        "regrowth": "hidden through readyAt-1; actual tap succeeds at600000ms",
+        "oneLease": {
+          "visibleGatheringNodes": 2,
+          "gatheringAtlasResident": true,
+          "gatheringGeneration": 4,
+          "refs": 1,
+          "ready": true
+        },
+        "far": {
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 5,
+          "cached": false
+        },
+        "dungeon": {
+          "ok": true,
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 8,
+          "blocked": true
+        },
+        "destroy": {
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 11,
+          "cached": false
+        },
+        "late": {
+          "releases": 1,
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 1,
+          "closed": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "language": "es",
+      "width": 844,
+      "height": 390,
+      "flows": [
+        {
+          "quest": "task10-moonflower-supplies",
+          "region": "forest",
+          "touches": [
+            {
+              "x": 421.87627377717394,
+              "y": 175.61232039741842,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            },
+            {
+              "x": 421.9665208899456,
+              "y": 175.49205990998635,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            },
+            {
+              "x": 421.8895210597826,
+              "y": 175.74955396569285,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-frost-herb-supplies",
+          "region": "north",
+          "touches": [
+            {
+              "x": 422.2049719769022,
+              "y": 178.19709706182067,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            },
+            {
+              "x": 422.1950365149456,
+              "y": 177.74027280061145,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            },
+            {
+              "x": 421.4747155230978,
+              "y": 177.73168276579486,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "northFrostHerb",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-star-bloom-supplies",
+          "region": "ancient",
+          "touches": [
+            {
+              "x": 421.3737049932065,
+              "y": 175.0846107549252,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            },
+            {
+              "x": 422.00626273777175,
+              "y": 175.49320662788716,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            },
+            {
+              "x": 422.2115956182065,
+              "y": 175.16730277683416,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "ancientStarBloom",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-sunleaf-supplies",
+          "region": "desert",
+          "touches": [
+            {
+              "x": 422.0236497961956,
+              "y": 177.98412215523103,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            },
+            {
+              "x": 421.89862856657606,
+              "y": 177.6096794327446,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            },
+            {
+              "x": 421.77443529211956,
+              "y": 177.23534020465357,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "desertSunleaf",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        }
+      ],
+      "edges": {},
+      "errors": []
+    }
+  ]
+}

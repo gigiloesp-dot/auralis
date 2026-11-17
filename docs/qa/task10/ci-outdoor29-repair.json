@@ -1,0 +1,11 @@
+{
+  "source": "fe09a8be9be184d049cef2a568a8a282bd6a12c0",
+  "run": 43833816735,
+  "passedJobs": 19,
+  "totalJobs": 20,
+  "failedJob": 133185348031,
+  "cause": "browser-world still expected18 outdoor bosses after11 new desert bosses were integrated; actual total29",
+  "repair": "Require exactly29; preserve every live boss attack, reward, timer, route, streaming, transition and save assertion",
+  "localVerification": "node tests/browser-world.cjs PASS all4regions/all257camps/2827ordinary/29bosses/roads/transitions/arena/reload; no JS errors",
+  "log": "work/task10/world29-regression.log"
+}

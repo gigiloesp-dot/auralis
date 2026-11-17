@@ -1,0 +1,12 @@
+✔ nineteen immutable additional residents extend the21 existing identities to40 and distribute every required role across all four regions (2.204931ms)
+✔ every proposed NPC stands on a real radius18 floor inside the safe settlement,away from other residents,houses,roads,camps,portals and dungeon entrances (16183.24269ms)
+✔ all names,service labels and substantive dialogues supportRU/EN/ES and all nineteen appearance IDs reference real existing directional models rather than new fabricated assets (6.119015ms)
+✔ all original21 NPC objects,positions and functions stay equal to the frozen release21 world while new specialist data introduces no items or merchant stat changes (0.419493ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16585.943578

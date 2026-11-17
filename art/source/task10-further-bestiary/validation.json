@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "runtimeIntegrationTest": "tests/task10FurtherSpecies.test.mjs (run separately)",
+  "models": [
+    {
+      "id": "forest-species-008",
+      "image": "assets/actors/task10-further-bestiary/forest-species-008.png",
+      "atlas": "assets/actors/task10-further-bestiary/forest-species-008.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1351,
+      "rgbaBytes": 4718592,
+      "sha256": "147e5671282b23f2b42613c630cf070cee52d3290c347810aa41cc8e8ded09b1",
+      "scale": 1.078125,
+      "annotationHeight": 81
+    },
+    {
+      "id": "north-species-011",
+      "image": "assets/actors/task10-further-bestiary/north-species-011.png",
+      "atlas": "assets/actors/task10-further-bestiary/north-species-011.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1970,
+      "rgbaBytes": 4718592,
+      "sha256": "0e82f367a2d805cb9d0cff95bbbb71b44f6a319ba41b7be2718e0052f87803ad",
+      "scale": 0.927710843373494,
+      "annotationHeight": 89
+    },
+    {
+      "id": "ancient-species-007",
+      "image": "assets/actors/task10-further-bestiary/ancient-species-007.png",
+      "atlas": "assets/actors/task10-further-bestiary/ancient-species-007.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1452,
+      "rgbaBytes": 4718592,
+      "sha256": "8fcbfd1bfbe1bf359fe7c0400b7cf7557bdf6421d53679d37ef4171203c7991c",
+      "scale": 1.4193548387096775,
+      "annotationHeight": 100
+    },
+    {
+      "id": "desert-species-023",
+      "image": "assets/actors/task10-further-bestiary/desert-species-023.png",
+      "atlas": "assets/actors/task10-further-bestiary/desert-species-023.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 978,
+      "rgbaBytes": 4718592,
+      "sha256": "09bb2f2fb7a4921b4a4ac949ab26a2a04cb8c93739a4da6f745dbbf851d63ce4",
+      "scale": 1.1692307692307693,
+      "annotationHeight": 88
+    }
+  ]
+}

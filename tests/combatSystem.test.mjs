@@ -25,6 +25,6 @@ test('ranged attack hits only after projectile travel and awards quest kill once
 test('safe town blocks nearby enemy damage and regeneration respects combat and death',()=>{
  const {system,hero,target}=setup();hero.x=1030;hero.y=1140;target.x=hero.x;target.y=hero.y;target.homeX=hero.x;target.homeY=hero.y;
  hero.hp=50;hero.mp=50;system.lastCombat=5000;system.update(6000,.04);assert.equal(hero.hp,50);
- system.update(11001,.04);assert.ok(hero.hp>50);assert.ok(hero.mp>50);
- hero.hp=0;system.update(13000,.04);assert.equal(hero.hp,0);
+ system.update(14999,.04);assert.equal(hero.hp,50);system.update(15000,.04);assert.equal(hero.hp,50+Math.round(hero.maxHp*.07));assert.ok(hero.mp>50);
+ hero.hp=0;system.update(17000,.04);assert.equal(hero.hp,0);
 });

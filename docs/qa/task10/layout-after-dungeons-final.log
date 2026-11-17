@@ -1,0 +1,6 @@
+forest 80 880
+north 76 836
+ancient 45 495
+desert 56 616
+aliases 470 4359 quests 104 28
+PASS deterministic layout,aliases and104 original quest artifacts match their generator

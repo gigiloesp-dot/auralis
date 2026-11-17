@@ -1,0 +1,25 @@
+PASS real timed effect expires warrior
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections ru warrior
+PASS real timed effect expires archer
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections ru archer
+PASS real timed effect expires mage
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections ru mage
+PASS real timed effect expires paladin
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections ru paladin
+PASS real timed effect expires assassin
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections ru assassin
+PASS real timed effect expires cannoneer
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections ru cannoneer
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections en warrior
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections en archer
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections en mage
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections en paladin
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections en assassin
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections en cannoneer
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections es warrior
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections es archer
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections es mage
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections es paladin
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections es assassin
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections es cannoneer
+PASS task2 all 18 class/language combinations, four phone sizes; no JavaScript errors

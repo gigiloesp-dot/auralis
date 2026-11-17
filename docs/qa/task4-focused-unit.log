@@ -1,0 +1,43 @@
+✔ normal equipment has exact independent-from-material rates and luck cannot increase equipment odds (17.604089ms)
+✔ material bases are halved while rarity and independent equipment checks survive (3.708604ms)
+✔ all successful world-boss rarity groups survive and quantities cover both endpoints (0.980832ms)
+✔ boss rarity checks are independent, exact at boundaries and can all fail (0.379012ms)
+✔ green and higher multi-item groups use distinct real class weapons (7.201301ms)
+✔ legendary equipment is world-only, not miniboss, dungeon, arena or ordinary/elite (0.450531ms)
+✔ all actual equipment tiers remain within enemy level +/-5 for all levels, slots and classes (104.53744ms)
+✔ full bags retain source rolls and dungeon/arena keep guaranteed compatible source rewards (0.642551ms)
+✔ real monster descriptors preserve boss source for runtime selection (0.971918ms)
+✔ loot rolls preserve independent material/equipment checks without touching the character (4.101918ms)
+✔ weapon and armor families share anonymous silhouettes, remaining items use wooden chests (2.591606ms)
+✔ separate drops never overlap even under the isometric projection or obstacles (77.337262ms)
+✔ pickup requires same region, living hero and actual distance, and identifies only on success (6.483497ms)
+✔ full bags and partial stack space leave the entire drop untouched (0.639046ms)
+✔ a failed durable pickup restores inventory and the original anonymous ground item (0.339843ms)
+✔ death, drops and successful removal survive actual v2 save/reload without duplicate rewards (19.12031ms)
+✔ distant regions and temporary visual unloading do not delete ordinary ground rewards (0.666187ms)
+✔ a death with no clear nearby tile persists its rolled items for a later placement retry (35.062043ms)
+✔ save normalizer rejects runtime objects, invalid positions and invented item definitions (0.49638ms)
+✔ blocked pending placements have a two-second, single-job, nearby-only retry budget without starving later jobs (17.999136ms)
+✔ task4 nearby query groups corpses by real world distance180, never screen distance (0.661569ms)
+✔ take-all retains equipment that cannot fit but still merges eligible material stacks (81.433473ms)
+✔ take-all saves each actual transfer and ignores repeated calls after reload (0.763794ms)
+✔ partial take-all rolls back exactly on quota failure and rejects reentrant pickup (0.502599ms)
+✔ an open-window snapshot cannot authorize take-all after movement or region change (0.25822ms)
+✔ all six classes have nine weapon tiers (13.309756ms)
+✔ no equipment above character level (0.360875ms)
+✔ wolf drops combine into a single 100-cap material stack (7.167067ms)
+✔ normal wolf cannot drop legendary (1.049396ms)
+✔ forest has preserved wolves, two distinct camps and one stronger miniboss (0.973912ms)
+✔ distant monsters hide and stop AI, reactivate near the player (57.602589ms)
+✔ miniboss telegraphs a fixed location, permits dodging and damages players who remain (14.844929ms)
+✔ non-wolf kills do not advance wolf quest and rewards happen once (1.924117ms)
+✔ guardian uses independent boss chances and never auto-inserts rewards (6.682807ms)
+✔ dash sweep stops before obstacles, handles coincident targets and reaches clear destination (0.423069ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14728.183261

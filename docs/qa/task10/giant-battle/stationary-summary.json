@@ -1,0 +1,24 @@
+{
+  "liveEngine": true,
+  "manualPlaythrough": false,
+  "physicalAndroid": false,
+  "results": [
+    {
+      "classId": "warrior",
+      "outcome": "death",
+      "elapsedSeconds": 108.32,
+      "bossHp": 913404,
+      "hp": 0,
+      "potions": {
+        "hp": 0,
+        "mp": 1
+      },
+      "damageTaken": 6560,
+      "phases": [
+        1
+      ],
+      "aoeDodges": 0,
+      "hostElapsedMs": 365.224
+    }
+  ]
+}

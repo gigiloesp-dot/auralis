@@ -1,0 +1,1594 @@
+{
+  "npcs": 120,
+  "travelChoices": 48,
+  "records": [
+    {
+      "language": "ru",
+      "id": "mira",
+      "art": {
+        "painted": true,
+        "frame": "mira/w",
+        "appearance": "mira",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "borin",
+      "art": {
+        "painted": true,
+        "frame": "borin/w",
+        "appearance": "borin",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "aldric",
+      "art": {
+        "painted": true,
+        "frame": "aldric/w",
+        "appearance": "aldric",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "elia",
+      "art": {
+        "painted": true,
+        "frame": "elia/w",
+        "appearance": "elia",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "tera",
+      "art": {
+        "painted": true,
+        "frame": "tera/w",
+        "appearance": "tera",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "sella",
+      "art": {
+        "painted": true,
+        "frame": "sella/w",
+        "appearance": "sella",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "oren",
+      "art": {
+        "painted": true,
+        "frame": "oren/w",
+        "appearance": "oren",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "tovis",
+      "art": {
+        "painted": true,
+        "frame": "tovis/w",
+        "appearance": "tovis",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "ronan",
+      "art": {
+        "painted": true,
+        "frame": "ronan/w",
+        "appearance": "ronan",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "lyra",
+      "art": {
+        "painted": true,
+        "frame": "lyra/w",
+        "appearance": "lyra",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "bram",
+      "art": {
+        "painted": true,
+        "frame": "bram/w",
+        "appearance": "bram",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "freya",
+      "art": {
+        "painted": true,
+        "frame": "freya/w",
+        "appearance": "freya",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "gunnar",
+      "art": {
+        "painted": true,
+        "frame": "gunnar/w",
+        "appearance": "gunnar",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "ysra",
+      "art": {
+        "painted": true,
+        "frame": "ysra/w",
+        "appearance": "ysra",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "torvin",
+      "art": {
+        "painted": true,
+        "frame": "torvin/w",
+        "appearance": "torvin",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "ida",
+      "art": {
+        "painted": true,
+        "frame": "ida/w",
+        "appearance": "ida",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "skeld",
+      "art": {
+        "painted": true,
+        "frame": "skeld/w",
+        "appearance": "skeld",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "aster",
+      "art": {
+        "painted": true,
+        "frame": "aster/w",
+        "appearance": "aster",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "sera",
+      "art": {
+        "painted": true,
+        "frame": "sera/w",
+        "appearance": "sera",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "orion",
+      "art": {
+        "painted": true,
+        "frame": "orion/w",
+        "appearance": "orion",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "nyx",
+      "art": {
+        "painted": true,
+        "frame": "nyx/w",
+        "appearance": "nyx",
+        "key": "actor-nyx"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "forest-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "orion/w",
+        "appearance": "orion",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "forest-daily",
+      "art": {
+        "painted": true,
+        "frame": "ida/w",
+        "appearance": "ida",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "forest-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "torvin/w",
+        "appearance": "torvin",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "forest-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "skeld/w",
+        "appearance": "skeld",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "north-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "lyra/w",
+        "appearance": "lyra",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "north-daily",
+      "art": {
+        "painted": true,
+        "frame": "elia/w",
+        "appearance": "elia",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "north-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "ronan/w",
+        "appearance": "ronan",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "north-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "bram/w",
+        "appearance": "bram",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "ancient-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "oren/w",
+        "appearance": "oren",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "ancient-daily",
+      "art": {
+        "painted": true,
+        "frame": "freya/w",
+        "appearance": "freya",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "ancient-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "tera/w",
+        "appearance": "tera",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "ancient-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "gunnar/w",
+        "appearance": "gunnar",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "desert-guide",
+      "art": {
+        "painted": true,
+        "frame": "aster/w",
+        "appearance": "aster",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "desert-daily",
+      "art": {
+        "painted": true,
+        "frame": "ysra/w",
+        "appearance": "ysra",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "desert-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "aldric/w",
+        "appearance": "aldric",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "desert-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "nyx/w",
+        "appearance": "nyx",
+        "key": "actor-nyx"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "desert-apothecary",
+      "art": {
+        "painted": true,
+        "frame": "sella/w",
+        "appearance": "sella",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "desert-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "sera/w",
+        "appearance": "sera",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "ru",
+      "id": "desert-storekeeper",
+      "art": {
+        "painted": true,
+        "frame": "borin/w",
+        "appearance": "borin",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "mira",
+      "art": {
+        "painted": true,
+        "frame": "mira/w",
+        "appearance": "mira",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "borin",
+      "art": {
+        "painted": true,
+        "frame": "borin/w",
+        "appearance": "borin",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "aldric",
+      "art": {
+        "painted": true,
+        "frame": "aldric/w",
+        "appearance": "aldric",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "elia",
+      "art": {
+        "painted": true,
+        "frame": "elia/w",
+        "appearance": "elia",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "tera",
+      "art": {
+        "painted": true,
+        "frame": "tera/w",
+        "appearance": "tera",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "sella",
+      "art": {
+        "painted": true,
+        "frame": "sella/w",
+        "appearance": "sella",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "oren",
+      "art": {
+        "painted": true,
+        "frame": "oren/w",
+        "appearance": "oren",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "tovis",
+      "art": {
+        "painted": true,
+        "frame": "tovis/w",
+        "appearance": "tovis",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "ronan",
+      "art": {
+        "painted": true,
+        "frame": "ronan/w",
+        "appearance": "ronan",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "lyra",
+      "art": {
+        "painted": true,
+        "frame": "lyra/w",
+        "appearance": "lyra",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "bram",
+      "art": {
+        "painted": true,
+        "frame": "bram/w",
+        "appearance": "bram",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "freya",
+      "art": {
+        "painted": true,
+        "frame": "freya/w",
+        "appearance": "freya",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "gunnar",
+      "art": {
+        "painted": true,
+        "frame": "gunnar/w",
+        "appearance": "gunnar",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "ysra",
+      "art": {
+        "painted": true,
+        "frame": "ysra/w",
+        "appearance": "ysra",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "torvin",
+      "art": {
+        "painted": true,
+        "frame": "torvin/w",
+        "appearance": "torvin",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "ida",
+      "art": {
+        "painted": true,
+        "frame": "ida/w",
+        "appearance": "ida",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "skeld",
+      "art": {
+        "painted": true,
+        "frame": "skeld/w",
+        "appearance": "skeld",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "aster",
+      "art": {
+        "painted": true,
+        "frame": "aster/w",
+        "appearance": "aster",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "sera",
+      "art": {
+        "painted": true,
+        "frame": "sera/w",
+        "appearance": "sera",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "orion",
+      "art": {
+        "painted": true,
+        "frame": "orion/w",
+        "appearance": "orion",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "nyx",
+      "art": {
+        "painted": true,
+        "frame": "nyx/w",
+        "appearance": "nyx",
+        "key": "actor-nyx"
+      }
+    },
+    {
+      "language": "en",
+      "id": "forest-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "orion/w",
+        "appearance": "orion",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "forest-daily",
+      "art": {
+        "painted": true,
+        "frame": "ida/w",
+        "appearance": "ida",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "forest-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "torvin/w",
+        "appearance": "torvin",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "forest-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "skeld/w",
+        "appearance": "skeld",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "north-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "lyra/w",
+        "appearance": "lyra",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "north-daily",
+      "art": {
+        "painted": true,
+        "frame": "elia/w",
+        "appearance": "elia",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "north-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "ronan/w",
+        "appearance": "ronan",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "north-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "bram/w",
+        "appearance": "bram",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "ancient-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "oren/w",
+        "appearance": "oren",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "ancient-daily",
+      "art": {
+        "painted": true,
+        "frame": "freya/w",
+        "appearance": "freya",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "en",
+      "id": "ancient-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "tera/w",
+        "appearance": "tera",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "ancient-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "gunnar/w",
+        "appearance": "gunnar",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "desert-guide",
+      "art": {
+        "painted": true,
+        "frame": "aster/w",
+        "appearance": "aster",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "desert-daily",
+      "art": {
+        "painted": true,
+        "frame": "ysra/w",
+        "appearance": "ysra",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "en",
+      "id": "desert-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "aldric/w",
+        "appearance": "aldric",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "desert-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "nyx/w",
+        "appearance": "nyx",
+        "key": "actor-nyx"
+      }
+    },
+    {
+      "language": "en",
+      "id": "desert-apothecary",
+      "art": {
+        "painted": true,
+        "frame": "sella/w",
+        "appearance": "sella",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "desert-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "sera/w",
+        "appearance": "sera",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "en",
+      "id": "desert-storekeeper",
+      "art": {
+        "painted": true,
+        "frame": "borin/w",
+        "appearance": "borin",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "mira",
+      "art": {
+        "painted": true,
+        "frame": "mira/w",
+        "appearance": "mira",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "borin",
+      "art": {
+        "painted": true,
+        "frame": "borin/w",
+        "appearance": "borin",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "aldric",
+      "art": {
+        "painted": true,
+        "frame": "aldric/w",
+        "appearance": "aldric",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "elia",
+      "art": {
+        "painted": true,
+        "frame": "elia/w",
+        "appearance": "elia",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "tera",
+      "art": {
+        "painted": true,
+        "frame": "tera/w",
+        "appearance": "tera",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "sella",
+      "art": {
+        "painted": true,
+        "frame": "sella/w",
+        "appearance": "sella",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "oren",
+      "art": {
+        "painted": true,
+        "frame": "oren/w",
+        "appearance": "oren",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "tovis",
+      "art": {
+        "painted": true,
+        "frame": "tovis/w",
+        "appearance": "tovis",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "ronan",
+      "art": {
+        "painted": true,
+        "frame": "ronan/w",
+        "appearance": "ronan",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "lyra",
+      "art": {
+        "painted": true,
+        "frame": "lyra/w",
+        "appearance": "lyra",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "bram",
+      "art": {
+        "painted": true,
+        "frame": "bram/w",
+        "appearance": "bram",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "freya",
+      "art": {
+        "painted": true,
+        "frame": "freya/w",
+        "appearance": "freya",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "gunnar",
+      "art": {
+        "painted": true,
+        "frame": "gunnar/w",
+        "appearance": "gunnar",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "ysra",
+      "art": {
+        "painted": true,
+        "frame": "ysra/w",
+        "appearance": "ysra",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "torvin",
+      "art": {
+        "painted": true,
+        "frame": "torvin/w",
+        "appearance": "torvin",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "ida",
+      "art": {
+        "painted": true,
+        "frame": "ida/w",
+        "appearance": "ida",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "skeld",
+      "art": {
+        "painted": true,
+        "frame": "skeld/w",
+        "appearance": "skeld",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "aster",
+      "art": {
+        "painted": true,
+        "frame": "aster/w",
+        "appearance": "aster",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "sera",
+      "art": {
+        "painted": true,
+        "frame": "sera/w",
+        "appearance": "sera",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "orion",
+      "art": {
+        "painted": true,
+        "frame": "orion/w",
+        "appearance": "orion",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "nyx",
+      "art": {
+        "painted": true,
+        "frame": "nyx/w",
+        "appearance": "nyx",
+        "key": "actor-nyx"
+      }
+    },
+    {
+      "language": "es",
+      "id": "forest-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "orion/w",
+        "appearance": "orion",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "forest-daily",
+      "art": {
+        "painted": true,
+        "frame": "ida/w",
+        "appearance": "ida",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "forest-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "torvin/w",
+        "appearance": "torvin",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "forest-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "skeld/w",
+        "appearance": "skeld",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "north-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "lyra/w",
+        "appearance": "lyra",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "north-daily",
+      "art": {
+        "painted": true,
+        "frame": "elia/w",
+        "appearance": "elia",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "north-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "ronan/w",
+        "appearance": "ronan",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "north-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "bram/w",
+        "appearance": "bram",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "ancient-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "oren/w",
+        "appearance": "oren",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "ancient-daily",
+      "art": {
+        "painted": true,
+        "frame": "freya/w",
+        "appearance": "freya",
+        "key": "actor-oak-north"
+      }
+    },
+    {
+      "language": "es",
+      "id": "ancient-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "tera/w",
+        "appearance": "tera",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "ancient-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "gunnar/w",
+        "appearance": "gunnar",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "desert-guide",
+      "art": {
+        "painted": true,
+        "frame": "aster/w",
+        "appearance": "aster",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "desert-daily",
+      "art": {
+        "painted": true,
+        "frame": "ysra/w",
+        "appearance": "ysra",
+        "key": "actor-highpass"
+      }
+    },
+    {
+      "language": "es",
+      "id": "desert-weaponsmith",
+      "art": {
+        "painted": true,
+        "frame": "aldric/w",
+        "appearance": "aldric",
+        "key": "actor-forest-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "desert-armorsmith",
+      "art": {
+        "painted": true,
+        "frame": "nyx/w",
+        "appearance": "nyx",
+        "key": "actor-nyx"
+      }
+    },
+    {
+      "language": "es",
+      "id": "desert-apothecary",
+      "art": {
+        "painted": true,
+        "frame": "sella/w",
+        "appearance": "sella",
+        "key": "actor-river-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "desert-teleporter",
+      "art": {
+        "painted": true,
+        "frame": "sera/w",
+        "appearance": "sera",
+        "key": "actor-ancient-residents"
+      }
+    },
+    {
+      "language": "es",
+      "id": "desert-storekeeper",
+      "art": {
+        "painted": true,
+        "frame": "borin/w",
+        "appearance": "borin",
+        "key": "actor-forest-residents"
+      }
+    }
+  ],
+  "travel": [
+    {
+      "language": "ru",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-forest-city-south",
+      "region": "forest",
+      "x": 15400,
+      "y": 16400
+    },
+    {
+      "language": "ru",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-forest-city-north",
+      "region": "forest",
+      "x": 16200,
+      "y": 4108
+    },
+    {
+      "language": "ru",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-north-frostford",
+      "region": "north",
+      "x": 1500,
+      "y": 1800
+    },
+    {
+      "language": "ru",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-desert-oasis",
+      "region": "desert",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "ru",
+      "npc": "north-teleporter",
+      "receiver": "receiver-forest-riverhaven",
+      "region": "forest",
+      "x": 5250,
+      "y": 5200
+    },
+    {
+      "language": "ru",
+      "npc": "north-teleporter",
+      "receiver": "receiver-north-ash-south",
+      "region": "north",
+      "x": 19208,
+      "y": 19600
+    },
+    {
+      "language": "ru",
+      "npc": "north-teleporter",
+      "receiver": "receiver-north-ash-north",
+      "region": "north",
+      "x": 19000,
+      "y": 3879
+    },
+    {
+      "language": "ru",
+      "npc": "north-teleporter",
+      "receiver": "receiver-ancient-dawncamp",
+      "region": "ancient",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "ru",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-north-frostford",
+      "region": "north",
+      "x": 1500,
+      "y": 1800
+    },
+    {
+      "language": "ru",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-ancient-sanctum",
+      "region": "ancient",
+      "x": 11554,
+      "y": 11263
+    },
+    {
+      "language": "ru",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-ancient-crossroads",
+      "region": "ancient",
+      "x": 6668,
+      "y": 6428
+    },
+    {
+      "language": "ru",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-desert-oasis",
+      "region": "desert",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "ru",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-forest-riverhaven",
+      "region": "forest",
+      "x": 5250,
+      "y": 5200
+    },
+    {
+      "language": "ru",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-ancient-dawncamp",
+      "region": "ancient",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "ru",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-desert-east",
+      "region": "desert",
+      "x": 16879,
+      "y": 17471
+    },
+    {
+      "language": "ru",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-desert-west",
+      "region": "desert",
+      "x": 5800,
+      "y": 13050
+    },
+    {
+      "language": "en",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-forest-city-south",
+      "region": "forest",
+      "x": 15400,
+      "y": 16400
+    },
+    {
+      "language": "en",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-forest-city-north",
+      "region": "forest",
+      "x": 16200,
+      "y": 4108
+    },
+    {
+      "language": "en",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-north-frostford",
+      "region": "north",
+      "x": 1500,
+      "y": 1800
+    },
+    {
+      "language": "en",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-desert-oasis",
+      "region": "desert",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "en",
+      "npc": "north-teleporter",
+      "receiver": "receiver-forest-riverhaven",
+      "region": "forest",
+      "x": 5250,
+      "y": 5200
+    },
+    {
+      "language": "en",
+      "npc": "north-teleporter",
+      "receiver": "receiver-north-ash-south",
+      "region": "north",
+      "x": 19208,
+      "y": 19600
+    },
+    {
+      "language": "en",
+      "npc": "north-teleporter",
+      "receiver": "receiver-north-ash-north",
+      "region": "north",
+      "x": 19000,
+      "y": 3879
+    },
+    {
+      "language": "en",
+      "npc": "north-teleporter",
+      "receiver": "receiver-ancient-dawncamp",
+      "region": "ancient",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "en",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-north-frostford",
+      "region": "north",
+      "x": 1500,
+      "y": 1800
+    },
+    {
+      "language": "en",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-ancient-sanctum",
+      "region": "ancient",
+      "x": 11554,
+      "y": 11263
+    },
+    {
+      "language": "en",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-ancient-crossroads",
+      "region": "ancient",
+      "x": 6668,
+      "y": 6428
+    },
+    {
+      "language": "en",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-desert-oasis",
+      "region": "desert",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "en",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-forest-riverhaven",
+      "region": "forest",
+      "x": 5250,
+      "y": 5200
+    },
+    {
+      "language": "en",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-ancient-dawncamp",
+      "region": "ancient",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "en",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-desert-east",
+      "region": "desert",
+      "x": 16879,
+      "y": 17471
+    },
+    {
+      "language": "en",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-desert-west",
+      "region": "desert",
+      "x": 5800,
+      "y": 13050
+    },
+    {
+      "language": "es",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-forest-city-south",
+      "region": "forest",
+      "x": 15400,
+      "y": 16400
+    },
+    {
+      "language": "es",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-forest-city-north",
+      "region": "forest",
+      "x": 16200,
+      "y": 4108
+    },
+    {
+      "language": "es",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-north-frostford",
+      "region": "north",
+      "x": 1500,
+      "y": 1800
+    },
+    {
+      "language": "es",
+      "npc": "forest-teleporter",
+      "receiver": "receiver-desert-oasis",
+      "region": "desert",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "es",
+      "npc": "north-teleporter",
+      "receiver": "receiver-forest-riverhaven",
+      "region": "forest",
+      "x": 5250,
+      "y": 5200
+    },
+    {
+      "language": "es",
+      "npc": "north-teleporter",
+      "receiver": "receiver-north-ash-south",
+      "region": "north",
+      "x": 19208,
+      "y": 19600
+    },
+    {
+      "language": "es",
+      "npc": "north-teleporter",
+      "receiver": "receiver-north-ash-north",
+      "region": "north",
+      "x": 19000,
+      "y": 3879
+    },
+    {
+      "language": "es",
+      "npc": "north-teleporter",
+      "receiver": "receiver-ancient-dawncamp",
+      "region": "ancient",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "es",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-north-frostford",
+      "region": "north",
+      "x": 1500,
+      "y": 1800
+    },
+    {
+      "language": "es",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-ancient-sanctum",
+      "region": "ancient",
+      "x": 11554,
+      "y": 11263
+    },
+    {
+      "language": "es",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-ancient-crossroads",
+      "region": "ancient",
+      "x": 6668,
+      "y": 6428
+    },
+    {
+      "language": "es",
+      "npc": "ancient-teleporter",
+      "receiver": "receiver-desert-oasis",
+      "region": "desert",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "es",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-forest-riverhaven",
+      "region": "forest",
+      "x": 5250,
+      "y": 5200
+    },
+    {
+      "language": "es",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-ancient-dawncamp",
+      "region": "ancient",
+      "x": 1600,
+      "y": 1800
+    },
+    {
+      "language": "es",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-desert-east",
+      "region": "desert",
+      "x": 16879,
+      "y": 17471
+    },
+    {
+      "language": "es",
+      "npc": "desert-teleporter",
+      "receiver": "receiver-desert-west",
+      "region": "desert",
+      "x": 5800,
+      "y": 13050
+    }
+  ],
+  "errors": [],
+  "scope": "Prepared level56/resources/positions; real UI/purchases/storage/painted actors/streamed receivers/travel/reload. Chromium mobile emulation; no physical Android claim."
+}

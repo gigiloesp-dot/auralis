@@ -1,0 +1,17 @@
+✔ live battle arena collision matches actual deterministic desert chunks rather than a stationary dummy floor (83.901431ms)
+✔ a stationary real character suffers actual incoming damage and dies after finite HP potions; boss AI and HP are not disabled (866.105687ms)
+✔ all six controller trials use real attacks,assigned four-slot skills,finite resources,300ms reaction and collision-limited movement (1251.655777ms)
+✔ seeded live encounter reproduces damage,casts,movement,potions and incoming results without leaking global RNG or clocks (559.981398ms)
+✔ Task10 additive catalog preserves104 live legacy quests and uses41 separate stable localized identities (39.660718ms)
+✔ every hunt references the actual stable species,camp,type,level and spawn population rather than removed prototypes (0.557933ms)
+✔ dungeon,boss,talk and delivery references resolve to real entrances or residents with physically reachable objectives (118.724924ms)
+✔ story dependencies are acyclic,reachable in level order,and preserve a five-dungeon desert sequence (0.476019ms)
+✔ daily tiers cover1–56 exactly and match ordinary objectives with exactly60percent moreXP,increasedgold,10HP/5MP (0.711845ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3689.313489

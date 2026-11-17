@@ -1,0 +1,17 @@
+✔ natural roads preserve endpoints and deterministically bend without crossing nearby encounters (2.114699ms)
+✔ all three regional roads and trails have actual curved renderer/collision segments and traversable bridges (2704.937913ms)
+✔ legacy placement hashes retain original anchors with explicit authored wolf and crowded Tera exceptions (2.016751ms)
+✔ chunk baking includes crossing road segments and skips distant paths (0.49756ms)
+✔ expanded boundaries preserve every existing camp, spawn, boss, road, portal and quest (5.58141ms)
+✔ expanded edge chunks are finite, decorated, uniquely owned and remain streamed (4.32961ms)
+✔ equipment catalogue, layers, weapon art and existing skill definitions are untouched (102.341479ms)
+✔ all seven settlements double their footprint, retain old homes and receive two safe real houses and lanes (2775.268045ms)
+✔ only the crowded resident moves; additions have stable globally unique IDs and positions (1.063463ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8337.306821

@@ -1,0 +1,166 @@
+{
+  "models": [
+    {
+      "id": "desert-species-015",
+      "slug": "sawcrest-burrow-worm",
+      "names": {
+        "ru": "Пилогребневый червь",
+        "en": "Sawcrest burrow worm",
+        "es": "Gusano de cresta serrada"
+      },
+      "anatomy": "Ground slithering limbless long segmented sand worm with open circular three-part grinding mouth, tall black saw-tooth dorsal plates and broad ochre belly. No snake hood, no legs, no ears. Serpent locomotion.",
+      "targetIdleHeight": 76,
+      "baseType": "desertSnake",
+      "biome": "sand",
+      "locomotion": "serpent",
+      "spotId": "desert-spot-015",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "runtimeRegistered": false
+    },
+    {
+      "id": "desert-species-016",
+      "slug": "pitcher-shell-hermit",
+      "names": {
+        "ru": "Кувшиноспинный отшельник",
+        "en": "Pitcher-shell hermit",
+        "es": "Ermitaño de caparazón de cántaro"
+      },
+      "anatomy": "Ground crawling crustacean inside an enormous ancient turquoise ceramic water pitcher shell tilted sideways, six crooked red legs, two equal narrow pincers, long black eye stalks, broken pitcher lip and handle. Small desert hermit monster.",
+      "targetIdleHeight": 76,
+      "baseType": "scarab",
+      "biome": "sand",
+      "locomotion": "crawler",
+      "spotId": "desert-spot-016",
+      "proposedAbilityPattern": [
+        "burrow",
+        "cleave"
+      ],
+      "runtimeRegistered": false
+    },
+    {
+      "id": "desert-species-017",
+      "slug": "obelisk-strider",
+      "names": {
+        "ru": "Обелисковый ходок",
+        "en": "Obelisk strider",
+        "es": "Zancudo obelisco"
+      },
+      "anatomy": "Heavy two-legged walking tall narrow black basalt obelisk creature with angular tapering head atop monolith body, two thick sandstone pillar legs with enormous flat square feet, hanging knotted rope arms ending stone fists, small gold sun inlay eye. Ground heavy stomp.",
+      "targetIdleHeight": 76,
+      "baseType": "ancientSentinel",
+      "biome": "sand",
+      "locomotion": "heavy",
+      "spotId": "desert-spot-017",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "runtimeRegistered": false
+    },
+    {
+      "id": "desert-species-018",
+      "slug": "oasis-jelly-lantern",
+      "names": {
+        "ru": "Оазисный медузофонарь",
+        "en": "Oasis jelly lantern",
+        "es": "Medusa linterna del oasis"
+      },
+      "anatomy": "Hovering desert spirit resembling translucent pear-shaped water jellyfish with a luminous green oasis seed inside, umbrella of layered palm leaf fronds, five short curled water tendrils, no legs, no mask, no arms. Floating hovering locomotion.",
+      "targetIdleHeight": 76,
+      "baseType": "arcaneWisp",
+      "biome": "sand",
+      "locomotion": "hover",
+      "spotId": "desert-spot-018",
+      "proposedAbilityPattern": [
+        "blink",
+        "fan"
+      ],
+      "runtimeRegistered": false
+    },
+    {
+      "id": "desert-species-019",
+      "slug": "anklet-ring-sand-wyrm",
+      "names": {
+        "ru": "Кольчатый песчаный змей",
+        "en": "Anklet-ring sand wyrm",
+        "es": "Sierpe de arena anillada"
+      },
+      "anatomy": "Ground limbless serpent with very broad flat hammerhead, pale violet leathery skin, six large separated gold ring scales around long smooth flexible neck, forked bone tail spear, three orange eyes across head. Serpent slither; no hood or dorsal sail or legs.",
+      "targetIdleHeight": 76,
+      "baseType": "desertSnake",
+      "biome": "sand",
+      "locomotion": "serpent",
+      "spotId": "desert-spot-019",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "runtimeRegistered": false
+    },
+    {
+      "id": "desert-species-021",
+      "slug": "dust-loom-spider-spirit",
+      "names": {
+        "ru": "Паутинный дух пыли",
+        "en": "Dust loom spider spirit",
+        "es": "Espíritu telar de polvo"
+      },
+      "anatomy": "Floating magical desert spirit shaped like an empty rust bronze spinning wheel with six curved short hooked spokes around hollow turquoise glowing center, suspended long white gauze tassels beneath, no head or body or legs. Hovering animated magical object.",
+      "targetIdleHeight": 76,
+      "baseType": "arcaneWisp",
+      "biome": "sand",
+      "locomotion": "hover",
+      "spotId": "desert-spot-021",
+      "proposedAbilityPattern": [
+        "blink",
+        "fan"
+      ],
+      "runtimeRegistered": false
+    },
+    {
+      "id": "desert-species-022",
+      "slug": "salt-horned-ramolith",
+      "names": {
+        "ru": "Соляной баранолит",
+        "en": "Salt-horned ramolith",
+        "es": "Carnerolito de sal"
+      },
+      "anatomy": "Massive low ground quadruped living chalk salt boulder shaped like a ram, two huge spiral translucent white salt crystal horns, heavy squared hooves, patchy white crystalline fleece, broad face with cobalt eyes, no furnace. Heavy stomp locomotion.",
+      "targetIdleHeight": 76,
+      "baseType": "ancientSentinel",
+      "biome": "sand",
+      "locomotion": "heavy",
+      "spotId": "desert-spot-022",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "runtimeRegistered": false
+    },
+    {
+      "id": "desert-species-027",
+      "slug": "fan-tailed-scorpion",
+      "names": {
+        "ru": "Веерохвостый скорпион",
+        "en": "Fan-tailed scorpion",
+        "es": "Escorpión de cola en abanico"
+      },
+      "anatomy": "Desert scorpion ground crawler with eight ivory thin legs, long slender emerald jade body, pair tiny pincers, tall arched segmented tail ending broad open red-orange palm-leaf fan of five sharp stingers. Readable fan tail silhouette.",
+      "targetIdleHeight": 76,
+      "baseType": "scarab",
+      "biome": "sand",
+      "locomotion": "crawler",
+      "spotId": "desert-spot-027",
+      "proposedAbilityPattern": [
+        "burrow",
+        "cleave"
+      ],
+      "runtimeRegistered": false
+    }
+  ],
+  "complete": false,
+  "note": "Art-only candidates, not integrated. Two existing bounded ability IDs per species proposed; preserve actual base geometry, timing, stats and drops during integration."
+}

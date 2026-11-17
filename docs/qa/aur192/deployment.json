@@ -1,0 +1,58 @@
+{
+  "gameSource": "0e7090526f15d98410afb43f8ff16acf113a03d3",
+  "checkpoint": "fe09a8be9be184d049cef2a568a8a282bd6a12c0",
+  "hostingSource": "7772f61c5dda839d7d80a7d8bee6313c827150ae",
+  "compressedArchiveSha256": "7848bfd51b6f9368d617991916edfcec878c4f359d629b2274a7972956a64c72",
+  "savedVersion": {
+    "id": "appgprj_6af567346ebc8191accf1485254403da~appgver_b4876b8e414081918db11e5851ee736d",
+    "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+    "version_number": 22,
+    "source": {
+      "commit_sha": "7772f61c5dda839d7d80a7d8bee6313c827150ae"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000003d2881f4ae8f5ad893be8e18",
+      "content_hash": "sha256:1998d8f5cf02a27473c6c4fe34ed8e0211659937bc87c1d523c1ede2fe9b0ccd",
+      "size_bytes": 238346240,
+      "file_count": 439
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6afb0b5066c881919b2732517e36c1a4",
+    "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+    "title": "Auralis \u2014 Master Development Test",
+    "version_id": "appgprj_6af567346ebc8191accf1485254403da~appgver_b4876b8e414081918db11e5851ee736d",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6af567346ebc8191accf1485254403da",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-16T13:55:57.344690+00:00"
+  },
+  "ci": {
+    "run": 43877983695,
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": 22
+  },
+  "publicVerification": {
+    "status": "passed",
+    "runtimeFilesSha256": 419,
+    "regions": 4,
+    "mapLocaleCases": 12,
+    "dungeonDifficultyCases": 51,
+    "javascriptErrors": 0,
+    "scope": "Public HTTPS Android Chromium touch emulation; no physical-device claim"
+  },
+  "protectedRefs": {
+    "main": "274e79d37250a31232d5c2cdca94ff1d85dd00d9",
+    "codex/auralis-stable-alpha": "536e776c8ea65a6948889ed7b917fad7996ae87f",
+    "fix/hud-circular-minimap": "aeb181fc02423c6d4c42936d14fd9d9cce010bd8"
+  }
+}

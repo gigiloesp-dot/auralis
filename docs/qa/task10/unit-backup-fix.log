@@ -1,0 +1,39 @@
+✔ three slots are independent (1.843385ms)
+✔ invalid positions cannot overwrite a save (0.176697ms)
+✔ exports and imports complete data (0.729743ms)
+✔ migrates previous save format (0.36405ms)
+✔ rejects unknown save slots (0.462178ms)
+✔ deleted migrated character does not reappear from retained legacy backup (0.275786ms)
+✔ explicit scene slot cannot write into a subsequently selected character slot (0.294354ms)
+✔ storage failures leave load and write safe (0.203698ms)
+✔ pre-update raw save including unknown items stays available as a backup (0.500647ms)
+✔ gold and potion counts survive save and reload without granting consumed potions (0.918999ms)
+✔ missing potion fields migrate to starter counts and negative counts are rejected (0.27103ms)
+✔ full storage does not hide an existing character when backup cannot be written (0.220583ms)
+✔ actual runtime has exactly80/76/45/56 spots,11 residents each and2827 streamed descriptors; planned visual IDs never claim completed artwork (8.732792ms)
+✔ every resident is walkable and outside main roads and safe zones; pursuit territories cannot overlap neighbouring spots (2078.795891ms)
+✔ all470 retired camps and4359 spawn IDs map to real new objects without remapping bosses,dungeons or rewards (4788.347254ms)
+✔ all104 original quests retain IDs,levels,prerequisites and rewards and complete exactly once against current real targets (22.906166ms)
+✔ three-slot world migration preserves exact pre-update JSON,latest death deadline,boss timers,loot and character progress once (3.949357ms)
+✔ world backup quota failure blocks replacement while keeping old slot readable and unmodified (0.299943ms)
+✔ checked-in world and migration artifacts reproduce exactly without rewriting the working tree (6977.873051ms)
+✔ all six classes earn exactly110 skill and165 attribute points through55 real level-ups, all30 skills remain attainable (4.387418ms)
+✔ 42→43,55→56, saved overflow XP and the level56 cap preserve banks and resources (0.320785ms)
+✔ all three legacy slots migrate once with raw pre-upgrade backups and no changes to coordinates, XP, skills, quests or items (1.977979ms)
+✔ new-format desert saves retain level56 and over5000 monster states without duplicates or truncation (41.758126ms)
+✔ actual combat formulas support enemy42/45/50/55/56 and every class can use only unchanged level42 gear (7.989871ms)
+✔ storage quota failure cannot overwrite a legacy character before the exact upgrade backup exists (0.419544ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.312383ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (145.170859ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (81.590112ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.700308ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.745097ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (711.519225ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15245.971943

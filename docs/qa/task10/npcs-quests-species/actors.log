@@ -1,0 +1,53 @@
+PASS actual painted class body,8directions,opposite strides,attack,hurt,socket and all allowed equipped slots warrior
+PASS distinct painted residents and wolf; shared atlas release and reload across regions
+PASS distinct streamed resident,8real facings,measured origin and body replacement mira
+PASS distinct streamed resident,8real facings,measured origin and body replacement borin
+PASS distinct streamed resident,8real facings,measured origin and body replacement aldric
+PASS distinct streamed resident,8real facings,measured origin and body replacement elia
+PASS distinct streamed resident,8real facings,measured origin and body replacement tera
+PASS distinct streamed resident,8real facings,measured origin and body replacement sella
+PASS distinct streamed resident,8real facings,measured origin and body replacement oren
+PASS distinct streamed resident,8real facings,measured origin and body replacement tovis
+PASS distinct streamed resident,8real facings,measured origin and body replacement ronan
+PASS distinct streamed resident,8real facings,measured origin and body replacement lyra
+PASS distinct streamed resident,8real facings,measured origin and body replacement bram
+PASS distinct streamed resident,8real facings,measured origin and body replacement freya
+PASS distinct streamed resident,8real facings,measured origin and body replacement gunnar
+PASS distinct streamed resident,8real facings,measured origin and body replacement ysra
+PASS distinct streamed resident,8real facings,measured origin and body replacement torvin
+PASS distinct streamed resident,8real facings,measured origin and body replacement ida
+PASS distinct streamed resident,8real facings,measured origin and body replacement skeld
+PASS distinct streamed resident,8real facings,measured origin and body replacement aster
+PASS distinct streamed resident,8real facings,measured origin and body replacement sera
+PASS distinct streamed resident,8real facings,measured origin and body replacement orion
+PASS distinct streamed resident,8real facings,measured origin and body replacement nyx
+PASS all six resident packs release when streamed settlements unload
+PASS real regional encounter uses its own painted animated atlas wildBoar
+PASS real regional encounter uses its own painted animated atlas bear
+PASS real regional encounter uses its own painted animated atlas spider
+PASS real regional encounter uses its own painted animated atlas forestBat
+PASS real regional encounter uses its own painted animated atlas skeleton
+PASS real regional encounter uses its own painted animated atlas frostGolem
+PASS real regional encounter uses its own painted animated atlas arcaneWisp
+PASS real regional encounter uses its own painted animated atlas forestRaider
+PASS real regional encounter uses its own painted animated atlas thornSnake
+PASS real regional encounter uses its own painted animated atlas forestOrc
+PASS real regional encounter uses its own painted animated atlas desertSnake
+PASS real regional encounter uses its own painted animated atlas scarab
+PASS real regional encounter uses its own painted animated atlas fallenKnight
+PASS real regional encounter uses its own painted animated atlas ancientGargoyle
+PASS real regional encounter uses its own painted animated atlas voidElemental
+PASS real regional encounter uses its own painted animated atlas iceWolf
+PASS real regional encounter uses its own painted animated atlas snowBear
+PASS real regional encounter uses its own painted animated atlas iceBat
+PASS real regional encounter uses its own painted animated atlas snowRaider
+PASS real regional encounter uses its own painted animated atlas iceElemental
+PASS real regional encounter uses its own painted animated atlas wraith
+PASS real regional encounter uses its own painted animated atlas ancientSentinel
+PASS all produced monster families release their atlases after leaving their encounters
+PASS actual painted class body,8directions,opposite strides,attack,hurt,socket and all allowed equipped slots archer
+PASS actual painted class body,8directions,opposite strides,attack,hurt,socket and all allowed equipped slots mage
+PASS actual painted class body,8directions,opposite strides,attack,hurt,socket and all allowed equipped slots paladin
+PASS actual painted class body,8directions,opposite strides,attack,hurt,socket and all allowed equipped slots assassin
+PASS actual painted class body,8directions,opposite strides,attack,hurt,socket and all allowed equipped slots cannoneer
+PASS actual lazy actor atlases without JavaScript errors

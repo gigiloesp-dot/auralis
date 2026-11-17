@@ -1,0 +1,7 @@
+/* Only linked by the explicit laboratory page; release17 game UI is untouched. */
+#warrior-lab-tools{position:fixed;z-index:120;top:7px;left:50%;transform:translateX(-50%);display:flex;flex-wrap:wrap;justify-content:center;gap:5px;width:min(390px,calc(100vw - 260px));padding:5px;border:1px solid #b68a4f;border-radius:7px;background:#281b10ed;color:#f0dfbb;font:11px/1.2 system-ui}
+#warrior-lab-tools[hidden],#warrior-lab-open[hidden],.warrior-lab-selectors[hidden]{display:none!important}
+#warrior-lab-tools strong{flex:1 0 100%;text-align:center;font-size:11px}
+#warrior-lab-tools button,#warrior-lab-tools select,#warrior-lab-open{min-height:34px;padding:5px 7px;background:#49301b;color:#f0dfbb;border:1px solid #b68a4f;border-radius:5px;font:11px system-ui;touch-action:manipulation}
+.warrior-lab-selectors{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}.warrior-lab-selectors label{display:flex;gap:5px;align-items:center}
+#warrior-lab-open{position:fixed;z-index:120;top:52px;left:50%;transform:translateX(-50%)}

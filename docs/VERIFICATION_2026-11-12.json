@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-12",
+  "repository": "gigiloesp-dot/auralis",
+  "branch": "codex/auralis-master-development",
+  "runtime_source_commit": "d5627a99f4ca3d879ca8b01c2107099d481dfa97",
+  "pull_request": "https://github.com/gigiloesp-dot/auralis/pull/2",
+  "ci": {
+    "run_id": 43176539509,
+    "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43176539509",
+    "conclusion": "success",
+    "syntax_files": 132,
+    "unit_tests": 162,
+    "browser_suites": 9,
+    "artifacts_url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43176539509/artifacts/13925041224",
+    "historical_snapshot": "7d32be284eaa06d13e49daeb0884ebb866ffdede"
+  },
+  "content": {
+    "regions": [
+      {
+        "id": "forest",
+        "size": [
+          12000,
+          12000
+        ],
+        "camps": 94,
+        "ordinary_spawns": 425,
+        "settlements": 3,
+        "npcs": 11
+      },
+      {
+        "id": "north",
+        "size": [
+          14000,
+          14000
+        ],
+        "camps": 85,
+        "ordinary_spawns": 380,
+        "settlements": 2,
+        "npcs": 6
+      },
+      {
+        "id": "ancient",
+        "size": [
+          15000,
+          15000
+        ],
+        "camps": 75,
+        "ordinary_spawns": 340,
+        "settlements": 2,
+        "npcs": 4
+      }
+    ],
+    "minibosses": 12,
+    "world_bosses": 6,
+    "dungeons": 12,
+    "dungeon_difficulty_variants": 36,
+    "quests": 104,
+    "classes": 6,
+    "active_skills": 30
+  },
+  "public_test": {
+    "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+    "site_project_id": "appgprj_6af567346ebc8191accf1485254403da",
+    "saved_version": 4,
+    "deployment_id": "appgdep_6af5ab944f088191bfa354e4c1798ca8",
+    "hosting_source_commit": "ce66e340705a3049999f24a03cd1b61cd92dd693",
+    "verified_runtime_hashes": 97,
+    "fresh_anonymous_browser": true,
+    "checked": [
+      "real new hero UI",
+      "touch joystick",
+      "quest acceptance",
+      "save and reload",
+      "three regional worlds",
+      "three actual hard dungeon entries"
+    ]
+  },
+  "extended_soak": {
+    "command": "AURALIS_SOAK_CYCLES=60 node tests/browser-soak.cjs",
+    "cycles": 60,
+    "regional_dungeon_entries_and_exits": 180,
+    "elapsed_seconds": 223,
+    "scene_children_each_cycle": 278,
+    "textures_each_cycle": 36,
+    "dom_nodes_each_cycle": 128,
+    "offscreen_graphics_references_each_cycle": 0,
+    "post_gc_heap_bytes_cycle_1": 8817724,
+    "post_gc_heap_bytes_cycle_59": 9747392,
+    "frame_samples": 60,
+    "headless_frame_mean_ms": 65.79666666666357,
+    "headless_frame_p95_ms": 86.89999999990687,
+    "not_physical_android": true
+  },
+  "earned_progress_journey": {
+    "source": "browser-journey.cjs",
+    "injections": false,
+    "controls": "real CDP touch and visible UI",
+    "kills": 5,
+    "quests_claimed": [
+      "forestWolves",
+      "forestFangs"
+    ],
+    "final_level": 3,
+    "final_xp": 30,
+    "final_gold": 25,
+    "strength": 6,
+    "skill": "warrior_0",
+    "hp_potions": 4,
+    "save_reload_verified": true
+  },
+  "protected_sources": {
+    "github_main": "274e79d37250a31232d5c2cdca94ff1d85dd00d9",
+    "stable_alpha": "536e776c8ea65a6948889ed7b917fad7996ae87f",
+    "old_alpha_url": "https://auralis-alpha-test.alertpine18.chatgpt.site",
+    "old_alpha_site_version": 1,
+    "pull_request_merged": false
+  },
+  "limits": [
+    "Bulk content tests use level/resource/coordinate/lethal-hit fixtures; they are not a full manual playthrough.",
+    "Final directional character and monster atlases and production VFX remain unfinished.",
+    "Physical Android FPS, thermal and long-session acceptance remain unavailable.",
+    "Complete campaign balance across six classes remains to be evaluated."
+  ],
+  "current_runtime_ci": {
+    "run_id": 43213776863,
+    "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43213776863"
+  },
+  "local_unit_tests": 163,
+  "local_syntax_files": 136,
+  "configured_browser_suites": 10,
+  "natural_first_dungeon": {
+    "script": "tests/browser-first-dungeon.cjs",
+    "elapsed_seconds": 370,
+    "injections": false,
+    "real_wolf_kills": 31,
+    "earned_entry_level": 5,
+    "strength_at_entry": 11,
+    "endurance_at_entry": 11,
+    "dungeon_ordinary_enemies_defeated": 18,
+    "real_boss_defeated": true,
+    "physically_walked_out": true,
+    "completed_saved_and_reloaded": true,
+    "final_level": 7,
+    "final_xp": 333,
+    "final_gold": 600,
+    "cooldown_ms": 3600000
+  },
+  "art": {
+    "class_portraits": 6,
+    "painted_environment_props": 6,
+    "animated_character_atlases": 0,
+    "animated_monster_atlases": 0,
+    "source": "original generated images with provenance, CSS and actual Phaser atlas integration"
+  }
+}

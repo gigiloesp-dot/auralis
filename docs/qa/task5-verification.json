@@ -1,0 +1,128 @@
+{
+  "sourceCommit": "28615cbc4fe1288b1aba242aec0cf0baeb7b39bb",
+  "checkpoint": "98d7b1a9b46385a07ec4b931e4371e957b592455",
+  "ci": 43658226026,
+  "ciJobsPassed": 14,
+  "unitTestsPassed": 284,
+  "syntaxFilesChecked": 213,
+  "browserSuitesPassed": 26,
+  "ciCompactSurfaceRecords": 336,
+  "baselineSurfaceRecords": 96,
+  "localCompactSurfaceRecords": 306,
+  "publicFreshCompactSurfaceRecords": 112,
+  "publicFreshCompactLanguages": [
+    "ru"
+  ],
+  "publicJournalLanguages": [
+    "ru",
+    "en",
+    "es"
+  ],
+  "nativeVersion": 17,
+  "runtimeFilesVerified": 310,
+  "physicalAndroidTested": false,
+  "alphaVersionUnchanged": 1,
+  "protectedRefs": {
+    "main": "274e79d37250a31232d5c2cdca94ff1d85dd00d9",
+    "codex/auralis-stable-alpha": "536e776c8ea65a6948889ed7b917fad7996ae87f",
+    "fix/hud-circular-minimap": "aeb181fc02423c6d4c42936d14fd9d9cce010bd8"
+  },
+  "preservedHudBlobs": {
+    "js/ui/Minimap.js": "4d8f999bd2cb2e9d0c79adcba5ab275e686b621b",
+    "css/world.css": "d8580cc7bafb53136fda4e5667b60d0cd4bbe1e6"
+  },
+  "proofs": {
+    "docs/qa/task5-check.log": {
+      "sha256": "ed705dadd9e10137340a0548c915613ef7a46186649babdb44564926a8c94207",
+      "bytes": 94
+    },
+    "docs/qa/task5-ci-source.json": {
+      "sha256": "d2064e0d8e195e1977c8be40422350b2c49d02a2b9fe27c9c3f2b33c6f626a2a",
+      "bytes": 17125
+    },
+    "docs/qa/task5-control-baseline.json": {
+      "sha256": "4132b9c57fa42bd654cff35989d2717e3abbd8a4ec881b8d16cbf05f0ea834cc",
+      "bytes": 19710
+    },
+    "docs/qa/task5-deployment.json": {
+      "sha256": "61399d68e61784444ef7cbca0bf360be43c52aba531b4e18828df2a6990aec65",
+      "bytes": 1440
+    },
+    "docs/qa/task5-journal-public.log": {
+      "sha256": "22ebdaafa8a0d44dfebcec0d5f0ec25e5aa7f61e5cb9a9196b98f4f2478abf54",
+      "bytes": 630
+    },
+    "docs/qa/task5-loot.log": {
+      "sha256": "832edea1acc2462a798d74cd6ff44327745620f176475c4241edd61423447146",
+      "bytes": 1116
+    },
+    "docs/qa/task5-menu.log": {
+      "sha256": "2338f4186611e667e6e567ebbd9b210697ebd817b47551164a88872ffdac0f63",
+      "bytes": 345
+    },
+    "docs/qa/task5-mobile.log": {
+      "sha256": "c1951da3d9eb2acfb5023210564a8bb54a899d8b2c0b3d1a5145edc928d79e18",
+      "bytes": 320
+    },
+    "docs/qa/task5-public-ui-metrics.json": {
+      "sha256": "0146377978450181b51d40b439422ed6a879b2d59a134333e58f85cd0d2a3d4f",
+      "bytes": 1197960
+    },
+    "docs/qa/task5-public.log": {
+      "sha256": "d28152ddc2fdaeeb985bed03cf920b02482444a3abcaddda004086b1d805e78e",
+      "bytes": 726
+    },
+    "docs/qa/task5-size-comparison.json": {
+      "sha256": "d75c44e1b190609c744ffce77c4dff462048e1b29790c2a91ceffb68256903bb",
+      "bytes": 19350
+    },
+    "docs/qa/task5-ui-local.log": {
+      "sha256": "830b02646447eaaa6c0a984fa22f78b8e7b7ea0b8de63eddaf1060e81a7d593d",
+      "bytes": 556
+    },
+    "docs/qa/task5-ui-public.log": {
+      "sha256": "57591580ae126af59ac57c533ae16c4616bef1b3403f1886a45c1b029b8be7e9",
+      "bytes": 244
+    },
+    "docs/qa/task5-unit.log": {
+      "sha256": "809f270b2df1281fe648f818ece029150ad5a6d354885c00fc0cf8b8d8cc28d1",
+      "bytes": 27660
+    },
+    "docs/qa/task5-screens/README.md": {
+      "sha256": "26636bda6001768ee2dd0ec3698f8419a83ccef79a3601de998d3ec7b65deebe",
+      "bytes": 1225
+    },
+    "docs/qa/task5-screens/after-home.png": {
+      "sha256": "cd30ab4d93ea1e96c6b1dd15cb48d9ccdf6d0db106822d32ea0afeaf959857ea",
+      "bytes": 319064
+    },
+    "docs/qa/task5-screens/after-inventory.png": {
+      "sha256": "f47b28d8ec30dc1e101a173c9bc2db6e19b35d4e82632eacd233bb32dcaf3342",
+      "bytes": 100841
+    },
+    "docs/qa/task5-screens/after-pause.png": {
+      "sha256": "683559fdb874cad8078c4b32f76414f3e06ddb176e771e6e1c2f6b975c3f30a1",
+      "bytes": 230309
+    },
+    "docs/qa/task5-screens/after-storage.png": {
+      "sha256": "76f6f75aa63611a15fc76db843caf02ea864ccf60fc23f06ce333e5ef2d3284b",
+      "bytes": 196258
+    },
+    "docs/qa/task5-screens/before-home.png": {
+      "sha256": "ef4d00d513a7a71e1b9b067eba3e3c778628cff3ad902c3bda2b31ea1dcefff2",
+      "bytes": 378748
+    },
+    "docs/qa/task5-screens/before-inventory.png": {
+      "sha256": "dc39a48224c0b626cd636e2193bc09bc11cbc6d870a98f06929d1f9aa0dbd7ef",
+      "bytes": 64342
+    },
+    "docs/qa/task5-screens/before-pause.png": {
+      "sha256": "36d05d170ec9e4f0dd6fb9b6c7d18e6f9bf421c2fcc358e8b138329dfd4619d8",
+      "bytes": 246912
+    },
+    "docs/qa/task5-screens/before-storage.png": {
+      "sha256": "1f53affa33f6ba7503fe9e2114a61ba6aa33987a4f525e3a9b19c3f4cae5ebd9",
+      "bytes": 171472
+    }
+  }
+}

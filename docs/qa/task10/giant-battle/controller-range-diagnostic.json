@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "file": "assassin-failure-with-incoming-timeline.json",
+    "preferredStandoff": 72,
+    "reactionMs": 300,
+    "elapsedSeconds": 123,
+    "outcome": "death",
+    "damageTaken": 6400,
+    "incomingDistances": [
+      39.051,
+      39.52,
+      39.72,
+      39.667,
+      40.12,
+      39.208,
+      39.768,
+      39.84
+    ],
+    "bossAttackRange": 42,
+    "actualIncomingBasicHits": 50
+  },
+  "correction": {
+    "preferredStandoff": 86,
+    "reason": "With300ms delayed boss observations and120ms planning intervals,the72-unit goal allowed the moving76unit/s giant to approach to39–40units. Use the same86-unit cautious melee standoff as the warrior/paladin. Assassin basic attack range stays80 and real engine range checks still apply.",
+    "otherChanges": "Backstab requires a legally observed windup older than300ms with400ms time left; facing uses the delayed boss observation. No boss/stat/resource changes."
+  },
+  "final": {
+    "file": "assassin.json",
+    "outcome": "victory",
+    "elapsedSeconds": 1386.36,
+    "damageTaken": 261,
+    "hp": 939
+  },
+  "scope": "Controller debugging only. The original failure remains evidence,not silently replaced by a nerfed boss."
+}

@@ -1,0 +1,3 @@
+PASS task5 journal ru: actual acceptance/reward buttons; active 0/5 and 1/5; localized pending 5/5; pending survives reload; claimed absent immediately and after reload; retained dependency and one-time reward
+PASS task5 journal en: actual acceptance/reward buttons; active 0/5 and 1/5; localized pending 5/5; pending survives reload; claimed absent immediately and after reload; retained dependency and one-time reward
+PASS task5 journal es: actual acceptance/reward buttons; active 0/5 and 1/5; localized pending 5/5; pending survives reload; claimed absent immediately and after reload; retained dependency and one-time reward

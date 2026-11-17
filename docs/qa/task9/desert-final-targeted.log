@@ -1,0 +1,28 @@
+✔ runtime targeting rejects an occluded enemy and projectile sweep hits a newly inserted wall (7.896508ms)
+✔ class multipliers and movement penalties affect real attack rolls and damage protection (5.836206ms)
+✔ streamed death and cooldown survive unloading, reconstruction and a nonzero scene clock (3.069487ms)
+✔ all region encounter descriptors instantiate on approach with bounded active entities (1279.92103ms)
+✔ boss cycles through three telegraphed patterns and paladin third hit stuns (1.284511ms)
+✔ isometric display projects entity coordinates while combat stays in world coordinates (0.792928ms)
+✔ charged cannon and meteors delay damage while arrow storm schedules several impacts (1.530502ms)
+✔ ice shield absorbs hits and powder buff adds real nearby splash damage (0.701259ms)
+✔ dungeon floor walls block targets without collision circles and hurt fields drive rig state (27.670139ms)
+✔ recovered region data has exact budgets, stable ids and valid references (279.167408ms)
+✔ chunk descriptions repeat deterministically and edge queries stay bounded (4.767101ms)
+✔ streaming unloads actual entities and reconstructs stable spawn ids (0.718025ms)
+✔ progress schema rejects runtime cycles and retains supported save data (1.970777ms)
+✔ geometry blocks targeting and swept motion through obstacles (0.385181ms)
+✔ expanded boundaries preserve every existing camp, spawn, boss, road, portal and quest (5.945501ms)
+✔ expanded edge chunks are finite, decorated, uniquely owned and remain streamed (5.118482ms)
+✔ equipment catalogue, layers, weapon art and existing skill definitions are untouched (35.709884ms)
+✔ four maps have approved dimensions and exactly the approved reciprocal ring without diagonal links (4725.990083ms)
+✔ all temporary camps are single-species, deterministic, outside roads/towns/entrances and obstacle-free (1772.340414ms)
+✔ new terrain and real transparent desert props stay chunked with bounded residency (65.964331ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22406.127159

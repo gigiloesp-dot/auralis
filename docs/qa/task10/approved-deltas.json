@@ -1,0 +1,137 @@
+{
+  "checkpoint": "c36c8fa34370080479bc6b2ec53fea5e56f159ff",
+  "files": {
+    "js/assets/manifest.js": {
+      "before": "2ac7dc2eac1018dfc63a917a4ea797aa850a6fd296f4aadf09e8386dfe73fa0b",
+      "after": "f0e466db3d878eb89302f6e9bfad244bdde3ecf1cff5eb936915f9fc1554af35"
+    },
+    "js/assets/monsterArt.js": {
+      "before": "a419ba32df47fe7e57ae6306e1bab41e3d07262315b76c12a2981eb4e0ab5f42",
+      "after": "8da30624dfe062c34ba1d1cdf8194c9032402981577452dc348d25d890c66f8e"
+    },
+    "js/characters/PaintedActor.js": {
+      "before": "90cc468bda556986830612f5d3fac95dfa063da0949fc1286f6253dd8d708a35",
+      "after": "351428b5f260e5d38a33839d5fca284a721c37c3c84e4f6fe06a7d5a9d01e8a2"
+    },
+    "js/characters/PaintedNpc.js": {
+      "before": "6739be3bd45aecead7f94c4fe929777a8928ab8d73db40578db5f68514276a55",
+      "after": "533b796c359cf8228d58649489ff576b846f3f93eaf484bbb2f8af7536367163"
+    },
+    "js/dungeons/dungeonData.js": {
+      "before": "bfdf982f1e2a99557924cf6b48f21ae228a1b09692d0b1d52a5a066b52f37a07",
+      "after": "afbb46b2a24f11db48a7ee1f2b55afb3e95371af3442af32051f2c8959e6a20c"
+    },
+    "js/equipment/items.js": {
+      "before": "e4fe21fcd1d58d57934507a68278e1305a8bfe7e84cdbdaa3c1707704dba82ef",
+      "after": "d8aee07849495085b9b66c8e5130fe68b83b78c976eaf9a002c9b0964c57c71f"
+    },
+    "js/loot/GroundLootSystem.js": {
+      "before": "06de84b5bca9ae2389b78303de8b47bbded0b143bfd6c9a65899b8d20bc56c9b",
+      "after": "e2c850c51be0c9b5348e32dbf543f466f38b03460d147ce0f4877892817a5800"
+    },
+    "js/monsters/MonsterStream.js": {
+      "before": "232eaceb6a397c0987787bfa4c0d5877c88f23a77af8549317a663fa8a5f9c8a",
+      "after": "7cd08c2f214493ddb59fbec0ec5429bca0f4a213d4fd77c26e32650cd51349ee"
+    },
+    "js/monsters/MonsterSystem.js": {
+      "before": "f1c7ada80551e55a38520fd6c673fd0a86fb2155c5206fb77253a1894f2412d8",
+      "after": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2"
+    },
+    "js/monsters/monsterBehavior.js": {
+      "before": "0e9e7161986a9cbd351cda7eab7da7f433957baa155361927c8e9984d0576aaf",
+      "after": "d031cd877d357995a44539e939de68d7243075ad9212a621798af5b4a8fcc29b"
+    },
+    "js/monsters/monsters.js": {
+      "before": "35c0b21b0c4a33f5818a681a40329495a02af4098066fe23eb1eba4034a5ee3f",
+      "after": "0c60ede0c78dd94160244666298c8cf67ae85b840ef51408855c8a7fa4e19905"
+    },
+    "js/monsters/movementProfiles.js": {
+      "before": "067e5bb92422986ebf67668381e3f7e942ad58650d31fc6d01a004aae577ca7f",
+      "after": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4"
+    },
+    "js/npc/npcData.js": {
+      "before": "a7d3beb5486284ac8dbe2643016ea370f993fe4b83af37e413de5c29a2a1380d",
+      "after": "49d2d7f3a82c4f384ae1d9fcb1172d7789173cf876a18f47ee7d7931f2ada5f4"
+    },
+    "js/quests/journal.js": {
+      "before": "6ea14b5dfa755c9bd500081e9da51f05706ccae52cb5ede6dfa41899ce537221",
+      "after": "3fc4ec9caaf011e640a66f1bd79d4d8be7d9123f298b79a667737bf921d7a7cb"
+    },
+    "js/quests/npcQuestIndicator.js": {
+      "before": "fe42d084af1d8f2bf7955a8330d3bfae46d1c8478cedc854c5e7291e4b4c40f3",
+      "after": "69350f216d21b16bc6fdb91748a361c229c1336986704d5c540b5556bfb27892"
+    },
+    "js/quests/quests.js": {
+      "before": "f4ca9132d592e79b3ee5c153de3ab039d08e9407cad6b8e1cbf3108fdc081096",
+      "after": "f63472dc0d1257255c41696e3e11dc882fd4d2cbc4c539cf0d8b94f031591058"
+    },
+    "js/systems/progressState.js": {
+      "before": "67a90fd2412ec0d75891d3f26d0a87bf80fd10d0276b13e7fe2d2486ab8cd127",
+      "after": "a2e5657d2c9e8cbee2d2f76e5f9264f58294f88fdd524c6f10980200962f02bf"
+    },
+    "js/systems/save.js": {
+      "before": "004dbeb9c31b9db92dc0c77594b26101dae1a8f1323fe0957552d73691d3ee55",
+      "after": "e1f28bef48e4d2ad09bfa9635a5de52425fb1e47d6279390277ba2201efb31e2"
+    },
+    "js/systems/trading.js": {
+      "before": "e3fde30a03431ab55c4c91fb3d91e05428ec9cc898aa60225828ab8b89a8ced9",
+      "after": "1fa8f3d6225dc2e3c9c13b86a295e2ab01779d4a23ef66e5d531f5284ed033be"
+    },
+    "js/ui/MapPanel.js": {
+      "before": "f645587f2290f89d68249190bd5fb0829cb024e5889dfc972ea4db5060198a06",
+      "after": "93191fe1bbf47753de28a182ffc56c56a4e4ea3921065b2580823c16db0335be"
+    },
+    "js/ui/Minimap.js": {
+      "before": "747e40d2a65e3775a0ceae3fdce60d760472d6d0532d92ed50f8d099eaee31cf",
+      "after": "cdc1654b035ad8c214d34324c511d7d67d21ff159df98c81bc1aa782cd193bd3"
+    },
+    "js/ui/NpcPanel.js": {
+      "before": "e500e0cd64414422578105765ef18a8ecb81c17a67378cc4259e438821e618b3",
+      "after": "a650e19df9154f01e329ba5c9346fd3dc6eadf29bebb4a37e52eeeee5bc43ecc"
+    },
+    "js/ui/PauseInterface.js": {
+      "before": "ec080014d10b869ea77becef7b04a7d666594d0f0f5b1a8c7bc1a2054c94643e",
+      "after": "4a2a3b34c225bbd7781b19a4173f6e1a2ed6f12ed080b59144119890dd44724f"
+    },
+    "js/ui/SavePanel.js": {
+      "before": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
+      "after": "a79da3f12acc7f7d3941e51be3314bae92318103e1e40eca691458023f3e1782"
+    },
+    "js/ui/itemIcons.js": {
+      "before": "c3c0bcb747e4c083c8b308350da1d893c30c3e531d6ed5d37f73ddd2d0b0517a",
+      "after": "ee9bf1e0d9acefa444b701faaffec73f0703bf242f8b1d1f17fa3b03ef6fe40c"
+    },
+    "js/ui/npcText.js": {
+      "before": "ba3ba728449ed5c33aa3a19e5122d4e058d9d1fff6e79dbb2650633234635eb9",
+      "after": "dd5c8328877e51b9c53402925ea769e96df917b48e4875f2b7c1fba60d6a9529"
+    },
+    "js/world/ChunkWorld.js": {
+      "before": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",
+      "after": "be2d10df98e05151265a3bc5c65096982332b8d825fba844c44b04c9aaa3ec5c"
+    },
+    "js/world/WorldRuntime.js": {
+      "before": "bff06788b1191eeccc99c9aaeff746e3510de99d8e7afcc07ca35be35ed5a023",
+      "after": "d9124ba621b4bb7285b4cac9930e42ffe1ee695c34174aca9a6d8a49767c1865"
+    },
+    "js/world/WorldScene.js": {
+      "before": "d9d5c7cf0e43f839e164746e252f58842a6eb7339acba1893df603732f3e4077",
+      "after": "1c5305a0d3934656704a661f72225890f46d5cdf100b172a9e052bc28bd8f870"
+    },
+    "js/world/biomes.js": {
+      "before": "2d8df8ba0b566d34bd3ebaa98d01446e626809754a7bffcd1ee41bb4206ab1fd",
+      "after": "0173880594a61f1d94f16f20be81defd1ab2e4e646f1186f974a7ecc6b6ff35f"
+    },
+    "js/world/chunkGeometry.js": {
+      "before": "cd7f1c13d3c5737ac2514645b06ad63a94ff1b509f2878122e40202b61b61992",
+      "after": "a74910a9f3b9f1bd2fef37b258f52aef113731dacdeeee0b9d49e6ec2c36fcc1"
+    },
+    "js/world/regionContent.js": {
+      "before": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
+      "after": "3d54c592833cc2244c14605c9aec61f4d98551fbddc478383c471531219a2f8f"
+    },
+    "js/world/worldData.js": {
+      "before": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",
+      "after": "0aff3a33bdd63f1244ec7a8488ed1158977026121088bbb130f217257c580927"
+    }
+  }
+}

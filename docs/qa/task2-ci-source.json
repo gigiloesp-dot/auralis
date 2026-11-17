@@ -1,0 +1,58 @@
+{
+  "conclusion": "success",
+  "headSha": "468499ffbbdc4038fe1d71044af01b7afdb21fe6",
+  "jobs": [
+    {
+      "conclusion": "success",
+      "name": "task1_combat_loot",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897007"
+    },
+    {
+      "conclusion": "success",
+      "name": "task2_interface (en)",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897131"
+    },
+    {
+      "conclusion": "success",
+      "name": "core_browser (world)",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897143"
+    },
+    {
+      "conclusion": "success",
+      "name": "core_browser (ui)",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897147"
+    },
+    {
+      "conclusion": "success",
+      "name": "core_browser (quests)",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897156"
+    },
+    {
+      "conclusion": "success",
+      "name": "first_dungeon",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897185"
+    },
+    {
+      "conclusion": "success",
+      "name": "task2_interface (ru)",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897200"
+    },
+    {
+      "conclusion": "success",
+      "name": "validate",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897204"
+    },
+    {
+      "conclusion": "success",
+      "name": "android_ui_and_art",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897218"
+    },
+    {
+      "conclusion": "success",
+      "name": "task2_interface (es)",
+      "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281/job/132483897279"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/gigiloesp-dot/auralis/actions/runs/43607069281"
+}

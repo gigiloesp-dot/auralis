@@ -1,0 +1,43 @@
+{
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "linux"
+  },
+  "elapsedMs": 28.094292,
+  "rssBytes": 39075840,
+  "heapBytes": 7490744,
+  "records": [
+    {
+      "id": "forest",
+      "width": 18000,
+      "height": 18000,
+      "ms": 0.07026600000000371,
+      "camps": 80,
+      "monsters": 880
+    },
+    {
+      "id": "north",
+      "width": 21000,
+      "height": 21000,
+      "ms": 0.007392000000002952,
+      "camps": 76,
+      "monsters": 836
+    },
+    {
+      "id": "ancient",
+      "width": 15000,
+      "height": 15000,
+      "ms": 0.006799999999998363,
+      "camps": 45,
+      "monsters": 495
+    },
+    {
+      "id": "desert",
+      "width": 20000,
+      "height": 20000,
+      "ms": 0.010395000000002597,
+      "camps": 56,
+      "monsters": 616
+    }
+  ]
+}

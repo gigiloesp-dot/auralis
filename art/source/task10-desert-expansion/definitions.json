@@ -1,0 +1,90 @@
+[
+  {
+    "id": "desert-species-006",
+    "slug": "glass-frilled-sidewinder",
+    "names": {
+      "ru": "Стеклогребневая змея",
+      "en": "Glass-frilled sidewinder",
+      "es": "Serpiente de cresta vítrea"
+    },
+    "anatomy": "Long limbless coiling serpent, broad triangular cobra-like glass scallop neck frill, ivory scales, twin dark horn knobs, amber eyes. Sidewinding ground locomotion; no legs.",
+    "targetIdleHeight": 76
+  },
+  {
+    "id": "desert-species-008",
+    "slug": "kilnback-walker",
+    "names": {
+      "ru": "Печеспинный ходок",
+      "en": "Kilnback walker",
+      "es": "Caminante de horno"
+    },
+    "anatomy": "Heavy four-legged stone golem like a squat walking ancient pottery kiln, broad arch-shaped back with warm amber furnace opening, four massive squared sandstone feet, small heavy head, hanging ceramic jaw. Grounded massive stomp locomotion.",
+    "targetIdleHeight": 76
+  },
+  {
+    "id": "desert-species-009",
+    "slug": "sickle-jawed-dune-beetle",
+    "names": {
+      "ru": "Саблезубый дюнный жук",
+      "en": "Sickle-jawed dune beetle",
+      "es": "Escarabajo de dunas de mandíbula curva"
+    },
+    "anatomy": "Six-legged desert beetle with slim tall triangular vaulted shell, two huge curved ivory sickle mandibles, copper red chitin and turquoise rune chips, very long jointed rear legs. Ground crawling insect.",
+    "targetIdleHeight": 76
+  },
+  {
+    "id": "desert-species-010",
+    "slug": "mirage-ribbon-spirit",
+    "names": {
+      "ru": "Ленточный дух миража",
+      "en": "Mirage ribbon spirit",
+      "es": "Espíritu de cinta del espejismo"
+    },
+    "anatomy": "Floating desert magical spirit made of three looping azure silk-like ribbons orbiting one asymmetric golden crescent mask, narrow tapered lower ribbon, no legs, no humanoid torso; clearly floating hover locomotion.",
+    "targetIdleHeight": 76
+  },
+  {
+    "id": "desert-species-011",
+    "slug": "thorn-crowned-sand-eel",
+    "names": {
+      "ru": "Шиповенчанный песчаный угорь",
+      "en": "Thorn-crowned sand eel",
+      "es": "Anguila de arena coronada de espinas"
+    },
+    "anatomy": "Thick short limbless sand eel, round shovel snout, crown of long cactus-thorn horns, leathery olive belly, rust orange segmented dorsal sail, broad flattened tail paddle. Ground serpent slither; no legs.",
+    "targetIdleHeight": 76
+  },
+  {
+    "id": "desert-species-012",
+    "slug": "sieve-mouthed-sand-crab",
+    "names": {
+      "ru": "Песчаный краб-сито",
+      "en": "Sieve-mouthed sand crab",
+      "es": "Cangrejo tamiz de arena"
+    },
+    "anatomy": "Low wide desert crustacean on eight spindly sand-gold legs, enormous single spoon-shaped digging claw and tiny other claw, flat pale ochre horseshoe shell, two stalked black eyes and comb-like mouth bristles. Ground crawler.",
+    "targetIdleHeight": 76
+  },
+  {
+    "id": "desert-species-013",
+    "slug": "cactus-bell-colossus",
+    "names": {
+      "ru": "Кактусовый колокол",
+      "en": "Cactus bell colossus",
+      "es": "Coloso campana de cactus"
+    },
+    "anatomy": "Heavy bipedal walking giant barrel cactus with drooping bell-shaped green ribbed torso, three long wooden antler branches, huge rounded root feet and short massive root arms, open magenta flower on crown, single carved dark face. Heavy stomp ground locomotion.",
+    "targetIdleHeight": 76
+  },
+  {
+    "id": "desert-species-014",
+    "slug": "sun-dial-ray",
+    "names": {
+      "ru": "Луч солнечных часов",
+      "en": "Sun-dial ray",
+      "es": "Raya del reloj solar"
+    },
+    "anatomy": "Hovering magical desert manta-like creature, flat diamond-shaped terracotta sundial disk body, raised asymmetric bronze gnomon crest, two translucent golden fan wings, long thin trailing forked ribbon tail, two bright blue eyes, no legs. Hover flight.",
+    "targetIdleHeight": 76
+  }
+]

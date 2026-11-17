@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "forest-wide": "forest-wide-painted.png",
+    "north-wide": "north-wide-painted.png",
+    "ancient-wide": "ancient-wide-painted.png",
+    "desert-wide": "desert-wide-painted.png",
+    "forest-ultrawide": "forest-ultrawide-painted.png",
+    "north-ultrawide": "north-ultrawide-painted.png",
+    "ancient-ultrawide": "ancient-ultrawide-painted.png",
+    "desert-ultrawide": "desert-ultrawide-painted.png"
+  },
+  "method": "Original imagegen artistic paintovers of coordinate-derived region cartography. Illustrative terrain generalization; exact navigation uses shared live SVG projection. No additional game objects created."
+}

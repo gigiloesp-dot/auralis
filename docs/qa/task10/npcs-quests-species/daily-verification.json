@@ -1,0 +1,333 @@
+{
+  "records": [
+    {
+      "language": "ru",
+      "width": 640,
+      "height": 360,
+      "killed": {
+        "count": 6,
+        "state": "completed"
+      },
+      "claimed": {
+        "state": "claimed",
+        "saved": "claimed",
+        "potions": {
+          "hp": 99,
+          "mp": 99
+        },
+        "inventory": 60,
+        "active": 5,
+        "journal": [
+          "north_patrol",
+          "north_message",
+          "north_scout",
+          "north_guardian",
+          "ancient_patrol"
+        ],
+        "meta": {
+          "version": 1,
+          "epochDay": 20773,
+          "claimedDay": 20773,
+          "claimedQuestId": "task10-daily-1"
+        }
+      },
+      "renewed": {
+        "state": "active",
+        "progress": 0,
+        "required": 6,
+        "day": 20774
+      },
+      "layout": {
+        "panel": {
+          "x": 8,
+          "y": 8,
+          "right": 568,
+          "bottom": 352
+        },
+        "close": {
+          "x": 492.296875,
+          "y": 12,
+          "right": 558,
+          "bottom": 56
+        },
+        "scrollWidth": 640,
+        "viewport": 640
+      },
+      "overflow": {
+        "ids": [
+          "forestWolves",
+          "forest_patrol",
+          "north_patrol",
+          "ancient_patrol",
+          "forest_contract_1",
+          "forest_contract_2",
+          "forest_contract_3",
+          "forest_contract_4",
+          "forest_contract_5",
+          "forest_contract_6",
+          "forest_contract_7",
+          "forest_contract_8"
+        ],
+        "first": "forestWolves",
+        "npc": {
+          "id": "mira",
+          "townId": "forestVillage",
+          "region": "forest",
+          "x": 935,
+          "y": 1080,
+          "name": "Мира",
+          "names": {
+            "ru": "Мира",
+            "en": "Mira",
+            "es": "Mira"
+          },
+          "role": "merchant",
+          "roles": [
+            "merchant",
+            "questGiver"
+          ],
+          "level": 1,
+          "minLevel": 1,
+          "maxLevel": 5
+        },
+        "record": {
+          "state": "active",
+          "progress": 1
+        }
+      },
+      "resumed": {
+        "resumed": {
+          "state": "active",
+          "progress": 1,
+          "required": 6
+        },
+        "raw": {
+          "state": "active",
+          "progress": 1
+        },
+        "active": 6
+      },
+      "errors": []
+    },
+    {
+      "language": "en",
+      "width": 740,
+      "height": 320,
+      "killed": {
+        "count": 6,
+        "state": "completed"
+      },
+      "claimed": {
+        "state": "claimed",
+        "saved": "claimed",
+        "potions": {
+          "hp": 99,
+          "mp": 99
+        },
+        "inventory": 60,
+        "active": 5,
+        "journal": [
+          "north_patrol",
+          "north_message",
+          "north_scout",
+          "north_guardian",
+          "ancient_patrol"
+        ],
+        "meta": {
+          "version": 1,
+          "epochDay": 20773,
+          "claimedDay": 20773,
+          "claimedQuestId": "task10-daily-1"
+        }
+      },
+      "renewed": {
+        "state": "active",
+        "progress": 0,
+        "required": 6,
+        "day": 20774
+      },
+      "layout": {
+        "panel": {
+          "x": 8,
+          "y": 8,
+          "right": 668,
+          "bottom": 312
+        },
+        "close": {
+          "x": 611.53125,
+          "y": 12,
+          "right": 658,
+          "bottom": 56
+        },
+        "scrollWidth": 740,
+        "viewport": 740
+      },
+      "overflow": {
+        "ids": [
+          "forestWolves",
+          "forest_patrol",
+          "north_patrol",
+          "ancient_patrol",
+          "forest_contract_1",
+          "forest_contract_2",
+          "forest_contract_3",
+          "forest_contract_4",
+          "forest_contract_5",
+          "forest_contract_6",
+          "forest_contract_7",
+          "forest_contract_8"
+        ],
+        "first": "forestWolves",
+        "npc": {
+          "id": "mira",
+          "townId": "forestVillage",
+          "region": "forest",
+          "x": 935,
+          "y": 1080,
+          "name": "Мира",
+          "names": {
+            "ru": "Мира",
+            "en": "Mira",
+            "es": "Mira"
+          },
+          "role": "merchant",
+          "roles": [
+            "merchant",
+            "questGiver"
+          ],
+          "level": 1,
+          "minLevel": 1,
+          "maxLevel": 5
+        },
+        "record": {
+          "state": "active",
+          "progress": 1
+        }
+      },
+      "resumed": {
+        "resumed": {
+          "state": "active",
+          "progress": 1,
+          "required": 6
+        },
+        "raw": {
+          "state": "active",
+          "progress": 1
+        },
+        "active": 6
+      },
+      "errors": []
+    },
+    {
+      "language": "es",
+      "width": 844,
+      "height": 390,
+      "killed": {
+        "count": 6,
+        "state": "completed"
+      },
+      "claimed": {
+        "state": "claimed",
+        "saved": "claimed",
+        "potions": {
+          "hp": 99,
+          "mp": 99
+        },
+        "inventory": 60,
+        "active": 5,
+        "journal": [
+          "north_patrol",
+          "north_message",
+          "north_scout",
+          "north_guardian",
+          "ancient_patrol"
+        ],
+        "meta": {
+          "version": 1,
+          "epochDay": 20773,
+          "claimedDay": 20773,
+          "claimedQuestId": "task10-daily-1"
+        }
+      },
+      "renewed": {
+        "state": "active",
+        "progress": 0,
+        "required": 6,
+        "day": 20774
+      },
+      "layout": {
+        "panel": {
+          "x": 56,
+          "y": 8,
+          "right": 716,
+          "bottom": 382
+        },
+        "close": {
+          "x": 654.28125,
+          "y": 12,
+          "right": 706,
+          "bottom": 56
+        },
+        "scrollWidth": 844,
+        "viewport": 844
+      },
+      "overflow": {
+        "ids": [
+          "forestWolves",
+          "forest_patrol",
+          "north_patrol",
+          "ancient_patrol",
+          "forest_contract_1",
+          "forest_contract_2",
+          "forest_contract_3",
+          "forest_contract_4",
+          "forest_contract_5",
+          "forest_contract_6",
+          "forest_contract_7",
+          "forest_contract_8"
+        ],
+        "first": "forestWolves",
+        "npc": {
+          "id": "mira",
+          "townId": "forestVillage",
+          "region": "forest",
+          "x": 935,
+          "y": 1080,
+          "name": "Мира",
+          "names": {
+            "ru": "Мира",
+            "en": "Mira",
+            "es": "Mira"
+          },
+          "role": "merchant",
+          "roles": [
+            "merchant",
+            "questGiver"
+          ],
+          "level": 1,
+          "minLevel": 1,
+          "maxLevel": 5
+        },
+        "record": {
+          "state": "active",
+          "progress": 1
+        }
+      },
+      "resumed": {
+        "resumed": {
+          "state": "active",
+          "progress": 1,
+          "required": 6
+        },
+        "raw": {
+          "state": "active",
+          "progress": 1
+        },
+        "active": 6
+      },
+      "errors": []
+    }
+  ],
+  "physicalAndroid": false,
+  "scope": "Prepared character state and UTC clock; actual NPC buttons,live deaths,durable saves and reloads"
+}

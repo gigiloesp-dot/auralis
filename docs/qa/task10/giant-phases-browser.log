@@ -1,0 +1,9 @@
+PASS actual giant phase 1 hammer touch dodge/pause/geometry
+PASS actual giant phase 1 sweep touch dodge/pause/geometry
+PASS actual giant phase 1 quake touch dodge/pause/geometry
+PASS actual giant phase 2 faultLines touch dodge/pause/geometry
+PASS actual giant phase 2 charge touch dodge/pause/geometry
+PASS actual giant phase 3 doubleQuake touch dodge/pause/geometry
+PASS actual giant phase 3 rockfall touch dodge/pause/geometry
+PASS actual giant phase 3 boulders touch dodge/pause/geometry
+PASS eight actual giant abilities in3HPphases/3languages/3viewports,real touch dodge/pause/charge/painted projectiles,clean teardown,no JS errors

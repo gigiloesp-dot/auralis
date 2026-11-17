@@ -1,0 +1,13 @@
+{
+  "alpha": {
+    "id": "appgprj_6af49c6754e08191b77d4d9e91fec53f",
+    "latest_version_number": 1,
+    "current_live_url": "https://auralis-alpha-test.alertpine18.chatgpt.site"
+  },
+  "github": {
+    "main": "274e79d37250a31232d5c2cdca94ff1d85dd00d9",
+    "codex/auralis-stable-alpha": "536e776c8ea65a6948889ed7b917fad7996ae87f",
+    "fix/hud-circular-minimap": "aeb181fc02423c6d4c42936d14fd9d9cce010bd8"
+  },
+  "unchanged": true
+}

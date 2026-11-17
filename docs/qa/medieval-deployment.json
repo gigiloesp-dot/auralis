@@ -1,0 +1,25 @@
+{
+  "savedVersion": {
+    "id": "appgprj_6af567346ebc8191accf1485254403da~appgver_ab7820da56d48191852360ff298eb488",
+    "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+    "version_number": 15,
+    "source": {
+      "commit_sha": "17f776da62f83792b912d5110e8b8be4de5015e3"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000d66c81f49db624ea01317dad",
+      "content_hash": "sha256:7760025d969badc2255340a485ff1b56f8bbe10e33975f597caeaf3c188bf2cd",
+      "size_bytes": 189337600,
+      "file_count": 325
+    }
+  },
+  "deployment": {
+    "id": "appgdep_6af883d2feb481919bb21af4634de0ae",
+    "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+    "version_id": "appgprj_6af567346ebc8191accf1485254403da~appgver_ab7820da56d48191852360ff298eb488",
+    "status": "succeeded",
+    "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+    "updated_at": "2026-11-14T15:53:08.672975+00:00"
+  }
+}

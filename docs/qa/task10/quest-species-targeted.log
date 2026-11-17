@@ -1,0 +1,10 @@
+✔ every legacy hunting quest resolves one stable real species without changing saved progress or rewards (26.417671ms)
+✔ starter wolves reject another spot of the same archetype with species,camp or spawn attribution; old unqualified API remains compatible (1.503973ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 163.197288

@@ -1,0 +1,125 @@
+{
+  "gameSource": "eaf29399db88b51ea22fccafe79a19f48b36cb9b",
+  "items": [
+    {
+      "itemId": "weapon_warrior_1",
+      "runtimePng": "assets/equipment/warrior-reference/sword.png",
+      "size": {
+        "w": 512,
+        "h": 512
+      },
+      "atlasRegions": 32,
+      "runtimeBytes": 250758,
+      "runtimeSha256": "14bd31df7a08424b909eea74c7f81077b93024c794309c65a66c01dd2a5de80e",
+      "preservedSource": "art/source/warrior-reference/sword.png",
+      "sourceSha256": "fbe98ec8e529b2dc92ae27aa8efc6704a03800ef4623f9ae1ae679b7f54dec40",
+      "sourceSize": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "itemId": "helmet_0",
+      "runtimePng": "assets/equipment/warrior-reference/helmet.png",
+      "size": {
+        "w": 512,
+        "h": 512
+      },
+      "atlasRegions": 32,
+      "runtimeBytes": 440239,
+      "runtimeSha256": "6c032ae16ebf327940790da2daf4e1245e3b27597c80363dec7c3b88bf133db1",
+      "preservedSource": "art/source/warrior-reference/helmet.png",
+      "sourceSha256": "9fe4191874bba01438f0cfa466ba35aa9a86d7f57dea34bb9010293684537e30",
+      "sourceSize": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "itemId": "chest_0",
+      "runtimePng": "assets/equipment/warrior-reference/chest.png",
+      "size": {
+        "w": 512,
+        "h": 1024
+      },
+      "atlasRegions": 32,
+      "runtimeBytes": 525924,
+      "runtimeSha256": "5a4b080b7bd104643c15349f49c00105bd01c3a29f4880067791687ecd6b6bc2",
+      "preservedSource": "art/source/warrior-reference/chest.png",
+      "sourceSha256": "fd82637fb5e0c24bb0f59b1ac908ab4583d73b5efe6f4f9fff5ce119e254f03e",
+      "sourceSize": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "itemId": "gloves_0",
+      "runtimePng": "assets/equipment/warrior-reference/gloves.png",
+      "size": {
+        "w": 512,
+        "h": 128
+      },
+      "atlasRegions": 16,
+      "runtimeBytes": 73422,
+      "runtimeSha256": "d22dc1a65eee13a17063fcf1ad0a005f34752370f0d02e47ce5ea8780d2bdb7e",
+      "preservedSource": "art/source/warrior-reference/gloves.png",
+      "sourceSha256": "1f53479d5bb6dd8e63a4ff4ec0071622c17c93b06e61b5a81e0ec98fa194e09a",
+      "sourceSize": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "itemId": "pants_0",
+      "runtimePng": "assets/equipment/warrior-reference/pants.png",
+      "size": {
+        "w": 512,
+        "h": 256
+      },
+      "atlasRegions": 40,
+      "runtimeBytes": 166628,
+      "runtimeSha256": "7f7f9f0fd639d55257ae8f3ff3c61120da904514de445c6a6f028044d93f60da",
+      "preservedSource": "art/source/warrior-reference/pants.png",
+      "sourceSha256": "cd8c7b8170df01279278cba8542a08bdc11cbbaf80a07278c5d57db3f3df8248",
+      "sourceSize": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "itemId": "boots_0",
+      "runtimePng": "assets/equipment/warrior-reference/boots.png",
+      "size": {
+        "w": 512,
+        "h": 256
+      },
+      "atlasRegions": 32,
+      "runtimeBytes": 166988,
+      "runtimeSha256": "c6b3be1611614bf1cdd897b29cd966614228080a197f234447fbcfed1572dfde",
+      "preservedSource": "art/source/warrior-reference/boots.png",
+      "sourceSha256": "66fee120a34e30255fc14997d1efbefa39025c20946f171a43ff132a979af3b7",
+      "sourceSize": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "itemId": "shield_1",
+      "runtimePng": "assets/equipment/warrior-reference/shield.png",
+      "size": {
+        "w": 512,
+        "h": 1024
+      },
+      "atlasRegions": 32,
+      "runtimeBytes": 556740,
+      "runtimeSha256": "dd483e95f726053d2831bd008b366dcaa4624b5d639ee6e6c1ffe0f925a52e80",
+      "preservedSource": "art/source/warrior-reference/shield.png",
+      "sourceSha256": "43e8529849b4605b2770dba2d265d9e04c311fa31c48aa1fb94331737f3be8d8",
+      "sourceSize": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "compressedRuntimePngBytes": 2180699
+}

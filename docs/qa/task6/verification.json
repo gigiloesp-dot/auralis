@@ -1,0 +1,131 @@
+{
+  "gameSource": "eaf29399db88b51ea22fccafe79a19f48b36cb9b",
+  "strengthenedTestCommit": "5996a537bbdd9f944ae97d921971611e67b75fcd",
+  "checkpoint": "6847769bed1e7e19cf72ca7fd70e7e4718de02df",
+  "nativeVersion": 18,
+  "sourceCi": 43693685829,
+  "sourceCiJobsPassed": 15,
+  "unitTestsPassed": 290,
+  "syntaxFilesChecked": 222,
+  "browserSuitesPassed": 27,
+  "publicRuntimeHashes": 333,
+  "pngCountRuntime": 7,
+  "pngCountPreservedSources": 7,
+  "transformCases": 448,
+  "residencyCycles": 20,
+  "equippedTexturesAndMasks": 8,
+  "unequippedEquipmentTextures": 0,
+  "residentRgbaBytesCalculated": 11796480,
+  "normalSaveUnchanged": true,
+  "physicalAndroidTested": false,
+  "proofs": {
+    "docs/qa/task6/assets.json": {
+      "bytes": 3842,
+      "sha256": "87c269f2a218e4f5df62312e53d21d3440253816ae31f28ea8aece1e1b505118"
+    },
+    "docs/qa/task6/browser-local.log": {
+      "bytes": 1462,
+      "sha256": "d810e113914886e1d616186d59e724e51f14b43868a5074de91e6b98ffcc794a"
+    },
+    "docs/qa/task6/browser-public-equipment.log": {
+      "bytes": 1459,
+      "sha256": "55edbdbcb41549b3b2aecdb2deb151acfe4d079f7d2b8b2c26ca499e6a4af9c2"
+    },
+    "docs/qa/task6/check.log": {
+      "bytes": 94,
+      "sha256": "74d6329572c0181ed1dae778e26b1183469b04d101d692123f2ee65de48710bc"
+    },
+    "docs/qa/task6/ci-source.json": {
+      "bytes": 18347,
+      "sha256": "5ebebb460af3236363f4e475c67f4a4cc6ca2d25134f1324b68ac02516c8db4b"
+    },
+    "docs/qa/task6/deployment.json": {
+      "bytes": 1438,
+      "sha256": "7155055ec37220daadae8e9a9f1e97744bece0feeecc8747ecf74e22601cb99e"
+    },
+    "docs/qa/task6/eight-directions-attack.png": {
+      "bytes": 370891,
+      "sha256": "4dfc80555ed29cb779205668e14f1734b248b9d77724e962432e81cfb71238ee"
+    },
+    "docs/qa/task6/eight-directions-death.png": {
+      "bytes": 220692,
+      "sha256": "99916d431822ac7abf2be3f039c7c194f207f0937799e6810a506217a9146870"
+    },
+    "docs/qa/task6/eight-directions-hurt.png": {
+      "bytes": 341288,
+      "sha256": "bc8e1b340e734b4969c6ad6c875f1f42dd061cbe7da0282831ea40c56ddf5913"
+    },
+    "docs/qa/task6/eight-directions-idle.png": {
+      "bytes": 364654,
+      "sha256": "9cc3d9d1a1a653ad2cbdf30dd353c2bd4d18901219593930f4f42eb5d9716396"
+    },
+    "docs/qa/task6/eight-directions-run-a.png": {
+      "bytes": 364252,
+      "sha256": "c466ff3b79441ac906825abb1275b8f8516fd360e26f16bd7bc4489062231ca4"
+    },
+    "docs/qa/task6/eight-directions-run-b.png": {
+      "bytes": 365981,
+      "sha256": "d6c0f161a34cffb9da6f2fe1f81794befb77b1d56c1e8c01cc9a350cd5b29735"
+    },
+    "docs/qa/task6/eight-directions-special.png": {
+      "bytes": 358082,
+      "sha256": "311db961b08d9ed32596fea3a15d002470814ef595c81a1af66282ac563e9f19"
+    },
+    "docs/qa/task6/lab-phone-640.png": {
+      "bytes": 329444,
+      "sha256": "f1bcff5adda5f8556aa9ae66d264c3251ae7f38e3586f430a55060b44962fdf8"
+    },
+    "docs/qa/task6/lab-phone-740.png": {
+      "bytes": 343083,
+      "sha256": "e662d820305004990b0a6bdb2503e528df137d9c0ea820594d2589f0a1cab1e8"
+    },
+    "docs/qa/task6/lab-phone-844.png": {
+      "bytes": 460081,
+      "sha256": "eac609e9bc8704c73f72e3d1c96a122c9240ac89bd2d4bbeb6a9bbc47da3ca7d"
+    },
+    "docs/qa/task6/lab-phone-915.png": {
+      "bytes": 509592,
+      "sha256": "be697d2be1737ff087870a6c40d930e22710d7b3130cafa0fa5f68b27eb64938"
+    },
+    "docs/qa/task6/public-equipment-verification.json": {
+      "bytes": 63783,
+      "sha256": "783c2b44e396c03256ce44f21c3628c53823b7ec0fa4c3ea260898550a44a7db"
+    },
+    "docs/qa/task6/public.log": {
+      "bytes": 726,
+      "sha256": "a6fffea794d0c30fcf32d0bf09fe1524f5b3f4fe63eec1e53f1d344a4ac60f57"
+    },
+    "docs/qa/task6/single-boots.png": {
+      "bytes": 475465,
+      "sha256": "fbfd6c5ab13c42351d78fbeee0eadff24dfba0192c5da7edc7f27fc4354cb7c5"
+    },
+    "docs/qa/task6/single-chest.png": {
+      "bytes": 476931,
+      "sha256": "390fc431af7ad375d0ce83a699b20e322560db52ef7f9478d51748812c1e4b0a"
+    },
+    "docs/qa/task6/single-gloves.png": {
+      "bytes": 479775,
+      "sha256": "ab61cd70ceab1217cda60340946ee798d6f9d2237847f0453b68d68cce5eda37"
+    },
+    "docs/qa/task6/single-helmet.png": {
+      "bytes": 477375,
+      "sha256": "87a1fc2e22cd7b7b5279fe54d9503816d971803763c3a2562cf427f8f3ec2f75"
+    },
+    "docs/qa/task6/single-pants.png": {
+      "bytes": 478401,
+      "sha256": "79e470862a9ec8cd6c649f6d9974c393753e72b1d0afa9031e8ed23a2a405809"
+    },
+    "docs/qa/task6/single-shield.png": {
+      "bytes": 475398,
+      "sha256": "15982175646c6a8f00857ce06b54cafc05d11661a278c3b0f0174f91d7746ca1"
+    },
+    "docs/qa/task6/single-weapon.png": {
+      "bytes": 477971,
+      "sha256": "5ab74ad5f9de8fde136a29e180f72f61d61c5e69ae1d6b167a08370d35a57f83"
+    },
+    "docs/qa/task6/unit.log": {
+      "bytes": 28347,
+      "sha256": "d73c5912a49985b255ce9719965c6706a87d0cec6539e83997f39c5ef485c2e4"
+    }
+  }
+}

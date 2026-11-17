@@ -1,0 +1,12 @@
+✔ only one new non-equipment trophy is added;all prior item definitions,gear and class restrictions remain byte-identical as serialized data (3.516002ms)
+✔ only the actual Stone Giant world encounter adds its guaranteed trophy without consuming or changing any existing loot rolls (6.046235ms)
+✔ unique trophy remains anonymous on the ground,full bags preserve it,reload cannot duplicate pickup,and existing merchant sale works (4.77856ms)
+✔ the trophy has three localized names and its own transparent PNG icon,not another fang or equipment picture (7.406539ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 99.530775

@@ -1,0 +1,300 @@
+{
+  "cases": 0,
+  "followupOnly": true,
+  "virgin": {
+    "quests": {},
+    "arrows": 1,
+    "huds": 1
+  },
+  "records": [],
+  "reloads": [
+    {
+      "slot": 1,
+      "name": "NavSlot1",
+      "tracking": {
+        "version": 1,
+        "id": "forest_message",
+        "disabled": false
+      }
+    },
+    {
+      "slot": 2,
+      "name": "NavSlot2",
+      "tracking": {
+        "version": 1,
+        "id": "forest_message",
+        "disabled": false
+      }
+    },
+    {
+      "slot": 3,
+      "name": "NavSlot3",
+      "tracking": {
+        "version": 1,
+        "id": "forest_message",
+        "disabled": false
+      }
+    }
+  ],
+  "regions": [
+    {
+      "questId": "ancient_scout",
+      "title": "Проверить дорогу",
+      "objectiveText": "Исследовать Проверить дорогу",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 11700,
+        "y": 11400,
+        "region": "ancient",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "forest-desert",
+        "x": 1952.21,
+        "y": 2058.4,
+        "region": "forest",
+        "kind": "portal",
+        "radius": 140,
+        "names": null,
+        "nextRegion": "desert"
+      },
+      "routeRegions": [
+        "forest",
+        "desert",
+        "ancient"
+      ],
+      "routeText": "Переход в Пустынные земли",
+      "worldDistance": 1301.5106008404236,
+      "arrived": false,
+      "waypointArrived": false,
+      "angle": 1.5666564185757192,
+      "arrivalText": ""
+    },
+    {
+      "questId": "task10-silent-tower",
+      "title": "Башня без голоса",
+      "objectiveText": "Исследовать Башня без голоса",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 7000,
+        "y": 3500,
+        "region": "desert",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "north-teleporter",
+        "x": 1395,
+        "y": 1860,
+        "region": "north",
+        "kind": "teleporter",
+        "radius": 140,
+        "names": {
+          "ru": "Эйдис",
+          "en": "Eydis",
+          "es": "Eydis"
+        },
+        "nextRegion": "forest"
+      },
+      "routeRegions": [
+        "north",
+        "forest",
+        "desert"
+      ],
+      "routeText": "Переход в Лесная долина",
+      "worldDistance": 120.93386622447824,
+      "arrived": false,
+      "waypointArrived": true,
+      "angle": -3.0060649396042924,
+      "arrivalText": ""
+    },
+    {
+      "questId": "forest_scout",
+      "title": "Проверить дорогу",
+      "objectiveText": "Исследовать Проверить дорогу",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 5250,
+        "y": 5200,
+        "region": "forest",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "ancient-teleporter",
+        "x": 1525,
+        "y": 1900,
+        "region": "ancient",
+        "kind": "teleporter",
+        "radius": 140,
+        "names": {
+          "ru": "Севрин",
+          "en": "Sevrin",
+          "es": "Sevrin"
+        },
+        "nextRegion": "north"
+      },
+      "routeRegions": [
+        "ancient",
+        "north",
+        "forest"
+      ],
+      "routeText": "Переход в Северные земли",
+      "worldDistance": 125,
+      "arrived": false,
+      "waypointArrived": true,
+      "angle": 3.070285188804504,
+      "arrivalText": ""
+    },
+    {
+      "questId": "north_scout",
+      "title": "Проверить дорогу",
+      "objectiveText": "Исследовать Проверить дорогу",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 10300,
+        "y": 10600,
+        "region": "north",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "desert-teleporter",
+        "x": 1695,
+        "y": 1705,
+        "region": "desert",
+        "kind": "teleporter",
+        "radius": 140,
+        "names": {
+          "ru": "Нима",
+          "en": "Nima",
+          "es": "Nima"
+        },
+        "nextRegion": "ancient"
+      },
+      "routeRegions": [
+        "desert",
+        "ancient",
+        "north"
+      ],
+      "routeText": "Переход в Древние земли",
+      "worldDistance": 134.35028842544403,
+      "arrived": false,
+      "waypointArrived": true,
+      "angle": 0,
+      "arrivalText": ""
+    }
+  ],
+  "dungeon": {
+    "actual": {
+      "id": "exit",
+      "x": 170,
+      "y": 300,
+      "region": "dungeon:dungeon1:easy",
+      "kind": "dungeonExit",
+      "radius": 90,
+      "names": {
+        "ru": "Выход",
+        "en": "Exit",
+        "es": "Salida"
+      }
+    },
+    "exit": {
+      "x": 170,
+      "y": 300,
+      "radius": 90,
+      "id": "exit",
+      "names": {
+        "ru": "Выход",
+        "en": "Exit",
+        "es": "Salida"
+      }
+    }
+  },
+  "relief": {
+    "height": 56,
+    "angle": 0.2261493056438742
+  },
+  "cleanup": [
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    }
+  ],
+  "errors": [],
+  "physicalAndroid": false,
+  "scope": "Follow-up scenarios only. Previous108-case pass is retained separately in quest-navigation-browser.log; no current matrix pass is inferred. Real touch journal/NPC selection,three slots,reload,ring routing,dungeon exit,relief,death and locale teardown."
+}

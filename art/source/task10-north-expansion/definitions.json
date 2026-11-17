@@ -1,0 +1,74 @@
+[
+  [
+    "north-species-007",
+    "slag-plated-ember-jackal",
+    76,
+    "A lean volcanic quadruped ember JACKAL, pointed ears, long narrow muzzle, four clawed legs, split whip tail, angular black slag shoulder plates, ember cracks, rusty fur. Low predatory canine anatomy and running gait, pouncing bite attack. No wings.",
+    "Шлаковый шакал",
+    "Slag-plated ember jackal",
+    "Chacal de escoria"
+  ],
+  [
+    "north-species-008",
+    "bone-mantled-snow-raider",
+    82,
+    "A snow-country BIPED raider, upright hunched humanoid, shaggy ivory fur hood with bony antler cheek guards, cobalt cloth, thick leather snow boots, short broad wooden crossbow held in BOTH hands, backpack quiver. Clearly humanlike two legs; attack fires crossbow. Compact crossbow, never giant weapon.",
+    "Костяной налётчик",
+    "Bone-mantled snow raider",
+    "Saqueador de manto óseo"
+  ],
+  [
+    "north-species-010",
+    "furnace-backed-basalt-giant",
+    88,
+    "A heavy volcanic basalt GOLEM: massive hunched biped rock body, short pillar legs, huge shovel fists, asymmetric chimney-like furnace ridge on its broad back, molten orange cavity in belly, tiny recessed face. Wide weighty silhouette. Slow heavy lumbering run; stomp attack with raised foot.",
+    "Печной базальтовый исполин",
+    "Furnace-backed basalt giant",
+    "Gigante basáltico de horno"
+  ],
+  [
+    "north-species-012",
+    "ivory-crowned-snow-bear",
+    84,
+    "A powerful heavy four-legged arctic BEAR, thick cream white winter fur, broad bear muzzle, short round ears, dark nose, four huge paws, short tail. Unique rigid crown of three ivory ice tusks sweeping from shoulders around neck, slate blue claws. Running bear gait; ground slam with forepaws. NOT canine.",
+    "Венценосный снежный медведь",
+    "Ivory-crowned snow bear",
+    "Oso níveo coronado de marfil"
+  ],
+  [
+    "north-species-014",
+    "obsidian-spindle-elemental",
+    77,
+    "A volcanic hovering elemental made of floating faceted OBSIDIAN SPINDLE, long central black diamond core enclosing amber lava, three detached curved rock fins orbiting its middle, pointed lower tip, jagged corona. No legs no human head. Idle vertical suspension; movement leans with shifted fins; attack flares amber blades; death separated fallen shards.",
+    "Обсидиановое веретено",
+    "Obsidian spindle elemental",
+    "Elemental huso de obsidiana"
+  ],
+  [
+    "north-species-018",
+    "cinder-shroud-revenant",
+    79,
+    "A volcanic HOVERING wraith: hollow coal-black hood with two ember eyes, long smoky ash-gray torn shroud tapering into three curling wisps, two thin skeletal soot hands with broad sickle claws, ember chain loop around chest. No feet, floats. Swaying flight states; attack arms reach; hurt recoils; death collapsed unoccupied shroud.",
+    "Пепельный саванник",
+    "Cinder-shroud revenant",
+    "Aparecido del sudario de ceniza"
+  ],
+  [
+    "north-species-021",
+    "frost-fanwing-bat",
+    73,
+    "A snow-region FLYING bat monster with small furry cobalt blue body, big triangular ears, blunt bat face, two extremely distinctive broad scalloped pale ice fan wings, each wing has four long dark fingers, tiny hooked rear feet. Wings curved enough to fit each cell. Run-a wings up, run-b wings down; attack diving spread claws; death folded wings on ground.",
+    "Веерокрыл морозный",
+    "Frost fanwing bat",
+    "Murciélago abanico de escarcha"
+  ],
+  [
+    "north-species-026",
+    "suspended-ice-bell-elemental",
+    77,
+    "A snow-region hovering ICE BELL elemental: translucent pale turquoise bell-shaped hollow crystal shell with scalloped rim, suspended dark sapphire clapper inside, two floating crescent icicle arms and crown of five uneven ice needles. No legs, no humanoid face. Gentle hover, movement tilts bell and trails arms, attack swings icy arms, hurt shell recoils, death fallen cracked shell.",
+    "Ледяной колокольник",
+    "Suspended ice-bell elemental",
+    "Elemental campana de hielo"
+  ]
+]

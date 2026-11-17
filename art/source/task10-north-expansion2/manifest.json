@@ -1,0 +1,154 @@
+[
+  {
+    "id": "north-species-015",
+    "names": {
+      "ru": "Парусоспинный песец",
+      "en": "Sailspine snow fox",
+      "es": "Zorro níveo de velas dorsales"
+    },
+    "baseType": "iceWolf",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "pounce",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow-biome foxlike predatory CANINE QUADRUPED with very long pointed ears, slim muzzle, four slender paws, huge single bushy tail, narrow tall row of translucent ice sail-spines running down its back like frozen folded fans, silver-gray fur and dark charcoal legs. Low stalking posture, true four-leg run, pouncing bite. Entire sail/tail/paws fit inside each cell."
+  },
+  {
+    "id": "north-species-022",
+    "names": {
+      "ru": "Ледниковый курганник",
+      "en": "Glacier cairn giant",
+      "es": "Gigante de túmulo glaciar"
+    },
+    "baseType": "frostGolem",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "heavy",
+    "proposedAbilityPattern": [
+      "stomp",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow-biome heavy BIPED golem built of broad flat stacked glacier stones, huge circular millstone shoulders, short square legs, long heavy rectangular hands reaching knee-height, tiny pale sapphire face recessed beneath flat arch head, two icicle blades hanging from elbows, snow caps on shoulders. NOT lava creature. Slow heavy walking strides; stomp attack. Wide squat architectural silhouette."
+  },
+  {
+    "id": "north-species-027",
+    "names": {
+      "ru": "Бивнебородый белый медведь",
+      "en": "Tuskbearded polar mauler",
+      "es": "Oso polar de barba de colmillos"
+    },
+    "baseType": "snowBear",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow-biome enormous FOUR-LEGGED bear, long muscular forelegs, sloped high shoulders, broad flat bear muzzle, tiny round ears, SHORT nub tail, massive cream white fur belly, distinctive downward-curving pair of walruslike chin tusks, dark gray armored nose bridge, winter slate brown back and white beard. Thick quadruped bear gait; forepaw groundslam attack. Clearly BEAR not canine."
+  },
+  {
+    "id": "north-species-030",
+    "names": {
+      "ru": "Снеголикий совокрыл",
+      "en": "Snowmask owl bat",
+      "es": "Murciélago lechuza de máscara nívea"
+    },
+    "baseType": "iceBat",
+    "biome": "snow",
+    "movement": "flight",
+    "locomotion": "winged",
+    "proposedAbilityPattern": [
+      "dive",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow-biome WINGED BAT with very large cream white owl-mask face and round dark eye sockets, slate blue fuzzy body, small ears, two bat membrane wings with serrated frosty rims and long icy finger bones, two tiny hind feet, forked featherlike tail tuft. Wing silhouette shaped like folded paper fans; no actual bird feathers on wings. Flying run-a wings up run-b wings down, attack diving with claw feet, death collapsed folded wings."
+  },
+  {
+    "id": "north-species-006",
+    "names": {
+      "ru": "Обсидиановый пращник",
+      "en": "Obsidian sling kobold",
+      "es": "Kóbold de honda obsidiana"
+    },
+    "baseType": "snowRaider",
+    "biome": "volcanic",
+    "movement": "ground",
+    "locomotion": "biped",
+    "proposedAbilityPattern": [
+      "shot",
+      "fan"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic-biome upright BIPED kobold skirmisher, hunched charcoal lizard humanoid with a blunt triangular snout, two curved backwards horns, long thick lizard tail, two short booted legs, red leather ash-mask scarf, rough obsidian shard shoulder armor. Holds a COMPACT SLINGSHOT in one claw hand and ammunition pouch in other, no crossbow. Ranged attack pulls sling. Scaly short stout reptilian silhouette."
+  },
+  {
+    "id": "north-species-019",
+    "names": {
+      "ru": "Углекрылая манта",
+      "en": "Ember manta bat",
+      "es": "Murciélago manta de brasas"
+    },
+    "baseType": "iceBat",
+    "biome": "volcanic",
+    "movement": "flight",
+    "locomotion": "winged",
+    "proposedAbilityPattern": [
+      "dive",
+      "venom"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic-biome FLYING BAT creature with broad triangular bat membrane wings forming a flat manta-ray silhouette, small central charcoal furry bat body, very long single whip tail, two bright orange eyes, blunt nose, two tiny hooked rear feet and curled ear nubs. Black basalt leathery wings have ember veins but no glow outside body. Run-a upward cupped wings run-b downstroke, attack diving forward, death crumpled wings on ground."
+  },
+  {
+    "id": "north-species-028",
+    "names": {
+      "ru": "Цепефонарный пепельник",
+      "en": "Chainlantern ash wraith",
+      "es": "Espectro de ceniza del farol encadenado"
+    },
+    "baseType": "wraith",
+    "biome": "volcanic",
+    "movement": "flight",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "haunt",
+      "blink"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic-biome HOVERING WRAITH, upright tall narrow silhouette, large hollow rust-red triangular hood with completely black face, two long thin skeletal arms holding a tiny enclosed amber lantern on chain between wrists, smoky dark burgundy ragged robe tapering to a tightly coiled ash spiral base, NO FEET, no ground shadow. Hood has one long backwards peak. Runs as drifting twisted robe phases, attack thrust lantern and claws, death empty fallen robe and lantern."
+  },
+  {
+    "id": "north-species-037",
+    "names": {
+      "ru": "Двупастный пепельный гончий",
+      "en": "Twinjaw cinder hound",
+      "es": "Sabueso de ceniza de dos fauces"
+    },
+    "baseType": "iceWolf",
+    "biome": "volcanic",
+    "movement": "ground",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "pounce",
+      "cleave"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic-biome FOUR-LEGGED canine beast with TWO separate dog heads side by side on broad shared shoulders, each head long-jawed and blunt-eared, muscular low coal-black fur body, large hooked claws, thick short single tail ending in knobby clinker, bronze throat collars fused as natural rough crust. Distinct amber eyes on each head. True quadruped run; twin bite pounce attack. No extra legs, no wings, no background flames."
+  }
+]

@@ -1,0 +1,148 @@
+{
+  "readyForIntegration": true,
+  "registered": false,
+  "runtimeIntegration": false,
+  "scope": "Four new original48-pose models. Original art,cutouts and layout corrections preserved; existing game runtime files untouched. Beige Canvas QA inspected all192 poses.",
+  "models": [
+    {
+      "id": "forest-species-004",
+      "png": "assets/actors/task10-next-bestiary/forest-species-004.png",
+      "atlas": "assets/actors/task10-next-bestiary/forest-species-004.json",
+      "sha256": "8ce70797123fd270edddcbc462d277441672f35b252d92495a41a1f843d89e2c",
+      "source": "art/source/task10-next-bestiary/forest-species-004-reflow.png",
+      "sourceSha256": "91a787f7aa34c2f88313cf66ce8f3cc0dcc4e6f95d210a89c3981cf683bde805",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "states": {
+        "n": 6,
+        "ne": 6,
+        "e": 6,
+        "se": 6,
+        "s": 6,
+        "sw": 6,
+        "w": 6,
+        "nw": 6
+      },
+      "transparentFraction": 0.8267669677734375,
+      "minOpaquePixelsPerFrame": 2017,
+      "footRange": [
+        141,
+        167
+      ],
+      "annotationHeight": 89,
+      "scale": 1.0694444444444444,
+      "visualReady": true,
+      "visualLimitations": [
+        "48 drawn poses with two movement frames; not six full multi-frame clips.",
+        "The scarab opens its wing covers in attack; this alone does not certify flying game mechanics.",
+        "Live monster integration,actual combat/streaming tests and final ability selection remain parent work."
+      ]
+    },
+    {
+      "id": "forest-species-006",
+      "png": "assets/actors/task10-next-bestiary/forest-species-006.png",
+      "atlas": "assets/actors/task10-next-bestiary/forest-species-006.json",
+      "sha256": "e3755a92343fb9cb914218f37cbf84d370b54f5c4645f3b89f6ea70750ec94f5",
+      "source": "art/source/task10-next-bestiary/forest-species-006-reflow.png",
+      "sourceSha256": "aecfe6b92e72ef1518f298fe4fd679361badf752c3671eee30b82b38ab1821d4",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "states": {
+        "n": 6,
+        "ne": 6,
+        "e": 6,
+        "se": 6,
+        "s": 6,
+        "sw": 6,
+        "w": 6,
+        "nw": 6
+      },
+      "transparentFraction": 0.861952887641059,
+      "minOpaquePixelsPerFrame": 1629,
+      "footRange": [
+        144,
+        167
+      ],
+      "annotationHeight": 84,
+      "scale": 0.972972972972973,
+      "visualReady": true,
+      "visualLimitations": [
+        "48 drawn poses with two movement frames; not six full multi-frame clips.",
+        "The scarab opens its wing covers in attack; this alone does not certify flying game mechanics.",
+        "Live monster integration,actual combat/streaming tests and final ability selection remain parent work."
+      ]
+    },
+    {
+      "id": "north-species-003",
+      "png": "assets/actors/task10-next-bestiary/north-species-003.png",
+      "atlas": "assets/actors/task10-next-bestiary/north-species-003.json",
+      "sha256": "c8f8b5d2ff9800640a639ff0104799f8ab546d57c3565b18ae2589b19f43a9f5",
+      "source": "art/source/task10-next-bestiary/north-species-003-reflow.png",
+      "sourceSha256": "8f06239343ecd7305922fcc67f7c9d2fd4b4cb9c6f707e42e8afa9a920e774bd",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "states": {
+        "n": 6,
+        "ne": 6,
+        "e": 6,
+        "se": 6,
+        "s": 6,
+        "sw": 6,
+        "w": 6,
+        "nw": 6
+      },
+      "transparentFraction": 0.7609888712565104,
+      "minOpaquePixelsPerFrame": 1964,
+      "footRange": [
+        140,
+        162
+      ],
+      "annotationHeight": 96,
+      "scale": 1.2173913043478262,
+      "visualReady": true,
+      "visualLimitations": [
+        "48 drawn poses with two movement frames; not six full multi-frame clips.",
+        "The scarab opens its wing covers in attack; this alone does not certify flying game mechanics.",
+        "Live monster integration,actual combat/streaming tests and final ability selection remain parent work."
+      ]
+    },
+    {
+      "id": "ancient-species-003",
+      "png": "assets/actors/task10-next-bestiary/ancient-species-003.png",
+      "atlas": "assets/actors/task10-next-bestiary/ancient-species-003.json",
+      "sha256": "581e338dae27f581039125e2f8c090e193b1a173e31faa40671af20241376c94",
+      "source": "art/source/task10-next-bestiary/ancient-species-003-original.png",
+      "sourceSha256": "6cbb9c8fed7d5126aee3b9202e97121ba3600082882b561ff6de0cabd3f30703",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "states": {
+        "n": 6,
+        "ne": 6,
+        "e": 6,
+        "se": 6,
+        "s": 6,
+        "sw": 6,
+        "w": 6,
+        "nw": 6
+      },
+      "transparentFraction": 0.7106840345594618,
+      "minOpaquePixelsPerFrame": 1972,
+      "footRange": [
+        146,
+        167
+      ],
+      "annotationHeight": 79,
+      "scale": 0.8072289156626506,
+      "visualReady": true,
+      "visualLimitations": [
+        "48 drawn poses with two movement frames; not six full multi-frame clips.",
+        "The scarab opens its wing covers in attack; this alone does not certify flying game mechanics.",
+        "Live monster integration,actual combat/streaming tests and final ability selection remain parent work."
+      ]
+    }
+  ]
+}

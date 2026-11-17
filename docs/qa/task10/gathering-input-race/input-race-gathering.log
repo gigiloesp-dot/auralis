@@ -1,0 +1,15 @@
+  actual collect+claim ru forest
+  actual collect+claim ru north
+  actual collect+claim ru ancient
+  actual collect+claim ru desert
+PASS gathering actualCanvas/NPC four regions ru 640 360
+  actual collect+claim en forest
+  actual collect+claim en north
+  actual collect+claim en ancient
+  actual collect+claim en desert
+PASS gathering actualCanvas/NPC four regions en 740 320
+  actual collect+claim es forest
+  actual collect+claim es north
+  actual collect+claim es ancient
+  actual collect+claim es desert
+PASS gathering actualCanvas/NPC four regions es 844 390

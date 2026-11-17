@@ -1,0 +1,87 @@
+{
+  "js/world/worldData.js": {
+    "original": "b5aca9d6548635531896a05399aa969a5c74399f42495d132be59c6be5aeb26e",
+    "current": "75fb57b973ec1570b2ed226de28c540102a817da8b18ffe08f9eb9d07f242330",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/regionContent.js": {
+    "original": "54b452f7e6b38f3a797bbbd044dd570f4e88c1a2a79f836f4720aca49f289902",
+    "current": "8221da71e169ad695693ab54968508f96afa4035e02d7b9b864ef077aa7889e4",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/chunkGeometry.js": {
+    "original": "7747a4eb8d0df6539cc3d1a3c8ff44303aa74bfb0d37f54a98af284c9d161f36",
+    "current": "cd7f1c13d3c5737ac2514645b06ad63a94ff1b509f2878122e40202b61b61992",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/npc/npcData.js": {
+    "original": "cee707614201896778f8bd84c72b9b4fafd7ad8c08462d8613ccc534039791a7",
+    "current": "a7d3beb5486284ac8dbe2643016ea370f993fe4b83af37e413de5c29a2a1380d",
+    "reason": "Approved task9 settlement footprint/houses/lanes; only crowded Tera moves, all legacy encounter anchors and catalogue protected"
+  },
+  "js/monsters/MonsterSystem.js": {
+    "original": "7806626752ab51fe36e2bfb79dad8b95147cdab8fd2996252eee2c1e8b2c3b7d",
+    "current": "f1c7ada80551e55a38520fd6c673fd0a86fb2155c5206fb77253a1894f2412d8",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/quests/quests.js": {
+    "original": "18ee4a9a2199e02ca53ba332ba1acbd95d99fd1190da8e9df789866adbb6363a",
+    "current": "f4ca9132d592e79b3ee5c153de3ab039d08e9407cad6b8e1cbf3108fdc081096",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/ChunkWorld.js": {
+    "original": "f744d2450d2f02558942dcaeb6b0aceffd59ae01faeaa43dd91337dc4a5b3799",
+    "current": "ee8724783ac81a7eee7245bbeeacc665ad24ef7ca462418a98790af62c10effd",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/biomes.js": {
+    "original": "0bb5a41506b11a53b9d2aa62da0c0baaea4c3aa7c48df4cb65bc6d4b79c542e7",
+    "current": "2d8df8ba0b566d34bd3ebaa98d01446e626809754a7bffcd1ee41bb4206ab1fd",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/world/towns.js": {
+    "original": "1642951c2945888b3ac4f07821ad1b3c39deccedc130880312d3e3462cdd0b38",
+    "current": "bf7f4cf63f90aadbf4d9ac3119636f2607530370c78113ec554f926cc200331f",
+    "reason": "Approved task9 fourth region and streaming expansion; all legacy encounter/quest/item invariants checked separately"
+  },
+  "js/characters/Character.js": {
+    "original": "59deb0cb5447757781f5c9ccbd5da939708aea920dd33957d4b831c868144602",
+    "current": "23b17c6289bbaaf5924d92e58d633e63c27a0a83eb808fd0f345bbafc44dd186",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/combat/attackTiming.js": {
+    "original": "32fe8338bb956714a5d89c31d7463e0c0f01cf9cfd5f6424bfa76fcf9b5b3f38",
+    "current": "12f2edc6f87c5615301b91203b80fc6c4fd50dda513efa9dca31cc2bc940ba57",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/monsters/monsters.js": {
+    "original": "8c070658929fcc2516382d24bbd101ed336c0bec00244f130746b57784597070",
+    "current": "35c0b21b0c4a33f5818a681a40329495a02af4098066fe23eb1eba4034a5ee3f",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/systems/progressState.js": {
+    "original": "15c788a7d8042d0eec9cea7981070874d11d09d0dcbb411fb4c7438470a1068f",
+    "current": "67a90fd2412ec0d75891d3f26d0a87bf80fd10d0276b13e7fe2d2486ab8cd127",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/systems/progression.js": {
+    "original": "7384fca4a060e3908ea6da502143a6bd8bb5e7319db844f9e76589d8b934cd58",
+    "current": "cc23747c01b16a7854ba664685d97b68c2317756807831361efb41efcdad942b",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/systems/save.js": {
+    "original": "8efc060d4c0fbb247d0db4ebe2744204566b01341b34609d193a3020e1648a89",
+    "current": "004dbeb9c31b9db92dc0c77594b26101dae1a8f1323fe0957552d73691d3ee55",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/ui/SavePanel.js": {
+    "original": "d6551280bac298292bd1c1b20592e4a7f6c15069a70008827ac694663ce2d265",
+    "current": "277093c58020e6d0d9f633cff303b06b7cdbf50a26a0c66dcea7c7c341d662e1",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  },
+  "js/ui/hud.js": {
+    "original": "abf946e093f65721495b8582b7c53c49348456d2ae82e92b86f52ede42584aac",
+    "current": "78a665cfe125850a2815db5e55e0984e3b67941cb6fd2cc167498e5aec9b39e0",
+    "reason": "Approved task9 level56/two skill points/version3 migration with retained raw backups; item catalogue/layers/skills stay byte-identical"
+  }
+}
