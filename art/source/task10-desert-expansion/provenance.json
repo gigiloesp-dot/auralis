@@ -1,0 +1,59 @@
+[
+  {
+    "id": "desert-species-006",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Long limbless coiling serpent, broad triangular cobra-like glass scallop neck frill, ivory scales, twin dark horn knobs, amber eyes. Sidewinding ground locomotion; no legs.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-5f9c55c8-bd15-4305-9a37-82c4f480c477.png",
+    "reflowGeneratedPath": "/workspace/generated_images/exec-360a0c9d-fb6a-427b-afdc-dd71db3755e0.png"
+  },
+  {
+    "id": "desert-species-008",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Heavy four-legged stone golem like a squat walking ancient pottery kiln, broad arch-shaped back with warm amber furnace opening, four massive squared sandstone feet, small heavy head, hanging ceramic jaw. Grounded massive stomp locomotion.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-e6b174b4-e1b5-4142-b36c-413ac39a4324.png",
+    "reflowGeneratedPath": null
+  },
+  {
+    "id": "desert-species-009",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Six-legged desert beetle with slim tall triangular vaulted shell, two huge curved ivory sickle mandibles, copper red chitin and turquoise rune chips, very long jointed rear legs. Ground crawling insect.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-7716f853-519c-4c80-a0d1-dd89a02e0fb2.png",
+    "reflowGeneratedPath": "/workspace/generated_images/exec-f952e8a1-4070-4421-80e8-ff466ef504b1.png"
+  },
+  {
+    "id": "desert-species-010",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Floating desert magical spirit made of three looping azure silk-like ribbons orbiting one asymmetric golden crescent mask, narrow tapered lower ribbon, no legs, no humanoid torso; clearly floating hover locomotion.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-63b01cb5-6aeb-461c-8358-ebfb4325b415.png",
+    "reflowGeneratedPath": null
+  },
+  {
+    "id": "desert-species-011",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Thick short limbless sand eel, round shovel snout, crown of long cactus-thorn horns, leathery olive belly, rust orange segmented dorsal sail, broad flattened tail paddle. Ground serpent slither; no legs.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-c1b04ff0-6618-4ddc-8d70-4f8b99541066.png",
+    "reflowGeneratedPath": "/workspace/generated_images/exec-c904a08e-6ab0-4668-b645-302cdbefe19c.png"
+  },
+  {
+    "id": "desert-species-012",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Low wide desert crustacean on eight spindly sand-gold legs, enormous single spoon-shaped digging claw and tiny other claw, flat pale ochre horseshoe shell, two stalked black eyes and comb-like mouth bristles. Ground crawler.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-8755b0a1-d991-43ed-ad24-d59acd920c55.png",
+    "reflowGeneratedPath": "/workspace/generated_images/exec-73b00093-134b-4be1-902a-d534890324ca.png"
+  },
+  {
+    "id": "desert-species-013",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Heavy bipedal walking giant barrel cactus with drooping bell-shaped green ribbed torso, three long wooden antler branches, huge rounded root feet and short massive root arms, open magenta flower on crown, single carved dark face. Heavy stomp ground locomotion.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-3a1763b7-fc4d-4ad9-904b-21127a93856e.png",
+    "reflowGeneratedPath": null
+  },
+  {
+    "id": "desert-species-014",
+    "tool": "image_gen.imagegen",
+    "originalPrompt": "Create an ORIGINAL fantasy hand-painted isometric RPG creature sprite atlas, transparent RGBA background. Exactly 8 columns x 6 rows, 48 separately drawn poses. No text, no grid, no ground shadows, no scenery. Equal rectangular cells, entire creature in middle 65 percent of each cell, generous perfectly transparent empty padding on all four sides. Do not let ANY body, tail, horns, limb, particles enter adjacent cell. Full creature visible each pose. Columns show directions N (back), NE, E (right profile), SE, S (front), SW, W (left profile), NW. Rows: 1 idle, 2 run stride A, 3 run stride B with clearly different limbs/body positions, 4 strong attack pose, 5 recoil/hurt pose, 6 dead collapsed on ground. Distinct anatomy perspective across directions, consistent design. Painterly detailed game sprite, mature fantasy, warm desert light, rich readable silhouette. 8:6 landscape sheet. Creature: Hovering magical desert manta-like creature, flat diamond-shaped terracotta sundial disk body, raised asymmetric bronze gnomon crest, two translucent golden fan wings, long thin trailing forked ribbon tail, two bright blue eyes, no legs. Hover flight.",
+    "originalGeneratedPath": "/workspace/generated_images/exec-c1a3eb1c-9e1a-4db5-a9e3-67c7ab061cf6.png",
+    "reflowGeneratedPath": "/workspace/generated_images/exec-72147fc4-1ba2-4f4e-ac67-c5016ebd13d9.png",
+    "cutoutGeneratedPath": "/workspace/generated_images/exec-fbd7df00-dd8e-4718-9028-0c6dcc481bab.png"
+  }
+]

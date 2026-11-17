@@ -1,0 +1,230 @@
+{
+  "status": "art-only-validated",
+  "runtimeRegistered": false,
+  "species": [
+    {
+      "id": "ancient-species-005",
+      "names": {
+        "ru": "Костегривая пепельная гадюка",
+        "en": "Bone-maned ash viper",
+        "es": "Víbora de ceniza de crin ósea"
+      },
+      "baseType": "desertSnake",
+      "biome": "elder-mystic",
+      "level": 39,
+      "spotId": "ancient-spot-005",
+      "movement": "ground",
+      "locomotion": "serpent",
+      "silhouette": "Legless slate serpent with ivory vertebral ruff and compact forked tail.",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-008",
+      "names": {
+        "ru": "Обелисковый страж",
+        "en": "Pillarback sentinel",
+        "es": "Centinela de obeliscos"
+      },
+      "baseType": "ancientSentinel",
+      "biome": "elder-mystic",
+      "level": 40,
+      "spotId": "ancient-spot-008",
+      "movement": "ground",
+      "locomotion": "heavy",
+      "silhouette": "Four elephantine pillar legs under basalt shrine body and three dorsal obelisks.",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-010",
+      "names": {
+        "ru": "Дух расколотой амфоры",
+        "en": "Cracked amphora wisp",
+        "es": "Fuego de ánfora agrietada"
+      },
+      "baseType": "arcaneWisp",
+      "biome": "elder-dry",
+      "level": 42,
+      "spotId": "ancient-spot-010",
+      "movement": "flight",
+      "locomotion": "hover",
+      "silhouette": "Levitating terracotta amphora with crescent handles and violet flame; no legs.",
+      "proposedAbilityPattern": [
+        "blink",
+        "fan"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-011",
+      "names": {
+        "ru": "Часовой скарабей руин",
+        "en": "Clockwork ruin scarab",
+        "es": "Escarabajo mecánico de las ruinas"
+      },
+      "baseType": "scarab",
+      "biome": "elder-ruins",
+      "level": 37,
+      "spotId": "ancient-spot-011",
+      "movement": "ground",
+      "locomotion": "crawler",
+      "silhouette": "Bronze clockwork beetle, six articulated legs, short shovel mandibles and ivory spikes.",
+      "proposedAbilityPattern": [
+        "burrow",
+        "cleave"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-019",
+      "names": {
+        "ru": "Кородоспешный падший рыцарь",
+        "en": "Bark-spined fallen knight",
+        "es": "Caballero caído de espinas de corteza"
+      },
+      "baseType": "fallenKnight",
+      "biome": "elder-forest",
+      "level": 37,
+      "spotId": "ancient-spot-019",
+      "movement": "ground",
+      "locomotion": "biped",
+      "silhouette": "Crooked biped in oak-fused iron armor, short cleaver and fan of wooden back spines.",
+      "proposedAbilityPattern": [
+        "cleave",
+        "roots"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-021",
+      "names": {
+        "ru": "Костеворотная горгулья",
+        "en": "Bone-frilled gargoyle",
+        "es": "Gárgola de gola ósea"
+      },
+      "baseType": "ancientGargoyle",
+      "biome": "elder-wastes",
+      "level": 39,
+      "spotId": "ancient-spot-021",
+      "movement": "flight",
+      "locomotion": "winged",
+      "silhouette": "Airborne compact stone drake with bent bat wings and ivory facial frill.",
+      "proposedAbilityPattern": [
+        "dive",
+        "venom"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-029",
+      "names": {
+        "ru": "Болотный серпоогонёк",
+        "en": "Sickleflame marsh wisp",
+        "es": "Fuego de hoz del pantano"
+      },
+      "baseType": "arcaneWisp",
+      "biome": "elder-marsh",
+      "level": 38,
+      "spotId": "ancient-spot-029",
+      "movement": "flight",
+      "locomotion": "hover",
+      "silhouette": "Jade ghost core in asymmetric reed sickle cage with short ethereal tail.",
+      "proposedAbilityPattern": [
+        "blink",
+        "roots"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-041",
+      "names": {
+        "ru": "Грибокоронный скарабей",
+        "en": "Fungal-crown scarab",
+        "es": "Escarabajo de corona fúngica"
+      },
+      "baseType": "scarab",
+      "biome": "elder-forest",
+      "level": 35,
+      "spotId": "ancient-spot-041",
+      "movement": "ground",
+      "locomotion": "crawler",
+      "silhouette": "Organic leaf-armored beetle beneath giant ivory mushroom canopy, six short legs.",
+      "proposedAbilityPattern": [
+        "burrow",
+        "roots"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    }
+  ]
+}

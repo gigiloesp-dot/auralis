@@ -1,0 +1,503 @@
+{
+  "records": [
+    {
+      "id": "forest-species-012",
+      "atlas": "task10-monster-thistleback-wolf",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "roots"
+      ],
+      "deadUntil": 1794917371447,
+      "killedAt": 1794917341447,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "forest-species-013",
+      "atlas": "task10-monster-alder-frill-viper",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "venom"
+      ],
+      "deadUntil": 1794917392976,
+      "killedAt": 1794917362976,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "forest-species-014",
+      "atlas": "task10-monster-hazel-mask-bow-raider",
+      "poses": 48,
+      "abilitiesReleased": [
+        "shot",
+        "roots"
+      ],
+      "deadUntil": 1794917408779,
+      "killedAt": 1794917378779,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "forest-species-016",
+      "atlas": "task10-monster-bracketback-bear",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "roots"
+      ],
+      "deadUntil": 1794917428891,
+      "killedAt": 1794917398891,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "forest-species-019",
+      "atlas": "task10-monster-acornjaw-boar",
+      "poses": 48,
+      "abilitiesReleased": [
+        "charge",
+        "stomp"
+      ],
+      "deadUntil": 1794917457888,
+      "killedAt": 1794917427888,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "forest-species-023",
+      "atlas": "task10-monster-lantern-ear-bat",
+      "poses": 48,
+      "abilitiesReleased": [
+        "dive",
+        "blink"
+      ],
+      "deadUntil": 1794917478005,
+      "killedAt": 1794917448005,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "forest-species-025",
+      "atlas": "task10-monster-burlfist-grove-orc",
+      "poses": 48,
+      "abilitiesReleased": [
+        "cleave",
+        "roots"
+      ],
+      "deadUntil": 1794917499786,
+      "killedAt": 1794917469786,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "forest-species-026",
+      "atlas": "task10-monster-briar-cage-skeleton",
+      "poses": 48,
+      "abilitiesReleased": [
+        "cleave",
+        "venom"
+      ],
+      "deadUntil": 1794917519696,
+      "killedAt": 1794917489696,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "north-species-007",
+      "atlas": "task10-monster-slag-plated-ember-jackal",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "charge"
+      ],
+      "deadUntil": 1794917704305,
+      "killedAt": 1794917674305,
+      "reloadAlive": false,
+      "fixtureMoves": [
+        {
+          "ability": "charge",
+          "playNow": 6884.873333333334,
+          "from": {
+            "x": 19330,
+            "y": 2273
+          },
+          "to": {
+            "x": 19230.00000000001,
+            "y": 2273
+          }
+        }
+      ]
+    },
+    {
+      "id": "north-species-008",
+      "atlas": "task10-monster-bone-mantled-snow-raider",
+      "poses": 48,
+      "abilitiesReleased": [
+        "shot",
+        "fan"
+      ],
+      "deadUntil": 1794917725743,
+      "killedAt": 1794917695743,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "north-species-010",
+      "atlas": "task10-monster-furnace-backed-basalt-giant",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "cleave"
+      ],
+      "deadUntil": 1794917760283,
+      "killedAt": 1794917730283,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "north-species-012",
+      "atlas": "task10-monster-ivory-crowned-snow-bear",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "charge"
+      ],
+      "deadUntil": 1794917797345,
+      "killedAt": 1794917767345,
+      "reloadAlive": false,
+      "fixtureMoves": [
+        {
+          "ability": "charge",
+          "playNow": 8776.553333333333,
+          "from": {
+            "x": 7563,
+            "y": 1258
+          },
+          "to": {
+            "x": 7446.378680000016,
+            "y": 1258
+          }
+        }
+      ]
+    },
+    {
+      "id": "north-species-014",
+      "atlas": "task10-monster-obsidian-spindle-elemental",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "fan"
+      ],
+      "deadUntil": 1794917832941,
+      "killedAt": 1794917802941,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "north-species-018",
+      "atlas": "task10-monster-cinder-shroud-revenant",
+      "poses": 48,
+      "abilitiesReleased": [
+        "haunt",
+        "blink"
+      ],
+      "deadUntil": 1794917859052,
+      "killedAt": 1794917829052,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "north-species-021",
+      "atlas": "task10-monster-frost-fanwing-bat",
+      "poses": 48,
+      "abilitiesReleased": [
+        "dive",
+        "frost"
+      ],
+      "deadUntil": 1794917888656,
+      "killedAt": 1794917858656,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "north-species-026",
+      "atlas": "task10-monster-suspended-ice-bell-elemental",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "frost"
+      ],
+      "deadUntil": 1794917922649,
+      "killedAt": 1794917892649,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-005",
+      "atlas": "task10-monster-bone-maned-ash-viper",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "venom"
+      ],
+      "deadUntil": 1794917543944,
+      "killedAt": 1794917513944,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-008",
+      "atlas": "task10-monster-pillarback-sentinel",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "roots"
+      ],
+      "deadUntil": 1794917563281,
+      "killedAt": 1794917533281,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-010",
+      "atlas": "task10-monster-cracked-amphora-wisp",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "fan"
+      ],
+      "deadUntil": 1794917581658,
+      "killedAt": 1794917551658,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-011",
+      "atlas": "task10-monster-clockwork-ruin-scarab",
+      "poses": 48,
+      "abilitiesReleased": [
+        "burrow",
+        "cleave"
+      ],
+      "deadUntil": 1794917597781,
+      "killedAt": 1794917567781,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-019",
+      "atlas": "task10-monster-bark-spined-fallen-knight",
+      "poses": 48,
+      "abilitiesReleased": [
+        "cleave",
+        "roots"
+      ],
+      "deadUntil": 1794917615883,
+      "killedAt": 1794917585883,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-021",
+      "atlas": "task10-monster-bone-frilled-gargoyle",
+      "poses": 48,
+      "abilitiesReleased": [
+        "dive",
+        "venom"
+      ],
+      "deadUntil": 1794917636943,
+      "killedAt": 1794917606943,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-029",
+      "atlas": "task10-monster-sickleflame-marsh-wisp",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "roots"
+      ],
+      "deadUntil": 1794917656942,
+      "killedAt": 1794917626942,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "ancient-species-041",
+      "atlas": "task10-monster-fungal-crown-scarab",
+      "poses": 48,
+      "abilitiesReleased": [
+        "burrow",
+        "roots"
+      ],
+      "deadUntil": 1794917677678,
+      "killedAt": 1794917647678,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "desert-species-006",
+      "atlas": "task10-monster-glass-frilled-sidewinder",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "burrow"
+      ],
+      "deadUntil": 1794917231893,
+      "killedAt": 1794917201893,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "desert-species-008",
+      "atlas": "task10-monster-kilnback-walker",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "charge"
+      ],
+      "deadUntil": 1794917247941,
+      "killedAt": 1794917217941,
+      "reloadAlive": false,
+      "fixtureMoves": [
+        {
+          "ability": "charge",
+          "playNow": 8318.953333333335,
+          "from": {
+            "x": 1214,
+            "y": 12225
+          },
+          "to": {
+            "x": 1097.4629466666652,
+            "y": 12225
+          }
+        }
+      ]
+    },
+    {
+      "id": "desert-species-009",
+      "atlas": "task10-monster-sickle-jawed-dune-beetle",
+      "poses": 48,
+      "abilitiesReleased": [
+        "burrow",
+        "pounce"
+      ],
+      "deadUntil": 1794917262975,
+      "killedAt": 1794917232975,
+      "reloadAlive": false,
+      "fixtureMoves": [
+        {
+          "ability": "pounce",
+          "playNow": 7792.736666666661,
+          "from": {
+            "x": 2942,
+            "y": 7130
+          },
+          "to": {
+            "x": 2841.999999999999,
+            "y": 7130
+          }
+        }
+      ]
+    },
+    {
+      "id": "desert-species-010",
+      "atlas": "task10-monster-mirage-ribbon-spirit",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "dive"
+      ],
+      "deadUntil": 1794917283191,
+      "killedAt": 1794917253191,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "desert-species-011",
+      "atlas": "task10-monster-thorn-crowned-sand-eel",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "burrow"
+      ],
+      "deadUntil": 1794917296409,
+      "killedAt": 1794917266409,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    },
+    {
+      "id": "desert-species-012",
+      "atlas": "task10-monster-sieve-mouthed-sand-crab",
+      "poses": 48,
+      "abilitiesReleased": [
+        "burrow",
+        "pounce"
+      ],
+      "deadUntil": 1794917311711,
+      "killedAt": 1794917281711,
+      "reloadAlive": false,
+      "fixtureMoves": [
+        {
+          "ability": "pounce",
+          "playNow": 7864.326666666662,
+          "from": {
+            "x": 9358,
+            "y": 4765
+          },
+          "to": {
+            "x": 9258.000000000013,
+            "y": 4765
+          }
+        }
+      ]
+    },
+    {
+      "id": "desert-species-013",
+      "atlas": "task10-monster-cactus-bell-colossus",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "charge"
+      ],
+      "deadUntil": 1794917327561,
+      "killedAt": 1794917297561,
+      "reloadAlive": false,
+      "fixtureMoves": [
+        {
+          "ability": "charge",
+          "playNow": 8259.333333333332,
+          "from": {
+            "x": 13394,
+            "y": 13966
+          },
+          "to": {
+            "x": 13278.092733333338,
+            "y": 13966
+          }
+        }
+      ]
+    },
+    {
+      "id": "desert-species-014",
+      "atlas": "task10-monster-sun-dial-ray",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "dive"
+      ],
+      "deadUntil": 1794917344658,
+      "killedAt": 1794917314658,
+      "reloadAlive": false,
+      "fixtureMoves": []
+    }
+  ],
+  "count": 32,
+  "poses": 1536,
+  "physicalAndroid": false,
+  "unit": 447,
+  "scope": "PreparedHP/positions and movement-ability minimum-range approach fixtures; actual engine releases,32realcamps,RUES/death/30s/Continue/reload/leasecleanup. No manual-playthrough or physical-Android claim."
+}

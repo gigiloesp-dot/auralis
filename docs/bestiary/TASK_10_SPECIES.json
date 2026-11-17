@@ -2,10 +2,10 @@
   "task": 10,
   "totalSpots": 257,
   "totalResidents": 2827,
-  "uniquePrimaryModels": 41,
-  "newSixBankModels": 18,
+  "uniquePrimaryModels": 73,
+  "newSixBankModels": 50,
   "legacyDistinctModels": 23,
-  "unfinishedSpecies": 216,
+  "unfinishedSpecies": 184,
   "complete": false,
   "note": "Names/anatomy of prototypeOnly rows are proposals,not completed unique creatures. Shared fallback art does not count as unique. Actual current stats and abilities are listed separately.",
   "species": [
@@ -678,17 +678,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Лесной волк «Спинные шипы»",
-        "en": "Forest wolf «Spine ridge»",
-        "es": "Lobo del bosque «Lomo espinoso»"
+        "ru": "Чертополоховый волк",
+        "en": "Thistleback wolf",
+        "es": "Lobo de cardo"
       },
       "runtimeNames": {
-        "ru": "Лесной волк",
-        "en": "Forest wolf",
-        "es": "Lobo del bosque"
+        "ru": "Чертополоховый волк",
+        "en": "Thistleback wolf",
+        "es": "Lobo de cardo"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 245,
         "attack": 24,
@@ -700,17 +700,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestWolf.png",
-          "atlas": "assets/actors/monsters/forestWolf.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-012.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-012.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -725,17 +735,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Терновая змея «Спинные шипы»",
-        "en": "Thorn snake «Spine ridge»",
-        "es": "Serpiente de espinas «Lomo espinoso»"
+        "ru": "Ольховая гадюка",
+        "en": "Alder-frill viper",
+        "es": "Víbora de gola de aliso"
       },
       "runtimeNames": {
-        "ru": "Терновая змея",
-        "en": "Thorn snake",
-        "es": "Serpiente de espinas"
+        "ru": "Ольховая гадюка",
+        "en": "Alder-frill viper",
+        "es": "Víbora de gola de aliso"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 120,
         "attack": 16,
@@ -747,17 +757,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "venom"
       ],
       "movement": "ground",
       "locomotion": "serpent",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/thornSnake.png",
-          "atlas": "assets/actors/monsters/thornSnake.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-013.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-013.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -772,17 +792,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Лесной разбойник «Костяная грива»",
-        "en": "Forest raider «Bone mane»",
-        "es": "Bandido del bosque «Crin de hueso»"
+        "ru": "Разбойник в орешниковой маске",
+        "en": "Hazel-mask bow raider",
+        "es": "Bandido de máscara de avellano"
       },
       "runtimeNames": {
-        "ru": "Лесной разбойник",
-        "en": "Forest raider",
-        "es": "Bandido del bosque"
+        "ru": "Разбойник в орешниковой маске",
+        "en": "Hazel-mask bow raider",
+        "es": "Bandido de máscara de avellano"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 158,
         "attack": 18,
@@ -794,17 +814,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "shot"
+        "shot",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestRaider.png",
-          "atlas": "assets/actors/monsters/forestRaider.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-014.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-014.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -876,17 +906,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Лесной медведь «Костяная грива»",
-        "en": "Forest bear «Bone mane»",
-        "es": "Oso del bosque «Crin de hueso»"
+        "ru": "Трутовиковый медведь",
+        "en": "Bracketback bear",
+        "es": "Oso de hongos yesqueros"
       },
       "runtimeNames": {
-        "ru": "Лесной медведь",
-        "en": "Forest bear",
-        "es": "Oso del bosque"
+        "ru": "Трутовиковый медведь",
+        "en": "Bracketback bear",
+        "es": "Oso de hongos yesqueros"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 142,
         "attack": 16,
@@ -898,17 +928,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/bear.png",
-          "atlas": "assets/actors/monsters/bear.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-016.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-016.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -1017,17 +1057,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Дикий кабан «Спинные шипы»",
-        "en": "Wild boar «Spine ridge»",
-        "es": "Jabalí salvaje «Lomo espinoso»"
+        "ru": "Жёлудевый секач",
+        "en": "Acornjaw boar",
+        "es": "Jabalí de bellota"
       },
       "runtimeNames": {
-        "ru": "Дикий кабан",
-        "en": "Wild boar",
-        "es": "Jabalí salvaje"
+        "ru": "Жёлудевый секач",
+        "en": "Acornjaw boar",
+        "es": "Jabalí de bellota"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 138,
         "attack": 15,
@@ -1039,17 +1079,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "charge"
+        "charge",
+        "stomp"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/wildBoar.png",
-          "atlas": "assets/actors/monsters/wildBoar.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-019.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-019.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -1205,17 +1255,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Ночная крылатка «Костяная грива»",
-        "en": "Dusk bat «Bone mane»",
-        "es": "Murciélago del ocaso «Crin de hueso»"
+        "ru": "Фонарноухая крылатка",
+        "en": "Lantern-ear bat",
+        "es": "Murciélago de orejas farol"
       },
       "runtimeNames": {
-        "ru": "Ночная крылатка",
-        "en": "Dusk bat",
-        "es": "Murciélago del ocaso"
+        "ru": "Фонарноухая крылатка",
+        "en": "Lantern-ear bat",
+        "es": "Murciélago de orejas farol"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 225,
         "attack": 23,
@@ -1227,17 +1277,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "blink"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestBat.png",
-          "atlas": "assets/actors/monsters/forestBat.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-023.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-023.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -1299,17 +1359,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Дубравный орк «Костяная грива»",
-        "en": "Grove orc «Bone mane»",
-        "es": "Orco del robledal «Crin de hueso»"
+        "ru": "Капокулакий орк",
+        "en": "Burlfist grove orc",
+        "es": "Orco de puños de nudo"
       },
       "runtimeNames": {
-        "ru": "Дубравный орк",
-        "en": "Grove orc",
-        "es": "Orco del robledal"
+        "ru": "Капокулакий орк",
+        "en": "Burlfist grove orc",
+        "es": "Orco de puños de nudo"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 177,
         "attack": 23,
@@ -1321,17 +1381,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "cleave"
+        "cleave",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestOrc.png",
-          "atlas": "assets/actors/monsters/forestOrc.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-025.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-025.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -1346,17 +1416,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Скелет «Костяная грива»",
-        "en": "Skeleton «Bone mane»",
-        "es": "Esqueleto «Crin de hueso»"
+        "ru": "Тернокостный скелет",
+        "en": "Briar-cage skeleton",
+        "es": "Esqueleto de zarzas"
       },
       "runtimeNames": {
-        "ru": "Скелет",
-        "en": "Skeleton",
-        "es": "Esqueleto"
+        "ru": "Тернокостный скелет",
+        "en": "Briar-cage skeleton",
+        "es": "Esqueleto de zarzas"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 224,
         "attack": 29,
@@ -1368,17 +1438,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "cleave"
+        "cleave",
+        "venom"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/skeleton.png",
-          "atlas": "assets/actors/monsters/skeleton.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion/forest-species-026.png",
+          "atlas": "assets/actors/task10-forest-expansion/forest-species-026.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4258,17 +4338,17 @@
       "residents": 11,
       "climate": "volcanic",
       "names": {
-        "ru": "Огненный дух «Двойной хвост»",
-        "en": "Fire spirit «Twin-tail»",
-        "es": "Espíritu de fuego «Doble cola»"
+        "ru": "Шлаковый шакал",
+        "en": "Slag-plated ember jackal",
+        "es": "Chacal de escoria"
       },
       "runtimeNames": {
-        "ru": "Ледяной хищник",
-        "en": "Frost predator",
-        "es": "Depredador helado"
+        "ru": "Шлаковый шакал",
+        "en": "Slag-plated ember jackal",
+        "es": "Chacal de escoria"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Twin-tail;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 531,
         "attack": 60,
@@ -4280,17 +4360,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "charge"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/iceWolf.png",
-          "atlas": "assets/actors/monsters/iceWolf.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-007.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-007.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4305,17 +4395,17 @@
       "residents": 11,
       "climate": "snow",
       "names": {
-        "ru": "Северный налётчик «Костяная грива»",
-        "en": "Northern marauder «Bone mane»",
-        "es": "Saqueador del norte «Crin de hueso»"
+        "ru": "Костяной налётчик",
+        "en": "Bone-mantled snow raider",
+        "es": "Saqueador de manto óseo"
       },
       "runtimeNames": {
-        "ru": "Северный налётчик",
-        "en": "Northern marauder",
-        "es": "Saqueador del norte"
+        "ru": "Костяной налётчик",
+        "en": "Bone-mantled snow raider",
+        "es": "Saqueador de manto óseo"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 292,
         "attack": 40,
@@ -4327,17 +4417,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "shot"
+        "shot",
+        "fan"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/snowRaider.png",
-          "atlas": "assets/actors/monsters/snowRaider.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-008.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-008.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4406,17 +4506,17 @@
       "residents": 11,
       "climate": "volcanic",
       "names": {
-        "ru": "Пепельный крылан «Костяная грива»",
-        "en": "Ashwing «Bone mane»",
-        "es": "Ala de ceniza «Crin de hueso»"
+        "ru": "Печной базальтовый исполин",
+        "en": "Furnace-backed basalt giant",
+        "es": "Gigante basáltico de horno"
       },
       "runtimeNames": {
-        "ru": "Ледяной исполин",
-        "en": "Frost golem",
-        "es": "Gólem de hielo"
+        "ru": "Печной базальтовый исполин",
+        "en": "Furnace-backed basalt giant",
+        "es": "Gigante basáltico de horno"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 519,
         "attack": 57,
@@ -4428,17 +4528,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "cleave"
       ],
       "movement": "ground",
       "locomotion": "heavy",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/frostGolem.png",
-          "atlas": "assets/actors/monsters/frostGolem.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-010.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-010.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4510,17 +4620,17 @@
       "residents": 11,
       "climate": "snow",
       "names": {
-        "ru": "Снежный медведь «Костяная грива»",
-        "en": "Snow bear «Bone mane»",
-        "es": "Oso de las nieves «Crin de hueso»"
+        "ru": "Венценосный снежный медведь",
+        "en": "Ivory-crowned snow bear",
+        "es": "Oso níveo coronado de marfil"
       },
       "runtimeNames": {
-        "ru": "Снежный медведь",
-        "en": "Snow bear",
-        "es": "Oso de las nieves"
+        "ru": "Венценосный снежный медведь",
+        "en": "Ivory-crowned snow bear",
+        "es": "Oso níveo coronado de marfil"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 315,
         "attack": 41,
@@ -4532,17 +4642,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "charge"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/snowBear.png",
-          "atlas": "assets/actors/monsters/snowBear.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-012.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-012.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4604,17 +4724,17 @@
       "residents": 11,
       "climate": "volcanic",
       "names": {
-        "ru": "Пепельный крылан «Спинные шипы»",
-        "en": "Ashwing «Spine ridge»",
-        "es": "Ala de ceniza «Lomo espinoso»"
+        "ru": "Обсидиановое веретено",
+        "en": "Obsidian spindle elemental",
+        "es": "Elemental huso de obsidiana"
       },
       "runtimeNames": {
-        "ru": "Стихия льда",
-        "en": "Ice elemental",
-        "es": "Elemental de hielo"
+        "ru": "Обсидиановое веретено",
+        "en": "Obsidian spindle elemental",
+        "es": "Elemental huso de obsidiana"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 539,
         "attack": 66,
@@ -4626,17 +4746,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "blink"
+        "blink",
+        "fan"
       ],
       "movement": "flight",
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/iceElemental.png",
-          "atlas": "assets/actors/monsters/iceElemental.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-014.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-014.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4809,17 +4939,17 @@
       "residents": 11,
       "climate": "volcanic",
       "names": {
-        "ru": "Пепельный крылан «Серповидные когти»",
-        "en": "Ashwing «Sickle claws»",
-        "es": "Ala de ceniza «Garras de hoz»"
+        "ru": "Пепельный саванник",
+        "en": "Cinder-shroud revenant",
+        "es": "Aparecido del sudario de ceniza"
       },
       "runtimeNames": {
-        "ru": "Призрак перевала",
-        "en": "Pass wraith",
-        "es": "Espectro del paso"
+        "ru": "Пепельный саванник",
+        "en": "Cinder-shroud revenant",
+        "es": "Aparecido del sudario de ceniza"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Sickle claws;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 456,
         "attack": 62,
@@ -4831,17 +4961,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "haunt"
+        "haunt",
+        "blink"
       ],
       "movement": "flight",
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/wraith.png",
-          "atlas": "assets/actors/monsters/wraith.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-018.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-018.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -4950,17 +5090,17 @@
       "residents": 11,
       "climate": "snow",
       "names": {
-        "ru": "Ледокрыл «Спинные шипы»",
-        "en": "Frostwing bat «Spine ridge»",
-        "es": "Murciélago escarchado «Lomo espinoso»"
+        "ru": "Веерокрыл морозный",
+        "en": "Frost fanwing bat",
+        "es": "Murciélago abanico de escarcha"
       },
       "runtimeNames": {
-        "ru": "Ледокрыл",
-        "en": "Frostwing bat",
-        "es": "Murciélago escarchado"
+        "ru": "Веерокрыл морозный",
+        "en": "Frost fanwing bat",
+        "es": "Murciélago abanico de escarcha"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 369,
         "attack": 48,
@@ -4972,17 +5112,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "frost"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/iceBat.png",
-          "atlas": "assets/actors/monsters/iceBat.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-021.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-021.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -5185,17 +5335,17 @@
       "residents": 11,
       "climate": "snow",
       "names": {
-        "ru": "Стихия льда «Костяная грива»",
-        "en": "Ice elemental «Bone mane»",
-        "es": "Elemental de hielo «Crin de hueso»"
+        "ru": "Ледяной колокольник",
+        "en": "Suspended ice-bell elemental",
+        "es": "Elemental campana de hielo"
       },
       "runtimeNames": {
-        "ru": "Стихия льда",
-        "en": "Ice elemental",
-        "es": "Elemental de hielo"
+        "ru": "Ледяной колокольник",
+        "en": "Suspended ice-bell elemental",
+        "es": "Elemental campana de hielo"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 466,
         "attack": 60,
@@ -5207,17 +5357,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "blink"
+        "blink",
+        "frost"
       ],
       "movement": "flight",
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/iceElemental.png",
-          "atlas": "assets/actors/monsters/iceElemental.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-north-expansion/north-species-026.png",
+          "atlas": "assets/actors/task10-north-expansion/north-species-026.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -7808,17 +7968,17 @@
       "residents": 11,
       "climate": "elder-mystic",
       "names": {
-        "ru": "Пепельная гадюка «Костяная грива»",
-        "en": "Ash viper «Bone mane»",
-        "es": "Víbora de ceniza «Crin de hueso»"
+        "ru": "Костегривая пепельная гадюка",
+        "en": "Bone-maned ash viper",
+        "es": "Víbora de ceniza de crin ósea"
       },
       "runtimeNames": {
-        "ru": "Пепельная гадюка",
-        "en": "Ash viper",
-        "es": "Víbora de ceniza"
+        "ru": "Костегривая пепельная гадюка",
+        "en": "Bone-maned ash viper",
+        "es": "Víbora de ceniza de crin ósea"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 483,
         "attack": 62,
@@ -7830,17 +7990,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "venom"
       ],
       "movement": "ground",
       "locomotion": "serpent",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/desertSnake.png",
-          "atlas": "assets/actors/monsters/desertSnake.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-005.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-005.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -7966,17 +8136,17 @@
       "residents": 11,
       "climate": "elder-mystic",
       "names": {
-        "ru": "Древний страж «Спинные шипы»",
-        "en": "Ancient sentinel «Spine ridge»",
-        "es": "Centinela antiguo «Lomo espinoso»"
+        "ru": "Обелисковый страж",
+        "en": "Pillarback sentinel",
+        "es": "Centinela de obeliscos"
       },
       "runtimeNames": {
-        "ru": "Древний страж",
-        "en": "Ancient sentinel",
-        "es": "Centinela antiguo"
+        "ru": "Обелисковый страж",
+        "en": "Pillarback sentinel",
+        "es": "Centinela de obeliscos"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 614,
         "attack": 65,
@@ -7988,17 +8158,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "heavy",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/ancientSentinel.png",
-          "atlas": "assets/actors/monsters/ancientSentinel.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-008.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-008.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -8067,17 +8247,17 @@
       "residents": 11,
       "climate": "elder-dry",
       "names": {
-        "ru": "Чародейский огонёк «Костяная грива»",
-        "en": "Arcane wisp «Bone mane»",
-        "es": "Fuego arcano «Crin de hueso»"
+        "ru": "Дух расколотой амфоры",
+        "en": "Cracked amphora wisp",
+        "es": "Fuego de ánfora agrietada"
       },
       "runtimeNames": {
-        "ru": "Чародейский огонёк",
-        "en": "Arcane wisp",
-        "es": "Fuego arcano"
+        "ru": "Дух расколотой амфоры",
+        "en": "Cracked amphora wisp",
+        "es": "Fuego de ánfora agrietada"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 484,
         "attack": 72,
@@ -8089,17 +8269,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "blink"
+        "blink",
+        "fan"
       ],
       "movement": "flight",
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/arcaneWisp.png",
-          "atlas": "assets/actors/monsters/arcaneWisp.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-010.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-010.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -8114,17 +8304,17 @@
       "residents": 11,
       "climate": "elder-ruins",
       "names": {
-        "ru": "Рунный скарабей «Спинные шипы»",
-        "en": "Rune scarab «Spine ridge»",
-        "es": "Escarabajo rúnico «Lomo espinoso»"
+        "ru": "Часовой скарабей руин",
+        "en": "Clockwork ruin scarab",
+        "es": "Escarabajo mecánico de las ruinas"
       },
       "runtimeNames": {
-        "ru": "Рунный скарабей",
-        "en": "Rune scarab",
-        "es": "Escarabajo rúnico"
+        "ru": "Часовой скарабей руин",
+        "en": "Clockwork ruin scarab",
+        "es": "Escarabajo mecánico de las ruinas"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 504,
         "attack": 56,
@@ -8136,17 +8326,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "burrow"
+        "burrow",
+        "cleave"
       ],
       "movement": "ground",
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/scarab.png",
-          "atlas": "assets/actors/monsters/scarab.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-011.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-011.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -8500,17 +8700,17 @@
       "residents": 11,
       "climate": "elder-forest",
       "names": {
-        "ru": "Падший рыцарь «Спинные шипы»",
-        "en": "Fallen knight «Spine ridge»",
-        "es": "Caballero caído «Lomo espinoso»"
+        "ru": "Кородоспешный падший рыцарь",
+        "en": "Bark-spined fallen knight",
+        "es": "Caballero caído de espinas de corteza"
       },
       "runtimeNames": {
-        "ru": "Падший рыцарь",
-        "en": "Fallen knight",
-        "es": "Caballero caído"
+        "ru": "Кородоспешный падший рыцарь",
+        "en": "Bark-spined fallen knight",
+        "es": "Caballero caído de espinas de corteza"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 562,
         "attack": 60,
@@ -8522,17 +8722,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "cleave"
+        "cleave",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/fallenKnight.png",
-          "atlas": "assets/actors/monsters/fallenKnight.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-019.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-019.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -8594,17 +8804,17 @@
       "residents": 11,
       "climate": "elder-wastes",
       "names": {
-        "ru": "Древняя горгулья «Костяная грива»",
-        "en": "Ancient gargoyle «Bone mane»",
-        "es": "Gárgola antigua «Crin de hueso»"
+        "ru": "Костеворотная горгулья",
+        "en": "Bone-frilled gargoyle",
+        "es": "Gárgola de gola ósea"
       },
       "runtimeNames": {
-        "ru": "Древняя горгулья",
-        "en": "Ancient gargoyle",
-        "es": "Gárgola antigua"
+        "ru": "Костеворотная горгулья",
+        "en": "Bone-frilled gargoyle",
+        "es": "Gárgola de gola ósea"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 537,
         "attack": 63,
@@ -8616,17 +8826,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "venom"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/ancientGargoyle.png",
-          "atlas": "assets/actors/monsters/ancientGargoyle.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-021.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-021.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -8970,17 +9190,17 @@
       "residents": 11,
       "climate": "elder-marsh",
       "names": {
-        "ru": "Чародейский огонёк «Серповидные когти»",
-        "en": "Arcane wisp «Sickle claws»",
-        "es": "Fuego arcano «Garras de hoz»"
+        "ru": "Болотный серпоогонёк",
+        "en": "Sickleflame marsh wisp",
+        "es": "Fuego de hoz del pantano"
       },
       "runtimeNames": {
-        "ru": "Чародейский огонёк",
-        "en": "Arcane wisp",
-        "es": "Fuego arcano"
+        "ru": "Болотный серпоогонёк",
+        "en": "Sickleflame marsh wisp",
+        "es": "Fuego de hoz del pantano"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Sickle claws;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 407,
         "attack": 64,
@@ -8992,17 +9212,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "blink"
+        "blink",
+        "roots"
       ],
       "movement": "flight",
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/arcaneWisp.png",
-          "atlas": "assets/actors/monsters/arcaneWisp.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-029.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-029.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -9541,17 +9771,17 @@
       "residents": 11,
       "climate": "elder-forest",
       "names": {
-        "ru": "Рунный скарабей «Грибная корона»",
-        "en": "Rune scarab «Fungal crown»",
-        "es": "Escarabajo rúnico «Corona de hongos»"
+        "ru": "Грибокоронный скарабей",
+        "en": "Fungal-crown scarab",
+        "es": "Escarabajo de corona fúngica"
       },
       "runtimeNames": {
-        "ru": "Рунный скарабей",
-        "en": "Rune scarab",
-        "es": "Escarabajo rúnico"
+        "ru": "Грибокоронный скарабей",
+        "en": "Fungal-crown scarab",
+        "es": "Escarabajo de corona fúngica"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Fungal crown;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 470,
         "attack": 52,
@@ -9563,17 +9793,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "burrow"
+        "burrow",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/scarab.png",
-          "atlas": "assets/actors/monsters/scarab.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-ancient-expansion/ancient-species-041.png",
+          "atlas": "assets/actors/task10-ancient-expansion/ancient-species-041.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10067,17 +10307,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Живой игольный кактус «Двойной хвост»",
-        "en": "Living needle cactus «Twin-tail»",
-        "es": "Cactus vivo de agujas «Doble cola»"
+        "ru": "Стеклогребневая змея",
+        "en": "Glass-frilled sidewinder",
+        "es": "Serpiente de cresta vítrea"
       },
       "runtimeNames": {
-        "ru": "Пепельная гадюка",
-        "en": "Ash viper",
-        "es": "Víbora de ceniza"
+        "ru": "Стеклогребневая змея",
+        "en": "Glass-frilled sidewinder",
+        "es": "Serpiente de cresta vítrea"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Twin-tail;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 841,
         "attack": 88,
@@ -10089,17 +10329,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "burrow"
       ],
       "movement": "ground",
       "locomotion": "serpent",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/desertSnake.png",
-          "atlas": "assets/actors/monsters/desertSnake.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-006.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-006.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10171,17 +10421,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Живой игольный кактус «Спинные шипы»",
-        "en": "Living needle cactus «Spine ridge»",
-        "es": "Cactus vivo de agujas «Lomo espinoso»"
+        "ru": "Печеспинный ходок",
+        "en": "Kilnback walker",
+        "es": "Caminante de horno"
       },
       "runtimeNames": {
-        "ru": "Древний страж",
-        "en": "Ancient sentinel",
-        "es": "Centinela antiguo"
+        "ru": "Печеспинный ходок",
+        "en": "Kilnback walker",
+        "es": "Caminante de horno"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 821,
         "attack": 81,
@@ -10193,17 +10443,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "charge"
       ],
       "movement": "ground",
       "locomotion": "heavy",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/ancientSentinel.png",
-          "atlas": "assets/actors/monsters/ancientSentinel.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-008.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-008.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10218,17 +10478,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Живой игольный кактус «Серповидные когти»",
-        "en": "Living needle cactus «Sickle claws»",
-        "es": "Cactus vivo de agujas «Garras de hoz»"
+        "ru": "Саблезубый дюнный жук",
+        "en": "Sickle-jawed dune beetle",
+        "es": "Escarabajo de dunas de mandíbula curva"
       },
       "runtimeNames": {
-        "ru": "Рунный скарабей",
-        "en": "Rune scarab",
-        "es": "Escarabajo rúnico"
+        "ru": "Саблезубый дюнный жук",
+        "en": "Sickle-jawed dune beetle",
+        "es": "Escarabajo de dunas de mandíbula curva"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Sickle claws;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 659,
         "attack": 70,
@@ -10240,17 +10500,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "burrow"
+        "burrow",
+        "pounce"
       ],
       "movement": "ground",
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/scarab.png",
-          "atlas": "assets/actors/monsters/scarab.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-009.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-009.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10265,17 +10535,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Живой игольный кактус «Ветвистые рога»",
-        "en": "Living needle cactus «Branching antlers»",
-        "es": "Cactus vivo de agujas «Astas ramificadas»"
+        "ru": "Ленточный дух миража",
+        "en": "Mirage ribbon spirit",
+        "es": "Espíritu de cinta del espejismo"
       },
       "runtimeNames": {
-        "ru": "Чародейский огонёк",
-        "en": "Arcane wisp",
-        "es": "Fuego arcano"
+        "ru": "Ленточный дух миража",
+        "en": "Mirage ribbon spirit",
+        "es": "Espíritu de cinta del espejismo"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Branching antlers;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 691,
         "attack": 88,
@@ -10287,17 +10557,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "blink"
+        "blink",
+        "dive"
       ],
       "movement": "flight",
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/arcaneWisp.png",
-          "atlas": "assets/actors/monsters/arcaneWisp.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-010.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-010.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10312,17 +10592,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Живой игольный кактус «Панцирный воротник»",
-        "en": "Living needle cactus «Shell collar»",
-        "es": "Cactus vivo de agujas «Cuello acorazado»"
+        "ru": "Шиповенчанный песчаный угорь",
+        "en": "Thorn-crowned sand eel",
+        "es": "Anguila de arena coronada de espinas"
       },
       "runtimeNames": {
-        "ru": "Пепельная гадюка",
-        "en": "Ash viper",
-        "es": "Víbora de ceniza"
+        "ru": "Шиповенчанный песчаный угорь",
+        "en": "Thorn-crowned sand eel",
+        "es": "Anguila de arena coronada de espinas"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Shell collar;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 989,
         "attack": 96,
@@ -10334,17 +10614,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "burrow"
       ],
       "movement": "ground",
       "locomotion": "serpent",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/desertSnake.png",
-          "atlas": "assets/actors/monsters/desertSnake.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-011.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-011.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10359,17 +10649,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Пустынный змей «Двойной хвост»",
-        "en": "Desert serpent «Twin-tail»",
-        "es": "Serpiente del desierto «Doble cola»"
+        "ru": "Песчаный краб-сито",
+        "en": "Sieve-mouthed sand crab",
+        "es": "Cangrejo tamiz de arena"
       },
       "runtimeNames": {
-        "ru": "Рунный скарабей",
-        "en": "Rune scarab",
-        "es": "Escarabajo rúnico"
+        "ru": "Песчаный краб-сито",
+        "en": "Sieve-mouthed sand crab",
+        "es": "Cangrejo tamiz de arena"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Twin-tail;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 713,
         "attack": 74,
@@ -10381,17 +10671,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "burrow"
+        "burrow",
+        "pounce"
       ],
       "movement": "ground",
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/scarab.png",
-          "atlas": "assets/actors/monsters/scarab.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-012.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-012.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10406,17 +10706,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Пустынный змей «Костяная грива»",
-        "en": "Desert serpent «Bone mane»",
-        "es": "Serpiente del desierto «Crin de hueso»"
+        "ru": "Кактусовый колокол",
+        "en": "Cactus bell colossus",
+        "es": "Coloso campana de cactus"
       },
       "runtimeNames": {
-        "ru": "Древний страж",
-        "en": "Ancient sentinel",
-        "es": "Centinela antiguo"
+        "ru": "Кактусовый колокол",
+        "en": "Cactus bell colossus",
+        "es": "Coloso campana de cactus"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 951,
         "attack": 89,
@@ -10428,17 +10728,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "charge"
       ],
       "movement": "ground",
       "locomotion": "heavy",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/ancientSentinel.png",
-          "atlas": "assets/actors/monsters/ancientSentinel.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-013.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-013.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -10453,17 +10763,17 @@
       "residents": 11,
       "climate": "sand",
       "names": {
-        "ru": "Пустынный змей «Спинные шипы»",
-        "en": "Desert serpent «Spine ridge»",
-        "es": "Serpiente del desierto «Lomo espinoso»"
+        "ru": "Луч солнечных часов",
+        "en": "Sun-dial ray",
+        "es": "Raya del reloj solar"
       },
       "runtimeNames": {
-        "ru": "Чародейский огонёк",
-        "en": "Arcane wisp",
-        "es": "Fuego arcano"
+        "ru": "Луч солнечных часов",
+        "en": "Sun-dial ray",
+        "es": "Raya del reloj solar"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 787,
         "attack": 94,
@@ -10475,17 +10785,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "blink"
+        "blink",
+        "dive"
       ],
       "movement": "flight",
       "locomotion": "hover",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/arcaneWisp.png",
-          "atlas": "assets/actors/monsters/arcaneWisp.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-desert-expansion/desert-species-014.png",
+          "atlas": "assets/actors/task10-desert-expansion/desert-species-014.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {

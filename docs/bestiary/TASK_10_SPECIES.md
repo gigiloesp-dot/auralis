@@ -1,6 +1,6 @@
 # Реестр257 видов и фактической готовности
 
-**Задание10не завершено.** Уникальных первичных моделей: 41 (18 новых48-позных и 23 прежних32-позных). Ещё 216 видов используют общие временные модели. Их названия/силуэты — предложения,а не готовые ассеты. Прежние hurt/death используют программные преобразования;это не новые нарисованные клипы. Все RU/EN/ES названия,координаты,актуальные характеристики и точные ссылки находятся в [JSON](TASK_10_SPECIES.json).
+**Задание10не завершено.** Уникальных первичных моделей: 73 (50 новых48-позных и 23 прежних32-позных). Ещё 184 видов используют общие временные модели. Их названия/силуэты — предложения,а не готовые ассеты. Прежние hurt/death используют программные преобразования;это не новые нарисованные клипы. Все RU/EN/ES названия,координаты,актуальные характеристики и точные ссылки находятся в [JSON](TASK_10_SPECIES.json).
 
 |ID / карта|Спот / Lv|Название RU|Готовность|HP / урон / защита / скорость|Способности|Собственная модель|
 |---|---|---|---|---|---|---|
@@ -16,21 +16,21 @@
 |forest-species-009 / forest|forest-spot-009 / 17|Лесной разбойник|legacyDistinct|386 / 36 / 10.4 / 100|shot|[assets/actors/monsters/forestRaider.png](../../assets/actors/monsters/forestRaider.png)|
 |forest-species-010 / forest|forest-spot-010 / 23|Лесной медведь|legacyDistinct|556 / 48 / 17.6 / 68|stomp|[assets/actors/monsters/bear.png](../../assets/actors/monsters/bear.png)|
 |forest-species-011 / forest|forest-spot-011 / 17|Ядовитый паук|legacyDistinct|304 / 35 / 9.2 / 104|venom|[assets/actors/monsters/spider.png](../../assets/actors/monsters/spider.png)|
-|forest-species-012 / forest|forest-spot-012 / 11|Лесной волк «Спинные шипы»|prototypeOnly|245 / 24 / 8 / 90|pounce|**не готова**;общий прототип assets/actors/monsters/forestWolf.png|
-|forest-species-013 / forest|forest-spot-013 / 7|Терновая змея «Спинные шипы»|prototypeOnly|120 / 16 / 2.6 / 95|pounce|**не готова**;общий прототип assets/actors/monsters/thornSnake.png|
-|forest-species-014 / forest|forest-spot-014 / 8|Лесной разбойник «Костяная грива»|prototypeOnly|158 / 18 / 3.2 / 100|shot|**не готова**;общий прототип assets/actors/monsters/forestRaider.png|
+|forest-species-012 / forest|forest-spot-012 / 11|Чертополоховый волк|newIntegrated|245 / 24 / 8 / 90|pounce, roots|[assets/actors/task10-forest-expansion/forest-species-012.png](../../assets/actors/task10-forest-expansion/forest-species-012.png)|
+|forest-species-013 / forest|forest-spot-013 / 7|Ольховая гадюка|newIntegrated|120 / 16 / 2.6 / 95|pounce, venom|[assets/actors/task10-forest-expansion/forest-species-013.png](../../assets/actors/task10-forest-expansion/forest-species-013.png)|
+|forest-species-014 / forest|forest-spot-014 / 8|Разбойник в орешниковой маске|newIntegrated|158 / 18 / 3.2 / 100|shot, roots|[assets/actors/task10-forest-expansion/forest-species-014.png](../../assets/actors/task10-forest-expansion/forest-species-014.png)|
 |forest-species-015 / forest|forest-spot-015 / 9|Мшистый секач|newIntegrated|181 / 19 / 4.800000000000001 / 72|charge, roots|[assets/actors/task10-wild-bestiary/forest-species-015.png](../../assets/actors/task10-wild-bestiary/forest-species-015.png)|
-|forest-species-016 / forest|forest-spot-016 / 7|Лесной медведь «Костяная грива»|prototypeOnly|142 / 16 / 4.8 / 68|stomp|**не готова**;общий прототип assets/actors/monsters/bear.png|
+|forest-species-016 / forest|forest-spot-016 / 7|Трутовиковый медведь|newIntegrated|142 / 16 / 4.8 / 68|stomp, roots|[assets/actors/task10-forest-expansion/forest-species-016.png](../../assets/actors/task10-forest-expansion/forest-species-016.png)|
 |forest-species-017 / forest|forest-spot-017 / 17|Заросший страж «Двойной хвост»|prototypeOnly|427 / 36 / 12.8 / 90|pounce|**не готова**;общий прототип assets/actors/monsters/forestWolf.png|
 |forest-species-018 / forest|forest-spot-018 / 19|Терновая змея «Серповидные когти»|prototypeOnly|418 / 40 / 12.200000000000001 / 95|pounce|**не готова**;общий прототип assets/actors/monsters/thornSnake.png|
-|forest-species-019 / forest|forest-spot-019 / 7|Дикий кабан «Спинные шипы»|prototypeOnly|138 / 15 / 3.2 / 72|charge|**не готова**;общий прототип assets/actors/monsters/wildBoar.png|
+|forest-species-019 / forest|forest-spot-019 / 7|Жёлудевый секач|newIntegrated|138 / 15 / 3.2 / 72|charge, stomp|[assets/actors/task10-forest-expansion/forest-species-019.png](../../assets/actors/task10-forest-expansion/forest-species-019.png)|
 |forest-species-020 / forest|forest-spot-020 / 15|Лесной медведь «Спинные шипы»|prototypeOnly|314 / 32 / 11.2 / 68|stomp|**не готова**;общий прототип assets/actors/monsters/bear.png|
 |forest-species-021 / forest|forest-spot-021 / 11|Лесной разбойник «Спинные шипы»|prototypeOnly|224 / 24 / 5.6000000000000005 / 100|shot|**не готова**;общий прототип assets/actors/monsters/forestRaider.png|
 |forest-species-022 / forest|forest-spot-022 / 20|Лесной разбойник «Серповидные когти»|prototypeOnly|482 / 42 / 12.8 / 100|shot|**не готова**;общий прототип assets/actors/monsters/forestRaider.png|
-|forest-species-023 / forest|forest-spot-023 / 11|Ночная крылатка «Костяная грива»|prototypeOnly|225 / 23 / 7.2 / 138|dive|**не готова**;общий прототип assets/actors/monsters/forestBat.png|
+|forest-species-023 / forest|forest-spot-023 / 11|Фонарноухая крылатка|newIntegrated|225 / 23 / 7.2 / 138|dive, blink|[assets/actors/task10-forest-expansion/forest-species-023.png](../../assets/actors/task10-forest-expansion/forest-species-023.png)|
 |forest-species-024 / forest|forest-spot-024 / 3|Ночная крылатка «Спинные шипы»|prototypeOnly|53 / 7 / 0.8 / 138|dive|**не готова**;общий прототип assets/actors/monsters/forestBat.png|
-|forest-species-025 / forest|forest-spot-025 / 11|Дубравный орк «Костяная грива»|prototypeOnly|177 / 23 / 9.8 / 79|cleave|**не готова**;общий прототип assets/actors/monsters/forestOrc.png|
-|forest-species-026 / forest|forest-spot-026 / 16|Скелет «Костяная грива»|prototypeOnly|224 / 29 / 9.6 / 83|cleave|**не готова**;общий прототип assets/actors/monsters/skeleton.png|
+|forest-species-025 / forest|forest-spot-025 / 11|Капокулакий орк|newIntegrated|177 / 23 / 9.8 / 79|cleave, roots|[assets/actors/task10-forest-expansion/forest-species-025.png](../../assets/actors/task10-forest-expansion/forest-species-025.png)|
+|forest-species-026 / forest|forest-spot-026 / 16|Тернокостный скелет|newIntegrated|224 / 29 / 9.6 / 83|cleave, venom|[assets/actors/task10-forest-expansion/forest-species-026.png](../../assets/actors/task10-forest-expansion/forest-species-026.png)|
 |forest-species-027 / forest|forest-spot-027 / 14|Дубравный орк «Спинные шипы»|prototypeOnly|233 / 29 / 12.2 / 79|cleave|**не готова**;общий прототип assets/actors/monsters/forestOrc.png|
 |forest-species-028 / forest|forest-spot-028 / 7|Лесной волк «Серповидные когти»|prototypeOnly|146 / 16 / 4.800000000000001 / 90|pounce|**не готова**;общий прототип assets/actors/monsters/forestWolf.png|
 |forest-species-029 / forest|forest-spot-029 / 21|Лесной медведь «Серповидные когти»|prototypeOnly|489 / 44 / 16 / 68|stomp|**не готова**;общий прототип assets/actors/monsters/bear.png|
@@ -91,26 +91,26 @@
 |north-species-004 / north|north-spot-004 / 31|Стихия льда|legacyDistinct|384 / 52 / 13.6 / 82|blink|[assets/actors/monsters/iceElemental.png](../../assets/actors/monsters/iceElemental.png)|
 |north-species-005 / north|north-spot-005 / 26|Снежный медведь|legacyDistinct|349 / 45 / 17.6 / 66|stomp|[assets/actors/monsters/snowBear.png](../../assets/actors/monsters/snowBear.png)|
 |north-species-006 / north|north-spot-006 / 34|Пепельный крылан «Двойной хвост»|prototypeOnly|518 / 60 / 20.8 / 100|shot|**не готова**;общий прототип assets/actors/monsters/snowRaider.png|
-|north-species-007 / north|north-spot-007 / 34|Огненный дух «Двойной хвост»|prototypeOnly|531 / 60 / 19.6 / 112|pounce|**не готова**;общий прототип assets/actors/monsters/iceWolf.png|
-|north-species-008 / north|north-spot-008 / 24|Северный налётчик «Костяная грива»|prototypeOnly|292 / 40 / 12.8 / 100|shot|**не готова**;общий прототип assets/actors/monsters/snowRaider.png|
+|north-species-007 / north|north-spot-007 / 34|Шлаковый шакал|newIntegrated|531 / 60 / 19.6 / 112|pounce, charge|[assets/actors/task10-north-expansion/north-species-007.png](../../assets/actors/task10-north-expansion/north-species-007.png)|
+|north-species-008 / north|north-spot-008 / 24|Костяной налётчик|newIntegrated|292 / 40 / 12.8 / 100|shot, fan|[assets/actors/task10-north-expansion/north-species-008.png](../../assets/actors/task10-north-expansion/north-species-008.png)|
 |north-species-009 / north|north-spot-009 / 35|Призрак перевала|legacyDistinct|413 / 58 / 11.2 / 101|haunt|[assets/actors/monsters/wraith.png](../../assets/actors/monsters/wraith.png)|
-|north-species-010 / north|north-spot-010 / 33|Пепельный крылан «Костяная грива»|prototypeOnly|519 / 57 / 25.6 / 52|stomp|**не готова**;общий прототип assets/actors/monsters/frostGolem.png|
+|north-species-010 / north|north-spot-010 / 33|Печной базальтовый исполин|newIntegrated|519 / 57 / 25.6 / 52|stomp, cleave|[assets/actors/task10-north-expansion/north-species-010.png](../../assets/actors/task10-north-expansion/north-species-010.png)|
 |north-species-011 / north|north-spot-011 / 35|Дух пепельной урны|newIntegrated|413 / 58 / 11.2 / 101|haunt, fan|[assets/actors/task10-further-bestiary/north-species-011.png](../../assets/actors/task10-further-bestiary/north-species-011.png)|
-|north-species-012 / north|north-spot-012 / 24|Снежный медведь «Костяная грива»|prototypeOnly|315 / 41 / 16 / 66|stomp|**не готова**;общий прототип assets/actors/monsters/snowBear.png|
+|north-species-012 / north|north-spot-012 / 24|Венценосный снежный медведь|newIntegrated|315 / 41 / 16 / 66|stomp, charge|[assets/actors/task10-north-expansion/north-species-012.png](../../assets/actors/task10-north-expansion/north-species-012.png)|
 |north-species-013 / north|north-spot-013 / 31|Шлаковый страж «Костяная грива»|prototypeOnly|438 / 54 / 18.4 / 100|shot|**не готова**;общий прототип assets/actors/monsters/snowRaider.png|
-|north-species-014 / north|north-spot-014 / 38|Пепельный крылан «Спинные шипы»|prototypeOnly|539 / 66 / 19.2 / 82|blink|**не готова**;общий прототип assets/actors/monsters/iceElemental.png|
+|north-species-014 / north|north-spot-014 / 38|Обсидиановое веретено|newIntegrated|539 / 66 / 19.2 / 82|blink, fan|[assets/actors/task10-north-expansion/north-species-014.png](../../assets/actors/task10-north-expansion/north-species-014.png)|
 |north-species-015 / north|north-spot-015 / 36|Ледяной хищник «Костяная грива»|prototypeOnly|592 / 64 / 21.200000000000003 / 112|pounce|**не готова**;общий прототип assets/actors/monsters/iceWolf.png|
 |north-species-016 / north|north-spot-016 / 32|Ледокрыл|legacyDistinct|445 / 54 / 14 / 142|dive|[assets/actors/monsters/iceBat.png](../../assets/actors/monsters/iceBat.png)|
 |north-species-017 / north|north-spot-017 / 28|Луннокрылая морозная моль|newIntegrated|346 / 46 / 10.8 / 142|dive, frost|[assets/actors/task10-wild-bestiary/north-species-017.png](../../assets/actors/task10-wild-bestiary/north-species-017.png)|
-|north-species-018 / north|north-spot-018 / 37|Пепельный крылан «Серповидные когти»|prototypeOnly|456 / 62 / 12.8 / 101|haunt|**не готова**;общий прототип assets/actors/monsters/wraith.png|
+|north-species-018 / north|north-spot-018 / 37|Пепельный саванник|newIntegrated|456 / 62 / 12.8 / 101|haunt, blink|[assets/actors/task10-north-expansion/north-species-018.png](../../assets/actors/task10-north-expansion/north-species-018.png)|
 |north-species-019 / north|north-spot-019 / 31|Огненный дух «Спинные шипы»|prototypeOnly|419 / 52 / 13.2 / 142|dive|**не готова**;общий прототип assets/actors/monsters/iceBat.png|
 |north-species-020 / north|north-spot-020 / 25|Ледяной хищник «Спинные шипы»|prototypeOnly|313 / 42 / 12.4 / 112|pounce|**не готова**;общий прототип assets/actors/monsters/iceWolf.png|
-|north-species-021 / north|north-spot-021 / 29|Ледокрыл «Спинные шипы»|prototypeOnly|369 / 48 / 11.600000000000001 / 142|dive|**не готова**;общий прототип assets/actors/monsters/iceBat.png|
+|north-species-021 / north|north-spot-021 / 29|Веерокрыл морозный|newIntegrated|369 / 48 / 11.600000000000001 / 142|dive, frost|[assets/actors/task10-north-expansion/north-species-021.png](../../assets/actors/task10-north-expansion/north-species-021.png)|
 |north-species-022 / north|north-spot-022 / 31|Ледяной исполин «Костяная грива»|prototypeOnly|474 / 53 / 24 / 52|stomp|**не готова**;общий прототип assets/actors/monsters/frostGolem.png|
 |north-species-023 / north|north-spot-023 / 34|Огненный дух «Серповидные когти»|prototypeOnly|518 / 60 / 20.8 / 100|shot|**не готова**;общий прототип assets/actors/monsters/snowRaider.png|
 |north-species-024 / north|north-spot-024 / 23|Ледяной хищник «Серповидные когти»|prototypeOnly|277 / 38 / 10.8 / 112|pounce|**не готова**;общий прототип assets/actors/monsters/iceWolf.png|
 |north-species-025 / north|north-spot-025 / 37|Ледяной хищник «Ветвистые рога»|prototypeOnly|624 / 66 / 22 / 112|pounce|**не готова**;общий прототип assets/actors/monsters/iceWolf.png|
-|north-species-026 / north|north-spot-026 / 35|Стихия льда «Костяная грива»|prototypeOnly|466 / 60 / 16.8 / 82|blink|**не готова**;общий прототип assets/actors/monsters/iceElemental.png|
+|north-species-026 / north|north-spot-026 / 35|Ледяной колокольник|newIntegrated|466 / 60 / 16.8 / 82|blink, frost|[assets/actors/task10-north-expansion/north-species-026.png](../../assets/actors/task10-north-expansion/north-species-026.png)|
 |north-species-027 / north|north-spot-027 / 33|Снежный медведь «Спинные шипы»|prototypeOnly|504 / 59 / 23.2 / 66|stomp|**не готова**;общий прототип assets/actors/monsters/snowBear.png|
 |north-species-028 / north|north-spot-028 / 35|Лавовый гончий «Двойной хвост»|prototypeOnly|413 / 58 / 11.2 / 101|haunt|**не готова**;общий прототип assets/actors/monsters/wraith.png|
 |north-species-029 / north|north-spot-029 / 31|Ледяной исполин «Спинные шипы»|prototypeOnly|474 / 53 / 24 / 52|stomp|**не готова**;общий прототип assets/actors/monsters/frostGolem.png|
@@ -165,13 +165,13 @@
 |ancient-species-002 / ancient|ancient-spot-002 / 39|Рунный скарабей|legacyDistinct|543 / 60 / 33.2 / 76|burrow|[assets/actors/monsters/scarab.png](../../assets/actors/monsters/scarab.png)|
 |ancient-species-003 / ancient|ancient-spot-003 / 40|Рунический скарабей|newIntegrated|564 / 62 / 34 / 76|burrow, fan|[assets/actors/task10-next-bestiary/ancient-species-003.png](../../assets/actors/task10-next-bestiary/ancient-species-003.png)|
 |ancient-species-004 / ancient|ancient-spot-004 / 41|Древний страж|legacyDistinct|636 / 67 / 31.8 / 76|stomp|[assets/actors/monsters/ancientSentinel.png](../../assets/actors/monsters/ancientSentinel.png)|
-|ancient-species-005 / ancient|ancient-spot-005 / 39|Пепельная гадюка «Костяная грива»|prototypeOnly|483 / 62 / 19.2 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
+|ancient-species-005 / ancient|ancient-spot-005 / 39|Костегривая пепельная гадюка|newIntegrated|483 / 62 / 19.2 / 116|pounce, venom|[assets/actors/task10-ancient-expansion/ancient-species-005.png](../../assets/actors/task10-ancient-expansion/ancient-species-005.png)|
 |ancient-species-006 / ancient|ancient-spot-006 / 40|Древняя горгулья|legacyDistinct|554 / 65 / 27.6 / 99|dive|[assets/actors/monsters/ancientGargoyle.png](../../assets/actors/monsters/ancientGargoyle.png)|
 |ancient-species-007 / ancient|ancient-spot-007 / 36|Древний корневой страж|newIntegrated|537 / 57 / 27.8 / 76|stomp, roots|[assets/actors/task10-further-bestiary/ancient-species-007.png](../../assets/actors/task10-further-bestiary/ancient-species-007.png)|
-|ancient-species-008 / ancient|ancient-spot-008 / 40|Древний страж «Спинные шипы»|prototypeOnly|614 / 65 / 31 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
+|ancient-species-008 / ancient|ancient-spot-008 / 40|Обелисковый страж|newIntegrated|614 / 65 / 31 / 76|stomp, roots|[assets/actors/task10-ancient-expansion/ancient-species-008.png](../../assets/actors/task10-ancient-expansion/ancient-species-008.png)|
 |ancient-species-009 / ancient|ancient-spot-009 / 40|Чародейский огонёк|legacyDistinct|443 / 68 / 14.4 / 94|blink|[assets/actors/monsters/arcaneWisp.png](../../assets/actors/monsters/arcaneWisp.png)|
-|ancient-species-010 / ancient|ancient-spot-010 / 42|Чародейский огонёк «Костяная грива»|prototypeOnly|484 / 72 / 16 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
-|ancient-species-011 / ancient|ancient-spot-011 / 37|Рунный скарабей «Спинные шипы»|prototypeOnly|504 / 56 / 31.6 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
+|ancient-species-010 / ancient|ancient-spot-010 / 42|Дух расколотой амфоры|newIntegrated|484 / 72 / 16 / 94|blink, fan|[assets/actors/task10-ancient-expansion/ancient-species-010.png](../../assets/actors/task10-ancient-expansion/ancient-species-010.png)|
+|ancient-species-011 / ancient|ancient-spot-011 / 37|Часовой скарабей руин|newIntegrated|504 / 56 / 31.6 / 76|burrow, cleave|[assets/actors/task10-ancient-expansion/ancient-species-011.png](../../assets/actors/task10-ancient-expansion/ancient-species-011.png)|
 |ancient-species-012 / ancient|ancient-spot-012 / 39|Чародейский огонёк «Спинные шипы»|prototypeOnly|424 / 66 / 13.6 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
 |ancient-species-013 / ancient|ancient-spot-013 / 36|Тростниковый утопленный рыцарь|newIntegrated|545 / 58 / 32 / 73|cleave, venom|[assets/actors/task10-wild-bestiary/ancient-species-013.png](../../assets/actors/task10-wild-bestiary/ancient-species-013.png)|
 |ancient-species-014 / ancient|ancient-spot-014 / 40|Древний страж «Серповидные когти»|prototypeOnly|614 / 65 / 31 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
@@ -179,9 +179,9 @@
 |ancient-species-016 / ancient|ancient-spot-016 / 39|Древний страж «Ветвистые рога»|prototypeOnly|593 / 63 / 30.2 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
 |ancient-species-017 / ancient|ancient-spot-017 / 39|Рунный скарабей «Серповидные когти»|prototypeOnly|543 / 60 / 33.2 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
 |ancient-species-018 / ancient|ancient-spot-018 / 38|Древний страж «Панцирный воротник»|prototypeOnly|573 / 61 / 29.4 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
-|ancient-species-019 / ancient|ancient-spot-019 / 37|Падший рыцарь «Спинные шипы»|prototypeOnly|562 / 60 / 32.8 / 73|cleave|**не готова**;общий прототип assets/actors/monsters/fallenKnight.png|
+|ancient-species-019 / ancient|ancient-spot-019 / 37|Кородоспешный падший рыцарь|newIntegrated|562 / 60 / 32.8 / 73|cleave, roots|[assets/actors/task10-ancient-expansion/ancient-species-019.png](../../assets/actors/task10-ancient-expansion/ancient-species-019.png)|
 |ancient-species-020 / ancient|ancient-spot-020 / 42|Древний страж «Длинные передние лапы»|prototypeOnly|659 / 69 / 32.6 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
-|ancient-species-021 / ancient|ancient-spot-021 / 39|Древняя горгулья «Костяная грива»|prototypeOnly|537 / 63 / 26.8 / 99|dive|**не готова**;общий прототип assets/actors/monsters/ancientGargoyle.png|
+|ancient-species-021 / ancient|ancient-spot-021 / 39|Костеворотная горгулья|newIntegrated|537 / 63 / 26.8 / 99|dive, venom|[assets/actors/task10-ancient-expansion/ancient-species-021.png](../../assets/actors/task10-ancient-expansion/ancient-species-021.png)|
 |ancient-species-022 / ancient|ancient-spot-022 / 38|Древняя горгулья «Спинные шипы»|prototypeOnly|520 / 61 / 26 / 99|dive|**не готова**;общий прототип assets/actors/monsters/ancientGargoyle.png|
 |ancient-species-023 / ancient|ancient-spot-023 / 39|Пепельная гадюка «Серповидные когти»|prototypeOnly|483 / 62 / 19.2 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
 |ancient-species-024 / ancient|ancient-spot-024 / 38|Древняя горгулья «Серповидные когти»|prototypeOnly|520 / 61 / 26 / 99|dive|**не готова**;общий прототип assets/actors/monsters/ancientGargoyle.png|
@@ -189,7 +189,7 @@
 |ancient-species-026 / ancient|ancient-spot-026 / 38|Рунный скарабей «Ветвистые рога»|prototypeOnly|523 / 58 / 32.4 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
 |ancient-species-027 / ancient|ancient-spot-027 / 37|Падший рыцарь «Серповидные когти»|prototypeOnly|562 / 60 / 32.8 / 73|cleave|**не готова**;общий прототип assets/actors/monsters/fallenKnight.png|
 |ancient-species-028 / ancient|ancient-spot-028 / 35|Пепельная гадюка «Панцирный воротник»|prototypeOnly|410 / 54 / 16 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
-|ancient-species-029 / ancient|ancient-spot-029 / 38|Чародейский огонёк «Серповидные когти»|prototypeOnly|407 / 64 / 12.8 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
+|ancient-species-029 / ancient|ancient-spot-029 / 38|Болотный серпоогонёк|newIntegrated|407 / 64 / 12.8 / 94|blink, roots|[assets/actors/task10-ancient-expansion/ancient-species-029.png](../../assets/actors/task10-ancient-expansion/ancient-species-029.png)|
 |ancient-species-030 / ancient|ancient-spot-030 / 37|Пепельная гадюка «Длинные передние лапы»|prototypeOnly|444 / 58 / 17.6 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
 |ancient-species-031 / ancient|ancient-spot-031 / 40|Рунный скарабей «Панцирный воротник»|prototypeOnly|564 / 62 / 34 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
 |ancient-species-032 / ancient|ancient-spot-032 / 40|Стихия пустоты|legacyDistinct|500 / 67 / 15 / 88|blink|[assets/actors/monsters/voidElemental.png](../../assets/actors/monsters/voidElemental.png)|
@@ -201,7 +201,7 @@
 |ancient-species-038 / ancient|ancient-spot-038 / 42|Падший рыцарь «Панцирный воротник»|prototypeOnly|661 / 70 / 36.8 / 73|cleave|**не готова**;общий прототип assets/actors/monsters/fallenKnight.png|
 |ancient-species-039 / ancient|ancient-spot-039 / 39|Рунный скарабей «Три бивня»|prototypeOnly|543 / 60 / 33.2 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
 |ancient-species-040 / ancient|ancient-spot-040 / 41|Стихия пустоты «Костяная грива»|prototypeOnly|517 / 69 / 15.8 / 88|blink|**не готова**;общий прототип assets/actors/monsters/voidElemental.png|
-|ancient-species-041 / ancient|ancient-spot-041 / 35|Рунный скарабей «Грибная корона»|prototypeOnly|470 / 52 / 30 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
+|ancient-species-041 / ancient|ancient-spot-041 / 35|Грибокоронный скарабей|newIntegrated|470 / 52 / 30 / 76|burrow, roots|[assets/actors/task10-ancient-expansion/ancient-species-041.png](../../assets/actors/task10-ancient-expansion/ancient-species-041.png)|
 |ancient-species-042 / ancient|ancient-spot-042 / 41|Древняя горгулья «Панцирный воротник»|prototypeOnly|573 / 67 / 28.4 / 99|dive|**не готова**;общий прототип assets/actors/monsters/ancientGargoyle.png|
 |ancient-species-043 / ancient|ancient-spot-043 / 40|Чародейский огонёк «Ветвистые рога»|prototypeOnly|443 / 68 / 14.4 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
 |ancient-species-044 / ancient|ancient-spot-044 / 41|Пепельная гадюка «Грибная корона»|prototypeOnly|526 / 66 / 20.8 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
@@ -211,15 +211,15 @@
 |desert-species-003 / desert|desert-spot-003 / 42|Дух солнечной пыли|newIntegrated|484 / 72 / 16 / 94|blink|[assets/actors/task10-species/desert-species-003.png](../../assets/actors/task10-species/desert-species-003.png)|
 |desert-species-004 / desert|desert-spot-004 / 52|Терракотовый страж|newIntegrated|951 / 89 / 40.6 / 76|stomp|[assets/actors/task10-species/desert-species-004.png](../../assets/actors/task10-species/desert-species-004.png)|
 |desert-species-005 / desert|desert-spot-005 / 55|Жук-носорог дюн|newIntegrated|1010 / 92 / 46 / 76|burrow|[assets/actors/task10-species/desert-species-005.png](../../assets/actors/task10-species/desert-species-005.png)|
-|desert-species-006 / desert|desert-spot-006 / 52|Живой игольный кактус «Двойной хвост»|prototypeOnly|841 / 88 / 29.6 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
+|desert-species-006 / desert|desert-spot-006 / 52|Стеклогребневая змея|newIntegrated|841 / 88 / 29.6 / 116|pounce, burrow|[assets/actors/task10-desert-expansion/desert-species-006.png](../../assets/actors/task10-desert-expansion/desert-species-006.png)|
 |desert-species-007 / desert|desert-spot-007 / 50|Дух песочных часов|newIntegrated|691 / 88 / 22.4 / 94|blink, fan|[assets/actors/task10-wild-bestiary/desert-species-007.png](../../assets/actors/task10-wild-bestiary/desert-species-007.png)|
-|desert-species-008 / desert|desert-spot-008 / 48|Живой игольный кактус «Спинные шипы»|prototypeOnly|821 / 81 / 37.4 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
-|desert-species-009 / desert|desert-spot-009 / 44|Живой игольный кактус «Серповидные когти»|prototypeOnly|659 / 70 / 37.2 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
-|desert-species-010 / desert|desert-spot-010 / 50|Живой игольный кактус «Ветвистые рога»|prototypeOnly|691 / 88 / 22.4 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
-|desert-species-011 / desert|desert-spot-011 / 56|Живой игольный кактус «Панцирный воротник»|prototypeOnly|989 / 96 / 32.8 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
-|desert-species-012 / desert|desert-spot-012 / 46|Пустынный змей «Двойной хвост»|prototypeOnly|713 / 74 / 38.8 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
-|desert-species-013 / desert|desert-spot-013 / 52|Пустынный змей «Костяная грива»|prototypeOnly|951 / 89 / 40.6 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|
-|desert-species-014 / desert|desert-spot-014 / 53|Пустынный змей «Спинные шипы»|prototypeOnly|787 / 94 / 24.8 / 94|blink|**не готова**;общий прототип assets/actors/monsters/arcaneWisp.png|
+|desert-species-008 / desert|desert-spot-008 / 48|Печеспинный ходок|newIntegrated|821 / 81 / 37.4 / 76|stomp, charge|[assets/actors/task10-desert-expansion/desert-species-008.png](../../assets/actors/task10-desert-expansion/desert-species-008.png)|
+|desert-species-009 / desert|desert-spot-009 / 44|Саблезубый дюнный жук|newIntegrated|659 / 70 / 37.2 / 76|burrow, pounce|[assets/actors/task10-desert-expansion/desert-species-009.png](../../assets/actors/task10-desert-expansion/desert-species-009.png)|
+|desert-species-010 / desert|desert-spot-010 / 50|Ленточный дух миража|newIntegrated|691 / 88 / 22.4 / 94|blink, dive|[assets/actors/task10-desert-expansion/desert-species-010.png](../../assets/actors/task10-desert-expansion/desert-species-010.png)|
+|desert-species-011 / desert|desert-spot-011 / 56|Шиповенчанный песчаный угорь|newIntegrated|989 / 96 / 32.8 / 116|pounce, burrow|[assets/actors/task10-desert-expansion/desert-species-011.png](../../assets/actors/task10-desert-expansion/desert-species-011.png)|
+|desert-species-012 / desert|desert-spot-012 / 46|Песчаный краб-сито|newIntegrated|713 / 74 / 38.8 / 76|burrow, pounce|[assets/actors/task10-desert-expansion/desert-species-012.png](../../assets/actors/task10-desert-expansion/desert-species-012.png)|
+|desert-species-013 / desert|desert-spot-013 / 52|Кактусовый колокол|newIntegrated|951 / 89 / 40.6 / 76|stomp, charge|[assets/actors/task10-desert-expansion/desert-species-013.png](../../assets/actors/task10-desert-expansion/desert-species-013.png)|
+|desert-species-014 / desert|desert-spot-014 / 53|Луч солнечных часов|newIntegrated|787 / 94 / 24.8 / 94|blink, dive|[assets/actors/task10-desert-expansion/desert-species-014.png](../../assets/actors/task10-desert-expansion/desert-species-014.png)|
 |desert-species-015 / desert|desert-spot-015 / 53|Пустынный змей «Серповидные когти»|prototypeOnly|876 / 90 / 30.4 / 116|pounce|**не готова**;общий прототип assets/actors/monsters/desertSnake.png|
 |desert-species-016 / desert|desert-spot-016 / 47|Пустынный змей «Ветвистые рога»|prototypeOnly|741 / 76 / 39.6 / 76|burrow|**не готова**;общий прототип assets/actors/monsters/scarab.png|
 |desert-species-017 / desert|desert-spot-017 / 51|Пустынный змей «Панцирный воротник»|prototypeOnly|917 / 87 / 39.8 / 76|stomp|**не готова**;общий прототип assets/actors/monsters/ancientSentinel.png|

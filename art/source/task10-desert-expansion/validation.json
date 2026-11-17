@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": true,
+  "browserAccepted": false,
+  "models": [
+    {
+      "id": "desert-species-006",
+      "image": "assets/actors/task10-desert-expansion/desert-species-006.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-006.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1189,
+      "rgbaBytes": 4718592,
+      "sha256": "e3266a7104d66478ff3db418422d99c3dca9b1d4ea81c21c78156f1d45d51728",
+      "scale": 1.2063492063492063,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-008",
+      "image": "assets/actors/task10-desert-expansion/desert-species-008.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-008.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 2617,
+      "rgbaBytes": 4718592,
+      "sha256": "f49e29ad79cc9fa4b137df043683017a3474280af06be42cf36f6c69bd476171",
+      "scale": 1.027027027027027,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-009",
+      "image": "assets/actors/task10-desert-expansion/desert-species-009.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-009.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 957,
+      "rgbaBytes": 4718592,
+      "sha256": "f4d7f849954165015cff7e1307b53d7c2415fdbe03884427ec11a54cb5b63abc",
+      "scale": 1.3818181818181818,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-010",
+      "image": "assets/actors/task10-desert-expansion/desert-species-010.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-010.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1144,
+      "rgbaBytes": 4718592,
+      "sha256": "e14bdd767578a4b0c9c8f45821bf1450fe63a36dc9d071c22fd47c86b7c041b0",
+      "scale": 1.0704225352112675,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-011",
+      "image": "assets/actors/task10-desert-expansion/desert-species-011.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-011.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1417,
+      "rgbaBytes": 4718592,
+      "sha256": "98ddfdaa210a03d07b9115d23b538a4e7a83fb03779e0c81d223df51679bebc4",
+      "scale": 1.1176470588235294,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-012",
+      "image": "assets/actors/task10-desert-expansion/desert-species-012.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-012.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 905,
+      "rgbaBytes": 4718592,
+      "sha256": "1c143a74092caf43560c98ae86a558e111e883e39bdb0558c3d2368905610464",
+      "scale": 1.5833333333333333,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-013",
+      "image": "assets/actors/task10-desert-expansion/desert-species-013.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-013.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 2046,
+      "rgbaBytes": 4718592,
+      "sha256": "126ac651edb236a8e9229bd6e675b6c9d8fa16b304ed92e845c27a0ddf568925",
+      "scale": 0.9156626506024096,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-014",
+      "image": "assets/actors/task10-desert-expansion/desert-species-014.png",
+      "atlas": "assets/actors/task10-desert-expansion/desert-species-014.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 687,
+      "rgbaBytes": 4718592,
+      "sha256": "221b130ba5f1a996bc75d4fb341aa439e61ae24652698f6c10a8d0d03a3a6d7e",
+      "scale": 1.5510204081632653,
+      "annotationHeight": 88
+    }
+  ]
+}
