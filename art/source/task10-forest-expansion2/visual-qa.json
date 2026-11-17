@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "reviewedModels": 8,
+  "reviewedPoses": 384,
+  "method": "Assistant visual inspection of every final beige-composited pose",
+  "repairedSourceBleed": [
+    "017",
+    "018",
+    "020",
+    "031",
+    "055",
+    "058"
+  ],
+  "boarBackground": "Rejected first reflow background, preserved v1; final imagegen transparent cutout inspected",
+  "checks": [
+    "Complete full bodies and extremities",
+    "No neighboring fragments",
+    "Distinct states and eight directions",
+    "Actual catalog archetypes, four woodland and four abandoned-city"
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "physicalAndroid": false,
+  "publicUrl": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "expectedSource": "f36bd7b2e13f0ec03cd0b9e8b3a1bd0d4364b616",
+  "scope": "Chromium emulated landscape touchscreen; prepared level/position/inventory-capacity/storage/clock fixtures. Every flower originates from actual Canvas touch.",
+  "records": [
+    {
+      "language": "en",
+      "width": 740,
+      "height": 320,
+      "flows": [
+        {
+          "quest": "task10-moonflower-supplies",
+          "region": "forest",
+          "touches": [
+            {
+              "x": 370.018359375,
+              "y": 143.59273632812494,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower",
+              "nextObjective": "gather-forest-01"
+            },
+            {
+              "x": 370.09287109375,
+              "y": 143.49344433593743,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            },
+            {
+              "x": 370.029296875,
+              "y": 143.70604199218744,
+              "touchDiameter": 44,
+              "frame": "forestMoonflower"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-frost-herb-supplies",
+          "region": "north",
+          "touches": [
+            {
+              "x": 370.28974609374995,
+              "y": 145.72683398437502,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb",
+              "nextObjective": "gather-north-01"
+            },
+            {
+              "x": 370.28154296875,
+              "y": 145.3496611328125,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            },
+            {
+              "x": 369.68681640625,
+              "y": 145.34256884765625,
+              "touchDiameter": 44,
+              "frame": "northFrostHerb"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "northFrostHerb",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-star-bloom-supplies",
+          "region": "ancient",
+          "touches": [
+            {
+              "x": 369.60341796874997,
+              "y": 143.1570375976562,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom",
+              "nextObjective": "gather-ancient-01"
+            },
+            {
+              "x": 370.12568359374995,
+              "y": 143.49439111328118,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            },
+            {
+              "x": 370.29521484375,
+              "y": 143.22531152343743,
+              "touchDiameter": 44,
+              "frame": "ancientStarBloom"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "ancientStarBloom",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        },
+        {
+          "quest": "task10-sunleaf-supplies",
+          "region": "desert",
+          "touches": [
+            {
+              "x": 370.14003906249997,
+              "y": 145.55099316406253,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf",
+              "nextObjective": "gather-desert-01"
+            },
+            {
+              "x": 370.03681640624995,
+              "y": 145.24183789062502,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            },
+            {
+              "x": 369.93427734374995,
+              "y": 144.93276806640628,
+              "touchDiameter": 44,
+              "frame": "desertSunleaf"
+            }
+          ],
+          "earned": {
+            "state": "completed",
+            "progress": 3,
+            "required": 3,
+            "inventory": [
+              {
+                "id": "desertSunleaf",
+                "rarity": "common",
+                "quantity": 3
+              }
+            ]
+          }
+        }
+      ],
+      "edges": {
+        "radius86": "rejected actual Canvas tap",
+        "radius85": "accepted",
+        "repeat": "no duplicate",
+        "chunkReload": "deadline preserved",
+        "characterReload": "material and cooldown preserved",
+        "slots": [
+          {
+            "slot": 1,
+            "name": "GatherSlot1",
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 1
+              }
+            ],
+            "meta": {
+              "version": 1,
+              "nodes": {
+                "gather-forest-00": {
+                  "pickedAt": 1794936298365,
+                  "readyAt": 1794936898365
+                },
+                "gather-forest-01": {
+                  "pickedAt": 1794936299548,
+                  "readyAt": 1794936899548
+                },
+                "gather-forest-02": {
+                  "pickedAt": 1794936300541,
+                  "readyAt": 1794936900541
+                },
+                "gather-north-00": {
+                  "pickedAt": 1794936310052,
+                  "readyAt": 1794936910052
+                },
+                "gather-north-01": {
+                  "pickedAt": 1794936311748,
+                  "readyAt": 1794936911748
+                },
+                "gather-north-02": {
+                  "pickedAt": 1794936312861,
+                  "readyAt": 1794936912861
+                },
+                "gather-ancient-00": {
+                  "pickedAt": 1794936319852,
+                  "readyAt": 1794936919852
+                },
+                "gather-ancient-01": {
+                  "pickedAt": 1794936321071,
+                  "readyAt": 1794936921071
+                },
+                "gather-ancient-02": {
+                  "pickedAt": 1794936322382,
+                  "readyAt": 1794936922382
+                },
+                "gather-desert-00": {
+                  "pickedAt": 1794936329306,
+                  "readyAt": 1794936929306
+                },
+                "gather-desert-01": {
+                  "pickedAt": 1794936330739,
+                  "readyAt": 1794936930739
+                },
+                "gather-desert-02": {
+                  "pickedAt": 1794936331955,
+                  "readyAt": 1794936931955
+                },
+                "gather-forest-03": {
+                  "pickedAt": 1794936337379,
+                  "readyAt": 1794936937379
+                }
+              }
+            }
+          },
+          {
+            "slot": 2,
+            "name": "GatherSlot2",
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 1
+              }
+            ],
+            "meta": {
+              "version": 1,
+              "nodes": {
+                "gather-forest-00": {
+                  "pickedAt": 1794936298365,
+                  "readyAt": 1794936898365
+                },
+                "gather-forest-01": {
+                  "pickedAt": 1794936299548,
+                  "readyAt": 1794936899548
+                },
+                "gather-forest-02": {
+                  "pickedAt": 1794936300541,
+                  "readyAt": 1794936900541
+                },
+                "gather-north-00": {
+                  "pickedAt": 1794936310052,
+                  "readyAt": 1794936910052
+                },
+                "gather-north-01": {
+                  "pickedAt": 1794936311748,
+                  "readyAt": 1794936911748
+                },
+                "gather-north-02": {
+                  "pickedAt": 1794936312861,
+                  "readyAt": 1794936912861
+                },
+                "gather-ancient-00": {
+                  "pickedAt": 1794936319852,
+                  "readyAt": 1794936919852
+                },
+                "gather-ancient-01": {
+                  "pickedAt": 1794936321071,
+                  "readyAt": 1794936921071
+                },
+                "gather-ancient-02": {
+                  "pickedAt": 1794936322382,
+                  "readyAt": 1794936922382
+                },
+                "gather-desert-00": {
+                  "pickedAt": 1794936329306,
+                  "readyAt": 1794936929306
+                },
+                "gather-desert-01": {
+                  "pickedAt": 1794936330739,
+                  "readyAt": 1794936930739
+                },
+                "gather-desert-02": {
+                  "pickedAt": 1794936331955,
+                  "readyAt": 1794936931955
+                },
+                "gather-forest-03": {
+                  "pickedAt": 1794936337379,
+                  "readyAt": 1794936937379
+                }
+              }
+            }
+          },
+          {
+            "slot": 3,
+            "name": "GatherSlot3",
+            "inventory": [
+              {
+                "id": "forestMoonflower",
+                "rarity": "common",
+                "quantity": 1
+              }
+            ],
+            "meta": {
+              "version": 1,
+              "nodes": {
+                "gather-forest-00": {
+                  "pickedAt": 1794936298365,
+                  "readyAt": 1794936898365
+                },
+                "gather-forest-01": {
+                  "pickedAt": 1794936299548,
+                  "readyAt": 1794936899548
+                },
+                "gather-forest-02": {
+                  "pickedAt": 1794936300541,
+                  "readyAt": 1794936900541
+                },
+                "gather-north-00": {
+                  "pickedAt": 1794936310052,
+                  "readyAt": 1794936910052
+                },
+                "gather-north-01": {
+                  "pickedAt": 1794936311748,
+                  "readyAt": 1794936911748
+                },
+                "gather-north-02": {
+                  "pickedAt": 1794936312861,
+                  "readyAt": 1794936912861
+                },
+                "gather-ancient-00": {
+                  "pickedAt": 1794936319852,
+                  "readyAt": 1794936919852
+                },
+                "gather-ancient-01": {
+                  "pickedAt": 1794936321071,
+                  "readyAt": 1794936921071
+                },
+                "gather-ancient-02": {
+                  "pickedAt": 1794936322382,
+                  "readyAt": 1794936922382
+                },
+                "gather-desert-00": {
+                  "pickedAt": 1794936329306,
+                  "readyAt": 1794936929306
+                },
+                "gather-desert-01": {
+                  "pickedAt": 1794936330739,
+                  "readyAt": 1794936930739
+                },
+                "gather-desert-02": {
+                  "pickedAt": 1794936331955,
+                  "readyAt": 1794936931955
+                },
+                "gather-forest-03": {
+                  "pickedAt": 1794936337379,
+                  "readyAt": 1794936937379
+                }
+              }
+            }
+          }
+        ],
+        "fullBag": "60 slots remain unchanged; plant remains",
+        "quota": "inventory and deadline atomically restored; stored save unchanged",
+        "pause": "public pause hub plus guarded real actor callback gives no material",
+        "dead": "no gather",
+        "clockRestore": {
+          "nextUpdate": 11525.29999999702,
+          "now": 11405.5
+        },
+        "regrowth": "hidden through readyAt-1; actual tap succeeds at600000ms",
+        "oneLease": {
+          "visibleGatheringNodes": 2,
+          "gatheringAtlasResident": true,
+          "gatheringGeneration": 4,
+          "refs": 1,
+          "ready": true
+        },
+        "far": {
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 5,
+          "cached": false
+        },
+        "dungeon": {
+          "ok": true,
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 8,
+          "blocked": true
+        },
+        "destroy": {
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 11,
+          "cached": false
+        },
+        "late": {
+          "releases": 1,
+          "visibleGatheringNodes": 0,
+          "gatheringAtlasResident": false,
+          "gatheringGeneration": 1,
+          "closed": true
+        }
+      },
+      "errors": []
+    }
+  ]
+}

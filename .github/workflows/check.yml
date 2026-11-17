@@ -469,8 +469,8 @@ jobs:
           chrome_path="$(command -v google-chrome)"
           test -x "$chrome_path"
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
-      - name: Eight original regional species,real abilities,384poses,locales,reload and texture ownership
-        run: npm run test:browser:task10-${{ matrix.region }}-expansion
+      - name: Sixteen original regional species,real abilities,768poses,locales,reload and texture ownership
+        run: npm run test:browser:task10-${{ matrix.region }}-expansion && npm run test:browser:task10-${{ matrix.region }}-expansion2
       - uses: actions/upload-artifact@v4
         if: always()
         with:

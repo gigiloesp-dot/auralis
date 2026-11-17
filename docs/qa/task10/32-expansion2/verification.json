@@ -1,0 +1,297 @@
+{
+  "count": 32,
+  "poses": 1536,
+  "records": [
+    {
+      "id": "forest-species-017",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "haunt"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "forest-species-018",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "venom"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "forest-species-020",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "roots"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "forest-species-024",
+      "poses": 48,
+      "abilitiesReleased": [
+        "dive",
+        "venom"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "forest-species-031",
+      "poses": 48,
+      "abilitiesReleased": [
+        "charge",
+        "stomp"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "forest-species-034",
+      "poses": 48,
+      "abilitiesReleased": [
+        "venom",
+        "roots"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "forest-species-055",
+      "poses": 48,
+      "abilitiesReleased": [
+        "shot",
+        "haunt"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "forest-species-058",
+      "poses": 48,
+      "abilitiesReleased": [
+        "cleave",
+        "roots"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-015",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "frost"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-022",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "frost"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-027",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "charge"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-030",
+      "poses": 48,
+      "abilitiesReleased": [
+        "dive",
+        "frost"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-006",
+      "poses": 48,
+      "abilitiesReleased": [
+        "shot",
+        "fan"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-019",
+      "poses": 48,
+      "abilitiesReleased": [
+        "dive",
+        "venom"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-028",
+      "poses": 48,
+      "abilitiesReleased": [
+        "haunt",
+        "blink"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "north-species-037",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "cleave"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-012",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "fan"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-014",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "cleave"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-017",
+      "poses": 48,
+      "abilitiesReleased": [
+        "burrow",
+        "venom"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-020",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "charge"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-023",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "cleave"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-027",
+      "poses": 48,
+      "abilitiesReleased": [
+        "cleave",
+        "venom"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-028",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "roots"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "ancient-species-036",
+      "poses": 48,
+      "abilitiesReleased": [
+        "dive",
+        "fan"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-015",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "venom"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-016",
+      "poses": 48,
+      "abilitiesReleased": [
+        "burrow",
+        "cleave"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-017",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "roots"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-018",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "fan"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-019",
+      "poses": 48,
+      "abilitiesReleased": [
+        "pounce",
+        "venom"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-021",
+      "poses": 48,
+      "abilitiesReleased": [
+        "blink",
+        "fan"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-022",
+      "poses": 48,
+      "abilitiesReleased": [
+        "stomp",
+        "roots"
+      ],
+      "reloadAlive": false
+    },
+    {
+      "id": "desert-species-027",
+      "poses": 48,
+      "abilitiesReleased": [
+        "burrow",
+        "cleave"
+      ],
+      "reloadAlive": false
+    }
+  ],
+  "unitPassed": 467,
+  "physicalAndroid": false,
+  "scope": "PreparedHP/positions; actualPhaser/AIreleases/RUENES/death/30s/Continue/reload/texturecleanup. Invalid17charAncientExpansion2 testname shortened to11charAncientExp2; product16charlimit preserved."
+}

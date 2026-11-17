@@ -1,0 +1,230 @@
+{
+  "status": "art-only-validated",
+  "runtimeRegistered": false,
+  "species": [
+    {
+      "id": "ancient-species-012",
+      "names": {
+        "ru": "Костезвонный огонёк",
+        "en": "Spine-chime wisp",
+        "es": "Fuego de campanillas óseas"
+      },
+      "baseType": "arcaneWisp",
+      "biome": "elder-ruins",
+      "level": 39,
+      "spotId": "ancient-spot-012",
+      "movement": "flight",
+      "locomotion": "hover",
+      "silhouette": "Diamond-shaped fossil rib cage around sapphire eye with compact brass bell skirt; no limbs.",
+      "proposedAbilityPattern": [
+        "blink",
+        "fan"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-014",
+      "names": {
+        "ru": "Серпорукий страж пустошей",
+        "en": "Sickle-handed waste sentinel",
+        "es": "Centinela de hoces del yermo"
+      },
+      "baseType": "ancientSentinel",
+      "biome": "elder-wastes",
+      "level": 40,
+      "spotId": "ancient-spot-014",
+      "movement": "ground",
+      "locomotion": "heavy",
+      "silhouette": "Massive low oxblood-slate biped with crescent forearms and short stump legs.",
+      "proposedAbilityPattern": [
+        "stomp",
+        "cleave"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-017",
+      "names": {
+        "ru": "Болотный серпожук",
+        "en": "Bog-sickle scarab",
+        "es": "Escarabajo de hoces del pantano"
+      },
+      "baseType": "scarab",
+      "biome": "elder-marsh",
+      "level": 39,
+      "spotId": "ancient-spot-017",
+      "movement": "ground",
+      "locomotion": "crawler",
+      "silhouette": "Flat peat-black shield beetle with duckweed mantle, six legs and curved digging mandibles.",
+      "proposedAbilityPattern": [
+        "burrow",
+        "venom"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-020",
+      "names": {
+        "ru": "Длиннорукий страж акведука",
+        "en": "Long-arm aqueduct sentinel",
+        "es": "Centinela del acueducto de brazos largos"
+      },
+      "baseType": "ancientSentinel",
+      "biome": "elder-dry",
+      "level": 42,
+      "spotId": "ancient-spot-020",
+      "movement": "ground",
+      "locomotion": "heavy",
+      "silhouette": "Knuckle-walking sandstone guardian with blue mosaics, long front arms and aqueduct bridge back.",
+      "proposedAbilityPattern": [
+        "stomp",
+        "charge"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-023",
+      "names": {
+        "ru": "Лунночелюстная гадюка",
+        "en": "Crescent-jawed mystic viper",
+        "es": "Víbora mística de mandíbula lunar"
+      },
+      "baseType": "desertSnake",
+      "biome": "elder-mystic",
+      "level": 39,
+      "spotId": "ancient-spot-023",
+      "movement": "ground",
+      "locomotion": "serpent",
+      "silhouette": "Low indigo coiled legless serpent with ivory crescent cheek blades and blunt paddle tail.",
+      "proposedAbilityPattern": [
+        "pounce",
+        "cleave"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-027",
+      "names": {
+        "ru": "Серпорукий утопленный рыцарь",
+        "en": "Sickle-gauntlet drowned knight",
+        "es": "Caballero ahogado de guanteletes de hoz"
+      },
+      "baseType": "fallenKnight",
+      "biome": "elder-marsh",
+      "level": 37,
+      "spotId": "ancient-spot-027",
+      "movement": "ground",
+      "locomotion": "biped",
+      "silhouette": "Slender corroded copper biped with funnel diving helm, paired sickle hands and reed skirt.",
+      "proposedAbilityPattern": [
+        "cleave",
+        "venom"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-028",
+      "names": {
+        "ru": "Щитоворотная лесная гадюка",
+        "en": "Shield-collar forest viper",
+        "es": "Víbora del bosque de gola escudo"
+      },
+      "baseType": "desertSnake",
+      "biome": "elder-forest",
+      "level": 35,
+      "spotId": "ancient-spot-028",
+      "movement": "ground",
+      "locomotion": "serpent",
+      "silhouette": "Coiled moss-green legless snake beneath a large circular acorn-cup bark armor collar.",
+      "proposedAbilityPattern": [
+        "pounce",
+        "roots"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-036",
+      "names": {
+        "ru": "Рогокрылая солнечная горгулья",
+        "en": "Antler-winged sun gargoyle",
+        "es": "Gárgola solar de astas aladas"
+      },
+      "baseType": "ancientGargoyle",
+      "biome": "elder-dry",
+      "level": 42,
+      "spotId": "ancient-spot-036",
+      "movement": "flight",
+      "locomotion": "winged",
+      "silhouette": "Compact sandstone owl-drake with red mineral bands, narrow bat wings and forked antlers.",
+      "proposedAbilityPattern": [
+        "dive",
+        "fan"
+      ],
+      "proposedAbilityBounds": {
+        "range": 220,
+        "cooldownMs": 7000,
+        "windupMs": 750,
+        "radius": 50,
+        "multiplier": 0.9
+      },
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    }
+  ]
+}

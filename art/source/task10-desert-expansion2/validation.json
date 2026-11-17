@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "browserAccepted": false,
+  "models": [
+    {
+      "id": "desert-species-015",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-015.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-015.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1234,
+      "rgbaBytes": 4718592,
+      "sha256": "d8d417e1452262717ce0971f1f4027d4356511fe4153f843634480815bbab018",
+      "scale": 1.1875,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-016",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-016.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-016.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1339,
+      "rgbaBytes": 4718592,
+      "sha256": "6ea14dc0921da3a5564f356e1f03e9bc39de6c4e18d48481c8d7c4766ee62654",
+      "scale": 1.2881355932203389,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-017",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-017.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-017.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1298,
+      "rgbaBytes": 4718592,
+      "sha256": "5ce968050db6d9c6942b61a84f1f2825024778564bb4ca423f3909ed6a81a0c4",
+      "scale": 1.1014492753623188,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-018",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-018.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-018.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1509,
+      "rgbaBytes": 4718592,
+      "sha256": "4861dc7c32cf16ef73602dfd4f935d349ae46ef20ef0f82e7145f3f95ce848b0",
+      "scale": 1.1176470588235294,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-019",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-019.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-019.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1033,
+      "rgbaBytes": 4718592,
+      "sha256": "e893858514485ad27ec3f06fb987372cd25ed22bf9b2cde392de6dfd538700e6",
+      "scale": 1.1343283582089552,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-021",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-021.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-021.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 905,
+      "rgbaBytes": 4718592,
+      "sha256": "93ddf14dd69a34524b744f3e13e05dd8c430ea405c86fb5b5771d980e0f0e2c4",
+      "scale": 1.1176470588235294,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-022",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-022.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-022.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 2005,
+      "rgbaBytes": 4718592,
+      "sha256": "0a624116525a087b72f09a1ada25d0e05ccbd4b27ace10babfc6c9fc5195a35f",
+      "scale": 1.1692307692307693,
+      "annotationHeight": 88
+    },
+    {
+      "id": "desert-species-027",
+      "image": "assets/actors/task10-desert-expansion2/desert-species-027.png",
+      "atlas": "assets/actors/task10-desert-expansion2/desert-species-027.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 891,
+      "rgbaBytes": 4718592,
+      "sha256": "267df10d5e77ae5ff9cdc6fa3fda2ba79b7262d214df899642dc31f0cfb70e9f",
+      "scale": 1.1692307692307693,
+      "annotationHeight": 88
+    }
+  ]
+}

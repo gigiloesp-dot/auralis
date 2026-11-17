@@ -1,0 +1,13 @@
+CHECKPOINT actual releases ancient-species-012
+CHECKPOINT texture released ancient-species-012
+CHECKPOINT page reloaded ancient-species-012
+locator.tap: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.slot-row').filter({ hasText: 'AncientExpansion2' }).locator('button.primary')[22m
+
+    at /workspace/auralis/tests/browser-task10-ancient-expansion2.cjs:12:1296 {
+  log: [
+    "  - waiting for locator('.slot-row').filter({ hasText: 'AncientExpansion2' }).locator('button.primary')"
+  ],
+  name: 'TimeoutError'
+}

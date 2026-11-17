@@ -61,6 +61,41 @@ export const NEW_SPECIES=Object.freeze({
  "north-species-014":Object.freeze({names:{"ru":"Обсидиановое веретено","en":"Obsidian spindle elemental","es":"Elemental huso de obsidiana"},abilityConfig:Object.freeze({abilityPattern:["blink","fan"]})}),
  "north-species-018":Object.freeze({names:{"ru":"Пепельный саванник","en":"Cinder-shroud revenant","es":"Aparecido del sudario de ceniza"},abilityConfig:Object.freeze({abilityPattern:["haunt","blink"]})}),
  "north-species-021":Object.freeze({names:{"ru":"Веерокрыл морозный","en":"Frost fanwing bat","es":"Murciélago abanico de escarcha"},abilityConfig:Object.freeze({abilityPattern:["dive","frost"]})}),
- "north-species-026":Object.freeze({names:{"ru":"Ледяной колокольник","en":"Suspended ice-bell elemental","es":"Elemental campana de hielo"},abilityConfig:Object.freeze({abilityPattern:["blink","frost"]})})
+ "north-species-026":Object.freeze({names:{"ru":"Ледяной колокольник","en":"Suspended ice-bell elemental","es":"Elemental campana de hielo"},abilityConfig:Object.freeze({abilityPattern:["blink","frost"]})}),
+ // Eight further forest identities preserve base stats, drops, bounds and timing.
+ "forest-species-017":Object.freeze({names:{"ru":"Колокольный волк руин","en":"Bell-throated ruin wolf","es":"Lobo campanero de las ruinas"},abilityConfig:Object.freeze({abilityPattern:["pounce","haunt"]})}),
+ "forest-species-018":Object.freeze({names:{"ru":"Орешниковый удав","en":"Hazelnut coil adder","es":"Víbora de avellanas"},abilityConfig:Object.freeze({abilityPattern:["pounce","venom"]})}),
+ "forest-species-020":Object.freeze({names:{"ru":"Сотовый медведь","en":"Honeycomb-maw bear","es":"Oso de panales"},abilityConfig:Object.freeze({abilityPattern:["stomp","roots"]})}),
+ "forest-species-024":Object.freeze({names:{"ru":"Веретенохвостая крылатка","en":"Spindle-tailed bat","es":"Murciélago de cola de huso"},abilityConfig:Object.freeze({abilityPattern:["dive","venom"]})}),
+ "forest-species-031":Object.freeze({names:{"ru":"Дымоходный секач","en":"Chimney-bristle ruin boar","es":"Jabalí de chimeneas"},abilityConfig:Object.freeze({abilityPattern:["charge","stomp"]})}),
+ "forest-species-034":Object.freeze({names:{"ru":"Клеверный листожвал","en":"Clover-mandible spider","es":"Araña de mandíbulas de trébol"},abilityConfig:Object.freeze({abilityPattern:["venom","roots"]})}),
+ "forest-species-055":Object.freeze({names:{"ru":"Черепичный разбойник","en":"Shingle-shield ruin raider","es":"Bandido de escudo de tejas"},abilityConfig:Object.freeze({abilityPattern:["shot","haunt"]})}),
+ "forest-species-058":Object.freeze({names:{"ru":"Скелет железных врат","en":"Iron-gate skeleton","es":"Esqueleto de la reja de hierro"},abilityConfig:Object.freeze({abilityPattern:["cleave","roots"]})}),
+ // Eight further north identities preserve all base stats, drops, geometry and timing.
+ "north-species-015":Object.freeze({names:{"ru":"Парусоспинный песец","en":"Sailspine snow fox","es":"Zorro níveo de velas dorsales"},abilityConfig:Object.freeze({abilityPattern:["pounce","frost"]})}),
+ "north-species-022":Object.freeze({names:{"ru":"Ледниковый курганник","en":"Glacier cairn giant","es":"Gigante de túmulo glaciar"},abilityConfig:Object.freeze({abilityPattern:["stomp","frost"]})}),
+ "north-species-027":Object.freeze({names:{"ru":"Бивнебородый белый медведь","en":"Tuskbearded polar mauler","es":"Oso polar de barba de colmillos"},abilityConfig:Object.freeze({abilityPattern:["stomp","charge"]})}),
+ "north-species-030":Object.freeze({names:{"ru":"Снеголикий совокрыл","en":"Snowmask owl bat","es":"Murciélago lechuza de máscara nívea"},abilityConfig:Object.freeze({abilityPattern:["dive","frost"]})}),
+ "north-species-006":Object.freeze({names:{"ru":"Обсидиановый пращник","en":"Obsidian sling kobold","es":"Kóbold de honda obsidiana"},abilityConfig:Object.freeze({abilityPattern:["shot","fan"]})}),
+ "north-species-019":Object.freeze({names:{"ru":"Углекрылая манта","en":"Ember manta bat","es":"Murciélago manta de brasas"},abilityConfig:Object.freeze({abilityPattern:["dive","venom"]})}),
+ "north-species-028":Object.freeze({names:{"ru":"Цепефонарный пепельник","en":"Chainlantern ash wraith","es":"Espectro de ceniza del farol encadenado"},abilityConfig:Object.freeze({abilityPattern:["haunt","blink"]})}),
+ "north-species-037":Object.freeze({names:{"ru":"Двупастный пепельный гончий","en":"Twinjaw cinder hound","es":"Sabueso de ceniza de dos fauces"},abilityConfig:Object.freeze({abilityPattern:["pounce","cleave"]})}),
+ // Further ancient and desert identities preserve every base stat, drop, bound and timing.
+ "ancient-species-012":Object.freeze({names:{"ru":"Костезвонный огонёк","en":"Spine-chime wisp","es":"Fuego de campanillas óseas"},abilityConfig:Object.freeze({abilityPattern:["blink","fan"]})}),
+ "ancient-species-014":Object.freeze({names:{"ru":"Серпорукий страж пустошей","en":"Sickle-handed waste sentinel","es":"Centinela de hoces del yermo"},abilityConfig:Object.freeze({abilityPattern:["stomp","cleave"]})}),
+ "ancient-species-017":Object.freeze({names:{"ru":"Болотный серпожук","en":"Bog-sickle scarab","es":"Escarabajo de hoces del pantano"},abilityConfig:Object.freeze({abilityPattern:["burrow","venom"]})}),
+ "ancient-species-020":Object.freeze({names:{"ru":"Длиннорукий страж акведука","en":"Long-arm aqueduct sentinel","es":"Centinela del acueducto de brazos largos"},abilityConfig:Object.freeze({abilityPattern:["stomp","charge"]})}),
+ "ancient-species-023":Object.freeze({names:{"ru":"Лунночелюстная гадюка","en":"Crescent-jawed mystic viper","es":"Víbora mística de mandíbula lunar"},abilityConfig:Object.freeze({abilityPattern:["pounce","cleave"]})}),
+ "ancient-species-027":Object.freeze({names:{"ru":"Серпорукий утопленный рыцарь","en":"Sickle-gauntlet drowned knight","es":"Caballero ahogado de guanteletes de hoz"},abilityConfig:Object.freeze({abilityPattern:["cleave","venom"]})}),
+ "ancient-species-028":Object.freeze({names:{"ru":"Щитоворотная лесная гадюка","en":"Shield-collar forest viper","es":"Víbora del bosque de gola escudo"},abilityConfig:Object.freeze({abilityPattern:["pounce","roots"]})}),
+ "ancient-species-036":Object.freeze({names:{"ru":"Рогокрылая солнечная горгулья","en":"Antler-winged sun gargoyle","es":"Gárgola solar de astas aladas"},abilityConfig:Object.freeze({abilityPattern:["dive","fan"]})}),
+ "desert-species-015":Object.freeze({names:{"ru":"Пилогребневый червь","en":"Sawcrest burrow worm","es":"Gusano de cresta serrada"},abilityConfig:Object.freeze({abilityPattern:["pounce","venom"]})}),
+ "desert-species-016":Object.freeze({names:{"ru":"Кувшиноспинный отшельник","en":"Pitcher-shell hermit","es":"Ermitaño de caparazón de cántaro"},abilityConfig:Object.freeze({abilityPattern:["burrow","cleave"]})}),
+ "desert-species-017":Object.freeze({names:{"ru":"Обелисковый ходок","en":"Obelisk strider","es":"Zancudo obelisco"},abilityConfig:Object.freeze({abilityPattern:["stomp","roots"]})}),
+ "desert-species-018":Object.freeze({names:{"ru":"Оазисный медузофонарь","en":"Oasis jelly lantern","es":"Medusa linterna del oasis"},abilityConfig:Object.freeze({abilityPattern:["blink","fan"]})}),
+ "desert-species-019":Object.freeze({names:{"ru":"Кольчатый песчаный змей","en":"Anklet-ring sand wyrm","es":"Sierpe de arena anillada"},abilityConfig:Object.freeze({abilityPattern:["pounce","venom"]})}),
+ "desert-species-021":Object.freeze({names:{"ru":"Паутинный дух пыли","en":"Dust loom spider spirit","es":"Espíritu telar de polvo"},abilityConfig:Object.freeze({abilityPattern:["blink","fan"]})}),
+ "desert-species-022":Object.freeze({names:{"ru":"Соляной баранолит","en":"Salt-horned ramolith","es":"Carnerolito de sal"},abilityConfig:Object.freeze({abilityPattern:["stomp","roots"]})}),
+ "desert-species-027":Object.freeze({names:{"ru":"Веерохвостый скорпион","en":"Fan-tailed scorpion","es":"Escorpión de cola en abanico"},abilityConfig:Object.freeze({abilityPattern:["burrow","cleave"]})})
 });
 export const speciesTraits=id=>NEW_SPECIES[id]||null;
