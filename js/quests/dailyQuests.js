@@ -16,13 +16,18 @@ export function dailySnapshot(hero,quest,quests,now=Date.now()){
  return {epoch,record,claimed,blocked};
 }
 export function syncDailyQuests(hero,quests,now=Date.now()){
- const epoch=dailyEpoch(hero,quests,now),previous=hero.quests?.[META];
+ const previous=hero.quests?.[META];
+ // Ordinary adventuring never creates a daily contract or service metadata.
+ // Start the high-water clock only after an actual daily record exists.
+ if(!previous&&!quests.some(q=>hero.quests?.[q.id]))return false;
+ const epoch=dailyEpoch(hero,quests,now);
  if(previous?.version===1&&previous.epochDay===epoch)return false;
  hero.quests??={};hero.quests[META]={...previous,version:1,epochDay:epoch};return true;
 }
 export function acceptDailyQuest(hero,quest,quests){
- syncDailyQuests(hero,quests);const epoch=dailyEpoch(hero,quests),previous=hero.quests[quest.id];
+ hero.quests??={};syncDailyQuests(hero,quests);const epoch=dailyEpoch(hero,quests),previous=hero.quests[quest.id];
  hero.quests[quest.id]={state:'active',progress:0,day:epoch,...(day(previous?.lastClaimDay)!==null?{lastClaimDay:previous.lastClaimDay}:{})};
+ syncDailyQuests(hero,quests);
 }
 export function claimDailyQuest(hero,quest,quests,progress){
  syncDailyQuests(hero,quests);const epoch=dailyEpoch(hero,quests);

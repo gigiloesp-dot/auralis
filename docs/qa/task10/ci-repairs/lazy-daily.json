@@ -1,0 +1,13 @@
+{
+  "source": "a80931584cd6cccfe1e9804b59a5d000d8c9169e",
+  "run": 43933709984,
+  "jobsPassed": 21,
+  "jobsTotal": 23,
+  "failedJobs": [
+    133532602809,
+    133532603077
+  ],
+  "cause": "daily synchronization eagerly inserted __dailyV1 before any daily was accepted; original earned-journey empty quest-map assertions correctly rejected this",
+  "fix": "initialize high-water metadata only after accepting an actual daily or loading its existing record; retain both original earned assertions unchanged",
+  "targeted": "two strict initialization tests passed; daily rewards,UTC reset and rollback remain covered by existing tests"
+}
