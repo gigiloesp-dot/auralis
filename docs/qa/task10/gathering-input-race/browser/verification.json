@@ -1,0 +1,16 @@
+{
+  "queued": {
+    "created": 250,
+    "queuedBeforeDestroy": 250,
+    "pendingDead": 0
+  },
+  "after": {
+    "deadInInput": 0,
+    "pendingDead": 0,
+    "deadActive": 0,
+    "markers": 0
+  },
+  "errors": [],
+  "physicalAndroid": false,
+  "scope": "250 real GatheringSystem.create/clear pairs before one real InputPlugin preupdate; external test atlas lease released; no item/save/combat changes"
+}

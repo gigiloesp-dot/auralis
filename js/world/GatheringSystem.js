@@ -13,7 +13,11 @@ export class GatheringSystem{
   lease.ready.then(ok=>{if(this.closed||generation!==this.generation||this.lease!==lease)return;this.ready=ok;if(ok)this.update(true);else{this.lease=null;lease.release();this.nextRetry=performance.now()+3000;}});
  }
  release(){this.generation++;this.lease?.release();this.lease=null;this.ready=false;}
- clear(){for(const marker of this.markers.values())marker.root.destroy();this.markers.clear();this.needed=[];this.release();this.nextUpdate=0;this.nextRetry=0;}
+ // Phaser3.90 removes registered inputs before flushing pending insertions.
+ // Destroying a freshly queued object otherwise inserts its dead reference on
+ // the next frame. Cancel only this owned root's uncommitted insertions.
+ removeMarker(marker){const root=marker.root,pending=this.scene.input?._pendingInsertion;if(Array.isArray(pending))for(let i=pending.length-1;i>=0;i--)if(pending[i]===root)pending.splice(i,1);root.destroy();}
+ clear(){for(const marker of this.markers.values())this.removeMarker(marker);this.markers.clear();this.needed=[];this.release();this.nextUpdate=0;this.nextRetry=0;}
  canReach(hero,node){if(!lineClear(hero,node,this.scene.obstacles||[],12))return false;const length=Math.hypot(hero.x-node.x,hero.y-node.y),steps=Math.max(1,Math.ceil(length/12));for(let i=1;i<=steps;i++)if(!this.world.isWalkable(hero.x+(node.x-hero.x)*i/steps,hero.y+(node.y-hero.y)*i/steps,12))return false;return true;}
  tryGather(id){
   if(this.blocked())return {ok:false,reason:'blocked'};
@@ -32,7 +36,7 @@ export class GatheringSystem{
   if(this.closed)return;const blocked=this.blocked();for(const marker of this.markers.values()){marker.root.setVisible(!blocked);if(marker.root.input)marker.root.input.enabled=!blocked;}if(blocked)return;
   const tick=performance.now();if(!force&&tick<this.nextUpdate)return;this.nextUpdate=tick+120;const now=Date.now();const s=this.scene,c=this.world.content,view=s.cameras.main.worldView;
   const needed=GATHERING_NODES.filter(node=>node.region===c.id&&this.world.chunkWorld.chunks.has(`${Math.floor(node.x/512)},${Math.floor(node.y/512)}`)&&gatheringReadyAt(s.hero,node.id)<=now).filter(node=>{const p=s.project(node.x,node.y);return p.x>=view.x-70&&p.x<=view.right+70&&p.y>=view.y-20&&p.y<=view.bottom+80;});this.needed=needed;
-  const ids=new Set(needed.map(node=>node.id));for(const[id,marker]of this.markers)if(!ids.has(id)){marker.root.destroy();this.markers.delete(id);}
+  const ids=new Set(needed.map(node=>node.id));for(const[id,marker]of this.markers)if(!ids.has(id)){this.removeMarker(marker);this.markers.delete(id);}
   if(!needed.length){if(this.lease)this.release();return;}this.acquire();if(!this.ready)return;
   for(const node of needed){const marker=this.markers.get(node.id)||this.create(node),p=s.project(node.x,node.y);marker.root.setPosition(p.x,p.y).setDepth(s.depthAt(node.x,node.y));this.hitArea(marker);marker.root.setVisible(true);if(marker.root.input)marker.root.input.enabled=true;}
  }

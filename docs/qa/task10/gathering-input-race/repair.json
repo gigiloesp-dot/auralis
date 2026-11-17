@@ -1,0 +1,23 @@
+{
+  "sourceBefore": "474d4ccb9513fedb0038dd96c3b431ce23af5ece",
+  "ciBefore": 44082833707,
+  "ciPassedBefore": 30,
+  "ciTotalBefore": 31,
+  "failedJob": 134037532706,
+  "cause": "Phaser3.90 InputPlugin removes registered objects before flushing pending insertions; a destroyed pending plant was inserted afterwards and retained forever",
+  "fix": "cancel only the owned destroyed root in _pendingInsertion before ordinary GameObject.destroy, for renderer clear and streamed visual unload",
+  "before": {
+    "createdAndDestroyed": 250,
+    "deadInInput": 250
+  },
+  "after": {
+    "createdAndDestroyed": 250,
+    "deadInInput": 0,
+    "pendingDead": 0
+  },
+  "targetedUnitPassed": 8,
+  "lootSoakCycles": 6,
+  "gatheringBrowserFlows": 12,
+  "existingAssertionsWeakened": false,
+  "physicalAndroid": false
+}

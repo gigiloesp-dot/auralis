@@ -131,6 +131,7 @@ jobs:
           path: |
             work/browser/
             work/stream-benchmark/
+            work/task10/gathering-input-lifecycle/
           if-no-files-found: ignore
 
   task2_interface:

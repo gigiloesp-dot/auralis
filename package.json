@@ -27,7 +27,7 @@
     "test:browser:core:quests": "node tests/browser-quests.cjs && node tests/browser-dungeons.cjs && node tests/browser-journey.cjs",
     "test:browser:core:ui": "node tests/browser-locales.cjs && node tests/browser-classes.cjs && node tests/browser-soak.cjs",
     "test:browser:boss-art": "node tests/browser-boss-art.cjs",
-    "test:browser:task1": "node tests/browser-task1-ai.cjs && node tests/browser-ground-loot.cjs && node tests/browser-task1-dungeons.cjs && node tests/browser-monster-stream.cjs && node tests/browser-multitouch.cjs && node tests/browser-loot-soak.cjs",
+    "test:browser:task1": "node tests/browser-task1-ai.cjs && node tests/browser-ground-loot.cjs && node tests/browser-task1-dungeons.cjs && node tests/browser-monster-stream.cjs && node tests/browser-multitouch.cjs && npm run test:browser:gathering-input-lifecycle && node tests/browser-loot-soak.cjs",
     "test:browser:task2": "node tests/browser-task2-ui.cjs",
     "test:browser:menu": "node tests/browser-medieval-menu.cjs",
     "test:browser:task4": "node tests/browser-task4-loot.cjs",
@@ -66,7 +66,8 @@
     "test:browser:task10-forest-expansion": "node tests/browser-task10-forest-expansion.cjs",
     "test:browser:task10-north-expansion": "node tests/browser-task10-north-expansion.cjs",
     "test:browser:task10-ancient-expansion": "node tests/browser-task10-ancient-expansion.cjs",
-    "test:browser:task10-desert-expansion": "node tests/browser-task10-desert-expansion.cjs"
+    "test:browser:task10-desert-expansion": "node tests/browser-task10-desert-expansion.cjs",
+    "test:browser:gathering-input-lifecycle": "node tests/browser-gathering-input-lifecycle.cjs"
   },
   "devDependencies": {
     "playwright": "^1.65.0"
