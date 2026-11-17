@@ -3,16 +3,19 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {startServer,launchOptions,root,openNpc}=require('./browserHarness.cjs');
 const {resumeGame}=require('./panelNavigation.cjs');
-const out=path.join(root,'work/task10/gathering-browser');fs.mkdirSync(out,{recursive:true});
+const publicUrl=process.env.AURALIS_GATHERING_URL,expectedSource=process.env.AURALIS_GATHERING_SOURCE;
+if(publicUrl){assert.equal(new URL(publicUrl).origin,'https://auralis-master-test.alertpine18.chatgpt.site');assert.match(expectedSource||'',/^[0-9a-f]{40}$/);}
+const languages=process.env.AURALIS_GATHERING_LANGS?process.env.AURALIS_GATHERING_LANGS.split(','):['ru','en','es'];assert.ok(languages.length&&new Set(languages).size===languages.length&&languages.every(l=>['ru','en','es'].includes(l)));
+const out=path.join(root,'work/task10/'+(publicUrl?'gathering-public':'gathering-browser'));fs.mkdirSync(out,{recursive:true});
 async function settle(p){await p.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));}
 async function place(p,n,offset=0){const frame=await p.evaluate(({n,offset})=>{const s=Auralis.game.scene.getScene('world');s.hero.hp=s.hero.maxHp=1000000;s.world.load({region:n.region,x:n.x+offset,y:n.y});return s.game.loop.frame;}, {n,offset});await p.waitForFunction(frame=>Auralis.game.scene.getScene('world').game.loop.frame>=frame+3,frame);await p.waitForFunction(id=>Auralis.game.scene.getScene('world').world.gathering.markers.has(id),n.id);await settle(p);}
 async function point(p,id){let previous;for(let i=0;i<30;i++){await settle(p);const v=await p.evaluate(id=>{const s=Auralis.game.scene.getScene('world'),m=s.world.gathering.markers.get(id),c=s.cameras.main;if(!m)return null;const b=m.sprite.getBounds();return{x:(b.centerX-c.worldView.x)*c.zoom+c.x,y:(b.centerY-c.worldView.y)*c.zoom+c.y,touchDiameter:m.root.input.hitArea.radius*2*c.zoom,frame:m.sprite.frame.name};},id);if(!v)throw Error('Missing rendered gathering marker '+id);if(previous&&Math.hypot(v.x-previous.x,v.y-previous.y)<.5)return v;previous=v;}return previous;}
 async function tap(p,id){const v=await point(p,id),size=p.viewportSize();assert.ok(v.x>0&&v.x<size.width&&v.y>0&&v.y<size.height,JSON.stringify(v));assert.ok(v.touchDiameter>=43.99);await p.touchscreen.tap(v.x,v.y);await settle(p);return v;}
 async function state(p){return p.evaluate(()=>{const s=Auralis.game.scene.getScene('world');return{inventory:structuredClone(s.hero.inventory),meta:structuredClone(s.hero.quests.__gatherV1||null),gold:s.hero.gold};});}
 async function reopen(p){await p.reload();await p.locator('[data-menu-action=continue]').tap();await p.locator('.slot-row button.primary').first().tap();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.world);}
-(async()=>{const host=await startServer();let browser;const records=[];try{browser=await chromium.launch(launchOptions);
-for(const [language,width,height]of [['ru',640,360],['en',740,320],['es',844,390]]){
- const context=await browser.newContext({viewport:{width,height},isMobile:true,hasTouch:true});await context.addInitScript(language=>localStorage.setItem('auralis_language',language),language);const p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(host.url);await p.locator('[data-menu-action=new]').tap();await p.locator('input').fill('Gather'+language);await p.locator('.menu-content>button.primary').tap();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.world);
+(async()=>{const host=publicUrl?{url:publicUrl,close:async()=>{}}:await startServer();let browser;const records=[];try{browser=await chromium.launch(launchOptions);
+for(const [language,width,height]of [['ru',640,360],['en',740,320],['es',844,390]].filter(([l])=>languages.includes(l))){
+ const context=await browser.newContext({viewport:{width,height},isMobile:true,hasTouch:true});await context.addInitScript(language=>localStorage.setItem('auralis_language',language),language);const p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(host.url);if(publicUrl)assert.equal(await p.evaluate(()=>fetch('/build.json').then(r=>r.json()).then(b=>b.sourceCommit)),expectedSource);await p.locator('[data-menu-action=new]').tap();await p.locator('input').fill('Gather'+language);await p.locator('.menu-content>button.primary').tap();await p.waitForFunction(()=>Auralis.game.scene.getScene('world')?.world);
  const data=await p.evaluate(async()=>{const s=Auralis.game.scene.getScene('world'),{GATHERING_QUESTS}=await import('/js/quests/gatheringQuestData.js'),{GATHERING_NODES}=await import('/js/world/gatheringData.js'),{NPCS}=await import('/js/npc/npcData.js');s.hero.level=56;s.hero.quests={};s.hero.inventory=[];return GATHERING_QUESTS.map(q=>({q,npc:NPCS.find(n=>n.id===q.npcId),nodes:GATHERING_NODES.filter(n=>n.region===q.region)}));});
  const flows=[];
  for(const {q,npc,nodes}of data){
@@ -48,5 +51,5 @@ for(const [language,width,height]of [['ru',640,360],['en',740,320],['es',844,390
  }
  assert.deepEqual(errors,[]);records.push({language,width,height,flows,edges,errors});console.log('PASS gathering actualCanvas/NPC four regions',language,width,height);await context.close();
 }
-fs.writeFileSync(path.join(out,'verification.json'),JSON.stringify({physicalAndroid:false,scope:'Chromium emulated landscape touchscreen; prepared level/position/inventory-capacity/storage/clock fixtures. Every flower originates from actual Canvas touch.',records},null,2));
+fs.writeFileSync(path.join(out,'verification.json'),JSON.stringify({physicalAndroid:false,publicUrl:publicUrl||null,expectedSource:expectedSource||null,scope:'Chromium emulated landscape touchscreen; prepared level/position/inventory-capacity/storage/clock fixtures. Every flower originates from actual Canvas touch.',records},null,2));
 }finally{await browser?.close();await host.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

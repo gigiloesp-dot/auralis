@@ -16,6 +16,15 @@ export const NEW_SPECIES=Object.freeze({
  'forest-species-004':Object.freeze({names:{ru:'Плющевой орк руин',en:'Ivybound ruin orc',es:'Orco de las ruinas de hiedra'},abilityConfig:Object.freeze({abilityPattern:['cleave','roots']})}),
  'forest-species-006':Object.freeze({names:{ru:'Костегривый волк',en:'Bone-mane wolf',es:'Lobo de crin ósea'},abilityConfig:Object.freeze({abilityPattern:['pounce','venom']})}),
  'north-species-003':Object.freeze({names:{ru:'Кристаллический ледяной голем',en:'Crystal ice golem',es:'Gólem de hielo cristalino'},abilityConfig:Object.freeze({abilityPattern:['stomp','frost']})}),
- 'ancient-species-003':Object.freeze({names:{ru:'Рунический скарабей',en:'Runic scarab',es:'Escarabajo rúnico'},abilityConfig:Object.freeze({abilityPattern:['burrow','fan'],projectileMagic:true})})
+ 'ancient-species-003':Object.freeze({names:{ru:'Рунический скарабей',en:'Runic scarab',es:'Escarabajo rúnico'},abilityConfig:Object.freeze({abilityPattern:['burrow','fan'],projectileMagic:true})}),
+ 'forest-species-008':Object.freeze({names:{ru:'Корнекоронная гадюка',en:'Root-crowned viper',es:'Víbora coronada de raíces'},abilityConfig:Object.freeze({abilityPattern:['pounce','roots']})}),
+ 'north-species-011':Object.freeze({names:{ru:'Дух пепельной урны',en:'Cinder urn spirit',es:'Espíritu de urna de cenizas'},abilityConfig:Object.freeze({abilityPattern:['haunt','fan']})}),
+ 'ancient-species-007':Object.freeze({names:{ru:'Древний корневой страж',en:'Elder root sentinel',es:'Guardián de raíces ancestrales'},abilityConfig:Object.freeze({abilityPattern:['stomp','roots']})}),
+ 'desert-species-023':Object.freeze({names:{ru:'Серповидный песчаный богомол',en:'Sickle dune mantis',es:'Mantis de dunas falciforme'},abilityConfig:Object.freeze({abilityPattern:['burrow','cleave']})}),
+ // Four original wild identities keep all archetype stats,geometry and drops.
+ 'forest-species-015':Object.freeze({names:{ru:'Мшистый секач',en:'Moss-armored tusker',es:'Jabalí de armadura musgosa'},abilityConfig:Object.freeze({abilityPattern:['charge','roots']})}),
+ 'north-species-017':Object.freeze({names:{ru:'Луннокрылая морозная моль',en:'Hoarfrost-winged moth',es:'Polilla de alas escarchadas'},abilityConfig:Object.freeze({abilityPattern:['dive','frost']})}),
+ 'ancient-species-013':Object.freeze({names:{ru:'Тростниковый утопленный рыцарь',en:'Reed-plated drowned knight',es:'Caballero ahogado de juncos'},abilityConfig:Object.freeze({abilityPattern:['cleave','venom']})}),
+ 'desert-species-007':Object.freeze({names:{ru:'Дух песочных часов',en:'Hourglass sand elemental',es:'Elemental del reloj de arena'},abilityConfig:Object.freeze({abilityPattern:['blink','fan']})})
 });
 export const speciesTraits=id=>NEW_SPECIES[id]||null;

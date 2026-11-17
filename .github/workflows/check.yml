@@ -386,7 +386,7 @@ jobs:
           chrome_path="$(command -v google-chrome)"
           test -x "$chrome_path"
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
-      - name: Forty NPCs,ring travel,all41 new quests,daily reset and six-slot legacy queue
+      - name: Forty NPCs,ring travel,all45 new quests,daily reset and six-slot legacy queue
         run: npm run test:browser:task10-npc-travel && npm run test:browser:task10-quests && npm run test:browser:task10-dailies
       - uses: actions/upload-artifact@v4
         if: always()
@@ -440,8 +440,8 @@ jobs:
           chrome_path="$(command -v google-chrome)"
           test -x "$chrome_path"
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
-      - name: Real plants,atomic collection,regrowth,quest rewards and four painted regional species
-        run: npm run test:browser:task10-gathering && npm run test:browser:task10-regional-species
+      - name: Real plants,atomic collection,regrowth,quest rewards and twelve painted regional species
+        run: npm run test:browser:task10-gathering && npm run test:browser:task10-regional-species && npm run test:browser:task10-further-species && npm run test:browser:task10-wild-species
       - uses: actions/upload-artifact@v4
         if: always()
         with:

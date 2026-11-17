@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-015",
+      "image": "assets/actors/task10-wild-bestiary/forest-species-015.png",
+      "atlas": "assets/actors/task10-wild-bestiary/forest-species-015.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1457,
+      "rgbaBytes": 4718592,
+      "sha256": "ec6e4b157266921a3dc84adc8ddc1c324fe5158e0bf27858fe342f0f6f1897b0",
+      "scale": 1.2459016393442623,
+      "annotationHeight": 88
+    },
+    {
+      "id": "north-species-017",
+      "image": "assets/actors/task10-wild-bestiary/north-species-017.png",
+      "atlas": "assets/actors/task10-wild-bestiary/north-species-017.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1124,
+      "rgbaBytes": 4718592,
+      "sha256": "aae7e30e8e62f9200a2141cf0f2cd9e8fa846df18f790d8bff29436bf1ad7ec2",
+      "scale": 1.309090909090909,
+      "annotationHeight": 84
+    },
+    {
+      "id": "ancient-species-013",
+      "image": "assets/actors/task10-wild-bestiary/ancient-species-013.png",
+      "atlas": "assets/actors/task10-wild-bestiary/ancient-species-013.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1969,
+      "rgbaBytes": 4718592,
+      "sha256": "b2f67c91850e418679597e5d5cf3aa25a458260607b5ee570a9667ebd5f37b8e",
+      "scale": 1.0506329113924051,
+      "annotationHeight": 95
+    },
+    {
+      "id": "desert-species-007",
+      "image": "assets/actors/task10-wild-bestiary/desert-species-007.png",
+      "atlas": "assets/actors/task10-wild-bestiary/desert-species-007.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1649,
+      "rgbaBytes": 4718592,
+      "sha256": "86746bd5b95a27bc40f9528096b4b6375ae869e7d6d9c05aef68f11f83677ee4",
+      "scale": 1.1029411764705883,
+      "annotationHeight": 87
+    }
+  ]
+}

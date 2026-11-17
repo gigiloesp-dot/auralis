@@ -124,7 +124,7 @@ const expectedFrames=banks.flatMap(bank=>directions.map(direction=>bank+'/'+dire
    await page.waitForFunction(key=>{const s=Auralis.game.scene.getScene('world');return s.actorTextures.diagnostics.actorPending===0&&!s.load.isLoading()&&!s.textures.exists(key)&&!s.actorTextures.entries.has(key);},test.entry.key);
    const residency=await page.evaluate(id=>{
     const s=Auralis.game.scene.getScene('world'),expected=new Map(),keep=entry=>{if(entry)expected.set(entry.key,(expected.get(entry.key)||0)+1);};
-    keep(s.rig.painted?.entry);for(const chunk of s.world.chunkWorld.chunks.values())for(const npc of chunk.npcActors||[])keep(npc.entry);for(const m of s.monsters.monsters)keep(m.painted?.entry);
+    keep(s.rig.painted?.entry);if(s.world.gathering?.lease)keep(s.world.gathering.entry);for(const chunk of s.world.chunkWorld.chunks.values())for(const npc of chunk.npcActors||[])keep(npc.entry);for(const m of s.monsters.monsters)keep(m.painted?.entry);
     return {oldEncounter:s.monsters.monsters.some(m=>m.id===id),expected:[...expected].sort(),actual:[...s.actorTextures.entries].map(([key,record])=>[key,record.refs]).sort()};
    },test.id);
    assert.equal(residency.oldEncounter,false);assert.deepEqual(residency.actual,residency.expected,'Only current streamed actors may retain atlas leases after '+test.id);

@@ -1,0 +1,7 @@
+PASS navigation18mobile/locale cases warrior
+PASS navigation18mobile/locale cases archer
+PASS navigation18mobile/locale cases mage
+PASS navigation18mobile/locale cases paladin
+PASS navigation18mobile/locale cases assassin
+PASS navigation18mobile/locale cases cannoneer
+PASS108navigation cases,six classes,three languages,six mobile sizes,real tracking/claim/reload/three slots/ring/dungeon/relief/cleanup,noJSerrors
