@@ -1,0 +1,36 @@
+Offline generation command:
+python scripts/build-lossless-actor-textures.py --commit 89966076fe6488e9e1ca009f07ee3db32ad3fd1f --jobs 2
+Pillow version: 13.0.0; WebP support available.
+Captured final generation output:
+{"completed": 140, "total": 144, "elapsedSeconds": 39.3}
+{"completed": 144, "total": 144, "elapsedSeconds": 40.3}
+{"sourceCommit": "89966076fe6488e9e1ca009f07ee3db32ad3fd1f", "files": 144, "sourceBytes": 94201755, "webpBytes": 63365174, "savedBytes": 30836581, "elapsedSeconds": 40.3}
+
+Every derivative passed independently decoded RGBA equality in Pillow, including hidden RGB at alpha zero, before writing its manifest entry. Source PNGs were read from the pinned Git commit. No untracked source PNGs were encoded.
+Profile inspection over all 144 mapped original PNGs: no ICC, gamma, sRGB, or chromaticity metadata found.
+
+Node command:
+node --test tests/losslessActorTextures.test.mjs tests/actorTextureCache.test.mjs tests/assets.test.mjs
+Captured output:
+✔ nearby actors share one real atlas lease and release it only after the last actor leaves (5.472789ms)
+✔ actors leaving before an asynchronous load finishes do not retain textures (1.103317ms)
+✔ teardown cancels late actor callbacks and clears shared references (0.208132ms)
+✔ asset queue loads real image, sheet and atlas definitions and skips incomplete files (2.066504ms)
+✔ eight-direction atlas animation creation is idempotent and death does not loop (0.504628ms)
+✔ all thirty combat skills have distinct safe vector icons (3.026416ms)
+✔ sprite clips hold death frames, distinguish casts and restart consecutive attacks (1.413954ms)
+✔ sprite weapon sockets follow the current atlas frame and safely fall back when absent (0.436375ms)
+✔ lossless actor delivery manifest pins committed sources, encoded bytes, and every source RGBA channel (14125.37075ms)
+✔ both loaders substitute only mapped image URLs while retaining atlas keys, JSON URLs, frame geometry and lease lifetime (1.61256ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14729.160206
+
+Prepared browser command, not launched by the packaging agent:
+node tests/browser-lossless-actor-textures.cjs
+Publication archive remains unmeasured by the packaging agent.

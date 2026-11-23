@@ -1,6 +1,14 @@
 {
   "checkpoint": "c36c8fa34370080479bc6b2ec53fea5e56f159ff",
   "files": {
+    "js/assets/ActorTextureCache.js": {
+      "before": "90437098608d4d7f4ce28bbac7ca5faf4ece3bf02d483d70b5a164cb3daf711a",
+      "after": "4387ce05c604ce7503bd933fa43cf26da2f8bb41c7f34cc9eb66f0edd71de6f1"
+    },
+    "js/assets/AssetLoader.js": {
+      "before": "add1cabbbd3359f42e3a7298fc2afc628945f03e37837bfcb2027ce7bf639e4f",
+      "after": "57f2e76fc8f4001fa09bbd3cb680075e9b0dd69d21296372ccb1830d3a173760"
+    },
     "js/assets/manifest.js": {
       "before": "2ac7dc2eac1018dfc63a917a4ea797aa850a6fd296f4aadf09e8386dfe73fa0b",
       "after": "f0e466db3d878eb89302f6e9bfad244bdde3ecf1cff5eb936915f9fc1554af35"

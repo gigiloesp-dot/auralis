@@ -1,4 +1,5 @@
 import {ASSET_MANIFEST} from './manifest.js';
+import {resolveActorTextureURL} from './losslessTextureDelivery.js';
 export const ASSET_DIRECTIONS=Object.freeze(['e','se','s','sw','w','nw','n','ne']);
 export function assetEntries(manifest=ASSET_MANIFEST){return Object.values(manifest).flatMap(group=>Object.entries(group||{}));}
 export function validateAsset(entry){
@@ -10,9 +11,10 @@ export function validateAsset(entry){
 export function queueAssets(scene,manifest=ASSET_MANIFEST){
  for(const [key,entry]of assetEntries(manifest)){
   if(!validateAsset(entry))continue;
-  if(entry.type==='spritesheet')scene.load.spritesheet(key,entry.url,{frameWidth:entry.frameWidth,frameHeight:entry.frameHeight});
-  else if(entry.type==='image')scene.load.image(key,entry.url);
-  else scene.load.atlas(key,entry.url,entry.atlasURL);
+  const url=resolveActorTextureURL(entry.url);
+  if(entry.type==='spritesheet')scene.load.spritesheet(key,url,{frameWidth:entry.frameWidth,frameHeight:entry.frameHeight});
+  else if(entry.type==='image')scene.load.image(key,url);
+  else scene.load.atlas(key,url,entry.atlasURL);
  }
 }
 export function createAssetAnimations(scene,key,entry){

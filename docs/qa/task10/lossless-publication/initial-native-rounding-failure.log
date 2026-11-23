@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: assets/actors/task10-ancient-expansion/ancient-species-005.png canvas channel mismatch
+
+393472 !== -1
+
+    at /workspace/auralis/tests/browser-lossless-actor-textures.cjs:13:133 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 393472,
+  expected: -1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

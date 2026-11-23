@@ -1,5 +1,6 @@
 // Scene-scoped leases: only nearby actors and the selected hero keep an atlas
 // resident. Pending loads share one promise; late callbacks cannot leak textures.
+import {resolveActorTextureURL} from './losslessTextureDelivery.js';
 export class ActorTextureCache{
  constructor(scene){this.scene=scene;this.entries=new Map();this.closed=false;this.complete=()=>this.flush();scene.load.on('complete',this.complete);}
  acquire(entry){
@@ -8,7 +9,7 @@ export class ActorTextureCache{
   if(!record){
    let resolve;const ready=new Promise(done=>resolve=done);record={entry,refs:0,ready,resolve,loaded:this.scene.textures.exists(entry.key)};this.entries.set(entry.key,record);
    if(record.loaded)resolve(true);
-   else{const e=entry; if(e.type==='spritesheet')this.scene.load.spritesheet(e.key,e.url,{frameWidth:e.frameWidth,frameHeight:e.frameHeight});else if(e.type==='image')this.scene.load.image(e.key,e.url);else this.scene.load.atlas(e.key,e.url,e.atlasURL);}
+   else{const e=entry,url=resolveActorTextureURL(e.url); if(e.type==='spritesheet')this.scene.load.spritesheet(e.key,url,{frameWidth:e.frameWidth,frameHeight:e.frameHeight});else if(e.type==='image')this.scene.load.image(e.key,url);else this.scene.load.atlas(e.key,url,e.atlasURL);}
   }
   record.refs++;let released=false;
   if(!record.loaded&&!this.scene.load.isLoading())this.scene.load.start();
