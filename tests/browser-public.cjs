@@ -3,15 +3,16 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),cryp
 const {launchOptions,root,openNpc,pickGroundDrop}=require('./browserHarness.cjs');
 const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-9a-f]{40}$/.test(commit||''))throw Error('Usage: node tests/browser-public.cjs https://public-origin exact-source-SHA');
 (async()=>{const browser=await chromium.launch(launchOptions);try{
+ const {losslessPng,LOSSLESS_PNG_TRANSFORM}=await import('../scripts/lossless-png.mjs');
  const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
  assert.equal((await p.goto(url,{waitUntil:'networkidle'})).status(),200);assert.equal(new URL(p.url()).origin,new URL(url).origin);
- const build=await p.evaluate(()=>fetch('/build.json').then(r=>r.json()));assert.equal(build.sourceCommit,commit);assert.equal(build.branch,'codex/auralis-master-development');
+ const build=await p.evaluate(()=>fetch('/build.json').then(r=>r.json()));assert.equal(build.sourceCommit,commit);assert.equal(build.branch,'codex/auralis-master-development');assert.equal(build.pngCompression.transform,LOSSLESS_PNG_TRANSFORM);
  const files=execFileSync('git',['ls-tree','-r','--name-only',commit,'index.html','warrior-equipment-lab.html','css','js','assets'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>!f.endsWith('.md'));
  for(let at=0;at<files.length;at+=8){
   const batch=files.slice(at,at+8),actual=await p.evaluate(async batch=>Promise.all(batch.map(async file=>{const response=await fetch('/'+file,{cache:'no-store'}),bytes=await response.arrayBuffer(),hash=await crypto.subtle.digest('SHA-256',bytes);return {file,status:response.status,sha:[...new Uint8Array(hash)].map(v=>v.toString(16).padStart(2,'0')).join('')};})),batch);
-  for(const entry of actual){assert.equal(entry.status,200,entry.file);const expected=crypto.createHash('sha256').update(execFileSync('git',['show',commit+':'+entry.file],{cwd:root,maxBuffer:16*1024*1024})).digest('hex');assert.equal(entry.sha,expected,entry.file);}
+  for(const entry of actual){assert.equal(entry.status,200,entry.file);const source=execFileSync('git',['show',commit+':'+entry.file],{cwd:root,maxBuffer:16*1024*1024}),published=entry.file.toLowerCase().endsWith('.png')?losslessPng(source).bytes:source,expected=crypto.createHash('sha256').update(published).digest('hex');assert.equal(entry.sha,expected,entry.file);}
  }
- console.log('PASS public HTTPS without account; exact committed runtime hashes',files.length,commit);
+ console.log('PASS public HTTPS without account; exact committed runtime hashes with deterministic lossless PNG publication transform',files.length,commit);
  await p.getByRole('button',{name:'Продолжить',exact:true}).click();await p.getByRole('button',{name:'Создать персонажа',exact:true}).first().click();await p.locator('input').fill('PublicMaster');await p.getByRole('button',{name:'Начать приключение',exact:true}).click();await p.waitForFunction(()=>window.Auralis?.game.scene.getScene('world')?.hero?.name==='PublicMaster');
  assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').regionContent.width),18000);
  await p.waitForFunction(()=>{const s=Auralis.game.scene.getScene('world');return s.rig.paintedActive&&[...s.world.chunkWorld.chunks.values()].flatMap(c=>c.npcActors||[]).filter(a=>a.sprite).length===6;});

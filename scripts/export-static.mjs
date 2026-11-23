@@ -1,8 +1,9 @@
 // Export only committed runtime files; provenance is verified again after HTTPS deploy.
-import {mkdirSync,readdirSync,writeFileSync,mkdtempSync,rmSync} from 'node:fs';
+import {mkdirSync,readdirSync,readFileSync,writeFileSync,mkdtempSync,rmSync} from 'node:fs';
 import {resolve,join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {execFileSync} from 'node:child_process';
+import {losslessPng,LOSSLESS_PNG_TRANSFORM} from './lossless-png.mjs';
 const destination=process.argv[2];
 if(!destination)throw Error('Usage: node scripts/export-static.mjs /absolute/empty/output');
 const target=resolve(destination);mkdirSync(target,{recursive:true});
@@ -17,5 +18,8 @@ try{
  execFileSync('git',['archive','--format=tar','--output',archive,sourceCommit,'index.html','warrior-equipment-lab.html','css','js','assets']);
  execFileSync('tar',['-x','-f',archive,'-C',target]);
 }finally{rmSync(scratch,{recursive:true,force:true});}
-writeFileSync(resolve(target,'build.json'),JSON.stringify({repository:'gigiloesp-dot/auralis',branch:'codex/auralis-master-development',sourceCommit,exportedAt:new Date().toISOString()},null,2)+'\n');
-console.log(JSON.stringify({directory:target,sourceCommit}));
+const pngCompression={transform:LOSSLESS_PNG_TRANSFORM,files:0,optimized:0,originalBytes:0,outputBytes:0};
+function compressDirectory(directory){for(const entry of readdirSync(directory,{withFileTypes:true})){const path=join(directory,entry.name);if(entry.isDirectory())compressDirectory(path);else if(entry.isFile()&&entry.name.toLowerCase().endsWith('.png')){const result=losslessPng(readFileSync(path));pngCompression.files++;pngCompression.optimized+=Number(result.optimized);pngCompression.originalBytes+=result.originalBytes;pngCompression.outputBytes+=result.outputBytes;if(result.optimized)writeFileSync(path,result.bytes);}}}
+compressDirectory(target);
+writeFileSync(resolve(target,'build.json'),JSON.stringify({repository:'gigiloesp-dot/auralis',branch:'codex/auralis-master-development',sourceCommit,exportedAt:new Date().toISOString(),pngCompression},null,2)+'\n');
+console.log(JSON.stringify({directory:target,sourceCommit,pngCompression}));
