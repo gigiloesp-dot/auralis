@@ -1,0 +1,11 @@
+{
+  "generator": "image_gen.imagegen",
+  "transparentBackgroundRequested": true,
+  "originals": "*-source.png",
+  "semanticRepairs": "*-clean.png; desert-species-047-death-repair.png; forthcoming *-reflow.png",
+  "packing": "Pillow only: crop complete source-pose regions, uniform resize, source-over composite; no alpha thresholds, masks, erasure, recoloring, anatomy synthesis or pose construction applied to image pixels. Alpha projections select mechanical crop corridors only.",
+  "qa": "All 384 final poses reviewed using eight full composited contact sheets. Source cutouts also inspected over contrasting mint background.",
+  "runtimeVerified": false,
+  "generationPromptTemplate": "Original painted cartoon isometric 8-column by6-row 48-pose sheet for each definition anatomy; directions N NE E SE S SW W NW; rows idle run-a run-b attack hurt collapsed-death; transparent_background true. No labels, background, shadows, glow haze or speckles. Full complete silhouettes in individual cells.",
+  "repairInstructions": "image_gen background removal preserving all poses and details, alpha-zero empty corridors; image_gen 047 death/N collapsed-sideways correction; image_gen 041/042 complete-pose reflow 30% smaller with wide blank corridors. Originals and repairs retained."
+}

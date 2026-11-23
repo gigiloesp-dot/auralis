@@ -1,0 +1,2779 @@
+{
+  "status": "PASS",
+  "totalReviewedPoses": 384,
+  "backgrounds": [
+    "#cab582",
+    "#202630"
+  ],
+  "reviewScope": "Every final pose reviewed in the 1024px native contact sheets. Registration corrections re-reviewed on both backgrounds.",
+  "models": [
+    {
+      "id": "ancient-species-031",
+      "atlasSha256": "ed2adcaff92f5a087500cb21b09060ff6b1707d5c1ad95503b9c9b0e31021af6",
+      "beigeContactSheet": "ancient-species-031-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-031-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 150
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 150
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 150
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 144
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 147
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 144
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 141
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 141
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 139
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 139
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 141
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 139
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 139
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 142
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 139
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 140
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 138
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 143
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 142
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 139
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 135
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 140
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 1
+    },
+    {
+      "id": "ancient-species-033",
+      "atlasSha256": "1185843b49160345606654e29491923f0419c56641d18315e5a8f6af050cbbe6",
+      "beigeContactSheet": "ancient-species-033-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-033-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 168
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 2
+    },
+    {
+      "id": "ancient-species-034",
+      "atlasSha256": "3ca8eff7af95d3a8c2301bf4cca8578e33fc99b592a34099cb8a305b9173a123",
+      "beigeContactSheet": "ancient-species-034-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-034-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 150
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 150
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 147
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 147
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 147
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 2
+    },
+    {
+      "id": "ancient-species-035",
+      "atlasSha256": "2f2a2fdee90d4bdda178a7d23d1db01cc8a6b7ea09a37dfcf8d4f54bc2ce5bb4",
+      "beigeContactSheet": "ancient-species-035-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-035-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 168
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 2
+    },
+    {
+      "id": "ancient-species-037",
+      "atlasSha256": "61e0db1fb750fcff474c6b2f465dea707faca8872c10251bad04a41833914489",
+      "beigeContactSheet": "ancient-species-037-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-037-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 147
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 147
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 144
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 144
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 141
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 144
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 144
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 143
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 140
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 4
+    },
+    {
+      "id": "ancient-species-038",
+      "atlasSha256": "8bf8025ca21bd0114f60e03a32f1ca9b5ac1e86e7bfe98265554ec132cd1676c",
+      "beigeContactSheet": "ancient-species-038-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-038-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 168
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 168
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 167
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 142
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 140
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 142
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 142
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 2
+    },
+    {
+      "id": "ancient-species-039",
+      "atlasSha256": "38dc55d6faa3900e280401cd9d3ba4f36aa85260f8fdab81cb7340f947d15879",
+      "beigeContactSheet": "ancient-species-039-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-039-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 169
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 165
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 168
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 170
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 168
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 166
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 169
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 164
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 163
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 2
+    },
+    {
+      "id": "ancient-species-040",
+      "atlasSha256": "3b5c43a5b97a452643c42421d2fcadabd91f275eff513e8d24475e88a99f89cf",
+      "beigeContactSheet": "ancient-species-040-composited-qa.jpg",
+      "darkContactSheet": "ancient-species-040-dark-qa.jpg",
+      "nativeSizeReview": true,
+      "reviewedPoses": [
+        {
+          "pose": "idle/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "idle/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 162
+        },
+        {
+          "pose": "idle/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "idle/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "idle/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "idle/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "idle/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 161
+        },
+        {
+          "pose": "idle/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 160
+        },
+        {
+          "pose": "run-a/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-a/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 158
+        },
+        {
+          "pose": "run-a/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "run-a/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "run-a/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-a/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 159
+        },
+        {
+          "pose": "run-a/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "run-a/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 157
+        },
+        {
+          "pose": "run-b/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "run-b/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "run-b/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        },
+        {
+          "pose": "run-b/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "run-b/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "run-b/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 147
+        },
+        {
+          "pose": "run-b/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        },
+        {
+          "pose": "run-b/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "attack/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 155
+        },
+        {
+          "pose": "attack/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "attack/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "attack/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "attack/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 156
+        },
+        {
+          "pose": "attack/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "attack/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "attack/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 154
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 152
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 150
+        },
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 153
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 149
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 150
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 151
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 148
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 145
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 144
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeAnatomy": true,
+          "noNeighborFragments": true,
+          "footline": 146
+        }
+      ],
+      "maximumSourceBoundaryAlpha": 2
+    }
+  ]
+}

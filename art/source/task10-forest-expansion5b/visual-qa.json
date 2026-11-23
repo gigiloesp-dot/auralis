@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "totalPoses": 384,
+  "models": [
+    {
+      "id": "forest-species-069",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-069-original.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    },
+    {
+      "id": "forest-species-070",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-070-reflow.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    },
+    {
+      "id": "forest-species-071",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-071-original.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    },
+    {
+      "id": "forest-species-072",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-072-reflow.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    },
+    {
+      "id": "forest-species-073",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-073-reflow.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    },
+    {
+      "id": "forest-species-074",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-074-original.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    },
+    {
+      "id": "forest-species-075",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-075-reflow.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    },
+    {
+      "id": "forest-species-076",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "backgrounds": [
+        "beige-composited",
+        "dark-composited"
+      ],
+      "source": "art/source/task10-forest-expansion5b/forest-species-076-original.png",
+      "sourceAnatomyBorderCrossings": [],
+      "notes": "All48 final poses reviewed on both backgrounds. Full source rectangles registered in blank corridors; original pixels preserved."
+    }
+  ],
+  "limitations": [
+    "Six single-frame pose banks including two movement drawings; not full animation clips.",
+    "Some north-facing heads glance sideways and painted proportions vary slightly.",
+    "Original low-alpha matte pixels are retained where invisible on native-size composites."
+  ]
+}

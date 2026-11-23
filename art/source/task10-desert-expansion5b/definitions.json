@@ -1,0 +1,170 @@
+[
+  {
+    "id": "desert-species-048",
+    "slug": "obelisk-shell-rhino",
+    "baseType": "ancientSentinel",
+    "locomotion": "heavy",
+    "level": 46,
+    "anatomy": "Heavy four-legged stone rhinoceros guardian with an enormous slanted turquoise obelisk growing from its broad ochre back, a very short blunt face carrying a broad red shovel horn, four huge squat sandstone block feet and tiny golden ears. No humanoid arms. Grounded alternating stomping gait, shovel-horn ram, braced low recoil, fully tipped sideways with broken obelisk for death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-048",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "names": {
+      "en": "Obelisk Shell Rhino",
+      "ru": "Обелискоспинный носорог",
+      "es": "Rinoceronte obelisco"
+    }
+  },
+  {
+    "id": "desert-species-049",
+    "slug": "sawhalo-dune-beetle",
+    "baseType": "scarab",
+    "locomotion": "crawler",
+    "level": 48,
+    "anatomy": "Low six-legged desert beetle with an unusually tall circular ivory sawblade halo mounted vertically on its narrow coral segmented shell, a small teal hammer-shaped head with broad eyes, six slender cobalt angled jointed legs, and two short golden mandibles. No wings. Alternate six-legged scuttling gait, head-and-saw lean attack, legs tucked recoil, overturned flat beetle and broken sawhalo with legs curled up for death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-049",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "names": {
+      "en": "Sawhalo Dune Beetle",
+      "ru": "Дюнный жук-пиловенец",
+      "es": "Escarabajo de halo sierra"
+    }
+  },
+  {
+    "id": "desert-species-050",
+    "slug": "hourglass-lotus-wisp",
+    "baseType": "arcaneWisp",
+    "locomotion": "hover",
+    "level": 53,
+    "anatomy": "Hovering magical spirit shaped as a broad red lotus flower with four thick pointed petal lobes supporting a narrow translucent emerald hourglass core filled with opaque gold sand, and two long turquoise silk loops hanging below. No humanoid limbs or feet. Floating bob with shifting loops, spinning petals attack, folded-in petal recoil, fully fallen sideways broken hourglass with flattened lotus petals and limp loops for death. No particles, no glowing haze.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-050",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "names": {
+      "en": "Hourglass Lotus Wisp",
+      "ru": "Лотосовый дух-песочница",
+      "es": "Espíritu loto reloj de arena"
+    }
+  },
+  {
+    "id": "desert-species-051",
+    "slug": "anchor-tail-glass-serpent",
+    "baseType": "desertSnake",
+    "locomotion": "serpent",
+    "level": 44,
+    "anatomy": "Limbless ground-slithering pale golden snake with an oversized flat turquoise hammerhead muzzle, two thick red curled cheek whiskers, long thin ribbed ivory neck and a broad three-pronged cobalt anchor-shaped tail. No legs, wings or arms. Clearly serpentine body. Different S-curves for slithering strides, neck-thrust bite attack, tightly recoiled hurt, fully limp sideways uncoiled flat body and slack whiskers death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-051",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "names": {
+      "en": "Anchor Tail Glass Serpent",
+      "ru": "Стеклозмей якорехвост",
+      "es": "Serpiente cola de ancla"
+    }
+  },
+  {
+    "id": "desert-species-052",
+    "slug": "copper-kettle-scarab",
+    "baseType": "scarab",
+    "locomotion": "crawler",
+    "level": 50,
+    "anatomy": "Ground-crawling fat six-legged beetle with a huge round copper kettle-shaped belly shell, a short thick ivory spout horn pointing forward, two small turquoise segmented elytra on shoulders, tiny violet triangular head, six thick golden splayed jointed legs and two short red antennae. No wings. Six-legged alternate scuttle poses, spout-horn jab, tucked bent recoil, completely overturned copper belly with six curled legs raised for death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-052",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "names": {
+      "en": "Copper Kettle Scarab",
+      "ru": "Медный жук-чайник",
+      "es": "Escarabajo tetera de cobre"
+    }
+  },
+  {
+    "id": "desert-species-053",
+    "slug": "basin-jaw-stone-ogre",
+    "baseType": "ancientSentinel",
+    "locomotion": "heavy",
+    "level": 51,
+    "anatomy": "Massive heavy bipedal stone guardian with huge wide pale gold carved basin lower jaw forming most of its body, tiny violet crag head rising behind basin, two enormous jade slab hands on short thick arms, two short red stone pillar legs, and three long ivory crystal teeth projecting from basin rim. No weapons. Wide stomping gait, one huge slab fist smash, braced tilting hurt, completely fallen sideways basin cracked and limbs sprawled death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-053",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "names": {
+      "en": "Basin Jaw Stone Ogre",
+      "ru": "Каменный огр чашечелюсть",
+      "es": "Ogro de mandíbula cuenca"
+    }
+  },
+  {
+    "id": "desert-species-054",
+    "slug": "sundial-mask-phantom",
+    "baseType": "arcaneWisp",
+    "locomotion": "hover",
+    "level": 47,
+    "anatomy": "Floating magical scarlet oval theater mask seen as solid carved ceramic with one enormous turquoise eye, a tall narrow golden sundial gnomon crest extending backward from crown, two thick coiled ivory side scrolls, and a split violet banner tail beneath. No arms or feet. Hovering bob and banner bends, forward mask-lunge attack, folded tilted recoil, completely fallen broken mask flat on ground with detached gnomon and limp banner for death. No particles, haze or glow.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-054",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "names": {
+      "en": "Sundial Mask Phantom",
+      "ru": "Призрак солнечной маски",
+      "es": "Fantasma máscara solar"
+    }
+  },
+  {
+    "id": "desert-species-055",
+    "slug": "trumpet-throat-sand-adder",
+    "baseType": "desertSnake",
+    "locomotion": "serpent",
+    "level": 55,
+    "anatomy": "Limbless ground-slithering thick emerald viper with a giant flared orange trumpet-shaped throat frill encircling its little dark cobalt pointed head, long heavy belly patterned with large ivory square scales, a tiny red forked tail and two short curved golden brow horns. No legs, arms or wings. Different sinuous low slither curves, reared trumpet-neck bite attack, head tucked into collapsed frill hurt, totally limp elongated sideways ground death with throat frill folded flat.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "spotId": "desert-spot-055",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "names": {
+      "en": "Trumpet Throat Sand Adder",
+      "ru": "Песчаный аспид трубогорл",
+      "es": "Víbora garganta trompeta"
+    }
+  }
+]

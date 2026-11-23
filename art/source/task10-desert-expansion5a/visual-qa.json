@@ -1,0 +1,102 @@
+{
+  "runtimeVerified": false,
+  "reviewMethod": "All 48 final frames per model visually inspected in the saved labeled 8x6 sand-composited contact sheets; all eight complete sheets (384 poses) reviewed. Mint-background source cutouts reviewed for alpha contamination.",
+  "models": [
+    {
+      "id": "desert-species-040",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "ancientSentinel",
+      "locomotionPreserved": "heavy",
+      "source": "art/source/task10-desert-expansion5a/desert-species-040-clean.png",
+      "qaComposite": "desert-species-040-composited-qa.jpg",
+      "finalPNGSHA256": "822da941775c0a3213731c0bf132f4e8d92754858250cfa182bb839c62bfe0cd"
+    },
+    {
+      "id": "desert-species-041",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "scarab",
+      "locomotionPreserved": "crawler",
+      "source": "art/source/task10-desert-expansion5a/desert-species-041-reflow.png",
+      "qaComposite": "desert-species-041-composited-qa.jpg",
+      "finalPNGSHA256": "2b1f9db7d48c9cda7e3815f0b29e42048171af0105b53c7f98ed4fc47110c4a7"
+    },
+    {
+      "id": "desert-species-042",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "desertSnake",
+      "locomotionPreserved": "serpent",
+      "source": "art/source/task10-desert-expansion5a/desert-species-042-reflow.png",
+      "qaComposite": "desert-species-042-composited-qa.jpg",
+      "finalPNGSHA256": "25eadcfa0b7a6e25d24a64b59429842a36827ca3cdf5d910d21480504f410748"
+    },
+    {
+      "id": "desert-species-043",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "arcaneWisp",
+      "locomotionPreserved": "hover",
+      "source": "art/source/task10-desert-expansion5a/desert-species-043-clean.png",
+      "qaComposite": "desert-species-043-composited-qa.jpg",
+      "finalPNGSHA256": "b167179e43aeaeb2daef283dfc64c32c536b7b1275f24daaae850d5388dbd684"
+    },
+    {
+      "id": "desert-species-044",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "ancientSentinel",
+      "locomotionPreserved": "heavy",
+      "source": "art/source/task10-desert-expansion5a/desert-species-044-clean.png",
+      "qaComposite": "desert-species-044-composited-qa.jpg",
+      "finalPNGSHA256": "98b93ec3e1919ae73bd3e7c2e91a747ba4a73572fbb7fb58b549e9796feb5feb"
+    },
+    {
+      "id": "desert-species-045",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "scarab",
+      "locomotionPreserved": "crawler",
+      "source": "art/source/task10-desert-expansion5a/desert-species-045-clean.png",
+      "qaComposite": "desert-species-045-composited-qa.jpg",
+      "finalPNGSHA256": "446d2a00266ddb64dcc12ac7f3647c98ef58af2f0c8138d73c35189277eba8c1"
+    },
+    {
+      "id": "desert-species-046",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "desertSnake",
+      "locomotionPreserved": "serpent",
+      "source": "art/source/task10-desert-expansion5a/desert-species-046-clean.png",
+      "qaComposite": "desert-species-046-composited-qa.jpg",
+      "finalPNGSHA256": "d8b24d51dabbcb7ad74937978c01da4fef2da3cbbec1c69950991c1763718adf"
+    },
+    {
+      "id": "desert-species-047",
+      "reviewedFrames": 48,
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "baseClassPreserved": "arcaneWisp",
+      "locomotionPreserved": "hover",
+      "source": "art/source/task10-desert-expansion5a/desert-species-047-death-repair.png",
+      "qaComposite": "desert-species-047-composited-qa.jpg",
+      "finalPNGSHA256": "4e96760563caad2d14082d9927fc725d8741e07fd352d8a2424273826b51318f"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "desert-species-040",
+    "slug": "granite-palankin-guardian",
+    "baseType": "ancientSentinel",
+    "locomotion": "heavy",
+    "level": 46,
+    "anatomy": "A massive bipedal ancient guardian with a low wide rectangular violet granite torso shaped like a ceremonial palanquin, two thick terracotta pillar legs, two huge curved ivory tusk arms, a small gold mask recessed at chest center, a stepped turquoise temple roof on its shoulders. Weighty grounded walking, alternating pillar strides, tusk-arm smash, leaning recoil, fully fallen shattered palanquin death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Granite Palankin Guardian",
+      "ru": "Гранитный страж-паланкин",
+      "es": "Guardián palanquín de granito"
+    },
+    "spotId": "desert-spot-040",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ]
+  },
+  {
+    "id": "desert-species-041",
+    "slug": "ladlehorn-scarab",
+    "baseType": "scarab",
+    "locomotion": "crawler",
+    "level": 46,
+    "anatomy": "A low six-legged beetle with a huge broad golden ladle-shaped projecting horn, tall convex coral shell split into three overlapping fan plates, tiny teal head, six thin hooked cobalt jointed legs. Scuttling gait, spoon-horn thrust attack, curled recoil, fully overturned beetle with six legs curled skyward for death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Ladlehorn Scarab",
+      "ru": "Жук-черпакорог",
+      "es": "Escarabajo cuernocucharón"
+    },
+    "spotId": "desert-spot-041",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ]
+  },
+  {
+    "id": "desert-species-042",
+    "slug": "lantern-jaw-cobra",
+    "baseType": "desertSnake",
+    "locomotion": "serpent",
+    "level": 55,
+    "anatomy": "A limbless ground-slithering cobra with an unusually tall narrow orange accordion hood, a square luminous turquoise lantern lower jaw, two long flexible ivory brow horns, and long purple segmented tail. No limbs. Serpentine sliding curves, extended striking neck, compressed hurt, fully limp sideways uncoiled death with hood folded flat.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Lantern Jaw Cobra",
+      "ru": "Кобра фонарочелюсть",
+      "es": "Cobra mandíbula farol"
+    },
+    "spotId": "desert-spot-042",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ]
+  },
+  {
+    "id": "desert-species-043",
+    "slug": "saffron-orbit-oracle",
+    "baseType": "arcaneWisp",
+    "locomotion": "hover",
+    "level": 52,
+    "anatomy": "A hovering magical spirit consisting of a large opaque saffron crescent shell embracing a turquoise spherical eyeball, two broad red pennant fins projecting horizontally, and three thick blue tapering ribbons dangling below. No humanoid body or feet. Floating bob, swooping orbit attack, folding hurt, collapsed crescent and tangled ribbons on ground for death. No glow haze or particles.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Saffron Orbit Oracle",
+      "ru": "Шафрановый оракул орбиты",
+      "es": "Oráculo orbital azafrán"
+    },
+    "spotId": "desert-spot-043",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ]
+  },
+  {
+    "id": "desert-species-044",
+    "slug": "amphora-throne-colossus",
+    "baseType": "ancientSentinel",
+    "locomotion": "heavy",
+    "level": 53,
+    "anatomy": "A heavy quadrupedal ancient clay guardian: giant pale turquoise amphora torso lying horizontally, wide red carved throne back rising vertically on top, massive terracotta lion head at front, four short thick golden block paws, two curling ceramic vessel handles at sides. Ground stomping alternating four-leg gait, head ram attack, crouched recoil, fully tipped sideways broken amphora and fallen throne death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Amphora Throne Colossus",
+      "ru": "Амфорный троноколосс",
+      "es": "Coloso trono de ánfora"
+    },
+    "spotId": "desert-spot-044",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ]
+  },
+  {
+    "id": "desert-species-045",
+    "slug": "trident-mantle-beetle",
+    "baseType": "scarab",
+    "locomotion": "crawler",
+    "level": 51,
+    "anatomy": "A flat triangular six-legged desert scarab with broad emerald shield shell like a manta ray, a tall three-pronged ivory fork crest on the front, short fat orange abdomen, six heavy red angular jointed legs widely spread. Ground crawler, alternating scuttle steps, forward fork stab attack, folded recoil, fully overturned shell with curled legs for death. No wings.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Trident Mantle Beetle",
+      "ru": "Жук трезубомантия",
+      "es": "Escarabajo manto tridente"
+    },
+    "spotId": "desert-spot-045",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ]
+  },
+  {
+    "id": "desert-species-046",
+    "slug": "paddle-muzzle-sand-worm",
+    "baseType": "desertSnake",
+    "locomotion": "serpent",
+    "level": 45,
+    "anatomy": "A limbless low ground-slithering stout sky-blue sand worm with a huge broad red paddle muzzle, four large golden neck rings, pear-shaped body narrowing to a curly orange spiral tail, two tiny upward eyes. No legs, wings, hood or arms. Different serpentine bends for movement, reared paddle bite, accordion contracted hurt, fully limp sideways flattened elongated death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Paddle Muzzle Sand Worm",
+      "ru": "Пескочервь веслорыл",
+      "es": "Gusano de arena hocico pala"
+    },
+    "spotId": "desert-spot-046",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ]
+  },
+  {
+    "id": "desert-species-047",
+    "slug": "prism-teapot-wisp",
+    "baseType": "arcaneWisp",
+    "locomotion": "hover",
+    "level": 47,
+    "anatomy": "A floating magical living violet prism-shaped teapot with large curved golden spout, a thick turquoise crescent handle, orange pointed crystalline lid, two short opaque blue ribbon tails beneath and an expressive amber eye on the pot. No legs. Hovering bob, leaning spout blast without particles, squeezed tilted recoil, fully fallen sideways broken pot with detached lid for death. No vapor, particles or haze.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Prism Teapot Wisp",
+      "ru": "Призрачный призмо-чайник",
+      "es": "Espectro tetera prisma"
+    },
+    "spotId": "desert-spot-047",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ]
+  }
+]

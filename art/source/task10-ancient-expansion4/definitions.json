@@ -1,0 +1,154 @@
+[
+  {
+    "id": "ancient-species-031",
+    "slug": "crescent-crystal-scarab",
+    "names": {
+      "ru": "Полумесяцный хрустальный скарабей",
+      "en": "Crescent crystal scarab",
+      "es": "Escarabajo cristal lunar"
+    },
+    "baseType": "scarab",
+    "biome": "elder-mystic",
+    "locomotion": "crawler",
+    "targetIdleHeight": 64,
+    "spotId": "ancient-spot-031",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "ancient-species-033",
+    "slug": "acorn-bark-scarab",
+    "names": {
+      "ru": "Жёлудевый короед",
+      "en": "Acorn bark scarab",
+      "es": "Escarabajo bellota"
+    },
+    "baseType": "scarab",
+    "biome": "elder-forest",
+    "locomotion": "crawler",
+    "targetIdleHeight": 62,
+    "spotId": "ancient-spot-033",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "ancient-species-034",
+    "slug": "temple-arch-sentinel",
+    "names": {
+      "ru": "Страж храмовой арки",
+      "en": "Temple arch sentinel",
+      "es": "Centinela del arco"
+    },
+    "baseType": "ancientSentinel",
+    "biome": "elder-ruins",
+    "locomotion": "heavy",
+    "targetIdleHeight": 80,
+    "spotId": "ancient-spot-034",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "ancient-species-035",
+    "slug": "shovel-skull-waste-serpent",
+    "names": {
+      "ru": "Лопаточерепый змей пустошей",
+      "en": "Shovel skull waste serpent",
+      "es": "Serpiente cráneo pala"
+    },
+    "baseType": "desertSnake",
+    "biome": "elder-wastes",
+    "locomotion": "serpent",
+    "targetIdleHeight": 66,
+    "spotId": "ancient-spot-035",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "ancient-species-037",
+    "slug": "fancrest-brass-knight",
+    "names": {
+      "ru": "Латунный веерошлем",
+      "en": "Fancrest brass knight",
+      "es": "Caballero latón de cresta abanico"
+    },
+    "baseType": "fallenKnight",
+    "biome": "elder-dry",
+    "locomotion": "biped",
+    "targetIdleHeight": 70,
+    "spotId": "ancient-spot-037",
+    "proposedAbilityPattern": [
+      "cleave",
+      "charge"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "ancient-species-038",
+    "slug": "mosaic-hammer-knight",
+    "names": {
+      "ru": "Мозаичный молотобоец",
+      "en": "Mosaic hammer knight",
+      "es": "Caballero martillo mosaico"
+    },
+    "baseType": "fallenKnight",
+    "biome": "elder-dry",
+    "locomotion": "biped",
+    "targetIdleHeight": 73,
+    "spotId": "ancient-spot-038",
+    "proposedAbilityPattern": [
+      "cleave",
+      "charge"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "ancient-species-039",
+    "slug": "ringdisk-ruin-scarab",
+    "names": {
+      "ru": "Кольцедисковый скарабей руин",
+      "en": "Ringdisk ruin scarab",
+      "es": "Escarabajo disco anillado"
+    },
+    "baseType": "scarab",
+    "biome": "elder-ruins",
+    "locomotion": "crawler",
+    "targetIdleHeight": 62,
+    "spotId": "ancient-spot-039",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "ancient-species-040",
+    "slug": "forkhorn-waste-elemental",
+    "names": {
+      "ru": "Вилорогий элементаль пустошей",
+      "en": "Forkhorn waste elemental",
+      "es": "Elemental del yermo astado"
+    },
+    "baseType": "voidElemental",
+    "biome": "elder-wastes",
+    "locomotion": "hover",
+    "targetIdleHeight": 74,
+    "spotId": "ancient-spot-040",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "runtimeRegistered": false
+  }
+]

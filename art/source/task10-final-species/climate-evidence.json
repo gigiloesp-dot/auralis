@@ -1,0 +1,151 @@
+[
+  {
+    "id": "forest-species-077",
+    "region": "forest",
+    "x": 11713,
+    "y": 3657,
+    "type": "forestWolf",
+    "level": 13,
+    "climate": {
+      "id": "woodland",
+      "type": "grove",
+      "color": 5405507,
+      "names": {
+        "ru": "Лесные просторы",
+        "en": "Woodlands",
+        "es": "Bosques"
+      },
+      "transition": false
+    }
+  },
+  {
+    "id": "forest-species-078",
+    "region": "forest",
+    "x": 13759,
+    "y": 15391,
+    "type": "spider",
+    "level": 23,
+    "climate": {
+      "id": "abandoned-city",
+      "type": "abandonedCity",
+      "color": 7829598,
+      "names": {
+        "ru": "Заросший город",
+        "en": "Overgrown city",
+        "es": "Ciudad invadida"
+      },
+      "transition": false
+    }
+  },
+  {
+    "id": "forest-species-079",
+    "region": "forest",
+    "x": 12266,
+    "y": 11281,
+    "type": "forestOrc",
+    "level": 18,
+    "climate": {
+      "id": "woodland",
+      "type": "grove",
+      "color": 5667654,
+      "names": {
+        "ru": "Лесные просторы",
+        "en": "Woodlands",
+        "es": "Bosques"
+      },
+      "transition": true
+    }
+  },
+  {
+    "id": "north-species-074",
+    "region": "north",
+    "x": 19498,
+    "y": 11849,
+    "type": "wraith",
+    "level": 36,
+    "climate": {
+      "id": "volcanic",
+      "type": "volcanic",
+      "color": 4341051,
+      "names": {
+        "ru": "Пепельная гряда",
+        "en": "Ashen range",
+        "es": "Cordillera de ceniza"
+      },
+      "transition": false
+    }
+  },
+  {
+    "id": "north-species-075",
+    "region": "north",
+    "x": 13106,
+    "y": 17130,
+    "type": "iceBat",
+    "level": 35,
+    "climate": {
+      "id": "snow",
+      "type": "snowfield",
+      "color": 14871280,
+      "names": {
+        "ru": "Снежные просторы",
+        "en": "Snowfields",
+        "es": "Campos nevados"
+      },
+      "transition": false
+    }
+  },
+  {
+    "id": "ancient-species-042",
+    "region": "ancient",
+    "x": 8063,
+    "y": 14346,
+    "type": "ancientGargoyle",
+    "level": 41,
+    "climate": {
+      "id": "elder-dry",
+      "type": "dryground",
+      "color": 11639407,
+      "names": {
+        "ru": "Сухой предел",
+        "en": "Arid frontier",
+        "es": "Frontera árida"
+      }
+    }
+  },
+  {
+    "id": "ancient-species-043",
+    "region": "ancient",
+    "x": 12446,
+    "y": 4499,
+    "type": "arcaneWisp",
+    "level": 40,
+    "climate": {
+      "id": "elder-ruins",
+      "type": "ruinfield",
+      "color": 8749420,
+      "names": {
+        "ru": "Разрушенные владения",
+        "en": "Shattered dominion",
+        "es": "Dominio derruido"
+      }
+    }
+  },
+  {
+    "id": "ancient-species-044",
+    "region": "ancient",
+    "x": 13755,
+    "y": 8622,
+    "type": "desertSnake",
+    "level": 41,
+    "climate": {
+      "id": "elder-wastes",
+      "type": "wastes",
+      "color": 9605514,
+      "names": {
+        "ru": "Каменное безмолвие",
+        "en": "Stone silence",
+        "es": "Silencio de piedra"
+      }
+    }
+  }
+]

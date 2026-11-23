@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "totalPoses": 384,
+  "models": [
+    {
+      "id": "desert-species-032",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1605,
+      "transparentFraction": 0.8842137654622396,
+      "nativeIdleHeights": [
+        60,
+        62,
+        61,
+        61,
+        63,
+        63,
+        60,
+        61
+      ],
+      "sha256": "f5068100805d082cd2d6e3b76be7b25b6442546c100167225ef58c6934bd95bd"
+    },
+    {
+      "id": "desert-species-033",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1490,
+      "transparentFraction": 0.8857506646050347,
+      "nativeIdleHeights": [
+        71,
+        61,
+        53,
+        53,
+        60,
+        54,
+        53,
+        64
+      ],
+      "sha256": "191b941b9927f528e16bfdda95f56ffc0fdb134e161412e16cc2bf0898b723ac"
+    },
+    {
+      "id": "desert-species-034",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1477,
+      "transparentFraction": 0.8811069064670138,
+      "nativeIdleHeights": [
+        54,
+        54,
+        44,
+        58,
+        62,
+        56,
+        44,
+        54
+      ],
+      "sha256": "460990af9dabfa2aa2110e255b5a0d33ad41952b8c228c916da8b74d27f54d5f"
+    },
+    {
+      "id": "desert-species-035",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 2261,
+      "transparentFraction": 0.8505206637912326,
+      "nativeIdleHeights": [
+        70,
+        72,
+        72,
+        73,
+        72,
+        74,
+        72,
+        72
+      ],
+      "sha256": "724ebe2c32dec5a8c6fe65a2869bb07db688ecbcafecaf8f7089fc971b7767cc"
+    },
+    {
+      "id": "desert-species-036",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1134,
+      "transparentFraction": 0.9138692220052084,
+      "nativeIdleHeights": [
+        60,
+        59,
+        59,
+        58,
+        60,
+        60,
+        59,
+        60
+      ],
+      "sha256": "da033931f993436c494df6d6858a5099f51be95afbd8e4d32bd5b3ad7461c926"
+    },
+    {
+      "id": "desert-species-037",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 886,
+      "transparentFraction": 0.8915727403428819,
+      "nativeIdleHeights": [
+        52,
+        53,
+        49,
+        48,
+        51,
+        49,
+        48,
+        53
+      ],
+      "sha256": "967e540d09e8d8809c9218da2c1cf357d1b78932e6c050d2c094a87104462151"
+    },
+    {
+      "id": "desert-species-038",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1023,
+      "transparentFraction": 0.7665752834743924,
+      "nativeIdleHeights": [
+        43,
+        42,
+        41,
+        42,
+        43,
+        42,
+        40,
+        43
+      ],
+      "sha256": "2d338c23229324c6c5a2207430048722418d979d4596a1ddefa69651f121b844"
+    },
+    {
+      "id": "desert-species-039",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 2498,
+      "transparentFraction": 0.8545583089192709,
+      "nativeIdleHeights": [
+        71,
+        69,
+        58,
+        66,
+        61,
+        64,
+        58,
+        68
+      ],
+      "sha256": "f55ca30618156143a6a8563798d7219ff46373f7959f87503e37c4b4f99b1365"
+    }
+  ]
+}

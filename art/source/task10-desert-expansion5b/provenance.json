@@ -1,0 +1,10 @@
+{
+  "generator": "image_gen.imagegen",
+  "transparentBackgroundRequested": true,
+  "originals": "*-source.png",
+  "semanticRepairs": "All8models received image_gen background-removal edits preserving48poses. 051death/N additionally repainted as unmistakable horizontally collapsed limp corpse; every other pose retained. All original and repaired PNGs preserved.",
+  "generationPromptTemplate": "Original professional painted cartoon isometric videogame monster; definition anatomy; exactly48 distinct complete poses on8-column6-row1536x1024sprite sheet; each body110pxmaximum with35pxblank margins in192x170cells; columns N NE E SE S SW W NW; rows idle run-a run-b attack hurt fullycollapsed-death. True alpha-zero background, no text, ground, shadows, haze, speckles or particles.",
+  "packing": "Pillow only: crop complete source-pose regions selected at blank corridors, uniform resize, source-over composite. No alpha threshold, mask, erase, recolor or anatomy edits applied to source image pixels. Alpha projections used only to select crop coordinates.",
+  "runtimeVerified": false,
+  "finalVisualQA": "All384 finalposes reviewed inbothbeige anddark16compositedcontact sheets; sourcecutoutsalsoviewed; no visiblematte, fragments orcross-cellanatomy."
+}

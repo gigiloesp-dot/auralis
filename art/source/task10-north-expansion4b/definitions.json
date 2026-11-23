@@ -1,0 +1,130 @@
+[
+  [
+    "north-species-043",
+    "snowglass-manta",
+    76,
+    "Snow hovering elemental shaped like a thick diamond stingray of frosted glass with a circular hollow central body and four short dangling icicle fins, single curled crystalline tail. NO legs, NO wings, NO humanoid features. Levitation motion, fin pulse attack, collapsed glass death.",
+    "Снегостеклянный скат",
+    "Snowglass manta",
+    "Manta de vidrio níveo",
+    "iceElemental",
+    "snow",
+    "hover",
+    [
+      "blink",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-045",
+    "rime-jelly-crown",
+    78,
+    "Snow hovering ice elemental, a tall translucent bell-shaped jellyfish crown with six short thick faceted crystal tentacles hanging from it, opaque navy core, scalloped wide rim and white frost. NO rays or humanoid legs. Bobbing float, tentacle flare attack, sideways crumpled death.",
+    "Венценосная ледуза",
+    "Crowned rime jelly",
+    "Medusa coronada de escarcha",
+    "iceElemental",
+    "snow",
+    "hover",
+    [
+      "blink",
+      "roots"
+    ]
+  ],
+  [
+    "north-species-047",
+    "plowtusk-polar-bear",
+    83,
+    "Snow enormous QUADRUPED polar BEAR with broad bear muzzle, round ears, tiny nub tail, heavy ivory fur, huge broad shovel-shaped pair of dark bone tusks curving OUT sideways below face, pronounced high humped shoulders and four shaggy stout paws. Four-legged lumbering strides, tusk scoop attack, collapsed dead bear. No shell or horns.",
+    "Плугоклыкий белый медведь",
+    "Plowtusk polar bear",
+    "Oso polar de colmillos arado",
+    "snowBear",
+    "snow",
+    "quadruped",
+    [
+      "stomp",
+      "charge"
+    ]
+  ],
+  [
+    "north-species-049",
+    "obsidian-veil-wraith",
+    78,
+    "Volcanic HOVERING ghost, head entirely hidden beneath an enormous angular black obsidian mourning veil shaped like an inverted pointed arch, slim red ceramic mask with three holes, two long dangling black claw arms, short tapering ragged ash cloak underneath, ember red seams ONLY inside body. No feet, no legs, no external smoke or particles. Hovering drift, claw swipe attack, collapsed cloth death.",
+    "Обсидиановый плащеносец",
+    "Obsidian veil wraith",
+    "Espectro del velo de obsidiana",
+    "wraith",
+    "volcanic",
+    "hover",
+    [
+      "haunt",
+      "shot"
+    ]
+  ],
+  [
+    "north-species-051",
+    "basalt-anvil-golem",
+    91,
+    "Volcanic heavy BIPED golem with giant horizontal anvil-shaped shoulder bar, squat faceless copper kettle head, black basalt block body with sealed deep red interior fissures, two broad stone pillar legs and massive tongs-shaped arms. Two-legged heavy march, hammer slam attack, collapsed broken stone death. NO flames smoke particles.",
+    "Базальтовая наковальня",
+    "Basalt anvil golem",
+    "Gólem yunque de basalto",
+    "frostGolem",
+    "volcanic",
+    "heavy",
+    [
+      "stomp",
+      "cleave"
+    ]
+  ],
+  [
+    "north-species-053",
+    "ivory-mask-harpooner",
+    70,
+    "Snow BIPED human raider wearing a broad round carved ivory owl mask, tall white fur hood, navy wool tunic, thick pale fur boots, bulky sealskin mittens. Carries short hooked bone harpoon held CLOSE to body and a small round wicker shield. Human adult proportions, two legs. Purposeful running stride, compact harpoon thrust attack, crumpled lying dead human. Every weapon remains close inside own cell.",
+    "Гарпунщик в костяной маске",
+    "Ivory-mask harpooner",
+    "Arponero de máscara de marfil",
+    "snowRaider",
+    "snow",
+    "biped",
+    [
+      "charge",
+      "cleave"
+    ]
+  ],
+  [
+    "north-species-055",
+    "kilnback-ash-bear",
+    86,
+    "Volcanic enormous QUADRUPED BEAR with broad blunt bear muzzle, round ears, short nub tail, four huge blunt paws, ash-grey fur, tall terracotta kiln chimney integrated into humped shoulder armor, ridged reddish ceramic back plates and orange glowing sealed chest. No external flames or smoke. Bear running on all fours, paw slam attack, dead bear lying down.",
+    "Печеспинный пепельный медведь",
+    "Kilnback ash bear",
+    "Oso de ceniza de lomo horno",
+    "snowBear",
+    "volcanic",
+    "quadruped",
+    [
+      "stomp",
+      "charge"
+    ]
+  ],
+  [
+    "north-species-057",
+    "frost-ribbon-abbess",
+    78,
+    "Snow HOVERING wraith, tiny pale faceless head inside tall forked nun-like ice headdress, huge fan collar of white frost feathers, dark blue flowing narrow body terminating in three short curled ribbon tips, long mitten-like ghost hands held at chest. No feet legs weapons particles. Graceful floating motion, spread hands attack, crumpled ribbon cloth death.",
+    "Морозная ленточница",
+    "Frost ribbon abbess",
+    "Abadesa de cintas heladas",
+    "wraith",
+    "snow",
+    "hover",
+    [
+      "haunt",
+      "frost"
+    ]
+  ]
+]

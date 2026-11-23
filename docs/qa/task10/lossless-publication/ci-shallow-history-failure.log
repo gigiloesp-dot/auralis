@@ -10,7 +10,7 @@
 2026-11-23T15:32:24.4986285Z   error: |-
 2026-11-23T15:32:24.4987049Z     Command failed: git ls-tree -r --name-only 89966076fe6488e9e1ca009f07ee3db32ad3fd1f assets/actors
 2026-11-23T15:32:24.4987822Z     fatal: not a tree object
-2026-11-23T15:32:24.4988153Z     
+2026-11-23T15:32:24.4988153Z
 2026-11-23T15:32:24.4988462Z   code: 'ERR_TEST_FAILURE'
 2026-11-23T15:32:24.4988853Z   stack: |-
 2026-11-23T15:32:24.4989576Z     genericNodeError (node:internal/errors:983:15)

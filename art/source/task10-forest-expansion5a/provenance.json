@@ -1,0 +1,75 @@
+{
+  "task": 10,
+  "pack": "forest-expansion5a",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "source": "OpenAI image_gen; transparent originals; image_gen reflow repairs for063/064/067",
+  "mechanicalPacking": "Pillow complete-pose rectangular registration in blank corridors, uniform per-species resampling; no alpha thresholding/erasing or anatomical repainting",
+  "visualInspection": {
+    "finalPosesInspected": 384,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "observations": "All final sheets inspected in all six states and eight columns. Distinct anatomy, no visible matte or neighbor fragments; death collapsed. Runtime facing, attack synchronization and streaming remain for root integration/browser tests."
+  },
+  "models": [
+    {
+      "id": "forest-species-061",
+      "name": "Belljaw mosaic skeleton duelist",
+      "archetype": "skeleton",
+      "level": 25,
+      "biome": "abandoned-city"
+    },
+    {
+      "id": "forest-species-062",
+      "name": "Aqueduct archback bear",
+      "archetype": "bear",
+      "level": 18,
+      "biome": "abandoned-city"
+    },
+    {
+      "id": "forest-species-063",
+      "name": "Portcullis crested viper",
+      "archetype": "thornSnake",
+      "level": 16,
+      "biome": "abandoned-city"
+    },
+    {
+      "id": "forest-species-064",
+      "name": "Birch sailwing bat",
+      "archetype": "forestBat",
+      "level": 9,
+      "biome": "woodland"
+    },
+    {
+      "id": "forest-species-065",
+      "name": "Gargoyle lantern bat",
+      "archetype": "forestBat",
+      "level": 23,
+      "biome": "abandoned-city"
+    },
+    {
+      "id": "forest-species-066",
+      "name": "Hazelnut stilt spider",
+      "archetype": "spider",
+      "level": 13,
+      "biome": "woodland"
+    },
+    {
+      "id": "forest-species-067",
+      "name": "Fern antler skeleton",
+      "archetype": "skeleton",
+      "level": 19,
+      "biome": "woodland"
+    },
+    {
+      "id": "forest-species-068",
+      "name": "Chimney crabspider",
+      "archetype": "spider",
+      "level": 14,
+      "biome": "abandoned-city"
+    }
+  ]
+}

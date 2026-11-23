@@ -1,0 +1,151 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-069",
+      "names": {
+        "ru": "Грибоспинный медведь",
+        "en": "Shelf-fungus bear",
+        "es": "Oso de hongos de repisa"
+      },
+      "baseType": "bear",
+      "biome": "woodland",
+      "nativeIdleHeight": 82,
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "silhouette": "A heavy quadruped cream-gray forest bear with very long dark forearms, tiny round ears and two huge stepped chestnut shelf-fungus plates growing horizontally from its shoulders. Short tail, four legs, broad hanging rectangular shoulder silhouette. Moss-green chin beard.",
+      "statsChanged": false,
+      "sourceChoice": "original"
+    },
+    {
+      "id": "forest-species-070",
+      "names": {
+        "ru": "Орк квадратного щита",
+        "en": "Square-shield orc",
+        "es": "Orco del escudo cuadrado"
+      },
+      "baseType": "forestOrc",
+      "biome": "woodland",
+      "nativeIdleHeight": 72,
+      "proposedAbilityPattern": [
+        "cleave",
+        "roots"
+      ],
+      "silhouette": "A lanky green-skinned biped orc with very long arms and two small tusks, high narrow woven reed helmet, short moss poncho, enormous square folded-leaf shield in left hand and a short hooked bone axe in right hand. Bare broad feet, rust trousers. Angular upright silhouette.",
+      "statsChanged": false,
+      "sourceChoice": "reflow"
+    },
+    {
+      "id": "forest-species-071",
+      "names": {
+        "ru": "Кабан соснового тарана",
+        "en": "Pine-ram boar",
+        "es": "Jabalí ariete de pino"
+      },
+      "baseType": "wildBoar",
+      "biome": "woodland",
+      "nativeIdleHeight": 66,
+      "proposedAbilityPattern": [
+        "charge",
+        "stomp"
+      ],
+      "silhouette": "A muscular low slung dark chestnut quadruped wild boar with massive long forward-curving ivory tusks, pointed pinecone-shaped armored forehead, high spiked black dorsal mane tapering to tiny rear, small straight tail. Large front-heavy wedge silhouette, cloven hooves.",
+      "statsChanged": false,
+      "sourceChoice": "original"
+    },
+    {
+      "id": "forest-species-072",
+      "names": {
+        "ru": "Волк часовой арки",
+        "en": "Clock-arch wolf",
+        "es": "Lobo del arco del reloj"
+      },
+      "baseType": "forestWolf",
+      "biome": "abandoned-city",
+      "nativeIdleHeight": 76,
+      "proposedAbilityPattern": [
+        "pounce",
+        "haunt"
+      ],
+      "silhouette": "A lean quadruped silver wolf wearing a broken large brass clock dial as a tall circular collar around the shoulders. Long narrow muzzle, small triangular ears, long slender legs, thin tail curled into a near circular ring. Dark paws, teal copper straps. No wings.",
+      "statsChanged": false,
+      "sourceChoice": "reflow"
+    },
+    {
+      "id": "forest-species-073",
+      "names": {
+        "ru": "Витражноухая крылатка",
+        "en": "Lattice-ear bat",
+        "es": "Murciélago de orejas enrejadas"
+      },
+      "baseType": "forestBat",
+      "biome": "abandoned-city",
+      "nativeIdleHeight": 66,
+      "proposedAbilityPattern": [
+        "dive",
+        "haunt"
+      ],
+      "silhouette": "A flying bat with slender burgundy body, very long narrow tapered plum-colored bat wings, enormous tall rectangular lattice-pattern ears resembling gothic screens, short hooked feet and a tiny tail. Pale ivory face and tarnished gold wing finger-struts. Bat membranes, no feathers.",
+      "statsChanged": false,
+      "sourceChoice": "reflow"
+    },
+    {
+      "id": "forest-species-074",
+      "names": {
+        "ru": "Папоротниковый вепрь",
+        "en": "Fern-crown boar",
+        "es": "Jabalí de corona de helecho"
+      },
+      "baseType": "wildBoar",
+      "biome": "woodland",
+      "nativeIdleHeight": 70,
+      "proposedAbilityPattern": [
+        "charge",
+        "roots"
+      ],
+      "silhouette": "A very round barrel-shaped ochre wild boar on four short teal-gray cloven legs, broad pink snout, short spade-shaped ivory tusks, large fan of three curled emerald fern fronds arching from the back, tiny curly tail and drooping round ears. Squat round silhouette.",
+      "statsChanged": false,
+      "sourceChoice": "original"
+    },
+    {
+      "id": "forest-species-075",
+      "names": {
+        "ru": "Разбойник сланцевого шлема",
+        "en": "Slate-helm ruin raider",
+        "es": "Bandido de yelmo de pizarra"
+      },
+      "baseType": "forestRaider",
+      "biome": "abandoned-city",
+      "nativeIdleHeight": 72,
+      "proposedAbilityPattern": [
+        "cleave",
+        "haunt"
+      ],
+      "silhouette": "A tall slender human ruin raider in a broad slate-blue triangular kettle helmet with long white plume, dark crimson split cloak, fitted gray leather tunic, narrow boots. Carries a short curved rust-red sword in right hand and small diamond-shaped turquoise shield in left hand. Clearly human, two arms and legs.",
+      "statsChanged": false,
+      "sourceChoice": "reflow"
+    },
+    {
+      "id": "forest-species-076",
+      "names": {
+        "ru": "Терновый рогогад",
+        "en": "Thorn-horn viper",
+        "es": "Víbora de cuernos espinosos"
+      },
+      "baseType": "thornSnake",
+      "biome": "woodland",
+      "nativeIdleHeight": 64,
+      "proposedAbilityPattern": [
+        "venom",
+        "roots"
+      ],
+      "silhouette": "A low coiled pale sage-green viper with a very broad triangular head, two long curved wooden thorn horns over amber eyes, cream belly, dark diamond scale pattern and an acorn-shaped thorny tail club. No cobra hood. Low horizontal serpentine silhouette, no limbs.",
+      "statsChanged": false,
+      "sourceChoice": "original"
+    }
+  ],
+  "sourcePolicy": "Preserve originals and imagegen reflows. Mechanical complete-pose source rectangle registration, scaling and alpha compositing only; no alpha masking or anatomy synthesis."
+}

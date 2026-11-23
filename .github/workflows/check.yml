@@ -534,3 +534,31 @@ jobs:
           name: browser-task10-forest-fourth-and-lossless-delivery
           path: work/task10/
           if-no-files-found: ignore
+
+  task10_additional_species:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [north-fourth, ancient-desert-fourth, forest-fifth, desert-fifth, final-eight]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Original registered species, directions, real abilities, locales and lifetime
+        run: npm run test:browser:task10-${{ matrix.group }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-task10-additional-${{ matrix.group }}
+          path: work/task10/
+          if-no-files-found: ignore

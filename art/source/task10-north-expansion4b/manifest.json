@@ -1,0 +1,378 @@
+[
+  {
+    "id": "north-species-043",
+    "names": {
+      "ru": "Снегостеклянный скат",
+      "en": "Snowglass manta",
+      "es": "Manta de vidrio níveo"
+    },
+    "baseType": "iceElemental",
+    "biome": "snow",
+    "movement": "hover",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "blink",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Snow hovering elemental shaped like a thick diamond stingray of frosted glass with a circular hollow central body and four short dangling icicle fins, single curled crystalline tail. NO legs, NO wings, NO humanoid features. Levitation motion, fin pulse attack, collapsed glass death.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-043-composited-qa.png",
+      "darkContactSheet": "north-species-043-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "21b8891a4942e8dbb8172a41c94c04318af4bd1aaa1b264f33be4f07f270ece6",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-043-cutout.png",
+    "sourceSHA256": "adaadeb3a3d5af217b43e060300192f3cf023f71859ccf570112a1aef5cf9aea"
+  },
+  {
+    "id": "north-species-045",
+    "names": {
+      "ru": "Венценосная ледуза",
+      "en": "Crowned rime jelly",
+      "es": "Medusa coronada de escarcha"
+    },
+    "baseType": "iceElemental",
+    "biome": "snow",
+    "movement": "hover",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "blink",
+      "roots"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Snow hovering ice elemental, a tall translucent bell-shaped jellyfish crown with six short thick faceted crystal tentacles hanging from it, opaque navy core, scalloped wide rim and white frost. NO rays or humanoid legs. Bobbing float, tentacle flare attack, sideways crumpled death.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-045-composited-qa.png",
+      "darkContactSheet": "north-species-045-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "0e356974639d51b5cda868ec069697d3c111803d77da892c650ac6e29a55d3ec",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-045-cutout.png",
+    "sourceSHA256": "149d721e65cf0788c64a90962e89f64465bfd10cc2048bc4d436d513b7b664b5"
+  },
+  {
+    "id": "north-species-047",
+    "names": {
+      "ru": "Плугоклыкий белый медведь",
+      "en": "Plowtusk polar bear",
+      "es": "Oso polar de colmillos arado"
+    },
+    "baseType": "snowBear",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Snow enormous QUADRUPED polar BEAR with broad bear muzzle, round ears, tiny nub tail, heavy ivory fur, huge broad shovel-shaped pair of dark bone tusks curving OUT sideways below face, pronounced high humped shoulders and four shaggy stout paws. Four-legged lumbering strides, tusk scoop attack, collapsed dead bear. No shell or horns.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-047-composited-qa.png",
+      "darkContactSheet": "north-species-047-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "fcc3da35bbd7396f7f4f47c7b8570a3711dbee4986a771c1478d2e8d8c307813",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-047-cutout.png",
+    "sourceSHA256": "59827aa8541b723c851e377049198f4a1c1cb7903bc988023b7cf9a66fa24f94"
+  },
+  {
+    "id": "north-species-049",
+    "names": {
+      "ru": "Обсидиановый плащеносец",
+      "en": "Obsidian veil wraith",
+      "es": "Espectro del velo de obsidiana"
+    },
+    "baseType": "wraith",
+    "biome": "volcanic",
+    "movement": "hover",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "haunt",
+      "shot"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Volcanic HOVERING ghost, head entirely hidden beneath an enormous angular black obsidian mourning veil shaped like an inverted pointed arch, slim red ceramic mask with three holes, two long dangling black claw arms, short tapering ragged ash cloak underneath, ember red seams ONLY inside body. No feet, no legs, no external smoke or particles. Hovering drift, claw swipe attack, collapsed cloth death.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-049-composited-qa.png",
+      "darkContactSheet": "north-species-049-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "f4f7ff37e090550fdbf88a674b62fa2cee0813d84b6ccbbe4bc96c4359d443bc",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-049-cutout.png",
+    "sourceSHA256": "b5882522a6ca3030cad8c7aa6ab9d01415c54e11827aa03d57fa5fee82feb7e1"
+  },
+  {
+    "id": "north-species-051",
+    "names": {
+      "ru": "Базальтовая наковальня",
+      "en": "Basalt anvil golem",
+      "es": "Gólem yunque de basalto"
+    },
+    "baseType": "frostGolem",
+    "biome": "volcanic",
+    "movement": "ground",
+    "locomotion": "heavy",
+    "proposedAbilityPattern": [
+      "stomp",
+      "cleave"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Volcanic heavy BIPED golem with giant horizontal anvil-shaped shoulder bar, squat faceless copper kettle head, black basalt block body with sealed deep red interior fissures, two broad stone pillar legs and massive tongs-shaped arms. Two-legged heavy march, hammer slam attack, collapsed broken stone death. NO flames smoke particles.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-051-composited-qa.png",
+      "darkContactSheet": "north-species-051-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "220e32f4094ff7bc03df4a3c88abe8617766ab76a2308dc582586bd655d9d108",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-051-cutout.png",
+    "sourceSHA256": "20ae8bd9642b4bf4fe03545f33c6811788f830dee9f72b858a1faed0a482cecf"
+  },
+  {
+    "id": "north-species-053",
+    "names": {
+      "ru": "Гарпунщик в костяной маске",
+      "en": "Ivory-mask harpooner",
+      "es": "Arponero de máscara de marfil"
+    },
+    "baseType": "snowRaider",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "biped",
+    "proposedAbilityPattern": [
+      "charge",
+      "cleave"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Snow BIPED human raider wearing a broad round carved ivory owl mask, tall white fur hood, navy wool tunic, thick pale fur boots, bulky sealskin mittens. Carries short hooked bone harpoon held CLOSE to body and a small round wicker shield. Human adult proportions, two legs. Purposeful running stride, compact harpoon thrust attack, crumpled lying dead human. Every weapon remains close inside own cell.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-053-composited-qa.png",
+      "darkContactSheet": "north-species-053-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "cae529e802c3b3d32f1484130c2e6436ff43b8e1ccfee29b96de41a20c7bc8aa",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-053-cutout.png",
+    "sourceSHA256": "143d51dcfc29c047efb7949ee300221a9422e2d308603ebab1aa9c4424ee5141"
+  },
+  {
+    "id": "north-species-055",
+    "names": {
+      "ru": "Печеспинный пепельный медведь",
+      "en": "Kilnback ash bear",
+      "es": "Oso de ceniza de lomo horno"
+    },
+    "baseType": "snowBear",
+    "biome": "volcanic",
+    "movement": "ground",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Volcanic enormous QUADRUPED BEAR with broad blunt bear muzzle, round ears, short nub tail, four huge blunt paws, ash-grey fur, tall terracotta kiln chimney integrated into humped shoulder armor, ridged reddish ceramic back plates and orange glowing sealed chest. No external flames or smoke. Bear running on all fours, paw slam attack, dead bear lying down.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-055-composited-qa.png",
+      "darkContactSheet": "north-species-055-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "8dfb24a7d6adc92721fbcbd4d5a74a898efa26c0a040fd4dc411e9e1f44dd93f",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-055-cutout.png",
+    "sourceSHA256": "36bd029caa915218f7077c99325e8353bd0430bbfb68bc9863ac4edf7540a0e3"
+  },
+  {
+    "id": "north-species-057",
+    "names": {
+      "ru": "Морозная ленточница",
+      "en": "Frost ribbon abbess",
+      "es": "Abadesa de cintas heladas"
+    },
+    "baseType": "wraith",
+    "biome": "snow",
+    "movement": "hover",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "haunt",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "Snow HOVERING wraith, tiny pale faceless head inside tall forked nun-like ice headdress, huge fan collar of white frost feathers, dark blue flowing narrow body terminating in three short curled ribbon tips, long mitten-like ghost hands held at chest. No feet legs weapons particles. Graceful floating motion, spread hands attack, crumpled ribbon cloth death.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-057-composited-qa.png",
+      "darkContactSheet": "north-species-057-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "892022fb6ad3bc36fdbca37174db6d30acce9f600c716eeea9dd390a09d76b30",
+      "checks": [
+        "complete anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death",
+        "individual measured footlines",
+        "climate appropriate distinct silhouette"
+      ]
+    },
+    "source": "art/source/task10-north-expansion4b/north-species-057-cutout.png",
+    "sourceSHA256": "926038da421f0a38c18c900d4421dee408bd2a33c981d887d27bb1e7e7a3614a"
+  }
+]
