@@ -9,6 +9,10 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The lossless delivery test compares PNGs with their pinned ancestor.
+          # A shallow PR merge checkout omits that provenance commit.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

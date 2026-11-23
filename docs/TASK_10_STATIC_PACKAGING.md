@@ -50,3 +50,7 @@ Additional proof: [WebP generation and Node verification](qa/task10/lossless-pub
 All144 pairs pass exact RGBA comparison through createImageBitmap with premultiplyAlpha:none and colorSpaceConversion:none followed by identical Canvas conversion. Native Image.decode has format-specific premultiply/unpremultiply quantization: an initial strict native comparison failed (retained log). The diagnostic found zero alpha/opaque differences and up to1.3255/255 weighted translucent difference in the first atlas. The final test retains exact canonical RGBA for every pixel, exact native alpha/opaque RGB, and a two-stage2/255 native translucent quantization bound for every pair; all144 pass, zero page errors. This is lossless source data, not a claim of identical native premultiplication arithmetic. Both Node and independent Pillow decodes preserve every original RGBA byte, including hiddenRGB.
 
 The browser loader lease checks explicitly use a spy scene; real Phaser load/unload/abilities remain covered by the existing gameplay suites. Full unit/CI after this new delivery integration remain pending. No physical Android test claimed.
+
+## CI source history fix
+
+Full local516/516 and458syntaxchecks passed. CI641fac4 passedall34browsers but unit515/516: checkoutdepth1 omitted pinned8996607 tree, so provenancevalidation could notrun. The validatecheckout now fetchesfullhistory; testandpixelassertions unchanged. No runtime/assets changed. New35job CI stillpending. Rawpreparedexport267571696bytes; gziparchiveunmeasured/notpublished.

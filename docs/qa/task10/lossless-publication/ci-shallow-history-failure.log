@@ -1,0 +1,39 @@
+2026-11-23T15:32:24.4979930Z   ...
+2026-11-23T15:32:24.4980291Z # fatal: not a tree object
+2026-11-23T15:32:24.4981265Z # Subtest: lossless actor delivery manifest pins committed sources, encoded bytes, and every source RGBA channel
+2026-11-23T15:32:24.4982811Z not ok 126 - lossless actor delivery manifest pins committed sources, encoded bytes, and every source RGBA channel
+2026-11-23T15:32:24.4983602Z   ---
+2026-11-23T15:32:24.4983933Z   duration_ms: 9.167133
+2026-11-23T15:32:24.4984316Z   type: 'test'
+2026-11-23T15:32:24.4985059Z   location: '/home/runner/work/auralis/auralis/tests/losslessActorTextures.test.mjs:12:1'
+2026-11-23T15:32:24.4985848Z   failureType: 'testCodeFailure'
+2026-11-23T15:32:24.4986285Z   error: |-
+2026-11-23T15:32:24.4987049Z     Command failed: git ls-tree -r --name-only 89966076fe6488e9e1ca009f07ee3db32ad3fd1f assets/actors
+2026-11-23T15:32:24.4987822Z     fatal: not a tree object
+2026-11-23T15:32:24.4988153Z     
+2026-11-23T15:32:24.4988462Z   code: 'ERR_TEST_FAILURE'
+2026-11-23T15:32:24.4988853Z   stack: |-
+2026-11-23T15:32:24.4989576Z     genericNodeError (node:internal/errors:983:15)
+2026-11-23T15:32:24.4990177Z     wrappedFn (node:internal/errors:537:14)
+2026-11-23T15:32:24.4990714Z     checkExecSyncError (node:child_process:916:11)
+2026-11-23T15:32:24.4991313Z     execFileSync (node:child_process:952:15)
+2026-11-23T15:32:24.4992342Z     TestContext.<anonymous> (file:///home/runner/work/auralis/auralis/tests/losslessActorTextures.test.mjs:15:14)
+2026-11-23T15:32:24.4993637Z     Test.runInAsyncScope (node:async_hooks:214:14)
+2026-11-23T15:32:24.4994251Z     Test.run (node:internal/test_runner/test:1047:25)
+2026-11-23T15:32:24.4994872Z     Test.start (node:internal/test_runner/test:944:17)
+2026-11-23T15:32:24.4995627Z     startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+2026-11-23T15:32:24.4996287Z   ...
+2026-11-23T15:32:24.4997338Z # Subtest: both loaders substitute only mapped image URLs while retaining atlas keys, JSON URLs, frame geometry and lease lifetime
+2026-11-23T15:32:24.4999052Z ok 127 - both loaders substitute only mapped image URLs while retaining atlas keys, JSON URLs, frame geometry and lease lifetime
+2026-11-23T15:32:24.5000211Z   ---
+2026-11-23T15:32:24.5000514Z   duration_ms: 1.509854
+2026-11-23T15:32:24.5000862Z   type: 'test'
+2026-11-23T15:32:24.5001158Z   ...
+2026-11-23T15:43:11.2476683Z # Committed PNG publication measurement {"commit":"77b8b1188c30d593ec679110eb52a868456d5987","files":265,"supported":265,"optimized":265,"originalBytes":296287507,"outputBytes":272627248,"savedBytes":23660259}
+2026-11-23T15:43:11.2518020Z # Subtest: CRC matches standard vector and rejects damaged chunks
+2026-11-23T15:43:11.2522175Z ok 128 - CRC matches standard vector and rejects damaged chunks
+2026-11-23T15:43:11.2522934Z   ---
+2026-11-23T15:43:11.3838328Z # tests 516
+2026-11-23T15:43:11.3838495Z # pass 515
+2026-11-23T15:43:11.3838579Z # fail 1
+2026-11-23T15:43:11.3838950Z # duration_ms 663963.293477
