@@ -145,6 +145,22 @@ export const NEW_SPECIES=Object.freeze({
  "desert-species-028":Object.freeze({names:{"ru":"Песчаная пиявка-песочница","en":"Hourglass sand leech","es":"Sanguijuela reloj de arena"},abilityConfig:Object.freeze({abilityPattern:["pounce","venom"]})}),
  "desert-species-029":Object.freeze({names:{"ru":"Миражный колокольчик","en":"Mirage handbell","es":"Campanilla de espejismo"},abilityConfig:Object.freeze({abilityPattern:["blink","fan"]})}),
  "desert-species-030":Object.freeze({names:{"ru":"Ситоспинный муравьелов","en":"Sieveback antlion","es":"Hormiga león de lomo tamiz"},abilityConfig:Object.freeze({abilityPattern:["burrow","cleave"]})}),
- "desert-species-031":Object.freeze({names:{"ru":"Дюнный барабанозавр","en":"Dune drum tortoise","es":"Tortuga tambor de dunas"},abilityConfig:Object.freeze({abilityPattern:["stomp","roots"]})})
+ "desert-species-031":Object.freeze({names:{"ru":"Дюнный барабанозавр","en":"Dune drum tortoise","es":"Tortuga tambor de dunas"},abilityConfig:Object.freeze({abilityPattern:["stomp","roots"]})}),
+ "forest-species-043":Object.freeze({names:{"ru": "Янтарнокрылый светляк", "en": "Amber-wing glowbat", "es": "Murciélago alado de ámbar"},abilityConfig:Object.freeze({abilityPattern:["dive", "venom"]})}),
+ "forest-species-045":Object.freeze({names:{"ru": "Белогривый руинный волк", "en": "White-mantle ruin wolf", "es": "Lobo de ruinas de manto blanco"},abilityConfig:Object.freeze({abilityPattern:["pounce", "haunt"]})}),
+ "forest-species-047":Object.freeze({names:{"ru": "Орк оленьего щита", "en": "Antler-shield orc", "es": "Orco del escudo astado"},abilityConfig:Object.freeze({abilityPattern:["cleave", "stomp"]})}),
+ "forest-species-049":Object.freeze({names:{"ru": "Медведь каменных арок", "en": "Stone-arch bear", "es": "Oso de arcos de piedra"},abilityConfig:Object.freeze({abilityPattern:["stomp", "roots"]})}),
+ "forest-species-051":Object.freeze({names:{"ru": "Змей листового капюшона", "en": "Leaf-hood serpent", "es": "Serpiente de capucha de hojas"},abilityConfig:Object.freeze({abilityPattern:["venom", "roots"]})}),
+ "forest-species-053":Object.freeze({names:{"ru": "Фонарный паук", "en": "Lantern-shell spider", "es": "Araña de caparazón de farol"},abilityConfig:Object.freeze({abilityPattern:["venom", "web"]})}),
+ "forest-species-056":Object.freeze({names:{"ru": "Медведь золотой листвы", "en": "Golden-leaf bear", "es": "Oso de follaje dorado"},abilityConfig:Object.freeze({abilityPattern:["stomp", "roots"]})}),
+ "forest-species-059":Object.freeze({names:{"ru": "Длиннохвостый водосток", "en": "Ribbon-tail gutterbat", "es": "Murciélago de colas de cinta"},abilityConfig:Object.freeze({abilityPattern:["dive", "haunt"]})}),
+ "forest-species-044":Object.freeze({names:{"ru": "Колокольчатая крылатка", "en": "Bellflower sailbat", "es": "Murciélago campanilla"},abilityConfig:Object.freeze({abilityPattern:["dive", "roots"]})}),
+ "forest-species-046":Object.freeze({names:{"ru": "Желудёвый волк", "en": "Acorn-collar wolf", "es": "Lobo de collar de bellotas"},abilityConfig:Object.freeze({abilityPattern:["pounce", "stomp"]})}),
+ "forest-species-048":Object.freeze({names:{"ru": "Тыквопанцирный паук", "en": "Gourd-shell spider", "es": "Araña de caparazón de calabaza"},abilityConfig:Object.freeze({abilityPattern:["venom", "web"]})}),
+ "forest-species-050":Object.freeze({names:{"ru": "Орк расколотого бревна", "en": "Split-log orc", "es": "Orco del tronco partido"},abilityConfig:Object.freeze({abilityPattern:["cleave", "charge"]})}),
+ "forest-species-052":Object.freeze({names:{"ru": "Медведь витражной розы", "en": "Rose-window bear", "es": "Oso del rosetón"},abilityConfig:Object.freeze({abilityPattern:["stomp", "haunt"]})}),
+ "forest-species-054":Object.freeze({names:{"ru": "Меднокрылый водосток", "en": "Copper-gutter bat", "es": "Murciélago de canalón de cobre"},abilityConfig:Object.freeze({abilityPattern:["dive", "haunt"]})}),
+ "forest-species-057":Object.freeze({names:{"ru": "Пушистый тернолет", "en": "Bramble puffbat", "es": "Murciélago de zarza"},abilityConfig:Object.freeze({abilityPattern:["dive", "venom"]})}),
+ "forest-species-060":Object.freeze({names:{"ru": "Корнекоронный волк", "en": "Root-crowned wolf", "es": "Lobo coronado de raíces"},abilityConfig:Object.freeze({abilityPattern:["pounce", "roots"]})}),
 });
 export const speciesTraits=id=>NEW_SPECIES[id]||null;

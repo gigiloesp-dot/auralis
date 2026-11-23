@@ -1,0 +1,142 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-043",
+      "names": {
+        "ru": "Янтарнокрылый светляк",
+        "en": "Amber-wing glowbat",
+        "es": "Murciélago alado de ámbar"
+      },
+      "baseType": "forestBat",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "dive",
+        "venom"
+      ],
+      "silhouette": "Broad amber wings, huge rounded ears, glowing green throat, brown plush body",
+      "statsChanged": false,
+      "nativeIdleHeight": 68
+    },
+    {
+      "id": "forest-species-045",
+      "names": {
+        "ru": "Белогривый руинный волк",
+        "en": "White-mantle ruin wolf",
+        "es": "Lobo de ruinas de manto blanco"
+      },
+      "baseType": "forestWolf",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "pounce",
+        "haunt"
+      ],
+      "silhouette": "Tall angular indigo wolf, massive ivory shoulder mane, long russet tail",
+      "statsChanged": false,
+      "nativeIdleHeight": 76
+    },
+    {
+      "id": "forest-species-047",
+      "names": {
+        "ru": "Орк оленьего щита",
+        "en": "Antler-shield orc",
+        "es": "Orco del escudo astado"
+      },
+      "baseType": "forestOrc",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "cleave",
+        "stomp"
+      ],
+      "silhouette": "Stocky green orc, antler crown, round wicker shield, wooden mallet, red skirt",
+      "statsChanged": false,
+      "nativeIdleHeight": 72
+    },
+    {
+      "id": "forest-species-049",
+      "names": {
+        "ru": "Медведь каменных арок",
+        "en": "Stone-arch bear",
+        "es": "Oso de arcos de piedra"
+      },
+      "baseType": "bear",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "silhouette": "Purple heavy bear, stone gothic arch armor across shoulders, enormous ivory claws",
+      "statsChanged": false,
+      "nativeIdleHeight": 82
+    },
+    {
+      "id": "forest-species-051",
+      "names": {
+        "ru": "Змей листового капюшона",
+        "en": "Leaf-hood serpent",
+        "es": "Serpiente de capucha de hojas"
+      },
+      "baseType": "thornSnake",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "venom",
+        "roots"
+      ],
+      "silhouette": "Green coiled cobra, broad amber-lined leaf hood, cream belly and tall leaf crest",
+      "statsChanged": false,
+      "nativeIdleHeight": 68
+    },
+    {
+      "id": "forest-species-053",
+      "names": {
+        "ru": "Фонарный паук",
+        "en": "Lantern-shell spider",
+        "es": "Araña de caparazón de farol"
+      },
+      "baseType": "spider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "venom",
+        "web"
+      ],
+      "silhouette": "Eight brown angular legs, turquoise head, tall glowing amber lantern abdomen",
+      "statsChanged": false,
+      "nativeIdleHeight": 66
+    },
+    {
+      "id": "forest-species-056",
+      "names": {
+        "ru": "Медведь золотой листвы",
+        "en": "Golden-leaf bear",
+        "es": "Oso de follaje dorado"
+      },
+      "baseType": "bear",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "silhouette": "Broad brown bear with large spiky golden leaf collar and golden forelegs",
+      "statsChanged": false,
+      "nativeIdleHeight": 82
+    },
+    {
+      "id": "forest-species-059",
+      "names": {
+        "ru": "Длиннохвостый водосток",
+        "en": "Ribbon-tail gutterbat",
+        "es": "Murciélago de colas de cinta"
+      },
+      "baseType": "forestBat",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "dive",
+        "haunt"
+      ],
+      "silhouette": "Slender silver bat, swept turquoise triangular wings and two long ribbon tails",
+      "statsChanged": false,
+      "nativeIdleHeight": 70
+    }
+  ]
+}

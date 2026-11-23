@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "totalPoses": 384,
+  "models": [
+    {
+      "id": "forest-species-044",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    },
+    {
+      "id": "forest-species-046",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    },
+    {
+      "id": "forest-species-048",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    },
+    {
+      "id": "forest-species-050",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    },
+    {
+      "id": "forest-species-052",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    },
+    {
+      "id": "forest-species-054",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    },
+    {
+      "id": "forest-species-057",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    },
+    {
+      "id": "forest-species-060",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen transparency/reflow preserved. Source rectangles registered in blank corridors and every final pose inspected."
+    }
+  ]
+}

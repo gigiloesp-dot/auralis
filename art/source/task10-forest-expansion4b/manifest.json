@@ -1,0 +1,142 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-044",
+      "names": {
+        "ru": "Колокольчатая крылатка",
+        "en": "Bellflower sailbat",
+        "es": "Murciélago campanilla"
+      },
+      "baseType": "forestBat",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "dive",
+        "roots"
+      ],
+      "silhouette": "A real flying bat: dark indigo plush body with huge translucent turquoise bat membranes shaped as bellflower petals, narrow pointed ears, ivory throat ruff, tiny hooked feet. No feathers. Distinct broad triangular wings and slender body.",
+      "statsChanged": false,
+      "nativeIdleHeight": 68
+    },
+    {
+      "id": "forest-species-046",
+      "names": {
+        "ru": "Желудёвый волк",
+        "en": "Acorn-collar wolf",
+        "es": "Lobo de collar de bellotas"
+      },
+      "baseType": "forestWolf",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "pounce",
+        "stomp"
+      ],
+      "silhouette": "A quadruped tawny wolf with compact powerful chest, short broad muzzle, enormous russet acorn-cup collar around neck, curled single plume tail, cream paws and dark pointed ears. Four legs, no wings.",
+      "statsChanged": false,
+      "nativeIdleHeight": 70
+    },
+    {
+      "id": "forest-species-048",
+      "names": {
+        "ru": "Тыквопанцирный паук",
+        "en": "Gourd-shell spider",
+        "es": "Araña de caparazón de calabaza"
+      },
+      "baseType": "spider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "venom",
+        "web"
+      ],
+      "silhouette": "An eight-legged woodland spider with bulbous orange pumpkin-like ridged abdomen, tiny emerald head, ivory hooked mouthparts, exactly eight long blue-black articulated legs. Emerald small leaf crest on abdomen. No web or trails.",
+      "statsChanged": false,
+      "nativeIdleHeight": 62
+    },
+    {
+      "id": "forest-species-050",
+      "names": {
+        "ru": "Орк расколотого бревна",
+        "en": "Split-log orc",
+        "es": "Orco del tronco partido"
+      },
+      "baseType": "forestOrc",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "cleave",
+        "charge"
+      ],
+      "silhouette": "A stocky green-skinned biped forest orc with broad flat nose, two little tusks, enormous asymmetrical split-log shoulder pad, ochre sleeveless tunic and crimson sash, heavy wicker helmet and short heavy stone maul. Two legs and arms.",
+      "statsChanged": false,
+      "nativeIdleHeight": 72
+    },
+    {
+      "id": "forest-species-052",
+      "names": {
+        "ru": "Медведь витражной розы",
+        "en": "Rose-window bear",
+        "es": "Oso del rosetón"
+      },
+      "baseType": "bear",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "stomp",
+        "haunt"
+      ],
+      "silhouette": "Huge quadruped pale russet bear with a circular broken stained-glass rose-window armor plate on each shoulder, thick charcoal paws, blue-gray muzzle, short round ears. Weathered turquoise copper harness and few ivy leaves. Clearly bear anatomy four legs.",
+      "statsChanged": false,
+      "nativeIdleHeight": 84
+    },
+    {
+      "id": "forest-species-054",
+      "names": {
+        "ru": "Меднокрылый водосток",
+        "en": "Copper-gutter bat",
+        "es": "Murciélago de canalón de cobre"
+      },
+      "baseType": "forestBat",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "dive",
+        "haunt"
+      ],
+      "silhouette": "Flying bat with small silver-gray body, huge curved copper-colored bat membranes whose finger struts resemble gothic gutter ribs, oversized upward crescent ears and tiny clawed feet. Long tapered triangular wings, bright mint oxidized edges. Bat anatomy no feathers.",
+      "statsChanged": false,
+      "nativeIdleHeight": 70
+    },
+    {
+      "id": "forest-species-057",
+      "names": {
+        "ru": "Пушистый тернолет",
+        "en": "Bramble puffbat",
+        "es": "Murciélago de zarza"
+      },
+      "baseType": "forestBat",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "dive",
+        "venom"
+      ],
+      "silhouette": "A round fluffy cream flying bat with very small round amber-and-black membranous wings, enormous curled ram-like leathery ears, auburn spiky spherical back ruff, berry-red nose and little black clawed feet. Bat not bird. Short broad rounded silhouette.",
+      "statsChanged": false,
+      "nativeIdleHeight": 60
+    },
+    {
+      "id": "forest-species-060",
+      "names": {
+        "ru": "Корнекоронный волк",
+        "en": "Root-crowned wolf",
+        "es": "Lobo coronado de raíces"
+      },
+      "baseType": "forestWolf",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "pounce",
+        "roots"
+      ],
+      "silhouette": "A tall lean quadruped charcoal-blue wolf with long muzzle, high thin white root-like branched crown growing between small pointed ears, elongated amber dorsal mane, long thick tail with ivory tip and pale gold ankles. Angular long-legged silhouette.",
+      "statsChanged": false,
+      "nativeIdleHeight": 76
+    }
+  ]
+}

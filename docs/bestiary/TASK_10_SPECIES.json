@@ -2,10 +2,10 @@
   "task": 10,
   "totalSpots": 257,
   "totalResidents": 2827,
-  "uniquePrimaryModels": 153,
-  "newSixBankModels": 130,
+  "uniquePrimaryModels": 169,
+  "newSixBankModels": 146,
   "legacyDistinctModels": 23,
-  "unfinishedSpecies": 104,
+  "unfinishedSpecies": 88,
   "complete": false,
   "note": "Names/anatomy of prototypeOnly rows are proposals,not completed unique creatures. Shared fallback art does not count as unique. Actual current stats and abilities are listed separately.",
   "species": [
@@ -2445,17 +2445,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Ночная крылатка «Ветвистые рога»",
-        "en": "Dusk bat «Branching antlers»",
-        "es": "Murciélago del ocaso «Astas ramificadas»"
+        "ru": "Янтарнокрылый светляк",
+        "en": "Amber-wing glowbat",
+        "es": "Murciélago alado de ámbar"
       },
       "runtimeNames": {
-        "ru": "Ночная крылатка",
-        "en": "Dusk bat",
-        "es": "Murciélago del ocaso"
+        "ru": "Янтарнокрылый светляк",
+        "en": "Amber-wing glowbat",
+        "es": "Murciélago alado de ámbar"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Branching antlers;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 70,
         "attack": 9,
@@ -2467,17 +2467,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "venom"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestBat.png",
-          "atlas": "assets/actors/monsters/forestBat.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-043.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-043.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2492,17 +2502,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Ночная крылатка «Панцирный воротник»",
-        "en": "Dusk bat «Shell collar»",
-        "es": "Murciélago del ocaso «Cuello acorazado»"
+        "ru": "Колокольчатая крылатка",
+        "en": "Bellflower sailbat",
+        "es": "Murciélago campanilla"
       },
       "runtimeNames": {
-        "ru": "Ночная крылатка",
-        "en": "Dusk bat",
-        "es": "Murciélago del ocaso"
+        "ru": "Колокольчатая крылатка",
+        "en": "Bellflower sailbat",
+        "es": "Murciélago campanilla"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Shell collar;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 502,
         "attack": 41,
@@ -2514,17 +2524,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "roots"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestBat.png",
-          "atlas": "assets/actors/monsters/forestBat.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-044.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-044.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2539,17 +2559,17 @@
       "residents": 11,
       "climate": "abandoned-city",
       "names": {
-        "ru": "Заросший страж «Серповидные когти»",
-        "en": "Overgrown guardian «Sickle claws»",
-        "es": "Guardián cubierto «Garras de hoz»"
+        "ru": "Белогривый руинный волк",
+        "en": "White-mantle ruin wolf",
+        "es": "Lobo de ruinas de manto blanco"
       },
       "runtimeNames": {
-        "ru": "Лесной волк",
-        "en": "Forest wolf",
-        "es": "Lobo del bosque"
+        "ru": "Белогривый руинный волк",
+        "en": "White-mantle ruin wolf",
+        "es": "Lobo de ruinas de manto blanco"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Sickle claws;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 362,
         "attack": 32,
@@ -2561,17 +2581,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "haunt"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestWolf.png",
-          "atlas": "assets/actors/monsters/forestWolf.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-045.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-045.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2586,17 +2616,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Лесной волк «Панцирный воротник»",
-        "en": "Forest wolf «Shell collar»",
-        "es": "Lobo del bosque «Cuello acorazado»"
+        "ru": "Желудёвый волк",
+        "en": "Acorn-collar wolf",
+        "es": "Lobo de collar de bellotas"
       },
       "runtimeNames": {
-        "ru": "Лесной волк",
-        "en": "Forest wolf",
-        "es": "Lobo del bosque"
+        "ru": "Желудёвый волк",
+        "en": "Acorn-collar wolf",
+        "es": "Lobo de collar de bellotas"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Shell collar;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 47,
         "attack": 6,
@@ -2608,17 +2638,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "stomp"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestWolf.png",
-          "atlas": "assets/actors/monsters/forestWolf.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-046.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-046.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2633,17 +2673,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Дубравный орк «Ветвистые рога»",
-        "en": "Grove orc «Branching antlers»",
-        "es": "Orco del robledal «Astas ramificadas»"
+        "ru": "Орк оленьего щита",
+        "en": "Antler-shield orc",
+        "es": "Orco del escudo astado"
       },
       "runtimeNames": {
-        "ru": "Дубравный орк",
-        "en": "Grove orc",
-        "es": "Orco del robledal"
+        "ru": "Орк оленьего щита",
+        "en": "Antler-shield orc",
+        "es": "Orco del escudo astado"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Branching antlers;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 213,
         "attack": 27,
@@ -2655,17 +2695,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "cleave"
+        "cleave",
+        "stomp"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestOrc.png",
-          "atlas": "assets/actors/monsters/forestOrc.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-047.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-047.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2680,17 +2730,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Ядовитый паук «Серповидные когти»",
-        "en": "Venom spider «Sickle claws»",
-        "es": "Araña venenosa «Garras de hoz»"
+        "ru": "Тыквопанцирный паук",
+        "en": "Gourd-shell spider",
+        "es": "Araña de caparazón de calabaza"
       },
       "runtimeNames": {
-        "ru": "Ядовитый паук",
-        "en": "Venom spider",
-        "es": "Araña venenosa"
+        "ru": "Тыквопанцирный паук",
+        "en": "Gourd-shell spider",
+        "es": "Araña de caparazón de calabaza"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Sickle claws;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 304,
         "attack": 35,
@@ -2702,17 +2752,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "venom"
+        "venom",
+        "web"
       ],
       "movement": "ground",
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/spider.png",
-          "atlas": "assets/actors/monsters/spider.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-048.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-048.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2727,17 +2787,17 @@
       "residents": 11,
       "climate": "abandoned-city",
       "names": {
-        "ru": "Заросший страж «Ветвистые рога»",
-        "en": "Overgrown guardian «Branching antlers»",
-        "es": "Guardián cubierto «Astas ramificadas»"
+        "ru": "Медведь каменных арок",
+        "en": "Stone-arch bear",
+        "es": "Oso de arcos de piedra"
       },
       "runtimeNames": {
-        "ru": "Лесной медведь",
-        "en": "Forest bear",
-        "es": "Oso del bosque"
+        "ru": "Медведь каменных арок",
+        "en": "Stone-arch bear",
+        "es": "Oso de arcos de piedra"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Branching antlers;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 340,
         "attack": 34,
@@ -2749,17 +2809,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/bear.png",
-          "atlas": "assets/actors/monsters/bear.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-049.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-049.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2774,17 +2844,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Дубравный орк «Панцирный воротник»",
-        "en": "Grove orc «Shell collar»",
-        "es": "Orco del robledal «Cuello acorazado»"
+        "ru": "Орк расколотого бревна",
+        "en": "Split-log orc",
+        "es": "Orco del tronco partido"
       },
       "runtimeNames": {
-        "ru": "Дубравный орк",
-        "en": "Grove orc",
-        "es": "Orco del robledal"
+        "ru": "Орк расколотого бревна",
+        "en": "Split-log orc",
+        "es": "Orco del tronco partido"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Shell collar;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 349,
         "attack": 39,
@@ -2796,17 +2866,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "cleave"
+        "cleave",
+        "charge"
       ],
       "movement": "ground",
       "locomotion": "biped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestOrc.png",
-          "atlas": "assets/actors/monsters/forestOrc.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-050.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-050.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2821,17 +2901,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Терновая змея «Панцирный воротник»",
-        "en": "Thorn snake «Shell collar»",
-        "es": "Serpiente de espinas «Cuello acorazado»"
+        "ru": "Змей листового капюшона",
+        "en": "Leaf-hood serpent",
+        "es": "Serpiente de capucha de hojas"
       },
       "runtimeNames": {
-        "ru": "Терновая змея",
-        "en": "Thorn snake",
-        "es": "Serpiente de espinas"
+        "ru": "Змей листового капюшона",
+        "en": "Leaf-hood serpent",
+        "es": "Serpiente de capucha de hojas"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Shell collar;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 225,
         "attack": 26,
@@ -2843,17 +2923,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "venom",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "serpent",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/thornSnake.png",
-          "atlas": "assets/actors/monsters/thornSnake.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-051.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-051.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2868,17 +2958,17 @@
       "residents": 11,
       "climate": "abandoned-city",
       "names": {
-        "ru": "Руинный охотник «Спинные шипы»",
-        "en": "Ruin hunter «Spine ridge»",
-        "es": "Cazador de ruinas «Lomo espinoso»"
+        "ru": "Медведь витражной розы",
+        "en": "Rose-window bear",
+        "es": "Oso del rosetón"
       },
       "runtimeNames": {
-        "ru": "Лесной медведь",
-        "en": "Forest bear",
-        "es": "Oso del bosque"
+        "ru": "Медведь витражной розы",
+        "en": "Rose-window bear",
+        "es": "Oso del rosetón"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Spine ridge;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 591,
         "attack": 50,
@@ -2890,17 +2980,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "haunt"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/bear.png",
-          "atlas": "assets/actors/monsters/bear.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-052.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-052.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2915,17 +3015,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Ядовитый паук «Ветвистые рога»",
-        "en": "Venom spider «Branching antlers»",
-        "es": "Araña venenosa «Astas ramificadas»"
+        "ru": "Фонарный паук",
+        "en": "Lantern-shell spider",
+        "es": "Araña de caparazón de farol"
       },
       "runtimeNames": {
-        "ru": "Ядовитый паук",
-        "en": "Venom spider",
-        "es": "Araña venenosa"
+        "ru": "Фонарный паук",
+        "en": "Lantern-shell spider",
+        "es": "Araña de caparazón de farol"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Branching antlers;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 416,
         "attack": 43,
@@ -2937,17 +3037,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "venom"
+        "venom",
+        "web"
       ],
       "movement": "ground",
       "locomotion": "crawler",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/spider.png",
-          "atlas": "assets/actors/monsters/spider.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-053.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-053.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -2962,17 +3072,17 @@
       "residents": 11,
       "climate": "abandoned-city",
       "names": {
-        "ru": "Костяной дозорный «Костяная грива»",
-        "en": "Bone sentry «Bone mane»",
-        "es": "Centinela óseo «Crin de hueso»"
+        "ru": "Меднокрылый водосток",
+        "en": "Copper-gutter bat",
+        "es": "Murciélago de canalón de cobre"
       },
       "runtimeNames": {
-        "ru": "Ночная крылатка",
-        "en": "Dusk bat",
-        "es": "Murciélago del ocaso"
+        "ru": "Меднокрылый водосток",
+        "en": "Copper-gutter bat",
+        "es": "Murciélago de canalón de cobre"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Bone mane;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 576,
         "attack": 45,
@@ -2984,17 +3094,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "haunt"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestBat.png",
-          "atlas": "assets/actors/monsters/forestBat.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-054.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-054.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -3066,17 +3186,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Лесной медведь «Ветвистые рога»",
-        "en": "Forest bear «Branching antlers»",
-        "es": "Oso del bosque «Astas ramificadas»"
+        "ru": "Медведь золотой листвы",
+        "en": "Golden-leaf bear",
+        "es": "Oso de follaje dorado"
       },
       "runtimeNames": {
-        "ru": "Лесной медведь",
-        "en": "Forest bear",
-        "es": "Oso del bosque"
+        "ru": "Медведь золотой листвы",
+        "en": "Golden-leaf bear",
+        "es": "Oso de follaje dorado"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Branching antlers;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 178,
         "attack": 20,
@@ -3088,17 +3208,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "stomp"
+        "stomp",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/bear.png",
-          "atlas": "assets/actors/monsters/bear.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-056.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-056.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -3113,17 +3243,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Ночная крылатка «Длинные передние лапы»",
-        "en": "Dusk bat «Long forelegs»",
-        "es": "Murciélago del ocaso «Patas delanteras largas»"
+        "ru": "Пушистый тернолет",
+        "en": "Bramble puffbat",
+        "es": "Murciélago de zarza"
       },
       "runtimeNames": {
-        "ru": "Ночная крылатка",
-        "en": "Dusk bat",
-        "es": "Murciélago del ocaso"
+        "ru": "Пушистый тернолет",
+        "en": "Bramble puffbat",
+        "es": "Murciélago de zarza"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Long forelegs;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 337,
         "attack": 31,
@@ -3135,17 +3265,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "venom"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestBat.png",
-          "atlas": "assets/actors/monsters/forestBat.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-057.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-057.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -3217,17 +3357,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Ночная крылатка «Три бивня»",
-        "en": "Dusk bat «Triple tusks»",
-        "es": "Murciélago del ocaso «Tres colmillos»"
+        "ru": "Длиннохвостый водосток",
+        "en": "Ribbon-tail gutterbat",
+        "es": "Murciélago de colas de cinta"
       },
       "runtimeNames": {
-        "ru": "Ночная крылатка",
-        "en": "Dusk bat",
-        "es": "Murciélago del ocaso"
+        "ru": "Длиннохвостый водосток",
+        "en": "Ribbon-tail gutterbat",
+        "es": "Murciélago de colas de cinta"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Triple tusks;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 175,
         "attack": 19,
@@ -3239,17 +3379,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "dive"
+        "dive",
+        "haunt"
       ],
       "movement": "flight",
       "locomotion": "winged",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestBat.png",
-          "atlas": "assets/actors/monsters/forestBat.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4a/forest-species-059.png",
+          "atlas": "assets/actors/task10-forest-expansion4a/forest-species-059.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
@@ -3264,17 +3414,17 @@
       "residents": 11,
       "climate": "woodland",
       "names": {
-        "ru": "Лесной волк «Длинные передние лапы»",
-        "en": "Forest wolf «Long forelegs»",
-        "es": "Lobo del bosque «Patas delanteras largas»"
+        "ru": "Корнекоронный волк",
+        "en": "Root-crowned wolf",
+        "es": "Lobo coronado de raíces"
       },
       "runtimeNames": {
-        "ru": "Лесной волк",
-        "en": "Forest wolf",
-        "es": "Lobo del bosque"
+        "ru": "Корнекоронный волк",
+        "en": "Root-crowned wolf",
+        "es": "Lobo coronado de raíces"
       },
-      "status": "prototypeOnly",
-      "appearance": "NOT COMPLETE: proposed anatomy Long forelegs;current shared archetype is temporary",
+      "status": "newIntegrated",
+      "appearance": "New original model with48 painted direction/state poses",
       "stats": {
         "hp": 103,
         "attack": 12,
@@ -3286,17 +3436,27 @@
         "respawnMs": 30000
       },
       "abilities": [
-        "pounce"
+        "pounce",
+        "roots"
       ],
       "movement": "ground",
       "locomotion": "quadruped",
       "projectile": null,
       "assets": {
-        "primary": null,
-        "temporaryPrototype": {
-          "image": "assets/actors/monsters/forestWolf.png",
-          "atlas": "assets/actors/monsters/forestWolf.json"
-        }
+        "primary": {
+          "image": "assets/actors/task10-forest-expansion4b/forest-species-060.png",
+          "atlas": "assets/actors/task10-forest-expansion4b/forest-species-060.json",
+          "poseBanks": [
+            "idle",
+            "run-a",
+            "run-b",
+            "attack",
+            "hurt",
+            "death"
+          ],
+          "drawnHurtDeath": true
+        },
+        "temporaryPrototype": null
       }
     },
     {
