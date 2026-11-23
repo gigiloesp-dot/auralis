@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "scope": "art-only",
+  "posesInspected": 384,
+  "method": "All eight final beige-composited 8x6 sheets visually inspected, each complete pose checked for neighbor fragments, isolated anatomy, silhouette and death state.",
+  "models": [
+    {
+      "id": "forest-species-021",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    },
+    {
+      "id": "forest-species-027",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    },
+    {
+      "id": "forest-species-029",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    },
+    {
+      "id": "forest-species-032",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    },
+    {
+      "id": "forest-species-035",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    },
+    {
+      "id": "forest-species-037",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    },
+    {
+      "id": "forest-species-039",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    },
+    {
+      "id": "forest-species-041",
+      "poses": 48,
+      "neighborFragments": false,
+      "opaqueBackground": false,
+      "completeDeathPoses": 8
+    }
+  ],
+  "corrections": [
+    "Imagegen reflows repaired bear029, raider032, orc035, wolf037, spider039 and snake041.",
+    "Orc035 first reflow still spilled first-row boots into row2; preserved as reflow-v1 and replaced by a second imagegen reflow.",
+    "035 quality follow-up: preserved v2 small clean source; generated larger v3 (rejected for minor boundary marks) and final v4. Reinspected all48 v4 packed poses, no neighbor fragments or opaque backgrounds."
+  ],
+  "limitations": [
+    "Eight single-frame banks with two movement drawings; not six complete animation clips.",
+    "Some back-facing heads glance sideways; individual body proportions vary slightly between painted poses."
+  ],
+  "qualityFollowup035": {
+    "source": "forest-species-035-reflow-v4.png",
+    "nativeIdleHeightMax": 70,
+    "scale": 1.1,
+    "targetWorldHeight": 77,
+    "posesReinspected": 48,
+    "status": "PASS"
+  }
+}

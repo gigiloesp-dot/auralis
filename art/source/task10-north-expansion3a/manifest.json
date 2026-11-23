@@ -1,0 +1,266 @@
+[
+  {
+    "id": "north-species-013",
+    "names": {
+      "ru": "Клинкерный жуконалётчик",
+      "en": "Clinker beetle raider",
+      "es": "Saqueador escarabajo de escoria"
+    },
+    "baseType": "snowRaider",
+    "biome": "volcanic",
+    "movement": "ground",
+    "locomotion": "biped",
+    "proposedAbilityPattern": [
+      "charge",
+      "stomp"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic BIPED beetle-headed humanoid raider. Short sturdy two-legged body, huge black chitin beetle helmet with one forked rhinoceros horn, orange plated belly, four muscular upper arms but exactly TWO booted legs. Two hands carry compact obsidian pickaxes, two carry little round shields. Broad domed beetle shell backpack. Warm black copper carapace, no wings. Walk on two legs, attack swings pickaxes.",
+    "sourceRegistration": "equal8x6",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-013-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  },
+  {
+    "id": "north-species-023",
+    "names": {
+      "ru": "Горнильный крот-разбойник",
+      "en": "Furnace mole brigand",
+      "es": "Bandido topo de la fragua"
+    },
+    "baseType": "snowRaider",
+    "biome": "volcanic",
+    "movement": "ground",
+    "locomotion": "biped",
+    "proposedAbilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic BIPED anthropomorphic MOLE bandit. Huge elongated pink spade nose, tiny blind eyes, barrel torso, enormous pale digging claw hands, small round ears, short thick legs, tiny nub tail. Ragged red mining apron and brass furnace breastplate, charcoal fur. NO horns, NO beetle shell. Carries thick hooked iron mattock in both hands, attacks downward. Upright two-foot gait.",
+    "sourceRegistration": "equal8x6",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-023-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  },
+  {
+    "id": "north-species-025",
+    "names": {
+      "ru": "Инеиглый волк",
+      "en": "Rimequill wolf",
+      "es": "Lobo de púas de escarcha"
+    },
+    "baseType": "iceWolf",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "pounce",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow FOUR-LEGGED wolf predator with exceptionally long slender neck, small narrow canine head, short triangular ears, very long white frost quills forming a porcupine mantle from shoulders to rump, four thin dark navy legs, long naked ratlike tail ending in one round white fur puff. Winter pale blue fur, natural quills not sails. Quadruped run, neck extended biting lunge attack. No hands, no armor.",
+    "sourceRegistration": "source-registration.json",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-025-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  },
+  {
+    "id": "north-species-031",
+    "names": {
+      "ru": "Снегоступный горностай-страж",
+      "en": "Snowshoe stoat sentinel",
+      "es": "Centinela armiño de raquetas"
+    },
+    "baseType": "snowRaider",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "biped",
+    "proposedAbilityPattern": [
+      "charge",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow BIPED anthropomorphic ermine warrior. Long upright slim cream white stoat body, black tail tip on long thin tail, small rounded ears, pointed whiskered muzzle, two huge flat snowshoe-like furry feet. Tall narrow deep blue quilted coat, round frostglass shield and short blunt hooked spear. Exactly two hands and two walking legs. Attack thrust short spear, death fallen stoat. Clearly mammal NOT human or mole.",
+    "sourceRegistration": "source-registration.json",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-031-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  },
+  {
+    "id": "north-species-033",
+    "names": {
+      "ru": "Рогатый саванный призрак",
+      "en": "Antler veil wraith",
+      "es": "Espectro del velo cornudo"
+    },
+    "baseType": "wraith",
+    "biome": "snow",
+    "movement": "flight",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "haunt",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow HOVERING wraith made of a triangular pale gray bridal shroud draped over a narrow deer skull with broad short branching antlers, two very long ribbonlike arm sleeves with small skeletal hands, no legs no feet, tightly tapered ice-blue fabric base. One large circular ice mirror carried against chest. Face is long deer bone snout, black eye holes. No ground fog. Drift run, attack extends mirror and claws, death crumpled shroud and skull.",
+    "sourceRegistration": "equal8x6",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-033-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  },
+  {
+    "id": "north-species-035",
+    "names": {
+      "ru": "Ледниковый иглоголем",
+      "en": "Glacier needle golem",
+      "es": "Gólem aguja glaciar"
+    },
+    "baseType": "frostGolem",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "heavy",
+    "proposedAbilityPattern": [
+      "stomp",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow HEAVY BIPED ice golem composed of three tall narrow pale blue crystalline pillars in a crown-shaped head, extremely skinny waist, huge horizontal crescent-shaped upper torso, two enormous tapered ice drill forearms and two heavy rectangular ice feet. Deep navy fissures and frosted white edges, no stone circles no snowman body. Distinct angular long-legged architecture. Walking alternates two legs; attack drills down, death shattered crystals in compact heap.",
+    "sourceRegistration": "equal8x6",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-035-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  },
+  {
+    "id": "north-species-038",
+    "names": {
+      "ru": "Кальдерный орбиталь",
+      "en": "Caldera orbit elemental",
+      "es": "Elemental orbital de caldera"
+    },
+    "baseType": "iceElemental",
+    "biome": "volcanic",
+    "movement": "flight",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic HOVERING elemental. Single large upright glowing orange egg-shaped pumice core inside a broken black basalt hexagonal cage; six chunky dark floating stones tightly orbit the core forming two little arm clusters and a short spiral footless base. Top has two asymmetric stub chimneys, red-orange cracks only inside rock boundaries. NO humanoid head face or robes, NO legs. Run rotates stone cluster, attack projects both orbit arms, death compact broken cage and dim core.",
+    "sourceRegistration": "equal8x6",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-038-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  },
+  {
+    "id": "north-species-040",
+    "names": {
+      "ru": "Шлаковый звонарь",
+      "en": "Slagbell wraith",
+      "es": "Espectro campana de escoria"
+    },
+    "baseType": "wraith",
+    "biome": "volcanic",
+    "movement": "flight",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "haunt",
+      "fan"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic HOVERING wraith shaped as a tall ancient bronze cracked BELL with two skeletal charcoal arms emerging from its sides, tiny ember eyes beneath bell lip, large black hanging clapper as tapered bottom, short burgundy ragged ribbons wrapped tightly around bell top. NO hood, NO skull, NO feet, NO legs, NO wings. Brass bell dome with single bent handle. Drifts, attack swings arms and tilts bell, death bell lies on its side. No smoke clouds.",
+    "sourceRegistration": "equal8x6",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-040-composited-qa.png",
+      "checks": [
+        "whole anatomy and weapon",
+        "no neighboring fragments",
+        "six distinct states",
+        "eight orientations",
+        "collapsed death",
+        "climate appropriate silhouette"
+      ]
+    }
+  }
+]

@@ -1,0 +1,130 @@
+[
+  [
+    "north-species-013",
+    "clinker-beetle-raider",
+    79,
+    "A volcanic BIPED beetle-headed humanoid raider. Short sturdy two-legged body, huge black chitin beetle helmet with one forked rhinoceros horn, orange plated belly, four muscular upper arms but exactly TWO booted legs. Two hands carry compact obsidian pickaxes, two carry little round shields. Broad domed beetle shell backpack. Warm black copper carapace, no wings. Walk on two legs, attack swings pickaxes.",
+    "Клинкерный жуконалётчик",
+    "Clinker beetle raider",
+    "Saqueador escarabajo de escoria",
+    "snowRaider",
+    "volcanic",
+    "biped",
+    [
+      "charge",
+      "stomp"
+    ]
+  ],
+  [
+    "north-species-023",
+    "furnace-mole-brigand",
+    84,
+    "A volcanic BIPED anthropomorphic MOLE bandit. Huge elongated pink spade nose, tiny blind eyes, barrel torso, enormous pale digging claw hands, small round ears, short thick legs, tiny nub tail. Ragged red mining apron and brass furnace breastplate, charcoal fur. NO horns, NO beetle shell. Carries thick hooked iron mattock in both hands, attacks downward. Upright two-foot gait.",
+    "Горнильный крот-разбойник",
+    "Furnace mole brigand",
+    "Bandido topo de la fragua",
+    "snowRaider",
+    "volcanic",
+    "biped",
+    [
+      "stomp",
+      "charge"
+    ]
+  ],
+  [
+    "north-species-025",
+    "rimequill-wolf",
+    77,
+    "A snow FOUR-LEGGED wolf predator with exceptionally long slender neck, small narrow canine head, short triangular ears, very long white frost quills forming a porcupine mantle from shoulders to rump, four thin dark navy legs, long naked ratlike tail ending in one round white fur puff. Winter pale blue fur, natural quills not sails. Quadruped run, neck extended biting lunge attack. No hands, no armor.",
+    "Инеиглый волк",
+    "Rimequill wolf",
+    "Lobo de púas de escarcha",
+    "iceWolf",
+    "snow",
+    "quadruped",
+    [
+      "pounce",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-031",
+    "snowshoe-stoat-sentinel",
+    83,
+    "A snow BIPED anthropomorphic ermine warrior. Long upright slim cream white stoat body, black tail tip on long thin tail, small rounded ears, pointed whiskered muzzle, two huge flat snowshoe-like furry feet. Tall narrow deep blue quilted coat, round frostglass shield and short blunt hooked spear. Exactly two hands and two walking legs. Attack thrust short spear, death fallen stoat. Clearly mammal NOT human or mole.",
+    "Снегоступный горностай-страж",
+    "Snowshoe stoat sentinel",
+    "Centinela armiño de raquetas",
+    "snowRaider",
+    "snow",
+    "biped",
+    [
+      "charge",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-033",
+    "antler-veil-wraith",
+    83,
+    "A snow HOVERING wraith made of a triangular pale gray bridal shroud draped over a narrow deer skull with broad short branching antlers, two very long ribbonlike arm sleeves with small skeletal hands, no legs no feet, tightly tapered ice-blue fabric base. One large circular ice mirror carried against chest. Face is long deer bone snout, black eye holes. No ground fog. Drift run, attack extends mirror and claws, death crumpled shroud and skull.",
+    "Рогатый саванный призрак",
+    "Antler veil wraith",
+    "Espectro del velo cornudo",
+    "wraith",
+    "snow",
+    "hover",
+    [
+      "haunt",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-035",
+    "glacier-needle-golem",
+    91,
+    "A snow HEAVY BIPED ice golem composed of three tall narrow pale blue crystalline pillars in a crown-shaped head, extremely skinny waist, huge horizontal crescent-shaped upper torso, two enormous tapered ice drill forearms and two heavy rectangular ice feet. Deep navy fissures and frosted white edges, no stone circles no snowman body. Distinct angular long-legged architecture. Walking alternates two legs; attack drills down, death shattered crystals in compact heap.",
+    "Ледниковый иглоголем",
+    "Glacier needle golem",
+    "Gólem aguja glaciar",
+    "frostGolem",
+    "snow",
+    "heavy",
+    [
+      "stomp",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-038",
+    "caldera-orbit-elemental",
+    80,
+    "A volcanic HOVERING elemental. Single large upright glowing orange egg-shaped pumice core inside a broken black basalt hexagonal cage; six chunky dark floating stones tightly orbit the core forming two little arm clusters and a short spiral footless base. Top has two asymmetric stub chimneys, red-orange cracks only inside rock boundaries. NO humanoid head face or robes, NO legs. Run rotates stone cluster, attack projects both orbit arms, death compact broken cage and dim core.",
+    "Кальдерный орбиталь",
+    "Caldera orbit elemental",
+    "Elemental orbital de caldera",
+    "iceElemental",
+    "volcanic",
+    "hover",
+    [
+      "blink",
+      "fan"
+    ]
+  ],
+  [
+    "north-species-040",
+    "slagbell-wraith",
+    85,
+    "A volcanic HOVERING wraith shaped as a tall ancient bronze cracked BELL with two skeletal charcoal arms emerging from its sides, tiny ember eyes beneath bell lip, large black hanging clapper as tapered bottom, short burgundy ragged ribbons wrapped tightly around bell top. NO hood, NO skull, NO feet, NO legs, NO wings. Brass bell dome with single bent handle. Drifts, attack swings arms and tilts bell, death bell lies on its side. No smoke clouds.",
+    "Шлаковый звонарь",
+    "Slagbell wraith",
+    "Espectro campana de escoria",
+    "wraith",
+    "volcanic",
+    "hover",
+    [
+      "haunt",
+      "fan"
+    ]
+  ]
+]

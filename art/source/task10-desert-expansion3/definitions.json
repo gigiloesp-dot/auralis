@@ -1,0 +1,162 @@
+[
+  {
+    "id": "desert-species-020",
+    "slug": "spoonjaw-ribbon-viper",
+    "names": {
+      "ru": "Ложкочелюстная гадюка",
+      "en": "Spoonjaw ribbon viper",
+      "es": "Víbora de mandíbula cuchara"
+    },
+    "baseType": "desertSnake",
+    "biome": "sand",
+    "locomotion": "serpent",
+    "anatomy": "Limbless ground-slithering ochre ribbon serpent with a giant broad spoon-shaped lower jaw, narrow bright coral head, three separate turquoise sail fins along its long flat back, whip tail. No legs, no wings. Coiled idle, serpentine moving curves, jaw-strike attack, crumpled hurt, limp uncoiled death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-020",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "desert-species-024",
+    "slug": "glass-eel-sand-diver",
+    "names": {
+      "ru": "Стеклянный песконыр",
+      "en": "Glass eel sand diver",
+      "es": "Anguila de vidrio de arena"
+    },
+    "baseType": "desertSnake",
+    "biome": "sand",
+    "locomotion": "serpent",
+    "anatomy": "Limbless ground-slithering translucent jade eel monster with glowing orange gut stones, blunt shovel snout and two very long curled white whiskers, a broad paddle tail. No legs or hood. Serpentine slither, lunging bite, bent recoil, limp flattened death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-024",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "desert-species-025",
+    "slug": "sun-kite-phantom",
+    "names": {
+      "ru": "Солнечный змей-призрак",
+      "en": "Sun kite phantom",
+      "es": "Fantasma cometa solar"
+    },
+    "baseType": "arcaneWisp",
+    "biome": "sand",
+    "locomotion": "hover",
+    "anatomy": "Hovering living diamond-shaped saffron silk kite spirit with ornate curled upper corners, one enormous cobalt central eye and three braided violet ribbon tails below. No legs, no humanoid torso. Float animation, swooping attack, folded recoil, collapsed torn silk death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-025",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "desert-species-026",
+    "slug": "cactus-cup-colossus",
+    "names": {
+      "ru": "Кактусовый чашеколосс",
+      "en": "Cactus cup colossus",
+      "es": "Coloso copa de cactus"
+    },
+    "baseType": "ancientSentinel",
+    "biome": "sand",
+    "locomotion": "heavy",
+    "anatomy": "Heavy walking squat cactus giant shaped like a wide red terracotta goblet, thorny green cactus crown rising from the cup, two enormous square teal stone feet, short muscular root arms with thorn fists, face carved into cup. Ground stomping gait, raised fist attack, leaning hurt, shattered cup fallen death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-026",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "desert-species-028",
+    "slug": "hourglass-sand-leech",
+    "names": {
+      "ru": "Песчаная пиявка-песочница",
+      "en": "Hourglass sand leech",
+      "es": "Sanguijuela reloj de arena"
+    },
+    "baseType": "desertSnake",
+    "biome": "sand",
+    "locomotion": "serpent",
+    "anatomy": "Limbless ground-slithering thick pale plum leech with an hourglass-shaped narrow middle, two fat ribbed body bulbs, round orange sucker mouth framed by four fleshy petal lips, tiny black eyes and short blunt tail. No legs, no fins. Wriggling slither, reared sucker attack, contracted hurt, limp collapsed death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-028",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "desert-species-029",
+    "slug": "mirage-handbell",
+    "names": {
+      "ru": "Миражный колокольчик",
+      "en": "Mirage handbell",
+      "es": "Campanilla de espejismo"
+    },
+    "baseType": "arcaneWisp",
+    "biome": "sand",
+    "locomotion": "hover",
+    "anatomy": "Hovering brass handbell spirit with a giant open turquoise bell mouth facing downward, curved crescent bone handle at top, three floating separate red glass beads orbiting body and a long indigo spectral clapper. No humanoid limbs. Floating bob, swung ringing attack, tilted recoil, fallen cracked silent bell death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-029",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "desert-species-030",
+    "slug": "sieveback-antlion",
+    "names": {
+      "ru": "Ситоспинный муравьелов",
+      "en": "Sieveback antlion",
+      "es": "Hormiga león de lomo tamiz"
+    },
+    "baseType": "scarab",
+    "biome": "sand",
+    "locomotion": "crawler",
+    "anatomy": "Ground-crawling six-legged desert antlion with a wide flat circular perforated ivory sieve shell, huge forward curved orange mandibles, long narrow purple segmented neck and small bulbous amber abdomen. Clearly six jointed legs, low crawler silhouette. Scuttling alternating steps, mandible snap attack, tucked hurt, overturned legs-curled death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-030",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "runtimeRegistered": false
+  },
+  {
+    "id": "desert-species-031",
+    "slug": "dune-drum-tortoise",
+    "names": {
+      "ru": "Дюнный барабанозавр",
+      "en": "Dune drum tortoise",
+      "es": "Tortuga tambor de dunas"
+    },
+    "baseType": "ancientSentinel",
+    "biome": "sand",
+    "locomotion": "heavy",
+    "anatomy": "Heavy ground-stomping squat four-legged tortoise monster with an enormous tall cylindrical turquoise war-drum shell, red rope lacing and ivory drumhead roof, broad blunt golden reptile head, four thick sandstone pillar feet and very short tail. No arms or horns. Heavy alternating stomps, head ram attack, tucked recoil, tipped sideways broken drum death.",
+    "targetIdleHeight": 76,
+    "spotId": "desert-spot-031",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "runtimeRegistered": false
+  }
+]

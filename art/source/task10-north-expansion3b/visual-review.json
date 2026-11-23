@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "reviewedPoseCount": 384,
+  "inspection": "All 48 final beige-composited poses per model reviewed visually after final packing. No visible severed neighboring anatomy, cell-clipped anatomy, opaque background panels, or missing state cells. Original texture alpha RGB can look colorful on black but final beige composites show actual appearance.",
+  "models": [
+    {
+      "id": "north-species-020",
+      "poses": 48,
+      "finalSource": "north-species-020-reflow.png",
+      "qa": "north-species-020-composited-qa.png",
+      "status": "PASS"
+    },
+    {
+      "id": "north-species-024",
+      "poses": 48,
+      "finalSource": "north-species-024-reflow.png",
+      "qa": "north-species-024-composited-qa.png",
+      "status": "PASS"
+    },
+    {
+      "id": "north-species-029",
+      "poses": 48,
+      "finalSource": "north-species-029-original.png",
+      "qa": "north-species-029-composited-qa.png",
+      "status": "PASS"
+    },
+    {
+      "id": "north-species-032",
+      "poses": 48,
+      "finalSource": "north-species-032-original.png",
+      "qa": "north-species-032-composited-qa.png",
+      "status": "PASS"
+    },
+    {
+      "id": "north-species-034",
+      "poses": 48,
+      "finalSource": "north-species-034-reflow.png",
+      "qa": "north-species-034-composited-qa.png",
+      "status": "PASS"
+    },
+    {
+      "id": "north-species-036",
+      "poses": 48,
+      "finalSource": "north-species-036-reflow.png",
+      "qa": "north-species-036-composited-qa.png",
+      "status": "PASS"
+    },
+    {
+      "id": "north-species-039",
+      "poses": 48,
+      "finalSource": "north-species-039-reflow.png",
+      "qa": "north-species-039-composited-qa.png",
+      "status": "PASS"
+    },
+    {
+      "id": "north-species-041",
+      "poses": 48,
+      "finalSource": "north-species-041-original.png",
+      "qa": "north-species-041-composited-qa.png",
+      "status": "PASS"
+    }
+  ]
+}
