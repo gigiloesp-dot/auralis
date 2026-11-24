@@ -1,3 +1,4 @@
+import {originalTask10Camps,assertActiveExpansion} from './worldExpansionScope.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {MonsterSystem} from '../js/monsters/MonsterSystem.js';
@@ -30,12 +31,12 @@ test('streamed death and cooldown survive unloading, reconstruction and a nonzer
  const restored=setup('warrior',content,hero,{playNow:12000});assert.ok(restored.system.skillRemaining('warrior_0',12000)>4);assert.equal(restored.system.useSkill('warrior_0',12000).reason,'cooldown');assert.equal(restored.system.monsters[0].alive,false);
 });
 test('all region encounter descriptors instantiate on approach with bounded active entities',()=>{
- let visited=0,peak=0;
- for(const region of ['forest','north','ancient','desert']){const content=getRegionContent(region),{hero,system}=setup('warrior',content,{region});const descriptors=[...content.camps.flatMap(c=>c.spawns),...content.bosses];
-  for(const descriptor of descriptors){hero.x=descriptor.x;hero.y=descriptor.y;system.update(0,0);assert.ok(system.monsters.some(m=>m.id===descriptor.id),descriptor.id);peak=Math.max(peak,system.monsters.length);visited++;}
+ let visited=0,originalVisited=0,addedVisited=0,peak=0;
+ for(const region of ['forest','north','ancient','desert']){const content=getRegionContent(region),{hero,system}=setup('warrior',content,{region});assertActiveExpansion(content);const originalIds=new Set([...originalTask10Camps(content).flatMap(c=>c.spawns),...content.bosses].map(d=>d.id));const descriptors=[...content.camps.flatMap(c=>c.spawns),...content.bosses];
+  for(const descriptor of descriptors){hero.x=descriptor.x;hero.y=descriptor.y;system.update(0,0);assert.ok(system.monsters.some(m=>m.id===descriptor.id),descriptor.id);peak=Math.max(peak,system.monsters.length);visited++;if(originalIds.has(descriptor.id))originalVisited++;else addedVisited++;}
   system.destroy();assert.equal(system.monsters.length,0);
  }
- assert.equal(visited,2856);assert.ok(peak<80,'must not instantiate whole region: '+peak);
+ assert.equal(originalVisited,2856);assert.equal(addedVisited,220);assert.equal(visited,3076);assert.ok(peak<80,'must not instantiate whole region: '+peak);
 });
 test('boss cycles through three telegraphed patterns and paladin third hit stuns',()=>{
  const boss={id:'boss',type:'forestGuardian',x:2000,y:2000,level:5,bossType:'mini',patterns:['slam','charge','volley']};

@@ -1,3 +1,7 @@
+import {buildReadyAur203Camps} from '../monsters/aur203Species.js';
+import {INTEGRATED_SPECIES_ART} from '../assets/speciesArtRegistry.js';
+import {ITEM_DEFS} from '../equipment/items.js';
+import {MONSTER_MATERIAL_BY_LOOT} from '../equipment/monsterMaterials.js';
 import {DESERT_BOSSES} from '../monsters/desertBossData.js';
 import {uniqueSpeciesArt} from '../assets/speciesAssets.js';
 import {TASK10_LAYOUT} from './task10Layout.js';
@@ -106,4 +110,15 @@ export function getRelease21RegionContent(id='forest'){
 }
 
 const activeCache=new Map();
-export function getRegionContent(id='forest'){if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);if(!activeCache.has(id)){const c=TASK10_LAYOUT[id];activeCache.set(id,{...c,palette:REGIONS[id].palette,bosses:id==='desert'?[...c.bosses,...DESERT_BOSSES]:c.bosses,npcs:getRegionNpcs(id),receivers:regionTravelReceivers(id),towns:c.towns.map(t=>t.id==='caravanOasis'?{...t,safeRadius:TASK10_DESERT_OASIS_SAFE_RADIUS}:t),camps:c.camps.map(camp=>({...camp,speciesId:camp.plannedSpeciesId,temporaryBestiary:!uniqueSpeciesArt(camp.plannedSpeciesId),spawns:camp.spawns.map(s=>({...s,speciesId:s.plannedSpeciesId}))}))});}return activeCache.get(id);}
+export function getTask10RegionContent(id='forest'){if(!Object.hasOwn(REGIONS,id))throw new RangeError('Unknown region: '+id);if(!activeCache.has(id)){const c=TASK10_LAYOUT[id];activeCache.set(id,{...c,palette:REGIONS[id].palette,bosses:id==='desert'?[...c.bosses,...DESERT_BOSSES]:c.bosses,npcs:getRegionNpcs(id),receivers:regionTravelReceivers(id),towns:c.towns.map(t=>t.id==='caravanOasis'?{...t,safeRadius:TASK10_DESERT_OASIS_SAFE_RADIUS}:t),camps:c.camps.map(camp=>({...camp,speciesId:camp.plannedSpeciesId,temporaryBestiary:!uniqueSpeciesArt(camp.plannedSpeciesId),spawns:camp.spawns.map(s=>({...s,speciesId:s.plannedSpeciesId}))}))});}return activeCache.get(id);}
+
+// Preserve the complete Task10 prefix. Only fully registered art/type/material
+// records can activate an additive camp; unfinished84 candidates stay offline.
+const expandedActiveCache=new Map();
+export function getRegionContent(id='forest'){
+ if(!expandedActiveCache.has(id)){
+  const original=getTask10RegionContent(id),added=buildReadyAur203Camps(id,{registeredTypes:MONSTER_TYPES,registeredArt:INTEGRATED_SPECIES_ART,materials:ITEM_DEFS,materialByLoot:MONSTER_MATERIAL_BY_LOOT});
+  expandedActiveCache.set(id,{...original,aur203Revision:1,camps:[...original.camps,...added]});
+ }
+ return expandedActiveCache.get(id);
+}

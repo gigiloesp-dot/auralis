@@ -227,4 +227,4 @@ const produced={
  ]
 };
 export const MONSTER_ART=Object.freeze(Object.fromEntries(Object.entries(produced).map(([id,[scale,height,feet]])=>[id,{key:'actor-monster-'+id,url:'assets/actors/monsters/'+id+'.png',atlasURL:'assets/actors/monsters/'+id+'.json',scale,annotationHeight:height*scale+8,baselines:Object.fromEntries(['idle','run-a','run-b','attack'].map((bank,i)=>[bank,feet[i]]))}])));
-export function monsterArt(type,kind,descriptor={}){return kind?.boss?TASK10_OUTDOOR_BOSS_ART[descriptor.id]||TASK10_DUNGEON_BOSS_ART[descriptor.id]||BOSS_ART[descriptor.id]||null:task10MonsterArt(descriptor.speciesId||descriptor.plannedSpeciesId)||(type==='forestWolf'?ACTOR_ART.forestWolf:MONSTER_ART[type]||null);}
+export function monsterArt(type,kind,descriptor={}){return kind?.boss?TASK10_OUTDOOR_BOSS_ART[descriptor.id]||TASK10_DUNGEON_BOSS_ART[descriptor.id]||BOSS_ART[descriptor.id]||null:task10MonsterArt(descriptor.speciesId||descriptor.plannedSpeciesId||kind?.speciesId)||(type==='forestWolf'?ACTOR_ART.forestWolf:MONSTER_ART[type]||null);}

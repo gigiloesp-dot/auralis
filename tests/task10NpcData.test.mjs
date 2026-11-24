@@ -1,3 +1,4 @@
+import {originalTask10Camps,assertActiveExpansion} from './worldExpansionScope.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync,existsSync} from 'node:fs';
 import {TASK10_NPCS,TASK10_DESERT_OASIS_SAFE_RADIUS} from '../js/npc/task10NpcData.js';
 import {NPCS} from '../js/npc/npcData.js';import {NPC_ART} from '../js/assets/npcArt.js';
@@ -17,7 +18,7 @@ test('nineteen immutable additional residents extend the21 existing identities t
 });
 test('every proposed NPC stands on a real radius18 floor inside the safe settlement,away from other residents,houses,roads,camps,portals and dungeon entrances',()=>{
  assert.equal(TASK10_DESERT_OASIS_SAFE_RADIUS,250);let camps=0,bosses=0;
- for(const region of regions){const before=contentFor(region,false),after=contentFor(region,true),roads=regionRoads(after),added=TASK10_NPCS.filter(n=>n.region===region);camps+=before.camps.length;bosses+=before.bosses.length;
+ for(const region of regions){const before=contentFor(region,false),after=contentFor(region,true),roads=regionRoads(after),added=TASK10_NPCS.filter(n=>n.region===region);assertActiveExpansion(before);camps+=originalTask10Camps(before).length;bosses+=before.bosses.length;
   for(const t of after.towns){if(t.id!=='caravanOasis')assert.equal(t.safeRadius,getRelease21RegionContent(region).towns.find(p=>p.id===t.id).safeRadius);assert.deepEqual(houses(after,t),houses(before,t),t.id+' existing houses cannot disappear when NPC reservations are added');}
   for(const n of added){const t=after.towns.find(t=>t.id===n.townId);assert.ok(t,n.id+' valid settlement');assert.ok(distance(n,t)<=t.safeRadius-5,n.id+' safe settlement margin');assert.ok(distance(n,t.spawn)>=75,n.id+' free arrival center');assert.equal(worldWalkable(after,n.x,n.y,18),true,n.id+' floor');assert.ok(after.npcs.every(p=>p.id===n.id||distance(n,p)>=65),n.id+' residents separation');assert.ok(roads.every(r=>distanceToSegment(n,r.from,r.to)>=r.width/2+24-1e-7),n.id+' road');assert.ok(after.portals.every(p=>distance(n,p)>=115),n.id+' portal');assert.ok(after.dungeons.every(p=>distance(n,p)>=180),n.id+' dungeon');assert.ok(after.camps.every(p=>distance(n,p)>=600),n.id+' camp');assert.ok(after.bosses.every(p=>distance(n,p)>=500),n.id+' boss');assert.ok((t.futurePlots||[]).every(p=>distance(n,p)>=65),n.id+' future NPC plot');for(const h of houses(before,t))assert.ok(Math.hypot(n.x-h.x,n.y-(h.y-14))>=100,n.id+' preserved house footprint');}
  }

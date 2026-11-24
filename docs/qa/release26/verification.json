@@ -1,0 +1,32 @@
+{
+  "release": 26,
+  "sourceCommit": "e80d0efc6f12577d31364abfc8448d905f299227",
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "ci": {
+    "run": 45399766027,
+    "success": 43,
+    "total": 43
+  },
+  "localUnit": {
+    "passed": 591,
+    "total": 591
+  },
+  "publicRuntimeFiles": 1003,
+  "externalPinnedCorsFiles": 73,
+  "publicWorld": {
+    "spots": 257,
+    "ordinaryMonsters": 2827,
+    "primaryModels": 257,
+    "dungeons": 17,
+    "difficulties": 3,
+    "npcs": 40,
+    "settlements": 8,
+    "quests": 149
+  },
+  "entryExitChecksNotEarnedFullClears": true,
+  "materialCases": 6,
+  "inputLifecycleCycles": 250,
+  "physicalAndroid": false,
+  "gatheringVerification": "PASS English740x320: actualcollectandNPCclaim inall4regions plusfullbag/quota/reload/3slots/regrowth/leasechecks",
+  "publicJavaScriptErrors": 0
+}

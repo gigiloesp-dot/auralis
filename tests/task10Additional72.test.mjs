@@ -1,3 +1,4 @@
+import {originalTask10Camps,assertActiveExpansion} from './worldExpansionScope.mjs';
 import {assertPreservedSpeciesArt} from './preservedSpeciesArt.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -130,7 +131,7 @@ test('new descriptors and texture/atlas bytes equal the frozen reviewed72-model 
 test('accepted72-model stage preserves all241 identities and at least218 six-bank models as the catalogue grows',()=>{
  const stageIds=new Set([...previousModels.map(row=>row.id),...pendingModels.map(row=>row.id)]);assert.equal(stageIds.size,241);
  const entries=uniqueSpeciesEntries().filter(([id])=>stageIds.has(id)),ids=new Set(entries.map(([id])=>id));assert.equal(entries.length,241);assert.equal(ids.size,241);assert.ok(entries.filter(([id])=>Object.hasOwn(INTEGRATED_SPECIES_ART,id)).length>=218);
- const camps=['forest','north','ancient','desert'].flatMap(r=>getRegionContent(r).camps);assert.equal(camps.length,257);
+ const camps=['forest','north','ancient','desert'].flatMap(r=>{const live=getRegionContent(r);assertActiveExpansion(live);return originalTask10Camps(live);});assert.equal(camps.length,257);
  const later=camps.filter(c=>!stageIds.has(c.speciesId));assert.equal(later.length,16);
  assert.ok(later.every(c=>/^north-species-0(5[89]|6[0-9]|7[0-3])$/.test(c.speciesId)),'all sixteen later north identities remain accounted for');
  for(const field of ['key','url','atlasURL'])assert.equal(new Set(entries.map(([,e])=>e[field])).size,241,field+'/global identity collision');

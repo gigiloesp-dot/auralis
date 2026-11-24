@@ -1,3 +1,4 @@
+import {originalTask10Camps,assertActiveExpansion,FIRST20_SPECIES} from './worldExpansionScope.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {MonsterSystem} from '../js/monsters/MonsterSystem.js';
@@ -17,7 +18,7 @@ function setup({type='forestWolf',respawnMs,playNow=0,heroData={},legacy=false}=
 function withWall(run){const original=Date.now;let wall=1000000;Date.now=()=>wall;try{run(value=>{wall=value;});}finally{Date.now=original;}}
 
 test('every ordinary species rejects a short descriptor and waits until the exact death deadline',()=>withWall(setWall=>{
- assert.equal(ordinaryTypes.length,23);
+ const legacy=ordinaryTypes.filter(type=>MONSTER_TYPES[type].aur203Revision!==1),added=ordinaryTypes.filter(type=>MONSTER_TYPES[type].aur203Revision===1);assert.equal(legacy.length,23);assert.equal(added.length,20);assert.equal(ordinaryTypes.length,43);assert.deepEqual(added.map(type=>MONSTER_TYPES[type].speciesId).sort(),Object.values(FIRST20_SPECIES).flat().sort());
  for(const type of ordinaryTypes){
   setWall(1000000);assert.equal(monsterKind({type,respawnMs:11000}).respawnMs,30000,type);
   const {system,hero,m}=setup({type,respawnMs:11000,playNow:900000});
@@ -74,14 +75,14 @@ test('world, dungeon and arena boss cooldown descriptors retain their independen
 });
 
 test('all authored outdoor descriptors have stable unique state IDs and a thirty-second ordinary interval',()=>{
- let count=0;const keys=new Set();
- for(const region of ['forest','north','ancient','desert']){const content=getRegionContent(region);
+ let count=0,originalCount=0;const keys=new Set();
+ for(const region of ['forest','north','ancient','desert']){const content=getRegionContent(region);assertActiveExpansion(content);originalCount+=originalTask10Camps(content).reduce((n,camp)=>n+camp.spawns.length,0);
   for(const descriptor of [...content.camps.flatMap(c=>c.spawns),...content.bosses]){
    const key=content.id+':'+descriptor.id;assert.equal(keys.has(key),false,key);keys.add(key);
    const kind=monsterKind(descriptor);if(!kind.boss){assert.equal(kind.respawnMs,30000,key);count++;}
   }
  }
- assert.equal(count,2827);
+ assert.equal(originalCount,2827);assert.equal(count,3047);
 });
 
 test('an expired legacy death without killedAt still passes the safe respawn check on reload',()=>withWall(setWall=>{

@@ -1,5 +1,5 @@
 {
-  "requirement": "AUR-203: actual web slow and additive thematic materials; every unrelated original source byte remains protected",
+  "requirement": "AUR-203: actual web/material additions and first20 opt-in creature tactics; every unrelated original source byte remains protected",
   "baselineCommit": "4a0eb5a77cbc75f9952922d4166af466971018e8",
   "files": {
     "js/monsters/loot.js": {
@@ -13,6 +13,22 @@
     "js/monsters/movementProfiles.js": {
       "before": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4",
       "after": "a778d5daa4c4328192ff7657cbd454eea792146acbcb0318b7e93d829cf13016"
+    },
+    "js/monsters/monsters.js": {
+      "before": "0c60ede0c78dd94160244666298c8cf67ae85b840ef51408855c8a7fa4e19905",
+      "after": "ec1e69afc195bcb5b4fdce435936412b56aec01a56518be8f11736b0c210655d"
+    },
+    "js/monsters/MonsterSystem.js": {
+      "before": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2",
+      "after": "34e4f47d11c6c3573aa1b4965adb52bf4996f16b70d716fc224e35c88139756f"
+    },
+    "js/world/regionContent.js": {
+      "before": "3d54c592833cc2244c14605c9aec61f4d98551fbddc478383c471531219a2f8f",
+      "after": "7ce2729a8724e52f8420e93ed0320727e4025c5b689dcdb5c4a2d613065b8342"
+    },
+    "js/assets/monsterArt.js": {
+      "before": "8da30624dfe062c34ba1d1cdf8194c9032402981577452dc348d25d890c66f8e",
+      "after": "0a975597979de26b1b61333f9bfa1493967ee28fab569a7e601cf5f0e27ff956"
     }
   }
 }

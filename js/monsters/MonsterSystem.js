@@ -1,3 +1,4 @@
+import {updateAur203Tactics,aur203IncomingDamage,alertAur203Pack,cancelAur203Tactics} from './aur203Tactics.js';
 import {tickStoneGiantEncounter,cancelStoneGiantEncounter} from './stoneGiantEncounter.js';
 import {drawStoneGiantWarning} from './stoneGiantVisuals.js';
 import {ensureDungeonVisit,dungeonMonsterState,recordDungeonMinionKill,DUNGEON_VISIT_DEAD_UNTIL} from '../dungeons/dungeonSession.js';
@@ -88,8 +89,8 @@ export class MonsterSystem{
   const paintedEntry=monsterArt(type,kind,d);if(paintedEntry&&this.scene.actorTextures){const fallback=[...body.list];m.painted=new PaintedActor(this.scene,body,paintedEntry);m.painted.ready.then(loaded=>{if(!loaded)return;for(const child of fallback)child.destroy();body.motionParts=null;m.paintedActive=true;body.scaleX=Math.abs(body.scaleX);m.annotationHeight=(paintedEntry.annotationHeight||paintedEntry.scale*170)*(kind.visualScale||1);});}
   this.monsters.push(m);this.setMonsterVisible(m,this.isActive(m));return m;
  }
- removeMonster(m){this.cancelGiant(m);m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
- setMonsterVisible(m,active){m.active=active;for(const key of ['body','shadow'])m[key]?.setVisible(active&&(m.alive||m.dyingUntil>(this.now||0)));this.syncAnnotations(m);}
+ removeMonster(m){cancelAur203Tactics(m);this.cancelGiant(m);m.painted?.destroy();cancelMonsterAbility(m);this.persistHealth(m);if(this.selected===m){this.selected=null;this.scene.onTargetLost?.(m);}this.cancelWindup(m);for(const key of ['body','shadow','hpBar','nameLabel'])m[key]?.destroy();this.monsters=this.monsters.filter(item=>item!==m);for(const p of [...this.projectiles])if(p.target===m)this.removeProjectile(p);}
+ setMonsterVisible(m,active){if(!active)cancelAur203Tactics(m);m.active=active;for(const key of ['body','shadow'])m[key]?.setVisible(active&&(m.alive||m.dyingUntil>(this.now||0)));this.syncAnnotations(m);}
  cancelWindup(m){m.warning?.destroy();m.warning=null;m.windup=null;}
  schedule(at,run){this.pendingEffects.push({at,run});}
  tickEffects(now){const ready=this.pendingEffects.filter(e=>e.at<=now);this.pendingEffects=this.pendingEffects.filter(e=>e.at>now);if(this.hero.hp<=0){this.pendingEffects=[];return;}for(const effect of ready)effect.run();}
@@ -101,7 +102,7 @@ export class MonsterSystem{
   if(this.buffs.guard>now)damage=Math.ceil(damage*(this.hero.classId==='paladin'?.35:this.hero.classId==='cannoneer'?.65:.55));
   if(this.buffs.aura>now)damage=Math.ceil(damage*.55);
   if(this.buffs.iceWard>0&&this.buffs.guard>now){const absorbed=Math.min(damage,this.buffs.iceWard);damage-=absorbed;this.buffs.iceWard-=absorbed;for(const m of this.monsters)if(distance(m,this.hero)<100)m.slowUntil=now+1500;}
-  damage=guardBlock(this,damage,now);this.hero.hp=Math.max(0,this.hero.hp-damage);guardResponse(this,now);if(damage>0){this.hero.hurtUntil=now+220;this.hero.lastHitAt=now;}this.label(this.hero.x,this.hero.y,damage?'-'+damage:'·','#ff8e82');this.onChange();
+  damage=guardBlock(this,damage,now);this.hero.hp=Math.max(0,this.hero.hp-damage);guardResponse(this,now);if(this.hero.hp<=0)for(const m of this.monsters)cancelAur203Tactics(m);if(damage>0){this.hero.hurtUntil=now+220;this.hero.lastHitAt=now;}this.label(this.hero.x,this.hero.y,damage?'-'+damage:'·','#ff8e82');this.onChange();
  }
  safe(){return (this.content?.towns||Object.values(TOWNS)).some(t=>t.region===this.hero.region&&distance(this.hero,t.spawn||t)<t.safeRadius)||(this.content?.portals||[]).some(p=>p.safeRadius&&distance(this.hero,p)<p.safeRadius);}
  label(x,y,text,color='#fff1a0'){
@@ -124,13 +125,29 @@ export class MonsterSystem{
   for(const spread of [32,56,80,104])for(let i=0;i<12;i++){const angle=i*Math.PI/6+(m.phase||0),p={x:home.x+Math.cos(angle)*spread,y:home.y+Math.sin(angle)*spread};if(free(p))return p;}
   return null;
  }
- warnAbility(config){if(config.kind?.startsWith('stoneGiant-'))return drawStoneGiantWarning(this.scene,config);const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
+ warnAbility(config){if(config.kind?.startsWith('stoneGiant-'))return drawStoneGiantWarning(this.scene,config);const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed,'aur203-guard':0x76cbe4},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
  abilityEffect(config){if(config.kind?.startsWith('stoneGiant-')){drawStoneGiantWarning(this.scene,config,{impact:true});if(/quake|hammer|charge/i.test(config.kind))this.scene.cameras?.main?.shake?.(160,.003);return;}const point=this.view(config.x,config.y),ring=this.scene.add.circle(point.x,point.y,config.radius,config.kind==='blink'?0xb891ed:0xe0b17b,.25).setDepth(this.depth(config.x,config.y)+1);if(this.scene.project)ring.setScale?.(1,.5);this.scene.tweens.add({targets:ring,alpha:0,duration:350,onComplete:()=>ring.destroy()});if(config.kind==='stomp')this.scene.cameras?.main?.shake?.(130,.003);}
  shootHostile(m,shot){const angle=Math.atan2(shot.targetY-shot.y,shot.targetX-shot.x)+(shot.angleOffset||0),p={...shot,vx:Math.cos(angle)*shot.speed,vy:Math.sin(angle)*shot.speed,remaining:shot.range||600,source:m};const screen=this.view(p.x,p.y);p.renderHeight=m.kind.projectileOriginHeight||18;p.stoneBoulder=shot.visual==='stoneBoulder';p.throwDistance=Math.max(1,Math.hypot(shot.targetX-shot.x,shot.targetY-shot.y));p.originHeight=p.renderHeight;p.traveled=0;p.needle=m.kind.projectile==='needle';p.body=(p.stoneBoulder&&this.scene.textures?.exists?.('paintedEnvironment')?this.scene.add.image(screen.x,screen.y-p.renderHeight,'paintedEnvironment','rock').setOrigin(.5).setScale(.065):p.needle?this.scene.add.rectangle(screen.x,screen.y-p.renderHeight,13,2,0xe6d8a7).setRotation(projectAngle(angle)):this.scene.add.circle(screen.x,screen.y-p.renderHeight,shot.magic?6:4,shot.status?.type==='poison'?0x9ac76b:shot.magic?0xb49aeb:0xd5b98a)).setDepth(this.depth(p.x,p.y)+5);this.hostileProjectiles.push(p);return p;}
  removeHostileProjectile(p){if(!this.hostileProjectiles.includes(p))return;p.body.destroy();this.hostileProjectiles=this.hostileProjectiles.filter(q=>q!==p);}
  giantContext(m,now=this.now||0,dt=0,engaged=false){return {monster:m,hero:this.hero,participants:[this.hero],now,dt,engaged,safe:this.safe(),leashRadius:leashRadius(m),collisionRadius:movementProfile(m.kind).collisionRadius,canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config),clearProjectile:(p,id)=>{if(p?.source===m&&p.encounterId===id)this.removeHostileProjectile(p);},clearProjectiles:(source,id)=>{for(const p of [...this.hostileProjectiles])if(p.source===source&&p.encounterId===id)this.removeHostileProjectile(p);},onPhase:p=>{m.giantPhase=p.phase;this.label(m.x,m.y,p.names[this.scene.language]||p.names.ru,'#ffd48c');}};}
  cancelGiant(m){if(m.giantEncounter)cancelStoneGiantEncounter(m,this.giantContext(m));}
  tickAbility(m,now,dt,engaged){if(m.kind.encounter==='stoneGiant')return tickStoneGiantEncounter(this.giantContext(m,now,dt,engaged));return tickMonsterAbility({monster:m,hero:this.hero,now,dt,engaged,safe:this.safe(),canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config)});}
+
+ // Opt-in tactics receive the same physical movement/LOS constraints as the
+ // normal AI. Existing kinds return their exact original intent unchanged.
+ tacticalIntent(m,now,intent){
+  if(!m.kind.behaviorConfig)return intent;
+  if(m.specialState||m.windup||m.giantEncounter?.attack||now<(m.rootUntil||0)||now<(m.stunUntil||0)){cancelAur203Tactics(m);return intent;}
+  const radius=movementProfile(m.kind).collisionRadius;
+  return updateAur203Tactics({monster:m,hero:this.hero,now,intent,safe:this.safe(),canOccupy:(x,y)=>this.canOccupy(m,x,y,radius),canTraverse:(a,b)=>this.sight(a,b,radius),warn:config=>this.warnAbility(config)});
+ }
+ alertPack(m,now){
+  if(!m.kind.behaviorConfig?.pack||m.kind.behaviorConfig.pack.enabled===false)return [];
+  // Only already-streamed actors are examined, never world descriptors. The
+  // tactic has its own <=64 candidate / <=6 ally bounds and same-camp guard.
+  const nearby=this.monsters.filter(other=>distance(m,other)<=260).sort((a,b)=>distance(m,a)-distance(m,b)).slice(0,64);
+  return alertAur203Pack({monster:m,attacker:this.hero,now,nearby,safe:this.safe(),canSee:(a,b)=>this.sight(a,b)});
+ }
 
  beginBossAttack(m,now){
   const basic=m.patterns?.length?m.patterns:['slam'],patterns=m.bossType==='world'&&m.hp/m.maxHp<.5?[...new Set([...basic,'slam','charge','volley'])]:basic,effect=patterns[(m.attackSequence||0)%patterns.length];m.attackSequence=(m.attackSequence||0)+1;
@@ -150,7 +167,7 @@ export class MonsterSystem{
   this.now=now;this.stream?.update();this.tickEffects(now);tickHeroAfflictions(this.hero,now,(attack,magic)=>this.hurtHero(attack,now,magic));if(this.hero.hp>0)tickClassEffects(this,now);
   for(const m of this.monsters){
    const active=this.isActive(m);if(active!==m.active)this.setMonsterVisible(m,active);
-   if(!active){this.cancelWindup(m);cancelMonsterAbility(m);continue;}
+   if(!active){cancelAur203Tactics(m);this.cancelWindup(m);cancelMonsterAbility(m);continue;}
    if(!m.alive){
     // Death deadlines are absolute wall timestamps in every content mode.
     // Scene clocks can pause, reset or already be advanced on reconstruction.
@@ -160,11 +177,11 @@ export class MonsterSystem{
     m.body.alpha=1;m.body.rotation=0;m.dyingUntil=0;m.alive=true;m.hp=m.maxHp;m.x=spawn.x;m.y=spawn.y;m.poison=null;m.returning=false;m.aggroUntil=0;m.patrolTarget=null;m.nextPatrolAt=now+1000;delete this.hero.worldState.monsters[m.key];this.setMonsterVisible(m,true);
    }
    if(this.hero.hp>0&&m.poison&&now<m.poison.until&&now>=m.poison.next){m.poison.next=now+1000;this.hit(m,m.poison.damage,now);if(!m.alive)continue;}
-   const profile=movementProfile(m.kind),dist=distance(m,this.hero),visible=this.sight(m,this.hero),intent=monsterIntent(m,this.hero,now,{visible,safe:this.safe(),detection:Math.max(190,profile.range||0),canOccupy:(x,y)=>this.canOccupy(m,x,y)});
+   const profile=movementProfile(m.kind),dist=distance(m,this.hero),visible=this.sight(m,this.hero),baseIntent=monsterIntent(m,this.hero,now,{visible,safe:this.safe(),detection:Math.max(190,profile.range||0),canOccupy:(x,y)=>this.canOccupy(m,x,y)}),intent=this.tacticalIntent(m,now,baseIntent);
    let {x:tx,y:ty,speed}=intent;const engaged=intent.engaged;
-   if(engaged){this.lastCombat=now;m.lastEngagedAt=now;if(visible&&profile.preferredDistance){if(dist<profile.preferredDistance*.65){tx=m.x+(m.x-this.hero.x);ty=m.y+(m.y-this.hero.y);speed*=.65;}else if(dist<profile.preferredDistance){tx=m.x;ty=m.y;}}}
+   if(engaged){this.lastCombat=now;m.lastEngagedAt=now;if(!intent.aur203Tactic&&visible&&profile.preferredDistance){if(dist<profile.preferredDistance*.65){tx=m.x+(m.x-this.hero.x);ty=m.y+(m.y-this.hero.y);speed*=.65;}else if(dist<profile.preferredDistance){tx=m.x;ty=m.y;}}}
    const controlled=now<(m.rootUntil||0)||now<(m.stunUntil||0);if(controlled){cancelMonsterAbility(m);m.abilityBlockedUntil=Math.max(m.rootUntil||0,m.stunUntil||0)+250;}
-   const ability=this.tickAbility(m,now,dt,engaged&&visible&&(m.kind.encounter==='stoneGiant'||!controlled));if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
+   const ability=this.tickAbility(m,now,dt,engaged&&visible&&!intent.aur203Tactic&&(m.kind.encounter==='stoneGiant'||!controlled));if(ability.busy)speed=0;if(ability.fired)m.lastHit=now;
    if(now<(m.rootUntil||0)||now<(m.stunUntil||0))speed=0;else if(now<(m.slowUntil||0))speed*=.45;
    if(m.windup){if(m.returning||this.safe()||this.hero.hp<=0)this.cancelWindup(m);else if(now>=m.windup.at)this.finishBossAttack(m,now);speed=0;}
    const interval=m.hp/m.maxHp<.5?4200:6000;
@@ -180,9 +197,9 @@ export class MonsterSystem{
     const d=distance(m,other),clearance=profile.collisionRadius+movementProfile(other.kind).collisionRadius+3;
     if(d<clearance){const sign=String(m.id)<String(other.id)?1:-1,dx=d?(m.x-other.x)/d:sign,dy=d?(m.y-other.y)/d:0;this.move(m,m.x+dx*4,m.y+dy*4,Math.min(3,clearance-d));}
    }
-   const walking=distance(previous,m)>.01;if(profile.faceTarget&&engaged&&visible&&!walking)m.facing=Math.atan2(this.hero.y-m.y,this.hero.x-m.x);animateMonsterParts(m,now,walking,profile);const state=m.hurtUntil>now?'hurt':m.specialState||m.giantEncounter?.attack?'special':now-m.lastHit<240?'attack':walking?'run':'idle';m.painted?.update(state,projectAngle(m.facing||0),dt,{progress:m.specialState?(now-m.specialState.releaseAt+profile.windup)/profile.windup:(now-m.lastHit)/240});m.body.alpha=m.hurtUntil>now?.6:1;if(m.kind.encounter==='stoneGiant'&&this.depth(m.x,m.y)>this.depth(this.hero.x,this.hero.y)){const h=this.view(this.hero.x,this.hero.y);if(m.body.getBounds?.().contains(h.x,h.y-25))m.body.alpha=Math.min(m.body.alpha,.72);}m.body.rotation=m.hurtUntil>now?Math.sin(now*.05)*.09:now-m.lastHit<240?Math.sin((now-m.lastHit)/240*Math.PI)*.12:0;m.body.scaleX=(m.paintedActive?1:Math.cos(m.facing||0)<0?-1:1)*(m.kind.visualScale||(m.kind.boss?1.45:1));m.body.scaleY=(m.kind.visualScale||(m.kind.boss?1.45:1))*(walking?1+Math.sin(now*.012)*.035:1);
+   const walking=distance(previous,m)>.01;if(profile.faceTarget&&engaged&&visible&&!walking)m.facing=Math.atan2(this.hero.y-m.y,this.hero.x-m.x);animateMonsterParts(m,now,walking,profile);const state=m.hurtUntil>now?'hurt':m.specialState||m.giantEncounter?.attack||intent.aur203Tactic?.startsWith('guard')?'special':now-m.lastHit<240?'attack':walking?'run':'idle';m.painted?.update(state,projectAngle(m.facing||0),dt,{progress:intent.aur203Tactic?.startsWith('guard')?.6:m.specialState?(now-m.specialState.releaseAt+profile.windup)/profile.windup:(now-m.lastHit)/240});m.body.alpha=m.hurtUntil>now?.6:1;if(m.kind.encounter==='stoneGiant'&&this.depth(m.x,m.y)>this.depth(this.hero.x,this.hero.y)){const h=this.view(this.hero.x,this.hero.y);if(m.body.getBounds?.().contains(h.x,h.y-25))m.body.alpha=Math.min(m.body.alpha,.72);}m.body.rotation=m.hurtUntil>now?Math.sin(now*.05)*.09:now-m.lastHit<240?Math.sin((now-m.lastHit)/240*Math.PI)*.12:0;m.body.scaleX=(m.paintedActive?1:Math.cos(m.facing||0)<0?-1:1)*(m.kind.visualScale||(m.kind.boss?1.45:1));m.body.scaleY=(m.kind.visualScale||(m.kind.boss?1.45:1))*(walking?1+Math.sin(now*.012)*.035:1);
    if(recoverLivingMonster(m,now,dt,engaged))this.persistHealth(m,now);
-   if(!ability.busy&&!m.windup&&!controlled&&!m.returning&&!this.safe()&&dist<42&&now-m.lastHit>1500&&this.hero.hp>0&&this.sight(m,this.hero)){m.lastHit=now;this.hurtHero(m.attack,now,m.kind.magic,m);}
+   if(!intent.aur203Tactic&&!ability.busy&&!m.windup&&!controlled&&!m.returning&&!this.safe()&&dist<42&&now-m.lastHit>1500&&this.hero.hp>0&&this.sight(m,this.hero)){m.lastHit=now;this.hurtHero(m.attack,now,m.kind.magic,m);}
    const point=this.view(m.x,m.y),depth=this.depth(m.x,m.y);
    const elevation=profile.elevation||0,bob=Math.sin(now*(profile.locomotion==='winged'?.016:.007)+m.phase)*(elevation?4:1.5);m.body.setPosition(point.x,point.y-elevation+bob).setDepth(depth);m.shadow.scaleX=elevation?.72:1;m.shadow.alpha=elevation?.24:.35;m.shadow.setPosition(point.x,point.y+5).setDepth(depth-1);
    m.hpBar.setPosition(point.x,point.y-elevation-(m.annotationHeight??(m.kind.boss?(m.kind.visualScale||1.45)*93:48))).setDepth(depth+1).setScale((m.kind.boss?2.5:1)*m.hp/m.maxHp,1);m.nameLabel.setPosition(point.x,point.y-elevation-(m.annotationHeight?m.annotationHeight+17:m.kind.boss?(m.kind.visualScale||1.45)*110:76)).setDepth(depth+2);this.syncAnnotations(m);
@@ -213,14 +230,14 @@ export class MonsterSystem{
   return {magic,damage:calculateDamage({attack:attack*multiplier,critical})+(critical?Math.round((magic?this.hero.stats.intelligence:this.hero.stats.strength)*.3):0),critical};
  }
  hit(m,amount,now,critical=false){
-  if(!m.alive||!Number.isFinite(amount)||amount<=0)return;this.lastCombat=now;m.lastEngagedAt=now;markMonsterThreat(m,this.hero,now);if(!this.selected?.alive||this.selected===m)this.select(m,now);m.hp=Math.max(0,m.hp-amount);m.hurtUntil=now+180;this.label(m.x,m.y,'-'+amount+(critical?'!':''),critical?'#ffb45c':'#fff1a0');
+  if(!m.alive||!Number.isFinite(amount)||amount<=0)return;amount=aur203IncomingDamage(m,amount,now);this.alertPack(m,now);this.lastCombat=now;m.lastEngagedAt=now;markMonsterThreat(m,this.hero,now);if(!this.selected?.alive||this.selected===m)this.select(m,now);m.hp=Math.max(0,m.hp-amount);m.hurtUntil=now+180;this.label(m.x,m.y,'-'+amount+(critical?'!':''),critical?'#ffb45c':'#fff1a0');
   this.persistHealth(m,now);this.syncAnnotations(m);
   if(m.hp===0){
    const deathAt=m.deathAt=Date.now(),minion=this.content?.dungeon&&!m.kind.boss,respawnMs=m.kind.boss?(m.kind.respawnMs||30000):Math.max(ORDINARY_RESPAWN_MS,m.kind.respawnMs||ORDINARY_RESPAWN_MS);
    m.alive=false;m.visitKilled=!!minion;if(this.selected===m)this.selected=null;this.scene.onTargetLost?.(m);m.dyingUntil=now+350;
    const deadUntil=minion?DUNGEON_VISIT_DEAD_UNTIL:deathAt+respawnMs;m.respawnAt=deadUntil;
    this.hero.worldState.monsters[m.key]={deadUntil,killedAt:deathAt,hp:0};if(minion)recordDungeonMinionKill(this.hero,this.content,m.id,deathAt);
-   this.cancelWindup(m);this.cancelGiant(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,speciesId:m.kind.speciesId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;
+   cancelAur203Tactics(m);this.cancelWindup(m);this.cancelGiant(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,speciesId:m.kind.speciesId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;
    const drops=rollEncounterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.scene.groundLoot?.dropMonster(m,drops,deathAt);this.onChange();
   }
  }

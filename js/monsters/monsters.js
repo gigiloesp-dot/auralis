@@ -1,9 +1,10 @@
+import {createAur203MonsterTypes} from './aur203Species.js';
 import {speciesTraits} from './speciesRuntime.js';
 import {GAME_CONFIG} from '../config/gameConfig.js';
 export const ORDINARY_RESPAWN_MS=30000;
 export const MONSTER_STATES=Object.freeze(['idle','patrol','chase','attack','return','dead']);
 const mechanics=(family,movementProfile,values)=>({family,movementProfile,...values});
-export const MONSTER_TYPES=Object.freeze({
+const BASE_MONSTER_TYPES=Object.freeze({
  forestWolf:mechanics('wolf','predator',{ name:'Лесной волк',names:{ru:'Лесной волк',en:'Forest wolf',es:'Lobo del bosque'},level:1,hp:30,attack:4,xp:15,gold:2,speed:90,loot:'wolf'}),
  wildBoar:mechanics('boar','charger',{ name:'Дикий кабан',names:{ru:'Дикий кабан',en:'Wild boar',es:'Jabalí salvaje'},level:3,hp:65,attack:7,xp:24,gold:4,speed:72,loot:'boar'}),
  forestRaider:mechanics('raider','skirmisher',{ name:'Лесной разбойник',names:{ru:'Лесной разбойник',en:'Forest raider',es:'Bandido del bosque'},level:4,hp:85,attack:10,xp:32,gold:6,speed:100,loot:'raider'}),
@@ -29,6 +30,7 @@ export const MONSTER_TYPES=Object.freeze({
  voidElemental:mechanics('elemental','elemental',{name:'Стихия пустоты',names:{ru:'Стихия пустоты',en:'Void elemental',es:'Elemental del vacío'},level:40,hp:500,attack:67,xp:360,gold:46,speed:88,loot:'elemental',defense:15,magicDefense:35,magic:true}),
  forestGuardian:mechanics('treant','heavy',{ name:'Страж чащи · мини-босс',names:{ru:'Страж чащи · мини-босс',en:'Grove guardian · miniboss',es:'Guardián del bosque · minijefe'},level:5,hp:750,attack:20,xp:160,gold:70,speed:55,loot:'guardian',boss:true,respawnMs:2400000})
 });
+export const MONSTER_TYPES=Object.freeze({...BASE_MONSTER_TYPES,...createAur203MonsterTypes(BASE_MONSTER_TYPES)});
 export const MONSTER_CAMPS=Object.freeze([
  {type:'forestWolf',points:[[1370,1240],[1450,1320],[1530,1220],[1320,1430],[1600,1450],[1770,1250],[1770,1600],[1430,1660]]},
  {type:'wildBoar',points:[[1740,720],[1810,760],[1880,700],[1850,830]]},

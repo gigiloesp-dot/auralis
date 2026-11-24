@@ -1,3 +1,4 @@
+import {originalTask10Camps,assertActiveExpansion} from './worldExpansionScope.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';
 import {DESERT_BOSSES} from '../js/monsters/desertBossData.js';
 import {getRegionContent,getRelease21RegionContent} from '../js/world/regionContent.js';
@@ -16,7 +17,7 @@ test('desert encounter proposals have exactly8mini,2large/open and one separatel
  assert.equal(DESERT_BOSSES.at(-1).names.en,'Stone Giant');assert.equal(DESERT_BOSSES.at(-1).level,56);assert.equal(DESERT_BOSSES.at(-1).encounter,'stoneGiant');assert.equal(DESERT_BOSSES.at(-1).leashRadius,450);assert.deepEqual(DESERT_BOSSES.at(-1).abilityConfig,{collisionRadius:52,faceTarget:true});assert.ok(Object.isFrozen(DESERT_BOSSES.at(-1).abilityConfig));
 });
 test('all11 fixed arenas clear real camps,roads,towns,entrances,receivers and reserved settlement locations without moving the17 dungeon definitions or18 existing bosses',()=>{
- assert.equal(DUNGEONS.length,17);assert.deepEqual(DUNGEONS.map(d=>d.id),Array.from({length:17},(_,i)=>'dungeon'+(i+1)));const c=desert(),roads=regionRoads(c);assert.equal(c.camps.length,56);
+ assert.equal(DUNGEONS.length,17);assert.deepEqual(DUNGEONS.map(d=>d.id),Array.from({length:17},(_,i)=>'dungeon'+(i+1)));const c=desert(),roads=regionRoads(c);assertActiveExpansion(c);assert.equal(originalTask10Camps(c).length,56);
  for(const d of DESERT_BOSSES){assert.ok(worldWalkable(c,d.x,d.y,70),d.id+' main footprint');assert.ok(d.x>=750&&d.y>=750&&d.x<c.width-750&&d.y<c.height-750);for(let i=0;i<8;i++){const angle=i*Math.PI/4;assert.ok(worldWalkable(c,d.x+Math.cos(angle)*200,d.y+Math.sin(angle)*200,18),d.id+' player approach');if(d.bossType==='world')assert.ok(worldWalkable(c,d.x+Math.cos(angle)*420,d.y+Math.sin(angle)*420,18),d.id+' giant outer dodge position');}
   assert.ok(c.camps.every(p=>distance(d,p)>1120),d.id+' neighbouring camp');assert.ok(roads.every(r=>distanceToSegment(d,r.from,r.to)>r.width/2+320),d.id+' road');assert.ok(c.towns.every(p=>distance(d,p)>1100),d.id+' safe town');assert.ok((c.npcs||[]).every(p=>distance(d,p)>750),d.id+' NPC');assert.ok(c.portals.every(p=>distance(d,p)>750),d.id+' portal');assert.ok(c.dungeons.every(p=>distance(d,p)>750),d.id+' dungeon entrance');assert.ok((c.futureSettlements||[]).every(p=>distance(d,p)>850),d.id+' future settlement');assert.ok((c.landmarks||[]).every(p=>distance(d,p)>600),d.id+' existing landmark');assert.ok(DESERT_BOSSES.every(p=>p===d||distance(d,p)>2100),d.id+' boss territory separation');
  }
