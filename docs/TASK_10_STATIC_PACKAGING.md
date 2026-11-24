@@ -1,5 +1,30 @@
 # Task 10 static publication packaging
 
+## Current verified checkpoint — 24 November 2026
+
+The published master-test is **release25**, game source `4136c4ba9e0bd32fe4ccbaa321733f445aa4128c`, with169 primary models. The hosting archive was261,997,025 bytes and was accepted; its SHA-256 is `40f9e973fbe71a7626faba52ae84179b97c1020738b4e5ebb55799fdf2632abc`. Public verification checked748 exact runtime hashes and gameplay scenarios; receipts are in [release25](qa/release25/). Original PNGs remain in Git. The active delivery manifest still contains144 entries pinned to `89966076fe6488e9e1ca009f07ee3db32ad3fd1f`. Later source integration does not silently activate new WebPs.
+
+The next packaging implementation is ready for testing against the final committed257-model source:
+
+- Export streams `git archive` directly into `tar` without creating a second full-size temporary archive. Extracted files are isolated copies; PNG recompression uses an atomic replacement, never a mutable-source hardlink.
+- Optional `--include-legacy-roles monsters npcs bosses` selects only explicit original descriptor atlases:23 monster PNGs,6 NPC sheets,44 boss PNGs. Player bodies, class sprites, equipment and portraits are excluded. Existing task10 paths remain selected by default. `--list-sources` audits selection without generation.
+- Converter preserves exact RGBA, including hidden RGB, and independently checks decoded WebP bytes. RGB ICC profiles are retained and independently compared. Unsupported PNG color/animation metadata or encodings fail closed; no silent profile removal or channel reduction. A non-smaller WebP remains unmapped.
+- Export validates each source against both the exact export commit and the manifest-pinned original commit before removing mapped PNG copies from the derived directory. Binary hashes and resolver equality remain mandatory.
+
+Focused non-browser validation: **8/8 PASS**, recorded in `work/task10/packaging-followup-validation.log`. It covers real144-entry provenance/RGBA, original descriptor allowlists, ICC extended RIFF headers, both loader leases, isolated streamed export, uncommitted-source preservation, altered pinned sources, corrupt derivatives, and rejection of player substitutions. A separate offline Pillow fixture preserved a588-byte RGB ICC profile and every RGBA byte, including alpha-zero RGB. An audit of305 selected PNGs at source `1466628e16f1529fa2457dc86f1b6a6d0435253e` found no unsupported color metadata; all305 had no ICC profile. This is not a new manifest generation, full-browser result, full-suite result, archive-size measurement for257 models, or publication. Root integration must commit the final source before generation.
+
+Reproducible next command, after recording the exact committed source SHA:
+
+```sh
+python scripts/build-lossless-actor-textures.py --commit <exact-source-SHA> --jobs 2 --include-legacy-roles monsters npcs bosses
+```
+
+Run the independent browser pixel comparison and full checks before publishing any new derivatives. No physical Android acceptance is claimed.
+
+## Historical packaging measurements
+
+The sections below record earlier checkpoints; statements that release24 was live or CI was pending apply to those historical checkpoints. They do not supersede the current release25 receipts above.
+
 The exporter applies deterministic lossless PNG compression only to its extracted publication directory. Committed PNGs, source artwork, runtime code, game URLs, atlas coordinates, and the live release24 (73 models) deployment remain unchanged by this checkpoint.
 
 `scripts/lossless-png.mjs` uses Node built-ins to verify PNG chunk CRCs, decode noninterlaced 8-bit RGB/RGBA row filters 0–4, select adaptive filters deterministically, and deflate at level 9. It preserves every ancillary chunk byte, replaces IDAT chunks only, and decodes the encoded result to verify every original pixel channel before returning smaller output. This preserves alpha and RGB beneath fully transparent pixels exactly. Unsupported or non-smaller inputs retain their original bytes.

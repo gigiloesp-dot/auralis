@@ -4,13 +4,14 @@ const {launchOptions,root,openNpc,pickGroundDrop}=require('./browserHarness.cjs'
 const [url,commit]=process.argv.slice(2);if(!url?.startsWith('https://')||!/^[0-9a-f]{40}$/.test(commit||''))throw Error('Usage: node tests/browser-public.cjs https://public-origin exact-source-SHA');
 (async()=>{const browser=await chromium.launch(launchOptions);try{
  const {losslessPng,LOSSLESS_PNG_TRANSFORM}=await import('../scripts/lossless-png.mjs');
+ const {approvedActorSource}=await import('../scripts/export-static.mjs');
  const context=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
  assert.equal((await p.goto(url,{waitUntil:'networkidle'})).status(),200);assert.equal(new URL(p.url()).origin,new URL(url).origin);
  const build=await p.evaluate(()=>fetch('/build.json').then(r=>r.json()));assert.equal(build.sourceCommit,commit);assert.equal(build.branch,'codex/auralis-master-development');assert.equal(build.pngCompression.transform,LOSSLESS_PNG_TRANSFORM);
  const deliveryPath='assets/actors/lossless-delivery.json',excludedSources=new Set(),sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex'),gitBytes=file=>execFileSync('git',['show',commit+':'+file],{cwd:root,maxBuffer:16*1024*1024});
  if(execFileSync('git',['ls-tree','--name-only',commit,deliveryPath],{cwd:root,encoding:'utf8'}).trim()){
   const manifest=JSON.parse(gitBytes(deliveryPath));assert.equal(manifest.version,1);assert.equal(manifest.encoding.format,'WebP');assert.equal(manifest.encoding.lossless,true);assert.equal(manifest.encoding.exact,true);assert.ok(Array.isArray(manifest.entries));
-  for(const entry of manifest.entries){assert.match(entry.sourceURL,/^assets\/actors\/task10-[^/]+\/[^/]+\.png$/);assert.equal(entry.url,entry.sourceURL.slice(0,-4)+'.webp');assert.ok(!excludedSources.has(entry.sourceURL));assert.equal(sha(gitBytes(entry.sourceURL)),entry.sourceSHA256,entry.sourceURL);assert.equal(sha(gitBytes(entry.url)),entry.webpSHA256,entry.url);excludedSources.add(entry.sourceURL);}
+  for(const entry of manifest.entries){assert.ok(approvedActorSource(entry.sourceURL),entry.sourceURL);assert.equal(entry.url,entry.sourceURL.slice(0,-4)+'.webp');assert.ok(!excludedSources.has(entry.sourceURL));assert.equal(sha(gitBytes(entry.sourceURL)),entry.sourceSHA256,entry.sourceURL);assert.equal(sha(gitBytes(entry.url)),entry.webpSHA256,entry.url);excludedSources.add(entry.sourceURL);}
   assert.equal(build.actorTextureDelivery.manifest,deliveryPath);assert.equal(build.actorTextureDelivery.files,excludedSources.size);
  }
  const files=execFileSync('git',['ls-tree','-r','--name-only',commit,'index.html','warrior-equipment-lab.html','css','js','assets'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>!f.endsWith('.md')&&!excludedSources.has(f));
