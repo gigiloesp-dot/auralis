@@ -73,11 +73,17 @@ const expectedFrames=banks.flatMap(bank=>directions.map(direction=>bank+'/'+dire
     const ctx=canvas.getContext('2d');ctx.drawImage(source,0,0);const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;
     const digest=async data=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',data))].map(v=>v.toString(16).padStart(2,'0')).join('');
     const hash=await digest(pixels);
-    // Phaser loads images through blob URLs. Compare decoded pixels against
-    // the declared PNG itself instead of treating that blob URL as a filename.
-    const response=await fetch('/'+a.entry.url);if(!response.ok)throw Error('Cannot verify boss PNG '+a.entry.url);
-    const expectedImage=await createImageBitmap(await response.blob());ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(expectedImage,0,0);expectedImage.close();
-    const expectedHash=await digest(ctx.getImageData(0,0,canvas.width,canvas.height).data);
+    // Demand exact native pixels from the actual delivered binary and exact
+    // canonical PNG/WebP equivalence separately. The formats' native decoders
+    // can round premultiplied translucent channels differently.
+    const {resolveActorTextureURL}=await import('/js/assets/losslessTextureDelivery.js');
+    const deliveredURL=resolveActorTextureURL(a.entry.url);
+    const read=async url=>{const response=await fetch(url.startsWith('https://')?url:'/'+url);if(!response.ok)throw Error('Cannot verify boss texture '+url);return response.blob();};
+    const pngBlob=await read(a.entry.url),deliveryBlob=await read(deliveredURL);
+    const nativeURL=URL.createObjectURL(deliveryBlob),expectedImage=new Image();
+    let expectedHash;try{expectedImage.src=nativeURL;await expectedImage.decode();ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(expectedImage,0,0);expectedHash=await digest(ctx.getImageData(0,0,canvas.width,canvas.height).data);}finally{URL.revokeObjectURL(nativeURL);}
+    const canonical=async blob=>{const image=await createImageBitmap(blob,{premultiplyAlpha:'none',colorSpaceConversion:'none'});try{ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(image,0,0);return await digest(ctx.getImageData(0,0,canvas.width,canvas.height).data);}finally{image.close();}};
+    const originalCanonicalHash=await canonical(pngBlob),deliveryCanonicalHash=await canonical(deliveryBlob);
     const measurements=[];
     for(const name of sprite.texture.getFrameNames().filter(name=>name!=='__BASE')){
      const f=sprite.texture.get(name);let top=f.cutHeight,bottom=-1;
@@ -91,12 +97,12 @@ const expectedFrames=banks.flatMap(bank=>directions.map(direction=>bank+'/'+dire
     const hurt={frame:sprite.frame.name,tinted:sprite.isTinted,bodyAlpha:m.body.alpha,hp:m.hp,maxHp:m.maxHp};
     m.hurtUntil=0;a.update('idle',Math.PI/2,0);m.body.alpha=1;m.body.rotation=0;
     const p=s.project(s.hero.x,s.hero.y);s.body.setPosition(p.x,p.y);s.cameras.main.centerOn(p.x,p.y);
-    return {id:m.id,boss:m.kind.boss,dungeon:s.world.content.dungeon===true,region:s.world.content.id,descriptor:s.monsters.stream.loaded.get(id)===m,key:sprite.texture.key,entry:a.entry,sourceSize:[source.width,source.height],hash,expectedHash,frames,origins,measurements,children:m.body.list.map(child=>child.type),motionParts:!!m.body.motionParts,gear:!!a.gear,spriteScale:[sprite.scaleX,sprite.scaleY],bodyScale:[m.body.scaleX,m.body.scaleY],visualScale:m.kind.visualScale,annotationHeight:m.annotationHeight,socket,hurt};
+    return {id:m.id,boss:m.kind.boss,dungeon:s.world.content.dungeon===true,region:s.world.content.id,descriptor:s.monsters.stream.loaded.get(id)===m,key:sprite.texture.key,entry:a.entry,sourceSize:[source.width,source.height],hash,expectedHash,originalCanonicalHash,deliveryCanonicalHash,deliveredURL,frames,origins,measurements,children:m.body.list.map(child=>child.type),motionParts:!!m.body.motionParts,gear:!!a.gear,spriteScale:[sprite.scaleX,sprite.scaleY],bodyScale:[m.body.scaleX,m.body.scaleY],visualScale:m.kind.visualScale,annotationHeight:m.annotationHeight,socket,hurt};
    },test.id);
 
    assert.equal(art.id,test.id);assert.equal(art.boss,true);assert.equal(art.descriptor,true,'Boss must be owned by the actual MonsterStream');
    assert.equal(art.dungeon,!!test.dungeon);assert.equal(art.region,test.dungeon?'dungeon:'+test.dungeon.id+':easy':test.region);
-   assert.equal(art.key,test.entry.key);assert.deepEqual(art.entry,test.entry);assert.equal(art.hash,art.expectedHash,'Loaded texture pixels must match the exact boss PNG');assert.deepEqual(art.sourceSize,[1536,1024]);
+   assert.equal(art.key,test.entry.key);assert.deepEqual(art.entry,test.entry);assert.equal(art.hash,art.expectedHash,'Loaded native texture pixels must match the exact delivered boss binary');assert.equal(art.originalCanonicalHash,art.deliveryCanonicalHash,'Every canonical RGBA pixel must match the original boss PNG');assert.deepEqual(art.sourceSize,[1536,1024]);
    assert.ok(!pixelHashes.has(art.hash),'Distinct bosses cannot reuse the same loaded image: '+test.id);pixelHashes.add(art.hash);
    assert.deepEqual(art.frames,directions.flatMap(direction=>banks.map(bank=>bank+'/'+direction)));
    assert.deepEqual(art.measurements.map(frame=>frame.name).sort(),[...expectedFrames].sort());
