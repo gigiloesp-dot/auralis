@@ -1,0 +1,116 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-forest-a",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "mechanicalPacking": "Complete source rectangles, eight-source-pixel margin, one uniform scale per species. No erasing/alpha threshold cutout/anatomy editing. Alpha>128 used only for support measurement. Source direction order S SW W NW N NE E SE mechanically reordered to N NE E SE S SW W NW.",
+  "animationScope": "48 drawn poses per creature: 8directions×idle/run-a/run-b/attack/hurt/death. Two movement drawings, not six full multi-frame clips.",
+  "transparencyRepair": {
+    "id": "forest-species-082",
+    "originalRetained": true,
+    "method": "image_gen reference image transparent cleanup",
+    "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f8494d9f-da84-4146-95e1-6dddd78655d3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "visualInspection": {
+    "posesInspected": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All complete registered poses reviewed at native contact size. No visible colored matte or neighboring fragments on either background. Original low-alpha RGB is retained; no threshold erase. Complete death row visibly relaxed/collapsed. Browser animation/timing/AI not checked."
+  },
+  "generations": {
+    "081": {
+      "prompt": "Production game sprite sheet, genuinely transparent RGBA background, bright detailed hand-painted cartoon fantasy isometric RPG Auralis art style. an original REED-BLADE HERON monster: lanky two-legged wet-woodland bird, long S-curved neck, huge jagged sword-shaped reed bill, fan of dark emerald feathers, ochre hanging throat pouch, two long reed-toed feet, small pale eyes, copper feather shoulder-cape. Anatomy clearly avian, absolutely not human, wolf or bear. Attacks stabbing bill, movement long bird strides, hurt crouched ruffled, dead toppled neck folded against body. Exactly48 separate complete full-body poses in an8column by6row regular grid,1536x1024or greater same3:2ratio. SAME consistent creature and proportions all48poses. Columns facing S, SW, W, NW, N, NE, E, SE in precisely thatorder, high-angle orthographic isometric character view. Rows idle, moving poseA, moving poseB, attack, hurt, DEAD collapsed on ground. Six rows must genuinely show distinct posture and movement; no copied idle as death. Dead row visibly collapsed and relaxed. Every pose centered in its cell with generous transparent blank margins, never overlap neighboringcell, fullanatomy/antennae/weapons/feet always insidecell. Uniform scale and lightdirection. Crisp detailed textures and readable volume, native game size~75pixels tall, not simple geometry. No text,labels,gridlines,tile,background,matte,drop-shadowblob.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-72ed54a8-7a60-4567-9fb2-2911b03384d3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "082": {
+      "prompt": "Production game sprite sheet, genuinely transparent RGBA background, bright detailed hand-painted cartoon fantasy isometric RPG Auralis art style. an original LANTERN-SHELL SNAIL monster: squat heavy forest mollusk, enormous asymmetrical spiral shell grown from knotty roots with a hollow amber lantern chamber, four long retractile stalk-eyes, broad rippling moss-colored foot with six tiny stone-plated side spurs, cream segmented throat, hanging fern fringes. Unique snail anatomy, no legs copied from beasts. Attacks extending long thick head forward and flaring glow, moves with visibly different rippling foot shapes, hurt retracting head, dead shell tipped sideways and eyestalks fully limp. Exactly48 separate complete full-body poses in an8column by6row regular grid,1536x1024or greater same3:2ratio. SAME consistent creature and proportions all48poses. Columns facing S, SW, W, NW, N, NE, E, SE in precisely thatorder, high-angle orthographic isometric character view. Rows idle, moving poseA, moving poseB, attack, hurt, DEAD collapsed on ground. Six rows must genuinely show distinct posture and movement; no copied idle as death. Dead row visibly collapsed and relaxed. Every pose centered in its cell with generous transparent blank margins, never overlap neighboringcell, fullanatomy/antennae/weapons/feet always insidecell. Uniform scale and lightdirection. Crisp detailed textures and readable volume, native game size~75pixels tall, not simple geometry. No text,labels,gridlines,tile,background,matte,drop-shadowblob.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-4ba0895a-307f-4e5a-a216-3f953034b0db.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "083": {
+      "prompt": "Production game sprite sheet, genuinely transparent RGBA background, bright detailed hand-painted cartoon fantasy isometric RPG Auralis art style. an original ACORN HOPPER monster: squat plump forest grasshopper with an acorn-shaped amber chest, two enormous angular spring-loaded grass-green hindlegs, four short forelimbs, two tiny wing-shaped leaf panels, big expressive gold eyes and tall forked twig antennae, pale segmented abdomen. Six-legged insect anatomy, readable strong silhouette with V-shaped folded hindlegs, absolutely not humanoid. Moving poses show springy alternating hindleg compression/extension, attack lunging two forelimbs, hurt recoiling hunch, dead fully on side with curled legs and closed eyes. Exactly48 separate complete full-body poses in an8column by6row regular grid,1536x1024or greater same3:2ratio. SAME consistent creature and proportions all48poses. Columns facing S, SW, W, NW, N, NE, E, SE in precisely thatorder, high-angle orthographic isometric character view. Rows idle, moving poseA, moving poseB, attack, hurt, DEAD collapsed on ground. Six rows must genuinely show distinct posture and movement; no copied idle as death. Dead row visibly collapsed and relaxed. Every pose centered in its cell with generous transparent blank margins, never overlap neighboringcell, fullanatomy/antennae/weapons/feet always insidecell. Uniform scale and lightdirection. Crisp detailed textures and readable volume, native game size~75pixels tall, not simple geometry. No text,labels,gridlines,tile,background,matte,drop-shadowblob.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2e7c2260-c9a8-408f-bede-f6baca674361.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "080": {
+      "prompt": "Original hand-painted fantasy isometric chestnut burr crab: broad thorn chestnut shell, six articulated woody legs, asymmetrical seedpod pincers, amber barkface eyes, copper fern. Exactly48poses 8directions×6states idle/moveA/moveB/attack/hurt/death, transparent RGBA. Full original generation request preserved in conversation; source output retained.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-eafff5cd-854e-4bec-9447-0957007b2ae9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  "models": [
+    {
+      "id": "forest-species-080",
+      "names": {
+        "ru": "Каштановый краб-репей",
+        "en": "Chestnut burr crab",
+        "es": "Cangrejo de castaña espinosa"
+      },
+      "level": 10,
+      "biome": "woodland",
+      "suggestedBehavior": {
+        "role": "ground defender",
+        "abilities": [
+          "cleave",
+          "roots"
+        ],
+        "notes": "Slow pincer guard, catches approach with readable rooting telegraph; proposed passive shell damage reduction requires runtime implementation and balance test."
+      }
+    },
+    {
+      "id": "forest-species-081",
+      "names": {
+        "ru": "Камышеклювая цапля",
+        "en": "Reed-blade heron",
+        "es": "Garza de pico junco"
+      },
+      "level": 10,
+      "biome": "woodland",
+      "suggestedBehavior": {
+        "role": "ground pursuit striker",
+        "abilities": [
+          "charge",
+          "cleave"
+        ],
+        "notes": "Long-legged charge and close bill sweep; proposed retreat-and-reengage at lowHP requires runtime implementation and test."
+      }
+    },
+    {
+      "id": "forest-species-082",
+      "names": {
+        "ru": "Улитка фонарного панциря",
+        "en": "Lantern-shell snail",
+        "es": "Caracol de concha farol"
+      },
+      "level": 10,
+      "biome": "woodland",
+      "suggestedBehavior": {
+        "role": "slow woodland caster",
+        "abilities": [
+          "haunt",
+          "roots"
+        ],
+        "notes": "Glowing shell casts warning zones and roots; proposed shell-retraction defense while stationary requires runtime implementation and test."
+      }
+    },
+    {
+      "id": "forest-species-083",
+      "names": {
+        "ru": "Желудёвый прыгун",
+        "en": "Acorn hopper",
+        "es": "Saltador de bellota"
+      },
+      "level": 4,
+      "biome": "woodland",
+      "suggestedBehavior": {
+        "role": "fast leaping insect",
+        "abilities": [
+          "pounce",
+          "venom"
+        ],
+        "notes": "Short telegraphed leap, mild poison; proposed cautious retreat on lowHP requires runtime implementation and test."
+      }
+    }
+  ]
+}

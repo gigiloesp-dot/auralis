@@ -1,0 +1,55 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "models": [
+    {
+      "id": "forest-species-084",
+      "pngBytes": 599610,
+      "sha256": "87670f499e65c8d8e0ed9e85fd9030baba6836aba3d70dc27abea5acb063688d",
+      "frames": 48,
+      "opaquePixelRange": [
+        1550,
+        2390
+      ],
+      "maxIdleHeight": 74,
+      "maxDeathHeight": 46
+    },
+    {
+      "id": "forest-species-085",
+      "pngBytes": 640997,
+      "sha256": "2c3513bb54b86efbef0c4718703f934c7f9f1ed3a921c73ced790e5b150c1099",
+      "frames": 48,
+      "opaquePixelRange": [
+        2414,
+        3540
+      ],
+      "maxIdleHeight": 65,
+      "maxDeathHeight": 58
+    },
+    {
+      "id": "forest-species-086",
+      "pngBytes": 473687,
+      "sha256": "c2f56789d434ec63b6f340bc0f24cf6e2217930a70deb85738ca95d585fde4fa",
+      "frames": 48,
+      "opaquePixelRange": [
+        1221,
+        2184
+      ],
+      "maxIdleHeight": 71,
+      "maxDeathHeight": 45
+    },
+    {
+      "id": "forest-species-087",
+      "pngBytes": 475264,
+      "sha256": "210ace4bf2bc4de83fb8861243695963993eb42bd8b66aa73644ecbce44795ab",
+      "frames": 48,
+      "opaquePixelRange": [
+        1491,
+        2803
+      ],
+      "maxIdleHeight": 70,
+      "maxDeathHeight": 46
+    }
+  ]
+}

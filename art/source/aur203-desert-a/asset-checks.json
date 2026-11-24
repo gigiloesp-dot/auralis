@@ -1,0 +1,71 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "models": [
+    {
+      "id": "desert-species-056",
+      "imageSHA256": "64f200f3fc4c42445856e1bbf220ee0df6ba6aea4a255c40c521e02a2bea6702",
+      "atlasSHA256": "48d753def3a7f764157636af057c2d77d9819d809c6207e99ce6548c5ab8a38f",
+      "size": [
+        1024,
+        1152
+      ],
+      "bytes": 505411,
+      "distinctPoses": 48,
+      "maxIdleHeight": 61,
+      "maxDeathHeight": 41,
+      "minOpaquePixels": 1602,
+      "minimumMargin": 17,
+      "alphaZeroPercent": 82.90150960286459
+    },
+    {
+      "id": "desert-species-057",
+      "imageSHA256": "aa3bb8f9b4c369491aa628cdf02a57f288ed4551652b6afff5a56205844928f8",
+      "atlasSHA256": "192efa85df775caa1801dbc59e1475ae59df7a7de5332141b4b186ea9783f8a9",
+      "size": [
+        1024,
+        1152
+      ],
+      "bytes": 509753,
+      "distinctPoses": 48,
+      "maxIdleHeight": 81,
+      "maxDeathHeight": 31,
+      "minOpaquePixels": 1056,
+      "minimumMargin": 19,
+      "alphaZeroPercent": 82.550048828125
+    },
+    {
+      "id": "desert-species-058",
+      "imageSHA256": "7d5e4d931e64182341e8e8694cba78a5eec6738daad752e41b8c09ce1845b8b5",
+      "atlasSHA256": "1bb942ce56ecf461e2f73e3d97306ec7bf6d9ed520e5f913f3e0b79ba963cfa2",
+      "size": [
+        1024,
+        1152
+      ],
+      "bytes": 546847,
+      "distinctPoses": 48,
+      "maxIdleHeight": 76,
+      "maxDeathHeight": 42,
+      "minOpaquePixels": 1497,
+      "minimumMargin": 16,
+      "alphaZeroPercent": 82.09499782986111
+    },
+    {
+      "id": "desert-species-059",
+      "imageSHA256": "4b265f91332617780836a9fc2fecf01312056ee24b43ca15cebfe2dee12b9a38",
+      "atlasSHA256": "28b45066b83da526b55d154ebb994da2a51b9b68e47c65c856bfd464cf507f42",
+      "size": [
+        1024,
+        1152
+      ],
+      "bytes": 431976,
+      "distinctPoses": 48,
+      "maxIdleHeight": 73,
+      "maxDeathHeight": 40,
+      "minOpaquePixels": 1045,
+      "minimumMargin": 17,
+      "alphaZeroPercent": 78.24910481770834
+    }
+  ]
+}

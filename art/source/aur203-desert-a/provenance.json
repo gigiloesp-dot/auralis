@@ -1,0 +1,116 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-desert-a",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "mechanicalPacking": "Full source rectangles located with blank corridors and 8-source-pixel margin. One uniform scale per creature. No painted/anatomy edits, no alpha erasing or threshold cutouts. Alpha>128 only measures support. Original S SW W NW N NE E SE reordered to N NE E SE S SW W NW.",
+  "animationScope": "48 drawn poses per creature:8directions×idle/run-a/run-b/attack/hurt/death. Two movement drawings, not six full multi-frame clips.",
+  "transparencyRepair": {
+    "id": "desert-species-057",
+    "originalRetained": true,
+    "method": "image_gen exact reference sheet transparent cutout",
+    "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-3d49b974-aa39-4b9b-9b4a-1348025d2153.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "visualInspection": {
+    "posesInspected": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All final registered native pose contacts reviewed. No visible rectangular matte, clipped anatomy or neighboring fragments. Low-alpha hidden RGB retained unchanged. Death rows visibly flattened/folded and lower than idle; real runtime animation/AI/timing not checked."
+  },
+  "generations": {
+    "056": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis, warm beautiful detailed painterly cartoon fantasy isometric RPG, matching polished hand-painted fantasy town/tree game art. Transparent background, no ground, no backdrop, NO labels or text, no panel borders. Exactly 8 columns and 6 rows, every cell separate with very generous empty transparent margins. Same one creature identity and size all48cells. Columns strictly: south(front), southwest, west(left profile), northwest(back-left), north(back), northeast(back-right), east(right profile), southeast. Six rows strictly: idle; run stepA; run stepB distinctly opposite stride; attack with clear windup/release anatomy; hurt recoil; DEAD collapsed flat relaxed body lying on sand (no sand drawn), visibly lower silhouette, not a standing hurt pose. Draw all8 views anew for every row, not mirrored clones. Every complete creature fits its cell, no overlaps, no cutoffs, no neighboring fragments, detached artifacts, shadows, platform, particle trails. Crisp rendered material details, natural limb anatomy. 1536x1024 landscape sheet.\nOne original sandstone trilobite living monster: low broad oval prehistoric arthropod, five overlapping irregular weathered sandstone dorsal plates with carved glowing amber seams, flared segmented side lobes, eight articulated copper-chitin walking legs, two curved shovel forelimbs and small dark obsidian eyes. A heavy living stone sand-burrower, no turtle shell, no crab claws, no scorpion tail. Recognizable layered shield-shaped silhouette. Attack strikes with raised shovel forelimbs. Dead lies flattened with folded legs.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-e3ca2f01-831b-459b-ae94-510a2280ab2a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "057": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis, warm beautiful detailed painterly cartoon fantasy isometric RPG, matching polished hand-painted fantasy town/tree game art. Transparent background, no ground, no backdrop, NO labels or text, no panel borders. Exactly 8 columns and 6 rows, every cell separate with very generous empty transparent margins. Same one creature identity and size all48cells. Columns strictly: south(front), southwest, west(left profile), northwest(back-left), north(back), northeast(back-right), east(right profile), southeast. Six rows strictly: idle; run stepA; run stepB distinctly opposite stride; attack with clear windup/release anatomy; hurt recoil; DEAD collapsed flat relaxed body lying on sand (no sand drawn), visibly lower silhouette, not a standing hurt pose. Draw all8 views anew for every row, not mirrored clones. Every complete creature fits its cell, no overlaps, no cutoffs, no neighboring fragments, detached artifacts, shadows, platform, particle trails. Crisp rendered material details, natural limb anatomy. 1536x1024 landscape sheet.\nOne original glass-sail jerboa desert monster: large springing hindfeet and tiny dexterous forepaws, tall asymmetric notched ears, expressive narrow muzzle, tawny furry body, long flexible tail ending in a spectacular translucent turquoise crystalline fan. Wears no clothing or equipment. Distinct rodent anatomy, not rabbit or kangaroo clone. Attack kicks and whips the glass tailfan. Dead curled on its side with relaxed flattened ears and tail.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-55538cf5-5319-4d34-8bae-5706af1e1239.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "058": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis, warm beautiful detailed painterly cartoon fantasy isometric RPG, matching polished hand-painted fantasy town/tree game art. Transparent background, no ground, no backdrop, NO labels or text, no panel borders. Exactly 8 columns and 6 rows, every cell separate with very generous empty transparent margins. Same one creature identity and size all48cells. Columns strictly: south(front), southwest, west(left profile), northwest(back-left), north(back), northeast(back-right), east(right profile), southeast. Six rows strictly: idle; run stepA; run stepB distinctly opposite stride; attack with clear windup/release anatomy; hurt recoil; DEAD collapsed flat relaxed body lying on sand (no sand drawn), visibly lower silhouette, not a standing hurt pose. Draw all8 views anew for every row, not mirrored clones. Every complete creature fits its cell, no overlaps, no cutoffs, no neighboring fragments, detached artifacts, shadows, platform, particle trails. Crisp rendered material details, natural limb anatomy. 1536x1024 landscape sheet.\nOne original pitcher-cactus rootwalker desert plant monster: squat bulbous striped pale jade pitcher body, enormous fleshy funnel-mouth with a dark red interior and serrated rim, small reddish lid leaf perched overhead, four splayed thick twisting root legs, two thin curved tendril arms, scattered ivory thorns and orange desert flowers low on body. Not a human cactus with arms and face, not treant or ordinary cactus. No eyes needed, mouth is main feature. Attack leans pitcher forward to spit needles. Dead toppled on its side, root legs limp.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-674e269f-4d5d-4380-bc80-fc469aa53277.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "059": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis, warm beautiful detailed painterly cartoon fantasy isometric RPG, matching polished hand-painted fantasy town/tree game art. Transparent background, no ground, no backdrop, NO labels or text, no panel borders. Exactly 8 columns and 6 rows, every cell separate with very generous empty transparent margins. Same one creature identity and size all48cells. Columns strictly: south(front), southwest, west(left profile), northwest(back-left), north(back), northeast(back-right), east(right profile), southeast. Six rows strictly: idle; run stepA; run stepB distinctly opposite stride; attack with clear windup/release anatomy; hurt recoil; DEAD collapsed flat relaxed body lying on sand (no sand drawn), visibly lower silhouette, not a standing hurt pose. Draw all8 views anew for every row, not mirrored clones. Every complete creature fits its cell, no overlaps, no cutoffs, no neighboring fragments, detached artifacts, shadows, platform, particle trails. Crisp rendered material details, natural limb anatomy. 1536x1024 landscape sheet.\nOne original dune sailray flying desert monster: broad diamond-shaped leathery golden sand-ray body with scalloped wing fins, short upturned armored head, dark blue underside, a swept sail-like dorsal fin, two small clawed forelimbs, long thin flexible tail ending in a flattened spear-shaped bony vane. A mythical airborne ray, not bat, manta recolor, dragon or bird. Clear sculpted ridged sandy hide and plum purple membranes, elegant predatory silhouette. Attack banks and dives. Dead lies folded on its side with sail collapsed and wings crumpled, much lower silhouette.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2e81ab85-2a3a-4219-9681-6b6e0eaca981.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  "models": [
+    {
+      "id": "desert-species-056",
+      "names": {
+        "ru": "Песчаниковый трилобит",
+        "en": "Sandstone trilobite",
+        "es": "Trilobite de arenisca"
+      },
+      "level": 50,
+      "biome": "sand",
+      "suggestedBehavior": {
+        "role": "heavy ground burrower",
+        "abilities": [
+          "burrow",
+          "stomp"
+        ],
+        "notes": "Existing burrow warning and heavy stomp are reusable; shell guard/passive reduction is only proposed, not implemented."
+      }
+    },
+    {
+      "id": "desert-species-057",
+      "names": {
+        "ru": "Тушканчик стеклянного веера",
+        "en": "Glass-sail jerboa",
+        "es": "Jerbo de abanico cristalino"
+      },
+      "level": 44,
+      "biome": "sand",
+      "suggestedBehavior": {
+        "role": "agile skirmisher",
+        "abilities": [
+          "pounce",
+          "fan"
+        ],
+        "notes": "Existing leap and physical projectile fan; low-HP retreat is proposed, not implemented. Fan projectiles should be physical tail shards."
+      }
+    },
+    {
+      "id": "desert-species-058",
+      "names": {
+        "ru": "Кактус-кувшин корнеход",
+        "en": "Pitcher-cactus rootwalker",
+        "es": "Cactus jarra de raíces andantes"
+      },
+      "level": 42,
+      "biome": "sand",
+      "suggestedBehavior": {
+        "role": "ranged venom plant",
+        "abilities": [
+          "fan",
+          "venom"
+        ],
+        "notes": "Existing ranged kiting preferredDistance, physical needle fan and venom; rooted passive defense not implemented."
+      }
+    },
+    {
+      "id": "desert-species-059",
+      "names": {
+        "ru": "Дюнный парусный скат",
+        "en": "Dune sailray",
+        "es": "Raya velera de las dunas"
+      },
+      "level": 48,
+      "biome": "sand",
+      "suggestedBehavior": {
+        "role": "flying hunter",
+        "abilities": [
+          "dive",
+          "haunt"
+        ],
+        "notes": "Existing flight obstacle rules and dive with readable warning; haunt slow is existing mechanism. No unimplemented passive claimed."
+      }
+    }
+  ]
+}

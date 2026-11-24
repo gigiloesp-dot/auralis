@@ -1,0 +1,211 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-ancient-a",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "generationRecords": "generation.json",
+  "transparencyRepair": "transparency-repair.json",
+  "mechanicalPacking": "Whole complete source rectangles with eight-source-pixel margin, one uniform species scale; no erasing, alpha threshold cutout, semantic drawing, or anatomy edits. Generated S/SW/W/NW/N/NE/E/SE reordered to N/NE/E/SE/S/SW/W/NW.",
+  "animationScope": "48 hand-painted generated poses: eight directions times idle/run-a/run-b/attack/hurt/death; two movement drawings, not six full multi-frame animation clips.",
+  "qa": "All192 registered native poses inspected visually on parchment beige and dark green. No visible background rectangles, fragments or clipping. Dead poses are collapsed rather than standing. Original047 gray/cloudy matte rejected and repaired with image_gen; original retained. Alpha>128 used only to measure opaque support and blank gutters, never to edit alpha.",
+  "tools": {
+    "python": "3.12.14",
+    "pillow": "13.0.0"
+  },
+  "models": [
+    {
+      "id": "ancient-species-045",
+      "names": {
+        "ru": "Фарфоровый колоколоход",
+        "en": "Porcelain bellwalker",
+        "es": "Campanante de porcelana"
+      },
+      "biome": "elder-ruins",
+      "level": 40,
+      "anatomy": "Cracked decorated porcelain bell; four articulated bronze legs; an amber eye inside the bell mouth; curled scroll antennae.",
+      "proposedMovementProfile": "heavy",
+      "proposedAbilityPattern": [
+        "stomp",
+        "fan"
+      ],
+      "proposedMaterialFamily": "ancientSentinel",
+      "pendingPassive": "A temporary resonating guard after a telegraphed stomp is a proposal only; not implemented.",
+      "assetChecks": {
+        "id": "ancient-species-045",
+        "width": 1024,
+        "height": 1152,
+        "frames": 48,
+        "uniqueFrameRGBAHashes": 48,
+        "pngSHA256": "1f3a6413d8463cc668fd8258400a904843572f0b2160eaed708c8737f8836483",
+        "pngBytes": 498981,
+        "idleHeights": [
+          78,
+          78,
+          76,
+          76,
+          76,
+          77,
+          76,
+          77
+        ],
+        "deathHeights": [
+          42,
+          42,
+          36,
+          38,
+          39,
+          39,
+          36,
+          40
+        ],
+        "alphaZeroPercent": 82.14
+      }
+    },
+    {
+      "id": "ancient-species-046",
+      "names": {
+        "ru": "Мохожабрый аксолотль",
+        "en": "Moss-frill axolotl",
+        "es": "Ajolote de branquias musgosas"
+      },
+      "biome": "elder-forest",
+      "level": 35,
+      "anatomy": "Flat amphibian face; six fernlike external gills; four splayed feet; broad paddle tail with moss.",
+      "proposedMovementProfile": "crawler",
+      "proposedAbilityPattern": [
+        "venom",
+        "pounce"
+      ],
+      "proposedMaterialFamily": "snake",
+      "pendingPassive": "Low-health evasive retreat is a proposal only; not implemented.",
+      "assetChecks": {
+        "id": "ancient-species-046",
+        "width": 1024,
+        "height": 1152,
+        "frames": 48,
+        "uniqueFrameRGBAHashes": 48,
+        "pngSHA256": "ad77fd23985ea5618e0c7ae34b0a2cab27fad3f1f2eb88beae2219bc5e1e69b5",
+        "pngBytes": 631362,
+        "idleHeights": [
+          72,
+          70,
+          64,
+          67,
+          67,
+          66,
+          67,
+          68
+        ],
+        "deathHeights": [
+          43,
+          40,
+          39,
+          38,
+          40,
+          43,
+          34,
+          43
+        ],
+        "alphaZeroPercent": 78.16
+      }
+    },
+    {
+      "id": "ancient-species-047",
+      "names": {
+        "ru": "Призмогребневая каракатица",
+        "en": "Prism-crested cuttlefish",
+        "es": "Sepia de cresta prismática"
+      },
+      "biome": "elder-mystic",
+      "level": 39,
+      "anatomy": "Tapering soft mantle; lateral ruffled fin; eight curling tentacles; dorsal crystal crest; no snail shell or jellyfish cap.",
+      "proposedMovementProfile": "elemental",
+      "proposedAbilityPattern": [
+        "blink",
+        "fan"
+      ],
+      "proposedMaterialFamily": "arcaneWisp",
+      "pendingPassive": "Protective prism reflection is a proposal only; not implemented.",
+      "assetChecks": {
+        "id": "ancient-species-047",
+        "width": 1024,
+        "height": 1152,
+        "frames": 48,
+        "uniqueFrameRGBAHashes": 48,
+        "pngSHA256": "1deafb3d81ad9c393c18ea2e5e8fdc0a28dddb2e479daa33dc860de00b00cf97",
+        "pngBytes": 463758,
+        "idleHeights": [
+          74,
+          63,
+          68,
+          72,
+          76,
+          72,
+          68,
+          66
+        ],
+        "deathHeights": [
+          37,
+          32,
+          37,
+          42,
+          45,
+          43,
+          38,
+          34
+        ],
+        "alphaZeroPercent": 84.9
+      }
+    },
+    {
+      "id": "ancient-species-048",
+      "names": {
+        "ru": "Древний свиткоткач",
+        "en": "Ancient scrollweaver",
+        "es": "Tejedor antiguo de pergaminos"
+      },
+      "biome": "elder-mystic",
+      "level": 39,
+      "anatomy": "Hollow bronze ring torso; suspended magenta eye; three parchment-and-bronze legs; short ribbon arms and scroll mouth.",
+      "proposedMovementProfile": "skirmisher",
+      "proposedAbilityPattern": [
+        "roots",
+        "haunt"
+      ],
+      "proposedMaterialFamily": "ancientSentinel",
+      "pendingPassive": "Reactive distancing after binding is a proposal only; not implemented.",
+      "assetChecks": {
+        "id": "ancient-species-048",
+        "width": 1024,
+        "height": 1152,
+        "frames": 48,
+        "uniqueFrameRGBAHashes": 48,
+        "pngSHA256": "fe17e2fd79ba7b0d60785f869482cac9860a447dc3d4fa7c539043584e850349",
+        "pngBytes": 576865,
+        "idleHeights": [
+          75,
+          77,
+          72,
+          71,
+          78,
+          75,
+          74,
+          76
+        ],
+        "deathHeights": [
+          38,
+          38,
+          41,
+          41,
+          43,
+          39,
+          42,
+          38
+        ],
+        "alphaZeroPercent": 79.65
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-forest-b",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "animationScope": "48drawnposes percreature:8directions×idle/run-a/run-b/attack/hurt/death. Two movementdrawings, not6newcompleteanimationclips.",
+  "mechanicalPacking": "Complete sourceRects with8pxsource margins; oneuniformscale percreature. Noerase, thresholdalpha cutout, repaintor anatomyedit. Alpha>128 onlymeasures support/blankcorridors. SourceS/SW/W/NW/N/NE/E/SE mechanicallyreorderedN/NE/E/SE/S/SW/W/NW.",
+  "transparencyRepair": {
+    "id": "forest-species-086",
+    "originalRetained": true,
+    "method": "image_gen exactcutoutcleanup preserves translucentwinginteriors",
+    "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-3f2f8821-c3fd-4b64-b272-ca195bef067c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "visualInspection": {
+    "finalPosesInspected": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All192registeredposes reviewednativecontactsize. No visible matte/cellfragment/clippedbodyparts. Collapsed/wilted/relaxeddeathrow distinctfromidle andhurt. Actualbrowserorientation, AI andleases notchecked."
+  },
+  "generations": {
+    "084": {
+      "prompt": "Production videogame sprite sheet on true transparent RGBA background. an original DEWTRAP SUNDEW STALKER living carnivorous forest plant: broad circular rosette of red-and-jade sticky spoon-leaves forming a toothed bowl mouth, several thick curling stems ending in translucent golden dew beads, squat ochre root bulb, six flexible articulated root feet, no humanoid face, no eyes, no animal body. Unique plant radial silhouette like a moving sundew flower. Idle rosette open, moveA andmoveB alternating rootfeet, attack rosette leaning open and stems lashing forward, hurt leaves curled protectively, death entire rosette wilted flat sideways with stems limp and mouth shut. Bright detailed attractive hand-painted fantasy cartoon isometric RPG Auralis style, crisp volumetric textures, readable at75pixel nativecreatureheight. EXACTLY48 separate complete full-body poses in8columns×6rows regulargrid,1536×1024or larger3:2ratio. SAME consistent creature proportions/lighting allposes. Columns in this exactorder: facingS,SW,W,NW,N,NE,E,SE (eightdistinctrotations high-angle isometric orthographic). Rowsidle, movingA, movingB, attack, hurt, DEADcollapsed. Do not substitute idle for hurt/death. Everycompletecreature centered inowncell; large TRUEtransparent blank gaps/margins at allfourcellsides, no overlap neighboringposes, antennae/wings/tail/legs neverclipped. Uniformcreaturescale allposes. Outsidecreatures alphaZERO, no translucentrectangle/no matte/nohaze/nodropshadow/no floor/no scenery/notext/nolabels/nogridlines. Sixrows and8columns essential.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-4c44cc46-c57a-4244-97d9-67dbaec8da28.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "085": {
+      "prompt": "Production videogame sprite sheet on true transparent RGBA background. an original MOSS-BELLOWS TOAD fantasy amphibian: very broad squat toad body, giant expressive ochre eyes at sides of broad jade face, pale inflatable accordion throat sac, two short chunky front legs and two huge folded webbed hindfeet, three hollow copper-brown fungal trumpet tubes growing from moss-covered back, small cream spots. Real toad anatomy, not human or bear. Idle hunkered squat, moveA crouching and moveB hopping forward legs extended, attack inflated throat and mouth croak, hurt flinching eyes shut, death clearly collapsed on side with legs relaxed spread and trumpets resting sideways. Bright detailed attractive hand-painted fantasy cartoon isometric RPG Auralis style, crisp volumetric textures, readable at75pixel nativecreatureheight. EXACTLY48 separate complete full-body poses in8columns×6rows regulargrid,1536×1024or larger3:2ratio. SAME consistent creature proportions/lighting allposes. Columns in this exactorder: facingS,SW,W,NW,N,NE,E,SE (eightdistinctrotations high-angle isometric orthographic). Rowsidle, movingA, movingB, attack, hurt, DEADcollapsed. Do not substitute idle for hurt/death. Everycompletecreature centered inowncell; large TRUEtransparent blank gaps/margins at allfourcellsides, no overlap neighboringposes, antennae/wings/tail/legs neverclipped. Uniformcreaturescale allposes. Outsidecreatures alphaZERO, no translucentrectangle/no matte/nohaze/nodropshadow/no floor/no scenery/notext/nolabels/nogridlines. Sixrows and8columns essential.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-8eed5f2e-894f-442a-beb8-bbbbcc7bb84c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "086": {
+      "prompt": "Production videogame sprite sheet on true transparent RGBA background. an original AMBER-LANTERN DRAGONFLY fantasy forest insect: long curved segmented deep teal abdomen ending in a faceted glowing amber lantern, small bronze armored thorax, two huge jade compound eyes, six delicate jointed hooked legs, FOUR long clear leaf-veined wings with copper leading edges, no bat membrane and no bird feathers. Strong dragonfly silhouette. Allposes hovering above ground butno groundshadow, moveA andmoveB wings visibly alternate upstroke and downstroke, attack abdomen curled forward directing glowing tip, hurt wings crumpled inward and body recoils, death insect lying fully onside onground, wings folded askew and lantern dim. Bright detailed attractive hand-painted fantasy cartoon isometric RPG Auralis style, crisp volumetric textures, readable at75pixel nativecreatureheight. EXACTLY48 separate complete full-body poses in8columns×6rows regulargrid,1536×1024or larger3:2ratio. SAME consistent creature proportions/lighting allposes. Columns in this exactorder: facingS,SW,W,NW,N,NE,E,SE (eightdistinctrotations high-angle isometric orthographic). Rowsidle, movingA, movingB, attack, hurt, DEADcollapsed. Do not substitute idle for hurt/death. Everycompletecreature centered inowncell; large TRUEtransparent blank gaps/margins at allfourcellsides, no overlap neighboringposes, antennae/wings/tail/legs neverclipped. Uniformcreaturescale allposes. Outsidecreatures alphaZERO, no translucentrectangle/no matte/nohaze/nodropshadow/no floor/no scenery/notext/nolabels/nogridlines. Sixrows and8columns essential.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a7e701c9-407c-40b1-9fd8-b4a25a7be856.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "087": {
+      "prompt": "Production videogame sprite sheet on true transparent RGBA background. an original FERN-FRILL NEWT fantasy forest amphibian: low elongated dark plum salamander body, SIX splayed short mossgreen legs with leaf-shaped toes, huge semicircular copper fern frill behind round head, flat spatulate tail shaped like layered river leaves, two small golden eyes and cream belly, tiny dewdrops along back. Clearly original six-legged salamander anatomy, not snake or wolf. Idle lowto ground, moveA andmoveB alternate visible sixleg crawl, attack head thrust forward with frill fully fanned, hurt body curled and frill folded, death entirely collapsed sideways with limp bentlegs and tail laidflat, eyes closed. Bright detailed attractive hand-painted fantasy cartoon isometric RPG Auralis style, crisp volumetric textures, readable at75pixel nativecreatureheight. EXACTLY48 separate complete full-body poses in8columns×6rows regulargrid,1536×1024or larger3:2ratio. SAME consistent creature proportions/lighting allposes. Columns in this exactorder: facingS,SW,W,NW,N,NE,E,SE (eightdistinctrotations high-angle isometric orthographic). Rowsidle, movingA, movingB, attack, hurt, DEADcollapsed. Do not substitute idle for hurt/death. Everycompletecreature centered inowncell; large TRUEtransparent blank gaps/margins at allfourcellsides, no overlap neighboringposes, antennae/wings/tail/legs neverclipped. Uniformcreaturescale allposes. Outsidecreatures alphaZERO, no translucentrectangle/no matte/nohaze/nodropshadow/no floor/no scenery/notext/nolabels/nogridlines. Sixrows and8columns essential.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-d083d3fc-8a4a-4e9d-86cf-593c8f63bf13.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  "models": [
+    {
+      "id": "forest-species-084",
+      "names": {
+        "ru": "Росянка-душитель руин",
+        "en": "Ruin dewtrap stalker",
+        "es": "Acechadora de rocío de las ruinas"
+      },
+      "biome": "abandoned-city",
+      "level": 23,
+      "suggestedBehavior": {
+        "role": "root-bound area-controller",
+        "abilities": [
+          "roots",
+          "venom"
+        ],
+        "notes": "Overgrown ruinedstreet carnivorousplant; clearstemlash/rosetteflare warning. Proposed thorn-defensepassive stillneedsruntimeimplementation/test."
+      }
+    },
+    {
+      "id": "forest-species-085",
+      "names": {
+        "ru": "Мшистая жаба-гудок",
+        "en": "Moss-bellows toad",
+        "es": "Sapo de fuelle musgoso"
+      },
+      "biome": "woodland",
+      "level": 15,
+      "suggestedBehavior": {
+        "role": "ground heavy croak/sporecaster",
+        "abilities": [
+          "stomp",
+          "fan"
+        ],
+        "notes": "Inflatedthroat/croak attacktelegraph andfungalsporefan. Proposedthroatinterrupt/stationarydefense mustbeimplementedandtested."
+      }
+    },
+    {
+      "id": "forest-species-086",
+      "names": {
+        "ru": "Янтарнохвостая стрекоза",
+        "en": "Amber-lantern dragonfly",
+        "es": "Libélula de farol ámbar"
+      },
+      "biome": "woodland",
+      "level": 3,
+      "suggestedBehavior": {
+        "role": "flying skirmisher",
+        "abilities": [
+          "dive",
+          "fan"
+        ],
+        "notes": "Realflightheight/obstacle rulesmustbeconfigured, readabletailcurlwarnsprojectilefan. EarlyleveldamagemustbeappropriatetoLv3; no implementedclaim."
+      }
+    },
+    {
+      "id": "forest-species-087",
+      "names": {
+        "ru": "Папоротниковый тритон",
+        "en": "Fern-frill newt",
+        "es": "Tritón de gola de helecho"
+      },
+      "biome": "woodland",
+      "level": 7,
+      "suggestedBehavior": {
+        "role": "ground ambushcrawler",
+        "abilities": [
+          "burrow",
+          "venom"
+        ],
+        "notes": "Low six-legcrawl, frillwarningbeforevenom. BurrowmustuseboundedexistingAI andwallrules. Proposedretreatpassive requirescode/tests."
+      }
+    }
+  ]
+}

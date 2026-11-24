@@ -1,0 +1,213 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "models": [
+    {
+      "id": "north-species-076",
+      "frames": 48,
+      "uniqueRGBAframes": 48,
+      "nativeIdleHeights": [
+        66,
+        60,
+        58,
+        58,
+        59,
+        59,
+        57,
+        59
+      ],
+      "idleMedianHeight": 59.0,
+      "deathMedianHeight": 40.0,
+      "minimumOpaqueSupport": 1949,
+      "maximumOpaqueSupport": 3137,
+      "zeroAlphaPercent": 80.07863362630209
+    },
+    {
+      "id": "north-species-077",
+      "frames": 48,
+      "uniqueRGBAframes": 48,
+      "nativeIdleHeights": [
+        78,
+        76,
+        73,
+        77,
+        80,
+        77,
+        76,
+        76
+      ],
+      "idleMedianHeight": 76.5,
+      "deathMedianHeight": 53.0,
+      "minimumOpaqueSupport": 2730,
+      "maximumOpaqueSupport": 4141,
+      "zeroAlphaPercent": 80.02675374348959
+    },
+    {
+      "id": "north-species-078",
+      "frames": 48,
+      "uniqueRGBAframes": 48,
+      "nativeIdleHeights": [
+        72,
+        70,
+        44,
+        58,
+        68,
+        57,
+        48,
+        70
+      ],
+      "idleMedianHeight": 63.0,
+      "deathMedianHeight": 38.0,
+      "minimumOpaqueSupport": 1554,
+      "maximumOpaqueSupport": 2620,
+      "zeroAlphaPercent": 84.57760281032986
+    },
+    {
+      "id": "north-species-079",
+      "frames": 48,
+      "uniqueRGBAframes": 48,
+      "nativeIdleHeights": [
+        81,
+        79,
+        80,
+        79,
+        80,
+        82,
+        80,
+        79
+      ],
+      "idleMedianHeight": 80.0,
+      "deathMedianHeight": 52.5,
+      "minimumOpaqueSupport": 2318,
+      "maximumOpaqueSupport": 3135,
+      "zeroAlphaPercent": 81.80753919813368
+    }
+  ],
+  "files": {
+    "art/source/aur203-north-a/north-species-077-registered.png": {
+      "bytes": 677192,
+      "sha256": "f1a12a0b0de778ab0a0211d1c13cb964f8977a4599848d7406fbef557ca2022f"
+    },
+    "art/source/aur203-north-a/north-species-078-cutout.png": {
+      "bytes": 2054397,
+      "sha256": "191195ca7286b79934ffe3ea944cac1004aa81f7415bd8ffce39cca994c0f986"
+    },
+    "art/source/aur203-north-a/north-species-077-original.png": {
+      "bytes": 3530706,
+      "sha256": "a2ed7fae53de426dd1445958f3b502225d1b6f957375d35b0703282a59f332ae"
+    },
+    "art/source/aur203-north-a/north-species-079-beige-qa.png": {
+      "bytes": 412986,
+      "sha256": "18f072c2a0f37dd615abe1a6cc26e8dbeaf2fa9ef5c48e3cdca4e75c603b6c78"
+    },
+    "art/source/aur203-north-a/north-species-079-registered.png": {
+      "bytes": 595273,
+      "sha256": "22069072d9dab2aa16be796faad67bcb0bc4dc363c78dccd610ed03f5e05e917"
+    },
+    "art/source/aur203-north-a/north-species-076-original.png": {
+      "bytes": 3305037,
+      "sha256": "d8394b90574315dc868e4d0ad75f8a4c0135c83f01f599cf0897d166fbf1f957"
+    },
+    "art/source/aur203-north-a/north-species-076-beige-qa.png": {
+      "bytes": 398552,
+      "sha256": "38eee923f62a152daedaa089553f6d6c071775e1da675f7c772958fb145b9d48"
+    },
+    "art/source/aur203-north-a/north-species-076-dark-qa.png": {
+      "bytes": 406559,
+      "sha256": "c2256b0c8c3ed51306c8f2322379ce793d4982aadfe72b317905d138829e4b2c"
+    },
+    "art/source/aur203-north-a/north-species-077-beige-qa.png": {
+      "bytes": 504141,
+      "sha256": "85aa5a3bf404f81e50eea9aef6810f7dcebf653bb79562d7d2f0028c18fcd2b9"
+    },
+    "art/source/aur203-north-a/north-species-078-dark-qa.png": {
+      "bytes": 354483,
+      "sha256": "9ff5f815bbd9e5d66b889cb7574c4e2fe510311ffe61742a364a115ee09f55af"
+    },
+    "art/source/aur203-north-a/north-species-079-dark-qa.png": {
+      "bytes": 451269,
+      "sha256": "132daa59938db2c0a7df9c1c744aeaee1d4e75d7c690ff4e1bc4d4fb51ecf65c"
+    },
+    "art/source/aur203-north-a/north-species-076-registered.png": {
+      "bytes": 545423,
+      "sha256": "8547bed50e0dfb3553f8e80c721601fa5262ca04b106aa74760e75e3e5b7cfbb"
+    },
+    "art/source/aur203-north-a/north-species-079-original.png": {
+      "bytes": 3170033,
+      "sha256": "d6dac6b5b45d959bb23e8142d7dbdcd21db29d2c96c27d502ae53a9fff7428ad"
+    },
+    "art/source/aur203-north-a/north-species-076-reflow.png": {
+      "bytes": 2132272,
+      "sha256": "613713efc838a241e558cab1f2aeb34fdb1eac7963b3b596d581029dd80dda14"
+    },
+    "art/source/aur203-north-a/north-species-078-reflow.png": {
+      "bytes": 1190860,
+      "sha256": "38e287760e5a85833b7c999c9848d254908d82f834e060fd1ff0b242869bd369"
+    },
+    "art/source/aur203-north-a/north-species-078-registered.png": {
+      "bytes": 518578,
+      "sha256": "3d445b696ce854f67da6a14b9a909630b6050c9b6ae94fea4ae67a2ad26a68dd"
+    },
+    "art/source/aur203-north-a/north-species-077-cutout.png": {
+      "bytes": 2603831,
+      "sha256": "94a3fa27572d29eb4c4080968a713f5a65dfbdfbdb5339939d08b045a85d13f0"
+    },
+    "art/source/aur203-north-a/north-species-077-dark-qa.png": {
+      "bytes": 520270,
+      "sha256": "25876bf41dd8fac89a58c47815e24e5836552b8b7073ea6d49c89aebbe282720"
+    },
+    "art/source/aur203-north-a/north-species-076-finalclean.png": {
+      "bytes": 2061705,
+      "sha256": "6f36f4150bea4c1450d4ab88257f5d34f3d60bda4b085c416bf1595931ddcc16"
+    },
+    "art/source/aur203-north-a/north-species-076-cutout.png": {
+      "bytes": 2640998,
+      "sha256": "55187f77d1e3685842142fea01d8637be0d085aba4afd344664bdec2c41443ca"
+    },
+    "art/source/aur203-north-a/north-species-079-cutout.png": {
+      "bytes": 2331119,
+      "sha256": "1f9fbfc28784838e947896607488febf8907cd5f1f4fbe4d45c3ef566630be39"
+    },
+    "art/source/aur203-north-a/north-species-078-beige-qa.png": {
+      "bytes": 384021,
+      "sha256": "77362e0d6381edab420d1d48d252c4e3e486a58f6ecd5814c5b50bd3c4d9412f"
+    },
+    "art/source/aur203-north-a/north-species-078-original.png": {
+      "bytes": 2202660,
+      "sha256": "5ee74e8c37657f4a33af14ad4ca72c2c1c9640cc2c3ca297e81a3a31e74ebd40"
+    },
+    "assets/actors/aur203-north-a/north-species-076.png": {
+      "bytes": 545423,
+      "sha256": "8547bed50e0dfb3553f8e80c721601fa5262ca04b106aa74760e75e3e5b7cfbb"
+    },
+    "assets/actors/aur203-north-a/north-species-079.png": {
+      "bytes": 595273,
+      "sha256": "22069072d9dab2aa16be796faad67bcb0bc4dc363c78dccd610ed03f5e05e917"
+    },
+    "assets/actors/aur203-north-a/north-species-078.json": {
+      "bytes": 12281,
+      "sha256": "c83b4091fc6adde0db5a015bca359969e43fde1480b618769d75d10ed6f74423"
+    },
+    "assets/actors/aur203-north-a/north-species-078.png": {
+      "bytes": 518578,
+      "sha256": "3d445b696ce854f67da6a14b9a909630b6050c9b6ae94fea4ae67a2ad26a68dd"
+    },
+    "assets/actors/aur203-north-a/north-species-079.json": {
+      "bytes": 12297,
+      "sha256": "31b0a5f72f833b1a582b541a0a0b162c8335b5ce65c8ea222b071605e3e4bf94"
+    },
+    "assets/actors/aur203-north-a/north-species-077.json": {
+      "bytes": 12293,
+      "sha256": "507c87ab3ff83234e374281dd84b9e4ae5e6e64145377694ab620620b40f9ffe"
+    },
+    "assets/actors/aur203-north-a/north-species-076.json": {
+      "bytes": 12298,
+      "sha256": "d9646b94facc4b642583ac3e2ab05222ead3668ad9a62e2773c69947a8519432"
+    },
+    "assets/actors/aur203-north-a/north-species-077.png": {
+      "bytes": 677192,
+      "sha256": "f1a12a0b0de778ab0a0211d1c13cb964f8977a4599848d7406fbef557ca2022f"
+    }
+  }
+}
