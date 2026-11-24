@@ -1,0 +1,18 @@
+{
+  "sourceCommit": "6df2a8c10bdea0ac2be78562c4574c2df23304f8",
+  "mappedFiles": 344,
+  "checkedFiles": 344,
+  "pixelMismatches": 0,
+  "nativeDecodeGuard": "exact alpha/opaque RGB; translucent premultiplied difference <=2/255",
+  "decoder": "Exact createImageBitmap(premultiplyAlpha:none,colorSpaceConversion:none) Canvas RGBA plus guarded native Image.decode; all mapped PNG/WebP pairs",
+  "pageErrors": [],
+  "physicalAndroid": false,
+  "leases": {
+    "fixture": "loader-spy unit fixture; not actual Phaser engine",
+    "mappedURLSelection": true,
+    "sharedReferences": true,
+    "release": true,
+    "unmappedFallback": true
+  },
+  "actualPhaserCoverage": "Existing actor browser suites cover real Phaser loads and releases"
+}
