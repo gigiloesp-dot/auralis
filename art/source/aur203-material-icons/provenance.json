@@ -1,0 +1,219 @@
+{
+  "source": "art/source/aur203-material-icons/original-sheet.png",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSHA256": "6a8f01e3613bf4e3538c126008c158f3417b575ecda40f238c454f2214302d74",
+  "method": "Whole 4x4 grid cells scaled proportionally to112px and centered on128px transparent canvas. Original source and all alpha pixels retained before scaling. No repainting/erasing/recoloring.",
+  "entries": [
+    {
+      "id": "boar-tusk",
+      "sourceRect": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "url": "assets/icons/monster-materials/boar-tusk.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "bf102dfc594e51a177c62f8e2803e67169d9ac9cd737d00bcba3f9cc31917cb5"
+    },
+    {
+      "id": "raider-pouch",
+      "sourceRect": [
+        313,
+        0,
+        627,
+        313
+      ],
+      "url": "assets/icons/monster-materials/raider-pouch.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "ac77763d898b420d933341d45785c6d28a9629790af1a0e66a766f608f1e9b34"
+    },
+    {
+      "id": "bear-hide",
+      "sourceRect": [
+        627,
+        0,
+        940,
+        313
+      ],
+      "url": "assets/icons/monster-materials/bear-hide.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4c4298884a417bbfcb818483b7ab60a1c0c8eb24c7ff45d8ed989726250d4378"
+    },
+    {
+      "id": "spider-silk",
+      "sourceRect": [
+        940,
+        0,
+        1254,
+        313
+      ],
+      "url": "assets/icons/monster-materials/spider-silk.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "7fd480e42abec75566ed53c1169c22ead20f72fceb9ba243bf0e5fef4befd326"
+    },
+    {
+      "id": "bone-fragment",
+      "sourceRect": [
+        0,
+        313,
+        313,
+        627
+      ],
+      "url": "assets/icons/monster-materials/bone-fragment.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4822f7d31d09d2b848120fbc3fae4894b75cc60bcf0c0cbcb9e34afaaf764f9d"
+    },
+    {
+      "id": "ice-fang",
+      "sourceRect": [
+        313,
+        313,
+        627,
+        627
+      ],
+      "url": "assets/icons/monster-materials/ice-fang.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "8972c1ce125a8b349cc8fc7d2f481e9248f0897be04fa975584d956500847946"
+    },
+    {
+      "id": "frost-crystal",
+      "sourceRect": [
+        627,
+        313,
+        940,
+        627
+      ],
+      "url": "assets/icons/monster-materials/frost-crystal.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "c0fc2f35c18202a12f45261e5f1e9f4a5d649baf10b66b89c8df63b9da11195d"
+    },
+    {
+      "id": "sentinel-runestone",
+      "sourceRect": [
+        940,
+        313,
+        1254,
+        627
+      ],
+      "url": "assets/icons/monster-materials/sentinel-runestone.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "133dbafe6c0fd8557ad71b33c4c8d0ce168ce1159a422ec68137df63c51dec1b"
+    },
+    {
+      "id": "arcane-shard",
+      "sourceRect": [
+        0,
+        627,
+        313,
+        940
+      ],
+      "url": "assets/icons/monster-materials/arcane-shard.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "ff42fa0d88214825b59991f470682dbb81d99777352d76678302dabf98dc5437"
+    },
+    {
+      "id": "bat-wing",
+      "sourceRect": [
+        313,
+        627,
+        627,
+        940
+      ],
+      "url": "assets/icons/monster-materials/bat-wing.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "cd63e15034c8b3005d6054dbef15422aa093a9a216a8d22ac1a8f1646b1884a2"
+    },
+    {
+      "id": "snake-scales",
+      "sourceRect": [
+        627,
+        627,
+        940,
+        940
+      ],
+      "url": "assets/icons/monster-materials/snake-scales.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "c372a444908c70be5e8b57152590915d94fc11447166f804618680b4536f0961"
+    },
+    {
+      "id": "orc-token",
+      "sourceRect": [
+        940,
+        627,
+        1254,
+        940
+      ],
+      "url": "assets/icons/monster-materials/orc-token.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "2f0ca915d75b94653a8ad83fc929243a116b50eec1fc5d5ae0327ff428961385"
+    },
+    {
+      "id": "elemental-essence",
+      "sourceRect": [
+        0,
+        940,
+        313,
+        1254
+      ],
+      "url": "assets/icons/monster-materials/elemental-essence.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "2ef7c06aae31d9a8fb6499368d48daa739ded3992fe327f77fefb11a6146c6ea"
+    },
+    {
+      "id": "ghost-veil",
+      "sourceRect": [
+        313,
+        940,
+        627,
+        1254
+      ],
+      "url": "assets/icons/monster-materials/ghost-veil.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "781ba039323818b2be3f1d19bcf416c018efcf45a96c1b0c4736820967d855c9"
+    },
+    {
+      "id": "scarab-shell",
+      "sourceRect": [
+        627,
+        940,
+        940,
+        1254
+      ],
+      "url": "assets/icons/monster-materials/scarab-shell.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "89818c00a3af8a054e900c7a2f41951eda27b7da4f03c728d1b02ef8f73eb95b"
+    },
+    {
+      "id": "gargoyle-fragment",
+      "sourceRect": [
+        940,
+        940,
+        1254,
+        1254
+      ],
+      "url": "assets/icons/monster-materials/gargoyle-fragment.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "0595122e331f6203252c023f2a814641c137f4f431aa18ae3845ca70ecf7958d"
+    }
+  ]
+}

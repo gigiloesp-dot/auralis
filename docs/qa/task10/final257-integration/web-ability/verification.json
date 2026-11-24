@@ -1,0 +1,71 @@
+{
+  "records": [
+    {
+      "fixture": {
+        "species": "forest-species-048",
+        "hp": 100000
+      },
+      "impact": {
+        "shot": {
+          "x": 1091,
+          "y": 15019,
+          "targetX": 1216,
+          "targetY": 15019,
+          "angleOffset": 0,
+          "speed": 185,
+          "damage": 28,
+          "magic": true,
+          "range": 600,
+          "status": {
+            "type": "slow",
+            "multiplier": 0.55,
+            "duration": 1800
+          },
+          "releasedAt": 733.2799999999996
+        },
+        "slow": {
+          "until": 3083.079999999998,
+          "multiplier": 0.55
+        },
+        "hp": 99975,
+        "now": 1283.0799999999983
+      },
+      "expired": true
+    },
+    {
+      "fixture": {
+        "species": "forest-species-053",
+        "hp": 100000
+      },
+      "impact": {
+        "shot": {
+          "x": 7992,
+          "y": 16797,
+          "targetX": 8117,
+          "targetY": 16797,
+          "angleOffset": 0,
+          "speed": 185,
+          "damage": 34.4,
+          "magic": true,
+          "range": 600,
+          "status": {
+            "type": "slow",
+            "multiplier": 0.55,
+            "duration": 1800
+          },
+          "releasedAt": 3854.7266666666656
+        },
+        "slow": {
+          "until": 6209.696666666665,
+          "multiplier": 0.55
+        },
+        "hp": 99969,
+        "now": 4409.696666666665
+      },
+      "expired": true
+    }
+  ],
+  "errors": [],
+  "physicalAndroid": false,
+  "fixture": "Prepared encounter position/HP; real Phaser projectile collision and affliction clocks"
+}

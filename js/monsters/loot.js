@@ -1,3 +1,4 @@
+import {MONSTER_MATERIAL_BY_LOOT} from '../equipment/monsterMaterials.js';
 import {itemDefinition} from '../equipment/items.js';
 import {GENERATED_ITEMS} from '../equipment/catalog.js';
 
@@ -33,9 +34,16 @@ function ordinaryEquipment(hero,level,rng){
  for(const rarity of ['epic','rare','uncommon','common']){bound+=NORMAL_EQUIPMENT_RATES[rarity];if(r<bound)return equipment(level,rarity,heroClass(hero),rng);}
  return null;
 }
-export function rollLoot(hero,{type='wolf',level=1}={},rng=Math.random){
- const drops=materials(hero,type,rng),item=ordinaryEquipment(hero,level,rng);if(item)drops.push(item);return drops;
+function lootRoll(hero,{type='wolf',level=1}={},rng=Math.random,thematic=false){
+ const drops=materials(hero,type,rng),item=ordinaryEquipment(hero,level,rng);if(item)drops.push(item);
+ // New family materials roll AFTER the original equipment decision/selection,
+ // preserving the exact earlier equipment RNG result. Wolf and boss paths never
+ // enter this branch; their complete original roll sequence stays unchanged.
+ const id=thematic&&Object.hasOwn(MONSTER_MATERIAL_BY_LOOT,type)&&MONSTER_MATERIAL_BY_LOOT[type];
+ if(id){const luck=Math.max(0,Number(hero?.stats?.luck)||5),bonus=1+Math.max(0,luck-5)*.005;if(rng()<Math.min(1,MATERIAL_DROP_RATES.wolfFang*bonus))drops.push({id,rarity:rollRarity(rng),quantity:1});}
+ return drops;
 }
+export function rollLoot(hero,options={},rng=Math.random){return lootRoll(hero,options,rng,true);}
 export function rollWolfLoot(hero,rng=Math.random){return rollLoot(hero,{type:'wolf',level:hero?.level||1},rng);}
 
 const group=(rarity,chance,min,max=min)=>Object.freeze({rarity,chance,min,max});
@@ -68,6 +76,6 @@ export function rollMonsterLoot(hero,kind,rng=Math.random){
  if(!kind.boss)return rollLoot(hero,{type:kind.loot,level},rng);
  const table=BOSS_LOOT_TABLES[type]||BOSS_LOOT_TABLES.mini;
  if(table.groups)return [...materials(hero,kind.loot,rng),...groupedBossEquipment(hero,level,table,rng)];
- const drops=rollLoot(hero,{type:kind.loot,level},rng),rarity=rng()<table.epic?'epic':'rare',slot=table.slots[index(rng,table.slots.length)];
+ const drops=lootRoll(hero,{type:kind.loot,level},rng,false),rarity=rng()<table.epic?'epic':'rare',slot=table.slots[index(rng,table.slots.length)];
  const item=equipment(level,rarity,heroClass(hero),rng,slot);if(item)drops.push(item);return drops;
 }

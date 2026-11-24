@@ -1,3 +1,4 @@
+import {MONSTER_MATERIALS} from './monsterMaterials.js';
 import {ENDGAME_MATERIALS} from './endgameMaterials.js';
 import {QUEST_MATERIALS} from './questMaterials.js';
 import {localizedItemName} from '../i18n/entityNames.js';
@@ -16,7 +17,8 @@ export const ITEM_DEFS=Object.freeze({...GENERATED_ITEMS,
  wolfFang:{name:'Клык волка',slot:null,level:1},
  wolfPelt:{name:'Волчья шкура',slot:null,level:1},
  ...ENDGAME_MATERIALS,
- ...QUEST_MATERIALS
+ ...QUEST_MATERIALS,
+ ...MONSTER_MATERIALS
 });
 export const itemDefinition=item=>ITEM_DEFS[item?.id]||null;
 export const itemName=(item,language='ru')=>localizedItemName(item,itemDefinition(item),language);

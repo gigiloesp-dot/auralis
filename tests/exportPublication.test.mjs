@@ -57,3 +57,34 @@ test('publication rejects player texture substitutions and encoded binary corrup
  const second=join(dirname(f.destination),'second');f.manifest.entries[0].sourceURL=f.hero;f.manifest.entries[0].url=f.hero.slice(0,-4)+'.webp';f.saveManifest();f.git('add','.');f.git('commit','--quiet','-m','invalid player substitution');
  await assert.rejects(exportStatic(second,'HEAD',{repository:f.repository}),/Invalid lossless delivery mapping/);assert.equal(existsSync(join(second,f.hero)),true);
 });
+
+function externalFixture(t,mutate=()=>{}){
+ const f=fixture(t),sourceCommit=f.commit,baseURL='https://raw.githubusercontent.com/gigiloesp-dot/auralis/'+sourceCommit+'/',entry={sourceURL:f.source,url:f.delivery,remoteURL:baseURL+f.delivery,webpSHA256:hash(f.webp),webpBytes:f.webp.length},config={version:1,sourceCommit,baseURL,entries:[entry]},map={[f.delivery]:entry.remoteURL};
+ mutate(config,map,f);
+ f.write('assets/actors/external-delivery.json',JSON.stringify(config));f.write('js/assets/externalActorDelivery.js','export const EXTERNAL_ACTOR_SOURCE_COMMIT='+JSON.stringify(config.sourceCommit)+';\nexport const EXTERNAL_ACTOR_TEXTURE_URLS=Object.freeze('+JSON.stringify(map)+');\n');f.git('add','.');f.git('commit','--quiet','-m','pinned external delivery');
+ return {...f,config};
+}
+test('external publication omits only verified original actor derivative copies and preserves exact source repository bytes',async t=>{
+ const f=externalFixture(t),result=await exportStatic(f.destination,'HEAD',{repository:f.repository});
+ assert.equal(result.externalActorDelivery.files,1);assert.equal(result.externalActorDelivery.bytes,f.webp.length);assert.equal(result.externalActorDelivery.sourceCommit,f.commit);
+ assert.equal(existsSync(join(f.destination,f.source)),false);assert.equal(existsSync(join(f.destination,f.delivery)),false);assert.equal(existsSync(join(f.destination,f.hero)),true);
+ assert.deepEqual(readFileSync(join(f.repository,f.source)),f.png);assert.deepEqual(readFileSync(join(f.repository,f.delivery)),f.webp);
+ assert.equal(JSON.parse(readFileSync(join(f.destination,'build.json'))).externalActorDelivery.files,1);
+});
+test('external publication rejects URL redirects, wrong hashes, task10/player substitutions, duplicate entries and unlisted resolver keys before deletion',async t=>{
+ const mutations=[
+  ['wrong host',c=>{c.entries[0].remoteURL='https://example.invalid/file.webp';}],
+  ['wrong protocol',c=>{c.baseURL=c.baseURL.replace('https:','http:');}],
+  ['wrong digest',c=>{c.entries[0].webpSHA256='0'.repeat(64);}],
+  ['task10 asset',c=>{c.entries[0].sourceURL='assets/actors/task10-x/forest-species-000.png';}],
+  ['player asset',c=>{c.entries[0].sourceURL='assets/actors/heroes/warrior.png';}],
+  ['duplicate entry',c=>{c.entries.push({...c.entries[0]});}],
+  ['unlisted resolver',(_c,map)=>{map['assets/actors/heroes/warrior.webp']='https://example.invalid/warrior.webp';}],
+  ['resolver mismatch',(_c,map)=>{map[Object.keys(map)[0]]='https://example.invalid/file.webp';}]
+ ];
+ for(const [name,mutate]of mutations)await t.test(name,async t=>{const f=externalFixture(t,mutate);await assert.rejects(exportStatic(f.destination,'HEAD',{repository:f.repository}),/external actor/i);assert.deepEqual(readFileSync(join(f.destination,f.source)),f.png);assert.deepEqual(readFileSync(join(f.destination,f.delivery)),f.webp);});
+});
+test('external publication cannot pin a Git source that never contained the derivative',async t=>{
+ const f=externalFixture(t,(config,map,f)=>{config.sourceCommit=f.pinned;config.baseURL='https://raw.githubusercontent.com/gigiloesp-dot/auralis/'+f.pinned+'/';config.entries[0].remoteURL=config.baseURL+f.delivery;map[f.delivery]=config.entries[0].remoteURL;});
+ await assert.rejects(exportStatic(f.destination,'HEAD',{repository:f.repository}),/Command failed/);assert.deepEqual(readFileSync(join(f.destination,f.source)),f.png);assert.deepEqual(readFileSync(join(f.destination,f.delivery)),f.webp);
+});

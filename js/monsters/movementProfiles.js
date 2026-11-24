@@ -30,6 +30,9 @@ export function blockingObstacles(obstacles,kind){
 }
 export function cancelMonsterAbility(monster){monster.specialState?.marker?.destroy?.();monster.specialState=null;}
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
+// Technical starting values for the existing web-labelled spider attack.
+// Reuses slow expiry/collision handling; this is not a permanent root or stun.
+export const WEB_ABILITY_CONFIG=Object.freeze({speed:185,range:600,slowMultiplier:.55,slowDuration:1800});
 function statusFor(ability,attack){return ability==='venom'?{type:'poison',damage:Math.max(1,Math.round(attack*.12)),duration:4000}:ability==='frost'?{type:'slow',multiplier:.55,duration:2800}:null;}
 // Context callbacks: move(tx,ty,maxDistance), canOccupy(x,y,radius),
 // canSee(from,to), damage(attack,magic,status), shoot(projectile), warn(config),
@@ -54,6 +57,10 @@ export function tickMonsterAbility(context){
    const facing=Math.atan2(target.y-m.y,target.x-m.x),toHero=Math.atan2(h.y-m.y,h.x-m.x),angle=Math.abs(Math.atan2(Math.sin(toHero-facing),Math.cos(toHero-facing)));
    context.effect?.({kind:'cleave',x:m.x,y:m.y,radius:p.radius,angle:facing});
    if(distance(m,h)<=p.radius&&angle<1&&visible(m,h))context.damage?.(attack,false,null);
+  }else if(state.ability==='web'){
+   // Fire at the warned position rather than tracking a dodge during windup.
+   // Actual projectile collision/LOS decides whether the slow is applied.
+   context.shoot?.({x:m.x,y:m.y,targetX:target.x,targetY:target.y,angleOffset:0,speed:WEB_ABILITY_CONFIG.speed,damage:attack,magic:p.projectileMagic??true,range:WEB_ABILITY_CONFIG.range,status:{type:'slow',multiplier:WEB_ABILITY_CONFIG.slowMultiplier,duration:WEB_ABILITY_CONFIG.slowDuration}});
   }else{
    if(state.ability==='blink'){
     // Only blink to a clear destination with a clear wall/structure path. This

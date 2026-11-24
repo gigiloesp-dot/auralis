@@ -1,3 +1,4 @@
+import {withoutMonsterMaterialRegistration} from './preservedItemRegistry.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -59,6 +60,7 @@ test('normal equip, unequip and saved reload preserve the real catalogue stats w
 });
 
 test('release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta',()=>{
+ const aur203Ledger=readFileSync('docs/qa/aur203/gameplay-source-deltas.json');assert.equal(sha(aur203Ledger),'d287b90fb1c97148cecf7127574b1cedd4a7ef6c06c6f2efe9e9fb73064324de');const aur203Deltas=JSON.parse(aur203Ledger).files;assert.deepEqual(Object.keys(aur203Deltas).sort(),['js/monsters/loot.js','js/monsters/movementProfiles.js','js/ui/itemIcons.js']);
  const task10Ledger=readFileSync('docs/qa/task10/approved-deltas.json');assert.equal(sha(task10Ledger),'854775622470e154cc41b36f05937dc4908740f9ade920fdcf41de8687863966');const task10=JSON.parse(task10Ledger).files;
  const ledger=readFileSync('docs/qa/task9/approved-deltas.json');assert.equal(sha(ledger),'fd8478d06c88ff5a2701e7db607d2bb6c5f19321bd26a8e686dc967cb278cbc5');const deltas=JSON.parse(ledger);
  const manifest=JSON.parse(readFileSync('docs/art/WARRIOR_REFERENCE_PRESERVED.json'));assert.ok(Object.keys(manifest.hashes).length>200);for(const [path,hash]of Object.entries(manifest.hashes)){
@@ -69,7 +71,7 @@ test('release17 assets and gameplay remain byte-identical with only the exact ta
    assert.equal(html.split(added).length,2,'exactly one AUR-192 stylesheet');
    assert.equal(html.split(tracking).length,2,'exactly one centralized quest-tracking stylesheet');assert.ok(html.includes('<link rel="stylesheet" href="./css/ui-scale.css">'+added+tracking+'</head>'));
    assert.equal(sha(html.replace(added,'').replace(tracking,'')),hash,path+' all original markup preserved');
-  }else if(task10[path]){assert.equal(task10[path].before,deltas[path]?.current||hash,path+' release21 contract');if(deltas[path])assert.equal(deltas[path].original,hash,path+' historical contract');assert.equal(sha(readFileSync(path)),task10[path].after,path+' exact approved task10 delta');}
+  }else if(aur203Deltas[path]){assert.equal(aur203Deltas[path].before,task10[path]?.after||deltas[path]?.current||hash,path+' exact pre-AUR203 source');assert.equal(sha(readFileSync(path)),aur203Deltas[path].after,path+' exact AUR203 web/material implementation');}else if(task10[path]){assert.equal(task10[path].before,deltas[path]?.current||hash,path+' release21 contract');if(deltas[path])assert.equal(deltas[path].original,hash,path+' historical contract');assert.equal(sha(path==='js/equipment/items.js'?withoutMonsterMaterialRegistration(readFileSync(path,'utf8')):readFileSync(path)),task10[path].after,path+' exact approved task10 delta plus only additive monster-material registration');}
   else if(deltas[path]){assert.equal(deltas[path].original,hash,path+' original contract');assert.equal(sha(readFileSync(path)),deltas[path].current,path+' explicit approved task9 delta');}
   else if(path==='css/npc.css'){
    // Exactly the Task10 travel grid; all previous NPC styles retain their hash.

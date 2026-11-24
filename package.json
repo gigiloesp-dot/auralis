@@ -20,7 +20,7 @@
     "test:browser:core": "node tests/browser-smoke.cjs && node tests/browser-world.cjs && node tests/browser-npcs.cjs && node tests/browser-quests.cjs && node tests/browser-dungeons.cjs && node tests/browser-locales.cjs && node tests/browser-classes.cjs && node tests/browser-soak.cjs && node tests/browser-journey.cjs",
     "test:browser:android-combat": "node tests/browser-android-combat.cjs",
     "test:browser:mobile-panels": "node tests/browser-mobile-panels.cjs",
-    "test:browser:bestiary": "node tests/browser-bestiary.cjs",
+    "test:browser:bestiary": "node tests/browser-bestiary.cjs && npm run test:browser:monster-web",
     "test:browser:actors": "node tests/browser-actors.cjs",
     "test:browser:android": "npm run test:browser:android-combat && npm run test:browser:mobile-panels && npm run test:browser:bestiary && npm run test:browser:actors && npm run test:browser:boss-art",
     "test:browser:core:world": "node tests/browser-smoke.cjs && node tests/browser-world.cjs && node tests/browser-npcs.cjs",
@@ -30,7 +30,7 @@
     "test:browser:task1": "node tests/browser-task1-ai.cjs && node tests/browser-ground-loot.cjs && node tests/browser-task1-dungeons.cjs && node tests/browser-monster-stream.cjs && node tests/browser-multitouch.cjs && npm run test:browser:gathering-input-lifecycle && node tests/browser-loot-soak.cjs",
     "test:browser:task2": "node tests/browser-task2-ui.cjs",
     "test:browser:menu": "node tests/browser-medieval-menu.cjs",
-    "test:browser:task4": "node tests/browser-task4-loot.cjs",
+    "test:browser:task4": "node tests/browser-task4-loot.cjs && npm run test:browser:thematic-materials",
     "test:browser:task5": "npm run test:browser:task5-ui && npm run test:browser:task5-journal",
     "test:browser:task5-ui": "node tests/browser-task5-ui.cjs",
     "test:browser:task5-journal": "node tests/browser-task5-journal.cjs",
@@ -106,7 +106,9 @@
     "test:browser:task10-legacy-upgrade-c": "node tests/browser-task10-legacy-upgrade-c.cjs",
     "test:browser:task10-north-fifth": "npm run test:browser:task10-north-expansion5a && npm run test:browser:task10-north-expansion5b",
     "test:browser:task10-legacy-ab": "npm run test:browser:task10-legacy-upgrade-a && npm run test:browser:task10-legacy-upgrade-b",
-    "test:browser:task10-legacy-c": "npm run test:browser:task10-legacy-upgrade-c"
+    "test:browser:task10-legacy-c": "npm run test:browser:task10-legacy-upgrade-c",
+    "test:browser:monster-web": "node tests/browser-monster-web.cjs",
+    "test:browser:thematic-materials": "node tests/browser-thematic-materials.cjs"
   },
   "devDependencies": {
     "playwright": "^1.65.0"

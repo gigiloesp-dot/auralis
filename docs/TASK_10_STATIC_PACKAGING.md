@@ -1,5 +1,19 @@
 # Task 10 static publication packaging
 
+## Pinned external delivery for original atlases — 24 November 2026
+
+The committed full344-WebP runtime at `4a0eb5a77cbc75f9952922d4166af466971018e8` occupies308,337,986 bytes after static export. The256 MiB hosting archive ceiling requires a smaller hosted payload. All257 new primary ordinary models and other task10 atlases remain local. An explicit optional configuration, `assets/actors/external-delivery.json`, moves delivery of **only73 original atlases** (23 monster,6 NPC sheets,44 boss) to immutable public GitHub URLs pinned to that exact commit. These73 verified WebPs total **112,635,124 bytes**. All original PNGs, WebPs and atlas JSON remain in the Git repository; only derived publication copies are omitted.
+
+`js/assets/externalActorDelivery.js` is an explicit immutable URL map. The existing resolver first selects a verified lossless WebP, then applies that map only to listed old atlases. Task10 models, hero bodies, equipment, atlas coordinates, keys and shared texture leases remain unchanged. Future converter runs preserve this composition; changed old derivatives must deliberately update the pin/config and pass provenance checks before export.
+
+The exporter checks the optional config from the exact exported commit, its resolver pin/map, the original73-atlas allowlist, association with the lossless manifest, SHA-256, size, and equality with the pinned Git binary. It validates every mapping before removing any mapped source PNG or external WebP copy. `build.json.externalActorDelivery` records the remote source commit, file count and omitted bytes. With no config, the earlier local-only format remains supported.
+
+The public verifier still checks every runtime file. For an externally mapped WebP it fetches the exact remote URL **in the browser with CORS**, then compares the delivered SHA-256 against the same committed binary; it does not skip those assets. The independent pixel browser helper decodes the actual resolved remote WebP for these73 pairs and retains exact canonical RGBA, native decode bounds and loader lease checks. No new browser run is claimed in this implementation checkpoint.
+
+Anonymous HEAD probe of the pinned forest-residents WebP returned200, `image/webp`, `Access-Control-Allow-Origin: *`, and `Cross-Origin-Resource-Policy: cross-origin`. This is a network availability check, not a substitute for the full browser/public acceptance. The public repository and GitHub Raw become an explicit network dependency for these old atlases; offline availability and outages are not guaranteed. No unverified retry/fallback mechanism was added.
+
+Focused checks:9/9 texture/export tests passed, including the full344-entry source/RGBA provenance run and73 pinned originals. External-export tests passed15/15, covering isolated deletion, exact repository preservation, wrong host/protocol/hash, task10/player substitution, duplicate mappings, resolver drift and a pin missing the derivative. Logs: `work/task10/external-delivery-focused.log` and `work/task10/external-export-mutations.log`. The final combined focused run passed20/20 in26.6s (`work/task10/external-delivery-all-focused.log`). Final archive measurement, full CI, actual-browser CORS/pixels and publication remain root-integration steps.
+
 ## Current verified checkpoint — 24 November 2026
 
 The published master-test is **release25**, game source `4136c4ba9e0bd32fe4ccbaa321733f445aa4128c`, with169 primary models. The hosting archive was261,997,025 bytes and was accepted; its SHA-256 is `40f9e973fbe71a7626faba52ae84179b97c1020738b4e5ebb55799fdf2632abc`. Public verification checked748 exact runtime hashes and gameplay scenarios; receipts are in [release25](qa/release25/). Original PNGs remain in Git. The active delivery manifest still contains144 entries pinned to `89966076fe6488e9e1ca009f07ee3db32ad3fd1f`. Later source integration does not silently activate new WebPs.

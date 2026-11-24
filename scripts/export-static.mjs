@@ -91,6 +91,20 @@ export const LEGACY_ACTOR_NAMES=Object.freeze({
 const legacySources=new Set(Object.entries(LEGACY_ACTOR_NAMES).flatMap(([role,names])=>names.map(name=>'assets/actors/'+role+'/'+name+'.png')));
 export function approvedActorSource(source){return typeof source==='string'&&(/^assets\/actors\/task10-[a-z0-9-]+\/[a-zA-Z0-9_-]+\.png$/.test(source)||legacySources.has(source));}
 
+export function validateExternalActorDelivery(config,resolverMap,manifestEntries,readCurrent,readPinned){
+ if(config?.version!==1||! /^[0-9a-f]{40}$/.test(config.sourceCommit)||!Array.isArray(config.entries)||config.baseURL!=='https://raw.githubusercontent.com/gigiloesp-dot/auralis/'+config.sourceCommit+'/')throw Error('Invalid external actor delivery config');
+ const mapped=new Map(manifestEntries.map(entry=>[entry.url,entry])),paths=new Set();
+ for(const entry of config.entries){
+  const mappedEntry=mapped.get(entry.url);
+  if(!legacySources.has(entry.sourceURL)||entry.url!==entry.sourceURL.slice(0,-4)+'.webp'||paths.has(entry.url)||entry.remoteURL!==config.baseURL+entry.url||resolverMap[entry.url]!==entry.remoteURL||!mappedEntry||mappedEntry.sourceURL!==entry.sourceURL||mappedEntry.webpSHA256!==entry.webpSHA256||mappedEntry.webpBytes!==entry.webpBytes)throw Error('Invalid external actor delivery mapping');
+  const current=readCurrent(entry.url),pinned=readPinned(config.sourceCommit,entry.url);
+  if(!current.equals(pinned)||createHash('sha256').update(current).digest('hex')!==entry.webpSHA256||current.length!==entry.webpBytes)throw Error('External actor delivery hash mismatch: '+entry.url);
+  paths.add(entry.url);
+ }
+ if(Object.keys(resolverMap).length!==paths.size)throw Error('External actor resolver and manifest differ');
+ return paths;
+}
+
 async function extractRuntime(sourceCommit,target,repository){
  // Stream directly into isolated copies. No full-size intermediate archive and
  // no hardlinks to mutable source files; at most one PNG replacement per file.
@@ -112,7 +126,8 @@ export async function exportStatic(destination,requested='HEAD',{repository=proc
  await extractRuntime(sourceCommit,target,repository);
 // Only explicit, hash-verified delivery substitutions can omit source PNGs.
 // Read the manifest from this exact commit, never from the working tree.
-const deliveryPath='assets/actors/lossless-delivery.json',actorTextureDelivery={manifest:null,files:0,sourceBytes:0,deliveryBytes:0};
+const deliveryPath='assets/actors/lossless-delivery.json',actorTextureDelivery={manifest:null,files:0,sourceBytes:0,deliveryBytes:0},externalActorDelivery={manifest:null,sourceCommit:null,files:0,bytes:0};
+let deliveryEntries=[],mappedSources=new Set();
 if(execFileSync('git',['ls-tree','--name-only',sourceCommit,deliveryPath],{cwd:repository,encoding:'utf8'}).trim()){
  const manifest=JSON.parse(execFileSync('git',['show',sourceCommit+':'+deliveryPath],{cwd:repository,encoding:'utf8',maxBuffer:4*1024*1024}));
  if(!/^[0-9a-f]{40}$/.test(manifest.sourceCommit)||manifest.version!==1||manifest.encoding?.format!=='WebP'||manifest.encoding.lossless!==true||manifest.encoding.exact!==true||!Array.isArray(manifest.entries))throw Error('Invalid lossless delivery manifest');
@@ -129,14 +144,23 @@ if(execFileSync('git',['ls-tree','--name-only',sourceCommit,deliveryPath],{cwd:r
   sourcePaths.add(source);deliveryPaths.add(delivery);actorTextureDelivery.sourceBytes+=original.length;actorTextureDelivery.deliveryBytes+=encoded.length;
  }
  if(Object.keys(resolverMap).length!==sourcePaths.size)throw Error('Lossless resolver and manifest differ');
- for(const source of sourcePaths)rmSync(join(target,source));
+ deliveryEntries=manifest.entries;mappedSources=sourcePaths;
  actorTextureDelivery.manifest=deliveryPath;actorTextureDelivery.files=sourcePaths.size;
 }
+const externalPath='assets/actors/external-delivery.json';
+if(execFileSync('git',['ls-tree','--name-only',sourceCommit,externalPath],{cwd:repository,encoding:'utf8'}).trim()){
+ const config=JSON.parse(readFileSync(join(target,externalPath),'utf8')),module=readFileSync(join(target,'js/assets/externalActorDelivery.js'),'utf8'),match=module.match(/EXTERNAL_ACTOR_TEXTURE_URLS=Object\.freeze\(([\s\S]*?)\);/),pin=module.match(/EXTERNAL_ACTOR_SOURCE_COMMIT="([0-9a-f]{40})";/);
+ if(!match||pin?.[1]!==config.sourceCommit)throw Error('Missing or inconsistent external actor resolver');
+ const externalPaths=validateExternalActorDelivery(config,JSON.parse(match[1]),deliveryEntries,file=>readFileSync(join(target,file)),(commit,file)=>execFileSync('git',['show',commit+':'+file],{cwd:repository,maxBuffer:32*1024*1024}));
+ for(const file of externalPaths)rmSync(join(target,file));
+ Object.assign(externalActorDelivery,{manifest:externalPath,sourceCommit:config.sourceCommit,files:externalPaths.size,bytes:config.entries.reduce((n,entry)=>n+entry.webpBytes,0)});
+}
+for(const source of mappedSources)rmSync(join(target,source));
 const pngCompression={transform:LOSSLESS_PNG_TRANSFORM,files:0,optimized:0,originalBytes:0,outputBytes:0};
 function compressDirectory(directory){for(const entry of readdirSync(directory,{withFileTypes:true})){const path=join(directory,entry.name);if(entry.isDirectory())compressDirectory(path);else if(entry.isFile()&&entry.name.toLowerCase().endsWith('.png')){const result=losslessPng(readFileSync(path));pngCompression.files++;pngCompression.optimized+=Number(result.optimized);pngCompression.originalBytes+=result.originalBytes;pngCompression.outputBytes+=result.outputBytes;if(result.optimized){const temporary=path+'.export-png-tmp';try{writeFileSync(temporary,result.bytes,{flag:'wx'});renameSync(temporary,path);}finally{rmSync(temporary,{force:true});}}}}}
 compressDirectory(target);
-writeFileSync(resolve(target,'build.json'),JSON.stringify({repository:'gigiloesp-dot/auralis',branch:'codex/auralis-master-development',sourceCommit,exportedAt:new Date().toISOString(),pngCompression,actorTextureDelivery},null,2)+'\n');
-return {directory:target,sourceCommit,pngCompression,actorTextureDelivery};
+writeFileSync(resolve(target,'build.json'),JSON.stringify({repository:'gigiloesp-dot/auralis',branch:'codex/auralis-master-development',sourceCommit,exportedAt:new Date().toISOString(),pngCompression,actorTextureDelivery,externalActorDelivery},null,2)+'\n');
+return {directory:target,sourceCommit,pngCompression,actorTextureDelivery,externalActorDelivery};
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
  const result=await exportStatic(process.argv[2],process.argv[3]);

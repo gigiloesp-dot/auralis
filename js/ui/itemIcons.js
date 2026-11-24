@@ -25,14 +25,16 @@ const shapes={
 
 };
 export const RARITY_COLORS=Object.freeze({common:'#aca596',uncommon:'#62c07b',rare:'#6fa9e2',epic:'#bb83df',legendary:'#e6bc64'});
+const materialIconURL=def=>def?.monsterMaterial===true&&typeof def.iconURL==='string'&&/^assets\/icons\/monster-materials\/[a-z0-9-]+\.png$/.test(def.iconURL)?def.iconURL:null;
 export function itemIconKind(item,def){
+ if(materialIconURL(def)&&/^[a-zA-Z][a-zA-Z0-9]*$/.test(item?.id||''))return item.id;
  if(['hpPotion','mpPotion'].includes(item?.id))return item.id;
  if(def?.slot==='weapon')return ({bow:'bow',staff:'staff',daggers:'daggers',cannon:'cannon',sword:'weapon',sword_shield:'weapon'})[def.kind]||'weapon';
  return shapes[def?.slot||item?.id]?def?.slot||item.id:'wolfFang';
 }
 export function itemIcon(item,def){
  const kind=itemIconKind(item,def);
- const shape=shapes[kind]||shapes.wolfFang;
+ const materialURL=materialIconURL(def),shape=materialURL?'<image href="'+materialURL+'" x="4" y="4" width="40" height="40"/>':shapes[kind]||shapes.wolfFang;
  const level=Math.max(1,Number(def?.level)||1);
  const tier=level>=35?4:level>=22?3:level>=10?2:level>=4?1:0;
  const colors=['#96734c','#a5a8ad','#9aa9c8','#bca35c','#dfc780'];

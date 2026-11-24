@@ -1,0 +1,18 @@
+{
+  "requirement": "AUR-203: actual web slow and additive thematic materials; every unrelated original source byte remains protected",
+  "baselineCommit": "4a0eb5a77cbc75f9952922d4166af466971018e8",
+  "files": {
+    "js/monsters/loot.js": {
+      "before": "bb51ee7447f7e07441617364155705848cd491478c987b35c25b6b1b7436b076",
+      "after": "06d22ae22cd051730df911b941836cca8b86ff9a4851239f0a373d41ca7cb510"
+    },
+    "js/ui/itemIcons.js": {
+      "before": "ee9bf1e0d9acefa444b701faaffec73f0703bf242f8b1d1f17fa3b03ef6fe40c",
+      "after": "835cba38da30bb6f20ec13e19033c3c7b9f860e29f7e29db1fcd40c7b545a5dc"
+    },
+    "js/monsters/movementProfiles.js": {
+      "before": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4",
+      "after": "a778d5daa4c4328192ff7657cbd454eea792146acbcb0318b7e93d829cf13016"
+    }
+  }
+}

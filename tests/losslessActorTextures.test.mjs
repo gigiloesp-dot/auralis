@@ -11,6 +11,7 @@ import {BOSS_ART} from '../js/assets/bossArt.js';
 import {ACTOR_ART} from '../js/assets/actorArt.js';
 import {decodePng} from '../scripts/lossless-png.mjs';
 import {LOSSLESS_ACTOR_TEXTURE_URLS,resolveActorTextureURL} from '../js/assets/losslessTextureDelivery.js';
+import {EXTERNAL_ACTOR_SOURCE_COMMIT,EXTERNAL_ACTOR_TEXTURE_URLS,resolveExternalActorTextureURL} from '../js/assets/externalActorDelivery.js';
 import {ActorTextureCache} from '../js/assets/ActorTextureCache.js';
 import {queueAssets} from '../js/assets/AssetLoader.js';
 
@@ -47,7 +48,7 @@ test('lossless actor delivery manifest pins committed sources, encoded bytes, an
  const paths=execFileSync('git',['ls-tree','-r','--name-only',manifest.sourceCommit,'assets/actors'],{encoding:'utf8'}).trim().split('\n'),sources=new Set();
  for(const entry of manifest.entries){
   assert.ok(approvedActorSource(entry.sourceURL),entry.sourceURL);assert.ok(paths.includes(entry.sourceURL),entry.sourceURL);assert.ok(!sources.has(entry.sourceURL));sources.add(entry.sourceURL);
-  assert.equal(entry.url,entry.sourceURL.slice(0,-4)+'.webp');assert.equal(resolveActorTextureURL(entry.sourceURL),entry.url);
+  assert.equal(entry.url,entry.sourceURL.slice(0,-4)+'.webp');assert.equal(resolveActorTextureURL(entry.sourceURL),resolveExternalActorTextureURL(entry.url));
   const original=readFileSync(new URL('../'+entry.sourceURL,import.meta.url)),encoded=readFileSync(new URL('../'+entry.url,import.meta.url)),committed=execFileSync('git',['show',manifest.sourceCommit+':'+entry.sourceURL],{maxBuffer:32*1024*1024});
   assert.equal(hash(original),entry.sourceSHA256,entry.sourceURL);assert.deepEqual(original,committed,entry.sourceURL);assert.equal(hash(encoded),entry.webpSHA256,entry.url);assert.equal(original.length,entry.sourceBytes);assert.equal(encoded.length,entry.webpBytes);assert.ok(encoded.length<original.length);
   const webpChunks=losslessWebpChunks(encoded);
@@ -63,10 +64,20 @@ test('lossless actor delivery manifest pins committed sources, encoded bytes, an
  for(const original of ['assets/actors/warrior.png','assets/actors/task10-unmapped/future.png','assets/npcs/mira.png','assets/equipment/sword.png','unknown.png'])assert.equal(resolveActorTextureURL(original),original);
 });
 test('both loaders substitute only mapped image URLs while retaining atlas keys, JSON URLs, frame geometry and lease lifetime',async()=>{
- const mapped=manifest.entries[0],textures=new Set(),queued=[],handlers=new Set(),scene={textures:{exists:key=>textures.has(key),remove:key=>textures.delete(key)},load:{on:(name,fn)=>handlers.add(fn),off:(name,fn)=>handlers.delete(fn),atlas:(...args)=>queued.push(['atlas',...args]),image:(...args)=>queued.push(['image',...args]),spritesheet:(...args)=>queued.push(['spritesheet',...args]),isLoading:()=>true,start(){}}};
+ const mapped=manifest.entries[0],deliveryURL=resolveExternalActorTextureURL(mapped.url),textures=new Set(),queued=[],handlers=new Set(),scene={textures:{exists:key=>textures.has(key),remove:key=>textures.delete(key)},load:{on:(name,fn)=>handlers.add(fn),off:(name,fn)=>handlers.delete(fn),atlas:(...args)=>queued.push(['atlas',...args]),image:(...args)=>queued.push(['image',...args]),spritesheet:(...args)=>queued.push(['spritesheet',...args]),isLoading:()=>true,start(){}}};
  const entry={key:'delivery-actor',type:'atlas',url:mapped.sourceURL,atlasURL:mapped.sourceURL.slice(0,-4)+'.json'},cache=new ActorTextureCache(scene),a=cache.acquire(entry),b=cache.acquire(entry);
- assert.deepEqual(queued,[['atlas',entry.key,mapped.url,entry.atlasURL]]);assert.equal(entry.url,mapped.sourceURL);assert.equal(cache.diagnostics.actorLeases,2);
+ assert.deepEqual(queued,[['atlas',entry.key,deliveryURL,entry.atlasURL]]);assert.equal(entry.url,mapped.sourceURL);assert.equal(cache.diagnostics.actorLeases,2);
  textures.add(entry.key);for(const handler of handlers)handler();assert.equal(await a.ready,true);a.release();assert.equal(textures.has(entry.key),true);b.release();assert.equal(textures.has(entry.key),false);assert.equal(cache.entries.size,0);cache.destroy();assert.equal(handlers.size,0);
  queued.length=0;queueAssets(scene,{actors:{actor:entry,sheet:{type:'spritesheet',url:mapped.sourceURL,frameWidth:128,frameHeight:96},image:{type:'image',url:mapped.sourceURL},hero:{type:'image',url:'assets/actors/warrior.png'}}});
- assert.deepEqual(queued,[['atlas','actor',mapped.url,entry.atlasURL],['spritesheet','sheet',mapped.url,{frameWidth:128,frameHeight:96}],['image','image',mapped.url],['image','hero','assets/actors/warrior.png']]);
+ assert.deepEqual(queued,[['atlas','actor',deliveryURL,entry.atlasURL],['spritesheet','sheet',deliveryURL,{frameWidth:128,frameHeight:96}],['image','image',deliveryURL],['image','hero','assets/actors/warrior.png']]);
+});
+
+test('external delivery is pinned to73 original atlases with unchanged exact Git binaries and no task10/player substitutions',()=>{
+ const config=JSON.parse(readFileSync(new URL('../assets/actors/external-delivery.json',import.meta.url)));
+ assert.equal(config.sourceCommit,'4a0eb5a77cbc75f9952922d4166af466971018e8');assert.equal(EXTERNAL_ACTOR_SOURCE_COMMIT,config.sourceCommit);assert.equal(config.entries.length,73);
+ const expected=new Set(Object.entries(LEGACY_ACTOR_NAMES).flatMap(([role,names])=>names.map(name=>'assets/actors/'+role+'/'+name+'.png')));
+ assert.deepEqual(new Set(config.entries.map(e=>e.sourceURL)),expected);assert.equal(Object.keys(EXTERNAL_ACTOR_TEXTURE_URLS).length,73);
+ for(const entry of config.entries){const current=readFileSync(new URL('../'+entry.url,import.meta.url)),pinned=execFileSync('git',['show',config.sourceCommit+':'+entry.url],{maxBuffer:32*1024*1024});assert.deepEqual(current,pinned);assert.equal(hash(current),entry.webpSHA256);assert.equal(current.length,entry.webpBytes);assert.equal(entry.remoteURL,'https://raw.githubusercontent.com/gigiloesp-dot/auralis/'+config.sourceCommit+'/'+entry.url);assert.equal(resolveActorTextureURL(entry.sourceURL),entry.remoteURL);assert.equal(EXTERNAL_ACTOR_TEXTURE_URLS[entry.url],entry.remoteURL);}
+ for(const entry of manifest.entries.filter(e=>e.sourceURL.includes('/task10-')))assert.equal(resolveActorTextureURL(entry.sourceURL),entry.url);
+ for(const path of ['assets/actors/heroes/warrior.png','assets/actors/hero-bodies/warrior.png','assets/equipment/sword.png','unknown.webp'])assert.equal(resolveActorTextureURL(path),path);
 });
