@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-000",
+      "assetName": "forestWolf",
+      "image": "assets/actors/task10-legacy-upgrade-a/forestWolf.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/forestWolf.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.48,
+      "minimumNewOpaquePixels": 4727,
+      "newFootlineRange": [
+        222,
+        223
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "52e2e30aeb22e220c95f97642667fcd3f1c270477e42ad2939a6a5bd8d139cad",
+      "originalPixelSHA256": "dfb3859558ae2973d8c3fdec77df19a25991dd887066a4c5a63e6bc40f4609bc"
+    },
+    {
+      "id": "forest-species-001",
+      "assetName": "wildBoar",
+      "image": "assets/actors/task10-legacy-upgrade-a/wildBoar.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/wildBoar.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.42,
+      "minimumNewOpaquePixels": 6431,
+      "newFootlineRange": [
+        222,
+        223
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "2da88ff600bac914e285162a4fb36735a0d172fc94d35750348b087e818136a0",
+      "originalPixelSHA256": "9b01905c00d371bac809dbda9ab686fc30c25bb2dfaa00cbf11988994a397ec0"
+    },
+    {
+      "id": "forest-species-002",
+      "assetName": "thornSnake",
+      "image": "assets/actors/task10-legacy-upgrade-a/thornSnake.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/thornSnake.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.38,
+      "minimumNewOpaquePixels": 4647,
+      "newFootlineRange": [
+        221,
+        222
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "8bad507ab9cc19e8b9e0cb2267bf00d3a80ebc2cad2b9bf6e717980dca3ef7f4",
+      "originalPixelSHA256": "19acaf0c3f8ca4afb1b707af8b9f3287ecc38d29a99a7526a7f506d01818b1e7"
+    },
+    {
+      "id": "forest-species-003",
+      "assetName": "forestOrc",
+      "image": "assets/actors/task10-legacy-upgrade-a/forestOrc.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/forestOrc.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.48,
+      "minimumNewOpaquePixels": 5678,
+      "newFootlineRange": [
+        222,
+        223
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "c5c371cefd577d4e9c3cff773c3c2428d9d9b653632dc4dba841838599459745",
+      "originalPixelSHA256": "c10abf14a0cdd8450c8381ca12968388edbda5bace8a74972bb816f337705b51"
+    },
+    {
+      "id": "forest-species-005",
+      "assetName": "forestBat",
+      "image": "assets/actors/task10-legacy-upgrade-a/forestBat.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/forestBat.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.55,
+      "minimumNewOpaquePixels": 1901,
+      "newFootlineRange": [
+        224,
+        224
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "b5d41d12e8ad16d22ee5cb6607b1a9b12700513b3392cdfbe00da66ed8adde63",
+      "originalPixelSHA256": "090504d40b5c54f6e737a44694c970cb0852082e71940082c0b81fe09e0c7ef3"
+    },
+    {
+      "id": "forest-species-007",
+      "assetName": "skeleton",
+      "image": "assets/actors/task10-legacy-upgrade-a/skeleton.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/skeleton.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.43,
+      "minimumNewOpaquePixels": 3418,
+      "newFootlineRange": [
+        222,
+        223
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "87d35ef7a32cb623e58a7acf76f1124c79e6c1562e5c124bc0eaf2f9367c20e7",
+      "originalPixelSHA256": "9de363c8dbba1f291f66e5c61e902ed0592f093154a9c7edee6d25fa34c4725e"
+    },
+    {
+      "id": "forest-species-009",
+      "assetName": "forestRaider",
+      "image": "assets/actors/task10-legacy-upgrade-a/forestRaider.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/forestRaider.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.43,
+      "minimumNewOpaquePixels": 5644,
+      "newFootlineRange": [
+        222,
+        222
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "1464c089053db8017d32590b11181a9f034494ce2120a242669ff77c9d1e8ea8",
+      "originalPixelSHA256": "a6e0c3aaabaa3c767422cc8f0829a586212a3adb2d6da7cb72d046567c2dd887"
+    },
+    {
+      "id": "forest-species-010",
+      "assetName": "bear",
+      "image": "assets/actors/task10-legacy-upgrade-a/bear.png",
+      "atlas": "assets/actors/task10-legacy-upgrade-a/bear.json",
+      "width": 1536,
+      "height": 1536,
+      "preservedOriginalFrames": 32,
+      "appendedFrames": 16,
+      "totalDistinctFrames": 48,
+      "oldRGBAExact": true,
+      "oldAtlasEntriesExact": true,
+      "originalScale": 0.65,
+      "minimumNewOpaquePixels": 4130,
+      "newFootlineRange": [
+        223,
+        224
+      ],
+      "rgbaBytes": 9437184,
+      "sha256": "8a62696db6a0e3ff8318e64d9ed09ab7c7780b4d28f7debd6dd738a744b433ff",
+      "originalPixelSHA256": "153e61a0185cdeece531f8813ef017adfd618da074b87d42e4492f7463ad5bb8"
+    }
+  ]
+}

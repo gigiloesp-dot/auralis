@@ -1,0 +1,253 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "totalNewPoses": 128,
+  "totalOldIdleIdentityComparisons": 64,
+  "models": [
+    {
+      "id": "forest-species-000",
+      "assetName": "forestWolf",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    },
+    {
+      "id": "forest-species-001",
+      "assetName": "wildBoar",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    },
+    {
+      "id": "forest-species-002",
+      "assetName": "thornSnake",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    },
+    {
+      "id": "forest-species-003",
+      "assetName": "forestOrc",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    },
+    {
+      "id": "forest-species-005",
+      "assetName": "forestBat",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    },
+    {
+      "id": "forest-species-007",
+      "assetName": "skeleton",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    },
+    {
+      "id": "forest-species-009",
+      "assetName": "forestRaider",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    },
+    {
+      "id": "forest-species-010",
+      "assetName": "bear",
+      "newPosesInspected": 16,
+      "directions": [
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw",
+        "n",
+        "ne"
+      ],
+      "banks": [
+        "hurt",
+        "death"
+      ],
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeOldIdleCompared": true,
+      "identityAndEquipmentMatch": true,
+      "fullAnatomy": true,
+      "detachedNeighborFragments": false,
+      "visibleMatte": false,
+      "deathDrawnCollapsed": true,
+      "old32RGBAExact": true
+    }
+  ],
+  "limitations": [
+    "These append single-frame hurt and death banks; original idle/run-a/run-b/attack banks are unchanged.",
+    "Some collapsed heads glance sideways; slight painted expression and proportion differences remain between poses.",
+    "New atlas decoded size is9437184bytes; original runtime scales and original frame origins are preserved."
+  ]
+}

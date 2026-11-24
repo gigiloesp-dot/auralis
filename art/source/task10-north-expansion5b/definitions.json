@@ -1,0 +1,210 @@
+[
+  {
+    "id": "north-species-066",
+    "spotId": "north-spot-066",
+    "baseType": "snowBear",
+    "level": 33,
+    "biome": "snow",
+    "slug": "snowshoe-antler-bear",
+    "names": {
+      "en": "Snowshoe Antler Bear",
+      "ru": "Медведь снегоступ-рогач",
+      "es": "Oso cornamenta raqueta"
+    },
+    "anatomy": "Broad four-legged polar bear with two wide palmate ice antlers, huge flat snowshoe paws, small round ears, thick short neck, blunt bear muzzle and tiny tail. Heavy quadruped, never humanoid.",
+    "targetIdleHeight": 86,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 13500,
+      "y": 13462
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "stomp",
+      "cleave"
+    ]
+  },
+  {
+    "id": "north-species-067",
+    "spotId": "north-spot-067",
+    "baseType": "iceBat",
+    "level": 36,
+    "biome": "volcanic",
+    "slug": "belljaw-cinder-bat",
+    "names": {
+      "en": "Belljaw Cinder Bat",
+      "ru": "Пепельный колоколочелюст",
+      "es": "Murciélago mandíbula campana"
+    },
+    "anatomy": "Flying bat with an enormous bell-shaped ochre lower jaw, tiny black head, two short ear stubs, two broad triangular charcoal bat wings with four bronze finger struts and scalloped membranes, short hooked feet. No bird feathers.",
+    "targetIdleHeight": 69,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 15460,
+      "y": 16467
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "flying",
+    "proposedAbilityPattern": [
+      "pounce",
+      "fan"
+    ]
+  },
+  {
+    "id": "north-species-068",
+    "spotId": "north-spot-068",
+    "baseType": "snowBear",
+    "level": 35,
+    "biome": "volcanic",
+    "slug": "furnace-hump-bear",
+    "names": {
+      "en": "Furnace Hump Bear",
+      "ru": "Горбомедведь-печь",
+      "es": "Oso joroba horno"
+    },
+    "anatomy": "Heavy quadrupedal charcoal bear with an enormous round terracotta furnace-like shoulder hump, low long snout, four heavy bronze bear paws, two small round ears and a short stub tail. Three thick blunt basalt ridges atop hump. No antlers.",
+    "targetIdleHeight": 86,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 17963,
+      "y": 9969
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "stomp",
+      "cleave"
+    ]
+  },
+  {
+    "id": "north-species-069",
+    "spotId": "north-spot-069",
+    "baseType": "iceBat",
+    "level": 31,
+    "biome": "volcanic",
+    "slug": "corkscrew-ear-bat",
+    "names": {
+      "en": "Corkscrew Ear Bat",
+      "ru": "Пепельный виткоух",
+      "es": "Murciélago oreja espiral"
+    },
+    "anatomy": "Flying russet bat with two huge spiral ram-like ears, small pear-shaped black torso, two very narrow elongated orange bat membrane wings, long pointed tail with diamond tip, two tiny hooked feet. No feathers.",
+    "targetIdleHeight": 69,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 15720,
+      "y": 5211
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "flying",
+    "proposedAbilityPattern": [
+      "pounce",
+      "fan"
+    ]
+  },
+  {
+    "id": "north-species-070",
+    "spotId": "north-spot-070",
+    "baseType": "iceWolf",
+    "level": 34,
+    "biome": "snow",
+    "slug": "crescent-mane-wolf",
+    "names": {
+      "en": "Crescent Mane Wolf",
+      "ru": "Волк лунной гривы",
+      "es": "Lobo melena creciente"
+    },
+    "anatomy": "Long-legged quadrupedal pale blue wolf, huge upright crescent shaped white neck mane, long pointed canine muzzle, narrow upright triangular ears, long thick upward curling silver tail, four slender canine legs. No antlers.",
+    "targetIdleHeight": 73,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 8957,
+      "y": 17672
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "pounce",
+      "charge"
+    ]
+  },
+  {
+    "id": "north-species-071",
+    "spotId": "north-spot-071",
+    "baseType": "iceBat",
+    "level": 22,
+    "biome": "snow",
+    "slug": "fan-tail-frost-bat",
+    "names": {
+      "en": "Fan Tail Frost Bat",
+      "ru": "Ледяной веерохвост",
+      "es": "Murciélago cola abanico"
+    },
+    "anatomy": "Flying compact indigo bat with huge broad white fan-shaped tail membrane, two short rounded scalloped bat wings, small round furry head, two tall narrow ears and two tiny feet. Four membrane wing fingers, no feathers.",
+    "targetIdleHeight": 64,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 4867,
+      "y": 4342
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "flying",
+    "proposedAbilityPattern": [
+      "pounce",
+      "fan"
+    ]
+  },
+  {
+    "id": "north-species-072",
+    "spotId": "north-spot-072",
+    "baseType": "iceBat",
+    "level": 27,
+    "biome": "snow",
+    "slug": "shovel-nose-snow-bat",
+    "names": {
+      "en": "Shovel Nose Snow Bat",
+      "ru": "Снежный лопатонос",
+      "es": "Murciélago nariz pala"
+    },
+    "anatomy": "Flying fluffy pale turquoise bat with a giant broad ivory shovel shaped nose, tiny broad-set black eyes, two short round ears, two large angular violet bat wings with deep scallops and long finger struts, tiny feet and no tail. No bird feathers.",
+    "targetIdleHeight": 69,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 8486,
+      "y": 7643
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "flying",
+    "proposedAbilityPattern": [
+      "pounce",
+      "fan"
+    ]
+  },
+  {
+    "id": "north-species-073",
+    "spotId": "north-spot-073",
+    "baseType": "iceWolf",
+    "level": 22,
+    "biome": "snow",
+    "slug": "ribbon-tail-ice-wolf",
+    "names": {
+      "en": "Ribbon Tail Ice Wolf",
+      "ru": "Волк лентохвост",
+      "es": "Lobo cola cinta"
+    },
+    "anatomy": "Low long quadrupedal snowy canine with short pointed ears, thick blunt canine muzzle, long horizontal back, four short sturdy legs, enormous flat paddle-shaped fur tail curved sideways, shaggy triangular cheek ruff. Navy paws, silver fur and blue tail tip. No large mane.",
+    "targetIdleHeight": 70,
+    "runtimeRegistered": false,
+    "campCoordinates": {
+      "x": 4078,
+      "y": 3054
+    },
+    "climateEvidence": "getRegionContent(north) camp coordinates + climateAt from js/world/climate.js",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "pounce",
+      "charge"
+    ]
+  }
+]

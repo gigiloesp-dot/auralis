@@ -1,3 +1,4 @@
+import {assertPreservedSpeciesArt} from './preservedSpeciesArt.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -113,7 +114,7 @@ test('all169 previous identities preserve descriptors, PNG/atlas bytes, traits,1
  const own=new Set(allEntries.map(([id])=>id));
  for(const row of previousModels){
   assert.ok(!own.has(row.id));const art=uniqueSpeciesArt(row.id);assert.ok(art,row.id+'/retained');
-  assert.equal(hash(JSON.stringify(art)),row.artHash,row.id+'/art descriptor');assert.equal(art.url,row.image);assert.equal(art.atlasURL,row.atlas);
+  assertPreservedSpeciesArt(row,art);
   assert.equal(hash(readFileSync(row.image)),row.imageSha256,row.id+'/PNG');assert.equal(hash(readFileSync(row.atlas)),row.atlasSha256,row.id+'/atlas');
   assert.deepEqual(speciesTraits(row.id),row.traits,row.id+'/traits');
   const c=getRegionContent(row.id.split('-species-')[0]),camp=c.camps.find(c=>c.speciesId===row.id);
@@ -126,12 +127,13 @@ test('new descriptors and texture/atlas bytes equal the frozen reviewed72-model 
  assert.equal(pendingModels.length,72);
  for(const model of pendingModels){assert.deepEqual(integratedSpeciesArt(model.id),model.entry,model.id+'/frozen descriptor');assert.equal(hash(readFileSync(model.entry.url)),model.imageSha256);assert.equal(hash(readFileSync(model.entry.atlasURL)),model.atlasSha256);}
 });
-test('accepted72-model registration produces241 primary models,218 six-bank models and16 honestly unfinished species',()=>{
- const entries=uniqueSpeciesEntries(),ids=new Set(entries.map(([id])=>id));assert.equal(entries.length,241);assert.equal(ids.size,241);assert.equal(Object.keys(INTEGRATED_SPECIES_ART).length,218);
+test('accepted72-model stage preserves all241 identities and at least218 six-bank models as the catalogue grows',()=>{
+ const stageIds=new Set([...previousModels.map(row=>row.id),...pendingModels.map(row=>row.id)]);assert.equal(stageIds.size,241);
+ const entries=uniqueSpeciesEntries().filter(([id])=>stageIds.has(id)),ids=new Set(entries.map(([id])=>id));assert.equal(entries.length,241);assert.equal(ids.size,241);assert.ok(entries.filter(([id])=>Object.hasOwn(INTEGRATED_SPECIES_ART,id)).length>=218);
  const camps=['forest','north','ancient','desert'].flatMap(r=>getRegionContent(r).camps);assert.equal(camps.length,257);
- const pending=camps.filter(c=>!uniqueSpeciesArt(c.speciesId));assert.equal(pending.length,16);
- assert.ok(pending.every(c=>/^north-species-0(5[89]|6[0-9]|7[0-3])$/.test(c.speciesId)),'north5a/5b remain explicitly unfinished');
+ const later=camps.filter(c=>!stageIds.has(c.speciesId));assert.equal(later.length,16);
+ assert.ok(later.every(c=>/^north-species-0(5[89]|6[0-9]|7[0-3])$/.test(c.speciesId)),'all sixteen later north identities remain accounted for');
  for(const field of ['key','url','atlasURL'])assert.equal(new Set(entries.map(([,e])=>e[field])).size,241,field+'/global identity collision');
  assert.equal(new Set(entries.map(([,e])=>hash(readFileSync(e.url)))).size,241,'global PNG uniqueness');
- assert.equal(entries.filter(([,e])=>e.poseBanks?.includes('hurt')&&e.drawnDeath).length,218);
+ assert.ok(entries.filter(([,e])=>e.poseBanks?.includes('hurt')&&e.drawnDeath).length>=218);
 });

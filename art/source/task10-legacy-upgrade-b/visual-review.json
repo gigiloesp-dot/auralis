@@ -1,0 +1,1251 @@
+{
+  "status": "PASS",
+  "totalNewPosesReviewed": 128,
+  "nativeContactSheetSize": {
+    "w": 1536,
+    "h": 768
+  },
+  "contactSheetRows": [
+    "original idle",
+    "new hurt",
+    "new death"
+  ],
+  "backgrounds": [
+    "#cab582",
+    "#202630"
+  ],
+  "models": [
+    {
+      "id": "forest-species-011",
+      "name": "spider",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "spider-beige-qa.jpg",
+      "darkContactSheet": "spider-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 196
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 196
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 196
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 196
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 196
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 195
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 196
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 196
+        }
+      ]
+    },
+    {
+      "id": "north-species-000",
+      "name": "iceWolf",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "iceWolf-beige-qa.jpg",
+      "darkContactSheet": "iceWolf-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 192
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 193
+        }
+      ]
+    },
+    {
+      "id": "north-species-001",
+      "name": "frostGolem",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "frostGolem-beige-qa.jpg",
+      "darkContactSheet": "frostGolem-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 222
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 222
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 223
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 224
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 223
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 223
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 223
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 223
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 223
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 223
+        }
+      ]
+    },
+    {
+      "id": "north-species-002",
+      "name": "snowRaider",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "snowRaider-beige-qa.jpg",
+      "darkContactSheet": "snowRaider-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 208
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        }
+      ]
+    },
+    {
+      "id": "north-species-004",
+      "name": "iceElemental",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "iceElemental-beige-qa.jpg",
+      "darkContactSheet": "iceElemental-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 207
+        }
+      ]
+    },
+    {
+      "id": "north-species-005",
+      "name": "snowBear",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "snowBear-beige-qa.jpg",
+      "darkContactSheet": "snowBear-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 221
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 219
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 220
+        }
+      ]
+    },
+    {
+      "id": "north-species-009",
+      "name": "wraith",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "wraith-beige-qa.jpg",
+      "darkContactSheet": "wraith-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 218
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 218
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 217
+        }
+      ]
+    },
+    {
+      "id": "north-species-016",
+      "name": "iceBat",
+      "matchingOriginalBodyAndStyle": true,
+      "referenceAllEightIdleDirections": true,
+      "beigeContactSheet": "iceBat-beige-qa.jpg",
+      "darkContactSheet": "iceBat-dark-qa.jpg",
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "hurt/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "hurt/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "hurt/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "hurt/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "hurt/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "hurt/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 197
+        },
+        {
+          "pose": "hurt/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/e",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/se",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/s",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/sw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/w",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/nw",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/n",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        },
+        {
+          "pose": "death/ne",
+          "status": "PASS",
+          "completeBody": true,
+          "noNeighborFragments": true,
+          "originalIdentity": true,
+          "stateReadable": true,
+          "measuredFootline": 198
+        }
+      ]
+    }
+  ]
+}

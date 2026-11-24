@@ -1,0 +1,39 @@
+{
+  "release": 25,
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "gameSourceCommit": "4136c4ba9e0bd32fe4ccbaa321733f445aa4128c",
+  "hostingCommit": "ae2767346c6c9bdb8540c1aa9a804d70ec7a49aa",
+  "uniquePrimaryModels": 169,
+  "sixBankModels": 146,
+  "legacy32FrameModels": 23,
+  "ci": {
+    "run": 45260947573,
+    "passed": 35,
+    "total": 35
+  },
+  "unit": {
+    "passed": 516,
+    "total": 516
+  },
+  "publicHTTPS": {
+    "runtimeSHA256": 748,
+    "realTouchAttackLootSaveReload": true,
+    "worldRespawnMs": 30000,
+    "regions": 4,
+    "dungeonEntrances": 17,
+    "difficulties": 3,
+    "fullScreenMapRegionLanguageCases": 12,
+    "coordinateErrorPixelsMax": 8.7e-05,
+    "groundLootDuplication": false,
+    "gatheringRegionsRealCanvasNPC": 4,
+    "gatheringLocale": "en",
+    "destroyBeforeInputPreupdateCycles": 250,
+    "retainedDeadInputs": 0,
+    "pageErrors": []
+  },
+  "physicalAndroid": false,
+  "notes": [
+    "The17\u00d73public cases verify entrances/renderer/session/exit, not51earned full clears.",
+    "Physical Android acceptance, final average-player giant tuning, unfinished Task10/AUR203 requirements remain open."
+  ]
+}

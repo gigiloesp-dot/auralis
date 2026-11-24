@@ -6,9 +6,9 @@ import {crc32,pngChunk,readPngChunks,decodePng,losslessPng} from '../scripts/los
 
 const signature=Buffer.from([137,80,78,71,13,10,26,10]);
 function paeth(a,b,c){const p=a+b-c,da=Math.abs(p-a),db=Math.abs(p-b),dc=Math.abs(p-c);return da<=db&&da<=dc?a:db<=dc?b:c;}
-function fixture(channels=4,filter=0,{depth=8,interlace=0}={}){
+function fixture(channels=4,filter=0,{depth=8,interlace=0,zeroRows=[]}={}){
  const width=37,height=15,stride=width*channels,pixels=Buffer.alloc(stride*height),scanlines=Buffer.alloc((stride+1)*height);
- for(let y=0;y<height;y++)for(let x=0;x<width;x++)for(let c=0;c<channels;c++)pixels[y*stride+x*channels+c]=c===3?(x%3?120:0):(x*17+y*9+c*41)&255;
+ for(let y=0;y<height;y++)for(let x=0;x<width;x++)for(let c=0;c<channels;c++)pixels[y*stride+x*channels+c]=zeroRows.includes(y)?0:c===3?(x%3?120:0):(x*17+y*9+c*41)&255;
  for(let y=0;y<height;y++){scanlines[y*(stride+1)]=filter;for(let x=0;x<stride;x++){const i=y*stride+x,a=x>=channels?pixels[i-channels]:0,b=y?pixels[i-stride]:0,c=y&&x>=channels?pixels[i-stride-channels]:0,p=[0,a,b,Math.floor((a+b)/2),paeth(a,b,c)][filter];scanlines[y*(stride+1)+1+x]=(pixels[i]-p)&255;}}
  const header=Buffer.alloc(13);header.writeUInt32BE(width);header.writeUInt32BE(height,4);header[8]=depth;header[9]=channels===4?6:2;header[12]=interlace;
  const compressed=deflateSync(scanlines,{level:0}),mid=Math.floor(compressed.length/2);
@@ -42,4 +42,17 @@ test('all committed PNG assets round trip without modifying source files',()=>{
   assert.deepEqual(readPngChunks(result.bytes).filter(c=>c.type!=='IDAT').map(c=>c.raw),readPngChunks(bytes).filter(c=>c.type!=='IDAT').map(c=>c.raw),file);
  }
  console.log('Committed PNG publication measurement',JSON.stringify({commit,files:files.length,supported,optimized,originalBytes,outputBytes,savedBytes:originalBytes-outputBytes}));
+});
+
+test('zero scanlines retain exact bytes of the pinned pre-optimization encoder',async()=>{
+ const oldSource=execFileSync('git',['show','1466628e16f1529fa2457dc86f1b6a6d0435253e:scripts/lossless-png.mjs']);
+ const previous=await import('data:text/javascript;base64,'+oldSource.toString('base64'));
+ for(const channels of[3,4])for(let filter=0;filter<5;filter++){
+  const {bytes}=fixture(channels,filter,{zeroRows:[0,1,4,7,8,14]});
+  assert.deepEqual(losslessPng(bytes).bytes,previous.losslessPng(bytes).bytes);
+ }
+ const {readFileSync}=await import('node:fs');
+ for(const file of['assets/actors/task10-outdoor/desert-world-stone-giant.png','assets/actors/task10-north-expansion5a/north-species-058.png','assets/actors/task10-legacy-upgrade-a/forestWolf.png']){
+  const bytes=readFileSync(file);assert.deepEqual(losslessPng(bytes).bytes,previous.losslessPng(bytes).bytes,file);
+ }
 });

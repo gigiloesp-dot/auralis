@@ -1,0 +1,2389 @@
+[
+  {
+    "id": "ancient-species-000",
+    "name": "fallenKnight",
+    "originalEntry": {
+      "key": "actor-monster-fallenKnight",
+      "url": "assets/actors/monsters/fallenKnight.png",
+      "atlasURL": "assets/actors/monsters/fallenKnight.json",
+      "scale": 0.5,
+      "annotationHeight": 87,
+      "baselines": {
+        "idle": 219,
+        "run-a": 207,
+        "run-b": 199,
+        "attack": 198
+      }
+    },
+    "originalPoseMetrics": {
+      "idle/e": {
+        "bounds": [
+          53,
+          63,
+          136,
+          219
+        ],
+        "height": 156,
+        "width": 83
+      },
+      "idle/se": {
+        "bounds": [
+          49,
+          63,
+          140,
+          219
+        ],
+        "height": 156,
+        "width": 91
+      },
+      "idle/s": {
+        "bounds": [
+          53,
+          61,
+          143,
+          218
+        ],
+        "height": 157,
+        "width": 90
+      },
+      "idle/sw": {
+        "bounds": [
+          41,
+          62,
+          150,
+          219
+        ],
+        "height": 157,
+        "width": 109
+      },
+      "idle/w": {
+        "bounds": [
+          49,
+          60,
+          142,
+          219
+        ],
+        "height": 159,
+        "width": 93
+      },
+      "idle/nw": {
+        "bounds": [
+          52,
+          61,
+          142,
+          218
+        ],
+        "height": 157,
+        "width": 90
+      },
+      "idle/n": {
+        "bounds": [
+          51,
+          58,
+          144,
+          218
+        ],
+        "height": 160,
+        "width": 93
+      },
+      "idle/ne": {
+        "bounds": [
+          52,
+          61,
+          150,
+          219
+        ],
+        "height": 158,
+        "width": 98
+      },
+      "run-a/e": {
+        "bounds": [
+          41,
+          67,
+          151,
+          207
+        ],
+        "height": 140,
+        "width": 110
+      },
+      "run-a/se": {
+        "bounds": [
+          47,
+          68,
+          147,
+          206
+        ],
+        "height": 138,
+        "width": 100
+      },
+      "run-a/s": {
+        "bounds": [
+          53,
+          67,
+          142,
+          208
+        ],
+        "height": 141,
+        "width": 89
+      },
+      "run-a/sw": {
+        "bounds": [
+          30,
+          69,
+          148,
+          206
+        ],
+        "height": 137,
+        "width": 118
+      },
+      "run-a/w": {
+        "bounds": [
+          30,
+          67,
+          146,
+          207
+        ],
+        "height": 140,
+        "width": 116
+      },
+      "run-a/nw": {
+        "bounds": [
+          36,
+          68,
+          151,
+          206
+        ],
+        "height": 138,
+        "width": 115
+      },
+      "run-a/n": {
+        "bounds": [
+          46,
+          63,
+          146,
+          209
+        ],
+        "height": 146,
+        "width": 100
+      },
+      "run-a/ne": {
+        "bounds": [
+          41,
+          67,
+          152,
+          205
+        ],
+        "height": 138,
+        "width": 111
+      },
+      "run-b/e": {
+        "bounds": [
+          44,
+          57,
+          159,
+          196
+        ],
+        "height": 139,
+        "width": 115
+      },
+      "run-b/se": {
+        "bounds": [
+          47,
+          61,
+          142,
+          199
+        ],
+        "height": 138,
+        "width": 95
+      },
+      "run-b/s": {
+        "bounds": [
+          50,
+          58,
+          141,
+          202
+        ],
+        "height": 144,
+        "width": 91
+      },
+      "run-b/sw": {
+        "bounds": [
+          30,
+          63,
+          142,
+          201
+        ],
+        "height": 138,
+        "width": 112
+      },
+      "run-b/w": {
+        "bounds": [
+          36,
+          57,
+          149,
+          196
+        ],
+        "height": 139,
+        "width": 113
+      },
+      "run-b/nw": {
+        "bounds": [
+          38,
+          59,
+          151,
+          199
+        ],
+        "height": 140,
+        "width": 113
+      },
+      "run-b/n": {
+        "bounds": [
+          54,
+          57,
+          147,
+          202
+        ],
+        "height": 145,
+        "width": 93
+      },
+      "run-b/ne": {
+        "bounds": [
+          48,
+          59,
+          151,
+          199
+        ],
+        "height": 140,
+        "width": 103
+      },
+      "attack/e": {
+        "bounds": [
+          43,
+          68,
+          175,
+          195
+        ],
+        "height": 127,
+        "width": 132
+      },
+      "attack/se": {
+        "bounds": [
+          43,
+          69,
+          176,
+          197
+        ],
+        "height": 128,
+        "width": 133
+      },
+      "attack/s": {
+        "bounds": [
+          51,
+          67,
+          140,
+          197
+        ],
+        "height": 130,
+        "width": 89
+      },
+      "attack/sw": {
+        "bounds": [
+          14,
+          71,
+          141,
+          198
+        ],
+        "height": 127,
+        "width": 127
+      },
+      "attack/w": {
+        "bounds": [
+          10,
+          71,
+          151,
+          198
+        ],
+        "height": 127,
+        "width": 141
+      },
+      "attack/nw": {
+        "bounds": [
+          18,
+          71,
+          146,
+          197
+        ],
+        "height": 126,
+        "width": 128
+      },
+      "attack/n": {
+        "bounds": [
+          45,
+          68,
+          151,
+          202
+        ],
+        "height": 134,
+        "width": 106
+      },
+      "attack/ne": {
+        "bounds": [
+          35,
+          70,
+          156,
+          198
+        ],
+        "height": 128,
+        "width": 121
+      }
+    },
+    "nativeIdleHeight": 160,
+    "nativeIdleWidth": 109
+  },
+  {
+    "id": "ancient-species-001",
+    "name": "desertSnake",
+    "originalEntry": {
+      "key": "actor-monster-desertSnake",
+      "url": "assets/actors/monsters/desertSnake.png",
+      "atlasURL": "assets/actors/monsters/desertSnake.json",
+      "scale": 0.36,
+      "annotationHeight": 67.4,
+      "baselines": {
+        "idle": 240,
+        "run-a": 224,
+        "run-b": 213,
+        "attack": 216
+      }
+    },
+    "originalPoseMetrics": {
+      "idle/e": {
+        "bounds": [
+          40,
+          79,
+          157,
+          240
+        ],
+        "height": 161,
+        "width": 117
+      },
+      "idle/se": {
+        "bounds": [
+          46,
+          75,
+          152,
+          240
+        ],
+        "height": 165,
+        "width": 106
+      },
+      "idle/s": {
+        "bounds": [
+          44,
+          73,
+          152,
+          240
+        ],
+        "height": 167,
+        "width": 108
+      },
+      "idle/sw": {
+        "bounds": [
+          42,
+          78,
+          153,
+          240
+        ],
+        "height": 162,
+        "width": 111
+      },
+      "idle/w": {
+        "bounds": [
+          36,
+          79,
+          151,
+          240
+        ],
+        "height": 161,
+        "width": 115
+      },
+      "idle/nw": {
+        "bounds": [
+          39,
+          73,
+          153,
+          240
+        ],
+        "height": 167,
+        "width": 114
+      },
+      "idle/n": {
+        "bounds": [
+          38,
+          74,
+          155,
+          240
+        ],
+        "height": 166,
+        "width": 117
+      },
+      "idle/ne": {
+        "bounds": [
+          40,
+          75,
+          152,
+          240
+        ],
+        "height": 165,
+        "width": 112
+      },
+      "run-a/e": {
+        "bounds": [
+          27,
+          77,
+          162,
+          222
+        ],
+        "height": 145,
+        "width": 135
+      },
+      "run-a/se": {
+        "bounds": [
+          27,
+          77,
+          152,
+          224
+        ],
+        "height": 147,
+        "width": 125
+      },
+      "run-a/s": {
+        "bounds": [
+          32,
+          74,
+          146,
+          224
+        ],
+        "height": 150,
+        "width": 114
+      },
+      "run-a/sw": {
+        "bounds": [
+          24,
+          79,
+          151,
+          224
+        ],
+        "height": 145,
+        "width": 127
+      },
+      "run-a/w": {
+        "bounds": [
+          28,
+          79,
+          170,
+          218
+        ],
+        "height": 139,
+        "width": 142
+      },
+      "run-a/nw": {
+        "bounds": [
+          34,
+          74,
+          174,
+          222
+        ],
+        "height": 148,
+        "width": 140
+      },
+      "run-a/n": {
+        "bounds": [
+          43,
+          72,
+          170,
+          227
+        ],
+        "height": 155,
+        "width": 127
+      },
+      "run-a/ne": {
+        "bounds": [
+          34,
+          74,
+          158,
+          225
+        ],
+        "height": 151,
+        "width": 124
+      },
+      "run-b/e": {
+        "bounds": [
+          29,
+          71,
+          172,
+          208
+        ],
+        "height": 137,
+        "width": 143
+      },
+      "run-b/se": {
+        "bounds": [
+          30,
+          69,
+          158,
+          208
+        ],
+        "height": 139,
+        "width": 128
+      },
+      "run-b/s": {
+        "bounds": [
+          43,
+          64,
+          150,
+          221
+        ],
+        "height": 157,
+        "width": 107
+      },
+      "run-b/sw": {
+        "bounds": [
+          42,
+          72,
+          169,
+          217
+        ],
+        "height": 145,
+        "width": 127
+      },
+      "run-b/w": {
+        "bounds": [
+          28,
+          72,
+          167,
+          217
+        ],
+        "height": 145,
+        "width": 139
+      },
+      "run-b/nw": {
+        "bounds": [
+          37,
+          65,
+          160,
+          213
+        ],
+        "height": 148,
+        "width": 123
+      },
+      "run-b/n": {
+        "bounds": [
+          38,
+          63,
+          158,
+          212
+        ],
+        "height": 149,
+        "width": 120
+      },
+      "run-b/ne": {
+        "bounds": [
+          28,
+          64,
+          159,
+          209
+        ],
+        "height": 145,
+        "width": 131
+      },
+      "attack/e": {
+        "bounds": [
+          27,
+          67,
+          178,
+          215
+        ],
+        "height": 148,
+        "width": 151
+      },
+      "attack/se": {
+        "bounds": [
+          33,
+          66,
+          167,
+          216
+        ],
+        "height": 150,
+        "width": 134
+      },
+      "attack/s": {
+        "bounds": [
+          35,
+          62,
+          156,
+          216
+        ],
+        "height": 154,
+        "width": 121
+      },
+      "attack/sw": {
+        "bounds": [
+          29,
+          68,
+          160,
+          216
+        ],
+        "height": 148,
+        "width": 131
+      },
+      "attack/w": {
+        "bounds": [
+          18,
+          67,
+          167,
+          215
+        ],
+        "height": 148,
+        "width": 149
+      },
+      "attack/nw": {
+        "bounds": [
+          20,
+          66,
+          167,
+          214
+        ],
+        "height": 148,
+        "width": 147
+      },
+      "attack/n": {
+        "bounds": [
+          38,
+          64,
+          159,
+          215
+        ],
+        "height": 151,
+        "width": 121
+      },
+      "attack/ne": {
+        "bounds": [
+          29,
+          61,
+          169,
+          216
+        ],
+        "height": 155,
+        "width": 140
+      }
+    },
+    "nativeIdleHeight": 167,
+    "nativeIdleWidth": 117
+  },
+  {
+    "id": "ancient-species-002",
+    "name": "scarab",
+    "originalEntry": {
+      "key": "actor-monster-scarab",
+      "url": "assets/actors/monsters/scarab.png",
+      "atlasURL": "assets/actors/monsters/scarab.json",
+      "scale": 0.43,
+      "annotationHeight": 59.6,
+      "baselines": {
+        "idle": 207,
+        "run-a": 199,
+        "run-b": 188,
+        "attack": 181
+      }
+    },
+    "originalPoseMetrics": {
+      "idle/e": {
+        "bounds": [
+          26,
+          87,
+          169,
+          202
+        ],
+        "height": 115,
+        "width": 143
+      },
+      "idle/se": {
+        "bounds": [
+          27,
+          88,
+          166,
+          208
+        ],
+        "height": 120,
+        "width": 139
+      },
+      "idle/s": {
+        "bounds": [
+          28,
+          85,
+          161,
+          204
+        ],
+        "height": 119,
+        "width": 133
+      },
+      "idle/sw": {
+        "bounds": [
+          20,
+          87,
+          161,
+          207
+        ],
+        "height": 120,
+        "width": 141
+      },
+      "idle/w": {
+        "bounds": [
+          18,
+          87,
+          163,
+          203
+        ],
+        "height": 116,
+        "width": 145
+      },
+      "idle/nw": {
+        "bounds": [
+          26,
+          82,
+          162,
+          207
+        ],
+        "height": 125,
+        "width": 136
+      },
+      "idle/n": {
+        "bounds": [
+          31,
+          78,
+          157,
+          208
+        ],
+        "height": 130,
+        "width": 126
+      },
+      "idle/ne": {
+        "bounds": [
+          27,
+          80,
+          157,
+          205
+        ],
+        "height": 125,
+        "width": 130
+      },
+      "run-a/e": {
+        "bounds": [
+          27,
+          77,
+          170,
+          191
+        ],
+        "height": 114,
+        "width": 143
+      },
+      "run-a/se": {
+        "bounds": [
+          29,
+          76,
+          164,
+          201
+        ],
+        "height": 125,
+        "width": 135
+      },
+      "run-a/s": {
+        "bounds": [
+          33,
+          75,
+          159,
+          198
+        ],
+        "height": 123,
+        "width": 126
+      },
+      "run-a/sw": {
+        "bounds": [
+          23,
+          76,
+          166,
+          197
+        ],
+        "height": 121,
+        "width": 143
+      },
+      "run-a/w": {
+        "bounds": [
+          17,
+          76,
+          163,
+          194
+        ],
+        "height": 118,
+        "width": 146
+      },
+      "run-a/nw": {
+        "bounds": [
+          22,
+          67,
+          165,
+          199
+        ],
+        "height": 132,
+        "width": 143
+      },
+      "run-a/n": {
+        "bounds": [
+          31,
+          66,
+          156,
+          206
+        ],
+        "height": 140,
+        "width": 125
+      },
+      "run-a/ne": {
+        "bounds": [
+          25,
+          67,
+          160,
+          200
+        ],
+        "height": 133,
+        "width": 135
+      },
+      "run-b/e": {
+        "bounds": [
+          28,
+          70,
+          170,
+          180
+        ],
+        "height": 110,
+        "width": 142
+      },
+      "run-b/se": {
+        "bounds": [
+          28,
+          67,
+          164,
+          192
+        ],
+        "height": 125,
+        "width": 136
+      },
+      "run-b/s": {
+        "bounds": [
+          26,
+          65,
+          156,
+          189
+        ],
+        "height": 124,
+        "width": 130
+      },
+      "run-b/sw": {
+        "bounds": [
+          22,
+          65,
+          163,
+          190
+        ],
+        "height": 125,
+        "width": 141
+      },
+      "run-b/w": {
+        "bounds": [
+          17,
+          69,
+          160,
+          182
+        ],
+        "height": 113,
+        "width": 143
+      },
+      "run-b/nw": {
+        "bounds": [
+          23,
+          55,
+          168,
+          186
+        ],
+        "height": 131,
+        "width": 145
+      },
+      "run-b/n": {
+        "bounds": [
+          31,
+          56,
+          157,
+          192
+        ],
+        "height": 136,
+        "width": 126
+      },
+      "run-b/ne": {
+        "bounds": [
+          25,
+          57,
+          160,
+          186
+        ],
+        "height": 129,
+        "width": 135
+      },
+      "attack/e": {
+        "bounds": [
+          20,
+          57,
+          169,
+          182
+        ],
+        "height": 125,
+        "width": 149
+      },
+      "attack/se": {
+        "bounds": [
+          23,
+          55,
+          165,
+          178
+        ],
+        "height": 123,
+        "width": 142
+      },
+      "attack/s": {
+        "bounds": [
+          24,
+          54,
+          164,
+          174
+        ],
+        "height": 120,
+        "width": 140
+      },
+      "attack/sw": {
+        "bounds": [
+          19,
+          55,
+          162,
+          173
+        ],
+        "height": 118,
+        "width": 143
+      },
+      "attack/w": {
+        "bounds": [
+          18,
+          58,
+          169,
+          180
+        ],
+        "height": 122,
+        "width": 151
+      },
+      "attack/nw": {
+        "bounds": [
+          19,
+          53,
+          167,
+          180
+        ],
+        "height": 127,
+        "width": 148
+      },
+      "attack/n": {
+        "bounds": [
+          24,
+          48,
+          165,
+          185
+        ],
+        "height": 137,
+        "width": 141
+      },
+      "attack/ne": {
+        "bounds": [
+          25,
+          55,
+          168,
+          183
+        ],
+        "height": 128,
+        "width": 143
+      }
+    },
+    "nativeIdleHeight": 130,
+    "nativeIdleWidth": 145
+  },
+  {
+    "id": "ancient-species-004",
+    "name": "ancientSentinel",
+    "originalEntry": {
+      "key": "actor-monster-ancientSentinel",
+      "url": "assets/actors/monsters/ancientSentinel.png",
+      "atlasURL": "assets/actors/monsters/ancientSentinel.json",
+      "scale": 0.68,
+      "annotationHeight": 96.74000000000001,
+      "baselines": {
+        "idle": 207.5,
+        "run-a": 201,
+        "run-b": 193,
+        "attack": 180
+      }
+    },
+    "originalPoseMetrics": {
+      "idle/e": {
+        "bounds": [
+          54,
+          78,
+          140,
+          208
+        ],
+        "height": 130,
+        "width": 86
+      },
+      "idle/se": {
+        "bounds": [
+          46,
+          77,
+          146,
+          207
+        ],
+        "height": 130,
+        "width": 100
+      },
+      "idle/s": {
+        "bounds": [
+          43,
+          76,
+          150,
+          205
+        ],
+        "height": 129,
+        "width": 107
+      },
+      "idle/sw": {
+        "bounds": [
+          45,
+          77,
+          143,
+          207
+        ],
+        "height": 130,
+        "width": 98
+      },
+      "idle/w": {
+        "bounds": [
+          52,
+          76,
+          130,
+          207
+        ],
+        "height": 131,
+        "width": 78
+      },
+      "idle/nw": {
+        "bounds": [
+          41,
+          76,
+          146,
+          208
+        ],
+        "height": 132,
+        "width": 105
+      },
+      "idle/n": {
+        "bounds": [
+          38,
+          75,
+          149,
+          207
+        ],
+        "height": 132,
+        "width": 111
+      },
+      "idle/ne": {
+        "bounds": [
+          44,
+          77,
+          144,
+          208
+        ],
+        "height": 131,
+        "width": 100
+      },
+      "run-a/e": {
+        "bounds": [
+          49,
+          69,
+          150,
+          198
+        ],
+        "height": 129,
+        "width": 101
+      },
+      "run-a/se": {
+        "bounds": [
+          45,
+          70,
+          149,
+          200
+        ],
+        "height": 130,
+        "width": 104
+      },
+      "run-a/s": {
+        "bounds": [
+          42,
+          68,
+          151,
+          201
+        ],
+        "height": 133,
+        "width": 109
+      },
+      "run-a/sw": {
+        "bounds": [
+          44,
+          70,
+          149,
+          201
+        ],
+        "height": 131,
+        "width": 105
+      },
+      "run-a/w": {
+        "bounds": [
+          44,
+          70,
+          146,
+          198
+        ],
+        "height": 128,
+        "width": 102
+      },
+      "run-a/nw": {
+        "bounds": [
+          39,
+          70,
+          149,
+          201
+        ],
+        "height": 131,
+        "width": 110
+      },
+      "run-a/n": {
+        "bounds": [
+          34,
+          70,
+          151,
+          201
+        ],
+        "height": 131,
+        "width": 117
+      },
+      "run-a/ne": {
+        "bounds": [
+          39,
+          71,
+          147,
+          201
+        ],
+        "height": 130,
+        "width": 108
+      },
+      "run-b/e": {
+        "bounds": [
+          49,
+          64,
+          153,
+          192
+        ],
+        "height": 128,
+        "width": 104
+      },
+      "run-b/se": {
+        "bounds": [
+          45,
+          65,
+          148,
+          193
+        ],
+        "height": 128,
+        "width": 103
+      },
+      "run-b/s": {
+        "bounds": [
+          41,
+          64,
+          150,
+          194
+        ],
+        "height": 130,
+        "width": 109
+      },
+      "run-b/sw": {
+        "bounds": [
+          43,
+          65,
+          150,
+          193
+        ],
+        "height": 128,
+        "width": 107
+      },
+      "run-b/w": {
+        "bounds": [
+          42,
+          65,
+          146,
+          192
+        ],
+        "height": 127,
+        "width": 104
+      },
+      "run-b/nw": {
+        "bounds": [
+          41,
+          65,
+          148,
+          194
+        ],
+        "height": 129,
+        "width": 107
+      },
+      "run-b/n": {
+        "bounds": [
+          33,
+          64,
+          152,
+          194
+        ],
+        "height": 130,
+        "width": 119
+      },
+      "run-b/ne": {
+        "bounds": [
+          41,
+          66,
+          146,
+          193
+        ],
+        "height": 127,
+        "width": 105
+      },
+      "attack/e": {
+        "bounds": [
+          50,
+          74,
+          151,
+          180
+        ],
+        "height": 106,
+        "width": 101
+      },
+      "attack/se": {
+        "bounds": [
+          41,
+          75,
+          150,
+          181
+        ],
+        "height": 106,
+        "width": 109
+      },
+      "attack/s": {
+        "bounds": [
+          43,
+          76,
+          149,
+          180
+        ],
+        "height": 104,
+        "width": 106
+      },
+      "attack/sw": {
+        "bounds": [
+          46,
+          76,
+          151,
+          181
+        ],
+        "height": 105,
+        "width": 105
+      },
+      "attack/w": {
+        "bounds": [
+          47,
+          74,
+          142,
+          181
+        ],
+        "height": 107,
+        "width": 95
+      },
+      "attack/nw": {
+        "bounds": [
+          38,
+          76,
+          150,
+          180
+        ],
+        "height": 104,
+        "width": 112
+      },
+      "attack/n": {
+        "bounds": [
+          36,
+          77,
+          150,
+          180
+        ],
+        "height": 103,
+        "width": 114
+      },
+      "attack/ne": {
+        "bounds": [
+          40,
+          76,
+          147,
+          180
+        ],
+        "height": 104,
+        "width": 107
+      }
+    },
+    "nativeIdleHeight": 132,
+    "nativeIdleWidth": 111
+  },
+  {
+    "id": "ancient-species-006",
+    "name": "ancientGargoyle",
+    "originalEntry": {
+      "key": "actor-monster-ancientGargoyle",
+      "url": "assets/actors/monsters/ancientGargoyle.png",
+      "atlasURL": "assets/actors/monsters/ancientGargoyle.json",
+      "scale": 0.52,
+      "annotationHeight": 74.04,
+      "baselines": {
+        "idle": 202,
+        "run-a": 191,
+        "run-b": 177,
+        "attack": 184
+      }
+    },
+    "originalPoseMetrics": {
+      "idle/e": {
+        "bounds": [
+          40,
+          76,
+          155,
+          202
+        ],
+        "height": 126,
+        "width": 115
+      },
+      "idle/se": {
+        "bounds": [
+          42,
+          74,
+          145,
+          200
+        ],
+        "height": 126,
+        "width": 103
+      },
+      "idle/s": {
+        "bounds": [
+          42,
+          79,
+          146,
+          198
+        ],
+        "height": 119,
+        "width": 104
+      },
+      "idle/sw": {
+        "bounds": [
+          39,
+          74,
+          148,
+          201
+        ],
+        "height": 127,
+        "width": 109
+      },
+      "idle/w": {
+        "bounds": [
+          27,
+          75,
+          149,
+          202
+        ],
+        "height": 127,
+        "width": 122
+      },
+      "idle/nw": {
+        "bounds": [
+          35,
+          74,
+          151,
+          204
+        ],
+        "height": 130,
+        "width": 116
+      },
+      "idle/n": {
+        "bounds": [
+          42,
+          69,
+          145,
+          210
+        ],
+        "height": 141,
+        "width": 103
+      },
+      "idle/ne": {
+        "bounds": [
+          32,
+          75,
+          143,
+          202
+        ],
+        "height": 127,
+        "width": 111
+      },
+      "run-a/e": {
+        "bounds": [
+          25,
+          39,
+          168,
+          194
+        ],
+        "height": 155,
+        "width": 143
+      },
+      "run-a/se": {
+        "bounds": [
+          23,
+          43,
+          154,
+          191
+        ],
+        "height": 148,
+        "width": 131
+      },
+      "run-a/s": {
+        "bounds": [
+          24,
+          42,
+          163,
+          192
+        ],
+        "height": 150,
+        "width": 139
+      },
+      "run-a/sw": {
+        "bounds": [
+          29,
+          46,
+          163,
+          191
+        ],
+        "height": 145,
+        "width": 134
+      },
+      "run-a/w": {
+        "bounds": [
+          17,
+          44,
+          160,
+          186
+        ],
+        "height": 142,
+        "width": 143
+      },
+      "run-a/nw": {
+        "bounds": [
+          28,
+          42,
+          167,
+          186
+        ],
+        "height": 144,
+        "width": 139
+      },
+      "run-a/n": {
+        "bounds": [
+          14,
+          39,
+          177,
+          194
+        ],
+        "height": 155,
+        "width": 163
+      },
+      "run-a/ne": {
+        "bounds": [
+          23,
+          40,
+          163,
+          184
+        ],
+        "height": 144,
+        "width": 140
+      },
+      "run-b/e": {
+        "bounds": [
+          23,
+          67,
+          162,
+          174
+        ],
+        "height": 107,
+        "width": 139
+      },
+      "run-b/se": {
+        "bounds": [
+          28,
+          69,
+          165,
+          177
+        ],
+        "height": 108,
+        "width": 137
+      },
+      "run-b/s": {
+        "bounds": [
+          31,
+          67,
+          160,
+          173
+        ],
+        "height": 106,
+        "width": 129
+      },
+      "run-b/sw": {
+        "bounds": [
+          26,
+          71,
+          163,
+          176
+        ],
+        "height": 105,
+        "width": 137
+      },
+      "run-b/w": {
+        "bounds": [
+          18,
+          67,
+          153,
+          174
+        ],
+        "height": 107,
+        "width": 135
+      },
+      "run-b/nw": {
+        "bounds": [
+          27,
+          66,
+          156,
+          185
+        ],
+        "height": 119,
+        "width": 129
+      },
+      "run-b/n": {
+        "bounds": [
+          26,
+          54,
+          167,
+          190
+        ],
+        "height": 136,
+        "width": 141
+      },
+      "run-b/ne": {
+        "bounds": [
+          28,
+          69,
+          164,
+          185
+        ],
+        "height": 116,
+        "width": 136
+      },
+      "attack/e": {
+        "bounds": [
+          27,
+          67,
+          171,
+          180
+        ],
+        "height": 113,
+        "width": 144
+      },
+      "attack/se": {
+        "bounds": [
+          38,
+          65,
+          174,
+          181
+        ],
+        "height": 116,
+        "width": 136
+      },
+      "attack/s": {
+        "bounds": [
+          40,
+          63,
+          149,
+          182
+        ],
+        "height": 119,
+        "width": 109
+      },
+      "attack/sw": {
+        "bounds": [
+          19,
+          65,
+          148,
+          184
+        ],
+        "height": 119,
+        "width": 129
+      },
+      "attack/w": {
+        "bounds": [
+          11,
+          68,
+          152,
+          179
+        ],
+        "height": 111,
+        "width": 141
+      },
+      "attack/nw": {
+        "bounds": [
+          19,
+          62,
+          159,
+          188
+        ],
+        "height": 126,
+        "width": 140
+      },
+      "attack/n": {
+        "bounds": [
+          31,
+          60,
+          153,
+          193
+        ],
+        "height": 133,
+        "width": 122
+      },
+      "attack/ne": {
+        "bounds": [
+          26,
+          63,
+          169,
+          185
+        ],
+        "height": 122,
+        "width": 143
+      }
+    },
+    "nativeIdleHeight": 141,
+    "nativeIdleWidth": 122
+  },
+  {
+    "id": "ancient-species-009",
+    "name": "arcaneWisp",
+    "originalEntry": {
+      "key": "actor-monster-arcaneWisp",
+      "url": "assets/actors/monsters/arcaneWisp.png",
+      "atlasURL": "assets/actors/monsters/arcaneWisp.json",
+      "scale": 0.37,
+      "annotationHeight": 74.23,
+      "baselines": {
+        "idle": 223,
+        "run-a": 212,
+        "run-b": 210,
+        "attack": 214
+      }
+    },
+    "originalPoseMetrics": {
+      "idle/e": {
+        "bounds": [
+          79,
+          46,
+          164,
+          222
+        ],
+        "height": 176,
+        "width": 85
+      },
+      "idle/se": {
+        "bounds": [
+          75,
+          43,
+          166,
+          221
+        ],
+        "height": 178,
+        "width": 91
+      },
+      "idle/s": {
+        "bounds": [
+          68,
+          43,
+          164,
+          224
+        ],
+        "height": 181,
+        "width": 96
+      },
+      "idle/sw": {
+        "bounds": [
+          59,
+          45,
+          154,
+          223
+        ],
+        "height": 178,
+        "width": 95
+      },
+      "idle/w": {
+        "bounds": [
+          60,
+          45,
+          146,
+          223
+        ],
+        "height": 178,
+        "width": 86
+      },
+      "idle/nw": {
+        "bounds": [
+          56,
+          44,
+          144,
+          223
+        ],
+        "height": 179,
+        "width": 88
+      },
+      "idle/n": {
+        "bounds": [
+          51,
+          43,
+          147,
+          223
+        ],
+        "height": 180,
+        "width": 96
+      },
+      "idle/ne": {
+        "bounds": [
+          51,
+          45,
+          142,
+          221
+        ],
+        "height": 176,
+        "width": 91
+      },
+      "run-a/e": {
+        "bounds": [
+          49,
+          38,
+          166,
+          213
+        ],
+        "height": 175,
+        "width": 117
+      },
+      "run-a/se": {
+        "bounds": [
+          42,
+          37,
+          167,
+          212
+        ],
+        "height": 175,
+        "width": 125
+      },
+      "run-a/s": {
+        "bounds": [
+          39,
+          37,
+          159,
+          212
+        ],
+        "height": 175,
+        "width": 120
+      },
+      "run-a/sw": {
+        "bounds": [
+          34,
+          40,
+          154,
+          212
+        ],
+        "height": 172,
+        "width": 120
+      },
+      "run-a/w": {
+        "bounds": [
+          38,
+          39,
+          147,
+          212
+        ],
+        "height": 173,
+        "width": 109
+      },
+      "run-a/nw": {
+        "bounds": [
+          31,
+          40,
+          152,
+          212
+        ],
+        "height": 172,
+        "width": 121
+      },
+      "run-a/n": {
+        "bounds": [
+          28,
+          40,
+          158,
+          212
+        ],
+        "height": 172,
+        "width": 130
+      },
+      "run-a/ne": {
+        "bounds": [
+          32,
+          39,
+          158,
+          212
+        ],
+        "height": 173,
+        "width": 126
+      },
+      "run-b/e": {
+        "bounds": [
+          63,
+          34,
+          183,
+          211
+        ],
+        "height": 177,
+        "width": 120
+      },
+      "run-b/se": {
+        "bounds": [
+          60,
+          34,
+          187,
+          211
+        ],
+        "height": 177,
+        "width": 127
+      },
+      "run-b/s": {
+        "bounds": [
+          60,
+          34,
+          182,
+          210
+        ],
+        "height": 176,
+        "width": 122
+      },
+      "run-b/sw": {
+        "bounds": [
+          51,
+          36,
+          173,
+          209
+        ],
+        "height": 173,
+        "width": 122
+      },
+      "run-b/w": {
+        "bounds": [
+          42,
+          33,
+          170,
+          210
+        ],
+        "height": 177,
+        "width": 128
+      },
+      "run-b/nw": {
+        "bounds": [
+          43,
+          37,
+          165,
+          210
+        ],
+        "height": 173,
+        "width": 122
+      },
+      "run-b/n": {
+        "bounds": [
+          41,
+          34,
+          175,
+          210
+        ],
+        "height": 176,
+        "width": 134
+      },
+      "run-b/ne": {
+        "bounds": [
+          45,
+          37,
+          165,
+          209
+        ],
+        "height": 172,
+        "width": 120
+      },
+      "attack/e": {
+        "bounds": [
+          66,
+          39,
+          169,
+          214
+        ],
+        "height": 175,
+        "width": 103
+      },
+      "attack/se": {
+        "bounds": [
+          70,
+          33,
+          160,
+          213
+        ],
+        "height": 180,
+        "width": 90
+      },
+      "attack/s": {
+        "bounds": [
+          68,
+          35,
+          152,
+          214
+        ],
+        "height": 179,
+        "width": 84
+      },
+      "attack/sw": {
+        "bounds": [
+          54,
+          39,
+          153,
+          214
+        ],
+        "height": 175,
+        "width": 99
+      },
+      "attack/w": {
+        "bounds": [
+          41,
+          40,
+          145,
+          215
+        ],
+        "height": 175,
+        "width": 104
+      },
+      "attack/nw": {
+        "bounds": [
+          42,
+          38,
+          144,
+          214
+        ],
+        "height": 176,
+        "width": 102
+      },
+      "attack/n": {
+        "bounds": [
+          52,
+          35,
+          148,
+          215
+        ],
+        "height": 180,
+        "width": 96
+      },
+      "attack/ne": {
+        "bounds": [
+          54,
+          39,
+          152,
+          215
+        ],
+        "height": 176,
+        "width": 98
+      }
+    },
+    "nativeIdleHeight": 181,
+    "nativeIdleWidth": 96
+  },
+  {
+    "id": "ancient-species-032",
+    "name": "voidElemental",
+    "originalEntry": {
+      "key": "actor-monster-voidElemental",
+      "url": "assets/actors/monsters/voidElemental.png",
+      "atlasURL": "assets/actors/monsters/voidElemental.json",
+      "scale": 0.4,
+      "annotationHeight": 86.80000000000001,
+      "baselines": {
+        "idle": 223,
+        "run-a": 214,
+        "run-b": 223,
+        "attack": 221
+      }
+    },
+    "originalPoseMetrics": {
+      "idle/e": {
+        "bounds": [
+          50,
+          25,
+          155,
+          223
+        ],
+        "height": 198,
+        "width": 105
+      },
+      "idle/se": {
+        "bounds": [
+          52,
+          27,
+          160,
+          222
+        ],
+        "height": 195,
+        "width": 108
+      },
+      "idle/s": {
+        "bounds": [
+          48,
+          33,
+          157,
+          221
+        ],
+        "height": 188,
+        "width": 109
+      },
+      "idle/sw": {
+        "bounds": [
+          42,
+          25,
+          142,
+          221
+        ],
+        "height": 196,
+        "width": 100
+      },
+      "idle/w": {
+        "bounds": [
+          35,
+          25,
+          143,
+          222
+        ],
+        "height": 197,
+        "width": 108
+      },
+      "idle/nw": {
+        "bounds": [
+          34,
+          25,
+          142,
+          223
+        ],
+        "height": 198,
+        "width": 108
+      },
+      "idle/n": {
+        "bounds": [
+          43,
+          30,
+          152,
+          225
+        ],
+        "height": 195,
+        "width": 109
+      },
+      "idle/ne": {
+        "bounds": [
+          51,
+          33,
+          149,
+          224
+        ],
+        "height": 191,
+        "width": 98
+      },
+      "run-a/e": {
+        "bounds": [
+          49,
+          21,
+          174,
+          215
+        ],
+        "height": 194,
+        "width": 125
+      },
+      "run-a/se": {
+        "bounds": [
+          37,
+          24,
+          177,
+          214
+        ],
+        "height": 190,
+        "width": 140
+      },
+      "run-a/s": {
+        "bounds": [
+          33,
+          29,
+          169,
+          213
+        ],
+        "height": 184,
+        "width": 136
+      },
+      "run-a/sw": {
+        "bounds": [
+          20,
+          21,
+          157,
+          212
+        ],
+        "height": 191,
+        "width": 137
+      },
+      "run-a/w": {
+        "bounds": [
+          11,
+          22,
+          155,
+          208
+        ],
+        "height": 186,
+        "width": 144
+      },
+      "run-a/nw": {
+        "bounds": [
+          8,
+          23,
+          163,
+          215
+        ],
+        "height": 192,
+        "width": 155
+      },
+      "run-a/n": {
+        "bounds": [
+          15,
+          24,
+          160,
+          212
+        ],
+        "height": 188,
+        "width": 145
+      },
+      "run-a/ne": {
+        "bounds": [
+          29,
+          27,
+          165,
+          210
+        ],
+        "height": 183,
+        "width": 136
+      },
+      "run-b/e": {
+        "bounds": [
+          48,
+          24,
+          183,
+          222
+        ],
+        "height": 198,
+        "width": 135
+      },
+      "run-b/se": {
+        "bounds": [
+          43,
+          26,
+          185,
+          222
+        ],
+        "height": 196,
+        "width": 142
+      },
+      "run-b/s": {
+        "bounds": [
+          38,
+          32,
+          169,
+          222
+        ],
+        "height": 190,
+        "width": 131
+      },
+      "run-b/sw": {
+        "bounds": [
+          22,
+          25,
+          154,
+          223
+        ],
+        "height": 198,
+        "width": 132
+      },
+      "run-b/w": {
+        "bounds": [
+          17,
+          23,
+          150,
+          222
+        ],
+        "height": 199,
+        "width": 133
+      },
+      "run-b/nw": {
+        "bounds": [
+          22,
+          28,
+          155,
+          220
+        ],
+        "height": 192,
+        "width": 133
+      },
+      "run-b/n": {
+        "bounds": [
+          28,
+          29,
+          166,
+          222
+        ],
+        "height": 193,
+        "width": 138
+      },
+      "run-b/ne": {
+        "bounds": [
+          28,
+          33,
+          165,
+          216
+        ],
+        "height": 183,
+        "width": 137
+      },
+      "attack/e": {
+        "bounds": [
+          38,
+          29,
+          172,
+          221
+        ],
+        "height": 192,
+        "width": 134
+      },
+      "attack/se": {
+        "bounds": [
+          50,
+          28,
+          167,
+          218
+        ],
+        "height": 190,
+        "width": 117
+      },
+      "attack/s": {
+        "bounds": [
+          48,
+          34,
+          146,
+          218
+        ],
+        "height": 184,
+        "width": 98
+      },
+      "attack/sw": {
+        "bounds": [
+          23,
+          27,
+          144,
+          219
+        ],
+        "height": 192,
+        "width": 121
+      },
+      "attack/w": {
+        "bounds": [
+          10,
+          27,
+          143,
+          222
+        ],
+        "height": 195,
+        "width": 133
+      },
+      "attack/nw": {
+        "bounds": [
+          11,
+          27,
+          142,
+          218
+        ],
+        "height": 191,
+        "width": 131
+      },
+      "attack/n": {
+        "bounds": [
+          33,
+          31,
+          151,
+          223
+        ],
+        "height": 192,
+        "width": 118
+      },
+      "attack/ne": {
+        "bounds": [
+          47,
+          34,
+          158,
+          222
+        ],
+        "height": 188,
+        "width": 111
+      }
+    },
+    "nativeIdleHeight": 198,
+    "nativeIdleWidth": 109
+  }
+]

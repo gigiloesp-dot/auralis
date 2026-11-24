@@ -1,3 +1,4 @@
+import {assertPreservedSpeciesArt} from './preservedSpeciesArt.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -110,7 +111,7 @@ const previousModels=[{"id":"forest-species-000","artHash":"78444c6cab6a8f48d126
 test('all 105 previous explicit identities preserve image/atlas bytes, art descriptors and runtime traits',()=>{
  assert.equal(previousModels.length,105);assert.equal(new Set(previousModels.map(row=>row.id)).size,105);
  const additions=new Set(allEntries.map(([id])=>id));
- for(const row of previousModels){assert.ok(!additions.has(row.id));const art=uniqueSpeciesArt(row.id);assert.ok(art,row.id+'/retained');assert.equal(hash(JSON.stringify(art)),row.artHash,row.id+'/art descriptor');assert.equal(art.url,row.image);assert.equal(art.atlasURL,row.atlas);assert.equal(hash(readFileSync(row.image)),row.imageSha256,row.id+'/image bytes');assert.equal(hash(readFileSync(row.atlas)),row.atlasSha256,row.id+'/atlas bytes');assert.deepEqual(speciesTraits(row.id),row.traits,row.id+'/all old traits');}
+ for(const row of previousModels){assert.ok(!additions.has(row.id));const art=uniqueSpeciesArt(row.id);assert.ok(art,row.id+'/retained');assertPreservedSpeciesArt(row,art);assert.equal(hash(readFileSync(row.image)),row.imageSha256,row.id+'/image bytes');assert.equal(hash(readFileSync(row.atlas)),row.atlasSha256,row.id+'/atlas bytes');assert.deepEqual(speciesTraits(row.id),row.traits,row.id+'/all old traits');}
 });
 
 test('forest 035 keeps the reviewed current native v4 scale and 68–70px idle silhouettes',()=>{

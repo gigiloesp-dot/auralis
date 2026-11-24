@@ -1,0 +1,1970 @@
+[
+  {
+    "id": "forest-species-011",
+    "name": "spider",
+    "source": "art/source/task10-legacy-upgrade-b/spider-clean.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-spider",
+      "url": "assets/actors/monsters/spider.png",
+      "atlasURL": "assets/actors/monsters/spider.json",
+      "scale": 0.43,
+      "annotationHeight": 54.87,
+      "baselines": {
+        "idle": 196,
+        "run-a": 195,
+        "run-b": 195,
+        "attack": 196
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 36,
+          "y": 109,
+          "w": 211,
+          "h": 185
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 117,
+        "paintedHeight": 101,
+        "footline": 195,
+        "opaquePixels": 6313
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 317,
+          "y": 111,
+          "w": 195,
+          "h": 179
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 108,
+        "paintedHeight": 98,
+        "footline": 195,
+        "opaquePixels": 6347
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 583,
+          "y": 93,
+          "w": 186,
+          "h": 206
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 101,
+        "paintedHeight": 114,
+        "footline": 195,
+        "opaquePixels": 7086
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 847,
+          "y": 111,
+          "w": 196,
+          "h": 189
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 108,
+        "paintedHeight": 104,
+        "footline": 196,
+        "opaquePixels": 6559
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1115,
+          "y": 114,
+          "w": 201,
+          "h": 181
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 113,
+        "paintedHeight": 98,
+        "footline": 195,
+        "opaquePixels": 6079
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1386,
+          "y": 99,
+          "w": 205,
+          "h": 185
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 113,
+        "paintedHeight": 101,
+        "footline": 195,
+        "opaquePixels": 6631
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1673,
+          "y": 99,
+          "w": 182,
+          "h": 185
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 100,
+        "paintedHeight": 101,
+        "footline": 195,
+        "opaquePixels": 6715
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1945,
+          "y": 106,
+          "w": 190,
+          "h": 177
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 104,
+        "paintedHeight": 98,
+        "footline": 196,
+        "opaquePixels": 6551
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 36,
+          "y": 484,
+          "w": 201,
+          "h": 134
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 111,
+        "paintedHeight": 70,
+        "footline": 196,
+        "opaquePixels": 5544
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 317,
+          "y": 480,
+          "w": 180,
+          "h": 144
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 99,
+        "paintedHeight": 75,
+        "footline": 195,
+        "opaquePixels": 5496
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 595,
+          "y": 477,
+          "w": 162,
+          "h": 147
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 87,
+        "paintedHeight": 79,
+        "footline": 196,
+        "opaquePixels": 5199
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 851,
+          "y": 488,
+          "w": 192,
+          "h": 136
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 105,
+        "paintedHeight": 70,
+        "footline": 195,
+        "opaquePixels": 5344
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1116,
+          "y": 492,
+          "w": 203,
+          "h": 129
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 113,
+        "paintedHeight": 67,
+        "footline": 196,
+        "opaquePixels": 5376
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1400,
+          "y": 489,
+          "w": 190,
+          "h": 145
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 104,
+        "paintedHeight": 76,
+        "footline": 195,
+        "opaquePixels": 5575
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1680,
+          "y": 492,
+          "w": 170,
+          "h": 147
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 92,
+        "paintedHeight": 78,
+        "footline": 196,
+        "opaquePixels": 5096
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1940,
+          "y": 487,
+          "w": 184,
+          "h": 147
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 100,
+        "paintedHeight": 78,
+        "footline": 196,
+        "opaquePixels": 5376
+      }
+    ],
+    "sha256": "b135757eeb6e49ea60f133d7bd2074db0bba0a4692e48bb19d4a33efc3ba1965"
+  },
+  {
+    "id": "north-species-000",
+    "name": "iceWolf",
+    "source": "art/source/task10-legacy-upgrade-b/iceWolf-additional-original.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-iceWolf",
+      "url": "assets/actors/monsters/iceWolf.png",
+      "atlasURL": "assets/actors/monsters/iceWolf.json",
+      "scale": 0.68,
+      "annotationHeight": 69.54,
+      "baselines": {
+        "idle": 194,
+        "run-a": 186,
+        "run-b": 173,
+        "attack": 181
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 41,
+          "y": 121,
+          "w": 204,
+          "h": 161
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 109,
+        "paintedHeight": 83,
+        "footline": 193,
+        "opaquePixels": 4678
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 322,
+          "y": 127,
+          "w": 188,
+          "h": 164
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 98,
+        "paintedHeight": 85,
+        "footline": 193,
+        "opaquePixels": 4876
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 623,
+          "y": 108,
+          "w": 122,
+          "h": 175
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 59,
+        "paintedHeight": 90,
+        "footline": 193,
+        "opaquePixels": 3428
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 848,
+          "y": 127,
+          "w": 186,
+          "h": 161
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 98,
+        "paintedHeight": 83,
+        "footline": 193,
+        "opaquePixels": 4789
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1118,
+          "y": 122,
+          "w": 200,
+          "h": 158
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 105,
+        "paintedHeight": 81,
+        "footline": 193,
+        "opaquePixels": 4457
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1414,
+          "y": 117,
+          "w": 172,
+          "h": 166
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 89,
+        "paintedHeight": 85,
+        "footline": 193,
+        "opaquePixels": 4337
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1708,
+          "y": 109,
+          "w": 118,
+          "h": 170
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 57,
+        "paintedHeight": 88,
+        "footline": 193,
+        "opaquePixels": 3267
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1950,
+          "y": 123,
+          "w": 163,
+          "h": 160
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 84,
+        "paintedHeight": 82,
+        "footline": 193,
+        "opaquePixels": 3963
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 19,
+          "y": 507,
+          "w": 242,
+          "h": 123
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 132,
+        "paintedHeight": 59,
+        "footline": 193,
+        "opaquePixels": 4554
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 305,
+          "y": 508,
+          "w": 220,
+          "h": 124
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 118,
+        "paintedHeight": 61,
+        "footline": 193,
+        "opaquePixels": 4532
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 597,
+          "y": 498,
+          "w": 162,
+          "h": 133
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 83,
+        "paintedHeight": 65,
+        "footline": 193,
+        "opaquePixels": 3430
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 826,
+          "y": 509,
+          "w": 224,
+          "h": 123
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 121,
+        "paintedHeight": 60,
+        "footline": 193,
+        "opaquePixels": 4557
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1090,
+          "y": 508,
+          "w": 249,
+          "h": 116
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 136,
+        "paintedHeight": 55,
+        "footline": 193,
+        "opaquePixels": 4506
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1381,
+          "y": 506,
+          "w": 238,
+          "h": 136
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 128,
+        "paintedHeight": 68,
+        "footline": 193,
+        "opaquePixels": 4468
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1676,
+          "y": 495,
+          "w": 167,
+          "h": 156
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 86,
+        "paintedHeight": 79,
+        "footline": 192,
+        "opaquePixels": 3893
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1914,
+          "y": 506,
+          "w": 234,
+          "h": 133
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 127,
+        "paintedHeight": 66,
+        "footline": 193,
+        "opaquePixels": 4369
+      }
+    ],
+    "sha256": "7323f1815ad483229ec4d72af0c5c181a7204a4b9b4ea7913c2445b4fb297aef"
+  },
+  {
+    "id": "north-species-001",
+    "name": "frostGolem",
+    "source": "art/source/task10-legacy-upgrade-b/frostGolem-additional-original.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-frostGolem",
+      "url": "assets/actors/monsters/frostGolem.png",
+      "atlasURL": "assets/actors/monsters/frostGolem.json",
+      "scale": 0.48,
+      "annotationHeight": 102.56,
+      "baselines": {
+        "idle": 228,
+        "run-a": 224,
+        "run-b": 219,
+        "attack": 202
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 40,
+          "y": 68,
+          "w": 207,
+          "h": 262
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 146,
+        "paintedHeight": 190,
+        "footline": 222,
+        "opaquePixels": 17436
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 312,
+          "y": 70,
+          "w": 196,
+          "h": 256
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 137,
+        "paintedHeight": 184,
+        "footline": 221,
+        "opaquePixels": 17651
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 567,
+          "y": 67,
+          "w": 217,
+          "h": 258
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 153,
+        "paintedHeight": 185,
+        "footline": 221,
+        "opaquePixels": 19592
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 851,
+          "y": 72,
+          "w": 188,
+          "h": 259
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 131,
+        "paintedHeight": 186,
+        "footline": 221,
+        "opaquePixels": 17180
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1110,
+          "y": 71,
+          "w": 193,
+          "h": 260
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 136,
+        "paintedHeight": 188,
+        "footline": 222,
+        "opaquePixels": 16951
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1392,
+          "y": 65,
+          "w": 198,
+          "h": 253
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 139,
+        "paintedHeight": 181,
+        "footline": 221,
+        "opaquePixels": 16765
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1655,
+          "y": 68,
+          "w": 211,
+          "h": 252
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 149,
+        "paintedHeight": 181,
+        "footline": 221,
+        "opaquePixels": 18242
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1934,
+          "y": 65,
+          "w": 185,
+          "h": 254
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 128,
+        "paintedHeight": 183,
+        "footline": 221,
+        "opaquePixels": 16572
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 7,
+          "y": 463,
+          "w": 256,
+          "h": 169
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 159,
+        "paintedHeight": 99,
+        "footline": 223,
+        "opaquePixels": 10590
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 273,
+          "y": 459,
+          "w": 274,
+          "h": 177
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 161,
+        "paintedHeight": 99,
+        "footline": 224,
+        "opaquePixels": 9704
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 547,
+          "y": 462,
+          "w": 263,
+          "h": 171
+        },
+        "maximumSourceBoundaryAlpha": 4,
+        "paintedWidth": 162,
+        "paintedHeight": 98,
+        "footline": 223,
+        "opaquePixels": 10702
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 810,
+          "y": 470,
+          "w": 268,
+          "h": 166
+        },
+        "maximumSourceBoundaryAlpha": 4,
+        "paintedWidth": 162,
+        "paintedHeight": 93,
+        "footline": 223,
+        "opaquePixels": 9208
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1090,
+          "y": 473,
+          "w": 261,
+          "h": 160
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 160,
+        "paintedHeight": 92,
+        "footline": 223,
+        "opaquePixels": 9895
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1359,
+          "y": 468,
+          "w": 264,
+          "h": 168
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 160,
+        "paintedHeight": 96,
+        "footline": 223,
+        "opaquePixels": 9362
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1628,
+          "y": 464,
+          "w": 267,
+          "h": 172
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 160,
+        "paintedHeight": 97,
+        "footline": 223,
+        "opaquePixels": 10259
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1901,
+          "y": 466,
+          "w": 263,
+          "h": 170
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 160,
+        "paintedHeight": 98,
+        "footline": 223,
+        "opaquePixels": 9466
+      }
+    ],
+    "sha256": "3f2df34d8a47a1ce44fff3c803256214ea1eb5058a8a06102b4215be908907a5"
+  },
+  {
+    "id": "north-species-002",
+    "name": "snowRaider",
+    "source": "art/source/task10-legacy-upgrade-b/snowRaider-additional-original.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-snowRaider",
+      "url": "assets/actors/monsters/snowRaider.png",
+      "atlasURL": "assets/actors/monsters/snowRaider.json",
+      "scale": 0.55,
+      "annotationHeight": 84.17500000000001,
+      "baselines": {
+        "idle": 209,
+        "run-a": 195,
+        "run-b": 186,
+        "attack": 184
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 55,
+          "y": 96,
+          "w": 169,
+          "h": 242
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 88,
+        "paintedHeight": 132,
+        "footline": 208,
+        "opaquePixels": 5615
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 338,
+          "y": 96,
+          "w": 134,
+          "h": 243
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 66,
+        "paintedHeight": 132,
+        "footline": 208,
+        "opaquePixels": 5828
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 612,
+          "y": 92,
+          "w": 130,
+          "h": 246
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 64,
+        "paintedHeight": 134,
+        "footline": 208,
+        "opaquePixels": 5738
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 885,
+          "y": 98,
+          "w": 137,
+          "h": 242
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 69,
+        "paintedHeight": 131,
+        "footline": 207,
+        "opaquePixels": 5848
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1135,
+          "y": 96,
+          "w": 150,
+          "h": 242
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 76,
+        "paintedHeight": 131,
+        "footline": 208,
+        "opaquePixels": 5051
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1410,
+          "y": 95,
+          "w": 147,
+          "h": 242
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 74,
+        "paintedHeight": 132,
+        "footline": 208,
+        "opaquePixels": 5750
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1699,
+          "y": 95,
+          "w": 133,
+          "h": 251
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 66,
+        "paintedHeight": 137,
+        "footline": 208,
+        "opaquePixels": 5878
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1966,
+          "y": 95,
+          "w": 155,
+          "h": 242
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 79,
+        "paintedHeight": 132,
+        "footline": 208,
+        "opaquePixels": 5786
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 10,
+          "y": 495,
+          "w": 238,
+          "h": 145
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 128,
+        "paintedHeight": 73,
+        "footline": 208,
+        "opaquePixels": 5166
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 300,
+          "y": 495,
+          "w": 214,
+          "h": 150
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 115,
+        "paintedHeight": 76,
+        "footline": 208,
+        "opaquePixels": 5068
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 583,
+          "y": 478,
+          "w": 186,
+          "h": 173
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 97,
+        "paintedHeight": 90,
+        "footline": 208,
+        "opaquePixels": 4740
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 835,
+          "y": 501,
+          "w": 228,
+          "h": 151
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 123,
+        "paintedHeight": 77,
+        "footline": 208,
+        "opaquePixels": 5384
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1093,
+          "y": 495,
+          "w": 230,
+          "h": 153
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 124,
+        "paintedHeight": 78,
+        "footline": 208,
+        "opaquePixels": 5287
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1368,
+          "y": 497,
+          "w": 238,
+          "h": 163
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 129,
+        "paintedHeight": 84,
+        "footline": 208,
+        "opaquePixels": 5219
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1656,
+          "y": 490,
+          "w": 219,
+          "h": 177
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 118,
+        "paintedHeight": 93,
+        "footline": 208,
+        "opaquePixels": 5304
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1924,
+          "y": 495,
+          "w": 237,
+          "h": 167
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 129,
+        "paintedHeight": 85,
+        "footline": 207,
+        "opaquePixels": 4921
+      }
+    ],
+    "sha256": "0dc3ce986dd5707395bb490fffab042db199584c937c71ceedb08db472d1d9af"
+  },
+  {
+    "id": "north-species-004",
+    "name": "iceElemental",
+    "source": "art/source/task10-legacy-upgrade-b/iceElemental-clean.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-iceElemental",
+      "url": "assets/actors/monsters/iceElemental.png",
+      "atlasURL": "assets/actors/monsters/iceElemental.json",
+      "scale": 0.48,
+      "annotationHeight": 78.56,
+      "baselines": {
+        "idle": 208,
+        "run-a": 199,
+        "run-b": 200,
+        "attack": 187
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 59,
+          "y": 55,
+          "w": 178,
+          "h": 237
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 102,
+        "paintedHeight": 141,
+        "footline": 207,
+        "opaquePixels": 6602
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 330,
+          "y": 76,
+          "w": 173,
+          "h": 223
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 99,
+        "paintedHeight": 132,
+        "footline": 207,
+        "opaquePixels": 6485
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 591,
+          "y": 61,
+          "w": 179,
+          "h": 245
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 103,
+        "paintedHeight": 146,
+        "footline": 207,
+        "opaquePixels": 6816
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 861,
+          "y": 73,
+          "w": 169,
+          "h": 227
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 96,
+        "paintedHeight": 134,
+        "footline": 207,
+        "opaquePixels": 6374
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1123,
+          "y": 70,
+          "w": 183,
+          "h": 223
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 105,
+        "paintedHeight": 132,
+        "footline": 207,
+        "opaquePixels": 6593
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1397,
+          "y": 68,
+          "w": 180,
+          "h": 221
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 103,
+        "paintedHeight": 130,
+        "footline": 207,
+        "opaquePixels": 6399
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1672,
+          "y": 45,
+          "w": 195,
+          "h": 255
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 113,
+        "paintedHeight": 153,
+        "footline": 207,
+        "opaquePixels": 6393
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1957,
+          "y": 62,
+          "w": 184,
+          "h": 231
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 106,
+        "paintedHeight": 137,
+        "footline": 207,
+        "opaquePixels": 6110
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 12,
+          "y": 478,
+          "w": 247,
+          "h": 139
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 147,
+        "paintedHeight": 76,
+        "footline": 207,
+        "opaquePixels": 5530
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 298,
+          "y": 473,
+          "w": 238,
+          "h": 148
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 142,
+        "paintedHeight": 82,
+        "footline": 207,
+        "opaquePixels": 5354
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 564,
+          "y": 469,
+          "w": 233,
+          "h": 143
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 138,
+        "paintedHeight": 78,
+        "footline": 207,
+        "opaquePixels": 4821
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 824,
+          "y": 478,
+          "w": 236,
+          "h": 138
+        },
+        "maximumSourceBoundaryAlpha": 2,
+        "paintedWidth": 140,
+        "paintedHeight": 75,
+        "footline": 207,
+        "opaquePixels": 4841
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1102,
+          "y": 479,
+          "w": 240,
+          "h": 138
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 143,
+        "paintedHeight": 75,
+        "footline": 207,
+        "opaquePixels": 5290
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1374,
+          "y": 474,
+          "w": 231,
+          "h": 138
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 137,
+        "paintedHeight": 75,
+        "footline": 207,
+        "opaquePixels": 5087
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1642,
+          "y": 462,
+          "w": 254,
+          "h": 162
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 152,
+        "paintedHeight": 91,
+        "footline": 207,
+        "opaquePixels": 5335
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1919,
+          "y": 473,
+          "w": 252,
+          "h": 148
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 151,
+        "paintedHeight": 82,
+        "footline": 207,
+        "opaquePixels": 5109
+      }
+    ],
+    "sha256": "5e6e0f82ca3255e9aaa4ad641f19dc42e64780ca354593168cecc1b2c565a4c6"
+  },
+  {
+    "id": "north-species-005",
+    "name": "snowBear",
+    "source": "art/source/task10-legacy-upgrade-b/snowBear-additional-original.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-snowBear",
+      "url": "assets/actors/monsters/snowBear.png",
+      "atlasURL": "assets/actors/monsters/snowBear.json",
+      "scale": 0.6,
+      "annotationHeight": 98,
+      "baselines": {
+        "idle": 221,
+        "run-a": 216,
+        "run-b": 208,
+        "attack": 199
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 25,
+          "y": 77,
+          "w": 238,
+          "h": 215
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 157,
+        "paintedHeight": 140,
+        "footline": 220,
+        "opaquePixels": 13494
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 306,
+          "y": 80,
+          "w": 218,
+          "h": 206
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 142,
+        "paintedHeight": 133,
+        "footline": 220,
+        "opaquePixels": 13308
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 591,
+          "y": 70,
+          "w": 174,
+          "h": 217
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 110,
+        "paintedHeight": 141,
+        "footline": 220,
+        "opaquePixels": 11490
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 839,
+          "y": 81,
+          "w": 216,
+          "h": 203
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 140,
+        "paintedHeight": 131,
+        "footline": 220,
+        "opaquePixels": 13017
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1103,
+          "y": 83,
+          "w": 238,
+          "h": 211
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 157,
+        "paintedHeight": 137,
+        "footline": 220,
+        "opaquePixels": 12898
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1396,
+          "y": 75,
+          "w": 208,
+          "h": 216
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 135,
+        "paintedHeight": 140,
+        "footline": 220,
+        "opaquePixels": 12502
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1676,
+          "y": 71,
+          "w": 175,
+          "h": 219
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 111,
+        "paintedHeight": 144,
+        "footline": 221,
+        "opaquePixels": 10736
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1926,
+          "y": 76,
+          "w": 213,
+          "h": 215
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 138,
+        "paintedHeight": 140,
+        "footline": 220,
+        "opaquePixels": 12613
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 1,
+          "y": 461,
+          "w": 274,
+          "h": 165
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 161,
+        "paintedHeight": 90,
+        "footline": 220,
+        "opaquePixels": 8449
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 288,
+          "y": 458,
+          "w": 251,
+          "h": 164
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 160,
+        "paintedHeight": 99,
+        "footline": 220,
+        "opaquePixels": 9633
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 564,
+          "y": 456,
+          "w": 222,
+          "h": 162
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 145,
+        "paintedHeight": 101,
+        "footline": 220,
+        "opaquePixels": 10326
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 815,
+          "y": 461,
+          "w": 254,
+          "h": 162
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 159,
+        "paintedHeight": 95,
+        "footline": 220,
+        "opaquePixels": 9620
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1080,
+          "y": 461,
+          "w": 274,
+          "h": 160
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 160,
+        "paintedHeight": 88,
+        "footline": 221,
+        "opaquePixels": 8006
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1374,
+          "y": 462,
+          "w": 253,
+          "h": 165
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 159,
+        "paintedHeight": 98,
+        "footline": 219,
+        "opaquePixels": 9206
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1654,
+          "y": 460,
+          "w": 220,
+          "h": 168
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 143,
+        "paintedHeight": 106,
+        "footline": 220,
+        "opaquePixels": 9570
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1899,
+          "y": 462,
+          "w": 261,
+          "h": 167
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 160,
+        "paintedHeight": 97,
+        "footline": 220,
+        "opaquePixels": 8740
+      }
+    ],
+    "sha256": "75b34ff07b791b0d07b3f99a3db51496cead449f601a1fc2ee44b64a214229a3"
+  },
+  {
+    "id": "north-species-009",
+    "name": "wraith",
+    "source": "art/source/task10-legacy-upgrade-b/wraith-additional-original.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-wraith",
+      "url": "assets/actors/monsters/wraith.png",
+      "atlasURL": "assets/actors/monsters/wraith.json",
+      "scale": 0.48,
+      "annotationHeight": 81.92,
+      "baselines": {
+        "idle": 218,
+        "run-a": 204,
+        "run-b": 198,
+        "attack": 204
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 35,
+          "y": 75,
+          "w": 213,
+          "h": 254
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 118,
+        "paintedHeight": 144,
+        "footline": 217,
+        "opaquePixels": 6957
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 311,
+          "y": 76,
+          "w": 205,
+          "h": 252
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 113,
+        "paintedHeight": 143,
+        "footline": 217,
+        "opaquePixels": 7058
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 594,
+          "y": 67,
+          "w": 169,
+          "h": 261
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 90,
+        "paintedHeight": 149,
+        "footline": 217,
+        "opaquePixels": 6787
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 854,
+          "y": 72,
+          "w": 192,
+          "h": 251
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 106,
+        "paintedHeight": 142,
+        "footline": 217,
+        "opaquePixels": 7176
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1106,
+          "y": 76,
+          "w": 214,
+          "h": 250
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 119,
+        "paintedHeight": 141,
+        "footline": 217,
+        "opaquePixels": 6877
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1384,
+          "y": 70,
+          "w": 206,
+          "h": 258
+        },
+        "maximumSourceBoundaryAlpha": 0,
+        "paintedWidth": 114,
+        "paintedHeight": 146,
+        "footline": 217,
+        "opaquePixels": 7289
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1675,
+          "y": 67,
+          "w": 179,
+          "h": 260
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 98,
+        "paintedHeight": 147,
+        "footline": 217,
+        "opaquePixels": 6931
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1936,
+          "y": 70,
+          "w": 198,
+          "h": 251
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 109,
+        "paintedHeight": 142,
+        "footline": 217,
+        "opaquePixels": 6949
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 18,
+          "y": 489,
+          "w": 250,
+          "h": 138
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 142,
+        "paintedHeight": 72,
+        "footline": 217,
+        "opaquePixels": 5821
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 291,
+          "y": 486,
+          "w": 245,
+          "h": 143
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 139,
+        "paintedHeight": 74,
+        "footline": 217,
+        "opaquePixels": 5822
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 563,
+          "y": 480,
+          "w": 230,
+          "h": 147
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 130,
+        "paintedHeight": 77,
+        "footline": 217,
+        "opaquePixels": 5142
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 825,
+          "y": 488,
+          "w": 242,
+          "h": 140
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 137,
+        "paintedHeight": 73,
+        "footline": 217,
+        "opaquePixels": 5667
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1094,
+          "y": 491,
+          "w": 245,
+          "h": 137
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 138,
+        "paintedHeight": 71,
+        "footline": 218,
+        "opaquePixels": 5569
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1365,
+          "y": 482,
+          "w": 248,
+          "h": 143
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 140,
+        "paintedHeight": 74,
+        "footline": 217,
+        "opaquePixels": 6059
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1640,
+          "y": 487,
+          "w": 242,
+          "h": 145
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 136,
+        "paintedHeight": 77,
+        "footline": 218,
+        "opaquePixels": 5288
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1909,
+          "y": 478,
+          "w": 248,
+          "h": 155
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 142,
+        "paintedHeight": 81,
+        "footline": 217,
+        "opaquePixels": 5726
+      }
+    ],
+    "sha256": "2438661b5a63f7840d45b1ad70d526eb9825229eb5646acb9ef2912449d80111"
+  },
+  {
+    "id": "north-species-016",
+    "name": "iceBat",
+    "source": "art/source/task10-legacy-upgrade-b/iceBat-additional-original.png",
+    "old32PreservedExactly": true,
+    "oldEntry": {
+      "key": "actor-monster-iceBat",
+      "url": "assets/actors/monsters/iceBat.png",
+      "atlasURL": "assets/actors/monsters/iceBat.json",
+      "scale": 0.45,
+      "annotationHeight": 53,
+      "baselines": {
+        "idle": 199,
+        "run-a": 206,
+        "run-b": 176,
+        "attack": 173
+      }
+    },
+    "newPoses": [
+      {
+        "pose": "hurt/e",
+        "sourceRect": {
+          "x": 69,
+          "y": 93,
+          "w": 177,
+          "h": 206
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 78,
+        "paintedHeight": 92,
+        "footline": 198,
+        "opaquePixels": 3302
+      },
+      {
+        "pose": "hurt/se",
+        "sourceRect": {
+          "x": 321,
+          "y": 95,
+          "w": 180,
+          "h": 209
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 79,
+        "paintedHeight": 94,
+        "footline": 198,
+        "opaquePixels": 3517
+      },
+      {
+        "pose": "hurt/s",
+        "sourceRect": {
+          "x": 600,
+          "y": 88,
+          "w": 162,
+          "h": 215
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 70,
+        "paintedHeight": 97,
+        "footline": 198,
+        "opaquePixels": 3746
+      },
+      {
+        "pose": "hurt/sw",
+        "sourceRect": {
+          "x": 859,
+          "y": 100,
+          "w": 166,
+          "h": 202
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 72,
+        "paintedHeight": 90,
+        "footline": 198,
+        "opaquePixels": 3593
+      },
+      {
+        "pose": "hurt/w",
+        "sourceRect": {
+          "x": 1118,
+          "y": 100,
+          "w": 169,
+          "h": 188
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 74,
+        "paintedHeight": 83,
+        "footline": 198,
+        "opaquePixels": 2925
+      },
+      {
+        "pose": "hurt/nw",
+        "sourceRect": {
+          "x": 1407,
+          "y": 98,
+          "w": 163,
+          "h": 205
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 71,
+        "paintedHeight": 91,
+        "footline": 198,
+        "opaquePixels": 3295
+      },
+      {
+        "pose": "hurt/n",
+        "sourceRect": {
+          "x": 1681,
+          "y": 87,
+          "w": 157,
+          "h": 219
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 68,
+        "paintedHeight": 98,
+        "footline": 197,
+        "opaquePixels": 3474
+      },
+      {
+        "pose": "hurt/ne",
+        "sourceRect": {
+          "x": 1958,
+          "y": 99,
+          "w": 155,
+          "h": 193
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 67,
+        "paintedHeight": 85,
+        "footline": 198,
+        "opaquePixels": 3186
+      },
+      {
+        "pose": "death/e",
+        "sourceRect": {
+          "x": 41,
+          "y": 497,
+          "w": 208,
+          "h": 108
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 93,
+        "paintedHeight": 43,
+        "footline": 198,
+        "opaquePixels": 2594
+      },
+      {
+        "pose": "death/se",
+        "sourceRect": {
+          "x": 315,
+          "y": 487,
+          "w": 189,
+          "h": 128
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 84,
+        "paintedHeight": 53,
+        "footline": 198,
+        "opaquePixels": 2724
+      },
+      {
+        "pose": "death/s",
+        "sourceRect": {
+          "x": 589,
+          "y": 492,
+          "w": 171,
+          "h": 123
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 75,
+        "paintedHeight": 50,
+        "footline": 198,
+        "opaquePixels": 2716
+      },
+      {
+        "pose": "death/sw",
+        "sourceRect": {
+          "x": 842,
+          "y": 497,
+          "w": 195,
+          "h": 116
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 87,
+        "paintedHeight": 47,
+        "footline": 198,
+        "opaquePixels": 2852
+      },
+      {
+        "pose": "death/w",
+        "sourceRect": {
+          "x": 1106,
+          "y": 498,
+          "w": 213,
+          "h": 108
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 96,
+        "paintedHeight": 43,
+        "footline": 198,
+        "opaquePixels": 2513
+      },
+      {
+        "pose": "death/nw",
+        "sourceRect": {
+          "x": 1386,
+          "y": 488,
+          "w": 195,
+          "h": 134
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 87,
+        "paintedHeight": 56,
+        "footline": 198,
+        "opaquePixels": 2859
+      },
+      {
+        "pose": "death/n",
+        "sourceRect": {
+          "x": 1662,
+          "y": 496,
+          "w": 201,
+          "h": 136
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 90,
+        "paintedHeight": 57,
+        "footline": 198,
+        "opaquePixels": 2827
+      },
+      {
+        "pose": "death/ne",
+        "sourceRect": {
+          "x": 1938,
+          "y": 489,
+          "w": 199,
+          "h": 129
+        },
+        "maximumSourceBoundaryAlpha": 1,
+        "paintedWidth": 89,
+        "paintedHeight": 53,
+        "footline": 198,
+        "opaquePixels": 2602
+      }
+    ],
+    "sha256": "0276b38705bd77d32384b37c240ac3e99a7c86cf1dc15aed339747743e49194b"
+  }
+]

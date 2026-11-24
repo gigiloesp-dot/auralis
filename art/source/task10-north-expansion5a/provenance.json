@@ -1,0 +1,129 @@
+{
+  "task": 10,
+  "pack": "north-expansion5a",
+  "artOnly": true,
+  "artFrozen": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "source": "OpenAI image_gen transparent originals; image_gen layout reflows062/065 and transparency repairs058/060",
+  "mechanicalPacking": "Complete-pose sourceRects in blank corridors; uniform species resampling with Pillow; no alpha threshold/erase or anatomy editing",
+  "visualInspection": {
+    "finalPosesInspected": 384,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "repairs": "Dark review rejected faint rectangular matte on058/060. Image_gen cutout repairs repacked and all96 repaired poses re-reviewed on both backgrounds. Final384poses clean.",
+    "observations": "All8directions,6drawn states including collapsed death inspected; no visible background matte or neighbor fragments. Runtime attack timing/facing/streaming remains unverified."
+  },
+  "models": [
+    {
+      "id": "north-species-058",
+      "name": "Snowdrift shovel-paw bear",
+      "archetype": "snowBear",
+      "level": 25,
+      "biome": "snow",
+      "image": "assets/actors/task10-north-expansion5a/north-species-058.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-058.json",
+      "imageSHA256": "a0e701f676f5d28464d208dd157cf754b7c28bcec23cfadd46188c3def9ee380",
+      "atlasSHA256": "920fba060b85975d1215eb1df749b5fab26462a793d630017ee0dfc434eafc0d",
+      "nativeIdleHeight": 70,
+      "zeroAlphaFraction": 0.8095830281575521
+    },
+    {
+      "id": "north-species-059",
+      "name": "Censer-cage ash revenant",
+      "archetype": "wraith",
+      "level": 38,
+      "biome": "volcanic",
+      "image": "assets/actors/task10-north-expansion5a/north-species-059.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-059.json",
+      "imageSHA256": "2961c1b04dcc45a7039abcf5ab0edc331bc763d832b6578fe1fa27c90311f851",
+      "atlasSHA256": "103a19eb06aeac79d239a22318c225a97ffe0070c6aff1a5d96928cc7c71130d",
+      "nativeIdleHeight": 75,
+      "zeroAlphaFraction": 0.8457438151041666
+    },
+    {
+      "id": "north-species-060",
+      "name": "Snowshoe fan-tail dhole",
+      "archetype": "iceWolf",
+      "level": 23,
+      "biome": "snow",
+      "image": "assets/actors/task10-north-expansion5a/north-species-060.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-060.json",
+      "imageSHA256": "7e1773924f4b08d0b86b9719c2ad7a9df5c497b2a77069e1d8fea60c1c2eddb5",
+      "atlasSHA256": "80d55745addcb1125eab87d0b3518346730a23ca5a7b81d20353de4311b2c26c",
+      "nativeIdleHeight": 72,
+      "zeroAlphaFraction": 0.8802829318576388
+    },
+    {
+      "id": "north-species-061",
+      "name": "Crescent-shoulder glacier golem",
+      "archetype": "frostGolem",
+      "level": 28,
+      "biome": "snow",
+      "image": "assets/actors/task10-north-expansion5a/north-species-061.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-061.json",
+      "imageSHA256": "8850b7a2689dc1d4e4dc46b3b71f49a278e353324a920f4a9ec65cb50bb46644",
+      "atlasSHA256": "18ff341025628c2d96cdce13da4f42541a850fefb3af20ecd1b747e61f59165f",
+      "nativeIdleHeight": 75,
+      "zeroAlphaFraction": 0.8057217068142362
+    },
+    {
+      "id": "north-species-062",
+      "name": "Wheelhand icicle colossus",
+      "archetype": "frostGolem",
+      "level": 30,
+      "biome": "snow",
+      "image": "assets/actors/task10-north-expansion5a/north-species-062.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-062.json",
+      "imageSHA256": "d897be0e80ca6999284d64f99a4bbeb86cceb3e9f7536d2647b47f25fb456a23",
+      "atlasSHA256": "01a2d3dff9291c9eee493293471f3742d8207fee74d556df0011c9a69236ae1f",
+      "nativeIdleHeight": 74,
+      "zeroAlphaFraction": 0.8896280924479166
+    },
+    {
+      "id": "north-species-063",
+      "name": "Furnace-mantle hookshot brigand",
+      "archetype": "snowRaider",
+      "level": 35,
+      "biome": "volcanic",
+      "image": "assets/actors/task10-north-expansion5a/north-species-063.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-063.json",
+      "imageSHA256": "d4d60799c0983f7c04ce41fc34cb82a21511aacdc3a6d0ce6ba42d3ab0cb640f",
+      "atlasSHA256": "ac0c473dfa803cbbe1cf4ddf22c0d62f12334120bb143aa3cca048c149b43202",
+      "nativeIdleHeight": 75,
+      "zeroAlphaFraction": 0.81591796875
+    },
+    {
+      "id": "north-species-064",
+      "name": "Icicle-ear sailback snowhound",
+      "archetype": "iceWolf",
+      "level": 36,
+      "biome": "snow",
+      "image": "assets/actors/task10-north-expansion5a/north-species-064.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-064.json",
+      "imageSHA256": "f2e7d9a517be0ff4bdec72a227cf99c6e5ee31ff0d5c29aa0110db0034be0560",
+      "atlasSHA256": "6ba2aed0054e4996c2edc83a57456292ef1c4288061deae58d2ad782f862d43f",
+      "nativeIdleHeight": 73,
+      "zeroAlphaFraction": 0.8517023722330729
+    },
+    {
+      "id": "north-species-065",
+      "name": "Snowflake jelly-spindle elemental",
+      "archetype": "iceElemental",
+      "level": 32,
+      "biome": "snow",
+      "image": "assets/actors/task10-north-expansion5a/north-species-065.png",
+      "atlas": "assets/actors/task10-north-expansion5a/north-species-065.json",
+      "imageSHA256": "2f83e6492e004e8e4ae56636d59051e75c5a4d3e2bd98f82d28a21547f37d7c7",
+      "atlasSHA256": "9347cb50df2ce70c1b6873eb24651fa170036a9683da1a216ed6e6df56c68fc6",
+      "nativeIdleHeight": 72,
+      "zeroAlphaFraction": 0.8353084988064237
+    }
+  ],
+  "module": {
+    "path": "js/assets/northExpansion5aArt.js",
+    "sha256": "743f5e386d5e8fd6eaa35ce1fb6480166cba57aa303e5838027695f73c19280b"
+  }
+}

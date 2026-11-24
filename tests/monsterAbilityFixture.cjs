@@ -6,7 +6,7 @@ async function startAbilityApproach(page){
   s.__abilityApproachMoves=[];
   s.__abilityApproachTimer=setInterval(()=>{
    const m=s.__nextSpecies;if(!m?.alive||m.specialState)return;
-   const profile=movementProfile(m.kind),pattern=profile.abilityPattern||[],ability=pattern[(m.abilityStep||0)%pattern.length];
+   const profile=movementProfile(m.kind),pattern=profile.abilityPattern||[profile.ability],ability=pattern[(m.abilityStep||0)%pattern.length];
    if(!['pounce','charge','dive'].includes(ability)||s.playNow-m.lastAbilityAt<profile.cooldown||Math.hypot(m.x-s.hero.x,m.y-s.hero.y)>=70)return;
    const points=Array.from({length:32},(_,i)=>({x:m.x+Math.cos(i*Math.PI/16)*100,y:m.y+Math.sin(i*Math.PI/16)*100})).sort((a,b)=>Math.hypot(a.x-m.homeX,a.y-m.homeY)-Math.hypot(b.x-m.homeX,b.y-m.homeY));
    const q=points.find(p=>s.world.isWalkable(p.x,p.y)&&s.monsters.sight(m,p));

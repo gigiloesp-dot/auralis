@@ -47,10 +47,13 @@ export function losslessPng(bytes){
  let decoded;try{decoded=decodePng(bytes);}catch(error){return {...metadata,bytes,reason:error.message};}
  if(!decoded)return {...metadata,bytes,reason:'Unsupported PNG encoding'};
  metadata.supported=true;
- const {width,height,channels,pixels,chunks}=decoded,stride=width*channels,filtered=Buffer.alloc((stride+1)*height),candidates=Array.from({length:5},()=>Buffer.alloc(stride));
+ const {width,height,channels,pixels,chunks}=decoded,stride=width*channels,filtered=Buffer.alloc((stride+1)*height),zeroRow=Buffer.alloc(stride),candidates=Array.from({length:5},()=>Buffer.alloc(stride));
  const [none,sub,up,average,paethRow]=candidates;
  for(let y=0;y<height;y++){
-  const row=y*stride,output=y*(stride+1);let s0=0,s1=0,s2=0,s3=0,s4=0;
+  const row=y*stride,output=y*(stride+1);
+  // Filter0 has score0 for a wholly zero scanline and wins every tie.
+  // Leaving the allocated output row zero preserves the exact encoded bytes.
+  if(pixels.subarray(row,row+stride).equals(zeroRow))continue;let s0=0,s1=0,s2=0,s3=0,s4=0;
   // Decode neighbors once per pixel byte for all five candidate filters.
   for(let x=0;x<stride;x++){
    const i=row+x,value=pixels[i],a=x>=channels?pixels[i-channels]:0,b=y?pixels[i-stride]:0,c=y&&x>=channels?pixels[i-stride-channels]:0;

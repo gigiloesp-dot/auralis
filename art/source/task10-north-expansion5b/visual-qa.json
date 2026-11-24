@@ -1,0 +1,70 @@
+{
+  "reviewedFrames": 384,
+  "backgrounds": [
+    "#c8b483",
+    "#252d38"
+  ],
+  "nativeCompositeReview": true,
+  "allEightDirectionsReviewed": true,
+  "allSixPoseBanksReviewed": true,
+  "collapsedDeathFramesReviewed": 64,
+  "findings": [],
+  "species": [
+    {
+      "id": "north-species-066",
+      "poses": 48,
+      "silhouette": "Broad four-legged polar bear with two wide palmate ice antlers, huge flat snowshoe paws, small round ears, thick short neck, blunt bear muzzle and tiny tail. Heavy quadruped, never humanoid.",
+      "climate": "snow",
+      "passed": true
+    },
+    {
+      "id": "north-species-067",
+      "poses": 48,
+      "silhouette": "Flying bat with an enormous bell-shaped ochre lower jaw, tiny black head, two short ear stubs, two broad triangular charcoal bat wings with four bronze finger struts and scalloped membranes, short hooked feet. No bird feathers.",
+      "climate": "volcanic",
+      "passed": true
+    },
+    {
+      "id": "north-species-068",
+      "poses": 48,
+      "silhouette": "Heavy quadrupedal charcoal bear with an enormous round terracotta furnace-like shoulder hump, low long snout, four heavy bronze bear paws, two small round ears and a short stub tail. Three thick blunt basalt ridges atop hump. No antlers.",
+      "climate": "volcanic",
+      "passed": true
+    },
+    {
+      "id": "north-species-069",
+      "poses": 48,
+      "silhouette": "Flying russet bat with two huge spiral ram-like ears, small pear-shaped black torso, two very narrow elongated orange bat membrane wings, long pointed tail with diamond tip, two tiny hooked feet. No feathers.",
+      "climate": "volcanic",
+      "passed": true
+    },
+    {
+      "id": "north-species-070",
+      "poses": 48,
+      "silhouette": "Long-legged quadrupedal pale blue wolf, huge upright crescent shaped white neck mane, long pointed canine muzzle, narrow upright triangular ears, long thick upward curling silver tail, four slender canine legs. No antlers.",
+      "climate": "snow",
+      "passed": true
+    },
+    {
+      "id": "north-species-071",
+      "poses": 48,
+      "silhouette": "Flying compact indigo bat with huge broad white fan-shaped tail membrane, two short rounded scalloped bat wings, small round furry head, two tall narrow ears and two tiny feet. Four membrane wing fingers, no feathers.",
+      "climate": "snow",
+      "passed": true
+    },
+    {
+      "id": "north-species-072",
+      "poses": 48,
+      "silhouette": "Flying fluffy pale turquoise bat with a giant broad ivory shovel shaped nose, tiny broad-set black eyes, two short round ears, two large angular violet bat wings with deep scallops and long finger struts, tiny feet and no tail. No bird feathers.",
+      "climate": "snow",
+      "passed": true
+    },
+    {
+      "id": "north-species-073",
+      "poses": 48,
+      "silhouette": "Low long quadrupedal snowy canine with short pointed ears, thick blunt canine muzzle, long horizontal back, four short sturdy legs, enormous flat paddle-shaped fur tail curved sideways, shaggy triangular cheek ruff. Navy paws, silver fur and blue tail tip. No large mane.",
+      "climate": "snow",
+      "passed": true
+    }
+  ]
+}

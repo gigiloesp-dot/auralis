@@ -235,5 +235,22 @@ export const NEW_SPECIES=Object.freeze({
  "ancient-species-042":Object.freeze({names:{"ru":"Гаргулья солнечной печати","en":"Sunseal gargoyle","es":"Gárgola del sello solar"},abilityConfig:Object.freeze({abilityPattern:["charge","cleave"]})}),
  "ancient-species-043":Object.freeze({names:{"ru":"Огонёк арочного кольца","en":"Arch-ring wisp","es":"Fuego fatuo del arco anular"},abilityConfig:Object.freeze({abilityPattern:["blink","shot"]})}),
  "ancient-species-044":Object.freeze({names:{"ru":"Сланцевая молотоголовая гадюка","en":"Slate hammerhead adder","es":"Víbora pizarra de cabeza martillo"},abilityConfig:Object.freeze({abilityPattern:["venom","charge"]})}),
+ // Final north identities preserve archetype stats, drops, geometry and timing.
+ "north-species-058":Object.freeze({names:{"ru":"Сугробный медведь-лопатолап","en":"Snowdrift shovel-paw bear","es":"Oso de ventisca de patas pala"},abilityConfig:Object.freeze({abilityPattern:["stomp","frost"]})}),
+ "north-species-059":Object.freeze({names:{"ru":"Пепельный призрак кадильной клетки","en":"Censer-cage ash revenant","es":"Aparecido de ceniza de jaula incensario"},abilityConfig:Object.freeze({abilityPattern:["haunt","fan"]})}),
+ "north-species-060":Object.freeze({names:{"ru":"Снегоступный веерохвостый куон","en":"Snowshoe fan-tail dhole","es":"Cuón de raquetas de cola abanico"},abilityConfig:Object.freeze({abilityPattern:["pounce","frost"]})}),
+ "north-species-061":Object.freeze({names:{"ru":"Ледниковый голем серповидных плеч","en":"Crescent-shoulder glacier golem","es":"Gólem glaciar de hombros crecientes"},abilityConfig:Object.freeze({abilityPattern:["stomp","frost"]})}),
+ "north-species-062":Object.freeze({names:{"ru":"Колесорукий сосульчатый колосс","en":"Wheelhand icicle colossus","es":"Coloso carámbano de manos rueda"},abilityConfig:Object.freeze({abilityPattern:["stomp","charge"]})}),
+ "north-species-063":Object.freeze({names:{"ru":"Горнильный разбойник с крюкомётом","en":"Furnace-mantle hookshot brigand","es":"Bandido de manto de horno y gancho"},abilityConfig:Object.freeze({abilityPattern:["shot","fan"]})}),
+ "north-species-064":Object.freeze({names:{"ru":"Сосулькоухий парусоспинный снежный гончак","en":"Icicle-ear sailback snowhound","es":"Sabueso níveo de orejas carámbano y lomo vela"},abilityConfig:Object.freeze({abilityPattern:["pounce","charge"]})}),
+ "north-species-065":Object.freeze({names:{"ru":"Снежинокрылый медузоверетённый элементаль","en":"Snowflake jelly-spindle elemental","es":"Elemental medusa huso de copo de nieve"},abilityConfig:Object.freeze({abilityPattern:["blink","frost"]})}),
+ "north-species-066":Object.freeze({names:{"en":"Snowshoe Antler Bear","ru":"Медведь снегоступ-рогач","es":"Oso cornamenta raqueta"},abilityConfig:Object.freeze({abilityPattern:["stomp","cleave"]})}),
+ "north-species-067":Object.freeze({names:{"en":"Belljaw Cinder Bat","ru":"Пепельный колоколочелюст","es":"Murciélago mandíbula campana"},abilityConfig:Object.freeze({abilityPattern:["dive","fan"]})}),
+ "north-species-068":Object.freeze({names:{"en":"Furnace Hump Bear","ru":"Горбомедведь-печь","es":"Oso joroba horno"},abilityConfig:Object.freeze({abilityPattern:["stomp","cleave"]})}),
+ "north-species-069":Object.freeze({names:{"en":"Corkscrew Ear Bat","ru":"Пепельный виткоух","es":"Murciélago oreja espiral"},abilityConfig:Object.freeze({abilityPattern:["dive","fan"]})}),
+ "north-species-070":Object.freeze({names:{"en":"Crescent Mane Wolf","ru":"Волк лунной гривы","es":"Lobo melena creciente"},abilityConfig:Object.freeze({abilityPattern:["pounce","charge"]})}),
+ "north-species-071":Object.freeze({names:{"en":"Fan Tail Frost Bat","ru":"Ледяной веерохвост","es":"Murciélago cola abanico"},abilityConfig:Object.freeze({abilityPattern:["dive","frost"]})}),
+ "north-species-072":Object.freeze({names:{"en":"Shovel Nose Snow Bat","ru":"Снежный лопатонос","es":"Murciélago nariz pala"},abilityConfig:Object.freeze({abilityPattern:["dive","frost"]})}),
+ "north-species-073":Object.freeze({names:{"en":"Ribbon Tail Ice Wolf","ru":"Волк лентохвост","es":"Lobo cola cinta"},abilityConfig:Object.freeze({abilityPattern:["pounce","charge"]})}),
 });
 export const speciesTraits=id=>NEW_SPECIES[id]||null;

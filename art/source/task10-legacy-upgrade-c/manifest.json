@@ -1,0 +1,2956 @@
+[
+  {
+    "id": "ancient-species-000",
+    "name": "fallenKnight",
+    "originalPNG": "assets/actors/monsters/fallenKnight.png",
+    "originalAtlas": "assets/actors/monsters/fallenKnight.json",
+    "originalPNGSHA256": "7a35441bbaf8ebbbbc6cb150d6341938ea76355c6455cd58120702b52752bebd",
+    "originalRGBAsha256": "0a6af41946fd6479a13aa8f5991142ead3860b46533090d70133cab5a0d4bfd6",
+    "top32ExactCopy": true,
+    "source": "art/source/task10-legacy-upgrade-c/ancient-species-000-source.png",
+    "sourceSHA256": "324b4538a38214a99beba45db0484745a38471c28cb272e406f1c06440339035",
+    "originalEntry": {
+      "key": "actor-monster-fallenKnight",
+      "url": "assets/actors/monsters/fallenKnight.png",
+      "atlasURL": "assets/actors/monsters/fallenKnight.json",
+      "scale": 0.5,
+      "annotationHeight": 87,
+      "baselines": {
+        "idle": 219,
+        "run-a": 207,
+        "run-b": 199,
+        "attack": 198
+      }
+    },
+    "newEntry": {
+      "key": "task10legacy-c-fallenKnight",
+      "url": "assets/actors/task10-legacy-upgrade-c/ancient-species-000.png",
+      "atlasURL": "assets/actors/task10-legacy-upgrade-c/ancient-species-000.json",
+      "scale": 0.5,
+      "annotationHeight": 87,
+      "baselines": {
+        "idle": 219,
+        "run-a": 207,
+        "run-b": 199,
+        "attack": 198
+      },
+      "frameWidth": 192,
+      "frameHeight": 256,
+      "poseBanks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "drawnDeath": true,
+      "footlines": {
+        "hurt/e": 219,
+        "hurt/se": 219,
+        "hurt/s": 219,
+        "hurt/sw": 219,
+        "hurt/w": 219,
+        "hurt/nw": 219,
+        "hurt/n": 219,
+        "hurt/ne": 219,
+        "death/e": 219,
+        "death/se": 219,
+        "death/s": 219,
+        "death/sw": 219,
+        "death/w": 219,
+        "death/nw": 219,
+        "death/n": 219,
+        "death/ne": 219
+      }
+    },
+    "nativeIdleHeight": 160,
+    "mechanicalScale": 0.676923076923077,
+    "newPoses": [
+      {
+        "frame": "hurt/e",
+        "sourceRegion": [
+          0,
+          0,
+          239,
+          394
+        ],
+        "completePoseCrop": [
+          53,
+          88,
+          209,
+          306
+        ],
+        "solidWidth": 94,
+        "solidHeight": 136,
+        "footline": 219,
+        "registrationXY": [
+          43,
+          78
+        ]
+      },
+      {
+        "frame": "hurt/se",
+        "sourceRegion": [
+          239,
+          0,
+          545,
+          394
+        ],
+        "completePoseCrop": [
+          87,
+          94,
+          233,
+          305
+        ],
+        "solidWidth": 87,
+        "solidHeight": 131,
+        "footline": 219,
+        "registrationXY": [
+          46,
+          83
+        ]
+      },
+      {
+        "frame": "hurt/s",
+        "sourceRegion": [
+          545,
+          0,
+          778,
+          394
+        ],
+        "completePoseCrop": [
+          63,
+          89,
+          201,
+          308
+        ],
+        "solidWidth": 81,
+        "solidHeight": 136,
+        "footline": 219,
+        "registrationXY": [
+          49,
+          78
+        ]
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceRegion": [
+          778,
+          0,
+          1108,
+          394
+        ],
+        "completePoseCrop": [
+          77,
+          91,
+          258,
+          307
+        ],
+        "solidWidth": 111,
+        "solidHeight": 134,
+        "footline": 219,
+        "registrationXY": [
+          34,
+          80
+        ]
+      },
+      {
+        "frame": "hurt/w",
+        "sourceRegion": [
+          1108,
+          0,
+          1406,
+          394
+        ],
+        "completePoseCrop": [
+          26,
+          85,
+          198,
+          310
+        ],
+        "solidWidth": 104,
+        "solidHeight": 140,
+        "footline": 219,
+        "registrationXY": [
+          38,
+          74
+        ]
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceRegion": [
+          1406,
+          0,
+          1643,
+          394
+        ],
+        "completePoseCrop": [
+          21,
+          86,
+          175,
+          307
+        ],
+        "solidWidth": 92,
+        "solidHeight": 138,
+        "footline": 219,
+        "registrationXY": [
+          44,
+          76
+        ]
+      },
+      {
+        "frame": "hurt/n",
+        "sourceRegion": [
+          1643,
+          0,
+          1872,
+          394
+        ],
+        "completePoseCrop": [
+          56,
+          90,
+          195,
+          299
+        ],
+        "solidWidth": 82,
+        "solidHeight": 129,
+        "footline": 219,
+        "registrationXY": [
+          49,
+          85
+        ]
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceRegion": [
+          1872,
+          0,
+          2172,
+          394
+        ],
+        "completePoseCrop": [
+          74,
+          88,
+          251,
+          298
+        ],
+        "solidWidth": 108,
+        "solidHeight": 130,
+        "footline": 219,
+        "registrationXY": [
+          36,
+          84
+        ]
+      },
+      {
+        "frame": "death/e",
+        "sourceRegion": [
+          0,
+          394,
+          286,
+          724
+        ],
+        "completePoseCrop": [
+          9,
+          99,
+          248,
+          217
+        ],
+        "solidWidth": 150,
+        "solidHeight": 68,
+        "footline": 219,
+        "registrationXY": [
+          15,
+          146
+        ]
+      },
+      {
+        "frame": "death/se",
+        "sourceRegion": [
+          286,
+          394,
+          561,
+          724
+        ],
+        "completePoseCrop": [
+          0,
+          95,
+          239,
+          221
+        ],
+        "solidWidth": 151,
+        "solidHeight": 73,
+        "footline": 219,
+        "registrationXY": [
+          15,
+          141
+        ]
+      },
+      {
+        "frame": "death/s",
+        "sourceRegion": [
+          561,
+          394,
+          833,
+          724
+        ],
+        "completePoseCrop": [
+          5,
+          85,
+          248,
+          227
+        ],
+        "solidWidth": 152,
+        "solidHeight": 84,
+        "footline": 219,
+        "registrationXY": [
+          14,
+          130
+        ]
+      },
+      {
+        "frame": "death/sw",
+        "sourceRegion": [
+          833,
+          394,
+          1100,
+          724
+        ],
+        "completePoseCrop": [
+          0,
+          97,
+          244,
+          221
+        ],
+        "solidWidth": 155,
+        "solidHeight": 72,
+        "footline": 219,
+        "registrationXY": [
+          13,
+          142
+        ]
+      },
+      {
+        "frame": "death/w",
+        "sourceRegion": [
+          1100,
+          394,
+          1358,
+          724
+        ],
+        "completePoseCrop": [
+          0,
+          103,
+          244,
+          211
+        ],
+        "solidWidth": 153,
+        "solidHeight": 61,
+        "footline": 219,
+        "registrationXY": [
+          13,
+          153
+        ]
+      },
+      {
+        "frame": "death/nw",
+        "sourceRegion": [
+          1358,
+          394,
+          1639,
+          724
+        ],
+        "completePoseCrop": [
+          6,
+          99,
+          263,
+          215
+        ],
+        "solidWidth": 162,
+        "solidHeight": 66,
+        "footline": 219,
+        "registrationXY": [
+          9,
+          147
+        ]
+      },
+      {
+        "frame": "death/n",
+        "sourceRegion": [
+          1639,
+          394,
+          1917,
+          724
+        ],
+        "completePoseCrop": [
+          0,
+          99,
+          260,
+          215
+        ],
+        "solidWidth": 167,
+        "solidHeight": 67,
+        "footline": 219,
+        "registrationXY": [
+          8,
+          147
+        ]
+      },
+      {
+        "frame": "death/ne",
+        "sourceRegion": [
+          1917,
+          394,
+          2172,
+          724
+        ],
+        "completePoseCrop": [
+          0,
+          97,
+          244,
+          221
+        ],
+        "solidWidth": 153,
+        "solidHeight": 72,
+        "footline": 219,
+        "registrationXY": [
+          13,
+          142
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ancient-species-001",
+    "name": "desertSnake",
+    "originalPNG": "assets/actors/monsters/desertSnake.png",
+    "originalAtlas": "assets/actors/monsters/desertSnake.json",
+    "originalPNGSHA256": "0133a418b78a393c8168ad85c3950bea01797be75268c1b69a16b6ce6504f0a4",
+    "originalRGBAsha256": "253bf036fd992711a6c72f4ce205ce3855b1a6741f9e371c82a9dc2c98926a3b",
+    "top32ExactCopy": true,
+    "source": "art/source/task10-legacy-upgrade-c/ancient-species-001-source.png",
+    "sourceSHA256": "36495160751b05f2355faefcd232f05301b5fc87fe9f43df5401bfc1a6c78ed3",
+    "originalEntry": {
+      "key": "actor-monster-desertSnake",
+      "url": "assets/actors/monsters/desertSnake.png",
+      "atlasURL": "assets/actors/monsters/desertSnake.json",
+      "scale": 0.36,
+      "annotationHeight": 67.4,
+      "baselines": {
+        "idle": 240,
+        "run-a": 224,
+        "run-b": 213,
+        "attack": 216
+      }
+    },
+    "newEntry": {
+      "key": "task10legacy-c-desertSnake",
+      "url": "assets/actors/task10-legacy-upgrade-c/ancient-species-001.png",
+      "atlasURL": "assets/actors/task10-legacy-upgrade-c/ancient-species-001.json",
+      "scale": 0.36,
+      "annotationHeight": 67.4,
+      "baselines": {
+        "idle": 240,
+        "run-a": 224,
+        "run-b": 213,
+        "attack": 216
+      },
+      "frameWidth": 192,
+      "frameHeight": 256,
+      "poseBanks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "drawnDeath": true,
+      "footlines": {
+        "hurt/e": 225,
+        "hurt/se": 226,
+        "hurt/s": 225,
+        "hurt/sw": 225,
+        "hurt/w": 225,
+        "hurt/nw": 226,
+        "hurt/n": 226,
+        "hurt/ne": 225,
+        "death/e": 225,
+        "death/se": 225,
+        "death/s": 225,
+        "death/sw": 225,
+        "death/w": 225,
+        "death/nw": 225,
+        "death/n": 225,
+        "death/ne": 225
+      }
+    },
+    "nativeIdleHeight": 167,
+    "mechanicalScale": 0.6263345195729537,
+    "newPoses": [
+      {
+        "frame": "hurt/e",
+        "sourceRegion": [
+          0,
+          0,
+          296,
+          370
+        ],
+        "completePoseCrop": [
+          55,
+          85,
+          225,
+          300
+        ],
+        "solidWidth": 94,
+        "solidHeight": 123,
+        "footline": 225,
+        "registrationXY": [
+          43,
+          97
+        ]
+      },
+      {
+        "frame": "hurt/se",
+        "sourceRegion": [
+          296,
+          0,
+          513,
+          370
+        ],
+        "completePoseCrop": [
+          38,
+          74,
+          198,
+          299
+        ],
+        "solidWidth": 88,
+        "solidHeight": 130,
+        "footline": 226,
+        "registrationXY": [
+          46,
+          91
+        ]
+      },
+      {
+        "frame": "hurt/s",
+        "sourceRegion": [
+          513,
+          0,
+          766,
+          370
+        ],
+        "completePoseCrop": [
+          84,
+          70,
+          242,
+          301
+        ],
+        "solidWidth": 87,
+        "solidHeight": 133,
+        "footline": 225,
+        "registrationXY": [
+          46,
+          87
+        ]
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceRegion": [
+          766,
+          0,
+          1066,
+          370
+        ],
+        "completePoseCrop": [
+          92,
+          74,
+          265,
+          299
+        ],
+        "solidWidth": 96,
+        "solidHeight": 130,
+        "footline": 225,
+        "registrationXY": [
+          42,
+          91
+        ]
+      },
+      {
+        "frame": "hurt/w",
+        "sourceRegion": [
+          1066,
+          0,
+          1390,
+          370
+        ],
+        "completePoseCrop": [
+          67,
+          87,
+          236,
+          301
+        ],
+        "solidWidth": 94,
+        "solidHeight": 122,
+        "footline": 225,
+        "registrationXY": [
+          43,
+          98
+        ]
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceRegion": [
+          1390,
+          0,
+          1641,
+          370
+        ],
+        "completePoseCrop": [
+          20,
+          73,
+          180,
+          300
+        ],
+        "solidWidth": 89,
+        "solidHeight": 132,
+        "footline": 226,
+        "registrationXY": [
+          46,
+          90
+        ]
+      },
+      {
+        "frame": "hurt/n",
+        "sourceRegion": [
+          1641,
+          0,
+          1929,
+          370
+        ],
+        "completePoseCrop": [
+          38,
+          76,
+          202,
+          300
+        ],
+        "solidWidth": 91,
+        "solidHeight": 130,
+        "footline": 226,
+        "registrationXY": [
+          44,
+          92
+        ]
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceRegion": [
+          1929,
+          0,
+          2172,
+          370
+        ],
+        "completePoseCrop": [
+          23,
+          81,
+          183,
+          300
+        ],
+        "solidWidth": 87,
+        "solidHeight": 125,
+        "footline": 225,
+        "registrationXY": [
+          46,
+          95
+        ]
+      },
+      {
+        "frame": "death/e",
+        "sourceRegion": [
+          0,
+          370,
+          290,
+          724
+        ],
+        "completePoseCrop": [
+          8,
+          133,
+          277,
+          216
+        ],
+        "solidWidth": 156,
+        "solidHeight": 40,
+        "footline": 225,
+        "registrationXY": [
+          12,
+          180
+        ]
+      },
+      {
+        "frame": "death/se",
+        "sourceRegion": [
+          290,
+          370,
+          545,
+          724
+        ],
+        "completePoseCrop": [
+          3,
+          107,
+          236,
+          250
+        ],
+        "solidWidth": 135,
+        "solidHeight": 78,
+        "footline": 225,
+        "registrationXY": [
+          23,
+          142
+        ]
+      },
+      {
+        "frame": "death/s",
+        "sourceRegion": [
+          545,
+          370,
+          778,
+          724
+        ],
+        "completePoseCrop": [
+          43,
+          98,
+          225,
+          254
+        ],
+        "solidWidth": 103,
+        "solidHeight": 87,
+        "footline": 225,
+        "registrationXY": [
+          39,
+          134
+        ]
+      },
+      {
+        "frame": "death/sw",
+        "sourceRegion": [
+          778,
+          370,
+          1060,
+          724
+        ],
+        "completePoseCrop": [
+          44,
+          100,
+          282,
+          247
+        ],
+        "solidWidth": 138,
+        "solidHeight": 80,
+        "footline": 225,
+        "registrationXY": [
+          21,
+          140
+        ]
+      },
+      {
+        "frame": "death/w",
+        "sourceRegion": [
+          1060,
+          370,
+          1376,
+          724
+        ],
+        "completePoseCrop": [
+          14,
+          131,
+          295,
+          223
+        ],
+        "solidWidth": 164,
+        "solidHeight": 47,
+        "footline": 225,
+        "registrationXY": [
+          8,
+          174
+        ]
+      },
+      {
+        "frame": "death/nw",
+        "sourceRegion": [
+          1376,
+          370,
+          1617,
+          724
+        ],
+        "completePoseCrop": [
+          0,
+          108,
+          241,
+          232
+        ],
+        "solidWidth": 143,
+        "solidHeight": 66,
+        "footline": 225,
+        "registrationXY": [
+          20,
+          154
+        ]
+      },
+      {
+        "frame": "death/n",
+        "sourceRegion": [
+          1617,
+          370,
+          1864,
+          724
+        ],
+        "completePoseCrop": [
+          37,
+          98,
+          247,
+          240
+        ],
+        "solidWidth": 123,
+        "solidHeight": 78,
+        "footline": 225,
+        "registrationXY": [
+          30,
+          143
+        ]
+      },
+      {
+        "frame": "death/ne",
+        "sourceRegion": [
+          1864,
+          370,
+          2172,
+          724
+        ],
+        "completePoseCrop": [
+          38,
+          109,
+          297,
+          240
+        ],
+        "solidWidth": 150,
+        "solidHeight": 70,
+        "footline": 225,
+        "registrationXY": [
+          15,
+          150
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ancient-species-002",
+    "name": "scarab",
+    "originalPNG": "assets/actors/monsters/scarab.png",
+    "originalAtlas": "assets/actors/monsters/scarab.json",
+    "originalPNGSHA256": "658e0042fd2cb30c57b201a054dc5e444858939ebf84f42c96722fd09c62a9e2",
+    "originalRGBAsha256": "30f3a36af59d65d6acff99b42be3f8f91aa36e937d30320bec70a2d1681f0c65",
+    "top32ExactCopy": true,
+    "source": "art/source/task10-legacy-upgrade-c/ancient-species-002-source.png",
+    "sourceSHA256": "8d19c8f5054cc939f4f7d9cc237a29e9b101758e1d95db776158aa08d1801dd8",
+    "originalEntry": {
+      "key": "actor-monster-scarab",
+      "url": "assets/actors/monsters/scarab.png",
+      "atlasURL": "assets/actors/monsters/scarab.json",
+      "scale": 0.43,
+      "annotationHeight": 59.6,
+      "baselines": {
+        "idle": 207,
+        "run-a": 199,
+        "run-b": 188,
+        "attack": 181
+      }
+    },
+    "newEntry": {
+      "key": "task10legacy-c-scarab",
+      "url": "assets/actors/task10-legacy-upgrade-c/ancient-species-002.png",
+      "atlasURL": "assets/actors/task10-legacy-upgrade-c/ancient-species-002.json",
+      "scale": 0.43,
+      "annotationHeight": 59.6,
+      "baselines": {
+        "idle": 207,
+        "run-a": 199,
+        "run-b": 188,
+        "attack": 181
+      },
+      "frameWidth": 192,
+      "frameHeight": 256,
+      "poseBanks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "drawnDeath": true,
+      "footlines": {
+        "hurt/e": 207,
+        "hurt/se": 207,
+        "hurt/s": 207,
+        "hurt/sw": 207,
+        "hurt/w": 207,
+        "hurt/nw": 207,
+        "hurt/n": 207,
+        "hurt/ne": 207,
+        "death/e": 207,
+        "death/se": 207,
+        "death/s": 207,
+        "death/sw": 207,
+        "death/w": 207,
+        "death/nw": 207,
+        "death/n": 207,
+        "death/ne": 207
+      }
+    },
+    "nativeIdleHeight": 130,
+    "mechanicalScale": 0.7685589519650655,
+    "newPoses": [
+      {
+        "frame": "hurt/e",
+        "sourceRegion": [
+          0,
+          0,
+          312,
+          384
+        ],
+        "completePoseCrop": [
+          30,
+          126,
+          246,
+          277
+        ],
+        "solidWidth": 153,
+        "solidHeight": 102,
+        "footline": 207,
+        "registrationXY": [
+          13,
+          99
+        ]
+      },
+      {
+        "frame": "hurt/se",
+        "sourceRegion": [
+          312,
+          0,
+          569,
+          384
+        ],
+        "completePoseCrop": [
+          3,
+          123,
+          195,
+          281
+        ],
+        "solidWidth": 134,
+        "solidHeight": 107,
+        "footline": 207,
+        "registrationXY": [
+          22,
+          94
+        ]
+      },
+      {
+        "frame": "hurt/s",
+        "sourceRegion": [
+          569,
+          0,
+          794,
+          384
+        ],
+        "completePoseCrop": [
+          8,
+          124,
+          203,
+          281
+        ],
+        "solidWidth": 136,
+        "solidHeight": 107,
+        "footline": 207,
+        "registrationXY": [
+          21,
+          94
+        ]
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceRegion": [
+          794,
+          0,
+          1100,
+          384
+        ],
+        "completePoseCrop": [
+          45,
+          124,
+          242,
+          278
+        ],
+        "solidWidth": 137,
+        "solidHeight": 103,
+        "footline": 207,
+        "registrationXY": [
+          20,
+          97
+        ]
+      },
+      {
+        "frame": "hurt/w",
+        "sourceRegion": [
+          1100,
+          0,
+          1372,
+          384
+        ],
+        "completePoseCrop": [
+          6,
+          125,
+          229,
+          278
+        ],
+        "solidWidth": 157,
+        "solidHeight": 103,
+        "footline": 207,
+        "registrationXY": [
+          10,
+          97
+        ]
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceRegion": [
+          1372,
+          0,
+          1667,
+          384
+        ],
+        "completePoseCrop": [
+          11,
+          122,
+          225,
+          273
+        ],
+        "solidWidth": 150,
+        "solidHeight": 102,
+        "footline": 207,
+        "registrationXY": [
+          14,
+          99
+        ]
+      },
+      {
+        "frame": "hurt/n",
+        "sourceRegion": [
+          1667,
+          0,
+          1856,
+          384
+        ],
+        "completePoseCrop": [
+          4,
+          132,
+          186,
+          279
+        ],
+        "solidWidth": 126,
+        "solidHeight": 98,
+        "footline": 207,
+        "registrationXY": [
+          26,
+          102
+        ]
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceRegion": [
+          1856,
+          0,
+          2172,
+          384
+        ],
+        "completePoseCrop": [
+          73,
+          122,
+          284,
+          273
+        ],
+        "solidWidth": 148,
+        "solidHeight": 102,
+        "footline": 207,
+        "registrationXY": [
+          15,
+          99
+        ]
+      },
+      {
+        "frame": "death/e",
+        "sourceRegion": [
+          0,
+          384,
+          296,
+          724
+        ],
+        "completePoseCrop": [
+          33,
+          82,
+          259,
+          242
+        ],
+        "solidWidth": 160,
+        "solidHeight": 109,
+        "footline": 207,
+        "registrationXY": [
+          9,
+          92
+        ]
+      },
+      {
+        "frame": "death/se",
+        "sourceRegion": [
+          296,
+          384,
+          561,
+          724
+        ],
+        "completePoseCrop": [
+          23,
+          79,
+          223,
+          253
+        ],
+        "solidWidth": 140,
+        "solidHeight": 119,
+        "footline": 207,
+        "registrationXY": [
+          19,
+          81
+        ]
+      },
+      {
+        "frame": "death/s",
+        "sourceRegion": [
+          561,
+          384,
+          794,
+          724
+        ],
+        "completePoseCrop": [
+          17,
+          81,
+          212,
+          247
+        ],
+        "solidWidth": 136,
+        "solidHeight": 112,
+        "footline": 207,
+        "registrationXY": [
+          21,
+          89
+        ]
+      },
+      {
+        "frame": "death/sw",
+        "sourceRegion": [
+          794,
+          384,
+          1044,
+          724
+        ],
+        "completePoseCrop": [
+          30,
+          77,
+          238,
+          254
+        ],
+        "solidWidth": 146,
+        "solidHeight": 122,
+        "footline": 207,
+        "registrationXY": [
+          16,
+          79
+        ]
+      },
+      {
+        "frame": "death/w",
+        "sourceRegion": [
+          1044,
+          384,
+          1349,
+          724
+        ],
+        "completePoseCrop": [
+          44,
+          88,
+          273,
+          247
+        ],
+        "solidWidth": 162,
+        "solidHeight": 108,
+        "footline": 207,
+        "registrationXY": [
+          8,
+          93
+        ]
+      },
+      {
+        "frame": "death/nw",
+        "sourceRegion": [
+          1349,
+          384,
+          1635,
+          724
+        ],
+        "completePoseCrop": [
+          19,
+          76,
+          242,
+          242
+        ],
+        "solidWidth": 158,
+        "solidHeight": 115,
+        "footline": 207,
+        "registrationXY": [
+          10,
+          87
+        ]
+      },
+      {
+        "frame": "death/n",
+        "sourceRegion": [
+          1635,
+          384,
+          1923,
+          724
+        ],
+        "completePoseCrop": [
+          27,
+          90,
+          227,
+          246
+        ],
+        "solidWidth": 140,
+        "solidHeight": 106,
+        "footline": 207,
+        "registrationXY": [
+          19,
+          95
+        ]
+      },
+      {
+        "frame": "death/ne",
+        "sourceRegion": [
+          1923,
+          384,
+          2172,
+          724
+        ],
+        "completePoseCrop": [
+          7,
+          82,
+          233,
+          242
+        ],
+        "solidWidth": 160,
+        "solidHeight": 109,
+        "footline": 207,
+        "registrationXY": [
+          9,
+          92
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ancient-species-004",
+    "name": "ancientSentinel",
+    "originalPNG": "assets/actors/monsters/ancientSentinel.png",
+    "originalAtlas": "assets/actors/monsters/ancientSentinel.json",
+    "originalPNGSHA256": "c1bdb2561f58f0fa08896f17481a7dc80853e7c1e52506a700c12c2ec1f49dc1",
+    "originalRGBAsha256": "c367e35b67740091af2cfe3cdbe5e033c6477c9ea23a19b4f3c4fae2b253482c",
+    "top32ExactCopy": true,
+    "source": "art/source/task10-legacy-upgrade-c/ancient-species-004-source.png",
+    "sourceSHA256": "24c5e33e260dd4326008e09c02c60b3b2192fc394f6a1d96da490dcf25dc1445",
+    "originalEntry": {
+      "key": "actor-monster-ancientSentinel",
+      "url": "assets/actors/monsters/ancientSentinel.png",
+      "atlasURL": "assets/actors/monsters/ancientSentinel.json",
+      "scale": 0.68,
+      "annotationHeight": 96.74000000000001,
+      "baselines": {
+        "idle": 207.5,
+        "run-a": 201,
+        "run-b": 193,
+        "attack": 180
+      }
+    },
+    "newEntry": {
+      "key": "task10legacy-c-ancientSentinel",
+      "url": "assets/actors/task10-legacy-upgrade-c/ancient-species-004.png",
+      "atlasURL": "assets/actors/task10-legacy-upgrade-c/ancient-species-004.json",
+      "scale": 0.68,
+      "annotationHeight": 96.74000000000001,
+      "baselines": {
+        "idle": 207.5,
+        "run-a": 201,
+        "run-b": 193,
+        "attack": 180
+      },
+      "frameWidth": 192,
+      "frameHeight": 256,
+      "poseBanks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "drawnDeath": true,
+      "footlines": {
+        "hurt/e": 208,
+        "hurt/se": 208,
+        "hurt/s": 208,
+        "hurt/sw": 208,
+        "hurt/w": 208,
+        "hurt/nw": 208,
+        "hurt/n": 208,
+        "hurt/ne": 208,
+        "death/e": 208,
+        "death/se": 208,
+        "death/s": 208,
+        "death/sw": 208,
+        "death/w": 208,
+        "death/nw": 208,
+        "death/n": 208,
+        "death/ne": 208
+      }
+    },
+    "nativeIdleHeight": 132,
+    "mechanicalScale": 0.5961290322580645,
+    "newPoses": [
+      {
+        "frame": "hurt/e",
+        "sourceRegion": [
+          0,
+          0,
+          312,
+          392
+        ],
+        "completePoseCrop": [
+          50,
+          81,
+          229,
+          315
+        ],
+        "solidWidth": 96,
+        "solidHeight": 128,
+        "footline": 208,
+        "registrationXY": [
+          42,
+          75
+        ]
+      },
+      {
+        "frame": "hurt/se",
+        "sourceRegion": [
+          312,
+          0,
+          553,
+          392
+        ],
+        "completePoseCrop": [
+          2,
+          81,
+          202,
+          316
+        ],
+        "solidWidth": 108,
+        "solidHeight": 129,
+        "footline": 208,
+        "registrationXY": [
+          36,
+          74
+        ]
+      },
+      {
+        "frame": "hurt/s",
+        "sourceRegion": [
+          553,
+          0,
+          843,
+          392
+        ],
+        "completePoseCrop": [
+          17,
+          81,
+          232,
+          316
+        ],
+        "solidWidth": 117,
+        "solidHeight": 130,
+        "footline": 208,
+        "registrationXY": [
+          32,
+          74
+        ]
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceRegion": [
+          843,
+          0,
+          1110,
+          392
+        ],
+        "completePoseCrop": [
+          0,
+          80,
+          191,
+          314
+        ],
+        "solidWidth": 103,
+        "solidHeight": 129,
+        "footline": 208,
+        "registrationXY": [
+          39,
+          75
+        ]
+      },
+      {
+        "frame": "hurt/w",
+        "sourceRegion": [
+          1110,
+          0,
+          1376,
+          392
+        ],
+        "completePoseCrop": [
+          16,
+          81,
+          182,
+          316
+        ],
+        "solidWidth": 87,
+        "solidHeight": 130,
+        "footline": 208,
+        "registrationXY": [
+          46,
+          74
+        ]
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceRegion": [
+          1376,
+          0,
+          1647,
+          392
+        ],
+        "completePoseCrop": [
+          8,
+          81,
+          210,
+          315
+        ],
+        "solidWidth": 110,
+        "solidHeight": 129,
+        "footline": 208,
+        "registrationXY": [
+          36,
+          75
+        ]
+      },
+      {
+        "frame": "hurt/n",
+        "sourceRegion": [
+          1647,
+          0,
+          1929,
+          392
+        ],
+        "completePoseCrop": [
+          9,
+          81,
+          213,
+          309
+        ],
+        "solidWidth": 112,
+        "solidHeight": 125,
+        "footline": 208,
+        "registrationXY": [
+          35,
+          78
+        ]
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceRegion": [
+          1929,
+          0,
+          2172,
+          392
+        ],
+        "completePoseCrop": [
+          18,
+          85,
+          209,
+          312
+        ],
+        "solidWidth": 104,
+        "solidHeight": 124,
+        "footline": 208,
+        "registrationXY": [
+          39,
+          80
+        ]
+      },
+      {
+        "frame": "death/e",
+        "sourceRegion": [
+          0,
+          392,
+          280,
+          724
+        ],
+        "completePoseCrop": [
+          16,
+          83,
+          248,
+          240
+        ],
+        "solidWidth": 128,
+        "solidHeight": 83,
+        "footline": 208,
+        "registrationXY": [
+          27,
+          120
+        ]
+      },
+      {
+        "frame": "death/se",
+        "sourceRegion": [
+          280,
+          392,
+          555,
+          724
+        ],
+        "completePoseCrop": [
+          11,
+          90,
+          249,
+          239
+        ],
+        "solidWidth": 132,
+        "solidHeight": 78,
+        "footline": 208,
+        "registrationXY": [
+          25,
+          126
+        ]
+      },
+      {
+        "frame": "death/s",
+        "sourceRegion": [
+          555,
+          392,
+          823,
+          724
+        ],
+        "completePoseCrop": [
+          2,
+          96,
+          246,
+          243
+        ],
+        "solidWidth": 135,
+        "solidHeight": 77,
+        "footline": 208,
+        "registrationXY": [
+          23,
+          127
+        ]
+      },
+      {
+        "frame": "death/sw",
+        "sourceRegion": [
+          823,
+          392,
+          1100,
+          724
+        ],
+        "completePoseCrop": [
+          9,
+          98,
+          251,
+          252
+        ],
+        "solidWidth": 134,
+        "solidHeight": 82,
+        "footline": 208,
+        "registrationXY": [
+          24,
+          122
+        ]
+      },
+      {
+        "frame": "death/w",
+        "sourceRegion": [
+          1100,
+          392,
+          1358,
+          724
+        ],
+        "completePoseCrop": [
+          7,
+          94,
+          246,
+          243
+        ],
+        "solidWidth": 131,
+        "solidHeight": 78,
+        "footline": 208,
+        "registrationXY": [
+          25,
+          125
+        ]
+      },
+      {
+        "frame": "death/nw",
+        "sourceRegion": [
+          1358,
+          392,
+          1633,
+          724
+        ],
+        "completePoseCrop": [
+          10,
+          90,
+          259,
+          238
+        ],
+        "solidWidth": 138,
+        "solidHeight": 78,
+        "footline": 208,
+        "registrationXY": [
+          22,
+          126
+        ]
+      },
+      {
+        "frame": "death/n",
+        "sourceRegion": [
+          1633,
+          392,
+          1888,
+          724
+        ],
+        "completePoseCrop": [
+          1,
+          88,
+          255,
+          234
+        ],
+        "solidWidth": 140,
+        "solidHeight": 76,
+        "footline": 208,
+        "registrationXY": [
+          20,
+          127
+        ]
+      },
+      {
+        "frame": "death/ne",
+        "sourceRegion": [
+          1888,
+          392,
+          2172,
+          724
+        ],
+        "completePoseCrop": [
+          18,
+          88,
+          275,
+          242
+        ],
+        "solidWidth": 143,
+        "solidHeight": 81,
+        "footline": 208,
+        "registrationXY": [
+          19,
+          122
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ancient-species-006",
+    "name": "ancientGargoyle",
+    "originalPNG": "assets/actors/monsters/ancientGargoyle.png",
+    "originalAtlas": "assets/actors/monsters/ancientGargoyle.json",
+    "originalPNGSHA256": "bda6203564deab571ed061e39461aa3a56f291ef4c8f8cc7a4f09fb1676e6076",
+    "originalRGBAsha256": "5b9cae69274fefef76ebfcf6d2ab5e2ccee3b9383410e778bc88712fa0037487",
+    "top32ExactCopy": true,
+    "source": "art/source/task10-legacy-upgrade-c/ancient-species-006-source.png",
+    "sourceSHA256": "906f43d08aca4ad72963eaabbfe06b3f0acb24cf643ba2147fcd7baa3e86a736",
+    "originalEntry": {
+      "key": "actor-monster-ancientGargoyle",
+      "url": "assets/actors/monsters/ancientGargoyle.png",
+      "atlasURL": "assets/actors/monsters/ancientGargoyle.json",
+      "scale": 0.52,
+      "annotationHeight": 74.04,
+      "baselines": {
+        "idle": 202,
+        "run-a": 191,
+        "run-b": 177,
+        "attack": 184
+      }
+    },
+    "newEntry": {
+      "key": "task10legacy-c-ancientGargoyle",
+      "url": "assets/actors/task10-legacy-upgrade-c/ancient-species-006.png",
+      "atlasURL": "assets/actors/task10-legacy-upgrade-c/ancient-species-006.json",
+      "scale": 0.52,
+      "annotationHeight": 74.04,
+      "baselines": {
+        "idle": 202,
+        "run-a": 191,
+        "run-b": 177,
+        "attack": 184
+      },
+      "frameWidth": 192,
+      "frameHeight": 256,
+      "poseBanks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "drawnDeath": true,
+      "footlines": {
+        "hurt/e": 202,
+        "hurt/se": 202,
+        "hurt/s": 202,
+        "hurt/sw": 202,
+        "hurt/w": 202,
+        "hurt/nw": 202,
+        "hurt/n": 202,
+        "hurt/ne": 202,
+        "death/e": 202,
+        "death/se": 202,
+        "death/s": 202,
+        "death/sw": 202,
+        "death/w": 202,
+        "death/nw": 202,
+        "death/n": 202,
+        "death/ne": 202
+      }
+    },
+    "nativeIdleHeight": 141,
+    "mechanicalScale": 0.6929133858267716,
+    "newPoses": [
+      {
+        "frame": "hurt/e",
+        "sourceRegion": [
+          0,
+          0,
+          286,
+          368
+        ],
+        "completePoseCrop": [
+          44,
+          98,
+          224,
+          298
+        ],
+        "solidWidth": 112,
+        "solidHeight": 127,
+        "footline": 202,
+        "registrationXY": [
+          33,
+          70
+        ]
+      },
+      {
+        "frame": "hurt/se",
+        "sourceRegion": [
+          286,
+          0,
+          545,
+          368
+        ],
+        "completePoseCrop": [
+          33,
+          99,
+          219,
+          295
+        ],
+        "solidWidth": 116,
+        "solidHeight": 124,
+        "footline": 202,
+        "registrationXY": [
+          31,
+          73
+        ]
+      },
+      {
+        "frame": "hurt/s",
+        "sourceRegion": [
+          545,
+          0,
+          831,
+          368
+        ],
+        "completePoseCrop": [
+          31,
+          97,
+          224,
+          284
+        ],
+        "solidWidth": 121,
+        "solidHeight": 118,
+        "footline": 202,
+        "registrationXY": [
+          29,
+          79
+        ]
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceRegion": [
+          831,
+          0,
+          1084,
+          368
+        ],
+        "completePoseCrop": [
+          22,
+          104,
+          207,
+          298
+        ],
+        "solidWidth": 116,
+        "solidHeight": 122,
+        "footline": 202,
+        "registrationXY": [
+          32,
+          75
+        ]
+      },
+      {
+        "frame": "hurt/w",
+        "sourceRegion": [
+          1084,
+          0,
+          1341,
+          368
+        ],
+        "completePoseCrop": [
+          32,
+          98,
+          225,
+          296
+        ],
+        "solidWidth": 122,
+        "solidHeight": 124,
+        "footline": 202,
+        "registrationXY": [
+          29,
+          73
+        ]
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceRegion": [
+          1341,
+          0,
+          1641,
+          368
+        ],
+        "completePoseCrop": [
+          60,
+          96,
+          241,
+          297
+        ],
+        "solidWidth": 113,
+        "solidHeight": 127,
+        "footline": 202,
+        "registrationXY": [
+          33,
+          70
+        ]
+      },
+      {
+        "frame": "hurt/n",
+        "sourceRegion": [
+          1641,
+          0,
+          1896,
+          368
+        ],
+        "completePoseCrop": [
+          23,
+          93,
+          215,
+          302
+        ],
+        "solidWidth": 121,
+        "solidHeight": 133,
+        "footline": 202,
+        "registrationXY": [
+          29,
+          64
+        ]
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceRegion": [
+          1896,
+          0,
+          2172,
+          368
+        ],
+        "completePoseCrop": [
+          50,
+          98,
+          234,
+          298
+        ],
+        "solidWidth": 115,
+        "solidHeight": 127,
+        "footline": 202,
+        "registrationXY": [
+          32,
+          70
+        ]
+      },
+      {
+        "frame": "death/e",
+        "sourceRegion": [
+          0,
+          368,
+          271,
+          724
+        ],
+        "completePoseCrop": [
+          14,
+          118,
+          256,
+          256
+        ],
+        "solidWidth": 156,
+        "solidHeight": 84,
+        "footline": 202,
+        "registrationXY": [
+          12,
+          113
+        ]
+      },
+      {
+        "frame": "death/se",
+        "sourceRegion": [
+          271,
+          368,
+          543,
+          724
+        ],
+        "completePoseCrop": [
+          15,
+          113,
+          252,
+          258
+        ],
+        "solidWidth": 151,
+        "solidHeight": 87,
+        "footline": 202,
+        "registrationXY": [
+          14,
+          110
+        ]
+      },
+      {
+        "frame": "death/s",
+        "sourceRegion": [
+          543,
+          368,
+          815,
+          724
+        ],
+        "completePoseCrop": [
+          8,
+          114,
+          255,
+          255
+        ],
+        "solidWidth": 159,
+        "solidHeight": 85,
+        "footline": 202,
+        "registrationXY": [
+          10,
+          111
+        ]
+      },
+      {
+        "frame": "death/sw",
+        "sourceRegion": [
+          815,
+          368,
+          1092,
+          724
+        ],
+        "completePoseCrop": [
+          12,
+          117,
+          257,
+          257
+        ],
+        "solidWidth": 157,
+        "solidHeight": 85,
+        "footline": 202,
+        "registrationXY": [
+          11,
+          112
+        ]
+      },
+      {
+        "frame": "death/w",
+        "sourceRegion": [
+          1092,
+          368,
+          1358,
+          724
+        ],
+        "completePoseCrop": [
+          5,
+          121,
+          254,
+          255
+        ],
+        "solidWidth": 160,
+        "solidHeight": 81,
+        "footline": 202,
+        "registrationXY": [
+          9,
+          116
+        ]
+      },
+      {
+        "frame": "death/nw",
+        "sourceRegion": [
+          1358,
+          368,
+          1629,
+          724
+        ],
+        "completePoseCrop": [
+          10,
+          119,
+          251,
+          275
+        ],
+        "solidWidth": 155,
+        "solidHeight": 95,
+        "footline": 202,
+        "registrationXY": [
+          12,
+          102
+        ]
+      },
+      {
+        "frame": "death/n",
+        "sourceRegion": [
+          1629,
+          368,
+          1905,
+          724
+        ],
+        "completePoseCrop": [
+          4,
+          121,
+          258,
+          275
+        ],
+        "solidWidth": 164,
+        "solidHeight": 95,
+        "footline": 202,
+        "registrationXY": [
+          8,
+          102
+        ]
+      },
+      {
+        "frame": "death/ne",
+        "sourceRegion": [
+          1905,
+          368,
+          2172,
+          724
+        ],
+        "completePoseCrop": [
+          6,
+          124,
+          254,
+          263
+        ],
+        "solidWidth": 160,
+        "solidHeight": 83,
+        "footline": 202,
+        "registrationXY": [
+          10,
+          114
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ancient-species-009",
+    "name": "arcaneWisp",
+    "originalPNG": "assets/actors/monsters/arcaneWisp.png",
+    "originalAtlas": "assets/actors/monsters/arcaneWisp.json",
+    "originalPNGSHA256": "a16a36bed680c289f4785e4c0410f40142a985338ac7f9373f3d72511e779e86",
+    "originalRGBAsha256": "ff8bed0585c5e0e34238fd0820409c9eb73988e44397c22a63f5a9a5cd155941",
+    "top32ExactCopy": true,
+    "source": "art/source/task10-legacy-upgrade-c/ancient-species-009-source.png",
+    "sourceSHA256": "17bb6177d7e38b6b501bbb1137ac41237dd27e198a2d583c384804b4e03045f6",
+    "originalEntry": {
+      "key": "actor-monster-arcaneWisp",
+      "url": "assets/actors/monsters/arcaneWisp.png",
+      "atlasURL": "assets/actors/monsters/arcaneWisp.json",
+      "scale": 0.37,
+      "annotationHeight": 74.23,
+      "baselines": {
+        "idle": 223,
+        "run-a": 212,
+        "run-b": 210,
+        "attack": 214
+      }
+    },
+    "newEntry": {
+      "key": "task10legacy-c-arcaneWisp",
+      "url": "assets/actors/task10-legacy-upgrade-c/ancient-species-009.png",
+      "atlasURL": "assets/actors/task10-legacy-upgrade-c/ancient-species-009.json",
+      "scale": 0.37,
+      "annotationHeight": 74.23,
+      "baselines": {
+        "idle": 223,
+        "run-a": 212,
+        "run-b": 210,
+        "attack": 214
+      },
+      "frameWidth": 192,
+      "frameHeight": 256,
+      "poseBanks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "drawnDeath": true,
+      "footlines": {
+        "hurt/e": 223,
+        "hurt/se": 223,
+        "hurt/s": 223,
+        "hurt/sw": 223,
+        "hurt/w": 223,
+        "hurt/nw": 223,
+        "hurt/n": 223,
+        "hurt/ne": 223,
+        "death/e": 223,
+        "death/se": 223,
+        "death/s": 223,
+        "death/sw": 223,
+        "death/w": 223,
+        "death/nw": 223,
+        "death/n": 223,
+        "death/ne": 223
+      }
+    },
+    "nativeIdleHeight": 181,
+    "mechanicalScale": 0.650281124497992,
+    "newPoses": [
+      {
+        "frame": "hurt/e",
+        "sourceRegion": [
+          0,
+          0,
+          249,
+          392
+        ],
+        "completePoseCrop": [
+          75,
+          75,
+          231,
+          307
+        ],
+        "solidWidth": 86,
+        "solidHeight": 138,
+        "footline": 223,
+        "registrationXY": [
+          45,
+          79
+        ]
+      },
+      {
+        "frame": "hurt/se",
+        "sourceRegion": [
+          249,
+          0,
+          577,
+          392
+        ],
+        "completePoseCrop": [
+          93,
+          75,
+          251,
+          305
+        ],
+        "solidWidth": 88,
+        "solidHeight": 138,
+        "footline": 223,
+        "registrationXY": [
+          44,
+          80
+        ]
+      },
+      {
+        "frame": "hurt/s",
+        "sourceRegion": [
+          577,
+          0,
+          825,
+          392
+        ],
+        "completePoseCrop": [
+          15,
+          61,
+          189,
+          305
+        ],
+        "solidWidth": 100,
+        "solidHeight": 148,
+        "footline": 223,
+        "registrationXY": [
+          39,
+          70
+        ]
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceRegion": [
+          825,
+          0,
+          1084,
+          392
+        ],
+        "completePoseCrop": [
+          34,
+          75,
+          189,
+          300
+        ],
+        "solidWidth": 89,
+        "solidHeight": 134,
+        "footline": 223,
+        "registrationXY": [
+          45,
+          84
+        ]
+      },
+      {
+        "frame": "hurt/w",
+        "sourceRegion": [
+          1084,
+          0,
+          1376,
+          392
+        ],
+        "completePoseCrop": [
+          47,
+          71,
+          208,
+          305
+        ],
+        "solidWidth": 91,
+        "solidHeight": 140,
+        "footline": 223,
+        "registrationXY": [
+          43,
+          78
+        ]
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceRegion": [
+          1376,
+          0,
+          1623,
+          392
+        ],
+        "completePoseCrop": [
+          14,
+          69,
+          186,
+          300
+        ],
+        "solidWidth": 100,
+        "solidHeight": 138,
+        "footline": 223,
+        "registrationXY": [
+          40,
+          80
+        ]
+      },
+      {
+        "frame": "hurt/n",
+        "sourceRegion": [
+          1623,
+          0,
+          1896,
+          392
+        ],
+        "completePoseCrop": [
+          47,
+          65,
+          227,
+          304
+        ],
+        "solidWidth": 103,
+        "solidHeight": 143,
+        "footline": 223,
+        "registrationXY": [
+          37,
+          75
+        ]
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceRegion": [
+          1896,
+          0,
+          2172,
+          392
+        ],
+        "completePoseCrop": [
+          56,
+          75,
+          224,
+          298
+        ],
+        "solidWidth": 96,
+        "solidHeight": 133,
+        "footline": 223,
+        "registrationXY": [
+          41,
+          85
+        ]
+      },
+      {
+        "frame": "death/e",
+        "sourceRegion": [
+          0,
+          392,
+          278,
+          724
+        ],
+        "completePoseCrop": [
+          15,
+          98,
+          250,
+          231
+        ],
+        "solidWidth": 141,
+        "solidHeight": 74,
+        "footline": 223,
+        "registrationXY": [
+          19,
+          144
+        ]
+      },
+      {
+        "frame": "death/se",
+        "sourceRegion": [
+          278,
+          392,
+          553,
+          724
+        ],
+        "completePoseCrop": [
+          3,
+          78,
+          243,
+          237
+        ],
+        "solidWidth": 144,
+        "solidHeight": 91,
+        "footline": 223,
+        "registrationXY": [
+          18,
+          127
+        ]
+      },
+      {
+        "frame": "death/s",
+        "sourceRegion": [
+          553,
+          392,
+          794,
+          724
+        ],
+        "completePoseCrop": [
+          6,
+          84,
+          241,
+          233
+        ],
+        "solidWidth": 141,
+        "solidHeight": 85,
+        "footline": 223,
+        "registrationXY": [
+          19,
+          133
+        ]
+      },
+      {
+        "frame": "death/sw",
+        "sourceRegion": [
+          794,
+          392,
+          1078,
+          724
+        ],
+        "completePoseCrop": [
+          32,
+          89,
+          274,
+          235
+        ],
+        "solidWidth": 145,
+        "solidHeight": 83,
+        "footline": 223,
+        "registrationXY": [
+          17,
+          135
+        ]
+      },
+      {
+        "frame": "death/w",
+        "sourceRegion": [
+          1078,
+          392,
+          1364,
+          724
+        ],
+        "completePoseCrop": [
+          22,
+          88,
+          267,
+          224
+        ],
+        "solidWidth": 147,
+        "solidHeight": 76,
+        "footline": 223,
+        "registrationXY": [
+          16,
+          142
+        ]
+      },
+      {
+        "frame": "death/nw",
+        "sourceRegion": [
+          1364,
+          392,
+          1623,
+          724
+        ],
+        "completePoseCrop": [
+          11,
+          85,
+          248,
+          227
+        ],
+        "solidWidth": 142,
+        "solidHeight": 80,
+        "footline": 223,
+        "registrationXY": [
+          19,
+          138
+        ]
+      },
+      {
+        "frame": "death/n",
+        "sourceRegion": [
+          1623,
+          392,
+          1903,
+          724
+        ],
+        "completePoseCrop": [
+          21,
+          82,
+          247,
+          230
+        ],
+        "solidWidth": 133,
+        "solidHeight": 84,
+        "footline": 223,
+        "registrationXY": [
+          22,
+          134
+        ]
+      },
+      {
+        "frame": "death/ne",
+        "sourceRegion": [
+          1903,
+          392,
+          2172,
+          724
+        ],
+        "completePoseCrop": [
+          3,
+          89,
+          252,
+          228
+        ],
+        "solidWidth": 149,
+        "solidHeight": 78,
+        "footline": 223,
+        "registrationXY": [
+          15,
+          140
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ancient-species-032",
+    "name": "voidElemental",
+    "originalPNG": "assets/actors/monsters/voidElemental.png",
+    "originalAtlas": "assets/actors/monsters/voidElemental.json",
+    "originalPNGSHA256": "a89eba301ddaddd406ccf00c155bf1f11d3e25979f2ee67f007f22c8a0918c44",
+    "originalRGBAsha256": "d5d8d93068be9842ecc22cd32507bf241773f014750f53948e3760f1e09336d4",
+    "top32ExactCopy": true,
+    "source": "art/source/task10-legacy-upgrade-c/ancient-species-032-source.png",
+    "sourceSHA256": "631967568ba640fad20035e286e639186294ae41009914c32a076d6c8d0a6c53",
+    "originalEntry": {
+      "key": "actor-monster-voidElemental",
+      "url": "assets/actors/monsters/voidElemental.png",
+      "atlasURL": "assets/actors/monsters/voidElemental.json",
+      "scale": 0.4,
+      "annotationHeight": 86.80000000000001,
+      "baselines": {
+        "idle": 223,
+        "run-a": 214,
+        "run-b": 223,
+        "attack": 221
+      }
+    },
+    "newEntry": {
+      "key": "task10legacy-c-voidElemental",
+      "url": "assets/actors/task10-legacy-upgrade-c/ancient-species-032.png",
+      "atlasURL": "assets/actors/task10-legacy-upgrade-c/ancient-species-032.json",
+      "scale": 0.4,
+      "annotationHeight": 86.80000000000001,
+      "baselines": {
+        "idle": 223,
+        "run-a": 214,
+        "run-b": 223,
+        "attack": 221
+      },
+      "frameWidth": 192,
+      "frameHeight": 256,
+      "poseBanks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "drawnDeath": true,
+      "footlines": {
+        "hurt/e": 223,
+        "hurt/se": 223,
+        "hurt/s": 223,
+        "hurt/sw": 223,
+        "hurt/w": 223,
+        "hurt/nw": 223,
+        "hurt/n": 223,
+        "hurt/ne": 223,
+        "death/e": 223,
+        "death/se": 223,
+        "death/s": 223,
+        "death/sw": 223,
+        "death/w": 223,
+        "death/nw": 223,
+        "death/n": 223,
+        "death/ne": 223
+      }
+    },
+    "nativeIdleHeight": 198,
+    "mechanicalScale": 0.676923076923077,
+    "newPoses": [
+      {
+        "frame": "hurt/e",
+        "sourceRegion": [
+          0,
+          0,
+          247,
+          402
+        ],
+        "completePoseCrop": [
+          31,
+          60,
+          231,
+          315
+        ],
+        "solidWidth": 123,
+        "solidHeight": 160,
+        "footline": 223,
+        "registrationXY": [
+          28,
+          57
+        ]
+      },
+      {
+        "frame": "hurt/se",
+        "sourceRegion": [
+          247,
+          0,
+          541,
+          402
+        ],
+        "completePoseCrop": [
+          59,
+          65,
+          256,
+          321
+        ],
+        "solidWidth": 121,
+        "solidHeight": 160,
+        "footline": 223,
+        "registrationXY": [
+          29,
+          57
+        ]
+      },
+      {
+        "frame": "hurt/s",
+        "sourceRegion": [
+          541,
+          0,
+          835,
+          402
+        ],
+        "completePoseCrop": [
+          48,
+          58,
+          209,
+          329
+        ],
+        "solidWidth": 96,
+        "solidHeight": 170,
+        "footline": 223,
+        "registrationXY": [
+          41,
+          47
+        ]
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceRegion": [
+          835,
+          0,
+          1086,
+          402
+        ],
+        "completePoseCrop": [
+          13,
+          59,
+          201,
+          323
+        ],
+        "solidWidth": 115,
+        "solidHeight": 166,
+        "footline": 223,
+        "registrationXY": [
+          32,
+          51
+        ]
+      },
+      {
+        "frame": "hurt/w",
+        "sourceRegion": [
+          1086,
+          0,
+          1406,
+          402
+        ],
+        "completePoseCrop": [
+          36,
+          60,
+          227,
+          316
+        ],
+        "solidWidth": 116,
+        "solidHeight": 160,
+        "footline": 223,
+        "registrationXY": [
+          31,
+          57
+        ]
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceRegion": [
+          1406,
+          0,
+          1659,
+          402
+        ],
+        "completePoseCrop": [
+          2,
+          50,
+          177,
+          329
+        ],
+        "solidWidth": 106,
+        "solidHeight": 175,
+        "footline": 223,
+        "registrationXY": [
+          37,
+          42
+        ]
+      },
+      {
+        "frame": "hurt/n",
+        "sourceRegion": [
+          1659,
+          0,
+          1882,
+          402
+        ],
+        "completePoseCrop": [
+          29,
+          59,
+          190,
+          330
+        ],
+        "solidWidth": 96,
+        "solidHeight": 170,
+        "footline": 223,
+        "registrationXY": [
+          41,
+          48
+        ]
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceRegion": [
+          1882,
+          0,
+          2172,
+          402
+        ],
+        "completePoseCrop": [
+          71,
+          59,
+          245,
+          324
+        ],
+        "solidWidth": 106,
+        "solidHeight": 165,
+        "footline": 223,
+        "registrationXY": [
+          37,
+          52
+        ]
+      },
+      {
+        "frame": "death/e",
+        "sourceRegion": [
+          0,
+          402,
+          286,
+          724
+        ],
+        "completePoseCrop": [
+          20,
+          88,
+          274,
+          225
+        ],
+        "solidWidth": 157,
+        "solidHeight": 79,
+        "footline": 223,
+        "registrationXY": [
+          10,
+          138
+        ]
+      },
+      {
+        "frame": "death/se",
+        "sourceRegion": [
+          286,
+          402,
+          543,
+          724
+        ],
+        "completePoseCrop": [
+          8,
+          97,
+          252,
+          227
+        ],
+        "solidWidth": 151,
+        "solidHeight": 76,
+        "footline": 223,
+        "registrationXY": [
+          13,
+          142
+        ]
+      },
+      {
+        "frame": "death/s",
+        "sourceRegion": [
+          543,
+          402,
+          812,
+          724
+        ],
+        "completePoseCrop": [
+          23,
+          95,
+          242,
+          226
+        ],
+        "solidWidth": 136,
+        "solidHeight": 75,
+        "footline": 223,
+        "registrationXY": [
+          22,
+          142
+        ]
+      },
+      {
+        "frame": "death/sw",
+        "sourceRegion": [
+          812,
+          402,
+          1078,
+          724
+        ],
+        "completePoseCrop": [
+          1,
+          100,
+          245,
+          230
+        ],
+        "solidWidth": 153,
+        "solidHeight": 75,
+        "footline": 223,
+        "registrationXY": [
+          13,
+          143
+        ]
+      },
+      {
+        "frame": "death/w",
+        "sourceRegion": [
+          1078,
+          402,
+          1339,
+          724
+        ],
+        "completePoseCrop": [
+          1,
+          107,
+          261,
+          224
+        ],
+        "solidWidth": 163,
+        "solidHeight": 65,
+        "footline": 223,
+        "registrationXY": [
+          8,
+          152
+        ]
+      },
+      {
+        "frame": "death/nw",
+        "sourceRegion": [
+          1339,
+          402,
+          1623,
+          724
+        ],
+        "completePoseCrop": [
+          23,
+          102,
+          274,
+          227
+        ],
+        "solidWidth": 157,
+        "solidHeight": 71,
+        "footline": 223,
+        "registrationXY": [
+          11,
+          146
+        ]
+      },
+      {
+        "frame": "death/n",
+        "sourceRegion": [
+          1623,
+          402,
+          1890,
+          724
+        ],
+        "completePoseCrop": [
+          16,
+          117,
+          267,
+          225
+        ],
+        "solidWidth": 158,
+        "solidHeight": 60,
+        "footline": 223,
+        "registrationXY": [
+          11,
+          158
+        ]
+      },
+      {
+        "frame": "death/ne",
+        "sourceRegion": [
+          1890,
+          402,
+          2172,
+          724
+        ],
+        "completePoseCrop": [
+          17,
+          102,
+          267,
+          218
+        ],
+        "solidWidth": 157,
+        "solidHeight": 67,
+        "footline": 223,
+        "registrationXY": [
+          11,
+          151
+        ]
+      }
+    ]
+  }
+]
