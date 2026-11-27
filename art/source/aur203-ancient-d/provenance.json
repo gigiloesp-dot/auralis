@@ -1,0 +1,113 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-ancient-d",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "animationScope": "48 painted poses each: E/SE/S/SW/W/NW/N/NE x idle/run-a/run-b/attack/hurt/death. Two movement drawings, not six multiframe clips.",
+  "mechanicalPacking": "Complete unedited source rectangle crops with margin, uniformly resized and registered. Alpha support measured only, never threshold-erased or painted.",
+  "qa": "All192 native poses viewed on beige and dark JPEG contacts. Distinct movement drawings, naturally collapsed deaths, no visible mattes, clipping or adjacent-cell fragments. Validation records 48 distinct RGBA hashes per model and alpha/registration bounds.",
+  "models": [
+    {
+      "placementId": "ancient-species-057",
+      "typeId": "aur203Ancient057",
+      "materialId": "aur203Ancient057Material",
+      "slug": "coppercap-hare",
+      "names": {
+        "ru": "Медношапочный заяц",
+        "en": "Coppercap Hare",
+        "es": "Liebre de sombrero cobrizo"
+      },
+      "name": "Медношапочный заяц",
+      "biome": "elder-forest",
+      "level": 36,
+      "movementProfile": "predator",
+      "abilityPattern": [
+        "pounce",
+        "roots"
+      ],
+      "anatomy": "Plump woodland hare with enormous fern-shaped ears, dark chestnut fur, three broad copper mushroom caps growing from back, leaf-shaped hindfeet.",
+      "materialConcept": "Copper mushroom gill",
+      "artOnly": true,
+      "id": "ancient-species-057",
+      "source": "ancient-species-057-original.png",
+      "prompt": "ancient-species-057-prompt.txt"
+    },
+    {
+      "placementId": "ancient-species-058",
+      "typeId": "aur203Ancient058",
+      "materialId": "aur203Ancient058Material",
+      "slug": "bog-harp-eel",
+      "names": {
+        "ru": "Болотный арфоугорь",
+        "en": "Bogharp Eel",
+        "es": "Anguila arpa de ciénaga"
+      },
+      "name": "Болотный арфоугорь",
+      "biome": "elder-marsh",
+      "level": 38,
+      "movementProfile": "serpent",
+      "abilityPattern": [
+        "venom",
+        "pounce"
+      ],
+      "anatomy": "Coiled olive eel with four little webbed forefeet, whiskered face and a tall arching amber dorsal harp fin bridged by fleshy strings.",
+      "materialConcept": "Amber dorsal string",
+      "artOnly": true,
+      "id": "ancient-species-058",
+      "source": "ancient-species-058-original.png",
+      "prompt": "ancient-species-058-prompt.txt"
+    },
+    {
+      "placementId": "ancient-species-059",
+      "typeId": "aur203Ancient059",
+      "materialId": "aur203Ancient059Material",
+      "slug": "basalt-yak",
+      "names": {
+        "ru": "Базальтовый як",
+        "en": "Basalt Yak",
+        "es": "Yak de basalto"
+      },
+      "name": "Базальтовый як",
+      "biome": "elder-wastes",
+      "level": 39,
+      "movementProfile": "mauler",
+      "abilityPattern": [
+        "stomp",
+        "charge"
+      ],
+      "anatomy": "Broad low shaggy charcoal yak with cream beard, columnar basalt shoulder ridge and two smooth forward forked russet horns.",
+      "materialConcept": "Basalt shoulder shard",
+      "artOnly": true,
+      "id": "ancient-species-059",
+      "source": "ancient-species-059-original.png",
+      "prompt": "ancient-species-059-prompt.txt"
+    },
+    {
+      "placementId": "ancient-species-060",
+      "typeId": "aur203Ancient060",
+      "materialId": "aur203Ancient060Material",
+      "slug": "seedlantern-gecko",
+      "names": {
+        "ru": "Семяфонарный геккон",
+        "en": "Seedlantern Gecko",
+        "es": "Geco de farol semilla"
+      },
+      "name": "Семяфонарный геккон",
+      "biome": "elder-forest",
+      "level": 36,
+      "movementProfile": "skirmisher",
+      "abilityPattern": [
+        "shot",
+        "roots"
+      ],
+      "anatomy": "Upright small lime gecko with broad adhesive toes, a single curled gripping tail bearing a glowing orange seedpod, large amber eyes and leaf collar.",
+      "materialConcept": "Luminous seedpod husk",
+      "artOnly": true,
+      "id": "ancient-species-060",
+      "source": "ancient-species-060-original.png",
+      "prompt": "ancient-species-060-prompt.txt"
+    }
+  ]
+}

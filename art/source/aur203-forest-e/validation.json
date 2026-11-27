@@ -1,0 +1,364 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "models": [
+    {
+      "id": "forest-species-096",
+      "source": "art/source/aur203-forest-e/forest-species-096-generated-v2.png",
+      "frames": 48,
+      "sourcePixelsUnedited": true,
+      "alphaZeroPercent": 82.92312622070312,
+      "sourceRegistrationScale": 0.5,
+      "nativeIdleHeights": [
+        64,
+        64,
+        63,
+        70,
+        70,
+        68,
+        64,
+        64
+      ],
+      "bounds": {
+        "idle/n": {
+          "x": 20,
+          "y": 105,
+          "w": 88,
+          "h": 64,
+          "opaquePixels": 2675
+        },
+        "idle/ne": {
+          "x": 24,
+          "y": 105,
+          "w": 80,
+          "h": 64,
+          "opaquePixels": 2177
+        },
+        "idle/e": {
+          "x": 17,
+          "y": 105,
+          "w": 92,
+          "h": 63,
+          "opaquePixels": 2330
+        },
+        "idle/se": {
+          "x": 21,
+          "y": 99,
+          "w": 87,
+          "h": 70,
+          "opaquePixels": 2596
+        },
+        "idle/s": {
+          "x": 19,
+          "y": 99,
+          "w": 92,
+          "h": 70,
+          "opaquePixels": 2679
+        },
+        "idle/sw": {
+          "x": 22,
+          "y": 101,
+          "w": 85,
+          "h": 68,
+          "opaquePixels": 2518
+        },
+        "idle/w": {
+          "x": 22,
+          "y": 105,
+          "w": 86,
+          "h": 64,
+          "opaquePixels": 2096
+        },
+        "idle/nw": {
+          "x": 22,
+          "y": 105,
+          "w": 84,
+          "h": 64,
+          "opaquePixels": 2393
+        },
+        "run-a/n": {
+          "x": 19,
+          "y": 107,
+          "w": 90,
+          "h": 62,
+          "opaquePixels": 2413
+        },
+        "run-a/ne": {
+          "x": 22,
+          "y": 107,
+          "w": 85,
+          "h": 62,
+          "opaquePixels": 2006
+        },
+        "run-a/e": {
+          "x": 20,
+          "y": 113,
+          "w": 89,
+          "h": 56,
+          "opaquePixels": 1908
+        },
+        "run-a/se": {
+          "x": 21,
+          "y": 102,
+          "w": 87,
+          "h": 66,
+          "opaquePixels": 2315
+        },
+        "run-a/s": {
+          "x": 19,
+          "y": 105,
+          "w": 91,
+          "h": 64,
+          "opaquePixels": 2291
+        },
+        "run-a/sw": {
+          "x": 22,
+          "y": 104,
+          "w": 84,
+          "h": 65,
+          "opaquePixels": 2327
+        },
+        "run-a/w": {
+          "x": 21,
+          "y": 109,
+          "w": 86,
+          "h": 60,
+          "opaquePixels": 1946
+        },
+        "run-a/nw": {
+          "x": 22,
+          "y": 107,
+          "w": 84,
+          "h": 62,
+          "opaquePixels": 2077
+        },
+        "run-b/n": {
+          "x": 20,
+          "y": 107,
+          "w": 89,
+          "h": 62,
+          "opaquePixels": 2396
+        },
+        "run-b/ne": {
+          "x": 21,
+          "y": 105,
+          "w": 86,
+          "h": 64,
+          "opaquePixels": 1983
+        },
+        "run-b/e": {
+          "x": 19,
+          "y": 105,
+          "w": 90,
+          "h": 63,
+          "opaquePixels": 2093
+        },
+        "run-b/se": {
+          "x": 21,
+          "y": 101,
+          "w": 87,
+          "h": 68,
+          "opaquePixels": 2257
+        },
+        "run-b/s": {
+          "x": 19,
+          "y": 105,
+          "w": 92,
+          "h": 64,
+          "opaquePixels": 2400
+        },
+        "run-b/sw": {
+          "x": 22,
+          "y": 103,
+          "w": 85,
+          "h": 66,
+          "opaquePixels": 2190
+        },
+        "run-b/w": {
+          "x": 22,
+          "y": 108,
+          "w": 85,
+          "h": 60,
+          "opaquePixels": 2044
+        },
+        "run-b/nw": {
+          "x": 23,
+          "y": 103,
+          "w": 82,
+          "h": 66,
+          "opaquePixels": 2102
+        },
+        "attack/n": {
+          "x": 17,
+          "y": 105,
+          "w": 93,
+          "h": 64,
+          "opaquePixels": 2866
+        },
+        "attack/ne": {
+          "x": 21,
+          "y": 111,
+          "w": 85,
+          "h": 58,
+          "opaquePixels": 2350
+        },
+        "attack/e": {
+          "x": 19,
+          "y": 105,
+          "w": 89,
+          "h": 64,
+          "opaquePixels": 2418
+        },
+        "attack/se": {
+          "x": 20,
+          "y": 101,
+          "w": 89,
+          "h": 68,
+          "opaquePixels": 2773
+        },
+        "attack/s": {
+          "x": 19,
+          "y": 105,
+          "w": 92,
+          "h": 64,
+          "opaquePixels": 2720
+        },
+        "attack/sw": {
+          "x": 22,
+          "y": 99,
+          "w": 87,
+          "h": 70,
+          "opaquePixels": 2716
+        },
+        "attack/w": {
+          "x": 21,
+          "y": 110,
+          "w": 87,
+          "h": 59,
+          "opaquePixels": 2246
+        },
+        "attack/nw": {
+          "x": 22,
+          "y": 109,
+          "w": 84,
+          "h": 60,
+          "opaquePixels": 2282
+        },
+        "hurt/n": {
+          "x": 23,
+          "y": 105,
+          "w": 82,
+          "h": 63,
+          "opaquePixels": 2219
+        },
+        "hurt/ne": {
+          "x": 26,
+          "y": 105,
+          "w": 76,
+          "h": 64,
+          "opaquePixels": 1973
+        },
+        "hurt/e": {
+          "x": 29,
+          "y": 105,
+          "w": 70,
+          "h": 64,
+          "opaquePixels": 1999
+        },
+        "hurt/se": {
+          "x": 27,
+          "y": 103,
+          "w": 73,
+          "h": 66,
+          "opaquePixels": 2045
+        },
+        "hurt/s": {
+          "x": 23,
+          "y": 104,
+          "w": 82,
+          "h": 65,
+          "opaquePixels": 2116
+        },
+        "hurt/sw": {
+          "x": 26,
+          "y": 105,
+          "w": 76,
+          "h": 64,
+          "opaquePixels": 2125
+        },
+        "hurt/w": {
+          "x": 27,
+          "y": 107,
+          "w": 74,
+          "h": 62,
+          "opaquePixels": 1861
+        },
+        "hurt/nw": {
+          "x": 25,
+          "y": 103,
+          "w": 78,
+          "h": 66,
+          "opaquePixels": 2086
+        },
+        "death/n": {
+          "x": 24,
+          "y": 121,
+          "w": 79,
+          "h": 48,
+          "opaquePixels": 2311
+        },
+        "death/ne": {
+          "x": 22,
+          "y": 122,
+          "w": 84,
+          "h": 47,
+          "opaquePixels": 2171
+        },
+        "death/e": {
+          "x": 20,
+          "y": 129,
+          "w": 89,
+          "h": 40,
+          "opaquePixels": 2144
+        },
+        "death/se": {
+          "x": 25,
+          "y": 117,
+          "w": 77,
+          "h": 52,
+          "opaquePixels": 2309
+        },
+        "death/s": {
+          "x": 26,
+          "y": 121,
+          "w": 76,
+          "h": 48,
+          "opaquePixels": 2109
+        },
+        "death/sw": {
+          "x": 25,
+          "y": 117,
+          "w": 78,
+          "h": 52,
+          "opaquePixels": 2268
+        },
+        "death/w": {
+          "x": 21,
+          "y": 127,
+          "w": 86,
+          "h": 42,
+          "opaquePixels": 2124
+        },
+        "death/nw": {
+          "x": 22,
+          "y": 123,
+          "w": 84,
+          "h": 46,
+          "opaquePixels": 2180
+        }
+      },
+      "distinctRGBAHashes": 48
+    }
+  ]
+}

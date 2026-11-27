@@ -1,0 +1,745 @@
+{
+  "count": 64,
+  "batches": [
+    {
+      "folder": "desert060-079",
+      "grid": [
+        5,
+        4
+      ],
+      "entries": [
+        {
+          "id": "aur203Desert060Material",
+          "typeId": "aur203Desert060",
+          "names": {
+            "ru": "Хитин клешни-наковальни",
+            "en": "Anvil claw chitin",
+            "es": "Quitina de pinza yunque"
+          },
+          "level": 51,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-060.png"
+        },
+        {
+          "id": "aur203Desert061Material",
+          "typeId": "aur203Desert061",
+          "names": {
+            "ru": "Янтарная перепонка брюшка-песочницы",
+            "en": "Hourglass amber abdomen membrane",
+            "es": "Membrana abdominal de reloj de ámbar"
+          },
+          "level": 46,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-061.png"
+        },
+        {
+          "id": "aur203Desert062Material",
+          "typeId": "aur203Desert062",
+          "names": {
+            "ru": "Терракотовый осколок печной спины",
+            "en": "Kilnback terracotta shard",
+            "es": "Fragmento de terracota de lomo horno"
+          },
+          "level": 51,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-062.png"
+        },
+        {
+          "id": "aur203Desert063Material",
+          "typeId": "aur203Desert063",
+          "names": {
+            "ru": "Кромка серповидной клешни",
+            "en": "Crescent pincer edge",
+            "es": "Filo de pinza creciente"
+          },
+          "level": 53,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-063.png"
+        },
+        {
+          "id": "aur203Desert064Material",
+          "typeId": "aur203Desert064",
+          "names": {
+            "ru": "Соляной кристалл-розетка",
+            "en": "Salt rosette crystal",
+            "es": "Cristal de roseta de sal"
+          },
+          "level": 52,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-064.png"
+        },
+        {
+          "id": "aur203Desert065Material",
+          "typeId": "aur203Desert065",
+          "names": {
+            "ru": "Чешуя солнечного воротника",
+            "en": "Sunwheel frill scale",
+            "es": "Escama de gola solar"
+          },
+          "level": 49,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-065.png"
+        },
+        {
+          "id": "aur203Desert066Material",
+          "typeId": "aur203Desert066",
+          "names": {
+            "ru": "Складчатая горловая перепонка",
+            "en": "Accordion throat membrane",
+            "es": "Membrana de garganta acordeón"
+          },
+          "level": 51,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-066.png"
+        },
+        {
+          "id": "aur203Desert067Material",
+          "typeId": "aur203Desert067",
+          "names": {
+            "ru": "Медная жилка крыла",
+            "en": "Copper kite wing vein",
+            "es": "Vena cobriza de ala cometa"
+          },
+          "level": 49,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-067.png"
+        },
+        {
+          "id": "aur203Desert068Material",
+          "typeId": "aur203Desert068",
+          "names": {
+            "ru": "Стеклянная бусина хвоста",
+            "en": "Glassy tail bead",
+            "es": "Cuenta vítrea de cola"
+          },
+          "level": 49,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-068.png"
+        },
+        {
+          "id": "aur203Desert069Material",
+          "typeId": "aur203Desert069",
+          "names": {
+            "ru": "Роговой плавник веретённика",
+            "en": "Spindle horn fin",
+            "es": "Aleta córnea de husillo"
+          },
+          "level": 50,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-069.png"
+        },
+        {
+          "id": "aur203Desert070Material",
+          "typeId": "aur203Desert070",
+          "names": {
+            "ru": "Обломок гребня бараньего рога",
+            "en": "Ramhorn ridge fragment",
+            "es": "Fragmento de cresta de cuerno de carnero"
+          },
+          "level": 53,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-070.png"
+        },
+        {
+          "id": "aur203Desert071Material",
+          "typeId": "aur203Desert071",
+          "names": {
+            "ru": "Лопатный передний коготь",
+            "en": "Shovel foreclaw",
+            "es": "Garra delantera de pala"
+          },
+          "level": 50,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-071.png"
+        },
+        {
+          "id": "aur203Desert072Material",
+          "typeId": "aur203Desert072",
+          "names": {
+            "ru": "Зубец серповидного предплечья",
+            "en": "Sickle forearm serration",
+            "es": "Diente de antebrazo falciforme"
+          },
+          "level": 52,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-072.png"
+        },
+        {
+          "id": "aur203Desert073Material",
+          "typeId": "aur203Desert073",
+          "names": {
+            "ru": "Осколок каменного клюва",
+            "en": "Pebble beak shard",
+            "es": "Fragmento de pico pétreo"
+          },
+          "level": 44,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-073.png"
+        },
+        {
+          "id": "aur203Desert074Material",
+          "typeId": "aur203Desert074",
+          "names": {
+            "ru": "Шип коронного панциря",
+            "en": "Crown carapace spike",
+            "es": "Espina de caparazón corona"
+          },
+          "level": 54,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-074.png"
+        },
+        {
+          "id": "aur203Desert075Material",
+          "typeId": "aur203Desert075",
+          "names": {
+            "ru": "Осколок дымчато-стеклянного рога",
+            "en": "Smoke glass horn shard",
+            "es": "Fragmento de cuerno de vidrio ahumado"
+          },
+          "level": 52,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-075.png"
+        },
+        {
+          "id": "aur203Desert076Material",
+          "typeId": "aur203Desert076",
+          "names": {
+            "ru": "Бирюзовое ребро раковины",
+            "en": "Turquoise conch rib",
+            "es": "Costilla de caracola turquesa"
+          },
+          "level": 48,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-076.png"
+        },
+        {
+          "id": "aur203Desert077Material",
+          "typeId": "aur203Desert077",
+          "names": {
+            "ru": "Пластина угольного гребня",
+            "en": "Ember frill plate",
+            "es": "Placa de gola de brasas"
+          },
+          "level": 50,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-077.png"
+        },
+        {
+          "id": "aur203Desert078Material",
+          "typeId": "aur203Desert078",
+          "names": {
+            "ru": "Ребристый осколок песчаника",
+            "en": "Ribbed sandstone shard",
+            "es": "Fragmento de arenisca acanalada"
+          },
+          "level": 51,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-078.png"
+        },
+        {
+          "id": "aur203Desert079Material",
+          "typeId": "aur203Desert079",
+          "names": {
+            "ru": "Золотая челюстная лента",
+            "en": "Golden jaw ribbon",
+            "es": "Cinta mandibular dorada"
+          },
+          "level": 48,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-079.png"
+        }
+      ]
+    },
+    {
+      "folder": "remaining-1",
+      "grid": [
+        4,
+        4
+      ],
+      "entries": [
+        {
+          "id": "aur203Forest088Material",
+          "typeId": "aur203Forest088",
+          "names": {
+            "ru": "Перепонка кленового крыла",
+            "en": "Maple-wing membrane",
+            "es": "Membrana de ala de arce"
+          },
+          "level": 13,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-088.png"
+        },
+        {
+          "id": "aur203Forest089Material",
+          "typeId": "aur203Forest089",
+          "names": {
+            "ru": "Синяя стеклянная камера фонаря",
+            "en": "Blue lantern glass chamber",
+            "es": "Cámara de vidrio azul de farol"
+          },
+          "level": 17,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-089.png"
+        },
+        {
+          "id": "aur203Forest090Material",
+          "typeId": "aur203Forest090",
+          "names": {
+            "ru": "Клеверная пластинка панциря",
+            "en": "Clover shell plate",
+            "es": "Placa de caparazón trébol"
+          },
+          "level": 8,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-090.png"
+        },
+        {
+          "id": "aur203Forest091Material",
+          "typeId": "aur203Forest091",
+          "names": {
+            "ru": "Ореховое перо",
+            "en": "Hazel quill",
+            "es": "Pluma de avellano"
+          },
+          "level": 11,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-091.png"
+        },
+        {
+          "id": "aur203Forest092Material",
+          "typeId": "aur203Forest092",
+          "names": {
+            "ru": "Гипсовая чешуйка крыла",
+            "en": "Plaster wing scale",
+            "es": "Escama de ala de yeso"
+          },
+          "level": 15,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-092.png"
+        },
+        {
+          "id": "aur203Forest093Material",
+          "typeId": "aur203Forest093",
+          "names": {
+            "ru": "Лепесток колокольчика",
+            "en": "Bluebell petal",
+            "es": "Pétalo de campanilla"
+          },
+          "level": 5,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-093.png"
+        },
+        {
+          "id": "aur203Forest094Material",
+          "typeId": "aur203Forest094",
+          "names": {
+            "ru": "Ключевидное жвало",
+            "en": "Key-shaped mandible",
+            "es": "Mandíbula en forma de llave"
+          },
+          "level": 16,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-094.png"
+        },
+        {
+          "id": "aur203Forest095Material",
+          "typeId": "aur203Forest095",
+          "names": {
+            "ru": "Терракотовое суставное кольцо",
+            "en": "Terracotta joint ring",
+            "es": "Anillo articular de terracota"
+          },
+          "level": 18,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-095.png"
+        },
+        {
+          "id": "aur203Forest096Material",
+          "typeId": "aur203Forest096",
+          "names": {
+            "ru": "Витражный осколок плавника",
+            "en": "Stained-glass fin shard",
+            "es": "Fragmento de aleta vitral"
+          },
+          "level": 18,
+          "iconURL": "assets/icons/monster-materials/aur203-next-forest-096.png"
+        },
+        {
+          "id": "aur203North080Material",
+          "typeId": "aur203North080",
+          "names": {
+            "ru": "Пластинка хвостового компаса",
+            "en": "Tail-compass plate",
+            "es": "Placa de brújula caudal"
+          },
+          "level": 22,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-080.png"
+        },
+        {
+          "id": "aur203North081Material",
+          "typeId": "aur203North081",
+          "names": {
+            "ru": "Слой клюва ледокороны",
+            "en": "Frost-crown beak layer",
+            "es": "Lámina de pico glacial"
+          },
+          "level": 26,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-081.png"
+        },
+        {
+          "id": "aur203North082Material",
+          "typeId": "aur203North082",
+          "names": {
+            "ru": "Стенка снежного фонаря",
+            "en": "Snow-lantern wall",
+            "es": "Pared de farol nevado"
+          },
+          "level": 22,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-082.png"
+        },
+        {
+          "id": "aur203North083Material",
+          "typeId": "aur203North083",
+          "names": {
+            "ru": "Завиток сияющего рога",
+            "en": "Aurora antler curl",
+            "es": "Espiral de asta auroral"
+          },
+          "level": 30,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-083.png"
+        },
+        {
+          "id": "aur203North084Material",
+          "typeId": "aur203North084",
+          "names": {
+            "ru": "Стенка ледяного раструба",
+            "en": "Ice trumpet wall",
+            "es": "Pared de trompeta helada"
+          },
+          "level": 30,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-084.png"
+        },
+        {
+          "id": "aur203North085Material",
+          "typeId": "aur203North085",
+          "names": {
+            "ru": "Пластинка ковшеклюва",
+            "en": "Spoonbill plate",
+            "es": "Placa de pico cuchara"
+          },
+          "level": 28,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-085.png"
+        },
+        {
+          "id": "aur203North086Material",
+          "typeId": "aur203North086",
+          "names": {
+            "ru": "Створка печного крыла",
+            "en": "Furnace wing casing",
+            "es": "Cubierta de ala de horno"
+          },
+          "level": 33,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-086.png"
+        }
+      ]
+    },
+    {
+      "folder": "remaining-2",
+      "grid": [
+        4,
+        4
+      ],
+      "entries": [
+        {
+          "id": "aur203North087Material",
+          "typeId": "aur203North087",
+          "names": {
+            "ru": "Спираль снежной сферы",
+            "en": "Snowglobe spiral",
+            "es": "Espiral de esfera nevada"
+          },
+          "level": 33,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-087.png"
+        },
+        {
+          "id": "aur203North088Material",
+          "typeId": "aur203North088",
+          "names": {
+            "ru": "Спица жаркого хвоста",
+            "en": "Ember-tail spoke",
+            "es": "Radio de cola de brasas"
+          },
+          "level": 31,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-088.png"
+        },
+        {
+          "id": "aur203North089Material",
+          "typeId": "aur203North089",
+          "names": {
+            "ru": "Базальтовая лопастная пластина",
+            "en": "Basalt shovel plate",
+            "es": "Placa de pala basáltica"
+          },
+          "level": 31,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-089.png"
+        },
+        {
+          "id": "aur203North090Material",
+          "typeId": "aur203North090",
+          "names": {
+            "ru": "Чешуйка воронкового крыла",
+            "en": "Funnel-wing scale",
+            "es": "Escama de ala embudo"
+          },
+          "level": 27,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-090.png"
+        },
+        {
+          "id": "aur203North091Material",
+          "typeId": "aur203North091",
+          "names": {
+            "ru": "Ледяная струна",
+            "en": "Ice-harp string",
+            "es": "Cuerda de arpa helada"
+          },
+          "level": 25,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-091.png"
+        },
+        {
+          "id": "aur203North092Material",
+          "typeId": "aur203North092",
+          "names": {
+            "ru": "Лепесток снежного надкрылья",
+            "en": "Snowflower elytron petal",
+            "es": "Pétalo de élitro nevado"
+          },
+          "level": 23,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-092.png"
+        },
+        {
+          "id": "aur203North093Material",
+          "typeId": "aur203North093",
+          "names": {
+            "ru": "Терраса кальдерного панциря",
+            "en": "Caldera shell terrace",
+            "es": "Terraza de caparazón de caldera"
+          },
+          "level": 33,
+          "iconURL": "assets/icons/monster-materials/aur203-next-north-093.png"
+        },
+        {
+          "id": "aur203Ancient049Material",
+          "typeId": "aur203Ancient049",
+          "names": {
+            "ru": "Крыло цикады с кремовыми жилками",
+            "en": "Cream-veined cicada wing",
+            "es": "Ala de cigarra con venas crema"
+          },
+          "level": 36,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-049.png"
+        },
+        {
+          "id": "aur203Ancient050Material",
+          "typeId": "aur203Ancient050",
+          "names": {
+            "ru": "Чешуя панциря с тростниковым гребнем",
+            "en": "Reed-combed carapace scale",
+            "es": "Escama de caparazón con peine de junco"
+          },
+          "level": 37,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-050.png"
+        },
+        {
+          "id": "aur203Ancient051Material",
+          "typeId": "aur203Ancient051",
+          "names": {
+            "ru": "Мозаичная плитка гребня",
+            "en": "Mosaic crest tile",
+            "es": "Tesela de cresta"
+          },
+          "level": 38,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-051.png"
+        },
+        {
+          "id": "aur203Ancient052Material",
+          "typeId": "aur203Ancient052",
+          "names": {
+            "ru": "Пластина панциря со звёздной картой",
+            "en": "Star-map shell plate",
+            "es": "Placa de caparazón con mapa estelar"
+          },
+          "level": 37,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-052.png"
+        },
+        {
+          "id": "aur203Ancient053Material",
+          "typeId": "aur203Ancient053",
+          "names": {
+            "ru": "Обломок арочного рога",
+            "en": "Arch horn fragment",
+            "es": "Fragmento de cuerno arqueado"
+          },
+          "level": 38,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-053.png"
+        },
+        {
+          "id": "aur203Ancient054Material",
+          "typeId": "aur203Ancient054",
+          "names": {
+            "ru": "Обсидиановое маховое перо",
+            "en": "Obsidian flight feather",
+            "es": "Pluma de vuelo de obsidiana"
+          },
+          "level": 40,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-054.png"
+        },
+        {
+          "id": "aur203Ancient055Material",
+          "typeId": "aur203Ancient055",
+          "names": {
+            "ru": "Соляная чешуя венца",
+            "en": "Crown salt scale",
+            "es": "Escama de sal de corona"
+          },
+          "level": 41,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-055.png"
+        },
+        {
+          "id": "aur203Ancient056Material",
+          "typeId": "aur203Ancient056",
+          "names": {
+            "ru": "Полый пемзовый шип",
+            "en": "Hollow pumice spine",
+            "es": "Espina hueca de piedra pómez"
+          },
+          "level": 39,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-056.png"
+        },
+        {
+          "id": "aur203Ancient057Material",
+          "typeId": "aur203Ancient057",
+          "names": {
+            "ru": "Медная грибная пластинка",
+            "en": "Copper mushroom gill",
+            "es": "Lámina de hongo cobrizo"
+          },
+          "level": 36,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-057.png"
+        }
+      ]
+    },
+    {
+      "folder": "remaining-3",
+      "grid": [
+        4,
+        3
+      ],
+      "entries": [
+        {
+          "id": "aur203Ancient058Material",
+          "typeId": "aur203Ancient058",
+          "names": {
+            "ru": "Янтарная спинная струна",
+            "en": "Amber dorsal string",
+            "es": "Cuerda dorsal de ámbar"
+          },
+          "level": 38,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-058.png"
+        },
+        {
+          "id": "aur203Ancient059Material",
+          "typeId": "aur203Ancient059",
+          "names": {
+            "ru": "Базальтовый осколок плеча",
+            "en": "Basalt shoulder shard",
+            "es": "Fragmento de hombro de basalto"
+          },
+          "level": 39,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-059.png"
+        },
+        {
+          "id": "aur203Ancient060Material",
+          "typeId": "aur203Ancient060",
+          "names": {
+            "ru": "Светящаяся шелуха семенной коробочки",
+            "en": "Luminous seedpod husk",
+            "es": "Cáscara de vaina luminosa"
+          },
+          "level": 36,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-060.png"
+        },
+        {
+          "id": "aur203Ancient061Material",
+          "typeId": "aur203Ancient061",
+          "names": {
+            "ru": "Коровое маховое перо",
+            "en": "Bark flight feather",
+            "es": "Pluma de vuelo de corteza"
+          },
+          "level": 37,
+          "iconURL": "assets/icons/monster-materials/aur203-next-ancient-061.png"
+        },
+        {
+          "id": "aur203Desert080Material",
+          "typeId": "aur203Desert080",
+          "names": {
+            "ru": "Бирюзовая горловая перепонка",
+            "en": "Turquoise throat membrane",
+            "es": "Membrana de garganta turquesa"
+          },
+          "level": 49,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-080.png"
+        },
+        {
+          "id": "aur203Desert081Material",
+          "typeId": "aur203Desert081",
+          "names": {
+            "ru": "Золотая гребневая пластинка",
+            "en": "Golden comb lamella",
+            "es": "Laminilla de peine dorado"
+          },
+          "level": 50,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-081.png"
+        },
+        {
+          "id": "aur203Desert082Material",
+          "typeId": "aur203Desert082",
+          "names": {
+            "ru": "Керамика амфорного панциря",
+            "en": "Amphora shell ceramic",
+            "es": "Cerámica de caparazón ánfora"
+          },
+          "level": 45,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-082.png"
+        },
+        {
+          "id": "aur203Desert083Material",
+          "typeId": "aur203Desert083",
+          "names": {
+            "ru": "Пластина парусного клюва",
+            "en": "Sailbill beak plate",
+            "es": "Placa de pico vela"
+          },
+          "level": 51,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-083.png"
+        },
+        {
+          "id": "aur203Desert084Material",
+          "typeId": "aur203Desert084",
+          "names": {
+            "ru": "Соляной кристалл панциря",
+            "en": "Salt carapace crystal",
+            "es": "Cristal de sal del caparazón"
+          },
+          "level": 50,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-084.png"
+        },
+        {
+          "id": "aur203Desert085Material",
+          "typeId": "aur203Desert085",
+          "names": {
+            "ru": "Резонансная глиняная горловая трубка",
+            "en": "Resonant clay throat tube",
+            "es": "Tubo resonante de garganta de arcilla"
+          },
+          "level": 49,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-085.png"
+        },
+        {
+          "id": "aur203Desert086Material",
+          "typeId": "aur203Desert086",
+          "names": {
+            "ru": "Обсидиановая пластина веретена",
+            "en": "Obsidian spindle plate",
+            "es": "Placa de husillo de obsidiana"
+          },
+          "level": 54,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-086.png"
+        },
+        {
+          "id": "aur203Desert087Material",
+          "typeId": "aur203Desert087",
+          "names": {
+            "ru": "Бронзовый слой спиральной раковины",
+            "en": "Bronze spiral shell layer",
+            "es": "Capa de concha espiral de bronce"
+          },
+          "level": 55,
+          "iconURL": "assets/icons/monster-materials/aur203-next-desert-087.png"
+        }
+      ]
+    }
+  ]
+}

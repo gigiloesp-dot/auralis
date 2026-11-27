@@ -1,0 +1,48 @@
+{
+  "pack": "aur203-desert-b",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "animationScope": "48 painted poses: 8 directions \u00d7 idle, run-a, run-b, attack, hurt, death. Two movement drawings, not six multiframe clips.",
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "generations": {
+    "060": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A giant heavy scorpion with eight stubby jointed legs, a broad charcoal-blue segmented chitin body, one enormous anvil-shaped blunt left pincer and a slender serrated right pincer, short thick arched segmented tail with ivory hooked stinger, amber eyes. Asymmetric unmistakable anatomy. Attack swings the heavy claw and points the stinger. Death sprawled flat, tail uncurls sideways.",
+      "originalGenerationPath": "/workspace/generated_images/exec-995e2b33-4a28-4aad-af62-3fc0569a9c7b.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-995e2b33-4a28-4aad-af62-3fc0569a9c7b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "061": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: An elegant long-legged desert arachnid with six spindly bent walking legs, two handlike palps, pale coral chitin, a transparent amber hourglass-shaped double-lobed abdomen held horizontally, a tiny triangular face with turquoise eyes. NO scorpion tail. Attack palps thrust forward. Death folds the long legs low around its double abdomen.",
+      "originalGenerationPath": "/workspace/generated_images/exec-d6a9005f-7ba3-46cf-aff6-f5a734f8d5b9.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-d6a9005f-7ba3-46cf-aff6-f5a734f8d5b9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "062": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A squat muscular original humanoid desert giant made of warm terracotta hide, massive potbelly, two elephantine legs, two thick arms ending in three flat stone fingers, short broad head embedded above chest, a natural hollow brick-kiln chimney hump on back with glowing golden cracks, no weapons no clothes. Attack both fists smash. Death slumps on its side with folded knees and arms.",
+      "originalGenerationPath": "/workspace/generated_images/exec-558d2b71-767f-43b2-a1eb-bba6b824eff1.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-558d2b71-767f-43b2-a1eb-bba6b824eff1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "063": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A lean stalking scorpion: six high angular walking legs, narrow pearly ivory segmented thorax, TWO long crescent-shaped cutting pincers forming open moon silhouettes, very long thin jointed tail ending in a flat turquoise leaf-shaped stinger. Rich reddish leg joints. Completely different from bulky anvil claw scorpion. Attack crescents slash. Death splayed low tail uncoiled.",
+      "originalGenerationPath": "/workspace/generated_images/exec-b04512e4-926a-4f54-a7b6-512d9ca6eb70.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b04512e4-926a-4f54-a7b6-512d9ca6eb70.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  "visualInspection": {
+    "poses": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "Viewed every registered native pose on both backgrounds; no visible matte, clipping or neighbor fragments; collapsed death rows. Original low-alpha hidden RGB retained unedited."
+  },
+  "speciesCards": "art/source/aur203-desert-b/species-cards.json"
+}

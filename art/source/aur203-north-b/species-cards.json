@@ -1,0 +1,130 @@
+[
+  {
+    "id": "north-species-080",
+    "placementId": "north080",
+    "spotId": "north-spot-080",
+    "typeId": "aur203North080",
+    "names": {
+      "ru": "Снегоступный компасозуб",
+      "en": "Snowshoe compass shrew",
+      "es": "Musaraña brújula"
+    },
+    "biome": "snow",
+    "level": 22,
+    "position": {
+      "x": 701,
+      "y": 920
+    },
+    "anatomy": "pear-shaped shrew; long coral nose, four compass-needle snowshoe paws, huge indigo ears, compass-disk ribbon tail",
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "frost"
+    ],
+    "materialId": "aur203North080Material",
+    "materialConcept": {
+      "ru": "Пластинка хвостового компаса",
+      "en": "Tail-compass plate",
+      "es": "Placa de brújula caudal"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-081",
+    "placementId": "north081",
+    "spotId": "north-spot-081",
+    "typeId": "aur203North081",
+    "names": {
+      "ru": "Ледокоронный тупик",
+      "en": "Frost-crown puffin",
+      "es": "Frailecillo coronado"
+    },
+    "biome": "snow",
+    "level": 26,
+    "position": {
+      "x": 4549,
+      "y": 8989
+    },
+    "anatomy": "round flightless seabird, ice-crown crest, immense layered triangular beak, flipper wings and huge web feet",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "frost"
+    ],
+    "materialId": "aur203North081Material",
+    "materialConcept": {
+      "ru": "Слой клюва ледокороны",
+      "en": "Frost-crown beak layer",
+      "es": "Lámina de pico glacial"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-082",
+    "placementId": "north082",
+    "spotId": "north-spot-082",
+    "typeId": "aur203North082",
+    "names": {
+      "ru": "Снежнофонарный паук",
+      "en": "Snow-lantern spider",
+      "es": "Araña farol de nieve"
+    },
+    "biome": "snow",
+    "level": 22,
+    "position": {
+      "x": 2693,
+      "y": 813
+    },
+    "anatomy": "eight thick teal legs with fur cuffs; perforated opalescent snow-lantern abdomen; four dark eyes",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "web",
+      "venom"
+    ],
+    "materialId": "aur203North082Material",
+    "materialConcept": {
+      "ru": "Стенка снежного фонаря",
+      "en": "Snow-lantern wall",
+      "es": "Pared de farol nevado"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-083",
+    "placementId": "north083",
+    "spotId": "north-spot-083",
+    "typeId": "aur203North083",
+    "names": {
+      "ru": "Северосиянный куду",
+      "en": "Aurora-antler kudu",
+      "es": "Kudú de astas aurorales"
+    },
+    "biome": "snow",
+    "level": 30,
+    "position": {
+      "x": 7255,
+      "y": 14457
+    },
+    "anatomy": "compact ungulate with corkscrew crescent ice antlers, split purple mane and aurora streaks",
+    "movementProfile": "charger",
+    "abilityPattern": [
+      "charge",
+      "frost"
+    ],
+    "materialId": "aur203North083Material",
+    "materialConcept": {
+      "ru": "Завиток сияющего рога",
+      "en": "Aurora antler curl",
+      "es": "Espiral de asta auroral"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  }
+]

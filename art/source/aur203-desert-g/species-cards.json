@@ -1,0 +1,90 @@
+[
+  {
+    "placementId": "desert-species-080",
+    "typeId": "aur203Desert080",
+    "names": {
+      "ru": "Колодезный глотун",
+      "en": "Well-mouth gulper",
+      "es": "Engullidor pozo"
+    },
+    "biome": "sand",
+    "level": 49,
+    "x": 14944,
+    "y": 5049,
+    "anatomy": "round turquoise amphibian with stone well ring mouth and three digging legs",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "burrow"
+    ],
+    "materialId": "aur203Desert080Material",
+    "materialConcept": "turquoise throat membrane",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-081",
+    "typeId": "aur203Desert081",
+    "names": {
+      "ru": "Солнечный гребнеход",
+      "en": "Sun-comb strider",
+      "es": "Zancudo peine solar"
+    },
+    "biome": "sand",
+    "level": 50,
+    "x": 16682,
+    "y": 4543,
+    "anatomy": "six-legged red antelope insect with huge golden comb sail and narrow snout",
+    "movementProfile": "charger",
+    "abilityPattern": [
+      "charge",
+      "fan"
+    ],
+    "materialId": "aur203Desert081Material",
+    "materialConcept": "golden comb lamella",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-082",
+    "typeId": "aur203Desert082",
+    "names": {
+      "ru": "Песчаный гончар",
+      "en": "Dune potter",
+      "es": "Alfarero de dunas"
+    },
+    "biome": "sand",
+    "level": 45,
+    "x": 6728,
+    "y": 3201,
+    "anatomy": "terracotta snail with double-necked amphora shell and four fleshy gripping tentacles",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "roots"
+    ],
+    "materialId": "aur203Desert082Material",
+    "materialConcept": "amphora shell ceramic",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-083",
+    "typeId": "aur203Desert083",
+    "names": {
+      "ru": "Барханный парусоклюв",
+      "en": "Dune sailbill",
+      "es": "Pico vela dunar"
+    },
+    "biome": "sand",
+    "level": 51,
+    "x": 2551,
+    "y": 18579,
+    "anatomy": "flightless long-legged bird with triangular sail beak and broad striped tail fan",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "shot",
+      "fan"
+    ],
+    "materialId": "aur203Desert083Material",
+    "materialConcept": "sailbill beak plate",
+    "artOnly": true
+  }
+]

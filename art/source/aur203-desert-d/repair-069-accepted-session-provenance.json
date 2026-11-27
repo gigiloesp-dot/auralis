@@ -1,0 +1,6 @@
+{
+  "prompt": "BACKGROUND REMOVAL EDIT ONLY. Cut out all 48 complete creatures from the supplied sprite sheet. Erase the entire beige/brown/grey background and all floor shadows to FULLY TRANSPARENT alpha zero. Preserve the exact 8 columns by6 rows layout, size and all48 poses, no redraw and no enlargement. True transparent PNG surrounding every creature, transparent between limbs too. No backdrop, no colored matte, no checkerboard, no text. Leave only the creatures on an empty transparent canvas.",
+  "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-4daba76f-7f36-4347-afcd-556b3ae64c32.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "originalGenerationPath": "/workspace/generated_images/exec-4daba76f-7f36-4347-afcd-556b3ae64c32.png",
+  "accepted": false
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "pack": "forest-c",
+    "ids": [
+      "forest-species-088",
+      "forest-species-089",
+      "forest-species-090",
+      "forest-species-091"
+    ],
+    "artReady": true,
+    "runtimeIntegrated": false,
+    "sourceImmutable": true,
+    "remaining": null
+  },
+  {
+    "pack": "forest-d",
+    "ids": [
+      "forest-species-092",
+      "forest-species-093",
+      "forest-species-094",
+      "forest-species-095"
+    ],
+    "artReady": true,
+    "runtimeIntegrated": false,
+    "sourceImmutable": true,
+    "remaining": null
+  },
+  {
+    "pack": "forest-e",
+    "ids": [
+      "forest-species-096"
+    ],
+    "artReady": true,
+    "runtimeIntegrated": false,
+    "sourceImmutable": true,
+    "remaining": null
+  },
+  {
+    "pack": "desert-g",
+    "ids": [
+      "desert-species-080",
+      "desert-species-081",
+      "desert-species-082",
+      "desert-species-083"
+    ],
+    "artReady": true,
+    "runtimeIntegrated": false,
+    "sourceImmutable": true,
+    "remaining": null
+  },
+  {
+    "pack": "desert-h",
+    "ids": [
+      "desert-species-084",
+      "desert-species-085",
+      "desert-species-086",
+      "desert-species-087"
+    ],
+    "artReady": true,
+    "runtimeIntegrated": false,
+    "sourceImmutable": true,
+    "remaining": null
+  }
+]

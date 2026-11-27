@@ -1,0 +1,50 @@
+{
+  "pack": "aur203-desert-d",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "animationScope": "48 painted poses: 8 directions \u00d7 idle, run-a, run-b, attack, hurt, death. Two movement drawings, not six multiframe clips.",
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "speciesCards": "art/source/aur203-desert-b/species-cards.json",
+  "generations": {
+    "068": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A tall stilt-legged giant scorpion with eight thin black obsidian legs, small round smoky amber translucent dome abdomen, two long bulbous bell-shaped pincers with bright copper rims, tail made of three oversized glassy bead segments arching over back and tiny needle stinger. Attack both bell claws open. Death collapsed low glass beads resting sideways.",
+      "originalGenerationPath": "/workspace/generated_images/exec-7984c619-b577-4cee-abab-31e76f72e265.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7984c619-b577-4cee-abab-31e76f72e265.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "069": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A limbless original desert snake monster with thick short spindle body patterned terracotta and cream chevrons, wide blunt head, two backward-curving crystalline horn fins along cheeks, flattened spade tail. No humanoid features. Eight directional coiled body poses with distinct curves. Attack forward uncoiling lunge. Death fully relaxed flattened serpentine body.",
+      "originalGenerationPath": "/workspace/generated_images/exec-f164674c-9f5b-4a46-b420-ef662a024b00.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f164674c-9f5b-4a46-b420-ef662a024b00.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "070": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A huge two-legged desert ogre with long heavy arms dragging close to ground, round deep-brown clay body, two spiralling ram horns, broad gentle but angry beast face, rocky ochre shoulder ridges, digitigrade short feet, no clothes no weapons. Attack lowers horns and pounds one fist. Death lies on side both knees bent head on arm.",
+      "originalGenerationPath": "/workspace/generated_images/exec-46bc21bf-285b-464a-b490-a317b86d0496.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-46bc21bf-285b-464a-b490-a317b86d0496.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "071": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A compact furred burrowing sand mammal with saffron fur, broad leathery shovel nose, enormous silver blue spade-shaped foreclaws, two short hindlegs, tiny ears and narrow dark eyes, thick almost hairless short tail with ridged tip. Anatomy mole not rat. Attack sweeping foreclaws. Death curled low on side.",
+      "originalGenerationPath": "/workspace/generated_images/exec-468522f0-571f-4a38-82ee-5b7d5d7fdf12.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-468522f0-571f-4a38-82ee-5b7d5d7fdf12.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  "visualInspection": {
+    "poses": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All final registered native poses viewed on both backgrounds. No visible matte rectangles, clipping or neighboring fragments. Death row lies collapsed."
+  },
+  "acceptedRepair": "repair-069-final-accepted-session-provenance.json",
+  "readinessManifest": "art/source/aur203-desert-b/art-readiness-manifest.json"
+}

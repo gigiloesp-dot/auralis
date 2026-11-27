@@ -1,0 +1,90 @@
+[
+  {
+    "placementId": "forest-species-088",
+    "typeId": "aur203Forest088",
+    "names": {
+      "ru": "Крылатка клёна",
+      "en": "Maple-key glider",
+      "es": "Planeador sámara"
+    },
+    "biome": "woodland",
+    "level": 13,
+    "x": 779,
+    "y": 12867,
+    "anatomy": "seed-winged mammal with maple samara shoulder wings",
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "fan"
+    ],
+    "materialId": "aur203Forest088Material",
+    "materialConcept": "maple-wing membrane",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-089",
+    "typeId": "aur203Forest089",
+    "names": {
+      "ru": "Желобный фонарник",
+      "en": "Gutter-lantern hermit",
+      "es": "Ermitaño farol"
+    },
+    "biome": "abandoned-city",
+    "level": 17,
+    "x": 16589,
+    "y": 5190,
+    "anatomy": "six-armed indigo octopus inhabiting bronze rainspout shell",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "web"
+    ],
+    "materialId": "aur203Forest089Material",
+    "materialConcept": "blue lantern glass chamber",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-090",
+    "typeId": "aur203Forest090",
+    "names": {
+      "ru": "Клеверная черепаха",
+      "en": "Clover-mantle tortoise",
+      "es": "Tortuga trébol"
+    },
+    "biome": "woodland",
+    "level": 8,
+    "x": 8132,
+    "y": 2734,
+    "anatomy": "tortoise with three heart-lobed clover shell and duckbill",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "materialId": "aur203Forest090Material",
+    "materialConcept": "clover shell plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-091",
+    "typeId": "aur203Forest091",
+    "names": {
+      "ru": "Орешниковый ложкоклюв",
+      "en": "Hazel-spoonbill burrower",
+      "es": "Cavador pico de cuchara"
+    },
+    "biome": "woodland",
+    "level": 11,
+    "x": 4075,
+    "y": 10909,
+    "anatomy": "three-legged bird with wooden spoon bill and nut quill fan",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "materialId": "aur203Forest091Material",
+    "materialConcept": "hazel quill",
+    "artOnly": true
+  }
+]

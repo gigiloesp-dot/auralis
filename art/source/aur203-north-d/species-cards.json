@@ -1,0 +1,130 @@
+[
+  {
+    "id": "north-species-088",
+    "placementId": "north088",
+    "spotId": "north-spot-088",
+    "typeId": "aur203North088",
+    "names": {
+      "ru": "Жароколёсый скорпион",
+      "en": "Ember-wheel scorpion",
+      "es": "Escorpión rueda de brasas"
+    },
+    "biome": "volcanic",
+    "level": 31,
+    "position": {
+      "x": 16953,
+      "y": 6212
+    },
+    "anatomy": "charcoal scorpion with broad paddle pincers, eight orange jointed legs, tail coiled in a complete ember-spoked wheel",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "burrow"
+    ],
+    "materialId": "aur203North088Material",
+    "materialConcept": {
+      "ru": "Спица жаркого хвоста",
+      "en": "Ember-tail spoke",
+      "es": "Radio de cola de brasas"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-089",
+    "placementId": "north089",
+    "spotId": "north-spot-089",
+    "typeId": "aur203North089",
+    "names": {
+      "ru": "Базальтовый лопатокрот",
+      "en": "Basalt shovel mole",
+      "es": "Topo pala de basalto"
+    },
+    "biome": "volcanic",
+    "level": 31,
+    "position": {
+      "x": 15883,
+      "y": 7868
+    },
+    "anatomy": "puglike eyeless mole with six giant basalt shovel foredigits, split ember nose and overlapping hexagonal back plates",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "stomp"
+    ],
+    "materialId": "aur203North089Material",
+    "materialConcept": {
+      "ru": "Базальтовая лопастная пластина",
+      "en": "Basalt shovel plate",
+      "es": "Placa de pala basáltica"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-090",
+    "placementId": "north090",
+    "spotId": "north-spot-090",
+    "typeId": "aur203North090",
+    "names": {
+      "ru": "Вьюжная воронкомоль",
+      "en": "Blizzard funnel moth",
+      "es": "Polilla embudo de ventisca"
+    },
+    "biome": "snow",
+    "level": 27,
+    "position": {
+      "x": 2569,
+      "y": 10417
+    },
+    "anatomy": "thick fuzzy moth, four curled funnel wings rimmed in violet ice, twin feathery antennae, six small feet",
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "frost"
+    ],
+    "materialId": "aur203North090Material",
+    "materialConcept": {
+      "ru": "Чешуйка воронкового крыла",
+      "en": "Funnel-wing scale",
+      "es": "Escama de ala embudo"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-091",
+    "placementId": "north091",
+    "spotId": "north-spot-091",
+    "typeId": "aur203North091",
+    "names": {
+      "ru": "Ледострунный ходульник",
+      "en": "Ice-harp strider",
+      "es": "Zancudo arpa de hielo"
+    },
+    "biome": "snow",
+    "level": 25,
+    "position": {
+      "x": 7557,
+      "y": 2691
+    },
+    "anatomy": "six stilt legs supporting arched translucent icy harp body, three dangling crystal strings, small beaked central head",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "blink",
+      "frost"
+    ],
+    "materialId": "aur203North091Material",
+    "materialConcept": {
+      "ru": "Ледяная струна",
+      "en": "Ice-harp string",
+      "es": "Cuerda de arpa helada"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  }
+]

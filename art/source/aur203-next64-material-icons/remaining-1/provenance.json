@@ -1,0 +1,459 @@
+{
+  "source": "art/source/aur203-next64-material-icons/remaining-1/original-sheet.png",
+  "sourceSize": [
+    1261,
+    1247
+  ],
+  "sourceSHA256": "bd07f12250f7b11ee475b44f1a6670472df8f92ce02d1702bc53cc71d1972a59",
+  "method": "Complete source grid cells, proportionally reduced to 112px and centered on 128px RGBA canvases. No semantic editing, alpha normalization, repainting, trimming or recoloring.",
+  "entries": [
+    {
+      "id": "aur203Forest088Material",
+      "typeId": "aur203Forest088",
+      "names": {
+        "ru": "Перепонка кленового крыла",
+        "en": "Maple-wing membrane",
+        "es": "Membrana de ala de arce"
+      },
+      "level": 13,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-088.png",
+      "sourceRect": [
+        0,
+        0,
+        315,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "b914fd58857881608da3eee1be7451cf255ac7eacc81f68b0948642df1da8a6d",
+      "rgbaSHA256": "feb9feb0329812c0a681cc9437f18f81c00181455d37cbf8a284409018357bc2",
+      "alphaBounds": [
+        18,
+        20,
+        120,
+        119
+      ],
+      "transparentPixels": 11927
+    },
+    {
+      "id": "aur203Forest089Material",
+      "typeId": "aur203Forest089",
+      "names": {
+        "ru": "Синяя стеклянная камера фонаря",
+        "en": "Blue lantern glass chamber",
+        "es": "Cámara de vidrio azul de farol"
+      },
+      "level": 17,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-089.png",
+      "sourceRect": [
+        315,
+        0,
+        630,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "3c6c53dc5106b6140bebf0288ddc32f50694ce44ec0b763517c0e808a101d61b",
+      "rgbaSHA256": "f12c28830e860ddba7f2e2f972cbcea64e26ad1dbe68b23a0c27a2792a289cbd",
+      "alphaBounds": [
+        8,
+        19,
+        111,
+        114
+      ],
+      "transparentPixels": 10296
+    },
+    {
+      "id": "aur203Forest090Material",
+      "typeId": "aur203Forest090",
+      "names": {
+        "ru": "Клеверная пластинка панциря",
+        "en": "Clover shell plate",
+        "es": "Placa de caparazón trébol"
+      },
+      "level": 8,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-090.png",
+      "sourceRect": [
+        630,
+        0,
+        945,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "465fdec4cca0fccaa6b7a2c8d86535bbb2302248dfe42cc1db91c3c131b8edbe",
+      "rgbaSHA256": "3e1cc0b73652d99b074d6eeaba815f64572a9f20425fec066f45ef8d913021ef",
+      "alphaBounds": [
+        11,
+        24,
+        114,
+        112
+      ],
+      "transparentPixels": 10170
+    },
+    {
+      "id": "aur203Forest091Material",
+      "typeId": "aur203Forest091",
+      "names": {
+        "ru": "Ореховое перо",
+        "en": "Hazel quill",
+        "es": "Pluma de avellano"
+      },
+      "level": 11,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-091.png",
+      "sourceRect": [
+        945,
+        0,
+        1261,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "6654e1ab99da6e9f2860d3970f45cc47d4b8efc53e4599ce8119d277bf689a6a",
+      "rgbaSHA256": "a77a1c899e900d893a290bc970d3130ba6a0fde7479c87a5fb62644802eb388e",
+      "alphaBounds": [
+        17,
+        19,
+        113,
+        119
+      ],
+      "transparentPixels": 12820
+    },
+    {
+      "id": "aur203Forest092Material",
+      "typeId": "aur203Forest092",
+      "names": {
+        "ru": "Гипсовая чешуйка крыла",
+        "en": "Plaster wing scale",
+        "es": "Escama de ala de yeso"
+      },
+      "level": 15,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-092.png",
+      "sourceRect": [
+        0,
+        311,
+        315,
+        623
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "f1dc98bfa3021ce9b379d161c5f135ee8c3bbabb1c62eaf7a951886f51cf747b",
+      "rgbaSHA256": "ba3b5dada2b4b8be4bb29bb6e11d948f5364a880b43a0377eb6337ed7b05dc3f",
+      "alphaBounds": [
+        14,
+        9,
+        113,
+        111
+      ],
+      "transparentPixels": 10914
+    },
+    {
+      "id": "aur203Forest093Material",
+      "typeId": "aur203Forest093",
+      "names": {
+        "ru": "Лепесток колокольчика",
+        "en": "Bluebell petal",
+        "es": "Pétalo de campanilla"
+      },
+      "level": 5,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-093.png",
+      "sourceRect": [
+        315,
+        311,
+        630,
+        623
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "f4f6e571a73249c0e86a76dcf7bb7589424008514058f30199b4a7e310b9180e",
+      "rgbaSHA256": "aead75db47035cd2ebee96306966d5c349045202a4bd7141f455a600624e30a2",
+      "alphaBounds": [
+        14,
+        19,
+        119,
+        119
+      ],
+      "transparentPixels": 11368
+    },
+    {
+      "id": "aur203Forest094Material",
+      "typeId": "aur203Forest094",
+      "names": {
+        "ru": "Ключевидное жвало",
+        "en": "Key-shaped mandible",
+        "es": "Mandíbula en forma de llave"
+      },
+      "level": 16,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-094.png",
+      "sourceRect": [
+        630,
+        311,
+        945,
+        623
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "044a668638d52aba0edb689323d7c43ff3f46dd915c98042ba2fe2057f7f1a3e",
+      "rgbaSHA256": "7c8985ee6db5cc95b0e9c269a5d4cb29e049b31e59fae417faf488e315c834c4",
+      "alphaBounds": [
+        13,
+        22,
+        109,
+        108
+      ],
+      "transparentPixels": 12439
+    },
+    {
+      "id": "aur203Forest095Material",
+      "typeId": "aur203Forest095",
+      "names": {
+        "ru": "Терракотовое суставное кольцо",
+        "en": "Terracotta joint ring",
+        "es": "Anillo articular de terracota"
+      },
+      "level": 18,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-095.png",
+      "sourceRect": [
+        945,
+        311,
+        1261,
+        623
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "1dd7f9aa169fdc1e9e205c3f422990cea6a9452451fc11085b30ab1add4bfa6a",
+      "rgbaSHA256": "59493c4657e65678a0792548c22504bede373c067daab8e19721d78a0d0b9fff",
+      "alphaBounds": [
+        12,
+        8,
+        111,
+        108
+      ],
+      "transparentPixels": 10247
+    },
+    {
+      "id": "aur203Forest096Material",
+      "typeId": "aur203Forest096",
+      "names": {
+        "ru": "Витражный осколок плавника",
+        "en": "Stained-glass fin shard",
+        "es": "Fragmento de aleta vitral"
+      },
+      "level": 18,
+      "iconURL": "assets/icons/monster-materials/aur203-next-forest-096.png",
+      "sourceRect": [
+        0,
+        623,
+        315,
+        935
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "59209b32d8c63860584cd419acacc64005e8c6eccd25bf7558a8ce76194ad5ee",
+      "rgbaSHA256": "075a5e58bbb88d004d1a7ba15187550b4d121d4e70fd84f44ff396282f6e14fd",
+      "alphaBounds": [
+        16,
+        18,
+        118,
+        112
+      ],
+      "transparentPixels": 12383
+    },
+    {
+      "id": "aur203North080Material",
+      "typeId": "aur203North080",
+      "names": {
+        "ru": "Пластинка хвостового компаса",
+        "en": "Tail-compass plate",
+        "es": "Placa de brújula caudal"
+      },
+      "level": 22,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-080.png",
+      "sourceRect": [
+        315,
+        623,
+        630,
+        935
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "f1a34952de6a7589f0ab75022d4dc11fa7133b67320f6eba04302d65c9558aca",
+      "rgbaSHA256": "1dbe59af9b91c7517e3b81438da78754cc73c942d558179bca73832bb6b62da8",
+      "alphaBounds": [
+        16,
+        10,
+        118,
+        119
+      ],
+      "transparentPixels": 10283
+    },
+    {
+      "id": "aur203North081Material",
+      "typeId": "aur203North081",
+      "names": {
+        "ru": "Слой клюва ледокороны",
+        "en": "Frost-crown beak layer",
+        "es": "Lámina de pico glacial"
+      },
+      "level": 26,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-081.png",
+      "sourceRect": [
+        630,
+        623,
+        945,
+        935
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "e957542fc33086dc2782ee3a168e6e7c8a82d13d82cebf6086a87155a5c54f07",
+      "rgbaSHA256": "dbcf6cd439941d6dafbb63735903bb276cdfd442992e9519633f8af0e3ce5278",
+      "alphaBounds": [
+        10,
+        17,
+        109,
+        108
+      ],
+      "transparentPixels": 11425
+    },
+    {
+      "id": "aur203North082Material",
+      "typeId": "aur203North082",
+      "names": {
+        "ru": "Стенка снежного фонаря",
+        "en": "Snow-lantern wall",
+        "es": "Pared de farol nevado"
+      },
+      "level": 22,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-082.png",
+      "sourceRect": [
+        945,
+        623,
+        1261,
+        935
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "66cb9313306236c52a023861e74571749ab167a781602a1c419db7a1b01b8d6b",
+      "rgbaSHA256": "06490b81bbf2e925d52b9e5cff1e759f3c2523b13b03b8313d050e1a7ecea1b5",
+      "alphaBounds": [
+        11,
+        14,
+        108,
+        112
+      ],
+      "transparentPixels": 10773
+    },
+    {
+      "id": "aur203North083Material",
+      "typeId": "aur203North083",
+      "names": {
+        "ru": "Завиток сияющего рога",
+        "en": "Aurora antler curl",
+        "es": "Espiral de asta auroral"
+      },
+      "level": 30,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-083.png",
+      "sourceRect": [
+        0,
+        935,
+        315,
+        1247
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "0829e8b8ca83aa7e5e06dcd077501881fa9744d60144eaf725194d1bcbf970d5",
+      "rgbaSHA256": "b0b53f2693864a5b8fa1825ec59341d75dc2b91f0dfee2e43715d60027c51e6b",
+      "alphaBounds": [
+        18,
+        10,
+        110,
+        109
+      ],
+      "transparentPixels": 12174
+    },
+    {
+      "id": "aur203North084Material",
+      "typeId": "aur203North084",
+      "names": {
+        "ru": "Стенка ледяного раструба",
+        "en": "Ice trumpet wall",
+        "es": "Pared de trompeta helada"
+      },
+      "level": 30,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-084.png",
+      "sourceRect": [
+        315,
+        935,
+        630,
+        1247
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "218c826a9377e687730978b2e6e840c2427655f6858afdd9f5c83f148f0ea617",
+      "rgbaSHA256": "08b4781e057c4440830bf59d77fe6427cfae8605c8a40972493c878cd17637eb",
+      "alphaBounds": [
+        14,
+        8,
+        120,
+        109
+      ],
+      "transparentPixels": 11050
+    },
+    {
+      "id": "aur203North085Material",
+      "typeId": "aur203North085",
+      "names": {
+        "ru": "Пластинка ковшеклюва",
+        "en": "Spoonbill plate",
+        "es": "Placa de pico cuchara"
+      },
+      "level": 28,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-085.png",
+      "sourceRect": [
+        630,
+        935,
+        945,
+        1247
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "56a3a4054f3cc376073f0c4dc5f0d5a937e8440c5e06564325dcaf7a684b2b9c",
+      "rgbaSHA256": "21206057550a9fa1812acaa19232311ef7cec3f6cf77b0e85c3637235d58a8d7",
+      "alphaBounds": [
+        8,
+        14,
+        112,
+        112
+      ],
+      "transparentPixels": 10837
+    },
+    {
+      "id": "aur203North086Material",
+      "typeId": "aur203North086",
+      "names": {
+        "ru": "Створка печного крыла",
+        "en": "Furnace wing casing",
+        "es": "Cubierta de ala de horno"
+      },
+      "level": 33,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-086.png",
+      "sourceRect": [
+        945,
+        935,
+        1261,
+        1247
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "09b4ec7cd6523ebb922d1ed9ee9f92aa457d05fadea6a9c2b93d430f4134773f",
+      "rgbaSHA256": "52df487c26836d121f93ab20da4cae67deebfefcabb4a2a334ff4980e915d518",
+      "alphaBounds": [
+        12,
+        14,
+        111,
+        108
+      ],
+      "transparentPixels": 11636
+    }
+  ]
+}

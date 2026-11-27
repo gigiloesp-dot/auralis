@@ -1,0 +1,93 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-ancient-c",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "animationScope": "48 painted poses per creature, E/SE/S/SW/W/NW/N/NE x idle/run-a/run-b/attack/hurt/death. Two movement drawings; six banks do not claim six full multiframe clips.",
+  "mechanicalPacking": "Complete unedited source rectangle crops with margin, uniformly resized and registered into 128x192 cells. Alpha support measured only, never threshold-erased or painted.",
+  "qa": "All 192 native registered poses viewed on beige and dark contacts. Distinct opposite movement drawings, naturally collapsed death drawings. No visible mattes, clipping or adjacent-cell fragments.",
+  "models": [
+    {
+      "id": "ancient-species-053",
+      "names": {
+        "ru": "Замковый баран",
+        "en": "Keystone Ram",
+        "es": "Carnero de clave"
+      },
+      "biome": "elder-ruins",
+      "level": 38,
+      "anatomy": "Compact ram with sandstone block shoulders, curled broken arch horns, short indigo fleece and four split copper hooves.",
+      "proposedMovementProfile": "charger",
+      "proposedAbilityPattern": [
+        "charge",
+        "stomp"
+      ],
+      "materialConcept": "Arch horn fragment",
+      "source": "ancient-species-053-original.png",
+      "prompt": "ancient-species-053-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-5516ba00-dd65-4df9-9e2c-6fd4dba78863.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "ancient-species-054",
+      "names": {
+        "ru": "Обсидиановый коршун",
+        "en": "Obsidian Kite",
+        "es": "Milano de obsidiana"
+      },
+      "biome": "elder-wastes",
+      "level": 40,
+      "anatomy": "Lean bird of prey with broad angular obsidian feather wings, rust neck ruff, three tail blades and ivory hooked face.",
+      "proposedMovementProfile": "bat",
+      "proposedAbilityPattern": [
+        "dive",
+        "fan"
+      ],
+      "materialConcept": "Obsidian flight feather",
+      "source": "ancient-species-054-original.png",
+      "prompt": "ancient-species-054-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ece9767b-70b1-4d58-8384-b4e592039b90.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "ancient-species-055",
+      "names": {
+        "ru": "Солекоронный панголин",
+        "en": "Saltcrown Pangolin",
+        "es": "Pangolín de corona salina"
+      },
+      "biome": "elder-dry",
+      "level": 41,
+      "anatomy": "Heavy low pangolin with layered chalk-salt armored scales, spade foreclaws, long plated tail and a crown of natural translucent salt spikes.",
+      "proposedMovementProfile": "scarab",
+      "proposedAbilityPattern": [
+        "burrow",
+        "charge"
+      ],
+      "materialConcept": "Crown salt scale",
+      "source": "ancient-species-055-original.png",
+      "prompt": "ancient-species-055-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-574f9ab3-3822-42c8-b562-76d565da9f4c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "ancient-species-056",
+      "names": {
+        "ru": "Фумарольный ежовик",
+        "en": "Fumarole Urchin",
+        "es": "Erizo de fumarola"
+      },
+      "biome": "elder-wastes",
+      "level": 39,
+      "anatomy": "Levating round black pumice creature with six crooked hollow chimney spines, glowing amber vents, stubby curled underside tendrils, tiny round face.",
+      "proposedMovementProfile": "elemental",
+      "proposedAbilityPattern": [
+        "blink",
+        "shot"
+      ],
+      "materialConcept": "Hollow pumice spine",
+      "source": "ancient-species-056-original.png",
+      "prompt": "ancient-species-056-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c0aa4400-2490-4a1f-985c-d7e1a1c41dee.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

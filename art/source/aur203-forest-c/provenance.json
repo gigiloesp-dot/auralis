@@ -1,0 +1,135 @@
+{
+  "pack": "aur203-forest-c",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "models": [
+    {
+      "placementId": "forest-species-088",
+      "typeId": "aur203Forest088",
+      "names": {
+        "ru": "Крылатка клёна",
+        "en": "Maple-key glider",
+        "es": "Planeador sámara"
+      },
+      "biome": "woodland",
+      "level": 13,
+      "x": 779,
+      "y": 12867,
+      "anatomy": "seed-winged mammal with maple samara shoulder wings",
+      "movementProfile": "bat",
+      "abilityPattern": [
+        "dive",
+        "fan"
+      ],
+      "materialId": "aur203Forest088Material",
+      "materialConcept": "maple-wing membrane",
+      "artOnly": true
+    },
+    {
+      "placementId": "forest-species-089",
+      "typeId": "aur203Forest089",
+      "names": {
+        "ru": "Желобный фонарник",
+        "en": "Gutter-lantern hermit",
+        "es": "Ermitaño farol"
+      },
+      "biome": "abandoned-city",
+      "level": 17,
+      "x": 16589,
+      "y": 5190,
+      "anatomy": "six-armed indigo octopus inhabiting bronze rainspout shell",
+      "movementProfile": "crawler",
+      "abilityPattern": [
+        "venom",
+        "web"
+      ],
+      "materialId": "aur203Forest089Material",
+      "materialConcept": "blue lantern glass chamber",
+      "artOnly": true
+    },
+    {
+      "placementId": "forest-species-090",
+      "typeId": "aur203Forest090",
+      "names": {
+        "ru": "Клеверная черепаха",
+        "en": "Clover-mantle tortoise",
+        "es": "Tortuga trébol"
+      },
+      "biome": "woodland",
+      "level": 8,
+      "x": 8132,
+      "y": 2734,
+      "anatomy": "tortoise with three heart-lobed clover shell and duckbill",
+      "movementProfile": "heavy",
+      "abilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "materialId": "aur203Forest090Material",
+      "materialConcept": "clover shell plate",
+      "artOnly": true
+    },
+    {
+      "placementId": "forest-species-091",
+      "typeId": "aur203Forest091",
+      "names": {
+        "ru": "Орешниковый ложкоклюв",
+        "en": "Hazel-spoonbill burrower",
+        "es": "Cavador pico de cuchara"
+      },
+      "biome": "woodland",
+      "level": 11,
+      "x": 4075,
+      "y": 10909,
+      "anatomy": "three-legged bird with wooden spoon bill and nut quill fan",
+      "movementProfile": "scarab",
+      "abilityPattern": [
+        "burrow",
+        "cleave"
+      ],
+      "materialId": "aur203Forest091Material",
+      "materialConcept": "hazel quill",
+      "artOnly": true
+    }
+  ],
+  "animationScope": "48 painted poses: 8 directions x idle/run-a/run-b/attack/hurt/death. Two movement drawings; six pose banks, not six multiframe clips.",
+  "mechanicalPacking": "Whole complete pose cropping with 8 source pixel margins and uniform resampling; alpha used solely for measurement. No semantic painting/erasing/matte removal by Python.",
+  "visualReview": {
+    "all48PosesPerModel": true,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "death": "natural collapsed sideways with limp limbs and closed eyes",
+    "registration": "n/ne/e/se/s/sw/w/nw; source s/sw/w/nw/n/ne/e/se",
+    "reviewed": true
+  },
+  "generation": [
+    {
+      "id": "forest-species-088",
+      "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. WOODLAND level13 original MAPLE-KEY GLIDER: plump rust-red furry biped with huge asymmetrical paired maple samara seed wings growing from shoulders, tiny mitten forepaws, two long springy hindfeet, narrow spiral green tail, round face with moss eyebrows. Distinct seed-wing mammal silhouette; wings low in idle, spread during run, attack seed-wing slash, limp fallen wings in death.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-09712ee1-618e-4c19-952a-3305a3ebd518.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "forest-species-089",
+      "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. ABANDONED CITY level17 original GUTTER-LANTERN HERMIT: tiny indigo octopus crawling on six broad curled arms under an upright crooked bronze rainspout shell with blue glass lantern chamber and single round yellow eye peering from its opening. Bent spout forms narrow high chimney, chipped terracotta rim; no humanoid legs. Attack two arm lash, death shell fallen sideways and arms limp.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-cd97bfea-7b3c-4785-ad8b-d6acb55aaeef.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "forest-species-090",
+      "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. WOODLAND level8 original CLOVER-MANTLE TORTOISE: flat ivory tortoise with segmented emerald clover-leaf shell split into three heart-shaped lobes, four stout ochre shovel legs, long flexible mushroom-pink neck, wide duckbill and two leaf ear fins. Distinct low clover silhouette; attack neck jab and leaf flaring, death belly sideways neck limp.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-4063bffe-50c8-410d-8c6f-3e1f0702c193.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "forest-species-091",
+      "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. WOODLAND level11 original HAZEL-SPOONBILL BURROWER: round golden-brown three-legged burrowing bird-beast with enormous wooden spoon-shaped beak, one central rear pogo foot and two broad front digging feet, fan of striped hazel nut quills instead of wings, bright turquoise eye mask. Attack wide beak sweep, death fallen on side quills scattered but attached.",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ac2b0a0d-025a-4213-8d30-4c18e8aa87b3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ],
+  "repairs": {
+    "prompt": "Remove EVERY part of the brown background, glowing haze, shadows and matte from this sprite sheet. Keep ONLY all48 painted maple-wing creatures exactly as drawn, preserve every fine wing and tail edge. Entire empty area between and around sprites MUST be perfectly alphaZERO transparent. Preserve original48 poses and eight columns six rows, same positions, same colors, sizes and detail. This is a transparent game sprite sheet cutout cleanup, no new backgrounds, no scenery. Do not make any creature disappear or crop it.",
+    "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b93b45fe-856e-4e4e-8c43-2aba0ba46626.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  }
+}

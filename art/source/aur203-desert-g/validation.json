@@ -1,0 +1,1435 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "models": [
+    {
+      "id": "desert-species-080",
+      "source": "art/source/aur203-desert-g/desert-species-080-generated-v2.png",
+      "frames": 48,
+      "sourcePixelsUnedited": true,
+      "alphaZeroPercent": 83.93563164605034,
+      "sourceRegistrationScale": 0.5217391304347826,
+      "nativeIdleHeights": [
+        72,
+        73,
+        71,
+        72,
+        73,
+        71,
+        72,
+        73
+      ],
+      "bounds": {
+        "idle/n": {
+          "x": 27,
+          "y": 97,
+          "w": 73,
+          "h": 72,
+          "opaquePixels": 3452
+        },
+        "idle/ne": {
+          "x": 24,
+          "y": 96,
+          "w": 79,
+          "h": 73,
+          "opaquePixels": 3580
+        },
+        "idle/e": {
+          "x": 27,
+          "y": 98,
+          "w": 73,
+          "h": 71,
+          "opaquePixels": 3558
+        },
+        "idle/se": {
+          "x": 22,
+          "y": 97,
+          "w": 84,
+          "h": 72,
+          "opaquePixels": 3613
+        },
+        "idle/s": {
+          "x": 22,
+          "y": 96,
+          "w": 83,
+          "h": 73,
+          "opaquePixels": 3486
+        },
+        "idle/sw": {
+          "x": 23,
+          "y": 98,
+          "w": 81,
+          "h": 71,
+          "opaquePixels": 3526
+        },
+        "idle/w": {
+          "x": 27,
+          "y": 97,
+          "w": 73,
+          "h": 72,
+          "opaquePixels": 3636
+        },
+        "idle/nw": {
+          "x": 22,
+          "y": 96,
+          "w": 84,
+          "h": 73,
+          "opaquePixels": 3470
+        },
+        "run-a/n": {
+          "x": 26,
+          "y": 101,
+          "w": 76,
+          "h": 69,
+          "opaquePixels": 3211
+        },
+        "run-a/ne": {
+          "x": 20,
+          "y": 102,
+          "w": 88,
+          "h": 67,
+          "opaquePixels": 3192
+        },
+        "run-a/e": {
+          "x": 23,
+          "y": 101,
+          "w": 82,
+          "h": 68,
+          "opaquePixels": 3268
+        },
+        "run-a/se": {
+          "x": 21,
+          "y": 103,
+          "w": 85,
+          "h": 66,
+          "opaquePixels": 3297
+        },
+        "run-a/s": {
+          "x": 23,
+          "y": 103,
+          "w": 82,
+          "h": 67,
+          "opaquePixels": 3068
+        },
+        "run-a/sw": {
+          "x": 21,
+          "y": 103,
+          "w": 85,
+          "h": 65,
+          "opaquePixels": 3260
+        },
+        "run-a/w": {
+          "x": 22,
+          "y": 100,
+          "w": 83,
+          "h": 69,
+          "opaquePixels": 3401
+        },
+        "run-a/nw": {
+          "x": 21,
+          "y": 101,
+          "w": 86,
+          "h": 68,
+          "opaquePixels": 3352
+        },
+        "run-b/n": {
+          "x": 26,
+          "y": 104,
+          "w": 75,
+          "h": 68,
+          "opaquePixels": 2981
+        },
+        "run-b/ne": {
+          "x": 22,
+          "y": 104,
+          "w": 84,
+          "h": 69,
+          "opaquePixels": 3025
+        },
+        "run-b/e": {
+          "x": 23,
+          "y": 104,
+          "w": 82,
+          "h": 65,
+          "opaquePixels": 2980
+        },
+        "run-b/se": {
+          "x": 23,
+          "y": 107,
+          "w": 82,
+          "h": 64,
+          "opaquePixels": 2929
+        },
+        "run-b/s": {
+          "x": 27,
+          "y": 106,
+          "w": 74,
+          "h": 65,
+          "opaquePixels": 2700
+        },
+        "run-b/sw": {
+          "x": 22,
+          "y": 105,
+          "w": 84,
+          "h": 66,
+          "opaquePixels": 2908
+        },
+        "run-b/w": {
+          "x": 23,
+          "y": 102,
+          "w": 82,
+          "h": 68,
+          "opaquePixels": 2931
+        },
+        "run-b/nw": {
+          "x": 23,
+          "y": 102,
+          "w": 82,
+          "h": 71,
+          "opaquePixels": 3122
+        },
+        "attack/n": {
+          "x": 27,
+          "y": 101,
+          "w": 74,
+          "h": 69,
+          "opaquePixels": 3201
+        },
+        "attack/ne": {
+          "x": 20,
+          "y": 101,
+          "w": 85,
+          "h": 70,
+          "opaquePixels": 3252
+        },
+        "attack/e": {
+          "x": 23,
+          "y": 100,
+          "w": 81,
+          "h": 70,
+          "opaquePixels": 3399
+        },
+        "attack/se": {
+          "x": 21,
+          "y": 100,
+          "w": 84,
+          "h": 70,
+          "opaquePixels": 3381
+        },
+        "attack/s": {
+          "x": 26,
+          "y": 99,
+          "w": 75,
+          "h": 72,
+          "opaquePixels": 3189
+        },
+        "attack/sw": {
+          "x": 22,
+          "y": 99,
+          "w": 85,
+          "h": 71,
+          "opaquePixels": 3339
+        },
+        "attack/w": {
+          "x": 23,
+          "y": 98,
+          "w": 82,
+          "h": 71,
+          "opaquePixels": 3399
+        },
+        "attack/nw": {
+          "x": 22,
+          "y": 99,
+          "w": 83,
+          "h": 71,
+          "opaquePixels": 3341
+        },
+        "hurt/n": {
+          "x": 28,
+          "y": 108,
+          "w": 71,
+          "h": 61,
+          "opaquePixels": 2842
+        },
+        "hurt/ne": {
+          "x": 29,
+          "y": 110,
+          "w": 70,
+          "h": 59,
+          "opaquePixels": 2776
+        },
+        "hurt/e": {
+          "x": 28,
+          "y": 110,
+          "w": 72,
+          "h": 58,
+          "opaquePixels": 3069
+        },
+        "hurt/se": {
+          "x": 23,
+          "y": 110,
+          "w": 82,
+          "h": 59,
+          "opaquePixels": 3074
+        },
+        "hurt/s": {
+          "x": 24,
+          "y": 109,
+          "w": 79,
+          "h": 60,
+          "opaquePixels": 2786
+        },
+        "hurt/sw": {
+          "x": 24,
+          "y": 110,
+          "w": 80,
+          "h": 59,
+          "opaquePixels": 3041
+        },
+        "hurt/w": {
+          "x": 27,
+          "y": 109,
+          "w": 73,
+          "h": 60,
+          "opaquePixels": 3183
+        },
+        "hurt/nw": {
+          "x": 24,
+          "y": 108,
+          "w": 80,
+          "h": 61,
+          "opaquePixels": 2887
+        },
+        "death/n": {
+          "x": 26,
+          "y": 116,
+          "w": 75,
+          "h": 53,
+          "opaquePixels": 2529
+        },
+        "death/ne": {
+          "x": 22,
+          "y": 112,
+          "w": 82,
+          "h": 57,
+          "opaquePixels": 2789
+        },
+        "death/e": {
+          "x": 23,
+          "y": 115,
+          "w": 81,
+          "h": 54,
+          "opaquePixels": 2891
+        },
+        "death/se": {
+          "x": 25,
+          "y": 117,
+          "w": 78,
+          "h": 52,
+          "opaquePixels": 2739
+        },
+        "death/s": {
+          "x": 21,
+          "y": 115,
+          "w": 85,
+          "h": 54,
+          "opaquePixels": 2874
+        },
+        "death/sw": {
+          "x": 24,
+          "y": 115,
+          "w": 80,
+          "h": 54,
+          "opaquePixels": 2829
+        },
+        "death/w": {
+          "x": 23,
+          "y": 113,
+          "w": 82,
+          "h": 56,
+          "opaquePixels": 2839
+        },
+        "death/nw": {
+          "x": 22,
+          "y": 115,
+          "w": 83,
+          "h": 54,
+          "opaquePixels": 2768
+        }
+      },
+      "distinctRGBAHashes": 48
+    },
+    {
+      "id": "desert-species-081",
+      "source": "art/source/aur203-desert-g/desert-species-081-generated-v2.png",
+      "frames": 48,
+      "sourcePixelsUnedited": true,
+      "alphaZeroPercent": 85.08004082573784,
+      "sourceRegistrationScale": 0.44047619047619047,
+      "nativeIdleHeights": [
+        73,
+        69,
+        62,
+        64,
+        75,
+        68,
+        65,
+        70
+      ],
+      "bounds": {
+        "idle/n": {
+          "x": 40,
+          "y": 99,
+          "w": 47,
+          "h": 73,
+          "opaquePixels": 1443
+        },
+        "idle/ne": {
+          "x": 31,
+          "y": 102,
+          "w": 65,
+          "h": 69,
+          "opaquePixels": 1795
+        },
+        "idle/e": {
+          "x": 28,
+          "y": 108,
+          "w": 74,
+          "h": 62,
+          "opaquePixels": 1966
+        },
+        "idle/se": {
+          "x": 34,
+          "y": 106,
+          "w": 60,
+          "h": 64,
+          "opaquePixels": 1795
+        },
+        "idle/s": {
+          "x": 42,
+          "y": 98,
+          "w": 44,
+          "h": 75,
+          "opaquePixels": 1629
+        },
+        "idle/sw": {
+          "x": 34,
+          "y": 103,
+          "w": 59,
+          "h": 68,
+          "opaquePixels": 2025
+        },
+        "idle/w": {
+          "x": 26,
+          "y": 104,
+          "w": 73,
+          "h": 65,
+          "opaquePixels": 2093
+        },
+        "idle/nw": {
+          "x": 31,
+          "y": 102,
+          "w": 67,
+          "h": 70,
+          "opaquePixels": 1851
+        },
+        "run-a/n": {
+          "x": 40,
+          "y": 110,
+          "w": 47,
+          "h": 63,
+          "opaquePixels": 1185
+        },
+        "run-a/ne": {
+          "x": 30,
+          "y": 110,
+          "w": 67,
+          "h": 63,
+          "opaquePixels": 1518
+        },
+        "run-a/e": {
+          "x": 26,
+          "y": 117,
+          "w": 79,
+          "h": 54,
+          "opaquePixels": 1662
+        },
+        "run-a/se": {
+          "x": 33,
+          "y": 115,
+          "w": 60,
+          "h": 57,
+          "opaquePixels": 1486
+        },
+        "run-a/s": {
+          "x": 40,
+          "y": 109,
+          "w": 48,
+          "h": 63,
+          "opaquePixels": 1398
+        },
+        "run-a/sw": {
+          "x": 30,
+          "y": 112,
+          "w": 67,
+          "h": 60,
+          "opaquePixels": 1723
+        },
+        "run-a/w": {
+          "x": 23,
+          "y": 116,
+          "w": 80,
+          "h": 53,
+          "opaquePixels": 1727
+        },
+        "run-a/nw": {
+          "x": 29,
+          "y": 110,
+          "w": 70,
+          "h": 63,
+          "opaquePixels": 1567
+        },
+        "run-b/n": {
+          "x": 42,
+          "y": 108,
+          "w": 44,
+          "h": 64,
+          "opaquePixels": 1116
+        },
+        "run-b/ne": {
+          "x": 30,
+          "y": 114,
+          "w": 68,
+          "h": 57,
+          "opaquePixels": 1359
+        },
+        "run-b/e": {
+          "x": 26,
+          "y": 119,
+          "w": 77,
+          "h": 53,
+          "opaquePixels": 1556
+        },
+        "run-b/se": {
+          "x": 33,
+          "y": 118,
+          "w": 61,
+          "h": 52,
+          "opaquePixels": 1434
+        },
+        "run-b/s": {
+          "x": 40,
+          "y": 108,
+          "w": 46,
+          "h": 64,
+          "opaquePixels": 1281
+        },
+        "run-b/sw": {
+          "x": 32,
+          "y": 115,
+          "w": 64,
+          "h": 55,
+          "opaquePixels": 1528
+        },
+        "run-b/w": {
+          "x": 27,
+          "y": 118,
+          "w": 74,
+          "h": 53,
+          "opaquePixels": 1585
+        },
+        "run-b/nw": {
+          "x": 29,
+          "y": 113,
+          "w": 70,
+          "h": 57,
+          "opaquePixels": 1398
+        },
+        "attack/n": {
+          "x": 36,
+          "y": 109,
+          "w": 55,
+          "h": 63,
+          "opaquePixels": 1448
+        },
+        "attack/ne": {
+          "x": 27,
+          "y": 111,
+          "w": 74,
+          "h": 61,
+          "opaquePixels": 1617
+        },
+        "attack/e": {
+          "x": 26,
+          "y": 115,
+          "w": 78,
+          "h": 55,
+          "opaquePixels": 1851
+        },
+        "attack/se": {
+          "x": 33,
+          "y": 113,
+          "w": 61,
+          "h": 57,
+          "opaquePixels": 1705
+        },
+        "attack/s": {
+          "x": 37,
+          "y": 106,
+          "w": 54,
+          "h": 66,
+          "opaquePixels": 1773
+        },
+        "attack/sw": {
+          "x": 32,
+          "y": 113,
+          "w": 64,
+          "h": 57,
+          "opaquePixels": 1738
+        },
+        "attack/w": {
+          "x": 23,
+          "y": 114,
+          "w": 79,
+          "h": 57,
+          "opaquePixels": 1972
+        },
+        "attack/nw": {
+          "x": 26,
+          "y": 111,
+          "w": 74,
+          "h": 61,
+          "opaquePixels": 1626
+        },
+        "hurt/n": {
+          "x": 40,
+          "y": 102,
+          "w": 48,
+          "h": 71,
+          "opaquePixels": 1238
+        },
+        "hurt/ne": {
+          "x": 29,
+          "y": 102,
+          "w": 70,
+          "h": 71,
+          "opaquePixels": 1590
+        },
+        "hurt/e": {
+          "x": 28,
+          "y": 112,
+          "w": 72,
+          "h": 59,
+          "opaquePixels": 1755
+        },
+        "hurt/se": {
+          "x": 37,
+          "y": 106,
+          "w": 54,
+          "h": 66,
+          "opaquePixels": 1607
+        },
+        "hurt/s": {
+          "x": 40,
+          "y": 102,
+          "w": 49,
+          "h": 70,
+          "opaquePixels": 1377
+        },
+        "hurt/sw": {
+          "x": 34,
+          "y": 105,
+          "w": 59,
+          "h": 66,
+          "opaquePixels": 1683
+        },
+        "hurt/w": {
+          "x": 27,
+          "y": 108,
+          "w": 73,
+          "h": 64,
+          "opaquePixels": 1882
+        },
+        "hurt/nw": {
+          "x": 29,
+          "y": 103,
+          "w": 71,
+          "h": 70,
+          "opaquePixels": 1611
+        },
+        "death/n": {
+          "x": 29,
+          "y": 136,
+          "w": 69,
+          "h": 34,
+          "opaquePixels": 1062
+        },
+        "death/ne": {
+          "x": 27,
+          "y": 138,
+          "w": 73,
+          "h": 32,
+          "opaquePixels": 1257
+        },
+        "death/e": {
+          "x": 26,
+          "y": 136,
+          "w": 78,
+          "h": 33,
+          "opaquePixels": 1338
+        },
+        "death/se": {
+          "x": 27,
+          "y": 134,
+          "w": 73,
+          "h": 35,
+          "opaquePixels": 1307
+        },
+        "death/s": {
+          "x": 27,
+          "y": 131,
+          "w": 75,
+          "h": 38,
+          "opaquePixels": 1406
+        },
+        "death/sw": {
+          "x": 27,
+          "y": 131,
+          "w": 74,
+          "h": 38,
+          "opaquePixels": 1450
+        },
+        "death/w": {
+          "x": 22,
+          "y": 133,
+          "w": 82,
+          "h": 36,
+          "opaquePixels": 1456
+        },
+        "death/nw": {
+          "x": 28,
+          "y": 135,
+          "w": 71,
+          "h": 34,
+          "opaquePixels": 1319
+        }
+      },
+      "distinctRGBAHashes": 48
+    },
+    {
+      "id": "desert-species-082",
+      "source": "art/source/aur203-desert-g/desert-species-082-generated-v2.png",
+      "frames": 48,
+      "sourcePixelsUnedited": true,
+      "alphaZeroPercent": 80.83962334526909,
+      "sourceRegistrationScale": 0.4868421052631579,
+      "nativeIdleHeights": [
+        68,
+        71,
+        71,
+        73,
+        71,
+        71,
+        74,
+        71
+      ],
+      "bounds": {
+        "idle/n": {
+          "x": 32,
+          "y": 101,
+          "w": 64,
+          "h": 68,
+          "opaquePixels": 2655
+        },
+        "idle/ne": {
+          "x": 31,
+          "y": 98,
+          "w": 66,
+          "h": 71,
+          "opaquePixels": 2680
+        },
+        "idle/e": {
+          "x": 30,
+          "y": 98,
+          "w": 68,
+          "h": 71,
+          "opaquePixels": 2654
+        },
+        "idle/se": {
+          "x": 31,
+          "y": 96,
+          "w": 65,
+          "h": 73,
+          "opaquePixels": 2630
+        },
+        "idle/s": {
+          "x": 32,
+          "y": 98,
+          "w": 63,
+          "h": 71,
+          "opaquePixels": 2546
+        },
+        "idle/sw": {
+          "x": 31,
+          "y": 98,
+          "w": 66,
+          "h": 71,
+          "opaquePixels": 2722
+        },
+        "idle/w": {
+          "x": 29,
+          "y": 95,
+          "w": 70,
+          "h": 74,
+          "opaquePixels": 2785
+        },
+        "idle/nw": {
+          "x": 29,
+          "y": 98,
+          "w": 69,
+          "h": 71,
+          "opaquePixels": 2850
+        },
+        "run-a/n": {
+          "x": 33,
+          "y": 103,
+          "w": 62,
+          "h": 66,
+          "opaquePixels": 2521
+        },
+        "run-a/ne": {
+          "x": 28,
+          "y": 101,
+          "w": 72,
+          "h": 68,
+          "opaquePixels": 2741
+        },
+        "run-a/e": {
+          "x": 29,
+          "y": 102,
+          "w": 69,
+          "h": 67,
+          "opaquePixels": 2689
+        },
+        "run-a/se": {
+          "x": 29,
+          "y": 101,
+          "w": 69,
+          "h": 69,
+          "opaquePixels": 2577
+        },
+        "run-a/s": {
+          "x": 31,
+          "y": 101,
+          "w": 66,
+          "h": 69,
+          "opaquePixels": 2558
+        },
+        "run-a/sw": {
+          "x": 29,
+          "y": 101,
+          "w": 69,
+          "h": 69,
+          "opaquePixels": 2513
+        },
+        "run-a/w": {
+          "x": 28,
+          "y": 99,
+          "w": 72,
+          "h": 71,
+          "opaquePixels": 2847
+        },
+        "run-a/nw": {
+          "x": 27,
+          "y": 102,
+          "w": 74,
+          "h": 67,
+          "opaquePixels": 2787
+        },
+        "run-b/n": {
+          "x": 35,
+          "y": 103,
+          "w": 58,
+          "h": 66,
+          "opaquePixels": 2444
+        },
+        "run-b/ne": {
+          "x": 28,
+          "y": 102,
+          "w": 71,
+          "h": 67,
+          "opaquePixels": 2700
+        },
+        "run-b/e": {
+          "x": 28,
+          "y": 102,
+          "w": 71,
+          "h": 67,
+          "opaquePixels": 2589
+        },
+        "run-b/se": {
+          "x": 29,
+          "y": 100,
+          "w": 69,
+          "h": 69,
+          "opaquePixels": 2475
+        },
+        "run-b/s": {
+          "x": 32,
+          "y": 99,
+          "w": 63,
+          "h": 70,
+          "opaquePixels": 2329
+        },
+        "run-b/sw": {
+          "x": 30,
+          "y": 101,
+          "w": 67,
+          "h": 68,
+          "opaquePixels": 2416
+        },
+        "run-b/w": {
+          "x": 27,
+          "y": 99,
+          "w": 73,
+          "h": 70,
+          "opaquePixels": 2647
+        },
+        "run-b/nw": {
+          "x": 27,
+          "y": 102,
+          "w": 73,
+          "h": 67,
+          "opaquePixels": 2718
+        },
+        "attack/n": {
+          "x": 22,
+          "y": 111,
+          "w": 85,
+          "h": 58,
+          "opaquePixels": 2390
+        },
+        "attack/ne": {
+          "x": 26,
+          "y": 104,
+          "w": 80,
+          "h": 65,
+          "opaquePixels": 2682
+        },
+        "attack/e": {
+          "x": 24,
+          "y": 103,
+          "w": 83,
+          "h": 66,
+          "opaquePixels": 2595
+        },
+        "attack/se": {
+          "x": 27,
+          "y": 101,
+          "w": 73,
+          "h": 68,
+          "opaquePixels": 2466
+        },
+        "attack/s": {
+          "x": 22,
+          "y": 102,
+          "w": 86,
+          "h": 67,
+          "opaquePixels": 2566
+        },
+        "attack/sw": {
+          "x": 27,
+          "y": 103,
+          "w": 74,
+          "h": 66,
+          "opaquePixels": 2494
+        },
+        "attack/w": {
+          "x": 19,
+          "y": 102,
+          "w": 86,
+          "h": 67,
+          "opaquePixels": 2652
+        },
+        "attack/nw": {
+          "x": 21,
+          "y": 105,
+          "w": 81,
+          "h": 64,
+          "opaquePixels": 2742
+        },
+        "hurt/n": {
+          "x": 39,
+          "y": 109,
+          "w": 49,
+          "h": 60,
+          "opaquePixels": 2143
+        },
+        "hurt/ne": {
+          "x": 32,
+          "y": 107,
+          "w": 64,
+          "h": 62,
+          "opaquePixels": 2388
+        },
+        "hurt/e": {
+          "x": 31,
+          "y": 104,
+          "w": 66,
+          "h": 65,
+          "opaquePixels": 2409
+        },
+        "hurt/se": {
+          "x": 35,
+          "y": 105,
+          "w": 58,
+          "h": 64,
+          "opaquePixels": 2304
+        },
+        "hurt/s": {
+          "x": 38,
+          "y": 103,
+          "w": 51,
+          "h": 66,
+          "opaquePixels": 2226
+        },
+        "hurt/sw": {
+          "x": 36,
+          "y": 103,
+          "w": 56,
+          "h": 66,
+          "opaquePixels": 2294
+        },
+        "hurt/w": {
+          "x": 31,
+          "y": 103,
+          "w": 65,
+          "h": 66,
+          "opaquePixels": 2374
+        },
+        "hurt/nw": {
+          "x": 32,
+          "y": 106,
+          "w": 64,
+          "h": 63,
+          "opaquePixels": 2463
+        },
+        "death/n": {
+          "x": 22,
+          "y": 128,
+          "w": 85,
+          "h": 41,
+          "opaquePixels": 2085
+        },
+        "death/ne": {
+          "x": 21,
+          "y": 115,
+          "w": 89,
+          "h": 54,
+          "opaquePixels": 2627
+        },
+        "death/e": {
+          "x": 26,
+          "y": 122,
+          "w": 79,
+          "h": 47,
+          "opaquePixels": 2375
+        },
+        "death/se": {
+          "x": 25,
+          "y": 113,
+          "w": 77,
+          "h": 56,
+          "opaquePixels": 2375
+        },
+        "death/s": {
+          "x": 24,
+          "y": 112,
+          "w": 80,
+          "h": 57,
+          "opaquePixels": 2492
+        },
+        "death/sw": {
+          "x": 26,
+          "y": 116,
+          "w": 75,
+          "h": 53,
+          "opaquePixels": 2456
+        },
+        "death/w": {
+          "x": 19,
+          "y": 120,
+          "w": 85,
+          "h": 49,
+          "opaquePixels": 2579
+        },
+        "death/nw": {
+          "x": 20,
+          "y": 119,
+          "w": 86,
+          "h": 50,
+          "opaquePixels": 2495
+        }
+      },
+      "distinctRGBAHashes": 48
+    },
+    {
+      "id": "desert-species-083",
+      "source": "art/source/aur203-desert-g/desert-species-083-generated-v2.png",
+      "frames": 48,
+      "sourcePixelsUnedited": true,
+      "alphaZeroPercent": 88.90050252278647,
+      "sourceRegistrationScale": 0.4228571428571429,
+      "nativeIdleHeights": [
+        71,
+        71,
+        72,
+        73,
+        72,
+        73,
+        73,
+        71
+      ],
+      "bounds": {
+        "idle/n": {
+          "x": 47,
+          "y": 99,
+          "w": 34,
+          "h": 71,
+          "opaquePixels": 1279
+        },
+        "idle/ne": {
+          "x": 38,
+          "y": 99,
+          "w": 51,
+          "h": 71,
+          "opaquePixels": 1520
+        },
+        "idle/e": {
+          "x": 30,
+          "y": 100,
+          "w": 67,
+          "h": 72,
+          "opaquePixels": 1608
+        },
+        "idle/se": {
+          "x": 35,
+          "y": 99,
+          "w": 57,
+          "h": 73,
+          "opaquePixels": 1662
+        },
+        "idle/s": {
+          "x": 43,
+          "y": 99,
+          "w": 42,
+          "h": 72,
+          "opaquePixels": 1521
+        },
+        "idle/sw": {
+          "x": 35,
+          "y": 99,
+          "w": 57,
+          "h": 73,
+          "opaquePixels": 1635
+        },
+        "idle/w": {
+          "x": 31,
+          "y": 100,
+          "w": 67,
+          "h": 73,
+          "opaquePixels": 1651
+        },
+        "idle/nw": {
+          "x": 39,
+          "y": 99,
+          "w": 51,
+          "h": 71,
+          "opaquePixels": 1503
+        },
+        "run-a/n": {
+          "x": 45,
+          "y": 103,
+          "w": 39,
+          "h": 70,
+          "opaquePixels": 1014
+        },
+        "run-a/ne": {
+          "x": 38,
+          "y": 108,
+          "w": 51,
+          "h": 62,
+          "opaquePixels": 1330
+        },
+        "run-a/e": {
+          "x": 30,
+          "y": 107,
+          "w": 69,
+          "h": 62,
+          "opaquePixels": 1499
+        },
+        "run-a/se": {
+          "x": 36,
+          "y": 104,
+          "w": 55,
+          "h": 67,
+          "opaquePixels": 1447
+        },
+        "run-a/s": {
+          "x": 44,
+          "y": 102,
+          "w": 39,
+          "h": 71,
+          "opaquePixels": 1237
+        },
+        "run-a/sw": {
+          "x": 35,
+          "y": 105,
+          "w": 57,
+          "h": 66,
+          "opaquePixels": 1440
+        },
+        "run-a/w": {
+          "x": 31,
+          "y": 110,
+          "w": 67,
+          "h": 59,
+          "opaquePixels": 1505
+        },
+        "run-a/nw": {
+          "x": 38,
+          "y": 105,
+          "w": 52,
+          "h": 65,
+          "opaquePixels": 1380
+        },
+        "run-b/n": {
+          "x": 45,
+          "y": 106,
+          "w": 38,
+          "h": 64,
+          "opaquePixels": 960
+        },
+        "run-b/ne": {
+          "x": 38,
+          "y": 107,
+          "w": 51,
+          "h": 63,
+          "opaquePixels": 1271
+        },
+        "run-b/e": {
+          "x": 30,
+          "y": 114,
+          "w": 68,
+          "h": 56,
+          "opaquePixels": 1452
+        },
+        "run-b/se": {
+          "x": 37,
+          "y": 108,
+          "w": 54,
+          "h": 62,
+          "opaquePixels": 1435
+        },
+        "run-b/s": {
+          "x": 44,
+          "y": 104,
+          "w": 39,
+          "h": 69,
+          "opaquePixels": 1250
+        },
+        "run-b/sw": {
+          "x": 36,
+          "y": 106,
+          "w": 55,
+          "h": 65,
+          "opaquePixels": 1404
+        },
+        "run-b/w": {
+          "x": 31,
+          "y": 113,
+          "w": 67,
+          "h": 57,
+          "opaquePixels": 1457
+        },
+        "run-b/nw": {
+          "x": 40,
+          "y": 105,
+          "w": 48,
+          "h": 66,
+          "opaquePixels": 1248
+        },
+        "attack/n": {
+          "x": 40,
+          "y": 108,
+          "w": 47,
+          "h": 62,
+          "opaquePixels": 1009
+        },
+        "attack/ne": {
+          "x": 30,
+          "y": 113,
+          "w": 68,
+          "h": 57,
+          "opaquePixels": 1446
+        },
+        "attack/e": {
+          "x": 26,
+          "y": 115,
+          "w": 75,
+          "h": 56,
+          "opaquePixels": 1428
+        },
+        "attack/se": {
+          "x": 35,
+          "y": 116,
+          "w": 58,
+          "h": 54,
+          "opaquePixels": 1443
+        },
+        "attack/s": {
+          "x": 37,
+          "y": 112,
+          "w": 53,
+          "h": 61,
+          "opaquePixels": 1419
+        },
+        "attack/sw": {
+          "x": 32,
+          "y": 116,
+          "w": 64,
+          "h": 57,
+          "opaquePixels": 1487
+        },
+        "attack/w": {
+          "x": 28,
+          "y": 114,
+          "w": 72,
+          "h": 57,
+          "opaquePixels": 1473
+        },
+        "attack/nw": {
+          "x": 30,
+          "y": 114,
+          "w": 69,
+          "h": 56,
+          "opaquePixels": 1471
+        },
+        "hurt/n": {
+          "x": 44,
+          "y": 114,
+          "w": 39,
+          "h": 56,
+          "opaquePixels": 1123
+        },
+        "hurt/ne": {
+          "x": 34,
+          "y": 115,
+          "w": 58,
+          "h": 54,
+          "opaquePixels": 1429
+        },
+        "hurt/e": {
+          "x": 32,
+          "y": 117,
+          "w": 64,
+          "h": 52,
+          "opaquePixels": 1481
+        },
+        "hurt/se": {
+          "x": 36,
+          "y": 116,
+          "w": 56,
+          "h": 55,
+          "opaquePixels": 1642
+        },
+        "hurt/s": {
+          "x": 44,
+          "y": 108,
+          "w": 39,
+          "h": 65,
+          "opaquePixels": 1553
+        },
+        "hurt/sw": {
+          "x": 35,
+          "y": 117,
+          "w": 57,
+          "h": 54,
+          "opaquePixels": 1573
+        },
+        "hurt/w": {
+          "x": 32,
+          "y": 116,
+          "w": 64,
+          "h": 54,
+          "opaquePixels": 1583
+        },
+        "hurt/nw": {
+          "x": 35,
+          "y": 114,
+          "w": 57,
+          "h": 55,
+          "opaquePixels": 1429
+        },
+        "death/n": {
+          "x": 38,
+          "y": 135,
+          "w": 53,
+          "h": 35,
+          "opaquePixels": 1081
+        },
+        "death/ne": {
+          "x": 27,
+          "y": 139,
+          "w": 72,
+          "h": 30,
+          "opaquePixels": 1133
+        },
+        "death/e": {
+          "x": 27,
+          "y": 143,
+          "w": 76,
+          "h": 26,
+          "opaquePixels": 1069
+        },
+        "death/se": {
+          "x": 28,
+          "y": 136,
+          "w": 71,
+          "h": 33,
+          "opaquePixels": 1164
+        },
+        "death/s": {
+          "x": 30,
+          "y": 131,
+          "w": 67,
+          "h": 38,
+          "opaquePixels": 1451
+        },
+        "death/sw": {
+          "x": 25,
+          "y": 137,
+          "w": 76,
+          "h": 32,
+          "opaquePixels": 1283
+        },
+        "death/w": {
+          "x": 26,
+          "y": 141,
+          "w": 75,
+          "h": 28,
+          "opaquePixels": 1121
+        },
+        "death/nw": {
+          "x": 28,
+          "y": 139,
+          "w": 73,
+          "h": 30,
+          "opaquePixels": 1177
+        }
+      },
+      "distinctRGBAHashes": 48
+    }
+  ]
+}

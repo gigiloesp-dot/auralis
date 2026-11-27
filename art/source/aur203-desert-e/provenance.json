@@ -1,0 +1,49 @@
+{
+  "pack": "aur203-desert-e",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "speciesCards": "art/source/aur203-desert-b/species-cards.json",
+  "generations": {
+    "072": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: An upright original desert mantis with four slender jointed walking legs, two huge ivory sickle forearms with serrated inner edges, wide triangular head with dark emerald eyes, saffron and olive armored body, folded fan-shaped patterned wing case like a striped leaf on back. Attack sickles outspread. Death rests sideways legs crumpled.",
+      "originalGenerationPath": "/workspace/generated_images/exec-9b4fdb50-a1f8-48eb-a8e3-28a8f5e69169.png",
+      "recoveredFromInterruptedGeneration": true
+    },
+    "073": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A tiny plump two-legged desert flightless bird with pebble-shaped broad blue beak, tawny fluffy round body, two long bare orange bouncing legs, little vestigial wings, three black feather crest quills and a tiny fan tail. Charming but fierce, no accessories. Attack beak open thrust forward. Death lies on side with feet relaxed.",
+      "originalGenerationPath": "/workspace/generated_images/exec-e6f51e94-f914-4e2e-b218-eba9b0dfcc1b.png",
+      "recoveredFromInterruptedGeneration": true
+    },
+    "074": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A massive low siege scorpion, eight heavily plated elephantine walking legs, wide rust-red segmented carapace bordered by a natural crown of six backward ivory spikes, two broad shovel pincers, a thick five-segment armoured tail ending in a three-pronged black stinger. Deep blue underside. Attack stinger drives forward. Death low sprawl tail resting completely sideways.",
+      "originalGenerationPath": "/workspace/generated_images/exec-040c77f8-e942-4a16-8c42-2fd627585e56.png",
+      "recoveredFromInterruptedGeneration": true
+    },
+    "075": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A muscular four-legged fantasy desert ibex with creamy shaggy throat, caramel fur, cloven dark hooves, huge angular translucent smoke-green glass horns sweeping BACK then outward like jagged tuning forks, short tail and long pointed ears. No saddle. Attack lowers horned head. Death lies on side legs folded naturally.",
+      "originalGenerationPath": "/workspace/generated_images/exec-e521b9c6-2e3c-47f8-b424-5d22edbcd0f5.png",
+      "recoveredFromInterruptedGeneration": true
+    }
+  },
+  "visualInspection": {
+    "poses": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "Viewed every registered native pose on both backgrounds; no visible rectangular matte, clipping or neighbors; collapsed death row."
+  },
+  "animationScope": "48 painted poses; eight directions times six pose banks. Two movement drawings, not six multiframe clips.",
+  "repairProvenance": "art/source/aur203-desert-e/repair-073-provenance.json"
+}

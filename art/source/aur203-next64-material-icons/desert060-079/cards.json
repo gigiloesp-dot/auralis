@@ -1,0 +1,362 @@
+[
+  {
+    "placementId": "desert-species-060",
+    "typeId": "aur203Desert060",
+    "name": {
+      "en": "Anvilclaw Scorpion",
+      "ru": "Скорпион-наковальня",
+      "es": "Escorpión Yunque"
+    },
+    "biome": "sand",
+    "anatomy": "A giant heavy scorpion with eight stubby jointed legs, a broad charcoal-blue segmented chitin body, one enormous anvil-shaped blunt left pincer and a slender serrated right pincer, short thick arched segmented tail with ivory hooked stinger, amber eyes. Asymmetric unmistakable anatomy. Attack swings the heavy claw and points the stinger. Death sprawled flat, tail uncurls sideways.",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "cleave"
+    ],
+    "materialId": "aur203Desert060Material",
+    "materialConcept": "anvil claw chitin"
+  },
+  {
+    "placementId": "desert-species-061",
+    "typeId": "aur203Desert061",
+    "name": {
+      "en": "Hourglass Dune Weaver",
+      "ru": "Песочный ткач",
+      "es": "Tejedor de Dunas"
+    },
+    "biome": "sand",
+    "anatomy": "An elegant long-legged desert arachnid with six spindly bent walking legs, two handlike palps, pale coral chitin, a transparent amber hourglass-shaped double-lobed abdomen held horizontally, a tiny triangular face with turquoise eyes. NO scorpion tail. Attack palps thrust forward. Death folds the long legs low around its double abdomen.",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "web",
+      "venom"
+    ],
+    "materialId": "aur203Desert061Material",
+    "materialConcept": "hourglass amber abdomen membrane"
+  },
+  {
+    "placementId": "desert-species-062",
+    "typeId": "aur203Desert062",
+    "name": {
+      "en": "Kilnback Dune Giant",
+      "ru": "Печной исполин",
+      "es": "Gigante Horno"
+    },
+    "biome": "sand",
+    "anatomy": "A squat muscular original humanoid desert giant made of warm terracotta hide, massive potbelly, two elephantine legs, two thick arms ending in three flat stone fingers, short broad head embedded above chest, a natural hollow brick-kiln chimney hump on back with glowing golden cracks, no weapons no clothes. Attack both fists smash. Death slumps on its side with folded knees and arms.",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "cleave"
+    ],
+    "materialId": "aur203Desert062Material",
+    "materialConcept": "kilnback terracotta shard"
+  },
+  {
+    "placementId": "desert-species-063",
+    "typeId": "aur203Desert063",
+    "name": {
+      "en": "Moonblade Scorpion",
+      "ru": "Лунноклешнёвый скорпион",
+      "es": "Escorpión Lunafilo"
+    },
+    "biome": "sand",
+    "anatomy": "A lean stalking scorpion: six high angular walking legs, narrow pearly ivory segmented thorax, TWO long crescent-shaped cutting pincers forming open moon silhouettes, very long thin jointed tail ending in a flat turquoise leaf-shaped stinger. Rich reddish leg joints. Completely different from bulky anvil claw scorpion. Attack crescents slash. Death splayed low tail uncoiled.",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "burrow"
+    ],
+    "materialId": "aur203Desert063Material",
+    "materialConcept": "crescent pincer edge"
+  },
+  {
+    "placementId": "desert-species-064",
+    "typeId": "aur203Desert064",
+    "name": {
+      "en": "Salt Rosette Behemoth",
+      "ru": "Соляной розетник",
+      "es": "Behemot de Sal"
+    },
+    "biome": "sand",
+    "anatomy": "A colossal squat quadruped with four flat paddle feet, broad hippopotamus snout, small ears, rough lavender-grey hide and huge layered white salt-crystal rosettes growing along its shoulders like folded roses, short thick tail. No shell no horns. Attack stomps forelegs. Death lies sideways with feet folded.",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "charge",
+      "stomp"
+    ],
+    "materialId": "aur203Desert064Material",
+    "materialConcept": "salt rosette crystal"
+  },
+  {
+    "placementId": "desert-species-065",
+    "typeId": "aur203Desert065",
+    "name": {
+      "en": "Sunwheel Basilisk",
+      "ru": "Солнцеколёсый василиск",
+      "es": "Basilisco Solar"
+    },
+    "biome": "sand",
+    "anatomy": "A low running reptile with four long splayed gecko limbs, orange desert scales, short bulldog snout, brilliant circular blue and golden frill framing its head like a sunwheel, thick tail ending in two curved fan lobes, back has small cobalt knobs. Attack open fanged mouth frill spread. Death lies low sideways frill crumpled.",
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "materialId": "aur203Desert065Material",
+    "materialConcept": "sunwheel frill scale"
+  },
+  {
+    "placementId": "desert-species-066",
+    "typeId": "aur203Desert066",
+    "name": {
+      "en": "Bellows Throat Toad",
+      "ru": "Жаба-меховик",
+      "es": "Sapo Fuelle"
+    },
+    "biome": "sand",
+    "anatomy": "A bulky sand toad with huge folded accordion-like throat sac in muted teal, sandy speckled skin, four powerful short legs with broad webbed toes, tiny black eyes perched on curled hornlike brow ridges, two steam-vent shaped organic nostrils. Attack visibly inflates throat and opens mouth. Death flattened belly down throat deflated.",
+    "movementProfile": "mauler",
+    "abilityPattern": [
+      "stomp",
+      "fan"
+    ],
+    "materialId": "aur203Desert066Material",
+    "materialConcept": "accordion throat membrane"
+  },
+  {
+    "placementId": "desert-species-067",
+    "typeId": "aur203Desert067",
+    "name": {
+      "en": "Copperkite Skimmer",
+      "ru": "Меднокрылый планер",
+      "es": "Planeador Cobrizo"
+    },
+    "biome": "sand",
+    "anatomy": "A hovering desert fantasy dragonfly-manta hybrid with small beetle torso, four long copper veined kite-shaped wings, six tiny curled legs, narrow mask face, two short antennae, flat segmented tail ending in a diamond rudder. Turquoise wing tips. Show wings distinctly flapping on two run rows. Attack diving body. Death grounded wings folded collapsed.",
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "fan"
+    ],
+    "materialId": "aur203Desert067Material",
+    "materialConcept": "copper kite wing vein"
+  },
+  {
+    "placementId": "desert-species-068",
+    "typeId": "aur203Desert068",
+    "name": {
+      "en": "Glassbell Scorpion",
+      "ru": "Стеклоколоколый скорпион",
+      "es": "Escorpión Campana"
+    },
+    "biome": "sand",
+    "anatomy": "A tall stilt-legged giant scorpion with eight thin black obsidian legs, small round smoky amber translucent dome abdomen, two long bulbous bell-shaped pincers with bright copper rims, tail made of three oversized glassy bead segments arching over back and tiny needle stinger. Attack both bell claws open. Death collapsed low glass beads resting sideways.",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "stomp"
+    ],
+    "materialId": "aur203Desert068Material",
+    "materialConcept": "glassy tail bead"
+  },
+  {
+    "placementId": "desert-species-069",
+    "typeId": "aur203Desert069",
+    "name": {
+      "en": "Dune Spindle Serpent",
+      "ru": "Веретённый пескозмей",
+      "es": "Serpiente Husillo"
+    },
+    "biome": "sand",
+    "anatomy": "A limbless original desert snake monster with thick short spindle body patterned terracotta and cream chevrons, wide blunt head, two backward-curving crystalline horn fins along cheeks, flattened spade tail. No humanoid features. Eight directional coiled body poses with distinct curves. Attack forward uncoiling lunge. Death fully relaxed flattened serpentine body.",
+    "movementProfile": "serpent",
+    "abilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "materialId": "aur203Desert069Material",
+    "materialConcept": "spindle horn fin"
+  },
+  {
+    "placementId": "desert-species-070",
+    "typeId": "aur203Desert070",
+    "name": {
+      "en": "Ramhorn Sand Titan",
+      "ru": "Баранорогий титан",
+      "es": "Titán Cornudo"
+    },
+    "biome": "sand",
+    "anatomy": "A huge two-legged desert ogre with long heavy arms dragging close to ground, round deep-brown clay body, two spiralling ram horns, broad gentle but angry beast face, rocky ochre shoulder ridges, digitigrade short feet, no clothes no weapons. Attack lowers horns and pounds one fist. Death lies on side both knees bent head on arm.",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "charge",
+      "stomp"
+    ],
+    "materialId": "aur203Desert070Material",
+    "materialConcept": "ramhorn ridge fragment"
+  },
+  {
+    "placementId": "desert-species-071",
+    "typeId": "aur203Desert071",
+    "name": {
+      "en": "Saffron Shovel Mole",
+      "ru": "Шафранный лопатокрот",
+      "es": "Topo Azafrán"
+    },
+    "biome": "sand",
+    "anatomy": "A compact furred burrowing sand mammal with saffron fur, broad leathery shovel nose, enormous silver blue spade-shaped foreclaws, two short hindlegs, tiny ears and narrow dark eyes, thick almost hairless short tail with ridged tip. Anatomy mole not rat. Attack sweeping foreclaws. Death curled low on side.",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "materialId": "aur203Desert071Material",
+    "materialConcept": "shovel foreclaw"
+  },
+  {
+    "placementId": "desert-species-072",
+    "typeId": "aur203Desert072",
+    "name": {
+      "en": "Sicklefan Mantis",
+      "ru": "Серповеерный богомол",
+      "es": "Mantis Abanico"
+    },
+    "biome": "sand",
+    "anatomy": "An upright original desert mantis with four slender jointed walking legs, two huge ivory sickle forearms with serrated inner edges, wide triangular head with dark emerald eyes, saffron and olive armored body, folded fan-shaped patterned wing case like a striped leaf on back. Attack sickles outspread. Death rests sideways legs crumpled.",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "pounce"
+    ],
+    "materialId": "aur203Desert072Material",
+    "materialConcept": "sickle forearm serration"
+  },
+  {
+    "placementId": "desert-species-073",
+    "typeId": "aur203Desert073",
+    "name": {
+      "en": "Pebblebill Sand Hopper",
+      "ru": "Камнеклювый пескоскакун",
+      "es": "Saltador Picopiedra"
+    },
+    "biome": "sand",
+    "anatomy": "A tiny plump two-legged desert flightless bird with pebble-shaped broad blue beak, tawny fluffy round body, two long bare orange bouncing legs, little vestigial wings, three black feather crest quills and a tiny fan tail. Charming but fierce, no accessories. Attack beak open thrust forward. Death lies on side with feet relaxed.",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "shot",
+      "pounce"
+    ],
+    "materialId": "aur203Desert073Material",
+    "materialConcept": "pebble beak shard"
+  },
+  {
+    "placementId": "desert-species-074",
+    "typeId": "aur203Desert074",
+    "name": {
+      "en": "Crowncarapace Scorpion",
+      "ru": "Коронопанцирный скорпион",
+      "es": "Escorpión Corona"
+    },
+    "biome": "sand",
+    "anatomy": "A massive low siege scorpion, eight heavily plated elephantine walking legs, wide rust-red segmented carapace bordered by a natural crown of six backward ivory spikes, two broad shovel pincers, a thick five-segment armoured tail ending in a three-pronged black stinger. Deep blue underside. Attack stinger drives forward. Death low sprawl tail resting completely sideways.",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "venom",
+      "charge"
+    ],
+    "materialId": "aur203Desert074Material",
+    "materialConcept": "crown carapace spike"
+  },
+  {
+    "placementId": "desert-species-075",
+    "typeId": "aur203Desert075",
+    "name": {
+      "en": "Sandglass Ibex",
+      "ru": "Пескостеклянный козерог",
+      "es": "Íbice de Vidrio"
+    },
+    "biome": "sand",
+    "anatomy": "A muscular four-legged fantasy desert ibex with creamy shaggy throat, caramel fur, cloven dark hooves, huge angular translucent smoke-green glass horns sweeping BACK then outward like jagged tuning forks, short tail and long pointed ears. No saddle. Attack lowers horned head. Death lies on side legs folded naturally.",
+    "movementProfile": "charger",
+    "abilityPattern": [
+      "charge",
+      "cleave"
+    ],
+    "materialId": "aur203Desert075Material",
+    "materialConcept": "smoke glass horn shard"
+  },
+  {
+    "placementId": "desert-species-076",
+    "typeId": "aur203Desert076",
+    "name": {
+      "en": "Mirage Conch Crawler",
+      "ru": "Миражная раковина",
+      "es": "Caracola Espejismo"
+    },
+    "biome": "sand",
+    "anatomy": "A fantasy desert hermit creature with six broad velvety violet crab legs, two small coral gripping claws, stalked dark eyes, carrying a tall asymmetrical spiral conch shell of matte ivory with turquoise enamel ribs and three natural side vents. Not snail. Attack claws extend from shell. Death legs folded shell tipped onto side.",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "burrow",
+      "haunt"
+    ],
+    "materialId": "aur203Desert076Material",
+    "materialConcept": "turquoise conch rib"
+  },
+  {
+    "placementId": "desert-species-077",
+    "typeId": "aur203Desert077",
+    "name": {
+      "en": "Cinder Frill Wyrmling",
+      "ru": "Пеплогривый дракончик",
+      "es": "Dracón de Ceniza"
+    },
+    "biome": "sand",
+    "anatomy": "A wingless six-legged small dragon, charcoal scaled serpentine body, huge amber finned ears, blunt snout, six broad orange clawed feet, a row of ember red triangular frill plates along spine, curling long tail with fork tip. Distinct low sixleg silhouette no wings. Attack opens jaw frill raised. Death curled on side six feet relaxed.",
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "fan"
+    ],
+    "materialId": "aur203Desert077Material",
+    "materialConcept": "ember frill plate"
+  },
+  {
+    "placementId": "desert-species-078",
+    "typeId": "aur203Desert078",
+    "name": {
+      "en": "Dune Drum Guardian",
+      "ru": "Дюнный барабанщик",
+      "es": "Guardián Tambor"
+    },
+    "biome": "sand",
+    "anatomy": "A rotund living sandstone spirit with barrel-shaped vertically ribbed torso, two massive forearms ending in rounded drumstick fists, two short pillar legs, tiny luminous turquoise face inset in torso, three stone slabs floating closely as a small crown above shoulders, no weapons no clothing. Attack punches ground. Death collapsed heap torso on side and limbs folded; crown slabs settle closely.",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "fan"
+    ],
+    "materialId": "aur203Desert078Material",
+    "materialConcept": "ribbed sandstone shard"
+  },
+  {
+    "placementId": "desert-species-079",
+    "typeId": "aur203Desert079",
+    "name": {
+      "en": "Ribbonjaw Sand Eel",
+      "ru": "Лентопастный пескоугорь",
+      "es": "Anguila Cintamandíbula"
+    },
+    "biome": "sand",
+    "anatomy": "An original limbless sand eel with long flexible muted plum body, flat hammer-shaped head, two flexible golden ribbonlike lower jaw barbels, ivory belly plates and broad continuous ruffled orange dorsal fin, tail tapering to a tiny spoon. Low serpentine body not fish with legs. Attack wide jaw lunge. Death loose flattened coils fin collapsed.",
+    "movementProfile": "serpent",
+    "abilityPattern": [
+      "burrow",
+      "venom"
+    ],
+    "materialId": "aur203Desert079Material",
+    "materialConcept": "golden jaw ribbon"
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "placementId": "ancient-species-058",
+    "typeId": "aur203Ancient058",
+    "materialId": "aur203Ancient058Material",
+    "slug": "bog-harp-eel",
+    "names": {
+      "ru": "Болотный арфоугорь",
+      "en": "Bogharp Eel",
+      "es": "Anguila arpa de ciénaga"
+    },
+    "name": "Болотный арфоугорь",
+    "biome": "elder-marsh",
+    "level": 38,
+    "movementProfile": "serpent",
+    "abilityPattern": [
+      "venom",
+      "pounce"
+    ],
+    "anatomy": "Coiled olive eel with four little webbed forefeet, whiskered face and a tall arching amber dorsal harp fin bridged by fleshy strings.",
+    "materialConcept": "Amber dorsal string",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-059",
+    "typeId": "aur203Ancient059",
+    "materialId": "aur203Ancient059Material",
+    "slug": "basalt-yak",
+    "names": {
+      "ru": "Базальтовый як",
+      "en": "Basalt Yak",
+      "es": "Yak de basalto"
+    },
+    "name": "Базальтовый як",
+    "biome": "elder-wastes",
+    "level": 39,
+    "movementProfile": "mauler",
+    "abilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "anatomy": "Broad low shaggy charcoal yak with cream beard, columnar basalt shoulder ridge and two smooth forward forked russet horns.",
+    "materialConcept": "Basalt shoulder shard",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-060",
+    "typeId": "aur203Ancient060",
+    "materialId": "aur203Ancient060Material",
+    "slug": "seedlantern-gecko",
+    "names": {
+      "ru": "Семяфонарный геккон",
+      "en": "Seedlantern Gecko",
+      "es": "Geco de farol semilla"
+    },
+    "name": "Семяфонарный геккон",
+    "biome": "elder-forest",
+    "level": 36,
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "shot",
+      "roots"
+    ],
+    "anatomy": "Upright small lime gecko with broad adhesive toes, a single curled gripping tail bearing a glowing orange seedpod, large amber eyes and leaf collar.",
+    "materialConcept": "Luminous seedpod husk",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-061",
+    "typeId": "aur203Ancient061",
+    "materialId": "aur203Ancient061Material",
+    "slug": "antlerwing-owl",
+    "names": {
+      "ru": "Рогокрылый сыч",
+      "en": "Antlerwing Owl",
+      "es": "Mochuelo alicornio"
+    },
+    "name": "Рогокрылый сыч",
+    "biome": "elder-forest",
+    "level": 37,
+    "movementProfile": "gargoyle",
+    "abilityPattern": [
+      "dive",
+      "haunt"
+    ],
+    "anatomy": "Round cream-faced tawny owl with small branching wooden antlers, broad layered bark wings, short feather trousers and copper talons.",
+    "materialConcept": "Bark flight feather",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-080",
+    "typeId": "aur203Desert080",
+    "names": {
+      "ru": "Колодезный глотун",
+      "en": "Well-mouth gulper",
+      "es": "Engullidor pozo"
+    },
+    "biome": "sand",
+    "level": 49,
+    "x": 14944,
+    "y": 5049,
+    "anatomy": "round turquoise amphibian with stone well ring mouth and three digging legs",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "burrow"
+    ],
+    "materialId": "aur203Desert080Material",
+    "materialConcept": "turquoise throat membrane",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-081",
+    "typeId": "aur203Desert081",
+    "names": {
+      "ru": "Солнечный гребнеход",
+      "en": "Sun-comb strider",
+      "es": "Zancudo peine solar"
+    },
+    "biome": "sand",
+    "level": 50,
+    "x": 16682,
+    "y": 4543,
+    "anatomy": "six-legged red antelope insect with huge golden comb sail and narrow snout",
+    "movementProfile": "charger",
+    "abilityPattern": [
+      "charge",
+      "fan"
+    ],
+    "materialId": "aur203Desert081Material",
+    "materialConcept": "golden comb lamella",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-082",
+    "typeId": "aur203Desert082",
+    "names": {
+      "ru": "Песчаный гончар",
+      "en": "Dune potter",
+      "es": "Alfarero de dunas"
+    },
+    "biome": "sand",
+    "level": 45,
+    "x": 6728,
+    "y": 3201,
+    "anatomy": "terracotta snail with double-necked amphora shell and four fleshy gripping tentacles",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "roots"
+    ],
+    "materialId": "aur203Desert082Material",
+    "materialConcept": "amphora shell ceramic",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-083",
+    "typeId": "aur203Desert083",
+    "names": {
+      "ru": "Барханный парусоклюв",
+      "en": "Dune sailbill",
+      "es": "Pico vela dunar"
+    },
+    "biome": "sand",
+    "level": 51,
+    "x": 2551,
+    "y": 18579,
+    "anatomy": "flightless long-legged bird with triangular sail beak and broad striped tail fan",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "shot",
+      "fan"
+    ],
+    "materialId": "aur203Desert083Material",
+    "materialConcept": "sailbill beak plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-084",
+    "typeId": "aur203Desert084",
+    "names": {
+      "ru": "Соляной зонтонос",
+      "en": "Salt parasol bearer",
+      "es": "Portador de parasol salino"
+    },
+    "biome": "sand",
+    "level": 50,
+    "x": 14586,
+    "y": 9412,
+    "anatomy": "four-legged pale armadillo under wide faceted salt crystal umbrella carapace",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "frost"
+    ],
+    "materialId": "aur203Desert084Material",
+    "materialConcept": "salt carapace crystal",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-085",
+    "typeId": "aur203Desert085",
+    "names": {
+      "ru": "Термитовый горн",
+      "en": "Termite trumpet",
+      "es": "Trompeta termitera"
+    },
+    "biome": "sand",
+    "level": 49,
+    "x": 13041,
+    "y": 8231,
+    "anatomy": "upright hollow termite mound beast on three stubby legs with trumpet snout",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "fan"
+    ],
+    "materialId": "aur203Desert085Material",
+    "materialConcept": "resonant clay throat tube",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-086",
+    "typeId": "aur203Desert086",
+    "names": {
+      "ru": "Обсидиановый веретенник",
+      "en": "Obsidian spindlewalker",
+      "es": "Andarín huso de obsidiana"
+    },
+    "biome": "sand",
+    "level": 54,
+    "x": 19290,
+    "y": 14508,
+    "anatomy": "spindle-shaped black glass arthropod on four arched legs with two pendulum claws",
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "cleave"
+    ],
+    "materialId": "aur203Desert086Material",
+    "materialConcept": "obsidian spindle plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-087",
+    "typeId": "aur203Desert087",
+    "names": {
+      "ru": "Бронзовый пескокрут",
+      "en": "Bronze sand whorl",
+      "es": "Remolino de bronce"
+    },
+    "biome": "sand",
+    "level": 55,
+    "x": 17820,
+    "y": 19010,
+    "anatomy": "round bronze spiral-shelled cephalopod with eight curling ribbon arms and split crown fin",
+    "movementProfile": "elemental",
+    "abilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "materialId": "aur203Desert087Material",
+    "materialConcept": "bronze spiral shell layer",
+    "artOnly": true
+  }
+]

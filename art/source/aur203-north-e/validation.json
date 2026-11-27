@@ -1,0 +1,833 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "models": [
+    {
+      "id": "north-species-092",
+      "source": "art/source/aur203-north-e/north-species-092-cutout.png",
+      "frames": 48,
+      "uniqueFrameSHA256Count": 48,
+      "frameSHA256": [
+        "5f14265d5dc79ca57aa7b28157ff871b11c6b240cb34094d1eeabd72b0a2ab9d",
+        "efe3fff369ae96f0fa6a700afb5fedf88238cebe6747c7f408ecc3c17c3cf727",
+        "8e4f851af85a1c521f509600bc908c5193fe27484d591373d89cdb12c17fcd59",
+        "e1414693a6e4b0e90f93ea2328343b11421088cc7a74fd1164fcd3fc04ae33ab",
+        "7327111c6797a75760592cf922a9e91661304dfec07d36e43da95bd784301648",
+        "91680015013f91ec94c756df27323575e8cb5b775a965150944a078072dfae44",
+        "21a16a4fa37030e3217f17edafd6b61497a43c6748ba044433ea0bf1ef71d431",
+        "9dde9ad8284c35388b0feab36d564074bfbab6a0dd1c1a85ccaaef39d5128099",
+        "1704ea48af73124295305f486ae084418e2cb182af6869677026e25fbd659ac3",
+        "54868940cad8b98b08c7e26e3e3b491ffcaa1994827b0f6d9984ff3d82d4328f",
+        "712c714681c09004eaf74279ce96c9b7ba743cfa0665a110b27644ff7d771030",
+        "106e07f197be1ec81b80e4666e5447ac02d9f89ce8150703eaba078524eb1d12",
+        "a8506f0b300dcea4abfb675c0568f0a42b94b4c872a95ad9ef8ebf2f7de758be",
+        "1fec418f7dd7c29e2c4a4e909caa40c84b14d21dc134d90f43d566f0c51eab27",
+        "9199ff709d9254b058a8b47912c29f013174924885ffe968d3dd31384e821632",
+        "af2dd55a7fe4ec2f2f4d29d2b9cbc99f1c785f02ab779734d6fe2af6abdb4c98",
+        "3b0322e3c6dcc3db3ad07acd1bd61a2aa56e3eed66875bda4affbb49f51ec195",
+        "860a6314467ed6f46d5b5d3b17ebf8a112f4e851c46e8ef1552cf5a86cf4faf6",
+        "e0ecb2a944069b881ea7a278dbb9a835e7d569e15fc56442a3b623bda2503839",
+        "a1baad938057e0317efaca1b391c491587e99d48ae4176d1ef8676f00d55b233",
+        "840ae04dfcbff9e658e2dddaf8c94c46a55fa499bd8f616b93b0da5cfcaf91d8",
+        "9fef897536347710342ed11894bb95827529cc73912049d82d46695fb47780df",
+        "c10e926d41ead44a7580bb6d76c3a842ac58c8af583673288eb5291d470527e8",
+        "0955f0a1a212bb699c49789b66141067d5f41753a66a1c8cbb4f1a72e8b7d804",
+        "8c13afa73c1243cda6c2dd90e67eff6b10ec1761b13e237e859657b1dd6564da",
+        "b1442d516dd1d20ceac0e9c97cc48bd7e73e1fbece31040cd7ff397b034d0141",
+        "9316df8a6ee0e9b606d0d1a80a22fe2e69fa41a80f476606850da8e0f531d20c",
+        "37086db5d1f291034abc91987767823406021fc501e7de1f2f878e73de8feb8f",
+        "e6d79a93fba91a9f498d474d10564a2ca0bdfe6eeae23a4fa19d6c2b11e56d8d",
+        "3dec8a3af3bb913ac6978d39eaf31d0448d7e193e27f0465992c5790ca708562",
+        "a90cd2b0ba0e10be7ce7af0a41b9cc9455c88ba6d0da42b725580fe3ff94568d",
+        "1385f5934fc467ef52d40c7f39128875490da668c0b94fcb7ade7e914d143cfb",
+        "3bff33e1c04cafd33d4c1d66ebf02436215cd48e0b8a8c42480909aab6d545a3",
+        "7a8b523a963c9a1fc370875151989fe0c38d1abcefa6ee6c20fc69e1fa3acc1e",
+        "628d39de642bdf52afbd8705b80c67a4906a4c394cd9350602d9d3c72220145b",
+        "d922b039224ee6b5257fbcb88325b841412f19c9c7c5386f2b46f9221d4bd91e",
+        "7236b6af24ac72629589776c151c4a8cbe095e6d7ebc0bbb5e857d3626e1d6cd",
+        "4468204fe0f86a384d8e8228c137ffeb2e9d05498973b9d54856cfbebb496ec6",
+        "c7f2d288caa029a9ee648adec9dd0ccc13a03fc0c1352b70fa711ac78f2be299",
+        "e4511eb9b997bfd80b3f27417997c2d651a864711d604c79ea716446dc3d861e",
+        "cc2feb70425ee37aa9a8b706ccb8a244e3e2326a018577a5648d699e7eb6b654",
+        "3c606f4483e08b4551b015ace9553c12b1dba876488392dcb7b9a72a59dd0e97",
+        "171aefaae85475d5c03d02b5efc9a50775460c2b68e577466f8acddc77282d51",
+        "683d51e3cc2dc6b85843e31fe203ca2d6e4429856aa7d98416d4adc8e3091356",
+        "f775935a83a4abeac2c2449a565e959c7a293e1ad7b9796ab6b9789cbfa7de1e",
+        "b9b7be5851fd421161c0c4ec3ba1c7646ada36ddfc26d2c8cf4f2d38b0f18993",
+        "e0bf7cbfabc8b5b786198914f687a30d05b88c35f868bdd1fa6dc148489f1232",
+        "05249cfff8e62345b52023158300c8f57b3127daada5c52e67bc5bd1d1fa8379"
+      ],
+      "idleMedianHeight": 50.0,
+      "deathMedianHeight": 37.0,
+      "dimensions": [
+        1024,
+        1152
+      ],
+      "sourcePixelsUnedited": true,
+      "alphaZeroPercent": 81.87035454644096,
+      "sourceRegistrationScale": 0.64,
+      "nativeIdleHeights": [
+        44,
+        50,
+        58,
+        50,
+        45,
+        48,
+        59,
+        55
+      ],
+      "bounds": {
+        "idle/e": {
+          "x": 27,
+          "y": 124,
+          "w": 73,
+          "h": 44,
+          "opaquePixels": 1764
+        },
+        "idle/se": {
+          "x": 33,
+          "y": 118,
+          "w": 61,
+          "h": 50,
+          "opaquePixels": 1716
+        },
+        "idle/s": {
+          "x": 40,
+          "y": 110,
+          "w": 48,
+          "h": 58,
+          "opaquePixels": 1749
+        },
+        "idle/sw": {
+          "x": 31,
+          "y": 118,
+          "w": 66,
+          "h": 50,
+          "opaquePixels": 1790
+        },
+        "idle/w": {
+          "x": 27,
+          "y": 123,
+          "w": 74,
+          "h": 45,
+          "opaquePixels": 1824
+        },
+        "idle/nw": {
+          "x": 29,
+          "y": 120,
+          "w": 69,
+          "h": 48,
+          "opaquePixels": 1676
+        },
+        "idle/n": {
+          "x": 41,
+          "y": 109,
+          "w": 46,
+          "h": 59,
+          "opaquePixels": 1518
+        },
+        "idle/ne": {
+          "x": 32,
+          "y": 113,
+          "w": 63,
+          "h": 55,
+          "opaquePixels": 1634
+        },
+        "run-a/e": {
+          "x": 25,
+          "y": 124,
+          "w": 78,
+          "h": 44,
+          "opaquePixels": 1801
+        },
+        "run-a/se": {
+          "x": 30,
+          "y": 117,
+          "w": 67,
+          "h": 51,
+          "opaquePixels": 1745
+        },
+        "run-a/s": {
+          "x": 39,
+          "y": 110,
+          "w": 49,
+          "h": 58,
+          "opaquePixels": 1762
+        },
+        "run-a/sw": {
+          "x": 28,
+          "y": 115,
+          "w": 71,
+          "h": 53,
+          "opaquePixels": 1889
+        },
+        "run-a/w": {
+          "x": 23,
+          "y": 125,
+          "w": 81,
+          "h": 43,
+          "opaquePixels": 1805
+        },
+        "run-a/nw": {
+          "x": 27,
+          "y": 122,
+          "w": 73,
+          "h": 46,
+          "opaquePixels": 1697
+        },
+        "run-a/n": {
+          "x": 37,
+          "y": 110,
+          "w": 53,
+          "h": 58,
+          "opaquePixels": 1495
+        },
+        "run-a/ne": {
+          "x": 29,
+          "y": 114,
+          "w": 69,
+          "h": 54,
+          "opaquePixels": 1677
+        },
+        "run-b/e": {
+          "x": 25,
+          "y": 121,
+          "w": 78,
+          "h": 47,
+          "opaquePixels": 1845
+        },
+        "run-b/se": {
+          "x": 31,
+          "y": 118,
+          "w": 65,
+          "h": 50,
+          "opaquePixels": 1724
+        },
+        "run-b/s": {
+          "x": 39,
+          "y": 110,
+          "w": 49,
+          "h": 58,
+          "opaquePixels": 1809
+        },
+        "run-b/sw": {
+          "x": 29,
+          "y": 118,
+          "w": 70,
+          "h": 50,
+          "opaquePixels": 1856
+        },
+        "run-b/w": {
+          "x": 23,
+          "y": 121,
+          "w": 81,
+          "h": 47,
+          "opaquePixels": 1868
+        },
+        "run-b/nw": {
+          "x": 28,
+          "y": 120,
+          "w": 72,
+          "h": 48,
+          "opaquePixels": 1654
+        },
+        "run-b/n": {
+          "x": 42,
+          "y": 114,
+          "w": 44,
+          "h": 54,
+          "opaquePixels": 1329
+        },
+        "run-b/ne": {
+          "x": 30,
+          "y": 112,
+          "w": 68,
+          "h": 56,
+          "opaquePixels": 1670
+        },
+        "attack/e": {
+          "x": 23,
+          "y": 122,
+          "w": 82,
+          "h": 46,
+          "opaquePixels": 2117
+        },
+        "attack/se": {
+          "x": 29,
+          "y": 114,
+          "w": 69,
+          "h": 54,
+          "opaquePixels": 2018
+        },
+        "attack/s": {
+          "x": 37,
+          "y": 112,
+          "w": 53,
+          "h": 56,
+          "opaquePixels": 1965
+        },
+        "attack/sw": {
+          "x": 28,
+          "y": 114,
+          "w": 72,
+          "h": 54,
+          "opaquePixels": 2145
+        },
+        "attack/w": {
+          "x": 21,
+          "y": 120,
+          "w": 86,
+          "h": 48,
+          "opaquePixels": 2156
+        },
+        "attack/nw": {
+          "x": 25,
+          "y": 119,
+          "w": 78,
+          "h": 49,
+          "opaquePixels": 2011
+        },
+        "attack/n": {
+          "x": 36,
+          "y": 108,
+          "w": 56,
+          "h": 60,
+          "opaquePixels": 1825
+        },
+        "attack/ne": {
+          "x": 26,
+          "y": 115,
+          "w": 76,
+          "h": 53,
+          "opaquePixels": 2081
+        },
+        "hurt/e": {
+          "x": 30,
+          "y": 110,
+          "w": 68,
+          "h": 58,
+          "opaquePixels": 1906
+        },
+        "hurt/se": {
+          "x": 35,
+          "y": 115,
+          "w": 57,
+          "h": 53,
+          "opaquePixels": 1783
+        },
+        "hurt/s": {
+          "x": 39,
+          "y": 109,
+          "w": 49,
+          "h": 59,
+          "opaquePixels": 1902
+        },
+        "hurt/sw": {
+          "x": 31,
+          "y": 114,
+          "w": 65,
+          "h": 54,
+          "opaquePixels": 1961
+        },
+        "hurt/w": {
+          "x": 29,
+          "y": 115,
+          "w": 69,
+          "h": 53,
+          "opaquePixels": 1965
+        },
+        "hurt/nw": {
+          "x": 29,
+          "y": 111,
+          "w": 69,
+          "h": 57,
+          "opaquePixels": 1839
+        },
+        "hurt/n": {
+          "x": 39,
+          "y": 107,
+          "w": 50,
+          "h": 61,
+          "opaquePixels": 1585
+        },
+        "hurt/ne": {
+          "x": 32,
+          "y": 108,
+          "w": 64,
+          "h": 60,
+          "opaquePixels": 1834
+        },
+        "death/e": {
+          "x": 25,
+          "y": 131,
+          "w": 77,
+          "h": 37,
+          "opaquePixels": 1575
+        },
+        "death/se": {
+          "x": 27,
+          "y": 130,
+          "w": 73,
+          "h": 38,
+          "opaquePixels": 1468
+        },
+        "death/s": {
+          "x": 32,
+          "y": 127,
+          "w": 63,
+          "h": 41,
+          "opaquePixels": 1513
+        },
+        "death/sw": {
+          "x": 27,
+          "y": 129,
+          "w": 74,
+          "h": 38,
+          "opaquePixels": 1554
+        },
+        "death/w": {
+          "x": 24,
+          "y": 133,
+          "w": 79,
+          "h": 35,
+          "opaquePixels": 1490
+        },
+        "death/nw": {
+          "x": 22,
+          "y": 132,
+          "w": 83,
+          "h": 36,
+          "opaquePixels": 1543
+        },
+        "death/n": {
+          "x": 29,
+          "y": 132,
+          "w": 69,
+          "h": 36,
+          "opaquePixels": 1407
+        },
+        "death/ne": {
+          "x": 22,
+          "y": 131,
+          "w": 83,
+          "h": 37,
+          "opaquePixels": 1449
+        }
+      }
+    },
+    {
+      "id": "north-species-093",
+      "source": "art/source/aur203-north-e/north-species-093-cutout.png",
+      "frames": 48,
+      "uniqueFrameSHA256Count": 48,
+      "frameSHA256": [
+        "76bbfbd9bd9fc7fdbb7680375309b2a621dc6ba449aeacb08d54dd2c7f0aca79",
+        "8865565ffb6cdc9a51d3b9f74823d7c62db2bbda190e60a20afa4d4fab097a3e",
+        "dcd0692e5bc8d89ab5e0273d10a0f4c44b2570ba114cb705702b066490ffed1d",
+        "5b1087d059865e1933c2663bf63a3030b586b806531408b07fba266ecb136b44",
+        "d9d6775a1dce0060bc02284f54d49ea055708457169b124bf111754d898269bf",
+        "7022ba6d1023a100f1d01643766bee348b9d70bea4ec05090b921e9c88a6b557",
+        "975506b2aa71155dbbaf64c4ff3e21a67253bc5af4650d9441c9dea7127aaab8",
+        "7a9fd0cd233be8e183dcc3d5061f1b83666378141f2c41a021ffffb5bac98148",
+        "db25a2be32b8614f14ce8c24d764909d0b421ec9371ed1fdcc5b2b89d1236582",
+        "96b550b3356ccfe7a6fe5b9e67d5221ca63a1d4a02d78b99b9f711a7547f13fd",
+        "7f6cd8e1251d215a8711ff23d4825e7b23b6018502f6f7aab25970e53b0b116d",
+        "6d87af955ba14aa15f9d8b9efe0165035e1aa1fc6aa50b7732df93b9e531b15b",
+        "11fa852ada53df19dc9a59d59a0487d07eadd550c795beec6d2174f2c094da00",
+        "43db7fd7743d4925607efd1cd4acc1f0f6028566c6aabfe75f350eb558b4279e",
+        "885529b7d715b7beda30bfb75d3015ca5e7d5528f1fafa911842afeddb2d7f10",
+        "3e018d03883854a37b1ccae846483b2db4675fb1537f191eb1a031e6ae197af4",
+        "5f1b03b990e1daf9e8c79f816f57caeb08ab9498977cc8cf9208d1790ad2a252",
+        "d68c4f6bda665e1f623c78d62ff518a1580c49250b50b1dac26eef54522244a2",
+        "5f99aa65a8313364392ffd624df647876a5bd82b598d61e4afdfbc12ced10979",
+        "0fb51e409321de5eac0c99067bff21914d64dacfd88c5bc6557ab8ea71d459a4",
+        "c96a5612698e8ae9b5e9859f29e8ab2c1c6053f9b5e93097dac7197dc4c5f8ab",
+        "34e97d83c3f0b1defd6dd46c3edfe7ca1a983e96f0fcfa9c76ce74cdecdcb289",
+        "58e1af5e64d495eab3a9c6aad88f93b5224cad30a05267b2d6cfc9ee5af9b32d",
+        "f04e8d537ac4e374f6dd83e3a918f186ee9db503e6bb7d2ec2b3d2225b86f44b",
+        "70fd8d90e92b120eb2c64ee4ef00b349adc7978c32de286742e8d361677c8b6e",
+        "75e849bb055e903e534a2a6261d1040c7e3fc12757cdbe29142ab00ccfc22213",
+        "7fea03850f169b5eae1ccfccb317b7400e180f168c11c369be9bb8f20283e95b",
+        "9c5c1e337d961e5682c9474db1b3882396ad9d77d7d08e23d502ec8631bb20ab",
+        "8e4413818208d4b1a3e82fd096d88a8cde3186dcc42aab3d99541814e87d6350",
+        "7c14aff7583fd47cd90faa1536b0d4180f00c7dbf66fd60d1353037956544b14",
+        "2ebfee7da7e0633c2e4178037073897060f79d64677f897b985e048f426b0f57",
+        "936d9b4713593236bdc094eb9be5e7a0ce11ddec2702f36108a6281f19c1a608",
+        "085096f697f16dcb1d216b8d2cf1b91a7bdadededd67f632e44eed186dea1394",
+        "67a4f2929372b22bc2d79d5710407801d8d4a1810430ef437818858e5ccf7e49",
+        "95c10709f85f1e3eae3e313d1a691d84cfafdf305d74263aeb8e7b3c33ae1092",
+        "3fb87af9f3cb33671de35580919893f51b73d2d3499186cde9e5969c6ab2ffa7",
+        "a07369ebbaf7abe00a02df15e817adb374faf92c8f62bb014a32441d1985fd9a",
+        "81ecf36b7b38e204b3efede107ded73983922be441bc1ce45f3e179508e326fb",
+        "1ee1d49acacd33b519a4168c1672a811d9cb0234bc820f6f4943ddefea885db4",
+        "400a536a1e268c532704261963edfcd83025d893af1ab3e21b7f80d432b8733e",
+        "504fded441188a34c50969ff428587ee3acb3dde358f6982f6b8437c960869d6",
+        "9e1766735dcd83589b070342415e1db9fd2dd40eefacd58d05a1a3fdb92130d5",
+        "4226cec95f6a913b474c92223f2759792fa426aef6534e7cd5f67e1eb57dd31a",
+        "8a43e1a283fc71c6018e40af80d4cb5608de6de715de4914f06ba77cb1c2c19d",
+        "c3b603c98138c700fcddcc4e080a7e8230ede0bb23f6a7f509731aa860a9f7e9",
+        "2140d9b579ff8bfeaa7dfde612d458149ec98ced2f6a9b50c5b7fa2bdd77753f",
+        "f11cbcc6a6bb3d99391259e0f0d6b4683981baab116f149cd83189fc976c9578",
+        "3833b8d32822fdd2245d3b6727f473dad01250560df7e50e8dcf6fcc042b0924"
+      ],
+      "idleMedianHeight": 46.5,
+      "deathMedianHeight": 37.0,
+      "dimensions": [
+        1024,
+        1152
+      ],
+      "sourcePixelsUnedited": true,
+      "alphaZeroPercent": 89.43447536892361,
+      "sourceRegistrationScale": 0.5680473372781065,
+      "nativeIdleHeights": [
+        44,
+        49,
+        50,
+        46,
+        44,
+        47,
+        53,
+        46
+      ],
+      "bounds": {
+        "idle/e": {
+          "x": 28,
+          "y": 124,
+          "w": 76,
+          "h": 44,
+          "opaquePixels": 1878
+        },
+        "idle/se": {
+          "x": 32,
+          "y": 120,
+          "w": 63,
+          "h": 49,
+          "opaquePixels": 1782
+        },
+        "idle/s": {
+          "x": 42,
+          "y": 120,
+          "w": 43,
+          "h": 50,
+          "opaquePixels": 1560
+        },
+        "idle/sw": {
+          "x": 33,
+          "y": 122,
+          "w": 61,
+          "h": 46,
+          "opaquePixels": 1619
+        },
+        "idle/w": {
+          "x": 26,
+          "y": 124,
+          "w": 76,
+          "h": 44,
+          "opaquePixels": 1893
+        },
+        "idle/nw": {
+          "x": 32,
+          "y": 123,
+          "w": 64,
+          "h": 47,
+          "opaquePixels": 1737
+        },
+        "idle/n": {
+          "x": 40,
+          "y": 120,
+          "w": 48,
+          "h": 53,
+          "opaquePixels": 1627
+        },
+        "idle/ne": {
+          "x": 27,
+          "y": 122,
+          "w": 69,
+          "h": 46,
+          "opaquePixels": 1823
+        },
+        "run-a/e": {
+          "x": 27,
+          "y": 125,
+          "w": 77,
+          "h": 44,
+          "opaquePixels": 1832
+        },
+        "run-a/se": {
+          "x": 32,
+          "y": 120,
+          "w": 64,
+          "h": 48,
+          "opaquePixels": 1658
+        },
+        "run-a/s": {
+          "x": 43,
+          "y": 118,
+          "w": 41,
+          "h": 50,
+          "opaquePixels": 1446
+        },
+        "run-a/sw": {
+          "x": 34,
+          "y": 121,
+          "w": 61,
+          "h": 47,
+          "opaquePixels": 1536
+        },
+        "run-a/w": {
+          "x": 26,
+          "y": 125,
+          "w": 76,
+          "h": 44,
+          "opaquePixels": 1824
+        },
+        "run-a/nw": {
+          "x": 35,
+          "y": 122,
+          "w": 58,
+          "h": 47,
+          "opaquePixels": 1621
+        },
+        "run-a/n": {
+          "x": 42,
+          "y": 114,
+          "w": 43,
+          "h": 54,
+          "opaquePixels": 1633
+        },
+        "run-a/ne": {
+          "x": 28,
+          "y": 122,
+          "w": 67,
+          "h": 46,
+          "opaquePixels": 1802
+        },
+        "run-b/e": {
+          "x": 28,
+          "y": 125,
+          "w": 76,
+          "h": 44,
+          "opaquePixels": 1808
+        },
+        "run-b/se": {
+          "x": 32,
+          "y": 121,
+          "w": 65,
+          "h": 48,
+          "opaquePixels": 1663
+        },
+        "run-b/s": {
+          "x": 43,
+          "y": 117,
+          "w": 43,
+          "h": 51,
+          "opaquePixels": 1440
+        },
+        "run-b/sw": {
+          "x": 33,
+          "y": 124,
+          "w": 62,
+          "h": 44,
+          "opaquePixels": 1533
+        },
+        "run-b/w": {
+          "x": 26,
+          "y": 129,
+          "w": 76,
+          "h": 39,
+          "opaquePixels": 1710
+        },
+        "run-b/nw": {
+          "x": 34,
+          "y": 124,
+          "w": 60,
+          "h": 44,
+          "opaquePixels": 1534
+        },
+        "run-b/n": {
+          "x": 43,
+          "y": 114,
+          "w": 42,
+          "h": 55,
+          "opaquePixels": 1637
+        },
+        "run-b/ne": {
+          "x": 28,
+          "y": 125,
+          "w": 69,
+          "h": 43,
+          "opaquePixels": 1722
+        },
+        "attack/e": {
+          "x": 25,
+          "y": 126,
+          "w": 83,
+          "h": 42,
+          "opaquePixels": 2012
+        },
+        "attack/se": {
+          "x": 30,
+          "y": 122,
+          "w": 68,
+          "h": 46,
+          "opaquePixels": 1901
+        },
+        "attack/s": {
+          "x": 41,
+          "y": 113,
+          "w": 46,
+          "h": 55,
+          "opaquePixels": 1888
+        },
+        "attack/sw": {
+          "x": 27,
+          "y": 123,
+          "w": 73,
+          "h": 45,
+          "opaquePixels": 2001
+        },
+        "attack/w": {
+          "x": 25,
+          "y": 126,
+          "w": 78,
+          "h": 43,
+          "opaquePixels": 1998
+        },
+        "attack/nw": {
+          "x": 31,
+          "y": 125,
+          "w": 66,
+          "h": 43,
+          "opaquePixels": 1784
+        },
+        "attack/n": {
+          "x": 40,
+          "y": 114,
+          "w": 47,
+          "h": 54,
+          "opaquePixels": 1766
+        },
+        "attack/ne": {
+          "x": 27,
+          "y": 117,
+          "w": 69,
+          "h": 51,
+          "opaquePixels": 1949
+        },
+        "hurt/e": {
+          "x": 29,
+          "y": 122,
+          "w": 72,
+          "h": 47,
+          "opaquePixels": 2011
+        },
+        "hurt/se": {
+          "x": 33,
+          "y": 124,
+          "w": 62,
+          "h": 45,
+          "opaquePixels": 1586
+        },
+        "hurt/s": {
+          "x": 41,
+          "y": 119,
+          "w": 46,
+          "h": 50,
+          "opaquePixels": 1494
+        },
+        "hurt/sw": {
+          "x": 33,
+          "y": 122,
+          "w": 61,
+          "h": 47,
+          "opaquePixels": 1610
+        },
+        "hurt/w": {
+          "x": 29,
+          "y": 123,
+          "w": 69,
+          "h": 46,
+          "opaquePixels": 1882
+        },
+        "hurt/nw": {
+          "x": 35,
+          "y": 118,
+          "w": 58,
+          "h": 51,
+          "opaquePixels": 1772
+        },
+        "hurt/n": {
+          "x": 41,
+          "y": 113,
+          "w": 45,
+          "h": 55,
+          "opaquePixels": 1708
+        },
+        "hurt/ne": {
+          "x": 32,
+          "y": 118,
+          "w": 62,
+          "h": 50,
+          "opaquePixels": 1879
+        },
+        "death/e": {
+          "x": 24,
+          "y": 132,
+          "w": 85,
+          "h": 36,
+          "opaquePixels": 1874
+        },
+        "death/se": {
+          "x": 28,
+          "y": 131,
+          "w": 76,
+          "h": 37,
+          "opaquePixels": 1692
+        },
+        "death/s": {
+          "x": 31,
+          "y": 132,
+          "w": 66,
+          "h": 37,
+          "opaquePixels": 1624
+        },
+        "death/sw": {
+          "x": 26,
+          "y": 135,
+          "w": 77,
+          "h": 33,
+          "opaquePixels": 1708
+        },
+        "death/w": {
+          "x": 21,
+          "y": 135,
+          "w": 86,
+          "h": 33,
+          "opaquePixels": 1828
+        },
+        "death/nw": {
+          "x": 27,
+          "y": 131,
+          "w": 74,
+          "h": 38,
+          "opaquePixels": 1665
+        },
+        "death/n": {
+          "x": 29,
+          "y": 131,
+          "w": 69,
+          "h": 38,
+          "opaquePixels": 1777
+        },
+        "death/ne": {
+          "x": 19,
+          "y": 131,
+          "w": 86,
+          "h": 37,
+          "opaquePixels": 1854
+        }
+      }
+    }
+  ]
+}

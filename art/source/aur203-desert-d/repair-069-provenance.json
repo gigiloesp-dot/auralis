@@ -1,0 +1,5 @@
+{
+  "prompt": "Remove the entire background completely to true alpha zero transparent from the reference sprite sheet. Keep the EXACT 8 columns by6 rows and ALL48 snake creature poses, exact anatomy and pose positions. Remove every background pixel rectangle between and around snakes including gaps; no shadows no backdrop no fake checkerboard. Preserve the orange cream serpents and their crystal cheek fins. Transparent PNG.",
+  "originalGenerationPath": "/workspace/generated_images/exec-375414c5-2307-41c1-ad88-81a5b180408c.png",
+  "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-375414c5-2307-41c1-ad88-81a5b180408c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

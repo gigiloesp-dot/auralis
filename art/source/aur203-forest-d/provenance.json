@@ -1,0 +1,185 @@
+{
+  "pack": "aur203-forest-d",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "models": [
+    {
+      "placementId": "forest-species-092",
+      "typeId": "aur203Forest092",
+      "names": {
+        "ru": "Кадильная штукатурница",
+        "en": "Mortar-moth censer",
+        "es": "Polilla incensario"
+      },
+      "biome": "abandoned-city",
+      "level": 15,
+      "x": 13918,
+      "y": 6639,
+      "anatomy": "moth with chipped plaster window wings and copper censer abdomen",
+      "movementProfile": "bat",
+      "abilityPattern": [
+        "dive",
+        "haunt"
+      ],
+      "materialId": "aur203Forest092Material",
+      "materialConcept": "plaster wing scale",
+      "artOnly": true
+    },
+    {
+      "placementId": "forest-species-093",
+      "typeId": "aur203Forest093",
+      "names": {
+        "ru": "Корешок-колокольчик",
+        "en": "Bluebell rootling",
+        "es": "Raicilla campanilla"
+      },
+      "biome": "woodland",
+      "level": 5,
+      "x": 901,
+      "y": 5566,
+      "anatomy": "bluebell flower head with three root legs and grass ribbon arms",
+      "movementProfile": "fighter",
+      "abilityPattern": [
+        "roots",
+        "cleave"
+      ],
+      "materialId": "aur203Forest093Material",
+      "materialConcept": "bluebell petal",
+      "artOnly": true
+    },
+    {
+      "placementId": "forest-species-094",
+      "typeId": "aur203Forest094",
+      "names": {
+        "ru": "Ключечелюстный клещ",
+        "en": "Lockjaw key-mite",
+        "es": "Ácaro cerrojo"
+      },
+      "biome": "abandoned-city",
+      "level": 16,
+      "x": 15369,
+      "y": 4181,
+      "anatomy": "four-legged padlock arthropod with asymmetric key mandibles",
+      "movementProfile": "crawler",
+      "abilityPattern": [
+        "cleave",
+        "venom"
+      ],
+      "materialId": "aur203Forest094Material",
+      "materialConcept": "key-shaped mandible",
+      "artOnly": true
+    },
+    {
+      "placementId": "forest-species-095",
+      "typeId": "aur203Forest095",
+      "names": {
+        "ru": "Дымоходный ходулочник",
+        "en": "Chimney-dome stiltbeast",
+        "es": "Zancudo chimenea"
+      },
+      "biome": "abandoned-city",
+      "level": 18,
+      "x": 16732,
+      "y": 8211,
+      "anatomy": "five terracotta stilt legs under tile dome shell with three eye stalks",
+      "movementProfile": "heavy",
+      "abilityPattern": [
+        "stomp",
+        "charge"
+      ],
+      "materialId": "aur203Forest095Material",
+      "materialConcept": "terracotta joint ring",
+      "artOnly": true
+    }
+  ],
+  "animationScope": "48 painted poses: 8 directions x idle/run-a/run-b/attack/hurt/death. Two movement drawings; six pose banks, not six multiframe clips.",
+  "mechanicalPacking": "Whole complete pose cropping with 8 source pixel margins and uniform resampling; alpha used solely for measurement. No semantic painting/erasing/matte removal by Python.",
+  "visualReview": {
+    "all48PosesPerModel": true,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "death": "natural collapsed sideways with limp limbs and closed eyes",
+    "registration": "n/ne/e/se/s/sw/w/nw; source s/sw/w/nw/n/ne/e/se",
+    "reviewed": true
+  },
+  "generationHistory": {
+    "generation.json": [
+      {
+        "id": "forest-species-092",
+        "prompt": "undefinedABANDONED CITY level15 original MORTAR-MOTH CENSER: broad-winged ivory moth with folded gothic-window shaped wings made of chipped plaster segments, rotund copper censer abdomen, two swept antennae, six short black articulated legs and turquoise compound eyes. Floats near ground; smoke absent for clean silhouette. Attack thrusts abdomen and spreads wings, death moth on side crumpled wings and bent legs.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-86e7f014-35e4-4f69-8494-c038e9f47f2f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "forest-species-093",
+        "prompt": "undefinedWOODLAND level5 original BLUEBELL ROOTLING: tiny original ambulatory flower creature, upside-down cobalt bluebell bloom forms its bell-shaped head with broad ochre face beneath, three flexible white root legs, two narrow grass ribbon arms, bent stem with single leaf on crown. Not humanoid goblin. Run alternating tripod roots; attack leaf-arm lash, death bloom resting sideways with roots limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-22db702b-e62b-4dda-b12c-8cbcdbaf89e1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "forest-species-094",
+        "prompt": "undefinedABANDONED CITY level16 original LOCKJAW KEY-MITE: squat copper-bodied four-legged arthropod with huge asymmetric antique key shaped mandibles, a rounded dark-green verdigris padlock abdomen, single keyhole-shaped amber eye and no human parts. Broad claw feet and two narrow upward feelers. Attack open pincer keys, death fallen sideways with four legs folded naturally.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-65319177-c36b-4769-b57b-491ce1283866.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "forest-species-095",
+        "prompt": "undefinedABANDONED CITY level18 original CHIMNEY-DOME STILTBEAST: strange tall charcoal amphibian with five thin jointed terracotta legs surrounding a domed cream tile shell, three little amber eye stalks at the shell rim, one thick curved chimney horn growing off-center. No humanoid head. Attack stomping splayed front legs, hurt shell tilted low, death shell fallen on side and all long legs collapsed.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-636ae0f2-00d0-41cd-bd6a-427cdda62145.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      }
+    ],
+    "generation-v2.json": [
+      {
+        "id": "forest-species-092",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. ABANDONED CITY level15 original MORTAR-MOTH CENSER: broad-winged ivory moth with folded gothic-window shaped wings made of chipped plaster segments, rotund copper censer abdomen, two swept antennae, six short black articulated legs and turquoise compound eyes. Floats near ground; smoke absent for clean silhouette. Attack thrusts abdomen and spreads wings, death moth on side crumpled wings and bent legs.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-037bec39-c46a-4e1e-9bd8-edae7a8dd9c3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "forest-species-093",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. WOODLAND level5 original BLUEBELL ROOTLING: tiny original ambulatory flower creature, upside-down cobalt bluebell bloom forms its bell-shaped head with broad ochre face beneath, three flexible white root legs, two narrow grass ribbon arms, bent stem with single leaf on crown. Not humanoid goblin. Run alternating tripod roots; attack leaf-arm lash, death bloom resting sideways with roots limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-d8d6c257-8625-4347-9169-b01e94153aa0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "forest-species-094",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. ABANDONED CITY level16 original LOCKJAW KEY-MITE: squat copper-bodied four-legged arthropod with huge asymmetric antique key shaped mandibles, a rounded dark-green verdigris padlock abdomen, single keyhole-shaped amber eye and no human parts. Broad claw feet and two narrow upward feelers. Attack open pincer keys, death fallen sideways with four legs folded naturally.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-81932588-3546-4fc7-b602-122c578f7317.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "forest-species-095",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. ABANDONED CITY level18 original CHIMNEY-DOME STILTBEAST: strange tall charcoal amphibian with five thin jointed terracotta legs surrounding a domed cream tile shell, three little amber eye stalks at the shell rim, one thick curved chimney horn growing off-center. No humanoid head. Attack stomping splayed front legs, hurt shell tilted low, death shell fallen on side and all long legs collapsed.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-590b28c3-7c79-40d9-a045-f8475ed731bf.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      }
+    ],
+    "rejected-generation.json": [
+      {
+        "id": "forest-species-092",
+        "prompt": "undefinedABANDONED CITY level15 original MORTAR-MOTH CENSER: broad-winged ivory moth with folded gothic-window shaped wings made of chipped plaster segments, rotund copper censer abdomen, two swept antennae, six short black articulated legs and turquoise compound eyes. Floats near ground; smoke absent for clean silhouette. Attack thrusts abdomen and spreads wings, death moth on side crumpled wings and bent legs.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-86e7f014-35e4-4f69-8494-c038e9f47f2f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "forest-species-093",
+        "prompt": "undefinedWOODLAND level5 original BLUEBELL ROOTLING: tiny original ambulatory flower creature, upside-down cobalt bluebell bloom forms its bell-shaped head with broad ochre face beneath, three flexible white root legs, two narrow grass ribbon arms, bent stem with single leaf on crown. Not humanoid goblin. Run alternating tripod roots; attack leaf-arm lash, death bloom resting sideways with roots limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-22db702b-e62b-4dda-b12c-8cbcdbaf89e1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "forest-species-094",
+        "prompt": "undefinedABANDONED CITY level16 original LOCKJAW KEY-MITE: squat copper-bodied four-legged arthropod with huge asymmetric antique key shaped mandibles, a rounded dark-green verdigris padlock abdomen, single keyhole-shaped amber eye and no human parts. Broad claw feet and two narrow upward feelers. Attack open pincer keys, death fallen sideways with four legs folded naturally.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-65319177-c36b-4769-b57b-491ce1283866.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "forest-species-095",
+        "prompt": "undefinedABANDONED CITY level18 original CHIMNEY-DOME STILTBEAST: strange tall charcoal amphibian with five thin jointed terracotta legs surrounding a domed cream tile shell, three little amber eye stalks at the shell rim, one thick curved chimney horn growing off-center. No humanoid head. Attack stomping splayed front legs, hurt shell tilted low, death shell fallen on side and all long legs collapsed.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-636ae0f2-00d0-41cd-bd6a-427cdda62145.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "north-species-092",
+    "placementId": "north092",
+    "spotId": "north-spot-092",
+    "typeId": "aur203North092",
+    "names": {
+      "ru": "Снежноцветный долгоносик",
+      "en": "Snowflower weevil",
+      "es": "Gorgojo flor de nieve"
+    },
+    "biome": "snow",
+    "level": 23,
+    "position": {
+      "x": 2067,
+      "y": 3346
+    },
+    "anatomy": "six-legged beetle with long curved flat ivory rostrum, snowflake petal-shaped wing cases and spherical blue abdomen",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "frost"
+    ],
+    "materialId": "aur203North092Material",
+    "materialConcept": {
+      "ru": "Лепесток снежного надкрылья",
+      "en": "Snowflower elytron petal",
+      "es": "Pétalo de élitro nevado"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-093",
+    "placementId": "north093",
+    "spotId": "north-spot-093",
+    "typeId": "aur203North093",
+    "names": {
+      "ru": "Кальдерный броненосец",
+      "en": "Caldera armadillo",
+      "es": "Armadillo de caldera"
+    },
+    "biome": "volcanic",
+    "level": 33,
+    "position": {
+      "x": 19695,
+      "y": 777
+    },
+    "anatomy": "four-footed armadillo with terraced volcanic caldera shell, three orange vent chimneys and articulated shovel tail",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "charge",
+      "stomp"
+    ],
+    "materialId": "aur203North093Material",
+    "materialConcept": {
+      "ru": "Терраса кальдерного панциря",
+      "en": "Caldera shell terrace",
+      "es": "Terraza de caparazón de caldera"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  }
+]

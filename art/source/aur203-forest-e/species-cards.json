@@ -1,0 +1,24 @@
+[
+  {
+    "placementId": "forest-species-096",
+    "typeId": "aur203Forest096",
+    "names": {
+      "ru": "Витражный переплётник",
+      "en": "Stained-glass folio ray",
+      "es": "Raya vitral"
+    },
+    "biome": "abandoned-city",
+    "level": 18,
+    "x": 15503,
+    "y": 8887,
+    "anatomy": "hovering leather-bound folio with stained glass ray fins and ribbon tails",
+    "movementProfile": "ghost",
+    "abilityPattern": [
+      "haunt",
+      "fan"
+    ],
+    "materialId": "aur203Forest096Material",
+    "materialConcept": "stained-glass fin shard",
+    "artOnly": true
+  }
+]

@@ -1,0 +1,163 @@
+{
+  "pack": "aur203-desert-h",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "models": [
+    {
+      "placementId": "desert-species-084",
+      "typeId": "aur203Desert084",
+      "names": {
+        "ru": "Соляной зонтонос",
+        "en": "Salt parasol bearer",
+        "es": "Portador de parasol salino"
+      },
+      "biome": "sand",
+      "level": 50,
+      "x": 14586,
+      "y": 9412,
+      "anatomy": "four-legged pale armadillo under wide faceted salt crystal umbrella carapace",
+      "movementProfile": "heavy",
+      "abilityPattern": [
+        "stomp",
+        "frost"
+      ],
+      "materialId": "aur203Desert084Material",
+      "materialConcept": "salt carapace crystal",
+      "artOnly": true
+    },
+    {
+      "placementId": "desert-species-085",
+      "typeId": "aur203Desert085",
+      "names": {
+        "ru": "Термитовый горн",
+        "en": "Termite trumpet",
+        "es": "Trompeta termitera"
+      },
+      "biome": "sand",
+      "level": 49,
+      "x": 13041,
+      "y": 8231,
+      "anatomy": "upright hollow termite mound beast on three stubby legs with trumpet snout",
+      "movementProfile": "fighter",
+      "abilityPattern": [
+        "cleave",
+        "fan"
+      ],
+      "materialId": "aur203Desert085Material",
+      "materialConcept": "resonant clay throat tube",
+      "artOnly": true
+    },
+    {
+      "placementId": "desert-species-086",
+      "typeId": "aur203Desert086",
+      "names": {
+        "ru": "Обсидиановый веретенник",
+        "en": "Obsidian spindlewalker",
+        "es": "Andarín huso de obsidiana"
+      },
+      "biome": "sand",
+      "level": 54,
+      "x": 19290,
+      "y": 14508,
+      "anatomy": "spindle-shaped black glass arthropod on four arched legs with two pendulum claws",
+      "movementProfile": "predator",
+      "abilityPattern": [
+        "pounce",
+        "cleave"
+      ],
+      "materialId": "aur203Desert086Material",
+      "materialConcept": "obsidian spindle plate",
+      "artOnly": true
+    },
+    {
+      "placementId": "desert-species-087",
+      "typeId": "aur203Desert087",
+      "names": {
+        "ru": "Бронзовый пескокрут",
+        "en": "Bronze sand whorl",
+        "es": "Remolino de bronce"
+      },
+      "biome": "sand",
+      "level": 55,
+      "x": 17820,
+      "y": 19010,
+      "anatomy": "round bronze spiral-shelled cephalopod with eight curling ribbon arms and split crown fin",
+      "movementProfile": "elemental",
+      "abilityPattern": [
+        "blink",
+        "fan"
+      ],
+      "materialId": "aur203Desert087Material",
+      "materialConcept": "bronze spiral shell layer",
+      "artOnly": true
+    }
+  ],
+  "animationScope": "48 painted poses: 8 directions x idle/run-a/run-b/attack/hurt/death. Two movement drawings; six pose banks, not six multiframe clips.",
+  "mechanicalPacking": "Whole complete pose cropping with 8 source pixel margins and uniform resampling; alpha used solely for measurement. No semantic painting/erasing/matte removal by Python.",
+  "visualReview": {
+    "all48PosesPerModel": true,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "death": "natural collapsed sideways with limp limbs and closed eyes",
+    "registration": "n/ne/e/se/s/sw/w/nw; source s/sw/w/nw/n/ne/e/se",
+    "reviewed": true
+  },
+  "generationHistory": {
+    "generation-v2.json": [
+      {
+        "id": "desert-species-084",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level50 original SALT PARASOL BEARER: stocky pale lavender four-legged armadillo with broad faceted salt crystal umbrella shell lifted high above back on short living stalk, orange tiny snout and long segmented peach tail, broad blunt feet. Shell has clear white angular radial plates. Attack front stomp umbrella tilts forward, death armadillo sideways and umbrella collapsed flat.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b4763f2d-e60f-48b9-905b-d20777bb8e5f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "desert-species-085",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level49 original TERMITE TRUMPET: small upright hollow red clay termite mound creature walking on THREE stubby jointed ochre legs, huge sideways trumpet-shaped snout emerging from round top, two green bead eyes, layered clay shelves and small black ventilation holes. No arms or human form. Attack trumpet extended and legs wide, hurt mound hunched, death mound on its side legs limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2b8f3a5a-05f1-485e-9136-90a75ba5400d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "desert-species-086",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level54 original OBSIDIAN SPINDLEWALKER: tall spindle-shaped black glass arthropod body suspended on FOUR arching ivory jointed legs, two long pendulum axe-claws hang from chest, tiny violet eyes encircle narrow head, amber glowing seams in glass. No humanoid torso. Attack pendulum claws swung wide, hurt legs crouched, death spindle lying horizontal all legs curled naturally.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-29861407-84db-434a-bb26-78b6c4d45289.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "desert-species-087",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level55 original BRONZE SAND WHORL: floating round bronze spiral-shelled cephalopod with eight wide curling turquoise ribbon arms, split orange crown fin, two large amber eyes underneath the shell rim, etched shell ridges but no writing. Attack arms splay radially, hurt arms curl defensively, death lies sideways on sandless transparent plane with all ribbon arms limp and closed eyes.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a6c41bfb-6fb6-48bb-8c84-36ddcb7ee5c8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      }
+    ],
+    "rejected-generation.json": [
+      {
+        "id": "desert-species-084",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level50 original SALT PARASOL BEARER: stocky pale lavender four-legged armadillo with broad faceted salt crystal umbrella shell lifted high above back on short living stalk, orange tiny snout and long segmented peach tail, broad blunt feet. Shell has clear white angular radial plates. Attack front stomp umbrella tilts forward, death armadillo sideways and umbrella collapsed flat.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9e28de61-1337-43b7-8e0b-f8998036cf2c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "desert-species-085",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level49 original TERMITE TRUMPET: small upright hollow red clay termite mound creature walking on THREE stubby jointed ochre legs, huge sideways trumpet-shaped snout emerging from round top, two green bead eyes, layered clay shelves and small black ventilation holes. No arms or human form. Attack trumpet extended and legs wide, hurt mound hunched, death mound on its side legs limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a53b27f3-9cdc-4642-9f3b-5892c605eb52.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "desert-species-086",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level54 original OBSIDIAN SPINDLEWALKER: tall spindle-shaped black glass arthropod body suspended on FOUR arching ivory jointed legs, two long pendulum axe-claws hang from chest, tiny violet eyes encircle narrow head, amber glowing seams in glass. No humanoid torso. Attack pendulum claws swung wide, hurt legs crouched, death spindle lying horizontal all legs curled naturally.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-23c9250f-ace5-4286-9f17-fa3fd4b6b834.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "desert-species-087",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level55 original BRONZE SAND WHORL: floating round bronze spiral-shelled cephalopod with eight wide curling turquoise ribbon arms, split orange crown fin, two large amber eyes underneath the shell rim, etched shell ridges but no writing. Attack arms splay radially, hurt arms curl defensively, death lies sideways on sandless transparent plane with all ribbon arms limp and closed eyes.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-32514566-4fe2-4d94-93dd-b5671ecddb9d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      }
+    ]
+  }
+}
