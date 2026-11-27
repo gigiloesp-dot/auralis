@@ -1,4 +1,5 @@
 import {AUR203_MATERIALS,AUR203_MATERIAL_BY_LOOT} from './aur203Materials.js';
+import {AUR203_EXPANSION_MATERIALS,AUR203_EXPANSION_MATERIAL_BY_LOOT} from './aur203ExpansionMaterials.js';
 // Additive non-equipment materials. No crafting value or gold sale value is
 // invented here: these drops are collectible and stack through existing items.
 const material=(name,en,es,level,icon)=>Object.freeze({name,names:Object.freeze({ru:name,en,es}),slot:null,level,saleValue:0,monsterMaterial:true,iconURL:`assets/icons/monster-materials/${icon}.png`});
@@ -19,6 +20,7 @@ export const MONSTER_MATERIALS=Object.freeze({
  ghostVeil:material('Призрачная вуаль','Ghost veil','Velo espectral',22,'ghost-veil'),
  scarabShell:material('Панцирь скарабея','Scarab shell','Caparazón de escarabajo',35,'scarab-shell'),
  gargoyleFragment:material('Обломок горгульи','Gargoyle fragment','Fragmento de gárgola',35,'gargoyle-fragment'),
- ...AUR203_MATERIALS
+ ...AUR203_MATERIALS,
+ ...AUR203_EXPANSION_MATERIALS
 });
-export const MONSTER_MATERIAL_BY_LOOT=Object.freeze({boar:'boarTusk',raider:'raiderPouch',bear:'bearHide',spider:'spiderSilk',skeleton:'boneFragment',iceWolf:'iceWolfFang',frostGolem:'frostGolemCrystal',ancientSentinel:'sentinelRunestone',arcaneWisp:'arcaneWispShard',bat:'batWing',snake:'snakeScales',orc:'orcClanToken',elemental:'elementalEssence',ghost:'ghostVeil',scarab:'scarabShell',gargoyle:'gargoyleFragment',...AUR203_MATERIAL_BY_LOOT});
+export const MONSTER_MATERIAL_BY_LOOT=Object.freeze({boar:'boarTusk',raider:'raiderPouch',bear:'bearHide',spider:'spiderSilk',skeleton:'boneFragment',iceWolf:'iceWolfFang',frostGolem:'frostGolemCrystal',ancientSentinel:'sentinelRunestone',arcaneWisp:'arcaneWispShard',bat:'batWing',snake:'snakeScales',orc:'orcClanToken',elemental:'elementalEssence',ghost:'ghostVeil',scarab:'scarabShell',gargoyle:'gargoyleFragment',...AUR203_MATERIAL_BY_LOOT,...AUR203_EXPANSION_MATERIAL_BY_LOOT});

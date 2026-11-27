@@ -1,5 +1,6 @@
 import {insertStack} from '../equipment/stacking.js';
 import {addItem,itemDefinition,INVENTORY_CAPACITY} from '../equipment/items.js';
+import {groundDropDefinition,groundConsumableDefinition,GROUND_POTION_LIMIT} from './groundConsumables.js';
 export const LOOT_PICKUP_RADIUS=180;
 const rarities=new Set(['common','uncommon','rare','epic','legendary']);
 const safeKey=s=>typeof s==='string'&&s.length>0&&s.length<=160&&!['__proto__','constructor','prototype'].includes(s);
@@ -9,7 +10,7 @@ export function lootCategory(item){const slot=itemDefinition(item)?.slot;return 
 export function normalizeGroundLoot(value){
  const state={nextId:Number.isSafeInteger(value?.nextId)&&value.nextId>0?value.nextId:1,drops:{},events:{},pending:{}};
  if(plain(value?.drops))for(const [id,d]of Object.entries(value.drops)){
-  if(!safeKey(id)||!plain(d)||!safeKey(d.region)||!Number.isFinite(d.x)||!Number.isFinite(d.y)||d.x<0||d.y<0||d.x>100000||d.y>100000||!plain(d.item)||!itemDefinition(d.item)||!timestamp(d.createdAt))continue;
+  if(!safeKey(id)||!plain(d)||!safeKey(d.region)||!Number.isFinite(d.x)||!Number.isFinite(d.y)||d.x<0||d.y<0||d.x>100000||d.y>100000||!plain(d.item)||!groundDropDefinition(d.item)||!timestamp(d.createdAt))continue;
   const item={id:d.item.id,rarity:rarities.has(d.item.rarity)?d.item.rarity:'common',quantity:Number.isInteger(d.item.quantity)?Math.max(1,Math.min(100,d.item.quantity)):1};
   state.drops[id]={id,region:d.region,x:d.x,y:d.y,item,createdAt:d.createdAt};
   const n=Number(id.replace(/^drop-/,''));if(Number.isSafeInteger(n))state.nextId=Math.max(state.nextId,n+1);
@@ -17,7 +18,7 @@ export function normalizeGroundLoot(value){
  if(plain(value?.events))for(const [key,at]of Object.entries(value.events))if(safeKey(key)&&timestamp(at))state.events[key]=at;
  if(plain(value?.pending))for(const [key,job]of Object.entries(value.pending)){
   if(!safeKey(key)||!plain(job)||!safeKey(job.region)||!timestamp(job.deathAt)||!Number.isFinite(job.x)||!Number.isFinite(job.y)||job.x<0||job.y<0||job.x>100000||job.y>100000||!Array.isArray(job.items))continue;
-  const items=job.items.filter(item=>plain(item)&&itemDefinition(item)).map(item=>({id:item.id,rarity:rarities.has(item.rarity)?item.rarity:'common',quantity:Math.max(1,Math.min(100,Math.trunc(item.quantity)||1))}));
+  const items=job.items.filter(item=>plain(item)&&groundDropDefinition(item)).map(item=>({id:item.id,rarity:rarities.has(item.rarity)?item.rarity:'common',quantity:Math.max(1,Math.min(100,Math.trunc(item.quantity)||1))}));
   state.pending[key]={region:job.region,x:job.x,y:job.y,deathAt:job.deathAt,items};
  }
  return state;
@@ -40,7 +41,7 @@ export function lootPosition(origin,records,{project=(x,y)=>({x,y}),walkable=()=
 export function materializeGroundDrops(hero,job,{project,walkable}={}){
  const state=groundLootState(hero),{region,deathAt}=job,records=Object.values(state.drops).filter(d=>d.region===region),created=[];
  for(const raw of job.items){
-  if(!itemDefinition(raw))continue;
+  if(!groundDropDefinition(raw))continue;
   const position=lootPosition(job,records,{project,walkable,seed:state.nextId});
   if(!position){for(const d of created)delete state.drops[d.id];return {ok:false,reason:'placement',ids:[]};}
   const id='drop-'+state.nextId++,record={id,region,...position,item:{id:raw.id,rarity:rarities.has(raw.rarity)?raw.rarity:'common',quantity:Math.max(1,Math.min(100,Math.trunc(raw.quantity)||1))},createdAt:deathAt};
@@ -73,6 +74,23 @@ export function pickupGroundDrop(hero,id,{save=()=>true,radius=LOOT_PICKUP_RADIU
  if(!drop)return {ok:false,reason:'missing'};
  const limit=Math.max(0,Math.min(LOOT_PICKUP_RADIUS,Number(radius)||0));
  if(hero.hp<=0||hero.region!==drop.region||!Number.isFinite(hero.x)||!Number.isFinite(hero.y)||distance(hero,drop)>limit)return {ok:false,reason:'distance'};
+ const consumable=groundConsumableDefinition(drop.item);
+ if(consumable){
+  // A full bag also blocks resource-pouch pickup; the reward stays on ground.
+  if(!Array.isArray(hero.inventory)||hero.inventory.length>=INVENTORY_CAPACITY)return {ok:false,reason:'full'};
+  const originalPotions=hero.potions,resource=consumable.resource,current=hero.potions?.[resource];
+  const count=Number.isFinite(current)?Math.max(0,Math.floor(current)):0,room=Math.max(0,GROUND_POTION_LIMIT-count),total=drop.item.quantity||1;
+  if(!room||(!allowPartial&&total>room))return {ok:false,reason:'potionCapacity'};
+  const quantity=Math.min(total,room),remainder=total-quantity;
+  transactions.add(hero);
+  try{
+   hero.potions={...originalPotions,[resource]:count+quantity};
+   if(remainder)state.drops[id]={...drop,item:{...drop.item,quantity:remainder}};else delete state.drops[id];
+   let committed=false;try{committed=save()===true;}catch{}
+   if(!committed){if(originalPotions===undefined)delete hero.potions;else hero.potions=originalPotions;state.drops[id]=drop;return {ok:false,reason:'save'};}
+   return {ok:true,item:{...drop.item,quantity},remaining:remainder};
+  }finally{transactions.delete(hero);}
+ }
  const original=hero.inventory,working={...hero,inventory:original.map(i=>({...i}))};
  let quantity=drop.item.quantity||1,remainder=0;
  if(allowPartial){const inserted=insertStack(working.inventory,{...drop.item},itemDefinition(drop.item),INVENTORY_CAPACITY);if(!inserted.added)return {ok:false,reason:'full'};quantity=inserted.added;remainder=inserted.remainder;}

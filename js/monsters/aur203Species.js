@@ -5,9 +5,10 @@ import {AUR203_FOREST_B_ART} from '../assets/aur203ForestBArt.js';
 import {AUR203_NORTH_A_ART} from '../assets/aur203NorthAArt.js';
 import {AUR203_ANCIENT_A_ART} from '../assets/aur203AncientAArt.js';
 import {AUR203_DESERT_A_ART} from '../assets/aur203DesertAArt.js';
+import {AUR203_EXPANSION_SPECIES_ROWS,AUR203_EXPANSION_SPECIES_ART} from './aur203ExpansionSpecies.js';
 import {AUR203_PLACEMENTS} from '../world/aur203Placements.js';
 const freeze=value=>{if(value&&typeof value==='object'&&!Object.isFrozen(value)){for(const child of Object.values(value))freeze(child);Object.freeze(value);}return value;};
-const art={...AUR203_FOREST_A_ART,...AUR203_FOREST_B_ART,...AUR203_NORTH_A_ART,...AUR203_ANCIENT_A_ART,...AUR203_DESERT_A_ART};
+const art={...AUR203_FOREST_A_ART,...AUR203_FOREST_B_ART,...AUR203_NORTH_A_ART,...AUR203_ANCIENT_A_ART,...AUR203_DESERT_A_ART,...AUR203_EXPANSION_SPECIES_ART};
 // Explicit technical starting balance for NEW kinds only. XP/gold, equipment
 // odds and all base archetype objects remain unchanged. Owner playtest pending.
 const rows=[
@@ -879,7 +880,11 @@ const rows=[
     "materialId": "duneSailrayFin"
   }
 ];
-export const AUR203_SPECIES=freeze(Object.fromEntries(rows.map(row=>[row.id,{...row,art:structuredClone(art[row.id])}])));
+// Only these completed expansion kinds opt into the real bounded stomp status.
+// The preserved first20 rows above and ordinary non-opted-in stomp stay exact.
+const stunStomps={'north-species-084':{duration:700,windup:1100},'ancient-species-052':{duration:600,windup:1100},'desert-species-078':{duration:800,windup:1200}};
+const expansionRows=AUR203_EXPANSION_SPECIES_ROWS.map(row=>{const stun=stunStomps[row.id];return stun?{...row,abilityConfig:{...row.abilityConfig,stunOnStomp:stun.duration,windup:Math.max(row.abilityConfig.windup,stun.windup)}}:row;});
+export const AUR203_SPECIES=freeze(Object.fromEntries([...rows,...expansionRows].map(row=>[row.id,{...row,art:structuredClone(art[row.id])}])));
 export const AUR203_READY_SPECIES_IDS=Object.freeze(Object.keys(AUR203_SPECIES));
 export const AUR203_SPECIES_ART=Object.freeze(Object.fromEntries(Object.values(AUR203_SPECIES).map(row=>[row.id,row.art])));
 const reserved=freeze(Object.fromEntries(Object.entries(AUR203_PLACEMENTS).map(([region,layout])=>[region,structuredClone(layout.camps)])));

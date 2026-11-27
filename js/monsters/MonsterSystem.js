@@ -11,6 +11,8 @@ import {recoverLivingMonster,restoredLivingHp,MONSTER_RECOVERY_DELAY} from './he
 import {placeTrap,tickClassEffects,guardBlock,guardResponse,clearClassEffects} from '../combat/classEffects.js';
 import {derivedAttributes} from '../systems/attributes.js';
 import {rollEncounterLoot} from './encounterLoot.js';
+import {rollAur203GroundConsumables} from '../loot/groundConsumables.js';
+import {isMonsterStunned} from '../combat/monsterStun.js';
 import {equipmentStats} from '../equipment/items.js';
 import {MONSTER_TYPES,MONSTER_CAMPS,MONSTER_ACTIVATION_RADIUS,ORDINARY_RESPAWN_MS,clearDashPosition,monsterKind} from './monsters.js';
 import {MonsterStream} from './MonsterStream.js';
@@ -125,13 +127,13 @@ export class MonsterSystem{
   for(const spread of [32,56,80,104])for(let i=0;i<12;i++){const angle=i*Math.PI/6+(m.phase||0),p={x:home.x+Math.cos(angle)*spread,y:home.y+Math.sin(angle)*spread};if(free(p))return p;}
   return null;
  }
- warnAbility(config){if(config.kind?.startsWith('stoneGiant-'))return drawStoneGiantWarning(this.scene,config);const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed,'aur203-guard':0x76cbe4},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
+ warnAbility(config){if(config.kind?.startsWith('stoneGiant-'))return drawStoneGiantWarning(this.scene,config);const point=this.view(config.x,config.y),colors={venom:0x91c965,frost:0x88cfff,roots:0xa6bf66,blink:0xb891ed,'aur203-guard':0x76cbe4,stun:0xffc35e},marker=this.scene.add.circle(point.x,point.y,config.radius,colors[config.kind]||0xea7750,.24).setDepth(this.depth(config.x,config.y));if(this.scene.project)marker.setScale?.(1,.5);return marker;}
  abilityEffect(config){if(config.kind?.startsWith('stoneGiant-')){drawStoneGiantWarning(this.scene,config,{impact:true});if(/quake|hammer|charge/i.test(config.kind))this.scene.cameras?.main?.shake?.(160,.003);return;}const point=this.view(config.x,config.y),ring=this.scene.add.circle(point.x,point.y,config.radius,config.kind==='blink'?0xb891ed:0xe0b17b,.25).setDepth(this.depth(config.x,config.y)+1);if(this.scene.project)ring.setScale?.(1,.5);this.scene.tweens.add({targets:ring,alpha:0,duration:350,onComplete:()=>ring.destroy()});if(config.kind==='stomp')this.scene.cameras?.main?.shake?.(130,.003);}
  shootHostile(m,shot){const angle=Math.atan2(shot.targetY-shot.y,shot.targetX-shot.x)+(shot.angleOffset||0),p={...shot,vx:Math.cos(angle)*shot.speed,vy:Math.sin(angle)*shot.speed,remaining:shot.range||600,source:m};const screen=this.view(p.x,p.y);p.renderHeight=m.kind.projectileOriginHeight||18;p.stoneBoulder=shot.visual==='stoneBoulder';p.throwDistance=Math.max(1,Math.hypot(shot.targetX-shot.x,shot.targetY-shot.y));p.originHeight=p.renderHeight;p.traveled=0;p.needle=m.kind.projectile==='needle';p.body=(p.stoneBoulder&&this.scene.textures?.exists?.('paintedEnvironment')?this.scene.add.image(screen.x,screen.y-p.renderHeight,'paintedEnvironment','rock').setOrigin(.5).setScale(.065):p.needle?this.scene.add.rectangle(screen.x,screen.y-p.renderHeight,13,2,0xe6d8a7).setRotation(projectAngle(angle)):this.scene.add.circle(screen.x,screen.y-p.renderHeight,shot.magic?6:4,shot.status?.type==='poison'?0x9ac76b:shot.magic?0xb49aeb:0xd5b98a)).setDepth(this.depth(p.x,p.y)+5);this.hostileProjectiles.push(p);return p;}
  removeHostileProjectile(p){if(!this.hostileProjectiles.includes(p))return;p.body.destroy();this.hostileProjectiles=this.hostileProjectiles.filter(q=>q!==p);}
  giantContext(m,now=this.now||0,dt=0,engaged=false){return {monster:m,hero:this.hero,participants:[this.hero],now,dt,engaged,safe:this.safe(),leashRadius:leashRadius(m),collisionRadius:movementProfile(m.kind).collisionRadius,canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config),clearProjectile:(p,id)=>{if(p?.source===m&&p.encounterId===id)this.removeHostileProjectile(p);},clearProjectiles:(source,id)=>{for(const p of [...this.hostileProjectiles])if(p.source===source&&p.encounterId===id)this.removeHostileProjectile(p);},onPhase:p=>{m.giantPhase=p.phase;this.label(m.x,m.y,p.names[this.scene.language]||p.names.ru,'#ffd48c');}};}
  cancelGiant(m){if(m.giantEncounter)cancelStoneGiantEncounter(m,this.giantContext(m));}
- tickAbility(m,now,dt,engaged){if(m.kind.encounter==='stoneGiant')return tickStoneGiantEncounter(this.giantContext(m,now,dt,engaged));return tickMonsterAbility({monster:m,hero:this.hero,now,dt,engaged,safe:this.safe(),canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config),effect:config=>this.abilityEffect(config)});}
+ tickAbility(m,now,dt,engaged){if(m.kind.encounter==='stoneGiant')return tickStoneGiantEncounter(this.giantContext(m,now,dt,engaged));return tickMonsterAbility({monster:m,hero:this.hero,now,dt,engaged,safe:this.safe(),canSee:(a,b)=>this.sight(a,b),canOccupy:(x,y,r)=>this.canOccupy(m,x,y,r),move:(x,y,amount)=>this.move(m,x,y,amount),damage:(attack,magic,status)=>{this.hurtHero(attack,now,magic,m);applyHeroAffliction(this.hero,status,now);},shoot:shot=>this.shootHostile(m,shot),warn:config=>this.warnAbility(config.kind==='stomp'&&m.kind.abilityConfig?.stunOnStomp>0?{...config,kind:'stun'}:config),effect:config=>this.abilityEffect(config)});}
 
  // Opt-in tactics receive the same physical movement/LOS constraints as the
  // normal AI. Existing kinds return their exact original intent unchanged.
@@ -238,7 +240,7 @@ export class MonsterSystem{
    const deadUntil=minion?DUNGEON_VISIT_DEAD_UNTIL:deathAt+respawnMs;m.respawnAt=deadUntil;
    this.hero.worldState.monsters[m.key]={deadUntil,killedAt:deathAt,hp:0};if(minion)recordDungeonMinionKill(this.hero,this.content,m.id,deathAt);
    cancelAur203Tactics(m);this.cancelWindup(m);this.cancelGiant(m);cancelMonsterAbility(m);this.setMonsterVisible(m,m.active);grantXp(this.hero,m.kind.xp);recordKill(this.hero,m.type,{id:m.id,campId:m.campId,speciesId:m.kind.speciesId,region:this.hero.region,boss:m.kind.boss,bossType:m.bossType});this.hero.gold=(this.hero.gold||0)+m.kind.gold;
-   const drops=rollEncounterLoot(this.hero,m.kind);this.scene.onMonsterKilled?.(m);this.scene.groundLoot?.dropMonster(m,drops,deathAt);this.onChange();
+   const drops=rollEncounterLoot(this.hero,m.kind);drops.push(...rollAur203GroundConsumables(m,deathAt));this.scene.onMonsterKilled?.(m);this.scene.groundLoot?.dropMonster(m,drops,deathAt);this.onChange();
   }
  }
  strike(m,now,multiplier=1,critical=false,projectile=true,after=()=>{},magicOverride){
@@ -246,6 +248,7 @@ export class MonsterSystem{
   if(projectile&&combatSpec(this.hero.classId).projectile)this.launch(m,impact);else impact(m);
  }
  attack(now){
+  if(isMonsterStunned(this.hero,now))return false;
   const spec=combatSpec(this.hero.classId),m=this.preferred(spec.range+(this.buffs.focus>now?70:0));if(!m||this.hero.hp<=0)return false;
   this.select(m,now);this.scene.facing=Math.atan2(m.y-this.hero.y,m.x-this.hero.x);this.combo=(this.combo+1)%3;
   if(Math.random()<(spec.missChance??.05)&&!(this.buffs.focus>now)){this.label(m.x,m.y,'·');return true;}
@@ -256,6 +259,7 @@ export class MonsterSystem{
  persistCooldowns(now=this.scene.playNow||0){for(const m of this.monsters)this.persistHealth(m,now);this.hero.combatCooldowns=Object.fromEntries([...this.cooldowns].map(([id,ready])=>[id,Date.now()+Math.max(0,ready-now)]));}
  skillRemaining(id,now){return Math.max(0,((this.cooldowns.get(id)||0)-now)/1000);}
  useSkill(id,now){
+  if(isMonsterStunned(this.hero,now))return {ok:false,reason:'stun'};
   const cast=prepareSkill(this.hero,id,now,this.cooldowns);if(!cast.ok)return cast;
   const {effect,multiplier,duration}=cast,range=effect==='dash'?240:Math.max(combatSpec(this.hero.classId).range,140),noTarget=['guard','rage','focus','heal','aura','evade'].includes(effect),target=this.preferred(range);
   if(!noTarget&&!target)return {ok:false,reason:'target'};if(effect==='heal'&&this.hero.hp>=this.hero.maxHp)return {ok:false,reason:'full'};

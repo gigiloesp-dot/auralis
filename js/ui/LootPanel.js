@@ -1,9 +1,10 @@
-import {itemDefinition,itemName,itemCount} from '../equipment/items.js';
+import {itemCount} from '../equipment/items.js';
+import {groundDropDefinition,groundDropName} from '../loot/groundConsumables.js';
 import {itemArt} from './itemPresentation.js';
 const COPY={
- ru:{title:'Добыча',close:'Закрыть',pickup:'Взять',all:'Забрать всё',level:'Ур.',quantity:'Количество',picked:'Подобрано',full:'Инвентарь заполнен',save:'Не удалось сохранить подбор',distance:'Предмет слишком далеко',missing:'Предмет уже подобран',busy:'Подбор выполняется',blocked:'Подбор недоступен',common:'Обычный',uncommon:'Необычный',rare:'Редкий',epic:'Эпический',legendary:'Легендарный'},
- en:{title:'Loot',close:'Close',pickup:'Take',all:'Take all',level:'Lv.',quantity:'Quantity',picked:'Picked up',full:'Inventory full',save:'Could not save pickup',distance:'Item is too far away',missing:'Item already collected',busy:'Pickup in progress',blocked:'Pickup unavailable',common:'Common',uncommon:'Uncommon',rare:'Rare',epic:'Epic',legendary:'Legendary'},
- es:{title:'Botín',close:'Cerrar',pickup:'Tomar',all:'Recoger todo',level:'Nv.',quantity:'Cantidad',picked:'Recogido',full:'Inventario lleno',save:'No se pudo guardar',distance:'El objeto está demasiado lejos',missing:'Objeto ya recogido',busy:'Recogida en curso',blocked:'Recogida no disponible',common:'Común',uncommon:'Inusual',rare:'Raro',epic:'Épico',legendary:'Legendario'}
+ ru:{title:'Добыча',close:'Закрыть',pickup:'Взять',all:'Забрать всё',level:'Ур.',quantity:'Количество',picked:'Подобрано',full:'Инвентарь заполнен',potionCapacity:'Можно нести не более 99 зелий каждого вида',save:'Не удалось сохранить подбор',distance:'Предмет слишком далеко',missing:'Предмет уже подобран',busy:'Подбор выполняется',blocked:'Подбор недоступен',common:'Обычный',uncommon:'Необычный',rare:'Редкий',epic:'Эпический',legendary:'Легендарный'},
+ en:{title:'Loot',close:'Close',pickup:'Take',all:'Take all',level:'Lv.',quantity:'Quantity',picked:'Picked up',full:'Inventory full',potionCapacity:'You can carry up to 99 potions of each kind',save:'Could not save pickup',distance:'Item is too far away',missing:'Item already collected',busy:'Pickup in progress',blocked:'Pickup unavailable',common:'Common',uncommon:'Uncommon',rare:'Rare',epic:'Epic',legendary:'Legendary'},
+ es:{title:'Botín',close:'Cerrar',pickup:'Tomar',all:'Recoger todo',level:'Nv.',quantity:'Cantidad',picked:'Recogido',full:'Inventario lleno',potionCapacity:'Puedes llevar hasta 99 pociones de cada tipo',save:'No se pudo guardar',distance:'El objeto está demasiado lejos',missing:'Objeto ya recogido',busy:'Recogida en curso',blocked:'Recogida no disponible',common:'Común',uncommon:'Inusual',rare:'Raro',epic:'Épico',legendary:'Legendario'}
 };
 const COLORS={common:'#aaa79f',uncommon:'#62c07b',rare:'#6fa9e2',epic:'#bb83df',legendary:'#f39a45'};
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -30,9 +31,9 @@ export class LootPanel{
   const t=this.copy();this.title.textContent=t.title+' · '+drops.length;this.root.setAttribute('aria-label',t.title);this.closeButton.setAttribute('aria-label',t.close);this.allButton.textContent=t.all;
   const scroll=this.list.scrollTop,focus=document.activeElement?.closest?.('[data-loot-id]')?.dataset.lootId;this.list.replaceChildren();
   for(const d of drops){
-   const item=d.item,def=itemDefinition(item),color=COLORS[item.rarity]||COLORS.common,row=el('article',undefined,'loot-row auralis-card');row.dataset.lootId=d.id;row.dataset.rarity=item.rarity;row.style.borderColor=color;row.setAttribute('role','listitem');
-   const art=itemArt(item,def);art.querySelector('rect')?.setAttribute('stroke',color);const copy=el('div',undefined,'loot-copy'),name=el('strong',itemName(item,language));name.style.color=color;const meta=[t[item.rarity]||t.common];if(def?.slot)meta.push(t.level+' '+def.level);meta.push('×'+itemCount(item));copy.append(name,el('small',meta.join(' · ')));
-   const pick=this.button(t.pickup,()=>{const r=this.loot.tryPickup(d.id);this.status.textContent=r.ok?t.picked+': '+itemName(r.item,language):t[r.reason]||t.blocked;this.update();},'pickup');pick.setAttribute('aria-label',t.pickup+': '+itemName(item,language));row.append(art,copy,pick);this.list.append(row);if(d.id===focus)pick.focus({preventScroll:true});
+   const item=d.item,def=groundDropDefinition(item),color=COLORS[item.rarity]||COLORS.common,row=el('article',undefined,'loot-row auralis-card');row.dataset.lootId=d.id;row.dataset.rarity=item.rarity;row.style.borderColor=color;row.setAttribute('role','listitem');
+   const art=itemArt(item,def);art.querySelector('rect')?.setAttribute('stroke',color);const copy=el('div',undefined,'loot-copy'),name=el('strong',groundDropName(item,language));name.style.color=color;const meta=[t[item.rarity]||t.common];if(def?.slot)meta.push(t.level+' '+def.level);meta.push('×'+itemCount(item));copy.append(name,el('small',meta.join(' · ')));
+   const pick=this.button(t.pickup,()=>{const r=this.loot.tryPickup(d.id);this.status.textContent=r.ok?t.picked+': '+groundDropName(r.item,language):t[r.reason]||t.blocked;this.update();},'pickup');pick.setAttribute('aria-label',t.pickup+': '+groundDropName(item,language));row.append(art,copy,pick);this.list.append(row);if(d.id===focus)pick.focus({preventScroll:true});
   }
   this.list.scrollTop=scroll;
  }

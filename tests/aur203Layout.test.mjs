@@ -4,23 +4,25 @@ import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {AUR203_REGIONS,AUR203_PLACEMENT,buildAur203Region} from '../js/world/aur203Layout.js';
 import {AUR203_PLACEMENTS} from '../js/world/aur203Placements.js';
-import {getRegionContent} from '../js/world/regionContent.js';
+import {getTask10RegionContent as getRegionContent,getRegionContent as getLiveRegionContent} from '../js/world/regionContent.js';
+import {assertActiveExpansion} from './worldExpansionScope.mjs';
 import {DUNGEONS} from '../js/dungeons/dungeonData.js';
 import {MONSTER_LEASH_RADIUS} from '../js/monsters/monsterBehavior.js';
 import {MOVEMENT_PROFILES} from '../js/monsters/movementProfiles.js';
 import {climateAt} from '../js/world/climate.js';
 import {regionRoads,distanceToSegment,worldWalkable,describeChunk,CHUNK_SIZE} from '../js/world/chunkGeometry.js';
 import {lineClear} from '../js/combat/geometry.js';
+import {regionGatheringNodes} from '../js/world/gatheringData.js';
 const ids=Object.keys(AUR203_REGIONS),distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y),radius=AUR203_PLACEMENT.collisionRadius;
 const reach=camp=>Math.max(...camp.spawns.map(s=>distance(s,camp)))+MONSTER_LEASH_RADIUS;
 const authoredSnapshot=JSON.parse(readFileSync(new URL('../docs/qa/aur203/task10-baseline.json',import.meta.url)));
 
-test('AUR-203 placement preparation is append-only and not activated in current runtime',()=>{
- assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/aur203Placements.js',import.meta.url))).digest('hex'),'652108eb4845b44f47163c726dc59f084f1d0d83cde84afd11730d24ee98f945','reserved art/placement identities cannot drift through regeneration');
+test('all84 frozen candidate positions survive independently from the exact first20 active species',()=>{
+ assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/aur203Placements.js',import.meta.url))).digest('hex'),'ed60202e7ec64014796cef6cdbe7094eadf0eafae4ef00a8ef817c035a0069cb','repaired reserved art/placement identities cannot drift through regeneration');
  let camps=0,residents=0;const allIds=new Set();
  for(const [region,config]of Object.entries(AUR203_REGIONS)){
-  const original=getRegionContent(region),added=AUR203_PLACEMENTS[region];
-  assert.equal(original.camps.length,config.first,'staging does not activate unfinished species');
+  const original=getRegionContent(region),added=AUR203_PLACEMENTS[region];assertActiveExpansion(getLiveRegionContent(region));
+  assert.equal(original.camps.length,config.first,'offline reproduction retains the exact original Task10 input');
   assert.equal(added.camps.length,config.count);assert.equal(original.camps.length+added.camps.length,config.total);
   assert.equal(added.diagnostics.runtimeIntegrated,false);assert.equal(added.diagnostics.residents,config.count*11);
   for(const camp of original.camps){assert.ok(!allIds.has(camp.id));allIds.add(camp.id);for(const s of camp.spawns){assert.ok(!allIds.has(s.id));allIds.add(s.id);}}
@@ -116,4 +118,32 @@ test('placement fails explicitly for invalid or impossible inputs rather than we
  assert.throws(()=>buildAur203Region({...content,camps:content.camps.slice(1)},DUNGEONS),/unchanged Task10 baseline/);
  const impossible={...content,width:1400,height:1400,roads:[{from:{x:0,y:0},to:{x:1400,y:1400},width:4000}],authoredSidePaths:[]};
  assert.throws(()=>buildAur203Region(impossible,DUNGEONS,{maxAttemptsPerCamp:4}),/No safe additive AUR-203 placement.*after4 attempts|No safe additive AUR-203 placement.*after 4 attempts/);
+});
+
+
+test('all84 unpublished additions preserve immutable32 gathering envelopes; repair touches onlyfive authorized unpublished candidates',()=>{
+ const receipt=JSON.parse(readFileSync(new URL('../docs/qa/aur203/gathering-clearance-repair.json',import.meta.url)));
+ assert.equal(createHash('sha256').update(receipt.beforeFile).digest('hex'),receipt.beforeSHA256);
+ assert.equal(receipt.beforeSHA256,'652108eb4845b44f47163c726dc59f084f1d0d83cde84afd11730d24ee98f945');
+ const previous=JSON.parse(receipt.beforeFile.split('export const AUR203_PLACEMENTS=')[1].replace(/;\s*$/,'')),changed=[];
+ for(const id of ids)for(const [index,camp]of AUR203_PLACEMENTS[id].camps.entries()){
+  const before=previous[id].camps[index];
+  assert.ok(regionGatheringNodes(id).every(n=>distance(n,camp)>=camp.radius+460),camp.id+' immutable plant clearance');
+  if(JSON.stringify(camp)===JSON.stringify(before))continue;
+  changed.push(camp.id);
+  const record=receipt.changes.find(c=>c.id===camp.id);assert.ok(record);
+  assert.deepEqual(record.beforeHomes,before.spawns);assert.deepEqual(record.afterHomes,camp.spawns);
+  assert.deepEqual(record.beforeCenter,{x:before.x,y:before.y});assert.deepEqual(record.afterCenter,{x:camp.x,y:camp.y});
+  assert.ok(id==='forest'||before.id==='north-spot-092','only authorized forest repack and north conflict may move');
+  const {x:bx,y:by,spawns:bs,...beforeFields}=before,{x:ax,y:ay,spawns:as,...afterFields}=camp;
+  assert.deepEqual(afterFields,beforeFields,'authored ID, level, biome and all other metadata stay exact');
+  assert.equal(as.length,11);
+  for(let i=0;i<11;i++){const{x,y,...fields}=as[i],{x:oldX,y:oldY,...oldFields}=bs[i];assert.deepEqual(fields,oldFields,'resident identity and metadata stay exact');}
+ }
+ assert.deepEqual(changed,['forest-spot-080','forest-spot-083','forest-spot-086','forest-spot-090','north-spot-092']);
+ assert.equal(receipt.unchangedNewCandidates,79);
+ assert.deepEqual(receipt.changes.map(c=>c.id),changed);
+ assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/gatheringData.js',import.meta.url))).digest('hex'),receipt.protectedGatheringSHA256);
+ assert.equal(createHash('sha256').update(readFileSync(new URL('../docs/qa/aur203/task10-baseline.json',import.meta.url))).digest('hex'),receipt.protectedBaselineSHA256);
+ assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/aur203Placements.js',import.meta.url))).digest('hex'),receipt.afterSHA256);
 });

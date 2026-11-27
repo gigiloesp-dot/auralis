@@ -1,3 +1,4 @@
+import {applyMonsterStun,isMonsterStunned,tickMonsterStun} from '../combat/monsterStun.js';
 // Movement and abilities describe real simulation actions. Rendering can use the
 // same locomotion/elevation data without making collision decisions itself.
 const profile=(movement,locomotion,ability,options={})=>Object.freeze({movement,locomotion,ability,collisionRadius:14,elevation:movement==='flight'?34:0,cooldown:6500,windup:650,range:190,radius:65,multiplier:1.2,...options});
@@ -52,7 +53,7 @@ export function tickMonsterAbility(context){
    if(distance(m,h)<=p.radius&&visible(m,h))context.damage?.(attack,false,p.status==='poison'?statusFor('venom',m.attack):state.ability==='burrow'?{type:'slow',multiplier:.6,duration:1300}:null);
   }else if(state.ability==='stomp'||state.ability==='roots'||state.ability==='frost'){
    context.effect?.({kind:state.ability,x:target.x,y:target.y,radius:p.radius});
-   if(distance(h,target)<=p.radius&&visible(target,h))context.damage?.(attack,state.ability!=='stomp',state.ability==='roots'?{type:'slow',multiplier:.35,duration:1800}:status);
+   if(distance(h,target)<=p.radius&&visible(target,h))context.damage?.(attack,state.ability!=='stomp',state.ability==='roots'?{type:'slow',multiplier:.35,duration:1800}:state.ability==='stomp'&&Number.isFinite(p.stunOnStomp)&&p.stunOnStomp>0?{type:'stun',duration:p.stunOnStomp}:status);
   }else if(state.ability==='cleave'){
    const facing=Math.atan2(target.y-m.y,target.x-m.x),toHero=Math.atan2(h.y-m.y,h.x-m.x),angle=Math.abs(Math.atan2(Math.sin(toHero-facing),Math.cos(toHero-facing)));
    context.effect?.({kind:'cleave',x:m.x,y:m.y,radius:p.radius,angle:facing});
@@ -85,13 +86,13 @@ export function tickMonsterAbility(context){
  return {busy:true,ability};
 }
 export function applyHeroAffliction(hero,status,now){
- if(!status||hero.hp<=0)return;hero.monsterAfflictions??={};
+ if(!status||hero.hp<=0)return;if(status.type==='stun')return applyMonsterStun(hero,status.duration,now);hero.monsterAfflictions??={};
  if(status.type==='poison')hero.monsterAfflictions.poison={until:now+status.duration,next:now+1000,damage:Math.max(1,status.damage||1)};
  if(status.type==='slow')hero.monsterAfflictions.slow={until:now+status.duration,multiplier:Math.max(.25,Math.min(1,status.multiplier||.6))};
 }
 export function tickHeroAfflictions(hero,now,damage){
- const states=hero.monsterAfflictions;if(!states)return;
+ tickMonsterStun(hero,now);const states=hero.monsterAfflictions;if(!states)return;
  if(hero.hp<=0){hero.monsterAfflictions={};return;}
  for(const [type,state]of Object.entries(states)){if(now>=state.until){delete states[type];continue;}if(type==='poison'&&now>=state.next){state.next=now+1000;damage(state.damage,true);}}
 }
-export function heroMovementMultiplier(hero,now){const slow=hero.monsterAfflictions?.slow;return slow?.until>now?slow.multiplier:1;}
+export function heroMovementMultiplier(hero,now){if(isMonsterStunned(hero,now))return 0;const slow=hero.monsterAfflictions?.slow;return slow?.until>now?slow.multiplier:1;}

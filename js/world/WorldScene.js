@@ -1,3 +1,4 @@
+import {isMonsterStunned,cancelMonsterStun} from '../combat/monsterStun.js';
 import {biomeZones} from './biomes.js';
 import {EffectsHud} from '../ui/EffectsHud.js';
 import {QuestTracker} from '../ui/QuestTracker.js';
@@ -50,7 +51,7 @@ export class WorldScene extends Phaser.Scene{
   this.canRestoreCharacter=data=>{const c=(data.region==='arena'?generateArenaContent(data):dungeonContentForHero(data))||REGIONS[data.region];return !!c&&data.x>=0&&data.y>=0&&data.x<=c.width&&data.y<=c.height;};this.savePanel=new SavePanel(this);this.battleHud=new BattleHud(this);this.effectsHud=new EffectsHud(this);this.minimap=new Minimap(this);this.targetPanel=new TargetPanel(this);this.interactions=new InteractionController(this);this.interactions.update();
   this.onSelectPointer=pointer=>{if(this.panelsOpen()||this.hero.hp<=0)return;const p=pointer.positionToCamera(this.cameras.main);const hit=this.monsters.monsters.filter(m=>this.monsters.canSee(m)&&m.body.getBounds?.().contains(p.x,p.y)).sort((a,b)=>(b.x+b.y)-(a.x+a.y))[0];if(hit)this.monsters.select(hit,this.playNow);};this.input.on('pointerdown',this.onSelectPointer);
   this.onPageHide=()=>this.save();this.onVisibilityChange=()=>{if(document.hidden){this.controls.reset();this.save();}};window.addEventListener('pagehide',this.onPageHide);document.addEventListener('visibilitychange',this.onVisibilityChange);
-  this.events.once('shutdown',()=>{this.save();this.closed=true;this.questTracker.destroy();this.input.off('pointerdown',this.onSelectPointer);this.interactions.destroy();this.groundLoot.destroy();this.exitPortal.destroy();this.targetState.clear();this.targetPanel.destroy();this.controls.destroy();this.monsters.destroy();this.world.destroy();this.rig.destroy();this.actorTextures.destroy();for(const name of PANEL_NAMES){this[name]?.destroy();this[name]=null;}this.battleHud.destroy();this.effectsHud.destroy();this.minimap.destroy();window.removeEventListener('pagehide',this.onPageHide);document.removeEventListener('visibilitychange',this.onVisibilityChange);this.scale.off('resize',this.onGameResize,this);});this.refreshHud();this.events.once('create',()=>window.Auralis?.pauseInterface?.onSceneReady(this));
+  this.events.once('shutdown',()=>{cancelMonsterStun(this.hero);this.save();this.closed=true;this.questTracker.destroy();this.input.off('pointerdown',this.onSelectPointer);this.interactions.destroy();this.groundLoot.destroy();this.exitPortal.destroy();this.targetState.clear();this.targetPanel.destroy();this.controls.destroy();this.monsters.destroy();this.world.destroy();this.rig.destroy();this.actorTextures.destroy();for(const name of PANEL_NAMES){this[name]?.destroy();this[name]=null;}this.battleHud.destroy();this.effectsHud.destroy();this.minimap.destroy();window.removeEventListener('pagehide',this.onPageHide);document.removeEventListener('visibilitychange',this.onVisibilityChange);this.scale.off('resize',this.onGameResize,this);});this.refreshHud();this.events.once('create',()=>window.Auralis?.pauseInterface?.onSceneReady(this));
  }
  panelsOpen(){return PANEL_NAMES.some(name=>this[name]?.opened);}
  closePanels(except){for(const name of PANEL_NAMES)if(this[name]!==except)this[name]?.close();this.controls?.reset();}
@@ -65,12 +66,13 @@ export class WorldScene extends Phaser.Scene{
   this.playNow+=dt*1000;this.world.tickTerrain(dt);
   if(h.hp>0&&Math.hypot(this.axis.x,this.axis.y)>.08)this.facing=this.world.move(this.axis,h.speed*heroMovementMultiplier(h,this.playNow),dt);
   const p=this.project(h.x,h.y);this.body.setPosition(p.x,p.y).setDepth(this.depthAt(h.x,h.y)+2);this.shadow.setPosition(p.x,p.y+7).setDepth(this.depthAt(h.x,h.y)-1);
-  let swing=this.attackCycle.state(this.playNow);if(swing.impact)this.monsters.attack(this.playNow,this.facing,swing.index);
-  const pressed=this.controls.consumeAttack();if(h.hp>0&&(this.controls.attacking||pressed)&&this.attackCycle.start(this.playNow,h))swing=this.attackCycle.state(this.playNow);
+  const stunned=isMonsterStunned(h,this.playNow);if(stunned)this.attackCycle.impactDone=true;
+  let swing=this.attackCycle.state(this.playNow);if(!stunned&&swing.impact)this.monsters.attack(this.playNow,this.facing,swing.index);
+  const pressed=this.controls.consumeAttack();if(h.hp>0&&!stunned&&(this.controls.attacking||pressed)&&this.attackCycle.start(this.playNow,h))swing=this.attackCycle.state(this.playNow);
   const cast=h.castAnimation,pose=cast?.until>this.playNow?{active:true,special:true,cycleId:cast.startedAt,progress:(this.playNow-cast.startedAt)/(cast.until-cast.startedAt),index:cast.index}:{...swing,cycleId:this.attackCycle.startedAt};
   this.rig.update(dt,this.axis,pose,projectAngle(this.facing));this.monsters.update(this.playNow,dt);this.updateTargetPanel();
   if(updateQuestProgress(this))this.save();
-  if(h.hp<=0){this.clearTarget();
+  if(h.hp<=0){cancelMonsterStun(h);this.clearTarget();
    h.deathStartedAt??=this.playNow;this.controls.reset();this.rig.update(dt,{x:0,y:0},{active:false},projectAngle(this.facing));this.refreshHud();
    if(this.playNow-h.deathStartedAt>=650){delete h.deathStartedAt;this.world.respawn();this.attackCycle=new AttackCycle();this.save();}
   }

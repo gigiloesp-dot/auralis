@@ -14,7 +14,7 @@ test('all original23 ordinary species have distinct produced art and missing bos
 // New types must work through both the actual camp descriptor and the generic
 // kind-only API; filtering the immutable old contract must not hide null art.
 test('all20 accepted AUR203 types resolve their own real camp and kind-only artwork without overriding explicit descriptor priority',()=>{
- const ids=Object.values(FIRST20_SPECIES).flat();assert.equal(ids.length,20);assert.deepEqual(Object.keys(AUR203_SPECIES).sort(),[...ids].sort());const keys=new Set();
+ const ids=Object.values(FIRST20_SPECIES).flat();assert.equal(ids.length,20);assert.equal(Object.keys(AUR203_SPECIES).length,84);assert.ok(ids.every(id=>Object.hasOwn(AUR203_SPECIES,id)));const keys=new Set();
  for(const id of ids){
   const row=AUR203_SPECIES[id],camp=getRegionContent(row.region).camps.find(camp=>camp.speciesId===id);assert.ok(camp,id+'/active camp');const descriptor=camp.spawns[0],actualKind=monsterKind(descriptor),entry=AUR203_SPECIES_ART[id];
   assert.equal(monsterArt(descriptor.type,actualKind,descriptor),entry,id+'/real descriptor');

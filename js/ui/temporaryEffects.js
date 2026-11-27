@@ -1,7 +1,8 @@
+import {monsterStunRemaining} from '../combat/monsterStun.js';
 import {getSkills} from '../skills/skillData.js';
 import {skillEffect} from '../combat/skillRuntime.js';
 const timed=new Set(['guard','rage','focus','aura','evade']);
-const names={ru:{poison:'Яд',slow:'Замедление'},en:{poison:'Poison',slow:'Slow'},es:{poison:'Veneno',slow:'Ralentización'}};
+const names={ru:{poison:'Яд',slow:'Замедление',stun:'Оглушение'},en:{poison:'Poison',slow:'Slow',stun:'Stun'},es:{poison:'Veneno',slow:'Ralentización',stun:'Aturdimiento'}};
 const cache=new Map();
 const skills=(id,lang)=>{const key=id+':'+lang;if(!cache.has(key))cache.set(key,getSkills(id,lang));return cache.get(key);};
 export function effectTime(ms){const seconds=Math.ceil(Math.max(0,ms)/1000);return seconds>=60?Math.floor(seconds/60)+':'+String(seconds%60).padStart(2,'0'):String(seconds);}
@@ -17,5 +18,6 @@ export function temporaryEffects(hero,buffs={},now=0,language='ru'){
   const until=hero.monsterAfflictions?.[effect]?.until;
   if(Number.isFinite(until)&&until>now){const skill=skills(source,language)[index];result.push({id:'affliction-'+effect,name:(names[language]||names.ru)[effect],iconSvg:skill.iconSvg,until,remaining:until-now,time:effectTime(until-now),negative:true});}
  }
+ const remaining=monsterStunRemaining(hero,now);if(remaining>0){const skill=skills('warrior',language)[2];result.push({id:'affliction-stun',name:(names[language]||names.ru).stun,iconSvg:skill.iconSvg,until:now+remaining,remaining,time:effectTime(remaining),negative:true});}
  return result;
 }

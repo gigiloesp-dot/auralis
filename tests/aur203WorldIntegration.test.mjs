@@ -11,11 +11,11 @@ import {integratedSpeciesArt} from '../js/assets/speciesArtRegistry.js';
 import {itemDefinition} from '../js/equipment/items.js';
 import {rollMonsterLoot} from '../js/monsters/loot.js';
 import {monsterIntent,leashRadius} from '../js/monsters/monsterBehavior.js';
-import {WORLD_REGIONS,FIRST20_SPECIES,assertActiveExpansion,originalTask10Camps} from './worldExpansionScope.mjs';
+import {WORLD_REGIONS,FINAL_SPECIES,assertActiveExpansion,originalTask10Camps} from './worldExpansionScope.mjs';
 const banks=['idle','run-a','run-b','attack','hurt','death'],dirs=['n','ne','e','se','s','sw','w','nw'];
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 
-test('first20 acceptance activates exactly277 camps and3047 residents, retaining the original257 as an exact prefix',()=>{
+test('final84 acceptance activates exactly341 camps and3751 residents, retaining the original257 as an exact prefix',()=>{
  let campCount=0,residentCount=0,addedCount=0;const camps=new Set(),residents=new Set(),species=new Set();
  for(const region of WORLD_REGIONS){
   const live=getRegionContent(region),base=getTask10RegionContent(region),original=originalTask10Camps(live),added=assertActiveExpansion(live);
@@ -24,7 +24,7 @@ test('first20 acceptance activates exactly277 camps and3047 residents, retaining
    for(const spawn of camp.spawns){residentCount++;assert.ok(!residents.has(spawn.id));residents.add(spawn.id);assert.equal(monsterKind(spawn).respawnMs,30000);}
   }
  }
- assert.equal(campCount,277);assert.equal(residentCount,3047);assert.equal(addedCount,20);assert.equal(species.size,277);assert.equal(uniqueSpeciesEntries().length,257,'Immutable Task10 art scope remains257');
+ assert.equal(campCount,341);assert.equal(residentCount,3751);assert.equal(addedCount,84);assert.equal(species.size,341);assert.equal(uniqueSpeciesEntries().length,257,'Immutable Task10 art scope remains257');
 });
 
 test('scope guards reject missing or reordered originals, duplicate IDs, unaccepted species and malformed new residents',()=>{
@@ -32,12 +32,12 @@ test('scope guards reject missing or reordered originals, duplicate IDs, unaccep
  assert.throws(()=>assertActiveExpansion(copy(live.camps.slice(1))));
  const reordered=[...live.camps];[reordered[0],reordered[1]]=[reordered[1],reordered[0]];assert.throws(()=>assertActiveExpansion(copy(reordered)));
  const duplicate=[...live.camps];duplicate[duplicate.length-1]={...duplicate.at(-1),id:duplicate[0].id};assert.throws(()=>assertActiveExpansion(copy(duplicate)));
- const future={...live.camps.at(-1),id:'forest-spot-096',speciesId:'forest-species-096'};assert.throws(()=>assertActiveExpansion(copy([...live.camps,future])));
+ const future={...live.camps.at(-1),id:'forest-spot-097',speciesId:'forest-species-097'};assert.throws(()=>assertActiveExpansion(copy([...live.camps,future])));
  const malformed=[...live.camps],last=malformed.at(-1);malformed[malformed.length-1]={...last,spawns:last.spawns.map((spawn,index)=>index===0?{...spawn,id:'unexpected-persistent-id'}:spawn)};assert.throws(()=>assertActiveExpansion(copy(malformed)));
 });
 
-test('all277 actual outdoor renderers have distinct model, texture and atlas identities with48 complete directional frames',()=>{
- const identities={key:new Set(),url:new Set(),atlasURL:new Set(),pixels:new Set()},accepted=new Set(Object.values(FIRST20_SPECIES).flat());let total=0,newModels=0;
+test('all341 actual outdoor renderers have distinct model, texture and atlas identities with48 complete directional frames',()=>{
+ const identities={key:new Set(),url:new Set(),atlasURL:new Set(),pixels:new Set()},accepted=new Set(Object.values(FINAL_SPECIES).flat());let total=0,newModels=0;
  for(const region of WORLD_REGIONS)for(const camp of getRegionContent(region).camps){
   const spawn=camp.spawns[0],kind=monsterKind(spawn),entry=monsterArt(spawn.type,kind,spawn);assert.ok(entry,camp.id+'/actual renderer');assert.equal(entry,integratedSpeciesArt(camp.speciesId));
   for(const field of ['key','url','atlasURL']){assert.equal(identities[field].has(entry[field]),false,camp.id+'/'+field+' duplicated');identities[field].add(entry[field]);}
@@ -48,11 +48,11 @@ test('all277 actual outdoor renderers have distinct model, texture and atlas ide
   const cells=new Set();for(const[name,frame]of Object.entries(atlas.frames)){const f=frame.frame;assert.equal(f.w,fw);assert.equal(f.h,fh);assert.ok(f.x>=0&&f.y>=0&&f.x+fw<=width&&f.y+fh<=height);assert.equal(f.x%fw,0);assert.equal(f.y%fh,0);cells.add(f.x+','+f.y);assert.equal(frame.rotated??false,false);assert.equal(frame.trimmed??false,false);if(accepted.has(camp.speciesId))assert.ok(Number.isFinite(entry.footlines[name])&&entry.footlines[name]>0&&entry.footlines[name]<fh,name+'/measured footline');}assert.equal(cells.size,48);
   total++;if(accepted.has(camp.speciesId))newModels++;
  }
- assert.equal(total,277);assert.equal(newModels,20);for(const set of Object.values(identities))assert.equal(set.size,277);
+ assert.equal(total,341);assert.equal(newModels,84);for(const set of Object.values(identities))assert.equal(set.size,341);
 });
 
-test('all twenty active species expose real localized names, distinct opt-in tactics, abilities and registered thematic inventory drops',()=>{
- const accepted=new Set(Object.values(FIRST20_SPECIES).flat()),materialIds=new Set(),tactics=new Set();let count=0;
+test('all eighty-four active species expose real localized names, distinct opt-in tactics, abilities and registered thematic inventory drops',()=>{
+ const accepted=new Set(Object.values(FINAL_SPECIES).flat()),materialIds=new Set(),tactics=new Set();let count=0;
  for(const region of WORLD_REGIONS)for(const camp of getRegionContent(region).camps){if(!accepted.has(camp.speciesId))continue;count++;
   assert.equal(camp.temporaryBestiary,false,camp.id+'/honest completed-art metadata');assert.equal(camp.aur203Revision,1);
   const kind=monsterKind(camp.spawns[0]),profile=movementProfile(kind);assert.equal(kind.speciesId,camp.speciesId);assert.equal(kind.boss,false);assert.ok(kind.hp>0&&kind.attack>0&&kind.speed>0&&kind.defense>=0);assert.ok(kind.level>=getRegionContent(region).minLevel&&kind.level<=getRegionContent(region).maxLevel);
@@ -61,11 +61,11 @@ test('all twenty active species expose real localized names, distinct opt-in tac
   const drops=rollMonsterLoot({classId:'warrior',level:56,stats:{luck:5}},kind,()=>0).filter(item=>itemDefinition(item)?.monsterMaterial);assert.equal(drops.length,1,camp.id+'/actual successful material roll');
   const definition=itemDefinition(drops[0]);materialIds.add(drops[0].id);assert.equal(definition.slot,null);assert.equal(definition.saleValue,0);for(const language of ['ru','en','es'])assert.ok(definition.names[language]);assert.match(definition.iconURL,/^assets\/icons\/monster-materials\/aur203-[a-z0-9-]+\.png$/);assert.ok(readFileSync(definition.iconURL).length>0);
  }
- assert.equal(count,20);assert.equal(materialIds.size,20);assert.ok(tactics.size>=4,'New species must not share one identical behavior configuration');
+ assert.equal(count,84);assert.equal(materialIds.size,84);assert.ok(tactics.size>=4,'New species must not share one identical behavior configuration');
 });
 
-test('all220 new resident homes remain outside receiver detection and pursuit margins and cannot auto-aggro a fresh arrival',()=>{
- const accepted=new Set(Object.values(FIRST20_SPECIES).flat());let residents=0,checks=0;
+test('all924 new resident homes remain outside receiver detection and pursuit margins and cannot auto-aggro a fresh arrival',()=>{
+ const accepted=new Set(Object.values(FINAL_SPECIES).flat());let residents=0,checks=0;
  // Existing respawn placement reserves this additional player clearance.
  // It is more conservative than the hero body radius, not a new AI range.
  const arrivalClearance=44;
@@ -83,5 +83,5 @@ test('all220 new resident homes remain outside receiver detection and pursuit ma
    }
   }
  }
- assert.equal(residents,220);assert.equal(checks,660);
+ assert.equal(residents,924);assert.equal(checks,2772);
 });

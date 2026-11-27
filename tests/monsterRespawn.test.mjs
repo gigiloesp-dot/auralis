@@ -1,4 +1,4 @@
-import {originalTask10Camps,assertActiveExpansion,FIRST20_SPECIES} from './worldExpansionScope.mjs';
+import {originalTask10Camps,assertActiveExpansion,FINAL_SPECIES} from './worldExpansionScope.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {MonsterSystem} from '../js/monsters/MonsterSystem.js';
@@ -18,7 +18,7 @@ function setup({type='forestWolf',respawnMs,playNow=0,heroData={},legacy=false}=
 function withWall(run){const original=Date.now;let wall=1000000;Date.now=()=>wall;try{run(value=>{wall=value;});}finally{Date.now=original;}}
 
 test('every ordinary species rejects a short descriptor and waits until the exact death deadline',()=>withWall(setWall=>{
- const legacy=ordinaryTypes.filter(type=>MONSTER_TYPES[type].aur203Revision!==1),added=ordinaryTypes.filter(type=>MONSTER_TYPES[type].aur203Revision===1);assert.equal(legacy.length,23);assert.equal(added.length,20);assert.equal(ordinaryTypes.length,43);assert.deepEqual(added.map(type=>MONSTER_TYPES[type].speciesId).sort(),Object.values(FIRST20_SPECIES).flat().sort());
+ const legacy=ordinaryTypes.filter(type=>MONSTER_TYPES[type].aur203Revision!==1),added=ordinaryTypes.filter(type=>MONSTER_TYPES[type].aur203Revision===1);assert.equal(legacy.length,23);assert.equal(added.length,84);assert.equal(ordinaryTypes.length,107);assert.deepEqual(added.map(type=>MONSTER_TYPES[type].speciesId).sort(),Object.values(FINAL_SPECIES).flat().sort());
  for(const type of ordinaryTypes){
   setWall(1000000);assert.equal(monsterKind({type,respawnMs:11000}).respawnMs,30000,type);
   const {system,hero,m}=setup({type,respawnMs:11000,playNow:900000});
@@ -82,7 +82,7 @@ test('all authored outdoor descriptors have stable unique state IDs and a thirty
    const kind=monsterKind(descriptor);if(!kind.boss){assert.equal(kind.respawnMs,30000,key);count++;}
   }
  }
- assert.equal(originalCount,2827);assert.equal(count,3047);
+ assert.equal(originalCount,2827);assert.equal(count,3751);
 });
 
 test('an expired legacy death without killedAt still passes the safe respawn check on reload',()=>withWall(setWall=>{

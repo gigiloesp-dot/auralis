@@ -2,15 +2,17 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {AUR203_SPECIES,AUR203_READY_SPECIES_IDS,AUR203_SPECIES_ART,createAur203MonsterTypes,buildReadyAur203Camps} from '../js/monsters/aur203Species.js';
-import {AUR203_MATERIALS,AUR203_MATERIAL_BY_LOOT} from '../js/equipment/aur203Materials.js';
+import {AUR203_SPECIES,AUR203_READY_SPECIES_IDS,AUR203_SPECIES_ART,createAur203MonsterTypes,buildReadyAur203Camps as buildAllReadyAur203Camps} from '../js/monsters/aur203Species.js';
+import {MONSTER_MATERIALS as AUR203_MATERIALS,MONSTER_MATERIAL_BY_LOOT as AUR203_MATERIAL_BY_LOOT} from '../js/equipment/monsterMaterials.js';
+import {FIRST20_SPECIES} from './worldExpansionScope.mjs';
 import {AUR203_PLACEMENTS} from '../js/world/aur203Placements.js';
 import {MONSTER_TYPES,monsterKind} from '../js/monsters/monsters.js';
 import {MOVEMENT_PROFILES,movementProfile,tickMonsterAbility,blockingObstacles} from '../js/monsters/movementProfiles.js';
 import {getRegionContent} from '../js/world/regionContent.js';
 import {DUNGEONS} from '../js/dungeons/dungeonData.js';
 import {worldWalkable,describeChunk,CHUNK_SIZE} from '../js/world/chunkGeometry.js';
-const definitions=Object.values(AUR203_SPECIES),newTypeIds=new Set(definitions.map(row=>row.type));
+const first20Ids=Object.values(FIRST20_SPECIES).flat(),definitions=first20Ids.map(id=>AUR203_SPECIES[id]),newTypeIds=new Set(Object.values(AUR203_SPECIES).map(row=>row.type));
+const buildReadyAur203Camps=(region,options)=>buildAllReadyAur203Camps(region,options?{speciesIds:first20Ids,...options}:options);
 const baseTypes=Object.fromEntries(Object.entries(MONSTER_TYPES).filter(([id])=>!newTypeIds.has(id)));
 const types=createAur203MonsterTypes(baseTypes),registries={registeredTypes:types,registeredArt:AUR203_SPECIES_ART,materials:AUR203_MATERIALS,materialByLoot:AUR203_MATERIAL_BY_LOOT};
 const expected={forest:8,north:4,ancient:4,desert:4},sha=bytes=>createHash('sha256').update(bytes).digest('hex');
@@ -20,8 +22,8 @@ const expected={forest:8,north:4,ancient:4,desert:4},sha=bytes=>createHash('sha2
 // Once the parent installs all20 kinds, use the real registered engine directly.
 async function engine(){
  const count=[...newTypeIds].filter(id=>Object.hasOwn(MONSTER_TYPES,id)).length;
- assert.ok(count===0||count===20,'A type registry must never be partially assembled');
- if(count===20)return {monsterKind};
+ assert.ok(count===0||count===84,'A type registry must never be partially assembled');
+ if(count===84)return {monsterKind};
  let source=readFileSync(new URL('../js/monsters/monsters.js',import.meta.url),'utf8');
  for(const [path,target]of Object.entries({'./speciesRuntime.js':'../js/monsters/speciesRuntime.js','../config/gameConfig.js':'../js/config/gameConfig.js'}))source=source.replaceAll("'"+path+"'",JSON.stringify(new URL(target,import.meta.url).href));
  const original='export const MONSTER_TYPES=Object.freeze({',marker='export const MONSTER_CAMPS=Object.freeze([';
@@ -32,7 +34,7 @@ async function engine(){
 }
 
 test('the first20 completed species have distinct identities, original48-pose art and exact provenance names',()=>{
- assert.equal(definitions.length,20);assert.equal(newTypeIds.size,20);assert.equal(AUR203_READY_SPECIES_IDS.length,20);
+ assert.equal(definitions.length,20);assert.equal(new Set(definitions.map(row=>row.type)).size,20);assert.equal(newTypeIds.size,84);assert.equal(AUR203_READY_SPECIES_IDS.length,84);
  const images=new Set(),atlases=new Set(),keys=new Set(),english=new Set(),tactics=new Set();
  for(const row of definitions){
   assert.equal(row.loot,row.type);assert.equal(baseTypes[row.type],undefined);assert.ok(baseTypes[row.baseType]&&!baseTypes[row.baseType].boss);
@@ -53,7 +55,7 @@ test('the first20 completed species have distinct identities, original48-pose ar
 });
 
 test('factory preserves every original type and creates only explicit ordinary kinds with bounded proposed stats',()=>{
- const before=structuredClone(baseTypes),result=createAur203MonsterTypes(baseTypes);assert.deepEqual(baseTypes,before);assert.equal(Object.keys(result).length,20);
+ const before=structuredClone(baseTypes),result=createAur203MonsterTypes(baseTypes);assert.deepEqual(baseTypes,before);assert.equal(Object.keys(result).length,84);
  for(const row of definitions){const kind=result[row.type],base=baseTypes[row.baseType];assert.equal(kind.speciesId,row.id);assert.equal(kind.names.ru,row.names.ru);assert.equal(kind.boss,false);assert.equal(kind.respawnMs,30000);assert.equal(kind.level,base.level);assert.equal(kind.xp,base.xp);assert.equal(kind.gold,base.gold);assert.equal(kind.loot,row.loot);assert.equal(kind.movementProfile,row.movementProfile);assert.deepEqual(kind.behaviorConfig,row.behaviorConfig);for(const field of ['hp','attack','speed'])assert.ok(Number.isFinite(kind[field])&&kind[field]>0);for(const field of ['defense','magicDefense'])assert.ok(Number.isFinite(kind[field])&&kind[field]>=0);assert.ok(kind.speed>=26&&kind.speed<=145);assert.ok(Object.isFrozen(kind)&&Object.isFrozen(kind.behaviorConfig));}
  assert.throws(()=>createAur203MonsterTypes(),/Base monster/);assert.throws(()=>createAur203MonsterTypes({...baseTypes,bear:undefined}),/Missing ordinary base/);assert.throws(()=>createAur203MonsterTypes({...baseTypes,[definitions[0].type]:{}}),/already registered/);
  const mutable=structuredClone(baseTypes);mutable.bear.extra={unchanged:true};const copied=createAur203MonsterTypes(mutable);assert.equal(Object.isFrozen(mutable.bear.extra),false);assert.notEqual(copied[definitions[0].type].extra,mutable.bear.extra);assert.equal(mutable.bear.extra.unchanged,true);
@@ -112,9 +114,9 @@ test('every selected resident occupies the actual terrain and clear collider foo
  }
 });
 
-test('activation fails closed for unfinished64 species, missing mappings, incorrect art registration and unknown item IDs',()=>{
+test('activation fails closed for unknown species, missing mappings, incorrect art registration and unknown item IDs',()=>{
  assert.throws(()=>buildReadyAur203Camps('forest'),/registries/);assert.throws(()=>buildReadyAur203Camps('unknown',registries),/Unknown/);
- assert.throws(()=>buildReadyAur203Camps('forest',{...registries,speciesIds:['forest-species-088']}),/Unfinished/);assert.throws(()=>buildReadyAur203Camps('forest',{...registries,speciesIds:[definitions[0].id,definitions[0].id]}),/Unique/);
+ assert.throws(()=>buildReadyAur203Camps('forest',{...registries,speciesIds:['forest-species-097']}),/Unfinished/);assert.throws(()=>buildReadyAur203Camps('forest',{...registries,speciesIds:[definitions[0].id,definitions[0].id]}),/Unique/);
  const row=definitions[0],type={...types};delete type[row.type];assert.throws(()=>buildReadyAur203Camps('forest',{...registries,registeredTypes:type}),/type is not ready/);
  const badType={...types,[row.type]:{...types[row.type],abilityConfig:{abilityPattern:['shot']}}};assert.throws(()=>buildReadyAur203Camps('forest',{...registries,registeredTypes:badType}),/type is not ready/);
  const art={...AUR203_SPECIES_ART,[row.id]:{...row.art,scale:99}};assert.throws(()=>buildReadyAur203Camps('forest',{...registries,registeredArt:art}),/art is not ready/);

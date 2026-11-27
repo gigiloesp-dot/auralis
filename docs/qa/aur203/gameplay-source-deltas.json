@@ -1,5 +1,5 @@
 {
-  "requirement": "AUR-203: actual web/material additions and first20 opt-in creature tactics; every unrelated original source byte remains protected",
+  "requirement": "AUR-203 additive84 species, thematic materials, opt-in tactics/stun and ground consumables; protected original catalogs and geographic baselines retained",
   "baselineCommit": "4a0eb5a77cbc75f9952922d4166af466971018e8",
   "files": {
     "js/monsters/loot.js": {
@@ -12,7 +12,7 @@
     },
     "js/monsters/movementProfiles.js": {
       "before": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4",
-      "after": "a778d5daa4c4328192ff7657cbd454eea792146acbcb0318b7e93d829cf13016"
+      "after": "f80395479431f5f55c1f73fff15409938101d218d11413b7a245f028dfd70de3"
     },
     "js/monsters/monsters.js": {
       "before": "0c60ede0c78dd94160244666298c8cf67ae85b840ef51408855c8a7fa4e19905",
@@ -20,7 +20,7 @@
     },
     "js/monsters/MonsterSystem.js": {
       "before": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2",
-      "after": "34e4f47d11c6c3573aa1b4965adb52bf4996f16b70d716fc224e35c88139756f"
+      "after": "fb11ff981a4a62804cbf2c583dc9b710cfe51b0278b369279e41b0bfefb1bab8"
     },
     "js/world/regionContent.js": {
       "before": "3d54c592833cc2244c14605c9aec61f4d98551fbddc478383c471531219a2f8f",
@@ -29,6 +29,34 @@
     "js/assets/monsterArt.js": {
       "before": "8da30624dfe062c34ba1d1cdf8194c9032402981577452dc348d25d890c66f8e",
       "after": "0a975597979de26b1b61333f9bfa1493967ee28fab569a7e601cf5f0e27ff956"
+    },
+    "js/combat/skillRuntime.js": {
+      "before": "a74f2de1f23b76799cf6885ee43fe4aaac863b3309ca14dbdfd14cdb7971464b",
+      "after": "3f8c688527ba5718a591b16f8fdce6c12ba43976be465ca2c7bffac766d28a3b"
+    },
+    "js/world/WorldScene.js": {
+      "before": "1c5305a0d3934656704a661f72225890f46d5cdf100b172a9e052bc28bd8f870",
+      "after": "f798ddff5e2814cfd1193486afd065bf17e9dfeabf8bdd27e96ef410569eff61"
+    },
+    "js/world/WorldRuntime.js": {
+      "before": "d9124ba621b4bb7285b4cac9930e42ffe1ee695c34174aca9a6d8a49767c1865",
+      "after": "a5713d90616bad82edba8117390275bf3d367af3825ff6a0599fea930de08167"
+    },
+    "js/ui/temporaryEffects.js": {
+      "before": "689115813843184f1c90c5818b5d79951d64e4f43e4db4921cafd60206d72ecf",
+      "after": "10eedc4c3a639c725b5c429ddec84397e946111c8c9afe7ccbb71290bd9a632c"
+    },
+    "js/ui/LootPanel.js": {
+      "before": "5d1f0949817bb6de430765c90f1017d67911bd919037a987a05b3dff89237a31",
+      "after": "da26deba2a53d855fd6a94091efa1ba79f7caf10035aedc61b88fb9c93f9900a"
+    },
+    "js/loot/groundLoot.js": {
+      "before": "f42d63ee1b427ec4fd87a133c0e5773877129bc9aee6428d21c87074b9591119",
+      "after": "88e6ca3475ffc35cb1bc7ff257b32b7e2e143802a111f626290cb1ca0e2fc0fa"
+    },
+    "js/loot/GroundLootSystem.js": {
+      "before": "e2c850c51be0c9b5348e32dbf543f466f38b03460d147ce0f4877892817a5800",
+      "after": "1c7372fd5cd7961dbac03551156849fe7ff5b9c147d3af999914c62a3bc36a5a"
     }
   }
 }

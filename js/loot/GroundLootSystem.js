@@ -1,8 +1,8 @@
 import {LootPanel} from '../ui/LootPanel.js';
 import {createGroundDrops,materializeGroundDrops,groundLootState,lootCategory,pickupGroundDrop,nearbyGroundDrops,pickupNearbyGroundDrops} from './groundLoot.js';
-import {itemName} from '../equipment/items.js';
+import {groundDropName} from './groundConsumables.js';
 import {worldWalkable} from '../world/chunkGeometry.js';
-const labels={ru:{picked:'Подобрано',full:'Инвентарь заполнен',save:'Не удалось сохранить подбор',common:'Обычный',uncommon:'Необычный',rare:'Редкий',epic:'Эпический',legendary:'Легендарный'},en:{picked:'Picked up',full:'Inventory full',save:'Could not save pickup',common:'Common',uncommon:'Uncommon',rare:'Rare',epic:'Epic',legendary:'Legendary'},es:{picked:'Recogido',full:'Inventario lleno',save:'No se pudo guardar la recogida',common:'Común',uncommon:'Inusual',rare:'Raro',epic:'Épico',legendary:'Legendario'}};
+const labels={ru:{picked:'Подобрано',full:'Инвентарь заполнен',potionCapacity:'Можно нести не более 99 зелий каждого вида',save:'Не удалось сохранить подбор',common:'Обычный',uncommon:'Необычный',rare:'Редкий',epic:'Эпический',legendary:'Легендарный'},en:{picked:'Picked up',full:'Inventory full',potionCapacity:'You can carry up to 99 potions of each kind',save:'Could not save pickup',common:'Common',uncommon:'Uncommon',rare:'Rare',epic:'Epic',legendary:'Legendary'},es:{picked:'Recogido',full:'Inventario lleno',potionCapacity:'Puedes llevar hasta 99 pociones de cada tipo',save:'No se pudo guardar la recogida',common:'Común',uncommon:'Inusual',rare:'Raro',epic:'Épico',legendary:'Legendario'}};
 const polygon=(g,points)=>{g.beginPath().moveTo(...points[0]);for(const p of points.slice(1))g.lineTo(...p);g.closePath().fillPath().strokePath();};
 export class GroundLootSystem{
  constructor(scene,hero){this.scene=scene;this.hero=hero;this.markers=new Map();this.destroyed=false;this.nextUpdate=0;this.nextPendingRetry=0;this.pendingCursor=0;groundLootState(hero);this.panel=typeof document!=='undefined'?new LootPanel(scene,this):null;}
@@ -56,7 +56,7 @@ export class GroundLootSystem{
  tryPickup(id){
   if(this.blocked())return {ok:false,reason:'blocked'};
   const result=pickupGroundDrop(this.hero,id,{save:()=>this.scene.save()}),t=labels[this.scene.language]||labels.ru;
-  if(result.ok){this.markers.get(id)?.root.destroy();this.markers.delete(id);this.scene.notify?.(t.picked+': '+itemName(result.item,this.scene.language)+' · '+t[result.item.rarity]);this.scene.refreshHud?.();this.panel?.update();}
+  if(result.ok){this.markers.get(id)?.root.destroy();this.markers.delete(id);this.scene.notify?.(t.picked+': '+groundDropName(result.item,this.scene.language)+' · '+t[result.item.rarity]);this.scene.refreshHud?.();this.panel?.update();}
   else if(t[result.reason])this.scene.notify?.(t[result.reason]);return result;
  }
  nearbyDrops(){return nearbyGroundDrops(this.hero);}

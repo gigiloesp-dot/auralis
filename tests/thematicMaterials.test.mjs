@@ -34,10 +34,10 @@ test('all old wolf and boss drops and RNG calls remain identical across12420seed
  assert.deepEqual(MATERIAL_DROP_RATES,{wolfFang:.175,wolfPelt:.10});assert.deepEqual(NORMAL_EQUIPMENT_RATES,{common:.008,uncommon:.003,rare:.001,epic:.0001,legendary:0});
  assert.deepEqual(BOSS_LOOT_TABLES.mini.groups.map(g=>g.chance),[.20,.03,.007,.001]);assert.equal(BOSS_LOOT_TABLES.world.groups.at(-1).chance,.0001);
 });
-test('sixteen prior and twenty new non-equipment materials preserve every preexisting item definition and all shops',()=>{
+test('sixteen prior and eighty-four new non-equipment materials preserve every preexisting item definition and all shops',()=>{
  const original=Object.fromEntries(Object.entries(ITEM_DEFS).filter(([id])=>!Object.hasOwn(MONSTER_MATERIALS,id)));
- assert.equal(Object.keys(original).length,baseline.oldDefs.count);assert.equal(hash(JSON.stringify(original)),baseline.oldDefs.sha256);assert.equal(Object.values(MONSTER_MATERIALS).filter(d=>!d.aur203Material).length,16);assert.equal(Object.keys(MONSTER_MATERIALS).length,36);
- assert.equal(Object.keys(ITEM_DEFS).length,baseline.oldDefs.count+16+20);
+ assert.equal(Object.keys(original).length,baseline.oldDefs.count);assert.equal(hash(JSON.stringify(original)),baseline.oldDefs.sha256);assert.equal(Object.values(MONSTER_MATERIALS).filter(d=>!d.aur203Material).length,16);assert.equal(Object.keys(MONSTER_MATERIALS).length,100);
+ assert.equal(Object.keys(ITEM_DEFS).length,baseline.oldDefs.count+16+84);
  const types=new Set(Object.values(MONSTER_TYPES).filter(k=>!k.boss&&k.loot!=='wolf').map(k=>k.loot));assert.deepEqual(new Set(Object.keys(MONSTER_MATERIAL_BY_LOOT)),types);
  for(const[id,d]of Object.entries(MONSTER_MATERIALS)){assert.equal(d.slot,null);assert.equal(d.saleValue,0);assert.equal(d.monsterMaterial,true);assert.equal(d.attack,undefined);assert.equal(d.defense,undefined);assert.equal(d.allowedClasses,undefined);assert.ok(itemDefinition({id}));for(const l of ['ru','en','es'])assert.equal(itemName({id},l),d.names[l]);assert.equal(new Set(Object.values(d.names)).size,3);}
  for(const classId of classes){const h=createCharacter({classId,level:56});assert.deepEqual(h.inventory,[]);assert.ok(merchantStock(h,{role:'merchant'}).every(i=>!Object.hasOwn(MONSTER_MATERIALS,i.id)));}
@@ -45,7 +45,7 @@ test('sixteen prior and twenty new non-equipment materials preserve every preexi
 test('every original ordinary species has an actual thematic drop while equipment remains its separate first roll',()=>{
  let count=0;const seen=new Set();for(const region of ['forest','north','ancient','desert'])for(const camp of getRegionContent(region).camps){const kind=monsterKind(camp.spawns[0]),h=createCharacter({level:kind.level}),before=JSON.stringify(h);if(kind.loot==='wolf')continue;
  const drops=rollMonsterLoot(h,kind,sequence(.99,0,.5));assert.deepEqual(drops,[{id:MONSTER_MATERIAL_BY_LOOT[kind.loot],rarity:'common',quantity:1}],camp.speciesId);assert.equal(JSON.stringify(h),before);seen.add(kind.loot);count++;}
- assert.ok(count>200);assert.equal(seen.size,36);
+ assert.ok(count>200);assert.equal(seen.size,100);
  for(const type of Object.keys(MONSTER_MATERIAL_BY_LOOT)){const h=createCharacter();assert.equal(rollLoot(h,{type},sequence(.99,.175)).length,0);assert.equal(rollLoot(h,{type},sequence(.99,.175-Number.EPSILON,.5)).length,1);
  const lucky=createCharacter({stats:{luck:50}}),threshold=.175*(1+45*.005);assert.equal(rollLoot(lucky,{type},sequence(.99,threshold)).length,0);assert.equal(rollLoot(lucky,{type},sequence(.99,threshold-Number.EPSILON,.5)).length,1);
  for(const [r,rarity]of [[0,'epic'],[.02,'rare'],[.10,'uncommon'],[.8,'common']])assert.equal(rollLoot(h,{type},sequence(.99,0,r))[0].rarity,rarity);
@@ -58,8 +58,8 @@ test('thematic drops remain anonymouschests,stack,persist inall3slots,and never 
  const restored=createCharacter(Save.load(slot));assert.equal(restored.inventory.find(i=>i.id===id).quantity,5);assert.equal(groundLootState(restored).drops[drop.id],undefined);assert.equal(createGroundDrops(restored,corpse,[item],1000).reason,'duplicate');assert.equal(materialPrice(item),0);assert.equal(sellItem(restored,restored.inventory.findIndex(i=>i.id===id)).ok,false);assert.equal(restored.gold,123);
  }
 });
-test('all thirty-six materials render distinct original transparent PNG icons and every original item/potion SVG stays identical',()=>{
+test('all one hundred materials render distinct original transparent PNG icons and every original item/potion SVG stays identical',()=>{
  const seen=new Set();for(const[id,def]of Object.entries(MONSTER_MATERIALS)){const png=pngAlpha(def.iconURL);assert.equal(png.width,128);assert.equal(png.height,128);assert.ok(png.alpha.filter(a=>a===0).length>png.alpha.length*.25);assert.ok(png.alpha.filter(a=>a>=128).length>500);for(let n=0;n<128;n++)assert.equal(png.alpha[n]+png.alpha[127*128+n]+png.alpha[n*128]+png.alpha[n*128+127],0);seen.add(hash(readFileSync(def.iconURL)));assert.equal(itemIconKind({id},def),id);assert.ok(itemIcon({id,rarity:'rare'},def).includes('href="'+def.iconURL+'"'));}
- assert.equal(seen.size,36);const icons=[];for(const[id,def]of Object.entries(ITEM_DEFS)){if(Object.hasOwn(MONSTER_MATERIALS,id))continue;for(const rarity of ['common','uncommon','rare','epic','legendary'])icons.push(itemIcon({id,rarity},def));}for(const id of ['hpPotion','mpPotion'])icons.push(itemIcon({id},undefined));assert.equal(hash(JSON.stringify(icons)),'284936a999ed4ac9e7655e5613b81700b394d0503f9f9cfe08f2b3c59a504e15');
+ assert.equal(seen.size,100);const icons=[];for(const[id,def]of Object.entries(ITEM_DEFS)){if(Object.hasOwn(MONSTER_MATERIALS,id))continue;for(const rarity of ['common','uncommon','rare','epic','legendary'])icons.push(itemIcon({id,rarity},def));}for(const id of ['hpPotion','mpPotion'])icons.push(itemIcon({id},undefined));assert.equal(hash(JSON.stringify(icons)),'284936a999ed4ac9e7655e5613b81700b394d0503f9f9cfe08f2b3c59a504e15');
  for(const url of ['javascript:alert(1)','assets/icons/monster-materials/x.png" onload="alert(1)','assets/icons/monster-materials/../x.png','https://outside.example/icon.png'])assert.ok(!itemIcon({id:'unsafe'},{monsterMaterial:true,iconURL:url}).includes('href='));assert.ok(!itemIcon({id:'x" onload="bad'},{...MONSTER_MATERIALS.boarTusk}).includes('onload='));
 });

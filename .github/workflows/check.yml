@@ -187,6 +187,8 @@ jobs:
           echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
       - name: Grouped loot window, durable single and bulk pickup, world radius and touch controls
         run: npm run test:browser:task4
+        env:
+          AURALIS_MATERIALS_STAGE: aur203-final
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -589,4 +591,64 @@ jobs:
         with:
           name: browser-task10-final-${{ matrix.group }}
           path: work/task10/
+          if-no-files-found: ignore
+
+
+  aur203_painted_species:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        # At most two painted packs/eight actual species per runner.
+        group: [forest-ab, forest-cd, forest-e-north-a, north-bc, north-de, ancient-ab, ancient-cd, ancient-e-desert-a, desert-bc, desert-de, desert-fg, desert-h]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: AUR203 actual painted actors,48 directional poses,abilities,locales,reload and texture lifetime
+        run: npm run test:browser:aur203:${{ matrix.group }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-aur203-${{ matrix.group }}
+          path: work/task10/aur203-*/
+          if-no-files-found: ignore
+
+  aur203_combat_and_materials:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Verify runner Chrome
+        run: |
+          chrome_path="$(command -v google-chrome)"
+          test -x "$chrome_path"
+          "$chrome_path" --version
+          echo "CHROMIUM_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Actual guard,retreat,pack,stun,ground consumables and all100 material pickup paths
+        run: npm run test:browser:aur203-mechanics
+        env:
+          AURALIS_MATERIALS_STAGE: aur203-final
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-aur203-combat-and-materials
+          path: |
+            work/task10/aur203-*/
+            work/task10/thematic-materials/
           if-no-files-found: ignore
