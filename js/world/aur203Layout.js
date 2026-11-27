@@ -11,7 +11,7 @@ export const AUR203_REGIONS=Object.freeze({
  ancient:Object.freeze({first:45,count:17,total:62}),
  desert:Object.freeze({first:56,count:32,total:88})
 });
-export const AUR203_PLACEMENT=Object.freeze({revision:1,residents:11,collisionRadius:24,residentSpread:165,campRadius:210,minCenterDistance:1400,maxAttemptsPerCamp:100000,patrolProbeRadius:56,gatheringClearance:460,repairSearchRadius:20000,repairGridStep:32});
+export const AUR203_PLACEMENT=Object.freeze({revision:1,residents:11,collisionRadius:24,residentSpread:165,campRadius:210,minCenterDistance:1400,maxAttemptsPerCamp:100000,patrolProbeRadius:56,gatheringClearance:460,desertBossClearance:1120,repairSearchRadius:20000,repairGridStep:32});
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 function randomFor(id){let n=2166136261;for(const c of id)n=Math.imul(n^c.charCodeAt(0),16777619);return ()=>{n=(Math.imul(n,1664525)+1013904223)>>>0;return n/4294967296;};}
 const envelope=camp=>Math.max(0,...(camp.spawns||[]).map(s=>distance(s,camp)))+MONSTER_LEASH_RADIUS;
@@ -100,7 +100,8 @@ export function buildAur203Region(content,dungeons,{maxAttemptsPerCamp=AUR203_PL
  // Revision1 proposal generation above remains exact. Only unpublished
  // candidates are repaired; immutable Task10 camps and quest plants never move.
  const gathering=regionGatheringNodes(region),gatheringClear=point=>gathering.every(n=>distance(point,n)>=p.campRadius+p.gatheringClearance),gatheringRepairs=[];
- const needsRepair=camps.some(c=>!gatheringClear(c));
+ const bossClear=point=>region!=='desert'||(content.bosses||[]).every(b=>distance(point,b)>p.desertBossClearance);
+ const needsRepair=camps.some(c=>!gatheringClear(c)||!bossClear(c));
  // Fixed-other-candidates search proved the forest's low-level pocket cannot
  // satisfy plant clearance within6000 units. Repack only its17 unpublished
  // additions, reserving low native levels first; every other region stays fixed.
@@ -108,7 +109,7 @@ export function buildAur203Region(content,dungeons,{maxAttemptsPerCamp=AUR203_PL
  if(forestRepack)occupied.splice(content.camps.length);
  const order=forestRepack?[...camps].sort((a,b)=>a.level-b.level||a.id.localeCompare(b.id)):[...camps];
  const fit=(original,point)=>{
-  if(point.x<650||point.y<650||point.x>content.width-650||point.y>content.height-650||!gatheringClear(point))return null;
+  if(point.x<650||point.y<650||point.x>content.width-650||point.y>content.height-650||!gatheringClear(point)||!bossClear(point))return null;
   if(climateAt(content,point.x,point.y)?.id!==original.biome||!centerClear(point,original.id))return null;
   const dx=point.x-original.x,dy=point.y-original.y;
   let spawns=original.spawns.map(s=>({...s,x:s.x+dx,y:s.y+dy}));
@@ -117,7 +118,7 @@ export function buildAur203Region(content,dungeons,{maxAttemptsPerCamp=AUR203_PL
   return {camp:{...original,...point,spawns},formationPreserved};
  };
  for(const original of order){
-  if(!forestRepack&&gatheringClear(original))continue;
+  if(!forestRepack&&gatheringClear(original)&&bossClear(original))continue;
   let result=fit(original,{x:original.x,y:original.y});
   // Bounded32-unit lattice in increasing Euclidean rings: deterministic, cheap
  // offline work, and no exhaustive millions-of-integer-candidates dead end.
@@ -139,5 +140,5 @@ export function buildAur203Region(content,dungeons,{maxAttemptsPerCamp=AUR203_PL
   if(dx||dy||!result.formationPreserved)gatheringRepairs.push({id:original.id,from:{x:original.x,y:original.y},to:{x:replacement.x,y:replacement.y},dx,dy,distance:Math.hypot(dx,dy),formationPreserved:result.formationPreserved});
   const entry=occupied.find(e=>e.camp.id===original.id);if(entry){entry.camp=replacement;entry.reach=envelope(replacement);}else occupied.push({camp:replacement,reach:envelope(replacement)});
  }
- return {region,revision:p.revision,baselineCount:config.first,camps,diagnostics:{attempts,totalAttempts:attempts.reduce((a,b)=>a+b,0),residents:camps.reduce((n,c)=>n+c.spawns.length,0),collisionRadius:p.collisionRadius,runtimeIntegrated:false,gatheringClearance:p.gatheringClearance,gatheringRepairs}};
+ return {region,revision:p.revision,baselineCount:config.first,camps,diagnostics:{attempts,totalAttempts:attempts.reduce((a,b)=>a+b,0),residents:camps.reduce((n,c)=>n+c.spawns.length,0),collisionRadius:p.collisionRadius,runtimeIntegrated:false,gatheringClearance:p.gatheringClearance,desertBossClearance:region==='desert'?p.desertBossClearance:null,gatheringRepairs}};
 }

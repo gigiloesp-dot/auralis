@@ -18,7 +18,7 @@ const reach=camp=>Math.max(...camp.spawns.map(s=>distance(s,camp)))+MONSTER_LEAS
 const authoredSnapshot=JSON.parse(readFileSync(new URL('../docs/qa/aur203/task10-baseline.json',import.meta.url)));
 
 test('all84 frozen candidate positions survive independently from the exact first20 active species',()=>{
- assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/aur203Placements.js',import.meta.url))).digest('hex'),'ed60202e7ec64014796cef6cdbe7094eadf0eafae4ef00a8ef817c035a0069cb','repaired reserved art/placement identities cannot drift through regeneration');
+ assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/aur203Placements.js',import.meta.url))).digest('hex'),'cc0868faba946925fad6db8297f3698b213390768f1c38b2ebb20b0e923eddef','repaired reserved art/placement identities cannot drift through regeneration');
  let camps=0,residents=0;const allIds=new Set();
  for(const [region,config]of Object.entries(AUR203_REGIONS)){
   const original=getRegionContent(region),added=AUR203_PLACEMENTS[region];assertActiveExpansion(getLiveRegionContent(region));
@@ -121,7 +121,7 @@ test('placement fails explicitly for invalid or impossible inputs rather than we
 });
 
 
-test('all84 unpublished additions preserve immutable32 gathering envelopes; repair touches onlyfive authorized unpublished candidates',()=>{
+test('all84 unpublished additions preserve immutable32 gathering envelopes; repair touches onlysix authorized unpublished candidates',()=>{
  const receipt=JSON.parse(readFileSync(new URL('../docs/qa/aur203/gathering-clearance-repair.json',import.meta.url)));
  assert.equal(createHash('sha256').update(receipt.beforeFile).digest('hex'),receipt.beforeSHA256);
  assert.equal(receipt.beforeSHA256,'652108eb4845b44f47163c726dc59f084f1d0d83cde84afd11730d24ee98f945');
@@ -134,16 +134,37 @@ test('all84 unpublished additions preserve immutable32 gathering envelopes; repa
   const record=receipt.changes.find(c=>c.id===camp.id);assert.ok(record);
   assert.deepEqual(record.beforeHomes,before.spawns);assert.deepEqual(record.afterHomes,camp.spawns);
   assert.deepEqual(record.beforeCenter,{x:before.x,y:before.y});assert.deepEqual(record.afterCenter,{x:camp.x,y:camp.y});
-  assert.ok(id==='forest'||before.id==='north-spot-092','only authorized forest repack and north conflict may move');
+  assert.ok(id==='forest'||before.id==='north-spot-092'||before.id==='desert-spot-087','only authorized forest repack, north conflict and desert arena conflict may move');
   const {x:bx,y:by,spawns:bs,...beforeFields}=before,{x:ax,y:ay,spawns:as,...afterFields}=camp;
   assert.deepEqual(afterFields,beforeFields,'authored ID, level, biome and all other metadata stay exact');
   assert.equal(as.length,11);
   for(let i=0;i<11;i++){const{x,y,...fields}=as[i],{x:oldX,y:oldY,...oldFields}=bs[i];assert.deepEqual(fields,oldFields,'resident identity and metadata stay exact');}
  }
- assert.deepEqual(changed,['forest-spot-080','forest-spot-083','forest-spot-086','forest-spot-090','north-spot-092']);
- assert.equal(receipt.unchangedNewCandidates,79);
+ assert.deepEqual(changed,['forest-spot-080','forest-spot-083','forest-spot-086','forest-spot-090','north-spot-092','desert-spot-087']);
+ assert.equal(receipt.unchangedNewCandidates,78);
  assert.deepEqual(receipt.changes.map(c=>c.id),changed);
  assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/gatheringData.js',import.meta.url))).digest('hex'),receipt.protectedGatheringSHA256);
  assert.equal(createHash('sha256').update(readFileSync(new URL('../docs/qa/aur203/task10-baseline.json',import.meta.url))).digest('hex'),receipt.protectedBaselineSHA256);
  assert.equal(createHash('sha256').update(readFileSync(new URL('../js/world/aur203Placements.js',import.meta.url))).digest('hex'),receipt.afterSHA256);
+});
+
+
+test('desert arena follow-up preserves the five prior repairs and83 candidates, moving only087 by rigid32west',()=>{
+ const receipt=JSON.parse(readFileSync(new URL('../docs/qa/aur203/gathering-clearance-repair.json',import.meta.url))),arena=receipt.arenaRepair;
+ const historyFile=readFileSync(new URL('../docs/qa/aur203/gathering-clearance-repair-before-arena.json',import.meta.url));
+ assert.equal(createHash('sha256').update(historyFile).digest('hex'),arena.priorReceiptSHA256);
+ const history=JSON.parse(historyFile),before=JSON.parse(history.beforeFile.split('export const AUR203_PLACEMENTS=')[1].replace(/;\s*$/,''));
+ assert.equal(history.afterSHA256,'ed60202e7ec64014796cef6cdbe7094eadf0eafae4ef00a8ef817c035a0069cb');
+ for(const c of history.changes){const camp=before[c.region].camps.find(v=>v.id===c.id);Object.assign(camp,c.afterCenter,{spawns:c.afterHomes});}
+ const changed=[];
+ for(const id of ids)for(const camp of AUR203_PLACEMENTS[id].camps){const old=before[id].camps.find(c=>c.id===camp.id);if(JSON.stringify(camp)!==JSON.stringify(old))changed.push(camp.id);}
+ assert.deepEqual(changed,['desert-spot-087']);assert.equal(arena.unchangedCandidates,83);
+ const old=before.desert.camps.find(c=>c.id==='desert-spot-087'),camp=AUR203_PLACEMENTS.desert.camps.find(c=>c.id===old.id);
+ assert.equal(camp.x,old.x-32);assert.equal(camp.y,old.y);assert.equal(camp.level,55);assert.equal(camp.biome,'sand');
+ for(let i=0;i<11;i++)assert.deepEqual(camp.spawns[i],{...old.spawns[i],x:old.spawns[i].x-32});
+ const bosses=getRegionContent('desert').bosses;
+ assert.ok(bosses.every(b=>distance(camp,b)>1120));
+ for(const candidate of AUR203_PLACEMENTS.desert.camps)assert.ok(bosses.every(b=>distance(candidate,b)>1120),candidate.id+' preserves fixed desert arena exclusion');
+ assert.equal(arena.change.beforeBossDistance,1094.7008723847807);
+ assert.equal(arena.change.afterBossDistance,1125.4021503444892);
 });

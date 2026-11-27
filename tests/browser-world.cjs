@@ -23,7 +23,7 @@ const fs=require('node:fs'),path=require('node:path');
   });console.log('PASS full road routes',region);
  }
  // Task10 preserves the18 legacy outdoor bosses and adds11 in the desert.
- assert.deepEqual(totals,{normal:3047,bosses:29,camps:277,towns:8,npcs:40});
+ assert.deepEqual(totals,{normal:3751,bosses:29,camps:341,towns:8,npcs:40});
  for(const region of ['forest','north','ancient','desert']){
   const transitions=await p.evaluate(region=>{const s=Auralis.game.scene.getScene('world');s.world.load({region,x:1030,y:1140});return s.regionContent.portals.filter(p=>p.toRegion!=='arena');},region);
   for(const portal of transitions){await p.evaluate(({region,portal})=>{const s=Auralis.game.scene.getScene('world');s.world.load({region,x:portal.x,y:portal.y});s.world.update();},{region,portal});await p.locator('.world-travel').click();assert.equal(await p.evaluate(()=>Auralis.game.scene.getScene('world').hero.region),portal.toRegion);}
