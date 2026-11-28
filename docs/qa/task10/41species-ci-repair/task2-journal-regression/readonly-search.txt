@@ -1,0 +1,10 @@
+tests/browser-task2-ui.cjs:55:'),cards=journal.locator('article[data-quest-id]');assert.equal(await journal.locator('[data-quest-id=forestWolves]').count(),1);assert.equal(await journal.locator('header button').co
+tests/browser-task2-ui.cjs:56:or(const card of await cards.all()){const id=await card.getAttribute('data-quest-id');assert.equal(await card.locator('button').count(),1,'each active journal card exposes tracking only');asser
+tests/browser-task2-ui.cjs:57:   assert.equal(await journal.locator('button:not([data-track-quest])').count(),1,'only the header close is permitted besides tracking; a
+tests/browser-task2-ui.cjs:57:ccept/claim services remain with NPCs');assert.equal(await journal.locator('button').count(),1+await cards.count());
+tests/browser-first-dungeon.cjs:7:// A genuine fresh-character journey. Scene access is read-only: every change to
+tests/browser-journey.cjs:7:// A genuine fresh-character journey. Scene access is read-only: every change to
+tests/task10QuestNavigation.test.mjs:7:ps,NPCs,landmarks,bosses or dungeon entrances with localized text and read-only queries',()=>{assert.ok(QUESTS.length>=145);assert.equal(ne
+tests/task10QuestQueue.test.mjs:9:edJournalEntries(hero).length,6);assert.deepEqual(hero.quests,before,'read-only selectors do not rewrite saved records');
+tests/browser-task5-journal.cjs:38:  await openJournal();assert.equal(await journalCard.count(),0,'claimed quest disappears on next journal open');await 
+tests/browser-task5-journal.cjs:40:  await openJournal();assert.equal(await journalCard.count(),0,'claimed quest never returns after reload');await close

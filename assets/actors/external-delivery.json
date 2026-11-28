@@ -1,0 +1,518 @@
+{
+  "version": 1,
+  "sourceCommit": "4a0eb5a77cbc75f9952922d4166af466971018e8",
+  "baseURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/",
+  "entries": [
+    {
+      "sourceURL": "assets/actors/bosses/ancient-mini-0.png",
+      "url": "assets/actors/bosses/ancient-mini-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/ancient-mini-0.webp",
+      "webpSHA256": "c5b852ecf12e5a47d7dc284579b46dc61cf49c66256da71949430b0ecfa344ef",
+      "webpBytes": 1480652
+    },
+    {
+      "sourceURL": "assets/actors/bosses/ancient-mini-1.png",
+      "url": "assets/actors/bosses/ancient-mini-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/ancient-mini-1.webp",
+      "webpSHA256": "7e9fabebbf1fbe6281be9724bee0d89c12db1cde45f4437d6145e77c6fc53c67",
+      "webpBytes": 1521708
+    },
+    {
+      "sourceURL": "assets/actors/bosses/ancient-mini-2.png",
+      "url": "assets/actors/bosses/ancient-mini-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/ancient-mini-2.webp",
+      "webpSHA256": "3e5a7989d3c39b1c873cc054bbd275e79274652741bfa7384f1d4b0f4452b2dd",
+      "webpBytes": 1292524
+    },
+    {
+      "sourceURL": "assets/actors/bosses/ancient-mini-3.png",
+      "url": "assets/actors/bosses/ancient-mini-3.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/ancient-mini-3.webp",
+      "webpSHA256": "c18b5873a781a8b7aee51089122b8a7f0cf4b2dfa6f1d0899d628342941404eb",
+      "webpBytes": 1427512
+    },
+    {
+      "sourceURL": "assets/actors/bosses/ancient-world-4.png",
+      "url": "assets/actors/bosses/ancient-world-4.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/ancient-world-4.webp",
+      "webpSHA256": "d306a7fbf681cb7cd3e2905c31f445d23b295f9680ac54788819acd263cabacd",
+      "webpBytes": 1689742
+    },
+    {
+      "sourceURL": "assets/actors/bosses/ancient-world-5.png",
+      "url": "assets/actors/bosses/ancient-world-5.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/ancient-world-5.webp",
+      "webpSHA256": "b64ee2121ec5197c67a0a7ee155cf43da792c4e5e813698eab0bfa1ef3872401",
+      "webpBytes": 1752100
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon1-boss-0.png",
+      "url": "assets/actors/bosses/dungeon1-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon1-boss-0.webp",
+      "webpSHA256": "cdbc88916c5197891420764a89112d07ac404a268681029d58b35f8f1d7acdea",
+      "webpBytes": 1570124
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon10-boss-0.png",
+      "url": "assets/actors/bosses/dungeon10-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon10-boss-0.webp",
+      "webpSHA256": "ff22fc2b1f0b530ee9080d1566d97cb0018164f962f33542c56e10c68acfb91f",
+      "webpBytes": 1553722
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon10-boss-1.png",
+      "url": "assets/actors/bosses/dungeon10-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon10-boss-1.webp",
+      "webpSHA256": "9b2d61777c0b8ccfa0cf65b48cb91dc4422b41401657870c4b9634ca3ae99d3b",
+      "webpBytes": 1804424
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon10-boss-2.png",
+      "url": "assets/actors/bosses/dungeon10-boss-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon10-boss-2.webp",
+      "webpSHA256": "d7d3c0d9d8ca71dfaa534ce9714c80ee779f0c6163d4e4c365a541ce63336ff7",
+      "webpBytes": 1834990
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon11-boss-0.png",
+      "url": "assets/actors/bosses/dungeon11-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon11-boss-0.webp",
+      "webpSHA256": "5a1492a6c7c5949deac42f96af226df6675c7ae68a7e34fc13f94749f36b6330",
+      "webpBytes": 1420310
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon11-boss-1.png",
+      "url": "assets/actors/bosses/dungeon11-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon11-boss-1.webp",
+      "webpSHA256": "6be63cbdd74c4a0c832e30d963417ad57302f8371c7faafe9a13aba128730637",
+      "webpBytes": 1666400
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon11-boss-2.png",
+      "url": "assets/actors/bosses/dungeon11-boss-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon11-boss-2.webp",
+      "webpSHA256": "4fc42b7b903b42799f6d47e85c986c654c2b7f85022dd525b33d1503bfd5378f",
+      "webpBytes": 1619384
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon12-boss-0.png",
+      "url": "assets/actors/bosses/dungeon12-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon12-boss-0.webp",
+      "webpSHA256": "edc6ae442109a85195b1b49cc4e5a4d9a2d04100c0b6ca89d2b34c5db8d40aac",
+      "webpBytes": 1629350
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon12-boss-1.png",
+      "url": "assets/actors/bosses/dungeon12-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon12-boss-1.webp",
+      "webpSHA256": "8da2b9183fbf247c800e4d987bf61f4d1111ece7e87d7dc0926ab0b85ff6dc96",
+      "webpBytes": 1765288
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon12-boss-2.png",
+      "url": "assets/actors/bosses/dungeon12-boss-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon12-boss-2.webp",
+      "webpSHA256": "32b38cfc8024ce0fe214eeb159969cc8a8acff8f77458fab1a6779d98fed87f5",
+      "webpBytes": 1474242
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon2-boss-0.png",
+      "url": "assets/actors/bosses/dungeon2-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon2-boss-0.webp",
+      "webpSHA256": "c48eb5c769f2b933f10763aa9874793afa3f033c2cf7d67be0ce4b36385f7165",
+      "webpBytes": 1382078
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon3-boss-0.png",
+      "url": "assets/actors/bosses/dungeon3-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon3-boss-0.webp",
+      "webpSHA256": "27536c2aafa12e2db71894a02224a1dac28dbba07cbf0c7965ce94ca1143f543",
+      "webpBytes": 1441654
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon4-boss-0.png",
+      "url": "assets/actors/bosses/dungeon4-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon4-boss-0.webp",
+      "webpSHA256": "b2e7d031a95a975c4fe4d0085800afaf175e6ade7a7477c46fba3c7b48bfe3fb",
+      "webpBytes": 1423526
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon4-boss-1.png",
+      "url": "assets/actors/bosses/dungeon4-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon4-boss-1.webp",
+      "webpSHA256": "e1ff0e9f013f3d643eff3a88beef83f0ec98199a7293bd06b98ac6196fbb49e3",
+      "webpBytes": 1378402
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon5-boss-0.png",
+      "url": "assets/actors/bosses/dungeon5-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon5-boss-0.webp",
+      "webpSHA256": "89a422fcc52a6244d4153dd9e65bbf5a10a6d731c9f7e7b13c76d09c3365ec0a",
+      "webpBytes": 1645844
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon5-boss-1.png",
+      "url": "assets/actors/bosses/dungeon5-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon5-boss-1.webp",
+      "webpSHA256": "b5450a667beaa3b4f544a86cdbc62e9d9145a8906227550aa270fa396f0c739f",
+      "webpBytes": 1647744
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon6-boss-0.png",
+      "url": "assets/actors/bosses/dungeon6-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon6-boss-0.webp",
+      "webpSHA256": "9f95cb0fe0a35ab1cc1b46cee0abd48643d4e9a9502c34c544dbcb31feb68c36",
+      "webpBytes": 1517038
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon6-boss-1.png",
+      "url": "assets/actors/bosses/dungeon6-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon6-boss-1.webp",
+      "webpSHA256": "876d286c830b91de2a625c5438d26c0ea39636be1f7f6e97750a5b61912f780f",
+      "webpBytes": 1696542
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon7-boss-0.png",
+      "url": "assets/actors/bosses/dungeon7-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon7-boss-0.webp",
+      "webpSHA256": "f57f7d3001d75e45b26ba1db78279face4f1d7e4976ef092a936aea03f811fc3",
+      "webpBytes": 1463256
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon7-boss-1.png",
+      "url": "assets/actors/bosses/dungeon7-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon7-boss-1.webp",
+      "webpSHA256": "1dc5441bc2f25966de1407a43add43230a42c7acc9252a98f01710b799311dbe",
+      "webpBytes": 1316132
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon8-boss-0.png",
+      "url": "assets/actors/bosses/dungeon8-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon8-boss-0.webp",
+      "webpSHA256": "4604c4bf9c5c8d7505eab6fbcfdc98d72e565766e1bb2cd0bd977f65b9287ef8",
+      "webpBytes": 1639522
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon8-boss-1.png",
+      "url": "assets/actors/bosses/dungeon8-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon8-boss-1.webp",
+      "webpSHA256": "5a590505ca4429c763933fa1bba39de0ac2e40c8efcf42d00812ffe17d66d25d",
+      "webpBytes": 1554902
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon8-boss-2.png",
+      "url": "assets/actors/bosses/dungeon8-boss-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon8-boss-2.webp",
+      "webpSHA256": "25758fac768598e268904de03e8c79ef4444ffeb4d1292a07604ce0ba534eb77",
+      "webpBytes": 1759966
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon9-boss-0.png",
+      "url": "assets/actors/bosses/dungeon9-boss-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon9-boss-0.webp",
+      "webpSHA256": "14583241306446bb571d1dca267d4943d8c325fc9eeb2328655dc99d68831717",
+      "webpBytes": 1551330
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon9-boss-1.png",
+      "url": "assets/actors/bosses/dungeon9-boss-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon9-boss-1.webp",
+      "webpSHA256": "187b78904573caddbc488c5ead3a98c0efa31925a3e75f50c4a0c5394e51c81a",
+      "webpBytes": 1922008
+    },
+    {
+      "sourceURL": "assets/actors/bosses/dungeon9-boss-2.png",
+      "url": "assets/actors/bosses/dungeon9-boss-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/dungeon9-boss-2.webp",
+      "webpSHA256": "469a0e172963a0c50a059cc14d088f2e889d10c4826353406d955691196d1638",
+      "webpBytes": 1547448
+    },
+    {
+      "sourceURL": "assets/actors/bosses/forest-mini-0.png",
+      "url": "assets/actors/bosses/forest-mini-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/forest-mini-0.webp",
+      "webpSHA256": "4d5a53daab7c0bd5b6ef4ebbe3faeb7b30c49253b8954d2f68cf3801d13c787d",
+      "webpBytes": 1860394
+    },
+    {
+      "sourceURL": "assets/actors/bosses/forest-mini-1.png",
+      "url": "assets/actors/bosses/forest-mini-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/forest-mini-1.webp",
+      "webpSHA256": "7202471144d8885ffbc50f0ca77effc6dea88132dd3a562e3bc915c1da657e75",
+      "webpBytes": 1492782
+    },
+    {
+      "sourceURL": "assets/actors/bosses/forest-mini-2.png",
+      "url": "assets/actors/bosses/forest-mini-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/forest-mini-2.webp",
+      "webpSHA256": "128b09cbf1589d1646e7f3587bc7b9b9512654a0bc47d9d0e62fee3f1b9d88bb",
+      "webpBytes": 1316228
+    },
+    {
+      "sourceURL": "assets/actors/bosses/forest-mini-3.png",
+      "url": "assets/actors/bosses/forest-mini-3.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/forest-mini-3.webp",
+      "webpSHA256": "f0a3a859bdfcce02420413ffa6d9c2b967124e08c2d873700c9819f02967ea8e",
+      "webpBytes": 1320886
+    },
+    {
+      "sourceURL": "assets/actors/bosses/forest-world-4.png",
+      "url": "assets/actors/bosses/forest-world-4.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/forest-world-4.webp",
+      "webpSHA256": "302e2c70d61c7553787947ab249370c4a75d7dcba249634700e127b479382489",
+      "webpBytes": 1698644
+    },
+    {
+      "sourceURL": "assets/actors/bosses/forest-world-5.png",
+      "url": "assets/actors/bosses/forest-world-5.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/forest-world-5.webp",
+      "webpSHA256": "35cf9fdd896a49c78c3c44261cdc1446439e97ee853db38f10cc8a65f603bcac",
+      "webpBytes": 1633064
+    },
+    {
+      "sourceURL": "assets/actors/bosses/north-mini-0.png",
+      "url": "assets/actors/bosses/north-mini-0.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/north-mini-0.webp",
+      "webpSHA256": "7a65f7db43c708425a527ce76d07290f2f14e8955f5d909e5016128ac47886b3",
+      "webpBytes": 1351536
+    },
+    {
+      "sourceURL": "assets/actors/bosses/north-mini-1.png",
+      "url": "assets/actors/bosses/north-mini-1.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/north-mini-1.webp",
+      "webpSHA256": "a4086b58795a4b3176a31ccd31efd86bde5c750a5bcc54e404a5073b8f14a63a",
+      "webpBytes": 1745552
+    },
+    {
+      "sourceURL": "assets/actors/bosses/north-mini-2.png",
+      "url": "assets/actors/bosses/north-mini-2.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/north-mini-2.webp",
+      "webpSHA256": "5f9f36a1ee01522b6d61a9f4dce81f20f5e601391b6ad3fbe88018226d828f91",
+      "webpBytes": 1738102
+    },
+    {
+      "sourceURL": "assets/actors/bosses/north-mini-3.png",
+      "url": "assets/actors/bosses/north-mini-3.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/north-mini-3.webp",
+      "webpSHA256": "148490eae6ca909f1045c43a2c69131cb6b17c4c6e8b9cc621682e56cc68e17f",
+      "webpBytes": 1484850
+    },
+    {
+      "sourceURL": "assets/actors/bosses/north-world-4.png",
+      "url": "assets/actors/bosses/north-world-4.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/north-world-4.webp",
+      "webpSHA256": "91bc3ae9f26e089b2a115bfb8cec4ce3431dc96be410f6c484226332c02389d9",
+      "webpBytes": 1730562
+    },
+    {
+      "sourceURL": "assets/actors/bosses/north-world-5.png",
+      "url": "assets/actors/bosses/north-world-5.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/bosses/north-world-5.webp",
+      "webpSHA256": "bc115566a1b8377c55cc1cfa9d5d0ad7ba545b1d4c5fbff2e9c0e895dde99cd2",
+      "webpBytes": 1263652
+    },
+    {
+      "sourceURL": "assets/actors/monsters/ancientGargoyle.png",
+      "url": "assets/actors/monsters/ancientGargoyle.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/ancientGargoyle.webp",
+      "webpSHA256": "e218710f4c026c34e0da6ca2390127865ca8435e8d09e59867c7430d72133bd6",
+      "webpBytes": 1482022
+    },
+    {
+      "sourceURL": "assets/actors/monsters/ancientSentinel.png",
+      "url": "assets/actors/monsters/ancientSentinel.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/ancientSentinel.webp",
+      "webpSHA256": "baf8170fe8b5be3df5829513c48c5313d8a39c4784fd75e0620c5325f51ec17e",
+      "webpBytes": 1382454
+    },
+    {
+      "sourceURL": "assets/actors/monsters/arcaneWisp.png",
+      "url": "assets/actors/monsters/arcaneWisp.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/arcaneWisp.webp",
+      "webpSHA256": "827eb684f9f756386793946cd005db80f371d2d1780fc56652228ab017219387",
+      "webpBytes": 1646770
+    },
+    {
+      "sourceURL": "assets/actors/monsters/bear.png",
+      "url": "assets/actors/monsters/bear.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/bear.webp",
+      "webpSHA256": "8d2d5b99d5871f5798b04cd6c3e4919e9756df58df109dd16b207e8d5910bf46",
+      "webpBytes": 1269556
+    },
+    {
+      "sourceURL": "assets/actors/monsters/desertSnake.png",
+      "url": "assets/actors/monsters/desertSnake.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/desertSnake.webp",
+      "webpSHA256": "a48cf5a563423202a8426fe8985b95155c5aa0d805c1835edb5c77e7c29a751e",
+      "webpBytes": 1655278
+    },
+    {
+      "sourceURL": "assets/actors/monsters/fallenKnight.png",
+      "url": "assets/actors/monsters/fallenKnight.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/fallenKnight.webp",
+      "webpSHA256": "84e892c0c444263cd06e8084be222ea2be2bcfdfbd370f0e8db93f3451101df3",
+      "webpBytes": 1323072
+    },
+    {
+      "sourceURL": "assets/actors/monsters/forestBat.png",
+      "url": "assets/actors/monsters/forestBat.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/forestBat.webp",
+      "webpSHA256": "a318547fd9902b339a886c81e7484fc7a71c2ddddd012d1e4e6c8c594e713cf9",
+      "webpBytes": 1128222
+    },
+    {
+      "sourceURL": "assets/actors/monsters/forestOrc.png",
+      "url": "assets/actors/monsters/forestOrc.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/forestOrc.webp",
+      "webpSHA256": "2673d31dd351e2d3293dd1a7bdaf896dd029c2a824a5477e77e8c195697c5c04",
+      "webpBytes": 1556752
+    },
+    {
+      "sourceURL": "assets/actors/monsters/forestRaider.png",
+      "url": "assets/actors/monsters/forestRaider.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/forestRaider.webp",
+      "webpSHA256": "f58fe6855e124699655b4e8ccf4c521b06408f8c8be15a2b7b06668ca321aa7e",
+      "webpBytes": 1505564
+    },
+    {
+      "sourceURL": "assets/actors/monsters/forestWolf.png",
+      "url": "assets/actors/monsters/forestWolf.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/forestWolf.webp",
+      "webpSHA256": "d31362c712fd6587651ca8092a99cafaef48f6841c7ff4efde4113abc7631d58",
+      "webpBytes": 1221132
+    },
+    {
+      "sourceURL": "assets/actors/monsters/frostGolem.png",
+      "url": "assets/actors/monsters/frostGolem.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/frostGolem.webp",
+      "webpSHA256": "ab134aa9df40c8a18cc926df7c23a84d044693fec313a4cda2dfa248714ecfc8",
+      "webpBytes": 1973834
+    },
+    {
+      "sourceURL": "assets/actors/monsters/iceBat.png",
+      "url": "assets/actors/monsters/iceBat.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/iceBat.webp",
+      "webpSHA256": "3bcb53edb69555dc4ebb8b18458efc989d8bcbe89dc0d398878e2e54a3fc9f19",
+      "webpBytes": 1282328
+    },
+    {
+      "sourceURL": "assets/actors/monsters/iceElemental.png",
+      "url": "assets/actors/monsters/iceElemental.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/iceElemental.webp",
+      "webpSHA256": "6e2d4ecb56f34f2833615cb03a5e1317c75012a4abf6605672d5c8198074f7b0",
+      "webpBytes": 1457444
+    },
+    {
+      "sourceURL": "assets/actors/monsters/iceWolf.png",
+      "url": "assets/actors/monsters/iceWolf.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/iceWolf.webp",
+      "webpSHA256": "d368277ada8f9971c453843148188652d485f44b20588ff9a68aff4406b32441",
+      "webpBytes": 1117226
+    },
+    {
+      "sourceURL": "assets/actors/monsters/scarab.png",
+      "url": "assets/actors/monsters/scarab.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/scarab.webp",
+      "webpSHA256": "cebc6eb580846a10676376eb682e27887e5e6330a5c47e8ed9029af4fc987ddb",
+      "webpBytes": 1722668
+    },
+    {
+      "sourceURL": "assets/actors/monsters/skeleton.png",
+      "url": "assets/actors/monsters/skeleton.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/skeleton.webp",
+      "webpSHA256": "89477e0f428ec273047c81b4117a8d4e54464aaf5baa88c14b0a0630223a1407",
+      "webpBytes": 1399808
+    },
+    {
+      "sourceURL": "assets/actors/monsters/snowBear.png",
+      "url": "assets/actors/monsters/snowBear.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/snowBear.webp",
+      "webpSHA256": "296cffbece1eac07316f4c55d253b9316c850a3880ee12e0e9becc0fd6514a89",
+      "webpBytes": 1532408
+    },
+    {
+      "sourceURL": "assets/actors/monsters/snowRaider.png",
+      "url": "assets/actors/monsters/snowRaider.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/snowRaider.webp",
+      "webpSHA256": "bbf5fe764f92cfc4ec28468f7567ac7e83baf897578744bc42200854a49edf7f",
+      "webpBytes": 1285384
+    },
+    {
+      "sourceURL": "assets/actors/monsters/spider.png",
+      "url": "assets/actors/monsters/spider.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/spider.webp",
+      "webpSHA256": "b0aea4e071cffa4e63506d5ba4e200a157777a8ae703ed0406d448de32ad6e4c",
+      "webpBytes": 1353768
+    },
+    {
+      "sourceURL": "assets/actors/monsters/thornSnake.png",
+      "url": "assets/actors/monsters/thornSnake.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/thornSnake.webp",
+      "webpSHA256": "8ec61648ef8573a4fe5b665bdf016ad41fb8511177d7ee016bc2fbd03257fff8",
+      "webpBytes": 1451708
+    },
+    {
+      "sourceURL": "assets/actors/monsters/voidElemental.png",
+      "url": "assets/actors/monsters/voidElemental.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/voidElemental.webp",
+      "webpSHA256": "0e13285d630e1ad2bda21f8b7e71488d716a446e16850014d79ebb7f0cd29049",
+      "webpBytes": 1716170
+    },
+    {
+      "sourceURL": "assets/actors/monsters/wildBoar.png",
+      "url": "assets/actors/monsters/wildBoar.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/wildBoar.webp",
+      "webpSHA256": "e4ca1c320edcbbc32f032e42e02acea6bd417ea529be3132bde008b01b3c690a",
+      "webpBytes": 1395890
+    },
+    {
+      "sourceURL": "assets/actors/monsters/wraith.png",
+      "url": "assets/actors/monsters/wraith.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/monsters/wraith.webp",
+      "webpSHA256": "27b7949942a9ac8bc9951a924d14efbdff134118ecb8275759892279e41f0641",
+      "webpBytes": 1352730
+    },
+    {
+      "sourceURL": "assets/actors/npcs/ancient-residents.png",
+      "url": "assets/actors/npcs/ancient-residents.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/npcs/ancient-residents.webp",
+      "webpSHA256": "94f0d973b6a5573058adff1a0a8f91d30295b75af2ea759052432f880afd1c01",
+      "webpBytes": 1867300
+    },
+    {
+      "sourceURL": "assets/actors/npcs/forest-residents.png",
+      "url": "assets/actors/npcs/forest-residents.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/npcs/forest-residents.webp",
+      "webpSHA256": "898413ce013eb4697990a9915070de5b3b35990613e99bbe7f125aea38cef45f",
+      "webpBytes": 1794030
+    },
+    {
+      "sourceURL": "assets/actors/npcs/highpass.png",
+      "url": "assets/actors/npcs/highpass.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/npcs/highpass.webp",
+      "webpSHA256": "978ae2452f567dab77af8cf4d9b2f595b39d3b80a59a59a7a06e20fe7ca5d52f",
+      "webpBytes": 1553640
+    },
+    {
+      "sourceURL": "assets/actors/npcs/nyx.png",
+      "url": "assets/actors/npcs/nyx.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/npcs/nyx.webp",
+      "webpSHA256": "94bd5cc208affb452ac5c59c464ca336fa976dcf1c9dde37f1cc71a9bf7df430",
+      "webpBytes": 1827112
+    },
+    {
+      "sourceURL": "assets/actors/npcs/oak-north.png",
+      "url": "assets/actors/npcs/oak-north.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/npcs/oak-north.webp",
+      "webpSHA256": "c738e6135c16cc7b2a138d775a481e6021321a8a98f7fd0f4905a52c72464de6",
+      "webpBytes": 1501820
+    },
+    {
+      "sourceURL": "assets/actors/npcs/river-residents.png",
+      "url": "assets/actors/npcs/river-residents.webp",
+      "remoteURL": "https://raw.githubusercontent.com/gigiloesp-dot/auralis/4a0eb5a77cbc75f9952922d4166af466971018e8/assets/actors/npcs/river-residents.webp",
+      "webpSHA256": "e7f1702113fb251405181ab7e5be09c2d05a31401238c3c986632d248f22eff7",
+      "webpBytes": 1852918
+    }
+  ]
+}

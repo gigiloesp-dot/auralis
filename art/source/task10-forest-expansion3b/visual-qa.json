@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "id": "forest-species-022",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Cutout and imagegen shrink preserved; variable source row whitespace registration preserves complete boots."
+    },
+    {
+      "id": "forest-species-028",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Original source passed visual inspection."
+    },
+    {
+      "id": "forest-species-030",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen reflow repaired source boundary bleed."
+    },
+    {
+      "id": "forest-species-033",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen reflow repaired source boundary bleed."
+    },
+    {
+      "id": "forest-species-036",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Original source passed visual inspection."
+    },
+    {
+      "id": "forest-species-038",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen reflow repaired source boundary bleed."
+    },
+    {
+      "id": "forest-species-040",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen reflow repaired source boundary bleed."
+    },
+    {
+      "id": "forest-species-042",
+      "posesInspected": 48,
+      "views": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "banks": [
+        "idle",
+        "run-a",
+        "run-b",
+        "attack",
+        "hurt",
+        "death"
+      ],
+      "fullBodies": true,
+      "detachedNeighborFragments": false,
+      "background": "beige-composited",
+      "notes": "Imagegen reflow repaired source boundary bleed."
+    }
+  ],
+  "totalPoses": 384,
+  "runtimeRegistered": false
+}

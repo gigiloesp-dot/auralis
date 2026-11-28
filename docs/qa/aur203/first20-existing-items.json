@@ -1,0 +1,1758 @@
+{
+  "sourceCommit": "e80d0efc6f12577d31364abfc8448d905f299227",
+  "definitions": {
+    "weapon_warrior_0": {
+      "name": "Меч странника",
+      "slot": "weapon",
+      "level": 1,
+      "attack": 6,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 0,
+      "kind": "sword"
+    },
+    "weapon_warrior_1": {
+      "name": "Стальной меч",
+      "slot": "weapon",
+      "level": 4,
+      "attack": 9,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 1,
+      "kind": "sword"
+    },
+    "weapon_warrior_2": {
+      "name": "Клинок ветерана",
+      "slot": "weapon",
+      "level": 8,
+      "attack": 18,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 2,
+      "kind": "sword"
+    },
+    "weapon_warrior_3": {
+      "name": "Боевой меч",
+      "slot": "weapon",
+      "level": 15,
+      "attack": 34,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 3,
+      "kind": "sword"
+    },
+    "weapon_warrior_4": {
+      "name": "Рыцарский клинок",
+      "slot": "weapon",
+      "level": 22,
+      "attack": 56,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 4,
+      "kind": "sword"
+    },
+    "weapon_warrior_5": {
+      "name": "Клинок севера",
+      "slot": "weapon",
+      "level": 27,
+      "attack": 84,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 5,
+      "kind": "sword"
+    },
+    "weapon_warrior_6": {
+      "name": "Меч хранителя",
+      "slot": "weapon",
+      "level": 33,
+      "attack": 118,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 6,
+      "kind": "sword"
+    },
+    "weapon_warrior_7": {
+      "name": "Клинок древних",
+      "slot": "weapon",
+      "level": 38,
+      "attack": 158,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 7,
+      "kind": "sword"
+    },
+    "weapon_warrior_8": {
+      "name": "Меч вечности",
+      "slot": "weapon",
+      "level": 42,
+      "attack": 204,
+      "allowedClasses": [
+        "warrior"
+      ],
+      "tier": 8,
+      "kind": "sword"
+    },
+    "weapon_archer_0": {
+      "name": "Короткий лук",
+      "slot": "weapon",
+      "level": 1,
+      "attack": 6,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 0,
+      "kind": "bow"
+    },
+    "weapon_archer_1": {
+      "name": "Охотничий лук",
+      "slot": "weapon",
+      "level": 4,
+      "attack": 9,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 1,
+      "kind": "bow"
+    },
+    "weapon_archer_2": {
+      "name": "Лук следопыта",
+      "slot": "weapon",
+      "level": 8,
+      "attack": 18,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 2,
+      "kind": "bow"
+    },
+    "weapon_archer_3": {
+      "name": "Длинный лук",
+      "slot": "weapon",
+      "level": 15,
+      "attack": 34,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 3,
+      "kind": "bow"
+    },
+    "weapon_archer_4": {
+      "name": "Лук бури",
+      "slot": "weapon",
+      "level": 22,
+      "attack": 56,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 4,
+      "kind": "bow"
+    },
+    "weapon_archer_5": {
+      "name": "Лук севера",
+      "slot": "weapon",
+      "level": 27,
+      "attack": 84,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 5,
+      "kind": "bow"
+    },
+    "weapon_archer_6": {
+      "name": "Лук хранителя",
+      "slot": "weapon",
+      "level": 33,
+      "attack": 118,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 6,
+      "kind": "bow"
+    },
+    "weapon_archer_7": {
+      "name": "Лук древних",
+      "slot": "weapon",
+      "level": 38,
+      "attack": 158,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 7,
+      "kind": "bow"
+    },
+    "weapon_archer_8": {
+      "name": "Лук вечности",
+      "slot": "weapon",
+      "level": 42,
+      "attack": 204,
+      "allowedClasses": [
+        "archer"
+      ],
+      "tier": 8,
+      "kind": "bow"
+    },
+    "weapon_mage_0": {
+      "name": "Посох ученика",
+      "slot": "weapon",
+      "level": 1,
+      "attack": 6,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 0,
+      "kind": "staff"
+    },
+    "weapon_mage_1": {
+      "name": "Дубовый посох",
+      "slot": "weapon",
+      "level": 4,
+      "attack": 9,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 1,
+      "kind": "staff"
+    },
+    "weapon_mage_2": {
+      "name": "Посох искр",
+      "slot": "weapon",
+      "level": 8,
+      "attack": 18,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 2,
+      "kind": "staff"
+    },
+    "weapon_mage_3": {
+      "name": "Посох мага",
+      "slot": "weapon",
+      "level": 15,
+      "attack": 34,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 3,
+      "kind": "staff"
+    },
+    "weapon_mage_4": {
+      "name": "Посох стихий",
+      "slot": "weapon",
+      "level": 22,
+      "attack": 56,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 4,
+      "kind": "staff"
+    },
+    "weapon_mage_5": {
+      "name": "Посох мороза",
+      "slot": "weapon",
+      "level": 27,
+      "attack": 84,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 5,
+      "kind": "staff"
+    },
+    "weapon_mage_6": {
+      "name": "Посох хранителя",
+      "slot": "weapon",
+      "level": 33,
+      "attack": 118,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 6,
+      "kind": "staff"
+    },
+    "weapon_mage_7": {
+      "name": "Посох древних",
+      "slot": "weapon",
+      "level": 38,
+      "attack": 158,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 7,
+      "kind": "staff"
+    },
+    "weapon_mage_8": {
+      "name": "Посох вечности",
+      "slot": "weapon",
+      "level": 42,
+      "attack": 204,
+      "allowedClasses": [
+        "mage"
+      ],
+      "tier": 8,
+      "kind": "staff"
+    },
+    "weapon_paladin_0": {
+      "name": "Меч послушника",
+      "slot": "weapon",
+      "level": 1,
+      "attack": 6,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 0,
+      "kind": "sword"
+    },
+    "weapon_paladin_1": {
+      "name": "Меч стража",
+      "slot": "weapon",
+      "level": 4,
+      "attack": 9,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 1,
+      "kind": "sword"
+    },
+    "weapon_paladin_2": {
+      "name": "Клинок веры",
+      "slot": "weapon",
+      "level": 8,
+      "attack": 18,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 2,
+      "kind": "sword"
+    },
+    "weapon_paladin_3": {
+      "name": "Меч защитника",
+      "slot": "weapon",
+      "level": 15,
+      "attack": 34,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 3,
+      "kind": "sword"
+    },
+    "weapon_paladin_4": {
+      "name": "Священный меч",
+      "slot": "weapon",
+      "level": 22,
+      "attack": 56,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 4,
+      "kind": "sword"
+    },
+    "weapon_paladin_5": {
+      "name": "Клинок света",
+      "slot": "weapon",
+      "level": 27,
+      "attack": 84,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 5,
+      "kind": "sword"
+    },
+    "weapon_paladin_6": {
+      "name": "Меч хранителя",
+      "slot": "weapon",
+      "level": 33,
+      "attack": 118,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 6,
+      "kind": "sword"
+    },
+    "weapon_paladin_7": {
+      "name": "Меч древних",
+      "slot": "weapon",
+      "level": 38,
+      "attack": 158,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 7,
+      "kind": "sword"
+    },
+    "weapon_paladin_8": {
+      "name": "Меч вечности",
+      "slot": "weapon",
+      "level": 42,
+      "attack": 204,
+      "allowedClasses": [
+        "paladin"
+      ],
+      "tier": 8,
+      "kind": "sword"
+    },
+    "weapon_assassin_0": {
+      "name": "Ржавые кинжалы",
+      "slot": "weapon",
+      "level": 1,
+      "attack": 6,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 0,
+      "kind": "daggers"
+    },
+    "weapon_assassin_1": {
+      "name": "Стальные кинжалы",
+      "slot": "weapon",
+      "level": 4,
+      "attack": 9,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 1,
+      "kind": "daggers"
+    },
+    "weapon_assassin_2": {
+      "name": "Кинжалы тени",
+      "slot": "weapon",
+      "level": 8,
+      "attack": 18,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 2,
+      "kind": "daggers"
+    },
+    "weapon_assassin_3": {
+      "name": "Парные клинки",
+      "slot": "weapon",
+      "level": 15,
+      "attack": 34,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 3,
+      "kind": "daggers"
+    },
+    "weapon_assassin_4": {
+      "name": "Клинки ночи",
+      "slot": "weapon",
+      "level": 22,
+      "attack": 56,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 4,
+      "kind": "daggers"
+    },
+    "weapon_assassin_5": {
+      "name": "Кинжалы севера",
+      "slot": "weapon",
+      "level": 27,
+      "attack": 84,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 5,
+      "kind": "daggers"
+    },
+    "weapon_assassin_6": {
+      "name": "Клинки хранителя",
+      "slot": "weapon",
+      "level": 33,
+      "attack": 118,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 6,
+      "kind": "daggers"
+    },
+    "weapon_assassin_7": {
+      "name": "Кинжалы древних",
+      "slot": "weapon",
+      "level": 38,
+      "attack": 158,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 7,
+      "kind": "daggers"
+    },
+    "weapon_assassin_8": {
+      "name": "Клинки вечности",
+      "slot": "weapon",
+      "level": 42,
+      "attack": 204,
+      "allowedClasses": [
+        "assassin"
+      ],
+      "tier": 8,
+      "kind": "daggers"
+    },
+    "weapon_cannoneer_0": {
+      "name": "Ручная пушка",
+      "slot": "weapon",
+      "level": 1,
+      "attack": 6,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 0,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_1": {
+      "name": "Медная пушка",
+      "slot": "weapon",
+      "level": 4,
+      "attack": 9,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 1,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_2": {
+      "name": "Пушка разведчика",
+      "slot": "weapon",
+      "level": 8,
+      "attack": 18,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 2,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_3": {
+      "name": "Пушка инженера",
+      "slot": "weapon",
+      "level": 15,
+      "attack": 34,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 3,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_4": {
+      "name": "Тяжёлая пушка",
+      "slot": "weapon",
+      "level": 22,
+      "attack": 56,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 4,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_5": {
+      "name": "Пушка севера",
+      "slot": "weapon",
+      "level": 27,
+      "attack": 84,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 5,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_6": {
+      "name": "Пушка хранителя",
+      "slot": "weapon",
+      "level": 33,
+      "attack": 118,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 6,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_7": {
+      "name": "Древняя пушка",
+      "slot": "weapon",
+      "level": 38,
+      "attack": 158,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 7,
+      "kind": "cannon"
+    },
+    "weapon_cannoneer_8": {
+      "name": "Пушка вечности",
+      "slot": "weapon",
+      "level": 42,
+      "attack": 204,
+      "allowedClasses": [
+        "cannoneer"
+      ],
+      "tier": 8,
+      "kind": "cannon"
+    },
+    "helmet_0": {
+      "name": "Шлем Путника",
+      "slot": "helmet",
+      "level": 1,
+      "tier": 0,
+      "defense": 1,
+      "attack": 0
+    },
+    "helmet_1": {
+      "name": "Шлем Стража",
+      "slot": "helmet",
+      "level": 5,
+      "tier": 1,
+      "defense": 3,
+      "attack": 0
+    },
+    "helmet_2": {
+      "name": "Шлем Следопыта",
+      "slot": "helmet",
+      "level": 9,
+      "tier": 2,
+      "defense": 6,
+      "attack": 0
+    },
+    "helmet_3": {
+      "name": "Шлем Ветерана",
+      "slot": "helmet",
+      "level": 14,
+      "tier": 3,
+      "defense": 10,
+      "attack": 0
+    },
+    "helmet_4": {
+      "name": "Шлем Защитника",
+      "slot": "helmet",
+      "level": 21,
+      "tier": 4,
+      "defense": 14,
+      "attack": 0
+    },
+    "helmet_5": {
+      "name": "Шлем Севера",
+      "slot": "helmet",
+      "level": 28,
+      "tier": 5,
+      "defense": 19,
+      "attack": 0
+    },
+    "helmet_6": {
+      "name": "Шлем Хранителя",
+      "slot": "helmet",
+      "level": 32,
+      "tier": 6,
+      "defense": 25,
+      "attack": 0
+    },
+    "helmet_7": {
+      "name": "Шлем Древних",
+      "slot": "helmet",
+      "level": 37,
+      "tier": 7,
+      "defense": 31,
+      "attack": 0
+    },
+    "helmet_8": {
+      "name": "Шлем Вечности",
+      "slot": "helmet",
+      "level": 42,
+      "tier": 8,
+      "defense": 38,
+      "attack": 0
+    },
+    "chest_0": {
+      "name": "Нагрудник Путника",
+      "slot": "chest",
+      "level": 1,
+      "tier": 0,
+      "defense": 3,
+      "attack": 0
+    },
+    "chest_1": {
+      "name": "Нагрудник Стража",
+      "slot": "chest",
+      "level": 5,
+      "tier": 1,
+      "defense": 8,
+      "attack": 0
+    },
+    "chest_2": {
+      "name": "Нагрудник Следопыта",
+      "slot": "chest",
+      "level": 9,
+      "tier": 2,
+      "defense": 15,
+      "attack": 0
+    },
+    "chest_3": {
+      "name": "Нагрудник Ветерана",
+      "slot": "chest",
+      "level": 14,
+      "tier": 3,
+      "defense": 25,
+      "attack": 0
+    },
+    "chest_4": {
+      "name": "Нагрудник Защитника",
+      "slot": "chest",
+      "level": 21,
+      "tier": 4,
+      "defense": 36,
+      "attack": 0
+    },
+    "chest_5": {
+      "name": "Нагрудник Севера",
+      "slot": "chest",
+      "level": 28,
+      "tier": 5,
+      "defense": 48,
+      "attack": 0
+    },
+    "chest_6": {
+      "name": "Нагрудник Хранителя",
+      "slot": "chest",
+      "level": 32,
+      "tier": 6,
+      "defense": 62,
+      "attack": 0
+    },
+    "chest_7": {
+      "name": "Нагрудник Древних",
+      "slot": "chest",
+      "level": 37,
+      "tier": 7,
+      "defense": 77,
+      "attack": 0
+    },
+    "chest_8": {
+      "name": "Нагрудник Вечности",
+      "slot": "chest",
+      "level": 42,
+      "tier": 8,
+      "defense": 94,
+      "attack": 0
+    },
+    "gloves_0": {
+      "name": "Перчатки Путника",
+      "slot": "gloves",
+      "level": 1,
+      "tier": 0,
+      "defense": 1,
+      "attack": 0
+    },
+    "gloves_1": {
+      "name": "Перчатки Стража",
+      "slot": "gloves",
+      "level": 5,
+      "tier": 1,
+      "defense": 3,
+      "attack": 0
+    },
+    "gloves_2": {
+      "name": "Перчатки Следопыта",
+      "slot": "gloves",
+      "level": 9,
+      "tier": 2,
+      "defense": 6,
+      "attack": 0
+    },
+    "gloves_3": {
+      "name": "Перчатки Ветерана",
+      "slot": "gloves",
+      "level": 14,
+      "tier": 3,
+      "defense": 10,
+      "attack": 0
+    },
+    "gloves_4": {
+      "name": "Перчатки Защитника",
+      "slot": "gloves",
+      "level": 21,
+      "tier": 4,
+      "defense": 14,
+      "attack": 0
+    },
+    "gloves_5": {
+      "name": "Перчатки Севера",
+      "slot": "gloves",
+      "level": 28,
+      "tier": 5,
+      "defense": 19,
+      "attack": 0
+    },
+    "gloves_6": {
+      "name": "Перчатки Хранителя",
+      "slot": "gloves",
+      "level": 32,
+      "tier": 6,
+      "defense": 25,
+      "attack": 0
+    },
+    "gloves_7": {
+      "name": "Перчатки Древних",
+      "slot": "gloves",
+      "level": 37,
+      "tier": 7,
+      "defense": 31,
+      "attack": 0
+    },
+    "gloves_8": {
+      "name": "Перчатки Вечности",
+      "slot": "gloves",
+      "level": 42,
+      "tier": 8,
+      "defense": 38,
+      "attack": 0
+    },
+    "pants_0": {
+      "name": "Штаны Путника",
+      "slot": "pants",
+      "level": 1,
+      "tier": 0,
+      "defense": 1,
+      "attack": 0
+    },
+    "pants_1": {
+      "name": "Штаны Стража",
+      "slot": "pants",
+      "level": 5,
+      "tier": 1,
+      "defense": 3,
+      "attack": 0
+    },
+    "pants_2": {
+      "name": "Штаны Следопыта",
+      "slot": "pants",
+      "level": 9,
+      "tier": 2,
+      "defense": 6,
+      "attack": 0
+    },
+    "pants_3": {
+      "name": "Штаны Ветерана",
+      "slot": "pants",
+      "level": 14,
+      "tier": 3,
+      "defense": 10,
+      "attack": 0
+    },
+    "pants_4": {
+      "name": "Штаны Защитника",
+      "slot": "pants",
+      "level": 21,
+      "tier": 4,
+      "defense": 14,
+      "attack": 0
+    },
+    "pants_5": {
+      "name": "Штаны Севера",
+      "slot": "pants",
+      "level": 28,
+      "tier": 5,
+      "defense": 19,
+      "attack": 0
+    },
+    "pants_6": {
+      "name": "Штаны Хранителя",
+      "slot": "pants",
+      "level": 32,
+      "tier": 6,
+      "defense": 25,
+      "attack": 0
+    },
+    "pants_7": {
+      "name": "Штаны Древних",
+      "slot": "pants",
+      "level": 37,
+      "tier": 7,
+      "defense": 31,
+      "attack": 0
+    },
+    "pants_8": {
+      "name": "Штаны Вечности",
+      "slot": "pants",
+      "level": 42,
+      "tier": 8,
+      "defense": 38,
+      "attack": 0
+    },
+    "boots_0": {
+      "name": "Сапоги Путника",
+      "slot": "boots",
+      "level": 1,
+      "tier": 0,
+      "defense": 1,
+      "attack": 0
+    },
+    "boots_1": {
+      "name": "Сапоги Стража",
+      "slot": "boots",
+      "level": 5,
+      "tier": 1,
+      "defense": 3,
+      "attack": 0
+    },
+    "boots_2": {
+      "name": "Сапоги Следопыта",
+      "slot": "boots",
+      "level": 9,
+      "tier": 2,
+      "defense": 6,
+      "attack": 0
+    },
+    "boots_3": {
+      "name": "Сапоги Ветерана",
+      "slot": "boots",
+      "level": 14,
+      "tier": 3,
+      "defense": 10,
+      "attack": 0
+    },
+    "boots_4": {
+      "name": "Сапоги Защитника",
+      "slot": "boots",
+      "level": 21,
+      "tier": 4,
+      "defense": 14,
+      "attack": 0
+    },
+    "boots_5": {
+      "name": "Сапоги Севера",
+      "slot": "boots",
+      "level": 28,
+      "tier": 5,
+      "defense": 19,
+      "attack": 0
+    },
+    "boots_6": {
+      "name": "Сапоги Хранителя",
+      "slot": "boots",
+      "level": 32,
+      "tier": 6,
+      "defense": 25,
+      "attack": 0
+    },
+    "boots_7": {
+      "name": "Сапоги Древних",
+      "slot": "boots",
+      "level": 37,
+      "tier": 7,
+      "defense": 31,
+      "attack": 0
+    },
+    "boots_8": {
+      "name": "Сапоги Вечности",
+      "slot": "boots",
+      "level": 42,
+      "tier": 8,
+      "defense": 38,
+      "attack": 0
+    },
+    "ring_0": {
+      "name": "Кольцо Путника",
+      "slot": "ring",
+      "level": 1,
+      "tier": 0,
+      "defense": 0,
+      "attack": 2
+    },
+    "ring_1": {
+      "name": "Кольцо Стража",
+      "slot": "ring",
+      "level": 5,
+      "tier": 1,
+      "defense": 0,
+      "attack": 3
+    },
+    "ring_2": {
+      "name": "Кольцо Следопыта",
+      "slot": "ring",
+      "level": 9,
+      "tier": 2,
+      "defense": 0,
+      "attack": 5
+    },
+    "ring_3": {
+      "name": "Кольцо Ветерана",
+      "slot": "ring",
+      "level": 14,
+      "tier": 3,
+      "defense": 0,
+      "attack": 6
+    },
+    "ring_4": {
+      "name": "Кольцо Защитника",
+      "slot": "ring",
+      "level": 21,
+      "tier": 4,
+      "defense": 0,
+      "attack": 8
+    },
+    "ring_5": {
+      "name": "Кольцо Севера",
+      "slot": "ring",
+      "level": 28,
+      "tier": 5,
+      "defense": 0,
+      "attack": 10
+    },
+    "ring_6": {
+      "name": "Кольцо Хранителя",
+      "slot": "ring",
+      "level": 32,
+      "tier": 6,
+      "defense": 0,
+      "attack": 11
+    },
+    "ring_7": {
+      "name": "Кольцо Древних",
+      "slot": "ring",
+      "level": 37,
+      "tier": 7,
+      "defense": 0,
+      "attack": 13
+    },
+    "ring_8": {
+      "name": "Кольцо Вечности",
+      "slot": "ring",
+      "level": 42,
+      "tier": 8,
+      "defense": 0,
+      "attack": 14
+    },
+    "amulet_0": {
+      "name": "Амулет Путника",
+      "slot": "amulet",
+      "level": 1,
+      "tier": 0,
+      "defense": 0,
+      "attack": 2
+    },
+    "amulet_1": {
+      "name": "Амулет Стража",
+      "slot": "amulet",
+      "level": 5,
+      "tier": 1,
+      "defense": 0,
+      "attack": 3
+    },
+    "amulet_2": {
+      "name": "Амулет Следопыта",
+      "slot": "amulet",
+      "level": 9,
+      "tier": 2,
+      "defense": 0,
+      "attack": 5
+    },
+    "amulet_3": {
+      "name": "Амулет Ветерана",
+      "slot": "amulet",
+      "level": 14,
+      "tier": 3,
+      "defense": 0,
+      "attack": 6
+    },
+    "amulet_4": {
+      "name": "Амулет Защитника",
+      "slot": "amulet",
+      "level": 21,
+      "tier": 4,
+      "defense": 0,
+      "attack": 8
+    },
+    "amulet_5": {
+      "name": "Амулет Севера",
+      "slot": "amulet",
+      "level": 28,
+      "tier": 5,
+      "defense": 0,
+      "attack": 10
+    },
+    "amulet_6": {
+      "name": "Амулет Хранителя",
+      "slot": "amulet",
+      "level": 32,
+      "tier": 6,
+      "defense": 0,
+      "attack": 11
+    },
+    "amulet_7": {
+      "name": "Амулет Древних",
+      "slot": "amulet",
+      "level": 37,
+      "tier": 7,
+      "defense": 0,
+      "attack": 13
+    },
+    "amulet_8": {
+      "name": "Амулет Вечности",
+      "slot": "amulet",
+      "level": 42,
+      "tier": 8,
+      "defense": 0,
+      "attack": 14
+    },
+    "shield_1": {
+      "name": "Щит Стража",
+      "slot": "shield",
+      "level": 5,
+      "tier": 1,
+      "defense": 6,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "shield_2": {
+      "name": "Щит Следопыта",
+      "slot": "shield",
+      "level": 9,
+      "tier": 2,
+      "defense": 12,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "shield_3": {
+      "name": "Щит Ветерана",
+      "slot": "shield",
+      "level": 14,
+      "tier": 3,
+      "defense": 20,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "shield_4": {
+      "name": "Щит Защитника",
+      "slot": "shield",
+      "level": 21,
+      "tier": 4,
+      "defense": 28,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "shield_5": {
+      "name": "Щит Севера",
+      "slot": "shield",
+      "level": 28,
+      "tier": 5,
+      "defense": 38,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "shield_6": {
+      "name": "Щит Хранителя",
+      "slot": "shield",
+      "level": 32,
+      "tier": 6,
+      "defense": 50,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "shield_7": {
+      "name": "Щит Древних",
+      "slot": "shield",
+      "level": 37,
+      "tier": 7,
+      "defense": 62,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "shield_8": {
+      "name": "Щит Вечности",
+      "slot": "shield",
+      "level": 42,
+      "tier": 8,
+      "defense": 75,
+      "attack": 0,
+      "allowedClasses": [
+        "paladin",
+        "warrior"
+      ]
+    },
+    "rustySword": {
+      "name": "Ржавый меч",
+      "slot": "weapon",
+      "attack": 7,
+      "level": 1,
+      "allowedClasses": [
+        "warrior",
+        "paladin"
+      ]
+    },
+    "ironSword": {
+      "name": "Железный меч",
+      "slot": "weapon",
+      "attack": 12,
+      "level": 4,
+      "allowedClasses": [
+        "warrior",
+        "paladin"
+      ]
+    },
+    "leatherVest": {
+      "name": "Кожаный жилет",
+      "slot": "chest",
+      "defense": 3,
+      "level": 1
+    },
+    "leatherBoots": {
+      "name": "Кожаные сапоги",
+      "slot": "boots",
+      "defense": 2,
+      "level": 1
+    },
+    "leatherGloves": {
+      "name": "Кожаные перчатки",
+      "slot": "gloves",
+      "defense": 1,
+      "level": 1
+    },
+    "leatherPants": {
+      "name": "Кожаные штаны",
+      "slot": "pants",
+      "defense": 2,
+      "level": 1
+    },
+    "copperRing": {
+      "name": "Медное кольцо",
+      "slot": "ring",
+      "attack": 1,
+      "level": 1
+    },
+    "wolfFang": {
+      "name": "Клык волка",
+      "slot": null,
+      "level": 1
+    },
+    "wolfPelt": {
+      "name": "Волчья шкура",
+      "slot": null,
+      "level": 1
+    },
+    "stoneGiantCore": {
+      "name": "Сердце Каменного гиганта",
+      "names": {
+        "ru": "Сердце Каменного гиганта",
+        "en": "Heart of the Stone Giant",
+        "es": "Corazón del Gigante de piedra"
+      },
+      "slot": null,
+      "level": 56,
+      "saleValue": 10000
+    },
+    "forestMoonflower": {
+      "name": "Лесный лунный цветок",
+      "names": {
+        "ru": "Лесный лунный цветок",
+        "en": "Woodland moonflower",
+        "es": "Flor lunar del bosque"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "questMaterial": true,
+      "iconURL": "assets/world/gathering/moonflower.png"
+    },
+    "northFrostHerb": {
+      "name": "Северная морозная трава",
+      "names": {
+        "ru": "Северная морозная трава",
+        "en": "Northern frost herb",
+        "es": "Hierba de escarcha del norte"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "questMaterial": true,
+      "iconURL": "assets/world/gathering/frost-herb.png"
+    },
+    "ancientStarBloom": {
+      "name": "Древний звездоцвет",
+      "names": {
+        "ru": "Древний звездоцвет",
+        "en": "Ancient star bloom",
+        "es": "Flor estelar antigua"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "questMaterial": true,
+      "iconURL": "assets/world/gathering/star-bloom.png"
+    },
+    "desertSunleaf": {
+      "name": "Пустынный солнцелист",
+      "names": {
+        "ru": "Пустынный солнцелист",
+        "en": "Desert sunleaf",
+        "es": "Hoja solar del desierto"
+      },
+      "slot": null,
+      "level": 42,
+      "saleValue": 0,
+      "questMaterial": true,
+      "iconURL": "assets/world/gathering/sunleaf.png"
+    },
+    "boarTusk": {
+      "name": "Клык кабана",
+      "names": {
+        "ru": "Клык кабана",
+        "en": "Boar tusk",
+        "es": "Colmillo de jabalí"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/boar-tusk.png"
+    },
+    "raiderPouch": {
+      "name": "Потрёпанный кошель",
+      "names": {
+        "ru": "Потрёпанный кошель",
+        "en": "Worn raider pouch",
+        "es": "Bolsa gastada de bandido"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/raider-pouch.png"
+    },
+    "bearHide": {
+      "name": "Медвежья шкура",
+      "names": {
+        "ru": "Медвежья шкура",
+        "en": "Bear hide",
+        "es": "Piel de oso"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/bear-hide.png"
+    },
+    "spiderSilk": {
+      "name": "Паучий шёлк",
+      "names": {
+        "ru": "Паучий шёлк",
+        "en": "Spider silk",
+        "es": "Seda de araña"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/spider-silk.png"
+    },
+    "boneFragment": {
+      "name": "Обломок кости",
+      "names": {
+        "ru": "Обломок кости",
+        "en": "Bone fragment",
+        "es": "Fragmento de hueso"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/bone-fragment.png"
+    },
+    "iceWolfFang": {
+      "name": "Ледяной клык",
+      "names": {
+        "ru": "Ледяной клык",
+        "en": "Frost wolf fang",
+        "es": "Colmillo de lobo helado"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/ice-fang.png"
+    },
+    "frostGolemCrystal": {
+      "name": "Кристалл ледяного голема",
+      "names": {
+        "ru": "Кристалл ледяного голема",
+        "en": "Frost golem crystal",
+        "es": "Cristal de gólem helado"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/frost-crystal.png"
+    },
+    "sentinelRunestone": {
+      "name": "Рунный осколок стража",
+      "names": {
+        "ru": "Рунный осколок стража",
+        "en": "Sentinel runestone shard",
+        "es": "Fragmento rúnico de centinela"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/sentinel-runestone.png"
+    },
+    "arcaneWispShard": {
+      "name": "Чародейский осколок",
+      "names": {
+        "ru": "Чародейский осколок",
+        "en": "Arcane wisp shard",
+        "es": "Fragmento de fuego arcano"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/arcane-shard.png"
+    },
+    "batWing": {
+      "name": "Крыло летучей мыши",
+      "names": {
+        "ru": "Крыло летучей мыши",
+        "en": "Bat wing",
+        "es": "Ala de murciélago"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/bat-wing.png"
+    },
+    "snakeScales": {
+      "name": "Змеиная чешуя",
+      "names": {
+        "ru": "Змеиная чешуя",
+        "en": "Snake scales",
+        "es": "Escamas de serpiente"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/snake-scales.png"
+    },
+    "orcClanToken": {
+      "name": "Знак орочьего клана",
+      "names": {
+        "ru": "Знак орочьего клана",
+        "en": "Orc clan token",
+        "es": "Insignia de clan orco"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/orc-token.png"
+    },
+    "elementalEssence": {
+      "name": "Стихийная эссенция",
+      "names": {
+        "ru": "Стихийная эссенция",
+        "en": "Elemental essence",
+        "es": "Esencia elemental"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/elemental-essence.png"
+    },
+    "ghostVeil": {
+      "name": "Призрачная вуаль",
+      "names": {
+        "ru": "Призрачная вуаль",
+        "en": "Ghost veil",
+        "es": "Velo espectral"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/ghost-veil.png"
+    },
+    "scarabShell": {
+      "name": "Панцирь скарабея",
+      "names": {
+        "ru": "Панцирь скарабея",
+        "en": "Scarab shell",
+        "es": "Caparazón de escarabajo"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/scarab-shell.png"
+    },
+    "gargoyleFragment": {
+      "name": "Обломок горгульи",
+      "names": {
+        "ru": "Обломок горгульи",
+        "en": "Gargoyle fragment",
+        "es": "Fragmento de gárgola"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/gargoyle-fragment.png"
+    }
+  },
+  "monsterMaterials": {
+    "boarTusk": {
+      "name": "Клык кабана",
+      "names": {
+        "ru": "Клык кабана",
+        "en": "Boar tusk",
+        "es": "Colmillo de jabalí"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/boar-tusk.png"
+    },
+    "raiderPouch": {
+      "name": "Потрёпанный кошель",
+      "names": {
+        "ru": "Потрёпанный кошель",
+        "en": "Worn raider pouch",
+        "es": "Bolsa gastada de bandido"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/raider-pouch.png"
+    },
+    "bearHide": {
+      "name": "Медвежья шкура",
+      "names": {
+        "ru": "Медвежья шкура",
+        "en": "Bear hide",
+        "es": "Piel de oso"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/bear-hide.png"
+    },
+    "spiderSilk": {
+      "name": "Паучий шёлк",
+      "names": {
+        "ru": "Паучий шёлк",
+        "en": "Spider silk",
+        "es": "Seda de araña"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/spider-silk.png"
+    },
+    "boneFragment": {
+      "name": "Обломок кости",
+      "names": {
+        "ru": "Обломок кости",
+        "en": "Bone fragment",
+        "es": "Fragmento de hueso"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/bone-fragment.png"
+    },
+    "iceWolfFang": {
+      "name": "Ледяной клык",
+      "names": {
+        "ru": "Ледяной клык",
+        "en": "Frost wolf fang",
+        "es": "Colmillo de lobo helado"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/ice-fang.png"
+    },
+    "frostGolemCrystal": {
+      "name": "Кристалл ледяного голема",
+      "names": {
+        "ru": "Кристалл ледяного голема",
+        "en": "Frost golem crystal",
+        "es": "Cristal de gólem helado"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/frost-crystal.png"
+    },
+    "sentinelRunestone": {
+      "name": "Рунный осколок стража",
+      "names": {
+        "ru": "Рунный осколок стража",
+        "en": "Sentinel runestone shard",
+        "es": "Fragmento rúnico de centinela"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/sentinel-runestone.png"
+    },
+    "arcaneWispShard": {
+      "name": "Чародейский осколок",
+      "names": {
+        "ru": "Чародейский осколок",
+        "en": "Arcane wisp shard",
+        "es": "Fragmento de fuego arcano"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/arcane-shard.png"
+    },
+    "batWing": {
+      "name": "Крыло летучей мыши",
+      "names": {
+        "ru": "Крыло летучей мыши",
+        "en": "Bat wing",
+        "es": "Ala de murciélago"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/bat-wing.png"
+    },
+    "snakeScales": {
+      "name": "Змеиная чешуя",
+      "names": {
+        "ru": "Змеиная чешуя",
+        "en": "Snake scales",
+        "es": "Escamas de serpiente"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/snake-scales.png"
+    },
+    "orcClanToken": {
+      "name": "Знак орочьего клана",
+      "names": {
+        "ru": "Знак орочьего клана",
+        "en": "Orc clan token",
+        "es": "Insignia de clan orco"
+      },
+      "slot": null,
+      "level": 1,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/orc-token.png"
+    },
+    "elementalEssence": {
+      "name": "Стихийная эссенция",
+      "names": {
+        "ru": "Стихийная эссенция",
+        "en": "Elemental essence",
+        "es": "Esencia elemental"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/elemental-essence.png"
+    },
+    "ghostVeil": {
+      "name": "Призрачная вуаль",
+      "names": {
+        "ru": "Призрачная вуаль",
+        "en": "Ghost veil",
+        "es": "Velo espectral"
+      },
+      "slot": null,
+      "level": 22,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/ghost-veil.png"
+    },
+    "scarabShell": {
+      "name": "Панцирь скарабея",
+      "names": {
+        "ru": "Панцирь скарабея",
+        "en": "Scarab shell",
+        "es": "Caparazón de escarabajo"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/scarab-shell.png"
+    },
+    "gargoyleFragment": {
+      "name": "Обломок горгульи",
+      "names": {
+        "ru": "Обломок горгульи",
+        "en": "Gargoyle fragment",
+        "es": "Fragmento de gárgola"
+      },
+      "slot": null,
+      "level": 35,
+      "saleValue": 0,
+      "monsterMaterial": true,
+      "iconURL": "assets/icons/monster-materials/gargoyle-fragment.png"
+    }
+  },
+  "materialByLoot": {
+    "boar": "boarTusk",
+    "raider": "raiderPouch",
+    "bear": "bearHide",
+    "spider": "spiderSilk",
+    "skeleton": "boneFragment",
+    "iceWolf": "iceWolfFang",
+    "frostGolem": "frostGolemCrystal",
+    "ancientSentinel": "sentinelRunestone",
+    "arcaneWisp": "arcaneWispShard",
+    "bat": "batWing",
+    "snake": "snakeScales",
+    "orc": "orcClanToken",
+    "elemental": "elementalEssence",
+    "ghost": "ghostVeil",
+    "scarab": "scarabShell",
+    "gargoyle": "gargoyleFragment"
+  }
+}

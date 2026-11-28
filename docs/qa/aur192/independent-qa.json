@@ -1,0 +1,864 @@
+{
+  "timestamp": "2026-11-16T09:05:29.760Z",
+  "viewport": "740x320 Chromium touch emulation",
+  "checks": [
+    {
+      "region": "forest",
+      "root": {
+        "x": 0,
+        "y": 0,
+        "w": 740,
+        "h": 320
+      },
+      "close": {
+        "x": 691,
+        "y": 3,
+        "w": 44,
+        "h": 44
+      },
+      "towns": [
+        {
+          "id": "forestVillage",
+          "x": 1030,
+          "y": 1140
+        },
+        {
+          "id": "riverhaven",
+          "x": 5250,
+          "y": 5200
+        },
+        {
+          "id": "oakwatch",
+          "x": 9700,
+          "y": 9500
+        }
+      ],
+      "markers": [
+        {
+          "kind": "town",
+          "id": "forestVillage",
+          "x": 1030,
+          "y": 1140
+        },
+        {
+          "kind": "town",
+          "id": "riverhaven",
+          "x": 5250,
+          "y": 5200
+        },
+        {
+          "kind": "town",
+          "id": "oakwatch",
+          "x": 9700,
+          "y": 9500
+        },
+        {
+          "kind": "landmark",
+          "id": "forest-extension-watch",
+          "x": 16200,
+          "y": 10800
+        },
+        {
+          "kind": "landmark",
+          "id": "forest-extension-refuge",
+          "x": 11200,
+          "y": 16400
+        },
+        {
+          "kind": "landmark",
+          "id": "forest-extension-outpost",
+          "x": 16800,
+          "y": 16400
+        },
+        {
+          "kind": "portal",
+          "id": "forest-north",
+          "x": 11200,
+          "y": 10800
+        },
+        {
+          "kind": "portal",
+          "id": "forest-desert",
+          "x": 1952.21,
+          "y": 2058.4
+        },
+        {
+          "kind": "portal",
+          "id": "arena-entry",
+          "x": 2280,
+          "y": 1140
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon1",
+          "x": 1820,
+          "y": 1780
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon2",
+          "x": 4880,
+          "y": 4860
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon3",
+          "x": 9050,
+          "y": 8950
+        },
+        {
+          "kind": "arrival",
+          "id": "arrival-north-forest",
+          "x": 11200,
+          "y": 10950
+        },
+        {
+          "kind": "arrival",
+          "id": "arrival-desert-forest",
+          "x": 1832.6658027199226,
+          "y": 1937.5315388669903
+        }
+      ],
+      "labels": [
+        {
+          "text": "Лесная деревня",
+          "id": "forestVillage",
+          "x": 87.50068664550781,
+          "y": 27.266666412353516,
+          "w": 69.85595703125,
+          "h": 11
+        },
+        {
+          "text": "Речная гавань",
+          "id": "riverhaven",
+          "x": 184.84115600585938,
+          "y": 99.44444274902344,
+          "w": 62.180908203125,
+          "h": 11
+        },
+        {
+          "text": "Дубовая стража",
+          "id": "oakwatch",
+          "x": 363.26995849609375,
+          "y": 175.88888549804688,
+          "w": 71.3427734375,
+          "h": 11
+        },
+        {
+          "text": "Северные земли",
+          "id": "forest-north",
+          "x": 424.0069580078125,
+          "y": 199,
+          "w": 73.250244140625,
+          "h": 11
+        },
+        {
+          "text": "Пустынные земли",
+          "id": "forest-desert",
+          "x": 79.74189758300781,
+          "y": 9.593778610229492,
+          "w": 81.4072265625,
+          "h": 11
+        },
+        {
+          "text": "Круг испытаний",
+          "id": "arena-entry",
+          "x": 176.98333740234375,
+          "y": 42.266666412353516,
+          "w": 73.865478515625,
+          "h": 11
+        },
+        {
+          "text": "Солнечная поляна",
+          "id": "sunmeadow",
+          "x": 70.37586975097656,
+          "y": 46.88888931274414,
+          "w": 85.46435546875,
+          "h": 12
+        },
+        {
+          "text": "Дубовая роща",
+          "id": "oakgrove",
+          "x": 135.52430725097656,
+          "y": 67.33333587646484,
+          "w": 66.166015625,
+          "h": 12
+        },
+        {
+          "text": "Зелёные холмы",
+          "id": "greenhills",
+          "x": 278.5234375,
+          "y": 62,
+          "w": 72.560546875,
+          "h": 12
+        },
+        {
+          "text": "Западный бор",
+          "id": "westernpine",
+          "x": 103.10417175292969,
+          "y": 161.55555725097656,
+          "w": 65.62451171875,
+          "h": 12
+        },
+        {
+          "text": "Южные луга",
+          "id": "southern-meadows",
+          "x": 265.828125,
+          "y": 249.33334350585938,
+          "w": 60.451171875,
+          "h": 12
+        },
+        {
+          "text": "Заросший город",
+          "id": "abandoned-city",
+          "x": 598.6187744140625,
+          "y": 182,
+          "w": 75.9638671875,
+          "h": 12
+        }
+      ],
+      "bitmap": {
+        "width": 1882,
+        "height": 836
+      },
+      "canvas": [
+        740,
+        320
+      ]
+    },
+    {
+      "region": "north",
+      "root": {
+        "x": 0,
+        "y": 0,
+        "w": 740,
+        "h": 320
+      },
+      "close": {
+        "x": 691,
+        "y": 3,
+        "w": 44,
+        "h": 44
+      },
+      "towns": [
+        {
+          "id": "frostford",
+          "x": 1500,
+          "y": 1800
+        },
+        {
+          "id": "highpass",
+          "x": 10300,
+          "y": 10600
+        }
+      ],
+      "markers": [
+        {
+          "kind": "town",
+          "id": "frostford",
+          "x": 1500,
+          "y": 1800
+        },
+        {
+          "kind": "town",
+          "id": "highpass",
+          "x": 10300,
+          "y": 10600
+        },
+        {
+          "kind": "landmark",
+          "id": "north-extension-watch",
+          "x": 19000,
+          "y": 12600
+        },
+        {
+          "kind": "landmark",
+          "id": "north-extension-refuge",
+          "x": 12500,
+          "y": 19600
+        },
+        {
+          "kind": "landmark",
+          "id": "north-extension-outpost",
+          "x": 19500,
+          "y": 19600
+        },
+        {
+          "kind": "portal",
+          "id": "north-forest",
+          "x": 1500,
+          "y": 1600
+        },
+        {
+          "kind": "portal",
+          "id": "north-ancient",
+          "x": 12500,
+          "y": 12600
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon4",
+          "x": 1960,
+          "y": 2240
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon5",
+          "x": 4100,
+          "y": 4460
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon6",
+          "x": 7500,
+          "y": 7820
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon7",
+          "x": 10580,
+          "y": 10870
+        },
+        {
+          "kind": "arrival",
+          "id": "arrival-forest-north",
+          "x": 1500,
+          "y": 1900
+        },
+        {
+          "kind": "arrival",
+          "id": "arrival-ancient-north",
+          "x": 12500,
+          "y": 12750
+        }
+      ],
+      "labels": [
+        {
+          "text": "Морозный брод",
+          "id": "frostford",
+          "x": 97.46652221679688,
+          "y": 34.42856979370117,
+          "w": 71.43017578125,
+          "h": 11
+        },
+        {
+          "text": "Высокий перевал",
+          "id": "highpass",
+          "x": 323.983642578125,
+          "y": 168.5238037109375,
+          "w": 77.9375,
+          "h": 11
+        },
+        {
+          "text": "Лесная долина",
+          "id": "north-forest",
+          "x": 99.87277221679688,
+          "y": 5.5,
+          "w": 66.2978515625,
+          "h": 11
+        },
+        {
+          "text": "Древние земли",
+          "id": "north-ancient",
+          "x": 407.0386962890625,
+          "y": 199,
+          "w": 67.24658203125,
+          "h": 11
+        },
+        {
+          "text": "Поля инея",
+          "id": "frostfields",
+          "x": 104.45498657226562,
+          "y": 54.76190185546875,
+          "w": 48.328125,
+          "h": 12
+        },
+        {
+          "text": "Зеркальная низина",
+          "id": "glassbasin",
+          "x": 96.99143981933594,
+          "y": 123.33332824707031,
+          "w": 88.0263671875,
+          "h": 12
+        },
+        {
+          "text": "Каменный перевал",
+          "id": "stonepass",
+          "x": 213.04278564453125,
+          "y": 114.95237731933594,
+          "w": 88.8974609375,
+          "h": 12
+        },
+        {
+          "text": "Снежный бор",
+          "id": "snowpine",
+          "x": 353.7477722167969,
+          "y": 65.42857360839844,
+          "w": 64.716796875,
+          "h": 12
+        },
+        {
+          "text": "Южные снежные поля",
+          "id": "southern-snowfields",
+          "x": 264.1897277832031,
+          "y": 237.90475463867188,
+          "w": 105.90625,
+          "h": 12
+        },
+        {
+          "text": "Пепельная гряда",
+          "id": "volcanic",
+          "x": 597.2828369140625,
+          "y": 182,
+          "w": 78.34765625,
+          "h": 12
+        }
+      ],
+      "bitmap": {
+        "width": 1881,
+        "height": 836
+      },
+      "canvas": [
+        740,
+        320
+      ]
+    },
+    {
+      "region": "ancient",
+      "root": {
+        "x": 0,
+        "y": 0,
+        "w": 740,
+        "h": 320
+      },
+      "close": {
+        "x": 691,
+        "y": 3,
+        "w": 44,
+        "h": 44
+      },
+      "towns": [
+        {
+          "id": "dawncamp",
+          "x": 1600,
+          "y": 1800
+        },
+        {
+          "id": "elderSanctum",
+          "x": 11700,
+          "y": 11400
+        }
+      ],
+      "markers": [
+        {
+          "kind": "town",
+          "id": "dawncamp",
+          "x": 1600,
+          "y": 1800
+        },
+        {
+          "kind": "town",
+          "id": "elderSanctum",
+          "x": 11700,
+          "y": 11400
+        },
+        {
+          "kind": "landmark",
+          "id": "fallen-observatory",
+          "x": 3700,
+          "y": 4200
+        },
+        {
+          "kind": "landmark",
+          "id": "moon-garden",
+          "x": 6900,
+          "y": 8100
+        },
+        {
+          "kind": "landmark",
+          "id": "elder-gate",
+          "x": 10900,
+          "y": 12400
+        },
+        {
+          "kind": "portal",
+          "id": "ancient-north",
+          "x": 1600,
+          "y": 1600
+        },
+        {
+          "kind": "portal",
+          "id": "ancient-desert",
+          "x": 1920.15,
+          "y": 2095.24
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon8",
+          "x": 2060,
+          "y": 2240
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon9",
+          "x": 4400,
+          "y": 4440
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon10",
+          "x": 6940,
+          "y": 6900
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon11",
+          "x": 9550,
+          "y": 9300
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon12",
+          "x": 11960,
+          "y": 11720
+        },
+        {
+          "kind": "arrival",
+          "id": "arrival-north-ancient",
+          "x": 1600,
+          "y": 1900
+        },
+        {
+          "kind": "arrival",
+          "id": "arrival-desert-ancient",
+          "x": 1794.903492344464,
+          "y": 1980.2908272318075
+        }
+      ],
+      "labels": [
+        {
+          "text": "Лагерь рассвета",
+          "id": "dawncamp",
+          "x": 123.20677185058594,
+          "y": 45.400001525878906,
+          "w": 71.778564453125,
+          "h": 11
+        },
+        {
+          "text": "Древнее святилище",
+          "id": "elderSanctum",
+          "x": 533.3406372070312,
+          "y": 250.20001220703125,
+          "w": 88.056640625,
+          "h": 11
+        },
+        {
+          "text": "Северные земли",
+          "id": "ancient-north",
+          "x": 42.49583435058594,
+          "y": 7.133333206176758,
+          "w": 73.250244140625,
+          "h": 11
+        },
+        {
+          "text": "Пустынные земли",
+          "id": "ancient-desert",
+          "x": 134.21177673339844,
+          "y": 17.698453903198242,
+          "w": 81.4072265625,
+          "h": 11
+        },
+        {
+          "text": "Лес предков",
+          "id": "elder-forest",
+          "x": 129.17916870117188,
+          "y": 63.599998474121094,
+          "w": 57.375,
+          "h": 12
+        },
+        {
+          "text": "Разрушенные владения",
+          "id": "elder-ruins",
+          "x": 497.9864501953125,
+          "y": 63.599998474121094,
+          "w": 109.09375,
+          "h": 12
+        },
+        {
+          "text": "Туманные топи",
+          "id": "elder-marsh",
+          "x": 121.85104370117188,
+          "y": 180.93333435058594,
+          "w": 72.1396484375,
+          "h": 12
+        },
+        {
+          "text": "Каменное безмолвие",
+          "id": "elder-wastes",
+          "x": 503.8380126953125,
+          "y": 180.93333435058594,
+          "w": 97.5009765625,
+          "h": 12
+        },
+        {
+          "text": "Сумеречные пределы",
+          "id": "elder-mystic",
+          "x": 127.45156860351562,
+          "y": 249.33334350585938,
+          "w": 100.90380859375,
+          "h": 12
+        },
+        {
+          "text": "Сухой предел",
+          "id": "elder-dry",
+          "x": 520.0625,
+          "y": 283.3333435058594,
+          "w": 64.3837890625,
+          "h": 12
+        }
+      ],
+      "bitmap": {
+        "width": 1881,
+        "height": 836
+      },
+      "canvas": [
+        740,
+        320
+      ]
+    },
+    {
+      "region": "desert",
+      "root": {
+        "x": 0,
+        "y": 0,
+        "w": 740,
+        "h": 320
+      },
+      "close": {
+        "x": 691,
+        "y": 3,
+        "w": 44,
+        "h": 44
+      },
+      "towns": [
+        {
+          "id": "caravanOasis",
+          "x": 1600,
+          "y": 1800
+        }
+      ],
+      "markers": [
+        {
+          "kind": "town",
+          "id": "caravanOasis",
+          "x": 1600,
+          "y": 1800
+        },
+        {
+          "kind": "landmark",
+          "id": "desert-silent-tower",
+          "x": 7000,
+          "y": 3500
+        },
+        {
+          "kind": "landmark",
+          "id": "desert-lost-quarter",
+          "x": 13200,
+          "y": 10500
+        },
+        {
+          "kind": "landmark",
+          "id": "desert-salt-gate",
+          "x": 16800,
+          "y": 16900
+        },
+        {
+          "kind": "portal",
+          "id": "desert-ancient",
+          "x": 1600,
+          "y": 1640
+        },
+        {
+          "kind": "portal",
+          "id": "desert-forest",
+          "x": 1600,
+          "y": 1960
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon13",
+          "x": 1875,
+          "y": 2536
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon14",
+          "x": 6107,
+          "y": 4946
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon15",
+          "x": 5094,
+          "y": 11160
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon16",
+          "x": 6843,
+          "y": 15844
+        },
+        {
+          "kind": "dungeon",
+          "id": "dungeon17",
+          "x": 15664,
+          "y": 17387
+        },
+        {
+          "kind": "arrival",
+          "id": "arrival-forest-desert",
+          "x": 1600,
+          "y": 1800
+        }
+      ],
+      "labels": [
+        {
+          "text": "Древние земли",
+          "id": "desert-ancient",
+          "x": 105.76249694824219,
+          "y": 33.2400016784668,
+          "w": 67.24658203125,
+          "h": 11
+        },
+        {
+          "text": "Лесная долина",
+          "id": "desert-forest",
+          "x": 106.21562194824219,
+          "y": 5.5,
+          "w": 66.2978515625,
+          "h": 11
+        },
+        {
+          "text": "Золотые дюны",
+          "id": "golden-dunes",
+          "x": 206.1796875,
+          "y": 73.19999694824219,
+          "w": 69.2412109375,
+          "h": 12
+        },
+        {
+          "text": "Южные дюны",
+          "id": "southern-dunes",
+          "x": 562.1765747070312,
+          "y": 271.6000061035156,
+          "w": 67.6513671875,
+          "h": 12
+        },
+        {
+          "text": "Каменистые пустоши",
+          "id": "stony-wastes",
+          "x": 189.8984375,
+          "y": 198,
+          "w": 101.3046875,
+          "h": 12
+        },
+        {
+          "text": "Караванный оазис",
+          "id": "caravan-oasis",
+          "x": 16.35625457763672,
+          "y": 49.79999923706055,
+          "w": 85.802734375,
+          "h": 12
+        },
+        {
+          "text": "Зеркальный оазис",
+          "id": "mirror-oasis",
+          "x": 390.91558837890625,
+          "y": 127.60000610351562,
+          "w": 84.083984375,
+          "h": 12
+        },
+        {
+          "text": "Южный оазис",
+          "id": "south-oasis",
+          "x": 233.17343139648438,
+          "y": 240.8000030517578,
+          "w": 66.56884765625,
+          "h": 12
+        },
+        {
+          "text": "Затерянные руины",
+          "id": "lost-desert-ruins",
+          "x": 444.80621337890625,
+          "y": 174,
+          "w": 87.7822265625,
+          "h": 12
+        },
+        {
+          "text": "Квартал древних башен",
+          "id": "tower-precinct",
+          "x": 283.1484375,
+          "y": 62,
+          "w": 111.810546875,
+          "h": 12
+        }
+      ],
+      "bitmap": {
+        "width": 1881,
+        "height": 836
+      },
+      "canvas": [
+        740,
+        320
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "url": "forest-ultrawide.webp",
+      "status": 200
+    },
+    {
+      "url": "north-ultrawide.webp",
+      "status": 200
+    },
+    {
+      "url": "ancient-ultrawide.webp",
+      "status": 200
+    },
+    {
+      "url": "desert-ultrawide.webp",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "physicalAndroid": false,
+  "visualStatus": "Final v2 styled artwork. Actual player/road/town anchors use exact SVG; painted scenery is a stylized cartographic generalization. Physical Android owner acceptance pending.",
+  "phase": "Final manifest-v2 styled artwork, four region maps at740x320",
+  "visualReview": {
+    "regions": [
+      "forest",
+      "north",
+      "ancient",
+      "desert"
+    ],
+    "allFullViewport": true,
+    "closeAtTopRight": true,
+    "playerDistinctVisibleAtSpawn": true,
+    "noLargeFrameOrEmptyMargins": true,
+    "fourRecognizableClimates": true,
+    "roadsAndTownAnchorsAlignVisually": true,
+    "limitation": "Painted landforms/vegetation are artistic cartographic generalization, not a pixel-perfect world-object inventory. Dynamic SVG is authoritative for actual coordinates, roads and markers. Physical Android acceptance remains with owner."
+  },
+  "preservation": {
+    "checkpoint": "fe09a8be9be184d049cef2a568a8a282bd6a12c0",
+    "existingProtectedFiles": 418,
+    "hashMismatches": [],
+    "minimapSourceUnchanged": true
+  },
+  "unitTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "soakReport": "work/aur192/soak.json"
+}

@@ -1,0 +1,95 @@
+ skills with held joystick, three-finger attack/potion, cooldowns and cancellation 640 360
+2026-11-17T12:31:24.5098618Z PASS four skills with held joystick, three-finger attack/potion, cooldowns and cancellation 740 320
+2026-11-17T12:31:46.3015646Z PASS four skills with held joystick, three-finger attack/potion, cooldowns and cancellation 915 412
+2026-11-17T12:31:56.6699514Z PASS mobile control lifecycle (CDP/emulated signals, not physical Android) without JS errors
+2026-11-17T12:32:13.0115038Z DEBUG input ownership {
+2026-11-17T12:32:13.0115827Z   region: 'forest',
+2026-11-17T12:32:13.0116514Z   position: { x: 1030, y: 1140 },
+2026-11-17T12:32:13.0117227Z   actual: [
+2026-11-17T12:32:13.0117545Z     {
+2026-11-17T12:32:13.0117963Z       name: 'gathering-gather-ancient-00',
+2026-11-17T12:32:13.0118479Z       active: false,
+2026-11-17T12:32:13.0118874Z       enabled: undefined
+2026-11-17T12:32:13.0119817Z     },
+2026-11-17T12:32:13.0120236Z     {
+2026-11-17T12:32:13.0120724Z       name: 'gathering-gather-ancient-01',
+2026-11-17T12:32:13.0121232Z       active: false,
+2026-11-17T12:32:13.0121640Z       enabled: undefined
+2026-11-17T12:32:13.0122063Z     },
+2026-11-17T12:32:13.0122630Z     { name: 'ground-loot-drop-1', active: true, enabled: true },
+2026-11-17T12:32:13.0123449Z     { name: 'ground-loot-drop-2', active: true, enabled: true },
+2026-11-17T12:32:13.0124226Z     { name: 'ground-loot-drop-3', active: true, enabled: true },
+2026-11-17T12:32:13.0124917Z     { name: 'ground-loot-drop-4', active: true, enabled: true },
+2026-11-17T12:32:13.0125838Z     { name: 'ground-loot-drop-5', active: true, enabled: true },
+2026-11-17T12:32:13.0126866Z     { name: 'ground-loot-drop-6', active: true, enabled: true },
+2026-11-17T12:32:13.0127703Z     { name: 'ground-loot-drop-7', active: true, enabled: true },
+2026-11-17T12:32:13.0128513Z     { name: 'ground-loot-drop-8', active: true, enabled: true },
+2026-11-17T12:32:13.0129286Z     { name: 'ground-loot-drop-9', active: true, enabled: true },
+2026-11-17T12:32:13.0130102Z     { name: 'ground-loot-drop-10', active: true, enabled: true },
+2026-11-17T12:32:13.0130885Z     { name: 'ground-loot-drop-11', active: true, enabled: true },
+2026-11-17T12:32:13.0131659Z     { name: 'ground-loot-drop-12', active: true, enabled: true },
+2026-11-17T12:32:13.0132511Z     { name: 'ground-loot-drop-13', active: true, enabled: true },
+2026-11-17T12:32:13.0133280Z     { name: 'ground-loot-drop-14', active: true, enabled: true },
+2026-11-17T12:32:13.0134051Z     { name: 'ground-loot-drop-15', active: true, enabled: true },
+2026-11-17T12:32:13.0134841Z     { name: 'ground-loot-drop-16', active: true, enabled: true },
+2026-11-17T12:32:13.0135610Z     { name: 'ground-loot-drop-17', active: true, enabled: true },
+2026-11-17T12:32:13.0136375Z     { name: 'ground-loot-drop-18', active: true, enabled: true }
+2026-11-17T12:32:13.0139429Z   ],
+2026-11-17T12:32:13.0139758Z   loot: [
+2026-11-17T12:32:13.0140193Z     'ground-loot-drop-1',  'ground-loot-drop-2',
+2026-11-17T12:32:13.0140839Z     'ground-loot-drop-3',  'ground-loot-drop-4',
+2026-11-17T12:32:13.0141487Z     'ground-loot-drop-5',  'ground-loot-drop-6',
+2026-11-17T12:32:13.0142120Z     'ground-loot-drop-7',  'ground-loot-drop-8',
+2026-11-17T12:32:13.0142769Z     'ground-loot-drop-9',  'ground-loot-drop-10',
+2026-11-17T12:32:13.0143440Z     'ground-loot-drop-11', 'ground-loot-drop-12',
+2026-11-17T12:32:13.0144096Z     'ground-loot-drop-13', 'ground-loot-drop-14',
+2026-11-17T12:32:13.0144754Z     'ground-loot-drop-15', 'ground-loot-drop-16',
+2026-11-17T12:32:13.0147560Z     'ground-loot-drop-17', 'ground-loot-drop-18'
+2026-11-17T12:32:13.0148039Z   ],
+2026-11-17T12:32:13.0148369Z   plants: [],
+2026-11-17T12:32:13.0148711Z   gathering: {
+2026-11-17T12:32:13.0149075Z     visibleGatheringNodes: 0,
+2026-11-17T12:32:13.0149586Z     gatheringAtlasResident: false,
+2026-11-17T12:32:13.0150060Z     gatheringGeneration: 4
+2026-11-17T12:32:13.0150482Z   },
+2026-11-17T12:32:13.0150836Z   paused: false,
+2026-11-17T12:32:13.0151202Z   frame: 115
+2026-11-17T12:32:13.0151549Z }
+2026-11-17T12:32:13.1491003Z page.waitForFunction: Timeout 5000ms exceeded.
+2026-11-17T12:32:13.1491670Z     at settle (/home/runner/work/auralis/auralis/tests/browser-loot-soak.cjs:12:369)
+2026-11-17T12:32:13.1492336Z     at async /home/runner/work/auralis/auralis/tests/browser-loot-soak.cjs:17:238 {
+2026-11-17T12:32:13.1492773Z   log: [],
+2026-11-17T12:32:13.1493039Z   name: 'TimeoutError'
+2026-11-17T12:32:13.1493305Z }
+2026-11-17T12:32:13.1759019Z ##[error]Process completed with exit code 1.
+2026-11-17T12:32:13.1847376Z ##[group]Run actions/upload-artifact@v4
+2026-11-17T12:32:13.1847741Z with:
+2026-11-17T12:32:13.1847955Z   name: browser-task1
+2026-11-17T12:32:13.1848222Z   path: work/browser/
+work/stream-benchmark/
+
+2026-11-17T12:32:13.1848537Z   if-no-files-found: ignore
+2026-11-17T12:32:13.1848792Z   compression-level: 6
+2026-11-17T12:32:13.1849021Z   overwrite: false
+2026-11-17T12:32:13.1849251Z   include-hidden-files: false
+2026-11-17T12:32:13.1849499Z env:
+2026-11-17T12:32:13.1849713Z   CHROMIUM_PATH: /usr/bin/google-chrome
+2026-11-17T12:32:13.1849993Z ##[endgroup]
+2026-11-17T12:32:13.3675292Z (node:3549) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-17T12:32:13.3676353Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-17T12:32:13.3754044Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-17T12:32:13.3757435Z The least common ancestor is /home/runner/work/auralis/auralis/work. This will be the root directory of the artifact
+2026-11-17T12:32:13.3758668Z With the provided path, there will be 5 files uploaded
+2026-11-17T12:32:13.3764669Z Artifact name is valid!
+2026-11-17T12:32:13.3765755Z Root directory input is valid!
+2026-11-17T12:32:13.6867164Z Beginning upload of artifact content to blob storage
+2026-11-17T12:32:13.7815232Z (node:3549) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-17T12:32:14.1466484Z Uploaded bytes 1373543
+2026-11-17T12:32:14.1890318Z Finished uploading artifact content to blob storage!
+2026-11-17T12:32:14.1891179Z SHA256 digest of uploaded artifact zip is ef01b41531c3cec9ea5518a08cf9b2fd0d1a7dab27a814f5dc41ee3c3a68622a
+2026-11-17T12:32:14.1892404Z Finalizing artifact upload
+2026-11-17T12:32:14.5647970Z Artifact browser-task1.zip successfully finalized. Artifact ID 14328317278
+2026-11-17T12:32:14.5649495Z Artifact browser-task1 has been successfully uploaded! Final size is 1373543 bytes. Artifact ID is 14328317278
+2026-11-17T12:32:14.5651133Z Artifact download URL: https://github.com/gigiloesp-dot/auralis/actions/runs/44082833707/artifacts/14328317278
+2026-11-17T12:32:14.5864675Z Post job cleanup.
+202

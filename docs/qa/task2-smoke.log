@@ -1,0 +1,21 @@
+PASS create and enter
+PASS touch joystick movement and reset
+PASS NPC quest accept
+PASS quest tracker opens actual objective coordinates on map
+PASS basic attack hold and loot
+PASS damage and death respawn
+PASS XP level and stat allocation UI
+PASS learn and assign skill UI
+PASS skill uses mana cooldown and damage
+PASS equip item UI
+PASS potion consumable
+PASS autosave while panel open
+PASS reload restores full hero
+PASS mobile viewport no overflow and 44px skill targets
+PASS quest completion, reward and merchant
+PASS shared storage deposit and withdraw
+PASS all game panels close by touch and portrait hint works
+PASS pause closes overlays and resume restores active scene
+PASS save backup rejects invalid input without changing character
+PASS download and confirmed import restore the character across scene restart
+PASS no page errors

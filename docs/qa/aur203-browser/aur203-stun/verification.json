@@ -1,0 +1,403 @@
+{
+  "records": [
+    {
+      "classId": "warrior",
+      "warning": {
+        "busy": true,
+        "duration": 1100,
+        "active": true,
+        "color": 16761694
+      },
+      "dodged": true,
+      "hit": {
+        "active": true,
+        "remaining": 700,
+        "movement": 0
+      },
+      "attack": false,
+      "skill": {
+        "ok": false,
+        "reason": "stun"
+      },
+      "before": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799742606,\"recoverAfter\":1795799758706,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799802606,\"lastSeenAt\":1795799731972.5334,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunwarrior\",\"classId\":\"warrior\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99989,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"warrior_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":225,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "after": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799742606,\"recoverAfter\":1795799758706,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799802606,\"lastSeenAt\":1795799731972.5334,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunwarrior\",\"classId\":\"warrior\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99989,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"warrior_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":225,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "potion": true,
+      "locales": [
+        {
+          "language": "ru",
+          "title": "Оглушение",
+          "time": "1"
+        },
+        {
+          "language": "en",
+          "title": "Stun",
+          "time": "1"
+        },
+        {
+          "language": "es",
+          "title": "Aturdimiento",
+          "time": "1"
+        }
+      ],
+      "tapConsumed": true,
+      "stationaryDuring": true,
+      "impactCanceled": true,
+      "saveOk": true,
+      "savedHasStun": false,
+      "cleanup": {
+        "expired": true,
+        "remaining": 0,
+        "slowRestored": 0.55,
+        "hudGone": true,
+        "immuneReject": true,
+        "transitionClear": true,
+        "immunityReset": true
+      }
+    },
+    {
+      "classId": "archer",
+      "warning": {
+        "busy": true,
+        "duration": 1100,
+        "active": true,
+        "color": 16761694
+      },
+      "dodged": true,
+      "hit": {
+        "active": true,
+        "remaining": 700,
+        "movement": 0
+      },
+      "attack": false,
+      "skill": {
+        "ok": false,
+        "reason": "stun"
+      },
+      "before": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799747080,\"recoverAfter\":1795799763180,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799807080,\"lastSeenAt\":1795799736296.52,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunarcher\",\"classId\":\"archer\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99987,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"archer_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":240.75,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "after": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799747080,\"recoverAfter\":1795799763180,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799807080,\"lastSeenAt\":1795799736296.52,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunarcher\",\"classId\":\"archer\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99987,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"archer_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":240.75,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "potion": true,
+      "locales": [
+        {
+          "language": "ru",
+          "title": "Оглушение",
+          "time": "1"
+        },
+        {
+          "language": "en",
+          "title": "Stun",
+          "time": "1"
+        },
+        {
+          "language": "es",
+          "title": "Aturdimiento",
+          "time": "1"
+        }
+      ],
+      "tapConsumed": true,
+      "stationaryDuring": true,
+      "impactCanceled": true,
+      "saveOk": true,
+      "savedHasStun": false,
+      "cleanup": {
+        "expired": true,
+        "remaining": 0,
+        "slowRestored": 0.55,
+        "hudGone": true,
+        "immuneReject": true,
+        "transitionClear": true,
+        "immunityReset": true
+      }
+    },
+    {
+      "classId": "mage",
+      "warning": {
+        "busy": true,
+        "duration": 1100,
+        "active": true,
+        "color": 16761694
+      },
+      "dodged": true,
+      "hit": {
+        "active": true,
+        "remaining": 700,
+        "movement": 0
+      },
+      "attack": false,
+      "skill": {
+        "ok": false,
+        "reason": "stun"
+      },
+      "before": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799752627,\"recoverAfter\":1795799768727,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799812627,\"lastSeenAt\":1795799741876.8733,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunmage\",\"classId\":\"mage\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99985,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"mage_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":225,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "after": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799752627,\"recoverAfter\":1795799768727,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799812627,\"lastSeenAt\":1795799741876.8733,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunmage\",\"classId\":\"mage\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99985,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"mage_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":225,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "potion": true,
+      "locales": [
+        {
+          "language": "ru",
+          "title": "Оглушение",
+          "time": "1"
+        },
+        {
+          "language": "en",
+          "title": "Stun",
+          "time": "1"
+        },
+        {
+          "language": "es",
+          "title": "Aturdimiento",
+          "time": "1"
+        }
+      ],
+      "tapConsumed": true,
+      "stationaryDuring": true,
+      "impactCanceled": true,
+      "saveOk": true,
+      "savedHasStun": false,
+      "cleanup": {
+        "expired": true,
+        "remaining": 0,
+        "slowRestored": 0.55,
+        "hudGone": true,
+        "immuneReject": true,
+        "transitionClear": true,
+        "immunityReset": true
+      }
+    },
+    {
+      "classId": "paladin",
+      "warning": {
+        "busy": true,
+        "duration": 1100,
+        "active": true,
+        "color": 16761694
+      },
+      "dodged": true,
+      "hit": {
+        "active": true,
+        "remaining": 700,
+        "movement": 0
+      },
+      "attack": false,
+      "skill": {
+        "ok": false,
+        "reason": "stun"
+      },
+      "before": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799761122,\"recoverAfter\":1795799777222,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799821122,\"lastSeenAt\":1795799750355.2466,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-8\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9200.394245696718,\"y\":8160.665141980074,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-9\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9031,\"y\":8153,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-0\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":8947.834915415067,\"y\":8211.335064738942,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-2\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9167,\"y\":8381,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-3\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9135.793636195307,\"y\":8428.124348180088,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-4\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9199,\"y\":8217,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-5\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":8979,\"y\":8327,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-6\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9188,\"y\":8288,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-7\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9077,\"y\":8339,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-10\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":8954.899618606232,\"y\":8271.00620426625,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunpaladin\",\"classId\":\"paladin\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99991,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"paladin_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":211.5,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "after": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799761122,\"recoverAfter\":1795799777222,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799821122,\"lastSeenAt\":1795799750355.2466,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-8\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9200.394245696718,\"y\":8160.665141980074,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-9\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9031,\"y\":8153,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-0\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":8947.834915415067,\"y\":8211.335064738942,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-2\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9167,\"y\":8381,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-3\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9135.793636195307,\"y\":8428.124348180088,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-4\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9199,\"y\":8217,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-5\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":8979,\"y\":8327,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-6\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9188,\"y\":8288,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-7\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":9077,\"y\":8339,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-10\":{\"hp\":211,\"healthAt\":1795799759417,\"recoverAfter\":1795799764417,\"x\":8954.899618606232,\"y\":8271.00620426625,\"aggroUntil\":1795799767417,\"lastSeenAt\":1795799759417,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunpaladin\",\"classId\":\"paladin\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99991,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"paladin_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":211.5,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "potion": true,
+      "locales": [
+        {
+          "language": "ru",
+          "title": "Оглушение",
+          "time": "1"
+        },
+        {
+          "language": "en",
+          "title": "Stun",
+          "time": "1"
+        },
+        {
+          "language": "es",
+          "title": "Aturdimiento",
+          "time": "1"
+        }
+      ],
+      "tapConsumed": true,
+      "stationaryDuring": true,
+      "impactCanceled": true,
+      "saveOk": true,
+      "savedHasStun": false,
+      "cleanup": {
+        "expired": true,
+        "remaining": 0,
+        "slowRestored": 0.55,
+        "hudGone": true,
+        "immuneReject": true,
+        "transitionClear": true,
+        "immunityReset": true
+      }
+    },
+    {
+      "classId": "assassin",
+      "warning": {
+        "busy": true,
+        "duration": 1100,
+        "active": true,
+        "color": 16761694
+      },
+      "dodged": true,
+      "hit": {
+        "active": true,
+        "remaining": 700,
+        "movement": 0
+      },
+      "attack": false,
+      "skill": {
+        "ok": false,
+        "reason": "stun"
+      },
+      "before": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799771020,\"recoverAfter\":1795799787120,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799831020,\"lastSeenAt\":1795799760503.2134,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-8\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9200.394245696718,\"y\":8160.665141980074,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-9\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9031,\"y\":8153,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-0\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":8947.834915415067,\"y\":8211.335064738942,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-2\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9167,\"y\":8381,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-3\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9135.793636195307,\"y\":8428.124348180088,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-4\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9199,\"y\":8217,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-5\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":8979,\"y\":8327,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-6\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9188,\"y\":8288,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-7\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9077,\"y\":8339,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-10\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":8954.899618606232,\"y\":8271.00620426625,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunassassin\",\"classId\":\"assassin\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99988,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"assassin_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":261,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "after": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799771020,\"recoverAfter\":1795799787120,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799831020,\"lastSeenAt\":1795799760503.2134,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-8\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9200.394245696718,\"y\":8160.665141980074,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-9\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9031,\"y\":8153,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-0\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":8947.834915415067,\"y\":8211.335064738942,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-2\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9167,\"y\":8381,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-3\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9135.793636195307,\"y\":8428.124348180088,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-4\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9199,\"y\":8217,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-5\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":8979,\"y\":8327,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-6\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9188,\"y\":8288,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-7\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":9077,\"y\":8339,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-10\":{\"hp\":211,\"healthAt\":1795799768509,\"recoverAfter\":1795799773509,\"x\":8954.899618606232,\"y\":8271.00620426625,\"aggroUntil\":1795799776509,\"lastSeenAt\":1795799768509,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stunassassin\",\"classId\":\"assassin\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99988,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"assassin_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":261,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "potion": true,
+      "locales": [
+        {
+          "language": "ru",
+          "title": "Оглушение",
+          "time": "1"
+        },
+        {
+          "language": "en",
+          "title": "Stun",
+          "time": "1"
+        },
+        {
+          "language": "es",
+          "title": "Aturdimiento",
+          "time": "1"
+        }
+      ],
+      "tapConsumed": true,
+      "stationaryDuring": true,
+      "impactCanceled": true,
+      "saveOk": true,
+      "savedHasStun": false,
+      "cleanup": {
+        "expired": true,
+        "remaining": 0,
+        "slowRestored": 0.55,
+        "hudGone": true,
+        "immuneReject": true,
+        "transitionClear": true,
+        "immunityReset": true
+      }
+    },
+    {
+      "classId": "cannoneer",
+      "warning": {
+        "busy": true,
+        "duration": 1100,
+        "active": true,
+        "color": 16761694
+      },
+      "dodged": true,
+      "hit": {
+        "active": true,
+        "remaining": 700,
+        "movement": 0
+      },
+      "attack": false,
+      "skill": {
+        "ok": false,
+        "reason": "stun"
+      },
+      "before": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799779232,\"recoverAfter\":1795799795332,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799839232,\"lastSeenAt\":1795799768615.1868,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-8\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9197.970501287547,\"y\":8163.32650839014,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-9\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9031,\"y\":8153,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-0\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":8951.175579374756,\"y\":8212.675725933292,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-2\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9167,\"y\":8381,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-3\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9134.96793324088,\"y\":8424.62068969778,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-4\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9199,\"y\":8217,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-5\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":8979,\"y\":8327,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-6\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9188,\"y\":8288,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-7\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9077,\"y\":8339,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-10\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":8954.899618606232,\"y\":8271.00620426625,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stuncannoneer\",\"classId\":\"cannoneer\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99988,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"cannoneer_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":207,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "after": {
+        "combo": 0,
+        "facing": 0,
+        "mp": 1000,
+        "cooldowns": "[]",
+        "hero": "{\"worldState\":{\"monsters\":{\"forest:forest-spot-080-mob-1\":{\"hp\":10000,\"healthAt\":1795799779232,\"recoverAfter\":1795799795332,\"x\":9105,\"y\":8170,\"aggroUntil\":1795799839232,\"lastSeenAt\":1795799768615.1868,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-8\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9197.970501287547,\"y\":8163.32650839014,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-9\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9031,\"y\":8153,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-0\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":8951.175579374756,\"y\":8212.675725933292,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-2\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9167,\"y\":8381,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-3\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9134.96793324088,\"y\":8424.62068969778,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-4\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9199,\"y\":8217,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-5\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":8979,\"y\":8327,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-6\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9188,\"y\":8288,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-7\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":9077,\"y\":8339,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false},\"forest:forest-spot-080-mob-10\":{\"hp\":211,\"healthAt\":1795799777865,\"recoverAfter\":1795799782865,\"x\":8954.899618606232,\"y\":8271.00620426625,\"aggroUntil\":1795799785865,\"lastSeenAt\":1795799777865,\"targetX\":9099,\"targetY\":8272,\"returning\":false}},\"groundLoot\":{\"nextId\":1,\"drops\":{},\"events\":{},\"pending\":{}}},\"combatCooldowns\":{},\"dungeonProgress\":{},\"dungeonSession\":null,\"discoveredRegions\":[\"forest\"],\"discoveredLocations\":[],\"returnLocation\":null,\"worldLayoutVersion\":2,\"id\":\"hero\",\"name\":\"Stuncannoneer\",\"classId\":\"cannoneer\",\"x\":9175,\"y\":8170,\"level\":56,\"hp\":99988,\"mp\":1000,\"xp\":0,\"region\":\"forest\",\"skillPointPolicy\":2,\"skillPoints\":0,\"attributePoints\":0,\"maxHp\":100000,\"maxMp\":1000,\"stats\":{\"strength\":5,\"endurance\":5,\"agility\":5,\"luck\":5,\"intelligence\":5},\"storageTransaction\":null,\"gold\":0,\"potions\":{\"hp\":3,\"mp\":3},\"equipment\":{},\"inventory\":[],\"quests\":{},\"skills\":[],\"learnedSkills\":{\"cannoneer_0\":1},\"skillSlots\":[null,null,null,null],\"animation\":\"idle\",\"facing\":2,\"speed\":207,\"monsterAfflictions\":{},\"hurtUntil\":22320,\"lastHitAt\":22100}"
+      },
+      "potion": true,
+      "locales": [
+        {
+          "language": "ru",
+          "title": "Оглушение",
+          "time": "1"
+        },
+        {
+          "language": "en",
+          "title": "Stun",
+          "time": "1"
+        },
+        {
+          "language": "es",
+          "title": "Aturdimiento",
+          "time": "1"
+        }
+      ],
+      "tapConsumed": true,
+      "stationaryDuring": true,
+      "impactCanceled": true,
+      "saveOk": true,
+      "savedHasStun": false,
+      "cleanup": {
+        "expired": true,
+        "remaining": 0,
+        "slowRestored": 0.55,
+        "hudGone": true,
+        "immuneReject": true,
+        "transitionClear": true,
+        "immunityReset": true
+      }
+    }
+  ],
+  "errors": [],
+  "physicalAndroid": false,
+  "fixtures": "UI-created heroes; cloned kind in isolated real forest resident uses explicit heavy stomp opt-in; paused simulation clock, declared HP/MP/skill and position fixture. Not authored species acceptance or physical touch-device approval."
+}

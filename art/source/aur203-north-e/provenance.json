@@ -1,0 +1,144 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-north-e",
+  "createdUTC": "2026-11-24",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "physicalAndroid": false,
+  "scope": "2 original anatomies; six pose banks including two movement drawings, not six multiframe clips.",
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "atlasDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "mechanicalPacking": "Complete pose cropping with 8 source pixel margins, single uniform scale per species, no painting, erasing or threshold alpha matte. Alpha>128 used only to locate support/gutters.",
+  "species": [
+    {
+      "id": "north-species-092",
+      "placementId": "north092",
+      "spotId": "north-spot-092",
+      "typeId": "aur203North092",
+      "names": {
+        "ru": "Снежноцветный долгоносик",
+        "en": "Snowflower weevil",
+        "es": "Gorgojo flor de nieve"
+      },
+      "biome": "snow",
+      "level": 23,
+      "position": {
+        "x": 2067,
+        "y": 3346
+      },
+      "anatomy": "six-legged beetle with long curved flat ivory rostrum, snowflake petal-shaped wing cases and spherical blue abdomen",
+      "movementProfile": "scarab",
+      "abilityPattern": [
+        "burrow",
+        "frost"
+      ],
+      "materialId": "aur203North092Material",
+      "materialConcept": {
+        "ru": "Лепесток снежного надкрылья",
+        "en": "Snowflower elytron petal",
+        "es": "Pétalo de élitro nevado"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-093",
+      "placementId": "north093",
+      "spotId": "north-spot-093",
+      "typeId": "aur203North093",
+      "names": {
+        "ru": "Кальдерный броненосец",
+        "en": "Caldera armadillo",
+        "es": "Armadillo de caldera"
+      },
+      "biome": "volcanic",
+      "level": 33,
+      "position": {
+        "x": 19695,
+        "y": 777
+      },
+      "anatomy": "four-footed armadillo with terraced volcanic caldera shell, three orange vent chimneys and articulated shovel tail",
+      "movementProfile": "heavy",
+      "abilityPattern": [
+        "charge",
+        "stomp"
+      ],
+      "materialId": "aur203North093Material",
+      "materialConcept": {
+        "ru": "Терраса кальдерного панциря",
+        "en": "Caldera shell terrace",
+        "es": "Terraza de caparazón de caldera"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    }
+  ],
+  "prompts": {
+    "092": {
+      "original": "ONE professional polished hand-painted cartoon fantasy RPG sprite atlas. Exactly48 individually unique complete creature drawings,8columns×6rows, genuine RGBA TRANSPARENT background. All blank areas alpha0, no gray or colored matte, scenery, shadows, text or grid. Columns face E SE S SW W NW N NE. Rows idle; runningA; runningB opposite stride; attack; hurt recoiling; DEATH fully collapsed low and limp lying naturally on side/belly with ALL appendages relaxed near ground, never upright asleep. Character SNOWFLOWER WEEVIL, SIX chunky blue jointed legs, long elegant curved flat ivory rostrum, two feelers, rounded blue abdomen covered by extraordinary snowflake petal-shaped white and lavender wing cases, bright black eyes. Small snow insect. Distinct fantasy anatomy, expressive face, rounded vibrant volume, fine thin dark outlines, softly detailed painted materials, three-quarter overhead game camera. Consistent character in48directions/poses. Every creature SMALL inside cell with very wide transparent gutters, landscape1536x1024, max creature130pxwide105pxtall, even8×6grid no overlap. TWO distinct movement drawings, attack dynamic, hurt recoiling, all eight last-row death views collapsed.",
+      "repair": "Repair exact48creature sprite atlas: blank background ALL alpha0 transparent. Remove ALL colored haze and ground shadows. Preserve all48painted creatures and their colors/materials. Uniformly shrink every complete creature25% centered in8columns6rows with wide transparent gutters. Columns E SE S SW W NW N NE; sixrows idle/runA/runB/attack/hurt/death. Bottom row all8 naturally collapsed LOW insect bodies lying on side/belly, all legs antennae and long rostrum relaxed on ground, no upright standing death. No scenery, text, grid or matte."
+    },
+    "093": {
+      "original": "ONE professional polished hand-painted cartoon fantasy RPG sprite atlas. Exactly48 individually unique complete creature drawings,8columns×6rows, genuine RGBA TRANSPARENT background. All blank areas alpha0, no gray or colored matte, scenery, shadows, text or grid. Columns face E SE S SW W NW N NE. Rows idle; runningA; runningB opposite stride; attack; hurt recoiling; DEATH fully collapsed low and limp lying naturally on side/belly with ALL appendages relaxed near ground, never upright asleep. Character CALDERA ARMADILLO, FOUR chunky charcoal clawed feet, terraced volcanic caldera shell carrying three short orange vent chimneys, small blunt snout and ears, enormous articulated flat shovel tail. Obsidian armour and warm red-orange cracks, volcanic creature. Distinct fantasy anatomy, expressive face, rounded vibrant volume, fine thin dark outlines, softly detailed painted materials, three-quarter overhead game camera. Consistent character in48directions/poses. Every creature SMALL inside cell with very wide transparent gutters, landscape1536x1024, max creature130pxwide105pxtall, even8×6grid no overlap. TWO distinct movement drawings, attack dynamic, hurt recoiling, all eight last-row death views collapsed.",
+      "repair": "Repair exact48creature sprite atlas: blank background ALL alpha0 transparent. Remove ALL colored haze and ground shadows. Preserve all48painted creatures and their colors/materials. Uniformly shrink every complete creature25% centered in8columns6rows with wide transparent gutters. Columns E SE S SW W NW N NE; sixrows idle/runA/runB/attack/hurt/death. Bottom row all8 naturally collapsed LOW bodies lying on SIDE with caldera shell tipped sideways, three chimneys horizontal and shovel tail relaxed on floor, no upright standing death. No scenery, text, grid or matte."
+    }
+  },
+  "sources": [
+    {
+      "path": "art/source/aur203-north-e/north-species-092-cutout.png",
+      "sha256": "8807a700279596c95a89b8ab6dd947980028beab8e3c4b62dff0b699f6352888"
+    },
+    {
+      "path": "art/source/aur203-north-e/north-species-092-original.png",
+      "sha256": "96c59a087a335667734e3f11724e256151e6d1206abddf63ee3384e65729bca2"
+    },
+    {
+      "path": "art/source/aur203-north-e/north-species-092-registered.png",
+      "sha256": "30e1cfe754a22faf3557a4a57c59923201a01800243757f80e8fa65a1e94c567"
+    },
+    {
+      "path": "art/source/aur203-north-e/north-species-093-cutout.png",
+      "sha256": "9af55b7e9880c530c3116b56821a854a12f1fb41bee0b0d3ebe80fdef83d8dc8"
+    },
+    {
+      "path": "art/source/aur203-north-e/north-species-093-original.png",
+      "sha256": "eba3be359fbf715d2e364c3d86ee5ae313f000b3b16c3a2a010e2f499b32f951"
+    },
+    {
+      "path": "art/source/aur203-north-e/north-species-093-registered.png",
+      "sha256": "be5fe854420d954ffc37bd89c48402cde504a7fc55b36cf6e36f12ec32e5878d"
+    }
+  ],
+  "repairs": "Originals retained; image_gen cutout/reflow outputs retained and selected. Semantic transparency and spacing repairs performed only by image_gen.",
+  "visualInspection": {
+    "posesInspected": 96,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All registered native poses reviewed on both backgrounds; complete silhouettes and natural collapsed death. No clipping, neighboring limbs or missing poses. All48 distinct RGBA hashes per species."
+  },
+  "statsLootAndFinalBalance": "Not configured in this art-only pack; root owns integration."
+}

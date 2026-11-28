@@ -1,0 +1,1136 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "directionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "models": [
+    {
+      "id": "forest-species-000",
+      "assetName": "forestWolf",
+      "originalURL": "assets/actors/monsters/forestWolf.png",
+      "originalAtlasURL": "assets/actors/monsters/forestWolf.json",
+      "originalArt": {
+        "key": "actor-forest-wolf",
+        "url": "assets/actors/monsters/forestWolf.png",
+        "atlasURL": "assets/actors/monsters/forestWolf.json",
+        "scale": 0.48,
+        "baselines": {
+          "idle": 201,
+          "run-a": 183,
+          "run-b": 175,
+          "attack": 176
+        }
+      },
+      "originalIdleHeights": [
+        109,
+        107,
+        122,
+        109,
+        103,
+        124,
+        127,
+        127
+      ],
+      "originalIdleWidths": [
+        130,
+        109,
+        61,
+        111,
+        131,
+        108,
+        52,
+        107
+      ],
+      "newHurtTargetHeight": 115,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 0,
+          "y": 103,
+          "right": 272,
+          "bottom": 297
+        },
+        "hurt/se": {
+          "x": 272,
+          "y": 100,
+          "right": 543,
+          "bottom": 287
+        },
+        "hurt/s": {
+          "x": 543,
+          "y": 92,
+          "right": 814,
+          "bottom": 290
+        },
+        "hurt/sw": {
+          "x": 814,
+          "y": 96,
+          "right": 1086,
+          "bottom": 284
+        },
+        "hurt/w": {
+          "x": 1086,
+          "y": 102,
+          "right": 1358,
+          "bottom": 297
+        },
+        "hurt/nw": {
+          "x": 1358,
+          "y": 98,
+          "right": 1629,
+          "bottom": 304
+        },
+        "hurt/n": {
+          "x": 1629,
+          "y": 99,
+          "right": 1900,
+          "bottom": 307
+        },
+        "hurt/ne": {
+          "x": 1900,
+          "y": 100,
+          "right": 2172,
+          "bottom": 300
+        },
+        "death/e": {
+          "x": 0,
+          "y": 487,
+          "right": 272,
+          "bottom": 609
+        },
+        "death/se": {
+          "x": 272,
+          "y": 481,
+          "right": 543,
+          "bottom": 608
+        },
+        "death/s": {
+          "x": 543,
+          "y": 476,
+          "right": 814,
+          "bottom": 620
+        },
+        "death/sw": {
+          "x": 814,
+          "y": 484,
+          "right": 1086,
+          "bottom": 614
+        },
+        "death/w": {
+          "x": 1086,
+          "y": 489,
+          "right": 1358,
+          "bottom": 609
+        },
+        "death/nw": {
+          "x": 1358,
+          "y": 483,
+          "right": 1629,
+          "bottom": 625
+        },
+        "death/n": {
+          "x": 1629,
+          "y": 481,
+          "right": 1900,
+          "bottom": 630
+        },
+        "death/ne": {
+          "x": 1900,
+          "y": 485,
+          "right": 2172,
+          "bottom": 625
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/forestWolf-hurt-death-reflow.png",
+      "newPoseSourceSHA256": "3882110addc38c410ac858707c786b7b682638fc51e7c73b80be7578d6aa5380"
+    },
+    {
+      "id": "forest-species-001",
+      "assetName": "wildBoar",
+      "originalURL": "assets/actors/monsters/wildBoar.png",
+      "originalAtlasURL": "assets/actors/monsters/wildBoar.json",
+      "originalArt": {
+        "key": "actor-monster-wildBoar",
+        "url": "assets/actors/monsters/wildBoar.png",
+        "atlasURL": "assets/actors/monsters/wildBoar.json",
+        "scale": 0.42,
+        "annotationHeight": 62.6,
+        "baselines": {
+          "idle": 216,
+          "run-a": 204,
+          "run-b": 202,
+          "attack": 198
+        }
+      },
+      "originalIdleHeights": [
+        120,
+        123,
+        137,
+        124,
+        118,
+        136,
+        135,
+        137
+      ],
+      "originalIdleWidths": [
+        147,
+        129,
+        85,
+        132,
+        148,
+        136,
+        78,
+        132
+      ],
+      "newHurtTargetHeight": 127,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 0,
+          "y": 87,
+          "right": 272,
+          "bottom": 293
+        },
+        "hurt/se": {
+          "x": 272,
+          "y": 91,
+          "right": 543,
+          "bottom": 292
+        },
+        "hurt/s": {
+          "x": 543,
+          "y": 74,
+          "right": 814,
+          "bottom": 286
+        },
+        "hurt/sw": {
+          "x": 814,
+          "y": 89,
+          "right": 1086,
+          "bottom": 291
+        },
+        "hurt/w": {
+          "x": 1086,
+          "y": 89,
+          "right": 1358,
+          "bottom": 296
+        },
+        "hurt/nw": {
+          "x": 1358,
+          "y": 84,
+          "right": 1629,
+          "bottom": 298
+        },
+        "hurt/n": {
+          "x": 1629,
+          "y": 82,
+          "right": 1900,
+          "bottom": 296
+        },
+        "hurt/ne": {
+          "x": 1900,
+          "y": 84,
+          "right": 2172,
+          "bottom": 301
+        },
+        "death/e": {
+          "x": 0,
+          "y": 480,
+          "right": 272,
+          "bottom": 626
+        },
+        "death/se": {
+          "x": 272,
+          "y": 470,
+          "right": 543,
+          "bottom": 636
+        },
+        "death/s": {
+          "x": 543,
+          "y": 449,
+          "right": 814,
+          "bottom": 627
+        },
+        "death/sw": {
+          "x": 814,
+          "y": 475,
+          "right": 1086,
+          "bottom": 639
+        },
+        "death/w": {
+          "x": 1086,
+          "y": 485,
+          "right": 1358,
+          "bottom": 627
+        },
+        "death/nw": {
+          "x": 1358,
+          "y": 472,
+          "right": 1629,
+          "bottom": 636
+        },
+        "death/n": {
+          "x": 1629,
+          "y": 465,
+          "right": 1900,
+          "bottom": 636
+        },
+        "death/ne": {
+          "x": 1900,
+          "y": 477,
+          "right": 2172,
+          "bottom": 637
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/wildBoar-hurt-death-reflow.png",
+      "newPoseSourceSHA256": "5fceb47654db55f674ac36241dac5ff8a291ec775d7b68c0e6266d58eae94ec7"
+    },
+    {
+      "id": "forest-species-002",
+      "assetName": "thornSnake",
+      "originalURL": "assets/actors/monsters/thornSnake.png",
+      "originalAtlasURL": "assets/actors/monsters/thornSnake.json",
+      "originalArt": {
+        "key": "actor-monster-thornSnake",
+        "url": "assets/actors/monsters/thornSnake.png",
+        "atlasURL": "assets/actors/monsters/thornSnake.json",
+        "scale": 0.38,
+        "annotationHeight": 63.480000000000004,
+        "baselines": {
+          "idle": 221,
+          "run-a": 213,
+          "run-b": 206,
+          "attack": 194
+        }
+      },
+      "originalIdleHeights": [
+        144,
+        141,
+        148,
+        140,
+        144,
+        146,
+        149,
+        149
+      ],
+      "originalIdleWidths": [
+        114,
+        105,
+        108,
+        104,
+        111,
+        107,
+        106,
+        106
+      ],
+      "newHurtTargetHeight": 137,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 0,
+          "y": 79,
+          "right": 272,
+          "bottom": 322
+        },
+        "hurt/se": {
+          "x": 272,
+          "y": 101,
+          "right": 543,
+          "bottom": 325
+        },
+        "hurt/s": {
+          "x": 543,
+          "y": 97,
+          "right": 814,
+          "bottom": 316
+        },
+        "hurt/sw": {
+          "x": 814,
+          "y": 94,
+          "right": 1086,
+          "bottom": 317
+        },
+        "hurt/w": {
+          "x": 1086,
+          "y": 99,
+          "right": 1358,
+          "bottom": 327
+        },
+        "hurt/nw": {
+          "x": 1358,
+          "y": 97,
+          "right": 1629,
+          "bottom": 318
+        },
+        "hurt/n": {
+          "x": 1629,
+          "y": 88,
+          "right": 1900,
+          "bottom": 323
+        },
+        "hurt/ne": {
+          "x": 1900,
+          "y": 88,
+          "right": 2172,
+          "bottom": 323
+        },
+        "death/e": {
+          "x": 0,
+          "y": 514,
+          "right": 272,
+          "bottom": 634
+        },
+        "death/se": {
+          "x": 272,
+          "y": 510,
+          "right": 543,
+          "bottom": 635
+        },
+        "death/s": {
+          "x": 543,
+          "y": 505,
+          "right": 814,
+          "bottom": 630
+        },
+        "death/sw": {
+          "x": 814,
+          "y": 508,
+          "right": 1086,
+          "bottom": 632
+        },
+        "death/w": {
+          "x": 1086,
+          "y": 516,
+          "right": 1358,
+          "bottom": 636
+        },
+        "death/nw": {
+          "x": 1358,
+          "y": 511,
+          "right": 1629,
+          "bottom": 639
+        },
+        "death/n": {
+          "x": 1629,
+          "y": 514,
+          "right": 1900,
+          "bottom": 637
+        },
+        "death/ne": {
+          "x": 1900,
+          "y": 514,
+          "right": 2172,
+          "bottom": 640
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/thornSnake-hurt-death-original.png",
+      "newPoseSourceSHA256": "6af884b57b3e324fd3e1767c0bc6d329bf388755d52c49fe3e689be72d26ad11"
+    },
+    {
+      "id": "forest-species-003",
+      "assetName": "forestOrc",
+      "originalURL": "assets/actors/monsters/forestOrc.png",
+      "originalAtlasURL": "assets/actors/monsters/forestOrc.json",
+      "originalArt": {
+        "key": "actor-monster-forestOrc",
+        "url": "assets/actors/monsters/forestOrc.png",
+        "atlasURL": "assets/actors/monsters/forestOrc.json",
+        "scale": 0.48,
+        "annotationHeight": 84.32,
+        "baselines": {
+          "idle": 216,
+          "run-a": 214,
+          "run-b": 214,
+          "attack": 203
+        }
+      },
+      "originalIdleHeights": [
+        158,
+        159,
+        159,
+        158,
+        160,
+        160,
+        156,
+        157
+      ],
+      "originalIdleWidths": [
+        85,
+        97,
+        111,
+        107,
+        92,
+        100,
+        108,
+        109
+      ],
+      "newHurtTargetHeight": 149,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 0,
+          "y": 79,
+          "right": 278,
+          "bottom": 336
+        },
+        "hurt/se": {
+          "x": 278,
+          "y": 76,
+          "right": 540,
+          "bottom": 336
+        },
+        "hurt/s": {
+          "x": 540,
+          "y": 74,
+          "right": 791,
+          "bottom": 336
+        },
+        "hurt/sw": {
+          "x": 791,
+          "y": 76,
+          "right": 1073,
+          "bottom": 336
+        },
+        "hurt/w": {
+          "x": 1073,
+          "y": 79,
+          "right": 1350,
+          "bottom": 334
+        },
+        "hurt/nw": {
+          "x": 1350,
+          "y": 78,
+          "right": 1630,
+          "bottom": 335
+        },
+        "hurt/n": {
+          "x": 1630,
+          "y": 75,
+          "right": 1897,
+          "bottom": 332
+        },
+        "hurt/ne": {
+          "x": 1897,
+          "y": 84,
+          "right": 2172,
+          "bottom": 336
+        },
+        "death/e": {
+          "x": 0,
+          "y": 499,
+          "right": 278,
+          "bottom": 634
+        },
+        "death/se": {
+          "x": 278,
+          "y": 499,
+          "right": 540,
+          "bottom": 645
+        },
+        "death/s": {
+          "x": 540,
+          "y": 498,
+          "right": 791,
+          "bottom": 643
+        },
+        "death/sw": {
+          "x": 791,
+          "y": 502,
+          "right": 1073,
+          "bottom": 640
+        },
+        "death/w": {
+          "x": 1073,
+          "y": 508,
+          "right": 1350,
+          "bottom": 640
+        },
+        "death/nw": {
+          "x": 1350,
+          "y": 505,
+          "right": 1630,
+          "bottom": 647
+        },
+        "death/n": {
+          "x": 1630,
+          "y": 493,
+          "right": 1897,
+          "bottom": 656
+        },
+        "death/ne": {
+          "x": 1897,
+          "y": 502,
+          "right": 2172,
+          "bottom": 649
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/forestOrc-hurt-death-original.png",
+      "newPoseSourceSHA256": "df914fc6a241aa6d5fc8e155af964221fff8d32b5a311a79bbe3fe6c72f33a66"
+    },
+    {
+      "id": "forest-species-005",
+      "assetName": "forestBat",
+      "originalURL": "assets/actors/monsters/forestBat.png",
+      "originalAtlasURL": "assets/actors/monsters/forestBat.json",
+      "originalArt": {
+        "key": "actor-monster-forestBat",
+        "url": "assets/actors/monsters/forestBat.png",
+        "atlasURL": "assets/actors/monsters/forestBat.json",
+        "scale": 0.55,
+        "annotationHeight": 44.300000000000004,
+        "baselines": {
+          "idle": 177,
+          "run-a": 171,
+          "run-b": 160,
+          "attack": 148
+        }
+      },
+      "originalIdleHeights": [
+        61,
+        66,
+        65,
+        64,
+        62,
+        75,
+        78,
+        72
+      ],
+      "originalIdleWidths": [
+        94,
+        87,
+        88,
+        94,
+        94,
+        92,
+        93,
+        91
+      ],
+      "newHurtTargetHeight": 62,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 0,
+          "y": 121,
+          "right": 272,
+          "bottom": 266
+        },
+        "hurt/se": {
+          "x": 272,
+          "y": 119,
+          "right": 543,
+          "bottom": 265
+        },
+        "hurt/s": {
+          "x": 543,
+          "y": 107,
+          "right": 814,
+          "bottom": 263
+        },
+        "hurt/sw": {
+          "x": 814,
+          "y": 114,
+          "right": 1086,
+          "bottom": 263
+        },
+        "hurt/w": {
+          "x": 1086,
+          "y": 122,
+          "right": 1358,
+          "bottom": 264
+        },
+        "hurt/nw": {
+          "x": 1358,
+          "y": 102,
+          "right": 1629,
+          "bottom": 266
+        },
+        "hurt/n": {
+          "x": 1629,
+          "y": 99,
+          "right": 1900,
+          "bottom": 265
+        },
+        "hurt/ne": {
+          "x": 1900,
+          "y": 100,
+          "right": 2172,
+          "bottom": 266
+        },
+        "death/e": {
+          "x": 0,
+          "y": 493,
+          "right": 272,
+          "bottom": 606
+        },
+        "death/se": {
+          "x": 272,
+          "y": 496,
+          "right": 543,
+          "bottom": 603
+        },
+        "death/s": {
+          "x": 543,
+          "y": 495,
+          "right": 814,
+          "bottom": 601
+        },
+        "death/sw": {
+          "x": 814,
+          "y": 496,
+          "right": 1086,
+          "bottom": 603
+        },
+        "death/w": {
+          "x": 1086,
+          "y": 495,
+          "right": 1358,
+          "bottom": 604
+        },
+        "death/nw": {
+          "x": 1358,
+          "y": 490,
+          "right": 1629,
+          "bottom": 603
+        },
+        "death/n": {
+          "x": 1629,
+          "y": 490,
+          "right": 1900,
+          "bottom": 604
+        },
+        "death/ne": {
+          "x": 1900,
+          "y": 494,
+          "right": 2172,
+          "bottom": 605
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/forestBat-hurt-death-original.png",
+      "newPoseSourceSHA256": "59ce68a66ed4f251602ea31411a0cc8b515b3a9d35bbf216bebd8606cff5982d"
+    },
+    {
+      "id": "forest-species-007",
+      "assetName": "skeleton",
+      "originalURL": "assets/actors/monsters/skeleton.png",
+      "originalAtlasURL": "assets/actors/monsters/skeleton.json",
+      "originalArt": {
+        "key": "actor-monster-skeleton",
+        "url": "assets/actors/monsters/skeleton.png",
+        "atlasURL": "assets/actors/monsters/skeleton.json",
+        "scale": 0.43,
+        "annotationHeight": 77.66,
+        "baselines": {
+          "idle": 228,
+          "run-a": 208,
+          "run-b": 205,
+          "attack": 203
+        }
+      },
+      "originalIdleHeights": [
+        165,
+        162,
+        161,
+        159,
+        164,
+        159,
+        160,
+        160
+      ],
+      "originalIdleWidths": [
+        72,
+        84,
+        88,
+        92,
+        62,
+        82,
+        90,
+        91
+      ],
+      "newHurtTargetHeight": 151,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 0,
+          "y": 81,
+          "right": 272,
+          "bottom": 333
+        },
+        "hurt/se": {
+          "x": 272,
+          "y": 87,
+          "right": 543,
+          "bottom": 333
+        },
+        "hurt/s": {
+          "x": 543,
+          "y": 84,
+          "right": 814,
+          "bottom": 333
+        },
+        "hurt/sw": {
+          "x": 814,
+          "y": 90,
+          "right": 1086,
+          "bottom": 337
+        },
+        "hurt/w": {
+          "x": 1086,
+          "y": 85,
+          "right": 1358,
+          "bottom": 334
+        },
+        "hurt/nw": {
+          "x": 1358,
+          "y": 86,
+          "right": 1629,
+          "bottom": 333
+        },
+        "hurt/n": {
+          "x": 1629,
+          "y": 86,
+          "right": 1900,
+          "bottom": 329
+        },
+        "hurt/ne": {
+          "x": 1900,
+          "y": 88,
+          "right": 2172,
+          "bottom": 335
+        },
+        "death/e": {
+          "x": 0,
+          "y": 509,
+          "right": 272,
+          "bottom": 622
+        },
+        "death/se": {
+          "x": 272,
+          "y": 500,
+          "right": 543,
+          "bottom": 619
+        },
+        "death/s": {
+          "x": 543,
+          "y": 498,
+          "right": 814,
+          "bottom": 613
+        },
+        "death/sw": {
+          "x": 814,
+          "y": 501,
+          "right": 1086,
+          "bottom": 614
+        },
+        "death/w": {
+          "x": 1086,
+          "y": 506,
+          "right": 1358,
+          "bottom": 621
+        },
+        "death/nw": {
+          "x": 1358,
+          "y": 497,
+          "right": 1629,
+          "bottom": 621
+        },
+        "death/n": {
+          "x": 1629,
+          "y": 495,
+          "right": 1900,
+          "bottom": 626
+        },
+        "death/ne": {
+          "x": 1900,
+          "y": 498,
+          "right": 2172,
+          "bottom": 626
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/skeleton-hurt-death-original.png",
+      "newPoseSourceSHA256": "3255f701e375646bb1ae319c67b995f2ccd1b05288f5ee154a2cd1f6ba3416fe"
+    },
+    {
+      "id": "forest-species-009",
+      "assetName": "forestRaider",
+      "originalURL": "assets/actors/monsters/forestRaider.png",
+      "originalAtlasURL": "assets/actors/monsters/forestRaider.json",
+      "originalArt": {
+        "key": "actor-monster-forestRaider",
+        "url": "assets/actors/monsters/forestRaider.png",
+        "atlasURL": "assets/actors/monsters/forestRaider.json",
+        "scale": 0.43,
+        "annotationHeight": 88.84,
+        "baselines": {
+          "idle": 239,
+          "run-a": 226,
+          "run-b": 218,
+          "attack": 211
+        }
+      },
+      "originalIdleHeights": [
+        188,
+        188,
+        189,
+        188,
+        187,
+        186,
+        188,
+        185
+      ],
+      "originalIdleWidths": [
+        81,
+        106,
+        106,
+        115,
+        78,
+        100,
+        107,
+        105
+      ],
+      "newHurtTargetHeight": 177,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 43,
+          "y": 89,
+          "right": 225,
+          "bottom": 353
+        },
+        "hurt/se": {
+          "x": 318,
+          "y": 89,
+          "right": 488,
+          "bottom": 355
+        },
+        "hurt/s": {
+          "x": 583,
+          "y": 88,
+          "right": 764,
+          "bottom": 355
+        },
+        "hurt/sw": {
+          "x": 849,
+          "y": 98,
+          "right": 1026,
+          "bottom": 353
+        },
+        "hurt/w": {
+          "x": 1143,
+          "y": 77,
+          "right": 1302,
+          "bottom": 356
+        },
+        "hurt/nw": {
+          "x": 1417,
+          "y": 93,
+          "right": 1594,
+          "bottom": 356
+        },
+        "hurt/n": {
+          "x": 1693,
+          "y": 88,
+          "right": 1864,
+          "bottom": 355
+        },
+        "hurt/ne": {
+          "x": 1964,
+          "y": 91,
+          "right": 2116,
+          "bottom": 356
+        },
+        "death/e": {
+          "x": 7,
+          "y": 528,
+          "right": 254,
+          "bottom": 650
+        },
+        "death/se": {
+          "x": 293,
+          "y": 524,
+          "right": 530,
+          "bottom": 660
+        },
+        "death/s": {
+          "x": 580,
+          "y": 520,
+          "right": 773,
+          "bottom": 663
+        },
+        "death/sw": {
+          "x": 814,
+          "y": 521,
+          "right": 1063,
+          "bottom": 650
+        },
+        "death/w": {
+          "x": 1091,
+          "y": 528,
+          "right": 1336,
+          "bottom": 660
+        },
+        "death/nw": {
+          "x": 1359,
+          "y": 514,
+          "right": 1599,
+          "bottom": 671
+        },
+        "death/n": {
+          "x": 1657,
+          "y": 518,
+          "right": 1881,
+          "bottom": 665
+        },
+        "death/ne": {
+          "x": 1908,
+          "y": 519,
+          "right": 2167,
+          "bottom": 670
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/forestRaider-hurt-death-reflow.png",
+      "newPoseSourceSHA256": "06a0d7ee2a9a7fbb4fe5aabb2407213f376423470f526cc9791bb8e740414b5f"
+    },
+    {
+      "id": "forest-species-010",
+      "assetName": "bear",
+      "originalURL": "assets/actors/monsters/bear.png",
+      "originalAtlasURL": "assets/actors/monsters/bear.json",
+      "originalArt": {
+        "key": "actor-monster-bear",
+        "url": "assets/actors/monsters/bear.png",
+        "atlasURL": "assets/actors/monsters/bear.json",
+        "scale": 0.65,
+        "annotationHeight": 77.55,
+        "baselines": {
+          "idle": 202,
+          "run-a": 195,
+          "run-b": 192,
+          "attack": 184
+        }
+      },
+      "originalIdleHeights": [
+        97,
+        100,
+        113,
+        99,
+        93,
+        111,
+        117,
+        114
+      ],
+      "originalIdleWidths": [
+        123,
+        97,
+        73,
+        98,
+        124,
+        100,
+        72,
+        113
+      ],
+      "newHurtTargetHeight": 104,
+      "sourceRects": {
+        "hurt/e": {
+          "x": 0,
+          "y": 94,
+          "right": 283,
+          "bottom": 318
+        },
+        "hurt/se": {
+          "x": 283,
+          "y": 106,
+          "right": 555,
+          "bottom": 318
+        },
+        "hurt/s": {
+          "x": 555,
+          "y": 95,
+          "right": 780,
+          "bottom": 316
+        },
+        "hurt/sw": {
+          "x": 780,
+          "y": 105,
+          "right": 1062,
+          "bottom": 307
+        },
+        "hurt/w": {
+          "x": 1062,
+          "y": 106,
+          "right": 1347,
+          "bottom": 318
+        },
+        "hurt/nw": {
+          "x": 1347,
+          "y": 91,
+          "right": 1626,
+          "bottom": 319
+        },
+        "hurt/n": {
+          "x": 1626,
+          "y": 94,
+          "right": 1881,
+          "bottom": 319
+        },
+        "hurt/ne": {
+          "x": 1881,
+          "y": 95,
+          "right": 2172,
+          "bottom": 320
+        },
+        "death/e": {
+          "x": 0,
+          "y": 506,
+          "right": 283,
+          "bottom": 631
+        },
+        "death/se": {
+          "x": 283,
+          "y": 505,
+          "right": 555,
+          "bottom": 653
+        },
+        "death/s": {
+          "x": 555,
+          "y": 500,
+          "right": 780,
+          "bottom": 653
+        },
+        "death/sw": {
+          "x": 780,
+          "y": 505,
+          "right": 1062,
+          "bottom": 653
+        },
+        "death/w": {
+          "x": 1062,
+          "y": 515,
+          "right": 1347,
+          "bottom": 638
+        },
+        "death/nw": {
+          "x": 1347,
+          "y": 508,
+          "right": 1626,
+          "bottom": 656
+        },
+        "death/n": {
+          "x": 1626,
+          "y": 504,
+          "right": 1881,
+          "bottom": 658
+        },
+        "death/ne": {
+          "x": 1881,
+          "y": 510,
+          "right": 2172,
+          "bottom": 660
+        }
+      },
+      "newPoseSource": "art/source/task10-legacy-upgrade-a/bear-hurt-death-original.png",
+      "newPoseSourceSHA256": "360611939d4f500fe30ec4a960ab6aece0bdbf2369491fe8115f05d50af5e74e"
+    }
+  ],
+  "preservation": "All original files and first32RGBA frames preserved exactly; original atlas frame entry objects, per-bank baselines, scales and annotationHeight unchanged."
+}

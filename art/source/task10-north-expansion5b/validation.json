@@ -1,0 +1,97 @@
+{
+  "runtimeVerified": false,
+  "models": [
+    {
+      "id": "north-species-066",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.7166798909505209,
+      "nativeIdleHeight": 88,
+      "scale": 0.9772727272727273,
+      "renderedIdleHeight": 86.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "north-species-067",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.8568428887261285,
+      "nativeIdleHeight": 61,
+      "scale": 1.1311475409836065,
+      "renderedIdleHeight": 69.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "north-species-068",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.7635269165039062,
+      "nativeIdleHeight": 86,
+      "scale": 1.0,
+      "renderedIdleHeight": 86.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "north-species-069",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.77325439453125,
+      "nativeIdleHeight": 77,
+      "scale": 0.8961038961038961,
+      "renderedIdleHeight": 69.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "north-species-070",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.7661192152235243,
+      "nativeIdleHeight": 89,
+      "scale": 0.8202247191011236,
+      "renderedIdleHeight": 73.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "north-species-071",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.7536214192708334,
+      "nativeIdleHeight": 78,
+      "scale": 0.8205128205128205,
+      "renderedIdleHeight": 64.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "north-species-072",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.7736002604166666,
+      "nativeIdleHeight": 58,
+      "scale": 1.1896551724137931,
+      "renderedIdleHeight": 69.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "north-species-073",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.8143378363715278,
+      "nativeIdleHeight": 76,
+      "scale": 0.9210526315789473,
+      "renderedIdleHeight": 70.0,
+      "guttersPass": true,
+      "RGBA": true
+    }
+  ],
+  "totalFrames": 384,
+  "visualQA": "visual-qa.json",
+  "bitDepth": 8,
+  "colorType": 6
+}

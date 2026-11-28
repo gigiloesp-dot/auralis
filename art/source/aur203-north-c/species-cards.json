@@ -1,0 +1,130 @@
+[
+  {
+    "id": "north-species-084",
+    "placementId": "north084",
+    "spotId": "north-spot-084",
+    "typeId": "aur203North084",
+    "names": {
+      "ru": "Ледяной шестизвон",
+      "en": "Ice chime sextuped",
+      "es": "Hexápodo de campanas de hielo"
+    },
+    "biome": "snow",
+    "level": 30,
+    "position": {
+      "x": 13945,
+      "y": 6478
+    },
+    "anatomy": "six chunky splayed legs, three hollow upward ice trumpet tubes on a pear shaped turquoise torso, wide flat face",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "frost"
+    ],
+    "materialId": "aur203North084Material",
+    "materialConcept": {
+      "ru": "Стенка ледяного раструба",
+      "en": "Ice trumpet wall",
+      "es": "Pared de trompeta helada"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-085",
+    "placementId": "north085",
+    "spotId": "north-spot-085",
+    "typeId": "aur203North085",
+    "names": {
+      "ru": "Ковшеклювый зимник",
+      "en": "Winter spoonbill",
+      "es": "Espátula invernal"
+    },
+    "biome": "snow",
+    "level": 28,
+    "position": {
+      "x": 11931,
+      "y": 738
+    },
+    "anatomy": "pink squat spoonbill with huge frost-blue spoon bill, two pronged legs, curly white wing fans and crystalline crest",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "fan",
+      "frost"
+    ],
+    "materialId": "aur203North085Material",
+    "materialConcept": {
+      "ru": "Пластинка ковшеклюва",
+      "en": "Spoonbill plate",
+      "es": "Placa de pico cuchara"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-086",
+    "placementId": "north086",
+    "spotId": "north-spot-086",
+    "typeId": "aur203North086",
+    "names": {
+      "ru": "Печной богомол",
+      "en": "Furnace mantis",
+      "es": "Mantis de horno"
+    },
+    "biome": "volcanic",
+    "level": 33,
+    "position": {
+      "x": 15456,
+      "y": 13124
+    },
+    "anatomy": "six-limbed charcoal mantis with two great bellows-shaped scythe forearms, ember honeycomb folded wings and wedge head",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "fan"
+    ],
+    "materialId": "aur203North086Material",
+    "materialConcept": {
+      "ru": "Створка печного крыла",
+      "en": "Furnace wing casing",
+      "es": "Cubierta de ala de horno"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-087",
+    "placementId": "north087",
+    "spotId": "north-spot-087",
+    "typeId": "aur203North087",
+    "names": {
+      "ru": "Снежносферный отшельник",
+      "en": "Snowglobe hermit",
+      "es": "Ermitaño de esfera nevada"
+    },
+    "biome": "snow",
+    "level": 33,
+    "position": {
+      "x": 4355,
+      "y": 20251
+    },
+    "anatomy": "hermit crustacean with translucent spherical ice shell containing crystalline spiral, six walking legs and unequal fan claws",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "frost"
+    ],
+    "materialId": "aur203North087Material",
+    "materialConcept": {
+      "ru": "Спираль снежной сферы",
+      "en": "Snowglobe spiral",
+      "es": "Espiral de esfera nevada"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  }
+]

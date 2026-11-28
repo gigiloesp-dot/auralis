@@ -1,0 +1,14 @@
+✔ four additional species use distinct real48-pose transparent paintings with bounded frame gutters and measured feet (794.226573ms)
+✔ new snake,spirit,warden and beetle retain real archetype stats,abilities,respawn and drops while normal live art lookup changes (1.184589ms)
+✔ catalogue honestly distinguishes29 unique primary models,23 preserved legacy models and228 unfinished species (155.14747ms)
+✔ both new species have48 real transparent poses with registered feet and distinct idle,run,attack,hurt and death banks (270.160728ms)
+✔ new hurt/death frames use192px frame height and do not rotate an already drawn corpse; legacy hero frames retain256px behavior (0.796984ms)
+✔ scorpion alternates real venom and burrowing attacks,while cactus fires three physical poison needles then dodgeable roots (1.036785ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1494.173516

@@ -1,0 +1,267 @@
+{
+  "records": [
+    {
+      "lang": "ru",
+      "slot": 1,
+      "layout": 2,
+      "level": 42,
+      "x": 1030,
+      "y": 1140,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 80,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "forest:forest-starter-wolves-reinforcement-3"
+      ]
+    },
+    {
+      "lang": "ru",
+      "slot": 2,
+      "layout": 2,
+      "level": 42,
+      "x": 1500,
+      "y": 1800,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 76,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "north:north-camp-0-mob-0"
+      ]
+    },
+    {
+      "lang": "ru",
+      "slot": 3,
+      "layout": 2,
+      "level": 42,
+      "x": 1600,
+      "y": 1800,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 45,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "ancient:ancient-camp-0-mob-0"
+      ]
+    },
+    {
+      "lang": "en",
+      "slot": 1,
+      "layout": 2,
+      "level": 42,
+      "x": 1030,
+      "y": 1140,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 80,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "forest:forest-starter-wolves-reinforcement-3"
+      ]
+    },
+    {
+      "lang": "en",
+      "slot": 2,
+      "layout": 2,
+      "level": 42,
+      "x": 1500,
+      "y": 1800,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 76,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "north:north-camp-0-mob-0"
+      ]
+    },
+    {
+      "lang": "en",
+      "slot": 3,
+      "layout": 2,
+      "level": 42,
+      "x": 1600,
+      "y": 1800,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 45,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "ancient:ancient-camp-0-mob-0"
+      ]
+    },
+    {
+      "lang": "es",
+      "slot": 1,
+      "layout": 2,
+      "level": 42,
+      "x": 1030,
+      "y": 1140,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 80,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "forest:forest-starter-wolves-reinforcement-3"
+      ]
+    },
+    {
+      "lang": "es",
+      "slot": 2,
+      "layout": 2,
+      "level": 42,
+      "x": 1500,
+      "y": 1800,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 76,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "north:north-camp-0-mob-0"
+      ]
+    },
+    {
+      "lang": "es",
+      "slot": 3,
+      "layout": 2,
+      "level": 42,
+      "x": 1600,
+      "y": 1800,
+      "xp": 123,
+      "points": 7,
+      "gold": 23,
+      "items": [
+        {
+          "id": "wolfFang",
+          "rarity": "common",
+          "quantity": 3
+        }
+      ],
+      "quest": {
+        "state": "claimed",
+        "progress": 5
+      },
+      "camps": 45,
+      "drops": [
+        "drop-1"
+      ],
+      "lootEventKeys": [
+        "ancient:ancient-camp-0-mob-0"
+      ]
+    }
+  ],
+  "errors": [],
+  "artStatus": "Existing base models are temporary;257 unique silhouettes are not complete"
+}

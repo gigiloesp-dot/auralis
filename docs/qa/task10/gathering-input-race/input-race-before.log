@@ -1,0 +1,13 @@
+INPUT LIFECYCLE {"queued":{"created":250,"queuedBeforeDestroy":250,"pendingDead":250},"after":{"deadInInput":250,"pendingDead":0,"deadActive":0,"markers":0}}
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+250 !== 0
+
+    at /workspace/auralis/tests/browser-gathering-input-lifecycle.cjs:15:149 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 250,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

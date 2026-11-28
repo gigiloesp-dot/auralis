@@ -1,0 +1,21 @@
+✔ actual runtime has exactly80/76/45/56 spots,11 residents each and2827 streamed descriptors; planned visual IDs never claim completed artwork (16.940405ms)
+✔ every resident is walkable and outside main roads and safe zones; pursuit territories cannot overlap neighbouring spots (2408.062701ms)
+✔ all470 retired camps and4359 spawn IDs map to real new objects without remapping bosses,dungeons or rewards (5743.400411ms)
+✔ all104 original quests retain IDs,levels,prerequisites and rewards and complete exactly once against current real targets (27.545272ms)
+✔ three-slot world migration preserves exact pre-update JSON,latest death deadline,boss timers,loot and character progress once (4.183691ms)
+✔ world backup quota failure blocks replacement while keeping old slot readable and unmodified (0.345132ms)
+✔ checked-in world and migration artifacts reproduce exactly without rewriting the working tree (7697.963849ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.147936ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (132.917333ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (72.195542ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.527597ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.286144ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (806.272962ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17167.620325

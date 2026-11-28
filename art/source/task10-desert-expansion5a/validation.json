@@ -1,0 +1,94 @@
+{
+  "runtimeVerified": false,
+  "models": [
+    {
+      "id": "desert-species-040",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.8576600816514757,
+      "nativeIdleHeight": 70,
+      "scale": 1.0857142857142856,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "desert-species-041",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.9326443142361112,
+      "nativeIdleHeight": 44,
+      "scale": 1.7272727272727273,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "desert-species-042",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.9299401177300347,
+      "nativeIdleHeight": 58,
+      "scale": 1.3103448275862069,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "desert-species-043",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.8731189303927951,
+      "nativeIdleHeight": 66,
+      "scale": 1.1515151515151516,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "desert-species-044",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.8317506578233507,
+      "nativeIdleHeight": 81,
+      "scale": 0.9382716049382716,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "desert-species-045",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.8821784125434028,
+      "nativeIdleHeight": 72,
+      "scale": 1.0555555555555556,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "desert-species-046",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.8801676432291666,
+      "nativeIdleHeight": 73,
+      "scale": 1.0410958904109588,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    },
+    {
+      "id": "desert-species-047",
+      "frames": 48,
+      "uniqueFrames": 48,
+      "fullyTransparentFraction": 0.882674323187934,
+      "nativeIdleHeight": 74,
+      "scale": 1.027027027027027,
+      "renderedIdleHeight": 76.0,
+      "guttersPass": true,
+      "RGBA": true
+    }
+  ],
+  "totalFrames": 384
+}

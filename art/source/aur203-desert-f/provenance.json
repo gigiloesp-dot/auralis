@@ -1,0 +1,50 @@
+{
+  "pack": "aur203-desert-f",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "animationScope": "48 painted poses; 8 directions times six pose banks. Two movement drawings, not six multiframe clips.",
+  "speciesCards": "art/source/aur203-desert-b/species-cards.json",
+  "generations": {
+    "076": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A fantasy desert hermit creature with six broad velvety violet crab legs, two small coral gripping claws, stalked dark eyes, carrying a tall asymmetrical spiral conch shell of matte ivory with turquoise enamel ribs and three natural side vents. Not snail. Attack claws extend from shell. Death legs folded shell tipped onto side.",
+      "originalGenerationPath": "/workspace/generated_images/exec-2045bd5b-e45e-42bc-b5a5-f07b502e5cfc.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2045bd5b-e45e-42bc-b5a5-f07b502e5cfc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "077": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A wingless six-legged small dragon, charcoal scaled serpentine body, huge amber finned ears, blunt snout, six broad orange clawed feet, a row of ember red triangular frill plates along spine, curling long tail with fork tip. Distinct low sixleg silhouette no wings. Attack opens jaw frill raised. Death curled on side six feet relaxed.",
+      "originalGenerationPath": "/workspace/generated_images/exec-1fca72bd-5bc6-420e-84eb-7f0cb137ffca.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-1fca72bd-5bc6-420e-84eb-7f0cb137ffca.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "078": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: A rotund living sandstone spirit with barrel-shaped vertically ribbed torso, two massive forearms ending in rounded drumstick fists, two short pillar legs, tiny luminous turquoise face inset in torso, three stone slabs floating closely as a small crown above shoulders, no weapons no clothing. Attack punches ground. Death collapsed heap torso on side and limbs folded; crown slabs settle closely.",
+      "originalGenerationPath": "/workspace/generated_images/exec-47e2c497-55a6-4a41-9d07-2ed23bbcbbb1.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-47e2c497-55a6-4a41-9d07-2ed23bbcbbb1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "079": {
+      "prompt": "Create one production GAME SPRITE SHEET for Auralis. Warm detailed painterly CARTOON fantasy isometric RPG style, polished hand-painted game creature, crisp readable features, not pixel art. TRUE TRANSPARENT alpha background; no ground, no shadows, no backdrop, no text, no labels, no borders. Exactly 8 columns by 6 rows = 48 COMPLETE separately painted poses. Large blank gutters. All creatures fully inside cells, no overlap or clipping. Landscape sheet 1536x1024. Columns strictly EAST (right profile), SOUTHEAST, SOUTH(front), SOUTHWEST, WEST(left profile), NORTHWEST, NORTH(back), NORTHEAST. Rows strictly IDLE, RUN STEP A, RUN STEP B opposite limb stride distinct drawing, ATTACK, HURT recoil, DEAD fully collapsed flat lying relaxed body (visibly much lower than standing, NOT standing hurt). Paint all eight directions correctly anew in each row. Same creature identity scale and anatomy in all 48 frames. No isolated particles, symbols, props, detached parts, scenery. Each pose is one complete creature drawing. Two run rows visibly different foot/wing placement.\\nCreature: An original limbless sand eel with long flexible muted plum body, flat hammer-shaped head, two flexible golden ribbonlike lower jaw barbels, ivory belly plates and broad continuous ruffled orange dorsal fin, tail tapering to a tiny spoon. Low serpentine body not fish with legs. Attack wide jaw lunge. Death loose flattened coils fin collapsed.",
+      "originalGenerationPath": "/workspace/generated_images/exec-a4f1f82c-05c0-4080-bfa5-08d135af504b.png",
+      "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a4f1f82c-05c0-4080-bfa5-08d135af504b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  "visualInspection": {
+    "poses": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All final registered native poses viewed on both backgrounds. No visible matte rectangles, clipping or neighboring fragments. Death row lies collapsed."
+  },
+  "acceptedRepair": "repair-076-accepted-session-provenance.json",
+  "readinessManifest": "art/source/aur203-desert-b/art-readiness-manifest.json"
+}

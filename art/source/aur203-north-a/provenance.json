@@ -1,0 +1,253 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-north-a",
+  "createdUTC": "2026-11-24",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "physicalAndroid": false,
+  "generatedWith": "OpenAI image_gen",
+  "scope": "Four original anatomies, not recolor/resize derivatives of existing game species. Eight directions and six banks of drawn poses, including two movement drawings; not six new multiframe clips.",
+  "sourceDirectionOrder": [
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne",
+    "e",
+    "se"
+  ],
+  "atlasDirectionOrder": [
+    "n",
+    "ne",
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw"
+  ],
+  "mechanicalPacking": "Complete nonoverlapping source rectangles with 8-source-pixel padding, uniform scale per species. Alpha>128 only locates support and gutters; no alpha erase/threshold cutout/anatomy edits. All semantic background/death/spacing corrections by image_gen.",
+  "repairs": {
+    "076": [
+      "original retained: nonzero canvas alpha matte",
+      "cutout: image_gen removes matte and collapses back-view death",
+      "reflow: image_gen uniformly shrinks/isolates all48 poses, no touching boundingboxes",
+      "finalclean: image_gen removes residual per-cell gray matte; selectedsource"
+    ],
+    "077": [
+      "original retained",
+      "cutout: image_gen clean transparency; selectedsource"
+    ],
+    "078": [
+      "original retained",
+      "cutout: image_gen clean transparency",
+      "reflow: image_gen separates finalrow legboundingboxes; selectedsource"
+    ],
+    "079": [
+      "original retained",
+      "cutout: image_gen clean transparency; selectedsource"
+    ]
+  },
+  "visualInspection": {
+    "posesInspected": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All192 registered native poses reviewed on both backgrounds. No visible rectangular matte, crop, neighboring anatomical fragments, or truncated limbs. Death rows visibly relaxed/collapsed and lower in median height. Generated source low-alpha hidden RGB retained; zero-alpha percentage is reported, not forced."
+  },
+  "species": [
+    {
+      "id": "north-species-076",
+      "spotId": "north-spot-076",
+      "biome": "snow",
+      "level": 33,
+      "position": {
+        "x": 5553,
+        "y": 19241
+      },
+      "names": {
+        "ru": "Инеебородый морж",
+        "en": "Rime-whiskered walrus",
+        "es": "Morsa de bigotes de escarcha"
+      },
+      "suggestedMovementProfile": "mauler",
+      "suggestedAbilityPattern": [
+        "charge",
+        "frost"
+      ],
+      "abilitiesImplementedByExistingEngine": true,
+      "abilitiesIntegratedForThisSpecies": false,
+      "proposedPassivesImplemented": false,
+      "statsLootAndFinalBalance": "Not configured by art-only pack; requires root runtime integration and tests."
+    },
+    {
+      "id": "north-species-077",
+      "spotId": "north-spot-077",
+      "biome": "snow",
+      "level": 24,
+      "position": {
+        "x": 4786,
+        "y": 1547
+      },
+      "names": {
+        "ru": "Овцебык снежной гривы",
+        "en": "Powder-mane muskox",
+        "es": "Buey almizclero de melena nívea"
+      },
+      "suggestedMovementProfile": "charger",
+      "suggestedAbilityPattern": [
+        "charge",
+        "stomp"
+      ],
+      "abilitiesImplementedByExistingEngine": true,
+      "abilitiesIntegratedForThisSpecies": false,
+      "proposedPassivesImplemented": false,
+      "statsLootAndFinalBalance": "Not configured by art-only pack; requires root runtime integration and tests."
+    },
+    {
+      "id": "north-species-078",
+      "spotId": "north-spot-078",
+      "biome": "volcanic",
+      "level": 38,
+      "position": {
+        "x": 20110,
+        "y": 19982
+      },
+      "names": {
+        "ru": "Обсидиановая фонарная сколопендра",
+        "en": "Obsidian lantern centipede",
+        "es": "Escolopendra linterna de obsidiana"
+      },
+      "suggestedMovementProfile": "crawler",
+      "suggestedAbilityPattern": [
+        "venom",
+        "fan"
+      ],
+      "abilitiesImplementedByExistingEngine": true,
+      "abilitiesIntegratedForThisSpecies": false,
+      "proposedPassivesImplemented": false,
+      "statsLootAndFinalBalance": "Not configured by art-only pack; requires root runtime integration and tests."
+    },
+    {
+      "id": "north-species-079",
+      "spotId": "north-spot-079",
+      "biome": "snow",
+      "level": 31,
+      "position": {
+        "x": 9385,
+        "y": 15450
+      },
+      "names": {
+        "ru": "Хрустальная медуза-колокол",
+        "en": "Crystal-bell sky jellyfish",
+        "es": "Medusa celeste de campana cristalina"
+      },
+      "suggestedMovementProfile": "ghost",
+      "suggestedAbilityPattern": [
+        "frost",
+        "haunt"
+      ],
+      "abilitiesImplementedByExistingEngine": true,
+      "abilitiesIntegratedForThisSpecies": false,
+      "proposedPassivesImplemented": false,
+      "statsLootAndFinalBalance": "Not configured by art-only pack; requires root runtime integration and tests."
+    }
+  ],
+  "generationFiles": {
+    "north-species-077-registered.png": {
+      "bytes": 677192,
+      "sha256": "f1a12a0b0de778ab0a0211d1c13cb964f8977a4599848d7406fbef557ca2022f"
+    },
+    "north-species-078-cutout.png": {
+      "bytes": 2054397,
+      "sha256": "191195ca7286b79934ffe3ea944cac1004aa81f7415bd8ffce39cca994c0f986"
+    },
+    "north-species-077-original.png": {
+      "bytes": 3530706,
+      "sha256": "a2ed7fae53de426dd1445958f3b502225d1b6f957375d35b0703282a59f332ae"
+    },
+    "north-species-079-beige-qa.png": {
+      "bytes": 412986,
+      "sha256": "18f072c2a0f37dd615abe1a6cc26e8dbeaf2fa9ef5c48e3cdca4e75c603b6c78"
+    },
+    "north-species-079-registered.png": {
+      "bytes": 595273,
+      "sha256": "22069072d9dab2aa16be796faad67bcb0bc4dc363c78dccd610ed03f5e05e917"
+    },
+    "north-species-076-original.png": {
+      "bytes": 3305037,
+      "sha256": "d8394b90574315dc868e4d0ad75f8a4c0135c83f01f599cf0897d166fbf1f957"
+    },
+    "north-species-076-beige-qa.png": {
+      "bytes": 398552,
+      "sha256": "38eee923f62a152daedaa089553f6d6c071775e1da675f7c772958fb145b9d48"
+    },
+    "north-species-076-dark-qa.png": {
+      "bytes": 406559,
+      "sha256": "c2256b0c8c3ed51306c8f2322379ce793d4982aadfe72b317905d138829e4b2c"
+    },
+    "north-species-077-beige-qa.png": {
+      "bytes": 504141,
+      "sha256": "85aa5a3bf404f81e50eea9aef6810f7dcebf653bb79562d7d2f0028c18fcd2b9"
+    },
+    "north-species-078-dark-qa.png": {
+      "bytes": 354483,
+      "sha256": "9ff5f815bbd9e5d66b889cb7574c4e2fe510311ffe61742a364a115ee09f55af"
+    },
+    "north-species-079-dark-qa.png": {
+      "bytes": 451269,
+      "sha256": "132daa59938db2c0a7df9c1c744aeaee1d4e75d7c690ff4e1bc4d4fb51ecf65c"
+    },
+    "north-species-076-registered.png": {
+      "bytes": 545423,
+      "sha256": "8547bed50e0dfb3553f8e80c721601fa5262ca04b106aa74760e75e3e5b7cfbb"
+    },
+    "north-species-079-original.png": {
+      "bytes": 3170033,
+      "sha256": "d6dac6b5b45d959bb23e8142d7dbdcd21db29d2c96c27d502ae53a9fff7428ad"
+    },
+    "north-species-076-reflow.png": {
+      "bytes": 2132272,
+      "sha256": "613713efc838a241e558cab1f2aeb34fdb1eac7963b3b596d581029dd80dda14"
+    },
+    "north-species-078-reflow.png": {
+      "bytes": 1190860,
+      "sha256": "38e287760e5a85833b7c999c9848d254908d82f834e060fd1ff0b242869bd369"
+    },
+    "north-species-078-registered.png": {
+      "bytes": 518578,
+      "sha256": "3d445b696ce854f67da6a14b9a909630b6050c9b6ae94fea4ae67a2ad26a68dd"
+    },
+    "north-species-077-cutout.png": {
+      "bytes": 2603831,
+      "sha256": "94a3fa27572d29eb4c4080968a713f5a65dfbdfbdb5339939d08b045a85d13f0"
+    },
+    "north-species-077-dark-qa.png": {
+      "bytes": 520270,
+      "sha256": "25876bf41dd8fac89a58c47815e24e5836552b8b7073ea6d49c89aebbe282720"
+    },
+    "north-species-076-finalclean.png": {
+      "bytes": 2061705,
+      "sha256": "6f36f4150bea4c1450d4ab88257f5d34f3d60bda4b085c416bf1595931ddcc16"
+    },
+    "north-species-076-cutout.png": {
+      "bytes": 2640998,
+      "sha256": "55187f77d1e3685842142fea01d8637be0d085aba4afd344664bdec2c41443ca"
+    },
+    "north-species-079-cutout.png": {
+      "bytes": 2331119,
+      "sha256": "1f9fbfc28784838e947896607488febf8907cd5f1f4fbe4d45c3ef566630be39"
+    },
+    "north-species-078-beige-qa.png": {
+      "bytes": 384021,
+      "sha256": "77362e0d6381edab420d1d48d252c4e3e486a58f6ecd5814c5b50bd3c4d9412f"
+    },
+    "north-species-078-original.png": {
+      "bytes": 2202660,
+      "sha256": "5ee74e8c37657f4a33af14ad4ca72c2c1c9640cc2c3ca297e81a3a31e74ebd40"
+    }
+  }
+}

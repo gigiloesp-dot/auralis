@@ -1,0 +1,301 @@
+[
+  {
+    "id": "forest-species-096",
+    "size": [
+      1024,
+      1152
+    ],
+    "mode": "RGBA",
+    "alphaZeroPercent": 82.92312622070312,
+    "poses": [
+      {
+        "row": 0,
+        "column": 0,
+        "alphaGutter": 16,
+        "rgbaHash": "d2e3de4783f8bc0eddd1af3605d2af0b12dc0856a8dfc8d598349f8d4baee3c1"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "c096c099c2606c364ea79b88c0e8fb1df88a01662bbaeefa3386b6b8fb7108f6"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "alphaGutter": 16,
+        "rgbaHash": "ca85f2605bb9059fac05e5ba49ad3add256c9f3b6e8da39599cdf235cc0d3af3"
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "alphaGutter": 17,
+        "rgbaHash": "dc3bcccc116d33afa6a2e810366d4a33b416c039f01804450a015b162fef74e6"
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "alphaGutter": 16,
+        "rgbaHash": "67f07ed41f35df683d628f5e3474c138f4afe4c4fbe53930b9f8fa72c960d337"
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "alphaGutter": 18,
+        "rgbaHash": "56d3e34aa16298041feebc35d0529f1aca375528000d2de2e4536e6f76686eee"
+      },
+      {
+        "row": 0,
+        "column": 6,
+        "alphaGutter": 18,
+        "rgbaHash": "e4336297b80e3657b1b6675430574ba0dbe7bc3dcc133473d69bde283d44adb8"
+      },
+      {
+        "row": 0,
+        "column": 7,
+        "alphaGutter": 18,
+        "rgbaHash": "760c5c296c3994f99721f5a792003b6a838461d9a4e613f37c4848bf7063f88c"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "alphaGutter": 16,
+        "rgbaHash": "8c423398a5f2d8d84b44c352e00e2482707e1b8a12672547b8bde29be738bc6f"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "alphaGutter": 17,
+        "rgbaHash": "aef6f69080f10709100c4fb80a4d8d967218dab50207a010ead296c0b3556de4"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "alphaGutter": 16,
+        "rgbaHash": "ae9d9618717b0683cef7538f4fba0e53a7243aa684eca7051442c914a4c2b8d0"
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "alphaGutter": 17,
+        "rgbaHash": "5bba744e559372cf1a38ac858d7ca6649a5719a0e01e9c6c5edcd4d812e62b71"
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "alphaGutter": 16,
+        "rgbaHash": "46982abe7fbbffa283d16c038de244e6aa8c8485a6e8234ecca10bdb4e3b35e4"
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "alphaGutter": 18,
+        "rgbaHash": "85cd78ba4a80e54d9214ef3ae4527d6e5edde4298228d79648122eccbbeebdc7"
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "alphaGutter": 17,
+        "rgbaHash": "8c7ba755b04e4df37561a61ade399bf29a5f8eb788112c85b0e2f86fbb0a69f5"
+      },
+      {
+        "row": 1,
+        "column": 7,
+        "alphaGutter": 18,
+        "rgbaHash": "cd532714e628a8f0acb5e123e3665a73f592c9c628e74666b286a7d6bd6e1cdb"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "alphaGutter": 16,
+        "rgbaHash": "7df942c8102e2e29aef90d9f4f1e464336849eb3ce49adcc948d6e3c30df9e14"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "alphaGutter": 17,
+        "rgbaHash": "f1fb3e7964bc5aa943b995171d0a906323dcd2d6c1289a8847c742e07551c137"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "alphaGutter": 16,
+        "rgbaHash": "dc69b2e686988babda04399454770e547e19b6c7e000e7718545f8642e04cf69"
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "alphaGutter": 17,
+        "rgbaHash": "a2829a34d09a7fdee3bbcff8d1e9c99482e21ef3f84f27e80761829d69fa86d7"
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "alphaGutter": 16,
+        "rgbaHash": "eff82d5f20fe0505b6bcc6d83da5354ea684a98a1b38487d0d0b529bbd20f883"
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "alphaGutter": 18,
+        "rgbaHash": "0fd6a96bf325bf15cba543dcf3e4254943711ba36f832217f67b944a82174507"
+      },
+      {
+        "row": 2,
+        "column": 6,
+        "alphaGutter": 18,
+        "rgbaHash": "718bae1b16d86b48ef85481b6c68ced42f0f6bc4134ec9dbfd8f639e9c6177ce"
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "4b0322f61dc9c3c7d040209fe173bd57517138f9488e2163e58a107b9161957f"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "alphaGutter": 16,
+        "rgbaHash": "79aceb31b078796ff6f8e068b3e53ecc1a16addfd4dd4630fd955e167ca65650"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "alphaGutter": 17,
+        "rgbaHash": "adbae1a862ef8887944aae60940f9da3fe6d56cefebd8a8d71e0276284421419"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "alphaGutter": 16,
+        "rgbaHash": "fc9ff09590044de175b5d3110b893481a396b9c2ba0b5d7b0dc6fa31d629b223"
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "alphaGutter": 16,
+        "rgbaHash": "bf8783b0ee704f6d9d8e954bd86360c701f3d6e8e8e127a21f4bd45ee40ba04b"
+      },
+      {
+        "row": 3,
+        "column": 4,
+        "alphaGutter": 16,
+        "rgbaHash": "6f88c08b119a0afa797b4d2d8baf57b20b3961d7942a26ca0082bc4979833dba"
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "alphaGutter": 18,
+        "rgbaHash": "e0dda4667b47f98178c3b96cb222440e874198f1afb93616b13cc78fde228633"
+      },
+      {
+        "row": 3,
+        "column": 6,
+        "alphaGutter": 17,
+        "rgbaHash": "dab89218a7589191ce4d94497ad290ef3c68593d145bcb4e05f1135477c05b8a"
+      },
+      {
+        "row": 3,
+        "column": 7,
+        "alphaGutter": 18,
+        "rgbaHash": "7f3f0f9702743b9f67ce1a7e991f18e1aad6c44df93bf6c57f8f9a7cb4b6d1c6"
+      },
+      {
+        "row": 4,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "f5d0b67caed6679e68c7aae216b7fcad1a6dc8e34f8d876110088dfca290620f"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "a191e31048fdac8792ec0324c5657c19d26b60e294ec31d65645de54c6c8b19a"
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "de06d9d580b437cda8df3586ad355c732137b3042528e61d37b62e05a0db79da"
+      },
+      {
+        "row": 4,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "d73b5527f37627168937cee6251d2a70dcb332a026509b127097dbbaf412292d"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "2927f79cae63a07abbffbae03443cf176eb2829540a53720c4838334e6278ccb"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "27bc3db43552163f62f608c5cc360199c4927cc9b899a8c661b08ef491260d66"
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "50c5d856da20bd8b08df5d72ebfb2fdacdb6b63028fa913b00ebe5185a8ffb72"
+      },
+      {
+        "row": 4,
+        "column": 7,
+        "alphaGutter": 20,
+        "rgbaHash": "2f5d290d3d8585a127e88d98bcfad0fa4d76c3d9353f85e8fd11e4b6d0a41bec"
+      },
+      {
+        "row": 5,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "030e99b52448b1c4876414b1183deac3e1dbda062c52d9bd4b4f3da9a6216fd2"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "alphaGutter": 18,
+        "rgbaHash": "348a2a840ff758c90bb502d485dcb374950dc1615209f93e1852ac7ae1ffa949"
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "alphaGutter": 16,
+        "rgbaHash": "aeed2556ca5908a071148cf4a64524ae809444d799d40d24ba4ad7da048ee02d"
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "319343442cd329ef3f2d27ebd4bc011474ce69d88c9ef16e61cc2645aba428f6"
+      },
+      {
+        "row": 5,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "9f1d1cf3861834e07104b23c34182618e99c9f06e524432e72718be290d17927"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "f788fe495d1ca6636f648287561668f62de75f26fc7f696a072db6af8dc53412"
+      },
+      {
+        "row": 5,
+        "column": 6,
+        "alphaGutter": 17,
+        "rgbaHash": "6f39b3084cf4f0ef023971e414b4e7884e9705e9974ea686e885dab790ac7993"
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "alphaGutter": 18,
+        "rgbaHash": "f5f167c1a71d971b502dd01f0eeb012597e09c68db1e47e0f86f46e8d2e12447"
+      }
+    ]
+  }
+]

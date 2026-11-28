@@ -1,0 +1,130 @@
+[
+  [
+    "north-species-042",
+    "ivory-tusk-lynx",
+    65,
+    "A snow QUADRUPED predator: stocky ivory lynx, two enormous downcurved saber tusks, six short dark whisker spikes, round tufted ears, bobtail, four thick paws. A wide navy saddle-shaped natural fur marking. No antlers, wings, armor or humanoid limbs. Loping four-legged gait; biting pounce; collapsed animal death.",
+    "Бивневый снежный рысак",
+    "Ivory tusk lynx",
+    "Lince de colmillos de marfil",
+    "iceWolf",
+    "snow",
+    "quadruped",
+    [
+      "pounce",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-044",
+    "frost-ribbon-ferret",
+    54,
+    "A snow QUADRUPED predator: exceptionally long thin white ferret body, very short four legs, narrow blue muzzle, long broad flat ice-blue ribbon tail curving beside body, small round ears. White fur and deep teal paws. NO quills or horns. Low slinking gait, stretched leaping bite, curled collapsed death.",
+    "Инейный лентохвост",
+    "Frost ribbon ferret",
+    "Hurón cinta de escarcha",
+    "iceWolf",
+    "snow",
+    "quadruped",
+    [
+      "pounce",
+      "venom"
+    ]
+  ],
+  [
+    "north-species-046",
+    "snowmill-golem",
+    88,
+    "A snow HEAVY BIPED golem: squat round ivory stone millwheel torso with square black hollow center, small wedge head set above wheel, two massive icy rectangular forearms, two stumpy stone feet. Frost blue stone with turquoise carved grooves. Silhouette resembles a heavy walking millstone, NO humanoid face. Stomping gait, overhead fist slam, death a compact pile of broken wheel segments.",
+    "Снегомельный голем",
+    "Snowmill golem",
+    "Gólem molino de nieve",
+    "frostGolem",
+    "snow",
+    "heavy",
+    [
+      "stomp",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-048",
+    "glacier-sail-hound",
+    68,
+    "A snow QUADRUPED predator: four-legged slender blue hound with long narrow crocodile muzzle, tiny ears, a single upright scalloped white ice fin running along spine, very long thin tail, webbed paws. Natural animal, NO armor or horns. Four-legged gallop, open jaw biting lunge; side-lying dead hound with folded dorsal fin.",
+    "Ледопарусный гончий",
+    "Glacier sail hound",
+    "Sabueso vela glaciar",
+    "iceWolf",
+    "snow",
+    "quadruped",
+    [
+      "pounce",
+      "charge"
+    ]
+  ],
+  [
+    "north-species-050",
+    "cinder-hourglass",
+    72,
+    "A volcanic HOVERING elemental shaped as a tall black obsidian hourglass: two hollow hexagonal rock cups joined at a narrow waist, molten orange sand glowing inside; three small angular basalt stones tightly orbit each side like hands. No legs, no feet, no face, no cloth. Upright hovering, tilt for movement, outward clustered stone arm strike, shattered hourglass death compact on ground.",
+    "Пепельные песочные часы",
+    "Cinder hourglass",
+    "Reloj de ceniza",
+    "iceElemental",
+    "volcanic",
+    "hover",
+    [
+      "blink",
+      "fan"
+    ]
+  ],
+  [
+    "north-species-052",
+    "aurora-nautilus",
+    69,
+    "A snow HOVERING elemental: large spiral frosted pearl nautilus shell with bright teal spiral groove, small dark blue body beneath and four short curled icicle tentacles, two crystal eye stalks. No humanoid limbs no wings. Compact floating spiral snail, no ground effects. Tilts and extends tentacles to drift, attack all tentacles forward, death shell toppled with limp tentacles.",
+    "Полярный наутилус",
+    "Aurora nautilus",
+    "Nautilo aurora",
+    "iceElemental",
+    "snow",
+    "hover",
+    [
+      "blink",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-054",
+    "furnace-fan-bat",
+    58,
+    "A volcanic WINGED bat creature: tiny black furry pear-shaped body, enormous round fan-shaped bat wings with five bronze orange membrane segments per wing, short blunt ears, broad pig nose and small two-clawed feet. Distinct open fan wing silhouette; no bird feathers. Flying flaps for run states, diving claws attack, recoiling hurt, death grounded bat with folded crumpled wings.",
+    "Горнильный веерокрыл",
+    "Furnace fan bat",
+    "Murciélago abanico de fragua",
+    "iceBat",
+    "volcanic",
+    "winged",
+    [
+      "dive",
+      "fan"
+    ]
+  ],
+  [
+    "north-species-056",
+    "tundra-bellows-golem",
+    85,
+    "A snow HEAVY BIPED construct: tall accordion bellows torso of layered white frost plates over dark blue joints, round domed head with one horizontal teal eye slit, two huge shovel-like hands and broad wedge feet, flat tall backpack chimney capped with ice. Exactly two arms two legs. White blue iron and snow, NO orange fire. Heavy stomping gait, shovel slam, death collapsed concertina with detached shovel arms.",
+    "Тундровый мехоголем",
+    "Tundra bellows golem",
+    "Gólem fuelle de tundra",
+    "frostGolem",
+    "snow",
+    "heavy",
+    [
+      "stomp",
+      "charge"
+    ]
+  ]
+]

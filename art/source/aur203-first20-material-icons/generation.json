@@ -1,0 +1,12 @@
+{
+  "provider": "image_gen",
+  "task": "AUR-203 first20 thematic non-equipment material icons",
+  "generatedOriginal": "/workspace/generated_images/exec-3692e738-3e6f-455a-bec7-a0bce2d19285.png",
+  "sourceSHA256": "8a06857ebe2fc69a62f95a4b087b4380c26861398dd6773d3276c21d5342c6c9",
+  "transparentBackground": true,
+  "prompt": "prompt.txt",
+  "inspection": "All20 packed icons inspected on beige and dark backgrounds. No visible colored matte, clipped objects or neighboring-cell contamination.",
+  "semanticEdits": [],
+  "preparedOnly": true,
+  "runtimeRegisteredByThisPackage": false
+}

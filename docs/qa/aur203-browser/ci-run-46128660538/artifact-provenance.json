@@ -1,0 +1,2396 @@
+[
+  {
+    "artifactId": 15256473049,
+    "name": "browser-aur203-forest-cd",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "0cb7c36cb9d904b1803d39144195455aab8e8f2849dc31d8f414133d2a4f21d0",
+    "archiveBytes": 13415155,
+    "speciesIds": [
+      "forest-species-088",
+      "forest-species-089",
+      "forest-species-090",
+      "forest-species-091",
+      "forest-species-092",
+      "forest-species-093",
+      "forest-species-094",
+      "forest-species-095"
+    ],
+    "files": [
+      {
+        "source": "aur203-forest-c/forest-species-088-directions.png",
+        "sourceSHA256": "41cdeba0f72478766e5eca82b1815cf97324c0c70b35bd7de90afb4d6c2ab2ba",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-088-directions.png",
+        "preservedSHA256": "41cdeba0f72478766e5eca82b1815cf97324c0c70b35bd7de90afb4d6c2ab2ba"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-088-en.png",
+        "sourceSHA256": "bbca214ac90ec55b2fbedb23159fb2c7cac435c227eb770ae834f0b985c9f20e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-088-en.jpg",
+        "preservedSHA256": "c801933485ca3729f742917a7b95dde879790861ec69ae4ff727bfbd2e272a70"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-088-es.png",
+        "sourceSHA256": "50c781fffd1fdadffc5a1bd0634881426a5c8e3f64cb5c25e98c6e2e6a3d5c27",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-088-es.jpg",
+        "preservedSHA256": "e9b0983bd1ac2ce768205a0cb81235538cd8119f9c60f3749b561447c5a51385"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-088-ru.png",
+        "sourceSHA256": "9dbda426c63de01afb84d2b282db4bac94faa16947acf088a571a0816d0a174e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-088-ru.jpg",
+        "preservedSHA256": "5f5ff365b0148e43e5b91c7b97ad0022bd5a46e6e87d3abf98f85b749fb42041"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-089-directions.png",
+        "sourceSHA256": "ee8fe5d6f35346c635f013113306d3587672e209388a9480b9baaae89a81fc01",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-089-directions.png",
+        "preservedSHA256": "ee8fe5d6f35346c635f013113306d3587672e209388a9480b9baaae89a81fc01"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-089-es.png",
+        "sourceSHA256": "67b1ea712112b333912b3bbfb26d4401827e56013a5bd45864ab8b586da2b588",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-089-es.jpg",
+        "preservedSHA256": "a938db440b3f70815ff2a4cdb1357da9642f024be7e8b2ce4bdd54f2e7d5996c"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-089-en.png",
+        "sourceSHA256": "abc40616c460a12ec1efd04ed767fafbc5542b48d77597c19b309751ce3577ba",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-089-en.jpg",
+        "preservedSHA256": "5de9d46c3cc306c5bca10305fb6b6065646b76c1b215599dc7cef1f5829708e9"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-089-ru.png",
+        "sourceSHA256": "f11141fb0fc3abee253a27f048e6dffeb80a3f4a7e53319de84a2a82a00f3528",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-089-ru.jpg",
+        "preservedSHA256": "2e1e574000520e7fe62314db5946e0233f279e6506b115e979fec5ed723d40c7"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-090-directions.png",
+        "sourceSHA256": "27e5c3429a968408dee357d5b6b5d2ca187426a886e04f1eccfa951960efbb27",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-090-directions.png",
+        "preservedSHA256": "27e5c3429a968408dee357d5b6b5d2ca187426a886e04f1eccfa951960efbb27"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-090-en.png",
+        "sourceSHA256": "cb7c576064f29f227aadb21d74e14c03cca8ae31ae1c288a2b84995802461a77",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-090-en.jpg",
+        "preservedSHA256": "b7795ed0d29bee804602a38821d10f3672083577076932cf7cd6e074857b7d8c"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-090-es.png",
+        "sourceSHA256": "ea20d6e679fa58ce61437adde540d22bf9d1057c40a95ea9596127c338d10617",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-090-es.jpg",
+        "preservedSHA256": "97e60fb156f54c9e91feec38d33a8ec57e410b4b86b7edff5254a5c974328191"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-090-ru.png",
+        "sourceSHA256": "9917e3f4f58915ee78bd419966a1ca3d68bc127034333e78d17979334d344757",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-090-ru.jpg",
+        "preservedSHA256": "2854a7a558a0e1a45a0847357d480447962085556dc1c500c3b007cf587e3011"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-091-directions.png",
+        "sourceSHA256": "bfde913c1bbaca06e55b1d0ee8553a18984b949d67b12e00c3b94e4ab2a9952e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-091-directions.png",
+        "preservedSHA256": "bfde913c1bbaca06e55b1d0ee8553a18984b949d67b12e00c3b94e4ab2a9952e"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-091-en.png",
+        "sourceSHA256": "6a4fb25259c71bdb10636ba40e8e619cc2eb03450863e87e45a60ae3759de1ad",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-091-en.jpg",
+        "preservedSHA256": "715a95fd359698ba00aa7d97879fed2f42f4e649df34d0696f498126e0a11eea"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-091-es.png",
+        "sourceSHA256": "058b049d5cd70958f924c292e7790a5503f010a61dace6404969f27ed4022e07",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-091-es.jpg",
+        "preservedSHA256": "a9007b6c8565d3c2b9e2ede7cd9eb8e97995e7c1c080345ecc8c265dc43085a6"
+      },
+      {
+        "source": "aur203-forest-c/forest-species-091-ru.png",
+        "sourceSHA256": "fb6c2238129500dc063aa63d851af59cd4278ac120276bd89304303329c86bc0",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/forest-species-091-ru.jpg",
+        "preservedSHA256": "2af8b89915aa19dbcaa094a6f8353a4aa78889db239373cfbb6ca1f3d362efa1"
+      },
+      {
+        "source": "aur203-forest-c/verification.json",
+        "sourceSHA256": "a60ea33500bdb0886047b8ef2979a16404a79e8f9a28d904d0435ac86236b9bb",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-c/verification.json",
+        "preservedSHA256": "a60ea33500bdb0886047b8ef2979a16404a79e8f9a28d904d0435ac86236b9bb"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-092-directions.png",
+        "sourceSHA256": "ea8d0caff9356fdd01342643dd61b7712eb81d40342ac133ed47de3852e7b190",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-092-directions.png",
+        "preservedSHA256": "ea8d0caff9356fdd01342643dd61b7712eb81d40342ac133ed47de3852e7b190"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-092-en.png",
+        "sourceSHA256": "0f93f822def0a8087e42a2b7779c39e1a00d27e00ed85a126a5ada502905ad89",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-092-en.jpg",
+        "preservedSHA256": "256a04bd71d5050b8cbf8b5aba9bb28c12979fc67580c6514e9354653f87eaab"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-092-ru.png",
+        "sourceSHA256": "e1fea03226352efe55d23dd8b01bf4c94db6d3eb0767c354a4e5a415a02717fd",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-092-ru.jpg",
+        "preservedSHA256": "b12fd4c29770f554239a04381a791ba95836bf3d125836a4fde8eb6257beec09"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-092-es.png",
+        "sourceSHA256": "fd719e217f4649a0b3502c0c0b090733b48fbd311b61348bcea69731c4b1261a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-092-es.jpg",
+        "preservedSHA256": "77aac9935f5f5991d3e27e9a4d94484edc05222d9642ba310e01937eb00774e7"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-093-directions.png",
+        "sourceSHA256": "ee8567aeef80038eece6c161d06f849326552477162596fb84a30aff11e67095",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-093-directions.png",
+        "preservedSHA256": "ee8567aeef80038eece6c161d06f849326552477162596fb84a30aff11e67095"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-093-en.png",
+        "sourceSHA256": "a93e082075ee5125137cbf6807e1436424798d4daee1d31413dd2626744833f3",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-093-en.jpg",
+        "preservedSHA256": "a0d4ddc337be78706795c17bc5b2ed5d965d0e7943a35e85e450ab5927daa547"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-093-es.png",
+        "sourceSHA256": "03cc860e32196bf53f77b9254c8af339372b9dfdb3ff2abc049032fecf3766cd",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-093-es.jpg",
+        "preservedSHA256": "06542fce8a148168264ff8baa83d3eb86c31e5e489ce5a43f0e399dae81d8e6f"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-093-ru.png",
+        "sourceSHA256": "ebb02a749661ae6672bcafecd0ba6eca50ca5756e72fabebfb7c0eeec0242329",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-093-ru.jpg",
+        "preservedSHA256": "2b6bc5ed40cf34a4a9872f05350284308f2ece9046d76b3e1f7d02ae12d3b01d"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-094-directions.png",
+        "sourceSHA256": "c36bf244a31bef3e1287c0ab8cc6918d69d15c77809fc475060c8d8dc548d016",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-094-directions.png",
+        "preservedSHA256": "c36bf244a31bef3e1287c0ab8cc6918d69d15c77809fc475060c8d8dc548d016"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-094-en.png",
+        "sourceSHA256": "40c92d79c604830145c6172b9c639e6b5ed476108ab3ed631b5d8c5f42bcb580",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-094-en.jpg",
+        "preservedSHA256": "ccfaa784ed6fc1351ef381040bf574415a088f48e9175b9b2f1c83461ce3d976"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-094-es.png",
+        "sourceSHA256": "8757a2814f5d7eec09cd67c55f6cb9a0a96c65710ee0933a88bfaa7ea2c2b7e9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-094-es.jpg",
+        "preservedSHA256": "04b56bcdf9917f6b23bb6c8a66a71719b3c0de3b809c87c3fd0dabf3a686423b"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-095-directions.png",
+        "sourceSHA256": "6952d4d02147e7d7d129772cb9a7dec11d542c4ea0c64282d6e9970cb9d7731c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-095-directions.png",
+        "preservedSHA256": "6952d4d02147e7d7d129772cb9a7dec11d542c4ea0c64282d6e9970cb9d7731c"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-094-ru.png",
+        "sourceSHA256": "110123cfd04d711e207b3aed9aa1a431be9220ab0fa6b8e548ab485857510179",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-094-ru.jpg",
+        "preservedSHA256": "569792005620fb80df70c6320a6637604e49d1dcc0328762acf007f5f8da3270"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-095-en.png",
+        "sourceSHA256": "a2f2770c4be66084e5fbfac087c3e8ea2c25d1d098f83614374a9ee646ba457a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-095-en.jpg",
+        "preservedSHA256": "2347a5662b554dc848516041ad5b39c8f9f0b9417195f65089c12377dd83f0c3"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-095-es.png",
+        "sourceSHA256": "91576b62eb36c5ae0e68be43eac7b21acea25a5d7f5b90746b2b2165e534611c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-095-es.jpg",
+        "preservedSHA256": "7ebbbb605834edcaa4e7d478b3c5327c7bb94f1b3380271dd330ffd7bc8f9b9e"
+      },
+      {
+        "source": "aur203-forest-d/forest-species-095-ru.png",
+        "sourceSHA256": "26915280f5360d57ecf8136a59b8d81f0ff9441b106aa9a83a8fec90c45bcaa1",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/forest-species-095-ru.jpg",
+        "preservedSHA256": "8084f5b9c2342f9e274d3054b2fae9f02917e6ca46ced4de0dec7ccaf1d3c121"
+      },
+      {
+        "source": "aur203-forest-d/verification.json",
+        "sourceSHA256": "cc4f2b6b3c833f93391e0ddb1a0f4598875a508a3d36287ed8e3abb1e0680dc7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-d/verification.json",
+        "preservedSHA256": "cc4f2b6b3c833f93391e0ddb1a0f4598875a508a3d36287ed8e3abb1e0680dc7"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15256473049"
+  },
+  {
+    "artifactId": 15256522753,
+    "name": "browser-aur203-ancient-cd",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "ca4df76876f7feb9183e72fa9f147c195f31b7891bf7f77dd760252656535bdd",
+    "archiveBytes": 6822689,
+    "speciesIds": [
+      "ancient-species-053",
+      "ancient-species-054",
+      "ancient-species-055",
+      "ancient-species-056",
+      "ancient-species-057",
+      "ancient-species-058",
+      "ancient-species-059",
+      "ancient-species-060"
+    ],
+    "files": [
+      {
+        "source": "aur203-ancient-c/ancient-species-053-directions.png",
+        "sourceSHA256": "ecdd1a7cb95df85e0a547cf0ec62003596fc7a6c11cd2525df1ca49190fa0f49",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-053-directions.png",
+        "preservedSHA256": "ecdd1a7cb95df85e0a547cf0ec62003596fc7a6c11cd2525df1ca49190fa0f49"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-053-es.png",
+        "sourceSHA256": "44d1875b034fd6b05a944b5138eb02f28a8c85534b3add28ff4ec5209e4a4958",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-053-es.jpg",
+        "preservedSHA256": "73315d281bbdc66193e7eaf84faaf3ca9285fd05943e2bfadd62804033f96f56"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-053-en.png",
+        "sourceSHA256": "e09f6313a439034d6a67951a6124fa5b3545fd8cad516586450256713c8acfbe",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-053-en.jpg",
+        "preservedSHA256": "ee9c5ec720079e700daecdb58488f74789c4f94ef005f7fdf4d86b20c71f0999"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-053-ru.png",
+        "sourceSHA256": "3db1ede73fe0aabbbfb3f762ccdcb7c6d1cd8db8087066ab6a33d426030d711f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-053-ru.jpg",
+        "preservedSHA256": "115d2fc120daa823dad589a1a36d4a568961441c548340fb472d9a13bec41ef3"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-054-directions.png",
+        "sourceSHA256": "2a69264f1f4e74d403db0513c9afd36448b76c799803b6e6667d89d24d9d9be5",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-054-directions.png",
+        "preservedSHA256": "2a69264f1f4e74d403db0513c9afd36448b76c799803b6e6667d89d24d9d9be5"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-054-en.png",
+        "sourceSHA256": "c0fa2d24ca5fd5e021c543daae8744e1656e52169da366dbd32192059b0d5db2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-054-en.jpg",
+        "preservedSHA256": "d5bf4be966d9654da34b639f5c4a24b1420295c781ed93ba7cbb7d440b08c553"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-054-es.png",
+        "sourceSHA256": "8a72f043cb16f4ffbdc785844d248bf037cb10ee1ad3d1cd36b315327d72708e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-054-es.jpg",
+        "preservedSHA256": "8d021e905a97d64e3b4662d130f15b775236193233ca81cb2021795f558387da"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-054-ru.png",
+        "sourceSHA256": "56a1562b94fbccdd63821c037ffddb026a8adfa613ce0d4d23f40e9e435df4d1",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-054-ru.jpg",
+        "preservedSHA256": "3082555d64918c77ce40c39ddc8272f75e271f65413da27878901b2737fd5a44"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-055-directions.png",
+        "sourceSHA256": "57288e141ba68591930f4ad0c06171d373ca5e45174db9d4d9a76935ff900a6b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-055-directions.png",
+        "preservedSHA256": "57288e141ba68591930f4ad0c06171d373ca5e45174db9d4d9a76935ff900a6b"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-055-en.png",
+        "sourceSHA256": "9cca3c26b4e190c3ff72e09b5cd7f49176f2491508e1d3cee90610c203923faa",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-055-en.jpg",
+        "preservedSHA256": "5dfa4c31740fabcaacc6d876f7bd3dc4dbbdbf510f59f0d645ff67981bef40e0"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-055-es.png",
+        "sourceSHA256": "d86449f3edb0f6b0b8bc76703f12b222864b6773a521d6e720f48b22d34c8097",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-055-es.jpg",
+        "preservedSHA256": "6ac65ee461c429f4078524b1637977db4b1938b9422956455a9f82b63a16b8cc"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-055-ru.png",
+        "sourceSHA256": "6ae8ce7c1d029dc1f6d09abcc8f811ff2402c95eefa4fc7f35cfd4f5ac712088",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-055-ru.jpg",
+        "preservedSHA256": "f6c9877eb13141007da72843dbb8d98bf9b1c43802870fb5f994db2f15c413ad"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-056-directions.png",
+        "sourceSHA256": "1014dbee68b5bc334242020f612be846a39b8371716afdf3676ba4f66fec760e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-056-directions.png",
+        "preservedSHA256": "1014dbee68b5bc334242020f612be846a39b8371716afdf3676ba4f66fec760e"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-056-en.png",
+        "sourceSHA256": "c2cbbf45fdb7b30af3d02def16c382d6f4e34e60ef7aeb1d5da2f0e8883bdef4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-056-en.jpg",
+        "preservedSHA256": "005d9c5319b0e2101e2576a1d6bcce55061f236706895dd7c329874e583b2324"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-056-es.png",
+        "sourceSHA256": "c01198ce0816c727c6a72b5db2173a43c7044b24ce9fa50bcc29d966fadcf337",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-056-es.jpg",
+        "preservedSHA256": "df2e935c838534ebff0219104b518310ab4475608f1304a2a20ebecf208d3d9f"
+      },
+      {
+        "source": "aur203-ancient-c/ancient-species-056-ru.png",
+        "sourceSHA256": "68fa9da3b73b40387e6225e5b96d4b0147db33a4ee5a2761999054ab59a088d9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/ancient-species-056-ru.jpg",
+        "preservedSHA256": "2ed47fa165b9440ea8ea4121f3873923cf2e914c9b299a9ae01613a70d617ede"
+      },
+      {
+        "source": "aur203-ancient-c/verification.json",
+        "sourceSHA256": "aa924fe432694512c0194e752007b23b18d252cb88cae5d5a6b073a07937bde8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-c/verification.json",
+        "preservedSHA256": "aa924fe432694512c0194e752007b23b18d252cb88cae5d5a6b073a07937bde8"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-057-directions.png",
+        "sourceSHA256": "23a7bcc305491c6be024a92476abdc361124a79c8b9590b13b9ef360e99050c4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-057-directions.png",
+        "preservedSHA256": "23a7bcc305491c6be024a92476abdc361124a79c8b9590b13b9ef360e99050c4"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-057-en.png",
+        "sourceSHA256": "e08cf14f0090f307642d954d89556a190a02663cd0b3b0f38579ef386a577690",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-057-en.jpg",
+        "preservedSHA256": "d6ba555ce7db20559115c7c6f7ce6579d41bf336791aedb4639bb1c275e21c62"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-057-es.png",
+        "sourceSHA256": "1640f3db659ec4c42c27cb1b4be30b12bdfbd6f4505df8ed612835bd44ed8c2d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-057-es.jpg",
+        "preservedSHA256": "550a14cc6be848ea2402d25f16b357f33309a0b6a9f296cfc852226bcf8c754a"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-057-ru.png",
+        "sourceSHA256": "662adb5662d13a8a78976a6747ba6a1a4fe6ab480f24916cd287437ec6764efe",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-057-ru.jpg",
+        "preservedSHA256": "5ae66256c58df9a7611a45e1ab30db3d5dc6391c704f2bef458901b3bfd61389"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-058-directions.png",
+        "sourceSHA256": "8d87ea80eecd4000ec70c5ca69f08a353d54168ad6e0e52121f4d5ea5a53c170",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-058-directions.png",
+        "preservedSHA256": "8d87ea80eecd4000ec70c5ca69f08a353d54168ad6e0e52121f4d5ea5a53c170"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-058-en.png",
+        "sourceSHA256": "8933d5faddfdd06fe3c3e598fab41b6eb9ba62af192fcb22c33dc75094921b09",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-058-en.jpg",
+        "preservedSHA256": "a1f0ad4eb0ee1f6aa22ac49abedc929cd9504080e303be6214276feddb3ba231"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-058-es.png",
+        "sourceSHA256": "2205a083e13b61d0ed9f44cd8b3156312b7bd1a46ce3aee0075dd6fb6c7a1a49",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-058-es.jpg",
+        "preservedSHA256": "8f07b2d37b8dabe856ea4ef07f63ff7d3c54a64da8d0d13a4f09c71fa405b10f"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-059-directions.png",
+        "sourceSHA256": "d7d06d37eecd3dea8a47a71904a49452e2ed0001c87a51abd14691d69755770f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-059-directions.png",
+        "preservedSHA256": "d7d06d37eecd3dea8a47a71904a49452e2ed0001c87a51abd14691d69755770f"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-058-ru.png",
+        "sourceSHA256": "c612a2ccc2cb8fd080ef437b5b1b70eec2a535be590654d55f89fa04526ec7c6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-058-ru.jpg",
+        "preservedSHA256": "23f8f454c7ac32bf5cff9ec81113b4b27896c9ea9e2f4ed8f8086e9a7c848327"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-059-en.png",
+        "sourceSHA256": "bcd1c99ab4165fa05d6bd63e1cc2d4515d0d064e5ed9f92e3632b4738c4b338c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-059-en.jpg",
+        "preservedSHA256": "1840b0ba504fadb872ada16f53abc052e1bdbeab41646065a9fcb618b8f397a9"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-059-es.png",
+        "sourceSHA256": "d13716281dbcf10972eabdcac82428b513add410787f03fefa5ba9834903c699",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-059-es.jpg",
+        "preservedSHA256": "913ab69e75c8cb0fcc30c772dcf0f503499f92d92daa49907d14d919cf1e7062"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-059-ru.png",
+        "sourceSHA256": "330562c7c6319038fdfd25c09bd1db48e8f97d6f840501642dc20008fc0bb57f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-059-ru.jpg",
+        "preservedSHA256": "6085d04d6cc38f32f518d2f1f51f431cda4bbd341d447898e268964eebe23bd1"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-060-directions.png",
+        "sourceSHA256": "eea17b37f102da338c0c1ac8cf7129e5563a4939fb34bb470759569259dae992",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-060-directions.png",
+        "preservedSHA256": "eea17b37f102da338c0c1ac8cf7129e5563a4939fb34bb470759569259dae992"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-060-es.png",
+        "sourceSHA256": "c6bcdaae71954bb24c7ebca40b99ddef5f7cefc8ac6fd02ca8cd770bd5074c97",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-060-es.jpg",
+        "preservedSHA256": "1c02e89abffe3e622e8a629797c4773a4d540bfa9604c873da8894d0c9ef8396"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-060-en.png",
+        "sourceSHA256": "5e76ad47b10f31470168a93b96d469e38f0f90e5a05719d52b624e842fd96f11",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-060-en.jpg",
+        "preservedSHA256": "c047834d3c88d0cff1d11dfa206bbe74fb422aa790aa9973e39366f4200a6a13"
+      },
+      {
+        "source": "aur203-ancient-d/ancient-species-060-ru.png",
+        "sourceSHA256": "2c74a1d4a5a45242f8975d377adbaee5b09e214936c5cd55373d23ea35b3aa25",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/ancient-species-060-ru.jpg",
+        "preservedSHA256": "c54dd04da9886137b9a90a5e1dd8e9b350f8e93119c968526d20837d7dc05972"
+      },
+      {
+        "source": "aur203-ancient-d/verification.json",
+        "sourceSHA256": "f1620be12eecc6caf1453ea8875bea868a3b645769b96d9891228bcff0bdcc12",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-d/verification.json",
+        "preservedSHA256": "f1620be12eecc6caf1453ea8875bea868a3b645769b96d9891228bcff0bdcc12"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15256522753"
+  },
+  {
+    "artifactId": 15257082983,
+    "name": "browser-aur203-forest-ab",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "52ed2f0329f5264c15e96287b4fd3f23cd79fa0d7637e32a8c04941f153de502",
+    "archiveBytes": 12515029,
+    "speciesIds": [
+      "forest-species-080",
+      "forest-species-081",
+      "forest-species-082",
+      "forest-species-083",
+      "forest-species-084",
+      "forest-species-085",
+      "forest-species-086",
+      "forest-species-087"
+    ],
+    "files": [
+      {
+        "source": "aur203-forest-a/forest-species-080-directions.png",
+        "sourceSHA256": "466f457ba57fb697d3eb2fca207f1148837845f6272310f707748741f4a6400b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-080-directions.png",
+        "preservedSHA256": "466f457ba57fb697d3eb2fca207f1148837845f6272310f707748741f4a6400b"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-080-es.png",
+        "sourceSHA256": "45da16831a328b7c8ce27abe3d243446c7d920eccad6a465661a5c9be99aa16d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-080-es.jpg",
+        "preservedSHA256": "24709148e006db67cdb7bed6fbc2a7f90223200756ad18787f0b303e1d41721e"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-080-en.png",
+        "sourceSHA256": "6ce1aa8f2abe97ae9bee21346a1498e39ff12c72c2c54355e6a4fd5e522175f6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-080-en.jpg",
+        "preservedSHA256": "e9cc903142d4b03eb102b0be377affa7698fc016079c28c1231ad77525dc8440"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-080-ru.png",
+        "sourceSHA256": "45928b8dc22b4213958aa96628f8498f2cf59339a8be28d2a14ab32deec587ec",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-080-ru.jpg",
+        "preservedSHA256": "6baedcdff8454dc6ed312584d5625a7a6ebc981f2d43a9f3457c9402bbc727fd"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-081-directions.png",
+        "sourceSHA256": "35c8ba4b216f74d277f4df0c617f29706bad74ffc2990327a2a9afa6146717b6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-081-directions.png",
+        "preservedSHA256": "35c8ba4b216f74d277f4df0c617f29706bad74ffc2990327a2a9afa6146717b6"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-081-en.png",
+        "sourceSHA256": "81c88c38be4f73090c2b9c72fababadc30646fe09747b161aa54b154ffd3edbb",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-081-en.jpg",
+        "preservedSHA256": "b5d1be15d670a87cbf279380b0569676894e55c2e5368c61e2e1f4509dd11820"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-081-es.png",
+        "sourceSHA256": "4df4fa522bdeacac684d1a18f48f9208c36c58f007bcbc275935a47c9e112bf9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-081-es.jpg",
+        "preservedSHA256": "b4caa4448491b97cf4c827e52416b92ace89c144b448ed76d1179ca36d3398a7"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-081-ru.png",
+        "sourceSHA256": "ac086078ee34be1ac9266005d3c60d0b859dd896b094e881e6e50d288bec8b71",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-081-ru.jpg",
+        "preservedSHA256": "a68a5dc1839636f612a499a40e37389e18298a9512234cdca15dd69392e4bef8"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-082-directions.png",
+        "sourceSHA256": "5b466001e73af74300a375dad43350bb9143c7de9a60214ccc4327108c1917c9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-082-directions.png",
+        "preservedSHA256": "5b466001e73af74300a375dad43350bb9143c7de9a60214ccc4327108c1917c9"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-082-en.png",
+        "sourceSHA256": "620b7953ed41e63ddacef7174b3b9d3648569c3a06d821a2e40743e515409328",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-082-en.jpg",
+        "preservedSHA256": "56e2a0d54dd82a69857050580d9c9ef9d3ef2145a50c0eec834dd5eaf9fe9c24"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-082-es.png",
+        "sourceSHA256": "b4e88b1780a5319a4a3be8069cf6f1b2b16471c3b67c1ede3be7f119630bc107",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-082-es.jpg",
+        "preservedSHA256": "38dc1283e93a767b9e104f530297c0b1328987aa234fdf1812a30ebf74fafa64"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-082-ru.png",
+        "sourceSHA256": "e7a2c8ce7d03b12822a9255ae74380e44effd3588e3240a232f3014bae9ec3d2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-082-ru.jpg",
+        "preservedSHA256": "4d54e5bf13453b94098fc3ea2c19bd0aedd0b9795485482012b9e467cfa0b581"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-083-directions.png",
+        "sourceSHA256": "de18cc80b7c9b56485400547b91cd5d8841f03991c63598132f54e62e10c1191",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-083-directions.png",
+        "preservedSHA256": "de18cc80b7c9b56485400547b91cd5d8841f03991c63598132f54e62e10c1191"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-083-en.png",
+        "sourceSHA256": "1424784a98cbaee569eb405cfdf942e971c5ae734908a3aec68d47c0fd599db9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-083-en.jpg",
+        "preservedSHA256": "22d5978def5beb6d53604a1dc0bcd76812cc95b13363d4ee30cfebfc2872f098"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-083-es.png",
+        "sourceSHA256": "aed4a146337f82d4d5e09e9a55a3d166b53e806edc73bc339e731e27fcf4c699",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-083-es.jpg",
+        "preservedSHA256": "2383905913211ffaf42a1db7d725e408b1ec376873340a5704b03ea88b77dfaf"
+      },
+      {
+        "source": "aur203-forest-a/forest-species-083-ru.png",
+        "sourceSHA256": "c1439a9250de8e8502117c2b98ad0a61707ce6f134650e0137a0e2d9e64bf75f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/forest-species-083-ru.jpg",
+        "preservedSHA256": "c4335b41d04197122604f25d8eae495a558dadd6402aafd810fea105b6da0e22"
+      },
+      {
+        "source": "aur203-forest-a/verification.json",
+        "sourceSHA256": "102195f2cf6206dcf3e305bedd33a865f0644a0ab3136575a950c1299832d93c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-a/verification.json",
+        "preservedSHA256": "102195f2cf6206dcf3e305bedd33a865f0644a0ab3136575a950c1299832d93c"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-084-directions.png",
+        "sourceSHA256": "edf9e12c37f8c4c4a29544bc570354ccfa97a621a35b5bd85c6e6a2c8b291469",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-084-directions.png",
+        "preservedSHA256": "edf9e12c37f8c4c4a29544bc570354ccfa97a621a35b5bd85c6e6a2c8b291469"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-084-en.png",
+        "sourceSHA256": "65d1b29df44061fa17e754831b2faa67ae755f9032510d888d931be56b74f223",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-084-en.jpg",
+        "preservedSHA256": "22168458e7c9d1ace5544c9593bb8361340e2d98c48f2ffbb066f6cb195ce9e2"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-084-es.png",
+        "sourceSHA256": "cadd011fa46e79afe9ae9a409dde89a412e0e814a2d0c8dadc6b627a077947af",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-084-es.jpg",
+        "preservedSHA256": "b9d9684de3c81aace8ae2758152ab90c7d719f3001ee14fc835cde17c458a5e8"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-084-ru.png",
+        "sourceSHA256": "5d83d019023fe5785e9511cfafe59bf2c4809b29f171d72c74d408baf56feb0e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-084-ru.jpg",
+        "preservedSHA256": "962c9afc776ab28a72cefef0f8e199060728c8d5113a24936956bfa0b3c3bd58"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-085-directions.png",
+        "sourceSHA256": "e0c8a2c01aff2025641a27d9c42eb9a7ac2b6ab4cc9abc3f25b38c6f975877bc",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-085-directions.png",
+        "preservedSHA256": "e0c8a2c01aff2025641a27d9c42eb9a7ac2b6ab4cc9abc3f25b38c6f975877bc"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-085-en.png",
+        "sourceSHA256": "90480fd2946735eef7da712bd82a3413b2b73a5594ac600a46c1fde3432ca487",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-085-en.jpg",
+        "preservedSHA256": "6021b543c68f85d4ccc7e31d74405d9c4c37d3eac5b5c56ab807e0bf424440e2"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-085-es.png",
+        "sourceSHA256": "0861840de5b538a1164ebbaf4bab3217642144ac8c779e81bb7af335259af83b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-085-es.jpg",
+        "preservedSHA256": "b762d2a400b9e03f66504fb9f995e37d31dc009ec7170da50895ff174360fc91"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-085-ru.png",
+        "sourceSHA256": "30490d2131fcca6905f88691d7f0284a92363b64ff8a2b691ca2279423aa484e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-085-ru.jpg",
+        "preservedSHA256": "949f28b7dba775ac35bbacc0bad523ceaf72fd76e8f4a0df8b9da2e79cf871b0"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-086-directions.png",
+        "sourceSHA256": "608a4fef7f612cd616c8876c8eca14f0292235aa0ab3b5997579b0804217cc70",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-086-directions.png",
+        "preservedSHA256": "608a4fef7f612cd616c8876c8eca14f0292235aa0ab3b5997579b0804217cc70"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-086-en.png",
+        "sourceSHA256": "df55b3e627446a4c4c8388e85a22f58594b1c294b2e4161c4f7d9f61fd1bb78b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-086-en.jpg",
+        "preservedSHA256": "f2d0f6a44bb4a743f4984ef11b558dace51d4ecc7bc4ee9c2238ca52123303a7"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-086-es.png",
+        "sourceSHA256": "d81c1d0fe7e399376aeb008b513dc82fdce36c46e602057123ef4b85e2239dfb",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-086-es.jpg",
+        "preservedSHA256": "af98235a70e09b853fcc66626e932e589cc460f431b03de471aa7bbe08e97cec"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-086-ru.png",
+        "sourceSHA256": "bfaf5346d89ddb0b138aa4529160653154cf908cf68e550d9bf03c65f80543c2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-086-ru.jpg",
+        "preservedSHA256": "3a4782af56c3dbf785e75266e8551e9ef9ec259fca66066db27ba006e6dd1bba"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-087-directions.png",
+        "sourceSHA256": "056837f656a09662a09312c5f6a4ad09efe5d58204766455effbab2075765a85",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-087-directions.png",
+        "preservedSHA256": "056837f656a09662a09312c5f6a4ad09efe5d58204766455effbab2075765a85"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-087-en.png",
+        "sourceSHA256": "5163ac9abb6a62805d1bcc6ea21f718e706c01aeeb15ee0b9a1b368c5bacaed8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-087-en.jpg",
+        "preservedSHA256": "bfb4f47e05cc49bbe87f16b9c842e402f4921178ab2d55e4d14f1646f0c02cd4"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-087-es.png",
+        "sourceSHA256": "8c9a0c5f5a2e3c7d5bcebce460b917c0276bda009c6720d2d916ead9e9f18d42",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-087-es.jpg",
+        "preservedSHA256": "a01b7ff36c4a6e9e16cec32733f04252f5692399ed93b732d3755bd452566f61"
+      },
+      {
+        "source": "aur203-forest-b/forest-species-087-ru.png",
+        "sourceSHA256": "4e9351bd346dd9ce89c2b8be00d88e8196bb4d0cc95c03eddb3598685a2e292b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/forest-species-087-ru.jpg",
+        "preservedSHA256": "fcc7ab4d014dfe6d877670006af4e2b2f89cd84072fa3b2e2226c3dbde91fd0f"
+      },
+      {
+        "source": "aur203-forest-b/verification.json",
+        "sourceSHA256": "365ed93c5fdea7af956980856ca6ae9d05c42a91435df2d1b70f8a8f613292a3",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-b/verification.json",
+        "preservedSHA256": "365ed93c5fdea7af956980856ca6ae9d05c42a91435df2d1b70f8a8f613292a3"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15257082983"
+  },
+  {
+    "artifactId": 15256958500,
+    "name": "browser-aur203-forest-e-north-a",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "892bff62185175e7e3cbc8c3e3ba1f959dfd46acd7f0fbf4e3b8cc94321e815a",
+    "archiveBytes": 7858076,
+    "speciesIds": [
+      "forest-species-096",
+      "north-species-076",
+      "north-species-077",
+      "north-species-078",
+      "north-species-079"
+    ],
+    "files": [
+      {
+        "source": "aur203-forest-e/forest-species-096-en.png",
+        "sourceSHA256": "7fdd33340e9e44bc833d9e51415d7f7011d8f270c2735e21d7e6c0ed581a3581",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-e/forest-species-096-en.jpg",
+        "preservedSHA256": "bf6ae60b688bb9f8ee49907ffc7c6db0ec1b2d8e5fb07bc38a3da6ef5d3c7024"
+      },
+      {
+        "source": "aur203-forest-e/forest-species-096-es.png",
+        "sourceSHA256": "02aef2875996fddc7ba3c3bb60bc4d28f1c4a71b654bafd230236abf4fc7f118",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-e/forest-species-096-es.jpg",
+        "preservedSHA256": "1a70dc27574777be7fa1a8790bb32dd16707f955381bf475860dacde84d4386c"
+      },
+      {
+        "source": "aur203-forest-e/forest-species-096-directions.png",
+        "sourceSHA256": "1e87c66a7b1818fd1c02f97fac0c0ef578d6ca23e9bbd48b9ee44e9bbc568282",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-e/forest-species-096-directions.png",
+        "preservedSHA256": "1e87c66a7b1818fd1c02f97fac0c0ef578d6ca23e9bbd48b9ee44e9bbc568282"
+      },
+      {
+        "source": "aur203-forest-e/forest-species-096-ru.png",
+        "sourceSHA256": "331a1a3077c97a2affb1732ad308891d96b53ec91588fdb53157f6c83b82abda",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-e/forest-species-096-ru.jpg",
+        "preservedSHA256": "bb1c6f97a0626ca7dd0762abc12f940540e6dbbf6a78e454ae2dea8461c3b0a6"
+      },
+      {
+        "source": "aur203-forest-e/verification.json",
+        "sourceSHA256": "93e7ac4baedfe3bcb8b6f6dc848e18e4908dd6f8a79ba88be8c0997fcdb40614",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-forest-e/verification.json",
+        "preservedSHA256": "93e7ac4baedfe3bcb8b6f6dc848e18e4908dd6f8a79ba88be8c0997fcdb40614"
+      },
+      {
+        "source": "aur203-north-a/north-species-076-directions.png",
+        "sourceSHA256": "75b2d970b7561cbf2e25aedffe9b256023ef6c5a937cd01fc2fab4d056446aea",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-076-directions.png",
+        "preservedSHA256": "75b2d970b7561cbf2e25aedffe9b256023ef6c5a937cd01fc2fab4d056446aea"
+      },
+      {
+        "source": "aur203-north-a/north-species-076-en.png",
+        "sourceSHA256": "1da546e6d75546a45852c9a5b27f69f433355790380feaf13206467a7601e96d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-076-en.jpg",
+        "preservedSHA256": "a95158052c46bedde1a909dee84735a6d89daa049cd389a3e9c8643b014ced0e"
+      },
+      {
+        "source": "aur203-north-a/north-species-076-es.png",
+        "sourceSHA256": "15452294f4a4da83982a86e0cd454b4982007c98800b47a97bff30597fb3282e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-076-es.jpg",
+        "preservedSHA256": "b2063576be8d947ec38c27501145bdd4346ce1221e31f62f45b403b6f012c622"
+      },
+      {
+        "source": "aur203-north-a/north-species-076-ru.png",
+        "sourceSHA256": "0ccb841360b2ac463cdb5517d53e19d927a3574d0fd2b41e034a5fe6855fafbc",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-076-ru.jpg",
+        "preservedSHA256": "1ef4617d1b432121ce4dc1956faf444a7e4423b7e5ba6ffe35f18525b3b3e2d5"
+      },
+      {
+        "source": "aur203-north-a/north-species-077-directions.png",
+        "sourceSHA256": "9505edb5a5c8cbd486bc6f76d461345a35e1692d8dccb82d19f476427f4198f5",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-077-directions.png",
+        "preservedSHA256": "9505edb5a5c8cbd486bc6f76d461345a35e1692d8dccb82d19f476427f4198f5"
+      },
+      {
+        "source": "aur203-north-a/north-species-077-en.png",
+        "sourceSHA256": "4552736068324da86232e766a6f863ef18394397b67c703d260524cd3195b265",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-077-en.jpg",
+        "preservedSHA256": "d07b4b2c7ca44b94384ead64b162eef1720f811564220330afd70d6b0363ab86"
+      },
+      {
+        "source": "aur203-north-a/north-species-077-es.png",
+        "sourceSHA256": "95631e55e3c432417a3ec7ba9a0fff6c077df66c0dda72c9bd951a52cb52b692",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-077-es.jpg",
+        "preservedSHA256": "9ac4c31a144cefdf530c8a5b03f93dab1666f50a44377122845e4fd8a1b53dc2"
+      },
+      {
+        "source": "aur203-north-a/north-species-077-ru.png",
+        "sourceSHA256": "c127e80ba7694a4d0e05e27ec025201aaae1334185ff21f9789a2a05b6a99b0f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-077-ru.jpg",
+        "preservedSHA256": "e947d6cc65d85b6f8bc31d1f2f9b8b3dbf0c10e885672101dac3ab80855796b2"
+      },
+      {
+        "source": "aur203-north-a/north-species-078-directions.png",
+        "sourceSHA256": "376940a59b800a560d7e1306569cef9f3ba57329c5adb0f2c27b79201e76cc22",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-078-directions.png",
+        "preservedSHA256": "376940a59b800a560d7e1306569cef9f3ba57329c5adb0f2c27b79201e76cc22"
+      },
+      {
+        "source": "aur203-north-a/north-species-078-en.png",
+        "sourceSHA256": "e355ea94cd18d185b846fc3f87ceab55b99a7f47bbdf178b1edf330f33399841",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-078-en.jpg",
+        "preservedSHA256": "5550e7dc920f107caae4dcb7a3eeb51d80b5e0ca26e1601422f19fcdcdaca472"
+      },
+      {
+        "source": "aur203-north-a/north-species-078-ru.png",
+        "sourceSHA256": "38197827d0f663ed2bf73b08916323d888d6de40bea067fcd3d25441ee720643",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-078-ru.jpg",
+        "preservedSHA256": "bcc54358b7c9c3597e89ad73c6ebab06b05840ae00a760355c2c39730865c054"
+      },
+      {
+        "source": "aur203-north-a/north-species-079-directions.png",
+        "sourceSHA256": "8850eb1960cc8dd162710e4033c5ea439ce1ac0001bb0de9345b527db8abc665",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-079-directions.png",
+        "preservedSHA256": "8850eb1960cc8dd162710e4033c5ea439ce1ac0001bb0de9345b527db8abc665"
+      },
+      {
+        "source": "aur203-north-a/north-species-079-en.png",
+        "sourceSHA256": "7616e86eea8bb25bd4b652c4dc697793f8f8baaa022c73288b26a85051063908",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-079-en.jpg",
+        "preservedSHA256": "487ee9a84c68b1cf367e5a62d941e2f47b40702ddc122005f06ffd98378fbec0"
+      },
+      {
+        "source": "aur203-north-a/north-species-078-es.png",
+        "sourceSHA256": "7a2ddfb269952211cc570b079aba3b97edca71088a5bb15bd65f488dc3d7b772",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-078-es.jpg",
+        "preservedSHA256": "4eb30e3607e9dc848751d1a6085b36e27d80aaa44f55d4185e8887657068325f"
+      },
+      {
+        "source": "aur203-north-a/north-species-079-es.png",
+        "sourceSHA256": "d0b6bf5baf6f4b112430642a981e60dcd5cdac97b5096f4e4eafb84d4182e5ea",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-079-es.jpg",
+        "preservedSHA256": "08907aab49cdbceef6713b64fe858b300244df8271152196bccf7c722a1eb639"
+      },
+      {
+        "source": "aur203-north-a/north-species-079-ru.png",
+        "sourceSHA256": "06d55dae3ea27e2323c091afeab9f354a3d58d56698d4d792023267431910e63",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/north-species-079-ru.jpg",
+        "preservedSHA256": "a2c7709ab6ba36c763cfa3faeac5c45a548ee6b45f6ac4cef9c3f36a502b99b3"
+      },
+      {
+        "source": "aur203-north-a/verification.json",
+        "sourceSHA256": "552316204a5b7e7623426ff4723a3373f2608a9b82bef6ee4b6110687fb10ae1",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-a/verification.json",
+        "preservedSHA256": "552316204a5b7e7623426ff4723a3373f2608a9b82bef6ee4b6110687fb10ae1"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15256958500"
+  },
+  {
+    "artifactId": 15257460678,
+    "name": "browser-aur203-north-de",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "faf1f1ae24318cf0367a8aa586f868d7f75048575b37922dd3d180fda5bae041",
+    "archiveBytes": 7924184,
+    "speciesIds": [
+      "north-species-088",
+      "north-species-089",
+      "north-species-090",
+      "north-species-091",
+      "north-species-092",
+      "north-species-093"
+    ],
+    "files": [
+      {
+        "source": "aur203-north-d/north-species-088-directions.png",
+        "sourceSHA256": "a7256276675f43746d68b57ef5a4f30cb913249829c2967004c950c496a50f08",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-088-directions.png",
+        "preservedSHA256": "a7256276675f43746d68b57ef5a4f30cb913249829c2967004c950c496a50f08"
+      },
+      {
+        "source": "aur203-north-d/north-species-088-en.png",
+        "sourceSHA256": "575bd06ba52c58be0bca6d6fcfdce925f9a192ad7cf7242fae8b11d015e8bd2a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-088-en.jpg",
+        "preservedSHA256": "42911066ac7b70537a587984c11caa2dd1a28bfd9cfc029855246a668ecc86ed"
+      },
+      {
+        "source": "aur203-north-d/north-species-088-es.png",
+        "sourceSHA256": "94057522543af84bae7ca48209f6ad68f61192ac4b7429ba3663b814a2a64dd0",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-088-es.jpg",
+        "preservedSHA256": "1b33cb8b9e2b5f4daad5d2566c769fa3b3b974a853f9fe2ba613e875731facf2"
+      },
+      {
+        "source": "aur203-north-d/north-species-088-ru.png",
+        "sourceSHA256": "770cb0909062a5fe8e65858628e783a597f106fd97f56172596514a4ce839daa",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-088-ru.jpg",
+        "preservedSHA256": "88711a981d0651a99c25c63ef94427eb3076a3d56c6f5922da2ea86a1e8cfe0c"
+      },
+      {
+        "source": "aur203-north-d/north-species-089-directions.png",
+        "sourceSHA256": "ab3ddcba6cebf0ce41fecc1658c8131e9fdefea2da68cc58d7f0c03dce91e129",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-089-directions.png",
+        "preservedSHA256": "ab3ddcba6cebf0ce41fecc1658c8131e9fdefea2da68cc58d7f0c03dce91e129"
+      },
+      {
+        "source": "aur203-north-d/north-species-089-en.png",
+        "sourceSHA256": "953874673d465bcd27fdbb6639092a682004f3322b11ae58aca8a05d2761fdb4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-089-en.jpg",
+        "preservedSHA256": "cead7aeb79f138dd0856fb0fe147c1fc9beb7ae04a1a020711231d57e248d169"
+      },
+      {
+        "source": "aur203-north-d/north-species-089-es.png",
+        "sourceSHA256": "db1775afa51a40909379a2d5cf3723ed01bb45fe2a4f3b32c20ed7e55ec8b69d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-089-es.jpg",
+        "preservedSHA256": "cbaa6aa3eccd01dc98be2c36b2a98f75b9bcd65f93756a704a6ba66d75438df3"
+      },
+      {
+        "source": "aur203-north-d/north-species-089-ru.png",
+        "sourceSHA256": "97733cfdceefa9995e3f071b7de25f1c84ac4a5260516cdfb33af3884a57c181",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-089-ru.jpg",
+        "preservedSHA256": "21c80c1e24327fa653c3164784017d14f28329751481cda40a822b056ebff5c0"
+      },
+      {
+        "source": "aur203-north-d/north-species-090-directions.png",
+        "sourceSHA256": "27d6e5fa461e939a3612853a8005da1db6bad0531727a5c5a8ed75d06eefdc23",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-090-directions.png",
+        "preservedSHA256": "27d6e5fa461e939a3612853a8005da1db6bad0531727a5c5a8ed75d06eefdc23"
+      },
+      {
+        "source": "aur203-north-d/north-species-090-en.png",
+        "sourceSHA256": "41bb843580bc8d5a02d8bf924638b4796fc4959879d7c54846ac341eb1b5fe35",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-090-en.jpg",
+        "preservedSHA256": "838647d4ceb03309f16a0e80808c7ed732f7648ccd3cdce1021211f3d463e2a1"
+      },
+      {
+        "source": "aur203-north-d/north-species-090-es.png",
+        "sourceSHA256": "0071e8332eb13f4c548cbfc9978cdbcb6c51f207320242f1653121215b14ede7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-090-es.jpg",
+        "preservedSHA256": "21504df0a050d30f37e0e39e9ed1de5e0c1526548b41431bc68f5865295b7513"
+      },
+      {
+        "source": "aur203-north-d/north-species-090-ru.png",
+        "sourceSHA256": "beef097a818861f1e856e8bc8d711a923418ca81a43e28324935a67241a90a69",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-090-ru.jpg",
+        "preservedSHA256": "8eaa0e836988d94c029c795baf2b3d1b1cc57b0c5cfd98c8659d875e4d74fd02"
+      },
+      {
+        "source": "aur203-north-d/north-species-091-directions.png",
+        "sourceSHA256": "a08ad87fa94cbe1188441af2d06e201fead042d0fd77d3b747816682a6e423f5",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-091-directions.png",
+        "preservedSHA256": "a08ad87fa94cbe1188441af2d06e201fead042d0fd77d3b747816682a6e423f5"
+      },
+      {
+        "source": "aur203-north-d/north-species-091-en.png",
+        "sourceSHA256": "e2354c083531eaf849c783999d9e294c66cf9183fabcb9d1ec56216ec371abe7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-091-en.jpg",
+        "preservedSHA256": "04dc25261dba22a6566603054cd1da44ed6260b2ea3b8ebfacafdb87e1c6df82"
+      },
+      {
+        "source": "aur203-north-d/north-species-091-es.png",
+        "sourceSHA256": "c28aa5e95b5680fa9cfc7c0c0b4400620a5f1fd0077f1cde63c1521a8004b5f6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-091-es.jpg",
+        "preservedSHA256": "8f170e85e949ba11d806039a426c5a063521a38e860676cbb462cf7eefc224d1"
+      },
+      {
+        "source": "aur203-north-d/north-species-091-ru.png",
+        "sourceSHA256": "a40f32917f98c7fff46d10a38694964222632f71c852b841c9419c9dfd912d94",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/north-species-091-ru.jpg",
+        "preservedSHA256": "d381384a3f46084dff221e9cc82b953e01fa1b178cc91d8383e7b389c4e82f2d"
+      },
+      {
+        "source": "aur203-north-d/verification.json",
+        "sourceSHA256": "04bfdb74739aa639a72fb660dfe77101da5378de62178b90d86257af8cba2419",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-d/verification.json",
+        "preservedSHA256": "04bfdb74739aa639a72fb660dfe77101da5378de62178b90d86257af8cba2419"
+      },
+      {
+        "source": "aur203-north-e/north-species-092-directions.png",
+        "sourceSHA256": "9889d31c533d598d76c6b42eff3b72a6a9aaed99740b6a847afc20e10dbef260",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-092-directions.png",
+        "preservedSHA256": "9889d31c533d598d76c6b42eff3b72a6a9aaed99740b6a847afc20e10dbef260"
+      },
+      {
+        "source": "aur203-north-e/north-species-092-en.png",
+        "sourceSHA256": "6fa59cb31b806cf985da3b2089f0a7a313b3898d4929fbcccbe7d35cf1857723",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-092-en.jpg",
+        "preservedSHA256": "d1cb62e2d2c9dabb2f67c57163e41639d1758ad9b55f0d0c8b230e5686c6c411"
+      },
+      {
+        "source": "aur203-north-e/north-species-092-es.png",
+        "sourceSHA256": "cd4b6c5c24bda1897ffbe43b97fb7bb003b68a9320085b343002924949d9b5b4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-092-es.jpg",
+        "preservedSHA256": "edceec2e6443851b6a9f995873bf0319fd1a978e86c5dc0ea90889e4ad1f6fd8"
+      },
+      {
+        "source": "aur203-north-e/north-species-092-ru.png",
+        "sourceSHA256": "7e40b224d62f0a6fe78ad39b8ffe31cd24fd57cdf478270b542c20112a313e9b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-092-ru.jpg",
+        "preservedSHA256": "62d91524c12065666322510a54bb958c38dffafbebf09ec3e6f269b56e9ac191"
+      },
+      {
+        "source": "aur203-north-e/north-species-093-directions.png",
+        "sourceSHA256": "e2e16f7f91d94fc05a7ea25273ffa853d1ec4d075e90a629971fab3c8c9b25b9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-093-directions.png",
+        "preservedSHA256": "e2e16f7f91d94fc05a7ea25273ffa853d1ec4d075e90a629971fab3c8c9b25b9"
+      },
+      {
+        "source": "aur203-north-e/north-species-093-en.png",
+        "sourceSHA256": "765f2332d572586c4fb936bbc4d8f53787539a60d02d525c76b975ce69e8b60d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-093-en.jpg",
+        "preservedSHA256": "a4174c2e0971e19d90bf2a0e68b5cd1daff43f615bfd04cc816fbcf77e3f2f35"
+      },
+      {
+        "source": "aur203-north-e/north-species-093-es.png",
+        "sourceSHA256": "347a72de0320b06ac1fcc8e250835cb496c4f946e3c89a31588c16f7176852d8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-093-es.jpg",
+        "preservedSHA256": "c9783df94b9de8c06fd04e9eca93ab8b7b06f3e43dc483b12e34d22af6484775"
+      },
+      {
+        "source": "aur203-north-e/north-species-093-ru.png",
+        "sourceSHA256": "6151b885a8893c2d9f3c3f151d32175439622879f6e25ade5ea9d2331c7f221a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/north-species-093-ru.jpg",
+        "preservedSHA256": "4556f120f1b35d29d3aceabc23f82ee1bc14d1ca8e2636424bba376045f88bc8"
+      },
+      {
+        "source": "aur203-north-e/verification.json",
+        "sourceSHA256": "f08eb9f386d0d9552e19cc00c6d087677e5982eeaa64f4172e4ec7b77f9f887f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-e/verification.json",
+        "preservedSHA256": "f08eb9f386d0d9552e19cc00c6d087677e5982eeaa64f4172e4ec7b77f9f887f"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15257460678"
+  },
+  {
+    "artifactId": 15257187739,
+    "name": "browser-aur203-ancient-e-desert-a",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "c1653154d4343ae0c3c60e5383c12538ecf3083ff121dd1c0a70ff1a37afef97",
+    "archiveBytes": 3911015,
+    "speciesIds": [
+      "ancient-species-061",
+      "desert-species-056",
+      "desert-species-057",
+      "desert-species-058",
+      "desert-species-059"
+    ],
+    "files": [
+      {
+        "source": "aur203-ancient-e/ancient-species-061-directions.png",
+        "sourceSHA256": "f8cc69662c9e662eee3e8b8e4892487bebfadeeb8ec44c7bca55962c73e0bde7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-e/ancient-species-061-directions.png",
+        "preservedSHA256": "f8cc69662c9e662eee3e8b8e4892487bebfadeeb8ec44c7bca55962c73e0bde7"
+      },
+      {
+        "source": "aur203-ancient-e/ancient-species-061-ru.png",
+        "sourceSHA256": "3252231d3e5d5bbaa9fa0ba9168f83f650c5338070a59dce49551c36637c14ad",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-e/ancient-species-061-ru.jpg",
+        "preservedSHA256": "4655f918ec2fc601779bc7c63fd249a4c09587f3f63ebeb3a0b40325484d0785"
+      },
+      {
+        "source": "aur203-ancient-e/ancient-species-061-es.png",
+        "sourceSHA256": "41014866a8f6aeb18a9e6ff64faf6237cc143b4b5753a1bb1b8816be817e7c8b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-e/ancient-species-061-es.jpg",
+        "preservedSHA256": "54cf58b24380b0c7e91074aa0aaf92536aab40b626eb8b4c8902eeb7973b3bbf"
+      },
+      {
+        "source": "aur203-ancient-e/ancient-species-061-en.png",
+        "sourceSHA256": "b8347c2d5b68a0fbbbf7419946f4517c289a2f4d491db3384e114376388c68fa",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-e/ancient-species-061-en.jpg",
+        "preservedSHA256": "540efd02fb902e506a4cd31989f6cc668e337734c99a4738c0d3f0a53b5cc0f0"
+      },
+      {
+        "source": "aur203-ancient-e/verification.json",
+        "sourceSHA256": "6acdc120f80464a8e92986bb8f1958cf1a38ff004efd9b63205980fa4bf7f6ec",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-e/verification.json",
+        "preservedSHA256": "6acdc120f80464a8e92986bb8f1958cf1a38ff004efd9b63205980fa4bf7f6ec"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-056-directions.png",
+        "sourceSHA256": "bb16e91b9a5c6a9e1322e91edd91e67d89a402f68b2613dd6312f7297890b39d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-056-directions.png",
+        "preservedSHA256": "bb16e91b9a5c6a9e1322e91edd91e67d89a402f68b2613dd6312f7297890b39d"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-056-en.png",
+        "sourceSHA256": "b72c2bc1975c8d5d29951bd8e6c39c76cc66743ea9b6c98fec200cb87da3dea5",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-056-en.jpg",
+        "preservedSHA256": "334cf0ea0c34dd89bdd00a824b3a6ff39577b97dc9814484ebdbeb706a06d2d8"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-056-es.png",
+        "sourceSHA256": "c3b6b4d8fe5fee16c0b8b541a9680723077efb8b074523144ef16707d9f6a54a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-056-es.jpg",
+        "preservedSHA256": "d8cd2f3e49f07a78374a61cf3d08d37a1fdfacb0e34b2998ba91093ea1ef7409"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-056-ru.png",
+        "sourceSHA256": "25dc1409d9154ea40211741890772aea113d954540674477f9842b2eaeed9cab",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-056-ru.jpg",
+        "preservedSHA256": "052486e44e1a75b8dcec1ee15cbc21717b6b8624916cedecc364736b3ae0fcc3"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-057-directions.png",
+        "sourceSHA256": "0f9a51e498096f8d6846f1c1bb57d55d55896e3f05e73120e23c2f3744aa4a6b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-057-directions.png",
+        "preservedSHA256": "0f9a51e498096f8d6846f1c1bb57d55d55896e3f05e73120e23c2f3744aa4a6b"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-057-en.png",
+        "sourceSHA256": "25010abc44f36f02619933285e79c2ffd2cdc0e2467aee904a4e2b95ce914b6f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-057-en.jpg",
+        "preservedSHA256": "7f142f4dd33c97a07c63ccb70408b349b37381b553a8128bb410351fc5110237"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-057-es.png",
+        "sourceSHA256": "70a6c3c126198437a86fba5291f97574602fb040b41e21bec315f2634cf87569",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-057-es.jpg",
+        "preservedSHA256": "884106f8875fb53f8f60f52327176b216ff5f0c07d48b805b23fdd93b9d8cc18"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-057-ru.png",
+        "sourceSHA256": "3b906b1eb4890b927fe83786ded298f2c6a9ba29389e13c07f7fba3d4f42f383",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-057-ru.jpg",
+        "preservedSHA256": "5e38283228318679c7a6ce07203bf60135db21c0e324298df73e68c433af73a5"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-058-directions.png",
+        "sourceSHA256": "c3c54dbe16555fa4cc862fb5c628c23fd05689df5a109f987944f127f14bf862",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-058-directions.png",
+        "preservedSHA256": "c3c54dbe16555fa4cc862fb5c628c23fd05689df5a109f987944f127f14bf862"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-058-en.png",
+        "sourceSHA256": "ca412e4522eec807ce74168f08a9bfe01b4b852439a5ef2a38804fb2af261515",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-058-en.jpg",
+        "preservedSHA256": "1fa9aed858fb3aff9bfefe2324608673bd1693d9ef982cdb443a176f379328ec"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-058-es.png",
+        "sourceSHA256": "d4b6c1cd48fce86206f1d67d45794b28692d303ea2731ed64533e78a77a9f2c2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-058-es.jpg",
+        "preservedSHA256": "d8acac2a04597d8e9245b26ebfb5df7ad5a7e1713d56f71b5bd037baacac4e10"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-058-ru.png",
+        "sourceSHA256": "d526d5b96aefcb23760eb4a49a2da5966dd8db795cfe2d99a3a6a46ffddae587",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-058-ru.jpg",
+        "preservedSHA256": "3cee3b3ac640f3812cd109bf087529f0877fa6c728276b9d816c9af7e0cea2fc"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-059-directions.png",
+        "sourceSHA256": "10b52cda2329610fae5c4b619b9a455f717a0d4407bb9f21f4fd3810f7db76fa",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-059-directions.png",
+        "preservedSHA256": "10b52cda2329610fae5c4b619b9a455f717a0d4407bb9f21f4fd3810f7db76fa"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-059-en.png",
+        "sourceSHA256": "cfdc5d97b15503aed5365baeef3971db40eec650d96dee6eb30eefbbf4484fcd",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-059-en.jpg",
+        "preservedSHA256": "e49e56f1d2bfbfe2c99fa6c8d19a58b015bb27d4d78584ad7b58b07e28e98999"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-059-es.png",
+        "sourceSHA256": "1d2c103545548af8d811bb1ea72702768738668944178efce19c03a9426f1e83",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-059-es.jpg",
+        "preservedSHA256": "4aa64e065dc593d39b8aca0aeb132c5f8f34843d98fadfd9d36f1181062ba258"
+      },
+      {
+        "source": "aur203-desert-a/desert-species-059-ru.png",
+        "sourceSHA256": "2d32cc2a58e682791e1f2b56d96d71308a6b08c11d8bdef7f8c153fb6b449fd7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/desert-species-059-ru.jpg",
+        "preservedSHA256": "df27775dbcf34fc106fc90920c211364e18a0756d7157957bf0474d73a565fee"
+      },
+      {
+        "source": "aur203-desert-a/verification.json",
+        "sourceSHA256": "8e95377291e7c993ca76f5a2f77ab98139fc82708e53e64cabf2d4f07bcf930e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-a/verification.json",
+        "preservedSHA256": "8e95377291e7c993ca76f5a2f77ab98139fc82708e53e64cabf2d4f07bcf930e"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15257187739"
+  },
+  {
+    "artifactId": 15257465576,
+    "name": "browser-aur203-desert-bc",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "ba9c579a64e800d579977ec95fabf85b9254cb546661330e2f050988563215a6",
+    "archiveBytes": 4947475,
+    "speciesIds": [
+      "desert-species-060",
+      "desert-species-061",
+      "desert-species-062",
+      "desert-species-063",
+      "desert-species-064",
+      "desert-species-065",
+      "desert-species-066",
+      "desert-species-067"
+    ],
+    "files": [
+      {
+        "source": "aur203-desert-b/desert-species-060-directions.png",
+        "sourceSHA256": "32704e95713d33369ab4e5601cb3a67475c4cc2d4f552be5c7923933b0427d0c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-060-directions.png",
+        "preservedSHA256": "32704e95713d33369ab4e5601cb3a67475c4cc2d4f552be5c7923933b0427d0c"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-060-es.png",
+        "sourceSHA256": "d31959812b5572689766418fce62baebaf0f0d54c808d2ec6b8519fe8c9e1e78",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-060-es.jpg",
+        "preservedSHA256": "c7e5cab7b956ce42008edd30d7b3b379b257c8b5d9e3beb942648b671f8cc505"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-060-ru.png",
+        "sourceSHA256": "35e576bfb7e40d1fe9f6e4ad7689d0c6070281fdf922ae2aa2bc19a580048c24",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-060-ru.jpg",
+        "preservedSHA256": "40b1c995ea0459e52067121bd98f4dca59a8dab3f143ccc80d353e628db8c076"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-060-en.png",
+        "sourceSHA256": "7c510821e5009d1f198de4b6943cdd9b24846050c9ba9b9c77eeb857051af2d7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-060-en.jpg",
+        "preservedSHA256": "7da85a49aca3fd9b8e6625861084900ddd8553b5c5ff28a946e7b34c50c1f87c"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-061-directions.png",
+        "sourceSHA256": "6a6289d2a4c57112da62364530315aeac916676be6bcac59bd3452f5b0b2c1d0",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-061-directions.png",
+        "preservedSHA256": "6a6289d2a4c57112da62364530315aeac916676be6bcac59bd3452f5b0b2c1d0"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-061-es.png",
+        "sourceSHA256": "fc87c0df3277686b91e21dcec33a9a46bea93fe2e6eed3dc6b32ad37c91fdec4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-061-es.jpg",
+        "preservedSHA256": "e61159cddd410fa9eb7891a9833619fc322285aadf68671495f5112873da03b7"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-061-en.png",
+        "sourceSHA256": "0a0e0753e419610881d5eb6d914b472947dc3fa861168469e54ce1f11d2c6d45",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-061-en.jpg",
+        "preservedSHA256": "acfe12a9aad994bf0e6fbec102756d979ea59f57f1c4a6578cc82e5fdf33dcc2"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-061-ru.png",
+        "sourceSHA256": "5c9959673dc37807dbbc03e896564ead6d7cdb64efccaaf3db81d3f028068d34",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-061-ru.jpg",
+        "preservedSHA256": "ba40e47c9ce758fabe8d384f4e1ed9087efceb037982e442a9ebcd52e856ac47"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-062-directions.png",
+        "sourceSHA256": "f03aa13e83661121fc60b8d5d84c70cb9b3c7f6ff91ba0339e8b46a838841dc7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-062-directions.png",
+        "preservedSHA256": "f03aa13e83661121fc60b8d5d84c70cb9b3c7f6ff91ba0339e8b46a838841dc7"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-062-en.png",
+        "sourceSHA256": "33610516badd593ba601469f0c23d6e867a0a7a066556ad62bd91a549e6dc59f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-062-en.jpg",
+        "preservedSHA256": "e1848870937000679010d721ed2a307b7bbd0fefdb5f5b4bbbda03824fb95798"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-062-es.png",
+        "sourceSHA256": "9dafba8885f4f85a9bdfbaac70fe30f79a811cf9d20eb837f14edd1fc5dbc9b9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-062-es.jpg",
+        "preservedSHA256": "701d00f0a3ed61327f96c93c65579287dd7ffc90072de21f5d73efa5100870e2"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-062-ru.png",
+        "sourceSHA256": "eae0b13a8b552f3fa4519b6d1a75e6edcd1b7966f48169d6a8010ba605b3da28",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-062-ru.jpg",
+        "preservedSHA256": "5005c938c6a141c98f587ce241a1ae0d7326cac21d41cc646949bacfcc0c11be"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-063-directions.png",
+        "sourceSHA256": "d1b5901c8c5be136e19426ece820f7b65e0ed4dc3a821fb23baff7afe96b9a61",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-063-directions.png",
+        "preservedSHA256": "d1b5901c8c5be136e19426ece820f7b65e0ed4dc3a821fb23baff7afe96b9a61"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-063-en.png",
+        "sourceSHA256": "86ca9ae4d6d615cc1b08fd222c96af32b2a7d9676981e2de19c6ec47ebaf2759",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-063-en.jpg",
+        "preservedSHA256": "83584086365b545a154f4cc75bea27535adf0618cc01e2d5d9b0cfcbe457c3af"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-063-es.png",
+        "sourceSHA256": "13caa4794435c437ee512924f1e159d8663b303dc2a33a55972bc7ba1818020b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-063-es.jpg",
+        "preservedSHA256": "13ac7f574e8585fea12fd1486574e9854eae09a53856c68eefc0f98660722c11"
+      },
+      {
+        "source": "aur203-desert-b/desert-species-063-ru.png",
+        "sourceSHA256": "3d0d7efdfba05b899ff0064a6ac745875ba5f039f4b5a316f22c45c77797e772",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/desert-species-063-ru.jpg",
+        "preservedSHA256": "e9c6ab447c3f18cdc06f9464a299a88ff6eda8f771d5e34611588f05539e3b66"
+      },
+      {
+        "source": "aur203-desert-b/verification.json",
+        "sourceSHA256": "f9f33a561e6227ce91ca576f8911c265b18c3db51ae0f56b4705a941ec5c15c8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-b/verification.json",
+        "preservedSHA256": "f9f33a561e6227ce91ca576f8911c265b18c3db51ae0f56b4705a941ec5c15c8"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-064-directions.png",
+        "sourceSHA256": "b9eee4bfb87a1b148e79a115f1fe03dde74c01ae22fb605a0739cd16e1bad8cd",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-064-directions.png",
+        "preservedSHA256": "b9eee4bfb87a1b148e79a115f1fe03dde74c01ae22fb605a0739cd16e1bad8cd"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-064-en.png",
+        "sourceSHA256": "cd5c8d0b9f1ce486ab1b159f290f953d98b3bcd8bbeee5d38d6ca075ef4e746f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-064-en.jpg",
+        "preservedSHA256": "aae7e275da5e65720a9f0d9d5509573c449f64741825009a859be8a0c6ff832b"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-064-es.png",
+        "sourceSHA256": "9aee2f0011c7cc5fbee3d69622a4c45aa526e56eb9c2ce88d887201670b70ec3",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-064-es.jpg",
+        "preservedSHA256": "f31d2a76e034028926986aec43db2f3ed2d1ee9d751f0800cb6dd051099bf07d"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-064-ru.png",
+        "sourceSHA256": "1f66a5d7f516d80c5c655647b1e83f214228b680591b35dbf2a3506696398f1b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-064-ru.jpg",
+        "preservedSHA256": "be0aa811439e6d0d4e1ac46c3c6d14468eb3d7c239fbe6134e68e2f117a203e0"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-065-directions.png",
+        "sourceSHA256": "877faae9605200b83f7108a727690f4a01d94b6bb5a3a800f86677ea2bbec5e8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-065-directions.png",
+        "preservedSHA256": "877faae9605200b83f7108a727690f4a01d94b6bb5a3a800f86677ea2bbec5e8"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-065-es.png",
+        "sourceSHA256": "a729903f5c3f50a973378da71a4b923acc3d123871f926fe5b7b82c4e0a62873",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-065-es.jpg",
+        "preservedSHA256": "30b90340e629b36523edc51daa598ee141b3d22dd750b28664aed6aaec56d7f2"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-065-en.png",
+        "sourceSHA256": "e6269353ec3aa144dfe64a27db49de72282d9dd48b38e4d6ea85ccd357d74c0d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-065-en.jpg",
+        "preservedSHA256": "0fb98a456cf061f8a869faffe30a617de21b9d3bbd96c4a14e9c666ce1f20c48"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-066-es.png",
+        "sourceSHA256": "908ac1bb95828fcbbc31c689a0d23e11356ac365d100d2fefea7909bcaf14d24",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-066-es.jpg",
+        "preservedSHA256": "a1004ab68aa996f1c55fffa4a43d82178204c54ee649eccc8d5225a1a8336ac5"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-065-ru.png",
+        "sourceSHA256": "f61769cd6dd277159c47b1fff1336afd9c0deeddd885f361ba694a4a0284dfa6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-065-ru.jpg",
+        "preservedSHA256": "fd270f7911b45b3a37959e8381b3a020c674afed0ab15d19aaf71c3276aecd5d"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-066-directions.png",
+        "sourceSHA256": "7f618549c03ae59deeb8cc14955c20059646417944c2429d3d0b2d884eda93dc",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-066-directions.png",
+        "preservedSHA256": "7f618549c03ae59deeb8cc14955c20059646417944c2429d3d0b2d884eda93dc"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-066-en.png",
+        "sourceSHA256": "f2fa2cc86092e1cc428fa50184fd36a4eba8587492a4ece52488f548fc7c3552",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-066-en.jpg",
+        "preservedSHA256": "d636e314ea3ca111285931aefdcc351bc0663592079b2e9ef706a7afc6ac91c2"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-066-ru.png",
+        "sourceSHA256": "6ea624d4307ed08a3f662c0b662b767efe8b9c0f65ebd5d7ab53e9c0f86ae1fa",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-066-ru.jpg",
+        "preservedSHA256": "008eb668d38bc4726134da151e1d6e7bb898e7d8958bceaf49bda7ce40442365"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-067-directions.png",
+        "sourceSHA256": "dd4f9a70cc95142acdad419548b7dbea7156220e5e4a0f471435ee87681bb6b9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-067-directions.png",
+        "preservedSHA256": "dd4f9a70cc95142acdad419548b7dbea7156220e5e4a0f471435ee87681bb6b9"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-067-en.png",
+        "sourceSHA256": "24eeda1d7be2d9e3efd45ce7209fb60a4e6a85571d88c1e483b711b5365374b9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-067-en.jpg",
+        "preservedSHA256": "31b5df157a61ef28e17cd5cd516c62f3d16d00f96683e7f80b1e8f2e8076e9e6"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-067-es.png",
+        "sourceSHA256": "03b9f1c3b9b6c220853b52c43b9d7aff73b625bc678c03ac5dccf9e77bd4db48",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-067-es.jpg",
+        "preservedSHA256": "f844f540f8742d363a48ae7ad154229ee0b30e049113d3d08965c313e1f8236a"
+      },
+      {
+        "source": "aur203-desert-c/desert-species-067-ru.png",
+        "sourceSHA256": "7966dde65e779024eae624593fcd356ca1777f5730189e633f07c0e43fa1f7eb",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/desert-species-067-ru.jpg",
+        "preservedSHA256": "95389d9dc0efbb7639a83ea3f9615c47a80ea41fecb419763966aee6c2ac9d51"
+      },
+      {
+        "source": "aur203-desert-c/verification.json",
+        "sourceSHA256": "b28604fa60c0184b26ebc37ff7b5ed41d4567321a89b33bc1080d034262af664",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-c/verification.json",
+        "preservedSHA256": "b28604fa60c0184b26ebc37ff7b5ed41d4567321a89b33bc1080d034262af664"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15257465576"
+  },
+  {
+    "artifactId": 15256339050,
+    "name": "browser-aur203-desert-h",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "53e7b2131e2263403e1b1f5a0f00cdb088f723ca36d8fa4b277842174850dd06",
+    "archiveBytes": 2618261,
+    "speciesIds": [
+      "desert-species-084",
+      "desert-species-085",
+      "desert-species-086",
+      "desert-species-087"
+    ],
+    "files": [
+      {
+        "source": "aur203-desert-h/desert-species-084-directions.png",
+        "sourceSHA256": "5d27ba75605c00cf66ea049ffec38d07e3a83d1ccce463164006c1734c38c6c2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-084-directions.png",
+        "preservedSHA256": "5d27ba75605c00cf66ea049ffec38d07e3a83d1ccce463164006c1734c38c6c2"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-084-es.png",
+        "sourceSHA256": "5a1e6e678434bd1d9a11b47116414a1988ffa05dabb2740d5bcd078cffc09660",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-084-es.jpg",
+        "preservedSHA256": "236e999dfed8867cf944e678f7c91e79235053a6185986ea0ef0033fd35b7695"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-084-en.png",
+        "sourceSHA256": "60c93b539674097299ac7f9aff440d7166eaf8cc836bd1cd9083ab63ca419a8d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-084-en.jpg",
+        "preservedSHA256": "05543a6aad8c307dcf5235727757098c8cbb5e3a8588daa2d49c0cbc67b60aa3"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-084-ru.png",
+        "sourceSHA256": "cf85535ef0d3124b180d6d3bf56e202c9eed56fa2ccb5e7635734df1b947da85",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-084-ru.jpg",
+        "preservedSHA256": "d1c0e7c2c6106f3d036d740a67c7ec5e8fc89d64b7eb3bd05c640ec5970659a6"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-085-directions.png",
+        "sourceSHA256": "05e0de677beb29e58075888a4449df72ff83b34821466c04826862c9297dd8c8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-085-directions.png",
+        "preservedSHA256": "05e0de677beb29e58075888a4449df72ff83b34821466c04826862c9297dd8c8"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-085-en.png",
+        "sourceSHA256": "50e6f10442d37e953e9a4b4ea6ce8f8e6ced9176cdac408599fa9a59c87dd604",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-085-en.jpg",
+        "preservedSHA256": "c6fb1c293546df070fc0265403ee2576508e551e249cbb47c92b62fff151b87e"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-085-es.png",
+        "sourceSHA256": "409dee203e3f46034ae879b0c721c48dd88ca3f8287d312164c1fe7610709eb1",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-085-es.jpg",
+        "preservedSHA256": "46a702074faa5f8679973fd704f7ef0d4d80ff5dbed18124af3f7c5371d5b7dc"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-085-ru.png",
+        "sourceSHA256": "9f4a28e9532db1b5ba5b633e7c3ad1f8784298ff7a5fe3661a235c724a5fd1e1",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-085-ru.jpg",
+        "preservedSHA256": "6be1805e341ef435c275b55aa272bfba02997c8dcbae2c6d787cb69b305a24d4"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-086-directions.png",
+        "sourceSHA256": "0f1b6cec2364cdfebc5e5d14d5b560b70636b14e0b1cd84ca4764d340d0066f1",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-086-directions.png",
+        "preservedSHA256": "0f1b6cec2364cdfebc5e5d14d5b560b70636b14e0b1cd84ca4764d340d0066f1"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-086-en.png",
+        "sourceSHA256": "60a7a16fae07869a9e657cbed981ea0da5af9f231f58d55cf649e4202c30d7e7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-086-en.jpg",
+        "preservedSHA256": "a39f6313489c1fc3958e66b14b2608b6dbb92dd61476e61722393f28dcacdba7"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-086-es.png",
+        "sourceSHA256": "7a9da67bd7a20a2ba6f7806d740d297fc3a5160d5f67a52108d7fd51b1fb07d6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-086-es.jpg",
+        "preservedSHA256": "06c8ed582fd212adc62a1db083ac9fbdcaa7b7fc1428f7e780ab78b191ce183c"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-086-ru.png",
+        "sourceSHA256": "bd6f49f630835ee10fde8b162c7c17ed53b8913ac2b95e9ec4842e83c376370c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-086-ru.jpg",
+        "preservedSHA256": "0d94e489c857243ef828a04e2dd1c9f4189e89ae57459dabfdd7b5ea37a636a9"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-087-directions.png",
+        "sourceSHA256": "e92980bee2d49f37da7ce91a69899d2a1bb0bbdaaafc35add6c920539a932509",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-087-directions.png",
+        "preservedSHA256": "e92980bee2d49f37da7ce91a69899d2a1bb0bbdaaafc35add6c920539a932509"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-087-en.png",
+        "sourceSHA256": "6722edf53ac3882ee33ab1e5550e48b2c34a4c56c8effcc1975062375cfbb960",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-087-en.jpg",
+        "preservedSHA256": "ea369d477707c348b16a7061cabbc5f8e263d9e52a27e1b495016c5af0bd25a7"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-087-es.png",
+        "sourceSHA256": "a33f158581ae765b2bcecedf8416f0ac72f08d4e033d59ea93b7a6337fa377e0",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-087-es.jpg",
+        "preservedSHA256": "3b8d54d1744cd8d48ca4884561ce3ae13a3388c1a369ea43cf52d8093332cf95"
+      },
+      {
+        "source": "aur203-desert-h/verification.json",
+        "sourceSHA256": "18eef44f4eca1a2507fb0c2099fcd9bb58dafdd35233f8b4b8d91ae64f08f5f8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/verification.json",
+        "preservedSHA256": "18eef44f4eca1a2507fb0c2099fcd9bb58dafdd35233f8b4b8d91ae64f08f5f8"
+      },
+      {
+        "source": "aur203-desert-h/desert-species-087-ru.png",
+        "sourceSHA256": "c7e3ba66c2d1173cca5edf86e283578ef4c2c0444139b7ac932f92bf5a0fbf2e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-h/desert-species-087-ru.jpg",
+        "preservedSHA256": "90e02e437530bf44a474387f4703a668c38c87ecd3189d0cc719bc59273e13b7"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15256339050"
+  },
+  {
+    "artifactId": 15256773411,
+    "name": "browser-aur203-north-bc",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "ede0e0589943a7ceb146f75f115963633ea92e69cb1c88fd8a5d13bd4bba498e",
+    "archiveBytes": 11670760,
+    "speciesIds": [
+      "north-species-080",
+      "north-species-081",
+      "north-species-082",
+      "north-species-083",
+      "north-species-084",
+      "north-species-085",
+      "north-species-086",
+      "north-species-087"
+    ],
+    "files": [
+      {
+        "source": "aur203-north-b/north-species-080-directions.png",
+        "sourceSHA256": "ee7ecb3b677a19be3f3e48a398fd3e0c044a835d6c4e7498b68ff12adf4426e8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-080-directions.png",
+        "preservedSHA256": "ee7ecb3b677a19be3f3e48a398fd3e0c044a835d6c4e7498b68ff12adf4426e8"
+      },
+      {
+        "source": "aur203-north-b/north-species-080-en.png",
+        "sourceSHA256": "3e8f717870d6ddc2f9d85139242311e90a66c82b75ecbbf7f995e9d802fc5e72",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-080-en.jpg",
+        "preservedSHA256": "5e3e7537ad59efbe9ed5b26825abc583c1292ab5aacf01dd4d83aa0d380e0f9c"
+      },
+      {
+        "source": "aur203-north-b/north-species-080-es.png",
+        "sourceSHA256": "0ecbeff4025659ab4e56038c525a02211d12d420f796cc6c70b10f49a9574029",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-080-es.jpg",
+        "preservedSHA256": "7bf50fd42618ccdb41638c8efce1c6fe99ca73812c5077533895bbc0f27cbf91"
+      },
+      {
+        "source": "aur203-north-b/north-species-080-ru.png",
+        "sourceSHA256": "4739cdf195e422bff1cfbc318a247b1e0d4db89fc4bbf40d76a70f5293aeb537",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-080-ru.jpg",
+        "preservedSHA256": "0f18988b8053c8b31c8b7534f802bd38801e69ccd21344df3c56105d0b9fe8d3"
+      },
+      {
+        "source": "aur203-north-b/north-species-081-directions.png",
+        "sourceSHA256": "bb275568236849ee6eb89a5694c2e0c88bb3edd1c74c1984a9596b685474946a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-081-directions.png",
+        "preservedSHA256": "bb275568236849ee6eb89a5694c2e0c88bb3edd1c74c1984a9596b685474946a"
+      },
+      {
+        "source": "aur203-north-b/north-species-081-en.png",
+        "sourceSHA256": "a91deadf41b5205d9f4c0e98cb91fb50aa521e2042b04842f71ae110e48c37d1",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-081-en.jpg",
+        "preservedSHA256": "f584355b50ea1dd3b4e549dfb78271864c5d6fbf8b61c3039f25fae3ff92d910"
+      },
+      {
+        "source": "aur203-north-b/north-species-081-es.png",
+        "sourceSHA256": "145fafefaf312d2d8564d9fc575c0031a3cebb2003c6bb1276bde77c527a1870",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-081-es.jpg",
+        "preservedSHA256": "1828890d9760fae96d7fff2a31bef822972cba2bfd6eec77eb3d808f494db7a2"
+      },
+      {
+        "source": "aur203-north-b/north-species-081-ru.png",
+        "sourceSHA256": "2eb1de776e5c29f961f8caa714948ea961ce1a53e522dca2863d049d3af27b8e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-081-ru.jpg",
+        "preservedSHA256": "840a01b265349559f3587e019a30fc6c086a2a00e257656aea2a3f69811b5e7b"
+      },
+      {
+        "source": "aur203-north-b/north-species-082-directions.png",
+        "sourceSHA256": "17981710529bcfc1927997ada343da8821f6daf7e835256d08ca07d89ad44fa3",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-082-directions.png",
+        "preservedSHA256": "17981710529bcfc1927997ada343da8821f6daf7e835256d08ca07d89ad44fa3"
+      },
+      {
+        "source": "aur203-north-b/north-species-082-en.png",
+        "sourceSHA256": "126b75e2b836d93c062d62e43f964e8ab7a30bf08ca7f1673aa5afab2b18b969",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-082-en.jpg",
+        "preservedSHA256": "5316bce20318ecd76226d0464b5ade6c63a4ebff98b4065295a5c9c627b0d109"
+      },
+      {
+        "source": "aur203-north-b/north-species-082-es.png",
+        "sourceSHA256": "a29eb9b685e6c9c30aee9d1787a0f7ea41a89a7c0efb6a17f05156f9a6922218",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-082-es.jpg",
+        "preservedSHA256": "ff08de31500b53e04a1eead1974f820f358cfcf4f1b2e9df24bac250ab5caa9d"
+      },
+      {
+        "source": "aur203-north-b/north-species-082-ru.png",
+        "sourceSHA256": "b55b35abb179459b71e2f67c569a323f2b5e7b1d9b5fe48a32df672eb3c5487d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-082-ru.jpg",
+        "preservedSHA256": "d4b89137d6868e39096a3c4f361c5cde76fe1908114f6339fbc5ea927af2f71f"
+      },
+      {
+        "source": "aur203-north-b/north-species-083-directions.png",
+        "sourceSHA256": "be5d9433628bf05424ba1601e5cd367d460902ca5e152078137c4bc64a7dd244",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-083-directions.png",
+        "preservedSHA256": "be5d9433628bf05424ba1601e5cd367d460902ca5e152078137c4bc64a7dd244"
+      },
+      {
+        "source": "aur203-north-b/north-species-083-en.png",
+        "sourceSHA256": "df3789a54a02a13e46ed6a3803e821aaf72b9c74a14d008c6ebb1e79e9c69cd5",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-083-en.jpg",
+        "preservedSHA256": "c7343512e69cd012ae6517f48a94c4865cfd2a98fb0ff7ddc6983012ae9da730"
+      },
+      {
+        "source": "aur203-north-b/north-species-083-es.png",
+        "sourceSHA256": "5bd40f35bce728ba10aa406fbde171d0ce8dd8194c6dc945e2c03ddb6da82a2c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-083-es.jpg",
+        "preservedSHA256": "9feefc40546e0170507d6983e8d88a5c8426d99993c8ca8d5cd5bc987f72bf29"
+      },
+      {
+        "source": "aur203-north-b/north-species-083-ru.png",
+        "sourceSHA256": "0d73c8a0058536739e00f99c19fb234a1c16b81ddaaa92c53c38ea487233343a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/north-species-083-ru.jpg",
+        "preservedSHA256": "16e9a6800fb40694046e4f80ab933ca7396b85580d77552e0640bdec0b4175b6"
+      },
+      {
+        "source": "aur203-north-b/verification.json",
+        "sourceSHA256": "4e22f9fe9428f86cb211d53708bb003fbf3a126e76ee96f91280cd79109cb3d2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-b/verification.json",
+        "preservedSHA256": "4e22f9fe9428f86cb211d53708bb003fbf3a126e76ee96f91280cd79109cb3d2"
+      },
+      {
+        "source": "aur203-north-c/north-species-084-directions.png",
+        "sourceSHA256": "62940d38f0a4bd4a75deda51fab9a9e8f0ca8636ed0739bdfa4f1c3363bab2cb",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-084-directions.png",
+        "preservedSHA256": "62940d38f0a4bd4a75deda51fab9a9e8f0ca8636ed0739bdfa4f1c3363bab2cb"
+      },
+      {
+        "source": "aur203-north-c/north-species-084-en.png",
+        "sourceSHA256": "065e341e2e3c6fbb44ac7bd4b5a12931623917b3f81e035fd634b9fbd85a0e60",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-084-en.jpg",
+        "preservedSHA256": "926838f44291e22719f084e0e29be6d6d9995378aba063bd5028692d2553e322"
+      },
+      {
+        "source": "aur203-north-c/north-species-084-es.png",
+        "sourceSHA256": "28e511d9db083308b3dbb3666339502422e5820f0f7314d72687635372b3f6c4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-084-es.jpg",
+        "preservedSHA256": "a2bb3fb2bf446097f38570c63ae959605c9c5b2c51a10355d92316d634835119"
+      },
+      {
+        "source": "aur203-north-c/north-species-084-ru.png",
+        "sourceSHA256": "2db944150a4a033fda1ebeb57c90e698a910f543f18772c7087da5d3dfc77fbf",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-084-ru.jpg",
+        "preservedSHA256": "7a1648b77c9aaf245725c9b485d76bc3c1110fbe60ca7a8ea002b6e82cf1405b"
+      },
+      {
+        "source": "aur203-north-c/north-species-085-directions.png",
+        "sourceSHA256": "c862eef91a7d5af3543fe1bf9aa4a86d386ec6c9e12698995d752c5191a5a0c8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-085-directions.png",
+        "preservedSHA256": "c862eef91a7d5af3543fe1bf9aa4a86d386ec6c9e12698995d752c5191a5a0c8"
+      },
+      {
+        "source": "aur203-north-c/north-species-085-en.png",
+        "sourceSHA256": "c28936119ce8378e8025692705fa19cf4ab6799fb9ad09c9a09fef36dc4cfb80",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-085-en.jpg",
+        "preservedSHA256": "b14d7424a7bd5682a21db9e1ad90f7a701496f1783034d3f4c1a357f6fd89083"
+      },
+      {
+        "source": "aur203-north-c/north-species-085-es.png",
+        "sourceSHA256": "cef70a5a7e9174335125c0305431b09118535c5f1f1c90e738debbd1a44d0607",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-085-es.jpg",
+        "preservedSHA256": "f4e6558c49c81174a182bc467ed460659a0cd7fbd0b6d4d9795a912ff3e80755"
+      },
+      {
+        "source": "aur203-north-c/north-species-085-ru.png",
+        "sourceSHA256": "d668332b8eee5594068c2eee82f4f68a26f2be82f3ece3f17ea1da9439a710f6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-085-ru.jpg",
+        "preservedSHA256": "bf3fb047ab4cc58f8aba98e4e2ff947dbaf6718c27d7979031e05455769c58d6"
+      },
+      {
+        "source": "aur203-north-c/north-species-086-directions.png",
+        "sourceSHA256": "00052127630f100ffd27dd211eee8cf6940c0afd812f17abb3137766c4591236",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-086-directions.png",
+        "preservedSHA256": "00052127630f100ffd27dd211eee8cf6940c0afd812f17abb3137766c4591236"
+      },
+      {
+        "source": "aur203-north-c/north-species-086-en.png",
+        "sourceSHA256": "a224959d3efe34195a40721dc8ed95ed896f6d62dbf367df97c46a60e6c1a308",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-086-en.jpg",
+        "preservedSHA256": "6a0b668d1e8f98e4b7e5728e5df9fa5e56f0bfc114b57caae70ec81231c8f6e0"
+      },
+      {
+        "source": "aur203-north-c/north-species-086-es.png",
+        "sourceSHA256": "2a216386d1ffdb7e088818de1d950b2df7a05462bed0ec176c92729d678a839c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-086-es.jpg",
+        "preservedSHA256": "b4f8d9ef6d3bcdba2f2bf14e21982afb017dd7da32a2812018e7c6e600086abe"
+      },
+      {
+        "source": "aur203-north-c/north-species-086-ru.png",
+        "sourceSHA256": "d975b6d74352fab9230be67beb2393d5e9025fe61bd298d86c3e17746b68c1c9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-086-ru.jpg",
+        "preservedSHA256": "b591ba9f191cab66d84d5cf0c3df955183b05e908270088be8d7e2761af3b053"
+      },
+      {
+        "source": "aur203-north-c/north-species-087-directions.png",
+        "sourceSHA256": "83affab61d86fab0c104c50cd5df727f22690615c5ce767a95dcdef7cc776985",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-087-directions.png",
+        "preservedSHA256": "83affab61d86fab0c104c50cd5df727f22690615c5ce767a95dcdef7cc776985"
+      },
+      {
+        "source": "aur203-north-c/north-species-087-en.png",
+        "sourceSHA256": "499557dbf58b461e5f91e8aa5fb94dfa64533f14d40e35dbf9155ec97aff56aa",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-087-en.jpg",
+        "preservedSHA256": "c404373923041eb051a4e066f59396aa2337eb2725a2aaf60667f7c7660bd485"
+      },
+      {
+        "source": "aur203-north-c/north-species-087-es.png",
+        "sourceSHA256": "f75c03ac5b6f747aec3c8fb2268bce0e7034bab0cc1b62b58a3e59d5d9f4dc2b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-087-es.jpg",
+        "preservedSHA256": "6b6512b8d1c78ca69a81bbff1f2f90d0222378d411cfde45d734afc383b60c39"
+      },
+      {
+        "source": "aur203-north-c/north-species-087-ru.png",
+        "sourceSHA256": "e4034cf801bb5b3b58664f5fbb92ae8858ecd921aa0d0fb914dfcfb5a8a8ded4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/north-species-087-ru.jpg",
+        "preservedSHA256": "910f47b26c9d4f149637bea2ba09e6d096de2aa60fe6c653893751d7865f8c56"
+      },
+      {
+        "source": "aur203-north-c/verification.json",
+        "sourceSHA256": "2503ab09045fa817e5caa90cc0041a4a0e70d5461fed557b677481b8890da0e0",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-north-c/verification.json",
+        "preservedSHA256": "2503ab09045fa817e5caa90cc0041a4a0e70d5461fed557b677481b8890da0e0"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15256773411"
+  },
+  {
+    "artifactId": 15257466072,
+    "name": "browser-aur203-ancient-ab",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "0a735c5839bc713778a267a56d8fc18661f64eef41390e4799591e79a2f1400d",
+    "archiveBytes": 6392243,
+    "speciesIds": [
+      "ancient-species-045",
+      "ancient-species-046",
+      "ancient-species-047",
+      "ancient-species-048",
+      "ancient-species-049",
+      "ancient-species-050",
+      "ancient-species-051",
+      "ancient-species-052"
+    ],
+    "files": [
+      {
+        "source": "aur203-ancient-a/ancient-species-045-directions.png",
+        "sourceSHA256": "3ed6671015539e56214a10dea3fb0babed2672e015f027cf7f30f4200008dc7a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-045-directions.png",
+        "preservedSHA256": "3ed6671015539e56214a10dea3fb0babed2672e015f027cf7f30f4200008dc7a"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-045-ru.png",
+        "sourceSHA256": "cd26661f4eb04af389a21c84562b6b97737f6f6887e1a097ca9e667d14128d63",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-045-ru.jpg",
+        "preservedSHA256": "8c0497bbd68f1a0d494c342b4c3a3b121d1010b53f804ff2acd1e3431f266dd8"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-045-es.png",
+        "sourceSHA256": "cd63f753903c0ebc32b7fcbb95b1b291476453e026ca531e32b0353ee854c239",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-045-es.jpg",
+        "preservedSHA256": "1745d3df8511686c956c21f3aaac91daa63a9b6979f7b274b0dc7338495d410e"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-045-en.png",
+        "sourceSHA256": "f0089188658af422e34474ffabf55510e9fc3c843a4b1e3f556adc1f14674e7e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-045-en.jpg",
+        "preservedSHA256": "5365c88869d7f6b2161af77ac4e531127aca29b7670647b6c3444314d7a99c55"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-046-directions.png",
+        "sourceSHA256": "6143548652b140b1f436a2bec367356612d15e04fabc868bfd1f9fb78ca9bf56",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-046-directions.png",
+        "preservedSHA256": "6143548652b140b1f436a2bec367356612d15e04fabc868bfd1f9fb78ca9bf56"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-046-en.png",
+        "sourceSHA256": "5209df4be41d12bbc673ba51d936547b35a7dc8107d983ac894fa5260c12813d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-046-en.jpg",
+        "preservedSHA256": "334ebd5ab602e3a902e78a74678d7b81b42729f1d2b5d1eed7c8c7025885ce66"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-046-es.png",
+        "sourceSHA256": "43f1ca5b7cde21b9d23bbadb2a11e01eff39b46c4a345c8f1c7c518fc6c0eade",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-046-es.jpg",
+        "preservedSHA256": "879f3195db20afa83c930c55342d4a09d60836bf1b507cf372b9bbcc91b803fa"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-046-ru.png",
+        "sourceSHA256": "f6824c18a5047853a517d2ea03a0dfe1e69cd93272f8fde86c233157f320372e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-046-ru.jpg",
+        "preservedSHA256": "f5519446e25767395abd601e6d87a180f119dde3314f836d1f649d0b647dc36d"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-047-directions.png",
+        "sourceSHA256": "290c78732e61085dc7ef4cdfe1ba07ba2dacde0af9c533f09ea2f8deb7be678e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-047-directions.png",
+        "preservedSHA256": "290c78732e61085dc7ef4cdfe1ba07ba2dacde0af9c533f09ea2f8deb7be678e"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-047-en.png",
+        "sourceSHA256": "e17ba3be5313f418c1183eb1400bd16d67357a6eacf20f3d564820e277c241f2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-047-en.jpg",
+        "preservedSHA256": "77334c6135b3bbf421251c7dde580f9dd068fb26c2b388a712e4f35fecbb99cc"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-047-es.png",
+        "sourceSHA256": "279130dca07c14f0305b13b2012c1bcceb44aa60444a63b1a44441c047d737d2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-047-es.jpg",
+        "preservedSHA256": "e9dbd142455cc0f8c0abe35961aa6a975d83cc01aa821045e2d0d245ce3eadd2"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-047-ru.png",
+        "sourceSHA256": "b4a66af59fd7c5e3a7079fa2a45f9b02c2ac3f670481c7a2a5a3ffb3f2dc1b11",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-047-ru.jpg",
+        "preservedSHA256": "c89748f6ef7105dfc892e28d0878e454a96b2ae36ca9153eaac57dd367437262"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-048-directions.png",
+        "sourceSHA256": "aae50e6a3933ed932e5232445eb40308cbf4d69857b282e2dc575d33aa49ac60",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-048-directions.png",
+        "preservedSHA256": "aae50e6a3933ed932e5232445eb40308cbf4d69857b282e2dc575d33aa49ac60"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-048-en.png",
+        "sourceSHA256": "876398b3254eb1c30ec9634a5ca40d33a15edf7f4cb10071d5384e6bd77cd5a0",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-048-en.jpg",
+        "preservedSHA256": "6096adb377b9ea4885d54101e30e7089f6c25c47d2971eeca9c64900e14c62eb"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-048-es.png",
+        "sourceSHA256": "38a4b9752c1a5af414f5dcba24e080f2ccc34650ad1643a8e8a888f7a5e6fcae",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-048-es.jpg",
+        "preservedSHA256": "b28df94d414c9a972a2b708446ff5cd4d053d2c4a2c49012770428996e0969e0"
+      },
+      {
+        "source": "aur203-ancient-a/ancient-species-048-ru.png",
+        "sourceSHA256": "7f3ed45898a405070f9b42cdd14e06e95fa364c745d31c531f28ec50e8121402",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/ancient-species-048-ru.jpg",
+        "preservedSHA256": "631c1dfe11eb1175b2d999cd4f2a0ec50f83319c40aa31d42bbdbea9a48dea43"
+      },
+      {
+        "source": "aur203-ancient-a/verification.json",
+        "sourceSHA256": "5b546586b9b2d66af21f9c3d3cc7d5ebbcfaf9be2029850e872b25fc0a43794a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-a/verification.json",
+        "preservedSHA256": "5b546586b9b2d66af21f9c3d3cc7d5ebbcfaf9be2029850e872b25fc0a43794a"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-049-directions.png",
+        "sourceSHA256": "37171d4ed64c84946bab480e947e22e645b30ea9cf0f062bf911de53aa290717",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-049-directions.png",
+        "preservedSHA256": "37171d4ed64c84946bab480e947e22e645b30ea9cf0f062bf911de53aa290717"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-049-en.png",
+        "sourceSHA256": "2915038a622ae1fcaefe5705dd49379601ba183f7a467421a2528cd9a1bc1b74",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-049-en.jpg",
+        "preservedSHA256": "da0c15e43a014f374d840c48e18d1be7e6988b6ada55ee89cd1289834e5bc718"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-049-es.png",
+        "sourceSHA256": "37d6fc26cf3d5a15453a3336dbf05248e482cb68b6a30f9f0763397d970342a4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-049-es.jpg",
+        "preservedSHA256": "7e295ba04a89790c224d6eea88d702ec2e183ab242ef87b4d52abaa76a324ca4"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-049-ru.png",
+        "sourceSHA256": "506740a9e1047d8dcbb8fe20cf43617538aca70bcf17dd9e1fe15a752502bea3",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-049-ru.jpg",
+        "preservedSHA256": "eaa1149762034fb97d1ea302ff933b2d74dc5973210c3e27464fb712cfc16fec"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-050-directions.png",
+        "sourceSHA256": "9d7f55b3156622c655661371dfb788687d6c185f3887e70ebb1e5d193ba71351",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-050-directions.png",
+        "preservedSHA256": "9d7f55b3156622c655661371dfb788687d6c185f3887e70ebb1e5d193ba71351"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-050-en.png",
+        "sourceSHA256": "14dcead08076994b9136b36fcd38dea4cfaf8ad82d166bf01d836911784a1d6b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-050-en.jpg",
+        "preservedSHA256": "7fe22cca6ed8b3e9478e0e78c2b99e2f5fd04774bc01d02aceaa60d797e52f9e"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-050-es.png",
+        "sourceSHA256": "c661a867d1b3caa781db76449eb32b814f103ad85b27762dd53473a4382510d4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-050-es.jpg",
+        "preservedSHA256": "49c6dae1ab718e32d8112b8dd1bf18806a5403fa0ccbd13dbf2f8a95db4c9bb6"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-050-ru.png",
+        "sourceSHA256": "0e92a42bff8ef419f7e62563e3111779f96298d5a99fd88481944488bea04690",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-050-ru.jpg",
+        "preservedSHA256": "476490dffe47f9388c9b1691a8f84b55826e5c2596675efcf04226b36e9e3b76"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-051-directions.png",
+        "sourceSHA256": "731466a48e199a1f026ce3019efd218d8077047f84d2f3ab334ecfaed8c1ba94",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-051-directions.png",
+        "preservedSHA256": "731466a48e199a1f026ce3019efd218d8077047f84d2f3ab334ecfaed8c1ba94"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-051-en.png",
+        "sourceSHA256": "046d77789281d321a3ef50e46c3996827d9de597600f4181b094d6760d4ab2b2",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-051-en.jpg",
+        "preservedSHA256": "44938f762a8d93597a97f1a94c34b7ff2d1b720864bc0ff7ba5d27411a186c81"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-051-es.png",
+        "sourceSHA256": "f269edee629c0f5dd61253300c9b766007db23f3024406c1f10b487eded3097e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-051-es.jpg",
+        "preservedSHA256": "50b2014bcb2a5b8ec70ffc2553ae3804fa9ed084bf1fc840562ca1fa3306b1d3"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-051-ru.png",
+        "sourceSHA256": "7afb74b02ab883c47f9be17311e58397eff8d3d06d858c738ca125f50ce09f41",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-051-ru.jpg",
+        "preservedSHA256": "f186999d805dd2f8aad1c02b741e6da635c8ec3a0a404589b5612e8e2af770e9"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-052-directions.png",
+        "sourceSHA256": "bd3ba3983d5b6a7a70e596012c663764fb853ae4d50e2bea3b64631490170099",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-052-directions.png",
+        "preservedSHA256": "bd3ba3983d5b6a7a70e596012c663764fb853ae4d50e2bea3b64631490170099"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-052-en.png",
+        "sourceSHA256": "f9bdb2d80ebf878b45585f39091ce714507e9fceedec94666db23eac2b4639e8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-052-en.jpg",
+        "preservedSHA256": "d7b69b11e22ac58561c55ea7c5a6fcc13472bafc696850ec55c2d108db4dc76c"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-052-es.png",
+        "sourceSHA256": "862d95382174aa169011daa41aaa2f4425b7b232d847b858b05696e14a1c696d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-052-es.jpg",
+        "preservedSHA256": "60758c74c81bee627e0837de80a812b3b8efd45e590aad2e1601b51af88cec49"
+      },
+      {
+        "source": "aur203-ancient-b/ancient-species-052-ru.png",
+        "sourceSHA256": "08b18e33d52d5a51d2afdc0fab8c195f323d276fc133c25dee9cf26c34683020",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/ancient-species-052-ru.jpg",
+        "preservedSHA256": "7cce6ebc2484608841abc22f70ef038d5639ffce7ef8a4abca8fec49307b1c3d"
+      },
+      {
+        "source": "aur203-ancient-b/verification.json",
+        "sourceSHA256": "8697611086deeee7f3fb9625e0ac081d841a3238adc42904aa65ab83b0e332a4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-ancient-b/verification.json",
+        "preservedSHA256": "8697611086deeee7f3fb9625e0ac081d841a3238adc42904aa65ab83b0e332a4"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15257466072"
+  },
+  {
+    "artifactId": 15256753414,
+    "name": "browser-aur203-desert-de",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "4dcf7f70a45710583edb912121b20e8fb68e898779161f9388a2220f53f778bc",
+    "archiveBytes": 4292237,
+    "speciesIds": [
+      "desert-species-068",
+      "desert-species-069",
+      "desert-species-070",
+      "desert-species-071",
+      "desert-species-072",
+      "desert-species-073",
+      "desert-species-074",
+      "desert-species-075"
+    ],
+    "files": [
+      {
+        "source": "aur203-desert-d/desert-species-068-directions.png",
+        "sourceSHA256": "ddd1dbe7daaef275cc43deff139d97df7087ccf807cc4fc83193fc397745e483",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-068-directions.png",
+        "preservedSHA256": "ddd1dbe7daaef275cc43deff139d97df7087ccf807cc4fc83193fc397745e483"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-068-es.png",
+        "sourceSHA256": "e6ef6abfa469c8078c674e912ff4bb343d255c6a6bca59b0fe5e9ea9e056d44c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-068-es.jpg",
+        "preservedSHA256": "8073e85c76e156d0fa7c447c8bccff7204959526a53d1eca4f57a29916f1bd42"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-068-en.png",
+        "sourceSHA256": "daf788e30491a2d41947242f5088ee3bd7281dc8d359f6b2d266c070536d0c5b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-068-en.jpg",
+        "preservedSHA256": "8994ea95fe1229faf1e40ae9e0615ce2206695e11c53c68f68f6c3167215576c"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-068-ru.png",
+        "sourceSHA256": "fd3cf596895f1b83fc198c5324a090b65aaf7439982dcdb392d35e433809745a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-068-ru.jpg",
+        "preservedSHA256": "d5d8a65da5df85432055d594a65142f8a7622cf8dca8a0eb65a985548792e732"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-069-directions.png",
+        "sourceSHA256": "1d19f508a2100c4a8cbe31b32072a56151047eb35bc15cff09c3f2ecad0aa52f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-069-directions.png",
+        "preservedSHA256": "1d19f508a2100c4a8cbe31b32072a56151047eb35bc15cff09c3f2ecad0aa52f"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-069-en.png",
+        "sourceSHA256": "1f722532b679963fc808ef4306fd4f029d827cdfc8b29573d03c5669be762a8b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-069-en.jpg",
+        "preservedSHA256": "8d46ca7ea9e345949dd6762728ca02364d6fb7a542ded08d66af1c097cd85e35"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-069-es.png",
+        "sourceSHA256": "84c217966df0900cd6255a12cd0c99d0bdc09534ad62d70095521277711ea210",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-069-es.jpg",
+        "preservedSHA256": "5acf0471ad4b1e6c36858944ece4cbc1f6f2c0210871fc1a52348b1d103fc8a9"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-069-ru.png",
+        "sourceSHA256": "78834fccafd1b967ed22fcd53b506fa8811cdd7ef6a04a4fdf8f07430e498810",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-069-ru.jpg",
+        "preservedSHA256": "3dc8cf237577d9c2cc5f74dce2b8510dcdf594a4b41870d1645f5615900e88d3"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-070-directions.png",
+        "sourceSHA256": "c29038691e36ad4d869163d54b655549d0a407515515c43049b7217af01f63c3",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-070-directions.png",
+        "preservedSHA256": "c29038691e36ad4d869163d54b655549d0a407515515c43049b7217af01f63c3"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-070-en.png",
+        "sourceSHA256": "4e89ab9c53ab8d0dbca52f713ebed1e97665d7c53eb0cbb063ed010610fe6883",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-070-en.jpg",
+        "preservedSHA256": "37602bf4273b50cf45a845d7a7dfff63d16b23659bef5cf83584924dabe27fdb"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-070-es.png",
+        "sourceSHA256": "b7c24f4ef45b74c6c8f4b4863fe77ac6d8546e7ff2933d1e0ba54c2937771107",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-070-es.jpg",
+        "preservedSHA256": "dbf58d4c379983204a8e22241da7185ac2d0b43e359f9f79a91c6922b5ae4580"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-070-ru.png",
+        "sourceSHA256": "7db5a2ba89d78801ead41c0c8fafbe9ab1c5bf085fafc1d3ded306d9bf675346",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-070-ru.jpg",
+        "preservedSHA256": "727f4a01dab9b28135840f5d6fc7c268d688d752045e45d8af23da5f0e952898"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-071-directions.png",
+        "sourceSHA256": "bab4580cf8211794f7b18e67fe75615cc39dc61cd6582cd7b87f1e09d27fe8d5",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-071-directions.png",
+        "preservedSHA256": "bab4580cf8211794f7b18e67fe75615cc39dc61cd6582cd7b87f1e09d27fe8d5"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-071-en.png",
+        "sourceSHA256": "e23609afe7baf798ee053d5bb4232aabf4cdd5a6e6ebc0e42754ab0e759aeee4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-071-en.jpg",
+        "preservedSHA256": "f82923ae8c0e061ab7c8a0a421b7fc9fc6e2e7741b14031e3e9e7b5ff90caeb6"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-071-es.png",
+        "sourceSHA256": "33991583489a57ad134cf52d7d7541b09f8e106499cd07fe2908123aa8474b93",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-071-es.jpg",
+        "preservedSHA256": "991ac591e9cc5bc1df0eed46f9494bd9448b7c8ab3776e35c101c427c7a961a2"
+      },
+      {
+        "source": "aur203-desert-d/verification.json",
+        "sourceSHA256": "fb0ef87c6790d2ac7083a14f0934e6ed12ffcc955c5595e879e369b8e9df0d01",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/verification.json",
+        "preservedSHA256": "fb0ef87c6790d2ac7083a14f0934e6ed12ffcc955c5595e879e369b8e9df0d01"
+      },
+      {
+        "source": "aur203-desert-d/desert-species-071-ru.png",
+        "sourceSHA256": "e5ed81e533f63ce6cd3cfced4ed3232dfa29d98e4e164028c9bd6228e129acd4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-d/desert-species-071-ru.jpg",
+        "preservedSHA256": "fbee7e885601a765581054315d8dc78877d7ae9cc973f9280ea5555ab3a79336"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-072-directions.png",
+        "sourceSHA256": "4426347a169d2528fa2742b7ed89066a10e985644410c2b171001c127a8668fe",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-072-directions.png",
+        "preservedSHA256": "4426347a169d2528fa2742b7ed89066a10e985644410c2b171001c127a8668fe"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-072-en.png",
+        "sourceSHA256": "3dfbd8563f4e8217349664ee822045b329b211d52ae774b98f1747e17c40ac6a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-072-en.jpg",
+        "preservedSHA256": "7bdbffc5fd53ee1006afa6a7071d6ee87af91db74b033a28ca775b5bd784416a"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-072-es.png",
+        "sourceSHA256": "8761d578aa4cb490762a5cee165d5d91231640450ff391192a2994c3d07a5a7f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-072-es.jpg",
+        "preservedSHA256": "e57589e7893cc3dbc0bcee66a44759a11f048ca4a366f6f111caa0591a4863fe"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-072-ru.png",
+        "sourceSHA256": "9950baabeb34ce624b2104393296c3dce3cf94fdbbda5a002c8427b4a05e0f0f",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-072-ru.jpg",
+        "preservedSHA256": "972520b0379b3fe3e9915fb54d0255dc0807e2e3551e07619e354bd9db526ef3"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-073-directions.png",
+        "sourceSHA256": "2af634a4896f8a348bf51168069f7c7ce89a2e67fe0e495b6a1f6895e570ca16",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-073-directions.png",
+        "preservedSHA256": "2af634a4896f8a348bf51168069f7c7ce89a2e67fe0e495b6a1f6895e570ca16"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-073-en.png",
+        "sourceSHA256": "fadc5e78e6731f8f185e23f7531c845f3a956a2c4421e697364657055e212021",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-073-en.jpg",
+        "preservedSHA256": "6aa0fdbf043c13fd4797f77ad6c3d81755d1aa4b70dfd38ffc020a8d3f617e40"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-073-es.png",
+        "sourceSHA256": "104b8314bfe129b85dfedabeeea2734232f36b359afe39f1313dd578599a6b02",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-073-es.jpg",
+        "preservedSHA256": "68a6c471f77cc701d0f9450def42c5e20cc6d82d0fc64cf3779a5835a4c494ae"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-074-directions.png",
+        "sourceSHA256": "55092a850709893e99e72439d34ca2cb760f7ee3c2c1ac2a7e10a12e219b378b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-074-directions.png",
+        "preservedSHA256": "55092a850709893e99e72439d34ca2cb760f7ee3c2c1ac2a7e10a12e219b378b"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-074-en.png",
+        "sourceSHA256": "0d15e4817dbc0b0d837986dcb8b188f4e61f278fe212adcb682cbf629cb77069",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-074-en.jpg",
+        "preservedSHA256": "8c1aa5b905cd8c36ed57caa2fedac49e95e9c9891200705938743f9530772f10"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-074-es.png",
+        "sourceSHA256": "57e39cfd84ab1575a249fedce01ac4551eaed0159e4d1a1a8d11d231debfbc31",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-074-es.jpg",
+        "preservedSHA256": "e32795f320fc82f64ca456b5559482fa09c28b4bce4bda744f2bab732761b411"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-073-ru.png",
+        "sourceSHA256": "9956e71e6214a6fec9bae8828f0ec699de536394c84a424d6e86bc7daabd7b35",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-073-ru.jpg",
+        "preservedSHA256": "ebb14c28feeb0e8fa3c701b22bda3947f563f158a89f200faf6a88932e4abc5e"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-074-ru.png",
+        "sourceSHA256": "8b055da1738e9e25ae23024370c240ad133bfeb85856a3f0516d3769cc62e0cc",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-074-ru.jpg",
+        "preservedSHA256": "a2dcd27407b13db0637da27447ec4e5288f2f152f613771ec4c16497499fd3b3"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-075-directions.png",
+        "sourceSHA256": "7a01b541e4a5698d0f22b1dc8ca4d8de112038fe270c5150dd3562f0068edfa4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-075-directions.png",
+        "preservedSHA256": "7a01b541e4a5698d0f22b1dc8ca4d8de112038fe270c5150dd3562f0068edfa4"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-075-en.png",
+        "sourceSHA256": "1c3a39e3588a69a83cf7fdb58d9df730b9fbb1bcfd538d267fbd3333370e23a3",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-075-en.jpg",
+        "preservedSHA256": "3e7a5bb01bd318d96e6dd9d27e780e95d544da67570baa4d8b1d66d06fa85188"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-075-es.png",
+        "sourceSHA256": "5dd31a156860cda26f075d4961772867bcd02aa7b9e921b788b2a91403389168",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-075-es.jpg",
+        "preservedSHA256": "b776d0804c2d39f3304210a52ee8e684588276bf652e15e9d7452e1b90e9e445"
+      },
+      {
+        "source": "aur203-desert-e/desert-species-075-ru.png",
+        "sourceSHA256": "a27b03cc17dfe59aec84c2fb35c067fc5e2d68eb81d1d1ff4aa797f35f5df1e0",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/desert-species-075-ru.jpg",
+        "preservedSHA256": "3bdaab2a4b587c0b6a01190eb236de270374ce284ef2b7eed4ac29cce08c6993"
+      },
+      {
+        "source": "aur203-desert-e/verification.json",
+        "sourceSHA256": "77da2498dd7dd217a8110cceb22c338903a5b974c105ed980906b6678a4b0c98",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-e/verification.json",
+        "preservedSHA256": "77da2498dd7dd217a8110cceb22c338903a5b974c105ed980906b6678a4b0c98"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15256753414"
+  },
+  {
+    "artifactId": 15256199610,
+    "name": "browser-aur203-desert-fg",
+    "sourceCommit": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runId": 46128660538,
+    "archiveSHA256": "dbc7f3a5bd6218f3051b9b1877f50668b02e5756cd826986545a5f16cf2facff",
+    "archiveBytes": 5333853,
+    "speciesIds": [
+      "desert-species-076",
+      "desert-species-077",
+      "desert-species-078",
+      "desert-species-079",
+      "desert-species-080",
+      "desert-species-081",
+      "desert-species-082",
+      "desert-species-083"
+    ],
+    "files": [
+      {
+        "source": "aur203-desert-f/desert-species-076-directions.png",
+        "sourceSHA256": "d0316d4b5d8b771637b6ef16aaa357011a813866d4ebd5a026253cd1c352921d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-076-directions.png",
+        "preservedSHA256": "d0316d4b5d8b771637b6ef16aaa357011a813866d4ebd5a026253cd1c352921d"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-076-es.png",
+        "sourceSHA256": "0806fc256d891957a2db25e872811e90d38e108d09bff58b56cee2a5e716d508",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-076-es.jpg",
+        "preservedSHA256": "c4ec18221c8c6466cd1ad74b7e605561833d5e38da88a615b7502b5d76dd0970"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-076-en.png",
+        "sourceSHA256": "ace0ed0f9d57125b32a1f049abc9433893844f127bff40eab0814a3ef800c037",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-076-en.jpg",
+        "preservedSHA256": "f9938d8e7077eda5be786fd8596316070366728f96f9bc6b8b1bf18d003a4e28"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-076-ru.png",
+        "sourceSHA256": "f356242fbf929faea48ea650c36d51d412ac1b43ff40bd0dfb2325c739de04d8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-076-ru.jpg",
+        "preservedSHA256": "4a533a060f0d9ed80467a100b235505188f4284dfbbe346597f43a79724e2dae"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-077-directions.png",
+        "sourceSHA256": "902e568571c99f50a1ede28ad3074678ac498e635e673e4fc17579c18f235803",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-077-directions.png",
+        "preservedSHA256": "902e568571c99f50a1ede28ad3074678ac498e635e673e4fc17579c18f235803"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-077-en.png",
+        "sourceSHA256": "b3f8e5aad451637457be120e4bcb986de131536e266b9bb35b5fe833e4329f94",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-077-en.jpg",
+        "preservedSHA256": "b01658d5e64c5a2d9c8255e4ab8bb7e63068bfd710f4fcd38f0e610a9c726836"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-077-es.png",
+        "sourceSHA256": "838060d6ec88da236aea5d921015a7c01f312cb3bf3db6bfaededfef22396594",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-077-es.jpg",
+        "preservedSHA256": "f158af0c355f1fcdc6bd6480841d897f2d2579e0fc18b9946db3ff84547aa8e1"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-077-ru.png",
+        "sourceSHA256": "4e3a66db6babfc440a1067e105f5758c200ce2f74d05f755bd56d66bec89181d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-077-ru.jpg",
+        "preservedSHA256": "b5b677f8a87ffc178381f2545c25d61934b3ce6faa67af4070864e8e3ce08556"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-078-directions.png",
+        "sourceSHA256": "b575583b6492da3450b5e8a6fd643750d2155d7c0a9e518783635a6cd9aa7fbb",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-078-directions.png",
+        "preservedSHA256": "b575583b6492da3450b5e8a6fd643750d2155d7c0a9e518783635a6cd9aa7fbb"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-078-en.png",
+        "sourceSHA256": "548797924d32f66a9f3ff47c0a72acb9af215273104f02718471e16474b2aaf7",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-078-en.jpg",
+        "preservedSHA256": "aade594a85d9682674f0a6fb18f119896054fbe33346d920bc6e0b5283c5663a"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-078-es.png",
+        "sourceSHA256": "07fd741e624f83cdc0670914dab44c44403f3183b8164e79cf71cc664deb721b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-078-es.jpg",
+        "preservedSHA256": "d373fb9f53bacfdce0cf9461654453ffc2e280297abbf36736d39ec5052b0063"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-078-ru.png",
+        "sourceSHA256": "0a3773babfa0e32a629dfd0faa506d2ac63db6f352b1ed5ae1e4407fe33cd139",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-078-ru.jpg",
+        "preservedSHA256": "afbefb8856e804353cacea99e2ea4410f540cf2fc7c76d83b9b3a3ee08144e24"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-079-directions.png",
+        "sourceSHA256": "7bf59e72464857a02ec17913864b3591955e3507915164235f5db02a049ffed4",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-079-directions.png",
+        "preservedSHA256": "7bf59e72464857a02ec17913864b3591955e3507915164235f5db02a049ffed4"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-079-en.png",
+        "sourceSHA256": "f87c29073616e587e325b36e375c27b40c307f13ef5603b9c1984ac27273b1bc",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-079-en.jpg",
+        "preservedSHA256": "864ea2d26105f214eae86fbb5a27ef3f8402fa06f39e34b24fcdc66e400029df"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-079-es.png",
+        "sourceSHA256": "f98ab3709a519da4b5140ebcfda2fc2c93e0936a1b9fe67466ed39902c2f66ea",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-079-es.jpg",
+        "preservedSHA256": "650d0916cd0d7d0a504a235209930f522e0879ee6ba371fdfc03d9c0434b3d49"
+      },
+      {
+        "source": "aur203-desert-f/desert-species-079-ru.png",
+        "sourceSHA256": "c8d052e1cbd49a24f0e8787d57454d9f63ca1c8d92ba2e6804b71f1b338dc606",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/desert-species-079-ru.jpg",
+        "preservedSHA256": "ff5a59cd26a4bc7de2edbd88cad62f09b2d64994ca6e6f11d2a146c6f22277f6"
+      },
+      {
+        "source": "aur203-desert-f/verification.json",
+        "sourceSHA256": "bcc52e80df55a4cf1ce8a82e861120485bdef366654bfd18b6debbffe1f2993b",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-f/verification.json",
+        "preservedSHA256": "bcc52e80df55a4cf1ce8a82e861120485bdef366654bfd18b6debbffe1f2993b"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-080-directions.png",
+        "sourceSHA256": "a75633523028a4ec99a044be5fc021f8c0f0ab9debae787bbbb5a001fb7624a6",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-080-directions.png",
+        "preservedSHA256": "a75633523028a4ec99a044be5fc021f8c0f0ab9debae787bbbb5a001fb7624a6"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-080-en.png",
+        "sourceSHA256": "585e34bc985fa060a59346c81b9d2f7378f0a9474e71cc7a1eefcf07deb235d9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-080-en.jpg",
+        "preservedSHA256": "fa32c7ae2cb9b20c32bbd34eff10a98c4fc4f19687501a54ca8b2dd21ce250e9"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-080-es.png",
+        "sourceSHA256": "9b1c02493220d5ded0e302652f5826710876670bec3cc7da0ccb86366bddf27d",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-080-es.jpg",
+        "preservedSHA256": "1fc89f8253b19f5ab5aa22e897a7be88f6ef48b2eb6a10f8c48ccf03a002d8b0"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-080-ru.png",
+        "sourceSHA256": "f5c4fa33655bf4d63da5abd0c3540b476ce99c71b7eef1c04ee619ec5d833920",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-080-ru.jpg",
+        "preservedSHA256": "42f01f40e76a3d25b04458731a825b62d31d87409be410a452327919a0dae84c"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-081-directions.png",
+        "sourceSHA256": "0d8e261448ef3a08dc31265cc372ed6c43fe1043d7d061e2413fce51df316be5",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-081-directions.png",
+        "preservedSHA256": "0d8e261448ef3a08dc31265cc372ed6c43fe1043d7d061e2413fce51df316be5"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-081-en.png",
+        "sourceSHA256": "24a31286766952ef43b1bc05fd12b7602b436f4f099f7c6218442d08edfcce8a",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-081-en.jpg",
+        "preservedSHA256": "9e631ba406d02ea5dad236518cfec596d43e51e646d6a9370a118242f19cf496"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-081-es.png",
+        "sourceSHA256": "c8d722903675474981d9f754e9b4691678e3dfa4af0922e5986b6d117423fb0e",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-081-es.jpg",
+        "preservedSHA256": "6e26f809f0d33f2bb0bdea34d46e3e753736aef89b24079fece7133fcb80c1ef"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-081-ru.png",
+        "sourceSHA256": "005b20419c5582e5303b360963d0da5dd378b141f6e60a24fcb949bba6f8e561",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-081-ru.jpg",
+        "preservedSHA256": "d4ac02f802e2dc0a917320220222113abad965e2cd2e066c39103c39577d4304"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-082-directions.png",
+        "sourceSHA256": "514955ab8d16b71319d423f150e4d7ea12c1196c2e3572b62a5311122084ce7c",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-082-directions.png",
+        "preservedSHA256": "514955ab8d16b71319d423f150e4d7ea12c1196c2e3572b62a5311122084ce7c"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-082-en.png",
+        "sourceSHA256": "c9628cb1dd377cce8638e212a160a3d19a24537f06edb38063f0906d74dbbbd8",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-082-en.jpg",
+        "preservedSHA256": "5b8fd1e67979aaf74e360982ad3d68a16958c66c91e7f6b7705a45100f3201e4"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-082-es.png",
+        "sourceSHA256": "ef2a2e9ed43792d524540f2296d61c81aa8cb3118998ce2649dcd022a00656c9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-082-es.jpg",
+        "preservedSHA256": "57664ad0ee9f027995deee989b91b6200076afb9a75d5983a6803077014e53b0"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-082-ru.png",
+        "sourceSHA256": "cf9c4259fe1b5aff8ced34f99970c0d8cdb2a848c4a18ad44935c91a6655ed23",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-082-ru.jpg",
+        "preservedSHA256": "e7996f8242b57c4238a2232d1cc919dec1167ef1905e5a2ecae1c5047b5d008d"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-083-directions.png",
+        "sourceSHA256": "b61ebe7ea40fcc8af3d7e09e12c8b862eb54b78b057108aecff9565633c9b2eb",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-083-directions.png",
+        "preservedSHA256": "b61ebe7ea40fcc8af3d7e09e12c8b862eb54b78b057108aecff9565633c9b2eb"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-083-en.png",
+        "sourceSHA256": "b3db8f295a8424ba2d00f01826de5ceb100dd70a6171443601cf5d4b708b4762",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-083-en.jpg",
+        "preservedSHA256": "a542090d72f78f76dc2d947caf9f6d9e27f001a1e50b020f38ff87b0c1f9c7a1"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-083-es.png",
+        "sourceSHA256": "8b2434d39ec0d0e5a43f6338462c0173c77195c9a9221fb60dc0ac67a6c42702",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-083-es.jpg",
+        "preservedSHA256": "52d25f192222bc7d6962735ead39a77a58cb42db9a1f89a93a90d91c45843b55"
+      },
+      {
+        "source": "aur203-desert-g/desert-species-083-ru.png",
+        "sourceSHA256": "9d6a578845c921a0e913ee0e889aa24c5774a1ee49b1b1e18364f54728d0c7b9",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/desert-species-083-ru.jpg",
+        "preservedSHA256": "b48b077f9e46eaaa0429a0d6d4683d4b836a7aa7d9174b2f6825e39283f04a2f"
+      },
+      {
+        "source": "aur203-desert-g/verification.json",
+        "sourceSHA256": "5d3609133ea0696681b2b7e5dc72e086fe6a0b753645583b6ce12dae23e77383",
+        "preserved": "docs/qa/aur203-browser/ci-run-46128660538/aur203-desert-g/verification.json",
+        "preservedSHA256": "5d3609133ea0696681b2b7e5dc72e086fe6a0b753645583b6ce12dae23e77383"
+      }
+    ],
+    "rawArchiveURL": "https://github.com/gigiloesp-dot/auralis/actions/runs/46128660538/artifacts/15256199610"
+  }
+]

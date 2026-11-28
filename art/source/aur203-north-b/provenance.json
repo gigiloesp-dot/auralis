@@ -1,0 +1,240 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-north-b",
+  "createdUTC": "2026-11-24",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "physicalAndroid": false,
+  "scope": "Four original anatomies; six pose banks including two movement drawings, not six multiframe clips.",
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "atlasDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "mechanicalPacking": "Complete pose cropping with 8 source pixel margins, single uniform scale per species, no painting, erasing or threshold alpha matte. Alpha>128 used only to locate support/gutters.",
+  "species": [
+    {
+      "id": "north-species-080",
+      "placementId": "north080",
+      "spotId": "north-spot-080",
+      "typeId": "aur203North080",
+      "names": {
+        "ru": "Снегоступный компасозуб",
+        "en": "Snowshoe compass shrew",
+        "es": "Musaraña brújula"
+      },
+      "biome": "snow",
+      "level": 22,
+      "position": {
+        "x": 701,
+        "y": 920
+      },
+      "anatomy": "pear-shaped shrew; long coral nose, four compass-needle snowshoe paws, huge indigo ears, compass-disk ribbon tail",
+      "movementProfile": "predator",
+      "abilityPattern": [
+        "pounce",
+        "frost"
+      ],
+      "materialId": "aur203North080Material",
+      "materialConcept": {
+        "ru": "Пластинка хвостового компаса",
+        "en": "Tail-compass plate",
+        "es": "Placa de brújula caudal"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-081",
+      "placementId": "north081",
+      "spotId": "north-spot-081",
+      "typeId": "aur203North081",
+      "names": {
+        "ru": "Ледокоронный тупик",
+        "en": "Frost-crown puffin",
+        "es": "Frailecillo coronado"
+      },
+      "biome": "snow",
+      "level": 26,
+      "position": {
+        "x": 4549,
+        "y": 8989
+      },
+      "anatomy": "round flightless seabird, ice-crown crest, immense layered triangular beak, flipper wings and huge web feet",
+      "movementProfile": "fighter",
+      "abilityPattern": [
+        "cleave",
+        "frost"
+      ],
+      "materialId": "aur203North081Material",
+      "materialConcept": {
+        "ru": "Слой клюва ледокороны",
+        "en": "Frost-crown beak layer",
+        "es": "Lámina de pico glacial"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-082",
+      "placementId": "north082",
+      "spotId": "north-spot-082",
+      "typeId": "aur203North082",
+      "names": {
+        "ru": "Снежнофонарный паук",
+        "en": "Snow-lantern spider",
+        "es": "Araña farol de nieve"
+      },
+      "biome": "snow",
+      "level": 22,
+      "position": {
+        "x": 2693,
+        "y": 813
+      },
+      "anatomy": "eight thick teal legs with fur cuffs; perforated opalescent snow-lantern abdomen; four dark eyes",
+      "movementProfile": "crawler",
+      "abilityPattern": [
+        "web",
+        "venom"
+      ],
+      "materialId": "aur203North082Material",
+      "materialConcept": {
+        "ru": "Стенка снежного фонаря",
+        "en": "Snow-lantern wall",
+        "es": "Pared de farol nevado"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-083",
+      "placementId": "north083",
+      "spotId": "north-spot-083",
+      "typeId": "aur203North083",
+      "names": {
+        "ru": "Северосиянный куду",
+        "en": "Aurora-antler kudu",
+        "es": "Kudú de astas aurorales"
+      },
+      "biome": "snow",
+      "level": 30,
+      "position": {
+        "x": 7255,
+        "y": 14457
+      },
+      "anatomy": "compact ungulate with corkscrew crescent ice antlers, split purple mane and aurora streaks",
+      "movementProfile": "charger",
+      "abilityPattern": [
+        "charge",
+        "frost"
+      ],
+      "materialId": "aur203North083Material",
+      "materialConcept": {
+        "ru": "Завиток сияющего рога",
+        "en": "Aurora antler curl",
+        "es": "Espiral de asta auroral"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    }
+  ],
+  "prompts": {
+    "080": {
+      "original": "Create ONE professional polished 2D cartoon fantasy game sprite sheet, genuine transparent RGBA background, no checkerboard or matte. 8 columns by 6 rows, exactly 48 fully painted isolated complete creatures. Fixed columns face E(right),SE(down-right),S(front),SW(down-left),W(left),NW(up-left),N(back),NE(up-right). Rows: idle; run A; run B opposite legs; attack; hurt recoiling; death collapsed flat naturally onto side/belly, NEVER standing. Every pose must be unique. Character: a SNOWSHOE COMPASS SHREW, original small plump pear-shaped ice-blue furry shrew with very long flexible coral pointed nose, four broad radial snowshoe paws shaped like ivory compass needles, huge circular indigo ears with frost star holes, and a curled flat ribbon tail terminating in a brass compass disk. Distinct anatomy not a generic mouse; no clothes. Arctic snow habitat monster level22. Big expressive dark eyes and lively mischievous face. Painterly mobile RPG style, rounded stylized anatomy, crisp fine dark outlines, rich hand-painted cream/blue/lilac fur, beautiful tiny details, three-quarter overhead game view, consistent anatomy across all 48. All creatures same scale and entire bodies fit well inside their own cells with generous transparent gutters; generous margin around canvas. 8 evenly spaced columns and 6 evenly spaced rows, no text, no dividers, no scenery, no ground shadows. 6th row all eight creatures lying low limp and visibly collapsed with relaxed paws and tail, showing the appropriate view. Need 48 distinct drawings, not a showcase or animation streak. Landscape canvas 1536x1024 ideal, creatures no taller than110px and no wider than140px at that resolution, no touching boundaries.",
+      "repair": "Repair this exact sprite atlas preserving all 48 creature designs, viewpoints and painted poses. Remove ALL grey purple brown background haze/matte completely: every blank area between creatures must be literal alpha=0 transparency, not translucent color. Do not alter creature coloring or outlines. Re-layout all48 complete poses into exact8columns×6rows, each creature uniformly about20%smaller so generous fully transparent gutters separate every adjacent whole creature bounding box; keep centered in cell with ample top,bottom,left,right margins. Keep eight directions E SE S SW W NW N NE. Sixth row keep all eight dead bodies lying naturally collapsed low and limp. No scenery/shadows/text or new paint on background. Only transparent game sprites."
+    },
+    "081": {
+      "original": "ONE polished 2D hand-painted cartoon fantasy mobile RPG sprite atlas. TRANSPARENT RGBA blank background. EXACTLY 48 distinct COMPLETE isolated character drawings, 8 equal columns ×6 equal rows. Columns face E(right),SE(down-right),S(front),SW(down-left),W(left),NW(up-left),N(back),NE(up-right), same order every row. Rows idle; run A legs extended; run B opposite stride; attack lunging; hurt recoiling; death collapsed naturally lying flat on side/belly. Last row MUST ALL be low flattened limp bodies with limbs relaxed, NEVER upright sleeping/standing. Character a FROST-CROWN PUFFIN: squat black-and-white arctic seabird with enormous triangular layered turquoise-orange ice beak, feather crest shaped like a three-point snow crown, two oversized violet web feet and short flipper-wings with little crystalline feather fans. Flightless waddling anatomy, feathered round belly, bright amber eyes. Original snow habitat monster, expressive appealing fantasy anatomy. Rich painterly soft volume and tiny details, crisp slender dark contour, three-quarter overhead game camera, consistent character identity and proportions. Layout landscape1536x1024, each complete creature within140px width and110px height, tiny enough for very wide blank transparent gutters around ALL poses, no overlap, even grid. No text, grid, scenery, ground shadows, checkerboard or white matte. All48 are uniquely painted, preserving view direction in death. Clear differences between two run drawings.",
+      "repair": "Remove the entire white gray background from this sprite sheet, making ALL empty space true alpha0 transparent. Keep48creatures untouched and their colors unchanged. Shrink complete sprites uniformly20% so all48 fit comfortably with generous transparent gutters inside an8column6row grid. No background, no matte, no checkerboard. Transparent PNG cutout sheet; no shadows. Preserve all six pose rows and direction order. Death row remains naturally collapsed."
+    },
+    "082": {
+      "original": "ONE polished 2D hand-painted cartoon fantasy mobile RPG sprite atlas. TRANSPARENT RGBA blank background. EXACTLY 48 distinct COMPLETE isolated character drawings, 8 equal columns ×6 equal rows. Columns face E(right),SE(down-right),S(front),SW(down-left),W(left),NW(up-left),N(back),NE(up-right), same order every row. Rows idle; run A legs extended; run B opposite stride; attack lunging; hurt recoiling; death collapsed naturally lying flat on side/belly. Last row MUST ALL be low flattened limp bodies with limbs relaxed, NEVER upright sleeping/standing. Character a SNOW LANTERN SPIDER: round pale opalescent abdomen like a hollow perforated snow lantern, eight thick curled teal legs wearing natural fluffy white fur cuffs, small broad smiling face with four glossy dark eyes, two tiny blue chelicerae. Leggy low eight-legged crawler, not insect six legs. Original snow habitat monster, expressive appealing fantasy anatomy. Rich painterly soft volume and tiny details, crisp slender dark contour, three-quarter overhead game camera, consistent character identity and proportions. Layout landscape1536x1024, each complete creature within140px width and110px height, tiny enough for very wide blank transparent gutters around ALL poses, no overlap, even grid. No text, grid, scenery, ground shadows, checkerboard or white matte. All48 are uniquely painted, preserving view direction in death. Clear differences between two run drawings.",
+      "repair": "Edit exact sprite sheet: remove ALL background everywhere, including colored gray/white/green haze. Blank pixels must become true transparent alpha0, no matte rectangles. Retain ALL48 painted characters unaltered including original colors/details. Reflow into8columns6rows and uniformly shrink every complete character25% around its own center to leave generous transparent horizontal AND vertical gutters, no part touching any cell edge. Preserve E SE S SW W NW N NE columns and six rows idle/runA/runB/attack/hurt/death. Last row all limp low collapsed bodies naturally lying on side/belly, including the rear views. No ground shadows, floor, text or grid. Genuine clean RGBA game sprites."
+    },
+    "083": {
+      "original": "ONE polished 2D hand-painted cartoon fantasy mobile RPG sprite atlas. TRANSPARENT RGBA blank background. EXACTLY 48 distinct COMPLETE isolated character drawings, 8 equal columns ×6 equal rows. Columns face E(right),SE(down-right),S(front),SW(down-left),W(left),NW(up-left),N(back),NE(up-right), same order every row. Rows idle; run A legs extended; run B opposite stride; attack lunging; hurt recoiling; death collapsed naturally lying flat on side/belly. Last row MUST ALL be low flattened limp bodies with limbs relaxed, NEVER upright sleeping/standing. Character an AURORA ANTLER KUDU: stocky four-legged alpine ungulate with backward corkscrew antlers made of layered pale green ice crescents, deep purple split mane, white chest, blue-grey fur with naturally flowing turquoise aurora streaks, oversized oval hooves, swept back broad ears and a compact narrow muzzle. Not muskox, no shaggy spherical wool body. Original snow habitat monster, expressive appealing fantasy anatomy. Rich painterly soft volume and tiny details, crisp slender dark contour, three-quarter overhead game camera, consistent character identity and proportions. Layout landscape1536x1024, each complete creature within140px width and110px height, tiny enough for very wide blank transparent gutters around ALL poses, no overlap, even grid. No text, grid, scenery, ground shadows, checkerboard or white matte. All48 are uniquely painted, preserving view direction in death. Clear differences between two run drawings.",
+      "repair": "Edit exact sprite sheet: remove ALL background everywhere, including colored gray/white/green haze. Blank pixels must become true transparent alpha0, no matte rectangles. Retain ALL48 painted characters unaltered including original colors/details. Reflow into8columns6rows and uniformly shrink every complete character25% around its own center to leave generous transparent horizontal AND vertical gutters, no part touching any cell edge. Preserve E SE S SW W NW N NE columns and six rows idle/runA/runB/attack/hurt/death. Last row all limp low collapsed bodies naturally lying on side/belly, including the rear views. No ground shadows, floor, text or grid. Genuine clean RGBA game sprites."
+    }
+  },
+  "sources": [
+    {
+      "path": "art/source/aur203-north-b/north-species-080-cutout.png",
+      "sha256": "2b569041127733d4f1bcca865eaf952bab18fb9a322924f97b02dd1b3c62967b"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-080-original.png",
+      "sha256": "1b49931e241b82c3542486178537be60afc307505c6976ccd96972ad41244d3c"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-080-registered.png",
+      "sha256": "f4b2b5230e3d24b888a8018aaaddf9b05bbe510c5bc0463993944ae414d2c055"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-081-cutout.png",
+      "sha256": "f2d5652483c34550a0cd0b038c3e328746cb214fd9595b8b5c2f570517c2793b"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-081-original.png",
+      "sha256": "50180454c19e081c71b11768affcec87cfbe9bf67a98f446b21d85c8f2bb0e81"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-081-registered.png",
+      "sha256": "484d446f9c2a3e5dadd1708f7d5cbceb2698c2ed7dbf74efe75a03a2b240dd00"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-082-cutout.png",
+      "sha256": "0ca4a80e96fb00dd852e180aa3bcb8a988fb220525ab91fca7e89152158da889"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-082-original.png",
+      "sha256": "cd4fbf93185387a9f16cf3b3bac41793d16a52ba36361a4e4603b01656ef5662"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-082-registered.png",
+      "sha256": "64a8698a86577cceb0f3798eb9531fa23de1cb102dde4a584a143e742db25f10"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-083-cutout.png",
+      "sha256": "407f6d13e7128899e386413f4d954bdee9c47100c584b25904b7368f8dfbb1cc"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-083-original.png",
+      "sha256": "9fd15104b9c0981a130a6c8f63262993d3455ac6bd09615358b2006f56af9746"
+    },
+    {
+      "path": "art/source/aur203-north-b/north-species-083-registered.png",
+      "sha256": "16dfda5ef796d8b42fac56a5a0bb959219e8d25f5219962958671c29c26ed255"
+    }
+  ],
+  "repairs": "Originals retained; image_gen cutout/reflow outputs retained and selected. Semantic transparency and spacing repairs performed only by image_gen.",
+  "visualInspection": {
+    "posesInspected": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All registered native poses reviewed on both backgrounds; complete silhouettes and natural collapsed death. No clipping, neighboring limbs or missing poses. All48 distinct RGBA hashes per species."
+  },
+  "statsLootAndFinalBalance": "Not configured in this art-only pack; root owns integration."
+}

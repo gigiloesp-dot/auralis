@@ -1,0 +1,152 @@
+{
+  "runtimeVerified": false,
+  "originalReferenceFramesInspected": 224,
+  "newFramesReviewed": 112,
+  "backgrounds": [
+    "beige #c8b483",
+    "dark #171b29"
+  ],
+  "reviewMethod": "All7actualoriginal32-pose references inspected beforegeneration. All112finalnewhurt/deathposes reviewed atnative192x256cells in14saved1536x768identitycontact sheets, originalidle8views above newhurt8/death8. Finalwispre-registrationreviewedagain onbothbackgrounds.",
+  "models": [
+    {
+      "id": "ancient-species-000",
+      "name": "fallenKnight",
+      "newFramesReviewed": 16,
+      "hurtDirectionalPoses": 8,
+      "collapsedDeathDirectionalPoses": 8,
+      "identityMatchesOriginal": true,
+      "completeSilhouettes": true,
+      "noVisibleMatte": true,
+      "noNeighborFragments": true,
+      "original32RGBAExact": true,
+      "original32AtlasFrameObjectsExact": true,
+      "originalScaleAndBankBaselinesExact": true,
+      "newOnlyFootlines": 16,
+      "identityQA": [
+        "ancient-species-000-beige-identity-qa.jpg",
+        "ancient-species-000-dark-identity-qa.jpg"
+      ],
+      "PNGsha256": "c2ebc5cbf9822ddf344aafa5eaa8fb760ed7939f0486ebc8d8496c8568eefaf2"
+    },
+    {
+      "id": "ancient-species-001",
+      "name": "desertSnake",
+      "newFramesReviewed": 16,
+      "hurtDirectionalPoses": 8,
+      "collapsedDeathDirectionalPoses": 8,
+      "identityMatchesOriginal": true,
+      "completeSilhouettes": true,
+      "noVisibleMatte": true,
+      "noNeighborFragments": true,
+      "original32RGBAExact": true,
+      "original32AtlasFrameObjectsExact": true,
+      "originalScaleAndBankBaselinesExact": true,
+      "newOnlyFootlines": 16,
+      "identityQA": [
+        "ancient-species-001-beige-identity-qa.jpg",
+        "ancient-species-001-dark-identity-qa.jpg"
+      ],
+      "PNGsha256": "faa02c22322c28b54a2dd4ac7407efa496f71c6d29c23edcd094908ef22fe79f"
+    },
+    {
+      "id": "ancient-species-002",
+      "name": "scarab",
+      "newFramesReviewed": 16,
+      "hurtDirectionalPoses": 8,
+      "collapsedDeathDirectionalPoses": 8,
+      "identityMatchesOriginal": true,
+      "completeSilhouettes": true,
+      "noVisibleMatte": true,
+      "noNeighborFragments": true,
+      "original32RGBAExact": true,
+      "original32AtlasFrameObjectsExact": true,
+      "originalScaleAndBankBaselinesExact": true,
+      "newOnlyFootlines": 16,
+      "identityQA": [
+        "ancient-species-002-beige-identity-qa.jpg",
+        "ancient-species-002-dark-identity-qa.jpg"
+      ],
+      "PNGsha256": "cadbf512c9b82275075076f3efd515eb3b0fe8bd2729964e0cb4e357a32ef25a"
+    },
+    {
+      "id": "ancient-species-004",
+      "name": "ancientSentinel",
+      "newFramesReviewed": 16,
+      "hurtDirectionalPoses": 8,
+      "collapsedDeathDirectionalPoses": 8,
+      "identityMatchesOriginal": true,
+      "completeSilhouettes": true,
+      "noVisibleMatte": true,
+      "noNeighborFragments": true,
+      "original32RGBAExact": true,
+      "original32AtlasFrameObjectsExact": true,
+      "originalScaleAndBankBaselinesExact": true,
+      "newOnlyFootlines": 16,
+      "identityQA": [
+        "ancient-species-004-beige-identity-qa.jpg",
+        "ancient-species-004-dark-identity-qa.jpg"
+      ],
+      "PNGsha256": "108b752434ac13f1c319bfd0bf6813eb26c73b456566c7bc8f509c835c489f32"
+    },
+    {
+      "id": "ancient-species-006",
+      "name": "ancientGargoyle",
+      "newFramesReviewed": 16,
+      "hurtDirectionalPoses": 8,
+      "collapsedDeathDirectionalPoses": 8,
+      "identityMatchesOriginal": true,
+      "completeSilhouettes": true,
+      "noVisibleMatte": true,
+      "noNeighborFragments": true,
+      "original32RGBAExact": true,
+      "original32AtlasFrameObjectsExact": true,
+      "originalScaleAndBankBaselinesExact": true,
+      "newOnlyFootlines": 16,
+      "identityQA": [
+        "ancient-species-006-beige-identity-qa.jpg",
+        "ancient-species-006-dark-identity-qa.jpg"
+      ],
+      "PNGsha256": "ba086bfa49b2854bf6df977d440a4a725dcab1ac1cf847654824e89e1d611a1a"
+    },
+    {
+      "id": "ancient-species-009",
+      "name": "arcaneWisp",
+      "newFramesReviewed": 16,
+      "hurtDirectionalPoses": 8,
+      "collapsedDeathDirectionalPoses": 8,
+      "identityMatchesOriginal": true,
+      "completeSilhouettes": true,
+      "noVisibleMatte": true,
+      "noNeighborFragments": true,
+      "original32RGBAExact": true,
+      "original32AtlasFrameObjectsExact": true,
+      "originalScaleAndBankBaselinesExact": true,
+      "newOnlyFootlines": 16,
+      "identityQA": [
+        "ancient-species-009-beige-identity-qa.jpg",
+        "ancient-species-009-dark-identity-qa.jpg"
+      ],
+      "PNGsha256": "67eaefc877f302e3a1ceea93e92d298dfcc123ff9ec1f1168fbdaa8a1212c396"
+    },
+    {
+      "id": "ancient-species-032",
+      "name": "voidElemental",
+      "newFramesReviewed": 16,
+      "hurtDirectionalPoses": 8,
+      "collapsedDeathDirectionalPoses": 8,
+      "identityMatchesOriginal": true,
+      "completeSilhouettes": true,
+      "noVisibleMatte": true,
+      "noNeighborFragments": true,
+      "original32RGBAExact": true,
+      "original32AtlasFrameObjectsExact": true,
+      "originalScaleAndBankBaselinesExact": true,
+      "newOnlyFootlines": 16,
+      "identityQA": [
+        "ancient-species-032-beige-identity-qa.jpg",
+        "ancient-species-032-dark-identity-qa.jpg"
+      ],
+      "PNGsha256": "7fc497bbd2ac3cde86197b3de36d06b0d89aaec977d5e3078aa015bba3889287"
+    }
+  ]
+}

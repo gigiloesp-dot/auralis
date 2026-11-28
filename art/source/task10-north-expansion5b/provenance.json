@@ -1,0 +1,11 @@
+{
+  "generator": "image_gen.imagegen",
+  "transparentBackgroundRequested": true,
+  "originals": "*-source.png",
+  "semanticRepairs": [],
+  "mechanicalReflows": "*-reflow.png; complete-pose crop/registration from sourceRect coordinates in manifest, one uniform scale per species",
+  "pixelPolicy": "No alpha threshold, erasure, painting, recoloring or generated anatomy by local code. Alpha projections are read only to locate visually blank crop corridors and measure visible footlines. Original RGBA source pixels are retained inside complete-pose rectangles; Lanczos resize and source-over composite only.",
+  "qa": "All384 final poses manually reviewed at native size on beige and dark contact sheets. All48 deaths fully collapsed. No matte, detached fragments or anatomy clipping observed.",
+  "climateSource": "Actual workspace uses js/world/climate.js rather than climateZones.js; getRegionContent(north) and climateAt(camp coordinates).",
+  "runtimeVerified": false
+}

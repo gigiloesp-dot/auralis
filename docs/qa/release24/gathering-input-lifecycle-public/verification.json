@@ -1,0 +1,18 @@
+{
+  "queued": {
+    "created": 250,
+    "queuedBeforeDestroy": 250,
+    "pendingDead": 0
+  },
+  "after": {
+    "deadInInput": 0,
+    "pendingDead": 0,
+    "deadActive": 0,
+    "markers": 0
+  },
+  "errors": [],
+  "physicalAndroid": false,
+  "publicUrl": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "sourceCommit": "f36bd7b2e13f0ec03cd0b9e8b3a1bd0d4364b616",
+  "scope": "250 real GatheringSystem.create/clear pairs before one real InputPlugin preupdate; external test atlas lease released; no item/save/combat changes"
+}

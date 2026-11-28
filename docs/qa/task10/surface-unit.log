@@ -1,0 +1,11 @@
+✔ eight low desert hills are smooth, bounded and leave other regions and all dungeon physics flat (4820.992091ms)
+✔ touch inversion round-trips elevated feet, including slopes, without changing saved XY or combat range (4.616044ms)
+✔ warped chunk meshes share exact seam vertices, retain source UVs and never invert or grow with world area (1.296889ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4933.803328

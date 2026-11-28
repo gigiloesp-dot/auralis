@@ -1,0 +1,15 @@
+PASS navigation18mobile/locale cases warrior
+PASS navigation18mobile/locale cases archer
+PASS navigation18mobile/locale cases mage
+PASS navigation18mobile/locale cases paladin
+PASS navigation18mobile/locale cases assassin
+PASS navigation18mobile/locale cases cannoneer
+locator.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.npc-selector select')[22m
+
+    at openNpc (/workspace/auralis/tests/browserHarness.cjs:11:62)
+    at async /workspace/auralis/tests/browser-task10-navigation.cjs:12:268 {
+  log: [ "  - waiting for locator('.npc-selector select')" ],
+  name: 'TimeoutError'
+}

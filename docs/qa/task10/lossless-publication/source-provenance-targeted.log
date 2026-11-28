@@ -1,0 +1,10 @@
+✔ lossless actor delivery manifest pins committed sources, encoded bytes, and every source RGBA channel (8056.082551ms)
+✔ both loaders substitute only mapped image URLs while retaining atlas keys, JSON URLs, frame geometry and lease lifetime (1.168695ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8172.944235

@@ -1,0 +1,130 @@
+[
+  [
+    "north-species-020",
+    "antler-musk-wolf",
+    77,
+    "Snow CANINE QUADRUPED with short muscular body, broad muzzle, tiny ears, elaborate sideways flat moose antlers, mane of long cream muskox hair hanging from shoulders, four dark paws, SHORT tail. Low charging wolf gait and antler bite attack.",
+    "Мускусный роговолк",
+    "Antler musk wolf",
+    "Lobo almizclero de astas",
+    "iceWolf",
+    "snow",
+    "quadruped",
+    [
+      "pounce",
+      "charge"
+    ]
+  ],
+  [
+    "north-species-024",
+    "ribbon-tailed-snow-jackal",
+    73,
+    "Snow CANINE QUADRUPED, very tall narrow pointed ears, tiny slim long-legged jackal body, thin long muzzle, TWO long flat ribbonlike tails curling together, slate fur with cream throat, dark feet. Elegant four-legged bounds, biting attack. No antlers, no mane.",
+    "Лентохвостый снежный шакал",
+    "Ribbon-tailed snow jackal",
+    "Chacal níveo de colas de cinta",
+    "iceWolf",
+    "snow",
+    "quadruped",
+    [
+      "pounce",
+      "cleave"
+    ]
+  ],
+  [
+    "north-species-029",
+    "icewheel-sentinel",
+    86,
+    "Snow heavy BIPED golem, tall narrow body formed of clear cyan ice slabs, huge circular upright ICE WHEEL halo integrated behind shoulders, head tiny diamond suspended in hollow chest, two massive triangular wedge forearms, two block feet. Slow two-leg heavy gait, overhead ice hammer attack. Wheel is solid anatomy not floating particles.",
+    "Ледоколёсный страж",
+    "Icewheel sentinel",
+    "Centinela de rueda helada",
+    "frostGolem",
+    "snow",
+    "heavy",
+    [
+      "stomp",
+      "frost"
+    ]
+  ],
+  [
+    "north-species-032",
+    "rime-root-colossus",
+    88,
+    "Snow heavy BIPED golem of twisted ancient dark roots armored by chunky ivory rime, broad forked stump head with two blue eyes, one huge asymmetrical root-club right arm and thin claw left arm, barrel chest, two short tree-trunk legs, frozen pale mushroom shelves on shoulders. Lumbering two-leg strides, club slam attack. Entirely different from crystalline golem.",
+    "Корнеледный колосс",
+    "Rime-root colossus",
+    "Coloso de raíces escarchadas",
+    "frostGolem",
+    "snow",
+    "heavy",
+    [
+      "stomp",
+      "roots"
+    ]
+  ],
+  [
+    "north-species-034",
+    "shieldback-glacier-bear",
+    84,
+    "Snow enormous FOUR-LEGGED BEAR with broad short bear muzzle, tiny ROUND ears, tiny nub tail, thick white bear fur legs and belly, gigantic single convex turtle-shell-like blue glacier armor dome over whole back with hexagonal plates, squat wide body. Clear four-leg bear running gait and front-paw slam attack. NO horns tusks long tails or wolf muzzle.",
+    "Щитоспинный ледовый медведь",
+    "Shieldback glacier bear",
+    "Oso glaciar de lomo escudo",
+    "snowBear",
+    "snow",
+    "quadruped",
+    [
+      "stomp",
+      "charge"
+    ]
+  ],
+  [
+    "north-species-036",
+    "sabre-cheek-snow-dhole",
+    77,
+    "Snow CANINE QUADRUPED, broad hyenalike shoulders, short rounded ears, rust brown winter fur with cream dorsal crest, enormous pair of curved saber teeth extending DOWN from upper jaw, wide dark muzzle, four stout legs, long bare ratlike tail with white pompom tip. Low powerful canine running gait and saber bite. No antlers and no armor.",
+    "Саблезубый снежный красный волк",
+    "Sabre-cheek snow dhole",
+    "Cuón níveo de colmillos sable",
+    "iceWolf",
+    "snow",
+    "quadruped",
+    [
+      "pounce",
+      "cleave"
+    ]
+  ],
+  [
+    "north-species-039",
+    "furnace-rib-ash-wolf",
+    78,
+    "Volcanic FOUR-LEGGED CANINE beast, very lean charcoal armored dog body, exposed huge copper rib-shaped external armor arches around orange sealed furnace chest, long narrow eyeless head with bright amber mouth, four long jointed legs, long single chainlike segmented tail. Black and copper materials with amber detail inside body only. Four-legged running and snapping bite. No smoke flames particles outside silhouette.",
+    "Печерёберный пепельный волк",
+    "Furnace-rib ash wolf",
+    "Lobo de ceniza de costillas de horno",
+    "iceWolf",
+    "volcanic",
+    "quadruped",
+    [
+      "pounce",
+      "charge"
+    ]
+  ],
+  [
+    "north-species-041",
+    "bell-ear-frost-bat",
+    73,
+    "Snow FLYING BAT, two huge drooping bell-shaped furry ears, small round cream bat body, tiny black nose, paired folded icy blue membrane wings shaped like scalloped fans with dark finger bones, very short tail and tiny hooked hind feet. Distinct fat rounded silhouette. Flight run-a upstroke run-b downstroke, diving claw attack, death crumpled folded bat on ground. All wings entirely inside cell.",
+    "Колоколоухий морозный нетопырь",
+    "Bell-ear frost bat",
+    "Murciélago de escarcha de orejas campana",
+    "iceBat",
+    "snow",
+    "winged",
+    [
+      "dive",
+      "frost"
+    ]
+  ]
+]

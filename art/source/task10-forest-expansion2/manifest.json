@@ -1,0 +1,134 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-017",
+      "names": {
+        "ru": "Колокольный волк руин",
+        "en": "Bell-throated ruin wolf",
+        "es": "Lobo campanero de las ruinas"
+      },
+      "baseType": "forestWolf",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "pounce",
+        "haunt"
+      ],
+      "silhouette": "Lean gray canine, bronze throat bell, stone-arch mane and long tail",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-018",
+      "names": {
+        "ru": "Орешниковый удав",
+        "en": "Hazelnut coil adder",
+        "es": "Víbora de avellanas"
+      },
+      "baseType": "thornSnake",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "silhouette": "Legless copper snake, blunt nut-shaped brow horns, accordion throat and paddle tail",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-020",
+      "names": {
+        "ru": "Сотовый медведь",
+        "en": "Honeycomb-maw bear",
+        "es": "Oso de panales"
+      },
+      "baseType": "bear",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "silhouette": "Black round-eared bear with cream honeycomb ruff and gold wax forearm slabs",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-024",
+      "names": {
+        "ru": "Веретенохвостая крылатка",
+        "en": "Spindle-tailed bat",
+        "es": "Murciélago de cola de huso"
+      },
+      "baseType": "forestBat",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "dive",
+        "venom"
+      ],
+      "silhouette": "Narrow-winged chestnut bat with long tail ending in three leaf blades",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-031",
+      "names": {
+        "ru": "Дымоходный секач",
+        "en": "Chimney-bristle ruin boar",
+        "es": "Jabalí de chimeneas"
+      },
+      "baseType": "wildBoar",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "charge",
+        "stomp"
+      ],
+      "silhouette": "Low charcoal boar, shovel tusks and three hollow chimney-like dorsal tubes",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-034",
+      "names": {
+        "ru": "Клеверный листожвал",
+        "en": "Clover-mandible spider",
+        "es": "Araña de mandíbulas de trébol"
+      },
+      "baseType": "spider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "venom",
+        "roots"
+      ],
+      "silhouette": "Tall teardrop clover abdomen, pale arachnid legs and huge leaf mandibles",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-055",
+      "names": {
+        "ru": "Черепичный разбойник",
+        "en": "Shingle-shield ruin raider",
+        "es": "Bandido de escudo de tejas"
+      },
+      "baseType": "forestRaider",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "shot",
+        "haunt"
+      ],
+      "silhouette": "Human archer, red split coat, pointed roof-tile hood and broad shingle backshield",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-058",
+      "names": {
+        "ru": "Скелет железных врат",
+        "en": "Iron-gate skeleton",
+        "es": "Esqueleto de la reja de hierro"
+      },
+      "baseType": "skeleton",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "cleave",
+        "roots"
+      ],
+      "silhouette": "Thin exposed skeleton, rusted portcullis rib cage, spike crown and key poleaxe",
+      "statsChanged": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+✔ XP increases and levels refill HP/MP (1.034162ms)
+✔ Invalid XP never changes progression (0.19208ms)
+✔ failed acceptance save restores the full hero while preserving its live identity (2.100644ms)
+✔ failed reward checkpoint rolls back inventory stacks, XP, level, points and refilled resources (1.464352ms)
+✔ failed operation does not checkpoint or leak partial newly added fields (0.246653ms)
+✔ three slots are independent (1.614099ms)
+✔ invalid positions cannot overwrite a save (0.193052ms)
+✔ exports and imports complete data (0.509279ms)
+✔ migrates previous save format (0.294014ms)
+✔ rejects unknown save slots (0.337099ms)
+✔ deleted migrated character does not reappear from retained legacy backup (0.896244ms)
+✔ explicit scene slot cannot write into a subsequently selected character slot (0.217017ms)
+✔ storage failures leave load and write safe (0.184218ms)
+✔ pre-update raw save including unknown items stays available as a backup (0.31727ms)
+✔ gold and potion counts survive save and reload without granting consumed potions (0.792607ms)
+✔ missing potion fields migrate to starter counts and negative counts are rejected (0.226332ms)
+✔ full storage does not hide an existing character when backup cannot be written (0.163357ms)
+✔ all six classes earn exactly110 skill and165 attribute points through55 real level-ups, all30 skills remain attainable (5.695754ms)
+✔ 42→43,55→56, saved overflow XP and the level56 cap preserve banks and resources (0.538723ms)
+✔ all three legacy slots migrate once with raw pre-upgrade backups and no changes to coordinates, XP, skills, quests or items (2.144649ms)
+✔ new-format desert saves retain level56 and over5000 monster states without duplicates or truncation (41.92198ms)
+✔ actual combat formulas support enemy42/45/50/55/56 and every class can use only unchanged level42 gear (4.787622ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.595421ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (148.807853ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (91.795842ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.543151ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.239152ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (321.86557ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8862.817539

@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "totalPoses": 384,
+  "models": [
+    {
+      "id": "ancient-species-031",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 877,
+      "transparentFraction": 0.9195997450086806,
+      "nativeIdleHeights": [
+        45,
+        40,
+        41,
+        47,
+        50,
+        47,
+        43,
+        38
+      ],
+      "sha256": "ed2adcaff92f5a087500cb21b09060ff6b1707d5c1ad95503b9c9b0e31021af6"
+    },
+    {
+      "id": "ancient-species-033",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1474,
+      "transparentFraction": 0.8487421671549479,
+      "nativeIdleHeights": [
+        61,
+        61,
+        56,
+        58,
+        63,
+        57,
+        56,
+        59
+      ],
+      "sha256": "1185843b49160345606654e29491923f0419c56641d18315e5a8f6af050cbbe6"
+    },
+    {
+      "id": "ancient-species-034",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1061,
+      "transparentFraction": 0.8456734551323785,
+      "nativeIdleHeights": [
+        55,
+        57,
+        59,
+        58,
+        55,
+        58,
+        58,
+        59
+      ],
+      "sha256": "3ca8eff7af95d3a8c2301bf4cca8578e33fc99b592a34099cb8a305b9173a123"
+    },
+    {
+      "id": "ancient-species-035",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 601,
+      "transparentFraction": 0.8237262301974826,
+      "nativeIdleHeights": [
+        61,
+        53,
+        32,
+        34,
+        62,
+        45,
+        27,
+        53
+      ],
+      "sha256": "2f2a2fdee90d4bdda178a7d23d1db01cc8a6b7ea09a37dfcf8d4f54bc2ce5bb4"
+    },
+    {
+      "id": "ancient-species-037",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 702,
+      "transparentFraction": 0.6444201999240451,
+      "nativeIdleHeights": [
+        59,
+        60,
+        59,
+        59,
+        60,
+        59,
+        60,
+        59
+      ],
+      "sha256": "61e0db1fb750fcff474c6b2f465dea707faca8872c10251bad04a41833914489"
+    },
+    {
+      "id": "ancient-species-038",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1212,
+      "transparentFraction": 0.8624148898654513,
+      "nativeIdleHeights": [
+        69,
+        68,
+        69,
+        67,
+        70,
+        69,
+        70,
+        69
+      ],
+      "sha256": "8bf8025ca21bd0114f60e03a32f1ca9b5ac1e86e7bfe98265554ec132cd1676c"
+    },
+    {
+      "id": "ancient-species-039",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1476,
+      "transparentFraction": 0.8798709445529513,
+      "nativeIdleHeights": [
+        65,
+        63,
+        49,
+        50,
+        56,
+        50,
+        48,
+        61
+      ],
+      "sha256": "38dc55d6faa3900e280401cd9d3ba4f36aa85260f8fdab81cb7340f947d15879"
+    },
+    {
+      "id": "ancient-species-040",
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 798,
+      "transparentFraction": 0.7526796129014757,
+      "nativeIdleHeights": [
+        55,
+        56,
+        53,
+        51,
+        53,
+        53,
+        53,
+        53
+      ],
+      "sha256": "3b5c43a5b97a452643c42421d2fcadabd91f275eff513e8d24475e88a99f89cf"
+    }
+  ]
+}

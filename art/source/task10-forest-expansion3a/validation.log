@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-021",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-021.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-021.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1241,
+      "rgbaBytes": 4718592,
+      "sha256": "4a67b77a8d02835b0180faf0519bb967318ac6789ca93283f5be72f2bf65e7c9",
+      "scale": 0.9761904761904762,
+      "annotationHeight": 94
+    },
+    {
+      "id": "forest-species-027",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-027.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-027.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1926,
+      "rgbaBytes": 4718592,
+      "sha256": "2d22a7b6a6cd4868878c2846ff99bbaad80f5eaf671c871197ff9b592b6efa0e",
+      "scale": 1.2923076923076924,
+      "annotationHeight": 96
+    },
+    {
+      "id": "forest-species-029",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-029.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-029.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1253,
+      "rgbaBytes": 4718592,
+      "sha256": "63bb5a4d1972620638b8b3446ba0c4c1ca55de6f44c1fe456ab5012eaa881228",
+      "scale": 1.5769230769230769,
+      "annotationHeight": 94
+    },
+    {
+      "id": "forest-species-032",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-032.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-032.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1362,
+      "rgbaBytes": 4718592,
+      "sha256": "626f9ce0988a88ca4beeb48d97c72089d9d5c77ab5732fe526676d14ff725a24",
+      "scale": 1.368421052631579,
+      "annotationHeight": 90
+    },
+    {
+      "id": "forest-species-035",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-035.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-035.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1365,
+      "rgbaBytes": 4718592,
+      "sha256": "90f04e11eaba3637af9676455ef34c6a24cb803c1df72b3bc90b4c2f95c39344",
+      "scale": 1.1,
+      "annotationHeight": 89
+    },
+    {
+      "id": "forest-species-037",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-037.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-037.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 686,
+      "rgbaBytes": 4718592,
+      "sha256": "077fe02458e814a350a7bc0fc23cd60b48d4e1d9dfe2615179e244cd951ea31d",
+      "scale": 1.2258064516129032,
+      "annotationHeight": 88
+    },
+    {
+      "id": "forest-species-039",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-039.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-039.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 859,
+      "rgbaBytes": 4718592,
+      "sha256": "611d59d955d7268ab0264b9b667243a0831ab487c90987165d7226e9f4b742e1",
+      "scale": 1.5348837209302326,
+      "annotationHeight": 78
+    },
+    {
+      "id": "forest-species-041",
+      "image": "assets/actors/task10-forest-expansion3a/forest-species-041.png",
+      "atlas": "assets/actors/task10-forest-expansion3a/forest-species-041.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1314,
+      "rgbaBytes": 4718592,
+      "sha256": "d84347c256428274bdc6ee24d7afe8ecd401590102034617426d95681eee0873",
+      "scale": 1.0476190476190477,
+      "annotationHeight": 78
+    }
+  ]
+}

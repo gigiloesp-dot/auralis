@@ -1,0 +1,11 @@
+{
+  "generator": "image_gen.imagegen",
+  "transparentBackgroundRequested": true,
+  "referenceAudit": "All7 actualoriginal32-pose PNGs visually inspected, all7 atlases read; direction order E SE S SW W NW N NE; original1536x1024 grids192x256cells. ExactuniqueSpeciesArt metadata captured in definitions.json.",
+  "generation": "One newseparate16pose8column2row supplemental sheet per original reference:8directionalhurt/recoil+8directionalfullycollapseddeath. Originalidentity/style/materials/proportions/equipment explicitlypreserved. ReferencePNG neverchanged.",
+  "packing": "Only mechanical wholepose rectangularcrop at visuallyreviewed blankcorridors, uniformresize, registration andnewregioncomposite. Originaltop1536x1024copiedRGBA withoutmask. No alphaerase, masking, colorchange, programmaticanatomy or pose synthesis. Alpha projections andtemporarymetricimages only choosecropcoordinates/measurebounds; imagepixelsremainunchanged.",
+  "oldMetadata": "Entryclone preservesoriginalscale/annotationHeight/perbankbaselines. Exactly16newfootlines only (hurt/death); old32effectiveorigins continue to use unchangedoriginalbaselines, notuniversal225. Old32atlasentryobjects andtop1024RGBA preservedexactly.",
+  "runtimeVerified": false,
+  "semanticGeneration": "7 image_gen supplemental16pose generations after allreferenceinspections; nooriginalfileschanged. Allidentity/styleanatomy/posecreation came fromimage_gen, no programmaticsemanticchanges.",
+  "finalQA": "All112finalnewposes inspectednativebeige/dark withoriginalidentitysidecomparison. Wholepose wispnew16registration reduced8%toensure >60%fullytransparent pernewframe; moduleoriginalscale unchanged."
+}

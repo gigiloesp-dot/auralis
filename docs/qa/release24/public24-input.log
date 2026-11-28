@@ -1,0 +1,2 @@
+INPUT LIFECYCLE {"queued":{"created":250,"queuedBeforeDestroy":250,"pendingDead":0},"after":{"deadInInput":0,"pendingDead":0,"deadActive":0,"markers":0}}
+PASS250 real create/destroy-before-first-input-frame cycles without retained inputs

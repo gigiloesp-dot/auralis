@@ -1,0 +1,7146 @@
+[
+  {
+    "id": "desert-species-040",
+    "slug": "granite-palankin-guardian",
+    "baseType": "ancientSentinel",
+    "locomotion": "heavy",
+    "level": 46,
+    "anatomy": "A massive bipedal ancient guardian with a low wide rectangular violet granite torso shaped like a ceremonial palanquin, two thick terracotta pillar legs, two huge curved ivory tusk arms, a small gold mask recessed at chest center, a stepped turquoise temple roof on its shoulders. Weighty grounded walking, alternating pillar strides, tusk-arm smash, leaning recoil, fully fallen shattered palanquin death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Granite Palankin Guardian",
+      "ru": "\u0413\u0440\u0430\u043d\u0438\u0442\u043d\u044b\u0439 \u0441\u0442\u0440\u0430\u0436-\u043f\u0430\u043b\u0430\u043d\u043a\u0438\u043d",
+      "es": "Guardi\u00e1n palanqu\u00edn de granito"
+    },
+    "spotId": "desert-spot-040",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-040-clean.png",
+    "nativeIdleHeight": 70,
+    "scale": 1.0857142857142856,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.48598130841121495,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          192,
+          166
+        ],
+        "sourcePoseBounds": [
+          17,
+          13,
+          181,
+          164
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 68,
+        "footline": 168
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          192,
+          0,
+          384,
+          166
+        ],
+        "sourcePoseBounds": [
+          29,
+          14,
+          171,
+          162
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 70,
+        "footline": 170
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          576,
+          166
+        ],
+        "sourcePoseBounds": [
+          3,
+          13,
+          186,
+          164
+        ],
+        "paintedWidth": 50,
+        "paintedHeight": 70,
+        "footline": 170
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          576,
+          0,
+          768,
+          166
+        ],
+        "sourcePoseBounds": [
+          23,
+          12,
+          192,
+          162
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 70,
+        "footline": 170
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          960,
+          166
+        ],
+        "sourcePoseBounds": [
+          1,
+          13,
+          192,
+          162
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 68,
+        "footline": 168
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          960,
+          0,
+          1152,
+          166
+        ],
+        "sourcePoseBounds": [
+          1,
+          13,
+          192,
+          166
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 70,
+        "footline": 170
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1152,
+          0,
+          1344,
+          166
+        ],
+        "sourcePoseBounds": [
+          3,
+          13,
+          162,
+          164
+        ],
+        "paintedWidth": 49,
+        "paintedHeight": 70,
+        "footline": 170
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          166
+        ],
+        "sourcePoseBounds": [
+          15,
+          14,
+          164,
+          162
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 70,
+        "footline": 170
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          166,
+          190,
+          344
+        ],
+        "sourcePoseBounds": [
+          15,
+          8,
+          184,
+          178
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 67,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          190,
+          166,
+          382,
+          344
+        ],
+        "sourcePoseBounds": [
+          1,
+          7,
+          192,
+          172
+        ],
+        "paintedWidth": 69,
+        "paintedHeight": 68,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          382,
+          166,
+          576,
+          344
+        ],
+        "sourcePoseBounds": [
+          1,
+          9,
+          192,
+          178
+        ],
+        "paintedWidth": 51,
+        "paintedHeight": 68,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          576,
+          166,
+          768,
+          344
+        ],
+        "sourcePoseBounds": [
+          15,
+          1,
+          192,
+          170
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 66,
+        "footline": 162
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          768,
+          166,
+          958,
+          344
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          190,
+          176
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 67,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          958,
+          166,
+          1152,
+          344
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          178
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 67,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1152,
+          166,
+          1344,
+          344
+        ],
+        "sourcePoseBounds": [
+          29,
+          7,
+          188,
+          178
+        ],
+        "paintedWidth": 55,
+        "paintedHeight": 67,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1344,
+          166,
+          1536,
+          344
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          166,
+          170
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 68,
+        "footline": 165
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          344,
+          192,
+          502
+        ],
+        "sourcePoseBounds": [
+          15,
+          1,
+          190,
+          154
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 66,
+        "footline": 169
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          192,
+          344,
+          392,
+          502
+        ],
+        "sourcePoseBounds": [
+          5,
+          5,
+          200,
+          158
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 63,
+        "footline": 166
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          392,
+          344,
+          558,
+          502
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          160,
+          155
+        ],
+        "paintedWidth": 52,
+        "paintedHeight": 65,
+        "footline": 166
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          558,
+          344,
+          768,
+          502
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          210,
+          158
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 68,
+        "footline": 171
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          768,
+          344,
+          982,
+          502
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          214,
+          158
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 67,
+        "footline": 169
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          982,
+          344,
+          1154,
+          502
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          172,
+          156
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 67,
+        "footline": 170
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1154,
+          344,
+          1344,
+          502
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          160,
+          158
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 62,
+        "footline": 165
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          344,
+          1536,
+          502
+        ],
+        "sourcePoseBounds": [
+          15,
+          8,
+          173,
+          158
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 67,
+        "footline": 170
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          502,
+          192,
+          682
+        ],
+        "sourcePoseBounds": [
+          14,
+          23,
+          186,
+          180
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 63,
+        "footline": 164
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          502,
+          384,
+          682
+        ],
+        "sourcePoseBounds": [
+          3,
+          1,
+          192,
+          178
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 64,
+        "footline": 165
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          384,
+          502,
+          576,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          190,
+          180
+        ],
+        "paintedWidth": 52,
+        "paintedHeight": 68,
+        "footline": 165
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          576,
+          502,
+          768,
+          682
+        ],
+        "sourcePoseBounds": [
+          9,
+          11,
+          184,
+          170
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 65,
+        "footline": 163
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          768,
+          502,
+          960,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          180
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 66,
+        "footline": 164
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          960,
+          502,
+          1150,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          190,
+          180
+        ],
+        "paintedWidth": 62,
+        "paintedHeight": 68,
+        "footline": 163
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1150,
+          502,
+          1344,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          194,
+          180
+        ],
+        "paintedWidth": 56,
+        "paintedHeight": 70,
+        "footline": 165
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1344,
+          502,
+          1536,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          174,
+          160
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 67,
+        "footline": 161
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          682,
+          190,
+          848
+        ],
+        "sourcePoseBounds": [
+          14,
+          0,
+          185,
+          164
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 57,
+        "footline": 160
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          190,
+          682,
+          398,
+          848
+        ],
+        "sourcePoseBounds": [
+          1,
+          6,
+          208,
+          166
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 59,
+        "footline": 162
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          398,
+          682,
+          574,
+          848
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          176,
+          160
+        ],
+        "paintedWidth": 60,
+        "paintedHeight": 64,
+        "footline": 164
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          574,
+          682,
+          768,
+          848
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          194,
+          166
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 63,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          768,
+          682,
+          960,
+          848
+        ],
+        "sourcePoseBounds": [
+          9,
+          0,
+          190,
+          163
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 60,
+        "footline": 160
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          682,
+          1152,
+          848
+        ],
+        "sourcePoseBounds": [
+          9,
+          0,
+          192,
+          160
+        ],
+        "paintedWidth": 69,
+        "paintedHeight": 61,
+        "footline": 164
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          682,
+          1344,
+          848
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          184,
+          158
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 58,
+        "footline": 163
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1344,
+          682,
+          1536,
+          848
+        ],
+        "sourcePoseBounds": [
+          17,
+          13,
+          176,
+          151
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 60,
+        "footline": 164
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          848,
+          194,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          19,
+          194,
+          142
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 45,
+        "footline": 152
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          194,
+          848,
+          384,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          1,
+          190,
+          146
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 48,
+        "footline": 153
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          384,
+          848,
+          574,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          188,
+          144
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 45,
+        "footline": 154
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          574,
+          848,
+          760,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          186,
+          146
+        ],
+        "paintedWidth": 83,
+        "paintedHeight": 47,
+        "footline": 155
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          760,
+          848,
+          960,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          5,
+          200,
+          146
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 45,
+        "footline": 154
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          960,
+          848,
+          1152,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          31,
+          180,
+          146
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 44,
+        "footline": 155
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1152,
+          848,
+          1334,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          27,
+          182,
+          147
+        ],
+        "paintedWidth": 82,
+        "paintedHeight": 43,
+        "footline": 154
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1334,
+          848,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          28,
+          202,
+          144
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 44,
+        "footline": 152
+      }
+    ],
+    "sourceSHA256": "87fc5c62e71d384fa2db789a0b92b2857fbd659874b057a87f47fa25a3ba4917"
+  },
+  {
+    "id": "desert-species-041",
+    "slug": "ladlehorn-scarab",
+    "baseType": "scarab",
+    "locomotion": "crawler",
+    "level": 46,
+    "anatomy": "A low six-legged beetle with a huge broad golden ladle-shaped projecting horn, tall convex coral shell split into three overlapping fan plates, tiny teal head, six thin hooked cobalt jointed legs. Scuttling gait, spoon-horn thrust attack, curled recoil, fully overturned beetle with six legs curled skyward for death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Ladlehorn Scarab",
+      "ru": "\u0416\u0443\u043a-\u0447\u0435\u0440\u043f\u0430\u043a\u043e\u0440\u043e\u0433",
+      "es": "Escarabajo cuernocuchar\u00f3n"
+    },
+    "spotId": "desert-spot-041",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-041-reflow.png",
+    "nativeIdleHeight": 44,
+    "scale": 1.7272727272727273,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.5098039215686274,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          192,
+          174
+        ],
+        "sourcePoseBounds": [
+          51,
+          17,
+          192,
+          174
+        ],
+        "paintedWidth": 40,
+        "paintedHeight": 44,
+        "footline": 151
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          192,
+          0,
+          384,
+          174
+        ],
+        "sourcePoseBounds": [
+          21,
+          17,
+          192,
+          172
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 43,
+        "footline": 152
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          574,
+          174
+        ],
+        "sourcePoseBounds": [
+          1,
+          28,
+          190,
+          174
+        ],
+        "paintedWidth": 52,
+        "paintedHeight": 36,
+        "footline": 151
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          574,
+          0,
+          768,
+          174
+        ],
+        "sourcePoseBounds": [
+          1,
+          29,
+          194,
+          170
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 40,
+        "footline": 151
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          960,
+          174
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          192,
+          174
+        ],
+        "paintedWidth": 38,
+        "paintedHeight": 42,
+        "footline": 151
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          960,
+          0,
+          1152,
+          174
+        ],
+        "sourcePoseBounds": [
+          7,
+          21,
+          192,
+          174
+        ],
+        "paintedWidth": 44,
+        "paintedHeight": 40,
+        "footline": 151
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1152,
+          0,
+          1344,
+          174
+        ],
+        "sourcePoseBounds": [
+          1,
+          17,
+          182,
+          174
+        ],
+        "paintedWidth": 53,
+        "paintedHeight": 35,
+        "footline": 150
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          174
+        ],
+        "sourcePoseBounds": [
+          7,
+          44,
+          146,
+          174
+        ],
+        "paintedWidth": 45,
+        "paintedHeight": 43,
+        "footline": 152
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          174,
+          192,
+          338
+        ],
+        "sourcePoseBounds": [
+          47,
+          1,
+          192,
+          160
+        ],
+        "paintedWidth": 41,
+        "paintedHeight": 44,
+        "footline": 154
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          192,
+          174,
+          384,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          162
+        ],
+        "paintedWidth": 47,
+        "paintedHeight": 43,
+        "footline": 155
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          384,
+          174,
+          574,
+          338
+        ],
+        "sourcePoseBounds": [
+          5,
+          0,
+          190,
+          164
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 37,
+        "footline": 155
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          574,
+          174,
+          766,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          9,
+          192,
+          164
+        ],
+        "paintedWidth": 51,
+        "paintedHeight": 40,
+        "footline": 155
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          766,
+          174,
+          960,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          194,
+          164
+        ],
+        "paintedWidth": 40,
+        "paintedHeight": 42,
+        "footline": 155
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          960,
+          174,
+          1152,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          156
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 39,
+        "footline": 155
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1152,
+          174,
+          1344,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          178,
+          154
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 34,
+        "footline": 152
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1344,
+          174,
+          1536,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          172,
+          154
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 40,
+        "footline": 153
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          338,
+          194,
+          494
+        ],
+        "sourcePoseBounds": [
+          27,
+          1,
+          194,
+          128
+        ],
+        "paintedWidth": 37,
+        "paintedHeight": 42,
+        "footline": 154
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          194,
+          338,
+          384,
+          494
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          180,
+          156
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 38,
+        "footline": 156
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          384,
+          338,
+          574,
+          494
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          190,
+          156
+        ],
+        "paintedWidth": 52,
+        "paintedHeight": 36,
+        "footline": 156
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          574,
+          338,
+          766,
+          494
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          156
+        ],
+        "paintedWidth": 50,
+        "paintedHeight": 40,
+        "footline": 158
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          766,
+          338,
+          960,
+          494
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          194,
+          156
+        ],
+        "paintedWidth": 37,
+        "paintedHeight": 40,
+        "footline": 157
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          960,
+          338,
+          1150,
+          494
+        ],
+        "sourcePoseBounds": [
+          17,
+          11,
+          190,
+          156
+        ],
+        "paintedWidth": 49,
+        "paintedHeight": 39,
+        "footline": 158
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1150,
+          338,
+          1344,
+          494
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          194,
+          156
+        ],
+        "paintedWidth": 55,
+        "paintedHeight": 35,
+        "footline": 156
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          338,
+          1536,
+          494
+        ],
+        "sourcePoseBounds": [
+          1,
+          9,
+          178,
+          156
+        ],
+        "paintedWidth": 47,
+        "paintedHeight": 39,
+        "footline": 157
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          494,
+          192,
+          670
+        ],
+        "sourcePoseBounds": [
+          49,
+          1,
+          184,
+          170
+        ],
+        "paintedWidth": 41,
+        "paintedHeight": 43,
+        "footline": 152
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          494,
+          384,
+          670
+        ],
+        "sourcePoseBounds": [
+          5,
+          1,
+          192,
+          176
+        ],
+        "paintedWidth": 53,
+        "paintedHeight": 35,
+        "footline": 152
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          384,
+          494,
+          576,
+          670
+        ],
+        "sourcePoseBounds": [
+          5,
+          0,
+          192,
+          176
+        ],
+        "paintedWidth": 60,
+        "paintedHeight": 33,
+        "footline": 150
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          576,
+          494,
+          768,
+          670
+        ],
+        "sourcePoseBounds": [
+          1,
+          9,
+          192,
+          176
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 38,
+        "footline": 150
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          768,
+          494,
+          960,
+          670
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          176
+        ],
+        "paintedWidth": 41,
+        "paintedHeight": 44,
+        "footline": 154
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          960,
+          494,
+          1140,
+          670
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          180,
+          176
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 38,
+        "footline": 151
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1140,
+          494,
+          1344,
+          670
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          202,
+          176
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 31,
+        "footline": 150
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1344,
+          494,
+          1536,
+          670
+        ],
+        "sourcePoseBounds": [
+          3,
+          1,
+          174,
+          174
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 36,
+        "footline": 152
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          670,
+          192,
+          874
+        ],
+        "sourcePoseBounds": [
+          33,
+          9,
+          186,
+          204
+        ],
+        "paintedWidth": 39,
+        "paintedHeight": 46,
+        "footline": 131
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          192,
+          670,
+          384,
+          874
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          180
+        ],
+        "paintedWidth": 41,
+        "paintedHeight": 41,
+        "footline": 132
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          384,
+          670,
+          576,
+          874
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          188,
+          204
+        ],
+        "paintedWidth": 47,
+        "paintedHeight": 37,
+        "footline": 131
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          576,
+          670,
+          768,
+          874
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          202
+        ],
+        "paintedWidth": 41,
+        "paintedHeight": 40,
+        "footline": 132
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          768,
+          670,
+          960,
+          874
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          204
+        ],
+        "paintedWidth": 38,
+        "paintedHeight": 40,
+        "footline": 130
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          670,
+          1152,
+          874
+        ],
+        "sourcePoseBounds": [
+          5,
+          1,
+          192,
+          180
+        ],
+        "paintedWidth": 40,
+        "paintedHeight": 38,
+        "footline": 131
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          670,
+          1344,
+          874
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          186,
+          196
+        ],
+        "paintedWidth": 48,
+        "paintedHeight": 36,
+        "footline": 130
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1344,
+          670,
+          1536,
+          874
+        ],
+        "sourcePoseBounds": [
+          15,
+          9,
+          146,
+          202
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 42,
+        "footline": 133
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          874,
+          192,
+          1024
+        ],
+        "sourcePoseBounds": [
+          49,
+          1,
+          168,
+          130
+        ],
+        "paintedWidth": 41,
+        "paintedHeight": 36,
+        "footline": 141
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          192,
+          874,
+          384,
+          1024
+        ],
+        "sourcePoseBounds": [
+          11,
+          6,
+          162,
+          90
+        ],
+        "paintedWidth": 47,
+        "paintedHeight": 31,
+        "footline": 140
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          384,
+          874,
+          576,
+          1024
+        ],
+        "sourcePoseBounds": [
+          37,
+          3,
+          192,
+          132
+        ],
+        "paintedWidth": 53,
+        "paintedHeight": 31,
+        "footline": 139
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          576,
+          874,
+          768,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          7,
+          188,
+          120
+        ],
+        "paintedWidth": 47,
+        "paintedHeight": 32,
+        "footline": 140
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          768,
+          874,
+          960,
+          1024
+        ],
+        "sourcePoseBounds": [
+          47,
+          2,
+          186,
+          131
+        ],
+        "paintedWidth": 43,
+        "paintedHeight": 36,
+        "footline": 143
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          960,
+          874,
+          1152,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          7,
+          140,
+          98
+        ],
+        "paintedWidth": 49,
+        "paintedHeight": 31,
+        "footline": 140
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1152,
+          874,
+          1344,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          19,
+          170,
+          124
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 32,
+        "footline": 140
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1344,
+          874,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          143,
+          150
+        ],
+        "paintedWidth": 50,
+        "paintedHeight": 33,
+        "footline": 140
+      }
+    ],
+    "sourceSHA256": "d4f5c1f18f6e8d6b2103a5370cadf6c8e47592a0945b49390b7e1ace9e71802c"
+  },
+  {
+    "id": "desert-species-042",
+    "slug": "lantern-jaw-cobra",
+    "baseType": "desertSnake",
+    "locomotion": "serpent",
+    "level": 55,
+    "anatomy": "A limbless ground-slithering cobra with an unusually tall narrow orange accordion hood, a square luminous turquoise lantern lower jaw, two long flexible ivory brow horns, and long purple segmented tail. No limbs. Serpentine sliding curves, extended striking neck, compressed hurt, fully limp sideways uncoiled death with hood folded flat.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Lantern Jaw Cobra",
+      "ru": "\u041a\u043e\u0431\u0440\u0430 \u0444\u043e\u043d\u0430\u0440\u043e\u0447\u0435\u043b\u044e\u0441\u0442\u044c",
+      "es": "Cobra mand\u00edbula farol"
+    },
+    "spotId": "desert-spot-042",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-042-reflow.png",
+    "nativeIdleHeight": 58,
+    "scale": 1.3103448275862069,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.49523809523809526,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          190,
+          172
+        ],
+        "sourcePoseBounds": [
+          0,
+          8,
+          190,
+          172
+        ],
+        "paintedWidth": 30,
+        "paintedHeight": 58,
+        "footline": 167
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          190,
+          0,
+          384,
+          172
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          194,
+          172
+        ],
+        "paintedWidth": 34,
+        "paintedHeight": 54,
+        "footline": 164
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          576,
+          172
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          192,
+          172
+        ],
+        "paintedWidth": 47,
+        "paintedHeight": 54,
+        "footline": 165
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          576,
+          0,
+          768,
+          172
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          192,
+          172
+        ],
+        "paintedWidth": 39,
+        "paintedHeight": 54,
+        "footline": 164
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          958,
+          172
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          190,
+          172
+        ],
+        "paintedWidth": 29,
+        "paintedHeight": 56,
+        "footline": 166
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          958,
+          0,
+          1158,
+          172
+        ],
+        "sourcePoseBounds": [
+          1,
+          9,
+          200,
+          172
+        ],
+        "paintedWidth": 38,
+        "paintedHeight": 53,
+        "footline": 163
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1158,
+          0,
+          1344,
+          172
+        ],
+        "sourcePoseBounds": [
+          1,
+          19,
+          186,
+          171
+        ],
+        "paintedWidth": 39,
+        "paintedHeight": 54,
+        "footline": 164
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          172
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          192,
+          172
+        ],
+        "paintedWidth": 32,
+        "paintedHeight": 55,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          172,
+          190,
+          366
+        ],
+        "sourcePoseBounds": [
+          0,
+          1,
+          190,
+          194
+        ],
+        "paintedWidth": 37,
+        "paintedHeight": 52,
+        "footline": 153
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          190,
+          172,
+          382,
+          366
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          194
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 47,
+        "footline": 151
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          382,
+          172,
+          592,
+          366
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          210,
+          194
+        ],
+        "paintedWidth": 61,
+        "paintedHeight": 48,
+        "footline": 150
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          592,
+          172,
+          768,
+          366
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          176,
+          194
+        ],
+        "paintedWidth": 55,
+        "paintedHeight": 44,
+        "footline": 146
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          768,
+          172,
+          958,
+          366
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          190,
+          194
+        ],
+        "paintedWidth": 32,
+        "paintedHeight": 49,
+        "footline": 151
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          958,
+          172,
+          1152,
+          366
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          194,
+          194
+        ],
+        "paintedWidth": 50,
+        "paintedHeight": 47,
+        "footline": 150
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1152,
+          172,
+          1348,
+          366
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          196,
+          194
+        ],
+        "paintedWidth": 60,
+        "paintedHeight": 48,
+        "footline": 151
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1348,
+          172,
+          1536,
+          366
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          187,
+          194
+        ],
+        "paintedWidth": 42,
+        "paintedHeight": 49,
+        "footline": 152
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          366,
+          186,
+          536
+        ],
+        "sourcePoseBounds": [
+          25,
+          0,
+          186,
+          162
+        ],
+        "paintedWidth": 34,
+        "paintedHeight": 50,
+        "footline": 153
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          186,
+          366,
+          382,
+          536
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          196,
+          170
+        ],
+        "paintedWidth": 40,
+        "paintedHeight": 45,
+        "footline": 148
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          382,
+          366,
+          566,
+          536
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          184,
+          170
+        ],
+        "paintedWidth": 59,
+        "paintedHeight": 46,
+        "footline": 148
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          566,
+          366,
+          768,
+          536
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          202,
+          170
+        ],
+        "paintedWidth": 55,
+        "paintedHeight": 49,
+        "footline": 151
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          768,
+          366,
+          960,
+          536
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          170
+        ],
+        "paintedWidth": 30,
+        "paintedHeight": 46,
+        "footline": 149
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          960,
+          366,
+          1152,
+          536
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          170
+        ],
+        "paintedWidth": 52,
+        "paintedHeight": 47,
+        "footline": 149
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1152,
+          366,
+          1344,
+          536
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          170
+        ],
+        "paintedWidth": 61,
+        "paintedHeight": 46,
+        "footline": 149
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          366,
+          1536,
+          536
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          170,
+          170
+        ],
+        "paintedWidth": 42,
+        "paintedHeight": 48,
+        "footline": 151
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          536,
+          192,
+          684
+        ],
+        "sourcePoseBounds": [
+          57,
+          7,
+          162,
+          148
+        ],
+        "paintedWidth": 32,
+        "paintedHeight": 50,
+        "footline": 160
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          536,
+          398,
+          684
+        ],
+        "sourcePoseBounds": [
+          17,
+          1,
+          206,
+          144
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 48,
+        "footline": 159
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          398,
+          536,
+          600,
+          684
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          202,
+          144
+        ],
+        "paintedWidth": 69,
+        "paintedHeight": 46,
+        "footline": 156
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          600,
+          536,
+          766,
+          684
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          166,
+          148
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 48,
+        "footline": 157
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          766,
+          536,
+          952,
+          684
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          186,
+          148
+        ],
+        "paintedWidth": 33,
+        "paintedHeight": 52,
+        "footline": 159
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          952,
+          536,
+          1144,
+          684
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          148
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 47,
+        "footline": 157
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1144,
+          536,
+          1350,
+          684
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          206,
+          148
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 48,
+        "footline": 157
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1350,
+          536,
+          1536,
+          684
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          168,
+          148
+        ],
+        "paintedWidth": 49,
+        "paintedHeight": 50,
+        "footline": 160
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          684,
+          192,
+          862
+        ],
+        "sourcePoseBounds": [
+          25,
+          1,
+          192,
+          176
+        ],
+        "paintedWidth": 36,
+        "paintedHeight": 46,
+        "footline": 151
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          192,
+          684,
+          368,
+          862
+        ],
+        "sourcePoseBounds": [
+          1,
+          7,
+          176,
+          178
+        ],
+        "paintedWidth": 40,
+        "paintedHeight": 41,
+        "footline": 149
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          368,
+          684,
+          576,
+          862
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          208,
+          178
+        ],
+        "paintedWidth": 45,
+        "paintedHeight": 41,
+        "footline": 148
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          576,
+          684,
+          770,
+          862
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          194,
+          178
+        ],
+        "paintedWidth": 39,
+        "paintedHeight": 44,
+        "footline": 148
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          770,
+          684,
+          960,
+          862
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          190,
+          178
+        ],
+        "paintedWidth": 31,
+        "paintedHeight": 44,
+        "footline": 149
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          684,
+          1152,
+          862
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          192,
+          178
+        ],
+        "paintedWidth": 43,
+        "paintedHeight": 44,
+        "footline": 150
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          684,
+          1346,
+          862
+        ],
+        "sourcePoseBounds": [
+          3,
+          1,
+          194,
+          178
+        ],
+        "paintedWidth": 45,
+        "paintedHeight": 42,
+        "footline": 149
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1346,
+          684,
+          1536,
+          862
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          130,
+          178
+        ],
+        "paintedWidth": 41,
+        "paintedHeight": 40,
+        "footline": 150
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          862,
+          192,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          9,
+          192,
+          162
+        ],
+        "paintedWidth": 43,
+        "paintedHeight": 24,
+        "footline": 143
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          192,
+          862,
+          384,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          162
+        ],
+        "paintedWidth": 55,
+        "paintedHeight": 24,
+        "footline": 143
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          384,
+          862,
+          584,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          200,
+          162
+        ],
+        "paintedWidth": 62,
+        "paintedHeight": 23,
+        "footline": 142
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          584,
+          862,
+          768,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          184,
+          162
+        ],
+        "paintedWidth": 55,
+        "paintedHeight": 22,
+        "footline": 142
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          768,
+          862,
+          958,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          184,
+          162
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 22,
+        "footline": 142
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          958,
+          862,
+          1152,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          194,
+          162
+        ],
+        "paintedWidth": 57,
+        "paintedHeight": 22,
+        "footline": 141
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1152,
+          862,
+          1344,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          0,
+          192,
+          162
+        ],
+        "paintedWidth": 62,
+        "paintedHeight": 22,
+        "footline": 142
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1344,
+          862,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          154,
+          140
+        ],
+        "paintedWidth": 52,
+        "paintedHeight": 22,
+        "footline": 142
+      }
+    ],
+    "sourceSHA256": "e6e0725103167e1a7814722b0b5ec9e4c4f66dbe970465112d7cd23bac960b32"
+  },
+  {
+    "id": "desert-species-043",
+    "slug": "saffron-orbit-oracle",
+    "baseType": "arcaneWisp",
+    "locomotion": "hover",
+    "level": 52,
+    "anatomy": "A hovering magical spirit consisting of a large opaque saffron crescent shell embracing a turquoise spherical eyeball, two broad red pennant fins projecting horizontally, and three thick blue tapering ribbons dangling below. No humanoid body or feet. Floating bob, swooping orbit attack, folding hurt, collapsed crescent and tangled ribbons on ground for death. No glow haze or particles.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Saffron Orbit Oracle",
+      "ru": "\u0428\u0430\u0444\u0440\u0430\u043d\u043e\u0432\u044b\u0439 \u043e\u0440\u0430\u043a\u0443\u043b \u043e\u0440\u0431\u0438\u0442\u044b",
+      "es": "Or\u00e1culo orbital azafr\u00e1n"
+    },
+    "spotId": "desert-spot-043",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-043-clean.png",
+    "nativeIdleHeight": 66,
+    "scale": 1.1515151515151516,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.5252525252525253,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          192,
+          188
+        ],
+        "sourcePoseBounds": [
+          12,
+          17,
+          190,
+          185
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 66,
+        "footline": 155
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          192,
+          0,
+          384,
+          188
+        ],
+        "sourcePoseBounds": [
+          19,
+          17,
+          192,
+          188
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 65,
+        "footline": 154
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          576,
+          188
+        ],
+        "sourcePoseBounds": [
+          1,
+          19,
+          178,
+          188
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 66,
+        "footline": 156
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          576,
+          0,
+          768,
+          188
+        ],
+        "sourcePoseBounds": [
+          17,
+          29,
+          188,
+          186
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 65,
+        "footline": 156
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          960,
+          188
+        ],
+        "sourcePoseBounds": [
+          5,
+          28,
+          176,
+          188
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 66,
+        "footline": 157
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          960,
+          0,
+          1152,
+          188
+        ],
+        "sourcePoseBounds": [
+          15,
+          23,
+          192,
+          181
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 66,
+        "footline": 157
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1152,
+          0,
+          1344,
+          188
+        ],
+        "sourcePoseBounds": [
+          1,
+          19,
+          182,
+          188
+        ],
+        "paintedWidth": 69,
+        "paintedHeight": 65,
+        "footline": 155
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          188
+        ],
+        "sourcePoseBounds": [
+          9,
+          19,
+          173,
+          172
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 64,
+        "footline": 153
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          188,
+          192,
+          338
+        ],
+        "sourcePoseBounds": [
+          12,
+          5,
+          191,
+          146
+        ],
+        "paintedWidth": 91,
+        "paintedHeight": 58,
+        "footline": 158
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          192,
+          188,
+          384,
+          338
+        ],
+        "sourcePoseBounds": [
+          5,
+          1,
+          192,
+          150
+        ],
+        "paintedWidth": 82,
+        "paintedHeight": 66,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          384,
+          188,
+          576,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          187,
+          150
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 64,
+        "footline": 163
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          576,
+          188,
+          768,
+          338
+        ],
+        "sourcePoseBounds": [
+          15,
+          1,
+          176,
+          148
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 63,
+        "footline": 163
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          768,
+          188,
+          960,
+          338
+        ],
+        "sourcePoseBounds": [
+          11,
+          0,
+          178,
+          150
+        ],
+        "paintedWidth": 83,
+        "paintedHeight": 66,
+        "footline": 166
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          960,
+          188,
+          1152,
+          338
+        ],
+        "sourcePoseBounds": [
+          1,
+          2,
+          174,
+          150
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 63,
+        "footline": 163
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1152,
+          188,
+          1344,
+          338
+        ],
+        "sourcePoseBounds": [
+          14,
+          0,
+          163,
+          144
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 62,
+        "footline": 162
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1344,
+          188,
+          1536,
+          338
+        ],
+        "sourcePoseBounds": [
+          5,
+          2,
+          172,
+          148
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 65,
+        "footline": 164
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          338,
+          193,
+          510
+        ],
+        "sourcePoseBounds": [
+          15,
+          8,
+          193,
+          170
+        ],
+        "paintedWidth": 88,
+        "paintedHeight": 64,
+        "footline": 162
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          193,
+          338,
+          384,
+          510
+        ],
+        "sourcePoseBounds": [
+          14,
+          0,
+          189,
+          172
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 65,
+        "footline": 161
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          384,
+          338,
+          576,
+          510
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          180,
+          172
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 62,
+        "footline": 160
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          576,
+          338,
+          766,
+          510
+        ],
+        "sourcePoseBounds": [
+          1,
+          2,
+          190,
+          172
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 60,
+        "footline": 158
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          766,
+          338,
+          960,
+          510
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          178,
+          166
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 64,
+        "footline": 164
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          960,
+          338,
+          1152,
+          510
+        ],
+        "sourcePoseBounds": [
+          11,
+          3,
+          169,
+          162
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 61,
+        "footline": 159
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1152,
+          338,
+          1344,
+          510
+        ],
+        "sourcePoseBounds": [
+          17,
+          5,
+          166,
+          165
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 62,
+        "footline": 159
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          338,
+          1536,
+          510
+        ],
+        "sourcePoseBounds": [
+          5,
+          17,
+          176,
+          172
+        ],
+        "paintedWidth": 83,
+        "paintedHeight": 64,
+        "footline": 162
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          510,
+          192,
+          692
+        ],
+        "sourcePoseBounds": [
+          11,
+          3,
+          182,
+          181
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 62,
+        "footline": 153
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          510,
+          384,
+          692
+        ],
+        "sourcePoseBounds": [
+          3,
+          0,
+          189,
+          173
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 66,
+        "footline": 156
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          384,
+          510,
+          582,
+          692
+        ],
+        "sourcePoseBounds": [
+          13,
+          0,
+          198,
+          178
+        ],
+        "paintedWidth": 84,
+        "paintedHeight": 67,
+        "footline": 156
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          582,
+          510,
+          766,
+          692
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          176,
+          162
+        ],
+        "paintedWidth": 84,
+        "paintedHeight": 71,
+        "footline": 157
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          766,
+          510,
+          958,
+          692
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          192,
+          178
+        ],
+        "paintedWidth": 92,
+        "paintedHeight": 76,
+        "footline": 159
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          958,
+          510,
+          1152,
+          692
+        ],
+        "sourcePoseBounds": [
+          1,
+          2,
+          178,
+          182
+        ],
+        "paintedWidth": 85,
+        "paintedHeight": 74,
+        "footline": 158
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1152,
+          510,
+          1344,
+          692
+        ],
+        "sourcePoseBounds": [
+          3,
+          14,
+          192,
+          178
+        ],
+        "paintedWidth": 88,
+        "paintedHeight": 71,
+        "footline": 157
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1344,
+          510,
+          1536,
+          692
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          177,
+          172
+        ],
+        "paintedWidth": 90,
+        "paintedHeight": 70,
+        "footline": 156
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          692,
+          192,
+          880
+        ],
+        "sourcePoseBounds": [
+          0,
+          1,
+          184,
+          172
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 59,
+        "footline": 140
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          192,
+          692,
+          384,
+          880
+        ],
+        "sourcePoseBounds": [
+          13,
+          10,
+          176,
+          176
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 62,
+        "footline": 144
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          384,
+          692,
+          576,
+          880
+        ],
+        "sourcePoseBounds": [
+          11,
+          11,
+          192,
+          186
+        ],
+        "paintedWidth": 59,
+        "paintedHeight": 61,
+        "footline": 145
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          576,
+          692,
+          768,
+          880
+        ],
+        "sourcePoseBounds": [
+          1,
+          10,
+          188,
+          186
+        ],
+        "paintedWidth": 62,
+        "paintedHeight": 61,
+        "footline": 145
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          768,
+          692,
+          960,
+          880
+        ],
+        "sourcePoseBounds": [
+          11,
+          11,
+          190,
+          184
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 61,
+        "footline": 146
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          692,
+          1152,
+          880
+        ],
+        "sourcePoseBounds": [
+          11,
+          1,
+          192,
+          188
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 63,
+        "footline": 147
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          692,
+          1344,
+          880
+        ],
+        "sourcePoseBounds": [
+          13,
+          9,
+          160,
+          184
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 62,
+        "footline": 146
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1344,
+          692,
+          1536,
+          880
+        ],
+        "sourcePoseBounds": [
+          11,
+          10,
+          172,
+          176
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 60,
+        "footline": 143
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          880,
+          192,
+          1024
+        ],
+        "sourcePoseBounds": [
+          17,
+          3,
+          189,
+          114
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 43,
+        "footline": 154
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          192,
+          880,
+          382,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          13,
+          178,
+          114
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 44,
+        "footline": 153
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          382,
+          880,
+          570,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          188,
+          116
+        ],
+        "paintedWidth": 83,
+        "paintedHeight": 44,
+        "footline": 153
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          570,
+          880,
+          768,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          13,
+          196,
+          118
+        ],
+        "paintedWidth": 88,
+        "paintedHeight": 43,
+        "footline": 152
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          768,
+          880,
+          960,
+          1024
+        ],
+        "sourcePoseBounds": [
+          10,
+          23,
+          182,
+          116
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 41,
+        "footline": 154
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          960,
+          880,
+          1152,
+          1024
+        ],
+        "sourcePoseBounds": [
+          7,
+          9,
+          183,
+          122
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 47,
+        "footline": 156
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1152,
+          880,
+          1344,
+          1024
+        ],
+        "sourcePoseBounds": [
+          16,
+          15,
+          192,
+          112
+        ],
+        "paintedWidth": 84,
+        "paintedHeight": 42,
+        "footline": 152
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1344,
+          880,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          17,
+          180,
+          114
+        ],
+        "paintedWidth": 85,
+        "paintedHeight": 43,
+        "footline": 154
+      }
+    ],
+    "sourceSHA256": "e1fda7444237ec723d20af224f3d13194c9088003812e04f65487cbd87c2077d"
+  },
+  {
+    "id": "desert-species-044",
+    "slug": "amphora-throne-colossus",
+    "baseType": "ancientSentinel",
+    "locomotion": "heavy",
+    "level": 53,
+    "anatomy": "A heavy quadrupedal ancient clay guardian: giant pale turquoise amphora torso lying horizontally, wide red carved throne back rising vertically on top, massive terracotta lion head at front, four short thick golden block paws, two curling ceramic vessel handles at sides. Ground stomping alternating four-leg gait, head ram attack, crouched recoil, fully tipped sideways broken amphora and fallen throne death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Amphora Throne Colossus",
+      "ru": "\u0410\u043c\u0444\u043e\u0440\u043d\u044b\u0439 \u0442\u0440\u043e\u043d\u043e\u043a\u043e\u043b\u043e\u0441\u0441",
+      "es": "Coloso trono de \u00e1nfora"
+    },
+    "spotId": "desert-spot-044",
+    "proposedAbilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-044-clean.png",
+    "nativeIdleHeight": 81,
+    "scale": 0.9382716049382716,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.5174129353233831,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          192,
+          170
+        ],
+        "sourcePoseBounds": [
+          29,
+          0,
+          178,
+          170
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 80,
+        "footline": 170
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          192,
+          0,
+          384,
+          170
+        ],
+        "sourcePoseBounds": [
+          37,
+          0,
+          192,
+          170
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 81,
+        "footline": 171
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          578,
+          170
+        ],
+        "sourcePoseBounds": [
+          8,
+          0,
+          194,
+          166
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 79,
+        "footline": 169
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          578,
+          0,
+          768,
+          170
+        ],
+        "sourcePoseBounds": [
+          11,
+          0,
+          175,
+          170
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 80,
+        "footline": 169
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          960,
+          170
+        ],
+        "sourcePoseBounds": [
+          13,
+          0,
+          192,
+          170
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 80,
+        "footline": 169
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          960,
+          0,
+          1147,
+          170
+        ],
+        "sourcePoseBounds": [
+          9,
+          0,
+          180,
+          170
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 79,
+        "footline": 169
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1147,
+          0,
+          1344,
+          170
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          193,
+          170
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 77,
+        "footline": 168
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          170
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          160,
+          170
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 81,
+        "footline": 172
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          170,
+          192,
+          340
+        ],
+        "sourcePoseBounds": [
+          31,
+          0,
+          188,
+          170
+        ],
+        "paintedWidth": 67,
+        "paintedHeight": 78,
+        "footline": 169
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          192,
+          170,
+          385,
+          340
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          193,
+          166
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 78,
+        "footline": 170
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          385,
+          170,
+          578,
+          340
+        ],
+        "sourcePoseBounds": [
+          4,
+          7,
+          193,
+          170
+        ],
+        "paintedWidth": 88,
+        "paintedHeight": 73,
+        "footline": 166
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          578,
+          170,
+          768,
+          340
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          190,
+          170
+        ],
+        "paintedWidth": 69,
+        "paintedHeight": 79,
+        "footline": 170
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          768,
+          170,
+          960,
+          340
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          170
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 79,
+        "footline": 170
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          960,
+          170,
+          1150,
+          340
+        ],
+        "sourcePoseBounds": [
+          11,
+          0,
+          190,
+          170
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 78,
+        "footline": 169
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1150,
+          170,
+          1342,
+          340
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          192,
+          168
+        ],
+        "paintedWidth": 85,
+        "paintedHeight": 73,
+        "footline": 167
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1342,
+          170,
+          1536,
+          340
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          166,
+          168
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 77,
+        "footline": 169
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          340,
+          192,
+          508
+        ],
+        "sourcePoseBounds": [
+          0,
+          3,
+          188,
+          162
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 75,
+        "footline": 167
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          192,
+          340,
+          386,
+          508
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          194,
+          168
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 75,
+        "footline": 169
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          386,
+          340,
+          586,
+          508
+        ],
+        "sourcePoseBounds": [
+          7,
+          1,
+          200,
+          168
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 69,
+        "footline": 166
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          586,
+          340,
+          766,
+          508
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          180,
+          168
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 77,
+        "footline": 171
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          766,
+          340,
+          960,
+          508
+        ],
+        "sourcePoseBounds": [
+          1,
+          8,
+          180,
+          168
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 78,
+        "footline": 171
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          960,
+          340,
+          1150,
+          508
+        ],
+        "sourcePoseBounds": [
+          9,
+          10,
+          190,
+          168
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 76,
+        "footline": 170
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1150,
+          340,
+          1344,
+          508
+        ],
+        "sourcePoseBounds": [
+          1,
+          4,
+          194,
+          168
+        ],
+        "paintedWidth": 85,
+        "paintedHeight": 66,
+        "footline": 163
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          340,
+          1536,
+          508
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          160,
+          160
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 75,
+        "footline": 168
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          508,
+          192,
+          682
+        ],
+        "sourcePoseBounds": [
+          27,
+          5,
+          192,
+          166
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 73,
+        "footline": 163
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          508,
+          384,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          181,
+          166
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 75,
+        "footline": 165
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          384,
+          508,
+          582,
+          682
+        ],
+        "sourcePoseBounds": [
+          5,
+          0,
+          198,
+          172
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 72,
+        "footline": 164
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          582,
+          508,
+          774,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          192,
+          166
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 74,
+        "footline": 165
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          774,
+          508,
+          956,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          182,
+          172
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 74,
+        "footline": 164
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          956,
+          508,
+          1143,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          182,
+          174
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 74,
+        "footline": 165
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1143,
+          508,
+          1344,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          0,
+          201,
+          174
+        ],
+        "paintedWidth": 88,
+        "paintedHeight": 72,
+        "footline": 163
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1344,
+          508,
+          1536,
+          682
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          168,
+          166
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 74,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          682,
+          190,
+          848
+        ],
+        "sourcePoseBounds": [
+          33,
+          1,
+          190,
+          154
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 71,
+        "footline": 163
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          190,
+          682,
+          384,
+          848
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          190,
+          160
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 73,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          384,
+          682,
+          576,
+          848
+        ],
+        "sourcePoseBounds": [
+          3,
+          3,
+          178,
+          166
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 73,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          576,
+          682,
+          768,
+          848
+        ],
+        "sourcePoseBounds": [
+          9,
+          5,
+          177,
+          156
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 73,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          768,
+          682,
+          960,
+          848
+        ],
+        "sourcePoseBounds": [
+          9,
+          1,
+          190,
+          156
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 73,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          682,
+          1152,
+          848
+        ],
+        "sourcePoseBounds": [
+          9,
+          3,
+          192,
+          162
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 72,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          682,
+          1344,
+          848
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          190,
+          166
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 72,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1344,
+          682,
+          1536,
+          848
+        ],
+        "sourcePoseBounds": [
+          1,
+          5,
+          168,
+          153
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 73,
+        "footline": 165
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          848,
+          192,
+          1024
+        ],
+        "sourcePoseBounds": [
+          19,
+          27,
+          192,
+          146
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 52,
+        "footline": 156
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          192,
+          848,
+          384,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          181,
+          147
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 49,
+        "footline": 154
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          384,
+          848,
+          576,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          190,
+          157
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 44,
+        "footline": 150
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          576,
+          848,
+          768,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          3,
+          181,
+          176
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 48,
+        "footline": 154
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          768,
+          848,
+          956,
+          1024
+        ],
+        "sourcePoseBounds": [
+          9,
+          9,
+          188,
+          146
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 48,
+        "footline": 152
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          956,
+          848,
+          1148,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          2,
+          180,
+          142
+        ],
+        "paintedWidth": 82,
+        "paintedHeight": 46,
+        "footline": 150
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1148,
+          848,
+          1344,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          1,
+          188,
+          148
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 51,
+        "footline": 154
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1344,
+          848,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          21,
+          174,
+          152
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 53,
+        "footline": 158
+      }
+    ],
+    "sourceSHA256": "5f57b676cf87f9a56c5012d9be1c5b724590a830e2c4c4c07aa4c0da58828c0f"
+  },
+  {
+    "id": "desert-species-045",
+    "slug": "trident-mantle-beetle",
+    "baseType": "scarab",
+    "locomotion": "crawler",
+    "level": 51,
+    "anatomy": "A flat triangular six-legged desert scarab with broad emerald shield shell like a manta ray, a tall three-pronged ivory fork crest on the front, short fat orange abdomen, six heavy red angular jointed legs widely spread. Ground crawler, alternating scuttle steps, forward fork stab attack, folded recoil, fully overturned shell with curled legs for death. No wings.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Trident Mantle Beetle",
+      "ru": "\u0416\u0443\u043a \u0442\u0440\u0435\u0437\u0443\u0431\u043e\u043c\u0430\u043d\u0442\u0438\u044f",
+      "es": "Escarabajo manto tridente"
+    },
+    "spotId": "desert-spot-045",
+    "proposedAbilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-045-clean.png",
+    "nativeIdleHeight": 72,
+    "scale": 1.0555555555555556,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.5,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          192,
+          171
+        ],
+        "sourcePoseBounds": [
+          32,
+          13,
+          192,
+          162
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 72,
+        "footline": 167
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          192,
+          0,
+          384,
+          171
+        ],
+        "sourcePoseBounds": [
+          31,
+          19,
+          180,
+          164
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 70,
+        "footline": 168
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          576,
+          171
+        ],
+        "sourcePoseBounds": [
+          19,
+          19,
+          185,
+          163
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 67,
+        "footline": 167
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          576,
+          0,
+          768,
+          171
+        ],
+        "sourcePoseBounds": [
+          17,
+          41,
+          177,
+          162
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 57,
+        "footline": 166
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          960,
+          171
+        ],
+        "sourcePoseBounds": [
+          19,
+          21,
+          180,
+          160
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 64,
+        "footline": 165
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          960,
+          0,
+          1152,
+          171
+        ],
+        "sourcePoseBounds": [
+          7,
+          33,
+          178,
+          160
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 59,
+        "footline": 166
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1152,
+          0,
+          1344,
+          171
+        ],
+        "sourcePoseBounds": [
+          16,
+          24,
+          188,
+          161
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 65,
+        "footline": 166
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          171
+        ],
+        "sourcePoseBounds": [
+          15,
+          19,
+          174,
+          166
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 69,
+        "footline": 167
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          171,
+          192,
+          341
+        ],
+        "sourcePoseBounds": [
+          33,
+          14,
+          192,
+          157
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 68,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          192,
+          171,
+          384,
+          341
+        ],
+        "sourcePoseBounds": [
+          29,
+          23,
+          178,
+          164
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 67,
+        "footline": 168
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          384,
+          171,
+          576,
+          341
+        ],
+        "sourcePoseBounds": [
+          25,
+          25,
+          184,
+          156
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 62,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          576,
+          171,
+          768,
+          341
+        ],
+        "sourcePoseBounds": [
+          14,
+          39,
+          177,
+          165
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 53,
+        "footline": 162
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          768,
+          171,
+          960,
+          341
+        ],
+        "sourcePoseBounds": [
+          15,
+          12,
+          178,
+          161
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 61,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          960,
+          171,
+          1152,
+          341
+        ],
+        "sourcePoseBounds": [
+          17,
+          39,
+          178,
+          155
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 55,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1152,
+          171,
+          1344,
+          341
+        ],
+        "sourcePoseBounds": [
+          11,
+          26,
+          180,
+          152
+        ],
+        "paintedWidth": 80,
+        "paintedHeight": 59,
+        "footline": 162
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1344,
+          171,
+          1536,
+          341
+        ],
+        "sourcePoseBounds": [
+          16,
+          22,
+          174,
+          165
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 66,
+        "footline": 167
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          341,
+          192,
+          512
+        ],
+        "sourcePoseBounds": [
+          33,
+          11,
+          192,
+          155
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 68,
+        "footline": 162
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          192,
+          341,
+          384,
+          512
+        ],
+        "sourcePoseBounds": [
+          31,
+          22,
+          192,
+          153
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 62,
+        "footline": 162
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          384,
+          341,
+          576,
+          512
+        ],
+        "sourcePoseBounds": [
+          24,
+          25,
+          190,
+          142
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 56,
+        "footline": 157
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          576,
+          341,
+          768,
+          512
+        ],
+        "sourcePoseBounds": [
+          19,
+          38,
+          176,
+          151
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 52,
+        "footline": 160
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          768,
+          341,
+          960,
+          512
+        ],
+        "sourcePoseBounds": [
+          17,
+          29,
+          178,
+          153
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 57,
+        "footline": 160
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          960,
+          341,
+          1152,
+          512
+        ],
+        "sourcePoseBounds": [
+          15,
+          36,
+          179,
+          155
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 56,
+        "footline": 163
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1152,
+          341,
+          1344,
+          512
+        ],
+        "sourcePoseBounds": [
+          15,
+          25,
+          182,
+          146
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 58,
+        "footline": 159
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          341,
+          1536,
+          512
+        ],
+        "sourcePoseBounds": [
+          15,
+          20,
+          174,
+          155
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 64,
+        "footline": 163
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          512,
+          192,
+          683
+        ],
+        "sourcePoseBounds": [
+          26,
+          15,
+          190,
+          156
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 66,
+        "footline": 162
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          512,
+          400,
+          683
+        ],
+        "sourcePoseBounds": [
+          23,
+          22,
+          208,
+          156
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 61,
+        "footline": 162
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          400,
+          512,
+          590,
+          683
+        ],
+        "sourcePoseBounds": [
+          0,
+          36,
+          190,
+          142
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 47,
+        "footline": 155
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          590,
+          512,
+          772,
+          683
+        ],
+        "sourcePoseBounds": [
+          0,
+          29,
+          182,
+          154
+        ],
+        "paintedWidth": 82,
+        "paintedHeight": 49,
+        "footline": 158
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          772,
+          512,
+          960,
+          683
+        ],
+        "sourcePoseBounds": [
+          11,
+          28,
+          177,
+          151
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 57,
+        "footline": 161
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          960,
+          512,
+          1152,
+          683
+        ],
+        "sourcePoseBounds": [
+          7,
+          11,
+          177,
+          147
+        ],
+        "paintedWidth": 82,
+        "paintedHeight": 50,
+        "footline": 159
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1152,
+          512,
+          1344,
+          683
+        ],
+        "sourcePoseBounds": [
+          1,
+          40,
+          187,
+          145
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 48,
+        "footline": 158
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1344,
+          512,
+          1536,
+          683
+        ],
+        "sourcePoseBounds": [
+          1,
+          25,
+          176,
+          158
+        ],
+        "paintedWidth": 82,
+        "paintedHeight": 61,
+        "footline": 162
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          683,
+          192,
+          853
+        ],
+        "sourcePoseBounds": [
+          32,
+          9,
+          181,
+          149
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 67,
+        "footline": 161
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          192,
+          683,
+          384,
+          853
+        ],
+        "sourcePoseBounds": [
+          31,
+          15,
+          178,
+          149
+        ],
+        "paintedWidth": 69,
+        "paintedHeight": 63,
+        "footline": 160
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          384,
+          683,
+          576,
+          853
+        ],
+        "sourcePoseBounds": [
+          15,
+          19,
+          176,
+          147
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 59,
+        "footline": 158
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          576,
+          683,
+          768,
+          853
+        ],
+        "sourcePoseBounds": [
+          24,
+          24,
+          176,
+          149
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 59,
+        "footline": 161
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          768,
+          683,
+          960,
+          853
+        ],
+        "sourcePoseBounds": [
+          23,
+          18,
+          177,
+          151
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 63,
+        "footline": 162
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          683,
+          1152,
+          853
+        ],
+        "sourcePoseBounds": [
+          19,
+          24,
+          180,
+          149
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 59,
+        "footline": 161
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          683,
+          1344,
+          853
+        ],
+        "sourcePoseBounds": [
+          17,
+          18,
+          176,
+          147
+        ],
+        "paintedWidth": 72,
+        "paintedHeight": 61,
+        "footline": 159
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1344,
+          683,
+          1536,
+          853
+        ],
+        "sourcePoseBounds": [
+          15,
+          14,
+          174,
+          153
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 65,
+        "footline": 163
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          853,
+          192,
+          1024
+        ],
+        "sourcePoseBounds": [
+          27,
+          40,
+          192,
+          142
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 45,
+        "footline": 154
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          192,
+          853,
+          384,
+          1024
+        ],
+        "sourcePoseBounds": [
+          30,
+          30,
+          190,
+          135
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 45,
+        "footline": 151
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          384,
+          853,
+          576,
+          1024
+        ],
+        "sourcePoseBounds": [
+          23,
+          25,
+          190,
+          128
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 45,
+        "footline": 150
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          576,
+          853,
+          768,
+          1024
+        ],
+        "sourcePoseBounds": [
+          18,
+          26,
+          178,
+          125
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 42,
+        "footline": 147
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          768,
+          853,
+          960,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          28,
+          176,
+          133
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 45,
+        "footline": 151
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          960,
+          853,
+          1152,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          27,
+          175,
+          125
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 44,
+        "footline": 148
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1152,
+          853,
+          1344,
+          1024
+        ],
+        "sourcePoseBounds": [
+          5,
+          35,
+          181,
+          127
+        ],
+        "paintedWidth": 84,
+        "paintedHeight": 42,
+        "footline": 148
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1344,
+          853,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          13,
+          41,
+          176,
+          141
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 45,
+        "footline": 154
+      }
+    ],
+    "sourceSHA256": "23e7efdda8d946ed06f9ccea0689e4c6b7e497fb2c647f7f7eec823df92db181"
+  },
+  {
+    "id": "desert-species-046",
+    "slug": "paddle-muzzle-sand-worm",
+    "baseType": "desertSnake",
+    "locomotion": "serpent",
+    "level": 45,
+    "anatomy": "A limbless low ground-slithering stout sky-blue sand worm with a huge broad red paddle muzzle, four large golden neck rings, pear-shaped body narrowing to a curly orange spiral tail, two tiny upward eyes. No legs, wings, hood or arms. Different serpentine bends for movement, reared paddle bite, accordion contracted hurt, fully limp sideways flattened elongated death.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Paddle Muzzle Sand Worm",
+      "ru": "\u041f\u0435\u0441\u043a\u043e\u0447\u0435\u0440\u0432\u044c \u0432\u0435\u0441\u043b\u043e\u0440\u044b\u043b",
+      "es": "Gusano de arena hocico pala"
+    },
+    "spotId": "desert-spot-046",
+    "proposedAbilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-046-clean.png",
+    "nativeIdleHeight": 73,
+    "scale": 1.0410958904109588,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.5360824742268041,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          192,
+          171
+        ],
+        "sourcePoseBounds": [
+          49,
+          17,
+          144,
+          170
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 73,
+        "footline": 169
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          192,
+          0,
+          384,
+          171
+        ],
+        "sourcePoseBounds": [
+          30,
+          27,
+          172,
+          161
+        ],
+        "paintedWidth": 67,
+        "paintedHeight": 67,
+        "footline": 166
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          576,
+          171
+        ],
+        "sourcePoseBounds": [
+          16,
+          29,
+          186,
+          162
+        ],
+        "paintedWidth": 83,
+        "paintedHeight": 65,
+        "footline": 164
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          576,
+          0,
+          768,
+          171
+        ],
+        "sourcePoseBounds": [
+          7,
+          25,
+          177,
+          164
+        ],
+        "paintedWidth": 73,
+        "paintedHeight": 64,
+        "footline": 167
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          960,
+          171
+        ],
+        "sourcePoseBounds": [
+          44,
+          30,
+          145,
+          164
+        ],
+        "paintedWidth": 49,
+        "paintedHeight": 69,
+        "footline": 168
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          960,
+          0,
+          1152,
+          171
+        ],
+        "sourcePoseBounds": [
+          15,
+          31,
+          166,
+          160
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 63,
+        "footline": 165
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1152,
+          0,
+          1344,
+          171
+        ],
+        "sourcePoseBounds": [
+          14,
+          31,
+          175,
+          162
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 65,
+        "footline": 166
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          171
+        ],
+        "sourcePoseBounds": [
+          33,
+          30,
+          162,
+          166
+        ],
+        "paintedWidth": 62,
+        "paintedHeight": 69,
+        "footline": 168
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          171,
+          192,
+          352
+        ],
+        "sourcePoseBounds": [
+          47,
+          35,
+          143,
+          181
+        ],
+        "paintedWidth": 44,
+        "paintedHeight": 73,
+        "footline": 169
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          192,
+          171,
+          384,
+          352
+        ],
+        "sourcePoseBounds": [
+          20,
+          36,
+          164,
+          179
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 67,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          384,
+          171,
+          576,
+          352
+        ],
+        "sourcePoseBounds": [
+          15,
+          35,
+          185,
+          179
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 66,
+        "footline": 166
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          576,
+          171,
+          768,
+          352
+        ],
+        "sourcePoseBounds": [
+          15,
+          2,
+          175,
+          181
+        ],
+        "paintedWidth": 80,
+        "paintedHeight": 63,
+        "footline": 168
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          768,
+          171,
+          960,
+          352
+        ],
+        "sourcePoseBounds": [
+          31,
+          50,
+          139,
+          179
+        ],
+        "paintedWidth": 49,
+        "paintedHeight": 63,
+        "footline": 168
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          960,
+          171,
+          1152,
+          352
+        ],
+        "sourcePoseBounds": [
+          9,
+          51,
+          166,
+          180
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 61,
+        "footline": 168
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1152,
+          171,
+          1344,
+          352
+        ],
+        "sourcePoseBounds": [
+          5,
+          49,
+          186,
+          179
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 63,
+        "footline": 167
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1344,
+          171,
+          1536,
+          352
+        ],
+        "sourcePoseBounds": [
+          32,
+          33,
+          160,
+          179
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 71,
+        "footline": 169
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          352,
+          192,
+          528
+        ],
+        "sourcePoseBounds": [
+          47,
+          43,
+          172,
+          172
+        ],
+        "paintedWidth": 44,
+        "paintedHeight": 63,
+        "footline": 167
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          192,
+          352,
+          384,
+          528
+        ],
+        "sourcePoseBounds": [
+          17,
+          47,
+          172,
+          162
+        ],
+        "paintedWidth": 77,
+        "paintedHeight": 56,
+        "footline": 163
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          384,
+          352,
+          576,
+          528
+        ],
+        "sourcePoseBounds": [
+          15,
+          3,
+          191,
+          162
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 57,
+        "footline": 164
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          576,
+          352,
+          768,
+          528
+        ],
+        "sourcePoseBounds": [
+          17,
+          1,
+          180,
+          172
+        ],
+        "paintedWidth": 82,
+        "paintedHeight": 51,
+        "footline": 167
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          768,
+          352,
+          960,
+          528
+        ],
+        "sourcePoseBounds": [
+          43,
+          59,
+          146,
+          176
+        ],
+        "paintedWidth": 49,
+        "paintedHeight": 56,
+        "footline": 168
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          960,
+          352,
+          1152,
+          528
+        ],
+        "sourcePoseBounds": [
+          1,
+          62,
+          162,
+          169
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 50,
+        "footline": 166
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1152,
+          352,
+          1344,
+          528
+        ],
+        "sourcePoseBounds": [
+          3,
+          47,
+          182,
+          160
+        ],
+        "paintedWidth": 89,
+        "paintedHeight": 52,
+        "footline": 162
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          352,
+          1536,
+          528
+        ],
+        "sourcePoseBounds": [
+          30,
+          45,
+          163,
+          169
+        ],
+        "paintedWidth": 67,
+        "paintedHeight": 61,
+        "footline": 166
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          528,
+          192,
+          718
+        ],
+        "sourcePoseBounds": [
+          49,
+          31,
+          144,
+          190
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 78,
+        "footline": 170
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          528,
+          384,
+          718
+        ],
+        "sourcePoseBounds": [
+          27,
+          31,
+          161,
+          188
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 77,
+        "footline": 167
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          384,
+          528,
+          576,
+          718
+        ],
+        "sourcePoseBounds": [
+          16,
+          5,
+          190,
+          186
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 72,
+        "footline": 167
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          576,
+          528,
+          768,
+          718
+        ],
+        "sourcePoseBounds": [
+          21,
+          32,
+          176,
+          190
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 75,
+        "footline": 168
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          768,
+          528,
+          960,
+          718
+        ],
+        "sourcePoseBounds": [
+          11,
+          23,
+          144,
+          190
+        ],
+        "paintedWidth": 51,
+        "paintedHeight": 82,
+        "footline": 170
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          960,
+          528,
+          1152,
+          718
+        ],
+        "sourcePoseBounds": [
+          1,
+          36,
+          159,
+          190
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 74,
+        "footline": 168
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1152,
+          528,
+          1344,
+          718
+        ],
+        "sourcePoseBounds": [
+          11,
+          31,
+          179,
+          185
+        ],
+        "paintedWidth": 87,
+        "paintedHeight": 72,
+        "footline": 167
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1344,
+          528,
+          1536,
+          718
+        ],
+        "sourcePoseBounds": [
+          28,
+          30,
+          160,
+          186
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 79,
+        "footline": 168
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          718,
+          192,
+          882
+        ],
+        "sourcePoseBounds": [
+          47,
+          25,
+          144,
+          162
+        ],
+        "paintedWidth": 46,
+        "paintedHeight": 67,
+        "footline": 170
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          192,
+          718,
+          384,
+          882
+        ],
+        "sourcePoseBounds": [
+          15,
+          29,
+          173,
+          162
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 60,
+        "footline": 166
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          384,
+          718,
+          576,
+          882
+        ],
+        "sourcePoseBounds": [
+          19,
+          27,
+          186,
+          164
+        ],
+        "paintedWidth": 80,
+        "paintedHeight": 57,
+        "footline": 165
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          576,
+          718,
+          768,
+          882
+        ],
+        "sourcePoseBounds": [
+          27,
+          0,
+          174,
+          161
+        ],
+        "paintedWidth": 71,
+        "paintedHeight": 52,
+        "footline": 167
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          768,
+          718,
+          960,
+          882
+        ],
+        "sourcePoseBounds": [
+          40,
+          47,
+          146,
+          164
+        ],
+        "paintedWidth": 52,
+        "paintedHeight": 56,
+        "footline": 169
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          718,
+          1152,
+          882
+        ],
+        "sourcePoseBounds": [
+          11,
+          0,
+          162,
+          161
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 54,
+        "footline": 166
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          718,
+          1344,
+          882
+        ],
+        "sourcePoseBounds": [
+          15,
+          31,
+          174,
+          160
+        ],
+        "paintedWidth": 80,
+        "paintedHeight": 57,
+        "footline": 166
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1344,
+          718,
+          1536,
+          882
+        ],
+        "sourcePoseBounds": [
+          33,
+          32,
+          163,
+          160
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 64,
+        "footline": 168
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          882,
+          192,
+          1024
+        ],
+        "sourcePoseBounds": [
+          45,
+          17,
+          190,
+          124
+        ],
+        "paintedWidth": 51,
+        "paintedHeight": 42,
+        "footline": 161
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          192,
+          882,
+          384,
+          1024
+        ],
+        "sourcePoseBounds": [
+          17,
+          37,
+          176,
+          114
+        ],
+        "paintedWidth": 81,
+        "paintedHeight": 33,
+        "footline": 155
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          384,
+          882,
+          578,
+          1024
+        ],
+        "sourcePoseBounds": [
+          13,
+          9,
+          194,
+          142
+        ],
+        "paintedWidth": 91,
+        "paintedHeight": 26,
+        "footline": 153
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          578,
+          882,
+          768,
+          1024
+        ],
+        "sourcePoseBounds": [
+          0,
+          47,
+          184,
+          120
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 33,
+        "footline": 159
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          768,
+          882,
+          960,
+          1024
+        ],
+        "sourcePoseBounds": [
+          41,
+          44,
+          186,
+          142
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 35,
+        "footline": 158
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          960,
+          882,
+          1152,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          7,
+          192,
+          118
+        ],
+        "paintedWidth": 84,
+        "paintedHeight": 33,
+        "footline": 158
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1152,
+          882,
+          1344,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          46,
+          192,
+          112
+        ],
+        "paintedWidth": 95,
+        "paintedHeight": 25,
+        "footline": 153
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1344,
+          882,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          17,
+          175,
+          112
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 34,
+        "footline": 155
+      }
+    ],
+    "sourceSHA256": "df9432c0da76f4ccd1e6fda0841f8064b82535e1ac536b84ee45d485bab1022d"
+  },
+  {
+    "id": "desert-species-047",
+    "slug": "prism-teapot-wisp",
+    "baseType": "arcaneWisp",
+    "locomotion": "hover",
+    "level": 47,
+    "anatomy": "A floating magical living violet prism-shaped teapot with large curved golden spout, a thick turquoise crescent handle, orange pointed crystalline lid, two short opaque blue ribbon tails beneath and an expressive amber eye on the pot. No legs. Hovering bob, leaning spout blast without particles, squeezed tilted recoil, fully fallen sideways broken pot with detached lid for death. No vapor, particles or haze.",
+    "targetIdleHeight": 76,
+    "biome": "sand",
+    "runtimeRegistered": false,
+    "names": {
+      "en": "Prism Teapot Wisp",
+      "ru": "\u041f\u0440\u0438\u0437\u0440\u0430\u0447\u043d\u044b\u0439 \u043f\u0440\u0438\u0437\u043c\u043e-\u0447\u0430\u0439\u043d\u0438\u043a",
+      "es": "Espectro tetera prisma"
+    },
+    "spotId": "desert-spot-047",
+    "proposedAbilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "source": "art/source/task10-desert-expansion5a/desert-species-047-death-repair.png",
+    "nativeIdleHeight": 74,
+    "scale": 1.027027027027027,
+    "renderedIdleHeight": 76.0,
+    "mechanicalScale": 0.5360824742268041,
+    "poses": [
+      {
+        "frame": "idle/n",
+        "sourceCell": [
+          0,
+          0,
+          192,
+          171
+        ],
+        "sourcePoseBounds": [
+          51,
+          17,
+          172,
+          168
+        ],
+        "paintedWidth": 48,
+        "paintedHeight": 74,
+        "footline": 167
+      },
+      {
+        "frame": "idle/ne",
+        "sourceCell": [
+          192,
+          0,
+          384,
+          171
+        ],
+        "sourcePoseBounds": [
+          1,
+          20,
+          166,
+          162
+        ],
+        "paintedWidth": 57,
+        "paintedHeight": 71,
+        "footline": 166
+      },
+      {
+        "frame": "idle/e",
+        "sourceCell": [
+          384,
+          0,
+          576,
+          171
+        ],
+        "sourcePoseBounds": [
+          37,
+          24,
+          176,
+          164
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 69,
+        "footline": 165
+      },
+      {
+        "frame": "idle/se",
+        "sourceCell": [
+          576,
+          0,
+          768,
+          171
+        ],
+        "sourcePoseBounds": [
+          33,
+          21,
+          175,
+          164
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 70,
+        "footline": 165
+      },
+      {
+        "frame": "idle/s",
+        "sourceCell": [
+          768,
+          0,
+          960,
+          171
+        ],
+        "sourcePoseBounds": [
+          9,
+          22,
+          182,
+          161
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 71,
+        "footline": 166
+      },
+      {
+        "frame": "idle/sw",
+        "sourceCell": [
+          960,
+          0,
+          1152,
+          171
+        ],
+        "sourcePoseBounds": [
+          17,
+          25,
+          158,
+          166
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 70,
+        "footline": 166
+      },
+      {
+        "frame": "idle/w",
+        "sourceCell": [
+          1152,
+          0,
+          1344,
+          171
+        ],
+        "sourcePoseBounds": [
+          17,
+          25,
+          145,
+          160
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 69,
+        "footline": 165
+      },
+      {
+        "frame": "idle/nw",
+        "sourceCell": [
+          1344,
+          0,
+          1536,
+          171
+        ],
+        "sourcePoseBounds": [
+          17,
+          23,
+          144,
+          162
+        ],
+        "paintedWidth": 58,
+        "paintedHeight": 69,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/n",
+        "sourceCell": [
+          0,
+          171,
+          192,
+          340
+        ],
+        "sourcePoseBounds": [
+          55,
+          8,
+          180,
+          161
+        ],
+        "paintedWidth": 48,
+        "paintedHeight": 72,
+        "footline": 165
+      },
+      {
+        "frame": "run-a/ne",
+        "sourceCell": [
+          192,
+          171,
+          384,
+          340
+        ],
+        "sourcePoseBounds": [
+          11,
+          13,
+          192,
+          169
+        ],
+        "paintedWidth": 59,
+        "paintedHeight": 71,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/e",
+        "sourceCell": [
+          384,
+          171,
+          576,
+          340
+        ],
+        "sourcePoseBounds": [
+          7,
+          19,
+          178,
+          164
+        ],
+        "paintedWidth": 67,
+        "paintedHeight": 69,
+        "footline": 163
+      },
+      {
+        "frame": "run-a/se",
+        "sourceCell": [
+          576,
+          171,
+          768,
+          340
+        ],
+        "sourcePoseBounds": [
+          11,
+          19,
+          178,
+          165
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 70,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/s",
+        "sourceCell": [
+          768,
+          171,
+          960,
+          340
+        ],
+        "sourcePoseBounds": [
+          31,
+          4,
+          188,
+          165
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 70,
+        "footline": 164
+      },
+      {
+        "frame": "run-a/sw",
+        "sourceCell": [
+          960,
+          171,
+          1152,
+          340
+        ],
+        "sourcePoseBounds": [
+          23,
+          18,
+          156,
+          157
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 69,
+        "footline": 163
+      },
+      {
+        "frame": "run-a/w",
+        "sourceCell": [
+          1152,
+          171,
+          1344,
+          340
+        ],
+        "sourcePoseBounds": [
+          15,
+          18,
+          146,
+          163
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 69,
+        "footline": 163
+      },
+      {
+        "frame": "run-a/nw",
+        "sourceCell": [
+          1344,
+          171,
+          1536,
+          340
+        ],
+        "sourcePoseBounds": [
+          15,
+          18,
+          145,
+          159
+        ],
+        "paintedWidth": 58,
+        "paintedHeight": 71,
+        "footline": 164
+      },
+      {
+        "frame": "run-b/n",
+        "sourceCell": [
+          0,
+          340,
+          192,
+          512
+        ],
+        "sourcePoseBounds": [
+          55,
+          13,
+          154,
+          157
+        ],
+        "paintedWidth": 48,
+        "paintedHeight": 69,
+        "footline": 159
+      },
+      {
+        "frame": "run-b/ne",
+        "sourceCell": [
+          192,
+          340,
+          384,
+          512
+        ],
+        "sourcePoseBounds": [
+          27,
+          1,
+          170,
+          168
+        ],
+        "paintedWidth": 59,
+        "paintedHeight": 70,
+        "footline": 161
+      },
+      {
+        "frame": "run-b/e",
+        "sourceCell": [
+          384,
+          340,
+          576,
+          512
+        ],
+        "sourcePoseBounds": [
+          27,
+          15,
+          192,
+          158
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 68,
+        "footline": 161
+      },
+      {
+        "frame": "run-b/se",
+        "sourceCell": [
+          576,
+          340,
+          768,
+          512
+        ],
+        "sourcePoseBounds": [
+          31,
+          9,
+          182,
+          158
+        ],
+        "paintedWidth": 68,
+        "paintedHeight": 68,
+        "footline": 160
+      },
+      {
+        "frame": "run-b/s",
+        "sourceCell": [
+          768,
+          340,
+          960,
+          512
+        ],
+        "sourcePoseBounds": [
+          1,
+          13,
+          192,
+          172
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 69,
+        "footline": 161
+      },
+      {
+        "frame": "run-b/sw",
+        "sourceCell": [
+          960,
+          340,
+          1152,
+          512
+        ],
+        "sourcePoseBounds": [
+          1,
+          19,
+          160,
+          159
+        ],
+        "paintedWidth": 65,
+        "paintedHeight": 68,
+        "footline": 161
+      },
+      {
+        "frame": "run-b/w",
+        "sourceCell": [
+          1152,
+          340,
+          1344,
+          512
+        ],
+        "sourcePoseBounds": [
+          1,
+          13,
+          147,
+          156
+        ],
+        "paintedWidth": 64,
+        "paintedHeight": 68,
+        "footline": 161
+      },
+      {
+        "frame": "run-b/nw",
+        "sourceCell": [
+          1344,
+          340,
+          1536,
+          512
+        ],
+        "sourcePoseBounds": [
+          27,
+          5,
+          146,
+          156
+        ],
+        "paintedWidth": 59,
+        "paintedHeight": 69,
+        "footline": 160
+      },
+      {
+        "frame": "attack/n",
+        "sourceCell": [
+          0,
+          512,
+          192,
+          683
+        ],
+        "sourcePoseBounds": [
+          39,
+          7,
+          156,
+          160
+        ],
+        "paintedWidth": 55,
+        "paintedHeight": 72,
+        "footline": 162
+      },
+      {
+        "frame": "attack/ne",
+        "sourceCell": [
+          192,
+          512,
+          384,
+          683
+        ],
+        "sourcePoseBounds": [
+          31,
+          15,
+          192,
+          154
+        ],
+        "paintedWidth": 66,
+        "paintedHeight": 67,
+        "footline": 159
+      },
+      {
+        "frame": "attack/e",
+        "sourceCell": [
+          384,
+          512,
+          578,
+          683
+        ],
+        "sourcePoseBounds": [
+          1,
+          15,
+          194,
+          152
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 66,
+        "footline": 159
+      },
+      {
+        "frame": "attack/se",
+        "sourceCell": [
+          578,
+          512,
+          768,
+          683
+        ],
+        "sourcePoseBounds": [
+          25,
+          1,
+          176,
+          148
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 64,
+        "footline": 159
+      },
+      {
+        "frame": "attack/s",
+        "sourceCell": [
+          768,
+          512,
+          960,
+          683
+        ],
+        "sourcePoseBounds": [
+          3,
+          16,
+          192,
+          168
+        ],
+        "paintedWidth": 56,
+        "paintedHeight": 66,
+        "footline": 158
+      },
+      {
+        "frame": "attack/sw",
+        "sourceCell": [
+          960,
+          512,
+          1152,
+          683
+        ],
+        "sourcePoseBounds": [
+          15,
+          22,
+          162,
+          164
+        ],
+        "paintedWidth": 75,
+        "paintedHeight": 64,
+        "footline": 158
+      },
+      {
+        "frame": "attack/w",
+        "sourceCell": [
+          1152,
+          512,
+          1344,
+          683
+        ],
+        "sourcePoseBounds": [
+          1,
+          17,
+          160,
+          158
+        ],
+        "paintedWidth": 74,
+        "paintedHeight": 66,
+        "footline": 160
+      },
+      {
+        "frame": "attack/nw",
+        "sourceCell": [
+          1344,
+          512,
+          1536,
+          683
+        ],
+        "sourcePoseBounds": [
+          9,
+          16,
+          160,
+          153
+        ],
+        "paintedWidth": 70,
+        "paintedHeight": 69,
+        "footline": 161
+      },
+      {
+        "frame": "hurt/n",
+        "sourceCell": [
+          0,
+          683,
+          192,
+          853
+        ],
+        "sourcePoseBounds": [
+          49,
+          6,
+          158,
+          151
+        ],
+        "paintedWidth": 51,
+        "paintedHeight": 69,
+        "footline": 156
+      },
+      {
+        "frame": "hurt/ne",
+        "sourceCell": [
+          192,
+          683,
+          384,
+          853
+        ],
+        "sourcePoseBounds": [
+          47,
+          13,
+          160,
+          147
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 64,
+        "footline": 156
+      },
+      {
+        "frame": "hurt/e",
+        "sourceCell": [
+          384,
+          683,
+          576,
+          853
+        ],
+        "sourcePoseBounds": [
+          47,
+          18,
+          176,
+          157
+        ],
+        "paintedWidth": 60,
+        "paintedHeight": 62,
+        "footline": 156
+      },
+      {
+        "frame": "hurt/se",
+        "sourceCell": [
+          576,
+          683,
+          768,
+          853
+        ],
+        "sourcePoseBounds": [
+          1,
+          19,
+          162,
+          145
+        ],
+        "paintedWidth": 60,
+        "paintedHeight": 61,
+        "footline": 156
+      },
+      {
+        "frame": "hurt/s",
+        "sourceCell": [
+          768,
+          683,
+          960,
+          853
+        ],
+        "sourcePoseBounds": [
+          31,
+          14,
+          151,
+          149
+        ],
+        "paintedWidth": 56,
+        "paintedHeight": 64,
+        "footline": 156
+      },
+      {
+        "frame": "hurt/sw",
+        "sourceCell": [
+          960,
+          683,
+          1152,
+          853
+        ],
+        "sourcePoseBounds": [
+          5,
+          10,
+          145,
+          149
+        ],
+        "paintedWidth": 63,
+        "paintedHeight": 61,
+        "footline": 157
+      },
+      {
+        "frame": "hurt/w",
+        "sourceCell": [
+          1152,
+          683,
+          1344,
+          853
+        ],
+        "sourcePoseBounds": [
+          17,
+          19,
+          144,
+          149
+        ],
+        "paintedWidth": 61,
+        "paintedHeight": 60,
+        "footline": 156
+      },
+      {
+        "frame": "hurt/nw",
+        "sourceCell": [
+          1344,
+          683,
+          1536,
+          853
+        ],
+        "sourcePoseBounds": [
+          17,
+          13,
+          142,
+          139
+        ],
+        "paintedWidth": 54,
+        "paintedHeight": 63,
+        "footline": 154
+      },
+      {
+        "frame": "death/n",
+        "sourceCell": [
+          0,
+          853,
+          192,
+          1024
+        ],
+        "sourcePoseBounds": [
+          16,
+          49,
+          190,
+          147
+        ],
+        "paintedWidth": 86,
+        "paintedHeight": 41,
+        "footline": 152
+      },
+      {
+        "frame": "death/ne",
+        "sourceCell": [
+          192,
+          853,
+          384,
+          1024
+        ],
+        "sourcePoseBounds": [
+          17,
+          12,
+          179,
+          132
+        ],
+        "paintedWidth": 78,
+        "paintedHeight": 52,
+        "footline": 149
+      },
+      {
+        "frame": "death/e",
+        "sourceCell": [
+          384,
+          853,
+          576,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          10,
+          179,
+          137
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 46,
+        "footline": 150
+      },
+      {
+        "frame": "death/se",
+        "sourceCell": [
+          576,
+          853,
+          768,
+          1024
+        ],
+        "sourcePoseBounds": [
+          15,
+          38,
+          170,
+          135
+        ],
+        "paintedWidth": 76,
+        "paintedHeight": 44,
+        "footline": 148
+      },
+      {
+        "frame": "death/s",
+        "sourceCell": [
+          768,
+          853,
+          960,
+          1024
+        ],
+        "sourcePoseBounds": [
+          13,
+          43,
+          176,
+          127
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 40,
+        "footline": 148
+      },
+      {
+        "frame": "death/sw",
+        "sourceCell": [
+          960,
+          853,
+          1150,
+          1024
+        ],
+        "sourcePoseBounds": [
+          11,
+          44,
+          168,
+          139
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 42,
+        "footline": 150
+      },
+      {
+        "frame": "death/w",
+        "sourceCell": [
+          1150,
+          853,
+          1342,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          37,
+          164,
+          137
+        ],
+        "paintedWidth": 79,
+        "paintedHeight": 46,
+        "footline": 150
+      },
+      {
+        "frame": "death/nw",
+        "sourceCell": [
+          1342,
+          853,
+          1536,
+          1024
+        ],
+        "sourcePoseBounds": [
+          1,
+          26,
+          164,
+          137
+        ],
+        "paintedWidth": 80,
+        "paintedHeight": 48,
+        "footline": 150
+      }
+    ],
+    "sourceSHA256": "a981420b77b223465933effc608501c3e154847ba2b8c4dbb366db436a8bf5ab"
+  }
+]

@@ -1,0 +1,240 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-north-c",
+  "createdUTC": "2026-11-24",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "physicalAndroid": false,
+  "scope": "4 original anatomies; six pose banks including two movement drawings, not six multiframe clips.",
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "atlasDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "mechanicalPacking": "Complete pose cropping with 8 source pixel margins, single uniform scale per species, no painting, erasing or threshold alpha matte. Alpha>128 used only to locate support/gutters.",
+  "species": [
+    {
+      "id": "north-species-084",
+      "placementId": "north084",
+      "spotId": "north-spot-084",
+      "typeId": "aur203North084",
+      "names": {
+        "ru": "Ледяной шестизвон",
+        "en": "Ice chime sextuped",
+        "es": "Hexápodo de campanas de hielo"
+      },
+      "biome": "snow",
+      "level": 30,
+      "position": {
+        "x": 13945,
+        "y": 6478
+      },
+      "anatomy": "six chunky splayed legs, three hollow upward ice trumpet tubes on a pear shaped turquoise torso, wide flat face",
+      "movementProfile": "heavy",
+      "abilityPattern": [
+        "stomp",
+        "frost"
+      ],
+      "materialId": "aur203North084Material",
+      "materialConcept": {
+        "ru": "Стенка ледяного раструба",
+        "en": "Ice trumpet wall",
+        "es": "Pared de trompeta helada"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-085",
+      "placementId": "north085",
+      "spotId": "north-spot-085",
+      "typeId": "aur203North085",
+      "names": {
+        "ru": "Ковшеклювый зимник",
+        "en": "Winter spoonbill",
+        "es": "Espátula invernal"
+      },
+      "biome": "snow",
+      "level": 28,
+      "position": {
+        "x": 11931,
+        "y": 738
+      },
+      "anatomy": "pink squat spoonbill with huge frost-blue spoon bill, two pronged legs, curly white wing fans and crystalline crest",
+      "movementProfile": "skirmisher",
+      "abilityPattern": [
+        "fan",
+        "frost"
+      ],
+      "materialId": "aur203North085Material",
+      "materialConcept": {
+        "ru": "Пластинка ковшеклюва",
+        "en": "Spoonbill plate",
+        "es": "Placa de pico cuchara"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-086",
+      "placementId": "north086",
+      "spotId": "north-spot-086",
+      "typeId": "aur203North086",
+      "names": {
+        "ru": "Печной богомол",
+        "en": "Furnace mantis",
+        "es": "Mantis de horno"
+      },
+      "biome": "volcanic",
+      "level": 33,
+      "position": {
+        "x": 15456,
+        "y": 13124
+      },
+      "anatomy": "six-limbed charcoal mantis with two great bellows-shaped scythe forearms, ember honeycomb folded wings and wedge head",
+      "movementProfile": "fighter",
+      "abilityPattern": [
+        "cleave",
+        "fan"
+      ],
+      "materialId": "aur203North086Material",
+      "materialConcept": {
+        "ru": "Створка печного крыла",
+        "en": "Furnace wing casing",
+        "es": "Cubierta de ala de horno"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-087",
+      "placementId": "north087",
+      "spotId": "north-spot-087",
+      "typeId": "aur203North087",
+      "names": {
+        "ru": "Снежносферный отшельник",
+        "en": "Snowglobe hermit",
+        "es": "Ermitaño de esfera nevada"
+      },
+      "biome": "snow",
+      "level": 33,
+      "position": {
+        "x": 4355,
+        "y": 20251
+      },
+      "anatomy": "hermit crustacean with translucent spherical ice shell containing crystalline spiral, six walking legs and unequal fan claws",
+      "movementProfile": "scarab",
+      "abilityPattern": [
+        "burrow",
+        "frost"
+      ],
+      "materialId": "aur203North087Material",
+      "materialConcept": {
+        "ru": "Спираль снежной сферы",
+        "en": "Snowglobe spiral",
+        "es": "Espiral de esfera nevada"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    }
+  ],
+  "prompts": {
+    "084": {
+      "original": "Create professional polished cartoon fantasy mobile RPG character sprites. Exactly48individually painted complete creatures in8columns×6rows on a completely transparent RGBA background (all empty pixels alpha0, no white/gray/colored matte, no shadows). Columns E SE S SW W NW N NE. Rows idle/runA/runB(opposite stride)/attack/hurt/death. Death row MUST low limp collapsed bodies lying down with relaxed legs; never standing or merely closingeyes. Character: an ICE CHIME SEXTUPED, a chunky turquoise pear-shaped monster torso supported by SIX short splayed legs with dark padded paws, three tall hollow translucent ice trumpet tubes sprouting from its back, each tube different curved shape, broad flattened smiling face with two amber eyes and two white whiskers. Original anatomy, not any familiar animal. Hand-painted colorful game style, crisp thin outlines, rounded volumes, three-quarter overhead game camera, expressive face, fine little details. Each entire pose small enough to fit inside its grid cell with ample transparent spacing20%blank margins each side; landscape1536×1024 with max character130pxwide and105pxtall; six evenly spaced rows and eight evenly spaced columns. No overlap, captions, scenery, ground shadow, border or grid. 48 unique drawings, two genuinely different movement drawings. Maintain character identity, anatomy and direction in every pose.",
+      "repair": "Repair exact48sprite atlas. Remove ALL background haze and shadows completely to true alpha0 blank space. Preserve every complete painted creature anatomy/color/style. Shrink every complete pose25% uniformly, center in8columns6rows, large transparent gutters. IMPORTANT replace entire bottom row death poses with natural fully collapsed side-lying bodies AND three trumpet tubes toppled sideways near ground; no upright tubes so dead silhouettes are low, no upright standing bodies. Eight directions E SE S SW W NW N NE in columns. Keep all other five rows idle/runA/runB/attack/hurt. No scenery, matte, text or borders."
+    },
+    "085": {
+      "original": "Create professional polished cartoon fantasy mobile RPG character sprites. Exactly48individually painted complete creatures in8columns×6rows on a completely transparent RGBA background (all empty pixels alpha0, no white/gray/colored matte, no shadows). Columns E SE S SW W NW N NE. Rows idle/runA/runB(opposite stride)/attack/hurt/death. Death row MUST low limp collapsed bodies lying down with relaxed legs; never standing or merely closingeyes. Character: a WINTER SPOONBILL, a squat rose-pink feathered bird with an enormous broad concave frost-blue SPOON-shaped bill, two short purplish pronged legs, white curled wing fans and a comb of translucent star crystals above big golden eyes. Unique big spoon silhouette, no humanoid clothing. Hand-painted colorful game style, crisp thin outlines, rounded volumes, three-quarter overhead game camera, expressive face, fine little details. Each entire pose small enough to fit inside its grid cell with ample transparent spacing20%blank margins each side; landscape1536×1024 with max character130pxwide and105pxtall; six evenly spaced rows and eight evenly spaced columns. No overlap, captions, scenery, ground shadow, border or grid. 48 unique drawings, two genuinely different movement drawings. Maintain character identity, anatomy and direction in every pose.",
+      "repair": "Remove ALL white gray colored background haze and shadows from exact sheet. True transparent alpha0 blank pixels. Retain all48complete painted creatures colors anatomy and directions. Uniformly shrink every pose25% centered in8columns6rows, very wide blank gutters. Keep6rows idle/runA/runB/attack/hurt/death. Last row low relaxed bodies naturally lying flat with long spoon bill on ground. No text, scenery, grid, matte or shadows."
+    },
+    "086": {
+      "original": "Create professional polished cartoon fantasy mobile RPG character sprites. Exactly48individually painted complete creatures in8columns×6rows on a completely transparent RGBA background (all empty pixels alpha0, no white/gray/colored matte, no shadows). Columns E SE S SW W NW N NE. Rows idle/runA/runB(opposite stride)/attack/hurt/death. Death row MUST low limp collapsed bodies lying down with relaxed legs; never standing or merely closingeyes. Character: a FURNACE MANTIS, charcoal black SIX-limbed insect with wedge head and yellow eyes, TWO enormous hollow bellows-shaped serrated scythe forearms, FOUR squat walking legs, honeycomb ember orange folded wing cases. Volcanic creature, black basalt and warm orange furnace details. Hand-painted colorful game style, crisp thin outlines, rounded volumes, three-quarter overhead game camera, expressive face, fine little details. Each entire pose small enough to fit inside its grid cell with ample transparent spacing20%blank margins each side; landscape1536×1024 with max character130pxwide and105pxtall; six evenly spaced rows and eight evenly spaced columns. No overlap, captions, scenery, ground shadow, border or grid. 48 unique drawings, two genuinely different movement drawings. Maintain character identity, anatomy and direction in every pose.",
+      "repair": "Repair exact48creature sprite atlas: ALL blank background must be alpha0 transparent, remove all colored darkgray haze and ground shadows, preserve the entire48painted mantis creatures colors/anatomy. Uniformly shrink complete poses25% for wide transparent gutters in8columns6rows. Bottom row all eight mantis bodies naturally collapsed low lying on side/belly, forearm scythes and legs relaxed on ground, rear views must also lie flat. Keep E SE S SW W NW N NE directions, sixrows idle/runA/runB/attack/hurt/death. No matte, checkerboard, text, scenery or dividers."
+    },
+    "087": {
+      "original": "Create professional polished cartoon fantasy mobile RPG character sprites. Exactly48individually painted complete creatures in8columns×6rows on a completely transparent RGBA background (all empty pixels alpha0, no white/gray/colored matte, no shadows). Columns E SE S SW W NW N NE. Rows idle/runA/runB(opposite stride)/attack/hurt/death. Death row MUST low limp collapsed bodies lying down with relaxed legs; never standing or merely closingeyes. Character: a SNOWGLOBE HERMIT, compact turquoise crustacean with SIX jointed walking legs, TWO unequal fan-shaped ivory pincers and two tall ruby eye stalks; carries giant translucent icy SPHERE shell containing an inner spiral crystal. Shell is distinct snowglobe bubble, not normal crab shell. Hand-painted colorful game style, crisp thin outlines, rounded volumes, three-quarter overhead game camera, expressive face, fine little details. Each entire pose small enough to fit inside its grid cell with ample transparent spacing20%blank margins each side; landscape1536×1024 with max character130pxwide and105pxtall; six evenly spaced rows and eight evenly spaced columns. No overlap, captions, scenery, ground shadow, border or grid. 48 unique drawings, two genuinely different movement drawings. Maintain character identity, anatomy and direction in every pose.",
+      "repair": "Repair exact48sprite atlas. Remove ALL background haze and shadows completely to true alpha0 blank space. Preserve every complete painted creature anatomy/color/style. Shrink every complete pose25% uniformly, center in8columns6rows, large transparent gutters. IMPORTANT replace entire bottom row death poses with natural fully collapsed side-lying bodies AND spherical shells tipped onto their side; eyestalks limp on ground; claws relaxed so dead silhouettes are low, no upright standing bodies. Eight directions E SE S SW W NW N NE in columns. Keep all other five rows idle/runA/runB/attack/hurt. No scenery, matte, text or borders."
+    }
+  },
+  "sources": [
+    {
+      "path": "art/source/aur203-north-c/north-species-084-cutout.png",
+      "sha256": "0a220021823240b333753e2cc229fa442fd96ff2a485f5262ffd7b0b5824e40e"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-084-original.png",
+      "sha256": "6052566fd86585f9db7bdc33f624c51d180f1d045150a2f2ed0544ddedcd9a3a"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-084-registered.png",
+      "sha256": "7b7eeee39bf705bc00279bacbb7e39077c82dc78289c87a4e4a7c7774970e001"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-085-cutout.png",
+      "sha256": "b01b52ecdf407f4406ea876e3c9d26d70963c3cdac67dd3b397b125171c95b08"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-085-original.png",
+      "sha256": "21d2edcf9176e3c6fa8bfaa906e08f07fd9de82cafedb4864d722ac78a1ac8ba"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-085-registered.png",
+      "sha256": "cb4777ebc635b9c51f00ae09205afbbd52d272886d3d657a700d2ecc324d1a73"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-086-cutout.png",
+      "sha256": "13172056e5ae8e69e6fe92bc9a2d17c740321474189102d726ea5c33f5cc5ce8"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-086-original.png",
+      "sha256": "a6384fa9669a50d108afbdd36a7d04cc2c51e1f6d6b6e4790db11699c72d806e"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-086-registered.png",
+      "sha256": "ba1183aafd5bc089da2f3e4b6fec6a8f46f897514416c70a8ca231bece3a1aee"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-087-cutout.png",
+      "sha256": "395f5ec4235338862a5959a37fb9fec0f70f92d90390772f93d11b9a7f6f26fa"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-087-original.png",
+      "sha256": "db4a1623259f4b8b97cf053ff8d9ab906ed76a290204c7a993fdd02567603301"
+    },
+    {
+      "path": "art/source/aur203-north-c/north-species-087-registered.png",
+      "sha256": "d88f8c009fd52ae6b5dd90030c08d55a1bc589bb677185a2259b952f8505f7db"
+    }
+  ],
+  "repairs": "Originals retained; image_gen cutout/reflow outputs retained and selected. Semantic transparency and spacing repairs performed only by image_gen.",
+  "visualInspection": {
+    "posesInspected": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All registered native poses reviewed on both backgrounds; complete silhouettes and natural collapsed death. No clipping, neighboring limbs or missing poses. All48 distinct RGBA hashes per species."
+  },
+  "statsLootAndFinalBalance": "Not configured in this art-only pack; root owns integration."
+}

@@ -1,0 +1,571 @@
+{
+  "source": "art/source/aur203-next64-material-icons/desert060-079/original-sheet.png",
+  "sourceSize": [
+    1402,
+    1122
+  ],
+  "sourceSHA256": "0df373783d8dda0dca902b6f274bc5001cd343da9d6eba2dfd0ad156500ce7f4",
+  "method": "Complete source grid cells, proportionally reduced to 112px and centered on 128px RGBA canvases. No semantic editing, alpha normalization, repainting, trimming or recoloring.",
+  "entries": [
+    {
+      "id": "aur203Desert060Material",
+      "typeId": "aur203Desert060",
+      "names": {
+        "ru": "Хитин клешни-наковальни",
+        "en": "Anvil claw chitin",
+        "es": "Quitina de pinza yunque"
+      },
+      "level": 51,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-060.png",
+      "sourceRect": [
+        0,
+        0,
+        280,
+        280
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "d7968c3cc7f7fa2e5467edef6f671ccc083e6eab413dc998e5f9233417947011",
+      "rgbaSHA256": "b9ab52bb8ba0791b8af2223dc2d4fd30612657d595da6bc3c1dd79f4f648930c",
+      "alphaBounds": [
+        11,
+        21,
+        120,
+        115
+      ],
+      "transparentPixels": 10576
+    },
+    {
+      "id": "aur203Desert061Material",
+      "typeId": "aur203Desert061",
+      "names": {
+        "ru": "Янтарная перепонка брюшка-песочницы",
+        "en": "Hourglass amber abdomen membrane",
+        "es": "Membrana abdominal de reloj de ámbar"
+      },
+      "level": 46,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-061.png",
+      "sourceRect": [
+        280,
+        0,
+        560,
+        280
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "55964309ac79f867ff112a58c17811e0a12aaf030627cd28b78a8162036f0d28",
+      "rgbaSHA256": "f1afac58b14ff1800d2bb04b09ef8bfa42f06360214ee5d837462ee84af4abfc",
+      "alphaBounds": [
+        10,
+        26,
+        120,
+        120
+      ],
+      "transparentPixels": 10663
+    },
+    {
+      "id": "aur203Desert062Material",
+      "typeId": "aur203Desert062",
+      "names": {
+        "ru": "Терракотовый осколок печной спины",
+        "en": "Kilnback terracotta shard",
+        "es": "Fragmento de terracota de lomo horno"
+      },
+      "level": 51,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-062.png",
+      "sourceRect": [
+        560,
+        0,
+        841,
+        280
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "d142f61b510970e4b98a0b69c851ab9ec68f17596819a290ae304a8b8fab81ba",
+      "rgbaSHA256": "bc0add6b562d71a205abfe4729c540f016f9090608736d3d1ab295051465d724",
+      "alphaBounds": [
+        8,
+        13,
+        114,
+        117
+      ],
+      "transparentPixels": 9747
+    },
+    {
+      "id": "aur203Desert063Material",
+      "typeId": "aur203Desert063",
+      "names": {
+        "ru": "Кромка серповидной клешни",
+        "en": "Crescent pincer edge",
+        "es": "Filo de pinza creciente"
+      },
+      "level": 53,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-063.png",
+      "sourceRect": [
+        841,
+        0,
+        1121,
+        280
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "970e497dcd79275ed6841a91e185657329ba9b1eb1ad91bf0839754de8fd10b7",
+      "rgbaSHA256": "775fdb5cbba8a2952eab1e1ea81239e06420ceaa27d06ab83ef3781fa82fc061",
+      "alphaBounds": [
+        17,
+        14,
+        113,
+        119
+      ],
+      "transparentPixels": 12944
+    },
+    {
+      "id": "aur203Desert064Material",
+      "typeId": "aur203Desert064",
+      "names": {
+        "ru": "Соляной кристалл-розетка",
+        "en": "Salt rosette crystal",
+        "es": "Cristal de roseta de sal"
+      },
+      "level": 52,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-064.png",
+      "sourceRect": [
+        1121,
+        0,
+        1402,
+        280
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "aa92e27ec948b346a1f228fac3b0f0a23a09b7b261104fc615402c14cc72c593",
+      "rgbaSHA256": "a1a12383c49eb8f7ed6c4584bea0d95bbe0521e105f54b740210adbe78c709cd",
+      "alphaBounds": [
+        8,
+        13,
+        116,
+        116
+      ],
+      "transparentPixels": 8771
+    },
+    {
+      "id": "aur203Desert065Material",
+      "typeId": "aur203Desert065",
+      "names": {
+        "ru": "Чешуя солнечного воротника",
+        "en": "Sunwheel frill scale",
+        "es": "Escama de gola solar"
+      },
+      "level": 49,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-065.png",
+      "sourceRect": [
+        0,
+        280,
+        280,
+        561
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "c65b1339883e986cdc99c8e450c4850a323aeb393e7f269ef8daca50457ca975",
+      "rgbaSHA256": "9e11179b04e8727410042f70379e9a65beac074e24d16eb9eb1b5b5cde11ee05",
+      "alphaBounds": [
+        12,
+        12,
+        119,
+        118
+      ],
+      "transparentPixels": 9799
+    },
+    {
+      "id": "aur203Desert066Material",
+      "typeId": "aur203Desert066",
+      "names": {
+        "ru": "Складчатая горловая перепонка",
+        "en": "Accordion throat membrane",
+        "es": "Membrana de garganta acordeón"
+      },
+      "level": 51,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-066.png",
+      "sourceRect": [
+        280,
+        280,
+        560,
+        561
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "33e1ff49bb40810f39edd460c40f7b1df9eab4ec082b6fb328c586eaf925a695",
+      "rgbaSHA256": "20d8f5a1ffa72ca08c43c9b31897b2c7fb5c3319f3d7e08ffa89737b1e69ba4d",
+      "alphaBounds": [
+        12,
+        8,
+        120,
+        114
+      ],
+      "transparentPixels": 8761
+    },
+    {
+      "id": "aur203Desert067Material",
+      "typeId": "aur203Desert067",
+      "names": {
+        "ru": "Медная жилка крыла",
+        "en": "Copper kite wing vein",
+        "es": "Vena cobriza de ala cometa"
+      },
+      "level": 49,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-067.png",
+      "sourceRect": [
+        560,
+        280,
+        841,
+        561
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "43b71071c70c9a8822353fd26e63e5ce634f5106ec433193016734ee120d9f1f",
+      "rgbaSHA256": "aae84cf0b9109d08a7e5cf1754148903e2b332d58348896c536248d3cce68aba",
+      "alphaBounds": [
+        8,
+        18,
+        114,
+        110
+      ],
+      "transparentPixels": 12738
+    },
+    {
+      "id": "aur203Desert068Material",
+      "typeId": "aur203Desert068",
+      "names": {
+        "ru": "Стеклянная бусина хвоста",
+        "en": "Glassy tail bead",
+        "es": "Cuenta vítrea de cola"
+      },
+      "level": 49,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-068.png",
+      "sourceRect": [
+        841,
+        280,
+        1121,
+        561
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "6c80bdc63fc609c01809e1fe63805a1d3d4ff620d4add553f94f08a8064a0eef",
+      "rgbaSHA256": "61332fb0d5887578538336607346525d63366e0d0e6ee985fd29c25ef72d79c5",
+      "alphaBounds": [
+        13,
+        21,
+        120,
+        119
+      ],
+      "transparentPixels": 9877
+    },
+    {
+      "id": "aur203Desert069Material",
+      "typeId": "aur203Desert069",
+      "names": {
+        "ru": "Роговой плавник веретённика",
+        "en": "Spindle horn fin",
+        "es": "Aleta córnea de husillo"
+      },
+      "level": 50,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-069.png",
+      "sourceRect": [
+        1121,
+        280,
+        1402,
+        561
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "472b387653591acec3cf467c13a51f8dca58426fa6b436f34b684a89f1af752c",
+      "rgbaSHA256": "85c996fce049aa04960dcefb2a6c9fac7dff78d07265d2d41bc26ac0dbdd1d6f",
+      "alphaBounds": [
+        8,
+        9,
+        117,
+        117
+      ],
+      "transparentPixels": 11321
+    },
+    {
+      "id": "aur203Desert070Material",
+      "typeId": "aur203Desert070",
+      "names": {
+        "ru": "Обломок гребня бараньего рога",
+        "en": "Ramhorn ridge fragment",
+        "es": "Fragmento de cresta de cuerno de carnero"
+      },
+      "level": 53,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-070.png",
+      "sourceRect": [
+        0,
+        561,
+        280,
+        841
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "5edcd5b38022b9d5c0de305579656a4b180aff4b4436128f3a98d74aa7cbb5ba",
+      "rgbaSHA256": "a29ec7986ba60b652a7f9bfc14f496721caa3138753ac45adca902925accc712",
+      "alphaBounds": [
+        11,
+        19,
+        118,
+        113
+      ],
+      "transparentPixels": 11355
+    },
+    {
+      "id": "aur203Desert071Material",
+      "typeId": "aur203Desert071",
+      "names": {
+        "ru": "Лопатный передний коготь",
+        "en": "Shovel foreclaw",
+        "es": "Garra delantera de pala"
+      },
+      "level": 50,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-071.png",
+      "sourceRect": [
+        280,
+        561,
+        560,
+        841
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "b60384bd6c79559862df92223cbbd4162f6e2c7a96f87ce0a6973ece92f1610a",
+      "rgbaSHA256": "687d970b7bd4c1f616278852b3f96b7c1b53155eb85f22a83d12bf41d15a5f38",
+      "alphaBounds": [
+        10,
+        17,
+        119,
+        119
+      ],
+      "transparentPixels": 10072
+    },
+    {
+      "id": "aur203Desert072Material",
+      "typeId": "aur203Desert072",
+      "names": {
+        "ru": "Зубец серповидного предплечья",
+        "en": "Sickle forearm serration",
+        "es": "Diente de antebrazo falciforme"
+      },
+      "level": 52,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-072.png",
+      "sourceRect": [
+        560,
+        561,
+        841,
+        841
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "1d9ccb423f821add2f1a44e1563ae039132bed1300e55b1be3172de10a6e0a0d",
+      "rgbaSHA256": "4111c68f278d679a40f06db82cdb6bc5a5f62606683123303774c27654b7ce28",
+      "alphaBounds": [
+        10,
+        15,
+        115,
+        120
+      ],
+      "transparentPixels": 12256
+    },
+    {
+      "id": "aur203Desert073Material",
+      "typeId": "aur203Desert073",
+      "names": {
+        "ru": "Осколок каменного клюва",
+        "en": "Pebble beak shard",
+        "es": "Fragmento de pico pétreo"
+      },
+      "level": 44,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-073.png",
+      "sourceRect": [
+        841,
+        561,
+        1121,
+        841
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "bed714f0256d77f203e9b4b1441d57932ed815dc9800339f6f73f5b1353d274b",
+      "rgbaSHA256": "118c3a1b688bbebab3871fab3c3c5b75467d2e16cb7e4d4a867a1f2dd35aa9c8",
+      "alphaBounds": [
+        14,
+        12,
+        113,
+        120
+      ],
+      "transparentPixels": 11880
+    },
+    {
+      "id": "aur203Desert074Material",
+      "typeId": "aur203Desert074",
+      "names": {
+        "ru": "Шип коронного панциря",
+        "en": "Crown carapace spike",
+        "es": "Espina de caparazón corona"
+      },
+      "level": 54,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-074.png",
+      "sourceRect": [
+        1121,
+        561,
+        1402,
+        841
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "f7acae3f7d8bd1ef1bbe35cbd124fc6737e296d07de4d1b6d5bd5742fbb51700",
+      "rgbaSHA256": "e719ed2e5043cd05b44ef5f7ae413952a7b4652772b1fbc1303c187b9e36e6ed",
+      "alphaBounds": [
+        11,
+        12,
+        117,
+        116
+      ],
+      "transparentPixels": 10895
+    },
+    {
+      "id": "aur203Desert075Material",
+      "typeId": "aur203Desert075",
+      "names": {
+        "ru": "Осколок дымчато-стеклянного рога",
+        "en": "Smoke glass horn shard",
+        "es": "Fragmento de cuerno de vidrio ahumado"
+      },
+      "level": 52,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-075.png",
+      "sourceRect": [
+        0,
+        841,
+        280,
+        1122
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "1d2a817c9318883ccaf562dd13143dad7af960f1544b75367d02d68084c4cff9",
+      "rgbaSHA256": "8ddfe4a2a55602c1a3fa673b4e39734c2644a538bdfad7bb35208acb8534f244",
+      "alphaBounds": [
+        13,
+        13,
+        117,
+        114
+      ],
+      "transparentPixels": 12280
+    },
+    {
+      "id": "aur203Desert076Material",
+      "typeId": "aur203Desert076",
+      "names": {
+        "ru": "Бирюзовое ребро раковины",
+        "en": "Turquoise conch rib",
+        "es": "Costilla de caracola turquesa"
+      },
+      "level": 48,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-076.png",
+      "sourceRect": [
+        280,
+        841,
+        560,
+        1122
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "eede58b206477f3dfcc34fa0557c64215cfc0256d5b90626b333ffa6aafa917e",
+      "rgbaSHA256": "cf2d134c586181167a44510c31d7c843b74fa9ecc4422e7a482023b1b4724cc2",
+      "alphaBounds": [
+        11,
+        8,
+        117,
+        113
+      ],
+      "transparentPixels": 11345
+    },
+    {
+      "id": "aur203Desert077Material",
+      "typeId": "aur203Desert077",
+      "names": {
+        "ru": "Пластина угольного гребня",
+        "en": "Ember frill plate",
+        "es": "Placa de gola de brasas"
+      },
+      "level": 50,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-077.png",
+      "sourceRect": [
+        560,
+        841,
+        841,
+        1122
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "97fa85e99aeb786ca3b802aa08b738dd96651103abcfee14988bf2717eedf554",
+      "rgbaSHA256": "7e3606c2e4db75cb0b7a696f1c71229f94f9976e3aa62dbc39aab66d8e652d73",
+      "alphaBounds": [
+        9,
+        8,
+        120,
+        109
+      ],
+      "transparentPixels": 11401
+    },
+    {
+      "id": "aur203Desert078Material",
+      "typeId": "aur203Desert078",
+      "names": {
+        "ru": "Ребристый осколок песчаника",
+        "en": "Ribbed sandstone shard",
+        "es": "Fragmento de arenisca acanalada"
+      },
+      "level": 51,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-078.png",
+      "sourceRect": [
+        841,
+        841,
+        1121,
+        1122
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "af280ee95ea476c3adce0d802a3b63d9b4bde655f0011a717fde57875f699098",
+      "rgbaSHA256": "e9ab1c52f0b77c73a61f4cf70bb142e8a4f525b9510da129d2c28c7268eb4716",
+      "alphaBounds": [
+        8,
+        17,
+        120,
+        109
+      ],
+      "transparentPixels": 9453
+    },
+    {
+      "id": "aur203Desert079Material",
+      "typeId": "aur203Desert079",
+      "names": {
+        "ru": "Золотая челюстная лента",
+        "en": "Golden jaw ribbon",
+        "es": "Cinta mandibular dorada"
+      },
+      "level": 48,
+      "iconURL": "assets/icons/monster-materials/aur203-next-desert-079.png",
+      "sourceRect": [
+        1121,
+        841,
+        1402,
+        1122
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "6a7f0733e673e55fd65a38d1eec41399f8407ac40be8b4d43a5022468ab27ea6",
+      "rgbaSHA256": "805b1ed1dc8bbb3c269d735154a0e4d97e5c50ee25eb0197c8fce3f1485bf423",
+      "alphaBounds": [
+        8,
+        9,
+        117,
+        115
+      ],
+      "transparentPixels": 12598
+    }
+  ]
+}

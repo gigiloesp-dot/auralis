@@ -1,0 +1,28 @@
+CHECKPOINT actual releases desert-species-006
+CHECKPOINT texture released desert-species-006
+CHECKPOINT page reloaded desert-species-006
+PASS actual desert species desert-species-006 48poses/realAI/3locales/death/texture release/normal reload
+DEBUG ability desert-species-008 {
+  hero: { x: 1214, y: 12225, hp: 45897, maxHp: 50000 },
+  alive: true,
+  monster: {
+    x: 1198.7399999999989,
+    y: 12225,
+    hp: 820,
+    homeX: 1114,
+    homeY: 12225,
+    lastAbilityAt: 299.90666666666664,
+    specialState: undefined,
+    abilityStep: 1
+  },
+  playNow: 82719.48333333361,
+  fired: [ 'stomp' ],
+  paused: false,
+  safe: undefined,
+  distance: 15.260000000001128
+}
+page.waitForFunction: Timeout 90000ms exceeded.
+    at /workspace/auralis/tests/browser-task10-desert-expansion.cjs:8:10 {
+  log: [],
+  name: 'TimeoutError'
+}

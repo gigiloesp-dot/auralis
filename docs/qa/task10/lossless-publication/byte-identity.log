@@ -1,0 +1,15 @@
+Comparison: initial five-pass scorer versus optimized single-pass scorer.
+Both implementations received identical input buffers. assert.deepEqual compared full encoded PNG output bytes.
+Fixtures: RGB and RGBA, each input row filter 0, 1, 2, 3, 4 (10 total).
+Committed samples pinned to b19c070ad314eaec8c7cb10db2889ad031a2a2ae.
+Captured tool output:
+
+{"file":"assets/world/gathering/moonflower.png","inputBytes":19242,"outputBytes":17889,"beforeMs":18,"afterMs":13}
+{"file":"assets/world/gathering/sunleaf.png","inputBytes":19566,"outputBytes":17841,"beforeMs":43,"afterMs":8}
+{"file":"assets/world/gathering/frost-herb.png","inputBytes":20727,"outputBytes":19274,"beforeMs":7,"afterMs":6}
+PASS exact old/new encoded-byte identity for10 RGB/RGBA/filter fixtures and3 committed PNGs
+{"file":"assets/actors/task10-dungeons/dungeon13-boss-0.png","inputBytes":1912271,"outputBytes":1720423,"beforeMs":894,"afterMs":728}
+
+The fourth committed sample also passed assert.deepEqual on full encoded output.
+Timings are individual local measurements, not a controlled performance benchmark.
+Syntax checks for scripts/lossless-png.mjs, scripts/export-static.mjs, tests/browser-public.cjs and git diff --check passed.

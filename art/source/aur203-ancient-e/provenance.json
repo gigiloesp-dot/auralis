@@ -1,0 +1,39 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-ancient-e",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "animationScope": "48 painted poses: E/SE/S/SW/W/NW/N/NE x idle/run-a/run-b/attack/hurt/death. Two wingbeat movement drawings, not six multiframe clips.",
+  "mechanicalPacking": "Complete unedited source rectangle crops with margin, uniformly resized and registered. Alpha support measured only, never threshold-erased or painted.",
+  "qa": "All48 native registered poses viewed on beige and dark JPEG contacts. Distinct wingbeat drawings, naturally collapsed deaths. No visible mattes, clipping or adjacent-cell fragments. Validation records 48 distinct RGBA hashes, alpha and registration bounds.",
+  "models": [
+    {
+      "placementId": "ancient-species-061",
+      "typeId": "aur203Ancient061",
+      "materialId": "aur203Ancient061Material",
+      "slug": "antlerwing-owl",
+      "names": {
+        "ru": "Рогокрылый сыч",
+        "en": "Antlerwing Owl",
+        "es": "Mochuelo alicornio"
+      },
+      "name": "Рогокрылый сыч",
+      "biome": "elder-forest",
+      "level": 37,
+      "movementProfile": "gargoyle",
+      "abilityPattern": [
+        "dive",
+        "haunt"
+      ],
+      "anatomy": "Round cream-faced tawny owl with small branching wooden antlers, broad layered bark wings, short feather trousers and copper talons.",
+      "materialConcept": "Bark flight feather",
+      "artOnly": true,
+      "id": "ancient-species-061",
+      "source": "ancient-species-061-original.png",
+      "prompt": "ancient-species-061-prompt.txt",
+      "generatedImagePath": "/workspace/generated_images/exec-0211b74e-2798-4d3e-9577-3afa54bc2ec6.png"
+    }
+  ]
+}

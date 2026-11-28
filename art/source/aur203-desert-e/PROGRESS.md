@@ -1,0 +1,1 @@
+Pack E art-only READY desert-species-072..075. All192 native poses reviewed beige+dark; 48 unique RGBA hashes per model, alpha/gutters/footlines pass, collapsed death. Original four generations recovered after interruption; image_gen repaired073 transparency and original retained. Runtime/browser remain separate.

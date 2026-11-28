@@ -1,0 +1,11 @@
+{
+  "path": "/workspace/auralis/work/task10-release25-169",
+  "kind": "Exact derived release25 runtime export, no source artwork",
+  "reconstructFromHostingCommit": "ae2767346c6c9bdb8540c1aa9a804d70ec7a49aa",
+  "reconstruction": "git archive ae2767346c6c9bdb8540c1aa9a804d70ec7a49aa dist; extract stripping dist prefix",
+  "fileCount": 767,
+  "logicalBytes": 267571786,
+  "allGitBlobHashesMatch": true,
+  "noExtraFiles": true,
+  "freedBytes": 157057024
+}

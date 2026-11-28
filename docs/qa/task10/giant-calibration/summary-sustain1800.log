@@ -1,0 +1,144 @@
+{
+  "completeBossBalance": false,
+  "proposal": {
+    "targetMedianTtkSeconds": 1800,
+    "basedOnFiniteResourceWindowSeconds": 1800,
+    "hp": 1095000,
+    "medianStationaryDps": 811.086,
+    "uptime": 0.75,
+    "estimatedTtkMinutesRange": [
+      24.97,
+      38.74
+    ],
+    "hpIntervalForAllClassesWithin25To35Minutes": {
+      "lower": 1096335,
+      "upper": 989282,
+      "exists": false
+    },
+    "appliedToRuntime": false
+  },
+  "paladinBuildVariants": [
+    {
+      "name": "strength-guard",
+      "weightedDps": 628.116,
+      "estimatedTtkMinutes": 38.74,
+      "mpPotionsUsed": 5
+    },
+    {
+      "name": "strength-heal",
+      "weightedDps": 634.064,
+      "estimatedTtkMinutes": 38.377,
+      "mpPotionsUsed": 5
+    },
+    {
+      "name": "hybrid-guard",
+      "weightedDps": 562.894,
+      "estimatedTtkMinutes": 43.229,
+      "mpPotionsUsed": 5
+    },
+    {
+      "name": "hybrid-heal",
+      "weightedDps": 577.498,
+      "estimatedTtkMinutes": 42.136,
+      "mpPotionsUsed": 5
+    }
+  ],
+  "classes": [
+    {
+      "classId": "warrior",
+      "stationaryDps": 732.019,
+      "estimatedTtkMinutes": 33.241,
+      "mpPotionsUsed": 5,
+      "remainingMp": 3,
+      "casts": {
+        "warrior_3": 15,
+        "warrior_4": 13,
+        "warrior_2": 19,
+        "warrior_0": 32
+      },
+      "projectiles": 0,
+      "scheduledEffects": 57,
+      "poisonTicks": 0
+    },
+    {
+      "classId": "archer",
+      "stationaryDps": 968.274,
+      "estimatedTtkMinutes": 25.131,
+      "mpPotionsUsed": 5,
+      "remainingMp": 3,
+      "casts": {
+        "archer_3": 15,
+        "archer_4": 13,
+        "archer_0": 32,
+        "archer_2": 19
+      },
+      "projectiles": 3030,
+      "scheduledEffects": 52,
+      "poisonTicks": 0
+    },
+    {
+      "classId": "mage",
+      "stationaryDps": 890.153,
+      "estimatedTtkMinutes": 27.336,
+      "mpPotionsUsed": 5,
+      "remainingMp": 3,
+      "casts": {
+        "mage_4": 28,
+        "mage_3": 32,
+        "mage_0": 71,
+        "mage_2": 39
+      },
+      "projectiles": 1937,
+      "scheduledEffects": 28,
+      "poisonTicks": 327
+    },
+    {
+      "classId": "paladin",
+      "stationaryDps": 628.116,
+      "estimatedTtkMinutes": 38.74,
+      "mpPotionsUsed": 5,
+      "remainingMp": 2,
+      "casts": {
+        "paladin_3": 16,
+        "paladin_4": 14,
+        "paladin_0": 35,
+        "paladin_1": 22
+      },
+      "projectiles": 0,
+      "scheduledEffects": 0,
+      "poisonTicks": 0
+    },
+    {
+      "classId": "assassin",
+      "stationaryDps": 974.52,
+      "estimatedTtkMinutes": 24.97,
+      "mpPotionsUsed": 5,
+      "remainingMp": 1,
+      "casts": {
+        "assassin_2": 18,
+        "assassin_4": 13,
+        "assassin_0": 35,
+        "assassin_3": 15
+      },
+      "projectiles": 0,
+      "scheduledEffects": 0,
+      "poisonTicks": 80
+    },
+    {
+      "classId": "cannoneer",
+      "stationaryDps": 677.821,
+      "estimatedTtkMinutes": 35.899,
+      "mpPotionsUsed": 5,
+      "remainingMp": 3,
+      "casts": {
+        "cannoneer_3": 15,
+        "cannoneer_4": 13,
+        "cannoneer_0": 32,
+        "cannoneer_2": 19
+      },
+      "projectiles": 1671,
+      "scheduledEffects": 45,
+      "poisonTicks": 0
+    }
+  ]
+}

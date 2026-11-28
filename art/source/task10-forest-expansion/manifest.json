@@ -1,0 +1,134 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-012",
+      "names": {
+        "ru": "Чертополоховый волк",
+        "en": "Thistleback wolf",
+        "es": "Lobo de cardo"
+      },
+      "baseType": "forestWolf",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "pounce",
+        "roots"
+      ],
+      "silhouette": "Lean canine, huge ivory thistle quill ridge and long brush tail",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-013",
+      "names": {
+        "ru": "Ольховая гадюка",
+        "en": "Alder-frill viper",
+        "es": "Víbora de gola de aliso"
+      },
+      "baseType": "thornSnake",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "silhouette": "Legless looping viper, leaf frill and hooked ochre tail barb",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-014",
+      "names": {
+        "ru": "Разбойник в орешниковой маске",
+        "en": "Hazel-mask bow raider",
+        "es": "Bandido de máscara de avellano"
+      },
+      "baseType": "forestRaider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "shot",
+        "roots"
+      ],
+      "silhouette": "Narrow hooded archer with long wooden beak mask, bow and ragged cloak",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-016",
+      "names": {
+        "ru": "Трутовиковый медведь",
+        "en": "Bracketback bear",
+        "es": "Oso de hongos yesqueros"
+      },
+      "baseType": "bear",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "silhouette": "Heavy round-eared bear with enormous layered bracket-fungus shoulder plates",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-019",
+      "names": {
+        "ru": "Жёлудевый секач",
+        "en": "Acornjaw boar",
+        "es": "Jabalí de bellota"
+      },
+      "baseType": "wildBoar",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "charge",
+        "stomp"
+      ],
+      "silhouette": "Low bristly boar with sweeping tusks and distinct acorn-cup brow plate",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-023",
+      "names": {
+        "ru": "Фонарноухая крылатка",
+        "en": "Lantern-ear bat",
+        "es": "Murciélago de orejas farol"
+      },
+      "baseType": "forestBat",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "dive",
+        "blink"
+      ],
+      "silhouette": "Membrane-winged bat with oversized translucent luminous leaf ears",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-025",
+      "names": {
+        "ru": "Капокулакий орк",
+        "en": "Burlfist grove orc",
+        "es": "Orco de puños de nudo"
+      },
+      "baseType": "forestOrc",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "cleave",
+        "roots"
+      ],
+      "silhouette": "Muscular orc with giant burlwood fists, fern skirt and forked branch crest",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-026",
+      "names": {
+        "ru": "Тернокостный скелет",
+        "en": "Briar-cage skeleton",
+        "es": "Esqueleto de zarzas"
+      },
+      "baseType": "skeleton",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "cleave",
+        "venom"
+      ],
+      "silhouette": "Thin exposed skeleton with thorn cage ribs, broken half-helmet and hooked billhook",
+      "statsChanged": false
+    }
+  ]
+}

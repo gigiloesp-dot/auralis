@@ -1,0 +1,176 @@
+{
+  "status": "art-only-validated",
+  "runtimeRegistered": false,
+  "species": [
+    {
+      "id": "ancient-species-015",
+      "names": {
+        "ru": "Резцерылая гадюка руин",
+        "en": "Chisel-snouted ruin adder",
+        "es": "Víbora de ruinas de hocico cincel"
+      },
+      "baseType": "desertSnake",
+      "biome": "elder-ruins",
+      "spotId": "ancient-spot-015",
+      "movement": "ground",
+      "locomotion": "serpent",
+      "silhouette": "A legless thick coiled ivory limestone snake, triangular chisel shovel snout, tiny black eyes, stepped rectangular turquoise stone plates down its dorsal spine, short squared tail. Clearly serpentine without legs or wings. Archaeological ruin adapted.",
+      "proposedAbilityPattern": [
+        "pounce",
+        "cleave"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-016",
+      "names": {
+        "ru": "Страж колокольни",
+        "en": "Bell-tower sentinel",
+        "es": "Centinela del campanario"
+      },
+      "baseType": "ancientSentinel",
+      "biome": "elder-ruins",
+      "spotId": "ancient-spot-016",
+      "movement": "ground",
+      "locomotion": "heavy",
+      "silhouette": "Heavy biped ancient limestone guardian, extremely broad hollow bell-shaped torso, small recessed amber eye under a triangular temple roof head, two massive squared hammer fists, short stout separated stone legs, weathered teal bronze bindings. Clearly two arms and two legs, no weapon props. Ruin temple construction.",
+      "proposedAbilityPattern": [
+        "stomp",
+        "fan"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-018",
+      "names": {
+        "ru": "Колесоспинный страж пустошей",
+        "en": "Wheelback waste sentinel",
+        "es": "Centinela del yermo de rueda dorsal"
+      },
+      "baseType": "ancientSentinel",
+      "biome": "elder-wastes",
+      "spotId": "ancient-spot-018",
+      "movement": "ground",
+      "locomotion": "heavy",
+      "silhouette": "Heavy hunched biped ancient guardian, massive vertical circular millstone disk mounted on its back, long narrow stone beak head, asymmetrical thick slab forearms, stout two legs, cracked charcoal basalt and rusty orange mineral seams. No glowing effects. Bleak wastes adaptation.",
+      "proposedAbilityPattern": [
+        "stomp",
+        "charge"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-022",
+      "names": {
+        "ru": "Реброкрылая горгулья пустошей",
+        "en": "Rib-wing waste gargoyle",
+        "es": "Gárgola del yermo de alas costilladas"
+      },
+      "baseType": "ancientGargoyle",
+      "biome": "elder-wastes",
+      "spotId": "ancient-spot-022",
+      "movement": "flight",
+      "locomotion": "winged",
+      "silhouette": "Winged crouching flying stone gargoyle, skeletal jackal head with long pointed ears, compact emaciated obsidian torso, two large ribbed crescent bat wings with rusty red membranes, two tucked talons and whip tail. Distinct tall triangular wing silhouette, weathered wastes sculpture.",
+      "proposedAbilityPattern": [
+        "dive",
+        "cleave"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-024",
+      "names": {
+        "ru": "Веерохвостая горгулья руин",
+        "en": "Fan-tail ruin gargoyle",
+        "es": "Gárgola de ruinas de cola abanico"
+      },
+      "baseType": "ancientGargoyle",
+      "biome": "elder-ruins",
+      "spotId": "ancient-spot-024",
+      "movement": "flight",
+      "locomotion": "winged",
+      "silhouette": "Winged ancient gargoyle, squat turquoise patinated bronze frog-dragon torso, wide blunt face, two broad scalloped stone fan wings, broad semicircular peacock fan tail of limestone tiles, two short clawed feet. Distinct broad rounded silhouette. Ancient ruined palace sculpture.",
+      "proposedAbilityPattern": [
+        "dive",
+        "fan"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-025",
+      "names": {
+        "ru": "Камышевенчанная болотная гадюка",
+        "en": "Reed-crowned mire adder",
+        "es": "Víbora del fango coronada de juncos"
+      },
+      "baseType": "desertSnake",
+      "biome": "elder-marsh",
+      "spotId": "ancient-spot-025",
+      "movement": "ground",
+      "locomotion": "serpent",
+      "silhouette": "Legless slender long swamp serpent, olive black scales, flattened duckbill snout, three upright reed-shaped horn blades on head, long lateral amber throat fins and tight spiral tail; no legs or wings. Low sinuous asymmetrical body. Ancient marsh adapted.",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-026",
+      "names": {
+        "ru": "Скарабей с панцирем-амфорой",
+        "en": "Amphora shell scarab",
+        "es": "Escarabajo de caparazón ánfora"
+      },
+      "baseType": "scarab",
+      "biome": "elder-ruins",
+      "spotId": "ancient-spot-026",
+      "movement": "ground",
+      "locomotion": "crawler",
+      "silhouette": "Six-legged low crawling beetle, elongated terracotta amphora-shaped carapace with two handle-like thick ridges, rounded bronze shovel head, two ivory fork mandibles and six stout segmented arthropod legs. Old cracked ceramic with cobalt inlay, distinct oval domed insect silhouette. Ancient ruins adapted.",
+      "proposedAbilityPattern": [
+        "burrow",
+        "charge"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    },
+    {
+      "id": "ancient-species-030",
+      "names": {
+        "ru": "Веслохвостая болотная гадюка",
+        "en": "Cattail paddle viper",
+        "es": "Víbora del pantano de cola pala"
+      },
+      "baseType": "desertSnake",
+      "biome": "elder-marsh",
+      "spotId": "ancient-spot-030",
+      "movement": "ground",
+      "locomotion": "serpent",
+      "silhouette": "Legless broad swamp snake with low flat triangular head, heavy short body in loose S curve, very broad leaf-shaped paddle tail, cream cheek whisker tendrils and dark peat brown scales with pale fern rib armor plates. No limbs or wings. Distinct flat wide silhouette, ancient marsh adaptation.",
+      "proposedAbilityPattern": [
+        "pounce",
+        "roots"
+      ],
+      "preserveExistingStats": true,
+      "preserveExistingDrops": true
+    }
+  ],
+  "visualReview": {
+    "all384FinalPosesReviewed": true,
+    "method": "Inspected all 8 final beige-composited 8x6 contact sheets for complete anatomy, directions, differentiated state drawings, neighboring paint fragments and opaque background.",
+    "correctedSources": [
+      "ancient-species-022-reflow.png",
+      "ancient-species-025-reflow.png"
+    ],
+    "rejectedEvidencePreserved": true,
+    "runtimeOrBrowserVerified": false
+  }
+}

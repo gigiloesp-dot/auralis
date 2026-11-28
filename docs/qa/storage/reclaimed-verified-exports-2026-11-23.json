@@ -1,0 +1,206 @@
+{
+  "audit": "read-only verification; no original file removed or changed",
+  "exports": [
+    {
+      "path": "/workspace/work/auralis-medieval-export",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "3c3f37be51d31fe4c31d8a22fe414ff2860b0624",
+        "exportedAt": "2026-11-14T15:23:58.348Z"
+      },
+      "source_exists": true,
+      "files": 324,
+      "logical_bytes": 189077331,
+      "allocated_bytes": 189743104,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "hosting_dist_build_commits": [
+        "0cd6ad23e7ee1c135b2ffe47f42f47891f441e84"
+      ],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/work/auralis-medieval-final-approved-export",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "b5ac2e939b70485b9516e66617637b6189a4b360",
+        "exportedAt": "2026-11-14T15:45:06.291Z"
+      },
+      "source_exists": true,
+      "files": 324,
+      "logical_bytes": 189078800,
+      "allocated_bytes": 189743104,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "hosting_dist_build_commits": [
+        "17f776da62f83792b912d5110e8b8be4de5015e3"
+      ],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/work/auralis-medieval-final-export",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "0d5593bf7693dd59c739316fccdf30caf0a9651e",
+        "exportedAt": "2026-11-14T15:28:08.421Z"
+      },
+      "source_exists": true,
+      "files": 324,
+      "logical_bytes": 189078075,
+      "allocated_bytes": 189743104,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "hosting_dist_build_commits": [
+        "0ccd0b33f8f1da125bfa0212bc99ede83ca0ff2f"
+      ],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/work/auralis-medieval-verified-export",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "34582c399a4296d2ee2d883ffcb2cfc543f3d7f2",
+        "exportedAt": "2026-11-14T15:33:39.220Z"
+      },
+      "source_exists": true,
+      "files": 324,
+      "logical_bytes": 189078624,
+      "allocated_bytes": 189743104,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "hosting_dist_build_commits": [
+        "d032dd831cea1a9a637c2ed344d5056b69bedbe9"
+      ],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/work/auralis-task4-export-140103d",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "140103da211aac3ad8460d769c240df421bf4e27",
+        "exportedAt": "2026-11-14T19:42:08.263Z"
+      },
+      "source_exists": true,
+      "files": 326,
+      "logical_bytes": 189092381,
+      "allocated_bytes": 189759488,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "hosting_dist_build_commits": [
+        "962531e8a364af00204375a5290925ff1a6f50d5"
+      ],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/work/auralis-task5-export-28615cb",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "28615cbc4fe1288b1aba242aec0cf0baeb7b39bb",
+        "exportedAt": "2026-11-15T00:27:38.339Z"
+      },
+      "source_exists": true,
+      "files": 329,
+      "logical_bytes": 189443513,
+      "allocated_bytes": 190119936,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "hosting_dist_build_commits": [
+        "ab6f0c7d873e259f96a1672cb0cea7c6d7a27bf5"
+      ],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/work/auralis-task5-export-48285a7",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "48285a744d8f44576257c0bc7a155fdc15ff47f9",
+        "exportedAt": "2026-11-15T00:25:45.746Z"
+      },
+      "source_exists": true,
+      "files": 329,
+      "logical_bytes": 189443345,
+      "allocated_bytes": 190119936,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/work/auralis-task6-export-eaf2939",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "eaf29399db88b51ea22fccafe79a19f48b36cb9b",
+        "exportedAt": "2026-11-15T08:39:01.021Z"
+      },
+      "source_exists": true,
+      "files": 352,
+      "logical_bytes": 191741579,
+      "allocated_bytes": 192471040,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "hosting_dist_build_commits": [
+        "adf6bd192588059ad3e2bcb91cd136186337d0fb"
+      ],
+      "ancestor_of_pushed_development_head": true
+    },
+    {
+      "path": "/workspace/auralis/work/export-resume-check",
+      "build": {
+        "repository": "gigiloesp-dot/auralis",
+        "branch": "codex/auralis-master-development",
+        "sourceCommit": "23e507b724ce2e16af239befd48fd4262eb49954",
+        "exportedAt": "2026-11-13T06:32:54.371Z"
+      },
+      "source_exists": true,
+      "files": 181,
+      "logical_bytes": 61601594,
+      "allocated_bytes": 62021632,
+      "multiply_linked_files": 0,
+      "unexpected_or_modified_files": [],
+      "missing_source_files": [],
+      "openai_paths": [],
+      "ancestor_of_pushed_development_head": true
+    }
+  ],
+  "total_allocated_file_bytes": 1583464448,
+  "total_files": 2813,
+  "verification": "Every non-build.json file hashed using Git blob SHA-1 and matched exact committed runtime tree. No runtime file missing. No metadata directories, source art, QA evidence, or unknown files included.",
+  "cleanup": {
+    "utc": "2026-11-23T21:31:33.864613+00:00",
+    "removedOnlyDerivedExports": [
+      "/workspace/work/auralis-medieval-export",
+      "/workspace/work/auralis-medieval-final-approved-export",
+      "/workspace/work/auralis-medieval-final-export",
+      "/workspace/work/auralis-medieval-verified-export",
+      "/workspace/work/auralis-task4-export-140103d",
+      "/workspace/work/auralis-task5-export-28615cb",
+      "/workspace/work/auralis-task5-export-48285a7",
+      "/workspace/work/auralis-task6-export-eaf2939",
+      "/workspace/auralis/work/export-resume-check"
+    ],
+    "originalsScreenshotsGitAndPublishedSitesUntouched": true
+  }
+}

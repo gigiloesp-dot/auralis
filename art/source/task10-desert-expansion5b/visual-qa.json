@@ -1,0 +1,167 @@
+{
+  "runtimeVerified": false,
+  "reviewedFrames": 384,
+  "reviewMethod": "All48 final poses permodel visually inspected in saved labeled8x6 beige and dark contact sheets,16 full-sheet views. Repairedsource cutouts inspected on contrastingdark/mint backgrounds.",
+  "models": [
+    {
+      "id": "desert-species-048",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "ancientSentinel",
+      "locomotionPreserved": "heavy",
+      "source": "art/source/task10-desert-expansion5b/desert-species-048-clean.png",
+      "qaComposites": [
+        "desert-species-048-composited-qa.jpg",
+        "desert-species-048-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "e57741d97b63e3564f7196610d0b88656ee3518dcfaa947699a9a55caf57bb58"
+    },
+    {
+      "id": "desert-species-049",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "scarab",
+      "locomotionPreserved": "crawler",
+      "source": "art/source/task10-desert-expansion5b/desert-species-049-clean.png",
+      "qaComposites": [
+        "desert-species-049-composited-qa.jpg",
+        "desert-species-049-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "7891c739ad6939055a3ea757c9c1f5e45af24c43b02e22db1a76787c23ddac36"
+    },
+    {
+      "id": "desert-species-050",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "arcaneWisp",
+      "locomotionPreserved": "hover",
+      "source": "art/source/task10-desert-expansion5b/desert-species-050-clean.png",
+      "qaComposites": [
+        "desert-species-050-composited-qa.jpg",
+        "desert-species-050-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "f5fc630f987464b556926bcb3b79aa8cf1ae2c11e049f865b625e8a5fda7acd6"
+    },
+    {
+      "id": "desert-species-051",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "desertSnake",
+      "locomotionPreserved": "serpent",
+      "source": "art/source/task10-desert-expansion5b/desert-species-051-death-repair.png",
+      "qaComposites": [
+        "desert-species-051-composited-qa.jpg",
+        "desert-species-051-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "d237e8bd25a96e16b2ce7a2032a9bcc339c693bdff39b58a8e4cc7419e2ef8be"
+    },
+    {
+      "id": "desert-species-052",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "scarab",
+      "locomotionPreserved": "crawler",
+      "source": "art/source/task10-desert-expansion5b/desert-species-052-clean.png",
+      "qaComposites": [
+        "desert-species-052-composited-qa.jpg",
+        "desert-species-052-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "6ce8a8e6a996580fd686b99c52cd4c46b73735d9a9576581b457619d35007c18"
+    },
+    {
+      "id": "desert-species-053",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "ancientSentinel",
+      "locomotionPreserved": "heavy",
+      "source": "art/source/task10-desert-expansion5b/desert-species-053-clean.png",
+      "qaComposites": [
+        "desert-species-053-composited-qa.jpg",
+        "desert-species-053-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "620a137f9e5499c8b981528b703503efce70ffcebf60676c947259381b641e22"
+    },
+    {
+      "id": "desert-species-054",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "arcaneWisp",
+      "locomotionPreserved": "hover",
+      "source": "art/source/task10-desert-expansion5b/desert-species-054-clean.png",
+      "qaComposites": [
+        "desert-species-054-composited-qa.jpg",
+        "desert-species-054-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "ef4b5a508377a747a3e5f8fdab001fd0093e31a0c3d5fb111cfd113b386d28af"
+    },
+    {
+      "id": "desert-species-055",
+      "reviewedFrames": 48,
+      "reviewedBackgrounds": [
+        "#c8b483",
+        "#171b29"
+      ],
+      "completeSilhouettes": true,
+      "distinctDrawnStates": true,
+      "collapsedDeath": true,
+      "noVisibleMatteOrFragments": true,
+      "baseClassPreserved": "desertSnake",
+      "locomotionPreserved": "serpent",
+      "source": "art/source/task10-desert-expansion5b/desert-species-055-clean.png",
+      "qaComposites": [
+        "desert-species-055-composited-qa.jpg",
+        "desert-species-055-dark-qa.jpg"
+      ],
+      "finalPNGSHA256": "2d5f635800c17144696d113f1cf0e26830c4679c02145b7406c56e1fc41172f7"
+    }
+  ]
+}

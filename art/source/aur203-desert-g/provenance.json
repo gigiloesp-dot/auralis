@@ -1,0 +1,163 @@
+{
+  "pack": "aur203-desert-g",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "models": [
+    {
+      "placementId": "desert-species-080",
+      "typeId": "aur203Desert080",
+      "names": {
+        "ru": "Колодезный глотун",
+        "en": "Well-mouth gulper",
+        "es": "Engullidor pozo"
+      },
+      "biome": "sand",
+      "level": 49,
+      "x": 14944,
+      "y": 5049,
+      "anatomy": "round turquoise amphibian with stone well ring mouth and three digging legs",
+      "movementProfile": "heavy",
+      "abilityPattern": [
+        "stomp",
+        "burrow"
+      ],
+      "materialId": "aur203Desert080Material",
+      "materialConcept": "turquoise throat membrane",
+      "artOnly": true
+    },
+    {
+      "placementId": "desert-species-081",
+      "typeId": "aur203Desert081",
+      "names": {
+        "ru": "Солнечный гребнеход",
+        "en": "Sun-comb strider",
+        "es": "Zancudo peine solar"
+      },
+      "biome": "sand",
+      "level": 50,
+      "x": 16682,
+      "y": 4543,
+      "anatomy": "six-legged red antelope insect with huge golden comb sail and narrow snout",
+      "movementProfile": "charger",
+      "abilityPattern": [
+        "charge",
+        "fan"
+      ],
+      "materialId": "aur203Desert081Material",
+      "materialConcept": "golden comb lamella",
+      "artOnly": true
+    },
+    {
+      "placementId": "desert-species-082",
+      "typeId": "aur203Desert082",
+      "names": {
+        "ru": "Песчаный гончар",
+        "en": "Dune potter",
+        "es": "Alfarero de dunas"
+      },
+      "biome": "sand",
+      "level": 45,
+      "x": 6728,
+      "y": 3201,
+      "anatomy": "terracotta snail with double-necked amphora shell and four fleshy gripping tentacles",
+      "movementProfile": "crawler",
+      "abilityPattern": [
+        "venom",
+        "roots"
+      ],
+      "materialId": "aur203Desert082Material",
+      "materialConcept": "amphora shell ceramic",
+      "artOnly": true
+    },
+    {
+      "placementId": "desert-species-083",
+      "typeId": "aur203Desert083",
+      "names": {
+        "ru": "Барханный парусоклюв",
+        "en": "Dune sailbill",
+        "es": "Pico vela dunar"
+      },
+      "biome": "sand",
+      "level": 51,
+      "x": 2551,
+      "y": 18579,
+      "anatomy": "flightless long-legged bird with triangular sail beak and broad striped tail fan",
+      "movementProfile": "skirmisher",
+      "abilityPattern": [
+        "shot",
+        "fan"
+      ],
+      "materialId": "aur203Desert083Material",
+      "materialConcept": "sailbill beak plate",
+      "artOnly": true
+    }
+  ],
+  "animationScope": "48 painted poses: 8 directions x idle/run-a/run-b/attack/hurt/death. Two movement drawings; six pose banks, not six multiframe clips.",
+  "mechanicalPacking": "Whole complete pose cropping with 8 source pixel margins and uniform resampling; alpha used solely for measurement. No semantic painting/erasing/matte removal by Python.",
+  "visualReview": {
+    "all48PosesPerModel": true,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "death": "natural collapsed sideways with limp limbs and closed eyes",
+    "registration": "n/ne/e/se/s/sw/w/nw; source s/sw/w/nw/n/ne/e/se",
+    "reviewed": true
+  },
+  "generationHistory": {
+    "generation-v2.json": [
+      {
+        "id": "desert-species-080",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level49 original WELL-MOUTH GULPER: heavy round turquoise amphibian with huge circular stone well-ring mouth lined in cream pebble teeth, three squat digging legs, two tiny gold eyes above rim, russet desert-wart skin with cobalt belly. Has no shell. Attack entire mouth gape, hurt mouth shut body crouched, death rolled on side with three limp legs.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c767031c-0950-4a68-87d4-6aca5f7b83fe.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "desert-species-081",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level50 original SUN-COMB STRIDER: alien six-legged russet insect-antelope with narrow striped snout, small hooked mandibles and enormous golden comb-like dorsal sail made of five curved upright blades, dark teal saddle plates, split long antennae. No wings. Attack low head charge with sail flared, death fully sideways with six bent legs and sail resting flat.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-25f834f9-a9b8-4c02-af1b-9d5ac1e8814c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "desert-species-082",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level45 original DUNE POTTER: fleshy violet snail beast with four broad gripping tentacles and distinctive tall double-necked terracotta amphora shell, painted turquoise geometric bands on warm clay, two long lemon eye stalks. No humanoid limbs. Attack extended tentacle slap, hurt all tentacles retracted, death amphora lies sideways with limp foot and closed eye stalks.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c96c09b8-39a0-451d-8371-191f231b685d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      {
+        "id": "desert-species-083",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level51 original DUNE SAILBILL: flightless long-legged bird-beast with enormous ochre triangular sail-shaped beak, purple mask, two angular copper feet, striped cream-and-black tail fan, tiny teal arm wings. A strong triangular head silhouette. Attack beak sideways slash, hurt folds neck down, death whole bird on side with bent legs and tail spread limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-19087d2a-d526-49d5-bb7b-da30604563cd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      }
+    ],
+    "rejected-generation.json": [
+      {
+        "id": "desert-species-080",
+        "prompt": "undefinedSAND DESERT level49 original WELL-MOUTH GULPER: heavy round turquoise amphibian with huge circular stone well-ring mouth lined in cream pebble teeth, three squat digging legs, two tiny gold eyes above rim, russet desert-wart skin with cobalt belly. Has no shell. Attack entire mouth gape, hurt mouth shut body crouched, death rolled on side with three limp legs.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f83e0923-12d8-476a-8088-67257fd1dae5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "desert-species-081",
+        "prompt": "undefinedSAND DESERT level50 original SUN-COMB STRIDER: alien six-legged russet insect-antelope with narrow striped snout, small hooked mandibles and enormous golden comb-like dorsal sail made of five curved upright blades, dark teal saddle plates, split long antennae. No wings. Attack low head charge with sail flared, death fully sideways with six bent legs and sail resting flat.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2b02a97e-b85c-4e72-9902-ab2bb4192a70.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "desert-species-082",
+        "prompt": "undefinedSAND DESERT level45 original DUNE POTTER: fleshy violet snail beast with four broad gripping tentacles and distinctive tall double-necked terracotta amphora shell, painted turquoise geometric bands on warm clay, two long lemon eye stalks. No humanoid limbs. Attack extended tentacle slap, hurt all tentacles retracted, death amphora lies sideways with limp foot and closed eye stalks.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-92f16649-8b99-4e89-ae86-2bb7a84ab82b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      },
+      {
+        "id": "desert-species-083",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. SAND DESERT level51 original DUNE SAILBILL: flightless long-legged bird-beast with enormous ochre triangular sail-shaped beak, purple mask, two angular copper feet, striped cream-and-black tail fan, tiny teal arm wings. A strong triangular head silhouette. Attack beak sideways slash, hurt folds neck down, death whole bird on side with bent legs and tail spread limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-83f5cd4d-ec0e-4c8a-80bb-fce432c66b26.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      }
+    ]
+  }
+}

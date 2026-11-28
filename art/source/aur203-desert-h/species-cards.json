@@ -1,0 +1,90 @@
+[
+  {
+    "placementId": "desert-species-084",
+    "typeId": "aur203Desert084",
+    "names": {
+      "ru": "Соляной зонтонос",
+      "en": "Salt parasol bearer",
+      "es": "Portador de parasol salino"
+    },
+    "biome": "sand",
+    "level": 50,
+    "x": 14586,
+    "y": 9412,
+    "anatomy": "four-legged pale armadillo under wide faceted salt crystal umbrella carapace",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "frost"
+    ],
+    "materialId": "aur203Desert084Material",
+    "materialConcept": "salt carapace crystal",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-085",
+    "typeId": "aur203Desert085",
+    "names": {
+      "ru": "Термитовый горн",
+      "en": "Termite trumpet",
+      "es": "Trompeta termitera"
+    },
+    "biome": "sand",
+    "level": 49,
+    "x": 13041,
+    "y": 8231,
+    "anatomy": "upright hollow termite mound beast on three stubby legs with trumpet snout",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "fan"
+    ],
+    "materialId": "aur203Desert085Material",
+    "materialConcept": "resonant clay throat tube",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-086",
+    "typeId": "aur203Desert086",
+    "names": {
+      "ru": "Обсидиановый веретенник",
+      "en": "Obsidian spindlewalker",
+      "es": "Andarín huso de obsidiana"
+    },
+    "biome": "sand",
+    "level": 54,
+    "x": 19290,
+    "y": 14508,
+    "anatomy": "spindle-shaped black glass arthropod on four arched legs with two pendulum claws",
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "cleave"
+    ],
+    "materialId": "aur203Desert086Material",
+    "materialConcept": "obsidian spindle plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-087",
+    "typeId": "aur203Desert087",
+    "names": {
+      "ru": "Бронзовый пескокрут",
+      "en": "Bronze sand whorl",
+      "es": "Remolino de bronce"
+    },
+    "biome": "sand",
+    "level": 55,
+    "x": 17820,
+    "y": 19010,
+    "anatomy": "round bronze spiral-shelled cephalopod with eight curling ribbon arms and split crown fin",
+    "movementProfile": "elemental",
+    "abilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "materialId": "aur203Desert087Material",
+    "materialConcept": "bronze spiral shell layer",
+    "artOnly": true
+  }
+]

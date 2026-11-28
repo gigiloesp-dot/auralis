@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "totalPoses": 384,
+  "models": [
+    {
+      "id": "ancient-species-012",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-012.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-012.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1273,
+      "rgbaBytes": 4718592,
+      "sha256": "da45f798a4181dc655b256d8294d3658b4fca151704bde000f188d1e0de05987",
+      "scale": 1.0140845070422535,
+      "annotationHeight": 84
+    },
+    {
+      "id": "ancient-species-014",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-014.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-014.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 2488,
+      "rgbaBytes": 4718592,
+      "sha256": "b2ed1a28582eb85140ff1c92ea6fd8812179bf36f06966960c1ebd9ddc4b945b",
+      "scale": 1.2923076923076924,
+      "annotationHeight": 96
+    },
+    {
+      "id": "ancient-species-017",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-017.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-017.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1856,
+      "rgbaBytes": 4718592,
+      "sha256": "83642cf70c0d24d6904acf9f54a795c879aaa5b8d7bcd5f3675740ce3554db28",
+      "scale": 1.1111111111111112,
+      "annotationHeight": 72
+    },
+    {
+      "id": "ancient-species-020",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-020.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-020.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1168,
+      "rgbaBytes": 4718592,
+      "sha256": "bc1b31adb48cac6db13c48f537d95b1c5b4d5f0f66748278563f6c6ca65b3d5e",
+      "scale": 1.6862745098039216,
+      "annotationHeight": 98
+    },
+    {
+      "id": "ancient-species-023",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-023.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-023.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 2074,
+      "rgbaBytes": 4718592,
+      "sha256": "ec7f80c8161607451c69568f3d357c8016a0b7e10ecee259f0d55e93487e27a1",
+      "scale": 1.2181818181818183,
+      "annotationHeight": 79
+    },
+    {
+      "id": "ancient-species-027",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-027.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-027.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 815,
+      "rgbaBytes": 4718592,
+      "sha256": "cd930161d07a989c9efcdf47c3a12e9e38b4f3e21703b2c7d581132df88054da",
+      "scale": 1.2615384615384615,
+      "annotationHeight": 94
+    },
+    {
+      "id": "ancient-species-028",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-028.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-028.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1812,
+      "rgbaBytes": 4718592,
+      "sha256": "31490458a3b323c78207b443c568c3ac03bedd2e4a68edea2070a723a8aa16aa",
+      "scale": 1.1612903225806452,
+      "annotationHeight": 84
+    },
+    {
+      "id": "ancient-species-036",
+      "image": "assets/actors/task10-ancient-expansion2/ancient-species-036.png",
+      "atlas": "assets/actors/task10-ancient-expansion2/ancient-species-036.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1357,
+      "rgbaBytes": 4718592,
+      "sha256": "0fa32197d21e853688fe87d74dc99e7ce5356e739149203728a29ae6f29ccdbb",
+      "scale": 1.2459016393442623,
+      "annotationHeight": 88
+    }
+  ]
+}

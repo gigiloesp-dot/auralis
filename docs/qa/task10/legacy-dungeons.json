@@ -1,0 +1,367 @@
+{
+  "source": "152963f7a25a8e3c2e58a07cfb4e0128456fc1a8",
+  "definitions": [
+    {
+      "id": "dungeon1",
+      "number": 1,
+      "region": "forest",
+      "level": 5,
+      "x": 1820,
+      "y": 1780,
+      "names": {
+        "ru": "Корни под старой мельницей",
+        "en": "Roots beneath the old mill",
+        "es": "Raíces bajo el molino"
+      },
+      "size": "small",
+      "bossCount": 1
+    },
+    {
+      "id": "dungeon2",
+      "number": 2,
+      "region": "forest",
+      "level": 10,
+      "x": 4880,
+      "y": 4860,
+      "names": {
+        "ru": "Паутина каменного колодца",
+        "en": "The stone well web",
+        "es": "La telaraña del pozo"
+      },
+      "size": "small",
+      "bossCount": 1
+    },
+    {
+      "id": "dungeon3",
+      "number": 3,
+      "region": "forest",
+      "level": 18,
+      "x": 9050,
+      "y": 8950,
+      "names": {
+        "ru": "Гробница дубового короля",
+        "en": "Tomb of the oak king",
+        "es": "Tumba del rey del roble"
+      },
+      "size": "small",
+      "bossCount": 1
+    },
+    {
+      "id": "dungeon4",
+      "number": 4,
+      "region": "north",
+      "level": 22,
+      "x": 1960,
+      "y": 2240,
+      "names": {
+        "ru": "Тоннели морозного брода",
+        "en": "Frostford tunnels",
+        "es": "Túneles del vado helado"
+      },
+      "size": "medium",
+      "bossCount": 2
+    },
+    {
+      "id": "dungeon5",
+      "number": 5,
+      "region": "north",
+      "level": 25,
+      "x": 4100,
+      "y": 4460,
+      "names": {
+        "ru": "Рудник синего льда",
+        "en": "Blue ice mine",
+        "es": "Mina de hielo azul"
+      },
+      "size": "medium",
+      "bossCount": 2
+    },
+    {
+      "id": "dungeon6",
+      "number": 6,
+      "region": "north",
+      "level": 29,
+      "x": 7500,
+      "y": 7820,
+      "names": {
+        "ru": "Крепость белой бури",
+        "en": "White storm fortress",
+        "es": "Fortaleza de la tormenta"
+      },
+      "size": "medium",
+      "bossCount": 2
+    },
+    {
+      "id": "dungeon7",
+      "number": 7,
+      "region": "north",
+      "level": 33,
+      "x": 10580,
+      "y": 10870,
+      "names": {
+        "ru": "Предел северного дозора",
+        "en": "The northern watch",
+        "es": "La guardia del norte"
+      },
+      "size": "medium",
+      "bossCount": 2
+    },
+    {
+      "id": "dungeon8",
+      "number": 8,
+      "region": "ancient",
+      "level": 35,
+      "x": 2060,
+      "y": 2240,
+      "names": {
+        "ru": "Забытый архив",
+        "en": "The forgotten archive",
+        "es": "El archivo olvidado"
+      },
+      "size": "large",
+      "bossCount": 3
+    },
+    {
+      "id": "dungeon9",
+      "number": 9,
+      "region": "ancient",
+      "level": 36,
+      "x": 4400,
+      "y": 4440,
+      "names": {
+        "ru": "Храм расколотой луны",
+        "en": "Temple of the shattered moon",
+        "es": "Templo de la luna rota"
+      },
+      "size": "large",
+      "bossCount": 3
+    },
+    {
+      "id": "dungeon10",
+      "number": 10,
+      "region": "ancient",
+      "level": 38,
+      "x": 6940,
+      "y": 6900,
+      "names": {
+        "ru": "Катакомбы вечного света",
+        "en": "Catacombs of eternal light",
+        "es": "Catacumbas de la luz eterna"
+      },
+      "size": "large",
+      "bossCount": 3
+    },
+    {
+      "id": "dungeon11",
+      "number": 11,
+      "region": "ancient",
+      "level": 40,
+      "x": 9550,
+      "y": 9300,
+      "names": {
+        "ru": "Залы безмолвного суда",
+        "en": "Halls of silent judgment",
+        "es": "Salas del juicio silencioso"
+      },
+      "size": "large",
+      "bossCount": 3
+    },
+    {
+      "id": "dungeon12",
+      "number": 12,
+      "region": "ancient",
+      "level": 42,
+      "x": 11960,
+      "y": 11720,
+      "names": {
+        "ru": "Сердце Ауралиса",
+        "en": "Heart of Auralis",
+        "es": "Corazón de Auralis"
+      },
+      "size": "large",
+      "bossCount": 3
+    }
+  ],
+  "variants": [
+    {
+      "id": "dungeon1",
+      "mode": "easy",
+      "sha256": "e13d36e1c7e6523e6bb25a5eb1e17bcdd24521cc057fa4e2ea270acf6b423463"
+    },
+    {
+      "id": "dungeon1",
+      "mode": "medium",
+      "sha256": "f31a3737e660a0f86ccfcff94053350eee8c90b35c1115ea76ea5521e0e37d76"
+    },
+    {
+      "id": "dungeon1",
+      "mode": "hard",
+      "sha256": "06dfdc3df1496f0403a170d7c59e52d5e0c3c29562cd9eecdc58920571fd1011"
+    },
+    {
+      "id": "dungeon2",
+      "mode": "easy",
+      "sha256": "5942f51f3d8049036f77c65ea668370005e7f6d1711e60ee618bd08b7cf62163"
+    },
+    {
+      "id": "dungeon2",
+      "mode": "medium",
+      "sha256": "ec41eba04dc477719e2f493f56cdc2b0422811d599193bda0b7d403343ee0fcb"
+    },
+    {
+      "id": "dungeon2",
+      "mode": "hard",
+      "sha256": "b1136186d23619196da091c79481b22b280f5ef4959d01e048ce1b009cb2408d"
+    },
+    {
+      "id": "dungeon3",
+      "mode": "easy",
+      "sha256": "13b7113f617cc455b164032d9dc6cf4780157b524667d1a705f15935fe70d564"
+    },
+    {
+      "id": "dungeon3",
+      "mode": "medium",
+      "sha256": "ed2806ca96bd408b0219b418614fd85b6a32cf38a4717b204a1c356ec24e6a32"
+    },
+    {
+      "id": "dungeon3",
+      "mode": "hard",
+      "sha256": "112cfb48eab48849acc8d88a2ffb0043fd635598766bb2f60b08f7f57ccf3a98"
+    },
+    {
+      "id": "dungeon4",
+      "mode": "easy",
+      "sha256": "c790e147826a36e9951518c2739cccf74bd61f21e8ee2ec3bf4b3cc0e6ab98d1"
+    },
+    {
+      "id": "dungeon4",
+      "mode": "medium",
+      "sha256": "51a8de107a7ad12492771dda7095f31595953e07cfcbd828e22b7dae8daed782"
+    },
+    {
+      "id": "dungeon4",
+      "mode": "hard",
+      "sha256": "eafc0deae85727a1e03a65e995aba04f485209470b1e2e06e22387a6933f1005"
+    },
+    {
+      "id": "dungeon5",
+      "mode": "easy",
+      "sha256": "57b6313a37aecd90fc803dca150fd2fd98251f8eaa98656d75e0a344eceec3c5"
+    },
+    {
+      "id": "dungeon5",
+      "mode": "medium",
+      "sha256": "345e71a711a88ae9ea0c27de0129c23fcc336e4b5d4cabf9ba70912aca39b44b"
+    },
+    {
+      "id": "dungeon5",
+      "mode": "hard",
+      "sha256": "f0870f5b9fc9531deddd308886d5f63a464dde802398f12e4ebc471dbc87fd96"
+    },
+    {
+      "id": "dungeon6",
+      "mode": "easy",
+      "sha256": "b30613af9c0711fc638c60ae8396e69b8b71fb373d32fa8b92d80da952a38ace"
+    },
+    {
+      "id": "dungeon6",
+      "mode": "medium",
+      "sha256": "064db24a7b701f09d1fd47b8d4e756bd1a6d6d467a363d4fc3eb01aabf0466de"
+    },
+    {
+      "id": "dungeon6",
+      "mode": "hard",
+      "sha256": "9fc140b670c9465760c9463607b898b4fab31bcf70807d4e4ef9c819e01ba9ed"
+    },
+    {
+      "id": "dungeon7",
+      "mode": "easy",
+      "sha256": "141035630b44865ad3239f46233866d25fa60305f9194f451def8c3861d51286"
+    },
+    {
+      "id": "dungeon7",
+      "mode": "medium",
+      "sha256": "5b6b7a4b095898eaf405d83fb109e67ae8b417ac55271357ac17bbea0112e8ef"
+    },
+    {
+      "id": "dungeon7",
+      "mode": "hard",
+      "sha256": "e0f95b34b03f494513d02b8dbac8aa4d7f42873fd528b4a0bbfbd15c515d792d"
+    },
+    {
+      "id": "dungeon8",
+      "mode": "easy",
+      "sha256": "ea5ca505a4ae76154781a04cca75d25b4ea1c02d167771f964ccb87ee1449371"
+    },
+    {
+      "id": "dungeon8",
+      "mode": "medium",
+      "sha256": "6e9a66c8639507051aaa66fa0fb737da4ca26c2edabafbc7c7d82f5ecd98343c"
+    },
+    {
+      "id": "dungeon8",
+      "mode": "hard",
+      "sha256": "9f0ab1c2ea59ee5c9405b959681454eb76aa88ea21ca2a26f5b6d3d182198110"
+    },
+    {
+      "id": "dungeon9",
+      "mode": "easy",
+      "sha256": "7de05a1b385fc304d3b6efb42e2545e34b1161814ed8f6432a7a7367ca5ad0f0"
+    },
+    {
+      "id": "dungeon9",
+      "mode": "medium",
+      "sha256": "1529f614c80f53e3ecefd2be89fb28e48ba9d0a265694b5ad7b0c88fbf61f95b"
+    },
+    {
+      "id": "dungeon9",
+      "mode": "hard",
+      "sha256": "cc9466737411401b53d51caaf99d87c1777f146235d6d3ea529180308980a970"
+    },
+    {
+      "id": "dungeon10",
+      "mode": "easy",
+      "sha256": "92d83cb7587019091a94b2701dd1f024ff8d6dce91329701cc5acf13c96c39c5"
+    },
+    {
+      "id": "dungeon10",
+      "mode": "medium",
+      "sha256": "4bc344f52957b384d283954f421384907f6d1162e63b428bc5519954caaa8264"
+    },
+    {
+      "id": "dungeon10",
+      "mode": "hard",
+      "sha256": "f01b64a29ad36e280c155bdf397dfb90e827d5d98008060720f6f7c4f77a0a12"
+    },
+    {
+      "id": "dungeon11",
+      "mode": "easy",
+      "sha256": "11d1b72a148f6baab3081e5fc71310932643a42acc61595b2a9db9f65dfc56cb"
+    },
+    {
+      "id": "dungeon11",
+      "mode": "medium",
+      "sha256": "121ad62b7f9f137abdaf14418db2e990392dea93d506cde60e1f4c6e04abf481"
+    },
+    {
+      "id": "dungeon11",
+      "mode": "hard",
+      "sha256": "3a2c55a4cbdb1914e1ef3bf93db7f9711009f9449d6766b600d93fdf19086f92"
+    },
+    {
+      "id": "dungeon12",
+      "mode": "easy",
+      "sha256": "17e4850c39177b5f2e4f22ff30a2aeb0dad054a9b70a0ddd87f7b90420209368"
+    },
+    {
+      "id": "dungeon12",
+      "mode": "medium",
+      "sha256": "41ff1b6656a90d9f019062328c1cf56900011b5242e93017be34a525f5b0519b"
+    },
+    {
+      "id": "dungeon12",
+      "mode": "hard",
+      "sha256": "cfc11505082446737f628a068398542cfe904550a54f9be304f710891bdf5565"
+    }
+  ]
+}

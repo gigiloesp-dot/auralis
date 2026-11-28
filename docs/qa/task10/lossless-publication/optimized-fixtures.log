@@ -1,0 +1,23 @@
+Command: node --test --test-name-pattern='CRC|input filter|unsupported' tests/losslessPng.test.mjs
+Captured tool output after the single-pass filter scoring optimization.
+
+✔ CRC matches standard vector and rejects damaged chunks (8.502081ms)
+✔ RGB input filter 0: exact channels, ancillary bytes, deterministic and idempotent (5.453942ms)
+✔ RGB input filter 1: exact channels, ancillary bytes, deterministic and idempotent (2.66277ms)
+✔ RGB input filter 2: exact channels, ancillary bytes, deterministic and idempotent (2.127535ms)
+✔ RGB input filter 3: exact channels, ancillary bytes, deterministic and idempotent (9.114889ms)
+✔ RGB input filter 4: exact channels, ancillary bytes, deterministic and idempotent (2.74928ms)
+✔ RGBA input filter 0: exact channels, ancillary bytes, deterministic and idempotent (2.821198ms)
+✔ RGBA input filter 1: exact channels, ancillary bytes, deterministic and idempotent (2.753706ms)
+✔ RGBA input filter 2: exact channels, ancillary bytes, deterministic and idempotent (1.915056ms)
+✔ RGBA input filter 3: exact channels, ancillary bytes, deterministic and idempotent (1.565151ms)
+✔ RGBA input filter 4: exact channels, ancillary bytes, deterministic and idempotent (1.661786ms)
+✔ unsupported depth and interlace retain original bytes (2.715749ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 140.635319

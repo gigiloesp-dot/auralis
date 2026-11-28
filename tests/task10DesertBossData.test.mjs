@@ -1,0 +1,32 @@
+import {originalTask10Camps,assertActiveExpansion} from './worldExpansionScope.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';
+import {DESERT_BOSSES} from '../js/monsters/desertBossData.js';
+import {getRegionContent,getRelease21RegionContent} from '../js/world/regionContent.js';
+import {DUNGEONS} from '../js/dungeons/dungeonData.js';
+import {worldWalkable,regionRoads,distanceToSegment} from '../js/world/chunkGeometry.js';
+import {MONSTER_TYPES,monsterKind} from '../js/monsters/monsters.js';
+import {movementProfile} from '../js/monsters/movementProfiles.js';
+import {rollMonsterLoot} from '../js/monsters/loot.js';
+import {createCharacter} from '../js/characters/Character.js';
+import {Save} from '../js/systems/save.js';
+const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y),desert=()=>({...getRegionContent('desert'),dungeons:DUNGEONS.filter(d=>d.region==='desert')});
+test('desert encounter proposals have exactly8mini,2large/open and one separately identifiable world giant with immutable unique IDs and all three languages',()=>{
+ assert.equal(DESERT_BOSSES.length,11);assert.equal(DESERT_BOSSES.filter(d=>d.bossType==='mini').length,8);assert.equal(DESERT_BOSSES.filter(d=>d.bossType==='large'&&d.encounterTier==='open').length,2);assert.equal(DESERT_BOSSES.filter(d=>d.bossType==='world').length,1);
+ assert.deepEqual(DESERT_BOSSES.map(d=>d.id),[...Array.from({length:8},(_,i)=>'desert-mini-'+i),'desert-open-0','desert-open-1','desert-world-stone-giant']);assert.ok(Object.isFrozen(DESERT_BOSSES));assert.deepEqual(DESERT_BOSSES.map(d=>d.id),[...Array.from({length:8},(_,i)=>'desert-mini-'+i),'desert-open-0','desert-open-1','desert-world-stone-giant']);const ids=new Set(),names={ru:new Set(),en:new Set(),es:new Set()};
+ for(const d of DESERT_BOSSES){assert.ok(Object.isFrozen(d));assert.ok(Object.isFrozen(d.patterns));assert.ok(Object.isFrozen(d.names));assert.equal(d.region,'desert');assert.ok(MONSTER_TYPES[d.type]);assert.ok(d.level>=42&&d.level<=56);assert.ok(d.patterns.length>=2);assert.ok(d.patterns.every(p=>['slam','charge','volley'].includes(p)));assert.ok(!ids.has(d.id));ids.add(d.id);for(const lang of ['ru','en','es']){assert.ok(d.names[lang]);assert.ok(!names[lang].has(d.names[lang]));names[lang].add(d.names[lang]);}const k=monsterKind(d);assert.equal(k.boss,true);assert.equal(k.level,d.level);assert.equal(k.bossType,d.bossType);assert.ok(k.hp>0&&k.attack>0&&k.xp>0&&k.gold>0);assert.ok(movementProfile(k).ability);}
+ assert.equal(DESERT_BOSSES.at(-1).names.en,'Stone Giant');assert.equal(DESERT_BOSSES.at(-1).level,56);assert.equal(DESERT_BOSSES.at(-1).encounter,'stoneGiant');assert.equal(DESERT_BOSSES.at(-1).leashRadius,450);assert.deepEqual(DESERT_BOSSES.at(-1).abilityConfig,{collisionRadius:52,faceTarget:true});assert.ok(Object.isFrozen(DESERT_BOSSES.at(-1).abilityConfig));
+});
+test('all11 fixed arenas clear real camps,roads,towns,entrances,receivers and reserved settlement locations without moving the17 dungeon definitions or18 existing bosses',()=>{
+ assert.equal(DUNGEONS.length,17);assert.deepEqual(DUNGEONS.map(d=>d.id),Array.from({length:17},(_,i)=>'dungeon'+(i+1)));const c=desert(),roads=regionRoads(c);assertActiveExpansion(c);assert.equal(originalTask10Camps(c).length,56);
+ for(const d of DESERT_BOSSES){assert.ok(worldWalkable(c,d.x,d.y,70),d.id+' main footprint');assert.ok(d.x>=750&&d.y>=750&&d.x<c.width-750&&d.y<c.height-750);for(let i=0;i<8;i++){const angle=i*Math.PI/4;assert.ok(worldWalkable(c,d.x+Math.cos(angle)*200,d.y+Math.sin(angle)*200,18),d.id+' player approach');if(d.bossType==='world')assert.ok(worldWalkable(c,d.x+Math.cos(angle)*420,d.y+Math.sin(angle)*420,18),d.id+' giant outer dodge position');}
+  assert.ok(c.camps.every(p=>distance(d,p)>1120),d.id+' neighbouring camp');assert.ok(roads.every(r=>distanceToSegment(d,r.from,r.to)>r.width/2+320),d.id+' road');assert.ok(c.towns.every(p=>distance(d,p)>1100),d.id+' safe town');assert.ok((c.npcs||[]).every(p=>distance(d,p)>750),d.id+' NPC');assert.ok(c.portals.every(p=>distance(d,p)>750),d.id+' portal');assert.ok(c.dungeons.every(p=>distance(d,p)>750),d.id+' dungeon entrance');assert.ok((c.futureSettlements||[]).every(p=>distance(d,p)>850),d.id+' future settlement');assert.ok((c.landmarks||[]).every(p=>distance(d,p)>600),d.id+' existing landmark');assert.ok(DESERT_BOSSES.every(p=>p===d||distance(d,p)>2100),d.id+' boss territory separation');
+ }
+ const legacy=[];for(const id of ['forest','north','ancient']){const before=getRelease21RegionContent(id).bosses,current=getRegionContent(id).bosses;assert.deepEqual(current,before);legacy.push(...current);}assert.equal(legacy.length,18);const existingIds=new Set([...legacy.map(d=>d.id),...DUNGEONS.flatMap(d=>Array.from({length:d.bossCount},(_,i)=>d.id+'-boss-'+i))]);for(const d of DESERT_BOSSES)assert.ok(!existingIds.has(d.id));
+});
+test('each new outdoor death has its own40-minute timestamp and all11 records survive normal character normalization independently',()=>{
+ const now=Date.now(),monsters=Object.fromEntries(DESERT_BOSSES.map((d,i)=>{const k=monsterKind(d),killedAt=now+i*1000;assert.equal(k.respawnMs,2400000);return ['desert:'+d.id,{hp:0,killedAt,deadUntil:killedAt+k.respawnMs}];})),h=createCharacter({level:56,region:'desert',x:1600,y:1800,worldState:{monsters}}),restored=createCharacter(Save.normalize(JSON.parse(JSON.stringify(h))));
+ for(const d of DESERT_BOSSES)assert.deepEqual(restored.worldState.monsters['desert:'+d.id],monsters['desert:'+d.id]);const keys=Object.keys(restored.worldState.monsters);assert.equal(keys.length,11);assert.equal(new Set(keys.map(k=>restored.worldState.monsters[k].deadUntil)).size,11);const oldGiant=restored.worldState.monsters['desert:desert-world-stone-giant'].deadUntil;restored.worldState.monsters['desert:desert-mini-0'].deadUntil+=5000;assert.equal(restored.worldState.monsters['desert:desert-world-stone-giant'].deadUntil,oldGiant);
+});
+test('new large/open encounters use existing nonlegendary boss drops and only the world giant can use the existing legendary group; no gear catalogue is introduced',()=>{
+ const h=createCharacter({classId:'warrior',level:56});for(const d of DESERT_BOSSES){const k=monsterKind(d),drops=rollMonsterLoot(h,k,()=>0);assert.ok(drops.length>0);assert.equal(drops.some(p=>p.rarity==='legendary'),d.bossType==='world',d.id);}
+});

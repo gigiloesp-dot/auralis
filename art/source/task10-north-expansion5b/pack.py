@@ -1,0 +1,55 @@
+"""Mechanical complete-pose crop/scale/registration only. No semantic pixel edits."""
+from PIL import Image,ImageDraw
+from pathlib import Path
+import json,hashlib
+ROOT=Path(__file__).resolve().parents[3]
+SRC=Path(__file__).resolve().parent
+OUT=ROOT/'assets/actors/task10-north-expansion5b'
+defs=json.loads((SRC/'definitions.json').read_text())
+banks=['idle','run-a','run-b','attack','hurt','death'];dirs=['n','ne','e','se','s','sw','w','nw']
+entries={};manifest=[]
+for d in defs:
+ id=d['id']; path=SRC/(id+'-source.png'); im=Image.open(path).convert('RGBA'); w,h=im.size
+ cells=[]
+ # Locate true inter-pose blank corridors from projection statistics. This
+ # changes crop coordinates only; source pixels and alpha remain untouched.
+ alpha=im.getchannel('A')
+ def blankest(axis,lo,hi,region):
+  scores=[]
+  for v in range(lo,hi+1):
+   strip=alpha.crop((region[0],v,region[2],v+1) if axis=='y' else (v,region[1],v+1,region[3]))
+   hist=strip.histogram();scores.append((sum(hist[32:]),sum(i*n for i,n in enumerate(hist)),abs(v-(lo+hi)//2),v))
+  return min(scores)[3]
+ ys=[0]+[blankest('y',round(k*h/6)-35,round(k*h/6)+35,(0,0,w,h)) for k in range(1,6)]+[h]
+ for row in range(6):
+  xs=[0]+[blankest('x',round(k*w/8)-40,round(k*w/8)+40,(0,ys[row],w,ys[row+1])) for k in range(1,8)]+[w]
+  # Visually reviewed separating corridors for elongated attack extremities.
+  for col in range(8):
+   box=(xs[col],ys[row],xs[col+1],ys[row+1]);tile=im.crop(box)
+   # Read alpha to locate complete-pose bounds only; never alter source pixels.
+   visible=tile.getchannel('A').point(lambda a:255 if a>32 else 0).getbbox()
+   if not visible:raise ValueError((id,row,col,'no visible pose'))
+   local=(max(0,visible[0]-3),max(0,visible[1]-3),min(tile.width,visible[2]+3),min(tile.height,visible[3]+3))
+   box=(box[0]+local[0],box[1]+local[1],box[0]+local[2],box[1]+local[3]);tile=im.crop(box);bbox=tile.getbbox()
+   if not bbox:raise ValueError((id,row,col,'empty'))
+   cells.append((tile,box,bbox))
+ factor=min(104/max(t.width for t,_,_ in cells),104/max(t.height for t,_,_ in cells),1)
+ atlas=Image.new('RGBA',(1024,1152));frames={};feet={};measure=[]
+ qa=Image.new('RGB',(1024,1536),'#c8b483');qdraw=ImageDraw.Draw(qa)
+ for i,(tile,box,bbox) in enumerate(cells):
+  row,col=divmod(i,8);name=banks[row]+'/'+dirs[col]
+  tile=tile.resize((max(1,round(tile.width*factor)),max(1,round(tile.height*factor))),Image.Resampling.LANCZOS)
+  px=col*128+(128-tile.width)//2;py=row*192+174-tile.height
+  atlas.alpha_composite(tile,(px,py));frames[name]={'frame':{'x':col*128,'y':row*192,'w':128,'h':192}}
+  mask=tile.getchannel('A').point(lambda a:255 if a>128 else 0);b=mask.getbbox();feet[name]=py-row*192+b[3]-1
+  measure.append({'frame':name,'sourceRect':box,'sourcePoseBounds':bbox,'paintedWidth':b[2]-b[0],'paintedHeight':b[3]-b[1],'footline':feet[name]})
+  qa.paste(atlas.crop((col*128,row*192+64,(col+1)*128,row*192+192)),(col*128,row*128),atlas.crop((col*128,row*192+64,(col+1)*128,row*192+192)).getchannel('A'))
+  dark=Image.new('RGBA',(128,128),'#252d38');dark.alpha_composite(atlas.crop((col*128,row*192+64,(col+1)*128,row*192+192)));qa.paste(dark.convert('RGB'),(col*128,768+row*128));qdraw.text((col*128+3,row*128+3),name,fill='#241c33')
+ atlas.save(OUT/(id+'.png'),optimize=True);atlas.save(SRC/(id+'-reflow.png'),optimize=True);qa.save(SRC/(id+'-composited-qa.jpg'),quality=92)
+ (OUT/(id+'.json')).write_text(json.dumps({'frames':frames,'meta':{'image':id+'.png','size':{'w':1024,'h':1152},'source':str(path.relative_to(ROOT)),'sourceSize':{'w':w,'h':h}}},indent=2)+'\n')
+ native=max(m['paintedHeight'] for m in measure[:8]);scale=d['targetIdleHeight']/native
+ entries[id]={'key':'task10-monster-'+d['slug'],'url':str((OUT/(id+'.png')).relative_to(ROOT)),'atlasURL':str((OUT/(id+'.json')).relative_to(ROOT)),'scale':scale,'annotationHeight':88,'frameHeight':192,'frameWidth':128,'poseBanks':banks,'drawnDeath':True,'footlines':feet}
+ manifest.append({**d,'source':str(path.relative_to(ROOT)),'nativeIdleHeight':native,'scale':scale,'renderedIdleHeight':native*scale,'mechanicalScale':factor,'poses':measure,'sourceSHA256':hashlib.sha256(path.read_bytes()).hexdigest()})
+(ROOT/'js/assets/northExpansion5bArt.js').write_text('// Original art only; runtime integration belongs to the parent task.\nexport const NORTH_EXPANSION5B_ART=Object.freeze('+json.dumps(entries,indent=2)+');\nexport const northExpansion5bArt=id=>NORTH_EXPANSION5B_ART[id]||null;\n')
+(SRC/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print('Packed',len(entries),'models',len(entries)*48,'poses')

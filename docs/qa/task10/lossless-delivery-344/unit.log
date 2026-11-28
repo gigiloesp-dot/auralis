@@ -1,0 +1,16 @@
+✔ streamed publication uses exact Git source, isolates original PNGs, and removes only approved derived source copies (84.217919ms)
+✔ publication rejects altered mapped source hashes before deleting any source copies (60.443004ms)
+✔ publication rejects a source changed after the manifest pinned commit even if its replacement hash is updated (65.999862ms)
+✔ publication rejects player texture substitutions and encoded binary corruption (81.984893ms)
+✔ legacy delivery allowlist exactly matches original monster, NPC and boss descriptors and excludes all player assets (2.176423ms)
+✔ lossless WebP RIFF validation supports ICC extended headers without allowing lossy chunks (1.792394ms)
+✔ lossless actor delivery manifest pins committed sources, encoded bytes, and every source RGBA channel (30361.143746ms)
+✔ both loaders substitute only mapped image URLs while retaining atlas keys, JSON URLs, frame geometry and lease lifetime (1.589444ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 30864.651902

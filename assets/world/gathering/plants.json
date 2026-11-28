@@ -1,0 +1,50 @@
+{
+  "frames": {
+    "forestMoonflower": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    "northFrostHerb": {
+      "frame": {
+        "x": 256,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    "ancientStarBloom": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    "desertSunleaf": {
+      "frame": {
+        "x": 256,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    }
+  },
+  "meta": {
+    "image": "plants.png",
+    "size": {
+      "w": 512,
+      "h": 512
+    },
+    "footlines": {
+      "forestMoonflower": 219,
+      "northFrostHerb": 207,
+      "ancientStarBloom": 220,
+      "desertSunleaf": 209
+    },
+    "source": "art/source/task10-gathering/plants-original.png"
+  }
+}

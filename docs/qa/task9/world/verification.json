@@ -1,0 +1,92 @@
+{
+  "readyMs": 7460,
+  "records": [
+    {
+      "region": "forest",
+      "width": 18000,
+      "counts": {
+        "camps": 154,
+        "monsters": 1435,
+        "towns": 3,
+        "npcs": 11
+      },
+      "chunks": 25
+    },
+    {
+      "region": "north",
+      "width": 21000,
+      "counts": {
+        "camps": 145,
+        "monsters": 1345,
+        "towns": 2,
+        "npcs": 6
+      },
+      "chunks": 9
+    },
+    {
+      "region": "ancient",
+      "width": 15000,
+      "counts": {
+        "camps": 75,
+        "monsters": 715,
+        "towns": 2,
+        "npcs": 4
+      },
+      "chunks": 9
+    },
+    {
+      "region": "desert",
+      "width": 20000,
+      "counts": {
+        "camps": 96,
+        "monsters": 864,
+        "towns": 1,
+        "npcs": 0
+      },
+      "chunks": 9
+    }
+  ],
+  "art": {
+    "loaded": true,
+    "frames": [
+      "house",
+      "palm",
+      "tower",
+      "wall"
+    ],
+    "rendered": [
+      "wall",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "house",
+      "house",
+      "house",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "house",
+      "house",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "palm",
+      "wall",
+      "wall"
+    ]
+  }
+}

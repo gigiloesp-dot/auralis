@@ -1,0 +1,12 @@
+PASS real painted environment atlas and streamed props {"frames":["cypress","house","oak","pine","rock","ruin"],"painted":true,"objects":237}
+PASS live world encounters {"region":"forest","width":18000,"height":18000,"camps":80,"normal":880,"bosses":6,"towns":3,"npcs":11,"peak":23,"peakChunks":23}
+PASS full road routes forest
+PASS live world encounters {"region":"north","width":21000,"height":21000,"camps":76,"normal":836,"bosses":6,"towns":2,"npcs":6,"peak":23,"peakChunks":24}
+PASS full road routes north
+PASS live world encounters {"region":"ancient","width":15000,"height":15000,"camps":45,"normal":495,"bosses":6,"towns":2,"npcs":4,"peak":24,"peakChunks":23}
+PASS full road routes ancient
+PASS live world encounters {"region":"desert","width":20000,"height":20000,"camps":56,"normal":616,"bosses":0,"towns":1,"npcs":0,"peak":29,"peakChunks":23}
+PASS full road routes desert
+PASS linked region travel buttons
+PASS arena enter, reload, exit
+PASS far coordinates survive reload; no JavaScript errors

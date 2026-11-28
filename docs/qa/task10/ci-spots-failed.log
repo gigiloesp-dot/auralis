@@ -1,0 +1,90 @@
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	﻿2026-11-15T18:10:12.8126019Z ##[group]Run npm run test:browser:task9-progression
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8126460Z [36;1mnpm run test:browser:task9-progression[0m
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8147188Z shell: /usr/bin/bash -e {0}
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8147479Z env:
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8147755Z   CHROMIUM_PATH: /usr/bin/google-chrome
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8148087Z   AURALIS_TASK9_LANGS: en
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8148327Z ##[endgroup]
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8835238Z 
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8835713Z > auralis-rpg@0.3.0 test:browser:task9-progression
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8836132Z > node tests/browser-task9-progression.cjs
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:12.8836428Z 
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:39.4789745Z PASS level56 browser en warrior actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:48.0401921Z PASS level56 browser en archer actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:57.6873195Z PASS level56 browser en mage actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:07.2923179Z PASS level56 browser en paladin actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:15.8242079Z PASS level56 browser en assassin actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:25.7012272Z PASS level56 browser en cannoneer actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5851982Z AssertionError [ERR_ASSERTION]: The input did not match the regular expression /56/. Input:
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5852473Z 
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5852624Z 'Download backup before world update'
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5852823Z 
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5853100Z     at /home/runner/work/auralis/auralis/tests/browser-task9-progression.cjs:31:160 {
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5853588Z   generatedMessage: true,
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5853868Z   code: 'ERR_ASSERTION',
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5854192Z   actual: 'Download backup before world update',
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5854492Z   expected: /56/,
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5854729Z   operator: 'match',
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5855026Z   diff: 'simple'
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5855264Z }
+task9_progression (en)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:27.5987073Z ##[error]Process completed with exit code 1.
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	﻿2026-11-15T18:09:58.5018171Z ##[group]Run npm run test:browser:task9-progression
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5018546Z [36;1mnpm run test:browser:task9-progression[0m
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5035212Z shell: /usr/bin/bash -e {0}
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5035439Z env:
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5035624Z   CHROMIUM_PATH: /usr/bin/google-chrome
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5035905Z   AURALIS_TASK9_LANGS: es
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5036100Z ##[endgroup]
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5836495Z 
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5837818Z > auralis-rpg@0.3.0 test:browser:task9-progression
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5838284Z > node tests/browser-task9-progression.cjs
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:09:58.5838483Z 
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:23.8638385Z PASS level56 browser es warrior actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:34.6617833Z PASS level56 browser es archer actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:45.5065776Z PASS level56 browser es mage actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:56.2959289Z PASS level56 browser es paladin actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:05.9036074Z PASS level56 browser es assassin actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:18.3925821Z PASS level56 browser es cannoneer actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7270027Z AssertionError [ERR_ASSERTION]: The input did not match the regular expression /56/. Input:
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7270635Z 
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7270853Z 'Descargar copia anterior al nuevo mundo'
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7271110Z 
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7271521Z     at /home/runner/work/auralis/auralis/tests/browser-task9-progression.cjs:31:160 {
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7272091Z   generatedMessage: true,
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7272403Z   code: 'ERR_ASSERTION',
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7272802Z   actual: 'Descargar copia anterior al nuevo mundo',
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7273154Z   expected: /56/,
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7273474Z   operator: 'match',
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7273928Z   diff: 'simple'
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7274185Z }
+task9_progression (es)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:20.7478429Z ##[error]Process completed with exit code 1.
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	﻿2026-11-15T18:10:04.1421748Z ##[group]Run npm run test:browser:task9-progression
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.1422160Z [36;1mnpm run test:browser:task9-progression[0m
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.1443694Z shell: /usr/bin/bash -e {0}
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.1443999Z env:
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.1444246Z   CHROMIUM_PATH: /usr/bin/google-chrome
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.1444587Z   AURALIS_TASK9_LANGS: ru
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.1444831Z ##[endgroup]
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.2146326Z 
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.2146874Z > auralis-rpg@0.3.0 test:browser:task9-progression
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.2147574Z > node tests/browser-task9-progression.cjs
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:04.2147953Z 
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:39.2489785Z PASS level56 browser ru warrior actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:49.1920792Z PASS level56 browser ru archer actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:10:59.3053414Z PASS level56 browser ru mage actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:09.4626016Z PASS level56 browser ru paladin actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:18.3944488Z PASS level56 browser ru assassin actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:28.8853558Z PASS level56 browser ru cannoneer actual touch kills42→43 and55→56,points,old gear,skill touch,desert reload
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9066526Z AssertionError [ERR_ASSERTION]: The input did not match the regular expression /56/. Input:
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9067120Z 
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9068045Z 'Скачать копию до обновления мира'
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9068295Z 
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9068637Z     at /home/runner/work/auralis/auralis/tests/browser-task9-progression.cjs:31:160 {
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9069206Z   generatedMessage: true,
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9069550Z   code: 'ERR_ASSERTION',
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9069957Z   actual: 'Скачать копию до обновления мира',
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9070330Z   expected: /56/,
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9070606Z   operator: 'match',
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9070910Z   diff: 'simple'
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9071245Z }
+task9_progression (ru)	Six classes level42/55 touch kills, level56, migration and downloadable backups	2026-11-15T18:11:30.9225280Z ##[error]Process completed with exit code 1.

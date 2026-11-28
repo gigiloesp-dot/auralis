@@ -1,0 +1,813 @@
+{
+  "status": "Data prepared only; NOT yet registered in the live game",
+  "files": [
+    "js/quests/task10QuestData.js",
+    "tests/task10QuestData.test.mjs"
+  ],
+  "ordinaryCount": 33,
+  "dailyCount": 8,
+  "regions": {
+    "forest": 7,
+    "north": 4,
+    "ancient": 5,
+    "desert": 17
+  },
+  "types": {
+    "kill": 14,
+    "explore": 6,
+    "talk": 2,
+    "collect": 1,
+    "deliver": 1,
+    "boss": 4,
+    "dungeon": 5
+  },
+  "categories": {
+    "ordinary": 20,
+    "story": 13
+  },
+  "tests": {
+    "command": "node --test tests/task10QuestData.test.mjs",
+    "passed": 5,
+    "failed": 0,
+    "scope": "Data identity/localization, actual reference/species/level/climate matching, physical approach within130 units for every target, acyclic story dependencies, five actual desert dungeon entrances, daily exact tier/reward contracts. No browser or live completion claim."
+  },
+  "balanceProposals": {
+    "ordinaryXp": "5 * round((100 + 24 * level^2) * typeMultiplier / 5)",
+    "typeMultiplier": {
+      "talk": 0.35,
+      "explore": 0.5,
+      "collect": 0.65,
+      "deliver": 0.5,
+      "boss": 1.75,
+      "dungeon": 2,
+      "kill": 1
+    },
+    "ordinaryGold": "60 + level *16",
+    "dailyXp": "exact8/5 of matching ordinary contract XP; identical camp/species/count",
+    "dailyGold": "round(comparable ordinary gold *1.5)",
+    "dailyPotions": {
+      "hp": 10,
+      "mp": 5
+    },
+    "status": "All newly chosen numerical economy values are provisional technical proposals, not owner-approved balance. Existing104 rewards remain unchanged."
+  },
+  "integrationRequirements": [
+    "Append TASK10_QUESTS and current-tier TASK10_DAILY_QUESTS after original104 in quests.js; do not add to LEGACY_QUESTS or regenerate baked world/camp aliases.",
+    "Register TASK10_NPCS before exposing these quests; data currently imports NPC additions to resolve exact target coordinates.",
+    "Add daily clock persistence/reset/anti-rollback and same-day reward replay protection with migration preserving all old quest state; maxLevel/dailyTierId currently metadata only.",
+    "Enforce six active quests including completed unclaimed quests; preserve old over-limit saves with deterministic policy rather than deleting progress.",
+    "Extend claimQuest transaction to apply potionRewards atomically with potion99cap/full cases and durable commitQuestChange; existing claim ignores this field.",
+    "Prioritize daily NPC symbols over ordinary but retain all in dialogue; old indicator currently completion/available/progress with ordinary winning ties.",
+    "Extend save normalization/validation whitelist to recognize new IDs and daily fields without losing original104/three slots.",
+    "Update old exact-count tests using separate LEGACY_QUESTS coverage so all original104 remain tested, plus real browser completion of all33 new quests and eight daily tiers.",
+    "Add journal tracking/navigation separately; catalog includes exact real location and recipient coordinates.",
+    "Gathering flowers/plants/searching new objects remains unimplemented because no approved existing collectible plant IDs or gathering interaction exists; catalog uses only seven currently functional quest types."
+  ],
+  "preservation": {
+    "original104": "Untouched, still sole live QUESTS registration",
+    "gear": "No new gear/items/drop tables",
+    "world": "No coordinate/object/AI changes",
+    "save": "No writes or migration in this data-only preparation",
+    "stoneGiantTrophy": "Giant quest uses boss kill event; never consumes rare core"
+  },
+  "dailyTiers": [
+    {
+      "id": "daily-tier-0",
+      "minLevel": 1,
+      "maxLevel": 7,
+      "comparableQuestId": "task10-village-watch",
+      "npcId": "forest-daily"
+    },
+    {
+      "id": "daily-tier-1",
+      "minLevel": 8,
+      "maxLevel": 14,
+      "comparableQuestId": "task10-river-watch",
+      "npcId": "forest-daily"
+    },
+    {
+      "id": "daily-tier-2",
+      "minLevel": 15,
+      "maxLevel": 21,
+      "comparableQuestId": "task10-grove-watch",
+      "npcId": "forest-daily"
+    },
+    {
+      "id": "daily-tier-3",
+      "minLevel": 22,
+      "maxLevel": 28,
+      "comparableQuestId": "task10-snow-watch",
+      "npcId": "north-daily"
+    },
+    {
+      "id": "daily-tier-4",
+      "minLevel": 29,
+      "maxLevel": 35,
+      "comparableQuestId": "task10-pass-watch",
+      "npcId": "north-daily"
+    },
+    {
+      "id": "daily-tier-5",
+      "minLevel": 36,
+      "maxLevel": 42,
+      "comparableQuestId": "task10-elder-watch",
+      "npcId": "ancient-daily"
+    },
+    {
+      "id": "daily-tier-6",
+      "minLevel": 43,
+      "maxLevel": 49,
+      "comparableQuestId": "task10-caravan-watch",
+      "npcId": "desert-daily"
+    },
+    {
+      "id": "daily-tier-7",
+      "minLevel": 50,
+      "maxLevel": 56,
+      "comparableQuestId": "task10-dune-watch",
+      "npcId": "desert-daily"
+    }
+  ],
+  "quests": [
+    {
+      "id": "task10-village-watch",
+      "type": "kill",
+      "region": "forest",
+      "level": 1,
+      "npcId": "forest-daily",
+      "target": "forestWolf",
+      "requires": [],
+      "title": {
+        "ru": "Следы у деревни",
+        "en": "Tracks by the village",
+        "es": "Huellas junto a la aldea"
+      },
+      "location": {
+        "region": "forest",
+        "x": 1500,
+        "y": 1400,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-river-watch",
+      "type": "kill",
+      "region": "forest",
+      "level": 8,
+      "npcId": "forest-daily",
+      "target": "forestRaider",
+      "requires": [],
+      "title": {
+        "ru": "Налётчики речного пути",
+        "en": "Raiders of the river road",
+        "es": "Asaltantes del camino del río"
+      },
+      "location": {
+        "region": "forest",
+        "x": 7557,
+        "y": 4072,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-grove-watch",
+      "type": "kill",
+      "region": "forest",
+      "level": 15,
+      "npcId": "forest-daily",
+      "target": "bear",
+      "requires": [],
+      "title": {
+        "ru": "Медведи дальней рощи",
+        "en": "Bears of the distant grove",
+        "es": "Osos de la arboleda lejana"
+      },
+      "location": {
+        "region": "forest",
+        "x": 2098,
+        "y": 13380,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-snow-watch",
+      "type": "kill",
+      "region": "north",
+      "level": 22,
+      "npcId": "north-daily",
+      "target": "iceBat",
+      "requires": [],
+      "title": {
+        "ru": "Крылья над снегом",
+        "en": "Wings over the snow",
+        "es": "Alas sobre la nieve"
+      },
+      "location": {
+        "region": "north",
+        "x": 4867,
+        "y": 4342,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-pass-watch",
+      "type": "kill",
+      "region": "north",
+      "level": 29,
+      "npcId": "north-daily",
+      "target": "snowRaider",
+      "requires": [],
+      "title": {
+        "ru": "Засада у перевала",
+        "en": "Ambush by the pass",
+        "es": "Emboscada junto al paso"
+      },
+      "location": {
+        "region": "north",
+        "x": 8490,
+        "y": 10654,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-elder-watch",
+      "type": "kill",
+      "region": "ancient",
+      "level": 36,
+      "npcId": "ancient-daily",
+      "target": "ancientSentinel",
+      "requires": [],
+      "title": {
+        "ru": "Неспокойные стражи",
+        "en": "Restless sentinels",
+        "es": "Centinelas inquietos"
+      },
+      "location": {
+        "region": "ancient",
+        "x": 5470,
+        "y": 3540,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-caravan-watch",
+      "type": "kill",
+      "region": "desert",
+      "level": 43,
+      "npcId": "desert-daily",
+      "target": "arcaneWisp",
+      "requires": [],
+      "title": {
+        "ru": "Огни караванного пути",
+        "en": "Lights on the caravan route",
+        "es": "Luces de la ruta de caravanas"
+      },
+      "location": {
+        "region": "desert",
+        "x": 5417,
+        "y": 1634,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-dune-watch",
+      "type": "kill",
+      "region": "desert",
+      "level": 50,
+      "npcId": "desert-daily",
+      "target": "arcaneWisp",
+      "requires": [],
+      "title": {
+        "ru": "Сияние дальних дюн",
+        "en": "Glow of the far dunes",
+        "es": "Resplandor de las dunas lejanas"
+      },
+      "location": {
+        "region": "desert",
+        "x": 9080,
+        "y": 13352,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-city-webs",
+      "type": "kill",
+      "region": "forest",
+      "level": 14,
+      "npcId": "oren",
+      "target": "spider",
+      "requires": [],
+      "title": {
+        "ru": "Паутина мёртвых улиц",
+        "en": "Webs of the dead streets",
+        "es": "Telarañas de las calles muertas"
+      },
+      "location": {
+        "region": "forest",
+        "x": 13002,
+        "y": 1007,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-city-outpost",
+      "type": "explore",
+      "region": "forest",
+      "level": 23,
+      "npcId": "lyra",
+      "target": "forest-extension-outpost",
+      "requires": [
+        "task10-city-webs"
+      ],
+      "title": {
+        "ru": "Последняя городская застава",
+        "en": "The last city outpost",
+        "es": "El último puesto de la ciudad"
+      },
+      "location": {
+        "region": "forest",
+        "x": 16800,
+        "y": 16400,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-ashen-watch",
+      "type": "explore",
+      "region": "north",
+      "level": 34,
+      "npcId": "ida",
+      "target": "north-extension-watch",
+      "requires": [],
+      "title": {
+        "ru": "Дозор у пепельной гряды",
+        "en": "Watch by the ashen range",
+        "es": "Guardia de la cordillera de ceniza"
+      },
+      "location": {
+        "region": "north",
+        "x": 19000,
+        "y": 12600,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-ash-raiders",
+      "type": "kill",
+      "region": "north",
+      "level": 31,
+      "npcId": "ida",
+      "target": "snowRaider",
+      "requires": [],
+      "title": {
+        "ru": "Разбойники среди пепла",
+        "en": "Raiders among the ashes",
+        "es": "Asaltantes entre cenizas"
+      },
+      "location": {
+        "region": "north",
+        "x": 16199,
+        "y": 2375,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-marsh-armor",
+      "type": "kill",
+      "region": "ancient",
+      "level": 36,
+      "npcId": "aster",
+      "target": "fallenKnight",
+      "requires": [],
+      "title": {
+        "ru": "Доспехи в тумане",
+        "en": "Armor in the mist",
+        "es": "Armaduras en la niebla"
+      },
+      "location": {
+        "region": "ancient",
+        "x": 991,
+        "y": 6524,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-twilight-shells",
+      "type": "kill",
+      "region": "ancient",
+      "level": 39,
+      "npcId": "nyx",
+      "target": "scarab",
+      "requires": [],
+      "title": {
+        "ru": "Панцири сумеречных пределов",
+        "en": "Shells of the twilight reaches",
+        "es": "Caparazones del crepúsculo"
+      },
+      "location": {
+        "region": "ancient",
+        "x": 1159,
+        "y": 12315,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-elder-observatory",
+      "type": "explore",
+      "region": "ancient",
+      "level": 35,
+      "npcId": "aster",
+      "target": "fallen-observatory",
+      "requires": [],
+      "title": {
+        "ru": "Память обсерватории",
+        "en": "Memory of the observatory",
+        "es": "Memoria del observatorio"
+      },
+      "location": {
+        "region": "ancient",
+        "x": 3700,
+        "y": 4200,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-elder-gate",
+      "type": "explore",
+      "region": "ancient",
+      "level": 42,
+      "npcId": "nyx",
+      "target": "elder-gate",
+      "requires": [
+        "task10-elder-observatory"
+      ],
+      "title": {
+        "ru": "Нить к пескам",
+        "en": "A thread toward the sands",
+        "es": "Un hilo hacia las arenas"
+      },
+      "location": {
+        "region": "ancient",
+        "x": 10900,
+        "y": 12400,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-oasis-supplies",
+      "type": "talk",
+      "region": "desert",
+      "level": 42,
+      "npcId": "desert-guide",
+      "target": "desert-apothecary",
+      "requires": [],
+      "title": {
+        "ru": "Перед первым переходом",
+        "en": "Before the first crossing",
+        "es": "Antes de la primera travesía"
+      },
+      "location": {
+        "region": "desert",
+        "x": 1545,
+        "y": 1855,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-silent-tower",
+      "type": "explore",
+      "region": "desert",
+      "level": 43,
+      "npcId": "desert-guide",
+      "target": "desert-silent-tower",
+      "requires": [
+        "task10-oasis-supplies"
+      ],
+      "title": {
+        "ru": "Башня без голоса",
+        "en": "The voiceless tower",
+        "es": "La torre sin voz"
+      },
+      "location": {
+        "region": "desert",
+        "x": 7000,
+        "y": 3500,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-salt-gate",
+      "type": "explore",
+      "region": "desert",
+      "level": 55,
+      "npcId": "desert-guide",
+      "target": "desert-salt-gate",
+      "requires": [
+        "task10-silent-tower"
+      ],
+      "title": {
+        "ru": "Врата солёного ветра",
+        "en": "Gate of the salt wind",
+        "es": "Puerta del viento salado"
+      },
+      "location": {
+        "region": "desert",
+        "x": 16800,
+        "y": 16900,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-waystone-introduction",
+      "type": "talk",
+      "region": "desert",
+      "level": 42,
+      "npcId": "desert-guide",
+      "target": "desert-teleporter",
+      "requires": [],
+      "title": {
+        "ru": "Хранительница путей",
+        "en": "Keeper of the ways",
+        "es": "Guardiana de los caminos"
+      },
+      "location": {
+        "region": "desert",
+        "x": 1695,
+        "y": 1705,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-fang-stock",
+      "type": "collect",
+      "region": "forest",
+      "level": 8,
+      "npcId": "forest-daily",
+      "target": "wolfFang",
+      "requires": [],
+      "title": {
+        "ru": "Крепления для оружейника",
+        "en": "Fastenings for the weaponsmith",
+        "es": "Sujeciones para el armero"
+      },
+      "location": {
+        "region": "forest",
+        "x": 1500,
+        "y": 1400,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-pelt-delivery",
+      "type": "deliver",
+      "region": "forest",
+      "level": 8,
+      "npcId": "forest-daily",
+      "target": "forest-weaponsmith",
+      "requires": [],
+      "title": {
+        "ru": "Шкуры для речной мастерской",
+        "en": "Pelts for the river workshop",
+        "es": "Pieles para el taller del río"
+      },
+      "location": {
+        "region": "forest",
+        "x": 5405,
+        "y": 5255,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-crimson-bounty",
+      "type": "boss",
+      "region": "desert",
+      "level": 42,
+      "npcId": "desert-guide",
+      "target": "desert-mini-0",
+      "requires": [],
+      "title": {
+        "ru": "Алое жало у караванов",
+        "en": "Scarlet sting by the caravans",
+        "es": "Aguijón escarlata junto a las caravanas"
+      },
+      "location": {
+        "region": "desert",
+        "x": 1030,
+        "y": 4773,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-phoenix-bounty",
+      "type": "boss",
+      "region": "desert",
+      "level": 54,
+      "npcId": "desert-guide",
+      "target": "desert-open-0",
+      "requires": [],
+      "title": {
+        "ru": "Крылья палящего солнца",
+        "en": "Wings of the burning sun",
+        "es": "Alas del sol abrasador"
+      },
+      "location": {
+        "region": "desert",
+        "x": 16290,
+        "y": 16044,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-worm-bounty",
+      "type": "boss",
+      "region": "desert",
+      "level": 56,
+      "npcId": "desert-guide",
+      "target": "desert-open-1",
+      "requires": [],
+      "title": {
+        "ru": "Пасть песчаного моря",
+        "en": "Maw of the sea of sand",
+        "es": "Fauces del mar de arena"
+      },
+      "location": {
+        "region": "desert",
+        "x": 18705,
+        "y": 16456,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-giant-oath",
+      "type": "boss",
+      "region": "desert",
+      "level": 56,
+      "npcId": "desert-guide",
+      "target": "desert-world-stone-giant",
+      "requires": [
+        "task10-salt-gate"
+      ],
+      "title": {
+        "ru": "Клятва перед Каменным гигантом",
+        "en": "Oath before the Stone Giant",
+        "es": "Juramento ante el Gigante de piedra"
+      },
+      "location": {
+        "region": "desert",
+        "x": 18869,
+        "y": 18697,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-obsidian-stingers",
+      "type": "kill",
+      "region": "desert",
+      "level": 51,
+      "npcId": "desert-guide",
+      "target": "ancientSentinel",
+      "requires": [],
+      "title": {
+        "ru": "Обсидиановое жало",
+        "en": "Obsidian sting",
+        "es": "Aguijón de obsidiana"
+      },
+      "location": {
+        "region": "desert",
+        "x": 11978,
+        "y": 12927,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-caravan-needles",
+      "type": "kill",
+      "region": "desert",
+      "level": 48,
+      "npcId": "desert-guide",
+      "target": "scarab",
+      "requires": [],
+      "title": {
+        "ru": "Живые иглы караванной дороги",
+        "en": "Living needles of the caravan road",
+        "es": "Agujas vivientes del camino de caravanas"
+      },
+      "location": {
+        "region": "desert",
+        "x": 10556,
+        "y": 8791,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-clear-dungeon13",
+      "type": "dungeon",
+      "region": "desert",
+      "level": 42,
+      "npcId": "desert-guide",
+      "target": "dungeon13",
+      "requires": [
+        "task10-oasis-supplies"
+      ],
+      "title": {
+        "ru": "Тайна: Погребённая цистерна",
+        "en": "Secret: The buried cistern",
+        "es": "Secreto: La cisterna sepultada"
+      },
+      "location": {
+        "region": "desert",
+        "x": 1875,
+        "y": 2536,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-clear-dungeon14",
+      "type": "dungeon",
+      "region": "desert",
+      "level": 46,
+      "npcId": "desert-guide",
+      "target": "dungeon14",
+      "requires": [
+        "task10-clear-dungeon13"
+      ],
+      "title": {
+        "ru": "Тайна: Норы алого жала",
+        "en": "Secret: Warrens of the scarlet sting",
+        "es": "Secreto: Madrigueras del aguijón escarlata"
+      },
+      "location": {
+        "region": "desert",
+        "x": 6107,
+        "y": 4946,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-clear-dungeon15",
+      "type": "dungeon",
+      "region": "desert",
+      "level": 49,
+      "npcId": "desert-guide",
+      "target": "dungeon15",
+      "requires": [
+        "task10-clear-dungeon14"
+      ],
+      "title": {
+        "ru": "Тайна: Гробница треснувших зеркал",
+        "en": "Secret: Tomb of cracked mirrors",
+        "es": "Secreto: Tumba de los espejos rotos"
+      },
+      "location": {
+        "region": "desert",
+        "x": 5094,
+        "y": 11160,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-clear-dungeon16",
+      "type": "dungeon",
+      "region": "desert",
+      "level": 53,
+      "npcId": "desert-guide",
+      "target": "dungeon16",
+      "requires": [
+        "task10-clear-dungeon15"
+      ],
+      "title": {
+        "ru": "Тайна: Разлом караванного акведука",
+        "en": "Secret: The broken caravan aqueduct",
+        "es": "Secreto: La falla del acueducto de la caravana"
+      },
+      "location": {
+        "region": "desert",
+        "x": 6843,
+        "y": 15844,
+        "radius": 130
+      }
+    },
+    {
+      "id": "task10-clear-dungeon17",
+      "type": "dungeon",
+      "region": "desert",
+      "level": 56,
+      "npcId": "desert-guide",
+      "target": "dungeon17",
+      "requires": [
+        "task10-clear-dungeon16"
+      ],
+      "title": {
+        "ru": "Тайна: Обсерватория погасшего солнца",
+        "en": "Secret: Orrery of the extinguished sun",
+        "es": "Secreto: Observatorio del sol apagado"
+      },
+      "location": {
+        "region": "desert",
+        "x": 15664,
+        "y": 17387,
+        "radius": 130
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "checkpoint": "d7f196b7e9eb11f9aa4359c3c1c8e9ceb2288308",
+  "purpose": "Preserve existing character appearances before neutral underwear base-body production; monsters excluded",
+  "assets": [
+    {
+      "image": "assets/actors/heroes/archer.png",
+      "imageSha256": "8391cc80fcde95db8f055be78949b9b5e5e52814a73028b8bc0e9584378c5538",
+      "atlas": "assets/actors/heroes/archer.json",
+      "atlasSha256": "bdc875d61d81bf71bf38c705ac19aa3c5169df4500c740b93bde95a846eef157",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/heroes/assassin.png",
+      "imageSha256": "d02ee7ace696afb65c3dc8e50dbc6221891be86b7c11e3c485cf3794afa12220",
+      "atlas": "assets/actors/heroes/assassin.json",
+      "atlasSha256": "188ee32bfb621655207a934ca41d0e63171645ec0c8dd1b51a518d6faf9de96c",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/heroes/cannoneer.png",
+      "imageSha256": "d692f563cca7639e77018807e5155f6393a988bb9102fdc3123237e3275a5001",
+      "atlas": "assets/actors/heroes/cannoneer.json",
+      "atlasSha256": "21fa6b9a5ed36162219bb20c899b52c892fdeaa64acdff509f588b4aa2870156",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/heroes/mage.png",
+      "imageSha256": "fef6f601aca3d03059f7323c6bbb57e1bb724444cee6329ed57ae1caf1ca8ea7",
+      "atlas": "assets/actors/heroes/mage.json",
+      "atlasSha256": "075f62b8cc145c2cb5a65c1aff2ccbf613e9864f5b05d61205925bfbac958236",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/heroes/paladin.png",
+      "imageSha256": "8c5cf548bff3c0a9c50ce1058de77fdd64f962f5297b3da69b897b0103486e09",
+      "atlas": "assets/actors/heroes/paladin.json",
+      "atlasSha256": "a2e75e0353f3142c69a7a08b087605a19c2e4b83e67206700be224cc482403fe",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/heroes/warrior.png",
+      "imageSha256": "07dc01c123acbe3dac9cc45d89be01543721c145b465c84112bec9af8cc287bb",
+      "atlas": "assets/actors/heroes/warrior.json",
+      "atlasSha256": "1089fde20e04af3c510b98154115e885f866333c5f7e1f947cbb0e9085039831",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/npcs/ancient-residents.png",
+      "imageSha256": "68057b113b48b5a4701cd4e7705568ef5b9efca2f625f8a7a5efbc6f840b8963",
+      "atlas": "assets/actors/npcs/ancient-residents.json",
+      "atlasSha256": "bf29f4209521d684639b31b3df39e2f2dd730e35363dee39e1060304d8f6fe88",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/npcs/forest-residents.png",
+      "imageSha256": "cfaed30e34bf79b21a7fdacd782594614baf34af87692ef247f1262fb0b3e01f",
+      "atlas": "assets/actors/npcs/forest-residents.json",
+      "atlasSha256": "9749f02dfbefaa01269c1c2a1398270003004b738721c821a781950af8e8546d",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/npcs/highpass.png",
+      "imageSha256": "c21b35537ad5092f163962daeab9f5e65fb93aed94e6d13de5c7453f80baf23e",
+      "atlas": "assets/actors/npcs/highpass.json",
+      "atlasSha256": "3707d81307a6d933651cfb32791644f0b85caa8554a0aa9df747d51d5efae373",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/npcs/nyx.png",
+      "imageSha256": "22489fcaa3d18772ef5642f696d1e72040d6f05f2672763f6cd3ee5042a8ec5e",
+      "atlas": "assets/actors/npcs/nyx.json",
+      "atlasSha256": "5dff289331d269e78b8803c27e0b061698a4a768bb81d48e9c237f39bddd0e27",
+      "classification": "preserved_costumed_reference",
+      "frames": 8
+    },
+    {
+      "image": "assets/actors/npcs/oak-north.png",
+      "imageSha256": "c7c2aab535b961c810e71353d93a55129e30dd1c733f6123afd4cf66a3d0eb73",
+      "atlas": "assets/actors/npcs/oak-north.json",
+      "atlasSha256": "5895c08e9a8bb1a1c8c782f5c129d5d9bf92e79342e0770506e935e8023d118e",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    },
+    {
+      "image": "assets/actors/npcs/river-residents.png",
+      "imageSha256": "489bce12a1919295091a3bcaf3dc536c4df799c4e83b445b218244dde1319b95",
+      "atlas": "assets/actors/npcs/river-residents.json",
+      "atlasSha256": "bba09671a4b48f2db3963821dab7960bf5029e58fab01008ff7f22322a6164ee",
+      "classification": "preserved_costumed_reference",
+      "frames": 32
+    }
+  ]
+}

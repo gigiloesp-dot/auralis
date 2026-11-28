@@ -1,0 +1,7537 @@
+{
+  "cases": 108,
+  "followupOnly": false,
+  "virgin": {
+    "quests": {},
+    "arrows": 1,
+    "huds": 1
+  },
+  "records": [
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "warrior",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 78.046875,
+        "right": 336.671875,
+        "bottom": 102.046875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "warrior",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 78.546875,
+        "right": 336.671875,
+        "bottom": 102.546875
+      },
+      "angle": 0.7172519068125706,
+      "expected": 0.7172519068125706,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "warrior",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 78.828125,
+        "right": 336.671875,
+        "bottom": 102.828125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "warrior",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 63.65625,
+        "right": 381.6875,
+        "bottom": 87.65625
+      },
+      "angle": 0.7077984701443915,
+      "expected": 0.7077984701443915,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "warrior",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 64.484375,
+        "right": 381.6875,
+        "bottom": 88.484375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "warrior",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 64.09375,
+        "right": 381.6875,
+        "bottom": 88.09375
+      },
+      "angle": 0.6647849112395461,
+      "expected": 0.6647849112395461,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "warrior",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 80.03125,
+        "right": 433.484375,
+        "bottom": 104.03125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "warrior",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 81.359375,
+        "right": 433.484375,
+        "bottom": 105.359375
+      },
+      "angle": 0.6595581702725094,
+      "expected": 0.6595581702725094,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "warrior",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 80.046875,
+        "right": 433.484375,
+        "bottom": 104.046875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "warrior",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 86.9375,
+        "right": 469.796875,
+        "bottom": 110.9375
+      },
+      "angle": 0.6583770748353306,
+      "expected": 0.6583770748353306,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "warrior",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 87.125,
+        "right": 469.796875,
+        "bottom": 111.125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "warrior",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 86.5,
+        "right": 469.796875,
+        "bottom": 110.5
+      },
+      "angle": 0.6515416823898862,
+      "expected": 0.6515416823898862,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "warrior",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 201.84375,
+        "right": 651.78125,
+        "bottom": 225.84375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "warrior",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 199.953125,
+        "right": 651.78125,
+        "bottom": 223.953125
+      },
+      "angle": 0.6810764468791202,
+      "expected": 0.6810764468791202,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "warrior",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 200.984375,
+        "right": 651.78125,
+        "bottom": 224.984375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "warrior",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 196.46875,
+        "right": 780.46875,
+        "bottom": 220.46875
+      },
+      "angle": 0.7749663314420345,
+      "expected": 0.7749663314420345,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "warrior",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 194.625,
+        "right": 780.46875,
+        "bottom": 218.625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "warrior",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 196.65625,
+        "right": 780.46875,
+        "bottom": 220.65625
+      },
+      "angle": 0.7002203975451227,
+      "expected": 0.7002203975451227,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "archer",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 73.875,
+        "right": 336.671875,
+        "bottom": 97.875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "archer",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 75,
+        "right": 336.671875,
+        "bottom": 99
+      },
+      "angle": 0.7101113783265309,
+      "expected": 0.7101113783265309,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "archer",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 73.734375,
+        "right": 336.671875,
+        "bottom": 97.734375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "archer",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 60.859375,
+        "right": 381.6875,
+        "bottom": 84.859375
+      },
+      "angle": 0.7268738562735083,
+      "expected": 0.7268738562735083,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "archer",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 60.0625,
+        "right": 381.6875,
+        "bottom": 84.0625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "archer",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 60.359375,
+        "right": 381.6875,
+        "bottom": 84.359375
+      },
+      "angle": 0.7695364488473011,
+      "expected": 0.7695364488473011,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "archer",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 76.21875,
+        "right": 433.484375,
+        "bottom": 100.21875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "archer",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 76.109375,
+        "right": 433.484375,
+        "bottom": 100.109375
+      },
+      "angle": 0.713493908719045,
+      "expected": 0.713493908719045,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "archer",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 76.5625,
+        "right": 433.484375,
+        "bottom": 100.5625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "archer",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 81.40625,
+        "right": 469.796875,
+        "bottom": 105.40625
+      },
+      "angle": 0.7126155206402058,
+      "expected": 0.7126155206402058,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "archer",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 82.328125,
+        "right": 469.796875,
+        "bottom": 106.328125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "archer",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 81.75,
+        "right": 469.796875,
+        "bottom": 105.75
+      },
+      "angle": 0.7036092395856303,
+      "expected": 0.7036092395856303,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "archer",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 193.71875,
+        "right": 651.78125,
+        "bottom": 217.71875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "archer",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 193.984375,
+        "right": 651.78125,
+        "bottom": 217.984375
+      },
+      "angle": 0.665387614921438,
+      "expected": 0.665387614921438,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "archer",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 192.921875,
+        "right": 651.78125,
+        "bottom": 216.921875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "archer",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 189.46875,
+        "right": 780.46875,
+        "bottom": 213.46875
+      },
+      "angle": 0.6136068881101332,
+      "expected": 0.6136068881101332,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "archer",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 187.34375,
+        "right": 780.46875,
+        "bottom": 211.34375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "archer",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 189.21875,
+        "right": 780.46875,
+        "bottom": 213.21875
+      },
+      "angle": 0.6794986889263442,
+      "expected": 0.6794986889263442,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "mage",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 84.6875,
+        "right": 336.671875,
+        "bottom": 108.6875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "mage",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 85.65625,
+        "right": 336.671875,
+        "bottom": 109.65625
+      },
+      "angle": 0.619687585147452,
+      "expected": 0.619687585147452,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "mage",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 84.71875,
+        "right": 336.671875,
+        "bottom": 108.71875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "mage",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 70.03125,
+        "right": 381.6875,
+        "bottom": 94.03125
+      },
+      "angle": 0.5939535508159999,
+      "expected": 0.5939535508159999,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "mage",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 70.671875,
+        "right": 381.6875,
+        "bottom": 94.671875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "mage",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 70.109375,
+        "right": 381.6875,
+        "bottom": 94.109375
+      },
+      "angle": 0.6558568689546437,
+      "expected": 0.6558568689546437,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "mage",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 87.890625,
+        "right": 433.484375,
+        "bottom": 111.890625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "mage",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 87.546875,
+        "right": 433.484375,
+        "bottom": 111.546875
+      },
+      "angle": 0.919449290376441,
+      "expected": 0.919449290376441,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "mage",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 87.65625,
+        "right": 433.484375,
+        "bottom": 111.65625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "mage",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 95.0625,
+        "right": 469.796875,
+        "bottom": 119.0625
+      },
+      "angle": 0.919449290376441,
+      "expected": 0.919449290376441,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "mage",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 94,
+        "right": 469.796875,
+        "bottom": 118
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "mage",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 95.21875,
+        "right": 469.796875,
+        "bottom": 119.21875
+      },
+      "angle": 0.8022066115027995,
+      "expected": 0.8022066115027995,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "mage",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 211.234375,
+        "right": 651.78125,
+        "bottom": 235.234375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "mage",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 211.75,
+        "right": 651.78125,
+        "bottom": 235.75
+      },
+      "angle": 0.8025266522092436,
+      "expected": 0.8025266522092436,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "mage",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 212.875,
+        "right": 651.78125,
+        "bottom": 236.875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "mage",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 206.15625,
+        "right": 780.46875,
+        "bottom": 230.15625
+      },
+      "angle": 0.8119100923359931,
+      "expected": 0.8119100923359931,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "mage",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 207.078125,
+        "right": 780.46875,
+        "bottom": 231.078125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "mage",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 206.609375,
+        "right": 780.46875,
+        "bottom": 230.609375
+      },
+      "angle": 0.8585805195254609,
+      "expected": 0.8585805195254609,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "paladin",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 67.390625,
+        "right": 336.671875,
+        "bottom": 91.390625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "paladin",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 68.703125,
+        "right": 336.671875,
+        "bottom": 92.703125
+      },
+      "angle": 0.7743501124316606,
+      "expected": 0.7743501124316606,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "paladin",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 67.75,
+        "right": 336.671875,
+        "bottom": 91.75
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "paladin",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 54.125,
+        "right": 381.6875,
+        "bottom": 78.125
+      },
+      "angle": 0.6955246819731792,
+      "expected": 0.6955246819731792,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "paladin",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 55.0625,
+        "right": 381.6875,
+        "bottom": 79.0625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "paladin",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 53.9375,
+        "right": 381.6875,
+        "bottom": 77.9375
+      },
+      "angle": 0.6955246819731792,
+      "expected": 0.6955246819731792,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "paladin",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 68.359375,
+        "right": 433.484375,
+        "bottom": 92.359375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "paladin",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 69.5625,
+        "right": 433.484375,
+        "bottom": 93.5625
+      },
+      "angle": 0.6362429939296623,
+      "expected": 0.6362429939296623,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "paladin",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 68.203125,
+        "right": 433.484375,
+        "bottom": 92.203125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "paladin",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 75.3125,
+        "right": 469.796875,
+        "bottom": 99.3125
+      },
+      "angle": 0.6026572775663006,
+      "expected": 0.6026572775663006,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "paladin",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 73.765625,
+        "right": 469.796875,
+        "bottom": 97.765625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "paladin",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 74.546875,
+        "right": 469.796875,
+        "bottom": 98.546875
+      },
+      "angle": 0.7443769836322361,
+      "expected": 0.7443769836322361,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "paladin",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 183.734375,
+        "right": 651.78125,
+        "bottom": 207.734375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "paladin",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 181.6875,
+        "right": 651.78125,
+        "bottom": 205.6875
+      },
+      "angle": 0.870433111024461,
+      "expected": 0.870433111024461,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "paladin",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 183.96875,
+        "right": 651.78125,
+        "bottom": 207.96875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "paladin",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 176.71875,
+        "right": 780.46875,
+        "bottom": 200.71875
+      },
+      "angle": 0.870433111024461,
+      "expected": 0.870433111024461,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "paladin",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 178.21875,
+        "right": 780.46875,
+        "bottom": 202.21875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "paladin",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 177.234375,
+        "right": 780.46875,
+        "bottom": 201.234375
+      },
+      "angle": 0.6460763676075737,
+      "expected": 0.6460763676075737,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "assassin",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 74.375,
+        "right": 336.671875,
+        "bottom": 98.375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "assassin",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 75.34375,
+        "right": 336.671875,
+        "bottom": 99.34375
+      },
+      "angle": 0.5660040652108552,
+      "expected": 0.5660040652108552,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "assassin",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 312.671875,
+        "y": 74.1875,
+        "right": 336.671875,
+        "bottom": 98.1875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "assassin",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 61.1875,
+        "right": 381.6875,
+        "bottom": 85.1875
+      },
+      "angle": 0.583830346439351,
+      "expected": 0.583830346439351,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "assassin",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 60.53125,
+        "right": 381.6875,
+        "bottom": 84.53125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "assassin",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 60.25,
+        "right": 381.6875,
+        "bottom": 84.25
+      },
+      "angle": 0.6038426020119816,
+      "expected": 0.6038426020119816,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "assassin",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 77.15625,
+        "right": 433.484375,
+        "bottom": 101.15625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "assassin",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 75.75,
+        "right": 433.484375,
+        "bottom": 99.75
+      },
+      "angle": 0.6932123181027865,
+      "expected": 0.6932123181027865,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "assassin",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 76.25,
+        "right": 433.484375,
+        "bottom": 100.25
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "assassin",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 83.125,
+        "right": 469.796875,
+        "bottom": 107.125
+      },
+      "angle": 0.6932123181027865,
+      "expected": 0.6932123181027865,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "assassin",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 81.71875,
+        "right": 469.796875,
+        "bottom": 105.71875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "assassin",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 83.203125,
+        "right": 469.796875,
+        "bottom": 107.203125
+      },
+      "angle": 0.6195481906394916,
+      "expected": 0.6195481906394916,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "assassin",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 193.796875,
+        "right": 651.78125,
+        "bottom": 217.796875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "assassin",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 194.578125,
+        "right": 651.78125,
+        "bottom": 218.578125
+      },
+      "angle": 0.5586987846465699,
+      "expected": 0.5586987846465699,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "assassin",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 194.484375,
+        "right": 651.78125,
+        "bottom": 218.484375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "assassin",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 188.46875,
+        "right": 780.46875,
+        "bottom": 212.46875
+      },
+      "angle": 0.5698385118025949,
+      "expected": 0.5698385118025949,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "assassin",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 190.1875,
+        "right": 780.46875,
+        "bottom": 214.1875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "assassin",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 188.03125,
+        "right": 780.46875,
+        "bottom": 212.03125
+      },
+      "angle": 0.7307100315608648,
+      "expected": 0.7307100315608648,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "cannoneer",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 308.09375,
+        "y": 69.0625,
+        "right": 332.09375,
+        "bottom": 93.0625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "cannoneer",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 308.09375,
+        "y": 69.625,
+        "right": 332.09375,
+        "bottom": 93.625
+      },
+      "angle": 0.8156611648004515,
+      "expected": 0.8156611648004515,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "classId": "cannoneer",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 238,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 308.09375,
+        "y": 68.625,
+        "right": 332.09375,
+        "bottom": 92.625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 166,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 449,
+          "y": 278,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 460,
+          "y": 221,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 496,
+          "y": 175,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 550,
+          "y": 147,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 534,
+          "y": 240,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 640,
+      "viewport": 640
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "cannoneer",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 60.359375,
+        "right": 381.6875,
+        "bottom": 84.359375
+      },
+      "angle": 0.8156611648004515,
+      "expected": 0.8156611648004515,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "cannoneer",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 59.609375,
+        "right": 381.6875,
+        "bottom": 83.609375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 320
+      },
+      "classId": "cannoneer",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 273,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 357.6875,
+        "y": 59.703125,
+        "right": 381.6875,
+        "bottom": 83.703125
+      },
+      "angle": 0.8257213113618351,
+      "expected": 0.8257213113618351,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 155,
+          "width": 153,
+          "height": 153
+        },
+        {
+          "x": 570,
+          "y": 253,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 579,
+          "y": 202,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 611,
+          "y": 160,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 659,
+          "y": 135,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "x": 644,
+          "y": 217,
+          "width": 78,
+          "height": 78
+        }
+      ],
+      "scrollWidth": 740,
+      "viewport": 740
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "cannoneer",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 75.671875,
+        "right": 433.484375,
+        "bottom": 99.671875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "cannoneer",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 74.921875,
+        "right": 433.484375,
+        "bottom": 98.921875
+      },
+      "angle": 0.7727443074378924,
+      "expected": 0.7727443074378924,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "classId": "cannoneer",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 409.484375,
+        "y": 75.921875,
+        "right": 433.484375,
+        "bottom": 99.921875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 196,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 653,
+          "y": 308,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 664,
+          "y": 251,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 700,
+          "y": 205,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 754,
+          "y": 177,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 738,
+          "y": 270,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 844,
+      "viewport": 844
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "cannoneer",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 80.75,
+        "right": 469.796875,
+        "bottom": 104.75
+      },
+      "angle": 0.7589744530109918,
+      "expected": 0.7589744530109918,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "cannoneer",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 81.578125,
+        "right": 469.796875,
+        "bottom": 105.578125
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 915,
+        "height": 412
+      },
+      "classId": "cannoneer",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 140,
+        "right": 284,
+        "bottom": 184
+      },
+      "arrow": {
+        "x": 445.796875,
+        "y": 81.171875,
+        "right": 469.796875,
+        "bottom": 105.171875
+      },
+      "angle": 0.7875639799907023,
+      "expected": 0.7875639799907023,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 218,
+          "width": 182,
+          "height": 182
+        },
+        {
+          "x": 724,
+          "y": 330,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 735,
+          "y": 273,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 771,
+          "y": 227,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 825,
+          "y": 199,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "x": 809,
+          "y": 292,
+          "width": 88,
+          "height": 88
+        }
+      ],
+      "scrollWidth": 915,
+      "viewport": 915
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "cannoneer",
+      "language": "ru",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 192.625,
+        "right": 651.78125,
+        "bottom": 216.625
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "cannoneer",
+      "language": "en",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 193.03125,
+        "right": 651.78125,
+        "bottom": 217.03125
+      },
+      "angle": 0.7881580348133707,
+      "expected": 0.7881580348133707,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "classId": "cannoneer",
+      "language": "es",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 627.78125,
+        "y": 191.96875,
+        "right": 651.78125,
+        "bottom": 215.96875
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 483,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1069,
+          "y": 616,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1081,
+          "y": 553,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1121,
+          "y": 503,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1181,
+          "y": 473,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1164,
+          "y": 576,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "cannoneer",
+      "language": "ru",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 188.359375,
+        "right": 780.46875,
+        "bottom": 212.359375
+      },
+      "angle": 0.7797765979270077,
+      "expected": 0.7797765979270077,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "cannoneer",
+      "language": "en",
+      "id": "forest_message",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 186.34375,
+        "right": 780.46875,
+        "bottom": 210.34375
+      },
+      "angle": 1.5449876762873942,
+      "expected": 1.5449876762873942,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/1",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    },
+    {
+      "size": {
+        "width": 1536,
+        "height": 695
+      },
+      "classId": "cannoneer",
+      "language": "es",
+      "id": "forestWolves",
+      "hud": {
+        "x": 14,
+        "y": 150,
+        "right": 284,
+        "bottom": 194
+      },
+      "arrow": {
+        "x": 756.46875,
+        "y": 188.34375,
+        "right": 780.46875,
+        "bottom": 212.34375
+      },
+      "angle": 0.7916376167150807,
+      "expected": 0.7916376167150807,
+      "arrows": 1,
+      "huds": 1,
+      "pointer": "none",
+      "progress": "0/5",
+      "controls": [
+        {
+          "x": 18,
+          "y": 458,
+          "width": 225,
+          "height": 225
+        },
+        {
+          "x": 1325,
+          "y": 591,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1337,
+          "y": 528,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1377,
+          "y": 478,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1437,
+          "y": 448,
+          "width": 53,
+          "height": 53
+        },
+        {
+          "x": 1420,
+          "y": 551,
+          "width": 98,
+          "height": 98
+        }
+      ],
+      "scrollWidth": 1536,
+      "viewport": 1536
+    }
+  ],
+  "reloads": [
+    {
+      "slot": 1,
+      "name": "NavSlot1",
+      "tracking": {
+        "version": 1,
+        "id": "forest_message",
+        "disabled": false
+      }
+    },
+    {
+      "slot": 2,
+      "name": "NavSlot2",
+      "tracking": {
+        "version": 1,
+        "id": "forest_message",
+        "disabled": false
+      }
+    },
+    {
+      "slot": 3,
+      "name": "NavSlot3",
+      "tracking": {
+        "version": 1,
+        "id": "forest_message",
+        "disabled": false
+      }
+    }
+  ],
+  "regions": [
+    {
+      "questId": "ancient_scout",
+      "title": "Проверить дорогу",
+      "objectiveText": "Исследовать Проверить дорогу",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 11700,
+        "y": 11400,
+        "region": "ancient",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "forest-desert",
+        "x": 1952.21,
+        "y": 2058.4,
+        "region": "forest",
+        "kind": "portal",
+        "radius": 140,
+        "names": null,
+        "nextRegion": "desert"
+      },
+      "routeRegions": [
+        "forest",
+        "desert",
+        "ancient"
+      ],
+      "routeText": "Переход в Пустынные земли",
+      "worldDistance": 1301.5106008404236,
+      "arrived": false,
+      "waypointArrived": false,
+      "angle": 1.5666564185757192,
+      "arrivalText": ""
+    },
+    {
+      "questId": "task10-silent-tower",
+      "title": "Башня без голоса",
+      "objectiveText": "Исследовать Башня без голоса",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 7000,
+        "y": 3500,
+        "region": "desert",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "north-teleporter",
+        "x": 1395,
+        "y": 1860,
+        "region": "north",
+        "kind": "teleporter",
+        "radius": 140,
+        "names": {
+          "ru": "Эйдис",
+          "en": "Eydis",
+          "es": "Eydis"
+        },
+        "nextRegion": "forest"
+      },
+      "routeRegions": [
+        "north",
+        "forest",
+        "desert"
+      ],
+      "routeText": "Переход в Лесная долина",
+      "worldDistance": 120.93386622447824,
+      "arrived": false,
+      "waypointArrived": true,
+      "angle": -3.0060649396042924,
+      "arrivalText": ""
+    },
+    {
+      "questId": "forest_scout",
+      "title": "Проверить дорогу",
+      "objectiveText": "Исследовать Проверить дорогу",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 5250,
+        "y": 5200,
+        "region": "forest",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "ancient-teleporter",
+        "x": 1525,
+        "y": 1900,
+        "region": "ancient",
+        "kind": "teleporter",
+        "radius": 140,
+        "names": {
+          "ru": "Севрин",
+          "en": "Sevrin",
+          "es": "Sevrin"
+        },
+        "nextRegion": "north"
+      },
+      "routeRegions": [
+        "ancient",
+        "north",
+        "forest"
+      ],
+      "routeText": "Переход в Северные земли",
+      "worldDistance": 125,
+      "arrived": false,
+      "waypointArrived": true,
+      "angle": 3.070285188804504,
+      "arrivalText": ""
+    },
+    {
+      "questId": "north_scout",
+      "title": "Проверить дорогу",
+      "objectiveText": "Исследовать Проверить дорогу",
+      "progress": 0,
+      "required": 1,
+      "ready": false,
+      "objective": {
+        "id": null,
+        "x": 10300,
+        "y": 10600,
+        "region": "north",
+        "kind": "explore",
+        "radius": 130,
+        "names": null
+      },
+      "waypoint": {
+        "id": "desert-teleporter",
+        "x": 1695,
+        "y": 1705,
+        "region": "desert",
+        "kind": "teleporter",
+        "radius": 140,
+        "names": {
+          "ru": "Нима",
+          "en": "Nima",
+          "es": "Nima"
+        },
+        "nextRegion": "ancient"
+      },
+      "routeRegions": [
+        "desert",
+        "ancient",
+        "north"
+      ],
+      "routeText": "Переход в Древние земли",
+      "worldDistance": 134.35028842544403,
+      "arrived": false,
+      "waypointArrived": true,
+      "angle": 0,
+      "arrivalText": ""
+    }
+  ],
+  "dungeon": {
+    "actual": {
+      "id": "exit",
+      "x": 170,
+      "y": 300,
+      "region": "dungeon:dungeon1:easy",
+      "kind": "dungeonExit",
+      "radius": 90,
+      "names": {
+        "ru": "Выход",
+        "en": "Exit",
+        "es": "Salida"
+      }
+    },
+    "exit": {
+      "x": 170,
+      "y": 300,
+      "radius": 90,
+      "id": "exit",
+      "names": {
+        "ru": "Выход",
+        "en": "Exit",
+        "es": "Salida"
+      }
+    }
+  },
+  "relief": {
+    "height": 56,
+    "angle": 0.2261493056438742
+  },
+  "cleanup": [
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    },
+    {
+      "arrows": 1,
+      "huds": 1,
+      "postupdate": 1
+    }
+  ],
+  "errors": [],
+  "physicalAndroid": false,
+  "scope": "Prepared quest states/positions; full108matrix plus real touch journal/NPC selection,three slots,reload,ring routing,dungeon exit,relief,death and locale teardown. No map hunting markers."
+}

@@ -1,0 +1,122 @@
+{
+  "physicalAndroid": false,
+  "scope": "Fresh EN realNPC acceptance, actualCanvas firstplant touch, real questTracker+arrow next readyplant",
+  "before": {
+    "questId": "task10-moonflower-supplies",
+    "title": "Moonflowers by the road",
+    "objectiveText": "Gather supplies Woodland moonflower",
+    "progress": 0,
+    "required": 3,
+    "ready": false,
+    "objective": {
+      "id": "gather-forest-00",
+      "x": 1932,
+      "y": 2245,
+      "region": "forest",
+      "kind": "collect",
+      "radius": 85,
+      "names": {
+        "ru": "Лесный лунный цветок",
+        "en": "Woodland moonflower",
+        "es": "Flor lunar del bosque"
+      },
+      "waitingUntil": null
+    },
+    "waypoint": {
+      "id": "gather-forest-00",
+      "x": 1932,
+      "y": 2245,
+      "region": "forest",
+      "kind": "collect",
+      "radius": 85,
+      "names": {
+        "ru": "Лесный лунный цветок",
+        "en": "Woodland moonflower",
+        "es": "Flor lunar del bosque"
+      },
+      "waitingUntil": null
+    },
+    "routeRegions": [
+      "forest"
+    ],
+    "routeText": "",
+    "worldDistance": 64.99999999999999,
+    "arrived": true,
+    "waypointArrived": true,
+    "angle": -3.1342757109991557,
+    "arrivalText": "Objective nearby"
+  },
+  "after": {
+    "navigation": {
+      "questId": "task10-moonflower-supplies",
+      "title": "Moonflowers by the road",
+      "objectiveText": "Gather supplies Woodland moonflower",
+      "progress": 1,
+      "required": 3,
+      "ready": false,
+      "objective": {
+        "id": "gather-forest-01",
+        "x": 2412,
+        "y": 2302,
+        "region": "forest",
+        "kind": "collect",
+        "radius": 85,
+        "names": {
+          "ru": "Лесный лунный цветок",
+          "en": "Woodland moonflower",
+          "es": "Flor lunar del bosque"
+        },
+        "waitingUntil": null
+      },
+      "waypoint": {
+        "id": "gather-forest-01",
+        "x": 2412,
+        "y": 2302,
+        "region": "forest",
+        "kind": "collect",
+        "radius": 85,
+        "names": {
+          "ru": "Лесный лунный цветок",
+          "en": "Woodland moonflower",
+          "es": "Flor lunar del bosque"
+        },
+        "waitingUntil": null
+      },
+      "routeRegions": [
+        "forest"
+      ],
+      "routeText": "",
+      "worldDistance": 445.27749912956966,
+      "arrived": false,
+      "waypointArrived": false,
+      "angle": 0.6801662149285248,
+      "arrivalText": ""
+    },
+    "meta": {
+      "version": 1,
+      "nodes": {
+        "gather-forest-00": {
+          "pickedAt": 1794898003747,
+          "readyAt": 1794898603747
+        }
+      }
+    },
+    "inventory": [
+      {
+        "id": "forestMoonflower",
+        "rarity": "common",
+        "quantity": 1
+      }
+    ],
+    "arrow": {
+      "arrived": "false",
+      "questId": "task10-moonflower-supplies",
+      "targetRegion": "forest",
+      "targetKind": "collect",
+      "targetX": "2412",
+      "targetY": "2302",
+      "worldDistance": "445.27749912956966",
+      "angle": "0.6801662149285248"
+    }
+  }
+}

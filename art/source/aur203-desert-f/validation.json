@@ -1,0 +1,1613 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "directionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "models": [
+    {
+      "id": "desert-species-077",
+      "frameCount": 48,
+      "uniqueRGBAHashes": 48,
+      "rgbaHashes": [
+        "6bc4498b95a4d38396cf2f49c99eb9eca9b6a2eed644310f0adadcf93f9c101f",
+        "22ebd393852fbbe6435f4c9f8339838c60f28a89f57dc409bb0f8665bdb1ed83",
+        "0e3bbea7f34d65341179ac0f5834c4faed558c6d623ac55502278f59b8ef3b7b",
+        "ceafaee33d041f92531332cec9904c427269381157e6e64ef32349b5608e1bec",
+        "e5cf835c8ce711f05bb4cf7585dcf7c36701d476d2877d4cc98fe1a8721cf576",
+        "270657ff03c0ac08d8ac722c60f972cbb5be1d763eb17b72dc85db1bd5dc8e0e",
+        "652707fbbbec0cc2b8cefbf78e5fc38ad6314c49a66a91f5aa304d07318a5aa5",
+        "500b2f3614a0da0d8099c80f85e4bf4f085d3b7aa76993edb8e2329dee5cddd4",
+        "20cf34e9749fbbd58ef6e20e1036f9ef0a9c1cd51dbf813f59f1c92f2ebdb3d2",
+        "de47e9607759909f601159fa2aefb54f891b663c24a8fc343c26976226b088b6",
+        "2bae867501a7ce55847ee223bc562bfb663195f03fc33028e3f43d8fa71445e0",
+        "fc5fcf332946e69eb1676beaa937e08205d36633125ef4e0974ccc2f312e819b",
+        "0cd3f87f363993d1dab43078713ba84b56c79c9fb25bc9d24773668f9f2c5d2c",
+        "05ee1dedd70466ec0b159c2bf4ab4c002f989f788e41373a200097b6e33514cc",
+        "b00b89214e1cb9c1460010071956741393b5b77b01db6b785e41244085fd592b",
+        "4442e6918ab216ab332e215fe6be80cf49c583ee7638a8ca81ab70d711492358",
+        "94c71bc214c736edd9a9ae2d65fafa40bcc0c98c2163dc85408f7b09bfe0e39d",
+        "3d8ae11223fd0a1c4ffb2cae6aac1c6e024da814f6bd5bbf2f7e07f7d42e7226",
+        "a7c8926e88cb19a0ab3db4d29d0bb2d484f2cd6df55e7e57ff29bf4cbaf3b6d0",
+        "18e36b780e4a19d199c6080b2eb656dddb96ec1f3332827d8e5253345bc59943",
+        "bca0c7b2c645b5b39b78d0a1f5ad10e478e5d7dbf8bbae6952421a76d385af3f",
+        "cd74ae4369e50c9250346b518635399d7735ae3c26095c4523e760e2d75941b9",
+        "0c4edf784814236a6eb57cdc8b1e4013c50d6251854918c03c3a4f0ec1e96ced",
+        "a683880001bdfa530389808b081521fc4a4807854e23ff101b44ba015289c1af",
+        "202e5ec38491098b21bed943e87dc07e893654bdc3c7c16ad9b49971fc66e666",
+        "6e8edcaadebadcd5f590ffd0739e8d838eb1081d66dede348dc454cd91196d60",
+        "e6fa4f60d3e80fa680a92efbca7d523a67affa8b96877cbd912b78b0f2f2a34c",
+        "ba7e11050088500fe15ba912e32b2abb800147abd05d1319d8663a4e3fdc2c4a",
+        "ba6f59cd4771588382827b6fbc3abc8b8fd8362503e1649e5f853880bd59977a",
+        "ab08d3f25c63fb6493df3b178703456054ffa3f7515ccf831a70118532eafebb",
+        "a9223570fb3125b4f2371a85b060694b00c2e1615840ce6d32f3b71db98c49ee",
+        "86900d78808f8e2ba7f774312f04d884a4449ff8e541182cbe2b8ff46f0ce2e3",
+        "e916366c600048b82b9806fc2813984bddd8c7ad3da5696b5e57a8958f67fede",
+        "3c1b4f5993ca93d69e6289793c988648950025320565662f42380c266e62859a",
+        "85d304a02b3eb116188e2f1079e450413f9b7543b0c70268c0fde8fd1f27a85c",
+        "99e8425a93a68416a2443314d709f118adefe3975ac8c1b8e665409d2ddea11b",
+        "e1029cb841f7262fbfb7f14928b0a62ab445b2088bc24fdbe4c567e449f7d58b",
+        "052c5629a53ae188d9eb28d38be99b5f08c10974ce6562efb4510580c047f9f3",
+        "68f103a52b62f0b3ba79418c59e65af9cf4713d1bc367a05bcafeb853d7be209",
+        "a74404625c2bba44362a2c0bd17b398242587da79aa133bd190cde727f8e71f3",
+        "5d0bb7af2eff390d39b1fcdd1d5e1907879ac7b2015cfe6d8a11208b2b13efdc",
+        "9805e3e8116bcc88a5b3fa9815c3d67578970a5445524a2eeb3baa5815e9003b",
+        "67a64217e01447c134d5045909f2050b24eb863a8cb737688ce7b18e8ed272ae",
+        "4e52b8a0f49e2922390b340af5935e80af454c3d88c4accbeca96c6895c42d4f",
+        "08d021319f34e3cbc4466cd6918c96e5828fd43b65f5da6b147a57a00fcdb30d",
+        "11be2d56b1dad9665410e0457efa6c1d6ea5cfe8076763823ead5882e6b018db",
+        "926ae1b38c120f87f1fa9d4c28809e5cdc031eceae9a0002972bc7543243d936",
+        "6b87681a6b90125e98fe114d14e4481c1fa0467386a7d75fb23c1eabb183883a"
+      ],
+      "bounds": {
+        "idle/e": [
+          18,
+          110,
+          114,
+          170
+        ],
+        "idle/se": [
+          23,
+          106,
+          108,
+          170
+        ],
+        "idle/s": [
+          38,
+          103,
+          89,
+          170
+        ],
+        "idle/sw": [
+          27,
+          105,
+          100,
+          170
+        ],
+        "idle/w": [
+          19,
+          112,
+          106,
+          170
+        ],
+        "idle/nw": [
+          25,
+          107,
+          103,
+          170
+        ],
+        "idle/n": [
+          37,
+          102,
+          90,
+          170
+        ],
+        "idle/ne": [
+          24,
+          107,
+          103,
+          170
+        ],
+        "run-a/e": [
+          16,
+          119,
+          115,
+          170
+        ],
+        "run-a/se": [
+          23,
+          115,
+          109,
+          170
+        ],
+        "run-a/s": [
+          40,
+          108,
+          87,
+          171
+        ],
+        "run-a/sw": [
+          26,
+          114,
+          102,
+          170
+        ],
+        "run-a/w": [
+          18,
+          113,
+          108,
+          170
+        ],
+        "run-a/nw": [
+          24,
+          107,
+          103,
+          170
+        ],
+        "run-a/n": [
+          38,
+          107,
+          89,
+          170
+        ],
+        "run-a/ne": [
+          21,
+          108,
+          105,
+          170
+        ],
+        "run-b/e": [
+          17,
+          122,
+          115,
+          170
+        ],
+        "run-b/se": [
+          23,
+          113,
+          109,
+          170
+        ],
+        "run-b/s": [
+          42,
+          113,
+          86,
+          170
+        ],
+        "run-b/sw": [
+          27,
+          114,
+          101,
+          170
+        ],
+        "run-b/w": [
+          17,
+          120,
+          107,
+          170
+        ],
+        "run-b/nw": [
+          24,
+          113,
+          104,
+          170
+        ],
+        "run-b/n": [
+          41,
+          110,
+          87,
+          170
+        ],
+        "run-b/ne": [
+          25,
+          114,
+          102,
+          170
+        ],
+        "attack/e": [
+          18,
+          104,
+          114,
+          170
+        ],
+        "attack/se": [
+          24,
+          104,
+          108,
+          170
+        ],
+        "attack/s": [
+          37,
+          102,
+          90,
+          170
+        ],
+        "attack/sw": [
+          26,
+          105,
+          101,
+          170
+        ],
+        "attack/w": [
+          16,
+          105,
+          107,
+          170
+        ],
+        "attack/nw": [
+          22,
+          102,
+          105,
+          170
+        ],
+        "attack/n": [
+          36,
+          101,
+          91,
+          170
+        ],
+        "attack/ne": [
+          21,
+          103,
+          105,
+          170
+        ],
+        "hurt/e": [
+          18,
+          110,
+          114,
+          170
+        ],
+        "hurt/se": [
+          24,
+          112,
+          107,
+          170
+        ],
+        "hurt/s": [
+          39,
+          116,
+          89,
+          170
+        ],
+        "hurt/sw": [
+          24,
+          114,
+          103,
+          170
+        ],
+        "hurt/w": [
+          18,
+          113,
+          105,
+          170
+        ],
+        "hurt/nw": [
+          26,
+          114,
+          102,
+          170
+        ],
+        "hurt/n": [
+          36,
+          112,
+          91,
+          170
+        ],
+        "hurt/ne": [
+          23,
+          115,
+          102,
+          170
+        ],
+        "death/e": [
+          16,
+          134,
+          116,
+          170
+        ],
+        "death/se": [
+          22,
+          133,
+          109,
+          170
+        ],
+        "death/s": [
+          29,
+          126,
+          99,
+          170
+        ],
+        "death/sw": [
+          21,
+          132,
+          104,
+          170
+        ],
+        "death/w": [
+          15,
+          138,
+          109,
+          170
+        ],
+        "death/nw": [
+          22,
+          130,
+          105,
+          170
+        ],
+        "death/n": [
+          32,
+          123,
+          95,
+          170
+        ],
+        "death/ne": [
+          18,
+          131,
+          107,
+          170
+        ]
+      },
+      "footlines": {
+        "idle/e": 169,
+        "idle/se": 169,
+        "idle/s": 169,
+        "idle/sw": 169,
+        "idle/w": 169,
+        "idle/nw": 169,
+        "idle/n": 169,
+        "idle/ne": 169,
+        "run-a/e": 169,
+        "run-a/se": 169,
+        "run-a/s": 170,
+        "run-a/sw": 169,
+        "run-a/w": 169,
+        "run-a/nw": 169,
+        "run-a/n": 169,
+        "run-a/ne": 169,
+        "run-b/e": 169,
+        "run-b/se": 169,
+        "run-b/s": 169,
+        "run-b/sw": 169,
+        "run-b/w": 169,
+        "run-b/nw": 169,
+        "run-b/n": 169,
+        "run-b/ne": 169,
+        "attack/e": 169,
+        "attack/se": 169,
+        "attack/s": 169,
+        "attack/sw": 169,
+        "attack/w": 169,
+        "attack/nw": 169,
+        "attack/n": 169,
+        "attack/ne": 169,
+        "hurt/e": 169,
+        "hurt/se": 169,
+        "hurt/s": 169,
+        "hurt/sw": 169,
+        "hurt/w": 169,
+        "hurt/nw": 169,
+        "hurt/n": 169,
+        "hurt/ne": 169,
+        "death/e": 169,
+        "death/se": 169,
+        "death/s": 169,
+        "death/sw": 169,
+        "death/w": 169,
+        "death/nw": 169,
+        "death/n": 169,
+        "death/ne": 169
+      },
+      "alphaZeroPercent": 79.55,
+      "uniformScale": 0.4928909952606635,
+      "source": "art/source/aur203-desert-f/desert-species-077-original.png",
+      "sourceUnedited": true
+    },
+    {
+      "id": "desert-species-078",
+      "frameCount": 48,
+      "uniqueRGBAHashes": 48,
+      "rgbaHashes": [
+        "f48a5f776542b76f29f628035468b0d12aae5c5d9de5d74c42c22879e0910a47",
+        "e7c7467824c46d8540ac3e321e30be416684b426c93410575f2f9860be0fc68d",
+        "70e86a67a94bffbd5728fc8f3134273bb3f93d0ef3aa4143c7c0f9f9f8a891f9",
+        "f99ce251f51fffcdc718c5b3cc0d6d3d16a54974d91e73712550541e9ed28b43",
+        "05a660325cfade0802aa43fdafb79d75245e515de14ccc0d786f0ab8c06607a2",
+        "6a53b1cc880401cb921f311283a032fd4309347cdf487293c2200d0da2f9a6e0",
+        "56922b5dce37dd4eb7d427e1bec0f4b111ab599c9b952335d340f6f43c588eaf",
+        "9daf52d68b6c0c4e512b7fbe9e14b1b592425faf38c9ca7ca45d8aa133f5413a",
+        "ff9cf727f41935dd4b21541ad08228ec36ad17ddaed49532b9347706565fe820",
+        "cf91da7377bcb68488bb554ef1947596db1166d3a90e42eb2d4f8db182fe6386",
+        "71e49876ae389477c732a2733bdd3154c11f7b6fab75ff30f0ed95babab99ba0",
+        "a1375384eb6123521202ed2da842a1a0df26f694c29446eabaee7d6a9129b08f",
+        "188ed5efc97cb5ace75febebc40e00d2ab7d4e1a00b0c5fdd5c290ee0172184f",
+        "f75b432359f3b4204ac353308089284fc951d770befee3133c30744afd297935",
+        "ccbcb6c1c63d87f8c1f52ec63ad7e4e1291adb9def79652db5b928f1c4db1446",
+        "61c50391419d10a380dda071510296e03b04c33c630e0cf468c2ede76b6df7ba",
+        "64f57cced0317df2995fa65e3314ac843b37a38793dde0188509ad430ba26352",
+        "6a01449ed372e1d3fb519abbe78b1fa55c575d66630fbc47a0aa9765f0e2eb43",
+        "1977f31518489e7ea1381a906505a25c6bed17191f38bea38756a673b10f4fee",
+        "d55085209fa4b9b625bc8ea82ba0afb9fa83b6dab45c73a21dca25ece721a841",
+        "76695b8cdcced15fbfaa02897f4cb4d9eb6b42898fdaa4e78db284f678213903",
+        "d89d4d91a0a2d23137431a50f89140afdc661039ea19e93c8f8a5525287f9fc6",
+        "ba86ace8d2b4345cd953d841f9c7a022cddb4079dda1101d7aa3c6018616d595",
+        "f9d7d2c854c6c4a649617eba4860e724855c71811a8311fdcaf1417ae4a9d141",
+        "5435d78880d1518b34fe16150862cefa8abd7f23d22f9a1fce314f9dae956989",
+        "f659d44ed160f29876bcd118d18b076308d59d3768a309205da69c653a034cb1",
+        "4e3b0efdce26ae0bd483045961b6547531b762224b4d4fde9b72eef122ee26a7",
+        "57e26ff1914b3b2b6be42b9efc1c426c7914f63a70dd6ccf4a38b690184f88e7",
+        "fef9eabbc24fb53f46aca4749ffa8822ed2eecdf8d823313e2ab901539a1ca95",
+        "0bead1dcca518717cfbc8e9ef2377652ea2955051bf89dd4726d6ef7e74c2812",
+        "b3973c6a3669d0320c9d5f59232c1b418807428b5597d9739a82f65a374d7260",
+        "969eba0d893df4b9831cbb9a98173cc7aa9094a6a22801a7bcdbbdfe393d3e80",
+        "81de26ecbb59c9d335b8d43e3975b5ab6ab71d68b9cb1f98c8c106ae116efbc5",
+        "096a4dfe829d94778ce03520a3dbc319cf166ad3ba77a324e69788ddd831b2e6",
+        "cd8e2da5842dd0d1974cc51dddc098aa3d39f9c56eed7ab5ea9e85feac94c0d9",
+        "300bbc148b945c80a3aa8f92f94eaab2d0de29163c1227b1e5cdd4d78c879112",
+        "e29674dd4a557e0b4c8c6ee3db8cc1da1a6737b25aa9f02fb7997d49edf66894",
+        "8542ba2ad40f9f1795dcc4ea44b4f99e050bb9491e7bece2855152919ddcf754",
+        "77b3efe6095e26ddb98c5c536c7224d53999e629ec9a98adbf854a0082b3bb78",
+        "31d1a7633165374402bc4031cabd9f5cfb26275346b00f9da6d974a8202a60c1",
+        "adeccaeadf40ffe39b30f3c858110dd4a19be589be9183b7414ac148f349734e",
+        "d0f5b137a21b50b70a71b6bc5ebaf1c574b4d545a9283021331aacae630dc39a",
+        "a9f87a21bc6021a81f2f48ea5d3fa3188002403ef15543572857e955a57f51b0",
+        "38f9b89e76f479585ec1d4e4f3d1051190f94fdd4630cc212be472cd3cc579f9",
+        "32673da097ba3d62268e90606e099f6b237cef7a99203fbcca3868c6dc5f3739",
+        "979357a1557c4d02444872e22d85ccc613c4e100a2a33defae9f610a52dcd157",
+        "40a266df0914f9e8c04d3c188e517771810c7d0a5d82c40612e54485ecc39524",
+        "0f5174754e1240833bc297ce8bd68328b2c80b68c0d5cbd2b48db9ce70d69d00"
+      ],
+      "bounds": {
+        "idle/e": [
+          35,
+          87,
+          92,
+          169
+        ],
+        "idle/se": [
+          23,
+          87,
+          104,
+          169
+        ],
+        "idle/s": [
+          19,
+          87,
+          109,
+          169
+        ],
+        "idle/sw": [
+          22,
+          87,
+          106,
+          170
+        ],
+        "idle/w": [
+          34,
+          87,
+          94,
+          170
+        ],
+        "idle/nw": [
+          22,
+          87,
+          104,
+          170
+        ],
+        "idle/n": [
+          19,
+          87,
+          110,
+          169
+        ],
+        "idle/ne": [
+          26,
+          87,
+          102,
+          170
+        ],
+        "run-a/e": [
+          22,
+          89,
+          106,
+          170
+        ],
+        "run-a/se": [
+          20,
+          90,
+          109,
+          170
+        ],
+        "run-a/s": [
+          18,
+          87,
+          109,
+          170
+        ],
+        "run-a/sw": [
+          17,
+          87,
+          108,
+          170
+        ],
+        "run-a/w": [
+          21,
+          92,
+          107,
+          170
+        ],
+        "run-a/nw": [
+          20,
+          88,
+          108,
+          170
+        ],
+        "run-a/n": [
+          21,
+          89,
+          108,
+          169
+        ],
+        "run-a/ne": [
+          19,
+          88,
+          108,
+          169
+        ],
+        "run-b/e": [
+          20,
+          91,
+          108,
+          169
+        ],
+        "run-b/se": [
+          22,
+          91,
+          105,
+          170
+        ],
+        "run-b/s": [
+          21,
+          89,
+          106,
+          170
+        ],
+        "run-b/sw": [
+          23,
+          91,
+          104,
+          170
+        ],
+        "run-b/w": [
+          18,
+          93,
+          108,
+          169
+        ],
+        "run-b/nw": [
+          22,
+          89,
+          105,
+          170
+        ],
+        "run-b/n": [
+          20,
+          92,
+          108,
+          169
+        ],
+        "run-b/ne": [
+          19,
+          91,
+          108,
+          170
+        ],
+        "attack/e": [
+          20,
+          98,
+          107,
+          170
+        ],
+        "attack/se": [
+          21,
+          99,
+          107,
+          170
+        ],
+        "attack/s": [
+          22,
+          99,
+          106,
+          170
+        ],
+        "attack/sw": [
+          21,
+          98,
+          107,
+          170
+        ],
+        "attack/w": [
+          20,
+          98,
+          107,
+          169
+        ],
+        "attack/nw": [
+          21,
+          100,
+          107,
+          170
+        ],
+        "attack/n": [
+          18,
+          98,
+          109,
+          170
+        ],
+        "attack/ne": [
+          21,
+          100,
+          106,
+          169
+        ],
+        "hurt/e": [
+          24,
+          92,
+          105,
+          170
+        ],
+        "hurt/se": [
+          18,
+          89,
+          109,
+          169
+        ],
+        "hurt/s": [
+          15,
+          87,
+          111,
+          169
+        ],
+        "hurt/sw": [
+          22,
+          90,
+          105,
+          169
+        ],
+        "hurt/w": [
+          27,
+          91,
+          100,
+          170
+        ],
+        "hurt/nw": [
+          18,
+          91,
+          108,
+          170
+        ],
+        "hurt/n": [
+          19,
+          92,
+          109,
+          170
+        ],
+        "hurt/ne": [
+          19,
+          94,
+          110,
+          170
+        ],
+        "death/e": [
+          16,
+          119,
+          111,
+          169
+        ],
+        "death/se": [
+          18,
+          118,
+          111,
+          170
+        ],
+        "death/s": [
+          17,
+          120,
+          111,
+          170
+        ],
+        "death/sw": [
+          16,
+          118,
+          110,
+          170
+        ],
+        "death/w": [
+          17,
+          118,
+          110,
+          170
+        ],
+        "death/nw": [
+          13,
+          117,
+          111,
+          170
+        ],
+        "death/n": [
+          22,
+          119,
+          105,
+          170
+        ],
+        "death/ne": [
+          19,
+          115,
+          110,
+          170
+        ]
+      },
+      "footlines": {
+        "idle/e": 168,
+        "idle/se": 168,
+        "idle/s": 168,
+        "idle/sw": 169,
+        "idle/w": 169,
+        "idle/nw": 169,
+        "idle/n": 168,
+        "idle/ne": 169,
+        "run-a/e": 169,
+        "run-a/se": 169,
+        "run-a/s": 169,
+        "run-a/sw": 169,
+        "run-a/w": 169,
+        "run-a/nw": 169,
+        "run-a/n": 168,
+        "run-a/ne": 168,
+        "run-b/e": 168,
+        "run-b/se": 169,
+        "run-b/s": 169,
+        "run-b/sw": 169,
+        "run-b/w": 168,
+        "run-b/nw": 169,
+        "run-b/n": 168,
+        "run-b/ne": 169,
+        "attack/e": 169,
+        "attack/se": 169,
+        "attack/s": 169,
+        "attack/sw": 169,
+        "attack/w": 168,
+        "attack/nw": 169,
+        "attack/n": 169,
+        "attack/ne": 168,
+        "hurt/e": 169,
+        "hurt/se": 168,
+        "hurt/s": 168,
+        "hurt/sw": 168,
+        "hurt/w": 169,
+        "hurt/nw": 169,
+        "hurt/n": 169,
+        "hurt/ne": 169,
+        "death/e": 168,
+        "death/se": 169,
+        "death/s": 169,
+        "death/sw": 169,
+        "death/w": 169,
+        "death/nw": 169,
+        "death/n": 169,
+        "death/ne": 169
+      },
+      "alphaZeroPercent": 77.39,
+      "uniformScale": 0.5473684210526316,
+      "source": "art/source/aur203-desert-f/desert-species-078-original.png",
+      "sourceUnedited": true
+    },
+    {
+      "id": "desert-species-079",
+      "frameCount": 48,
+      "uniqueRGBAHashes": 48,
+      "rgbaHashes": [
+        "ff7e639a5e3ba8c57cee8efd2588bd0225a0dd22eef0506f4cefd9bfb66da828",
+        "09522e488047399244833ff98b63f13e01b49c5d74cc7bcdf6ce357445920517",
+        "c15ea3e68fc4995cb067fea499542feba044893db45e6785b04779c798be1113",
+        "0a8e8110483c86a321d6d0121817a0818924ade29e3b0b336135ee84566b5b82",
+        "6fb47d14eb29eeb9317a475ae3d64b370a2ac90619988144a621f95bfe7a0720",
+        "e61f1e6e5e1d2582cf790ee378c76db12be82abdab22570beb000c22ed570fa2",
+        "3c85a81a412596a1e1ae4c6d171a3124c30758a4caf83e68914c7819eaf3300b",
+        "04bc6aa599c34c0d48190d1edcef7bb3251770504a86da17a0da6f9f95051323",
+        "6039ce4e9c8385986fd5f3fff1ef49abfb9f5bc28d4fda59c2d66a3e14206ae9",
+        "f7148f90c59c765d199a2f3db4004d0a5154c8bfaabbedecf4a3760ee4d853f9",
+        "70e8356dc78ef41b3a1306dc5d24d9361bb0cef823eb606e5aaca6a9c2b312ac",
+        "5152fc983e4bfbfdf93c4d92689c513ba1c72e7ad39da948de9be87bc8e11f90",
+        "254202d312436601daa4b9385906fd935b918a2a82a0ed8b143622315fd97921",
+        "3fcff012eb7c7f98e9106066e653a97dcd24eb0d278b02508329fa9600eff6a1",
+        "c09a2d879194b1f843b2539e6db186f00afefebdbf18a90a4efba466aa2ed693",
+        "2bd956e1dd6dd037d0bb79b901c255c72e0cba7db4e76cefb23e4c60a47a94f8",
+        "5c52945e3815ad1b3bbff437d73a9504d81de0c90903fbc3e5ecb438fe494dd7",
+        "72d2cbb884bdeddaaab6ae4cbb1d44681ad0eba095a1e5ae7be2ff28dba3e08b",
+        "25db9430984c65799816820c72effe76b73607bf9c94cc1bdb0b35cbbc689f73",
+        "cb43c22a9f1237f37f359e71ad101913c1ba0b8c730013969b2802d539849833",
+        "01e2f647e4e71170b182473d081a2518b5923d59bd93be47da1eb9af1cdbfae1",
+        "460cd5e9d90ad26aa587dd0fc1d4cac0c86458446a416da230488ab96e8b867f",
+        "fb812561594b3f3e9858a7e22cd466dea124f6767cf601534b77816dd1df2efb",
+        "cade469054f9a46ce0b4fb5667865f40ff585cb67092b6309e99221f7fe1d49a",
+        "0ea3d29fb4fc9b4bcf18fbaf8166aea492a436260f24093185ebf9515b35dd5c",
+        "2084a502f1641bf0535dd9dc610875ebd3c8202bfe17a77555d8cccc7c1f2735",
+        "b4dd603727c1c01a40c867497a7d297ec1b310deace10e2d6ce30b76f3ca1378",
+        "22bd84e1faa536154e44f5474fb5b7a59e9a2495a678d08bd31db72293aa0217",
+        "659418f4a911f8045703978d9010a7c137c91f3c2d071525f197c3967fa763b4",
+        "3ae71a6f0cd2c2c70ddfbea90cd83c13d9be2572d8cd0c296eaebe8fb4fdb826",
+        "6be648ad568d320fab4e18a50aa8a89acc40d48fa68dcd1ed02321e8e256f322",
+        "11decefe99c451208e5f533a7e3b66e915831cf0bea7ded44e63073e752ee404",
+        "7757fbbbbc85f1ed3f140db6c4ece677e6374d0c011ea177e3b2d6f5abc6504c",
+        "e89d0e97af0d0e55593089690e27eaa7a6d1e179a9f41be2662760fa3bab9d95",
+        "7ad930f490f9b02efbf57a98cb23adf6a7b58878ff62620a0d085cb9178cd2f1",
+        "86d5160d52561d7265890f74f5c81f24eb23b5c4df5c73abb4a4adcd66bd4677",
+        "b77c16111cd4502bcab03ee29b087ea67a5f3069f34d69f75abd6fd39fd92cbd",
+        "18edb2c3484869c273fa52650d9201fb837058a4153717cce89ad03d0e0caff5",
+        "f041c817f29a2487a931364f0d530a2ad1f5d1da0bdbe7973c08b4a22a6f9aec",
+        "cff33731356ea6d886118901ce1af048a2f375d4433131d02575d110d65339d8",
+        "5c08f56bf3e24d7bae860686adabff310d6b831a879c8da62d6ad806e314f2cf",
+        "9553a621be3362d0001c67d03cc264a705553c8cd1aa8a145073663749b1f6f3",
+        "8a383c8b125dd5467f31ec734c808a5b0dfe306b5e5e0c6dbea87b0c40d1a898",
+        "14a2f59be56f1d08e884e11cddffc9711181095da85174c81be4905635b823f4",
+        "5111d8cd10ccd4d020ac59690c8f969da6d4c729ea841e6796c762a5fb0d6893",
+        "968df8b1da357b9584fbc9a0dfadd501143c31ec743f9206e1a759c11c64ce86",
+        "8ed6756e7e761cb6a52a0f4bd1a0d53bb7fd349e7e5fcfde3f9dc882bc593b9c",
+        "e0f01ba874d3c07c7d1ffa9e1b98cf7c4b3c60564c3b46c557f0f69b41dd2072"
+      ],
+      "bounds": {
+        "idle/e": [
+          18,
+          121,
+          114,
+          170
+        ],
+        "idle/se": [
+          24,
+          116,
+          107,
+          170
+        ],
+        "idle/s": [
+          33,
+          111,
+          94,
+          170
+        ],
+        "idle/sw": [
+          26,
+          116,
+          101,
+          170
+        ],
+        "idle/w": [
+          16,
+          120,
+          112,
+          170
+        ],
+        "idle/nw": [
+          27,
+          111,
+          101,
+          170
+        ],
+        "idle/n": [
+          38,
+          109,
+          89,
+          172
+        ],
+        "idle/ne": [
+          29,
+          109,
+          99,
+          172
+        ],
+        "run-a/e": [
+          17,
+          128,
+          115,
+          170
+        ],
+        "run-a/se": [
+          23,
+          115,
+          109,
+          169
+        ],
+        "run-a/s": [
+          36,
+          110,
+          92,
+          169
+        ],
+        "run-a/sw": [
+          25,
+          116,
+          103,
+          170
+        ],
+        "run-a/w": [
+          18,
+          125,
+          112,
+          170
+        ],
+        "run-a/nw": [
+          26,
+          113,
+          101,
+          170
+        ],
+        "run-a/n": [
+          39,
+          112,
+          88,
+          170
+        ],
+        "run-a/ne": [
+          28,
+          111,
+          100,
+          170
+        ],
+        "run-b/e": [
+          16,
+          124,
+          116,
+          170
+        ],
+        "run-b/se": [
+          23,
+          116,
+          108,
+          170
+        ],
+        "run-b/s": [
+          33,
+          111,
+          94,
+          170
+        ],
+        "run-b/sw": [
+          25,
+          117,
+          103,
+          170
+        ],
+        "run-b/w": [
+          17,
+          126,
+          111,
+          170
+        ],
+        "run-b/nw": [
+          28,
+          118,
+          100,
+          170
+        ],
+        "run-b/n": [
+          40,
+          109,
+          87,
+          170
+        ],
+        "run-b/ne": [
+          27,
+          114,
+          100,
+          170
+        ],
+        "attack/e": [
+          16,
+          118,
+          116,
+          170
+        ],
+        "attack/se": [
+          23,
+          111,
+          108,
+          169
+        ],
+        "attack/s": [
+          34,
+          106,
+          94,
+          170
+        ],
+        "attack/sw": [
+          24,
+          110,
+          101,
+          169
+        ],
+        "attack/w": [
+          15,
+          116,
+          112,
+          170
+        ],
+        "attack/nw": [
+          23,
+          113,
+          104,
+          170
+        ],
+        "attack/n": [
+          30,
+          110,
+          98,
+          170
+        ],
+        "attack/ne": [
+          23,
+          114,
+          104,
+          170
+        ],
+        "hurt/e": [
+          22,
+          113,
+          110,
+          170
+        ],
+        "hurt/se": [
+          29,
+          109,
+          103,
+          170
+        ],
+        "hurt/s": [
+          35,
+          107,
+          93,
+          169
+        ],
+        "hurt/sw": [
+          32,
+          110,
+          95,
+          170
+        ],
+        "hurt/w": [
+          24,
+          115,
+          103,
+          170
+        ],
+        "hurt/nw": [
+          28,
+          111,
+          100,
+          170
+        ],
+        "hurt/n": [
+          38,
+          108,
+          89,
+          170
+        ],
+        "hurt/ne": [
+          31,
+          114,
+          97,
+          170
+        ],
+        "death/e": [
+          18,
+          135,
+          113,
+          170
+        ],
+        "death/se": [
+          25,
+          130,
+          107,
+          170
+        ],
+        "death/s": [
+          29,
+          130,
+          99,
+          169
+        ],
+        "death/sw": [
+          21,
+          132,
+          104,
+          170
+        ],
+        "death/w": [
+          17,
+          138,
+          111,
+          170
+        ],
+        "death/nw": [
+          22,
+          136,
+          105,
+          170
+        ],
+        "death/n": [
+          28,
+          135,
+          98,
+          170
+        ],
+        "death/ne": [
+          20,
+          134,
+          105,
+          170
+        ]
+      },
+      "footlines": {
+        "idle/e": 169,
+        "idle/se": 169,
+        "idle/s": 169,
+        "idle/sw": 169,
+        "idle/w": 169,
+        "idle/nw": 169,
+        "idle/n": 171,
+        "idle/ne": 171,
+        "run-a/e": 169,
+        "run-a/se": 168,
+        "run-a/s": 168,
+        "run-a/sw": 169,
+        "run-a/w": 169,
+        "run-a/nw": 169,
+        "run-a/n": 169,
+        "run-a/ne": 169,
+        "run-b/e": 169,
+        "run-b/se": 169,
+        "run-b/s": 169,
+        "run-b/sw": 169,
+        "run-b/w": 169,
+        "run-b/nw": 169,
+        "run-b/n": 169,
+        "run-b/ne": 169,
+        "attack/e": 169,
+        "attack/se": 168,
+        "attack/s": 169,
+        "attack/sw": 168,
+        "attack/w": 169,
+        "attack/nw": 169,
+        "attack/n": 169,
+        "attack/ne": 169,
+        "hurt/e": 169,
+        "hurt/se": 169,
+        "hurt/s": 168,
+        "hurt/sw": 169,
+        "hurt/w": 169,
+        "hurt/nw": 169,
+        "hurt/n": 169,
+        "hurt/ne": 169,
+        "death/e": 169,
+        "death/se": 169,
+        "death/s": 168,
+        "death/sw": 169,
+        "death/w": 169,
+        "death/nw": 169,
+        "death/n": 169,
+        "death/ne": 169
+      },
+      "alphaZeroPercent": 81.43,
+      "uniformScale": 0.48372093023255813,
+      "source": "art/source/aur203-desert-f/desert-species-079-original.png",
+      "sourceUnedited": true
+    },
+    {
+      "id": "desert-species-076",
+      "frameCount": 48,
+      "uniqueRGBAHashes": 48,
+      "rgbaHashes": [
+        "c56616ba58b088ba6535d9a6a7a3c00aa73f9301aaad07800895f95b2b52ee37",
+        "380bd75733df6bc01500888c066024cc79b11adf520bc645e49628fa8aa950e3",
+        "c7e94808b453ce30921f6e89fb6409b04fd104bc7cfc8b4c00cbc46d208e6f0a",
+        "4e6d8db501ebc1913cb5901f18a179391c8464949056de543b44b6fed0465c81",
+        "e52886e0ff2f8da081d6eaa60f0133e66313d47b4efc49683b31e5defbce15b2",
+        "3ef9957ef34f5b44a5162e78926e25325fe6275a6fbda09369ad67f52953eea8",
+        "28dc28ad9490ec316ac5b0ca053a9f0e6a5e07d705919308e72be8e52cb81a04",
+        "102d6994b129955528f31293678ec77d9b0f3bf7e8bc10d07075463176a32103",
+        "a231b30c38052a85c07a84c83d738d943bfdff030446e6056afbbe8ead996a37",
+        "26d1e4984f9acfec257a54fbf9689f4447db43d467c5d4975ae5b52b631941bf",
+        "2667fea83068601f7de1ccf9111966ba4362fd6b03dffd117c260a79bb0a20f7",
+        "97356e8e59788ea5113a021823b49a9bbc509be91beeebd1aaca7f26176a1df9",
+        "861e44f4de6fddabc9041d09293866233276f5d610567a81f6b8da446f4744cc",
+        "d8fe41c51f699769b667d43fc4148d9dc20313811ec0362a1addd574a8188699",
+        "e72b23c1b53c3ca382e91f769a2e1306a3b3893749bfb6fdd6702a6cef98187a",
+        "2708d4a28091aa647a1b82aa0f2f49caed0a3583558f8066e5b57dcf6e2af53e",
+        "47690ae46ab93b7fd35dc863da1cc6e77c2c165926b8b3adaf19d418fd23b8bc",
+        "f10ba3307399c9b1ad7ba68a815c4cdae7c67f03a53a08444891b2f43f4d49b2",
+        "7ae37384f9b0a6d012ec9fedf1e267f26f96c522d07f806e2315f8d267ac5ed6",
+        "5c679c4539f5b1cbfbd4ac910c0be5a67cb0069b22d15982c9b95d3cfc4f2b8a",
+        "a5019badcb9cd11960a841e3c9e4bd6c5dcf35a8fc811236e7e8fbe2a9d54c65",
+        "dc31486e299394e790f4d29767967157dbb98babbc754322fea6568f650a73ab",
+        "f9b8b708bb4c2cdbdde124af1b5b0c768a9c1b246e2e72e8d6409bcf6eaaf0e8",
+        "23eaf1e7a452087cc1b9fbb6aa53a0e157fe72ac7e742faf327db51cf5e5e120",
+        "bf122af792788094543cff62bf2013958d349bbb1d2c3ded348e34a75a34f866",
+        "7b4f78f38b4a0f44df58972561f65e19a3249aeba80e962b6a46c84786129008",
+        "24a9efe3a001bb69682085d02a302a8f4a44bb8f4b4932c09c9191cf28af76bc",
+        "c3f32d5ff0c9bf5d4ffa7e5442a275259d9bf13b09fe45d050851ea03940c3d2",
+        "3388839b5b7871804017735eafee103e0e3fb43670cab2738b80dbe4619ac2d8",
+        "a5b1e96d845a1158a07e5870712cc2a3b2b99060fa62f01ca4debeaf91c1e81c",
+        "836a0cfca1ce6bf629367ec6f38eede8afe036f3578a26385d12a8a15fab5691",
+        "227d2d4aad31c46e8e36140b82348c57572831eb64ad28b66a36b13d45006ce9",
+        "c74c5c5cf36f0e90c9e957927bc52358b9157063866ab0c1ccde10a8f79aafdb",
+        "e916185dd678c6e8cd900dcd4f9b90e694895b74604ea06fd1afbfa9e0b86715",
+        "1e483f65c85d362dfc16de5adb36a73df21d2a2850767c7d5813c5eaaf1461ae",
+        "dd91e8318bd4fef66b80bbc52baae37992a072dfcb4d4c2cef4c83989fa21cf1",
+        "8929f035d3fcfc8d38a52ca7f0e21ccc75d800ed2c42cb8534d24333da39ce70",
+        "d4d0ce1979f2c621233cfb9db1de09b46ae18de4162e2e497af1554bbed91bc6",
+        "b561484365d2262e7ef9ff7b6acac47ea0e5280601eba9b2d5bf7e1b15ac6d99",
+        "d0b2709c032e2f1770daf1a141ef6ea3320b757712f9faf599cca64c10852e55",
+        "13bb8a4d279086b4c5684cd52c9e5bfd273df5c5696b1acbb577aa844d642e65",
+        "a42463dc172522fd98e859e05ef86acf480c78bb664fbccb0e0bb4da74a76117",
+        "7de0a49e6425dcab68a1f5fc93337a9917072586cc42891b71528af702149c9c",
+        "538b19ac2d81ea68d60de95cc982a668b900cb2329c0cd1af8a42eb3484a8b06",
+        "9e2fb7190445e1ca48682ec76ead03e5591581e365b223e4e20a08e6ce944767",
+        "ab0cbe3c65fe2e813a93873385eb31f441542a32550e3570a32a35dffb15782a",
+        "1a34980072d58b3bbb59431cd65ece2684087f541068ec711ca517106b6361e7",
+        "9c58e887788b0b69c0b647b39d838d14476a7f928611a09f9c7f60ffe93cb5ec"
+      ],
+      "bounds": {
+        "idle/e": [
+          32,
+          100,
+          96,
+          173
+        ],
+        "idle/se": [
+          34,
+          100,
+          94,
+          173
+        ],
+        "idle/s": [
+          34,
+          99,
+          94,
+          173
+        ],
+        "idle/sw": [
+          33,
+          100,
+          94,
+          174
+        ],
+        "idle/w": [
+          31,
+          99,
+          97,
+          174
+        ],
+        "idle/nw": [
+          34,
+          99,
+          94,
+          173
+        ],
+        "idle/n": [
+          32,
+          98,
+          96,
+          173
+        ],
+        "idle/ne": [
+          34,
+          100,
+          94,
+          173
+        ],
+        "run-a/e": [
+          29,
+          106,
+          99,
+          171
+        ],
+        "run-a/se": [
+          30,
+          106,
+          97,
+          174
+        ],
+        "run-a/s": [
+          34,
+          105,
+          93,
+          173
+        ],
+        "run-a/sw": [
+          33,
+          107,
+          95,
+          174
+        ],
+        "run-a/w": [
+          29,
+          106,
+          98,
+          171
+        ],
+        "run-a/nw": [
+          32,
+          106,
+          96,
+          172
+        ],
+        "run-a/n": [
+          33,
+          104,
+          94,
+          172
+        ],
+        "run-a/ne": [
+          33,
+          106,
+          95,
+          172
+        ],
+        "run-b/e": [
+          30,
+          108,
+          97,
+          174
+        ],
+        "run-b/se": [
+          31,
+          107,
+          96,
+          174
+        ],
+        "run-b/s": [
+          36,
+          103,
+          91,
+          173
+        ],
+        "run-b/sw": [
+          33,
+          108,
+          94,
+          174
+        ],
+        "run-b/w": [
+          30,
+          107,
+          97,
+          173
+        ],
+        "run-b/nw": [
+          32,
+          107,
+          95,
+          174
+        ],
+        "run-b/n": [
+          36,
+          105,
+          91,
+          172
+        ],
+        "run-b/ne": [
+          32,
+          109,
+          95,
+          174
+        ],
+        "attack/e": [
+          27,
+          104,
+          100,
+          170
+        ],
+        "attack/se": [
+          28,
+          104,
+          101,
+          170
+        ],
+        "attack/s": [
+          30,
+          103,
+          97,
+          170
+        ],
+        "attack/sw": [
+          26,
+          106,
+          100,
+          170
+        ],
+        "attack/w": [
+          26,
+          108,
+          101,
+          170
+        ],
+        "attack/nw": [
+          29,
+          103,
+          99,
+          170
+        ],
+        "attack/n": [
+          27,
+          105,
+          100,
+          170
+        ],
+        "attack/ne": [
+          27,
+          109,
+          100,
+          170
+        ],
+        "hurt/e": [
+          34,
+          107,
+          93,
+          170
+        ],
+        "hurt/se": [
+          35,
+          104,
+          93,
+          170
+        ],
+        "hurt/s": [
+          34,
+          103,
+          94,
+          170
+        ],
+        "hurt/sw": [
+          34,
+          105,
+          93,
+          170
+        ],
+        "hurt/w": [
+          34,
+          106,
+          93,
+          170
+        ],
+        "hurt/nw": [
+          34,
+          107,
+          93,
+          170
+        ],
+        "hurt/n": [
+          37,
+          103,
+          91,
+          170
+        ],
+        "hurt/ne": [
+          35,
+          108,
+          93,
+          170
+        ],
+        "death/e": [
+          25,
+          124,
+          104,
+          170
+        ],
+        "death/se": [
+          27,
+          123,
+          103,
+          170
+        ],
+        "death/s": [
+          28,
+          115,
+          100,
+          170
+        ],
+        "death/sw": [
+          25,
+          127,
+          101,
+          170
+        ],
+        "death/w": [
+          24,
+          123,
+          103,
+          170
+        ],
+        "death/nw": [
+          25,
+          127,
+          102,
+          170
+        ],
+        "death/n": [
+          25,
+          124,
+          103,
+          170
+        ],
+        "death/ne": [
+          25,
+          124,
+          104,
+          170
+        ]
+      },
+      "footlines": {
+        "idle/e": 172,
+        "idle/se": 172,
+        "idle/s": 172,
+        "idle/sw": 173,
+        "idle/w": 173,
+        "idle/nw": 172,
+        "idle/n": 172,
+        "idle/ne": 172,
+        "run-a/e": 170,
+        "run-a/se": 173,
+        "run-a/s": 172,
+        "run-a/sw": 173,
+        "run-a/w": 170,
+        "run-a/nw": 171,
+        "run-a/n": 171,
+        "run-a/ne": 171,
+        "run-b/e": 173,
+        "run-b/se": 173,
+        "run-b/s": 172,
+        "run-b/sw": 173,
+        "run-b/w": 172,
+        "run-b/nw": 173,
+        "run-b/n": 171,
+        "run-b/ne": 173,
+        "attack/e": 169,
+        "attack/se": 169,
+        "attack/s": 169,
+        "attack/sw": 169,
+        "attack/w": 169,
+        "attack/nw": 169,
+        "attack/n": 169,
+        "attack/ne": 169,
+        "hurt/e": 169,
+        "hurt/se": 169,
+        "hurt/s": 169,
+        "hurt/sw": 169,
+        "hurt/w": 169,
+        "hurt/nw": 169,
+        "hurt/n": 169,
+        "hurt/ne": 169,
+        "death/e": 169,
+        "death/se": 169,
+        "death/s": 169,
+        "death/sw": 169,
+        "death/w": 169,
+        "death/nw": 169,
+        "death/n": 169,
+        "death/ne": 169
+      },
+      "alphaZeroPercent": 88.42,
+      "uniformScale": 0.46875,
+      "source": "art/source/aur203-desert-f/desert-species-076-repair.png",
+      "sourceUnedited": true
+    }
+  ]
+}

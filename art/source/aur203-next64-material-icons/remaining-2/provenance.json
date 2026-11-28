@@ -1,0 +1,459 @@
+{
+  "source": "art/source/aur203-next64-material-icons/remaining-2/original-sheet.png",
+  "sourceSize": [
+    1263,
+    1245
+  ],
+  "sourceSHA256": "139aca30392a1992dbaf339eaf4495fbed44ac6d7e94a09dd0a36bcf193e69b4",
+  "method": "Complete source grid cells, proportionally reduced to 112px and centered on 128px RGBA canvases. No semantic editing, alpha normalization, repainting, trimming or recoloring.",
+  "entries": [
+    {
+      "id": "aur203North087Material",
+      "typeId": "aur203North087",
+      "names": {
+        "ru": "Спираль снежной сферы",
+        "en": "Snowglobe spiral",
+        "es": "Espiral de esfera nevada"
+      },
+      "level": 33,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-087.png",
+      "sourceRect": [
+        0,
+        0,
+        315,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "fb6d65e25edf12b2987a0672f0d5506517eb9f2aa627b9bda4dff58aaa485151",
+      "rgbaSHA256": "0f20bbf2a586947a80a3a51539796384498e58ff60af92feeaa70e5bcfcae5b7",
+      "alphaBounds": [
+        8,
+        12,
+        116,
+        119
+      ],
+      "transparentPixels": 10295
+    },
+    {
+      "id": "aur203North088Material",
+      "typeId": "aur203North088",
+      "names": {
+        "ru": "Спица жаркого хвоста",
+        "en": "Ember-tail spoke",
+        "es": "Radio de cola de brasas"
+      },
+      "level": 31,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-088.png",
+      "sourceRect": [
+        315,
+        0,
+        631,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "c31ea30bbff050b1855c059cd4eb09f1eceaf9a93373a5f6a34d4f5079ac0ad6",
+      "rgbaSHA256": "801c812bb2c2d586a1b1475f1f89a97f65c072759eebb7fe4afc40c54d124986",
+      "alphaBounds": [
+        9,
+        21,
+        120,
+        119
+      ],
+      "transparentPixels": 13601
+    },
+    {
+      "id": "aur203North089Material",
+      "typeId": "aur203North089",
+      "names": {
+        "ru": "Базальтовая лопастная пластина",
+        "en": "Basalt shovel plate",
+        "es": "Placa de pala basáltica"
+      },
+      "level": 31,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-089.png",
+      "sourceRect": [
+        631,
+        0,
+        947,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "2f4a49ae4956da3f2e6b1d7b1f27b1ee14be43e0ef09454e4a70f875a39d77d7",
+      "rgbaSHA256": "b753308266c1339dede8b8cc9746c2c2164dd35dad392386a6575613ec322d9e",
+      "alphaBounds": [
+        8,
+        23,
+        119,
+        119
+      ],
+      "transparentPixels": 10939
+    },
+    {
+      "id": "aur203North090Material",
+      "typeId": "aur203North090",
+      "names": {
+        "ru": "Чешуйка воронкового крыла",
+        "en": "Funnel-wing scale",
+        "es": "Escama de ala embudo"
+      },
+      "level": 27,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-090.png",
+      "sourceRect": [
+        947,
+        0,
+        1263,
+        311
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "2d9723bd60dde256b874f1a5bdf7a036f9a7bd65e8657d0b6b9a36f8b1bdd417",
+      "rgbaSHA256": "7acf00625163f0e66ee4b122ba6a72f8d0ec9d4227c764d2dd0829d113e0c46d",
+      "alphaBounds": [
+        13,
+        15,
+        114,
+        119
+      ],
+      "transparentPixels": 10996
+    },
+    {
+      "id": "aur203North091Material",
+      "typeId": "aur203North091",
+      "names": {
+        "ru": "Ледяная струна",
+        "en": "Ice-harp string",
+        "es": "Cuerda de arpa helada"
+      },
+      "level": 25,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-091.png",
+      "sourceRect": [
+        0,
+        311,
+        315,
+        622
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "e2367d61f59cbadbdace3d661f864ca6be835de2d6b3f4ed9b401ebb4768551b",
+      "rgbaSHA256": "d7eb6bac46d362f40d7bc62538b44086f19c4d2a5709ca292d588eec41c06590",
+      "alphaBounds": [
+        23,
+        8,
+        120,
+        113
+      ],
+      "transparentPixels": 14367
+    },
+    {
+      "id": "aur203North092Material",
+      "typeId": "aur203North092",
+      "names": {
+        "ru": "Лепесток снежного надкрылья",
+        "en": "Snowflower elytron petal",
+        "es": "Pétalo de élitro nevado"
+      },
+      "level": 23,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-092.png",
+      "sourceRect": [
+        315,
+        311,
+        631,
+        622
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "8079a7e71f3f17bb4f021658470fb8afdbc0c1f9eb2a38d2d22615a8c80d49d6",
+      "rgbaSHA256": "e2a9a2aa2bdc3a8e756f2ceca70328b465f84a8a1917ade2684db2bbf0b5fae8",
+      "alphaBounds": [
+        8,
+        9,
+        120,
+        119
+      ],
+      "transparentPixels": 10963
+    },
+    {
+      "id": "aur203North093Material",
+      "typeId": "aur203North093",
+      "names": {
+        "ru": "Терраса кальдерного панциря",
+        "en": "Caldera shell terrace",
+        "es": "Terraza de caparazón de caldera"
+      },
+      "level": 33,
+      "iconURL": "assets/icons/monster-materials/aur203-next-north-093.png",
+      "sourceRect": [
+        631,
+        311,
+        947,
+        622
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "085f275b9ef6df04f28647f5cd161c31d3002dc97e4565b9e82c5b9e521ce7fe",
+      "rgbaSHA256": "c02a33f714cb0d0095511eb54ed25541350a3055a73ccab871eb9b9ba5bd2ff9",
+      "alphaBounds": [
+        8,
+        9,
+        120,
+        118
+      ],
+      "transparentPixels": 11148
+    },
+    {
+      "id": "aur203Ancient049Material",
+      "typeId": "aur203Ancient049",
+      "names": {
+        "ru": "Крыло цикады с кремовыми жилками",
+        "en": "Cream-veined cicada wing",
+        "es": "Ala de cigarra con venas crema"
+      },
+      "level": 36,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-049.png",
+      "sourceRect": [
+        947,
+        311,
+        1263,
+        622
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "445f8f8394f898f4073a5ba9ebd7b62da0515b48a0e353c228a2bd959e81c416",
+      "rgbaSHA256": "050bc7450c0da9ddffccd64743da0506e103a15dac5d3a487ff216106d48b388",
+      "alphaBounds": [
+        9,
+        9,
+        117,
+        113
+      ],
+      "transparentPixels": 11696
+    },
+    {
+      "id": "aur203Ancient050Material",
+      "typeId": "aur203Ancient050",
+      "names": {
+        "ru": "Чешуя панциря с тростниковым гребнем",
+        "en": "Reed-combed carapace scale",
+        "es": "Escama de caparazón con peine de junco"
+      },
+      "level": 37,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-050.png",
+      "sourceRect": [
+        0,
+        622,
+        315,
+        933
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "cb544c908977105d3de03ac3dd34613fbd3b1d89376da7b89f3a414cf2f558d7",
+      "rgbaSHA256": "8a70155b0cdecb6091a4b0bc211d33af2214083d5698f651a51799e4e40cbdc7",
+      "alphaBounds": [
+        17,
+        17,
+        115,
+        111
+      ],
+      "transparentPixels": 11554
+    },
+    {
+      "id": "aur203Ancient051Material",
+      "typeId": "aur203Ancient051",
+      "names": {
+        "ru": "Мозаичная плитка гребня",
+        "en": "Mosaic crest tile",
+        "es": "Tesela de cresta"
+      },
+      "level": 38,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-051.png",
+      "sourceRect": [
+        315,
+        622,
+        631,
+        933
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "a7ee8d7db85948beafc1cc7d46ba326595bb4403c18acbf5742afbf708a235f4",
+      "rgbaSHA256": "9e4e9ab12a54b2944bdb5db901d92cb9079725f8ac115cd78797fdf2a70dc705",
+      "alphaBounds": [
+        15,
+        9,
+        110,
+        119
+      ],
+      "transparentPixels": 11877
+    },
+    {
+      "id": "aur203Ancient052Material",
+      "typeId": "aur203Ancient052",
+      "names": {
+        "ru": "Пластина панциря со звёздной картой",
+        "en": "Star-map shell plate",
+        "es": "Placa de caparazón con mapa estelar"
+      },
+      "level": 37,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-052.png",
+      "sourceRect": [
+        631,
+        622,
+        947,
+        933
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "3a6299c6df60b6b968c435847e14c8f55147ca4ec2160628ead83e98295d6f46",
+      "rgbaSHA256": "5a7e44cf957ba8dd0180da5d6b92c4e3358bf4d0cb344ce39105bd9caa0bfb7a",
+      "alphaBounds": [
+        10,
+        9,
+        120,
+        106
+      ],
+      "transparentPixels": 11037
+    },
+    {
+      "id": "aur203Ancient053Material",
+      "typeId": "aur203Ancient053",
+      "names": {
+        "ru": "Обломок арочного рога",
+        "en": "Arch horn fragment",
+        "es": "Fragmento de cuerno arqueado"
+      },
+      "level": 38,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-053.png",
+      "sourceRect": [
+        947,
+        622,
+        1263,
+        933
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "4be52c8a04fa3e715930ec3dbbf423bb82a3705e251b5033df200dde1ca6f06d",
+      "rgbaSHA256": "3d6425767274eb655b516fc7b77b1427c689cad0ce828f41f5e915846edaed84",
+      "alphaBounds": [
+        8,
+        10,
+        111,
+        109
+      ],
+      "transparentPixels": 11547
+    },
+    {
+      "id": "aur203Ancient054Material",
+      "typeId": "aur203Ancient054",
+      "names": {
+        "ru": "Обсидиановое маховое перо",
+        "en": "Obsidian flight feather",
+        "es": "Pluma de vuelo de obsidiana"
+      },
+      "level": 40,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-054.png",
+      "sourceRect": [
+        0,
+        933,
+        315,
+        1245
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "79801d03e0c41c72ba341028971a7cb2d9662b820f7d53c80859c7605998a474",
+      "rgbaSHA256": "74c1ef5eb6fe9227c7eab1ff9df4a9ae0d15e695ea498f78e43df22d43c590df",
+      "alphaBounds": [
+        25,
+        11,
+        120,
+        111
+      ],
+      "transparentPixels": 12485
+    },
+    {
+      "id": "aur203Ancient055Material",
+      "typeId": "aur203Ancient055",
+      "names": {
+        "ru": "Соляная чешуя венца",
+        "en": "Crown salt scale",
+        "es": "Escama de sal de corona"
+      },
+      "level": 41,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-055.png",
+      "sourceRect": [
+        315,
+        933,
+        631,
+        1245
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "3ed887734535a036c07da00214828e53aeba69ddf83785e40e0347ba2ef84a2a",
+      "rgbaSHA256": "33e15fffa6c85adaaeb9f65ac6f70842e4215c0fd0786957283c9aa0b43840fe",
+      "alphaBounds": [
+        8,
+        8,
+        120,
+        112
+      ],
+      "transparentPixels": 11589
+    },
+    {
+      "id": "aur203Ancient056Material",
+      "typeId": "aur203Ancient056",
+      "names": {
+        "ru": "Полый пемзовый шип",
+        "en": "Hollow pumice spine",
+        "es": "Espina hueca de piedra pómez"
+      },
+      "level": 39,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-056.png",
+      "sourceRect": [
+        631,
+        933,
+        947,
+        1245
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "449085a7a3fe39fb182cb70ec02ae40beec9df869cbd131f6e78e3d45473d988",
+      "rgbaSHA256": "8cc6bf66273ec00652b0fc7c95dc665852ed752999dcd6827fdafdc920781ac1",
+      "alphaBounds": [
+        8,
+        11,
+        120,
+        108
+      ],
+      "transparentPixels": 12855
+    },
+    {
+      "id": "aur203Ancient057Material",
+      "typeId": "aur203Ancient057",
+      "names": {
+        "ru": "Медная грибная пластинка",
+        "en": "Copper mushroom gill",
+        "es": "Lámina de hongo cobrizo"
+      },
+      "level": 36,
+      "iconURL": "assets/icons/monster-materials/aur203-next-ancient-057.png",
+      "sourceRect": [
+        947,
+        933,
+        1263,
+        1245
+      ],
+      "width": 128,
+      "height": 128,
+      "sha256": "4d6d31f3d4ff81e1085572bfc161b4700085c4044655aa74391c152b1c5bcb3e",
+      "rgbaSHA256": "4c5c00b9b240913140595c064e8ead5a800274cfa4e5e5a2732d8bd8d091f6a2",
+      "alphaBounds": [
+        8,
+        23,
+        110,
+        100
+      ],
+      "transparentPixels": 11688
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "models": [
+    {
+      "id": "ancient-species-045",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "uniqueFrameRGBAHashes": 48,
+      "pngSHA256": "1f3a6413d8463cc668fd8258400a904843572f0b2160eaed708c8737f8836483",
+      "pngBytes": 498981,
+      "idleHeights": [
+        78,
+        78,
+        76,
+        76,
+        76,
+        77,
+        76,
+        77
+      ],
+      "deathHeights": [
+        42,
+        42,
+        36,
+        38,
+        39,
+        39,
+        36,
+        40
+      ],
+      "alphaZeroPercent": 82.14
+    },
+    {
+      "id": "ancient-species-046",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "uniqueFrameRGBAHashes": 48,
+      "pngSHA256": "ad77fd23985ea5618e0c7ae34b0a2cab27fad3f1f2eb88beae2219bc5e1e69b5",
+      "pngBytes": 631362,
+      "idleHeights": [
+        72,
+        70,
+        64,
+        67,
+        67,
+        66,
+        67,
+        68
+      ],
+      "deathHeights": [
+        43,
+        40,
+        39,
+        38,
+        40,
+        43,
+        34,
+        43
+      ],
+      "alphaZeroPercent": 78.16
+    },
+    {
+      "id": "ancient-species-047",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "uniqueFrameRGBAHashes": 48,
+      "pngSHA256": "1deafb3d81ad9c393c18ea2e5e8fdc0a28dddb2e479daa33dc860de00b00cf97",
+      "pngBytes": 463758,
+      "idleHeights": [
+        74,
+        63,
+        68,
+        72,
+        76,
+        72,
+        68,
+        66
+      ],
+      "deathHeights": [
+        37,
+        32,
+        37,
+        42,
+        45,
+        43,
+        38,
+        34
+      ],
+      "alphaZeroPercent": 84.9
+    },
+    {
+      "id": "ancient-species-048",
+      "width": 1024,
+      "height": 1152,
+      "frames": 48,
+      "uniqueFrameRGBAHashes": 48,
+      "pngSHA256": "fe17e2fd79ba7b0d60785f869482cac9860a447dc3d4fa7c539043584e850349",
+      "pngBytes": 576865,
+      "idleHeights": [
+        75,
+        77,
+        72,
+        71,
+        78,
+        75,
+        74,
+        76
+      ],
+      "deathHeights": [
+        38,
+        38,
+        41,
+        41,
+        43,
+        39,
+        42,
+        38
+      ],
+      "alphaZeroPercent": 79.65
+    }
+  ]
+}

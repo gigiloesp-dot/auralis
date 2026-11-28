@@ -1,0 +1,18 @@
+✔ five authored desert floor plans are deterministic, distinct and keep IDs,levels and localised themes stable (8.322275ms)
+✔ all five real floors have radius18 BFS routes from their safe entry to every room,enemy anchor and exit (108.206688ms)
+✔ every authored corridor is at least100 units wide and its complete centerline is traversable; topology supports genuine loops and branches (7.13457ms)
+✔ five stable desert entrances lie on existing caravan roads,clear both old and new camps and allow a safe outdoor return (5203.473602ms)
+✔ minimap enemy disclosure is a350 world-unit circle and accepts only loaded,alive,positive-HP finite positions (1.495059ms)
+✔ all four maps expose actual roads-independent places and localized climate areas without a camp or static boss API (2.171821ms)
+✔ receivers and teleporter NPC markers are rendered from real descriptors and cannot turn an arrival point into an NPC (0.217128ms)
+✔ big map retains quest listing but suppresses kill,boss and any camp-location markers until the real NPC hand-in (2.678507ms)
+✔ every legacy hunting quest resolves one stable real species without changing saved progress or rewards (32.43515ms)
+✔ starter wolves reject another spot of the same archetype with species,camp or spawn attribution; old unqualified API remains compatible (0.750063ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5999.692655

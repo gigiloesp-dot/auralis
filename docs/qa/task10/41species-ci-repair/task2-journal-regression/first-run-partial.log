@@ -1,0 +1,18 @@
+PASS real timed effect expires warrior
+PASS task2 HUD, active/passive, 4 assignments/reload, real buff, frozen pause and all sections ru warrior
+locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-effect-id="archer_3"]') to be hidden[22m
+[2m    6 × locator resolved to visible <span title="Орлиный глаз" class="temporary-effect" data-effect-id="archer_3" aria-label="Орлиный глаз · 3">…</span>[22m
+[2m    8 × locator resolved to visible <span title="Орлиный глаз" class="temporary-effect" data-effect-id="archer_3" aria-label="Орлиный глаз · 2">…</span>[22m
+[2m    3 × locator resolved to visible <span title="Орлиный глаз" class="temporary-effect" data-effect-id="archer_3" aria-label="Орлиный глаз · 1">…</span>[22m
+
+    at /workspace/auralis/tests/browser-task2-ui.cjs:50:74 {
+  log: [
+    `  - waiting for locator('[data-effect-id="archer_3"]') to be hidden`,
+    '    6 × locator resolved to visible <span title="Орлиный глаз" class="temporary-effect" data-effect-id="archer_3" aria-label="Орлиный глаз · 3">…</span>',
+    '    8 × locator resolved to visible <span title="Орлиный глаз" class="temporary-effect" data-effect-id="archer_3" aria-label="Орлиный глаз · 2">…</span>',
+    '    3 × locator resolved to visible <span title="Орлиный глаз" class="temporary-effect" data-effect-id="archer_3" aria-label="Орлиный глаз · 1">…</span>'
+  ],
+  name: 'TimeoutError'
+}

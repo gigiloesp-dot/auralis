@@ -1,0 +1,150 @@
+2026-11-17T07:01:02.392Z pw:api => browserType.launch started
+2026-11-17T07:01:03.495Z pw:api <= browserType.launch succeeded
+START task2 ru warrior
+2026-11-17T07:01:03.539Z pw:api => browser.newContext started
+2026-11-17T07:01:03.581Z pw:api <= browser.newContext succeeded
+2026-11-17T07:01:03.582Z pw:api => browserContext.addInitScript started
+2026-11-17T07:01:03.583Z pw:api <= browserContext.addInitScript succeeded
+2026-11-17T07:01:03.583Z pw:api => browserContext.newPage started
+2026-11-17T07:01:04.381Z pw:api <= browserContext.newPage succeeded
+2026-11-17T07:01:04.390Z pw:api => page.goto started
+2026-11-17T07:01:04.391Z pw:api navigating to "http://127.0.0.1:34867/", waiting until "load"
+2026-11-17T07:01:04.598Z pw:api   "commit" event fired
+2026-11-17T07:01:04.598Z pw:api   navigated to "http://127.0.0.1:34867/"
+2026-11-17T07:01:07.677Z pw:api   "networkidle" event fired
+2026-11-17T07:01:08.103Z pw:api   "domcontentloaded" event fired
+2026-11-17T07:01:08.883Z pw:api   "networkidle" event fired
+2026-11-17T07:01:10.371Z pw:api   "load" event fired
+2026-11-17T07:01:10.373Z pw:api <= page.goto succeeded
+2026-11-17T07:01:10.380Z pw:api => locator.click started
+2026-11-17T07:01:10.444Z pw:api waiting for getByRole('button', { name: 'Продолжить', exact: true })
+2026-11-17T07:01:10.861Z pw:api   locator resolved to <button type="button" data-menu-action="continue" class="medieval-menu-button">…</button>
+2026-11-17T07:01:10.889Z pw:api attempting click action
+2026-11-17T07:01:10.898Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:10.979Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:10.979Z pw:api   scrolling into view if needed
+2026-11-17T07:01:10.990Z pw:api   done scrolling
+2026-11-17T07:01:11.097Z pw:api   performing click action
+2026-11-17T07:01:11.396Z pw:api   click action done
+2026-11-17T07:01:11.396Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:11.456Z pw:api   navigations have finished
+2026-11-17T07:01:11.457Z pw:api <= locator.click succeeded
+2026-11-17T07:01:11.457Z pw:api => locator.click started
+2026-11-17T07:01:11.457Z pw:api waiting for getByRole('button', { name: 'Создать персонажа', exact: true }).first()
+2026-11-17T07:01:11.468Z pw:api   locator resolved to <button type="button" class="primary">Создать персонажа</button>
+2026-11-17T07:01:11.469Z pw:api attempting click action
+2026-11-17T07:01:11.470Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:11.666Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:11.666Z pw:api   scrolling into view if needed
+2026-11-17T07:01:11.679Z pw:api   done scrolling
+2026-11-17T07:01:11.694Z pw:api   performing click action
+2026-11-17T07:01:11.778Z pw:api   click action done
+2026-11-17T07:01:11.778Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:11.789Z pw:api   navigations have finished
+2026-11-17T07:01:11.789Z pw:api <= locator.click succeeded
+2026-11-17T07:01:11.789Z pw:api => locator.click started
+2026-11-17T07:01:11.794Z pw:api waiting for locator('.class-card:has(.hero-warrior)')
+2026-11-17T07:01:11.855Z pw:api   locator resolved to <button type="button" class="class-card selected">…</button>
+2026-11-17T07:01:11.870Z pw:api attempting click action
+2026-11-17T07:01:11.871Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:11.960Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:11.960Z pw:api   scrolling into view if needed
+2026-11-17T07:01:11.987Z pw:api   done scrolling
+2026-11-17T07:01:12.107Z pw:api   performing click action
+2026-11-17T07:01:12.238Z pw:api   click action done
+2026-11-17T07:01:12.238Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:12.257Z pw:api   navigations have finished
+2026-11-17T07:01:12.257Z pw:api <= locator.click succeeded
+2026-11-17T07:01:12.257Z pw:api => locator.fill started
+2026-11-17T07:01:12.259Z pw:api waiting for locator('input')
+2026-11-17T07:01:12.275Z pw:api   locator resolved to <input maxlength="16" autocomplete="off" placeholder="Имя персонажа (латиница и цифры)"/>
+2026-11-17T07:01:12.278Z pw:api   fill("InterfaceQA")
+2026-11-17T07:01:12.278Z pw:api attempting fill action
+2026-11-17T07:01:12.278Z pw:api   waiting for element to be visible, enabled and editable
+2026-11-17T07:01:12.286Z pw:api <= locator.fill succeeded
+2026-11-17T07:01:12.286Z pw:api => locator.click started
+2026-11-17T07:01:12.290Z pw:api waiting for getByRole('button', { name: 'Начать приключение', exact: true })
+2026-11-17T07:01:12.300Z pw:api   locator resolved to <button type="button" class="primary">Начать приключение</button>
+2026-11-17T07:01:12.339Z pw:api attempting click action
+2026-11-17T07:01:12.339Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:12.376Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:12.376Z pw:api   scrolling into view if needed
+2026-11-17T07:01:12.382Z pw:api   done scrolling
+2026-11-17T07:01:12.390Z pw:api   performing click action
+2026-11-17T07:01:12.504Z pw:api   click action done
+2026-11-17T07:01:12.504Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:12.546Z pw:api   navigations have finished
+2026-11-17T07:01:12.547Z pw:api <= locator.click succeeded
+2026-11-17T07:01:12.547Z pw:api => page.waitForFunction started
+2026-11-17T07:01:17.073Z pw:api <= page.waitForFunction succeeded
+2026-11-17T07:01:17.074Z pw:api => page.evaluate started
+2026-11-17T07:01:18.567Z pw:api <= page.evaluate succeeded
+2026-11-17T07:01:18.568Z pw:api => locator.isVisible started
+2026-11-17T07:01:18.575Z pw:api   checking visibility of locator('#active-effects')
+2026-11-17T07:01:21.789Z pw:api <= locator.isVisible succeeded
+2026-11-17T07:01:21.789Z pw:api => locator.isVisible started
+2026-11-17T07:01:21.792Z pw:api   checking visibility of locator('#menu[data-page="pause"]')
+2026-11-17T07:01:22.166Z pw:api <= locator.isVisible succeeded
+2026-11-17T07:01:22.167Z pw:api => locator.click started
+2026-11-17T07:01:22.167Z pw:api waiting for locator('#pause-btn')
+2026-11-17T07:01:23.051Z pw:api   locator resolved to <button id="pause-btn" aria-label="Меню">…</button>
+2026-11-17T07:01:23.075Z pw:api attempting click action
+2026-11-17T07:01:23.075Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:24.057Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:24.057Z pw:api   scrolling into view if needed
+2026-11-17T07:01:24.462Z pw:api   done scrolling
+2026-11-17T07:01:25.392Z pw:api   performing click action
+2026-11-17T07:01:26.599Z pw:api   click action done
+2026-11-17T07:01:26.599Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:26.995Z pw:api   navigations have finished
+2026-11-17T07:01:26.996Z pw:api <= locator.click succeeded
+2026-11-17T07:01:26.996Z pw:api => locator.click started
+2026-11-17T07:01:26.997Z pw:api waiting for locator('[data-pause-action="skills"]')
+2026-11-17T07:01:27.745Z pw:api   locator resolved to <button type="button" aria-label="Навыки" data-pause-action="skills">…</button>
+2026-11-17T07:01:28.162Z pw:api attempting click action
+2026-11-17T07:01:28.162Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:28.988Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:28.988Z pw:api   scrolling into view if needed
+2026-11-17T07:01:29.363Z pw:api   done scrolling
+2026-11-17T07:01:30.243Z pw:api   performing click action
+2026-11-17T07:01:30.856Z pw:api   click action done
+2026-11-17T07:01:30.857Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:31.385Z pw:api   navigations have finished
+2026-11-17T07:01:31.386Z pw:api <= locator.click succeeded
+2026-11-17T07:01:31.391Z pw:api => locator.waitFor started
+2026-11-17T07:01:31.396Z pw:api waiting for locator('#skills-panel') to be visible
+2026-11-17T07:01:32.541Z pw:api   locator resolved to visible <section id="skills-panel">…</section>
+2026-11-17T07:01:32.542Z pw:api <= locator.waitFor succeeded
+2026-11-17T07:01:32.558Z pw:api => locator.click started
+2026-11-17T07:01:32.558Z pw:api waiting for locator('#skills-tab-active')
+2026-11-17T07:01:33.679Z pw:api   locator resolved to <button role="tab" tabindex="0" type="button" class="active" aria-selected="true" id="skills-tab-active" data-skill-type="active" aria-controls="skills-list-active">Активные</button>
+2026-11-17T07:01:33.955Z pw:api attempting click action
+2026-11-17T07:01:33.955Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:34.962Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:34.962Z pw:api   scrolling into view if needed
+2026-11-17T07:01:35.596Z pw:api   done scrolling
+2026-11-17T07:01:36.874Z pw:api   performing click action
+2026-11-17T07:01:37.688Z pw:api   click action done
+2026-11-17T07:01:37.688Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:38.185Z pw:api   navigations have finished
+2026-11-17T07:01:38.188Z pw:api <= locator.click succeeded
+2026-11-17T07:01:38.188Z pw:api => locator.count started
+2026-11-17T07:01:38.597Z pw:api <= locator.count succeeded
+2026-11-17T07:01:38.598Z pw:api => locator.click started
+2026-11-17T07:01:38.598Z pw:api waiting for locator('[data-skill-id="warrior_0"]')
+2026-11-17T07:01:39.899Z pw:api   locator resolved to <button type="button" data-skill-id="warrior_0" class="skill-card skill-select">…</button>
+2026-11-17T07:01:40.377Z pw:api attempting click action
+2026-11-17T07:01:40.377Z pw:api   waiting for element to be visible, enabled and stable
+2026-11-17T07:01:41.045Z pw:api   element is visible, enabled and stable
+2026-11-17T07:01:41.045Z pw:api   scrolling into view if needed
+2026-11-17T07:01:41.445Z pw:api   done scrolling
+2026-11-17T07:01:42.059Z pw:api   performing click action
+2026-11-17T07:01:42.975Z pw:api   click action done
+2026-11-17T07:01:42.975Z pw:api   waiting for scheduled navigations to finish
+2026-11-17T07:01:43.360Z pw:api   navigations have finished
+2026-11-17T07:01:43.360Z pw:api <= locator.click succeeded
+2026-11-17T07:01:43.361Z pw:api => locator.click started
+2026-11-17T07:01:43.361Z pw:api waiting for locator('.skill-learn')
+2026-11-17T07:01:44.261Z pw:api   locator resolved to <button type="button" class="skill-learn">Изучить / улучшить (+1)</button>
+2026-11-17T07:01:44.657Z pw:api attempting click action
+2026-11-17T07:01:44.657Z pw:api   waiting for element to be visible, enabled and stable

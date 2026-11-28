@@ -1,0 +1,9 @@
+{
+  "provider": "image_gen",
+  "generatedOriginal": "/workspace/generated_images/exec-c1dde134-3a67-4736-970d-ae9d80527800.png",
+  "transparentBackground": true,
+  "prompt": "prompt.txt",
+  "semanticEdits": [],
+  "sourceSHA256": "bd07f12250f7b11ee475b44f1a6670472df8f92ce02d1702bc53cc71d1972a59",
+  "inspection": "All packed icons inspected at native 128px on beige and dark backgrounds. Clear species-specific fragments, complete silhouettes, transparent gutters and no neighboring-cell contamination. No semantic repairs required."
+}

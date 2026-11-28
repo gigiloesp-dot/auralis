@@ -1,0 +1,23 @@
+{
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "version": 23,
+  "sourceCommit": "2c33e18d2e1ccc0f87bcc44463a1c6cdce0e273f",
+  "rollback": "dfe4374f51601525eff10454295bcb0f0cda0e73",
+  "hostingCommit": "4f9921ea47e878715c0db5be7c0dabad9188730d",
+  "archiveGzipSHA256": "31d243f6adb3b966efc0f5b3599ca32aec104329b605a5781fe8c6f23360cae8",
+  "ci": 44075497609,
+  "ciPassed": 27,
+  "ciTotal": 27,
+  "unitPassed": 436,
+  "runtimeFilesSHA256Verified": 474,
+  "publicScope": "ActualHTTPSanonymousbrowser: creation,touchattack,loot/30srespawn/reload,fourregions/all17dungeons\u00d73,12maplocalecombinations; separateEN740\u00d7320fourrealCanvascollect/NPCclaimflows+range/fullbag/quota/3slots/reload/regrowth/leaseedgecases",
+  "physicalAndroid": false,
+  "protectedRefs": {
+    "main": "274e79d37250a31232d5c2cdca94ff1d85dd00d9",
+    "stable-alpha": "536e776c8ea65a6948889ed7b917fad7996ae87f",
+    "fix/hud-circular-minimap": "aeb181fc02423c6d4c42936d14fd9d9cce010bd8"
+  },
+  "protectedAlphaVersion": 1,
+  "publishedPrimarySpecies": 41,
+  "uncompletedPrimarySpecies": 216
+}

@@ -1,0 +1,16 @@
+{
+  "id": "appgdep_6b0aa37cb0e881919fca79742c7d9266",
+  "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+  "title": "Auralis — Master Development Test",
+  "version_id": "appgprj_6af567346ebc8191accf1485254403da~appgver_77cbaab78cc88191ab4fb8290c2c05ac",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6af567346ebc8191accf1485254403da",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-11-28T09:49:03.802543+00:00"
+}
+

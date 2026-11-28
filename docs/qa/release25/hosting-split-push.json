@@ -1,0 +1,53 @@
+{
+  "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+  "sourceCommit": "4136c4ba9e0bd32fe4ccbaa321733f445aa4128c",
+  "baseHostingCommit": "48395553c9a9263855cc67176cd150eb8fb5d9ea",
+  "originalLocalHostingCheckpoint": "524124f14c117eb241abd6108d43c17c07641dc0",
+  "finalHostingCommit": "ae2767346c6c9bdb8540c1aa9a804d70ec7a49aa",
+  "unchangedTree": "20f6b23e032fc9f13ffd4c7d6b67ad5386e16f75",
+  "chunks": [
+    {
+      "chunk": 1,
+      "commit": "d4d7914a6e81bb06d63194cae2d011e375fe3958",
+      "files": 20,
+      "bytes": 40776914
+    },
+    {
+      "chunk": 2,
+      "commit": "60ead37046ae5b5a88fd9454d625fd98a3d6569b",
+      "files": 20,
+      "bytes": 41858894
+    },
+    {
+      "chunk": 3,
+      "commit": "4a75dba993b63a4ce0ebe51fa42a90150f055acc",
+      "files": 21,
+      "bytes": 41236743
+    },
+    {
+      "chunk": 4,
+      "commit": "1e14f4a7a4d133b94be689916a267596e6225326",
+      "files": 21,
+      "bytes": 41255050
+    },
+    {
+      "chunk": 5,
+      "commit": "97ca320155b39795451a287da83dd0727ceca38d",
+      "files": 95,
+      "bytes": 41782426
+    },
+    {
+      "chunk": 6,
+      "commit": "fc27009f1d13f16373ab118368dec3aebf96c781",
+      "files": 79,
+      "bytes": 41078161
+    },
+    {
+      "chunk": 7,
+      "commit": "edd5dc7afaeaf1da51da3c1dc1cce3ef8164958b",
+      "files": 9,
+      "bytes": 7587394
+    }
+  ],
+  "published": false
+}

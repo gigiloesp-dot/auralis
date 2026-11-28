@@ -1,0 +1,61 @@
+{
+  "pack": "aur203-forest-e",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "models": [
+    {
+      "placementId": "forest-species-096",
+      "typeId": "aur203Forest096",
+      "names": {
+        "ru": "Витражный переплётник",
+        "en": "Stained-glass folio ray",
+        "es": "Raya vitral"
+      },
+      "biome": "abandoned-city",
+      "level": 18,
+      "x": 15503,
+      "y": 8887,
+      "anatomy": "hovering leather-bound folio with stained glass ray fins and ribbon tails",
+      "movementProfile": "ghost",
+      "abilityPattern": [
+        "haunt",
+        "fan"
+      ],
+      "materialId": "aur203Forest096Material",
+      "materialConcept": "stained-glass fin shard",
+      "artOnly": true
+    }
+  ],
+  "animationScope": "48 painted poses: 8 directions x idle/run-a/run-b/attack/hurt/death. Two movement drawings; six pose banks, not six multiframe clips.",
+  "mechanicalPacking": "Whole complete pose cropping with 8 source pixel margins and uniform resampling; alpha used solely for measurement. No semantic painting/erasing/matte removal by Python.",
+  "visualReview": {
+    "all48PosesPerModel": true,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "death": "natural collapsed sideways with limp limbs and closed eyes",
+    "registration": "n/ne/e/se/s/sw/w/nw; source s/sw/w/nw/n/ne/e/se",
+    "reviewed": true
+  },
+  "generationHistory": {
+    "generation-v2.json": [
+      {
+        "id": "forest-species-096",
+        "prompt": "Production videogame sprite sheet, true transparent RGBA. Bright detailed hand-painted fantasy cartoon isometric Auralis RPG art, dark crisp outlines, sculpted tactile textures, warm highlights, readable at75px creature height. EXACTLY48 separate complete full-body painted poses in8columns×6rows regular grid, landscape3:2. Same consistent creature proportions all poses. Columns EXACTLY S,SW,W,NW,N,NE,E,SE, distinct rotations high-angle isometric orthographic. Rows EXACTLY idle,run-A,run-B,attack,hurt,DEAD collapsed. RunA/B visibly alternate limb strides; attack visibly extends anatomy; hurt recoils; death fully collapsed sideways limp and closed eyes, unmistakably unlike standing idle. Every whole creature centered in its own cell, large true-transparent blank gutters on all sides, no overlapping neighbors or clipped extremities. Uniform creature scale; no shadows, floor, scenery, labels, letters, gridlines, matte or haze. Outside creatures alphaZERO. ABANDONED CITY level18 original STAINED-GLASS FOLIO RAY: creature is a hovering thick burgundy leather-bound folio opened like a manta ray, two enormous stained-glass fins with copper leading edges emerge from book sides, small ivory face at spine tip, two long silk bookmark ribbon tails, four tiny clawed feet underneath. No letters. Attack fins spread with spine forward; death lies closed and sideways with fins folded limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f23f7e2a-60ac-433d-b8ae-b8837d641577.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      }
+    ],
+    "rejected-generation.json": [
+      {
+        "id": "forest-species-096",
+        "prompt": "undefinedABANDONED CITY level18 original STAINED-GLASS FOLIO RAY: creature is a hovering thick burgundy leather-bound folio opened like a manta ray, two enormous stained-glass fins with copper leading edges emerge from book sides, small ivory face at spine tip, two long silk bookmark ribbon tails, four tiny clawed feet underneath. No letters. Attack fins spread with spine forward; death lies closed and sideways with fins folded limp.",
+        "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-742cceb7-309d-47ea-b80e-9fc48528b730.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "rejected": true,
+        "reason": "Invalid sprite sheet layout/transparency; retained original and regenerate with complete explicit grid prompt."
+      }
+    ]
+  }
+}

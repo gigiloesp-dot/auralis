@@ -1,0 +1,93 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-ancient-b",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "generatedWith": "OpenAI image_gen",
+  "animationScope": "48 painted poses per creature, E/SE/S/SW/W/NW/N/NE x idle/run-a/run-b/attack/hurt/death. Two movement drawings; six banks do not claim six full multiframe clips.",
+  "mechanicalPacking": "Complete unedited source rectangle crops with margin, uniformly resized and registered into 128x192 cells. Alpha support measured only, never threshold-erased or painted.",
+  "qa": "All 192 native registered poses viewed on beige and dark contacts. Movement drawings differ; death drawings naturally collapsed with legs lowered or folded. No visible mattes, clipping, adjacent-cell fragments.",
+  "models": [
+    {
+      "id": "ancient-species-049",
+      "names": {
+        "ru": "Корнеколёсая цикада",
+        "en": "Rootwheel Cicada",
+        "es": "Cigarra de rueda raíz"
+      },
+      "biome": "elder-forest",
+      "level": 36,
+      "anatomy": "Six root-arch legs, walnut thorax, cream-veined jade leaf wings, ochre face and amber curled antennae.",
+      "proposedMovementProfile": "crawler",
+      "proposedAbilityPattern": [
+        "roots",
+        "burrow"
+      ],
+      "materialConcept": "Cream-veined cicada wing",
+      "source": "ancient-species-049-original.png",
+      "prompt": "ancient-species-049-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-39584260-88e3-4a68-9505-df30f7089067.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "ancient-species-050",
+      "names": {
+        "ru": "Кувшиноспинный прыгун",
+        "en": "Vesselback Mudskipper",
+        "es": "Saltarín de vasija"
+      },
+      "biome": "elder-marsh",
+      "level": 37,
+      "anatomy": "Ochre amphibious fish body, tall eyes, fleshy walking fins, long paddle tail, naturally grown hollow terracotta pitcher carapace with reed comb.",
+      "proposedMovementProfile": "predator",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "materialConcept": "Reed-combed carapace scale",
+      "source": "ancient-species-050-original.png",
+      "prompt": "ancient-species-050-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b00aaab3-561c-4a74-841f-f3f4e481e62d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "ancient-species-051",
+      "names": {
+        "ru": "Мозаичный богомол",
+        "en": "Mosaic Mantis",
+        "es": "Mantis de mosaico"
+      },
+      "biome": "elder-ruins",
+      "level": 38,
+      "anatomy": "Upright jade mantis with four thin hinged legs, broad curved scythe forearms, triangular face and a broken tile mosaic fan crest.",
+      "proposedMovementProfile": "fighter",
+      "proposedAbilityPattern": [
+        "cleave",
+        "fan"
+      ],
+      "materialConcept": "Mosaic crest tile",
+      "source": "ancient-species-051-original.png",
+      "prompt": "ancient-species-051-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9ce9b454-1753-45e5-b6d8-1216d23c0908.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "ancient-species-052",
+      "names": {
+        "ru": "Астролябовая черепаха",
+        "en": "Astrolabe Tortoise",
+        "es": "Tortuga de astrolabio"
+      },
+      "biome": "elder-ruins",
+      "level": 37,
+      "anatomy": "Stout navy tortoise with broad blunt stone feet, pale expressive head, bronze concentric astrolabe rings integrated into a domed star-map shell.",
+      "proposedMovementProfile": "heavy",
+      "proposedAbilityPattern": [
+        "stomp",
+        "blink"
+      ],
+      "materialConcept": "Star-map shell plate",
+      "source": "ancient-species-052-original.png",
+      "prompt": "ancient-species-052-prompt.txt",
+      "generation": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9b6239ca-5d28-4976-ae7b-4f2c89bb90ed.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+✔ exactly32 immutable gathering sites stand beside actual connected roads,clear every existing encounter and retain real walkable approaches (456.555807ms)
+✔ four distinct transparent plant frames,individual icons and actual localized collect objectives are backed by real material and NPC identities (86.703827ms)
+✔ real world radius85,life,region,dungeon and optional obstruction rules are checked on every pickup (1.015895ms)
+✔ single material insertion,full and partial stacks,storage rollback,reentrant taps and persisted regrowth are atomic and never award gold (2.252223ms)
+✔ three actual Save slots retain gathered material records and node deadlines through reload;renderer unloading cannot reset metadata (2.66741ms)
+✔ each regional objective has enough different ready plants to gather three real items without waiting for regrowth (0.747429ms)
+✔ gathering atlas has one shared lease and a loader completion after world destruction removes its texture without recreating actors (42.388322ms)
+✔ renderer streaming throttle stays bounded on the monotonic clock when absolute plant cooldown clock moves forward and backward (2.37571ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1219.831872

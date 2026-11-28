@@ -1,0 +1,209 @@
+{
+  "version": 2,
+  "projection": "x / worldWidth * imageWidth; y / worldHeight * imageHeight",
+  "source": "actual regionContent,regionRoads,climateAt,biomeZones,describeChunk,SAND_HILLS",
+  "images": {
+    "forest-wide.webp": {
+      "width": 1672,
+      "height": 941,
+      "symbols": 533,
+      "worldWidth": 18000,
+      "worldHeight": 18000,
+      "roads": 344,
+      "towns": [
+        {
+          "id": "forestVillage",
+          "x": 1030,
+          "y": 1140
+        },
+        {
+          "id": "riverhaven",
+          "x": 5250,
+          "y": 5200
+        },
+        {
+          "id": "oakwatch",
+          "x": 9700,
+          "y": 9500
+        }
+      ],
+      "bytes": 797156,
+      "sha256": "b4113f992c0b0d5e01dbf37b79bba8dab0785e1ddb0c8a50dc88006f51b2a0c6",
+      "paintedSource": "art/source/aur192/forest-wide-painted.png",
+      "paintedSourceSha256": "90c5ff644bbc359b390aae733acfbf1efce8e68872d2aa0a850fa14b186c725a",
+      "geographyBaseSha256": "50dfc2acb810166f1c41a2fc0f3f91075709280fb055bcc920b7fc3c73bfb279"
+    },
+    "forest-ultrawide.webp": {
+      "width": 1882,
+      "height": 836,
+      "symbols": 533,
+      "worldWidth": 18000,
+      "worldHeight": 18000,
+      "roads": 344,
+      "towns": [
+        {
+          "id": "forestVillage",
+          "x": 1030,
+          "y": 1140
+        },
+        {
+          "id": "riverhaven",
+          "x": 5250,
+          "y": 5200
+        },
+        {
+          "id": "oakwatch",
+          "x": 9700,
+          "y": 9500
+        }
+      ],
+      "bytes": 784942,
+      "sha256": "b5690dcfedf97d72b8db4675fc54716b6ce03355efd71c902ea649459c783864",
+      "paintedSource": "art/source/aur192/forest-ultrawide-painted.png",
+      "paintedSourceSha256": "ab018a8d95dbb2ccdd84f2f6d4b415a7e92fdba68b70175489c6a27964ff01b2",
+      "geographyBaseSha256": "7cdbb821e3bd5d3eda56a1f8f4b08b03df21b7564cd8878786be23f0e6c47c5b"
+    },
+    "north-wide.webp": {
+      "width": 1672,
+      "height": 941,
+      "symbols": 565,
+      "worldWidth": 21000,
+      "worldHeight": 21000,
+      "roads": 274,
+      "towns": [
+        {
+          "id": "frostford",
+          "x": 1500,
+          "y": 1800
+        },
+        {
+          "id": "highpass",
+          "x": 10300,
+          "y": 10600
+        }
+      ],
+      "bytes": 833590,
+      "sha256": "d3daa18329537927ffacc1854a2f5f4925166d4752d6a1569ca26fa0622240ac",
+      "paintedSource": "art/source/aur192/north-wide-painted.png",
+      "paintedSourceSha256": "49ddf7814fdfe02e424dc34eef62c02e9f62589372a990a42422a802cc3a87ea",
+      "geographyBaseSha256": "43a26a19b21176c7e648b2bd31fe245793cebea496e4281db5292766a6720c0a"
+    },
+    "north-ultrawide.webp": {
+      "width": 1881,
+      "height": 836,
+      "symbols": 565,
+      "worldWidth": 21000,
+      "worldHeight": 21000,
+      "roads": 274,
+      "towns": [
+        {
+          "id": "frostford",
+          "x": 1500,
+          "y": 1800
+        },
+        {
+          "id": "highpass",
+          "x": 10300,
+          "y": 10600
+        }
+      ],
+      "bytes": 748282,
+      "sha256": "9917ab51a95e32ba6d29be832d92a43e3a791380efe1f22d725af1c63eff2842",
+      "paintedSource": "art/source/aur192/north-ultrawide-painted.png",
+      "paintedSourceSha256": "91def36ad04cba45ca43f81b4d8acffe3a63705f1e9d723192aa9411935fa5d4",
+      "geographyBaseSha256": "4e5b4930a345c0664f1a8ccb24f23cc2f4f690ab7962151add2445cba6bf8d64"
+    },
+    "ancient-wide.webp": {
+      "width": 1672,
+      "height": 941,
+      "symbols": 491,
+      "worldWidth": 15000,
+      "worldHeight": 15000,
+      "roads": 207,
+      "towns": [
+        {
+          "id": "dawncamp",
+          "x": 1600,
+          "y": 1800
+        },
+        {
+          "id": "elderSanctum",
+          "x": 11700,
+          "y": 11400
+        }
+      ],
+      "bytes": 799530,
+      "sha256": "e20b6f46ddee809a7e2f8587a74368150e8f24f2440f3154faa2d4534adcd0d0",
+      "paintedSource": "art/source/aur192/ancient-wide-painted.png",
+      "paintedSourceSha256": "03b4676d623ef3bccbfd0c47806b5ff834001d208136d40968214e6e570313d6",
+      "geographyBaseSha256": "5803942fa352ea2993c492cd041c4283e5fcf986fae5f1fc8ed29724713ec44b"
+    },
+    "ancient-ultrawide.webp": {
+      "width": 1881,
+      "height": 836,
+      "symbols": 491,
+      "worldWidth": 15000,
+      "worldHeight": 15000,
+      "roads": 207,
+      "towns": [
+        {
+          "id": "dawncamp",
+          "x": 1600,
+          "y": 1800
+        },
+        {
+          "id": "elderSanctum",
+          "x": 11700,
+          "y": 11400
+        }
+      ],
+      "bytes": 692170,
+      "sha256": "afa664563950502fc2bfea794721e89cac695d796e19486e2f0ab4cf0a9c579a",
+      "paintedSource": "art/source/aur192/ancient-ultrawide-painted.png",
+      "paintedSourceSha256": "9b0f5cdc94332d2a3a4221133d75ebdd7ac51bf86251adbe1f6a3369e27de72f",
+      "geographyBaseSha256": "557d7bc958d6d9d5d101c6ac0de3f4779a4bfdc3945a91a1e2c401c4e610f7d1"
+    },
+    "desert-wide.webp": {
+      "width": 1672,
+      "height": 941,
+      "symbols": 133,
+      "worldWidth": 20000,
+      "worldHeight": 20000,
+      "roads": 16,
+      "towns": [
+        {
+          "id": "caravanOasis",
+          "x": 1600,
+          "y": 1800
+        }
+      ],
+      "bytes": 628150,
+      "sha256": "ac340a9be611ac5755a3513d5b25b4775b331eebea9b1542e280a430f0a7ddd5",
+      "paintedSource": "art/source/aur192/desert-wide-painted.png",
+      "paintedSourceSha256": "2eae03a52d32b9276e43e3495d9bfb2d544d9caef53f19399464d69a4b0cfc26",
+      "geographyBaseSha256": "8497c8701025f7fee6676920a0390493c2f3a8e53b045b0c07ed56d21c3576c1"
+    },
+    "desert-ultrawide.webp": {
+      "width": 1881,
+      "height": 836,
+      "symbols": 133,
+      "worldWidth": 20000,
+      "worldHeight": 20000,
+      "roads": 16,
+      "towns": [
+        {
+          "id": "caravanOasis",
+          "x": 1600,
+          "y": 1800
+        }
+      ],
+      "bytes": 533806,
+      "sha256": "a7c6f374099dd93c61e64328c7f0d8b7637f52f21671fa9c7870c3bfae97baf0",
+      "paintedSource": "art/source/aur192/desert-ultrawide-painted.png",
+      "paintedSourceSha256": "3e2476c6deed312f701ec30e5c11437a91770cb164dbe7263f7a2df670de1b5d",
+      "geographyBaseSha256": "60b496449fbf57e3465e22ab5afa8f23f1f62b6d4d521d26133153dac28718a2"
+    }
+  },
+  "featureAtlasSha256": "b375566c6cf27612a73764cae835c50a4a35e3bee38ad0538e27185259e43d33",
+  "artwork": "Original imagegen artistic paintovers of coordinate-derived region cartography. Illustrative terrain generalization; exact navigation uses shared live SVG projection. No additional game objects created."
+}

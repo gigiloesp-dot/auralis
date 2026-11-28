@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-017",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-017.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-017.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 479,
+      "rgbaBytes": 4718592,
+      "sha256": "dcdd7edb4f3bdb0b4172339aa8fa5a3eb4cc433457d5668a376dbced0c51044b",
+      "scale": 1.7674418604651163,
+      "annotationHeight": 88
+    },
+    {
+      "id": "forest-species-018",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-018.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-018.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 530,
+      "rgbaBytes": 4718592,
+      "sha256": "5afe3ff7d9c008c1ca6da39bc6a03c7f6dc2cd6efd7575ac77138db60c765e4b",
+      "scale": 1.4042553191489362,
+      "annotationHeight": 78
+    },
+    {
+      "id": "forest-species-020",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-020.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-020.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 818,
+      "rgbaBytes": 4718592,
+      "sha256": "10a5fe0837e41f73512359897c7eac0b46362960c21cd5a779bb5421136d1ba5",
+      "scale": 2,
+      "annotationHeight": 94
+    },
+    {
+      "id": "forest-species-024",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-024.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-024.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 713,
+      "rgbaBytes": 4718592,
+      "sha256": "09f651a8b4e087a435ebc777662e01edd7b4ff3ffe820be776019b491c3d7486",
+      "scale": 1.346938775510204,
+      "annotationHeight": 78
+    },
+    {
+      "id": "forest-species-031",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-031.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-031.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 696,
+      "rgbaBytes": 4718592,
+      "sha256": "701cf28e7b3b8d8adf1f45eb8230504e7ddd9993c479e9a7bd0b6d333a80fe30",
+      "scale": 1.6444444444444444,
+      "annotationHeight": 86
+    },
+    {
+      "id": "forest-species-034",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-034.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-034.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 838,
+      "rgbaBytes": 4718592,
+      "sha256": "705238ce0a39488bfd5ac54f43e32156b93dc95d2d6682fdbfe36d1897f705b9",
+      "scale": 1.2407407407407407,
+      "annotationHeight": 79
+    },
+    {
+      "id": "forest-species-055",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-055.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-055.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 486,
+      "rgbaBytes": 4718592,
+      "sha256": "364b0019bd797d8f511908efadc730e61f6b3b102520e5fbc090a35ccbc932a7",
+      "scale": 1.5849056603773586,
+      "annotationHeight": 96
+    },
+    {
+      "id": "forest-species-058",
+      "image": "assets/actors/task10-forest-expansion2/forest-species-058.png",
+      "atlas": "assets/actors/task10-forest-expansion2/forest-species-058.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 535,
+      "rgbaBytes": 4718592,
+      "sha256": "589c4cb0ff51dbfe9eac70115601e2eb8e2ac539cddaa9f9034a75a076e2ccf7",
+      "scale": 1.607843137254902,
+      "annotationHeight": 94
+    }
+  ]
+}

@@ -1,0 +1,1198 @@
+[
+  {
+    "id": "forest-species-092",
+    "size": [
+      1024,
+      1152
+    ],
+    "mode": "RGBA",
+    "alphaZeroPercent": 85.18558078342014,
+    "poses": [
+      {
+        "row": 0,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "3044effacf7ab32704645aa3184b29f1bf5b692953c48e2bb1ebc475f81f5ef8"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "3e7f269de54a9fe3e8d5f325fb80e4d33bc78e01c49858a25a711192fe0f7c8c"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "49feb0b9f737e913126ba6fca0ac3e83fb7defe58710e89f3e58127b31f597e2"
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "fe1ffdcdead2ef2d3954060e23af6e3f8d1f9ff83c3b520d763cd8b774fbc7be"
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "04cb5b923bad6a4ea52be93aa257572c8fa893d798fd0cf37b5961c8481255c1"
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "6f3ff9a4da7fcb2ff43d931db4801b19f386e46839637b964911a12aa284328e"
+      },
+      {
+        "row": 0,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "31f4795cbb00583c2f9e62ffa33b342534a14f8754f5d54ac56302072ee64731"
+      },
+      {
+        "row": 0,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "1d8f1b576d832d0e4d7837856d507a5728bd90b039938503b87693d0fad78b1e"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "432de18b9b341d0e88f30449da70aab28fa728d3a31e91752739db3ba1791310"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "87185aafd41b8c115d751d5101affc481dd085ff8c1a16751fe017c237fe8346"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "f57e4e19ade4742e5345f83a8711cc75fee42a596c7895532d37096d08fbbf8d"
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "643af609ec061f13b9e93a84e53a875e5ba844d3c70cb8f1b2e6cc206687ef17"
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "5f59b1272e2f001286c7809ef0f566c84aa79daec39d46cf02977fe149446352"
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "ba93e0c2c70cac92bd8065b5037011e744121a376b2385ce224aa007679f0f01"
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "c84429c5ad1d5c335edf68bc9a4845d39245f4ad43b06fa4abecb375df168d87"
+      },
+      {
+        "row": 1,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "73c2e4083a2023f40a125d909db4fcb56d88c30d54bcdc4f6aea0e79be592e90"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "1fd1dc5c2ab411b9ca1209ea8398748b01a93bece5807e8814e24231010f5f44"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "4b794a9ffbaca5df94b9e8cdef2f6f23bb3840f387c374c94192217dfb2369e7"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "a664417d2ba7b746c65c46c89d61666baf4fcb13c62cf97b52682b192af4bf2e"
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "0ed021e15734408a2859bb40ab9bddda52a0e9046d39e4c35774ea5a744f1557"
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "a48eea46cd6a679bd0611123ff99056aa7caa9abaf96f66a20a29b8a20602f16"
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "b4265c8907074b868030f5a9116450e8ed94eff36d937de566c7905bde1c1f18"
+      },
+      {
+        "row": 2,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "00d1b9ea89e0a4a54b1b3746e51b4ac9d79a8bcf3766b1eec7856e738cc72488"
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "88d14b1e18aac45df561a8261ed5c848fecfb58cce5bf554e469ba96dc02522c"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "alphaGutter": 16,
+        "rgbaHash": "2c4f066b205d73a61be31f0a9975b93156c51cfbfc2e8ed817d15391d2cec202"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "ab16de7cc98379f3691c37e2aaf0d5eb710ceeceadaa2656104ef42a14272ee2"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "0c3652f5ce0eae327e32a82dd6491276968242f91761229700bda0137d3c0df7"
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "9f0351f47cec68621b51a73eebb6ca35f488e61ca917e6d69c7a812122593f3f"
+      },
+      {
+        "row": 3,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "81a929f1228dc21e55f51699cf6870538ec9b724f1e83a0fd24abe34f337cd23"
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "71c1676427e31971d27a2c523434711e8805c2889689cd0b89c353994da3af71"
+      },
+      {
+        "row": 3,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "a8b103835f59cb17b2482abb8b3af74da62325d59efb62529460e2fd0a710c89"
+      },
+      {
+        "row": 3,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "60a55b811e8df8cc5cf069ab03d535378699e69386c7e84d87f02cea5a6287ee"
+      },
+      {
+        "row": 4,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "1cf143641e8ab12b3f077bc0ba54fefd70bcf5bc51efa7cb0d18e4194dca9c48"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "cc815cfc56fb858abe003488c4c92fbb0088c96a11ff7667d0163d67cc25fd70"
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "cee9eaaeb02887f53df32a0d716f89f9faca48e16686fdfe72946136021b6ad2"
+      },
+      {
+        "row": 4,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "4d991410223a1db285178fae0d96b3c8c216fdeeb7dd6375f315681d3c1ed5cf"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "6678166c7e6f05e5abd7ea9d174116b855058618ebcb2c675e8d425b6b6dab81"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "a969b8ff295b7b98a736d88a753a74c7d2071d0629e36752bedda2b52f03fa2b"
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "eb978b81dfb7e68739c82bb194289fe7316ab366c4677a4242d79e2f91c2eaf2"
+      },
+      {
+        "row": 4,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "80ede373b0b2c943d29163e9497a9d5a3c87065e4642e43dd37545c2b2f08382"
+      },
+      {
+        "row": 5,
+        "column": 0,
+        "alphaGutter": 20,
+        "rgbaHash": "c81fe3fb38cdc899593403df940d392e3db187ae942b7febd73bc5c6f741b4cf"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "f3a06afa823563bf85e01dcc26d67589f0768309dc4706eb01f8f0a0433a0109"
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "a8192ba09d763cf9da3834fd21ed131f3f1555d6fd08a540afef851c1074ee39"
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "131bcf9c1279c8a28221de821ee77df5450c86d3e6f0015a5b5232cd9ba2bf10"
+      },
+      {
+        "row": 5,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "9c2f1fbb407044b8d4c7a37d5348b23b10e1cd20b0cd992562f266e81cce3d43"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "5c64576d3eb59c6bd4cab44ce4ae5e5273f2201e97485e64965e03b298e7c378"
+      },
+      {
+        "row": 5,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "568ab485dd2f73cf4ed31989e6001ecd9fd00072a4f090dd03aec9c0a958b603"
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "alphaGutter": 20,
+        "rgbaHash": "3ea729023e30e413c5f7a080b92eb5df64bdec733730c92f14a445f10d516a6b"
+      }
+    ]
+  },
+  {
+    "id": "forest-species-093",
+    "size": [
+      1024,
+      1152
+    ],
+    "mode": "RGBA",
+    "alphaZeroPercent": 87.46007283528647,
+    "poses": [
+      {
+        "row": 0,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "eaf3be382b675c95886399779cf08205e030dd9b6854cc2f9150826f6d4c58ff"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "b2c42fea9ad5a0767a8548c030b9a8d3c4e42e8016d1520ec5759b37703469d8"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "be0dbae792ef0d87db448676edde774eecdc7decf25a5a29b07e01a36f65d89f"
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "c7ee51a171430a8f5dca7057791619f9fe331bee0857dd225ee84c814a50a915"
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "6a6640e963b09d605fa715e2cd6d1ecaf7f149e61a8f2ae4037e3e4a0fb9ac4b"
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "9865396d7f245350441e449e76473e32c902323e423a8dd39bbbec6b687cdc81"
+      },
+      {
+        "row": 0,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "8269a50a07b064b0908bdc50457246025dfae49fb1e6aca1b48b53be1ed916c1"
+      },
+      {
+        "row": 0,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "c2f67b470354bf5a758ff5ce113f549fb676b64e2f1ec73f383941cb888adfd0"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "9ddd7171c58c05f1d0125efc9b76ac89890de2a3bf3778d8892fc8987a70076f"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "6be407a682660d1eed5cbc773e8d5258055e6bc65e24f122ed62ef256c27d848"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "82a1d9431b2955d91dacf8a7fe6439c8ab91c3d55c946c1f8bbcc5c96485e08d"
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "91aef9d8f316eb5349ec06a9d141a8fb8874148b619bf0a16457f4fd76e9dee9"
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "c1bb5fe4b92edc2305c6d087f70b4d6ceb8189a61a097d1159f512247e82bd5d"
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "29cac51cdb7c74953959c0eb5a07e30dc2c638c6abeece10d2939292eed6e0ee"
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "d4d03612c0573f25bbd3a43d1c783163bc613397681c616d80e837a72e7c1be4"
+      },
+      {
+        "row": 1,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "3bc808d961eb3451ec69aee6919c7c3d4278945c4a744f0b5e963bbe97e7861c"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "75841b73cae7449de46062f18a5630b372c00bf16814c5e80fed2b1f142a3475"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "ca66fd15527a89b891f68554937365809cc58b29efa95b146aebc46f137c1fde"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "29f9b27898dac468986d2b4c292ade6c9dc3e2b99c66c3713f144c64c3a7d14d"
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "fbb41baf94f42db0d7186f91cf6df327d59cf0ebeedc51ede708b5f409fa3cd7"
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "0fbbcdf89874fea0152e1c9cf314c262980ac037dfdd5d16c76d026b141654ca"
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "9a6c772b7ba41c4e921482cf46a21f6f6648fc6b8d09704294e21ccda38ef843"
+      },
+      {
+        "row": 2,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "69ca20d96190b9280f72e9602e3b798c8c649659f4630059b05a8d83e3cf16e8"
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "e95238a81e1a6f58ff54cb3dd3496b198dff8b7e9413bde7b5514e77ea3b5cf7"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "96651c11b33973eb55a1558f32e00738fefbf0e68cda5017ac9047b4ce4084cb"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "754b9d2cff66a5245afecfb8539598430e429dfa8e72dadb4e16d6a796bac9cc"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "0de899944994188708ba07321ae9c18f239a18c5ebd102d3e8643295e5ba0b6c"
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "alphaGutter": 20,
+        "rgbaHash": "da3f77e231c1d0ead67de926dfcb05e0c3d55fc5d1b39e2494d12f20b500fe58"
+      },
+      {
+        "row": 3,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "ee89b26e47584cf3c8e3178b3fd3d2da36a6a479b1f8761453d5c17e2578aee0"
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "9f28b1b4b902b6b93d280bced754761f7d3836e591b5b79db8e8fb9f597c07ea"
+      },
+      {
+        "row": 3,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "7daa2755dd7ec449f55a2faff996e8b78a99120948896dfc8d92ebef6750ebea"
+      },
+      {
+        "row": 3,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "a1ab84063578300be7307341988a0399164641572e394aa8ef5575c1d81ec906"
+      },
+      {
+        "row": 4,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "ebc5628d5fd3fc4cb35672f1e0d6ea29fab45ebe420c5c9086a152cdff5452aa"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "74e3b4a47b9e66ff2e353e8f048ce5926dea3534976fe1f2d127c54e508aa0e8"
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "3483d2e3e1ba5658211c960681fa2e81b995d101c1e75772fcc3e39b6fb5753e"
+      },
+      {
+        "row": 4,
+        "column": 3,
+        "alphaGutter": 20,
+        "rgbaHash": "f95f72f57f1cf299ed08db3794b5816176a59f125795a118dc74f6ac145f10c8"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "3b4c20b1d3067961b811a94be6bf324fd528c5af533a437e16fae33b6caab034"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "bb75617fe79df62fa1e734518638ccd6ec8ecded9385e8bc425bb9b17c57ab36"
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "alphaGutter": 20,
+        "rgbaHash": "7fbdd0ba363c41d4bf643f7ab7faafda00c4bb1dcbe04792756754299aeb82ca"
+      },
+      {
+        "row": 4,
+        "column": 7,
+        "alphaGutter": 20,
+        "rgbaHash": "05d9141f3fffe4e15e84a9ec1cd977f0f4fa0b8a75c97c88cfd1fbc4d97f725f"
+      },
+      {
+        "row": 5,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "4ea0407d2efbac8f32f0e64f7e3bde077ae93935118b38b84b043d2180ef3a78"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "20e08241c9a04d3b2608ae6c9a438962d07eef11c26c794a74ecddd686f27fa8"
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "3afc0e7733d66a6a9218a12fc3656b767c67ebf4312dc2115d8097b69f2766ef"
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "d9b808c65dbc91024d90b889f4eb458563b61f951eb3b7c70ae4a263c1432b95"
+      },
+      {
+        "row": 5,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "b35c51bd5481ac1c6200c22f745bafbe58b92bb605901ecd94a7f59f9190ef2d"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "3ffc0d3e26148c2c4c2d6748b5e7f2736032896041dc89dab986da400d8c9870"
+      },
+      {
+        "row": 5,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "e5e0d24c541dcf2079abd08f3953b93cb8b00ba2713b953e9419ee8157494a64"
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "0d20d82b2f310aae9964354f5660410eb2703b6f67dea3dddcd6d47d24dca88b"
+      }
+    ]
+  },
+  {
+    "id": "forest-species-094",
+    "size": [
+      1024,
+      1152
+    ],
+    "mode": "RGBA",
+    "alphaZeroPercent": 77.01000637478299,
+    "poses": [
+      {
+        "row": 0,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "b60db1ff98ade7ea557a97905328d4fe37f727152b17e908971c9c2485270e77"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "8262cfbe436f8707e2aef86a17b80e0b843a63dc7f601af4d62408dc77f65def"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "aa60d9bd190ead98ad2c966228650ad5b4190a7ad201a9adfc161134437d3fc6"
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "8602ee41cd207a005258d4a2e954ab5b89ff0d29452b9db740241bbafb636a9d"
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "5dad4231a4ce807ad616676bed6e66834d7637896a23011ad059b36fe594ff45"
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "9999ce8dbf78a121bcb5e57a561b88ff2825e2008bd37ff1ff0facd7fc5601ae"
+      },
+      {
+        "row": 0,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "7351050875022cb87985bd3ab58d38bf92a01b4b2333d4e415d32b38c72dfc49"
+      },
+      {
+        "row": 0,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "a854871ad5612cabcac74d78756c8db022d1ed19f83583b9f78b78c75b1339a1"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "0e03ddd1e0ad3832fc80abba8d59e76f272bbe65f2dba5b9d0076dbb99895612"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "16291eb30d1bf0e96bf330a1bfe4fceb1f6c9c9ea3b25b188639cb5d5336a618"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "ec7537892a56a0f595eb4f6fe378b5ed033a00b415f2ff556742a8288acad475"
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "43a6137d347cbbce09798b55fbf0b022b64a7bda4e0d5aed12cb9d28b0cb6af5"
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "5a646343c70800a17bb9ae0ee956f1216545a2634f6afa80f5a29257f225a699"
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "f701c11c35d00f913ff3f12ff02f4624f68d68958f8bd17eef7cf3ffc3b50272"
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "58bbbcf6a50a8615fe4f598f6b2e1ed2c2d527ddc718ef248d9fca9bc3438d93"
+      },
+      {
+        "row": 1,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "2e98ff204c552a5daae98cd3c26f0d22a70ff36c9732dcfa0164ceb8a954f387"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "433dbf26e84463fd48ad7e4df72404ad320f2d82240852c72a397f9b34c30310"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "13f741be0690e3b5146b3751f4f28b0ce2e78ea7698fa0fa9946f2f3ae95682a"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "5466130e8cf6327138f56e7ffbd6cc3bfc782f23a047986f96f046a86ff4f7d4"
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "8ba0dab72d5bd0ffe618c4aac51fc17d208583cf0053b1536ed6c2d6ccd6b077"
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "3bd4c4c1b215136992a7d0d1d536ddec948b3726d977dc9582453e011be3d3d1"
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "b669dc4680987661ccf793faf448a3d630d68390558fb47d9ccdb3b39279b8fd"
+      },
+      {
+        "row": 2,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "2030b9bf09ba0f4f709cfd5f367e906ef55eb48001ab993185d48c66557275d0"
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "ba5b216c276c2b04f99356d368d0a8fe49e29823b65baa19eb266e298834f5a0"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "6cc5cfd49bfdfe32e433d5a69e48901fa1fffcd5146e1a13e6330a4224726d87"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "alphaGutter": 18,
+        "rgbaHash": "97fb6cf1b1d81e1044169496ae84c875d1ca31470809499ea98837740df7dfc8"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "fd9ef3970eea2ed019cbaa6ca8cc8bc2cfbb7c147e84af400102371c60850fb0"
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "7ab7aebcd58f1284885224bb27d28a6ff110c6d1475f9a2469a313d6b273011f"
+      },
+      {
+        "row": 3,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "1c4833510b78a07f522beadab4eb72d52a39411e6c681f9d63db52ef7288c06d"
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "43ee829da4f3a32773ad9d35f0d1b3a98d8779a6962cf995179d25d495db01c2"
+      },
+      {
+        "row": 3,
+        "column": 6,
+        "alphaGutter": 18,
+        "rgbaHash": "26d82427951d6385ffd455584c1e7e07d6b2eb6eeb66cd5d436728ed092ff8db"
+      },
+      {
+        "row": 3,
+        "column": 7,
+        "alphaGutter": 18,
+        "rgbaHash": "43417d8686738bb18d7366fcbd56e6b111055b7462757ea20dde26f6300badc1"
+      },
+      {
+        "row": 4,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "05fdef3a849858b7fa5bcc292b6b36c057139354bbf931cea9ef435caa464f23"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "1977c09abe1e2a004e967a0e39c0ed73d2edac7aeda0b8eca8e94e5abb6b547a"
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "b985ca5f5c2f2414a087dd20008e849457c4bb4c8fc9531ad4a7380c82ea1866"
+      },
+      {
+        "row": 4,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "091e0d8c78ef52a26a4fd8c77168e5bd87d46e7b7c5373f8ee6a70fdaf95e68c"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "b34266c4b2a93a81e263ba2edcf28d2d1058a8bd687b17f1f183fe552b572439"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "5adbdfe8524038ab058c774f2c77445b093312a947a38354e80ac534b59b3078"
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "955ed90d8ac589046be0d74d021dc8b41e7e65e7d07f72ce23f3119ae7b7bb59"
+      },
+      {
+        "row": 4,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "c777d8fffa1aae66d71966914209b52989235aef452607b0b9a53f291055a0b2"
+      },
+      {
+        "row": 5,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "6b8fef300ca2b60efb4869a160c4203459d165871cff2b40c4dc2b027f673085"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "fb56d1120512456274662b17177ad6a079fdd5a215e880bc5ba892eb99ea98c5"
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "71fdebeff92c63773a451c1de8ebc46e752ddfb19087aada9b75c8b8428a781c"
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "dabe2c17cf8fed9d32218603944efc46b5e85aff4d5f10f3802370df26ab55e1"
+      },
+      {
+        "row": 5,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "baca618748762370f61d1f9d7c55d4fa03698e34eb889465ffa4402556db880c"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "8eca31fda43395fab6e5e112ccdafe4cefab6a60ef84c3c700c60492c383195b"
+      },
+      {
+        "row": 5,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "12f628cb96d0728771a96076a2bc412dcd2069a93d68e5165de7394d9916210f"
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "alphaGutter": 18,
+        "rgbaHash": "86cc02df960cc5354ef4c30147e38414bb24d53f9ae1dbcddb933c0d541c0e6b"
+      }
+    ]
+  },
+  {
+    "id": "forest-species-095",
+    "size": [
+      1024,
+      1152
+    ],
+    "mode": "RGBA",
+    "alphaZeroPercent": 86.38602362738716,
+    "poses": [
+      {
+        "row": 0,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "ec1f60445c24fef227fd326a15ff76898b80091c0dc9b76ac611500a6e710e34"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "a4c1bc7d3dad3a7908cf9eee713b68571d7472ef5a7f700f43ad4aac644f9c9b"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "fb1eef1e7742243f4e209cfd299728d14cd05d9bb55909db7f12466b0a988edd"
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "8fd5e30348946e58360ae4913e5c15a0ade1bdc65866db4b67429cfa14595710"
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "9e63610803a3372db44a4d9a3ba9817d25196070b998d70d69c9a7bbe095fbf0"
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "2546870ec17c6a45a8c1509eb85c7195e7a47a9ba75f546b9375cc5b584ed8fd"
+      },
+      {
+        "row": 0,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "d92d5f5ca42729d05dffbf23658a8305091af7baae5d9d8d90f920310f1a7403"
+      },
+      {
+        "row": 0,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "d52400d6c7c68e3ca3b8a506c15c8c8f61c3dc503733a38b229fd5c49619d128"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "37a9936ea544d253c9e59cb40a440f72b821d64c8254d2be8ee215fc7ed601b0"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "cc18d34c5baa2ffe9da1a79b8fffd0b80ff7a46b69cf2e9c27ce9f29ec3c4418"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "987b0504eb5ff11c6821f504dfa408d61f6ebf72f74462141cab191ef5005b5d"
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "alphaGutter": 20,
+        "rgbaHash": "f14f413bcfe6b6d5736fc2eb14c706de4c4677ab0ccb01289770a93579fb0fff"
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "01f758fda5948ba2cc2e8b1312383dad6a8f867c8ccd6c69a58c418f0cf79c19"
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "2d4f5230ece03edec48ee5a1aafbbc8a03cecdddc012846ba372edacb05276f1"
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "089633ebd7b5aea004aefdd2cb04887f162baf38cd714322c67ec8b7a649646d"
+      },
+      {
+        "row": 1,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "4b635736b4cff7504b08c785b9e6be6616bdc033a3fa54b35f018f1c46b5124d"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "4b54cf884c4df12e39d55ebe2967c208b15847c56777f077271155ee5df0f97c"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "be36b993693f025c8acfa6c9231f275d28d837e407588b055d919a36a6e5d1a5"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "ffe27b9a591766fed2b1905833fdb0a4f50c0b728997f6ec0f58ba0b0dd4eeb2"
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "4dd6cf8c4169476ce369ed63241984faffbe30dde3bd016714278b42383c02cf"
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "0f091e71735bc3b50221609c210346afac860191b66d03b151bc99205fad78c2"
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "b75287e2ca5ab2d1ee6a4f731c6d98e0e9ead93669cc60de902ac4a5a7f7bd71"
+      },
+      {
+        "row": 2,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "a179a9822b1f9bc713b63c914be70d259e2125261970fa0b3079b94f6e33a92f"
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "a631a705d1f9a3f11a51c03c56144a83f06f0c5935eaf9c88316d49fcaf3865f"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "alphaGutter": 19,
+        "rgbaHash": "e5224008448ded7192e7223d578d7acd5ac206821510fa654776a8afa034fdd4"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "df0c05975b51a934568b2995d89f443fae7dc17e07a1486eb548a341f35b86c1"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "6308f9c49290a164e1df0ea1efd8441c6e54e14bfa8de5e7770ce175165cfcf8"
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "0b5e2da01959e76864652e88b0ce37cae158b6f95e5aefc6aa57dc1e5ab9eb67"
+      },
+      {
+        "row": 3,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "2a2083ae590df01469c5ea2f66d73bb0ca3015f002f68c7626f014650518c6e7"
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "82722479c9ab5622d79f01b5d32523ffb5dae0124567e65cb4d91655a5eda50a"
+      },
+      {
+        "row": 3,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "b2a8447a032ed100323401bb1fbc7e3177fae2e9421f8175408826443ac9016b"
+      },
+      {
+        "row": 3,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "fcbb43fc8332f58ecd6ca624b37b7cd58de8553f81cc41c6aff8e2114315a17b"
+      },
+      {
+        "row": 4,
+        "column": 0,
+        "alphaGutter": 20,
+        "rgbaHash": "be17af146b41b86bebc9d153115e64d6dcfde8444b210420e9720fe57f71a63b"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "358dde8b0cf541417ebe81b84a65f9218b481a4b39d32f37663b24ab00dffca1"
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "314967cf236b6bdfafece070c40188a81fe5b155fc19396e07ac8c7042601f82"
+      },
+      {
+        "row": 4,
+        "column": 3,
+        "alphaGutter": 19,
+        "rgbaHash": "5eb5cd2001b57eb512ee9337e9cb2aa36d15d1c664c07a09cbddf8b05edc2dac"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "4950fcf8c31435292f5cb6678fd09a30ddd5db7c8c6d9ef8e6c4025bb2556846"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "34e2df22038ebd5c2183b0cb3b7a61a37a4b5f37afdbc92b319a9ca4fc4891ef"
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "43ab1065e0b41e7f4e96c7f264e25134de208f6c4c1545303c046e29d3b5478b"
+      },
+      {
+        "row": 4,
+        "column": 7,
+        "alphaGutter": 19,
+        "rgbaHash": "7fcf75c30386ef0e2436b4bc4f2149d35a08b88663facf0274eb8ff6e444785e"
+      },
+      {
+        "row": 5,
+        "column": 0,
+        "alphaGutter": 20,
+        "rgbaHash": "db633d94943fbcb4ed869643f5835108f3df0fa688bd8ca77aea19efcafac28b"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "alphaGutter": 19,
+        "rgbaHash": "8a2063a7e6f6ccc3fa3ec88f6393b11bf2611b66609d57764f18cbcb25596015"
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "alphaGutter": 19,
+        "rgbaHash": "d204d1a0184133eb80a183c6b843a743c562a7cacb4cf0fe89fc1100eddaa688"
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "alphaGutter": 20,
+        "rgbaHash": "3a86d429fb5fb14d2ceb9f15501e77d0a550d33bdcaea0abf0500e1db68dee8c"
+      },
+      {
+        "row": 5,
+        "column": 4,
+        "alphaGutter": 19,
+        "rgbaHash": "7aa263c9131e1f433a17c350a2d2a6d2ae465de338d422cfd8cba2df6c118c9b"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "alphaGutter": 19,
+        "rgbaHash": "90e1464ca9bc90bd436116e0679eeda93f2ffaea9e30a381a07e0758b6573768"
+      },
+      {
+        "row": 5,
+        "column": 6,
+        "alphaGutter": 19,
+        "rgbaHash": "4a635f015480cf0d59c2c6f455472926a49c147eb4531704087dbee38250acc3"
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "alphaGutter": 20,
+        "rgbaHash": "4208b8e937c7d58579a0bd5d6bdc6e33aa110d201b84b4bd19e2bfe0a0c5a1e7"
+      }
+    ]
+  }
+]

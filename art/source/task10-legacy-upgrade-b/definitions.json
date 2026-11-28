@@ -1,0 +1,154 @@
+[
+  {
+    "id": "forest-species-011",
+    "name": "spider",
+    "originalEntry": {
+      "key": "actor-monster-spider",
+      "url": "assets/actors/monsters/spider.png",
+      "atlasURL": "assets/actors/monsters/spider.json",
+      "scale": 0.43,
+      "annotationHeight": 54.87,
+      "baselines": {
+        "idle": 196,
+        "run-a": 195,
+        "run-b": 195,
+        "attack": 196
+      }
+    },
+    "originalPngSha256": "0b653ca57f742c42ab0ffde5c28cf19b71beba68846fece0c712e5e6daf93467",
+    "originalAtlasSha256": "f76786070766e2b7950f504b5cd39593c654dcec90cf1ffaa87d120fd700a675"
+  },
+  {
+    "id": "north-species-000",
+    "name": "iceWolf",
+    "originalEntry": {
+      "key": "actor-monster-iceWolf",
+      "url": "assets/actors/monsters/iceWolf.png",
+      "atlasURL": "assets/actors/monsters/iceWolf.json",
+      "scale": 0.68,
+      "annotationHeight": 69.54,
+      "baselines": {
+        "idle": 194,
+        "run-a": 186,
+        "run-b": 173,
+        "attack": 181
+      }
+    },
+    "originalPngSha256": "08eaa1f1166d9d6b35dcf90a0d90e81e17530032f224ee0f905d1bc37669301f",
+    "originalAtlasSha256": "efa32196a7f8fdfeed0166e33d96ee05d33ca8c225285732b341092b03881e0f"
+  },
+  {
+    "id": "north-species-001",
+    "name": "frostGolem",
+    "originalEntry": {
+      "key": "actor-monster-frostGolem",
+      "url": "assets/actors/monsters/frostGolem.png",
+      "atlasURL": "assets/actors/monsters/frostGolem.json",
+      "scale": 0.48,
+      "annotationHeight": 102.56,
+      "baselines": {
+        "idle": 228,
+        "run-a": 224,
+        "run-b": 219,
+        "attack": 202
+      }
+    },
+    "originalPngSha256": "2df1d9f48dedf364eb609aa66c5a9e79d05ae4b838a6db734f201cd139dac3ad",
+    "originalAtlasSha256": "8fd8de06555919b4482537d965f431b0b3c0dbb3abd4c2da59757e5592b10689"
+  },
+  {
+    "id": "north-species-002",
+    "name": "snowRaider",
+    "originalEntry": {
+      "key": "actor-monster-snowRaider",
+      "url": "assets/actors/monsters/snowRaider.png",
+      "atlasURL": "assets/actors/monsters/snowRaider.json",
+      "scale": 0.55,
+      "annotationHeight": 84.17500000000001,
+      "baselines": {
+        "idle": 209,
+        "run-a": 195,
+        "run-b": 186,
+        "attack": 184
+      }
+    },
+    "originalPngSha256": "99d0db5c54db9d1fc679a196dc43082ffa79dc3ae92d9d8aa2fd3579ac4fcea8",
+    "originalAtlasSha256": "fba665a2e0944cb87ae928f044d365d2cf44388dd1a4ccc221d2819993b55de9"
+  },
+  {
+    "id": "north-species-004",
+    "name": "iceElemental",
+    "originalEntry": {
+      "key": "actor-monster-iceElemental",
+      "url": "assets/actors/monsters/iceElemental.png",
+      "atlasURL": "assets/actors/monsters/iceElemental.json",
+      "scale": 0.48,
+      "annotationHeight": 78.56,
+      "baselines": {
+        "idle": 208,
+        "run-a": 199,
+        "run-b": 200,
+        "attack": 187
+      }
+    },
+    "originalPngSha256": "cd883bf0077f5c903cb29d4da043903c10c55c0ccaa5c077fc19d4990c3355c2",
+    "originalAtlasSha256": "5a653f89010095abf4ef75bea7b06572ad77b0b30117f4d74276d37c673fd010"
+  },
+  {
+    "id": "north-species-005",
+    "name": "snowBear",
+    "originalEntry": {
+      "key": "actor-monster-snowBear",
+      "url": "assets/actors/monsters/snowBear.png",
+      "atlasURL": "assets/actors/monsters/snowBear.json",
+      "scale": 0.6,
+      "annotationHeight": 98,
+      "baselines": {
+        "idle": 221,
+        "run-a": 216,
+        "run-b": 208,
+        "attack": 199
+      }
+    },
+    "originalPngSha256": "33a8d53cce1d2588db427af06ed022f6e55e59c5f3fd42aa52344f08771c820c",
+    "originalAtlasSha256": "a3f0f2ae68373ecb06be825b7c2ba8851ab40f76ff505e7420dfd04b5ffe35a3"
+  },
+  {
+    "id": "north-species-009",
+    "name": "wraith",
+    "originalEntry": {
+      "key": "actor-monster-wraith",
+      "url": "assets/actors/monsters/wraith.png",
+      "atlasURL": "assets/actors/monsters/wraith.json",
+      "scale": 0.48,
+      "annotationHeight": 81.92,
+      "baselines": {
+        "idle": 218,
+        "run-a": 204,
+        "run-b": 198,
+        "attack": 204
+      }
+    },
+    "originalPngSha256": "c81fd47f70ceb8ddcef2061ca7876b0dbc8fa4d02fb2de27e0ac862f71c4a32e",
+    "originalAtlasSha256": "7b90364e0b2c1318eff4d56ba4497e5029629e9fd10bb8b3e9ec1568a1d48c6d"
+  },
+  {
+    "id": "north-species-016",
+    "name": "iceBat",
+    "originalEntry": {
+      "key": "actor-monster-iceBat",
+      "url": "assets/actors/monsters/iceBat.png",
+      "atlasURL": "assets/actors/monsters/iceBat.json",
+      "scale": 0.45,
+      "annotationHeight": 53,
+      "baselines": {
+        "idle": 199,
+        "run-a": 206,
+        "run-b": 176,
+        "attack": 173
+      }
+    },
+    "originalPngSha256": "79619542a723bd9eab73f6fc6eeb63ac7ad94ae83f9f563da36c14322c430682",
+    "originalAtlasSha256": "dc5b79aecb39a6dbb1ef2489ed26b7f00d09f1588821ea295df4356208596d89"
+  }
+]

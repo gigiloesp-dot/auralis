@@ -1,0 +1,1358 @@
+{
+  "schema": 1,
+  "classId": "mage",
+  "outcome": "victory",
+  "liveEncounter": true,
+  "controller": "telegraphs",
+  "seed": 1096112675,
+  "elapsedSeconds": 1410.38,
+  "maxDurationSeconds": 3600,
+  "stepMs": 20,
+  "reactionMs": 300,
+  "controllerSpeed": 210,
+  "controllerPreferredRange": 220,
+  "nodeVersion": "24.22.1",
+  "boss": {
+    "id": "desert-world-stone-giant",
+    "initialHp": 1095000,
+    "remainingHp": 0,
+    "attack": 291,
+    "defense": 43.8,
+    "magicDefense": 30,
+    "encounter": "stoneGiant",
+    "home": {
+      "x": 18869,
+      "y": 18697
+    },
+    "final": {
+      "x": 19144.28,
+      "y": 18716.675
+    }
+  },
+  "hero": {
+    "level": 56,
+    "maxHp": 1200,
+    "hp": 1200,
+    "maxMp": 1035,
+    "mp": 3,
+    "potions": {
+      "hp": 10,
+      "mp": 0
+    },
+    "stats": {
+      "strength": 5,
+      "endurance": 60,
+      "agility": 5,
+      "luck": 5,
+      "intelligence": 115
+    },
+    "attributePoints": 0,
+    "skillPoints": 85,
+    "skillSlots": [
+      "mage_0",
+      "mage_2",
+      "mage_3",
+      "mage_4"
+    ],
+    "learnedSkills": {
+      "mage_0": 5,
+      "mage_1": 5,
+      "mage_2": 5,
+      "mage_3": 5,
+      "mage_4": 5
+    },
+    "equipment": {
+      "weapon": {
+        "id": "weapon_mage_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "helmet": {
+        "id": "helmet_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "chest": {
+        "id": "chest_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "gloves": {
+        "id": "gloves_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "pants": {
+        "id": "pants_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "boots": {
+        "id": "boots_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "ring": {
+        "id": "ring_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "amulet": {
+        "id": "amulet_8",
+        "rarity": "rare",
+        "level": 42
+      }
+    },
+    "initialPosition": {
+      "x": 19089,
+      "y": 18697
+    },
+    "finalPosition": {
+      "x": 19060.499,
+      "y": 18919.958
+    }
+  },
+  "damageDealt": 1095000,
+  "bossHealing": 0,
+  "incomingAttempts": 0,
+  "damageTaken": 0,
+  "incomingHits": 0,
+  "incomingTimeline": [],
+  "minimumHp": 1200,
+  "minimumMp": 3,
+  "healingObserved": 0,
+  "hpPotionsUsed": 0,
+  "mpPotionsUsed": 5,
+  "casts": {
+    "mage_4": 28,
+    "mage_3": 32,
+    "mage_0": 71,
+    "mage_2": 39
+  },
+  "castTimeline": [
+    {
+      "id": "mage_4",
+      "at": 20,
+      "mpBefore": 1035,
+      "mpAfter": 999
+    },
+    {
+      "id": "mage_3",
+      "at": 680,
+      "mpBefore": 999,
+      "mpAfter": 970
+    },
+    {
+      "id": "mage_0",
+      "at": 1340,
+      "mpBefore": 970,
+      "mpAfter": 962
+    },
+    {
+      "id": "mage_2",
+      "at": 2000,
+      "mpBefore": 962,
+      "mpAfter": 940
+    },
+    {
+      "id": "mage_0",
+      "at": 6380,
+      "mpBefore": 940,
+      "mpAfter": 932
+    },
+    {
+      "id": "mage_2",
+      "at": 11000,
+      "mpBefore": 932,
+      "mpAfter": 910
+    },
+    {
+      "id": "mage_0",
+      "at": 11660,
+      "mpBefore": 910,
+      "mpAfter": 902
+    },
+    {
+      "id": "mage_3",
+      "at": 12320,
+      "mpBefore": 902,
+      "mpAfter": 873
+    },
+    {
+      "id": "mage_4",
+      "at": 13100,
+      "mpBefore": 873,
+      "mpAfter": 837
+    },
+    {
+      "id": "mage_0",
+      "at": 16760,
+      "mpBefore": 837,
+      "mpAfter": 829
+    },
+    {
+      "id": "mage_2",
+      "at": 20060,
+      "mpBefore": 829,
+      "mpAfter": 807
+    },
+    {
+      "id": "mage_0",
+      "at": 21800,
+      "mpBefore": 807,
+      "mpAfter": 799
+    },
+    {
+      "id": "mage_3",
+      "at": 23420,
+      "mpBefore": 799,
+      "mpAfter": 770
+    },
+    {
+      "id": "mage_4",
+      "at": 26120,
+      "mpBefore": 770,
+      "mpAfter": 734
+    },
+    {
+      "id": "mage_0",
+      "at": 26900,
+      "mpBefore": 734,
+      "mpAfter": 726
+    },
+    {
+      "id": "mage_2",
+      "at": 29120,
+      "mpBefore": 726,
+      "mpAfter": 704
+    },
+    {
+      "id": "mage_0",
+      "at": 31940,
+      "mpBefore": 704,
+      "mpAfter": 696
+    },
+    {
+      "id": "mage_3",
+      "at": 34520,
+      "mpBefore": 696,
+      "mpAfter": 667
+    },
+    {
+      "id": "mage_0",
+      "at": 36980,
+      "mpBefore": 667,
+      "mpAfter": 659
+    },
+    {
+      "id": "mage_2",
+      "at": 38120,
+      "mpBefore": 659,
+      "mpAfter": 637
+    },
+    {
+      "id": "mage_4",
+      "at": 39140,
+      "mpBefore": 637,
+      "mpAfter": 601
+    },
+    {
+      "id": "mage_0",
+      "at": 42080,
+      "mpBefore": 601,
+      "mpAfter": 593
+    },
+    {
+      "id": "mage_3",
+      "at": 45620,
+      "mpBefore": 593,
+      "mpAfter": 564
+    },
+    {
+      "id": "mage_0",
+      "at": 47120,
+      "mpBefore": 564,
+      "mpAfter": 556
+    },
+    {
+      "id": "mage_2",
+      "at": 47780,
+      "mpBefore": 556,
+      "mpAfter": 534
+    },
+    {
+      "id": "mage_4",
+      "at": 52160,
+      "mpBefore": 534,
+      "mpAfter": 498
+    },
+    {
+      "id": "mage_0",
+      "at": 52820,
+      "mpBefore": 498,
+      "mpAfter": 490
+    },
+    {
+      "id": "mage_3",
+      "at": 56720,
+      "mpBefore": 490,
+      "mpAfter": 461
+    },
+    {
+      "id": "mage_2",
+      "at": 57380,
+      "mpBefore": 927,
+      "mpAfter": 905
+    },
+    {
+      "id": "mage_0",
+      "at": 58040,
+      "mpBefore": 905,
+      "mpAfter": 897
+    },
+    {
+      "id": "mage_0",
+      "at": 63140,
+      "mpBefore": 897,
+      "mpAfter": 889
+    },
+    {
+      "id": "mage_4",
+      "at": 65240,
+      "mpBefore": 889,
+      "mpAfter": 853
+    },
+    {
+      "id": "mage_2",
+      "at": 66380,
+      "mpBefore": 853,
+      "mpAfter": 831
+    },
+    {
+      "id": "mage_3",
+      "at": 67760,
+      "mpBefore": 831,
+      "mpAfter": 802
+    },
+    {
+      "id": "mage_0",
+      "at": 68420,
+      "mpBefore": 802,
+      "mpAfter": 794
+    },
+    {
+      "id": "mage_0",
+      "at": 73520,
+      "mpBefore": 794,
+      "mpAfter": 786
+    },
+    {
+      "id": "mage_2",
+      "at": 75380,
+      "mpBefore": 786,
+      "mpAfter": 764
+    },
+    {
+      "id": "mage_4",
+      "at": 78320,
+      "mpBefore": 764,
+      "mpAfter": 728
+    },
+    {
+      "id": "mage_3",
+      "at": 78980,
+      "mpBefore": 728,
+      "mpAfter": 699
+    },
+    {
+      "id": "mage_0",
+      "at": 79640,
+      "mpBefore": 699,
+      "mpAfter": 691
+    },
+    {
+      "id": "mage_2",
+      "at": 84380,
+      "mpBefore": 691,
+      "mpAfter": 669
+    },
+    {
+      "id": "mage_0",
+      "at": 85040,
+      "mpBefore": 669,
+      "mpAfter": 661
+    },
+    {
+      "id": "mage_3",
+      "at": 90020,
+      "mpBefore": 661,
+      "mpAfter": 632
+    },
+    {
+      "id": "mage_0",
+      "at": 90680,
+      "mpBefore": 632,
+      "mpAfter": 624
+    },
+    {
+      "id": "mage_4",
+      "at": 91340,
+      "mpBefore": 624,
+      "mpAfter": 588
+    },
+    {
+      "id": "mage_2",
+      "at": 93440,
+      "mpBefore": 588,
+      "mpAfter": 566
+    },
+    {
+      "id": "mage_0",
+      "at": 96860,
+      "mpBefore": 566,
+      "mpAfter": 558
+    },
+    {
+      "id": "mage_3",
+      "at": 101120,
+      "mpBefore": 558,
+      "mpAfter": 529
+    },
+    {
+      "id": "mage_0",
+      "at": 101900,
+      "mpBefore": 529,
+      "mpAfter": 521
+    },
+    {
+      "id": "mage_2",
+      "at": 102800,
+      "mpBefore": 521,
+      "mpAfter": 499
+    },
+    {
+      "id": "mage_4",
+      "at": 104420,
+      "mpBefore": 499,
+      "mpAfter": 463
+    },
+    {
+      "id": "mage_0",
+      "at": 107000,
+      "mpBefore": 929,
+      "mpAfter": 921
+    },
+    {
+      "id": "mage_2",
+      "at": 111860,
+      "mpBefore": 921,
+      "mpAfter": 899
+    },
+    {
+      "id": "mage_3",
+      "at": 112520,
+      "mpBefore": 899,
+      "mpAfter": 870
+    },
+    {
+      "id": "mage_0",
+      "at": 113180,
+      "mpBefore": 870,
+      "mpAfter": 862
+    },
+    {
+      "id": "mage_4",
+      "at": 117440,
+      "mpBefore": 862,
+      "mpAfter": 826
+    },
+    {
+      "id": "mage_0",
+      "at": 118220,
+      "mpBefore": 826,
+      "mpAfter": 818
+    },
+    {
+      "id": "mage_2",
+      "at": 120920,
+      "mpBefore": 818,
+      "mpAfter": 796
+    },
+    {
+      "id": "mage_0",
+      "at": 123260,
+      "mpBefore": 796,
+      "mpAfter": 788
+    },
+    {
+      "id": "mage_3",
+      "at": 123920,
+      "mpBefore": 788,
+      "mpAfter": 759
+    },
+    {
+      "id": "mage_0",
+      "at": 128300,
+      "mpBefore": 759,
+      "mpAfter": 751
+    },
+    {
+      "id": "mage_2",
+      "at": 129920,
+      "mpBefore": 751,
+      "mpAfter": 729
+    },
+    {
+      "id": "mage_4",
+      "at": 130580,
+      "mpBefore": 729,
+      "mpAfter": 693
+    },
+    {
+      "id": "mage_0",
+      "at": 133400,
+      "mpBefore": 693,
+      "mpAfter": 685
+    },
+    {
+      "id": "mage_3",
+      "at": 135020,
+      "mpBefore": 685,
+      "mpAfter": 656
+    },
+    {
+      "id": "mage_0",
+      "at": 138440,
+      "mpBefore": 656,
+      "mpAfter": 648
+    },
+    {
+      "id": "mage_2",
+      "at": 139100,
+      "mpBefore": 648,
+      "mpAfter": 626
+    },
+    {
+      "id": "mage_4",
+      "at": 144080,
+      "mpBefore": 626,
+      "mpAfter": 590
+    },
+    {
+      "id": "mage_0",
+      "at": 144740,
+      "mpBefore": 590,
+      "mpAfter": 582
+    },
+    {
+      "id": "mage_3",
+      "at": 146120,
+      "mpBefore": 582,
+      "mpAfter": 553
+    },
+    {
+      "id": "mage_2",
+      "at": 148100,
+      "mpBefore": 553,
+      "mpAfter": 531
+    },
+    {
+      "id": "mage_0",
+      "at": 149840,
+      "mpBefore": 531,
+      "mpAfter": 523
+    },
+    {
+      "id": "mage_0",
+      "at": 154940,
+      "mpBefore": 523,
+      "mpAfter": 515
+    },
+    {
+      "id": "mage_4",
+      "at": 157160,
+      "mpBefore": 515,
+      "mpAfter": 479
+    },
+    {
+      "id": "mage_3",
+      "at": 157820,
+      "mpBefore": 479,
+      "mpAfter": 450
+    },
+    {
+      "id": "mage_2",
+      "at": 158480,
+      "mpBefore": 916,
+      "mpAfter": 894
+    },
+    {
+      "id": "mage_0",
+      "at": 159980,
+      "mpBefore": 894,
+      "mpAfter": 886
+    },
+    {
+      "id": "mage_0",
+      "at": 165080,
+      "mpBefore": 886,
+      "mpAfter": 878
+    },
+    {
+      "id": "mage_2",
+      "at": 167540,
+      "mpBefore": 878,
+      "mpAfter": 856
+    },
+    {
+      "id": "mage_3",
+      "at": 168920,
+      "mpBefore": 856,
+      "mpAfter": 827
+    },
+    {
+      "id": "mage_4",
+      "at": 170180,
+      "mpBefore": 827,
+      "mpAfter": 791
+    },
+    {
+      "id": "mage_0",
+      "at": 170840,
+      "mpBefore": 791,
+      "mpAfter": 783
+    },
+    {
+      "id": "mage_0",
+      "at": 175940,
+      "mpBefore": 783,
+      "mpAfter": 775
+    },
+    {
+      "id": "mage_2",
+      "at": 176600,
+      "mpBefore": 775,
+      "mpAfter": 753
+    },
+    {
+      "id": "mage_3",
+      "at": 180020,
+      "mpBefore": 753,
+      "mpAfter": 724
+    },
+    {
+      "id": "mage_0",
+      "at": 181040,
+      "mpBefore": 724,
+      "mpAfter": 716
+    },
+    {
+      "id": "mage_4",
+      "at": 183260,
+      "mpBefore": 716,
+      "mpAfter": 680
+    },
+    {
+      "id": "mage_2",
+      "at": 185720,
+      "mpBefore": 680,
+      "mpAfter": 658
+    },
+    {
+      "id": "mage_0",
+      "at": 186380,
+      "mpBefore": 658,
+      "mpAfter": 650
+    },
+    {
+      "id": "mage_3",
+      "at": 191120,
+      "mpBefore": 650,
+      "mpAfter": 621
+    },
+    {
+      "id": "mage_0",
+      "at": 191780,
+      "mpBefore": 621,
+      "mpAfter": 613
+    },
+    {
+      "id": "mage_2",
+      "at": 194720,
+      "mpBefore": 613,
+      "mpAfter": 591
+    },
+    {
+      "id": "mage_4",
+      "at": 196340,
+      "mpBefore": 591,
+      "mpAfter": 555
+    },
+    {
+      "id": "mage_0",
+      "at": 197000,
+      "mpBefore": 555,
+      "mpAfter": 547
+    },
+    {
+      "id": "mage_0",
+      "at": 202100,
+      "mpBefore": 547,
+      "mpAfter": 539
+    },
+    {
+      "id": "mage_3",
+      "at": 202760,
+      "mpBefore": 539,
+      "mpAfter": 510
+    },
+    {
+      "id": "mage_2",
+      "at": 204980,
+      "mpBefore": 510,
+      "mpAfter": 488
+    },
+    {
+      "id": "mage_0",
+      "at": 207320,
+      "mpBefore": 488,
+      "mpAfter": 480
+    },
+    {
+      "id": "mage_4",
+      "at": 210140,
+      "mpBefore": 480,
+      "mpAfter": 444
+    },
+    {
+      "id": "mage_0",
+      "at": 212840,
+      "mpBefore": 910,
+      "mpAfter": 902
+    },
+    {
+      "id": "mage_3",
+      "at": 213860,
+      "mpBefore": 902,
+      "mpAfter": 873
+    },
+    {
+      "id": "mage_2",
+      "at": 214520,
+      "mpBefore": 873,
+      "mpAfter": 851
+    },
+    {
+      "id": "mage_0",
+      "at": 217940,
+      "mpBefore": 851,
+      "mpAfter": 843
+    },
+    {
+      "id": "mage_0",
+      "at": 223040,
+      "mpBefore": 843,
+      "mpAfter": 835
+    },
+    {
+      "id": "mage_4",
+      "at": 223700,
+      "mpBefore": 835,
+      "mpAfter": 799
+    },
+    {
+      "id": "mage_2",
+      "at": 224360,
+      "mpBefore": 799,
+      "mpAfter": 777
+    },
+    {
+      "id": "mage_3",
+      "at": 225020,
+      "mpBefore": 777,
+      "mpAfter": 748
+    },
+    {
+      "id": "mage_0",
+      "at": 228080,
+      "mpBefore": 748,
+      "mpAfter": 740
+    },
+    {
+      "id": "mage_0",
+      "at": 233180,
+      "mpBefore": 740,
+      "mpAfter": 732
+    },
+    {
+      "id": "mage_2",
+      "at": 233840,
+      "mpBefore": 732,
+      "mpAfter": 710
+    },
+    {
+      "id": "mage_3",
+      "at": 236060,
+      "mpBefore": 710,
+      "mpAfter": 681
+    },
+    {
+      "id": "mage_4",
+      "at": 236720,
+      "mpBefore": 681,
+      "mpAfter": 645
+    },
+    {
+      "id": "mage_0",
+      "at": 238220,
+      "mpBefore": 645,
+      "mpAfter": 637
+    },
+    {
+      "id": "mage_2",
+      "at": 242840,
+      "mpBefore": 637,
+      "mpAfter": 615
+    },
+    {
+      "id": "mage_0",
+      "at": 243500,
+      "mpBefore": 615,
+      "mpAfter": 607
+    },
+    {
+      "id": "mage_3",
+      "at": 247160,
+      "mpBefore": 607,
+      "mpAfter": 578
+    },
+    {
+      "id": "mage_0",
+      "at": 248540,
+      "mpBefore": 578,
+      "mpAfter": 570
+    },
+    {
+      "id": "mage_4",
+      "at": 249800,
+      "mpBefore": 570,
+      "mpAfter": 534
+    },
+    {
+      "id": "mage_2",
+      "at": 251900,
+      "mpBefore": 534,
+      "mpAfter": 512
+    },
+    {
+      "id": "mage_0",
+      "at": 253640,
+      "mpBefore": 512,
+      "mpAfter": 504
+    },
+    {
+      "id": "mage_3",
+      "at": 258260,
+      "mpBefore": 504,
+      "mpAfter": 475
+    },
+    {
+      "id": "mage_0",
+      "at": 258920,
+      "mpBefore": 475,
+      "mpAfter": 467
+    },
+    {
+      "id": "mage_2",
+      "at": 260900,
+      "mpBefore": 467,
+      "mpAfter": 445
+    },
+    {
+      "id": "mage_4",
+      "at": 262880,
+      "mpBefore": 911,
+      "mpAfter": 875
+    },
+    {
+      "id": "mage_0",
+      "at": 264020,
+      "mpBefore": 875,
+      "mpAfter": 867
+    },
+    {
+      "id": "mage_0",
+      "at": 269120,
+      "mpBefore": 867,
+      "mpAfter": 859
+    },
+    {
+      "id": "mage_3",
+      "at": 269780,
+      "mpBefore": 859,
+      "mpAfter": 830
+    },
+    {
+      "id": "mage_2",
+      "at": 270440,
+      "mpBefore": 830,
+      "mpAfter": 808
+    },
+    {
+      "id": "mage_0",
+      "at": 274220,
+      "mpBefore": 808,
+      "mpAfter": 800
+    },
+    {
+      "id": "mage_4",
+      "at": 275960,
+      "mpBefore": 800,
+      "mpAfter": 764
+    },
+    {
+      "id": "mage_0",
+      "at": 279260,
+      "mpBefore": 764,
+      "mpAfter": 756
+    },
+    {
+      "id": "mage_2",
+      "at": 279920,
+      "mpBefore": 756,
+      "mpAfter": 734
+    },
+    {
+      "id": "mage_3",
+      "at": 280820,
+      "mpBefore": 734,
+      "mpAfter": 705
+    },
+    {
+      "id": "mage_0",
+      "at": 284360,
+      "mpBefore": 705,
+      "mpAfter": 697
+    },
+    {
+      "id": "mage_4",
+      "at": 288980,
+      "mpBefore": 697,
+      "mpAfter": 661
+    },
+    {
+      "id": "mage_0",
+      "at": 289640,
+      "mpBefore": 661,
+      "mpAfter": 653
+    },
+    {
+      "id": "mage_2",
+      "at": 290300,
+      "mpBefore": 653,
+      "mpAfter": 631
+    },
+    {
+      "id": "mage_3",
+      "at": 291920,
+      "mpBefore": 631,
+      "mpAfter": 602
+    },
+    {
+      "id": "mage_0",
+      "at": 294740,
+      "mpBefore": 602,
+      "mpAfter": 594
+    },
+    {
+      "id": "mage_2",
+      "at": 299360,
+      "mpBefore": 594,
+      "mpAfter": 572
+    },
+    {
+      "id": "mage_0",
+      "at": 300020,
+      "mpBefore": 572,
+      "mpAfter": 564
+    },
+    {
+      "id": "mage_4",
+      "at": 302000,
+      "mpBefore": 564,
+      "mpAfter": 528
+    },
+    {
+      "id": "mage_3",
+      "at": 303020,
+      "mpBefore": 528,
+      "mpAfter": 499
+    },
+    {
+      "id": "mage_0",
+      "at": 305120,
+      "mpBefore": 499,
+      "mpAfter": 491
+    },
+    {
+      "id": "mage_2",
+      "at": 308420,
+      "mpBefore": 491,
+      "mpAfter": 469
+    },
+    {
+      "id": "mage_0",
+      "at": 310160,
+      "mpBefore": 469,
+      "mpAfter": 461
+    },
+    {
+      "id": "mage_3",
+      "at": 314060,
+      "mpBefore": 461,
+      "mpAfter": 432
+    },
+    {
+      "id": "mage_4",
+      "at": 315080,
+      "mpBefore": 432,
+      "mpAfter": 396
+    },
+    {
+      "id": "mage_0",
+      "at": 315740,
+      "mpBefore": 396,
+      "mpAfter": 388
+    },
+    {
+      "id": "mage_2",
+      "at": 317480,
+      "mpBefore": 388,
+      "mpAfter": 366
+    },
+    {
+      "id": "mage_0",
+      "at": 320780,
+      "mpBefore": 366,
+      "mpAfter": 358
+    },
+    {
+      "id": "mage_3",
+      "at": 325160,
+      "mpBefore": 358,
+      "mpAfter": 329
+    },
+    {
+      "id": "mage_0",
+      "at": 325820,
+      "mpBefore": 329,
+      "mpAfter": 321
+    },
+    {
+      "id": "mage_2",
+      "at": 326480,
+      "mpBefore": 321,
+      "mpAfter": 299
+    },
+    {
+      "id": "mage_4",
+      "at": 328100,
+      "mpBefore": 299,
+      "mpAfter": 263
+    },
+    {
+      "id": "mage_0",
+      "at": 330920,
+      "mpBefore": 263,
+      "mpAfter": 255
+    },
+    {
+      "id": "mage_2",
+      "at": 335540,
+      "mpBefore": 255,
+      "mpAfter": 233
+    },
+    {
+      "id": "mage_3",
+      "at": 336200,
+      "mpBefore": 233,
+      "mpAfter": 204
+    },
+    {
+      "id": "mage_0",
+      "at": 337100,
+      "mpBefore": 204,
+      "mpAfter": 196
+    },
+    {
+      "id": "mage_4",
+      "at": 341120,
+      "mpBefore": 196,
+      "mpAfter": 160
+    },
+    {
+      "id": "mage_0",
+      "at": 342140,
+      "mpBefore": 160,
+      "mpAfter": 152
+    },
+    {
+      "id": "mage_2",
+      "at": 344600,
+      "mpBefore": 152,
+      "mpAfter": 130
+    },
+    {
+      "id": "mage_0",
+      "at": 347180,
+      "mpBefore": 130,
+      "mpAfter": 122
+    },
+    {
+      "id": "mage_3",
+      "at": 347840,
+      "mpBefore": 122,
+      "mpAfter": 93
+    },
+    {
+      "id": "mage_0",
+      "at": 352220,
+      "mpBefore": 93,
+      "mpAfter": 85
+    },
+    {
+      "id": "mage_2",
+      "at": 353600,
+      "mpBefore": 85,
+      "mpAfter": 63
+    },
+    {
+      "id": "mage_4",
+      "at": 354260,
+      "mpBefore": 63,
+      "mpAfter": 27
+    },
+    {
+      "id": "mage_0",
+      "at": 357320,
+      "mpBefore": 27,
+      "mpAfter": 19
+    },
+    {
+      "id": "mage_0",
+      "at": 362420,
+      "mpBefore": 19,
+      "mpAfter": 11
+    },
+    {
+      "id": "mage_0",
+      "at": 367520,
+      "mpBefore": 11,
+      "mpAfter": 3
+    }
+  ],
+  "potionTimeline": [
+    {
+      "at": 57380,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 927,
+      "remaining": {
+        "hp": 10,
+        "mp": 4
+      }
+    },
+    {
+      "at": 105080,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 929,
+      "remaining": {
+        "hp": 10,
+        "mp": 3
+      }
+    },
+    {
+      "at": 158480,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 916,
+      "remaining": {
+        "hp": 10,
+        "mp": 2
+      }
+    },
+    {
+      "at": 210800,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 910,
+      "remaining": {
+        "hp": 10,
+        "mp": 1
+      }
+    },
+    {
+      "at": 261560,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 911,
+      "remaining": {
+        "hp": 10,
+        "mp": 0
+      }
+    }
+  ],
+  "phases": [
+    1,
+    2,
+    3
+  ],
+  "phaseTimeline": [
+    {
+      "phase": 1,
+      "at": 20,
+      "bossHp": 1095000,
+      "hp": 1200,
+      "mp": 999
+    },
+    {
+      "phase": 2,
+      "at": 280280,
+      "bossHp": 728339,
+      "hp": 1200,
+      "mp": 734
+    },
+    {
+      "phase": 3,
+      "at": 802580,
+      "bossHp": 364590,
+      "hp": 1200,
+      "mp": 3
+    }
+  ],
+  "telegraphs": 388,
+  "aoeDodges": 179,
+  "aoeDangerAtRelease": 0,
+  "cancelledTelegraphs": 34,
+  "basicAttackImpacts": 1469,
+  "successfulBasicInputs": 1435,
+  "playerProjectiles": 1527,
+  "hostileProjectiles": 187,
+  "scheduledEffects": 28,
+  "peakPlayerProjectiles": 3,
+  "peakHostileProjectiles": 7,
+  "peakPendingEffects": 1,
+  "movingFrames": 27881,
+  "totalFrames": 70519,
+  "distanceMoved": 117019.07402338652,
+  "maxControllerStep": 4.200000000005094,
+  "skillRepositions": 0,
+  "leashReturns": 0,
+  "rangeRejections": 44,
+  "manaRejections": 34815,
+  "geometryObstacles": 62,
+  "hostElapsedMs": 7114.394,
+  "assumptions": {
+    "preparedCharacter": "Level56,165 legally allocated attributes,existing rare equipment≤42,five learned ranks and four assigned skills from calibrationHero.",
+    "resources": "One continuous initial pool:10HP/5MPpotions,actual45% refill and shared3s cooldown; no resets or artificial HP/MP refill.",
+    "movement": "Actual moveWithCollision,real desert describeChunk obstacles and LOS; delayed boss position and public telegraph observations≥reactionMs. Movement capped at min(210,actual hero.speed) world units/s with the real slow multiplier; actual legal dash/backstab effects still use the engine.",
+    "input": "Held real AttackCycle,one eligible assigned skill input per650ms,HP/MPpotions compete on their shared cooldown.",
+    "rendering": "Scene graphics/tweens are mocked; AI,damage,hurtHero,skills,projectiles,scheduled effects,poison,leash and living recovery run through the real engine."
+  },
+  "limitations": [
+    "An automated controller is not a manual player or proof of an average30-minute fight.",
+    "Only the giant is active in this encounter; other region encounters,NPCs and multiplayer are excluded.",
+    "The controller knows public warning geometry and observed projectile velocity,reacts after300ms by default,and searches local world-space destinations with86-unit melee standoff (the shorter assassin attack range remains80); controller tuning is recorded rather than changing combat rules; this exceeds an inexperienced player’s ability.",
+    "No physical Android,FPS,thermal,GPU or network measurements."
+  ],
+  "sourceSha256": {
+    "js/assets/actorArt.js": "2ff4d7948ba4fbe18def5e3139112b654aa599f3aee55df7d88ff92e1c7abd4d",
+    "js/assets/ActorTextureCache.js": "90437098608d4d7f4ce28bbac7ca5faf4ece3bf02d483d70b5a164cb3daf711a",
+    "js/assets/bossArt.js": "b469159181cfecf04827f903aefd3ff70f671dac31e75a06ceda410657caff72",
+    "js/assets/heroBodies.js": "291e8c586d99eaaa22529bd3d7958fa6686466d124e1a6c1edcf8df9476c98a4",
+    "js/assets/monsterArt.js": "8da30624dfe062c34ba1d1cdf8194c9032402981577452dc348d25d890c66f8e",
+    "js/assets/skillIcons.js": "dee4987dc25f9845a8c4e16e33d7d29e08392ca55a8396b20de4d57cc9057750",
+    "js/assets/speciesArtRegistry.js": "1b6479a3efeb6e1c931f03790eccb095e6b8f5370572bda184a7f53893c55856",
+    "js/assets/speciesAssets.js": "4aae7a2ef7095d6ac5a497d26606a867b53208ff31129e45203a53021da3320c",
+    "js/assets/task10DungeonBossArt.js": "d8516d5174a235e8abe4330ae85f17cbc7b86a38e63ab276f3c5633c98a21dcd",
+    "js/assets/task10MonsterArt.js": "5a94d129c411f98442500b4600e0fea1923e2614292888d1a1cd76c289f62060",
+    "js/assets/task10NextSpeciesArt.js": "a0482c0676f2ffd6831a343aa439bd5272e26491ce9c91cc7b28636b9c35c324",
+    "js/assets/task10OutdoorBossArt.js": "21d7dc6cae459271d42b14e15f4d7117aacf05d379b1eca1da83cb916c96f333",
+    "js/assets/warriorEquipmentArt.js": "6674df535aa3c6363d8f10df597c13e6a398af323e7e43a782ce07a1d5e1a267",
+    "js/characters/bodyAttachments.js": "3e50054cc7da4c36967f3b14b466fa47edd0cda71b771e5b75671f422c63712c",
+    "js/characters/Character.js": "23b17c6289bbaaf5924d92e58d633e63c27a0a83eb808fd0f345bbafc44dd186",
+    "js/characters/CharacterEquipmentLayers.js": "3edf3f8629f547ae9b117771bcbfc0d1fc97110fd897c7c91263f308526f1ce3",
+    "js/characters/classes.js": "80de6eedc08a46a9910de54a67917d8ab4a9feba131f49207d749c1f1e7b2a50",
+    "js/characters/PaintedActor.js": "351428b5f260e5d38a33839d5fca284a721c37c3c84e4f6fe06a7d5a9d01e8a2",
+    "js/characters/warriorBootPivots.js": "bd410c157208dfd4a621b8570e4c54762c0272233798dda6be45adff9e7a9de0",
+    "js/characters/warriorCalibration.js": "310158c6f9abf261c8d270ec0f471c0c60028fd031601d320336ed83d17971b4",
+    "js/characters/WarriorReferenceLayers.js": "d81b3c99fa2450af779737b31046f8f691167858cf14451f43978ba7430e9974",
+    "js/characters/warriorSwordPivots.js": "c30c20e1801e3d751bf4b8eb3bf8d86d8e857e3faae72a463f89a61c02d3ad20",
+    "js/combat/attackTiming.js": "12f2edc6f87c5615301b91203b80fc6c4fd50dda513efa9dca31cc2bc940ba57",
+    "js/combat/classEffects.js": "5b2f004a757d4eee34b4db3e3b57c93d71cdd21f6be5982688e664b173078215",
+    "js/combat/combat.js": "dd365ac80b2f10c57479f166702e3370e88430766709495c8d81877b286c4c69",
+    "js/combat/geometry.js": "085be5267d3db050b24f4fbf32d7ed872a6f29e28e0f5b07e963751ef2c82f25",
+    "js/combat/projectiles.js": "a6b09902fb063b092d204741a740029e3b242a0bf49c97c3d5fc9fddcae1362f",
+    "js/combat/skillRuntime.js": "a74f2de1f23b76799cf6885ee43fe4aaac863b3309ca14dbdfd14cdb7971464b",
+    "js/combat/targeting.js": "e54e6a612ade2cd6a2d7a8b135de1668610c15f695f86f69352ccf60e9b94f10",
+    "js/config/gameConfig.js": "86046b0c85d4cebee18497a0c1ae0652f73500655fb4692ab2f5e450addcaa3b",
+    "js/dungeons/desertDungeonLayouts.js": "d5c731db3f6026279a3d0dae8b5dab85862fec3babbc2262b697f8004fc87c56",
+    "js/dungeons/desertDungeons.js": "2275d0dddbe990c2b1a173219391fcec6344ec8ba6e4e1c4e224c427c8cd4360",
+    "js/dungeons/dungeonData.js": "afbb46b2a24f11db48a7ee1f2b55afb3e95371af3442af32051f2c8959e6a20c",
+    "js/dungeons/dungeonSession.js": "4427f875988b5392bb0d056b479a7325c2b732c2ac25857b1ca25a6e259771b7",
+    "js/equipment/armor.js": "2fc197ca185514cca709aae0e72ed44839fd31cd4533db53b0b8ddd9348dbf26",
+    "js/equipment/catalog.js": "13b68d2af409be3bca4da484a3786f021aeb196c1a5cf541ccad82595e790d76",
+    "js/equipment/endgameMaterials.js": "2118bdbdbe6d087d5af7cb3b467060d50f5e4cc5580c84efb9a7b213bddcbe15",
+    "js/equipment/items.js": "21609d6fe782d7af1a085679664c89e0d5e377392904699987d7e59fba44f3e5",
+    "js/equipment/stacking.js": "4cd113b7ed1d85b539567b02eb9224625d9a431cc129101df6921a7422b1e650",
+    "js/i18n/entityNames.js": "d3616c6395db5ddeafccb6a6a8179872814d1b91da985407d676ba6ca66e3dda",
+    "js/i18n/skillNames.js": "15f6c0269f2c2a74419379d3d38351fca0ac9f72829c5793de9599e8bc16e847",
+    "js/loot/groundLoot.js": "f42d63ee1b427ec4fd87a133c0e5773877129bc9aee6428d21c87074b9591119",
+    "js/monsters/desertBossData.js": "516d834af7fa9f0f6b1b5f7a7dea3f92f72aed09b701ac10292431743ad0d540",
+    "js/monsters/encounterLoot.js": "40b8b966fac2aefa7ea1edd7a2aa365a5fc7c1125046d94f284fd7c418d62301",
+    "js/monsters/health.js": "abdf992af94fc3a23415b40ef5e04da050d58e252d1d2362521077bc09645aac",
+    "js/monsters/loot.js": "bb51ee7447f7e07441617364155705848cd491478c987b35c25b6b1b7436b076",
+    "js/monsters/monsterBehavior.js": "d031cd877d357995a44539e939de68d7243075ad9212a621798af5b4a8fcc29b",
+    "js/monsters/monsters.js": "0c60ede0c78dd94160244666298c8cf67ae85b840ef51408855c8a7fa4e19905",
+    "js/monsters/MonsterStream.js": "7cd08c2f214493ddb59fbec0ec5429bca0f4a213d4fd77c26e32650cd51349ee",
+    "js/monsters/MonsterSystem.js": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2",
+    "js/monsters/monsterVisuals.js": "b5b7755c8d50ca0f05a52edab2eb5e572c159ccc3e2dff77f300c61d68e5ec14",
+    "js/monsters/movementProfiles.js": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4",
+    "js/monsters/speciesRuntime.js": "4fccd3fd2e6e922dfcdb9a0b203da15f7c76180aad508a6b5869e39eeb541f33",
+    "js/monsters/stoneGiantEncounter.js": "c48777ca5fca2ed29393a7d8a4b8f6db80cf87a6c5f7ae122857e414876f8bca",
+    "js/monsters/stoneGiantVisuals.js": "4a745d3228761ca06736f542f62527b177da7c0d16d1f98d0103aa3aa0bdc0e3",
+    "js/npc/npcData.js": "49d2d7f3a82c4f384ae1d9fcb1172d7789173cf876a18f47ee7d7931f2ada5f4",
+    "js/npc/task10NpcData.js": "eb3089517f5975581dc2f665fc5a792e559f1a664b66a5e71422070d7533baed",
+    "js/quests/dailyQuests.js": "7db50aa311268c22c9aeb161073218a76fa6704a985cbc0f86cf1d3f2259d8de",
+    "js/quests/quests.js": "1cde0fe0339e175155e1f3e61ed607648f0e0710887e53dcf4f3de1fa971a153",
+    "js/quests/release21QuestData.js": "63ae9e440820ac7efec382c109437afa23a52cc4eae1de2d1b53476afd758652",
+    "js/quests/remapWorldObjectives.js": "310e8e557952831aa73ca51466f4bba2ba6dbd60a630cc98abaaf8a50ad38808",
+    "js/quests/task10QuestData.js": "98efd0607268459676f94fbe54d34b817a264c0700f77c26692bc25d54666378",
+    "js/skills/skillData.js": "d58ddc821679ce936d923247c1dff15312a3c9da0a1d9944bcf09321a7203e9d",
+    "js/skills/skillSlots.js": "8223c58d7a1d2456303bdee3dcdc06150ef4f1eeae798873b7eaf284f6a40e3d",
+    "js/systems/attributes.js": "745bc0cf2cd4ef9218c99fa5a17b869dc8f39eedde36744f928d9b7c41207045",
+    "js/systems/potions.js": "83d087906ad54f5fce156b512e812a44544f544a8d745f8767d0ef65fb98960b",
+    "js/systems/progression.js": "cc23747c01b16a7854ba664685d97b68c2317756807831361efb41efcdad942b",
+    "js/systems/progressionPolicy.js": "758e47912e7d6ec94e695cf7fdcdc207ac51304a30c27e1214704438c3305a76",
+    "js/systems/progressState.js": "a2e5657d2c9e8cbee2d2f76e5f9264f58294f88fdd524c6f10980200962f02bf",
+    "js/systems/worldLayoutMigration.js": "b50ffaeb4f17d5438c6df807ad998071562a52d9365285cafcba5279523732b0",
+    "js/world/biomes.js": "0173880594a61f1d94f16f20be81defd1ab2e4e646f1186f974a7ecc6b6ff35f",
+    "js/world/campAliases.js": "7595aefb93f1a002e7b807942d83e8bfa7ffe8cf0e4e55a714f40ecec518dbd9",
+    "js/world/chunkGeometry.js": "a74910a9f3b9f1bd2fef37b258f52aef113731dacdeeee0b9d49e6ec2c36fcc1",
+    "js/world/climate.js": "d82076e4a0599d0a9e9480ccb9908702dbfbc1b27a56a63d8d42fefc1f76e440",
+    "js/world/climateRoads.js": "47b6f518b476aaeacf59b44b6474e6f0798b19d744985c095aa3dbae72575bc8",
+    "js/world/desertContent.js": "7583e4268fa00a8f91520f048868de6d519375cf2f9c026e0a2a58e668600272",
+    "js/world/npcTravelData.js": "dfd6acfefd6994712eb877494f41cfb41106629b2edde443b3b6af63f1cec360",
+    "js/world/projection.js": "97de467e44a8445defc1cc0ad029bfdfce84f1b0b08644b210ea034afe28facb",
+    "js/world/regionContent.js": "3d54c592833cc2244c14605c9aec61f4d98551fbddc478383c471531219a2f8f",
+    "js/world/roadPaths.js": "6180cb826673459cecb10318062e65e9fadb7c5553d09a182dbc36fcd76ba4d6",
+    "js/world/settlementExpansion.js": "0215a622c9780ac9308b24366fc0a008fa49d83688988ff357472d8576c35794",
+    "js/world/task10Layout.js": "b77972f432c1bc1adaabf5c4dd7437f7a1c5f3218b63b4dcb60d068f67ca786b",
+    "js/world/towns.js": "bf7f4cf63f90aadbf4d9ac3119636f2607530370c78113ec554f926cc200331f",
+    "js/world/worldData.js": "0aff3a33bdd63f1244ec7a8488ed1158977026121088bbb130f217257c580927",
+    "js/world/worldExpansion.js": "9980a5a709c45a633a990a04160d59b4392b3ee160e698616a498d6d3df60439",
+    "scripts/measure-stone-giant-dps.mjs": "83fe52677d186524eedcd8c65e78137bc578f5308b9c0e4a5ed5d283cf9d0ec4",
+    "scripts/simulate-stone-giant-battle.mjs": "6411346a5f193ec07c01483f195be18b2d3d7fe8f3788e7386206bb64cfb1499"
+  }
+}

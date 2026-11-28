@@ -1,0 +1,16 @@
+PASS desert runtime dungeon13 easy ru painted48/reload/portal/return/texture release
+PASS desert runtime dungeon13 medium en painted48/reload/portal/return/texture release
+PASS desert runtime dungeon13 hard es painted48/reload/portal/return/texture release
+PASS desert runtime dungeon14 easy ru painted48/reload/portal/return/texture release
+PASS desert runtime dungeon14 medium en painted48/reload/portal/return/texture release
+PASS desert runtime dungeon14 hard es painted48/reload/portal/return/texture release
+PASS desert runtime dungeon15 easy ru painted48/reload/portal/return/texture release
+PASS desert runtime dungeon15 medium en painted48/reload/portal/return/texture release
+PASS desert runtime dungeon15 hard es painted48/reload/portal/return/texture release
+PASS desert runtime dungeon16 easy ru painted48/reload/portal/return/texture release
+PASS desert runtime dungeon16 medium en painted48/reload/portal/return/texture release
+PASS desert runtime dungeon16 hard es painted48/reload/portal/return/texture release
+PASS desert runtime dungeon17 easy ru painted48/reload/portal/return/texture release
+PASS desert runtime dungeon17 medium en painted48/reload/portal/return/texture release
+PASS desert runtime dungeon17 hard es painted48/reload/portal/return/texture release
+PASS all15 new dungeon variants,RU/EN/ES,3mobile sizes,actual bosses/ordinary death ledger/save/reload/touch portal/safe same entrance/no extra reward/atlas release/no JS errors

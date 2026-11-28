@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "reviewedModels": 8,
+  "reviewedPoses": 384,
+  "method": "Human-visible assistant inspection of every 8x6 beige-composited QA sheet after final packing",
+  "checks": [
+    "All full bodies and extremities remain inside their source cells",
+    "No detached neighboring anatomy fragments",
+    "48 separately painted poses per model",
+    "Recognizable actual runtime archetype and woodland anatomy",
+    "Distinct idle, opposite movement strides, attack, hurt, collapsed death"
+  ],
+  "repairedSourceBleed": [
+    "forest-species-012",
+    "forest-species-013",
+    "forest-species-016",
+    "forest-species-019",
+    "forest-species-025",
+    "forest-species-026"
+  ],
+  "bearReflowBackground": "Initial reflow-v1 white backdrop rejected; final imagegen alpha cutout reflow reviewed clean",
+  "limitations": [
+    "Two single movement frames, not six complete multiframe clips",
+    "Directional anatomy and scale vary slightly across generated paintings",
+    "Low-alpha generator backdrop traces remain; runtime gutters are fully zero alpha",
+    "Art-only validation does not establish live game or Android acceptance"
+  ]
+}

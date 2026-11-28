@@ -1,0 +1,644 @@
+{
+  "schema": 1,
+  "classId": "assassin",
+  "outcome": "death",
+  "liveEncounter": true,
+  "controller": "telegraphs",
+  "seed": 1096114693,
+  "elapsedSeconds": 123,
+  "maxDurationSeconds": 3600,
+  "stepMs": 20,
+  "reactionMs": 300,
+  "controllerSpeed": 210,
+  "boss": {
+    "id": "desert-world-stone-giant",
+    "initialHp": 1095000,
+    "remainingHp": 905549,
+    "attack": 291,
+    "defense": 43.8,
+    "magicDefense": 30,
+    "encounter": "stoneGiant",
+    "home": {
+      "x": 18869,
+      "y": 18697
+    },
+    "final": {
+      "x": 19156.695,
+      "y": 18789.885
+    }
+  },
+  "hero": {
+    "level": 56,
+    "maxHp": 1200,
+    "hp": 0,
+    "maxMp": 485,
+    "mp": 238,
+    "potions": {
+      "hp": 0,
+      "mp": 1
+    },
+    "stats": {
+      "strength": 5,
+      "endurance": 60,
+      "agility": 115,
+      "luck": 5,
+      "intelligence": 5
+    },
+    "attributePoints": 0,
+    "skillPoints": 85,
+    "skillSlots": [
+      "assassin_0",
+      "assassin_2",
+      "assassin_3",
+      "assassin_4"
+    ],
+    "learnedSkills": {
+      "assassin_0": 5,
+      "assassin_1": 5,
+      "assassin_2": 5,
+      "assassin_3": 5,
+      "assassin_4": 5
+    },
+    "equipment": {
+      "weapon": {
+        "id": "weapon_assassin_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "helmet": {
+        "id": "helmet_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "chest": {
+        "id": "chest_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "gloves": {
+        "id": "gloves_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "pants": {
+        "id": "pants_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "boots": {
+        "id": "boots_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "ring": {
+        "id": "ring_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "amulet": {
+        "id": "amulet_8",
+        "rarity": "rare",
+        "level": 42
+      }
+    },
+    "initialPosition": {
+      "x": 18941,
+      "y": 18697
+    },
+    "finalPosition": {
+      "x": 19171.987,
+      "y": 18826.803
+    }
+  },
+  "damageDealt": 189451,
+  "bossHealing": 0,
+  "incomingAttempts": 50,
+  "damageTaken": 6400,
+  "incomingHits": 50,
+  "minimumHp": 0,
+  "minimumMp": 183,
+  "healingObserved": 5200,
+  "hpPotionsUsed": 10,
+  "mpPotionsUsed": 4,
+  "casts": {
+    "assassin_2": 14,
+    "assassin_4": 10,
+    "assassin_0": 17,
+    "assassin_3": 11
+  },
+  "castTimeline": [
+    {
+      "id": "assassin_2",
+      "at": 20,
+      "mpBefore": 485,
+      "mpAfter": 463
+    },
+    {
+      "id": "assassin_4",
+      "at": 680,
+      "mpBefore": 463,
+      "mpAfter": 427
+    },
+    {
+      "id": "assassin_0",
+      "at": 1340,
+      "mpBefore": 427,
+      "mpAfter": 419
+    },
+    {
+      "id": "assassin_3",
+      "at": 2000,
+      "mpBefore": 419,
+      "mpAfter": 390
+    },
+    {
+      "id": "assassin_0",
+      "at": 8420,
+      "mpBefore": 390,
+      "mpAfter": 382
+    },
+    {
+      "id": "assassin_2",
+      "at": 9080,
+      "mpBefore": 382,
+      "mpAfter": 360
+    },
+    {
+      "id": "assassin_3",
+      "at": 13100,
+      "mpBefore": 360,
+      "mpAfter": 331
+    },
+    {
+      "id": "assassin_4",
+      "at": 13760,
+      "mpBefore": 331,
+      "mpAfter": 295
+    },
+    {
+      "id": "assassin_0",
+      "at": 15500,
+      "mpBefore": 295,
+      "mpAfter": 287
+    },
+    {
+      "id": "assassin_2",
+      "at": 18080,
+      "mpBefore": 287,
+      "mpAfter": 265
+    },
+    {
+      "id": "assassin_0",
+      "at": 22700,
+      "mpBefore": 265,
+      "mpAfter": 257
+    },
+    {
+      "id": "assassin_3",
+      "at": 24200,
+      "mpBefore": 257,
+      "mpAfter": 228
+    },
+    {
+      "id": "assassin_4",
+      "at": 26780,
+      "mpBefore": 228,
+      "mpAfter": 192
+    },
+    {
+      "id": "assassin_2",
+      "at": 27440,
+      "mpBefore": 411,
+      "mpAfter": 389
+    },
+    {
+      "id": "assassin_0",
+      "at": 30140,
+      "mpBefore": 389,
+      "mpAfter": 381
+    },
+    {
+      "id": "assassin_3",
+      "at": 35240,
+      "mpBefore": 381,
+      "mpAfter": 352
+    },
+    {
+      "id": "assassin_2",
+      "at": 36500,
+      "mpBefore": 352,
+      "mpAfter": 330
+    },
+    {
+      "id": "assassin_0",
+      "at": 37280,
+      "mpBefore": 330,
+      "mpAfter": 322
+    },
+    {
+      "id": "assassin_4",
+      "at": 39860,
+      "mpBefore": 322,
+      "mpAfter": 286
+    },
+    {
+      "id": "assassin_0",
+      "at": 44360,
+      "mpBefore": 286,
+      "mpAfter": 278
+    },
+    {
+      "id": "assassin_2",
+      "at": 45500,
+      "mpBefore": 278,
+      "mpAfter": 256
+    },
+    {
+      "id": "assassin_3",
+      "at": 46280,
+      "mpBefore": 256,
+      "mpAfter": 227
+    },
+    {
+      "id": "assassin_0",
+      "at": 51620,
+      "mpBefore": 227,
+      "mpAfter": 219
+    },
+    {
+      "id": "assassin_4",
+      "at": 52880,
+      "mpBefore": 219,
+      "mpAfter": 183
+    },
+    {
+      "id": "assassin_2",
+      "at": 54500,
+      "mpBefore": 402,
+      "mpAfter": 380
+    },
+    {
+      "id": "assassin_3",
+      "at": 57320,
+      "mpBefore": 380,
+      "mpAfter": 351
+    },
+    {
+      "id": "assassin_0",
+      "at": 59060,
+      "mpBefore": 351,
+      "mpAfter": 343
+    },
+    {
+      "id": "assassin_2",
+      "at": 63560,
+      "mpBefore": 343,
+      "mpAfter": 321
+    },
+    {
+      "id": "assassin_4",
+      "at": 65900,
+      "mpBefore": 321,
+      "mpAfter": 285
+    },
+    {
+      "id": "assassin_0",
+      "at": 66560,
+      "mpBefore": 285,
+      "mpAfter": 277
+    },
+    {
+      "id": "assassin_3",
+      "at": 68420,
+      "mpBefore": 277,
+      "mpAfter": 248
+    },
+    {
+      "id": "assassin_2",
+      "at": 72560,
+      "mpBefore": 248,
+      "mpAfter": 226
+    },
+    {
+      "id": "assassin_0",
+      "at": 73220,
+      "mpBefore": 226,
+      "mpAfter": 218
+    },
+    {
+      "id": "assassin_4",
+      "at": 78920,
+      "mpBefore": 437,
+      "mpAfter": 401
+    },
+    {
+      "id": "assassin_3",
+      "at": 79580,
+      "mpBefore": 401,
+      "mpAfter": 372
+    },
+    {
+      "id": "assassin_0",
+      "at": 80480,
+      "mpBefore": 372,
+      "mpAfter": 364
+    },
+    {
+      "id": "assassin_2",
+      "at": 81620,
+      "mpBefore": 364,
+      "mpAfter": 342
+    },
+    {
+      "id": "assassin_0",
+      "at": 87920,
+      "mpBefore": 342,
+      "mpAfter": 334
+    },
+    {
+      "id": "assassin_2",
+      "at": 90620,
+      "mpBefore": 334,
+      "mpAfter": 312
+    },
+    {
+      "id": "assassin_3",
+      "at": 91280,
+      "mpBefore": 312,
+      "mpAfter": 283
+    },
+    {
+      "id": "assassin_4",
+      "at": 91940,
+      "mpBefore": 283,
+      "mpAfter": 247
+    },
+    {
+      "id": "assassin_0",
+      "at": 95000,
+      "mpBefore": 247,
+      "mpAfter": 239
+    },
+    {
+      "id": "assassin_2",
+      "at": 99620,
+      "mpBefore": 239,
+      "mpAfter": 217
+    },
+    {
+      "id": "assassin_0",
+      "at": 102080,
+      "mpBefore": 217,
+      "mpAfter": 209
+    },
+    {
+      "id": "assassin_3",
+      "at": 102740,
+      "mpBefore": 428,
+      "mpAfter": 399
+    },
+    {
+      "id": "assassin_4",
+      "at": 104960,
+      "mpBefore": 399,
+      "mpAfter": 363
+    },
+    {
+      "id": "assassin_2",
+      "at": 108620,
+      "mpBefore": 363,
+      "mpAfter": 341
+    },
+    {
+      "id": "assassin_0",
+      "at": 109280,
+      "mpBefore": 341,
+      "mpAfter": 333
+    },
+    {
+      "id": "assassin_3",
+      "at": 113780,
+      "mpBefore": 333,
+      "mpAfter": 304
+    },
+    {
+      "id": "assassin_0",
+      "at": 116720,
+      "mpBefore": 304,
+      "mpAfter": 296
+    },
+    {
+      "id": "assassin_2",
+      "at": 117620,
+      "mpBefore": 296,
+      "mpAfter": 274
+    },
+    {
+      "id": "assassin_4",
+      "at": 118280,
+      "mpBefore": 274,
+      "mpAfter": 238
+    }
+  ],
+  "potionTimeline": [
+    {
+      "at": 11540,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 360,
+      "remaining": {
+        "hp": 9,
+        "mp": 5
+      }
+    },
+    {
+      "at": 21860,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 265,
+      "remaining": {
+        "hp": 8,
+        "mp": 5
+      }
+    },
+    {
+      "at": 27440,
+      "resource": "mp",
+      "hp": 1070,
+      "mp": 411,
+      "remaining": {
+        "hp": 8,
+        "mp": 4
+      }
+    },
+    {
+      "at": 33320,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 381,
+      "remaining": {
+        "hp": 7,
+        "mp": 4
+      }
+    },
+    {
+      "at": 41960,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 286,
+      "remaining": {
+        "hp": 6,
+        "mp": 4
+      }
+    },
+    {
+      "at": 50780,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 227,
+      "remaining": {
+        "hp": 5,
+        "mp": 4
+      }
+    },
+    {
+      "at": 53780,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 402,
+      "remaining": {
+        "hp": 5,
+        "mp": 3
+      }
+    },
+    {
+      "at": 62120,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 343,
+      "remaining": {
+        "hp": 4,
+        "mp": 3
+      }
+    },
+    {
+      "at": 70880,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 248,
+      "remaining": {
+        "hp": 3,
+        "mp": 3
+      }
+    },
+    {
+      "at": 73880,
+      "resource": "mp",
+      "hp": 1070,
+      "mp": 437,
+      "remaining": {
+        "hp": 3,
+        "mp": 2
+      }
+    },
+    {
+      "at": 79580,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 401,
+      "remaining": {
+        "hp": 2,
+        "mp": 2
+      }
+    },
+    {
+      "at": 91280,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 312,
+      "remaining": {
+        "hp": 1,
+        "mp": 2
+      }
+    },
+    {
+      "at": 99620,
+      "resource": "hp",
+      "hp": 1200,
+      "mp": 239,
+      "remaining": {
+        "hp": 0,
+        "mp": 2
+      }
+    },
+    {
+      "at": 102740,
+      "resource": "mp",
+      "hp": 1070,
+      "mp": 428,
+      "remaining": {
+        "hp": 0,
+        "mp": 1
+      }
+    }
+  ],
+  "phases": [
+    1
+  ],
+  "phaseTimeline": [
+    {
+      "phase": 1,
+      "at": 20,
+      "bossHp": 1093245,
+      "hp": 1200,
+      "mp": 463
+    }
+  ],
+  "telegraphs": 17,
+  "aoeDodges": 13,
+  "aoeDangerAtRelease": 0,
+  "cancelledTelegraphs": 0,
+  "basicAttackImpacts": 220,
+  "successfulBasicInputs": 220,
+  "playerProjectiles": 0,
+  "hostileProjectiles": 12,
+  "scheduledEffects": 0,
+  "peakPlayerProjectiles": 0,
+  "peakHostileProjectiles": 3,
+  "peakPendingEffects": 0,
+  "movingFrames": 1941,
+  "totalFrames": 6150,
+  "distanceMoved": 8149.220678736545,
+  "maxControllerStep": 4.200000000004412,
+  "skillRepositions": 19,
+  "leashReturns": 0,
+  "rangeRejections": 0,
+  "manaRejections": 0,
+  "geometryObstacles": 62,
+  "hostElapsedMs": 279.161,
+  "assumptions": {
+    "preparedCharacter": "Level56,165 legally allocated attributes,existing rare equipment≤42,five learned ranks and four assigned skills from calibrationHero.",
+    "resources": "One continuous initial pool:10HP/5MPpotions,actual45% refill and shared3s cooldown; no resets or artificial HP/MP refill.",
+    "movement": "Actual moveWithCollision,real desert describeChunk obstacles and LOS; delayed boss position and public telegraph observations≥reactionMs. Max210 world units/s controller movement; actual legal dash/backstab effects still use the engine.",
+    "input": "Held real AttackCycle,one eligible assigned skill input per650ms,HP/MPpotions compete on their shared cooldown.",
+    "rendering": "Scene graphics/tweens are mocked; AI,damage,hurtHero,skills,projectiles,scheduled effects,poison,leash and living recovery run through the real engine."
+  },
+  "limitations": [
+    "An automated controller is not a manual player or proof of an average30-minute fight.",
+    "Only the giant is active in this encounter; other region encounters,NPCs and multiplayer are excluded.",
+    "The controller knows public warning geometry and observed projectile velocity,reacts after300ms by default,and searches local world-space destinations; this exceeds an inexperienced player’s ability.",
+    "No physical Android,FPS,thermal,GPU or network measurements."
+  ],
+  "sourceSha256": {
+    "js/monsters/MonsterSystem.js": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2",
+    "js/monsters/stoneGiantEncounter.js": "c48777ca5fca2ed29393a7d8a4b8f6db80cf87a6c5f7ae122857e414876f8bca",
+    "js/monsters/desertBossData.js": "516d834af7fa9f0f6b1b5f7a7dea3f92f72aed09b701ac10292431743ad0d540",
+    "js/combat/attackTiming.js": "12f2edc6f87c5615301b91203b80fc6c4fd50dda513efa9dca31cc2bc940ba57",
+    "js/combat/skillRuntime.js": "a74f2de1f23b76799cf6885ee43fe4aaac863b3309ca14dbdfd14cdb7971464b",
+    "js/combat/classEffects.js": "5b2f004a757d4eee34b4db3e3b57c93d71cdd21f6be5982688e664b173078215",
+    "js/equipment/items.js": "21609d6fe782d7af1a085679664c89e0d5e377392904699987d7e59fba44f3e5",
+    "js/systems/potions.js": "83d087906ad54f5fce156b512e812a44544f544a8d745f8767d0ef65fb98960b",
+    "scripts/measure-stone-giant-dps.mjs": "83fe52677d186524eedcd8c65e78137bc578f5308b9c0e4a5ed5d283cf9d0ec4",
+    "scripts/simulate-stone-giant-battle.mjs": "5450a8d3706635adf10742f773b7e746bbcbd31de8e81764cc7d25f556712b5b"
+  }
+}

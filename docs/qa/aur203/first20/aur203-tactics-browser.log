@@ -1,0 +1,10 @@
+PASS actual guard warning, finite mitigation and expiry warrior
+PASS actual low-HP retreat stays inside camp, respects house collision and ends after recovery
+PASS actual received hit alerts only same-camp opt-in allies; wall, cooldown, legacy actor and other camp stay protected
+PASS actual warning cancellation on hide, death, stream removal, region change and save/reload
+PASS actual guard warning, finite mitigation and expiry archer
+PASS actual guard warning, finite mitigation and expiry mage
+PASS actual guard warning, finite mitigation and expiry paladin
+PASS actual guard warning, finite mitigation and expiry assassin
+PASS actual guard warning, finite mitigation and expiry cannoneer
+PASS AUR203 actual tactics across all six classes with no JavaScript errors

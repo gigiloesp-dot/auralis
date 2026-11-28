@@ -1,0 +1,13 @@
+.pause-open #hud,.pause-open #joy,.pause-open #actions,.pause-open #potions,.pause-open #minimap,.pause-open #notice,.pause-open #pause-btn,.pause-open .rpg-toolbar,.pause-open .npc-interact,.pause-open .storage-interact,.pause-open .dungeon-interact,.pause-open .world-travel,.pause-open .quest-tracker,.pause-open .target-panel{display:none!important}
+#menu[data-page=pause] .menu-panel,#menu[data-page=settings][data-from-pause=true] .menu-panel{width:min(420px,100%);padding:10px 16px;max-height:calc(100dvh - 16px)}
+#menu[data-page=pause] .menu-panel>h1,#menu[data-page=pause] .menu-subtitle,#menu[data-page=settings][data-from-pause=true] .menu-panel>h1,#menu[data-page=settings][data-from-pause=true] .menu-subtitle{display:none}
+.pause-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;justify-items:center}
+.menu-content .pause-grid button{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;width:100%;aspect-ratio:1;min-height:70px;padding:5px;color:#f2d798;font-size:11px;line-height:1.15;overflow-wrap:anywhere}
+.pause-grid svg{width:29px;height:29px;flex:none}.pause-grid span{min-height:25px;display:flex;align-items:center;justify-content:center}
+#menu[data-page=pause] .menu-content{gap:8px}#menu[data-page=pause] .menu-content>button{min-height:44px}
+.pause-panel{position:fixed;inset:4% 10%;z-index:95;display:flex;flex-direction:column;background:#142c24fc;color:#f4e6c6;border:1px solid #b99b61;border-radius:12px;padding:10px 14px;box-shadow:0 0 0 100vmax #0009;font-size:13px}
+.pause-panel[hidden]{display:none}.pause-panel header{display:flex;justify-content:space-between;align-items:center;gap:10px;flex:none}.pause-panel h2{font-size:17px;margin:0}.pause-panel h3{font-size:14px;margin:12px 0 5px}.pause-panel button{min-width:44px;min-height:44px;background:#354f39;border:1px solid #b99b61;border-radius:8px;color:inherit;font:inherit;padding:7px 14px}
+.pause-panel-body{min-height:0;overflow:auto;overscroll-behavior:contain;touch-action:pan-y;line-height:1.4;overflow-wrap:anywhere}.pause-panel article{border-bottom:1px solid #ac985a55;padding-bottom:8px}.pause-panel p{margin:5px 0 10px}
+@media(max-height:340px){#menu[data-page=pause] .menu-panel{width:min(360px,100%);padding:8px 12px}.pause-grid{gap:5px}.menu-content .pause-grid button{min-height:65px;padding:3px;font-size:10px}.pause-grid svg{width:25px;height:25px}#menu[data-page=pause] .menu-content{gap:5px}.pause-panel{inset:2% 5%}}
+
+#menu[data-page=settings][data-from-pause=true] .menu-content>button,#menu[data-page=settings][data-from-pause=true] .menu-content>select{min-height:44px}

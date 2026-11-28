@@ -1,0 +1,72 @@
+PASS all seven settlements:14 real painted houses, safe cores, bounded streaming, no JS errors [
+  {
+    id: 'forestVillage',
+    region: 'forest',
+    houses: 2,
+    npcs: 5,
+    chunks: 25,
+    monsters: 42,
+    safe: true,
+    future: 2
+  },
+  {
+    id: 'riverhaven',
+    region: 'forest',
+    houses: 2,
+    npcs: 3,
+    chunks: 34,
+    monsters: 10,
+    safe: true,
+    future: 2
+  },
+  {
+    id: 'oakwatch',
+    region: 'forest',
+    houses: 2,
+    npcs: 3,
+    chunks: 30,
+    monsters: 27,
+    safe: true,
+    future: 2
+  },
+  {
+    id: 'frostford',
+    region: 'north',
+    houses: 2,
+    npcs: 3,
+    chunks: 30,
+    monsters: 1,
+    safe: true,
+    future: 2
+  },
+  {
+    id: 'highpass',
+    region: 'north',
+    houses: 2,
+    npcs: 3,
+    chunks: 34,
+    monsters: 9,
+    safe: true,
+    future: 2
+  },
+  {
+    id: 'dawncamp',
+    region: 'ancient',
+    houses: 2,
+    npcs: 2,
+    chunks: 30,
+    monsters: 0,
+    safe: true,
+    future: 2
+  },
+  {
+    id: 'elderSanctum',
+    region: 'ancient',
+    houses: 2,
+    npcs: 2,
+    chunks: 34,
+    monsters: 0,
+    safe: true,
+    future: 2
+  }
+]

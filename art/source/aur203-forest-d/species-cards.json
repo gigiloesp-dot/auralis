@@ -1,0 +1,90 @@
+[
+  {
+    "placementId": "forest-species-092",
+    "typeId": "aur203Forest092",
+    "names": {
+      "ru": "Кадильная штукатурница",
+      "en": "Mortar-moth censer",
+      "es": "Polilla incensario"
+    },
+    "biome": "abandoned-city",
+    "level": 15,
+    "x": 13918,
+    "y": 6639,
+    "anatomy": "moth with chipped plaster window wings and copper censer abdomen",
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "haunt"
+    ],
+    "materialId": "aur203Forest092Material",
+    "materialConcept": "plaster wing scale",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-093",
+    "typeId": "aur203Forest093",
+    "names": {
+      "ru": "Корешок-колокольчик",
+      "en": "Bluebell rootling",
+      "es": "Raicilla campanilla"
+    },
+    "biome": "woodland",
+    "level": 5,
+    "x": 901,
+    "y": 5566,
+    "anatomy": "bluebell flower head with three root legs and grass ribbon arms",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "roots",
+      "cleave"
+    ],
+    "materialId": "aur203Forest093Material",
+    "materialConcept": "bluebell petal",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-094",
+    "typeId": "aur203Forest094",
+    "names": {
+      "ru": "Ключечелюстный клещ",
+      "en": "Lockjaw key-mite",
+      "es": "Ácaro cerrojo"
+    },
+    "biome": "abandoned-city",
+    "level": 16,
+    "x": 15369,
+    "y": 4181,
+    "anatomy": "four-legged padlock arthropod with asymmetric key mandibles",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "cleave",
+      "venom"
+    ],
+    "materialId": "aur203Forest094Material",
+    "materialConcept": "key-shaped mandible",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-095",
+    "typeId": "aur203Forest095",
+    "names": {
+      "ru": "Дымоходный ходулочник",
+      "en": "Chimney-dome stiltbeast",
+      "es": "Zancudo chimenea"
+    },
+    "biome": "abandoned-city",
+    "level": 18,
+    "x": 16732,
+    "y": 8211,
+    "anatomy": "five terracotta stilt legs under tile dome shell with three eye stalks",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "materialId": "aur203Forest095Material",
+    "materialConcept": "terracotta joint ring",
+    "artOnly": true
+  }
+]

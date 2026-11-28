@@ -1,0 +1,1 @@
+Pack C art-only ready: desert-species-064..067, 192 native poses inspected on beige and dark; mechanical alpha/gutters/footlines and distinct hashes pass. 065 transparent background repaired with image_gen, original retained. Runtime/browser separate.

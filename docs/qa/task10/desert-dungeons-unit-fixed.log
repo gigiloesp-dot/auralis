@@ -1,0 +1,26 @@
+✔ cleared dungeon rooms remain clear during recovery while boss and outdoor respawn timers stay independent (11.864851ms)
+✔ all seventeen dungeon interiors have traversable chamber and corridor routes to every boss and exit (120.752426ms)
+✔ difficulty scales actual monster health and damage by twenty or thirty percent (5.264315ms)
+✔ entry requires level, proximity and living hero and preserves failure state (1.585947ms)
+✔ boss kills, completion rewards and hour respawns are independent across difficulties (2.135327ms)
+✔ dungeon session and per-difficulty completion state survive character serialization (1.308307ms)
+✔ malformed imported dungeon progress cannot crash a real boss completion (0.540647ms)
+✔ all36 legacy dungeon variants stay byte-identical while five distinct desert definitions extend the real roster to17 (19.180086ms)
+✔ all15 new variants use real floorplans,painted columns,appropriate level and unchanged difficulty multipliers (86.354728ms)
+✔ new dungeon minions stay dead through reload,each boss difficulty keeps its hour timer and rewards and portal cannot duplicate (22.853617ms)
+✔ five new bosses have separate transparent48-pose atlases and real runtime bindings without replacing old boss paintings (1362.937471ms)
+✔ all 51 dungeon visits preserve ordinary deaths through time, streamed reconstruction and save migration; only re-entry resets them (35.57931ms)
+✔ all 51 completions create a voluntary portal only for the completed visit and preserve exact independent boss timers on re-entry (23.742921ms)
+✔ boss-specific hour cooldown survives the earlier shared timer expiring and remains separate from other difficulties (0.586857ms)
+✔ finishing a partial multi-boss cycle in a later visit opens its portal, while another fresh visit does not inherit it (10.207607ms)
+✔ release 5 sessions migrate minion deaths, while historical completion never invents a newly completed visit (0.5628ms)
+✔ a saved boss timer without completion data cannot be bypassed by forging a later death event (0.306403ms)
+✔ portal requires a deliberate nearby interaction and never grants rewards itself (0.500376ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2245.010874

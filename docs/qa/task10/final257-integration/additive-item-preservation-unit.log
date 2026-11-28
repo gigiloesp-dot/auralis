@@ -1,0 +1,31 @@
+✔ both registered web spiders dispatch their actual second ability with a timed slowing projectile after a warning (2.100311ms)
+✔ web slow uses the shared hero movement pipeline and expires without poison damage or a persistent root (0.305873ms)
+✔ web aims at the telegraphed snapshot, so moving perpendicular during windup avoids its straight projectile path (0.313214ms)
+✔ lost LOS, safety, lost combat and death cancel the warned web without a phantom projectile (0.47992ms)
+✔ web retains inherited cooldown and alternating venom instead of releasing repeated slows each update (1.836961ms)
+✔ one trophy, four quest materials and sixteen additive monster materials leave all original item definitions,gear and class restrictions byte-identical as serialized data (4.658358ms)
+✔ only the actual Stone Giant world encounter adds its guaranteed trophy without consuming or changing any existing loot rolls (25.80792ms)
+✔ unique trophy remains anonymous on the ground,full bags preserve it,reload cannot duplicate pickup,and existing merchant sale works (8.139514ms)
+✔ the trophy has three localized names and its own transparent PNG icon,not another fang or equipment picture (13.307077ms)
+✔ release21 migration baseline: expanded boundaries preserve every existing camp, spawn, boss, road, portal and quest (5978.756104ms)
+✔ expanded edge chunks are finite, decorated, uniquely owned and remain streamed (18.057943ms)
+✔ equipment catalogue, layers, weapon art and existing skill definitions are untouched (61.500195ms)
+✔ all old wolf and boss drops and RNG calls remain identical across12420seededrolls; old ordinary equipment outcomes stay identical in2880more (44.335745ms)
+✔ sixteen additive non-equipment materials preserve every preexisting item definition and all shops (2.447286ms)
+✔ every original ordinary species has an actual thematic drop while equipment remains its separate first roll (7.825143ms)
+✔ thematic drops remain anonymouschests,stack,persist inall3slots,and never duplicate or reward gold (68.748422ms)
+✔ all sixteen new materials render distinct original transparent PNG icons and every original item/potion SVG stays identical (38.231133ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.196622ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (176.144237ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (113.194063ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.720587ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.633128ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (275.655269ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7491.644662

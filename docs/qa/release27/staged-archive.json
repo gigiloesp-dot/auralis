@@ -1,0 +1,11 @@
+{
+  "project_id": "appgprj_6af567346ebc8191accf1485254403da",
+  "hostingCommit": "947ab41eeec3c10fa3911d4b18b15cb00e004c83",
+  "sourceCommit": "88cedeb65929cfac0174cb685f90521615e6a731",
+  "archive": "/dev/shm/auralis-release27-final.tar.gz",
+  "archiveBytes": 234257823,
+  "archiveSha256": "78ddeb8f6bf4e7eb6544df645c417eb060b206cb7e6c206830e5d8ff58592fff",
+  "fileCount": 1234,
+  "fileBytes": 242300921,
+  "published": false
+}

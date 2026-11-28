@@ -1,0 +1,271 @@
+{
+  "source": "art/source/aur203-first20-material-icons/original-sheet.png",
+  "sourceSize": [
+    1402,
+    1122
+  ],
+  "sourceSHA256": "8a06857ebe2fc69a62f95a4b087b4380c26861398dd6773d3276c21d5342c6c9",
+  "method": "Complete 5x4 source cells, proportionally reduced to112px and centered on128px RGBA canvases. No semantic editing, alpha normalization, repainting, trimming or recoloring.",
+  "entries": [
+    {
+      "name": "chestnut-crab-chitin",
+      "sourceRect": [
+        0,
+        0,
+        280,
+        280
+      ],
+      "url": "assets/icons/monster-materials/aur203-chestnut-crab-chitin.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4e6892e273729e431b0e179cfb460491baef7839c4dcc0e58e5a2fb84c4f6151"
+    },
+    {
+      "name": "reed-heron-feather",
+      "sourceRect": [
+        280,
+        0,
+        560,
+        280
+      ],
+      "url": "assets/icons/monster-materials/aur203-reed-heron-feather.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "48bae0c5ba9168ca4ac767d5d253ebf5bda0ff206ef1961567c097f4adaafaf5"
+    },
+    {
+      "name": "lantern-snail-mucus",
+      "sourceRect": [
+        560,
+        0,
+        841,
+        280
+      ],
+      "url": "assets/icons/monster-materials/aur203-lantern-snail-mucus.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "33c84c75559738bc46b18f53bc3d5ee3332b88f4ed3311f1e9ec72a6b06890f6"
+    },
+    {
+      "name": "acorn-hopper-antenna",
+      "sourceRect": [
+        841,
+        0,
+        1121,
+        280
+      ],
+      "url": "assets/icons/monster-materials/aur203-acorn-hopper-antenna.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "2242b4e163a71ee622891eb32195a7ce82ee795ebaa5ab11cbb2b0cde35f77cb"
+    },
+    {
+      "name": "sundew-resin",
+      "sourceRect": [
+        1121,
+        0,
+        1402,
+        280
+      ],
+      "url": "assets/icons/monster-materials/aur203-sundew-resin.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "c3a5070c1c78bef1cbf2022f1b0bce204ab8d98d0ca7bb924556d49aad72a2df"
+    },
+    {
+      "name": "moss-toad-membrane",
+      "sourceRect": [
+        0,
+        280,
+        280,
+        561
+      ],
+      "url": "assets/icons/monster-materials/aur203-moss-toad-membrane.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4a22833ccbeffc8bdc0ddf2a449915c76bd2283670b5f6836659e28c28cb9933"
+    },
+    {
+      "name": "amber-dragonfly-wing",
+      "sourceRect": [
+        280,
+        280,
+        560,
+        561
+      ],
+      "url": "assets/icons/monster-materials/aur203-amber-dragonfly-wing.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "d44b51577148bd0e37bd6305688fc6548883713abcb9b4996e010d4fa687dabf"
+    },
+    {
+      "name": "fern-newt-scale",
+      "sourceRect": [
+        560,
+        280,
+        841,
+        561
+      ],
+      "url": "assets/icons/monster-materials/aur203-fern-newt-scale.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "7291f30cbb8c480217f5fa3871ea4e4694f34ee697259c3684c399848f18f27e"
+    },
+    {
+      "name": "rime-walrus-tusk",
+      "sourceRect": [
+        841,
+        280,
+        1121,
+        561
+      ],
+      "url": "assets/icons/monster-materials/aur203-rime-walrus-tusk.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "c70436020e74d7bd4b74266746b865f367a5df15b29c85a13541548d8a200624"
+    },
+    {
+      "name": "powder-muskox-wool",
+      "sourceRect": [
+        1121,
+        280,
+        1402,
+        561
+      ],
+      "url": "assets/icons/monster-materials/aur203-powder-muskox-wool.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "efe4ce119272d4e00a9bbb5b6b705adfea18273d3b86a72747b1ce00a3a2c75c"
+    },
+    {
+      "name": "obsidian-centipede-plate",
+      "sourceRect": [
+        0,
+        561,
+        280,
+        841
+      ],
+      "url": "assets/icons/monster-materials/aur203-obsidian-centipede-plate.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "68e88fa2c1262fee3ccf99896a0c53251579b65b7c30926f343b039a6fa13be6"
+    },
+    {
+      "name": "crystal-jelly-pearl",
+      "sourceRect": [
+        280,
+        561,
+        560,
+        841
+      ],
+      "url": "assets/icons/monster-materials/aur203-crystal-jelly-pearl.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "5592117597bae1ff7ec82bfbcd1fe8e0ae44241eabdb0a8db35a84aa739a6aa3"
+    },
+    {
+      "name": "porcelain-bell-shard",
+      "sourceRect": [
+        560,
+        561,
+        841,
+        841
+      ],
+      "url": "assets/icons/monster-materials/aur203-porcelain-bell-shard.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "ba024aa3eb952c0b44391a9e53eee4a29e7cef4a952c85fc350b950acd3b6153"
+    },
+    {
+      "name": "moss-axolotl-frill",
+      "sourceRect": [
+        841,
+        561,
+        1121,
+        841
+      ],
+      "url": "assets/icons/monster-materials/aur203-moss-axolotl-frill.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "fc301a53066afae9610de115e6ac8925b56eb0a5101ac62e72cbf1d508ca9427"
+    },
+    {
+      "name": "prism-cuttle-ink",
+      "sourceRect": [
+        1121,
+        561,
+        1402,
+        841
+      ],
+      "url": "assets/icons/monster-materials/aur203-prism-cuttle-ink.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "0106877422aa9ad7018f395d6a0ab0c6c1d1f4fdf33bad0dae640a6b784ea170"
+    },
+    {
+      "name": "scroll-tripod-parchment",
+      "sourceRect": [
+        0,
+        841,
+        280,
+        1122
+      ],
+      "url": "assets/icons/monster-materials/aur203-scroll-tripod-parchment.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "ce353844cd13f91339e7db12c2e282717d6413fb6230ec340e2f4f023aba8701"
+    },
+    {
+      "name": "sandstone-trilobite-shell",
+      "sourceRect": [
+        280,
+        841,
+        560,
+        1122
+      ],
+      "url": "assets/icons/monster-materials/aur203-sandstone-trilobite-shell.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "b4427b1e97f1fad8d387c22af3f14ce4b68fa82cd6c1c3e8434b89e2926c9939"
+    },
+    {
+      "name": "glass-jerboa-whisker",
+      "sourceRect": [
+        560,
+        841,
+        841,
+        1122
+      ],
+      "url": "assets/icons/monster-materials/aur203-glass-jerboa-whisker.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "460e8a90e7041ba52be43913499e053df2aa3627424e6f705ce3b90f42889b0f"
+    },
+    {
+      "name": "pitcher-cactus-needle",
+      "sourceRect": [
+        841,
+        841,
+        1121,
+        1122
+      ],
+      "url": "assets/icons/monster-materials/aur203-pitcher-cactus-needle.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "9cba762baff68ac82dc25f40cbb43473ddbbf8e02d5649ee1e09b45ee648e82d"
+    },
+    {
+      "name": "dune-sailray-fin",
+      "sourceRect": [
+        1121,
+        841,
+        1402,
+        1122
+      ],
+      "url": "assets/icons/monster-materials/aur203-dune-sailray-fin.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4f246e1d5dfbd9fde58a29b0e45347906e05f05f55d13366078eae821f800cbd"
+    }
+  ]
+}

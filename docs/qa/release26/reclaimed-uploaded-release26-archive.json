@@ -1,0 +1,12 @@
+{
+  "reason": "Derived uploaded gzip removed only after successful native version26 save; original source, hosting commit and native tar retained",
+  "savedVersion": "appgprj_6af567346ebc8191accf1485254403da~appgver_e9acc188a6b0819184f916ef873ee1d1",
+  "archive": {
+    "archive": "/workspace/auralis/work/auralis-master-test-release26.tar.gz",
+    "bytes": 187210788,
+    "sha256": "0f810b52ae69b8e63db5c461a76af0a695e31535942813a8adc73481c3e93770",
+    "hostingCommit": "1cbd8134aaae38ca52f1efe2006e4a6e420e8646",
+    "sourceCommit": "e80d0efc6f12577d31364abfc8448d905f299227"
+  },
+  "freedBytes": 187215872
+}

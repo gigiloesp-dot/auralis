@@ -1,0 +1,38 @@
+✔ actual engine keeps unconfigured intent identity, exact precomputed damage and no tactical state (10.636082ms)
+✔ actual update uses finite retreat movement without ranged preferred-distance overriding its speed (3.755351ms)
+✔ retreat receives actual ground/flight occupancy and radius-aware obstacle LOS checks (1.166317ms)
+✔ real guard shows a distinct warning before mitigation, suppresses attacks and exposes the special pose (1.701119ms)
+✔ special attack, root/stun, return, safe area and hero death take priority over a new guard (4.910463ms)
+✔ actual received hit alerts only local opt-in same-camp allies, with no ally damage or descriptor scan (1.092868ms)
+✔ same-camp assistance fails closed at actual obstacles or a safe hero position (0.912261ms)
+✔ hiding, unload, lethal hit and real scene teardown destroy owned guard markers exactly once (3.810494ms)
+✔ active guard renderer references never enter the existing persisted health payload (1.069414ms)
+✔ all unconfigured kinds retain exact intent identity, damage and state, including low HP and nearby allies (1.915006ms)
+✔ low HP retreat increases actual target distance while staying inside camp and home leash (0.852794ms)
+✔ retreat uses real occupancy and traversability callbacks instead of crossing a blocking obstacle (0.402637ms)
+✔ blocked or missing movement callbacks fail closed and probes do not repeat every frame (0.771212ms)
+✔ small camps shorten the retreat and positions near the leash cannot escape its boundary (0.362597ms)
+✔ retreat ends with a bounded pause/cooldown and healing or lost combat clears it (0.224572ms)
+✔ defender warns before mitigation, then guards for a finite window and preserves cooldown (0.511677ms)
+✔ guard cannot mitigate without a rendered warning or against a lost/distant target (0.249259ms)
+✔ safety, death, hero death and return immediately cancel warned guard and retreat state (0.336108ms)
+✔ retreat takes priority over a previous guard, destroying its marker and mitigation (0.261026ms)
+✔ pack alert affects only opted-in living same-camp allies with two visible lines, without damaging any creature (1.10723ms)
+✔ pack respects individual home leash, safe/dead source conditions, visibility and alert cooldown (0.340133ms)
+✔ pack scans at most64 local candidates, alerts at most configured maximum and never searches a full-world list (0.529253ms)
+✔ technical settings clamp extremes so configuration cannot grant immunity, instant guard or map-wide assistance (0.133608ms)
+✔ invalid clocks or attacker coordinates cannot create immortal guard or corrupt pack threat state (0.16842ms)
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (2.408097ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (143.730638ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (74.987238ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.548072ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.252535ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (564.91319ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1175.85633

@@ -1,0 +1,812 @@
+{
+  "schema": 1,
+  "classId": "cannoneer",
+  "outcome": "victory",
+  "liveEncounter": true,
+  "controller": "telegraphs",
+  "seed": 1096115702,
+  "elapsedSeconds": 1745.76,
+  "maxDurationSeconds": 3600,
+  "stepMs": 20,
+  "reactionMs": 300,
+  "controllerSpeed": 207,
+  "controllerPreferredRange": 220,
+  "nodeVersion": "24.22.1",
+  "boss": {
+    "id": "desert-world-stone-giant",
+    "initialHp": 1095000,
+    "remainingHp": 0,
+    "attack": 291,
+    "defense": 43.8,
+    "magicDefense": 30,
+    "encounter": "stoneGiant",
+    "home": {
+      "x": 18869,
+      "y": 18697
+    },
+    "final": {
+      "x": 18736.309,
+      "y": 18883.347
+    }
+  },
+  "hero": {
+    "level": 56,
+    "maxHp": 1200,
+    "hp": 1200,
+    "maxMp": 485,
+    "mp": 3,
+    "potions": {
+      "hp": 10,
+      "mp": 0
+    },
+    "stats": {
+      "strength": 115,
+      "endurance": 60,
+      "agility": 5,
+      "luck": 5,
+      "intelligence": 5
+    },
+    "attributePoints": 0,
+    "skillPoints": 85,
+    "skillSlots": [
+      "cannoneer_0",
+      "cannoneer_2",
+      "cannoneer_3",
+      "cannoneer_4"
+    ],
+    "learnedSkills": {
+      "cannoneer_0": 5,
+      "cannoneer_1": 5,
+      "cannoneer_2": 5,
+      "cannoneer_3": 5,
+      "cannoneer_4": 5
+    },
+    "equipment": {
+      "weapon": {
+        "id": "weapon_cannoneer_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "helmet": {
+        "id": "helmet_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "chest": {
+        "id": "chest_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "gloves": {
+        "id": "gloves_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "pants": {
+        "id": "pants_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "boots": {
+        "id": "boots_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "ring": {
+        "id": "ring_8",
+        "rarity": "rare",
+        "level": 42
+      },
+      "amulet": {
+        "id": "amulet_8",
+        "rarity": "rare",
+        "level": 42
+      }
+    },
+    "initialPosition": {
+      "x": 19089,
+      "y": 18697
+    },
+    "finalPosition": {
+      "x": 18587.306,
+      "y": 18824.512
+    }
+  },
+  "damageDealt": 1095000,
+  "bossHealing": 0,
+  "incomingAttempts": 0,
+  "damageTaken": 0,
+  "incomingHits": 0,
+  "incomingTimeline": [],
+  "minimumHp": 1200,
+  "minimumMp": 3,
+  "healingObserved": 0,
+  "hpPotionsUsed": 0,
+  "mpPotionsUsed": 5,
+  "casts": {
+    "cannoneer_3": 15,
+    "cannoneer_4": 13,
+    "cannoneer_0": 32,
+    "cannoneer_2": 19
+  },
+  "castTimeline": [
+    {
+      "id": "cannoneer_3",
+      "at": 20,
+      "mpBefore": 485,
+      "mpAfter": 456
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 680,
+      "mpBefore": 456,
+      "mpAfter": 420
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 1340,
+      "mpBefore": 420,
+      "mpAfter": 412
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 2000,
+      "mpBefore": 412,
+      "mpAfter": 390
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 6380,
+      "mpBefore": 390,
+      "mpAfter": 382
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 11000,
+      "mpBefore": 382,
+      "mpAfter": 360
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 11660,
+      "mpBefore": 360,
+      "mpAfter": 331
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 12320,
+      "mpBefore": 331,
+      "mpAfter": 323
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 13700,
+      "mpBefore": 323,
+      "mpAfter": 287
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 17360,
+      "mpBefore": 287,
+      "mpAfter": 279
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 20060,
+      "mpBefore": 279,
+      "mpAfter": 257
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 22400,
+      "mpBefore": 257,
+      "mpAfter": 249
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 23060,
+      "mpBefore": 249,
+      "mpAfter": 220
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 26720,
+      "mpBefore": 220,
+      "mpAfter": 184
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 27500,
+      "mpBefore": 403,
+      "mpAfter": 395
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 29120,
+      "mpBefore": 395,
+      "mpAfter": 373
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 32540,
+      "mpBefore": 373,
+      "mpAfter": 365
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 34160,
+      "mpBefore": 365,
+      "mpAfter": 336
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 37580,
+      "mpBefore": 336,
+      "mpAfter": 328
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 38240,
+      "mpBefore": 328,
+      "mpAfter": 306
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 39740,
+      "mpBefore": 306,
+      "mpAfter": 270
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 42680,
+      "mpBefore": 270,
+      "mpAfter": 262
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 45260,
+      "mpBefore": 262,
+      "mpAfter": 233
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 47240,
+      "mpBefore": 233,
+      "mpAfter": 211
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 47900,
+      "mpBefore": 430,
+      "mpAfter": 422
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 52760,
+      "mpBefore": 422,
+      "mpAfter": 386
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 53420,
+      "mpBefore": 386,
+      "mpAfter": 378
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 56240,
+      "mpBefore": 378,
+      "mpAfter": 356
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 56900,
+      "mpBefore": 356,
+      "mpAfter": 327
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 58520,
+      "mpBefore": 327,
+      "mpAfter": 319
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 63620,
+      "mpBefore": 319,
+      "mpAfter": 311
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 65240,
+      "mpBefore": 311,
+      "mpAfter": 289
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 65900,
+      "mpBefore": 289,
+      "mpAfter": 253
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 68000,
+      "mpBefore": 253,
+      "mpAfter": 224
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 68660,
+      "mpBefore": 224,
+      "mpAfter": 216
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 73760,
+      "mpBefore": 435,
+      "mpAfter": 427
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 74420,
+      "mpBefore": 427,
+      "mpAfter": 405
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 78800,
+      "mpBefore": 405,
+      "mpAfter": 397
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 79460,
+      "mpBefore": 397,
+      "mpAfter": 368
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 80120,
+      "mpBefore": 368,
+      "mpAfter": 332
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 83420,
+      "mpBefore": 332,
+      "mpAfter": 310
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 84080,
+      "mpBefore": 310,
+      "mpAfter": 302
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 89180,
+      "mpBefore": 302,
+      "mpAfter": 294
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 90560,
+      "mpBefore": 294,
+      "mpAfter": 265
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 92420,
+      "mpBefore": 265,
+      "mpAfter": 243
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 93200,
+      "mpBefore": 243,
+      "mpAfter": 207
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 94220,
+      "mpBefore": 426,
+      "mpAfter": 418
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 99320,
+      "mpBefore": 418,
+      "mpAfter": 410
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 101420,
+      "mpBefore": 410,
+      "mpAfter": 388
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 102080,
+      "mpBefore": 388,
+      "mpAfter": 359
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 104420,
+      "mpBefore": 359,
+      "mpAfter": 351
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 106280,
+      "mpBefore": 351,
+      "mpAfter": 315
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 109460,
+      "mpBefore": 315,
+      "mpAfter": 307
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 111080,
+      "mpBefore": 307,
+      "mpAfter": 285
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 113180,
+      "mpBefore": 285,
+      "mpAfter": 256
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 114560,
+      "mpBefore": 256,
+      "mpAfter": 248
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 119300,
+      "mpBefore": 248,
+      "mpAfter": 212
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 119960,
+      "mpBefore": 431,
+      "mpAfter": 423
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 120620,
+      "mpBefore": 423,
+      "mpAfter": 401
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 124280,
+      "mpBefore": 401,
+      "mpAfter": 372
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 125060,
+      "mpBefore": 372,
+      "mpAfter": 364
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 129680,
+      "mpBefore": 364,
+      "mpAfter": 342
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 130340,
+      "mpBefore": 342,
+      "mpAfter": 334
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 132320,
+      "mpBefore": 334,
+      "mpAfter": 298
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 135380,
+      "mpBefore": 298,
+      "mpAfter": 269
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 136040,
+      "mpBefore": 269,
+      "mpAfter": 261
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 138740,
+      "mpBefore": 261,
+      "mpAfter": 239
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 141080,
+      "mpBefore": 239,
+      "mpAfter": 231
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 145340,
+      "mpBefore": 231,
+      "mpAfter": 195
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 146120,
+      "mpBefore": 195,
+      "mpAfter": 187
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 146780,
+      "mpBefore": 187,
+      "mpAfter": 158
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 147800,
+      "mpBefore": 158,
+      "mpAfter": 136
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 151220,
+      "mpBefore": 136,
+      "mpAfter": 128
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 156320,
+      "mpBefore": 128,
+      "mpAfter": 120
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 156980,
+      "mpBefore": 120,
+      "mpAfter": 98
+    },
+    {
+      "id": "cannoneer_3",
+      "at": 157880,
+      "mpBefore": 98,
+      "mpAfter": 69
+    },
+    {
+      "id": "cannoneer_4",
+      "at": 158540,
+      "mpBefore": 69,
+      "mpAfter": 33
+    },
+    {
+      "id": "cannoneer_0",
+      "at": 161360,
+      "mpBefore": 33,
+      "mpAfter": 25
+    },
+    {
+      "id": "cannoneer_2",
+      "at": 165980,
+      "mpBefore": 25,
+      "mpAfter": 3
+    }
+  ],
+  "potionTimeline": [
+    {
+      "at": 27380,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 403,
+      "remaining": {
+        "hp": 10,
+        "mp": 4
+      }
+    },
+    {
+      "at": 47900,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 430,
+      "remaining": {
+        "hp": 10,
+        "mp": 3
+      }
+    },
+    {
+      "at": 69320,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 435,
+      "remaining": {
+        "hp": 10,
+        "mp": 2
+      }
+    },
+    {
+      "at": 93860,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 426,
+      "remaining": {
+        "hp": 10,
+        "mp": 1
+      }
+    },
+    {
+      "at": 119960,
+      "resource": "mp",
+      "hp": 1200,
+      "mp": 431,
+      "remaining": {
+        "hp": 10,
+        "mp": 0
+      }
+    }
+  ],
+  "phases": [
+    1,
+    2,
+    3
+  ],
+  "phaseTimeline": [
+    {
+      "phase": 1,
+      "at": 20,
+      "bossHp": 1095000,
+      "hp": 1200,
+      "mp": 456
+    },
+    {
+      "phase": 2,
+      "at": 442060,
+      "bossHp": 729662,
+      "hp": 1200,
+      "mp": 3
+    },
+    {
+      "phase": 3,
+      "at": 1090820,
+      "bossHp": 364474,
+      "hp": 1200,
+      "mp": 3
+    }
+  ],
+  "telegraphs": 470,
+  "aoeDodges": 218,
+  "aoeDangerAtRelease": 0,
+  "cancelledTelegraphs": 49,
+  "basicAttackImpacts": 1647,
+  "successfulBasicInputs": 1615,
+  "playerProjectiles": 1573,
+  "hostileProjectiles": 242,
+  "scheduledEffects": 45,
+  "peakPlayerProjectiles": 2,
+  "peakHostileProjectiles": 7,
+  "peakPendingEffects": 2,
+  "movingFrames": 38489,
+  "totalFrames": 87288,
+  "distanceMoved": 159329.19311894628,
+  "maxControllerStep": 4.140000000005039,
+  "skillRepositions": 0,
+  "leashReturns": 0,
+  "rangeRejections": 5,
+  "manaRejections": 52510,
+  "geometryObstacles": 62,
+  "hostElapsedMs": 8218.456,
+  "assumptions": {
+    "preparedCharacter": "Level56,165 legally allocated attributes,existing rare equipment≤42,five learned ranks and four assigned skills from calibrationHero.",
+    "resources": "One continuous initial pool:10HP/5MPpotions,actual45% refill and shared3s cooldown; no resets or artificial HP/MP refill.",
+    "movement": "Actual moveWithCollision,real desert describeChunk obstacles and LOS; delayed boss position and public telegraph observations≥reactionMs. Movement capped at min(210,actual hero.speed) world units/s with the real slow multiplier; actual legal dash/backstab effects still use the engine.",
+    "input": "Held real AttackCycle,one eligible assigned skill input per650ms,HP/MPpotions compete on their shared cooldown.",
+    "rendering": "Scene graphics/tweens are mocked; AI,damage,hurtHero,skills,projectiles,scheduled effects,poison,leash and living recovery run through the real engine."
+  },
+  "limitations": [
+    "An automated controller is not a manual player or proof of an average30-minute fight.",
+    "Only the giant is active in this encounter; other region encounters,NPCs and multiplayer are excluded.",
+    "The controller knows public warning geometry and observed projectile velocity,reacts after300ms by default,and searches local world-space destinations with86-unit melee standoff (the shorter assassin attack range remains80); controller tuning is recorded rather than changing combat rules; this exceeds an inexperienced player’s ability.",
+    "No physical Android,FPS,thermal,GPU or network measurements."
+  ],
+  "sourceSha256": {
+    "js/assets/actorArt.js": "2ff4d7948ba4fbe18def5e3139112b654aa599f3aee55df7d88ff92e1c7abd4d",
+    "js/assets/ActorTextureCache.js": "90437098608d4d7f4ce28bbac7ca5faf4ece3bf02d483d70b5a164cb3daf711a",
+    "js/assets/bossArt.js": "b469159181cfecf04827f903aefd3ff70f671dac31e75a06ceda410657caff72",
+    "js/assets/heroBodies.js": "291e8c586d99eaaa22529bd3d7958fa6686466d124e1a6c1edcf8df9476c98a4",
+    "js/assets/monsterArt.js": "8da30624dfe062c34ba1d1cdf8194c9032402981577452dc348d25d890c66f8e",
+    "js/assets/skillIcons.js": "dee4987dc25f9845a8c4e16e33d7d29e08392ca55a8396b20de4d57cc9057750",
+    "js/assets/speciesArtRegistry.js": "1b6479a3efeb6e1c931f03790eccb095e6b8f5370572bda184a7f53893c55856",
+    "js/assets/speciesAssets.js": "4aae7a2ef7095d6ac5a497d26606a867b53208ff31129e45203a53021da3320c",
+    "js/assets/task10DungeonBossArt.js": "d8516d5174a235e8abe4330ae85f17cbc7b86a38e63ab276f3c5633c98a21dcd",
+    "js/assets/task10MonsterArt.js": "5a94d129c411f98442500b4600e0fea1923e2614292888d1a1cd76c289f62060",
+    "js/assets/task10NextSpeciesArt.js": "a0482c0676f2ffd6831a343aa439bd5272e26491ce9c91cc7b28636b9c35c324",
+    "js/assets/task10OutdoorBossArt.js": "21d7dc6cae459271d42b14e15f4d7117aacf05d379b1eca1da83cb916c96f333",
+    "js/assets/warriorEquipmentArt.js": "6674df535aa3c6363d8f10df597c13e6a398af323e7e43a782ce07a1d5e1a267",
+    "js/characters/bodyAttachments.js": "3e50054cc7da4c36967f3b14b466fa47edd0cda71b771e5b75671f422c63712c",
+    "js/characters/Character.js": "23b17c6289bbaaf5924d92e58d633e63c27a0a83eb808fd0f345bbafc44dd186",
+    "js/characters/CharacterEquipmentLayers.js": "3edf3f8629f547ae9b117771bcbfc0d1fc97110fd897c7c91263f308526f1ce3",
+    "js/characters/classes.js": "80de6eedc08a46a9910de54a67917d8ab4a9feba131f49207d749c1f1e7b2a50",
+    "js/characters/PaintedActor.js": "351428b5f260e5d38a33839d5fca284a721c37c3c84e4f6fe06a7d5a9d01e8a2",
+    "js/characters/warriorBootPivots.js": "bd410c157208dfd4a621b8570e4c54762c0272233798dda6be45adff9e7a9de0",
+    "js/characters/warriorCalibration.js": "310158c6f9abf261c8d270ec0f471c0c60028fd031601d320336ed83d17971b4",
+    "js/characters/WarriorReferenceLayers.js": "d81b3c99fa2450af779737b31046f8f691167858cf14451f43978ba7430e9974",
+    "js/characters/warriorSwordPivots.js": "c30c20e1801e3d751bf4b8eb3bf8d86d8e857e3faae72a463f89a61c02d3ad20",
+    "js/combat/attackTiming.js": "12f2edc6f87c5615301b91203b80fc6c4fd50dda513efa9dca31cc2bc940ba57",
+    "js/combat/classEffects.js": "5b2f004a757d4eee34b4db3e3b57c93d71cdd21f6be5982688e664b173078215",
+    "js/combat/combat.js": "dd365ac80b2f10c57479f166702e3370e88430766709495c8d81877b286c4c69",
+    "js/combat/geometry.js": "085be5267d3db050b24f4fbf32d7ed872a6f29e28e0f5b07e963751ef2c82f25",
+    "js/combat/projectiles.js": "a6b09902fb063b092d204741a740029e3b242a0bf49c97c3d5fc9fddcae1362f",
+    "js/combat/skillRuntime.js": "a74f2de1f23b76799cf6885ee43fe4aaac863b3309ca14dbdfd14cdb7971464b",
+    "js/combat/targeting.js": "e54e6a612ade2cd6a2d7a8b135de1668610c15f695f86f69352ccf60e9b94f10",
+    "js/config/gameConfig.js": "86046b0c85d4cebee18497a0c1ae0652f73500655fb4692ab2f5e450addcaa3b",
+    "js/dungeons/desertDungeonLayouts.js": "d5c731db3f6026279a3d0dae8b5dab85862fec3babbc2262b697f8004fc87c56",
+    "js/dungeons/desertDungeons.js": "2275d0dddbe990c2b1a173219391fcec6344ec8ba6e4e1c4e224c427c8cd4360",
+    "js/dungeons/dungeonData.js": "afbb46b2a24f11db48a7ee1f2b55afb3e95371af3442af32051f2c8959e6a20c",
+    "js/dungeons/dungeonSession.js": "4427f875988b5392bb0d056b479a7325c2b732c2ac25857b1ca25a6e259771b7",
+    "js/equipment/armor.js": "2fc197ca185514cca709aae0e72ed44839fd31cd4533db53b0b8ddd9348dbf26",
+    "js/equipment/catalog.js": "13b68d2af409be3bca4da484a3786f021aeb196c1a5cf541ccad82595e790d76",
+    "js/equipment/endgameMaterials.js": "2118bdbdbe6d087d5af7cb3b467060d50f5e4cc5580c84efb9a7b213bddcbe15",
+    "js/equipment/items.js": "21609d6fe782d7af1a085679664c89e0d5e377392904699987d7e59fba44f3e5",
+    "js/equipment/stacking.js": "4cd113b7ed1d85b539567b02eb9224625d9a431cc129101df6921a7422b1e650",
+    "js/i18n/entityNames.js": "d3616c6395db5ddeafccb6a6a8179872814d1b91da985407d676ba6ca66e3dda",
+    "js/i18n/skillNames.js": "15f6c0269f2c2a74419379d3d38351fca0ac9f72829c5793de9599e8bc16e847",
+    "js/loot/groundLoot.js": "f42d63ee1b427ec4fd87a133c0e5773877129bc9aee6428d21c87074b9591119",
+    "js/monsters/desertBossData.js": "516d834af7fa9f0f6b1b5f7a7dea3f92f72aed09b701ac10292431743ad0d540",
+    "js/monsters/encounterLoot.js": "40b8b966fac2aefa7ea1edd7a2aa365a5fc7c1125046d94f284fd7c418d62301",
+    "js/monsters/health.js": "abdf992af94fc3a23415b40ef5e04da050d58e252d1d2362521077bc09645aac",
+    "js/monsters/loot.js": "bb51ee7447f7e07441617364155705848cd491478c987b35c25b6b1b7436b076",
+    "js/monsters/monsterBehavior.js": "d031cd877d357995a44539e939de68d7243075ad9212a621798af5b4a8fcc29b",
+    "js/monsters/monsters.js": "0c60ede0c78dd94160244666298c8cf67ae85b840ef51408855c8a7fa4e19905",
+    "js/monsters/MonsterStream.js": "7cd08c2f214493ddb59fbec0ec5429bca0f4a213d4fd77c26e32650cd51349ee",
+    "js/monsters/MonsterSystem.js": "86a2d4e1f9d015c27839804fb2be24fb2838e2ca86450d1bcb7b86c1e8c42ea2",
+    "js/monsters/monsterVisuals.js": "b5b7755c8d50ca0f05a52edab2eb5e572c159ccc3e2dff77f300c61d68e5ec14",
+    "js/monsters/movementProfiles.js": "0997d1c8be60dee0364afe75ade0dae3ed056198decbe245152409c88df61ff4",
+    "js/monsters/speciesRuntime.js": "4fccd3fd2e6e922dfcdb9a0b203da15f7c76180aad508a6b5869e39eeb541f33",
+    "js/monsters/stoneGiantEncounter.js": "c48777ca5fca2ed29393a7d8a4b8f6db80cf87a6c5f7ae122857e414876f8bca",
+    "js/monsters/stoneGiantVisuals.js": "4a745d3228761ca06736f542f62527b177da7c0d16d1f98d0103aa3aa0bdc0e3",
+    "js/npc/npcData.js": "49d2d7f3a82c4f384ae1d9fcb1172d7789173cf876a18f47ee7d7931f2ada5f4",
+    "js/npc/task10NpcData.js": "eb3089517f5975581dc2f665fc5a792e559f1a664b66a5e71422070d7533baed",
+    "js/quests/dailyQuests.js": "7db50aa311268c22c9aeb161073218a76fa6704a985cbc0f86cf1d3f2259d8de",
+    "js/quests/quests.js": "1cde0fe0339e175155e1f3e61ed607648f0e0710887e53dcf4f3de1fa971a153",
+    "js/quests/release21QuestData.js": "63ae9e440820ac7efec382c109437afa23a52cc4eae1de2d1b53476afd758652",
+    "js/quests/remapWorldObjectives.js": "310e8e557952831aa73ca51466f4bba2ba6dbd60a630cc98abaaf8a50ad38808",
+    "js/quests/task10QuestData.js": "98efd0607268459676f94fbe54d34b817a264c0700f77c26692bc25d54666378",
+    "js/skills/skillData.js": "d58ddc821679ce936d923247c1dff15312a3c9da0a1d9944bcf09321a7203e9d",
+    "js/skills/skillSlots.js": "8223c58d7a1d2456303bdee3dcdc06150ef4f1eeae798873b7eaf284f6a40e3d",
+    "js/systems/attributes.js": "745bc0cf2cd4ef9218c99fa5a17b869dc8f39eedde36744f928d9b7c41207045",
+    "js/systems/potions.js": "83d087906ad54f5fce156b512e812a44544f544a8d745f8767d0ef65fb98960b",
+    "js/systems/progression.js": "cc23747c01b16a7854ba664685d97b68c2317756807831361efb41efcdad942b",
+    "js/systems/progressionPolicy.js": "758e47912e7d6ec94e695cf7fdcdc207ac51304a30c27e1214704438c3305a76",
+    "js/systems/progressState.js": "a2e5657d2c9e8cbee2d2f76e5f9264f58294f88fdd524c6f10980200962f02bf",
+    "js/systems/worldLayoutMigration.js": "b50ffaeb4f17d5438c6df807ad998071562a52d9365285cafcba5279523732b0",
+    "js/world/biomes.js": "0173880594a61f1d94f16f20be81defd1ab2e4e646f1186f974a7ecc6b6ff35f",
+    "js/world/campAliases.js": "7595aefb93f1a002e7b807942d83e8bfa7ffe8cf0e4e55a714f40ecec518dbd9",
+    "js/world/chunkGeometry.js": "a74910a9f3b9f1bd2fef37b258f52aef113731dacdeeee0b9d49e6ec2c36fcc1",
+    "js/world/climate.js": "d82076e4a0599d0a9e9480ccb9908702dbfbc1b27a56a63d8d42fefc1f76e440",
+    "js/world/climateRoads.js": "47b6f518b476aaeacf59b44b6474e6f0798b19d744985c095aa3dbae72575bc8",
+    "js/world/desertContent.js": "7583e4268fa00a8f91520f048868de6d519375cf2f9c026e0a2a58e668600272",
+    "js/world/npcTravelData.js": "dfd6acfefd6994712eb877494f41cfb41106629b2edde443b3b6af63f1cec360",
+    "js/world/projection.js": "97de467e44a8445defc1cc0ad029bfdfce84f1b0b08644b210ea034afe28facb",
+    "js/world/regionContent.js": "3d54c592833cc2244c14605c9aec61f4d98551fbddc478383c471531219a2f8f",
+    "js/world/roadPaths.js": "6180cb826673459cecb10318062e65e9fadb7c5553d09a182dbc36fcd76ba4d6",
+    "js/world/settlementExpansion.js": "0215a622c9780ac9308b24366fc0a008fa49d83688988ff357472d8576c35794",
+    "js/world/task10Layout.js": "b77972f432c1bc1adaabf5c4dd7437f7a1c5f3218b63b4dcb60d068f67ca786b",
+    "js/world/towns.js": "bf7f4cf63f90aadbf4d9ac3119636f2607530370c78113ec554f926cc200331f",
+    "js/world/worldData.js": "0aff3a33bdd63f1244ec7a8488ed1158977026121088bbb130f217257c580927",
+    "js/world/worldExpansion.js": "9980a5a709c45a633a990a04160d59b4392b3ee160e698616a498d6d3df60439",
+    "scripts/measure-stone-giant-dps.mjs": "83fe52677d186524eedcd8c65e78137bc578f5308b9c0e4a5ed5d283cf9d0ec4",
+    "scripts/simulate-stone-giant-battle.mjs": "6411346a5f193ec07c01483f195be18b2d3d7fe8f3788e7386206bb64cfb1499"
+  }
+}

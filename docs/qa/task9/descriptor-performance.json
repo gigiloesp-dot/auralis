@@ -1,0 +1,31 @@
+{
+  "elapsedMs": 5947.558349999999,
+  "rss": 68186112,
+  "heapUsed": 16817896,
+  "rows": [
+    {
+      "id": "forest",
+      "descriptorMs": 2330.093999,
+      "camps": 154,
+      "monsters": 1435
+    },
+    {
+      "id": "north",
+      "descriptorMs": 2361.6977030000003,
+      "camps": 145,
+      "monsters": 1345
+    },
+    {
+      "id": "ancient",
+      "descriptorMs": 890.4075709999997,
+      "camps": 75,
+      "monsters": 715
+    },
+    {
+      "id": "desert",
+      "descriptorMs": 356.27018899999985,
+      "camps": 96,
+      "monsters": 864
+    }
+  ]
+}

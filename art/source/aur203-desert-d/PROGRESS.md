@@ -1,0 +1,2 @@
+Pack D art-only READY: four original48-pose models. All192 native poses reviewed on beige+dark.48 unique RGBA hashes/model, alpha/gutters/footlines pass. Runtime/browser remain separate.
+069 accepted source is desert-species-069-repair.png from final re-layout generation f1041b4d. Prior source/rejected repairs retained; checkpoint-before-069-alpha-repair preserves old canonical PNG/atlas/module/QA. Other11 B/C/D assets unchanged.

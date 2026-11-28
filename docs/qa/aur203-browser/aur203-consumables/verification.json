@@ -1,0 +1,653 @@
+{
+  "scope": "Prepared actual MonsterSystem death and real touch UI; capacity-only supplemental createGroundDrops fixture; not earned progression or physical Android",
+  "records": [
+    {
+      "language": "ru",
+      "width": 640,
+      "killed": {
+        "fixture": "Prepared future Date.now, high hero HP, isolated residents, empty bag/pouch; real MonsterSystem.hit/death hook. Existing equipment RNG untouched.",
+        "monster": {
+          "id": "forest-spot-080-mob-0",
+          "key": "forest:forest-spot-080-mob-0",
+          "speciesId": "forest-species-080"
+        },
+        "deathAt": 1795886210495,
+        "death": {
+          "deadUntil": 1795886240495,
+          "killedAt": 1795886210495,
+          "hp": 0
+        },
+        "before": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "after": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "potions": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "hpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          },
+          {
+            "id": "drop-2",
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          }
+        ]
+      },
+      "anonymous": [
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        },
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        }
+      ],
+      "reloaded": {
+        "potions": {
+          "hp": 1,
+          "mp": 0
+        },
+        "inventory": [],
+        "drops": {
+          "drop-2": {
+            "id": "drop-2",
+            "region": "forest",
+            "x": 8988.915992701694,
+            "y": 8208.344900033615,
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            },
+            "createdAt": 1795886210495
+          }
+        }
+      },
+      "partial": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "final": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "errors": []
+    },
+    {
+      "language": "en",
+      "width": 640,
+      "killed": {
+        "fixture": "Prepared future Date.now, high hero HP, isolated residents, empty bag/pouch; real MonsterSystem.hit/death hook. Existing equipment RNG untouched.",
+        "monster": {
+          "id": "forest-spot-080-mob-0",
+          "key": "forest:forest-spot-080-mob-0",
+          "speciesId": "forest-species-080"
+        },
+        "deathAt": 1795886240868,
+        "death": {
+          "deadUntil": 1795886270868,
+          "killedAt": 1795886240868,
+          "hp": 0
+        },
+        "before": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "after": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "potions": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "hpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          },
+          {
+            "id": "drop-2",
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          }
+        ]
+      },
+      "anonymous": [
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        },
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        }
+      ],
+      "reloaded": {
+        "potions": {
+          "hp": 1,
+          "mp": 0
+        },
+        "inventory": [],
+        "drops": {
+          "drop-2": {
+            "id": "drop-2",
+            "region": "forest",
+            "x": 8988.915992701694,
+            "y": 8208.344900033615,
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            },
+            "createdAt": 1795886240868
+          }
+        }
+      },
+      "partial": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "final": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "errors": []
+    },
+    {
+      "language": "es",
+      "width": 640,
+      "killed": {
+        "fixture": "Prepared future Date.now, high hero HP, isolated residents, empty bag/pouch; real MonsterSystem.hit/death hook. Existing equipment RNG untouched.",
+        "monster": {
+          "id": "forest-spot-080-mob-0",
+          "key": "forest:forest-spot-080-mob-0",
+          "speciesId": "forest-species-080"
+        },
+        "deathAt": 1795886287361,
+        "death": {
+          "deadUntil": 1795886317361,
+          "killedAt": 1795886287361,
+          "hp": 0
+        },
+        "before": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "after": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "potions": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "hpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          },
+          {
+            "id": "drop-2",
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          }
+        ]
+      },
+      "anonymous": [
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        },
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        }
+      ],
+      "reloaded": {
+        "potions": {
+          "hp": 1,
+          "mp": 0
+        },
+        "inventory": [],
+        "drops": {
+          "drop-2": {
+            "id": "drop-2",
+            "region": "forest",
+            "x": 8988.915992701694,
+            "y": 8208.344900033615,
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            },
+            "createdAt": 1795886287361
+          }
+        }
+      },
+      "partial": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "final": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "errors": []
+    },
+    {
+      "language": "ru",
+      "width": 740,
+      "killed": {
+        "fixture": "Prepared future Date.now, high hero HP, isolated residents, empty bag/pouch; real MonsterSystem.hit/death hook. Existing equipment RNG untouched.",
+        "monster": {
+          "id": "forest-spot-080-mob-0",
+          "key": "forest:forest-spot-080-mob-0",
+          "speciesId": "forest-species-080"
+        },
+        "deathAt": 1795886337845,
+        "death": {
+          "deadUntil": 1795886367845,
+          "killedAt": 1795886337845,
+          "hp": 0
+        },
+        "before": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "after": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "potions": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "hpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          },
+          {
+            "id": "drop-2",
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          }
+        ]
+      },
+      "anonymous": [
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        },
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        }
+      ],
+      "reloaded": {
+        "potions": {
+          "hp": 1,
+          "mp": 0
+        },
+        "inventory": [],
+        "drops": {
+          "drop-2": {
+            "id": "drop-2",
+            "region": "forest",
+            "x": 8988.915992701694,
+            "y": 8208.344900033615,
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            },
+            "createdAt": 1795886337845
+          }
+        }
+      },
+      "partial": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "final": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "errors": []
+    },
+    {
+      "language": "en",
+      "width": 740,
+      "killed": {
+        "fixture": "Prepared future Date.now, high hero HP, isolated residents, empty bag/pouch; real MonsterSystem.hit/death hook. Existing equipment RNG untouched.",
+        "monster": {
+          "id": "forest-spot-080-mob-0",
+          "key": "forest:forest-spot-080-mob-0",
+          "speciesId": "forest-species-080"
+        },
+        "deathAt": 1795886399341,
+        "death": {
+          "deadUntil": 1795886429341,
+          "killedAt": 1795886399341,
+          "hp": 0
+        },
+        "before": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "after": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "potions": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "hpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          },
+          {
+            "id": "drop-2",
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          }
+        ]
+      },
+      "anonymous": [
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        },
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        }
+      ],
+      "reloaded": {
+        "potions": {
+          "hp": 1,
+          "mp": 0
+        },
+        "inventory": [],
+        "drops": {
+          "drop-2": {
+            "id": "drop-2",
+            "region": "forest",
+            "x": 8988.915992701694,
+            "y": 8208.344900033615,
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            },
+            "createdAt": 1795886399341
+          }
+        }
+      },
+      "partial": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "final": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "errors": []
+    },
+    {
+      "language": "es",
+      "width": 740,
+      "killed": {
+        "fixture": "Prepared future Date.now, high hero HP, isolated residents, empty bag/pouch; real MonsterSystem.hit/death hook. Existing equipment RNG untouched.",
+        "monster": {
+          "id": "forest-spot-080-mob-0",
+          "key": "forest:forest-spot-080-mob-0",
+          "speciesId": "forest-species-080"
+        },
+        "deathAt": 1795886453863,
+        "death": {
+          "deadUntil": 1795886483863,
+          "killedAt": 1795886453863,
+          "hp": 0
+        },
+        "before": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "after": {
+          "potions": {
+            "hp": 0,
+            "mp": 0
+          },
+          "inventory": 0
+        },
+        "potions": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "hpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          },
+          {
+            "id": "drop-2",
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            }
+          }
+        ]
+      },
+      "anonymous": [
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        },
+        {
+          "category": "chest",
+          "types": [
+            "Graphics"
+          ],
+          "data": [
+            "category",
+            "lootId"
+          ]
+        }
+      ],
+      "reloaded": {
+        "potions": {
+          "hp": 1,
+          "mp": 0
+        },
+        "inventory": [],
+        "drops": {
+          "drop-2": {
+            "id": "drop-2",
+            "region": "forest",
+            "x": 8988.915992701694,
+            "y": 8208.344900033615,
+            "item": {
+              "id": "mpPotion",
+              "rarity": "common",
+              "quantity": 1
+            },
+            "createdAt": 1795886453863
+          }
+        }
+      },
+      "partial": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "final": {
+        "potions": {
+          "hp": 99,
+          "mp": 1
+        },
+        "remaining": 2
+      },
+      "errors": []
+    }
+  ]
+}

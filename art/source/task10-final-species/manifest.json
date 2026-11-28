@@ -1,0 +1,535 @@
+[
+  {
+    "id": "forest-species-077",
+    "names": {
+      "ru": "Орешниковый гривастый волк",
+      "en": "Hazel-ruff wolf",
+      "es": "Lobo de gorguera avellana"
+    },
+    "baseType": "forestWolf",
+    "biome": "woodland",
+    "movement": "ground",
+    "locomotion": "quadruped",
+    "proposedAbilityPattern": [
+      "pounce",
+      "roots"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A woodland QUADRUPED wolf with a narrow long dark muzzle, enormous circular layered hazel-leaf fur ruff behind the head, sharp short ears rising above the ruff, a long wiry brindled brown body, four long black paws, and a short thick club-shaped furry tail. The leafy ruff is natural fur shaped like overlapping leaves, no antlers or armor. Genuine four-legged wolf anatomy; loping running, biting pounce, full animal collapsed death.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "forest-species-077-composited-qa.png",
+      "darkContactSheet": "forest-species-077-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "f3fd0238e5d912ab9268cfb6f9a0434802484acd0f129d021264b96e5a114471",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/forest-species-077-original.png",
+    "sourceSHA256": "2d4c35e35aa0e9d6b045d93e1bdee9dba2828e010f26130fbd28dc4941f465c8",
+    "climateEvidence": {
+      "id": "forest-species-077",
+      "region": "forest",
+      "x": 11713,
+      "y": 3657,
+      "type": "forestWolf",
+      "level": 13,
+      "climate": {
+        "id": "woodland",
+        "type": "grove",
+        "color": 5405507,
+        "names": {
+          "ru": "Лесные просторы",
+          "en": "Woodlands",
+          "es": "Bosques"
+        },
+        "transition": false
+      }
+    }
+  },
+  {
+    "id": "forest-species-078",
+    "names": {
+      "ru": "Паук дверного свода",
+      "en": "Doorback vault spider",
+      "es": "Araña de bóveda portal"
+    },
+    "baseType": "spider",
+    "biome": "abandoned-city",
+    "movement": "ground",
+    "locomotion": "arachnid",
+    "proposedAbilityPattern": [
+      "venom",
+      "roots"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "An abandoned-city SPIDER with exactly eight thick jointed slate-grey legs, compact dark head with four amber eyes, huge flattened octagonal abdomen shaped like a carved weathered stone vault door with a raised bronze central ring. Tiny ivy accents fixed to the shell. No human limbs, weapons, horns, particles or webs. Low eight-legged scuttling motion, front fang strike, all legs curling inward for collapsed dead spider.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "forest-species-078-composited-qa.png",
+      "darkContactSheet": "forest-species-078-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "231fb2adcb71c1a064eee40adcd269dd78060c27dec93d591c86152fe08a93e8",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/forest-species-078-original.png",
+    "sourceSHA256": "1064ad65bd5a72512bf352f1081435529889647d9e138c0b1b207ce8a915f6a6",
+    "climateEvidence": {
+      "id": "forest-species-078",
+      "region": "forest",
+      "x": 13759,
+      "y": 15391,
+      "type": "spider",
+      "level": 23,
+      "climate": {
+        "id": "abandoned-city",
+        "type": "abandonedCity",
+        "color": 7829598,
+        "names": {
+          "ru": "Заросший город",
+          "en": "Overgrown city",
+          "es": "Ciudad invadida"
+        },
+        "transition": false
+      }
+    }
+  },
+  {
+    "id": "forest-species-079",
+    "names": {
+      "ru": "Папоротниковый орк-жнец",
+      "en": "Bracken sickle orc",
+      "es": "Orco segador de helechos"
+    },
+    "baseType": "forestOrc",
+    "biome": "woodland",
+    "movement": "ground",
+    "locomotion": "biped",
+    "proposedAbilityPattern": [
+      "cleave",
+      "roots"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A woodland BIPED forest orc with olive-green skin, broad flat nose, two short upward lower tusks, burly adult human proportions and exactly two legs. Wears a very broad rounded woven bracken hat with a central red mushroom knob, short dark leather vest, wrapped calves and rough brown boots. Holds a small crescent-shaped wooden buckler and short thick harvesting sickle CLOSE against body. No giant weapon protrusions. Running strides, compact sickle slash, recoiling hurt, crumpled lying dead orc.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "forest-species-079-composited-qa.png",
+      "darkContactSheet": "forest-species-079-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "50452d347d1f7456dc70a3f997814ded9af62bf096f205842f61f85422672214",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/forest-species-079-original.png",
+    "sourceSHA256": "83d36f534ebad69037113e56648c78110b2b688d6cc9d914873ea05951877a76",
+    "climateEvidence": {
+      "id": "forest-species-079",
+      "region": "forest",
+      "x": 12266,
+      "y": 11281,
+      "type": "forestOrc",
+      "level": 18,
+      "climate": {
+        "id": "woodland",
+        "type": "grove",
+        "color": 5667654,
+        "names": {
+          "ru": "Лесные просторы",
+          "en": "Woodlands",
+          "es": "Bosques"
+        },
+        "transition": true
+      }
+    }
+  },
+  {
+    "id": "north-species-074",
+    "names": {
+      "ru": "Медноурновый плакальщик",
+      "en": "Copper urn dirge",
+      "es": "Lamento de urna cobriza"
+    },
+    "baseType": "wraith",
+    "biome": "volcanic",
+    "movement": "hover",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "haunt",
+      "fan"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A volcanic HOVERING WRAITH with a tall closed black ceramic urn head, two thick upward copper handles like ears, one horizontal ember eye slit, broad rounded copper shoulder collar, and a charcoal ash cloak widening into a split bell skirt with two large curled tips. Two short clawed hands held in front of chest. No feet or legs, smoke, flames or loose particles. Heavy mournful hovering drift, claw spreading attack, compact shattered urn and collapsed cloth death.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-074-composited-qa.png",
+      "darkContactSheet": "north-species-074-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "8ac032e8debbe5152de6336e4f4e8c350697b29ffdc771975ed771d84db4200a",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/north-species-074-original.png",
+    "sourceSHA256": "9bc460aaad0475b35fc6107e25b1224515e1b42144e5963d6cc8141d1fe5b39d",
+    "climateEvidence": {
+      "id": "north-species-074",
+      "region": "north",
+      "x": 19498,
+      "y": 11849,
+      "type": "wraith",
+      "level": 36,
+      "climate": {
+        "id": "volcanic",
+        "type": "volcanic",
+        "color": 4341051,
+        "names": {
+          "ru": "Пепельная гряда",
+          "en": "Ashen range",
+          "es": "Cordillera de ceniza"
+        },
+        "transition": false
+      }
+    }
+  },
+  {
+    "id": "north-species-075",
+    "names": {
+      "ru": "Серпоухая ледяная мышь",
+      "en": "Crescent-ear ice bat",
+      "es": "Murciélago glacial de orejas lunares"
+    },
+    "baseType": "iceBat",
+    "biome": "snow",
+    "movement": "ground",
+    "locomotion": "winged",
+    "proposedAbilityPattern": [
+      "dive",
+      "frost"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "A snow WINGED BAT with a plump oval white furry torso, enormous crescent-curved swept-back icy teal ears, tiny blunt muzzle, two dark blue clawed feet, and two long narrow sharply triangular bat wings with three dark cobalt ribs and opaque pearl-blue membranes. Bat anatomy, no bird feathers, no horns, no aura. Wide-wing idle, clear alternating wing flaps in two movement rows, diving claw strike, tucked recoil, grounded collapsed dead bat with folded triangular wings.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "north-species-075-composited-qa.png",
+      "darkContactSheet": "north-species-075-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "dcbe5bf5ee9d9e6f1aceaca3b97ee03bdda9ee1369db3d06d1769b2b1fa1ebcd",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/north-species-075-original.png",
+    "sourceSHA256": "730cf5fbb40f308bc45e81d6890abc8f5b40eec2e03de7d7a4ce8818c51c6e71",
+    "climateEvidence": {
+      "id": "north-species-075",
+      "region": "north",
+      "x": 13106,
+      "y": 17130,
+      "type": "iceBat",
+      "level": 35,
+      "climate": {
+        "id": "snow",
+        "type": "snowfield",
+        "color": 14871280,
+        "names": {
+          "ru": "Снежные просторы",
+          "en": "Snowfields",
+          "es": "Campos nevados"
+        },
+        "transition": false
+      }
+    }
+  },
+  {
+    "id": "ancient-species-042",
+    "names": {
+      "ru": "Гаргулья солнечной печати",
+      "en": "Sunseal gargoyle",
+      "es": "Gárgola del sello solar"
+    },
+    "baseType": "ancientGargoyle",
+    "biome": "elder-dry",
+    "movement": "ground",
+    "locomotion": "biped",
+    "proposedAbilityPattern": [
+      "charge",
+      "cleave"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "An elder-dry ancient stone GARGOYLE with a squat sand-gold sandstone body, massive upside-down trapezoid head with a circular carved sun seal in its forehead, two short square muzzle tusks, two muscular arms ending in three blunt claws, two bent thick legs, a short thick chisel tail, and two compact folded stone bat wings rising like pointed shoulder fins. Exactly two arms and two legs. Weathered ochre stone, dry cracks, no blue ice or green moss. Stalking crouched run, double claw swipe, recoiling hurt, collapsed broken gargoyle on ground.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "ancient-species-042-composited-qa.png",
+      "darkContactSheet": "ancient-species-042-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "a2c0f8a1f612522693f48740a366404238a02e2283c058856e3ee9c96e20bded",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/ancient-species-042-original.png",
+    "sourceSHA256": "00078b2aaacb8c5c7e395567065fc986017ed3560c9b8741ce3aa43c6276b830",
+    "climateEvidence": {
+      "id": "ancient-species-042",
+      "region": "ancient",
+      "x": 8063,
+      "y": 14346,
+      "type": "ancientGargoyle",
+      "level": 41,
+      "climate": {
+        "id": "elder-dry",
+        "type": "dryground",
+        "color": 11639407,
+        "names": {
+          "ru": "Сухой предел",
+          "en": "Arid frontier",
+          "es": "Frontera árida"
+        }
+      }
+    }
+  },
+  {
+    "id": "ancient-species-043",
+    "names": {
+      "ru": "Огонёк арочного кольца",
+      "en": "Arch-ring wisp",
+      "es": "Fuego fatuo del arco anular"
+    },
+    "baseType": "arcaneWisp",
+    "biome": "elder-ruins",
+    "movement": "hover",
+    "locomotion": "hover",
+    "proposedAbilityPattern": [
+      "blink",
+      "shot"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "An elder-ruins HOVERING arcane WISP shaped as a thick broken horseshoe stone arch surrounding a compact floating faceted amethyst core; two heavy brass hinge blocks form side hands and three short downward stone teeth form the base. The stone arch has a flat top cap, carved lilac runes and warm grey ruined masonry. No human face, no legs, no smoke or particles, hard opaque readable cutout silhouette. Hover with core tilt, side hinge pulse strike, recoiling hurt, shattered arch with extinguished core collapsed on ground.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "ancient-species-043-composited-qa.png",
+      "darkContactSheet": "ancient-species-043-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "691a3d1cbdc9e23bfeee32e974f72d15bd24d47a8163c65a78ae83599536c3d1",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/ancient-species-043-original.png",
+    "sourceSHA256": "c3de77061fe393d583abaccfb627217ff791518bdb6a251ae721008b16c064ef",
+    "climateEvidence": {
+      "id": "ancient-species-043",
+      "region": "ancient",
+      "x": 12446,
+      "y": 4499,
+      "type": "arcaneWisp",
+      "level": 40,
+      "climate": {
+        "id": "elder-ruins",
+        "type": "ruinfield",
+        "color": 8749420,
+        "names": {
+          "ru": "Разрушенные владения",
+          "en": "Shattered dominion",
+          "es": "Dominio derruido"
+        }
+      }
+    }
+  },
+  {
+    "id": "ancient-species-044",
+    "names": {
+      "ru": "Сланцевая молотоголовая гадюка",
+      "en": "Slate hammerhead adder",
+      "es": "Víbora pizarra de cabeza martillo"
+    },
+    "baseType": "desertSnake",
+    "biome": "elder-wastes",
+    "movement": "ground",
+    "locomotion": "serpentine",
+    "proposedAbilityPattern": [
+      "venom",
+      "charge"
+    ],
+    "runtimeRegistered": false,
+    "sourceStatusAtSelection": "prototypeOnly",
+    "design": "An elder-wastes SERPENT: one continuous thick coiled pale slate-grey snake body, exceptionally broad flat hammer-shaped head, narrow black eyes set at each end of hammer head, a short row of chunky dark stone plates along the neck, narrow tapering tail with a blunt black tip. No limbs, wings, antlers, extra heads or particles. Cold stony wastes palette, no desert orange sand. Coiled idle, two distinct S-shaped slither poses, forward fang lunge, recoiling hurt, full snake sprawled slack and collapsed in death.",
+    "sourceRegistration": "measured-complete-pose",
+    "visualQA": {
+      "posesInspected": 48,
+      "status": "PASS",
+      "contactSheet": "ancient-species-044-composited-qa.png",
+      "darkContactSheet": "ancient-species-044-dark-qa.png",
+      "backgrounds": [
+        "beige",
+        "dark"
+      ],
+      "nativeCellSize": [
+        128,
+        192
+      ],
+      "finalAtlasSHA256": "0a1e2542690a91abc68f061596a0e1d4314774589b4fc25894a6e32f0a216528",
+      "checks": [
+        "complete family anatomy and extremities",
+        "no neighboring fragments",
+        "no visible matte on native beige/dark composites",
+        "eight orientations with north-facing backs",
+        "six distinct states",
+        "collapsed drawn death in eight directions",
+        "individual measured footlines",
+        "climate verified against getRegionContent and climateAt",
+        "distinct original silhouette"
+      ]
+    },
+    "source": "art/source/task10-final-species/ancient-species-044-original.png",
+    "sourceSHA256": "01a5f7f795f435d1e9e39d2d7e529f24018db938bff20ce7a382e4cbc8a27193",
+    "climateEvidence": {
+      "id": "ancient-species-044",
+      "region": "ancient",
+      "x": 13755,
+      "y": 8622,
+      "type": "desertSnake",
+      "level": 41,
+      "climate": {
+        "id": "elder-wastes",
+        "type": "wastes",
+        "color": 9605514,
+        "names": {
+          "ru": "Каменное безмолвие",
+          "en": "Stone silence",
+          "es": "Silencio de piedra"
+        }
+      }
+    }
+  }
+]

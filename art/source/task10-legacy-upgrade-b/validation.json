@@ -1,0 +1,983 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "id": "forest-species-011",
+      "pngSha256": "b135757eeb6e49ea60f133d7bd2074db0bba0a4692e48bb19d4a33efc3ba1965",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.43,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 6313,
+          "footline": 195,
+          "paintedWidth": 117,
+          "paintedHeight": 101
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 6347,
+          "footline": 195,
+          "paintedWidth": 108,
+          "paintedHeight": 98
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 7086,
+          "footline": 195,
+          "paintedWidth": 101,
+          "paintedHeight": 114
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 6559,
+          "footline": 196,
+          "paintedWidth": 108,
+          "paintedHeight": 104
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 6079,
+          "footline": 195,
+          "paintedWidth": 113,
+          "paintedHeight": 98
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 6631,
+          "footline": 195,
+          "paintedWidth": 113,
+          "paintedHeight": 101
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 6715,
+          "footline": 195,
+          "paintedWidth": 100,
+          "paintedHeight": 101
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 6551,
+          "footline": 196,
+          "paintedWidth": 104,
+          "paintedHeight": 98
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 5544,
+          "footline": 196,
+          "paintedWidth": 111,
+          "paintedHeight": 70
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 5496,
+          "footline": 195,
+          "paintedWidth": 99,
+          "paintedHeight": 75
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 5199,
+          "footline": 196,
+          "paintedWidth": 87,
+          "paintedHeight": 79
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 5344,
+          "footline": 195,
+          "paintedWidth": 105,
+          "paintedHeight": 70
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 5376,
+          "footline": 196,
+          "paintedWidth": 113,
+          "paintedHeight": 67
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 5575,
+          "footline": 195,
+          "paintedWidth": 104,
+          "paintedHeight": 76
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 5096,
+          "footline": 196,
+          "paintedWidth": 92,
+          "paintedHeight": 78
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 5376,
+          "footline": 196,
+          "paintedWidth": 100,
+          "paintedHeight": 78
+        }
+      ]
+    },
+    {
+      "id": "north-species-000",
+      "pngSha256": "7323f1815ad483229ec4d72af0c5c181a7204a4b9b4ea7913c2445b4fb297aef",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.68,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 4678,
+          "footline": 193,
+          "paintedWidth": 109,
+          "paintedHeight": 83
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 4876,
+          "footline": 193,
+          "paintedWidth": 98,
+          "paintedHeight": 85
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 3428,
+          "footline": 193,
+          "paintedWidth": 59,
+          "paintedHeight": 90
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 4789,
+          "footline": 193,
+          "paintedWidth": 98,
+          "paintedHeight": 83
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 4457,
+          "footline": 193,
+          "paintedWidth": 105,
+          "paintedHeight": 81
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 4337,
+          "footline": 193,
+          "paintedWidth": 89,
+          "paintedHeight": 85
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 3267,
+          "footline": 193,
+          "paintedWidth": 57,
+          "paintedHeight": 88
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 3963,
+          "footline": 193,
+          "paintedWidth": 84,
+          "paintedHeight": 82
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 4554,
+          "footline": 193,
+          "paintedWidth": 132,
+          "paintedHeight": 59
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 4532,
+          "footline": 193,
+          "paintedWidth": 118,
+          "paintedHeight": 61
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 3430,
+          "footline": 193,
+          "paintedWidth": 83,
+          "paintedHeight": 65
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 4557,
+          "footline": 193,
+          "paintedWidth": 121,
+          "paintedHeight": 60
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 4506,
+          "footline": 193,
+          "paintedWidth": 136,
+          "paintedHeight": 55
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 4468,
+          "footline": 193,
+          "paintedWidth": 128,
+          "paintedHeight": 68
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 3893,
+          "footline": 192,
+          "paintedWidth": 86,
+          "paintedHeight": 79
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 4369,
+          "footline": 193,
+          "paintedWidth": 127,
+          "paintedHeight": 66
+        }
+      ]
+    },
+    {
+      "id": "north-species-001",
+      "pngSha256": "3f2df34d8a47a1ce44fff3c803256214ea1eb5058a8a06102b4215be908907a5",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.48,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 17436,
+          "footline": 222,
+          "paintedWidth": 146,
+          "paintedHeight": 190
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 17651,
+          "footline": 221,
+          "paintedWidth": 137,
+          "paintedHeight": 184
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 19592,
+          "footline": 221,
+          "paintedWidth": 153,
+          "paintedHeight": 185
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 17180,
+          "footline": 221,
+          "paintedWidth": 131,
+          "paintedHeight": 186
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 16951,
+          "footline": 222,
+          "paintedWidth": 136,
+          "paintedHeight": 188
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 16765,
+          "footline": 221,
+          "paintedWidth": 139,
+          "paintedHeight": 181
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 18242,
+          "footline": 221,
+          "paintedWidth": 149,
+          "paintedHeight": 181
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 16572,
+          "footline": 221,
+          "paintedWidth": 128,
+          "paintedHeight": 183
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 10590,
+          "footline": 223,
+          "paintedWidth": 159,
+          "paintedHeight": 99
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 9704,
+          "footline": 224,
+          "paintedWidth": 161,
+          "paintedHeight": 99
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 10702,
+          "footline": 223,
+          "paintedWidth": 162,
+          "paintedHeight": 98
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 9208,
+          "footline": 223,
+          "paintedWidth": 162,
+          "paintedHeight": 93
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 9895,
+          "footline": 223,
+          "paintedWidth": 160,
+          "paintedHeight": 92
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 9362,
+          "footline": 223,
+          "paintedWidth": 160,
+          "paintedHeight": 96
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 10259,
+          "footline": 223,
+          "paintedWidth": 160,
+          "paintedHeight": 97
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 9466,
+          "footline": 223,
+          "paintedWidth": 160,
+          "paintedHeight": 98
+        }
+      ]
+    },
+    {
+      "id": "north-species-002",
+      "pngSha256": "0dc3ce986dd5707395bb490fffab042db199584c937c71ceedb08db472d1d9af",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.55,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 5615,
+          "footline": 208,
+          "paintedWidth": 88,
+          "paintedHeight": 132
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 5828,
+          "footline": 208,
+          "paintedWidth": 66,
+          "paintedHeight": 132
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 5738,
+          "footline": 208,
+          "paintedWidth": 64,
+          "paintedHeight": 134
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 5848,
+          "footline": 207,
+          "paintedWidth": 69,
+          "paintedHeight": 131
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 5051,
+          "footline": 208,
+          "paintedWidth": 76,
+          "paintedHeight": 131
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 5750,
+          "footline": 208,
+          "paintedWidth": 74,
+          "paintedHeight": 132
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 5878,
+          "footline": 208,
+          "paintedWidth": 66,
+          "paintedHeight": 137
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 5786,
+          "footline": 208,
+          "paintedWidth": 79,
+          "paintedHeight": 132
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 5166,
+          "footline": 208,
+          "paintedWidth": 128,
+          "paintedHeight": 73
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 5068,
+          "footline": 208,
+          "paintedWidth": 115,
+          "paintedHeight": 76
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 4740,
+          "footline": 208,
+          "paintedWidth": 97,
+          "paintedHeight": 90
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 5384,
+          "footline": 208,
+          "paintedWidth": 123,
+          "paintedHeight": 77
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 5287,
+          "footline": 208,
+          "paintedWidth": 124,
+          "paintedHeight": 78
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 5219,
+          "footline": 208,
+          "paintedWidth": 129,
+          "paintedHeight": 84
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 5304,
+          "footline": 208,
+          "paintedWidth": 118,
+          "paintedHeight": 93
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 4921,
+          "footline": 207,
+          "paintedWidth": 129,
+          "paintedHeight": 85
+        }
+      ]
+    },
+    {
+      "id": "north-species-004",
+      "pngSha256": "5e6e0f82ca3255e9aaa4ad641f19dc42e64780ca354593168cecc1b2c565a4c6",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.48,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 6602,
+          "footline": 207,
+          "paintedWidth": 102,
+          "paintedHeight": 141
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 6485,
+          "footline": 207,
+          "paintedWidth": 99,
+          "paintedHeight": 132
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 6816,
+          "footline": 207,
+          "paintedWidth": 103,
+          "paintedHeight": 146
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 6374,
+          "footline": 207,
+          "paintedWidth": 96,
+          "paintedHeight": 134
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 6593,
+          "footline": 207,
+          "paintedWidth": 105,
+          "paintedHeight": 132
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 6399,
+          "footline": 207,
+          "paintedWidth": 103,
+          "paintedHeight": 130
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 6393,
+          "footline": 207,
+          "paintedWidth": 113,
+          "paintedHeight": 153
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 6110,
+          "footline": 207,
+          "paintedWidth": 106,
+          "paintedHeight": 137
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 5530,
+          "footline": 207,
+          "paintedWidth": 147,
+          "paintedHeight": 76
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 5354,
+          "footline": 207,
+          "paintedWidth": 142,
+          "paintedHeight": 82
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 4821,
+          "footline": 207,
+          "paintedWidth": 138,
+          "paintedHeight": 78
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 4841,
+          "footline": 207,
+          "paintedWidth": 140,
+          "paintedHeight": 75
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 5290,
+          "footline": 207,
+          "paintedWidth": 143,
+          "paintedHeight": 75
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 5087,
+          "footline": 207,
+          "paintedWidth": 137,
+          "paintedHeight": 75
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 5335,
+          "footline": 207,
+          "paintedWidth": 152,
+          "paintedHeight": 91
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 5109,
+          "footline": 207,
+          "paintedWidth": 151,
+          "paintedHeight": 82
+        }
+      ]
+    },
+    {
+      "id": "north-species-005",
+      "pngSha256": "75b34ff07b791b0d07b3f99a3db51496cead449f601a1fc2ee44b64a214229a3",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.6,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 13494,
+          "footline": 220,
+          "paintedWidth": 157,
+          "paintedHeight": 140
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 13308,
+          "footline": 220,
+          "paintedWidth": 142,
+          "paintedHeight": 133
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 11490,
+          "footline": 220,
+          "paintedWidth": 110,
+          "paintedHeight": 141
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 13017,
+          "footline": 220,
+          "paintedWidth": 140,
+          "paintedHeight": 131
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 12898,
+          "footline": 220,
+          "paintedWidth": 157,
+          "paintedHeight": 137
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 12502,
+          "footline": 220,
+          "paintedWidth": 135,
+          "paintedHeight": 140
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 10736,
+          "footline": 221,
+          "paintedWidth": 111,
+          "paintedHeight": 144
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 12613,
+          "footline": 220,
+          "paintedWidth": 138,
+          "paintedHeight": 140
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 8449,
+          "footline": 220,
+          "paintedWidth": 161,
+          "paintedHeight": 90
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 9633,
+          "footline": 220,
+          "paintedWidth": 160,
+          "paintedHeight": 99
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 10326,
+          "footline": 220,
+          "paintedWidth": 145,
+          "paintedHeight": 101
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 9620,
+          "footline": 220,
+          "paintedWidth": 159,
+          "paintedHeight": 95
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 8006,
+          "footline": 221,
+          "paintedWidth": 160,
+          "paintedHeight": 88
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 9206,
+          "footline": 219,
+          "paintedWidth": 159,
+          "paintedHeight": 98
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 9570,
+          "footline": 220,
+          "paintedWidth": 143,
+          "paintedHeight": 106
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 8740,
+          "footline": 220,
+          "paintedWidth": 160,
+          "paintedHeight": 97
+        }
+      ]
+    },
+    {
+      "id": "north-species-009",
+      "pngSha256": "2438661b5a63f7840d45b1ad70d526eb9825229eb5646acb9ef2912449d80111",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.48,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 6957,
+          "footline": 217,
+          "paintedWidth": 118,
+          "paintedHeight": 144
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 7058,
+          "footline": 217,
+          "paintedWidth": 113,
+          "paintedHeight": 143
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 6787,
+          "footline": 217,
+          "paintedWidth": 90,
+          "paintedHeight": 149
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 7176,
+          "footline": 217,
+          "paintedWidth": 106,
+          "paintedHeight": 142
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 6877,
+          "footline": 217,
+          "paintedWidth": 119,
+          "paintedHeight": 141
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 7289,
+          "footline": 217,
+          "paintedWidth": 114,
+          "paintedHeight": 146
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 6931,
+          "footline": 217,
+          "paintedWidth": 98,
+          "paintedHeight": 147
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 6949,
+          "footline": 217,
+          "paintedWidth": 109,
+          "paintedHeight": 142
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 5821,
+          "footline": 217,
+          "paintedWidth": 142,
+          "paintedHeight": 72
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 5822,
+          "footline": 217,
+          "paintedWidth": 139,
+          "paintedHeight": 74
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 5142,
+          "footline": 217,
+          "paintedWidth": 130,
+          "paintedHeight": 77
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 5667,
+          "footline": 217,
+          "paintedWidth": 137,
+          "paintedHeight": 73
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 5569,
+          "footline": 218,
+          "paintedWidth": 138,
+          "paintedHeight": 71
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 6059,
+          "footline": 217,
+          "paintedWidth": 140,
+          "paintedHeight": 74
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 5288,
+          "footline": 218,
+          "paintedWidth": 136,
+          "paintedHeight": 77
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 5726,
+          "footline": 217,
+          "paintedWidth": 142,
+          "paintedHeight": 81
+        }
+      ]
+    },
+    {
+      "id": "north-species-016",
+      "pngSha256": "0276b38705bd77d32384b37c240ac3e99a7c86cf1dc15aed339747743e49194b",
+      "old32RGBAExact": true,
+      "old32AtlasFramesExact": true,
+      "oldOriginsExact": true,
+      "scale": 0.45,
+      "poses": [
+        {
+          "pose": "hurt/e",
+          "opaquePixels": 3302,
+          "footline": 198,
+          "paintedWidth": 78,
+          "paintedHeight": 92
+        },
+        {
+          "pose": "hurt/se",
+          "opaquePixels": 3517,
+          "footline": 198,
+          "paintedWidth": 79,
+          "paintedHeight": 94
+        },
+        {
+          "pose": "hurt/s",
+          "opaquePixels": 3746,
+          "footline": 198,
+          "paintedWidth": 70,
+          "paintedHeight": 97
+        },
+        {
+          "pose": "hurt/sw",
+          "opaquePixels": 3593,
+          "footline": 198,
+          "paintedWidth": 72,
+          "paintedHeight": 90
+        },
+        {
+          "pose": "hurt/w",
+          "opaquePixels": 2925,
+          "footline": 198,
+          "paintedWidth": 74,
+          "paintedHeight": 83
+        },
+        {
+          "pose": "hurt/nw",
+          "opaquePixels": 3295,
+          "footline": 198,
+          "paintedWidth": 71,
+          "paintedHeight": 91
+        },
+        {
+          "pose": "hurt/n",
+          "opaquePixels": 3474,
+          "footline": 197,
+          "paintedWidth": 68,
+          "paintedHeight": 98
+        },
+        {
+          "pose": "hurt/ne",
+          "opaquePixels": 3186,
+          "footline": 198,
+          "paintedWidth": 67,
+          "paintedHeight": 85
+        },
+        {
+          "pose": "death/e",
+          "opaquePixels": 2594,
+          "footline": 198,
+          "paintedWidth": 93,
+          "paintedHeight": 43
+        },
+        {
+          "pose": "death/se",
+          "opaquePixels": 2724,
+          "footline": 198,
+          "paintedWidth": 84,
+          "paintedHeight": 53
+        },
+        {
+          "pose": "death/s",
+          "opaquePixels": 2716,
+          "footline": 198,
+          "paintedWidth": 75,
+          "paintedHeight": 50
+        },
+        {
+          "pose": "death/sw",
+          "opaquePixels": 2852,
+          "footline": 198,
+          "paintedWidth": 87,
+          "paintedHeight": 47
+        },
+        {
+          "pose": "death/w",
+          "opaquePixels": 2513,
+          "footline": 198,
+          "paintedWidth": 96,
+          "paintedHeight": 43
+        },
+        {
+          "pose": "death/nw",
+          "opaquePixels": 2859,
+          "footline": 198,
+          "paintedWidth": 87,
+          "paintedHeight": 56
+        },
+        {
+          "pose": "death/n",
+          "opaquePixels": 2827,
+          "footline": 198,
+          "paintedWidth": 90,
+          "paintedHeight": 57
+        },
+        {
+          "pose": "death/ne",
+          "opaquePixels": 2602,
+          "footline": 198,
+          "paintedWidth": 89,
+          "paintedHeight": 53
+        }
+      ]
+    }
+  ],
+  "oldFramesPreserved": 256,
+  "newPosesValidated": 128
+}

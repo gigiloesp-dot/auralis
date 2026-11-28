@@ -1,0 +1,1 @@
+PASS Chrome independently decoded PNG/WebP canvas equality for all 344 mapped actors; zero pixel mismatches/page errors. Loader-spy unit fixture passed URL selection/shared leases/release/fallback; not actual Phaser engine. physicalAndroid=false

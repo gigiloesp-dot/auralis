@@ -1,0 +1,1 @@
+North C art-only ready: north-species-084,north-species-085,north-species-086,north-species-087. Transparent1024x1152 atlases,48poses/model,128x192cells; E,SE,S,SW,W,NW,N,NE. All native poses reviewed on beige+dark JPEG. Alpha/gutters/footlines/48distinct RGBA hashes and collapsed death pass. Root owns runtime/browser integration. Originals/repair outputs retained immutable.

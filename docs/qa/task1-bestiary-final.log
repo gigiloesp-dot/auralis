@@ -1,0 +1,12 @@
+PASS real bestiary {"type":"forestWolf","ability":"pounce","damage":44,"moved":true,"projectile":false,"statuses":[]}
+PASS real bestiary {"type":"wildBoar","ability":"charge","damage":54,"moved":true,"projectile":false,"statuses":[]}
+PASS real bestiary {"type":"forestOrc","ability":"cleave","damage":50,"moved":false,"projectile":false,"statuses":[]}
+PASS real bestiary {"type":"spider","ability":"venom","damage":29,"moved":true,"projectile":true,"statuses":["poison"]}
+PASS real bestiary {"type":"forestBat","ability":"dive","damage":38,"moved":true,"projectile":false,"statuses":[]}
+PASS real bestiary {"type":"frostGolem","ability":"stomp","damage":60,"moved":false,"projectile":false,"statuses":[]}
+PASS real bestiary {"type":"wraith","ability":"haunt","damage":39,"moved":false,"projectile":true,"statuses":["slow"]}
+PASS real bestiary {"type":"iceElemental","ability":"blink","damage":39,"moved":true,"projectile":true,"statuses":[]}
+PASS real bestiary {"type":"scarab","ability":"burrow","damage":40,"moved":true,"projectile":false,"statuses":["slow"]}
+PASS real bestiary {"type":"ancientGargoyle","ability":"dive","damage":54,"moved":true,"projectile":false,"statuses":[]}
+PASS real bestiary {"river":true,"batX":7012.001016065231,"wolfX":6872.001016065231,"bounds":true,"tallObstacle":true}
+PASS actual species abilities, statuses, flight collision and telegraph cleanup

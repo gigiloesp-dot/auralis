@@ -1,0 +1,14 @@
+✔ all six actual class damage paths can hurt the giant and its real telegraphed hammer can be dodged without a class gate (32.677209ms)
+✔ real engine giant uses its independent phase FSM,shape-aware markers and source-owned painted boulders with complete cancellation (2.809815ms)
+✔ a real stationary hammer damages the hero and a killing hit clears phase state,markers and encounter shots before teardown (2.330952ms)
+✔ eleven real outdoor boss bindings extend44 preserved and5 dungeon paintings to60 distinct images and never reuse another boss model (512.034793ms)
+✔ each new outdoor boss has48 transparent registered poses and six actual different silhouettes in every direction (1782.923258ms)
+✔ a450-unit giant leash survives streamed position queries without changing the ordinary360 and previous boss300 limits (0.659606ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2582.545284

@@ -1,0 +1,20 @@
+{
+  "classId": "paladin",
+  "elapsedSeconds": 1680,
+  "bossHp": 29318,
+  "bossMaxHp": 1095000,
+  "hp": 827,
+  "mp": 2,
+  "potions": {
+    "hp": 9,
+    "mp": 0
+  },
+  "damageTaken": 913,
+  "phase": 3,
+  "casts": {
+    "paladin_3": 16,
+    "paladin_4": 14,
+    "paladin_0": 35,
+    "paladin_1": 22
+  }
+}

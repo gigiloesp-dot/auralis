@@ -1,0 +1,67 @@
+PASS fresh warrior accepted Mira quest through UI
+JOURNEY walked {"target":{"x":1270,"y":1240},"tolerance":30,"x":1262.2678450574044,"y":1236.778271862221,"captured":{"pointerId":2,"axis":{"x":0.6102791251717034,"y":0.7410533192393544}}}
+JOURNEY hunt {"progress":0,"hp":99,"level":1,"gold":0,"x":1262,"y":1237}
+JOURNEY initial touch {"attacking":true,"axis":{"x":0.2227630615234375,"y":-0.9337969769488325}}
+JOURNEY hunt {"progress":1,"hp":95,"level":1,"gold":2,"x":1342,"y":1255}
+JOURNEY hunt {"progress":2,"hp":90,"level":1,"gold":4,"x":1342,"y":1255}
+JOURNEY hunt {"progress":3,"hp":87,"level":1,"gold":6,"x":1342,"y":1255}
+JOURNEY hunt {"progress":4,"hp":85,"level":1,"gold":8,"x":1342,"y":1255}
+JOURNEY hunt {"progress":5,"hp":83,"level":1,"gold":10,"x":1532,"y":1392}
+PASS five wolves defeated by real multitouch movement and basic attacks
+JOURNEY physically collected anonymous drops 0
+JOURNEY walked {"target":{"x":1000,"y":1120},"tolerance":25,"x":1012.2141205934633,"y":1125.5954236435352,"captured":{"pointerId":7,"axis":{"x":-0.4363678313873626,"y":-0.8550924783224588}}}
+JOURNEY walked {"target":{"x":1090,"y":1050},"tolerance":18,"x":1102.572735527423,"y":1037.781297745609,"captured":{"pointerId":9,"axis":{"x":0.9599756932520604,"y":0.006854717548076923}}}
+PASS wolf reward and earned fangs delivered to Borin through UI
+JOURNEY walked {"target":{"x":1360,"y":1280},"tolerance":30,"x":1345.0942615723393,"y":1265.9748765440602,"captured":{"pointerId":10,"axis":{"x":0.058334182906936816,"y":0.9582257952008929}}}
+DUNGEON JOURNEY earn level4 from real wolves {"level":3,"xp":189,"gold":161,"hp":145}
+PASS earn level4 from real wolves {"level":4,"xp":12,"gold":167,"hp":160,"seconds":76}
+DUNGEON JOURNEY earn level5 from real starter-camp wolves {"level":4,"xp":12,"gold":167,"hp":172}
+JOURNEY walked {"target":{"x":1613.563870322561,"y":1405.8283665226757},"tolerance":15,"x":1613.5638597773293,"y":1414.8283665226777,"captured":null}
+JOURNEY walked {"target":{"x":1553.5638597773293,"y":1390.8283665226777},"tolerance":15,"x":1563.426118747934,"y":1394.773269303534,"captured":null}
+JOURNEY walked {"target":{"x":1515.426118747934,"y":1454.773269303534},"tolerance":15,"x":1512.825827182545,"y":1458.0236486976123,"captured":null}
+PASS earn level5 from real starter-camp wolves {"level":5,"xp":9,"gold":213,"hp":187,"seconds":185}
+PASS earned level5 and allocated all earned attributes and combat skills
+JOURNEY walked {"target":{"x":1000,"y":1120},"tolerance":25,"x":979.2092027722717,"y":1106.9490384098217,"captured":{"pointerId":78,"axis":{"x":-0.2980796059409341,"y":-0.9125507061298077}}}
+PASS earned gold spent on dungeon supplies {"gear":{},"goldAfterGear":230,"potions":{"hp":12,"mp":3}}
+PASS rested before first dungeon approach {"hp":185,"maxHp":196,"mp":128}
+JOURNEY walked {"target":{"x":1530,"y":1220},"tolerance":35,"x":1551.9306567110705,"y":1225.0268467197766,"captured":{"pointerId":79,"axis":{"x":0.7883146516569368,"y":0.5478683304000687}}}
+JOURNEY walked {"target":{"x":1770,"y":1600},"tolerance":35,"x":1781.813627834753,"y":1619.6458504786274,"captured":{"pointerId":81,"axis":{"x":-0.4489977490770948,"y":0.8485288515195741}}}
+JOURNEY walked {"target":{"x":1820,"y":1780},"tolerance":35,"x":1821.4274167163746,"y":1785.9941228785608,"captured":{"pointerId":82,"axis":{"x":-0.745042738023695,"y":0.6054016783997253}}}
+PASS rested before first dungeon entry {"hp":194,"maxHp":196,"mp":128}
+PASS entered first dungeon by real level gate and entrance UI
+PASS rested before dungeon room 0 {"hp":194,"maxHp":196,"mp":128}
+JOURNEY walked {"target":{"id":"room0","x":260,"y":300,"spawnIds":["dungeon1-room-0-mob-0","dungeon1-room-0-mob-1","dungeon1-room-0-mob-2","dungeon1-room-0-mob-3"]},"tolerance":40,"x":295.99999999999045,"y":300.00004921107995,"captured":{"pointerId":83,"axis":{"x":0.8586499560010302,"y":0.4293253133585165}}}
+DUNGEON JOURNEY defeat every original enemy in real dungeon room 0 {"level":5,"xp":57,"gold":138,"hp":149}
+PASS defeat every original enemy in real dungeon room 0 {"level":5,"xp":201,"gold":162,"hp":140,"seconds":301}
+PASS rested before dungeon room 1 {"hp":181,"maxHp":196,"mp":120}
+JOURNEY walked {"target":{"x":700,"y":300},"tolerance":24,"x":693.1137499999431,"y":300.0000032997078,"captured":{"pointerId":87,"axis":{"x":0.8586502913590316,"y":0.42932464264251374}}}
+JOURNEY walked {"target":{"id":"room1","x":700,"y":595,"spawnIds":["dungeon1-room-1-mob-0","dungeon1-room-1-mob-1","dungeon1-room-1-mob-2","dungeon1-room-1-mob-3","dungeon1-room-1-mob-4"]},"tolerance":40,"x":699.860802323738,"y":589.0350145422706,"captured":{"pointerId":90,"axis":{"x":-0.8503662780091003,"y":0.44550767835679944}}}
+DUNGEON JOURNEY defeat every original enemy in real dungeon room 1 {"level":5,"xp":201,"gold":162,"hp":160}
+PASS defeat every original enemy in real dungeon room 1 {"level":5,"xp":421,"gold":202,"hp":192,"seconds":335}
+PASS rested before dungeon room 2 {"hp":192,"maxHp":196,"mp":82}
+JOURNEY walked {"target":{"x":1140,"y":595},"tolerance":24,"x":1141.1870250393847,"y":595.0160804239443,"captured":{"pointerId":99,"axis":{"x":0.8539063170716003,"y":0.4386844844608517}}}
+JOURNEY walked {"target":{"id":"room2","x":1140,"y":300,"spawnIds":["dungeon1-room-2-mob-0","dungeon1-room-2-mob-1","dungeon1-room-2-mob-2","dungeon1-room-2-mob-3"]},"tolerance":40,"x":1140.138393271327,"y":334.3984400741821,"captured":{"pointerId":100,"axis":{"x":0.8572602324433379,"y":-0.4320933583018544}}}
+DUNGEON JOURNEY defeat every original enemy in real dungeon room 2 {"level":5,"xp":476,"gold":210,"hp":178}
+DUNGEON JOURNEY defeat every original enemy in real dungeon room 2 {"level":6,"xp":21,"gold":218,"hp":204}
+PASS defeat every original enemy in real dungeon room 2 {"level":6,"xp":131,"gold":234,"hp":200,"seconds":350}
+PASS rested before dungeon room 3 {"hp":216,"maxHp":224,"mp":135}
+JOURNEY walked {"target":{"x":1580,"y":300},"tolerance":24,"x":1593.2325151548887,"y":298.9651969150506,"captured":{"pointerId":105,"axis":{"x":0.8827310080056662,"y":0.37734012813358514}}}
+JOURNEY walked {"target":{"id":"room3","x":1580,"y":595,"spawnIds":["dungeon1-room-3-mob-0","dungeon1-room-3-mob-1","dungeon1-room-3-mob-2","dungeon1-room-3-mob-3","dungeon1-room-3-mob-4"]},"tolerance":40,"x":1581.159794944248,"y":569.0532610936928,"captured":{"pointerId":106,"axis":{"x":-0.8730721945291037,"y":0.39917998261504123}}}
+DUNGEON JOURNEY defeat every original enemy in real dungeon room 3 {"level":6,"xp":131,"gold":234,"hp":198}
+PASS defeat every original enemy in real dungeon room 3 {"level":6,"xp":351,"gold":269,"hp":171,"seconds":374}
+PASS rested before dungeon room 4 {"hp":203,"maxHp":224,"mp":76}
+JOURNEY walked {"target":{"x":2020,"y":595},"tolerance":24,"x":2010.5662482382138,"y":594.2817071976274,"captured":{"pointerId":117,"axis":{"x":0.8371525020389766,"y":0.46986808357657966}}}
+JOURNEY walked {"target":{"id":"room4","x":2020,"y":300,"spawnIds":[]},"tolerance":40,"x":2019.3251636181876,"y":321.05156304877295,"captured":{"pointerId":119,"axis":{"x":0.8691775143801511,"y":-0.40759076128949173}}}
+DUNGEON JOURNEY defeat real first dungeon boss {"level":6,"xp":351,"gold":269,"hp":209}
+PASS defeat real first dungeon boss {"level":7,"xp":4,"gold":466,"hp":236,"seconds":432}
+JOURNEY walked {"target":{"x":2020,"y":595},"tolerance":25,"x":2019.945927760271,"y":573.0507984680096,"captured":{"pointerId":138,"axis":{"x":-0.8578011648995536,"y":0.4310188712654533}}}
+JOURNEY walked {"target":{"id":"room3","x":1580,"y":595,"spawnIds":["dungeon1-room-3-mob-0","dungeon1-room-3-mob-1","dungeon1-room-3-mob-2","dungeon1-room-3-mob-3","dungeon1-room-3-mob-4"]},"tolerance":30,"x":1588.4825683079962,"y":594.5768164494618,"captured":{"pointerId":139,"axis":{"x":-0.874631106198489,"y":-0.3957532945570055}}}
+JOURNEY walked {"target":{"x":1580,"y":300},"tolerance":25,"x":1580.1927944236772,"y":306.69614733648757,"captured":{"pointerId":140,"axis":{"x":0.8483531239268544,"y":-0.44933008885645603}}}
+JOURNEY walked {"target":{"id":"room2","x":1140,"y":300,"spawnIds":["dungeon1-room-2-mob-0","dungeon1-room-2-mob-1","dungeon1-room-2-mob-2","dungeon1-room-2-mob-3"]},"tolerance":30,"x":1139.2438094516542,"y":299.98849110321504,"captured":{"pointerId":141,"axis":{"x":-0.8533129010881696,"y":-0.4398374452695742}}}
+JOURNEY walked {"target":{"x":1140,"y":595},"tolerance":25,"x":1140.028195578927,"y":605.9874857721293,"captured":{"pointerId":143,"axis":{"x":-0.8577666230254121,"y":0.4310872842977335}}}
+JOURNEY walked {"target":{"id":"room1","x":700,"y":595,"spawnIds":["dungeon1-room-1-mob-0","dungeon1-room-1-mob-1","dungeon1-room-1-mob-2","dungeon1-room-1-mob-3","dungeon1-room-1-mob-4"]},"tolerance":30,"x":708.1628086510323,"y":595.2038141520491,"captured":{"pointerId":144,"axis":{"x":-0.8497686700506525,"y":-0.4466465541294643}}}
+JOURNEY walked {"target":{"x":700,"y":300},"tolerance":25,"x":700.4925487476055,"y":317.81284075528305,"captured":{"pointerId":147,"axis":{"x":0.8487780225145948,"y":-0.44852657108516486}}}
+JOURNEY walked {"target":{"id":"room0","x":260,"y":300,"spawnIds":["dungeon1-room-0-mob-0","dungeon1-room-0-mob-1","dungeon1-room-0-mob-2","dungeon1-room-0-mob-3"]},"tolerance":30,"x":268.84533365117454,"y":300.3577068544536,"captured":{"pointerId":148,"axis":{"x":-0.8439520531958276,"y":-0.4575423355940934}}}
+JOURNEY walked {"target":{"x":170,"y":300},"tolerance":30,"x":178.84592289645192,"y":300.03203247301207,"captured":{"pointerId":149,"axis":{"x":-0.8574009151249141,"y":-0.43181434044471156}}}
+PASS first dungeon genuinely cleared, exited and restored without runtime-state writes or fixture damage
+FIRST DUNGEON RESULT {"seconds":486,"level":7,"xp":4,"gold":466,"completed":{"killed":["dungeon1-boss-0"],"readyAt":1794900909689,"completed":true,"rewarded":true,"bossReadyAt":{"dungeon1-boss-0":1794900909689},"completedAt":1794897309689}}

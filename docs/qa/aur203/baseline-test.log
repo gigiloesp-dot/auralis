@@ -1,0 +1,13 @@
+✔ AUR-203 compatibility fixture is the immutable pre-expansion baseline (2.261326ms)
+✔ all original 257 camps and 2827 spawn descriptors remain exact and in order, with append-only growth permitted (54.735915ms)
+✔ existing geographic anchors, roads and arrival points stay frozen while new anchors may append (33.712785ms)
+✔ all 149 existing quests and original 104 progression/reward contracts survive future quest additions (1.708275ms)
+✔ release21 migration aliases and existing legacy quest bindings cannot be redirected (12.052389ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 425.664251

@@ -1,0 +1,140 @@
+[
+  {
+    "file": "tests/browser-aur203-forest-c.cjs",
+    "exitCode": 0,
+    "durationSeconds": 166.98,
+    "log": "work/task10/browser-aur203-forest-c-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-forest-d.cjs",
+    "exitCode": 0,
+    "durationSeconds": 179.3,
+    "log": "work/task10/browser-aur203-forest-d-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-forest-e.cjs",
+    "exitCode": 0,
+    "durationSeconds": 40.95,
+    "log": "work/task10/browser-aur203-forest-e-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-north-b.cjs",
+    "exitCode": 0,
+    "durationSeconds": 139.47,
+    "log": "work/task10/browser-aur203-north-b-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-north-c.cjs",
+    "exitCode": 0,
+    "durationSeconds": 148.0,
+    "log": "work/task10/browser-aur203-north-c-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-north-d.cjs",
+    "exitCode": 0,
+    "durationSeconds": 133.85,
+    "log": "work/task10/browser-aur203-north-d-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-north-e.cjs",
+    "exitCode": 0,
+    "durationSeconds": 67.58,
+    "log": "work/task10/browser-aur203-north-e-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-ancient-b.cjs",
+    "exitCode": 0,
+    "durationSeconds": 126.2,
+    "log": "work/task10/browser-aur203-ancient-b-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-ancient-c.cjs",
+    "exitCode": 0,
+    "durationSeconds": 121.28,
+    "log": "work/task10/browser-aur203-ancient-c-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-ancient-d.cjs",
+    "exitCode": 0,
+    "durationSeconds": 122.88,
+    "log": "work/task10/browser-aur203-ancient-d-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-ancient-e.cjs",
+    "exitCode": 0,
+    "durationSeconds": 31.16,
+    "log": "work/task10/browser-aur203-ancient-e-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-desert-b.cjs",
+    "exitCode": 0,
+    "durationSeconds": 105.96,
+    "log": "work/task10/browser-aur203-desert-b-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-desert-c.cjs",
+    "exitCode": 0,
+    "durationSeconds": 104.51,
+    "log": "work/task10/browser-aur203-desert-c-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-desert-d.cjs",
+    "exitCode": 0,
+    "durationSeconds": 73.88,
+    "log": "work/task10/browser-aur203-desert-d-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-desert-e.cjs",
+    "exitCode": 0,
+    "durationSeconds": 65.45,
+    "log": "work/task10/browser-aur203-desert-e-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-desert-f.cjs",
+    "exitCode": 0,
+    "durationSeconds": 82.62,
+    "log": "work/task10/browser-aur203-desert-f-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-desert-g.cjs",
+    "exitCode": 0,
+    "durationSeconds": 78.4,
+    "log": "work/task10/browser-aur203-desert-g-final.log"
+  },
+  {
+    "file": "tests/browser-aur203-desert-h.cjs",
+    "exitCode": 0,
+    "durationSeconds": 76.71,
+    "log": "work/task10/browser-aur203-desert-h-final.log"
+  },
+  {
+    "file": "tests/browser-thematic-materials.cjs",
+    "exitCode": 0,
+    "durationSeconds": 715.08,
+    "log": "work/task10/browser-thematic-materials-final.log"
+  },
+  {
+    "file": "tests/browser-world.cjs",
+    "exitCode": 0,
+    "durationSeconds": 136.9,
+    "log": "work/task10/browser-world-final.log"
+  },
+  {
+    "file": "tests/browser-task9-performance.cjs",
+    "exitCode": 0,
+    "durationSeconds": 90.03,
+    "log": "work/task10/browser-task9-performance-final.log"
+  },
+  {
+    "file": "tests/browser-aur192.cjs",
+    "exitCode": 0,
+    "durationSeconds": 179.1,
+    "log": "work/task10/browser-aur192-final.log"
+  },
+  {
+    "file": "tests/browser-multitouch.cjs",
+    "exitCode": 0,
+    "durationSeconds": 86.28,
+    "log": "work/task10/browser-multitouch-final.log"
+  }
+]

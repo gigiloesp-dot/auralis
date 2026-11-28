@@ -1,0 +1,42 @@
+{
+  "gameSource": "5b2d2a9e06ae9f5b461db4d207fbeea5b2005409",
+  "checkpoint": "411f4005fe63f729ca94c6eac80d9f482ef029e1",
+  "version": 19,
+  "runtimeChanged": [
+    "css/ui-scale.css"
+  ],
+  "proofs": {
+    "docs/qa/task7/ui-scale-release18.css": "068e2906ceb1ec642a1a0c6eafb360d1d4526da392a0d4456ae3125e8bcdfa35",
+    "docs/qa/task7/journal-local.log": "22ebdaafa8a0d44dfebcec0d5f0ec25e5aa7f61e5cb9a9196b98f4f2478abf54",
+    "docs/qa/task7/menu-navigation-local.log": "2338f4186611e667e6e567ebbd9b210697ebd817b47551164a88872ffdac0f63",
+    "docs/qa/task7/journal-public.log": "22ebdaafa8a0d44dfebcec0d5f0ec25e5aa7f61e5cb9a9196b98f4f2478abf54",
+    "docs/qa/task7/menu-public.log": "d83acf19a85bb76c62586d16c885f40fa79b52a1792a1a59c9d8732e1ce7dd7a",
+    "docs/qa/task7/README.md": "44746669be6f9ce13471506cbac4bd2fe175a777958517bbf32ad5f21c1a6793",
+    "docs/qa/task7/menu-local.log": "d83acf19a85bb76c62586d16c885f40fa79b52a1792a1a59c9d8732e1ce7dd7a",
+    "docs/qa/task7/public-menu-verification.json": "8e39508685f7040f7a458a63ab32002182b6b77ab784139f123d8ce7fdb3a1dc",
+    "docs/qa/task7/preservation-final.log": "3cc7488f783a2c5be6e22c70d5a30864d8b83a918b8182dcbd54e825c2d93bb9",
+    "docs/qa/task7/public.log": "26f5a4f82539104d722b7a047e9755d2e0a951d9951f127027825661495ef2c8",
+    "docs/qa/task7/ci-source.json": "e7dd58713cf5eb2023ed29fb663e7a504dcfce6cb7d587038ac07892c583b1b7",
+    "docs/qa/task7/check.log": "c486367a440aa6ea90efdf619417da9ac5affe5af5aea88e42573b610e373c6c",
+    "docs/qa/task7/after-verification.json": "544706b01796c8873acd4e863f147631331d3e35801e085139bd81f85af580e7",
+    "docs/qa/task7/before-verification.json": "24f05f591afc596cc052aceec8556781546328d44ecbfaeee2f25cb618dcefc2",
+    "docs/qa/task7/unit.log": "59cd53cd6a922d8ddffcbe52e52d6f3e6f6254dbd1b8cf6b5b8509fb326aba62",
+    "docs/qa/task7/deployment.json": "e7a72eef963dd7b744729e2cb88e14802f649e4a3b0ea1cd53901edc39d2f304",
+    "docs/qa/task7/protected-state.json": "68703d770fc8f0dbf3b927bf162f84268e0a990a6b4c620ebe7e889f1ac0f923",
+    "docs/qa/task7/before/menu-ru-1280x720.png": "be1d7c3483bece2ff5a2dc5bed9357f596816ab0c1c0cb11f83b96b730370e9d",
+    "docs/qa/task7/before/menu-ru-915x412.png": "f098a2244fc91da76e4e011e67949eb69cbd47f86ba0b50af4231e7fd79000fd",
+    "docs/qa/task7/before/menu-ru-1536x695.png": "c151b2ab0bbdcfc795a7341733c564e58bcede4666dcd6bcb9d88797264dc787",
+    "docs/qa/task7/before/menu-ru-740x320.png": "cd30ab4d93ea1e96c6b1dd15cb48d9ccdf6d0db106822d32ea0afeaf959857ea",
+    "docs/qa/task7/before/menu-ru-640x360.png": "f07777d2c45df2f54655bdab016e09cbc17a4be26a5d945623eebc0e28028df9",
+    "docs/qa/task7/before/menu-ru-844x390.png": "9a73c8d708bdf293291ea2a6294c94654fa84a8749eb06b0e9530e3f71a2cac7",
+    "docs/qa/task7/after/menu-public-ru-1536x695.png": "c87bf4ad0ce6afce2765753686353eee2c712c5b08a8816d473787084f8fcb4f",
+    "docs/qa/task7/after/menu-en-1536x695.png": "4af6bdc3c6e67fd686d12d0203b76d23dfa0fd7d04edbfe043c2a4c8c98ffef1",
+    "docs/qa/task7/after/menu-ru-1280x720.png": "24b1026b7c9701e91a724ddd2127d31bebdb650aee5d7276387d86f5593ad44f",
+    "docs/qa/task7/after/menu-es-1536x695.png": "683d83f916ea07a879fdcd7082f054a8422a9d82b766da73eec12e720faf7ee9",
+    "docs/qa/task7/after/menu-ru-915x412.png": "1fab351e9ae6189347b27d3e9d18379dd4d9e5a3bc34a02db660e3dd8745efdb",
+    "docs/qa/task7/after/menu-ru-1536x695.png": "c87bf4ad0ce6afce2765753686353eee2c712c5b08a8816d473787084f8fcb4f",
+    "docs/qa/task7/after/menu-ru-740x320.png": "4f1c645e53c1805eb17a9a6256fb9cad725b470459891ac763b858cc81bbae6c",
+    "docs/qa/task7/after/menu-ru-640x360.png": "74deca6f1b711844914d085d38da17e3c30c24add329138b6c2b324ebc1d064c",
+    "docs/qa/task7/after/menu-ru-844x390.png": "ee46480cbb7372fecdc1ecb996a6fc1b1219e02b2db6bf1db202bbf3978454f7"
+  }
+}

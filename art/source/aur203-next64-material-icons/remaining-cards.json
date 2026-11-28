@@ -1,0 +1,1110 @@
+[
+  {
+    "placementId": "forest-species-088",
+    "typeId": "aur203Forest088",
+    "names": {
+      "ru": "Крылатка клёна",
+      "en": "Maple-key glider",
+      "es": "Planeador sámara"
+    },
+    "biome": "woodland",
+    "level": 13,
+    "x": 779,
+    "y": 12867,
+    "anatomy": "seed-winged mammal with maple samara shoulder wings",
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "fan"
+    ],
+    "materialId": "aur203Forest088Material",
+    "materialConcept": "maple-wing membrane",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-089",
+    "typeId": "aur203Forest089",
+    "names": {
+      "ru": "Желобный фонарник",
+      "en": "Gutter-lantern hermit",
+      "es": "Ermitaño farol"
+    },
+    "biome": "abandoned-city",
+    "level": 17,
+    "x": 16589,
+    "y": 5190,
+    "anatomy": "six-armed indigo octopus inhabiting bronze rainspout shell",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "web"
+    ],
+    "materialId": "aur203Forest089Material",
+    "materialConcept": "blue lantern glass chamber",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-090",
+    "typeId": "aur203Forest090",
+    "names": {
+      "ru": "Клеверная черепаха",
+      "en": "Clover-mantle tortoise",
+      "es": "Tortuga trébol"
+    },
+    "biome": "woodland",
+    "level": 8,
+    "x": 8132,
+    "y": 2734,
+    "anatomy": "tortoise with three heart-lobed clover shell and duckbill",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "roots"
+    ],
+    "materialId": "aur203Forest090Material",
+    "materialConcept": "clover shell plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-091",
+    "typeId": "aur203Forest091",
+    "names": {
+      "ru": "Орешниковый ложкоклюв",
+      "en": "Hazel-spoonbill burrower",
+      "es": "Cavador pico de cuchara"
+    },
+    "biome": "woodland",
+    "level": 11,
+    "x": 4075,
+    "y": 10909,
+    "anatomy": "three-legged bird with wooden spoon bill and nut quill fan",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "cleave"
+    ],
+    "materialId": "aur203Forest091Material",
+    "materialConcept": "hazel quill",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-092",
+    "typeId": "aur203Forest092",
+    "names": {
+      "ru": "Кадильная штукатурница",
+      "en": "Mortar-moth censer",
+      "es": "Polilla incensario"
+    },
+    "biome": "abandoned-city",
+    "level": 15,
+    "x": 13918,
+    "y": 6639,
+    "anatomy": "moth with chipped plaster window wings and copper censer abdomen",
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "haunt"
+    ],
+    "materialId": "aur203Forest092Material",
+    "materialConcept": "plaster wing scale",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-093",
+    "typeId": "aur203Forest093",
+    "names": {
+      "ru": "Корешок-колокольчик",
+      "en": "Bluebell rootling",
+      "es": "Raicilla campanilla"
+    },
+    "biome": "woodland",
+    "level": 5,
+    "x": 901,
+    "y": 5566,
+    "anatomy": "bluebell flower head with three root legs and grass ribbon arms",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "roots",
+      "cleave"
+    ],
+    "materialId": "aur203Forest093Material",
+    "materialConcept": "bluebell petal",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-094",
+    "typeId": "aur203Forest094",
+    "names": {
+      "ru": "Ключечелюстный клещ",
+      "en": "Lockjaw key-mite",
+      "es": "Ácaro cerrojo"
+    },
+    "biome": "abandoned-city",
+    "level": 16,
+    "x": 15369,
+    "y": 4181,
+    "anatomy": "four-legged padlock arthropod with asymmetric key mandibles",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "cleave",
+      "venom"
+    ],
+    "materialId": "aur203Forest094Material",
+    "materialConcept": "key-shaped mandible",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-095",
+    "typeId": "aur203Forest095",
+    "names": {
+      "ru": "Дымоходный ходулочник",
+      "en": "Chimney-dome stiltbeast",
+      "es": "Zancudo chimenea"
+    },
+    "biome": "abandoned-city",
+    "level": 18,
+    "x": 16732,
+    "y": 8211,
+    "anatomy": "five terracotta stilt legs under tile dome shell with three eye stalks",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "materialId": "aur203Forest095Material",
+    "materialConcept": "terracotta joint ring",
+    "artOnly": true
+  },
+  {
+    "placementId": "forest-species-096",
+    "typeId": "aur203Forest096",
+    "names": {
+      "ru": "Витражный переплётник",
+      "en": "Stained-glass folio ray",
+      "es": "Raya vitral"
+    },
+    "biome": "abandoned-city",
+    "level": 18,
+    "x": 15503,
+    "y": 8887,
+    "anatomy": "hovering leather-bound folio with stained glass ray fins and ribbon tails",
+    "movementProfile": "ghost",
+    "abilityPattern": [
+      "haunt",
+      "fan"
+    ],
+    "materialId": "aur203Forest096Material",
+    "materialConcept": "stained-glass fin shard",
+    "artOnly": true
+  },
+  {
+    "id": "north-species-080",
+    "placementId": "north080",
+    "spotId": "north-spot-080",
+    "typeId": "aur203North080",
+    "names": {
+      "ru": "Снегоступный компасозуб",
+      "en": "Snowshoe compass shrew",
+      "es": "Musaraña brújula"
+    },
+    "biome": "snow",
+    "level": 22,
+    "position": {
+      "x": 701,
+      "y": 920
+    },
+    "anatomy": "pear-shaped shrew; long coral nose, four compass-needle snowshoe paws, huge indigo ears, compass-disk ribbon tail",
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "frost"
+    ],
+    "materialId": "aur203North080Material",
+    "materialConcept": {
+      "ru": "Пластинка хвостового компаса",
+      "en": "Tail-compass plate",
+      "es": "Placa de brújula caudal"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-081",
+    "placementId": "north081",
+    "spotId": "north-spot-081",
+    "typeId": "aur203North081",
+    "names": {
+      "ru": "Ледокоронный тупик",
+      "en": "Frost-crown puffin",
+      "es": "Frailecillo coronado"
+    },
+    "biome": "snow",
+    "level": 26,
+    "position": {
+      "x": 4549,
+      "y": 8989
+    },
+    "anatomy": "round flightless seabird, ice-crown crest, immense layered triangular beak, flipper wings and huge web feet",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "frost"
+    ],
+    "materialId": "aur203North081Material",
+    "materialConcept": {
+      "ru": "Слой клюва ледокороны",
+      "en": "Frost-crown beak layer",
+      "es": "Lámina de pico glacial"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-082",
+    "placementId": "north082",
+    "spotId": "north-spot-082",
+    "typeId": "aur203North082",
+    "names": {
+      "ru": "Снежнофонарный паук",
+      "en": "Snow-lantern spider",
+      "es": "Araña farol de nieve"
+    },
+    "biome": "snow",
+    "level": 22,
+    "position": {
+      "x": 2693,
+      "y": 813
+    },
+    "anatomy": "eight thick teal legs with fur cuffs; perforated opalescent snow-lantern abdomen; four dark eyes",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "web",
+      "venom"
+    ],
+    "materialId": "aur203North082Material",
+    "materialConcept": {
+      "ru": "Стенка снежного фонаря",
+      "en": "Snow-lantern wall",
+      "es": "Pared de farol nevado"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-083",
+    "placementId": "north083",
+    "spotId": "north-spot-083",
+    "typeId": "aur203North083",
+    "names": {
+      "ru": "Северосиянный куду",
+      "en": "Aurora-antler kudu",
+      "es": "Kudú de astas aurorales"
+    },
+    "biome": "snow",
+    "level": 30,
+    "position": {
+      "x": 7255,
+      "y": 14457
+    },
+    "anatomy": "compact ungulate with corkscrew crescent ice antlers, split purple mane and aurora streaks",
+    "movementProfile": "charger",
+    "abilityPattern": [
+      "charge",
+      "frost"
+    ],
+    "materialId": "aur203North083Material",
+    "materialConcept": {
+      "ru": "Завиток сияющего рога",
+      "en": "Aurora antler curl",
+      "es": "Espiral de asta auroral"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-084",
+    "placementId": "north084",
+    "spotId": "north-spot-084",
+    "typeId": "aur203North084",
+    "names": {
+      "ru": "Ледяной шестизвон",
+      "en": "Ice chime sextuped",
+      "es": "Hexápodo de campanas de hielo"
+    },
+    "biome": "snow",
+    "level": 30,
+    "position": {
+      "x": 13945,
+      "y": 6478
+    },
+    "anatomy": "six chunky splayed legs, three hollow upward ice trumpet tubes on a pear shaped turquoise torso, wide flat face",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "frost"
+    ],
+    "materialId": "aur203North084Material",
+    "materialConcept": {
+      "ru": "Стенка ледяного раструба",
+      "en": "Ice trumpet wall",
+      "es": "Pared de trompeta helada"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-085",
+    "placementId": "north085",
+    "spotId": "north-spot-085",
+    "typeId": "aur203North085",
+    "names": {
+      "ru": "Ковшеклювый зимник",
+      "en": "Winter spoonbill",
+      "es": "Espátula invernal"
+    },
+    "biome": "snow",
+    "level": 28,
+    "position": {
+      "x": 11931,
+      "y": 738
+    },
+    "anatomy": "pink squat spoonbill with huge frost-blue spoon bill, two pronged legs, curly white wing fans and crystalline crest",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "fan",
+      "frost"
+    ],
+    "materialId": "aur203North085Material",
+    "materialConcept": {
+      "ru": "Пластинка ковшеклюва",
+      "en": "Spoonbill plate",
+      "es": "Placa de pico cuchara"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-086",
+    "placementId": "north086",
+    "spotId": "north-spot-086",
+    "typeId": "aur203North086",
+    "names": {
+      "ru": "Печной богомол",
+      "en": "Furnace mantis",
+      "es": "Mantis de horno"
+    },
+    "biome": "volcanic",
+    "level": 33,
+    "position": {
+      "x": 15456,
+      "y": 13124
+    },
+    "anatomy": "six-limbed charcoal mantis with two great bellows-shaped scythe forearms, ember honeycomb folded wings and wedge head",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "fan"
+    ],
+    "materialId": "aur203North086Material",
+    "materialConcept": {
+      "ru": "Створка печного крыла",
+      "en": "Furnace wing casing",
+      "es": "Cubierta de ala de horno"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-087",
+    "placementId": "north087",
+    "spotId": "north-spot-087",
+    "typeId": "aur203North087",
+    "names": {
+      "ru": "Снежносферный отшельник",
+      "en": "Snowglobe hermit",
+      "es": "Ermitaño de esfera nevada"
+    },
+    "biome": "snow",
+    "level": 33,
+    "position": {
+      "x": 4355,
+      "y": 20251
+    },
+    "anatomy": "hermit crustacean with translucent spherical ice shell containing crystalline spiral, six walking legs and unequal fan claws",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "frost"
+    ],
+    "materialId": "aur203North087Material",
+    "materialConcept": {
+      "ru": "Спираль снежной сферы",
+      "en": "Snowglobe spiral",
+      "es": "Espiral de esfera nevada"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-088",
+    "placementId": "north088",
+    "spotId": "north-spot-088",
+    "typeId": "aur203North088",
+    "names": {
+      "ru": "Жароколёсый скорпион",
+      "en": "Ember-wheel scorpion",
+      "es": "Escorpión rueda de brasas"
+    },
+    "biome": "volcanic",
+    "level": 31,
+    "position": {
+      "x": 16953,
+      "y": 6212
+    },
+    "anatomy": "charcoal scorpion with broad paddle pincers, eight orange jointed legs, tail coiled in a complete ember-spoked wheel",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "burrow"
+    ],
+    "materialId": "aur203North088Material",
+    "materialConcept": {
+      "ru": "Спица жаркого хвоста",
+      "en": "Ember-tail spoke",
+      "es": "Radio de cola de brasas"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-089",
+    "placementId": "north089",
+    "spotId": "north-spot-089",
+    "typeId": "aur203North089",
+    "names": {
+      "ru": "Базальтовый лопатокрот",
+      "en": "Basalt shovel mole",
+      "es": "Topo pala de basalto"
+    },
+    "biome": "volcanic",
+    "level": 31,
+    "position": {
+      "x": 15883,
+      "y": 7868
+    },
+    "anatomy": "puglike eyeless mole with six giant basalt shovel foredigits, split ember nose and overlapping hexagonal back plates",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "stomp"
+    ],
+    "materialId": "aur203North089Material",
+    "materialConcept": {
+      "ru": "Базальтовая лопастная пластина",
+      "en": "Basalt shovel plate",
+      "es": "Placa de pala basáltica"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-090",
+    "placementId": "north090",
+    "spotId": "north-spot-090",
+    "typeId": "aur203North090",
+    "names": {
+      "ru": "Вьюжная воронкомоль",
+      "en": "Blizzard funnel moth",
+      "es": "Polilla embudo de ventisca"
+    },
+    "biome": "snow",
+    "level": 27,
+    "position": {
+      "x": 2569,
+      "y": 10417
+    },
+    "anatomy": "thick fuzzy moth, four curled funnel wings rimmed in violet ice, twin feathery antennae, six small feet",
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "frost"
+    ],
+    "materialId": "aur203North090Material",
+    "materialConcept": {
+      "ru": "Чешуйка воронкового крыла",
+      "en": "Funnel-wing scale",
+      "es": "Escama de ala embudo"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-091",
+    "placementId": "north091",
+    "spotId": "north-spot-091",
+    "typeId": "aur203North091",
+    "names": {
+      "ru": "Ледострунный ходульник",
+      "en": "Ice-harp strider",
+      "es": "Zancudo arpa de hielo"
+    },
+    "biome": "snow",
+    "level": 25,
+    "position": {
+      "x": 7557,
+      "y": 2691
+    },
+    "anatomy": "six stilt legs supporting arched translucent icy harp body, three dangling crystal strings, small beaked central head",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "blink",
+      "frost"
+    ],
+    "materialId": "aur203North091Material",
+    "materialConcept": {
+      "ru": "Ледяная струна",
+      "en": "Ice-harp string",
+      "es": "Cuerda de arpa helada"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-092",
+    "placementId": "north092",
+    "spotId": "north-spot-092",
+    "typeId": "aur203North092",
+    "names": {
+      "ru": "Снежноцветный долгоносик",
+      "en": "Snowflower weevil",
+      "es": "Gorgojo flor de nieve"
+    },
+    "biome": "snow",
+    "level": 23,
+    "position": {
+      "x": 2067,
+      "y": 3346
+    },
+    "anatomy": "six-legged beetle with long curved flat ivory rostrum, snowflake petal-shaped wing cases and spherical blue abdomen",
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "frost"
+    ],
+    "materialId": "aur203North092Material",
+    "materialConcept": {
+      "ru": "Лепесток снежного надкрылья",
+      "en": "Snowflower elytron petal",
+      "es": "Pétalo de élitro nevado"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "id": "north-species-093",
+    "placementId": "north093",
+    "spotId": "north-spot-093",
+    "typeId": "aur203North093",
+    "names": {
+      "ru": "Кальдерный броненосец",
+      "en": "Caldera armadillo",
+      "es": "Armadillo de caldera"
+    },
+    "biome": "volcanic",
+    "level": 33,
+    "position": {
+      "x": 19695,
+      "y": 777
+    },
+    "anatomy": "four-footed armadillo with terraced volcanic caldera shell, three orange vent chimneys and articulated shovel tail",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "charge",
+      "stomp"
+    ],
+    "materialId": "aur203North093Material",
+    "materialConcept": {
+      "ru": "Терраса кальдерного панциря",
+      "en": "Caldera shell terrace",
+      "es": "Terraza de caparazón de caldera"
+    },
+    "artOnly": true,
+    "runtimeIntegrated": false,
+    "proposedPassivesImplemented": false
+  },
+  {
+    "placementId": "ancient-species-049",
+    "typeId": "aur203Ancient049",
+    "materialId": "aur203Ancient049Material",
+    "slug": "rootwheel-cicada",
+    "names": {
+      "ru": "Корнеколёсая цикада",
+      "en": "Rootwheel Cicada",
+      "es": "Cigarra de rueda raíz"
+    },
+    "name": "Корнеколёсая цикада",
+    "biome": "elder-forest",
+    "level": 36,
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "roots",
+      "burrow"
+    ],
+    "anatomy": "Six root-arch legs, walnut thorax, cream-veined jade leaf wings, ochre face and amber curled antennae.",
+    "materialConcept": "Cream-veined cicada wing",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-050",
+    "typeId": "aur203Ancient050",
+    "materialId": "aur203Ancient050Material",
+    "slug": "vesselback-mudskipper",
+    "names": {
+      "ru": "Кувшиноспинный прыгун",
+      "en": "Vesselback Mudskipper",
+      "es": "Saltarín de vasija"
+    },
+    "name": "Кувшиноспинный прыгун",
+    "biome": "elder-marsh",
+    "level": 37,
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "venom"
+    ],
+    "anatomy": "Ochre amphibious fish body, tall eyes, fleshy walking fins, long paddle tail, naturally grown hollow terracotta pitcher carapace with reed comb.",
+    "materialConcept": "Reed-combed carapace scale",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-051",
+    "typeId": "aur203Ancient051",
+    "materialId": "aur203Ancient051Material",
+    "slug": "mosaic-mantis",
+    "names": {
+      "ru": "Мозаичный богомол",
+      "en": "Mosaic Mantis",
+      "es": "Mantis de mosaico"
+    },
+    "name": "Мозаичный богомол",
+    "biome": "elder-ruins",
+    "level": 38,
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "fan"
+    ],
+    "anatomy": "Upright jade mantis with four thin hinged legs, broad curved scythe forearms, triangular face and a broken tile mosaic fan crest.",
+    "materialConcept": "Mosaic crest tile",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-052",
+    "typeId": "aur203Ancient052",
+    "materialId": "aur203Ancient052Material",
+    "slug": "astrolabe-tortoise",
+    "names": {
+      "ru": "Астролябовая черепаха",
+      "en": "Astrolabe Tortoise",
+      "es": "Tortuga de astrolabio"
+    },
+    "name": "Астролябовая черепаха",
+    "biome": "elder-ruins",
+    "level": 37,
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "blink"
+    ],
+    "anatomy": "Stout navy tortoise with broad blunt stone feet, pale expressive head, bronze concentric astrolabe rings integrated into a domed star-map shell.",
+    "materialConcept": "Star-map shell plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-053",
+    "typeId": "aur203Ancient053",
+    "materialId": "aur203Ancient053Material",
+    "slug": "keystone-ram",
+    "names": {
+      "ru": "Замковый баран",
+      "en": "Keystone Ram",
+      "es": "Carnero de clave"
+    },
+    "name": "Замковый баран",
+    "biome": "elder-ruins",
+    "level": 38,
+    "movementProfile": "charger",
+    "abilityPattern": [
+      "charge",
+      "stomp"
+    ],
+    "anatomy": "Compact ram with sandstone block shoulders, curled broken arch horns, short indigo fleece and four split copper hooves.",
+    "materialConcept": "Arch horn fragment",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-054",
+    "typeId": "aur203Ancient054",
+    "materialId": "aur203Ancient054Material",
+    "slug": "obsidian-kite",
+    "names": {
+      "ru": "Обсидиановый коршун",
+      "en": "Obsidian Kite",
+      "es": "Milano de obsidiana"
+    },
+    "name": "Обсидиановый коршун",
+    "biome": "elder-wastes",
+    "level": 40,
+    "movementProfile": "bat",
+    "abilityPattern": [
+      "dive",
+      "fan"
+    ],
+    "anatomy": "Lean bird of prey with broad angular obsidian feather wings, rust neck ruff, three tail blades and ivory hooked face.",
+    "materialConcept": "Obsidian flight feather",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-055",
+    "typeId": "aur203Ancient055",
+    "materialId": "aur203Ancient055Material",
+    "slug": "salt-crown-pangolin",
+    "names": {
+      "ru": "Солекоронный панголин",
+      "en": "Saltcrown Pangolin",
+      "es": "Pangolín de corona salina"
+    },
+    "name": "Солекоронный панголин",
+    "biome": "elder-dry",
+    "level": 41,
+    "movementProfile": "scarab",
+    "abilityPattern": [
+      "burrow",
+      "charge"
+    ],
+    "anatomy": "Heavy low pangolin with layered chalk-salt armored scales, spade foreclaws, long plated tail and a crown of natural translucent salt spikes.",
+    "materialConcept": "Crown salt scale",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-056",
+    "typeId": "aur203Ancient056",
+    "materialId": "aur203Ancient056Material",
+    "slug": "fumarole-urchin",
+    "names": {
+      "ru": "Фумарольный ежовик",
+      "en": "Fumarole Urchin",
+      "es": "Erizo de fumarola"
+    },
+    "name": "Фумарольный ежовик",
+    "biome": "elder-wastes",
+    "level": 39,
+    "movementProfile": "elemental",
+    "abilityPattern": [
+      "blink",
+      "shot"
+    ],
+    "anatomy": "Levating round black pumice creature with six crooked hollow chimney spines, glowing amber vents, stubby curled underside tendrils, tiny round face.",
+    "materialConcept": "Hollow pumice spine",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-057",
+    "typeId": "aur203Ancient057",
+    "materialId": "aur203Ancient057Material",
+    "slug": "coppercap-hare",
+    "names": {
+      "ru": "Медношапочный заяц",
+      "en": "Coppercap Hare",
+      "es": "Liebre de sombrero cobrizo"
+    },
+    "name": "Медношапочный заяц",
+    "biome": "elder-forest",
+    "level": 36,
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "roots"
+    ],
+    "anatomy": "Plump woodland hare with enormous fern-shaped ears, dark chestnut fur, three broad copper mushroom caps growing from back, leaf-shaped hindfeet.",
+    "materialConcept": "Copper mushroom gill",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-058",
+    "typeId": "aur203Ancient058",
+    "materialId": "aur203Ancient058Material",
+    "slug": "bog-harp-eel",
+    "names": {
+      "ru": "Болотный арфоугорь",
+      "en": "Bogharp Eel",
+      "es": "Anguila arpa de ciénaga"
+    },
+    "name": "Болотный арфоугорь",
+    "biome": "elder-marsh",
+    "level": 38,
+    "movementProfile": "serpent",
+    "abilityPattern": [
+      "venom",
+      "pounce"
+    ],
+    "anatomy": "Coiled olive eel with four little webbed forefeet, whiskered face and a tall arching amber dorsal harp fin bridged by fleshy strings.",
+    "materialConcept": "Amber dorsal string",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-059",
+    "typeId": "aur203Ancient059",
+    "materialId": "aur203Ancient059Material",
+    "slug": "basalt-yak",
+    "names": {
+      "ru": "Базальтовый як",
+      "en": "Basalt Yak",
+      "es": "Yak de basalto"
+    },
+    "name": "Базальтовый як",
+    "biome": "elder-wastes",
+    "level": 39,
+    "movementProfile": "mauler",
+    "abilityPattern": [
+      "stomp",
+      "charge"
+    ],
+    "anatomy": "Broad low shaggy charcoal yak with cream beard, columnar basalt shoulder ridge and two smooth forward forked russet horns.",
+    "materialConcept": "Basalt shoulder shard",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-060",
+    "typeId": "aur203Ancient060",
+    "materialId": "aur203Ancient060Material",
+    "slug": "seedlantern-gecko",
+    "names": {
+      "ru": "Семяфонарный геккон",
+      "en": "Seedlantern Gecko",
+      "es": "Geco de farol semilla"
+    },
+    "name": "Семяфонарный геккон",
+    "biome": "elder-forest",
+    "level": 36,
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "shot",
+      "roots"
+    ],
+    "anatomy": "Upright small lime gecko with broad adhesive toes, a single curled gripping tail bearing a glowing orange seedpod, large amber eyes and leaf collar.",
+    "materialConcept": "Luminous seedpod husk",
+    "artOnly": true
+  },
+  {
+    "placementId": "ancient-species-061",
+    "typeId": "aur203Ancient061",
+    "materialId": "aur203Ancient061Material",
+    "slug": "antlerwing-owl",
+    "names": {
+      "ru": "Рогокрылый сыч",
+      "en": "Antlerwing Owl",
+      "es": "Mochuelo alicornio"
+    },
+    "name": "Рогокрылый сыч",
+    "biome": "elder-forest",
+    "level": 37,
+    "movementProfile": "gargoyle",
+    "abilityPattern": [
+      "dive",
+      "haunt"
+    ],
+    "anatomy": "Round cream-faced tawny owl with small branching wooden antlers, broad layered bark wings, short feather trousers and copper talons.",
+    "materialConcept": "Bark flight feather",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-080",
+    "typeId": "aur203Desert080",
+    "names": {
+      "ru": "Колодезный глотун",
+      "en": "Well-mouth gulper",
+      "es": "Engullidor pozo"
+    },
+    "biome": "sand",
+    "level": 49,
+    "x": 14944,
+    "y": 5049,
+    "anatomy": "round turquoise amphibian with stone well ring mouth and three digging legs",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "burrow"
+    ],
+    "materialId": "aur203Desert080Material",
+    "materialConcept": "turquoise throat membrane",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-081",
+    "typeId": "aur203Desert081",
+    "names": {
+      "ru": "Солнечный гребнеход",
+      "en": "Sun-comb strider",
+      "es": "Zancudo peine solar"
+    },
+    "biome": "sand",
+    "level": 50,
+    "x": 16682,
+    "y": 4543,
+    "anatomy": "six-legged red antelope insect with huge golden comb sail and narrow snout",
+    "movementProfile": "charger",
+    "abilityPattern": [
+      "charge",
+      "fan"
+    ],
+    "materialId": "aur203Desert081Material",
+    "materialConcept": "golden comb lamella",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-082",
+    "typeId": "aur203Desert082",
+    "names": {
+      "ru": "Песчаный гончар",
+      "en": "Dune potter",
+      "es": "Alfarero de dunas"
+    },
+    "biome": "sand",
+    "level": 45,
+    "x": 6728,
+    "y": 3201,
+    "anatomy": "terracotta snail with double-necked amphora shell and four fleshy gripping tentacles",
+    "movementProfile": "crawler",
+    "abilityPattern": [
+      "venom",
+      "roots"
+    ],
+    "materialId": "aur203Desert082Material",
+    "materialConcept": "amphora shell ceramic",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-083",
+    "typeId": "aur203Desert083",
+    "names": {
+      "ru": "Барханный парусоклюв",
+      "en": "Dune sailbill",
+      "es": "Pico vela dunar"
+    },
+    "biome": "sand",
+    "level": 51,
+    "x": 2551,
+    "y": 18579,
+    "anatomy": "flightless long-legged bird with triangular sail beak and broad striped tail fan",
+    "movementProfile": "skirmisher",
+    "abilityPattern": [
+      "shot",
+      "fan"
+    ],
+    "materialId": "aur203Desert083Material",
+    "materialConcept": "sailbill beak plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-084",
+    "typeId": "aur203Desert084",
+    "names": {
+      "ru": "Соляной зонтонос",
+      "en": "Salt parasol bearer",
+      "es": "Portador de parasol salino"
+    },
+    "biome": "sand",
+    "level": 50,
+    "x": 14586,
+    "y": 9412,
+    "anatomy": "four-legged pale armadillo under wide faceted salt crystal umbrella carapace",
+    "movementProfile": "heavy",
+    "abilityPattern": [
+      "stomp",
+      "frost"
+    ],
+    "materialId": "aur203Desert084Material",
+    "materialConcept": "salt carapace crystal",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-085",
+    "typeId": "aur203Desert085",
+    "names": {
+      "ru": "Термитовый горн",
+      "en": "Termite trumpet",
+      "es": "Trompeta termitera"
+    },
+    "biome": "sand",
+    "level": 49,
+    "x": 13041,
+    "y": 8231,
+    "anatomy": "upright hollow termite mound beast on three stubby legs with trumpet snout",
+    "movementProfile": "fighter",
+    "abilityPattern": [
+      "cleave",
+      "fan"
+    ],
+    "materialId": "aur203Desert085Material",
+    "materialConcept": "resonant clay throat tube",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-086",
+    "typeId": "aur203Desert086",
+    "names": {
+      "ru": "Обсидиановый веретенник",
+      "en": "Obsidian spindlewalker",
+      "es": "Andarín huso de obsidiana"
+    },
+    "biome": "sand",
+    "level": 54,
+    "x": 19290,
+    "y": 14508,
+    "anatomy": "spindle-shaped black glass arthropod on four arched legs with two pendulum claws",
+    "movementProfile": "predator",
+    "abilityPattern": [
+      "pounce",
+      "cleave"
+    ],
+    "materialId": "aur203Desert086Material",
+    "materialConcept": "obsidian spindle plate",
+    "artOnly": true
+  },
+  {
+    "placementId": "desert-species-087",
+    "typeId": "aur203Desert087",
+    "names": {
+      "ru": "Бронзовый пескокрут",
+      "en": "Bronze sand whorl",
+      "es": "Remolino de bronce"
+    },
+    "biome": "sand",
+    "level": 55,
+    "x": 17820,
+    "y": 19010,
+    "anatomy": "round bronze spiral-shelled cephalopod with eight curling ribbon arms and split crown fin",
+    "movementProfile": "elemental",
+    "abilityPattern": [
+      "blink",
+      "fan"
+    ],
+    "materialId": "aur203Desert087Material",
+    "materialConcept": "bronze spiral shell layer",
+    "artOnly": true
+  }
+]

@@ -1,0 +1,26 @@
+Command: node --test tests/losslessPng.test.mjs
+Captured tool output, pinned asset commit b19c070ad314eaec8c7cb10db2889ad031a2a2ae.
+This full run used the initial five-pass filter scorer, before its byte-equivalent single-pass optimization.
+
+Committed PNG publication measurement {"commit":"b19c070ad314eaec8c7cb10db2889ad031a2a2ae","files":249,"supported":249,"optimized":249,"originalBytes":288640541,"outputBytes":265073645,"savedBytes":23566896}
+✔ CRC matches standard vector and rejects damaged chunks (5.127267ms)
+✔ RGB input filter 0: exact channels, ancillary bytes, deterministic and idempotent (11.442042ms)
+✔ RGB input filter 1: exact channels, ancillary bytes, deterministic and idempotent (6.767279ms)
+✔ RGB input filter 2: exact channels, ancillary bytes, deterministic and idempotent (3.278822ms)
+✔ RGB input filter 3: exact channels, ancillary bytes, deterministic and idempotent (5.106106ms)
+✔ RGB input filter 4: exact channels, ancillary bytes, deterministic and idempotent (3.775408ms)
+✔ RGBA input filter 0: exact channels, ancillary bytes, deterministic and idempotent (2.409266ms)
+✔ RGBA input filter 1: exact channels, ancillary bytes, deterministic and idempotent (0.85295ms)
+✔ RGBA input filter 2: exact channels, ancillary bytes, deterministic and idempotent (1.319451ms)
+✔ RGBA input filter 3: exact channels, ancillary bytes, deterministic and idempotent (2.722868ms)
+✔ RGBA input filter 4: exact channels, ancillary bytes, deterministic and idempotent (2.301685ms)
+✔ unsupported depth and interlace retain original bytes (6.824284ms)
+✔ all committed PNG assets round trip without modifying source files (675237.727796ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 675371.504745

@@ -1,0 +1,146 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-021",
+      "names": {
+        "ru": "Сосновый лучник",
+        "en": "Pine-hood longbow raider",
+        "es": "Bandido arquero de capucha de pino"
+      },
+      "baseType": "forestRaider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "shot",
+        "roots"
+      ],
+      "silhouette": "Slender human archer, pointed pine hood, long ochre split poncho, blond braid and curved bow",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-027",
+      "names": {
+        "ru": "Грибошлемый орк",
+        "en": "Mushroom-helm orc",
+        "es": "Orco de yelmo de seta"
+      },
+      "baseType": "forestOrc",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "cleave",
+        "stomp"
+      ],
+      "silhouette": "Massive broad-shouldered green orc with small orange mushroom helmet, apron and broad axe",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-029",
+      "names": {
+        "ru": "Веерощёкий медведь",
+        "en": "Fan-cheek bear",
+        "es": "Oso de mejillas de abanico"
+      },
+      "baseType": "bear",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "stomp",
+        "charge"
+      ],
+      "silhouette": "Copper-brown four-legged bear, cream cheek fans, enormous dark front paws and small hindquarters",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-032",
+      "names": {
+        "ru": "Плетёная арбалетчица",
+        "en": "Wicker-pack crossbow raider",
+        "es": "Bandida ballestera de cesta"
+      },
+      "baseType": "forestRaider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "shot",
+        "venom"
+      ],
+      "silhouette": "Short broad human crossbowwoman, auburn hair buns, huge round wicker backpack and teal sleeves",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-035",
+      "names": {
+        "ru": "Хохлатый орк-копейщик",
+        "en": "Crest-spear orc",
+        "es": "Orco lancero de cresta"
+      },
+      "baseType": "forestOrc",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "cleave",
+        "charge"
+      ],
+      "silhouette": "Tall wiry olive orc, long limbs, black feather crest, small bark shield and short spear",
+      "statsChanged": false,
+      "sourceProvenance": {
+        "selected": "forest-species-035-reflow-v4.png",
+        "preserved": [
+          "forest-species-035-original.png",
+          "forest-species-035-reflow-v1.png",
+          "forest-species-035-reflow-v2.png",
+          "forest-species-035-reflow-v3.png"
+        ],
+        "nativeIdleHeightMax": 70,
+        "targetWorldHeight": 77,
+        "scale": 1.1
+      }
+    },
+    {
+      "id": "forest-species-037",
+      "names": {
+        "ru": "Ромбохвостый волк руин",
+        "en": "Diamond-tail ruin wolf",
+        "es": "Lobo de cola de rombo de las ruinas"
+      },
+      "baseType": "forestWolf",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "pounce",
+        "haunt"
+      ],
+      "silhouette": "Lean rusty wolf, huge pointed ears, ivory angular shoulder ruff, dark stockings and diamond tail brush",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-039",
+      "names": {
+        "ru": "Ягодный паук",
+        "en": "Berry-dome spider",
+        "es": "Araña de cúpula de bayas"
+      },
+      "baseType": "spider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "venom",
+        "roots"
+      ],
+      "silhouette": "Golden pear abdomen with red berry studs, turquoise head, arched chitin legs and ivory crescent fangs",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-041",
+      "names": {
+        "ru": "Стрелоголовый шипозмей",
+        "en": "Arrowhead thorn serpent",
+        "es": "Serpiente espinosa de cabeza de flecha"
+      },
+      "baseType": "thornSnake",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "venom",
+        "pounce"
+      ],
+      "silhouette": "Legless jade S-coiled snake, broad arrowhead, three red brow horns, cream jaw and diamond dorsal scales",
+      "statsChanged": false
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "north-species-013",
+      "image": "assets/actors/task10-north-expansion3a/north-species-013.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-013.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1762,
+      "rgbaBytes": 4718592,
+      "sha256": "44570d81b58f5804928a51c39b912fdb040613d5be201dd97fd0aa6931c2df4f",
+      "scale": 1.025974025974026,
+      "annotationHeight": 91
+    },
+    {
+      "id": "north-species-023",
+      "image": "assets/actors/task10-north-expansion3a/north-species-023.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-023.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 687,
+      "rgbaBytes": 4718592,
+      "sha256": "eadce953c17f1b3eea5c8ec8b8fa0f2ef097c78de5488aa0337da381309eca36",
+      "scale": 2.048780487804878,
+      "annotationHeight": 96
+    },
+    {
+      "id": "north-species-025",
+      "image": "assets/actors/task10-north-expansion3a/north-species-025.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-025.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 467,
+      "rgbaBytes": 4718592,
+      "sha256": "d40f0bc0da78574a6e54474e4f51b6e1589b8c4b3221a589e631481707dab9d3",
+      "scale": 1.711111111111111,
+      "annotationHeight": 89
+    },
+    {
+      "id": "north-species-031",
+      "image": "assets/actors/task10-north-expansion3a/north-species-031.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-031.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 520,
+      "rgbaBytes": 4718592,
+      "sha256": "60424a15026a661ac7ee3fc0861f6d249620b93afec4743b97b905ae6d65aa29",
+      "scale": 1.9761904761904763,
+      "annotationHeight": 95
+    },
+    {
+      "id": "north-species-033",
+      "image": "assets/actors/task10-north-expansion3a/north-species-033.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-033.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1779,
+      "rgbaBytes": 4718592,
+      "sha256": "09f6e6822902760fc93a7f6051b42055b5c08f429f87e51d951a12243b44d553",
+      "scale": 1.0246913580246915,
+      "annotationHeight": 96
+    },
+    {
+      "id": "north-species-035",
+      "image": "assets/actors/task10-north-expansion3a/north-species-035.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-035.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1889,
+      "rgbaBytes": 4718592,
+      "sha256": "90618c381d8b373254a9239655de2378a3abb0e2782005419e684dd9cc768358",
+      "scale": 1.1375,
+      "annotationHeight": 103
+    },
+    {
+      "id": "north-species-038",
+      "image": "assets/actors/task10-north-expansion3a/north-species-038.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-038.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1667,
+      "rgbaBytes": 4718592,
+      "sha256": "aa6743ada43453bfabb27f84269945b610e80c8ee54facb29bb8118448a1b857",
+      "scale": 1.1111111111111112,
+      "annotationHeight": 92
+    },
+    {
+      "id": "north-species-040",
+      "image": "assets/actors/task10-north-expansion3a/north-species-040.png",
+      "atlas": "assets/actors/task10-north-expansion3a/north-species-040.json",
+      "width": 1024,
+      "height": 1152,
+      "poses": 48,
+      "minimumOpaquePixelsPerFrame": 1911,
+      "rgbaBytes": 4718592,
+      "sha256": "e21cfd8ad19f92c47de1656b1218afab1c1e265679595231235d4e122c9f4c06",
+      "scale": 1.1643835616438356,
+      "annotationHeight": 97
+    }
+  ]
+}

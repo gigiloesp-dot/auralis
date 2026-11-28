@@ -1,0 +1,134 @@
+{
+  "status": "art-only-verified",
+  "runtimeRegistered": false,
+  "models": [
+    {
+      "id": "forest-species-022",
+      "names": {
+        "ru": "Папоротниковый стрелок",
+        "en": "Fern-quiver outrider",
+        "es": "Arquero del helecho"
+      },
+      "baseType": "forestRaider",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "shot",
+        "roots"
+      ],
+      "silhouette": "Fern-quiver outrider is a human forest archer with very wide fan-shaped fern backpack, asymmetrical short orange cloak, long split reed hat and curved wooden bow. Slim biped two legs and two arms. No animal anatomy.",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-028",
+      "names": {
+        "ru": "Листоухий лисоволк",
+        "en": "Sail-ear foxwolf",
+        "es": "Loborro de orejas vela"
+      },
+      "baseType": "forestWolf",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "pounce",
+        "venom"
+      ],
+      "silhouette": "Lean quadruped canine with enormous triangular leaf-sail ears, narrow cream muzzle, orange fur, dark lower legs, short feather-fan tail. Not a bat or winged animal. Four paws.",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-030",
+      "names": {
+        "ru": "Мотыльковая крылатка",
+        "en": "Moth-mantle bat",
+        "es": "Murciélago de manto de polilla"
+      },
+      "baseType": "forestBat",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "dive",
+        "haunt"
+      ],
+      "silhouette": "A squat flying bat with broad rounded scalloped ivory-and-jade membranous wings, tiny dark face, two tall curled antenna-like ears, three ruby dorsal knobs, stub tail. Not bird wings; bat wing fingers.",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-033",
+      "names": {
+        "ru": "Змей горгульего гребня",
+        "en": "Gargoyle-crest serpent",
+        "es": "Serpiente de cresta de gárgola"
+      },
+      "baseType": "thornSnake",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "venom",
+        "roots"
+      ],
+      "silhouette": "Legless teal stone-scaled serpent, very broad flattened scalloped gargoyle hood, blunt short square snout, terracotta ridge down spine, coiled thick muscular body ending blunt spade tail. No limbs.",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-036",
+      "names": {
+        "ru": "Рогатый скелет-фонарщик",
+        "en": "Antler-lantern skeleton",
+        "es": "Esqueleto farolero de astas"
+      },
+      "baseType": "skeleton",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "cleave",
+        "haunt"
+      ],
+      "silhouette": "Exposed ivory human skeleton in moss-green tattered poncho, enormously branching wooden antler crown, hanging amber lantern in ribcage, armed with short hooked sickle. Clearly biped with bare bone feet.",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-038",
+      "names": {
+        "ru": "Аркоспинный секач",
+        "en": "Archback tusker",
+        "es": "Jabalí de lomo arqueado"
+      },
+      "baseType": "wildBoar",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "charge",
+        "stomp"
+      ],
+      "silhouette": "Stocky quadruped boar, brick-orange fur, exaggerated high domed back like a broken stone arch, two broad sideways ivory tusks, short shovel snout, dark small hooves, tiny twisted tail. No chimney tubes.",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-040",
+      "names": {
+        "ru": "Кувшинноплечий медведь",
+        "en": "Urn-shoulder bear",
+        "es": "Oso de hombros de urna"
+      },
+      "baseType": "bear",
+      "biome": "abandoned-city",
+      "proposedAbilityPattern": [
+        "stomp",
+        "roots"
+      ],
+      "silhouette": "Huge quadruped bear with cream fur, broad turquoise glazed urn-shaped shoulder armor grown onto body, short round ears, dark blue broad nose, thick forearms and broad paws, little tail. Clearly a bear not boar.",
+      "statsChanged": false
+    },
+    {
+      "id": "forest-species-042",
+      "names": {
+        "ru": "Репейногривый гончак",
+        "en": "Thistle-maned longhound",
+        "es": "Lebrel de crin de cardo"
+      },
+      "baseType": "forestWolf",
+      "biome": "woodland",
+      "proposedAbilityPattern": [
+        "pounce",
+        "haunt"
+      ],
+      "silhouette": "Very tall-legged charcoal canine quadruped with narrow long curved muzzle, thin high arched back, huge circular golden thistle ruff, small pointed ears and long whip tail ending single round thistle tuft. Four paws.",
+      "statsChanged": false
+    }
+  ]
+}

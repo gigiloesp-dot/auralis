@@ -1,0 +1,50 @@
+{
+  "source": "dfe4374f51601525eff10454295bcb0f0cda0e73",
+  "run": 44034153868,
+  "navigation": [
+    {
+      "name": "task10_navigation (es)",
+      "result": "success",
+      "id": 133872876703
+    },
+    {
+      "name": "task10_navigation (ru)",
+      "result": "success",
+      "id": 133872876927
+    },
+    {
+      "name": "task10_navigation (en)",
+      "result": "success",
+      "id": 133872876983
+    },
+    {
+      "name": "task10_gathering_and_regional_species",
+      "result": "success",
+      "id": 133872876992
+    }
+  ],
+  "issues": [
+    {
+      "job": 133872876642,
+      "cause": "old journal globally expected one close button; task10 adds permitted tracking",
+      "fix": "require exactly header close and one own tracking button per active quest; actual toggling must preserve all progression,resources and rewards"
+    },
+    {
+      "job": 133872876719,
+      "cause": "boss-art ownership omitted real gathering atlas lease",
+      "fix": "include exactly live renderer lease in full owner multiset; preserve all44 boss cases and old32pose/hurt/death/release assertions"
+    },
+    {
+      "job": 133872876701,
+      "cause": "loot soak expected all Phaser interactive objects to belong to ground loot only",
+      "fix": "compare exact actual interactive object roots against union of current loot and gathering owners; far unload still requires0; preserve all cycles,memory bounds and persistent54drop assertions"
+    },
+    {
+      "job": 133872877264,
+      "cause": "new quest browser fixture expected41 Task10 definitions before four real gathering quests extended the set to45",
+      "fix": "strict45 new and strict104 legacy assertions; actual accept/objective/NPC claim scenarios retained; separate realCanvas gathering proof retained"
+    }
+  ],
+  "daily_followup": "NPC service selectors explicitly exclude new tracking buttons; no claim,capacity,UTC or rollback condition removed",
+  "runResult": "23/27 success; navigation3language shards and gathering-regional job success; all four reported failures addressed, final rerun pending"
+}

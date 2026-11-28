@@ -1,0 +1,20 @@
+{
+  "classId": "cannoneer",
+  "elapsedSeconds": 1680,
+  "bossHp": 37827,
+  "bossMaxHp": 1095000,
+  "hp": 1200,
+  "mp": 3,
+  "potions": {
+    "hp": 10,
+    "mp": 0
+  },
+  "damageTaken": 0,
+  "phase": 3,
+  "casts": {
+    "cannoneer_3": 15,
+    "cannoneer_4": 13,
+    "cannoneer_0": 32,
+    "cannoneer_2": 19
+  }
+}

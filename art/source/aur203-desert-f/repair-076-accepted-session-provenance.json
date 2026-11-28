@@ -1,0 +1,6 @@
+{
+  "prompt": "BACKGROUND REMOVAL EDIT ONLY. Cut out all48 conch crab creatures from supplied sprite sheet. Entire background and all floor shadows fully TRANSPARENT alpha zero. Keep exact 8 columns6 rows layout and all48 complete poses, same scale, same anatomy, no enlargement. Remove every colored matte rectangle surrounding crabs and between legs. Output a true transparent PNG with only the creatures, no backdrop, no checkerboard.",
+  "outputHint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f2004762-508d-4a19-ba2a-d08b00da3780.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "originalGenerationPath": "/workspace/generated_images/exec-f2004762-508d-4a19-ba2a-d08b00da3780.png",
+  "accepted": true
+}

@@ -1,0 +1,57 @@
+{
+  "sourceCommit": "88cedeb65929cfac0174cb685f90521615e6a731",
+  "runId": 46129754050,
+  "jobId": 140932097374,
+  "regions": [
+    {
+      "region": "forest",
+      "width": 18000,
+      "height": 18000,
+      "camps": 97,
+      "normal": 1067,
+      "bosses": 6,
+      "towns": 3,
+      "npcs": 15,
+      "peak": 30,
+      "peakChunks": 23
+    },
+    {
+      "region": "north",
+      "width": 21000,
+      "height": 21000,
+      "camps": 94,
+      "normal": 1034,
+      "bosses": 6,
+      "towns": 2,
+      "npcs": 10,
+      "peak": 29,
+      "peakChunks": 24
+    },
+    {
+      "region": "ancient",
+      "width": 15000,
+      "height": 15000,
+      "camps": 62,
+      "normal": 682,
+      "bosses": 6,
+      "towns": 2,
+      "npcs": 8,
+      "peak": 32,
+      "peakChunks": 24
+    },
+    {
+      "region": "desert",
+      "width": 20000,
+      "height": 20000,
+      "camps": 88,
+      "normal": 968,
+      "bosses": 11,
+      "towns": 1,
+      "npcs": 7,
+      "peak": 29,
+      "peakChunks": 23
+    }
+  ],
+  "peakActors": 32
+}
+

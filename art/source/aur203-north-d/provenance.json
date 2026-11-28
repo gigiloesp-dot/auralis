@@ -1,0 +1,240 @@
+{
+  "requirement": "AUR-203",
+  "pack": "aur203-north-d",
+  "createdUTC": "2026-11-24",
+  "generatedWith": "OpenAI image_gen",
+  "artOnly": true,
+  "runtimeIntegrated": false,
+  "browserVerified": false,
+  "physicalAndroid": false,
+  "scope": "4 original anatomies; six pose banks including two movement drawings, not six multiframe clips.",
+  "sourceDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "atlasDirectionOrder": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+  ],
+  "mechanicalPacking": "Complete pose cropping with 8 source pixel margins, single uniform scale per species, no painting, erasing or threshold alpha matte. Alpha>128 used only to locate support/gutters.",
+  "species": [
+    {
+      "id": "north-species-088",
+      "placementId": "north088",
+      "spotId": "north-spot-088",
+      "typeId": "aur203North088",
+      "names": {
+        "ru": "Жароколёсый скорпион",
+        "en": "Ember-wheel scorpion",
+        "es": "Escorpión rueda de brasas"
+      },
+      "biome": "volcanic",
+      "level": 31,
+      "position": {
+        "x": 16953,
+        "y": 6212
+      },
+      "anatomy": "charcoal scorpion with broad paddle pincers, eight orange jointed legs, tail coiled in a complete ember-spoked wheel",
+      "movementProfile": "crawler",
+      "abilityPattern": [
+        "venom",
+        "burrow"
+      ],
+      "materialId": "aur203North088Material",
+      "materialConcept": {
+        "ru": "Спица жаркого хвоста",
+        "en": "Ember-tail spoke",
+        "es": "Radio de cola de brasas"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-089",
+      "placementId": "north089",
+      "spotId": "north-spot-089",
+      "typeId": "aur203North089",
+      "names": {
+        "ru": "Базальтовый лопатокрот",
+        "en": "Basalt shovel mole",
+        "es": "Topo pala de basalto"
+      },
+      "biome": "volcanic",
+      "level": 31,
+      "position": {
+        "x": 15883,
+        "y": 7868
+      },
+      "anatomy": "puglike eyeless mole with six giant basalt shovel foredigits, split ember nose and overlapping hexagonal back plates",
+      "movementProfile": "scarab",
+      "abilityPattern": [
+        "burrow",
+        "stomp"
+      ],
+      "materialId": "aur203North089Material",
+      "materialConcept": {
+        "ru": "Базальтовая лопастная пластина",
+        "en": "Basalt shovel plate",
+        "es": "Placa de pala basáltica"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-090",
+      "placementId": "north090",
+      "spotId": "north-spot-090",
+      "typeId": "aur203North090",
+      "names": {
+        "ru": "Вьюжная воронкомоль",
+        "en": "Blizzard funnel moth",
+        "es": "Polilla embudo de ventisca"
+      },
+      "biome": "snow",
+      "level": 27,
+      "position": {
+        "x": 2569,
+        "y": 10417
+      },
+      "anatomy": "thick fuzzy moth, four curled funnel wings rimmed in violet ice, twin feathery antennae, six small feet",
+      "movementProfile": "bat",
+      "abilityPattern": [
+        "dive",
+        "frost"
+      ],
+      "materialId": "aur203North090Material",
+      "materialConcept": {
+        "ru": "Чешуйка воронкового крыла",
+        "en": "Funnel-wing scale",
+        "es": "Escama de ala embudo"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    },
+    {
+      "id": "north-species-091",
+      "placementId": "north091",
+      "spotId": "north-spot-091",
+      "typeId": "aur203North091",
+      "names": {
+        "ru": "Ледострунный ходульник",
+        "en": "Ice-harp strider",
+        "es": "Zancudo arpa de hielo"
+      },
+      "biome": "snow",
+      "level": 25,
+      "position": {
+        "x": 7557,
+        "y": 2691
+      },
+      "anatomy": "six stilt legs supporting arched translucent icy harp body, three dangling crystal strings, small beaked central head",
+      "movementProfile": "skirmisher",
+      "abilityPattern": [
+        "blink",
+        "frost"
+      ],
+      "materialId": "aur203North091Material",
+      "materialConcept": {
+        "ru": "Ледяная струна",
+        "en": "Ice-harp string",
+        "es": "Cuerda de arpa helada"
+      },
+      "artOnly": true,
+      "runtimeIntegrated": false,
+      "proposedPassivesImplemented": false
+    }
+  ],
+  "prompts": {
+    "088": {
+      "original": "ONE professional polished hand-painted cartoon fantasy RPG sprite atlas. Exactly48 individually unique complete creature drawings,8columns×6rows, genuine RGBA TRANSPARENT background. All blank areas alpha0, no gray or colored matte, scenery, shadows, text or grid. Columns face E SE S SW W NW N NE. Rows idle; runningA; runningB opposite stride; attack; hurt recoiling; DEATH fully collapsed low and limp lying naturally on side/belly with ALL appendages relaxed near ground, never upright asleep. Character EMBER WHEEL SCORPION, eight orange jointed legs, broad black paddle pincers, charcoal plated body and extraordinary tail coiled into complete circular wheel with glowing ember spokes. Volcanic creature, broad low silhouette. Distinct fantasy anatomy, expressive face, rounded vibrant volume, fine thin dark outlines, softly detailed painted materials, three-quarter overhead game camera. Consistent character in48directions/poses. Every creature SMALL inside cell with very wide transparent gutters, landscape1536x1024, max creature130pxwide105pxtall, even8×6grid no overlap. TWO distinct movement drawings, attack dynamic, hurt recoiling, all eight last-row death views collapsed.",
+      "repair": "Repair exact sprite atlas keeping all48creatures, consistent colors/anatomies and E SE S SW W NW N NE direction columns. Remove ALL background haze/matte and shadows, every blank pixel alpha0 transparent. Uniformly shrink each COMPLETE pose25% and center in8×6grid with ample transparent gutters. Keep rows idle/runA/runB/attack/hurt/death. Bottom death row all eight characters lying collapsed naturally LOW with wheel tail laid flat on its SIDE and legs and claws limp, no standing death. No newbackground, text or grids."
+    },
+    "089": {
+      "original": "ONE professional polished hand-painted cartoon fantasy RPG sprite atlas. Exactly48 individually unique complete creature drawings,8columns×6rows, genuine RGBA TRANSPARENT background. All blank areas alpha0, no gray or colored matte, scenery, shadows, text or grid. Columns face E SE S SW W NW N NE. Rows idle; runningA; runningB opposite stride; attack; hurt recoiling; DEATH fully collapsed low and limp lying naturally on side/belly with ALL appendages relaxed near ground, never upright asleep. Character BASALT SHOVEL MOLE, plump eyeless puglike subterranean creature, tiny split ember nose, FOUR short limbs with SIX enormous flared basalt shovel digits on forepaws total; overlapping hexagonal dark back plates and short flat tail. Volcanic warm orange cracks. Distinct fantasy anatomy, expressive face, rounded vibrant volume, fine thin dark outlines, softly detailed painted materials, three-quarter overhead game camera. Consistent character in48directions/poses. Every creature SMALL inside cell with very wide transparent gutters, landscape1536x1024, max creature130pxwide105pxtall, even8×6grid no overlap. TWO distinct movement drawings, attack dynamic, hurt recoiling, all eight last-row death views collapsed.",
+      "repair": "Repair exact48creature atlas. ALL blank background must alpha0 transparent, remove all dark orange brown haze, no matte/shadows. Preserve all48painted basalt shovel moles completely with their colors/anatomy. Uniformly shrink all complete poses25%, center them in8columns6rows with ample transparent gutters. Preserve columns E SE S SW W NW N NE, rows idle/runA/runB/attack/hurt/death. Lastrow all8low naturally collapsed bodies flat side/belly, shovel paws and tails limp near ground, eyes closed. No scenery, grid, text or shadows."
+    },
+    "090": {
+      "original": "ONE professional polished hand-painted cartoon fantasy RPG sprite atlas. Exactly48 individually unique complete creature drawings,8columns×6rows, genuine RGBA TRANSPARENT background. All blank areas alpha0, no gray or colored matte, scenery, shadows, text or grid. Columns face E SE S SW W NW N NE. Rows idle; runningA; runningB opposite stride; attack; hurt recoiling; DEATH fully collapsed low and limp lying naturally on side/belly with ALL appendages relaxed near ground, never upright asleep. Character BLIZZARD FUNNEL MOTH, thick fuzzy snow white moth body, FOUR broad wings each curling into a funnel at its tip, translucent violet ice edging, huge feathery blue antennae and six tiny feet. Flying snow creature, fine fluttering wing shapes. Distinct fantasy anatomy, expressive face, rounded vibrant volume, fine thin dark outlines, softly detailed painted materials, three-quarter overhead game camera. Consistent character in48directions/poses. Every creature SMALL inside cell with very wide transparent gutters, landscape1536x1024, max creature130pxwide105pxtall, even8×6grid no overlap. TWO distinct movement drawings, attack dynamic, hurt recoiling, all eight last-row death views collapsed.",
+      "repair": "Repair exact sprite atlas keeping all48creatures, consistent colors/anatomies and E SE S SW W NW N NE direction columns. Remove ALL background haze/matte and shadows, every blank pixel alpha0 transparent. Uniformly shrink each COMPLETE pose25% and center in8×6grid with ample transparent gutters. Keep rows idle/runA/runB/attack/hurt/death. Bottom death row all eight characters lying collapsed naturally LOW with all four curled wings folded relaxed near ground and antennae limp, no standing death. No newbackground, text or grids."
+    },
+    "091": {
+      "original": "ONE professional polished hand-painted cartoon fantasy RPG sprite atlas. Exactly48 individually unique complete creature drawings,8columns×6rows, genuine RGBA TRANSPARENT background. All blank areas alpha0, no gray or colored matte, scenery, shadows, text or grid. Columns face E SE S SW W NW N NE. Rows idle; runningA; runningB opposite stride; attack; hurt recoiling; DEATH fully collapsed low and limp lying naturally on side/belly with ALL appendages relaxed near ground, never upright asleep. Character ICE HARP STRIDER, SIX tall thin jointed stilt legs attached to a compact arched turquoise translucent harp-shaped shell, three dangling crystal strings, small central expressive beaked head and amber eyes. Ground walking six-legged creature, no wings. Distinct fantasy anatomy, expressive face, rounded vibrant volume, fine thin dark outlines, softly detailed painted materials, three-quarter overhead game camera. Consistent character in48directions/poses. Every creature SMALL inside cell with very wide transparent gutters, landscape1536x1024, max creature130pxwide105pxtall, even8×6grid no overlap. TWO distinct movement drawings, attack dynamic, hurt recoiling, all eight last-row death views collapsed.",
+      "repair": "Repair exact sprite atlas keeping all48creatures, consistent colors/anatomies and E SE S SW W NW N NE direction columns. Remove ALL background haze/matte and shadows, every blank pixel alpha0 transparent. Uniformly shrink each COMPLETE pose25% and center in8×6grid with ample transparent gutters. Keep rows idle/runA/runB/attack/hurt/death. Bottom death row all eight characters lying collapsed naturally LOW with harp body tipped sideways and all six stilt legs folded limp flat on the ground, no standing death. No newbackground, text or grids."
+    }
+  },
+  "sources": [
+    {
+      "path": "art/source/aur203-north-d/north-species-088-cutout.png",
+      "sha256": "2bdad594c86ddc79bfd96a19e7b0cf2925ad6fe2838b18f39aea8ee3147429f8"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-088-original.png",
+      "sha256": "e364d42356bc5c6f38bd4cf767a71b0093d21a374a9a131a4743b6619ee5ec06"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-088-registered.png",
+      "sha256": "220a391085e84256cdf7f275add52b4b2d50d7177b541077859385e190358b73"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-089-cutout.png",
+      "sha256": "ec29669224cbea2d3576299f2965c79c4040a90a2e0deb341e85b867b9eda994"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-089-original.png",
+      "sha256": "d463a0fd1a56b209b6283c2f809e55956d07dfd574bbb491c163e8c99f2af49a"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-089-registered.png",
+      "sha256": "16bed55f9ced9ed269ca4c1e909ba19eaa93888f7c22f6cd224644b2b84f1594"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-090-cutout.png",
+      "sha256": "9143f5ff0afef1d9a2e26a83b07d220502b41fe50b860bd29964d3d079e45e82"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-090-original.png",
+      "sha256": "6bec7bfa11287a370926510c813557b88f4cecb7ac12b7f973523950685b91ca"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-090-registered.png",
+      "sha256": "f02630bafc9ce18a137b268f0a4dd7dfda2cf00984e9db539a6730cb1e15c79c"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-091-cutout.png",
+      "sha256": "c9d921b0ae2a5ad36aed32b06db47d85c7a7bbc9b96ff12ac3883be718532b19"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-091-original.png",
+      "sha256": "5294e12f62d7502f486171899ced6400b30cd5d646e737077ac81dc3aaa1e83a"
+    },
+    {
+      "path": "art/source/aur203-north-d/north-species-091-registered.png",
+      "sha256": "16ab4f7a49f70d05a7a65e6d9fbfe5a181eca79ad4e4a909fb8dbeb4beebf075"
+    }
+  ],
+  "repairs": "Originals retained; image_gen cutout/reflow outputs retained and selected. Semantic transparency and spacing repairs performed only by image_gen.",
+  "visualInspection": {
+    "posesInspected": 192,
+    "backgrounds": [
+      "beige",
+      "dark"
+    ],
+    "notes": "All registered native poses reviewed on both backgrounds; complete silhouettes and natural collapsed death. No clipping, neighboring limbs or missing poses. All48 distinct RGBA hashes per species."
+  },
+  "statsLootAndFinalBalance": "Not configured in this art-only pack; root owns integration."
+}

@@ -1,0 +1,2704 @@
+{
+  "records": [
+    {
+      "language": "ru",
+      "preparation": {
+        "id": "forest-spot-001-mob-0",
+        "speciesId": "forest-species-001",
+        "campId": "forest-spot-001",
+        "loot": "boar"
+      },
+      "killed": {
+        "inventory": 0,
+        "alive": false,
+        "drops": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "boarTusk",
+              "rarity": "rare",
+              "quantity": 1
+            },
+            "distance": 49.364123650714106
+          }
+        ],
+        "death": {
+          "deadUntil": 1795505125457,
+          "killedAt": 1795505095457,
+          "hp": 0
+        },
+        "painted": true
+      },
+      "anonymous": {
+        "category": "chest",
+        "types": [
+          "Graphics"
+        ],
+        "data": {
+          "lootId": "drop-1",
+          "category": "chest"
+        }
+      },
+      "restored": {
+        "inventory": [
+          {
+            "id": "boarTusk",
+            "rarity": "rare",
+            "quantity": 1
+          }
+        ],
+        "drop": false
+      },
+      "views": [
+        {
+          "width": 740,
+          "height": 320,
+          "fixture": {
+            "ids": [
+              "drop-1",
+              "drop-2",
+              "drop-3",
+              "drop-4",
+              "drop-5",
+              "drop-6",
+              "drop-7",
+              "drop-8",
+              "drop-9",
+              "drop-10",
+              "drop-11",
+              "drop-12",
+              "drop-13",
+              "drop-14",
+              "drop-15",
+              "drop-16"
+            ],
+            "itemIds": [
+              "boarTusk",
+              "raiderPouch",
+              "bearHide",
+              "spiderSilk",
+              "boneFragment",
+              "iceWolfFang",
+              "frostGolemCrystal",
+              "sentinelRunestone",
+              "arcaneWispShard",
+              "batWing",
+              "snakeScales",
+              "orcClanToken",
+              "elementalEssence",
+              "ghostVeil",
+              "scarabShell",
+              "gargoyleFragment"
+            ],
+            "names": [
+              "Клык кабана",
+              "Потрёпанный кошель",
+              "Медвежья шкура",
+              "Паучий шёлк",
+              "Обломок кости",
+              "Ледяной клык",
+              "Кристалл ледяного голема",
+              "Рунный осколок стража",
+              "Чародейский осколок",
+              "Крыло летучей мыши",
+              "Змеиная чешуя",
+              "Знак орочьего клана",
+              "Стихийная эссенция",
+              "Призрачная вуаль",
+              "Панцирь скарабея",
+              "Обломок горгульи"
+            ],
+            "expectedURLs": [
+              "assets/icons/monster-materials/boar-tusk.png",
+              "assets/icons/monster-materials/raider-pouch.png",
+              "assets/icons/monster-materials/bear-hide.png",
+              "assets/icons/monster-materials/spider-silk.png",
+              "assets/icons/monster-materials/bone-fragment.png",
+              "assets/icons/monster-materials/ice-fang.png",
+              "assets/icons/monster-materials/frost-crystal.png",
+              "assets/icons/monster-materials/sentinel-runestone.png",
+              "assets/icons/monster-materials/arcane-shard.png",
+              "assets/icons/monster-materials/bat-wing.png",
+              "assets/icons/monster-materials/snake-scales.png",
+              "assets/icons/monster-materials/orc-token.png",
+              "assets/icons/monster-materials/elemental-essence.png",
+              "assets/icons/monster-materials/ghost-veil.png",
+              "assets/icons/monster-materials/scarab-shell.png",
+              "assets/icons/monster-materials/gargoyle-fragment.png"
+            ]
+          },
+          "icons": [
+            {
+              "href": "assets/icons/monster-materials/boar-tusk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4251,
+              "transparent": 11042,
+              "checksum": 2402918549,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/raider-pouch.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6642,
+              "transparent": 8440,
+              "checksum": 2738193300,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bear-hide.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 7790,
+              "transparent": 7437,
+              "checksum": 1760243429,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666671752929688
+            },
+            {
+              "href": "assets/icons/monster-materials/bone-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3593,
+              "transparent": 11848,
+              "checksum": 3975747092,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/ice-fang.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3613,
+              "transparent": 10722,
+              "checksum": 973482218,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/spider-silk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4890,
+              "transparent": 9118,
+              "checksum": 3766035667,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/frost-crystal.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6136,
+              "transparent": 8766,
+              "checksum": 3823103781,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/sentinel-runestone.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6244,
+              "transparent": 9376,
+              "checksum": 2976314607,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/orc-token.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6754,
+              "transparent": 8757,
+              "checksum": 1608764465,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/arcane-shard.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4467,
+              "transparent": 10299,
+              "checksum": 347072147,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/snake-scales.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5671,
+              "transparent": 9772,
+              "checksum": 4254849578,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/bat-wing.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5345,
+              "transparent": 9649,
+              "checksum": 3053199335,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/elemental-essence.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5430,
+              "transparent": 7850,
+              "checksum": 2335525180,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/ghost-veil.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4959,
+              "transparent": 6484,
+              "checksum": 4224650166,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/scarab-shell.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6168,
+              "transparent": 8861,
+              "checksum": 2485650575,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/gargoyle-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5265,
+              "transparent": 10283,
+              "checksum": 745385426,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            }
+          ],
+          "geometry": {
+            "x": 204,
+            "y": 72,
+            "right": 536,
+            "bottom": 258,
+            "overflow": false,
+            "scrollable": true
+          },
+          "partial": {
+            "slots": 60,
+            "remaining": 13,
+            "materials": 3
+          },
+          "complete": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          },
+          "reload": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          }
+        },
+        {
+          "width": 640,
+          "height": 360,
+          "fixture": {
+            "ids": [
+              "drop-1",
+              "drop-2",
+              "drop-3",
+              "drop-4",
+              "drop-5",
+              "drop-6",
+              "drop-7",
+              "drop-8",
+              "drop-9",
+              "drop-10",
+              "drop-11",
+              "drop-12",
+              "drop-13",
+              "drop-14",
+              "drop-15",
+              "drop-16"
+            ],
+            "itemIds": [
+              "boarTusk",
+              "raiderPouch",
+              "bearHide",
+              "spiderSilk",
+              "boneFragment",
+              "iceWolfFang",
+              "frostGolemCrystal",
+              "sentinelRunestone",
+              "arcaneWispShard",
+              "batWing",
+              "snakeScales",
+              "orcClanToken",
+              "elementalEssence",
+              "ghostVeil",
+              "scarabShell",
+              "gargoyleFragment"
+            ],
+            "names": [
+              "Клык кабана",
+              "Потрёпанный кошель",
+              "Медвежья шкура",
+              "Паучий шёлк",
+              "Обломок кости",
+              "Ледяной клык",
+              "Кристалл ледяного голема",
+              "Рунный осколок стража",
+              "Чародейский осколок",
+              "Крыло летучей мыши",
+              "Змеиная чешуя",
+              "Знак орочьего клана",
+              "Стихийная эссенция",
+              "Призрачная вуаль",
+              "Панцирь скарабея",
+              "Обломок горгульи"
+            ],
+            "expectedURLs": [
+              "assets/icons/monster-materials/boar-tusk.png",
+              "assets/icons/monster-materials/raider-pouch.png",
+              "assets/icons/monster-materials/bear-hide.png",
+              "assets/icons/monster-materials/spider-silk.png",
+              "assets/icons/monster-materials/bone-fragment.png",
+              "assets/icons/monster-materials/ice-fang.png",
+              "assets/icons/monster-materials/frost-crystal.png",
+              "assets/icons/monster-materials/sentinel-runestone.png",
+              "assets/icons/monster-materials/arcane-shard.png",
+              "assets/icons/monster-materials/bat-wing.png",
+              "assets/icons/monster-materials/snake-scales.png",
+              "assets/icons/monster-materials/orc-token.png",
+              "assets/icons/monster-materials/elemental-essence.png",
+              "assets/icons/monster-materials/ghost-veil.png",
+              "assets/icons/monster-materials/scarab-shell.png",
+              "assets/icons/monster-materials/gargoyle-fragment.png"
+            ]
+          },
+          "icons": [
+            {
+              "href": "assets/icons/monster-materials/boar-tusk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4251,
+              "transparent": 11042,
+              "checksum": 2402918549,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/raider-pouch.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6642,
+              "transparent": 8440,
+              "checksum": 2738193300,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bear-hide.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 7790,
+              "transparent": 7437,
+              "checksum": 1760243429,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666671752929688
+            },
+            {
+              "href": "assets/icons/monster-materials/bone-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3593,
+              "transparent": 11848,
+              "checksum": 3975747092,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/ice-fang.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3613,
+              "transparent": 10722,
+              "checksum": 973482218,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/spider-silk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4890,
+              "transparent": 9118,
+              "checksum": 3766035667,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/frost-crystal.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6136,
+              "transparent": 8766,
+              "checksum": 3823103781,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/sentinel-runestone.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6244,
+              "transparent": 9376,
+              "checksum": 2976314607,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/orc-token.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6754,
+              "transparent": 8757,
+              "checksum": 1608764465,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/arcane-shard.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4467,
+              "transparent": 10299,
+              "checksum": 347072147,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/snake-scales.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5671,
+              "transparent": 9772,
+              "checksum": 4254849578,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/bat-wing.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5345,
+              "transparent": 9649,
+              "checksum": 3053199335,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/elemental-essence.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5430,
+              "transparent": 7850,
+              "checksum": 2335525180,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/ghost-veil.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4959,
+              "transparent": 6484,
+              "checksum": 4224650166,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/scarab-shell.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6168,
+              "transparent": 8861,
+              "checksum": 2485650575,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/gargoyle-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5265,
+              "transparent": 10283,
+              "checksum": 745385426,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            }
+          ],
+          "geometry": {
+            "x": 204,
+            "y": 72,
+            "right": 436,
+            "bottom": 298,
+            "overflow": false,
+            "scrollable": true
+          },
+          "partial": {
+            "slots": 60,
+            "remaining": 13,
+            "materials": 3
+          },
+          "complete": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          },
+          "reload": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "language": "en",
+      "preparation": {
+        "id": "forest-spot-001-mob-0",
+        "speciesId": "forest-species-001",
+        "campId": "forest-spot-001",
+        "loot": "boar"
+      },
+      "killed": {
+        "inventory": 0,
+        "alive": false,
+        "drops": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "boarTusk",
+              "rarity": "rare",
+              "quantity": 1
+            },
+            "distance": 49.36458989539195
+          }
+        ],
+        "death": {
+          "deadUntil": 1795505157950,
+          "killedAt": 1795505127950,
+          "hp": 0
+        },
+        "painted": true
+      },
+      "anonymous": {
+        "category": "chest",
+        "types": [
+          "Graphics"
+        ],
+        "data": {
+          "lootId": "drop-1",
+          "category": "chest"
+        }
+      },
+      "restored": {
+        "inventory": [
+          {
+            "id": "boarTusk",
+            "rarity": "rare",
+            "quantity": 1
+          }
+        ],
+        "drop": false
+      },
+      "views": [
+        {
+          "width": 740,
+          "height": 320,
+          "fixture": {
+            "ids": [
+              "drop-1",
+              "drop-2",
+              "drop-3",
+              "drop-4",
+              "drop-5",
+              "drop-6",
+              "drop-7",
+              "drop-8",
+              "drop-9",
+              "drop-10",
+              "drop-11",
+              "drop-12",
+              "drop-13",
+              "drop-14",
+              "drop-15",
+              "drop-16"
+            ],
+            "itemIds": [
+              "boarTusk",
+              "raiderPouch",
+              "bearHide",
+              "spiderSilk",
+              "boneFragment",
+              "iceWolfFang",
+              "frostGolemCrystal",
+              "sentinelRunestone",
+              "arcaneWispShard",
+              "batWing",
+              "snakeScales",
+              "orcClanToken",
+              "elementalEssence",
+              "ghostVeil",
+              "scarabShell",
+              "gargoyleFragment"
+            ],
+            "names": [
+              "Boar tusk",
+              "Worn raider pouch",
+              "Bear hide",
+              "Spider silk",
+              "Bone fragment",
+              "Frost wolf fang",
+              "Frost golem crystal",
+              "Sentinel runestone shard",
+              "Arcane wisp shard",
+              "Bat wing",
+              "Snake scales",
+              "Orc clan token",
+              "Elemental essence",
+              "Ghost veil",
+              "Scarab shell",
+              "Gargoyle fragment"
+            ],
+            "expectedURLs": [
+              "assets/icons/monster-materials/boar-tusk.png",
+              "assets/icons/monster-materials/raider-pouch.png",
+              "assets/icons/monster-materials/bear-hide.png",
+              "assets/icons/monster-materials/spider-silk.png",
+              "assets/icons/monster-materials/bone-fragment.png",
+              "assets/icons/monster-materials/ice-fang.png",
+              "assets/icons/monster-materials/frost-crystal.png",
+              "assets/icons/monster-materials/sentinel-runestone.png",
+              "assets/icons/monster-materials/arcane-shard.png",
+              "assets/icons/monster-materials/bat-wing.png",
+              "assets/icons/monster-materials/snake-scales.png",
+              "assets/icons/monster-materials/orc-token.png",
+              "assets/icons/monster-materials/elemental-essence.png",
+              "assets/icons/monster-materials/ghost-veil.png",
+              "assets/icons/monster-materials/scarab-shell.png",
+              "assets/icons/monster-materials/gargoyle-fragment.png"
+            ]
+          },
+          "icons": [
+            {
+              "href": "assets/icons/monster-materials/boar-tusk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4251,
+              "transparent": 11042,
+              "checksum": 2402918549,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/raider-pouch.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6642,
+              "transparent": 8440,
+              "checksum": 2738193300,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bear-hide.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 7790,
+              "transparent": 7437,
+              "checksum": 1760243429,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bone-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3593,
+              "transparent": 11848,
+              "checksum": 3975747092,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/ice-fang.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3613,
+              "transparent": 10722,
+              "checksum": 973482218,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/spider-silk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4890,
+              "transparent": 9118,
+              "checksum": 3766035667,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/frost-crystal.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6136,
+              "transparent": 8766,
+              "checksum": 3823103781,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/sentinel-runestone.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6244,
+              "transparent": 9376,
+              "checksum": 2976314607,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/orc-token.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6754,
+              "transparent": 8757,
+              "checksum": 1608764465,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/arcane-shard.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4467,
+              "transparent": 10299,
+              "checksum": 347072147,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/snake-scales.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5671,
+              "transparent": 9772,
+              "checksum": 4254849578,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/bat-wing.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5345,
+              "transparent": 9649,
+              "checksum": 3053199335,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/elemental-essence.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5430,
+              "transparent": 7850,
+              "checksum": 2335525180,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/ghost-veil.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4959,
+              "transparent": 6484,
+              "checksum": 4224650166,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/scarab-shell.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6168,
+              "transparent": 8861,
+              "checksum": 2485650575,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/gargoyle-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5265,
+              "transparent": 10283,
+              "checksum": 745385426,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            }
+          ],
+          "geometry": {
+            "x": 204,
+            "y": 72,
+            "right": 536,
+            "bottom": 258,
+            "overflow": false,
+            "scrollable": true
+          },
+          "partial": {
+            "slots": 60,
+            "remaining": 13,
+            "materials": 3
+          },
+          "complete": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          },
+          "reload": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          }
+        },
+        {
+          "width": 640,
+          "height": 360,
+          "fixture": {
+            "ids": [
+              "drop-1",
+              "drop-2",
+              "drop-3",
+              "drop-4",
+              "drop-5",
+              "drop-6",
+              "drop-7",
+              "drop-8",
+              "drop-9",
+              "drop-10",
+              "drop-11",
+              "drop-12",
+              "drop-13",
+              "drop-14",
+              "drop-15",
+              "drop-16"
+            ],
+            "itemIds": [
+              "boarTusk",
+              "raiderPouch",
+              "bearHide",
+              "spiderSilk",
+              "boneFragment",
+              "iceWolfFang",
+              "frostGolemCrystal",
+              "sentinelRunestone",
+              "arcaneWispShard",
+              "batWing",
+              "snakeScales",
+              "orcClanToken",
+              "elementalEssence",
+              "ghostVeil",
+              "scarabShell",
+              "gargoyleFragment"
+            ],
+            "names": [
+              "Boar tusk",
+              "Worn raider pouch",
+              "Bear hide",
+              "Spider silk",
+              "Bone fragment",
+              "Frost wolf fang",
+              "Frost golem crystal",
+              "Sentinel runestone shard",
+              "Arcane wisp shard",
+              "Bat wing",
+              "Snake scales",
+              "Orc clan token",
+              "Elemental essence",
+              "Ghost veil",
+              "Scarab shell",
+              "Gargoyle fragment"
+            ],
+            "expectedURLs": [
+              "assets/icons/monster-materials/boar-tusk.png",
+              "assets/icons/monster-materials/raider-pouch.png",
+              "assets/icons/monster-materials/bear-hide.png",
+              "assets/icons/monster-materials/spider-silk.png",
+              "assets/icons/monster-materials/bone-fragment.png",
+              "assets/icons/monster-materials/ice-fang.png",
+              "assets/icons/monster-materials/frost-crystal.png",
+              "assets/icons/monster-materials/sentinel-runestone.png",
+              "assets/icons/monster-materials/arcane-shard.png",
+              "assets/icons/monster-materials/bat-wing.png",
+              "assets/icons/monster-materials/snake-scales.png",
+              "assets/icons/monster-materials/orc-token.png",
+              "assets/icons/monster-materials/elemental-essence.png",
+              "assets/icons/monster-materials/ghost-veil.png",
+              "assets/icons/monster-materials/scarab-shell.png",
+              "assets/icons/monster-materials/gargoyle-fragment.png"
+            ]
+          },
+          "icons": [
+            {
+              "href": "assets/icons/monster-materials/boar-tusk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4251,
+              "transparent": 11042,
+              "checksum": 2402918549,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/raider-pouch.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6642,
+              "transparent": 8440,
+              "checksum": 2738193300,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bear-hide.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 7790,
+              "transparent": 7437,
+              "checksum": 1760243429,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bone-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3593,
+              "transparent": 11848,
+              "checksum": 3975747092,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/ice-fang.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3613,
+              "transparent": 10722,
+              "checksum": 973482218,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/spider-silk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4890,
+              "transparent": 9118,
+              "checksum": 3766035667,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/frost-crystal.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6136,
+              "transparent": 8766,
+              "checksum": 3823103781,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/sentinel-runestone.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6244,
+              "transparent": 9376,
+              "checksum": 2976314607,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/orc-token.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6754,
+              "transparent": 8757,
+              "checksum": 1608764465,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/arcane-shard.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4467,
+              "transparent": 10299,
+              "checksum": 347072147,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/snake-scales.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5671,
+              "transparent": 9772,
+              "checksum": 4254849578,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/bat-wing.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5345,
+              "transparent": 9649,
+              "checksum": 3053199335,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/elemental-essence.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5430,
+              "transparent": 7850,
+              "checksum": 2335525180,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/ghost-veil.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4959,
+              "transparent": 6484,
+              "checksum": 4224650166,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/scarab-shell.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6168,
+              "transparent": 8861,
+              "checksum": 2485650575,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/gargoyle-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5265,
+              "transparent": 10283,
+              "checksum": 745385426,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            }
+          ],
+          "geometry": {
+            "x": 204,
+            "y": 72,
+            "right": 436,
+            "bottom": 298,
+            "overflow": false,
+            "scrollable": true
+          },
+          "partial": {
+            "slots": 60,
+            "remaining": 13,
+            "materials": 3
+          },
+          "complete": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          },
+          "reload": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "language": "es",
+      "preparation": {
+        "id": "forest-spot-001-mob-0",
+        "speciesId": "forest-species-001",
+        "campId": "forest-spot-001",
+        "loot": "boar"
+      },
+      "killed": {
+        "inventory": 0,
+        "alive": false,
+        "drops": [
+          {
+            "id": "drop-1",
+            "item": {
+              "id": "boarTusk",
+              "rarity": "rare",
+              "quantity": 1
+            },
+            "distance": 49.36552238553863
+          }
+        ],
+        "death": {
+          "deadUntil": 1795505189362,
+          "killedAt": 1795505159362,
+          "hp": 0
+        },
+        "painted": true
+      },
+      "anonymous": {
+        "category": "chest",
+        "types": [
+          "Graphics"
+        ],
+        "data": {
+          "lootId": "drop-1",
+          "category": "chest"
+        }
+      },
+      "restored": {
+        "inventory": [
+          {
+            "id": "boarTusk",
+            "rarity": "rare",
+            "quantity": 1
+          }
+        ],
+        "drop": false
+      },
+      "views": [
+        {
+          "width": 740,
+          "height": 320,
+          "fixture": {
+            "ids": [
+              "drop-1",
+              "drop-2",
+              "drop-3",
+              "drop-4",
+              "drop-5",
+              "drop-6",
+              "drop-7",
+              "drop-8",
+              "drop-9",
+              "drop-10",
+              "drop-11",
+              "drop-12",
+              "drop-13",
+              "drop-14",
+              "drop-15",
+              "drop-16"
+            ],
+            "itemIds": [
+              "boarTusk",
+              "raiderPouch",
+              "bearHide",
+              "spiderSilk",
+              "boneFragment",
+              "iceWolfFang",
+              "frostGolemCrystal",
+              "sentinelRunestone",
+              "arcaneWispShard",
+              "batWing",
+              "snakeScales",
+              "orcClanToken",
+              "elementalEssence",
+              "ghostVeil",
+              "scarabShell",
+              "gargoyleFragment"
+            ],
+            "names": [
+              "Colmillo de jabalí",
+              "Bolsa gastada de bandido",
+              "Piel de oso",
+              "Seda de araña",
+              "Fragmento de hueso",
+              "Colmillo de lobo helado",
+              "Cristal de gólem helado",
+              "Fragmento rúnico de centinela",
+              "Fragmento de fuego arcano",
+              "Ala de murciélago",
+              "Escamas de serpiente",
+              "Insignia de clan orco",
+              "Esencia elemental",
+              "Velo espectral",
+              "Caparazón de escarabajo",
+              "Fragmento de gárgola"
+            ],
+            "expectedURLs": [
+              "assets/icons/monster-materials/boar-tusk.png",
+              "assets/icons/monster-materials/raider-pouch.png",
+              "assets/icons/monster-materials/bear-hide.png",
+              "assets/icons/monster-materials/spider-silk.png",
+              "assets/icons/monster-materials/bone-fragment.png",
+              "assets/icons/monster-materials/ice-fang.png",
+              "assets/icons/monster-materials/frost-crystal.png",
+              "assets/icons/monster-materials/sentinel-runestone.png",
+              "assets/icons/monster-materials/arcane-shard.png",
+              "assets/icons/monster-materials/bat-wing.png",
+              "assets/icons/monster-materials/snake-scales.png",
+              "assets/icons/monster-materials/orc-token.png",
+              "assets/icons/monster-materials/elemental-essence.png",
+              "assets/icons/monster-materials/ghost-veil.png",
+              "assets/icons/monster-materials/scarab-shell.png",
+              "assets/icons/monster-materials/gargoyle-fragment.png"
+            ]
+          },
+          "icons": [
+            {
+              "href": "assets/icons/monster-materials/boar-tusk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4251,
+              "transparent": 11042,
+              "checksum": 2402918549,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/raider-pouch.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6642,
+              "transparent": 8440,
+              "checksum": 2738193300,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bear-hide.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 7790,
+              "transparent": 7437,
+              "checksum": 1760243429,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666671752929688
+            },
+            {
+              "href": "assets/icons/monster-materials/bone-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3593,
+              "transparent": 11848,
+              "checksum": 3975747092,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/ice-fang.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3613,
+              "transparent": 10722,
+              "checksum": 973482218,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/spider-silk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4890,
+              "transparent": 9118,
+              "checksum": 3766035667,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/frost-crystal.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6136,
+              "transparent": 8766,
+              "checksum": 3823103781,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/sentinel-runestone.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6244,
+              "transparent": 9376,
+              "checksum": 2976314607,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/orc-token.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6754,
+              "transparent": 8757,
+              "checksum": 1608764465,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/arcane-shard.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4467,
+              "transparent": 10299,
+              "checksum": 347072147,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/snake-scales.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5671,
+              "transparent": 9772,
+              "checksum": 4254849578,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/bat-wing.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5345,
+              "transparent": 9649,
+              "checksum": 3053199335,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/elemental-essence.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5430,
+              "transparent": 7850,
+              "checksum": 2335525180,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/ghost-veil.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4959,
+              "transparent": 6484,
+              "checksum": 4224650166,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/scarab-shell.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6168,
+              "transparent": 8861,
+              "checksum": 2485650575,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/gargoyle-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5265,
+              "transparent": 10283,
+              "checksum": 745385426,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            }
+          ],
+          "geometry": {
+            "x": 204,
+            "y": 72,
+            "right": 536,
+            "bottom": 258,
+            "overflow": false,
+            "scrollable": true
+          },
+          "partial": {
+            "slots": 60,
+            "remaining": 13,
+            "materials": 3
+          },
+          "complete": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          },
+          "reload": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          }
+        },
+        {
+          "width": 640,
+          "height": 360,
+          "fixture": {
+            "ids": [
+              "drop-1",
+              "drop-2",
+              "drop-3",
+              "drop-4",
+              "drop-5",
+              "drop-6",
+              "drop-7",
+              "drop-8",
+              "drop-9",
+              "drop-10",
+              "drop-11",
+              "drop-12",
+              "drop-13",
+              "drop-14",
+              "drop-15",
+              "drop-16"
+            ],
+            "itemIds": [
+              "boarTusk",
+              "raiderPouch",
+              "bearHide",
+              "spiderSilk",
+              "boneFragment",
+              "iceWolfFang",
+              "frostGolemCrystal",
+              "sentinelRunestone",
+              "arcaneWispShard",
+              "batWing",
+              "snakeScales",
+              "orcClanToken",
+              "elementalEssence",
+              "ghostVeil",
+              "scarabShell",
+              "gargoyleFragment"
+            ],
+            "names": [
+              "Colmillo de jabalí",
+              "Bolsa gastada de bandido",
+              "Piel de oso",
+              "Seda de araña",
+              "Fragmento de hueso",
+              "Colmillo de lobo helado",
+              "Cristal de gólem helado",
+              "Fragmento rúnico de centinela",
+              "Fragmento de fuego arcano",
+              "Ala de murciélago",
+              "Escamas de serpiente",
+              "Insignia de clan orco",
+              "Esencia elemental",
+              "Velo espectral",
+              "Caparazón de escarabajo",
+              "Fragmento de gárgola"
+            ],
+            "expectedURLs": [
+              "assets/icons/monster-materials/boar-tusk.png",
+              "assets/icons/monster-materials/raider-pouch.png",
+              "assets/icons/monster-materials/bear-hide.png",
+              "assets/icons/monster-materials/spider-silk.png",
+              "assets/icons/monster-materials/bone-fragment.png",
+              "assets/icons/monster-materials/ice-fang.png",
+              "assets/icons/monster-materials/frost-crystal.png",
+              "assets/icons/monster-materials/sentinel-runestone.png",
+              "assets/icons/monster-materials/arcane-shard.png",
+              "assets/icons/monster-materials/bat-wing.png",
+              "assets/icons/monster-materials/snake-scales.png",
+              "assets/icons/monster-materials/orc-token.png",
+              "assets/icons/monster-materials/elemental-essence.png",
+              "assets/icons/monster-materials/ghost-veil.png",
+              "assets/icons/monster-materials/scarab-shell.png",
+              "assets/icons/monster-materials/gargoyle-fragment.png"
+            ]
+          },
+          "icons": [
+            {
+              "href": "assets/icons/monster-materials/boar-tusk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4251,
+              "transparent": 11042,
+              "checksum": 2402918549,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/raider-pouch.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6642,
+              "transparent": 8440,
+              "checksum": 2738193300,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666656494140625
+            },
+            {
+              "href": "assets/icons/monster-materials/bear-hide.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 7790,
+              "transparent": 7437,
+              "checksum": 1760243429,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.666671752929688
+            },
+            {
+              "href": "assets/icons/monster-materials/bone-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3593,
+              "transparent": 11848,
+              "checksum": 3975747092,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/ice-fang.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 3613,
+              "transparent": 10722,
+              "checksum": 973482218,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/spider-silk.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4890,
+              "transparent": 9118,
+              "checksum": 3766035667,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/frost-crystal.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6136,
+              "transparent": 8766,
+              "checksum": 3823103781,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.66668701171875
+            },
+            {
+              "href": "assets/icons/monster-materials/sentinel-runestone.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6244,
+              "transparent": 9376,
+              "checksum": 2976314607,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/orc-token.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6754,
+              "transparent": 8757,
+              "checksum": 1608764465,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/arcane-shard.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4467,
+              "transparent": 10299,
+              "checksum": 347072147,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/snake-scales.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5671,
+              "transparent": 9772,
+              "checksum": 4254849578,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/bat-wing.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5345,
+              "transparent": 9649,
+              "checksum": 3053199335,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/elemental-essence.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5430,
+              "transparent": 7850,
+              "checksum": 2335525180,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/ghost-veil.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 4959,
+              "transparent": 6484,
+              "checksum": 4224650166,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/scarab-shell.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 6168,
+              "transparent": 8861,
+              "checksum": 2485650575,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            },
+            {
+              "href": "assets/icons/monster-materials/gargoyle-fragment.png",
+              "width": 128,
+              "height": 128,
+              "opaque": 5265,
+              "transparent": 10283,
+              "checksum": 745385426,
+              "cssWidth": 21.666656494140625,
+              "cssHeight": 21.6666259765625
+            }
+          ],
+          "geometry": {
+            "x": 204,
+            "y": 72,
+            "right": 436,
+            "bottom": 298,
+            "overflow": false,
+            "scrollable": true
+          },
+          "partial": {
+            "slots": 60,
+            "remaining": 13,
+            "materials": 3
+          },
+          "complete": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          },
+          "reload": {
+            "inventory": [
+              {
+                "id": "boarTusk",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "raiderPouch",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "bearHide",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "boneFragment",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "iceWolfFang",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "spiderSilk",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "frostGolemCrystal",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "sentinelRunestone",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "orcClanToken",
+                "rarity": "epic",
+                "quantity": 1
+              },
+              {
+                "id": "arcaneWispShard",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "snakeScales",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "batWing",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "elementalEssence",
+                "rarity": "common",
+                "quantity": 1
+              },
+              {
+                "id": "ghostVeil",
+                "rarity": "uncommon",
+                "quantity": 1
+              },
+              {
+                "id": "scarabShell",
+                "rarity": "rare",
+                "quantity": 1
+              },
+              {
+                "id": "gargoyleFragment",
+                "rarity": "epic",
+                "quantity": 1
+              }
+            ],
+            "remaining": 0
+          }
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "physicalAndroid": false,
+  "scope": "Actual boar MonsterSystem kill with declared HP/position/Math.random=.05 fixture; real anonymous ground marker tap, singlepickup and reload. Prepared16materialdrop/inventory fixtures verify actualTakeall/full/partial/freebag controls,16nativeChromeImageCanvasdecodes, twoAndroidlandscapeviewports andRU/EN/ES. Isolatednewcontexts; no player saves touched."
+}

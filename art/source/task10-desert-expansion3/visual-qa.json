@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "models": 8,
+  "posesInspected": 384,
+  "directions": [
+    "n",
+    "ne",
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw"
+  ],
+  "banks": [
+    "idle",
+    "run-a",
+    "run-b",
+    "attack",
+    "hurt",
+    "death"
+  ],
+  "method": "Reviewed all48poses on every final beige composited contact sheet, including silhouette continuity, correct direction/state, full anatomy and absence of adjacent-pose fragments. Regenerated/reflowed flagged sheets with imagegen.",
+  "repairs": {
+    "020": "background/isolated fragments corrected by reflow then cutout",
+    "024": "whisker fragments corrected by reflow,translucent background cleaned with imagegen",
+    "025": "tiny detached fragment corrected by reflow",
+    "026": "feet crossing source rows corrected by reflow",
+    "028": "mouth fragments and white blob corrected by reflow",
+    "029": "first cutout accepted",
+    "030": "persistent fragment repaired by clean imagegen rebuild from original",
+    "031": "first cutout accepted"
+  },
+  "runtimeRegistered": false,
+  "browserAccepted": false
+}

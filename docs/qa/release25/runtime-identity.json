@@ -1,0 +1,15 @@
+{
+  "originalRuntimeCommit": "641fac4f423723c181ed361d515fae6f4a5c8f5a",
+  "targetCommit": "4136c4ba9e0bd32fe4ccbaa321733f445aa4128c",
+  "comparedPaths": [
+    "index.html",
+    "warrior-equipment-lab.html",
+    "css",
+    "js",
+    "assets",
+    "scripts/export-static.mjs",
+    "scripts/lossless-png.mjs"
+  ],
+  "diff": [],
+  "reason": "Only CI checkout/history and documentation changed; reuse identical checked runtime output"
+}

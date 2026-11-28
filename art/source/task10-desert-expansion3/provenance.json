@@ -1,0 +1,163 @@
+{
+  "models": 8,
+  "generatedSources": [
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-020-cutout.png",
+      "sha256": "2e82069232260b6b56486dcf2a87ceff491f6443b42b3ed78182536d0358bd6a",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-020-original.png",
+      "sha256": "89da449f64232007fa7e0d403a0ed9eb945266cf4aff4097d224f446b42a27ab",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-020-reflow-cutout.png",
+      "sha256": "aa5c691796bcdbd37acdf072dc63da0990bdd164ee14b5cf3ada84b1f70b33d5",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-020-reflow.png",
+      "sha256": "0d6d3cac2fca46d39a436f4fa75571665e0207cb920a734e96fb9aa063df171c",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-024-cutout.png",
+      "sha256": "266c1aa46b131cf0583f7c94458d6cf3b57cadacc397aebe1bc0433a5a4323e2",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-024-original.png",
+      "sha256": "52acf8c38d8b2ba0f312320e6583578cbb2a5be8f3aa3f6ea758e3ebbe358975",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-024-reflow-cutout.png",
+      "sha256": "50feb4c81a0256e5197544c1b82c6214ce121584e2c6b565e0b8f1744cb0b961",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-024-reflow.png",
+      "sha256": "108b6b9f10da9bab27ca4eb5dd2d0899c036464e6598eace63bf17541d0b3dac",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-025-cutout.png",
+      "sha256": "4d164321ce8f013558b746d538fa5c0d13b1e2b73d5d9d3416988052a449d31a",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-025-original.png",
+      "sha256": "6a40b620eff581453373ec8db62c0be7b8978de465ff43855ddc8aa3b0d48721",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-025-reflow.png",
+      "sha256": "a5af060045880a21820b26be37a83db125bdf23b5aad34a2f4d59a72b282aebf",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-026-cutout.png",
+      "sha256": "24b367fa122a589188645dccf829379f81fe2c4442410eda5e54b76469127f5e",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-026-original.png",
+      "sha256": "9f20fb8211b51c5a99755cc3536cb6f69fdb888aac2174845bef6585816d7ccc",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-026-reflow.png",
+      "sha256": "55bc2a01c5ee802609ccbe62cbd4d6632cca16813bc9ff289894875a20a10950",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-028-cutout.png",
+      "sha256": "593a8ddc352e8881648f24dae02caf2638591f24460e85b08219f24b586cb206",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-028-original.png",
+      "sha256": "b25ce9524ebc4b6bdc1214f68d3b849ba67313184a0b1df8988f608975ed1a77",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-028-reflow.png",
+      "sha256": "33782fcb12845d6b1cf9bbbc484d3ea335b567ae13ea9fe639445f1a10e0e062",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-029-cutout.png",
+      "sha256": "58f2933fcc72228d7247b78a48201f7bbd350fbcf7abc50d06d7b00e982ecc3d",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-029-original.png",
+      "sha256": "2b40932d9fdd83514a154707ba3eb6c2330e41bf7e3d1e9de05a0528a037588e",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-030-clean.png",
+      "sha256": "dda393e828214e10a6ce05dd3a1cd17c6ac2a5c1076b5843a81c8f5550bf8582",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-030-cutout.png",
+      "sha256": "26e1c6fb8547d0981928c122c7942b9f6d58b2249d677bfa59fdbdd509b5ff4c",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-030-original.png",
+      "sha256": "ae3fb4dd556e713bc64a01b699e90f8cf2dd29adaf5ad152968c8682633facad",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-030-reflow-cutout.png",
+      "sha256": "6d4007d56f28882d99cd18f33172089a5dea72bfa221051cbafe9e8e3fe3ccc1",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-030-reflow.png",
+      "sha256": "8155ea27204c8c493adbf981d748d6e87c6ab67823215f90d0dc9354cea3a990",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-031-cutout.png",
+      "sha256": "b46edb38c30ea05e8233a14e298fcf18d35ba224568564951d5544267dc97129",
+      "provider": "image_gen.imagegen",
+      "process": "imagegen edit or clean rebuild; retained alongside original"
+    },
+    {
+      "file": "art/source/task10-desert-expansion3/desert-species-031-original.png",
+      "sha256": "6ae381ec44e98dc58b9e0f774435c4e25ad3bdaa8e054d6fde83368b6fee9c22",
+      "provider": "image_gen.imagegen",
+      "process": "original generation"
+    }
+  ],
+  "packing": "Mechanical Canvas 8x6source-cell registration only, no pixel masking or synthesized poses.",
+  "preservedRejectedSources": true
+}

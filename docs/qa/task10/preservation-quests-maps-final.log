@@ -1,0 +1,14 @@
+✔ the reference set uses seven existing IDs, real requirements and warrior-only appearance mapping (9.026157ms)
+✔ all seven runtime PNGs are distinct transparent images with nonempty bounded atlas frames (648.571173ms)
+✔ all32 native socket sets register to actual opaque body pixels within five native pixels (339.260488ms)
+✔ grips, articulated boot pivots, eight depth profiles and all six existing states have valid coverage (0.674769ms)
+✔ normal equip, unequip and saved reload preserve the real catalogue stats without injecting any items (1.412433ms)
+✔ release17 assets and gameplay remain byte-identical with only the exact task7 home sizing delta (594.578883ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1926.613589
