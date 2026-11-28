@@ -101,3 +101,11 @@ repairs from the historical receipt and prove only desert087 changed afterward.
 
 Arena follow-up verification is recorded below after completion; the historical
 15/15 and18/18 results above refer to the preceding gathering repair.
+
+Arena follow-up validation: `node --test tests/aur203Layout.test.mjs
+tests/task10Gathering.test.mjs tests/task10DesertBossData.test.mjs
+tests/aur203WorldIntegration.test.mjs` passed25/25 in50.70seconds. This includes
+all924 new homes, all341 active camp integration, all11 fixed desert arenas,
+unchanged gathering tests,83-candidate preservation versus the arena checkpoint,
+and exact deterministic offline reproduction. Log:
+`work/task10/aur203-arena-clearance-repair-tests.log`.

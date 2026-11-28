@@ -1,0 +1,6 @@
+PASS actual bounded stun APIs warrior
+PASS actual bounded stun APIs archer
+PASS actual bounded stun APIs mage
+PASS actual bounded stun APIs paladin
+PASS actual bounded stun APIs assassin
+PASS actual bounded stun APIs cannoneer
