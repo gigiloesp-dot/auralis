@@ -1,0 +1,4246 @@
+{
+  "scope": "before native baseline factory calibration",
+  "species": {
+    "north-species-091": {
+      "type": "aur203North091",
+      "nativeLevel": 25,
+      "baseLevel": 29,
+      "stats": {
+        "hp": 284,
+        "attack": 41,
+        "xp": 216,
+        "gold": 29,
+        "defense": 9.705882352941176,
+        "magicDefense": 20,
+        "speed": 68
+      },
+      "kind": {
+        "family": "construct",
+        "movementProfile": "skirmisher",
+        "name": "Ледострунный ходульник",
+        "names": {
+          "ru": "Ледострунный ходульник",
+          "en": "Ice-harp strider",
+          "es": "Zancudo arpa de hielo"
+        },
+        "level": 25,
+        "hp": 284,
+        "attack": 41,
+        "xp": 216,
+        "gold": 29,
+        "speed": 68,
+        "loot": "aur203North091",
+        "defense": 9.705882352941176,
+        "magicDefense": 20,
+        "magic": true,
+        "sourceArchetype": "iceElemental",
+        "speciesId": "north-species-091",
+        "aur203Revision": 1,
+        "abilityConfig": {
+          "abilityPattern": [
+            "blink",
+            "frost"
+          ],
+          "collisionRadius": 16,
+          "range": 285,
+          "radius": 60,
+          "cooldown": 6580,
+          "windup": 825,
+          "preferredDistance": 175
+        },
+        "behaviorConfig": {
+          "retreat": {
+            "triggerRatio": 0.32999999999999996,
+            "distance": 100,
+            "durationMs": 1350
+          }
+        },
+        "respawnMs": 30000,
+        "boss": false,
+        "assetSize": 220,
+        "visualScale": 1,
+        "bossTheme": null,
+        "bossType": null
+      }
+    },
+    "ancient-species-056": {
+      "type": "aur203Ancient056",
+      "nativeLevel": 39,
+      "baseLevel": 40,
+      "stats": {
+        "hp": 420,
+        "attack": 65,
+        "xp": 352,
+        "gold": 45,
+        "defense": 13.688888888888888,
+        "magicDefense": 31,
+        "speed": 63
+      },
+      "kind": {
+        "family": "echinoderm",
+        "movementProfile": "elemental",
+        "name": "Фумарольный ежовик",
+        "names": {
+          "ru": "Фумарольный ежовик",
+          "en": "Fumarole Urchin",
+          "es": "Erizo de fumarola"
+        },
+        "level": 39,
+        "hp": 420,
+        "attack": 65,
+        "xp": 352,
+        "gold": 45,
+        "speed": 63,
+        "loot": "aur203Ancient056",
+        "defense": 13.688888888888888,
+        "magicDefense": 31,
+        "magic": true,
+        "sourceArchetype": "voidElemental",
+        "speciesId": "ancient-species-056",
+        "aur203Revision": 1,
+        "abilityConfig": {
+          "abilityPattern": [
+            "blink",
+            "shot"
+          ],
+          "collisionRadius": 16,
+          "range": 285,
+          "radius": 60,
+          "cooldown": 6580,
+          "windup": 600,
+          "preferredDistance": 145,
+          "elevation": 34,
+          "projectileMagic": true
+        },
+        "behaviorConfig": {
+          "retreat": {
+            "triggerRatio": 0.24,
+            "distance": 100,
+            "durationMs": 1450
+          }
+        },
+        "respawnMs": 30000,
+        "boss": false,
+        "assetSize": 220,
+        "visualScale": 1,
+        "bossTheme": null,
+        "bossType": null
+      }
+    },
+    "ancient-species-060": {
+      "type": "aur203Ancient060",
+      "nativeLevel": 36,
+      "baseLevel": 37,
+      "stats": {
+        "hp": 335,
+        "attack": 55,
+        "xp": 303,
+        "gold": 41,
+        "defense": 9.761904761904761,
+        "magicDefense": 6,
+        "speed": 112
+      },
+      "kind": {
+        "family": "reptile",
+        "movementProfile": "skirmisher",
+        "name": "Семяфонарный геккон",
+        "names": {
+          "ru": "Семяфонарный геккон",
+          "en": "Seedlantern Gecko",
+          "es": "Geco de farol semilla"
+        },
+        "level": 36,
+        "hp": 335,
+        "attack": 55,
+        "xp": 303,
+        "gold": 41,
+        "speed": 112,
+        "loot": "aur203Ancient060",
+        "defense": 9.761904761904761,
+        "magic": true,
+        "sourceArchetype": "arcaneWisp",
+        "speciesId": "ancient-species-060",
+        "aur203Revision": 1,
+        "magicDefense": 6,
+        "abilityConfig": {
+          "abilityPattern": [
+            "shot",
+            "roots"
+          ],
+          "collisionRadius": 12,
+          "range": 285,
+          "radius": 60,
+          "cooldown": 6400,
+          "windup": 600,
+          "preferredDistance": 145,
+          "projectileMagic": false
+        },
+        "behaviorConfig": {
+          "retreat": {
+            "triggerRatio": 0.24,
+            "distance": 90,
+            "durationMs": 1250
+          },
+          "pack": {
+            "radius": 150,
+            "maxAllies": 3
+          }
+        },
+        "respawnMs": 30000,
+        "boss": false,
+        "assetSize": 220,
+        "visualScale": 1,
+        "bossTheme": null,
+        "bossType": null
+      }
+    },
+    "ancient-species-061": {
+      "type": "aur203Ancient061",
+      "nativeLevel": 37,
+      "baseLevel": 38,
+      "stats": {
+        "hp": 467,
+        "attack": 59,
+        "xp": 322,
+        "gold": 42,
+        "defense": 21.488372093023255,
+        "magicDefense": 13,
+        "speed": 111
+      },
+      "kind": {
+        "family": "bird",
+        "movementProfile": "gargoyle",
+        "name": "Рогокрылый сыч",
+        "names": {
+          "ru": "Рогокрылый сыч",
+          "en": "Antlerwing Owl",
+          "es": "Mochuelo alicornio"
+        },
+        "level": 37,
+        "hp": 467,
+        "attack": 59,
+        "xp": 322,
+        "gold": 42,
+        "speed": 111,
+        "loot": "aur203Ancient061",
+        "defense": 21.488372093023255,
+        "sourceArchetype": "ancientGargoyle",
+        "speciesId": "ancient-species-061",
+        "aur203Revision": 1,
+        "magicDefense": 13,
+        "abilityConfig": {
+          "abilityPattern": [
+            "dive",
+            "haunt"
+          ],
+          "collisionRadius": 18,
+          "range": 250,
+          "radius": 60,
+          "cooldown": 6580,
+          "windup": 675,
+          "elevation": 45
+        },
+        "behaviorConfig": {
+          "retreat": {
+            "triggerRatio": 0.27,
+            "distance": 100,
+            "durationMs": 1350
+          }
+        },
+        "respawnMs": 30000,
+        "boss": false,
+        "assetSize": 220,
+        "visualScale": 1,
+        "bossTheme": null,
+        "bossType": null
+      }
+    }
+  },
+  "unaffectedTypesSHA256": "e77edc83d3a253cf819a58f1140a6cbaf63fec9adfd5e664e7ad45e3cf91b924",
+  "unaffectedTypes": {
+    "forestWolf": {
+      "family": "wolf",
+      "movementProfile": "predator",
+      "name": "Лесной волк",
+      "names": {
+        "ru": "Лесной волк",
+        "en": "Forest wolf",
+        "es": "Lobo del bosque"
+      },
+      "level": 1,
+      "hp": 30,
+      "attack": 4,
+      "xp": 15,
+      "gold": 2,
+      "speed": 90,
+      "loot": "wolf"
+    },
+    "wildBoar": {
+      "family": "boar",
+      "movementProfile": "charger",
+      "name": "Дикий кабан",
+      "names": {
+        "ru": "Дикий кабан",
+        "en": "Wild boar",
+        "es": "Jabalí salvaje"
+      },
+      "level": 3,
+      "hp": 65,
+      "attack": 7,
+      "xp": 24,
+      "gold": 4,
+      "speed": 72,
+      "loot": "boar"
+    },
+    "forestRaider": {
+      "family": "raider",
+      "movementProfile": "skirmisher",
+      "name": "Лесной разбойник",
+      "names": {
+        "ru": "Лесной разбойник",
+        "en": "Forest raider",
+        "es": "Bandido del bosque"
+      },
+      "level": 4,
+      "hp": 85,
+      "attack": 10,
+      "xp": 32,
+      "gold": 6,
+      "speed": 100,
+      "loot": "raider"
+    },
+    "bear": {
+      "family": "bear",
+      "movementProfile": "mauler",
+      "name": "Лесной медведь",
+      "names": {
+        "ru": "Лесной медведь",
+        "en": "Forest bear",
+        "es": "Oso del bosque"
+      },
+      "level": 6,
+      "hp": 125,
+      "attack": 14,
+      "xp": 48,
+      "gold": 9,
+      "speed": 68,
+      "loot": "bear",
+      "defense": 4
+    },
+    "spider": {
+      "family": "spider",
+      "movementProfile": "crawler",
+      "name": "Ядовитый паук",
+      "names": {
+        "ru": "Ядовитый паук",
+        "en": "Venom spider",
+        "es": "Araña venenosa"
+      },
+      "level": 8,
+      "hp": 115,
+      "attack": 17,
+      "xp": 62,
+      "gold": 10,
+      "speed": 104,
+      "loot": "spider",
+      "defense": 2
+    },
+    "skeleton": {
+      "family": "skeleton",
+      "movementProfile": "fighter",
+      "name": "Скелет",
+      "names": {
+        "ru": "Скелет",
+        "en": "Skeleton",
+        "es": "Esqueleto"
+      },
+      "level": 14,
+      "hp": 190,
+      "attack": 25,
+      "xp": 104,
+      "gold": 15,
+      "speed": 83,
+      "loot": "skeleton",
+      "defense": 8
+    },
+    "iceWolf": {
+      "family": "wolf",
+      "movementProfile": "predator",
+      "name": "Ледяной хищник",
+      "names": {
+        "ru": "Ледяной хищник",
+        "en": "Frost predator",
+        "es": "Depredador helado"
+      },
+      "level": 22,
+      "hp": 260,
+      "attack": 36,
+      "xp": 170,
+      "gold": 24,
+      "speed": 112,
+      "loot": "iceWolf",
+      "defense": 10
+    },
+    "frostGolem": {
+      "family": "golem",
+      "movementProfile": "heavy",
+      "name": "Ледяной исполин",
+      "names": {
+        "ru": "Ледяной исполин",
+        "en": "Frost golem",
+        "es": "Gólem de hielo"
+      },
+      "level": 26,
+      "hp": 380,
+      "attack": 43,
+      "xp": 210,
+      "gold": 29,
+      "speed": 52,
+      "loot": "frostGolem",
+      "defense": 20
+    },
+    "ancientSentinel": {
+      "family": "sentinel",
+      "movementProfile": "heavy",
+      "name": "Древний страж",
+      "names": {
+        "ru": "Древний страж",
+        "en": "Ancient sentinel",
+        "es": "Centinela antiguo"
+      },
+      "level": 35,
+      "hp": 520,
+      "attack": 55,
+      "xp": 290,
+      "gold": 38,
+      "speed": 76,
+      "loot": "ancientSentinel",
+      "defense": 27
+    },
+    "arcaneWisp": {
+      "family": "elemental",
+      "movementProfile": "elemental",
+      "name": "Чародейский огонёк",
+      "names": {
+        "ru": "Чародейский огонёк",
+        "en": "Arcane wisp",
+        "es": "Fuego arcano"
+      },
+      "level": 37,
+      "hp": 390,
+      "attack": 62,
+      "xp": 310,
+      "gold": 42,
+      "speed": 94,
+      "loot": "arcaneWisp",
+      "defense": 12,
+      "magic": true
+    },
+    "forestBat": {
+      "family": "bat",
+      "movementProfile": "bat",
+      "name": "Ночная крылатка",
+      "names": {
+        "ru": "Ночная крылатка",
+        "en": "Dusk bat",
+        "es": "Murciélago del ocaso"
+      },
+      "level": 2,
+      "hp": 36,
+      "attack": 5,
+      "xp": 19,
+      "gold": 3,
+      "speed": 138,
+      "loot": "bat",
+      "defense": 0
+    },
+    "thornSnake": {
+      "family": "snake",
+      "movementProfile": "serpent",
+      "name": "Терновая змея",
+      "names": {
+        "ru": "Терновая змея",
+        "en": "Thorn snake",
+        "es": "Serpiente de espinas"
+      },
+      "level": 5,
+      "hp": 86,
+      "attack": 12,
+      "xp": 40,
+      "gold": 7,
+      "speed": 95,
+      "loot": "snake",
+      "defense": 1
+    },
+    "forestOrc": {
+      "family": "orc",
+      "movementProfile": "fighter",
+      "name": "Дубравный орк",
+      "names": {
+        "ru": "Дубравный орк",
+        "en": "Grove orc",
+        "es": "Orco del robledal"
+      },
+      "level": 10,
+      "hp": 160,
+      "attack": 21,
+      "xp": 82,
+      "gold": 13,
+      "speed": 79,
+      "loot": "orc",
+      "defense": 9
+    },
+    "snowBear": {
+      "family": "bear",
+      "movementProfile": "mauler",
+      "name": "Снежный медведь",
+      "names": {
+        "ru": "Снежный медведь",
+        "en": "Snow bear",
+        "es": "Oso de las nieves"
+      },
+      "level": 24,
+      "hp": 315,
+      "attack": 41,
+      "xp": 190,
+      "gold": 27,
+      "speed": 66,
+      "loot": "bear",
+      "defense": 16
+    },
+    "iceBat": {
+      "family": "bat",
+      "movementProfile": "bat",
+      "name": "Ледокрыл",
+      "names": {
+        "ru": "Ледокрыл",
+        "en": "Frostwing bat",
+        "es": "Murciélago escarchado"
+      },
+      "level": 22,
+      "hp": 230,
+      "attack": 34,
+      "xp": 165,
+      "gold": 23,
+      "speed": 142,
+      "loot": "bat",
+      "defense": 6
+    },
+    "snowRaider": {
+      "family": "raider",
+      "movementProfile": "skirmisher",
+      "name": "Северный налётчик",
+      "names": {
+        "ru": "Северный налётчик",
+        "en": "Northern marauder",
+        "es": "Saqueador del norte"
+      },
+      "level": 23,
+      "hp": 275,
+      "attack": 38,
+      "xp": 180,
+      "gold": 25,
+      "speed": 100,
+      "loot": "raider",
+      "defense": 12
+    },
+    "iceElemental": {
+      "family": "elemental",
+      "movementProfile": "elemental",
+      "name": "Стихия льда",
+      "names": {
+        "ru": "Стихия льда",
+        "en": "Ice elemental",
+        "es": "Elemental de hielo"
+      },
+      "level": 29,
+      "hp": 350,
+      "attack": 48,
+      "xp": 245,
+      "gold": 33,
+      "speed": 82,
+      "loot": "elemental",
+      "defense": 12,
+      "magicDefense": 25,
+      "magic": true
+    },
+    "wraith": {
+      "family": "ghost",
+      "movementProfile": "ghost",
+      "name": "Призрак перевала",
+      "names": {
+        "ru": "Призрак перевала",
+        "en": "Pass wraith",
+        "es": "Espectro del paso"
+      },
+      "level": 31,
+      "hp": 340,
+      "attack": 50,
+      "xp": 265,
+      "gold": 35,
+      "speed": 101,
+      "loot": "ghost",
+      "defense": 8,
+      "magicDefense": 28,
+      "magic": true
+    },
+    "desertSnake": {
+      "family": "snake",
+      "movementProfile": "serpent",
+      "name": "Пепельная гадюка",
+      "names": {
+        "ru": "Пепельная гадюка",
+        "en": "Ash viper",
+        "es": "Víbora de ceniza"
+      },
+      "level": 35,
+      "hp": 410,
+      "attack": 54,
+      "xp": 288,
+      "gold": 38,
+      "speed": 116,
+      "loot": "snake",
+      "defense": 16
+    },
+    "scarab": {
+      "family": "scarab",
+      "movementProfile": "scarab",
+      "name": "Рунный скарабей",
+      "names": {
+        "ru": "Рунный скарабей",
+        "en": "Rune scarab",
+        "es": "Escarabajo rúnico"
+      },
+      "level": 35,
+      "hp": 470,
+      "attack": 52,
+      "xp": 290,
+      "gold": 38,
+      "speed": 76,
+      "loot": "scarab",
+      "defense": 30
+    },
+    "fallenKnight": {
+      "family": "skeleton",
+      "movementProfile": "fighter",
+      "name": "Падший рыцарь",
+      "names": {
+        "ru": "Падший рыцарь",
+        "en": "Fallen knight",
+        "es": "Caballero caído"
+      },
+      "level": 36,
+      "hp": 545,
+      "attack": 58,
+      "xp": 304,
+      "gold": 40,
+      "speed": 73,
+      "loot": "skeleton",
+      "defense": 32
+    },
+    "ancientGargoyle": {
+      "family": "gargoyle",
+      "movementProfile": "gargoyle",
+      "name": "Древняя горгулья",
+      "names": {
+        "ru": "Древняя горгулья",
+        "en": "Ancient gargoyle",
+        "es": "Gárgola antigua"
+      },
+      "level": 38,
+      "hp": 520,
+      "attack": 61,
+      "xp": 330,
+      "gold": 43,
+      "speed": 99,
+      "loot": "gargoyle",
+      "defense": 26
+    },
+    "voidElemental": {
+      "family": "elemental",
+      "movementProfile": "elemental",
+      "name": "Стихия пустоты",
+      "names": {
+        "ru": "Стихия пустоты",
+        "en": "Void elemental",
+        "es": "Elemental del vacío"
+      },
+      "level": 40,
+      "hp": 500,
+      "attack": 67,
+      "xp": 360,
+      "gold": 46,
+      "speed": 88,
+      "loot": "elemental",
+      "defense": 15,
+      "magicDefense": 35,
+      "magic": true
+    },
+    "forestGuardian": {
+      "family": "treant",
+      "movementProfile": "heavy",
+      "name": "Страж чащи · мини-босс",
+      "names": {
+        "ru": "Страж чащи · мини-босс",
+        "en": "Grove guardian · miniboss",
+        "es": "Guardián del bosque · minijefe"
+      },
+      "level": 5,
+      "hp": 750,
+      "attack": 20,
+      "xp": 160,
+      "gold": 70,
+      "speed": 55,
+      "loot": "guardian",
+      "boss": true,
+      "respawnMs": 2400000
+    },
+    "aur203ChestnutCrab": {
+      "family": "crab",
+      "movementProfile": "scarab",
+      "name": "Каштановый краб-репей",
+      "names": {
+        "ru": "Каштановый краб-репей",
+        "en": "Chestnut burr crab",
+        "es": "Cangrejo de castaña espinosa"
+      },
+      "level": 6,
+      "hp": 138,
+      "attack": 13,
+      "xp": 48,
+      "gold": 9,
+      "speed": 54,
+      "loot": "aur203ChestnutCrab",
+      "defense": 5,
+      "sourceArchetype": "bear",
+      "speciesId": "forest-species-080",
+      "aur203Revision": 1,
+      "magicDefense": 3,
+      "abilityConfig": {
+        "abilityPattern": [
+          "cleave",
+          "roots"
+        ],
+        "collisionRadius": 20,
+        "range": 190,
+        "radius": 85,
+        "cooldown": 7200,
+        "windup": 850
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 145,
+          "windupMs": 900,
+          "durationMs": 1700,
+          "damageMultiplier": 0.55
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203ReedHeron": {
+      "family": "bird",
+      "movementProfile": "fighter",
+      "name": "Камышеклювая цапля",
+      "names": {
+        "ru": "Камышеклювая цапля",
+        "en": "Reed-blade heron",
+        "es": "Garza de pico junco"
+      },
+      "level": 4,
+      "hp": 85,
+      "attack": 10,
+      "xp": 32,
+      "gold": 6,
+      "speed": 108,
+      "loot": "aur203ReedHeron",
+      "sourceArchetype": "forestRaider",
+      "speciesId": "forest-species-081",
+      "aur203Revision": 1,
+      "defense": 0,
+      "magicDefense": 0,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "cleave"
+        ],
+        "collisionRadius": 13,
+        "range": 235,
+        "radius": 80,
+        "cooldown": 6200,
+        "windup": 600
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32,
+          "distance": 110
+        },
+        "pack": {
+          "radius": 165,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203LanternSnail": {
+      "family": "snail",
+      "movementProfile": "crawler",
+      "name": "Улитка фонарного панциря",
+      "names": {
+        "ru": "Улитка фонарного панциря",
+        "en": "Lantern-shell snail",
+        "es": "Caracol de concha farol"
+      },
+      "level": 6,
+      "hp": 153,
+      "attack": 11,
+      "xp": 48,
+      "gold": 9,
+      "speed": 30,
+      "loot": "aur203LanternSnail",
+      "defense": 6,
+      "sourceArchetype": "bear",
+      "speciesId": "forest-species-082",
+      "aur203Revision": 1,
+      "magicDefense": 4,
+      "abilityConfig": {
+        "abilityPattern": [
+          "haunt",
+          "roots"
+        ],
+        "collisionRadius": 19,
+        "range": 245,
+        "radius": 65,
+        "cooldown": 7600,
+        "windup": 1000,
+        "preferredDistance": 130
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 175,
+          "windupMs": 1000,
+          "durationMs": 1900,
+          "damageMultiplier": 0.45
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203AcornHopper": {
+      "family": "insect",
+      "movementProfile": "predator",
+      "name": "Желудёвый прыгун",
+      "names": {
+        "ru": "Желудёвый прыгун",
+        "en": "Acorn hopper",
+        "es": "Saltador de bellota"
+      },
+      "level": 2,
+      "hp": 38,
+      "attack": 5,
+      "xp": 19,
+      "gold": 3,
+      "speed": 118,
+      "loot": "aur203AcornHopper",
+      "defense": 0,
+      "sourceArchetype": "forestBat",
+      "speciesId": "forest-species-083",
+      "aur203Revision": 1,
+      "magicDefense": 0,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "venom"
+        ],
+        "locomotion": "crawler",
+        "collisionRadius": 10,
+        "range": 220,
+        "radius": 44,
+        "cooldown": 5900,
+        "windup": 500
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 150,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Sundew": {
+      "family": "plant",
+      "movementProfile": "heavy",
+      "name": "Росянка-душитель руин",
+      "names": {
+        "ru": "Росянка-душитель руин",
+        "en": "Ruin dewtrap stalker",
+        "es": "Acechadora de rocío de las ruinas"
+      },
+      "level": 10,
+      "hp": 176,
+      "attack": 19,
+      "xp": 82,
+      "gold": 13,
+      "speed": 31,
+      "loot": "aur203Sundew",
+      "defense": 8,
+      "sourceArchetype": "forestOrc",
+      "speciesId": "forest-species-084",
+      "aur203Revision": 1,
+      "magicDefense": 5,
+      "abilityConfig": {
+        "abilityPattern": [
+          "roots",
+          "venom"
+        ],
+        "locomotion": "crawler",
+        "collisionRadius": 17,
+        "range": 300,
+        "radius": 80,
+        "cooldown": 7400,
+        "windup": 900,
+        "preferredDistance": 180
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 1050,
+          "durationMs": 1500,
+          "damageMultiplier": 0.65
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203MossToad": {
+      "family": "amphibian",
+      "movementProfile": "mauler",
+      "name": "Мшистая жаба-гудок",
+      "names": {
+        "ru": "Мшистая жаба-гудок",
+        "en": "Moss-bellows toad",
+        "es": "Sapo de fuelle musgoso"
+      },
+      "level": 6,
+      "hp": 138,
+      "attack": 15,
+      "xp": 48,
+      "gold": 9,
+      "speed": 61,
+      "loot": "aur203MossToad",
+      "defense": 3,
+      "sourceArchetype": "bear",
+      "speciesId": "forest-species-085",
+      "aur203Revision": 1,
+      "magicDefense": 2,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "fan"
+        ],
+        "locomotion": "crawler",
+        "collisionRadius": 18,
+        "range": 250,
+        "radius": 90,
+        "cooldown": 7600,
+        "windup": 850,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.23,
+          "distance": 86,
+          "durationMs": 1300
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203AmberDragonfly": {
+      "family": "insect",
+      "movementProfile": "bat",
+      "name": "Янтарнохвостая стрекоза",
+      "names": {
+        "ru": "Янтарнохвостая стрекоза",
+        "en": "Amber-lantern dragonfly",
+        "es": "Libélula de farol ámbar"
+      },
+      "level": 2,
+      "hp": 29,
+      "attack": 5,
+      "xp": 19,
+      "gold": 3,
+      "speed": 145,
+      "loot": "aur203AmberDragonfly",
+      "defense": 0,
+      "sourceArchetype": "forestBat",
+      "speciesId": "forest-species-086",
+      "aur203Revision": 1,
+      "magicDefense": 0,
+      "abilityConfig": {
+        "abilityPattern": [
+          "dive",
+          "fan"
+        ],
+        "collisionRadius": 10,
+        "range": 260,
+        "radius": 44,
+        "cooldown": 5600,
+        "windup": 600,
+        "elevation": 42,
+        "projectileMagic": true
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.35,
+          "distance": 120,
+          "durationMs": 1300
+        },
+        "pack": {
+          "radius": 145,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203FernNewt": {
+      "family": "amphibian",
+      "movementProfile": "scarab",
+      "name": "Папоротниковый тритон",
+      "names": {
+        "ru": "Папоротниковый тритон",
+        "en": "Fern-frill newt",
+        "es": "Tritón de gola de helecho"
+      },
+      "level": 5,
+      "hp": 82,
+      "attack": 11,
+      "xp": 40,
+      "gold": 7,
+      "speed": 72,
+      "loot": "aur203FernNewt",
+      "defense": 1,
+      "sourceArchetype": "thornSnake",
+      "speciesId": "forest-species-087",
+      "aur203Revision": 1,
+      "magicDefense": 1,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "venom"
+        ],
+        "collisionRadius": 12,
+        "range": 205,
+        "radius": 55,
+        "cooldown": 6800,
+        "windup": 700
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.28,
+          "distance": 88
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203RimeWalrus": {
+      "family": "pinniped",
+      "movementProfile": "mauler",
+      "name": "Инеебородый морж",
+      "names": {
+        "ru": "Инеебородый морж",
+        "en": "Rime-whiskered walrus",
+        "es": "Morsa de bigotes de escarcha"
+      },
+      "level": 24,
+      "hp": 378,
+      "attack": 43,
+      "xp": 190,
+      "gold": 27,
+      "speed": 44,
+      "loot": "aur203RimeWalrus",
+      "defense": 18,
+      "sourceArchetype": "snowBear",
+      "speciesId": "north-species-076",
+      "aur203Revision": 1,
+      "magicDefense": 11,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "frost"
+        ],
+        "locomotion": "crawler",
+        "collisionRadius": 24,
+        "range": 245,
+        "radius": 85,
+        "cooldown": 7900,
+        "windup": 1000
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 160,
+          "windupMs": 950,
+          "durationMs": 1700,
+          "damageMultiplier": 0.6
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203PowderMuskox": {
+      "family": "ungulate",
+      "movementProfile": "charger",
+      "name": "Овцебык снежной гривы",
+      "names": {
+        "ru": "Овцебык снежной гривы",
+        "en": "Powder-mane muskox",
+        "es": "Buey almizclero de melena nívea"
+      },
+      "level": 24,
+      "hp": 347,
+      "attack": 45,
+      "xp": 190,
+      "gold": 27,
+      "speed": 88,
+      "loot": "aur203PowderMuskox",
+      "defense": 16,
+      "sourceArchetype": "snowBear",
+      "speciesId": "north-species-077",
+      "aur203Revision": 1,
+      "magicDefense": 10,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "stomp"
+        ],
+        "collisionRadius": 23,
+        "range": 250,
+        "radius": 90,
+        "cooldown": 7600,
+        "windup": 900
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 180,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203ObsidianCentipede": {
+      "family": "myriapod",
+      "movementProfile": "crawler",
+      "name": "Обсидиановая фонарная сколопендра",
+      "names": {
+        "ru": "Обсидиановая фонарная сколопендра",
+        "en": "Obsidian lantern centipede",
+        "es": "Escolopendra linterna de obsidiana"
+      },
+      "level": 26,
+      "hp": 304,
+      "attack": 47,
+      "xp": 210,
+      "gold": 29,
+      "speed": 85,
+      "loot": "aur203ObsidianCentipede",
+      "defense": 18,
+      "sourceArchetype": "frostGolem",
+      "speciesId": "north-species-078",
+      "aur203Revision": 1,
+      "magicDefense": 11,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "fan"
+        ],
+        "collisionRadius": 18,
+        "range": 270,
+        "radius": 25,
+        "cooldown": 6200,
+        "windup": 650,
+        "projectileStatus": "venom",
+        "projectileMagic": false,
+        "preferredDistance": 155
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.25,
+          "distance": 100
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203CrystalJelly": {
+      "family": "cnidarian",
+      "movementProfile": "ghost",
+      "name": "Хрустальная медуза-колокол",
+      "names": {
+        "ru": "Хрустальная медуза-колокол",
+        "en": "Crystal-bell sky jellyfish",
+        "es": "Medusa celeste de campana cristalina"
+      },
+      "level": 29,
+      "hp": 308,
+      "attack": 46,
+      "xp": 245,
+      "gold": 33,
+      "speed": 62,
+      "loot": "aur203CrystalJelly",
+      "defense": 10,
+      "magicDefense": 20,
+      "magic": true,
+      "sourceArchetype": "iceElemental",
+      "speciesId": "north-species-079",
+      "aur203Revision": 1,
+      "abilityConfig": {
+        "abilityPattern": [
+          "frost",
+          "haunt"
+        ],
+        "collisionRadius": 13,
+        "range": 275,
+        "radius": 75,
+        "cooldown": 7200,
+        "windup": 900,
+        "elevation": 38,
+        "preferredDistance": 165
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.34,
+          "distance": 95
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203PorcelainBellWalker": {
+      "family": "construct",
+      "movementProfile": "heavy",
+      "name": "Фарфоровый колоколоход",
+      "names": {
+        "ru": "Фарфоровый колоколоход",
+        "en": "Porcelain bellwalker",
+        "es": "Campanante de porcelana"
+      },
+      "level": 35,
+      "hp": 468,
+      "attack": 52,
+      "xp": 290,
+      "gold": 38,
+      "speed": 40,
+      "loot": "aur203PorcelainBellWalker",
+      "defense": 28,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "ancient-species-045",
+      "aur203Revision": 1,
+      "magicDefense": 17,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "fan"
+        ],
+        "collisionRadius": 23,
+        "range": 255,
+        "radius": 105,
+        "cooldown": 8200,
+        "windup": 1100,
+        "projectileMagic": true
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 170,
+          "windupMs": 1150,
+          "durationMs": 1600,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203MossAxolotl": {
+      "family": "amphibian",
+      "movementProfile": "serpent",
+      "name": "Мохожабрый аксолотль",
+      "names": {
+        "ru": "Мохожабрый аксолотль",
+        "en": "Moss-frill axolotl",
+        "es": "Ajolote de branquias musgosas"
+      },
+      "level": 35,
+      "hp": 390,
+      "attack": 49,
+      "xp": 288,
+      "gold": 38,
+      "speed": 83,
+      "loot": "aur203MossAxolotl",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "ancient-species-046",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "pounce"
+        ],
+        "locomotion": "crawler",
+        "collisionRadius": 15,
+        "range": 210,
+        "radius": 52,
+        "cooldown": 6400,
+        "windup": 650
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 108
+        },
+        "pack": {
+          "radius": 155,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203PrismCuttlefish": {
+      "family": "cephalopod",
+      "movementProfile": "elemental",
+      "name": "Призмогребневая каракатица",
+      "names": {
+        "ru": "Призмогребневая каракатица",
+        "en": "Prism-crested cuttlefish",
+        "es": "Sepia de cresta prismática"
+      },
+      "level": 37,
+      "hp": 359,
+      "attack": 59,
+      "xp": 310,
+      "gold": 42,
+      "speed": 78,
+      "loot": "aur203PrismCuttlefish",
+      "defense": 9,
+      "magic": true,
+      "sourceArchetype": "arcaneWisp",
+      "speciesId": "ancient-species-047",
+      "aur203Revision": 1,
+      "magicDefense": 5,
+      "abilityConfig": {
+        "abilityPattern": [
+          "blink",
+          "fan"
+        ],
+        "collisionRadius": 15,
+        "range": 300,
+        "radius": 70,
+        "cooldown": 7800,
+        "windup": 850,
+        "elevation": 35,
+        "preferredDistance": 170,
+        "projectileMagic": true
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.26,
+          "distance": 110
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203ScrollTripod": {
+      "family": "construct",
+      "movementProfile": "heavy",
+      "name": "Древний свиткоткач",
+      "names": {
+        "ru": "Древний свиткоткач",
+        "en": "Ancient scrollweaver",
+        "es": "Tejedor antiguo de pergaminos"
+      },
+      "level": 37,
+      "hp": 429,
+      "attack": 56,
+      "xp": 310,
+      "gold": 42,
+      "speed": 46,
+      "loot": "aur203ScrollTripod",
+      "defense": 13,
+      "magic": true,
+      "sourceArchetype": "arcaneWisp",
+      "speciesId": "ancient-species-048",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "roots",
+          "haunt"
+        ],
+        "collisionRadius": 19,
+        "range": 285,
+        "radius": 75,
+        "cooldown": 7900,
+        "windup": 1000,
+        "preferredDistance": 165
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 180,
+          "windupMs": 1000,
+          "durationMs": 1500,
+          "damageMultiplier": 0.65
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203SandstoneTrilobite": {
+      "family": "arthropod",
+      "movementProfile": "scarab",
+      "name": "Песчаниковый трилобит",
+      "names": {
+        "ru": "Песчаниковый трилобит",
+        "en": "Sandstone trilobite",
+        "es": "Trilobite de arenisca"
+      },
+      "level": 35,
+      "hp": 611,
+      "attack": 57,
+      "xp": 290,
+      "gold": 38,
+      "speed": 45,
+      "loot": "aur203SandstoneTrilobite",
+      "defense": 42,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-056",
+      "aur203Revision": 1,
+      "magicDefense": 25,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "stomp"
+        ],
+        "collisionRadius": 24,
+        "range": 220,
+        "radius": 95,
+        "cooldown": 8200,
+        "windup": 1050
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 160,
+          "windupMs": 1100,
+          "durationMs": 2000,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203GlassJerboa": {
+      "family": "rodent",
+      "movementProfile": "predator",
+      "name": "Тушканчик стеклянного веера",
+      "names": {
+        "ru": "Тушканчик стеклянного веера",
+        "en": "Glass-sail jerboa",
+        "es": "Jerbo de abanico cristalino"
+      },
+      "level": 35,
+      "hp": 295,
+      "attack": 44,
+      "xp": 288,
+      "gold": 38,
+      "speed": 140,
+      "loot": "aur203GlassJerboa",
+      "defense": 10,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-057",
+      "aur203Revision": 1,
+      "magicDefense": 6,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "fan"
+        ],
+        "collisionRadius": 11,
+        "range": 245,
+        "radius": 48,
+        "cooldown": 5900,
+        "windup": 550,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.42,
+          "distance": 125,
+          "durationMs": 1400,
+          "pauseMs": 300
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203PitcherCactus": {
+      "family": "plant",
+      "movementProfile": "heavy",
+      "name": "Кактус-кувшин корнеход",
+      "names": {
+        "ru": "Кактус-кувшин корнеход",
+        "en": "Pitcher-cactus rootwalker",
+        "es": "Cactus jarra de raíces andantes"
+      },
+      "level": 35,
+      "hp": 494,
+      "attack": 47,
+      "xp": 290,
+      "gold": 38,
+      "speed": 26,
+      "loot": "aur203PitcherCactus",
+      "defense": 18,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-058",
+      "aur203Revision": 1,
+      "magicDefense": 11,
+      "abilityConfig": {
+        "abilityPattern": [
+          "fan",
+          "venom"
+        ],
+        "locomotion": "crawler",
+        "collisionRadius": 20,
+        "range": 320,
+        "radius": 65,
+        "cooldown": 7100,
+        "windup": 850,
+        "preferredDistance": 195,
+        "projectileMagic": false,
+        "projectileStatus": "venom"
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 1000,
+          "durationMs": 1400,
+          "damageMultiplier": 0.7
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203DuneSailray": {
+      "family": "ray",
+      "movementProfile": "gargoyle",
+      "name": "Дюнный парусный скат",
+      "names": {
+        "ru": "Дюнный парусный скат",
+        "en": "Dune sailray",
+        "es": "Raya velera de las dunas"
+      },
+      "level": 38,
+      "hp": 468,
+      "attack": 58,
+      "xp": 330,
+      "gold": 43,
+      "speed": 105,
+      "loot": "aur203DuneSailray",
+      "defense": 17,
+      "sourceArchetype": "ancientGargoyle",
+      "speciesId": "desert-species-059",
+      "aur203Revision": 1,
+      "magicDefense": 10,
+      "abilityConfig": {
+        "abilityPattern": [
+          "dive",
+          "haunt"
+        ],
+        "collisionRadius": 20,
+        "range": 275,
+        "radius": 65,
+        "cooldown": 6900,
+        "windup": 850,
+        "elevation": 45,
+        "preferredDistance": 135
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.22,
+          "distance": 115
+        },
+        "pack": {
+          "radius": 170,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest088": {
+      "family": "mammal",
+      "movementProfile": "bat",
+      "name": "Крылатка клёна",
+      "names": {
+        "ru": "Крылатка клёна",
+        "en": "Maple-key glider",
+        "es": "Planeador sámara"
+      },
+      "level": 2,
+      "hp": 34,
+      "attack": 5,
+      "xp": 19,
+      "gold": 3,
+      "speed": 132,
+      "loot": "aur203Forest088",
+      "defense": 0,
+      "sourceArchetype": "forestBat",
+      "speciesId": "forest-species-088",
+      "aur203Revision": 1,
+      "magicDefense": 0,
+      "abilityConfig": {
+        "abilityPattern": [
+          "dive",
+          "fan"
+        ],
+        "collisionRadius": 11,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 600,
+        "elevation": 40,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.24,
+          "distance": 120,
+          "durationMs": 1350
+        },
+        "pack": {
+          "radius": 150,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest089": {
+      "family": "cephalopod",
+      "movementProfile": "crawler",
+      "name": "Желобный фонарник",
+      "names": {
+        "ru": "Желобный фонарник",
+        "en": "Gutter-lantern hermit",
+        "es": "Ermitaño farol"
+      },
+      "level": 14,
+      "hp": 175,
+      "attack": 23,
+      "xp": 104,
+      "gold": 15,
+      "speed": 48,
+      "loot": "aur203Forest089",
+      "defense": 9,
+      "sourceArchetype": "skeleton",
+      "speciesId": "forest-species-089",
+      "aur203Revision": 1,
+      "magicDefense": 6,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "web"
+        ],
+        "collisionRadius": 17,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 975,
+          "durationMs": 1550,
+          "damageMultiplier": 0.55
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest090": {
+      "family": "reptile",
+      "movementProfile": "heavy",
+      "name": "Клеверная черепаха",
+      "names": {
+        "ru": "Клеверная черепаха",
+        "en": "Clover-mantle tortoise",
+        "es": "Tortuga trébol"
+      },
+      "level": 6,
+      "hp": 150,
+      "attack": 11,
+      "xp": 48,
+      "gold": 9,
+      "speed": 32,
+      "loot": "aur203Forest090",
+      "defense": 6,
+      "sourceArchetype": "bear",
+      "speciesId": "forest-species-090",
+      "aur203Revision": 1,
+      "magicDefense": 4,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "roots"
+        ],
+        "collisionRadius": 21,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 175,
+          "windupMs": 1050,
+          "durationMs": 1700,
+          "damageMultiplier": 0.6
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest091": {
+      "family": "bird",
+      "movementProfile": "scarab",
+      "name": "Орешниковый ложкоклюв",
+      "names": {
+        "ru": "Орешниковый ложкоклюв",
+        "en": "Hazel-spoonbill burrower",
+        "es": "Cavador pico de cuchara"
+      },
+      "level": 4,
+      "hp": 85,
+      "attack": 11,
+      "xp": 32,
+      "gold": 6,
+      "speed": 86,
+      "loot": "aur203Forest091",
+      "sourceArchetype": "forestRaider",
+      "speciesId": "forest-species-091",
+      "aur203Revision": 1,
+      "defense": 0,
+      "magicDefense": 0,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "cleave"
+        ],
+        "collisionRadius": 14,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6580,
+        "windup": 825
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 100,
+          "durationMs": 1350
+        },
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest092": {
+      "family": "insect",
+      "movementProfile": "bat",
+      "name": "Кадильная штукатурница",
+      "names": {
+        "ru": "Кадильная штукатурница",
+        "en": "Mortar-moth censer",
+        "es": "Polilla incensario"
+      },
+      "level": 14,
+      "hp": 152,
+      "attack": 23,
+      "xp": 104,
+      "gold": 15,
+      "speed": 124,
+      "loot": "aur203Forest092",
+      "defense": 6,
+      "sourceArchetype": "skeleton",
+      "speciesId": "forest-species-092",
+      "aur203Revision": 1,
+      "magicDefense": 4,
+      "abilityConfig": {
+        "abilityPattern": [
+          "dive",
+          "haunt"
+        ],
+        "collisionRadius": 12,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6760,
+        "windup": 600,
+        "elevation": 40
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.24,
+          "distance": 110,
+          "durationMs": 1450
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest093": {
+      "family": "plant",
+      "movementProfile": "fighter",
+      "name": "Корешок-колокольчик",
+      "names": {
+        "ru": "Корешок-колокольчик",
+        "en": "Bluebell rootling",
+        "es": "Raicilla campanilla"
+      },
+      "level": 5,
+      "hp": 90,
+      "attack": 10,
+      "xp": 40,
+      "gold": 7,
+      "speed": 45,
+      "loot": "aur203Forest093",
+      "defense": 1,
+      "sourceArchetype": "thornSnake",
+      "speciesId": "forest-species-093",
+      "aur203Revision": 1,
+      "magicDefense": 1,
+      "abilityConfig": {
+        "abilityPattern": [
+          "roots",
+          "cleave"
+        ],
+        "collisionRadius": 12,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 975,
+          "durationMs": 1550,
+          "damageMultiplier": 0.55
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest094": {
+      "family": "arthropod",
+      "movementProfile": "crawler",
+      "name": "Ключечелюстный клещ",
+      "names": {
+        "ru": "Ключечелюстный клещ",
+        "en": "Lockjaw key-mite",
+        "es": "Ácaro cerrojo"
+      },
+      "level": 14,
+      "hp": 162,
+      "attack": 26,
+      "xp": 104,
+      "gold": 15,
+      "speed": 76,
+      "loot": "aur203Forest094",
+      "defense": 10,
+      "sourceArchetype": "skeleton",
+      "speciesId": "forest-species-094",
+      "aur203Revision": 1,
+      "magicDefense": 6,
+      "abilityConfig": {
+        "abilityPattern": [
+          "cleave",
+          "venom"
+        ],
+        "collisionRadius": 13,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 7120,
+        "windup": 750
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 170,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest095": {
+      "family": "mollusk",
+      "movementProfile": "heavy",
+      "name": "Дымоходный ходулочник",
+      "names": {
+        "ru": "Дымоходный ходулочник",
+        "en": "Chimney-dome stiltbeast",
+        "es": "Zancudo chimenea"
+      },
+      "level": 10,
+      "hp": 208,
+      "attack": 21,
+      "xp": 82,
+      "gold": 13,
+      "speed": 42,
+      "loot": "aur203Forest095",
+      "defense": 12,
+      "sourceArchetype": "forestOrc",
+      "speciesId": "forest-species-095",
+      "aur203Revision": 1,
+      "magicDefense": 7,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "charge"
+        ],
+        "collisionRadius": 23,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 185,
+          "windupMs": 1125,
+          "durationMs": 1850,
+          "damageMultiplier": 0.65
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Forest096": {
+      "family": "construct",
+      "movementProfile": "ghost",
+      "name": "Витражный переплётник",
+      "names": {
+        "ru": "Витражный переплётник",
+        "en": "Stained-glass folio ray",
+        "es": "Raya vitral"
+      },
+      "level": 14,
+      "hp": 171,
+      "attack": 24,
+      "xp": 104,
+      "gold": 15,
+      "speed": 67,
+      "loot": "aur203Forest096",
+      "defense": 6,
+      "sourceArchetype": "skeleton",
+      "speciesId": "forest-species-096",
+      "aur203Revision": 1,
+      "magicDefense": 4,
+      "abilityConfig": {
+        "abilityPattern": [
+          "haunt",
+          "fan"
+        ],
+        "collisionRadius": 16,
+        "range": 285,
+        "radius": 60,
+        "cooldown": 6580,
+        "windup": 600,
+        "preferredDistance": 145,
+        "elevation": 34,
+        "projectileMagic": true
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.24,
+          "distance": 100,
+          "durationMs": 1250
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North080": {
+      "family": "mammal",
+      "movementProfile": "predator",
+      "name": "Снегоступный компасозуб",
+      "names": {
+        "ru": "Снегоступный компасозуб",
+        "en": "Snowshoe compass shrew",
+        "es": "Musaraña brújula"
+      },
+      "level": 22,
+      "hp": 213,
+      "attack": 33,
+      "xp": 170,
+      "gold": 24,
+      "speed": 121,
+      "loot": "aur203North080",
+      "defense": 8,
+      "sourceArchetype": "iceWolf",
+      "speciesId": "north-species-080",
+      "aur203Revision": 1,
+      "magicDefense": 5,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "frost"
+        ],
+        "collisionRadius": 11,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6400,
+        "windup": 600
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.24,
+          "distance": 90,
+          "durationMs": 1450
+        },
+        "pack": {
+          "radius": 150,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North081": {
+      "family": "bird",
+      "movementProfile": "fighter",
+      "name": "Ледокоронный тупик",
+      "names": {
+        "ru": "Ледокоронный тупик",
+        "en": "Frost-crown puffin",
+        "es": "Frailecillo coronado"
+      },
+      "level": 23,
+      "hp": 261,
+      "attack": 36,
+      "xp": 180,
+      "gold": 25,
+      "speed": 72,
+      "loot": "aur203North081",
+      "defense": 13,
+      "sourceArchetype": "snowRaider",
+      "speciesId": "north-species-081",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "cleave",
+          "frost"
+        ],
+        "collisionRadius": 15,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 975,
+          "durationMs": 1550,
+          "damageMultiplier": 0.55
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North082": {
+      "family": "arachnid",
+      "movementProfile": "crawler",
+      "name": "Снежнофонарный паук",
+      "names": {
+        "ru": "Снежнофонарный паук",
+        "en": "Snow-lantern spider",
+        "es": "Araña farol de nieve"
+      },
+      "level": 22,
+      "hp": 234,
+      "attack": 34,
+      "xp": 170,
+      "gold": 24,
+      "speed": 88,
+      "loot": "aur203North082",
+      "defense": 9,
+      "sourceArchetype": "iceWolf",
+      "speciesId": "north-species-082",
+      "aur203Revision": 1,
+      "magicDefense": 5,
+      "abilityConfig": {
+        "abilityPattern": [
+          "web",
+          "venom"
+        ],
+        "collisionRadius": 14,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6760,
+        "windup": 750
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 110,
+          "durationMs": 1350
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North083": {
+      "family": "ungulate",
+      "movementProfile": "charger",
+      "name": "Северосиянный куду",
+      "names": {
+        "ru": "Северосиянный куду",
+        "en": "Aurora-antler kudu",
+        "es": "Kudú de astas aurorales"
+      },
+      "level": 24,
+      "hp": 331,
+      "attack": 45,
+      "xp": 190,
+      "gold": 27,
+      "speed": 108,
+      "loot": "aur203North083",
+      "defense": 15,
+      "sourceArchetype": "snowBear",
+      "speciesId": "north-species-083",
+      "aur203Revision": 1,
+      "magicDefense": 9,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "frost"
+        ],
+        "collisionRadius": 20,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 825
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North084": {
+      "family": "construct",
+      "movementProfile": "heavy",
+      "name": "Ледяной шестизвон",
+      "names": {
+        "ru": "Ледяной шестизвон",
+        "en": "Ice chime sextuped",
+        "es": "Hexápodo de campanas de hielo"
+      },
+      "level": 26,
+      "hp": 410,
+      "attack": 40,
+      "xp": 210,
+      "gold": 29,
+      "speed": 39,
+      "loot": "aur203North084",
+      "defense": 23,
+      "sourceArchetype": "frostGolem",
+      "speciesId": "north-species-084",
+      "aur203Revision": 1,
+      "magicDefense": 14,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "frost"
+        ],
+        "collisionRadius": 23,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 1100,
+        "stunOnStomp": 700
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North085": {
+      "family": "bird",
+      "movementProfile": "skirmisher",
+      "name": "Ковшеклювый зимник",
+      "names": {
+        "ru": "Ковшеклювый зимник",
+        "en": "Winter spoonbill",
+        "es": "Espátula invernal"
+      },
+      "level": 23,
+      "hp": 248,
+      "attack": 33,
+      "xp": 180,
+      "gold": 25,
+      "speed": 96,
+      "loot": "aur203North085",
+      "defense": 10,
+      "sourceArchetype": "snowRaider",
+      "speciesId": "north-species-085",
+      "aur203Revision": 1,
+      "magicDefense": 6,
+      "abilityConfig": {
+        "abilityPattern": [
+          "fan",
+          "frost"
+        ],
+        "collisionRadius": 14,
+        "range": 285,
+        "radius": 60,
+        "cooldown": 6400,
+        "windup": 675,
+        "preferredDistance": 155,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.27,
+          "distance": 90,
+          "durationMs": 1350
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North086": {
+      "family": "insect",
+      "movementProfile": "fighter",
+      "name": "Печной богомол",
+      "names": {
+        "ru": "Печной богомол",
+        "en": "Furnace mantis",
+        "es": "Mantis de horno"
+      },
+      "level": 26,
+      "hp": 319,
+      "attack": 46,
+      "xp": 210,
+      "gold": 29,
+      "speed": 91,
+      "loot": "aur203North086",
+      "defense": 18,
+      "sourceArchetype": "frostGolem",
+      "speciesId": "north-species-086",
+      "aur203Revision": 1,
+      "magicDefense": 11,
+      "abilityConfig": {
+        "abilityPattern": [
+          "cleave",
+          "fan"
+        ],
+        "collisionRadius": 17,
+        "range": 250,
+        "radius": 85,
+        "cooldown": 6580,
+        "windup": 750,
+        "locomotion": "crawler",
+        "projectileMagic": true
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 100,
+          "durationMs": 1450
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North087": {
+      "family": "crustacean",
+      "movementProfile": "scarab",
+      "name": "Снежносферный отшельник",
+      "names": {
+        "ru": "Снежносферный отшельник",
+        "en": "Snowglobe hermit",
+        "es": "Ermitaño de esfera nevada"
+      },
+      "level": 26,
+      "hp": 365,
+      "attack": 36,
+      "xp": 210,
+      "gold": 29,
+      "speed": 45,
+      "loot": "aur203North087",
+      "defense": 28,
+      "sourceArchetype": "frostGolem",
+      "speciesId": "north-species-087",
+      "aur203Revision": 1,
+      "magicDefense": 17,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "frost"
+        ],
+        "collisionRadius": 20,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 185,
+          "windupMs": 1125,
+          "durationMs": 1850,
+          "damageMultiplier": 0.65
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North088": {
+      "family": "arachnid",
+      "movementProfile": "crawler",
+      "name": "Жароколёсый скорпион",
+      "names": {
+        "ru": "Жароколёсый скорпион",
+        "en": "Ember-wheel scorpion",
+        "es": "Escorpión rueda de brasas"
+      },
+      "level": 22,
+      "hp": 286,
+      "attack": 39,
+      "xp": 170,
+      "gold": 24,
+      "speed": 82,
+      "loot": "aur203North088",
+      "defense": 11,
+      "sourceArchetype": "iceWolf",
+      "speciesId": "north-species-088",
+      "aur203Revision": 1,
+      "magicDefense": 7,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "burrow"
+        ],
+        "collisionRadius": 18,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 600
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 150,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North089": {
+      "family": "mammal",
+      "movementProfile": "scarab",
+      "name": "Базальтовый лопатокрот",
+      "names": {
+        "ru": "Базальтовый лопатокрот",
+        "en": "Basalt shovel mole",
+        "es": "Topo pala de basalto"
+      },
+      "level": 26,
+      "hp": 399,
+      "attack": 47,
+      "xp": 210,
+      "gold": 29,
+      "speed": 62,
+      "loot": "aur203North089",
+      "defense": 24,
+      "sourceArchetype": "frostGolem",
+      "speciesId": "north-species-089",
+      "aur203Revision": 1,
+      "magicDefense": 14,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "stomp"
+        ],
+        "collisionRadius": 19,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 975,
+          "durationMs": 1550,
+          "damageMultiplier": 0.55
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North090": {
+      "family": "insect",
+      "movementProfile": "bat",
+      "name": "Вьюжная воронкомоль",
+      "names": {
+        "ru": "Вьюжная воронкомоль",
+        "en": "Blizzard funnel moth",
+        "es": "Polilla embudo de ventisca"
+      },
+      "level": 22,
+      "hp": 198,
+      "attack": 31,
+      "xp": 165,
+      "gold": 23,
+      "speed": 137,
+      "loot": "aur203North090",
+      "defense": 5,
+      "sourceArchetype": "iceBat",
+      "speciesId": "north-species-090",
+      "aur203Revision": 1,
+      "magicDefense": 3,
+      "abilityConfig": {
+        "abilityPattern": [
+          "dive",
+          "frost"
+        ],
+        "collisionRadius": 11,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6400,
+        "windup": 750,
+        "elevation": 40
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 90,
+          "durationMs": 1250
+        },
+        "pack": {
+          "radius": 170,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North092": {
+      "family": "insect",
+      "movementProfile": "scarab",
+      "name": "Снежноцветный долгоносик",
+      "names": {
+        "ru": "Снежноцветный долгоносик",
+        "en": "Snowflower weevil",
+        "es": "Gorgojo flor de nieve"
+      },
+      "level": 22,
+      "hp": 218,
+      "attack": 32,
+      "xp": 170,
+      "gold": 24,
+      "speed": 79,
+      "loot": "aur203North092",
+      "defense": 11,
+      "sourceArchetype": "iceWolf",
+      "speciesId": "north-species-092",
+      "aur203Revision": 1,
+      "magicDefense": 7,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "frost"
+        ],
+        "collisionRadius": 12,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6760,
+        "windup": 600
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 150,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203North093": {
+      "family": "mammal",
+      "movementProfile": "heavy",
+      "name": "Кальдерный броненосец",
+      "names": {
+        "ru": "Кальдерный броненосец",
+        "en": "Caldera armadillo",
+        "es": "Armadillo de caldera"
+      },
+      "level": 26,
+      "hp": 441,
+      "attack": 44,
+      "xp": 210,
+      "gold": 29,
+      "speed": 48,
+      "loot": "aur203North093",
+      "defense": 27,
+      "sourceArchetype": "frostGolem",
+      "speciesId": "north-species-093",
+      "aur203Revision": 1,
+      "magicDefense": 16,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "stomp"
+        ],
+        "collisionRadius": 23,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 975,
+          "durationMs": 1550,
+          "damageMultiplier": 0.55
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient049": {
+      "family": "insect",
+      "movementProfile": "crawler",
+      "name": "Корнеколёсая цикада",
+      "names": {
+        "ru": "Корнеколёсая цикада",
+        "en": "Rootwheel Cicada",
+        "es": "Cigarra de rueda raíz"
+      },
+      "level": 35,
+      "hp": 361,
+      "attack": 49,
+      "xp": 288,
+      "gold": 38,
+      "speed": 71,
+      "loot": "aur203Ancient049",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "ancient-species-049",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "roots",
+          "burrow"
+        ],
+        "collisionRadius": 14,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 975,
+          "durationMs": 1550,
+          "damageMultiplier": 0.55
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient050": {
+      "family": "fish",
+      "movementProfile": "predator",
+      "name": "Кувшиноспинный прыгун",
+      "names": {
+        "ru": "Кувшиноспинный прыгун",
+        "en": "Vesselback Mudskipper",
+        "es": "Saltarín de vasija"
+      },
+      "level": 35,
+      "hp": 385,
+      "attack": 52,
+      "xp": 288,
+      "gold": 38,
+      "speed": 93,
+      "loot": "aur203Ancient050",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "ancient-species-050",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "venom"
+        ],
+        "collisionRadius": 15,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6400,
+        "windup": 750,
+        "locomotion": "crawler"
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 90,
+          "durationMs": 1450
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient051": {
+      "family": "insect",
+      "movementProfile": "fighter",
+      "name": "Мозаичный богомол",
+      "names": {
+        "ru": "Мозаичный богомол",
+        "en": "Mosaic Mantis",
+        "es": "Mantis de mosaico"
+      },
+      "level": 35,
+      "hp": 447,
+      "attack": 59,
+      "xp": 290,
+      "gold": 38,
+      "speed": 94,
+      "loot": "aur203Ancient051",
+      "defense": 23,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "ancient-species-051",
+      "aur203Revision": 1,
+      "magicDefense": 14,
+      "abilityConfig": {
+        "abilityPattern": [
+          "cleave",
+          "fan"
+        ],
+        "collisionRadius": 17,
+        "range": 250,
+        "radius": 85,
+        "cooldown": 6580,
+        "windup": 825,
+        "locomotion": "crawler",
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 100,
+          "durationMs": 1250
+        },
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient052": {
+      "family": "reptile",
+      "movementProfile": "heavy",
+      "name": "Астролябовая черепаха",
+      "names": {
+        "ru": "Астролябовая черепаха",
+        "en": "Astrolabe Tortoise",
+        "es": "Tortuga de astrolabio"
+      },
+      "level": 35,
+      "hp": 582,
+      "attack": 48,
+      "xp": 290,
+      "gold": 38,
+      "speed": 31,
+      "loot": "aur203Ancient052",
+      "defense": 41,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "ancient-species-052",
+      "aur203Revision": 1,
+      "magicDefense": 24,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "blink"
+        ],
+        "collisionRadius": 23,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 1100,
+        "stunOnStomp": 600
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient053": {
+      "family": "ungulate",
+      "movementProfile": "charger",
+      "name": "Замковый баран",
+      "names": {
+        "ru": "Замковый баран",
+        "en": "Keystone Ram",
+        "es": "Carnero de clave"
+      },
+      "level": 35,
+      "hp": 520,
+      "attack": 62,
+      "xp": 290,
+      "gold": 38,
+      "speed": 104,
+      "loot": "aur203Ancient053",
+      "defense": 28,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "ancient-species-053",
+      "aur203Revision": 1,
+      "magicDefense": 17,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "stomp"
+        ],
+        "collisionRadius": 21,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 675
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient054": {
+      "family": "bird",
+      "movementProfile": "bat",
+      "name": "Обсидиановый коршун",
+      "names": {
+        "ru": "Обсидиановый коршун",
+        "en": "Obsidian Kite",
+        "es": "Milano de obsidiana"
+      },
+      "level": 38,
+      "hp": 432,
+      "attack": 62,
+      "xp": 330,
+      "gold": 43,
+      "speed": 133,
+      "loot": "aur203Ancient054",
+      "defense": 20,
+      "sourceArchetype": "ancientGargoyle",
+      "speciesId": "ancient-species-054",
+      "aur203Revision": 1,
+      "magicDefense": 12,
+      "abilityConfig": {
+        "abilityPattern": [
+          "dive",
+          "fan"
+        ],
+        "collisionRadius": 14,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 7120,
+        "windup": 750,
+        "elevation": 40,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 130,
+          "durationMs": 1250
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient055": {
+      "family": "mammal",
+      "movementProfile": "scarab",
+      "name": "Солекоронный панголин",
+      "names": {
+        "ru": "Солекоронный панголин",
+        "en": "Saltcrown Pangolin",
+        "es": "Pangolín de corona salina"
+      },
+      "level": 35,
+      "hp": 531,
+      "attack": 51,
+      "xp": 290,
+      "gold": 38,
+      "speed": 55,
+      "loot": "aur203Ancient055",
+      "defense": 42,
+      "sourceArchetype": "scarab",
+      "speciesId": "ancient-species-055",
+      "aur203Revision": 1,
+      "magicDefense": 25,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "charge"
+        ],
+        "collisionRadius": 21,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 185,
+          "windupMs": 1125,
+          "durationMs": 1850,
+          "damageMultiplier": 0.65
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient057": {
+      "family": "mammal",
+      "movementProfile": "predator",
+      "name": "Медношапочный заяц",
+      "names": {
+        "ru": "Медношапочный заяц",
+        "en": "Coppercap Hare",
+        "es": "Liebre de sombrero cobrizo"
+      },
+      "level": 35,
+      "hp": 328,
+      "attack": 48,
+      "xp": 288,
+      "gold": 38,
+      "speed": 126,
+      "loot": "aur203Ancient057",
+      "defense": 12,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "ancient-species-057",
+      "aur203Revision": 1,
+      "magicDefense": 7,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "roots"
+        ],
+        "collisionRadius": 12,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6760,
+        "windup": 675
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.27,
+          "distance": 110,
+          "durationMs": 1250
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient058": {
+      "family": "fish",
+      "movementProfile": "serpent",
+      "name": "Болотный арфоугорь",
+      "names": {
+        "ru": "Болотный арфоугорь",
+        "en": "Bogharp Eel",
+        "es": "Anguila arpa de ciénaga"
+      },
+      "level": 35,
+      "hp": 385,
+      "attack": 55,
+      "xp": 288,
+      "gold": 38,
+      "speed": 97,
+      "loot": "aur203Ancient058",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "ancient-species-058",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "pounce"
+        ],
+        "collisionRadius": 15,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 750,
+        "locomotion": "crawler"
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 120,
+          "durationMs": 1350
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Ancient059": {
+      "family": "ungulate",
+      "movementProfile": "mauler",
+      "name": "Базальтовый як",
+      "names": {
+        "ru": "Базальтовый як",
+        "en": "Basalt Yak",
+        "es": "Yak de basalto"
+      },
+      "level": 35,
+      "hp": 614,
+      "attack": 59,
+      "xp": 290,
+      "gold": 38,
+      "speed": 68,
+      "loot": "aur203Ancient059",
+      "defense": 33,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "ancient-species-059",
+      "aur203Revision": 1,
+      "magicDefense": 20,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "charge"
+        ],
+        "collisionRadius": 24,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 185,
+          "windupMs": 1125,
+          "durationMs": 1850,
+          "damageMultiplier": 0.65
+        },
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert060": {
+      "family": "arachnid",
+      "movementProfile": "crawler",
+      "name": "Скорпион-наковальня",
+      "names": {
+        "en": "Anvilclaw Scorpion",
+        "ru": "Скорпион-наковальня",
+        "es": "Escorpión Yunque"
+      },
+      "level": 35,
+      "hp": 536,
+      "attack": 55,
+      "xp": 290,
+      "gold": 38,
+      "speed": 58,
+      "loot": "aur203Desert060",
+      "defense": 36,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-060",
+      "aur203Revision": 1,
+      "magicDefense": 22,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "cleave"
+        ],
+        "collisionRadius": 22,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert061": {
+      "family": "arachnid",
+      "movementProfile": "crawler",
+      "name": "Песочный ткач",
+      "names": {
+        "en": "Hourglass Dune Weaver",
+        "ru": "Песочный ткач",
+        "es": "Tejedor de Dunas"
+      },
+      "level": 35,
+      "hp": 369,
+      "attack": 48,
+      "xp": 288,
+      "gold": 38,
+      "speed": 87,
+      "loot": "aur203Desert061",
+      "defense": 13,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-061",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "web",
+          "venom"
+        ],
+        "collisionRadius": 15,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6580,
+        "windup": 675
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.27,
+          "distance": 100,
+          "durationMs": 1350
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert062": {
+      "family": "giant",
+      "movementProfile": "heavy",
+      "name": "Печной исполин",
+      "names": {
+        "en": "Kilnback Dune Giant",
+        "ru": "Печной исполин",
+        "es": "Gigante Horno"
+      },
+      "level": 35,
+      "hp": 634,
+      "attack": 61,
+      "xp": 290,
+      "gold": 38,
+      "speed": 38,
+      "loot": "aur203Desert062",
+      "defense": 31,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-062",
+      "aur203Revision": 1,
+      "magicDefense": 19,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "cleave"
+        ],
+        "collisionRadius": 24,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 175,
+          "windupMs": 1050,
+          "durationMs": 1700,
+          "damageMultiplier": 0.6
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert063": {
+      "family": "arachnid",
+      "movementProfile": "crawler",
+      "name": "Лунноклешнёвый скорпион",
+      "names": {
+        "en": "Moonblade Scorpion",
+        "ru": "Лунноклешнёвый скорпион",
+        "es": "Escorpión Lunafilo"
+      },
+      "level": 35,
+      "hp": 447,
+      "attack": 58,
+      "xp": 290,
+      "gold": 38,
+      "speed": 94,
+      "loot": "aur203Desert063",
+      "defense": 27,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-063",
+      "aur203Revision": 1,
+      "magicDefense": 16,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "burrow"
+        ],
+        "collisionRadius": 18,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 825
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 120,
+          "durationMs": 1250
+        },
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert064": {
+      "family": "mammal",
+      "movementProfile": "heavy",
+      "name": "Соляной розетник",
+      "names": {
+        "en": "Salt Rosette Behemoth",
+        "ru": "Соляной розетник",
+        "es": "Behemot de Sal"
+      },
+      "level": 35,
+      "hp": 676,
+      "attack": 57,
+      "xp": 290,
+      "gold": 38,
+      "speed": 43,
+      "loot": "aur203Desert064",
+      "defense": 35,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-064",
+      "aur203Revision": 1,
+      "magicDefense": 21,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "stomp"
+        ],
+        "collisionRadius": 24,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert065": {
+      "family": "reptile",
+      "movementProfile": "predator",
+      "name": "Солнцеколёсый василиск",
+      "names": {
+        "en": "Sunwheel Basilisk",
+        "ru": "Солнцеколёсый василиск",
+        "es": "Basilisco Solar"
+      },
+      "level": 35,
+      "hp": 418,
+      "attack": 58,
+      "xp": 288,
+      "gold": 38,
+      "speed": 117,
+      "loot": "aur203Desert065",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-065",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "venom"
+        ],
+        "collisionRadius": 16,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6400,
+        "windup": 675
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert066": {
+      "family": "amphibian",
+      "movementProfile": "mauler",
+      "name": "Жаба-меховик",
+      "names": {
+        "en": "Bellows Throat Toad",
+        "ru": "Жаба-меховик",
+        "es": "Sapo Fuelle"
+      },
+      "level": 35,
+      "hp": 582,
+      "attack": 52,
+      "xp": 290,
+      "gold": 38,
+      "speed": 54,
+      "loot": "aur203Desert066",
+      "defense": 24,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-066",
+      "aur203Revision": 1,
+      "magicDefense": 15,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "fan"
+        ],
+        "collisionRadius": 21,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6580,
+        "windup": 750,
+        "locomotion": "crawler",
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 100,
+          "durationMs": 1250
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert067": {
+      "family": "insect",
+      "movementProfile": "bat",
+      "name": "Меднокрылый планер",
+      "names": {
+        "en": "Copperkite Skimmer",
+        "ru": "Меднокрылый планер",
+        "es": "Planeador Cobrizo"
+      },
+      "level": 38,
+      "hp": 432,
+      "attack": 58,
+      "xp": 330,
+      "gold": 43,
+      "speed": 139,
+      "loot": "aur203Desert067",
+      "defense": 20,
+      "sourceArchetype": "ancientGargoyle",
+      "speciesId": "desert-species-067",
+      "aur203Revision": 1,
+      "magicDefense": 12,
+      "abilityConfig": {
+        "abilityPattern": [
+          "dive",
+          "fan"
+        ],
+        "collisionRadius": 13,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6760,
+        "windup": 825,
+        "elevation": 40,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 110,
+          "durationMs": 1350
+        },
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert068": {
+      "family": "arachnid",
+      "movementProfile": "crawler",
+      "name": "Стеклоколоколый скорпион",
+      "names": {
+        "en": "Glassbell Scorpion",
+        "ru": "Стеклоколоколый скорпион",
+        "es": "Escorpión Campana"
+      },
+      "level": 35,
+      "hp": 451,
+      "attack": 54,
+      "xp": 290,
+      "gold": 38,
+      "speed": 66,
+      "loot": "aur203Desert068",
+      "defense": 35,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-068",
+      "aur203Revision": 1,
+      "magicDefense": 21,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "stomp"
+        ],
+        "collisionRadius": 20,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert069": {
+      "family": "reptile",
+      "movementProfile": "serpent",
+      "name": "Веретённый пескозмей",
+      "names": {
+        "en": "Dune Spindle Serpent",
+        "ru": "Веретённый пескозмей",
+        "es": "Serpiente Husillo"
+      },
+      "level": 35,
+      "hp": 426,
+      "attack": 59,
+      "xp": 288,
+      "gold": 38,
+      "speed": 107,
+      "loot": "aur203Desert069",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-069",
+      "aur203Revision": 1,
+      "magicDefense": 9,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "venom"
+        ],
+        "collisionRadius": 16,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 7120,
+        "windup": 675
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.27,
+          "distance": 130,
+          "durationMs": 1250
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert070": {
+      "family": "giant",
+      "movementProfile": "heavy",
+      "name": "Баранорогий титан",
+      "names": {
+        "en": "Ramhorn Sand Titan",
+        "ru": "Баранорогий титан",
+        "es": "Titán Cornudo"
+      },
+      "level": 35,
+      "hp": 676,
+      "attack": 63,
+      "xp": 290,
+      "gold": 38,
+      "speed": 46,
+      "loot": "aur203Desert070",
+      "defense": 32,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-070",
+      "aur203Revision": 1,
+      "magicDefense": 19,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "stomp"
+        ],
+        "collisionRadius": 24,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 175,
+          "windupMs": 1050,
+          "durationMs": 1700,
+          "damageMultiplier": 0.6
+        },
+        "pack": {
+          "radius": 170,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert071": {
+      "family": "mammal",
+      "movementProfile": "scarab",
+      "name": "Шафранный лопатокрот",
+      "names": {
+        "en": "Saffron Shovel Mole",
+        "ru": "Шафранный лопатокрот",
+        "es": "Topo Azafrán"
+      },
+      "level": 35,
+      "hp": 451,
+      "attack": 54,
+      "xp": 290,
+      "gold": 38,
+      "speed": 78,
+      "loot": "aur203Desert071",
+      "defense": 33,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-071",
+      "aur203Revision": 1,
+      "magicDefense": 20,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "cleave"
+        ],
+        "collisionRadius": 16,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6580,
+        "windup": 825
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 100,
+          "durationMs": 1450
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert072": {
+      "family": "insect",
+      "movementProfile": "fighter",
+      "name": "Серповеерный богомол",
+      "names": {
+        "en": "Sicklefan Mantis",
+        "ru": "Серповеерный богомол",
+        "es": "Mantis Abanico"
+      },
+      "level": 36,
+      "hp": 474,
+      "attack": 65,
+      "xp": 304,
+      "gold": 40,
+      "speed": 109,
+      "loot": "aur203Desert072",
+      "defense": 26,
+      "sourceArchetype": "fallenKnight",
+      "speciesId": "desert-species-072",
+      "aur203Revision": 1,
+      "magicDefense": 16,
+      "abilityConfig": {
+        "abilityPattern": [
+          "cleave",
+          "pounce"
+        ],
+        "collisionRadius": 17,
+        "range": 250,
+        "radius": 85,
+        "cooldown": 6760,
+        "windup": 600,
+        "locomotion": "crawler"
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.24,
+          "distance": 110,
+          "durationMs": 1250
+        },
+        "pack": {
+          "radius": 150,
+          "maxAllies": 3
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert073": {
+      "family": "bird",
+      "movementProfile": "skirmisher",
+      "name": "Камнеклювый пескоскакун",
+      "names": {
+        "en": "Pebblebill Sand Hopper",
+        "ru": "Камнеклювый пескоскакун",
+        "es": "Saltador Picopiedra"
+      },
+      "level": 35,
+      "hp": 328,
+      "attack": 48,
+      "xp": 288,
+      "gold": 38,
+      "speed": 129,
+      "loot": "aur203Desert073",
+      "defense": 11,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-073",
+      "aur203Revision": 1,
+      "magicDefense": 7,
+      "abilityConfig": {
+        "abilityPattern": [
+          "shot",
+          "pounce"
+        ],
+        "collisionRadius": 11,
+        "range": 285,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 675,
+        "preferredDistance": 155,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.27,
+          "distance": 120,
+          "durationMs": 1350
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert074": {
+      "family": "arachnid",
+      "movementProfile": "heavy",
+      "name": "Коронопанцирный скорпион",
+      "names": {
+        "en": "Crowncarapace Scorpion",
+        "ru": "Коронопанцирный скорпион",
+        "es": "Escorpión Corona"
+      },
+      "level": 35,
+      "hp": 592,
+      "attack": 56,
+      "xp": 290,
+      "gold": 38,
+      "speed": 41,
+      "loot": "aur203Desert074",
+      "defense": 42,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-074",
+      "aur203Revision": 1,
+      "magicDefense": 25,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "charge"
+        ],
+        "collisionRadius": 24,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950,
+        "locomotion": "crawler"
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 175,
+          "windupMs": 1050,
+          "durationMs": 1700,
+          "damageMultiplier": 0.6
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert075": {
+      "family": "ungulate",
+      "movementProfile": "charger",
+      "name": "Пескостеклянный козерог",
+      "names": {
+        "en": "Sandglass Ibex",
+        "ru": "Пескостеклянный козерог",
+        "es": "Íbice de Vidrio"
+      },
+      "level": 35,
+      "hp": 520,
+      "attack": 63,
+      "xp": 290,
+      "gold": 38,
+      "speed": 113,
+      "loot": "aur203Desert075",
+      "defense": 26,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-075",
+      "aur203Revision": 1,
+      "magicDefense": 15,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "cleave"
+        ],
+        "collisionRadius": 21,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6400,
+        "windup": 825
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert076": {
+      "family": "crustacean",
+      "movementProfile": "crawler",
+      "name": "Миражная раковина",
+      "names": {
+        "en": "Mirage Conch Crawler",
+        "ru": "Миражная раковина",
+        "es": "Caracola Espejismo"
+      },
+      "level": 35,
+      "hp": 508,
+      "attack": 45,
+      "xp": 290,
+      "gold": 38,
+      "speed": 35,
+      "loot": "aur203Desert076",
+      "defense": 44,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-076",
+      "aur203Revision": 1,
+      "magicDefense": 26,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "haunt"
+        ],
+        "collisionRadius": 21,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert077": {
+      "family": "reptile",
+      "movementProfile": "predator",
+      "name": "Пеплогривый дракончик",
+      "names": {
+        "en": "Cinder Frill Wyrmling",
+        "ru": "Пеплогривый дракончик",
+        "es": "Dracón de Ceniza"
+      },
+      "level": 35,
+      "hp": 431,
+      "attack": 58,
+      "xp": 288,
+      "gold": 38,
+      "speed": 115,
+      "loot": "aur203Desert077",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-077",
+      "aur203Revision": 1,
+      "magicDefense": 9,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "fan"
+        ],
+        "collisionRadius": 18,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6760,
+        "windup": 675,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.27,
+          "distance": 110,
+          "durationMs": 1450
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert078": {
+      "family": "construct",
+      "movementProfile": "heavy",
+      "name": "Дюнный барабанщик",
+      "names": {
+        "en": "Dune Drum Guardian",
+        "ru": "Дюнный барабанщик",
+        "es": "Guardián Tambor"
+      },
+      "level": 35,
+      "hp": 634,
+      "attack": 56,
+      "xp": 290,
+      "gold": 38,
+      "speed": 40,
+      "loot": "aur203Desert078",
+      "defense": 35,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-078",
+      "aur203Revision": 1,
+      "magicDefense": 21,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "fan"
+        ],
+        "collisionRadius": 23,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 1200,
+        "projectileMagic": true,
+        "stunOnStomp": 800
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 175,
+          "windupMs": 1050,
+          "durationMs": 1700,
+          "damageMultiplier": 0.6
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert079": {
+      "family": "fish",
+      "movementProfile": "serpent",
+      "name": "Лентопастный пескоугорь",
+      "names": {
+        "en": "Ribbonjaw Sand Eel",
+        "ru": "Лентопастный пескоугорь",
+        "es": "Anguila Cintamandíbula"
+      },
+      "level": 35,
+      "hp": 385,
+      "attack": 57,
+      "xp": 288,
+      "gold": 38,
+      "speed": 101,
+      "loot": "aur203Desert079",
+      "defense": 13,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-079",
+      "aur203Revision": 1,
+      "magicDefense": 8,
+      "abilityConfig": {
+        "abilityPattern": [
+          "burrow",
+          "venom"
+        ],
+        "collisionRadius": 15,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 7120,
+        "windup": 825,
+        "locomotion": "crawler"
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 130,
+          "durationMs": 1350
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert080": {
+      "family": "amphibian",
+      "movementProfile": "heavy",
+      "name": "Колодезный глотун",
+      "names": {
+        "ru": "Колодезный глотун",
+        "en": "Well-mouth gulper",
+        "es": "Engullidor pozo"
+      },
+      "level": 35,
+      "hp": 598,
+      "attack": 56,
+      "xp": 290,
+      "gold": 38,
+      "speed": 51,
+      "loot": "aur203Desert080",
+      "defense": 30,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-080",
+      "aur203Revision": 1,
+      "magicDefense": 18,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "burrow"
+        ],
+        "collisionRadius": 22,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950,
+        "locomotion": "crawler"
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert081": {
+      "family": "insect",
+      "movementProfile": "charger",
+      "name": "Солнечный гребнеход",
+      "names": {
+        "ru": "Солнечный гребнеход",
+        "en": "Sun-comb strider",
+        "es": "Zancudo peine solar"
+      },
+      "level": 35,
+      "hp": 410,
+      "attack": 58,
+      "xp": 288,
+      "gold": 38,
+      "speed": 110,
+      "loot": "aur203Desert081",
+      "defense": 14,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-081",
+      "aur203Revision": 1,
+      "magicDefense": 9,
+      "abilityConfig": {
+        "abilityPattern": [
+          "charge",
+          "fan"
+        ],
+        "collisionRadius": 19,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6580,
+        "windup": 675,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert082": {
+      "family": "mollusk",
+      "movementProfile": "crawler",
+      "name": "Песчаный гончар",
+      "names": {
+        "ru": "Песчаный гончар",
+        "en": "Dune potter",
+        "es": "Alfarero de dunas"
+      },
+      "level": 35,
+      "hp": 545,
+      "attack": 44,
+      "xp": 290,
+      "gold": 38,
+      "speed": 29,
+      "loot": "aur203Desert082",
+      "defense": 45,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-082",
+      "aur203Revision": 1,
+      "magicDefense": 27,
+      "abilityConfig": {
+        "abilityPattern": [
+          "venom",
+          "roots"
+        ],
+        "collisionRadius": 20,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 175,
+          "windupMs": 1050,
+          "durationMs": 1700,
+          "damageMultiplier": 0.6
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert083": {
+      "family": "bird",
+      "movementProfile": "skirmisher",
+      "name": "Барханный парусоклюв",
+      "names": {
+        "ru": "Барханный парусоклюв",
+        "en": "Dune sailbill",
+        "es": "Pico vela dunar"
+      },
+      "level": 35,
+      "hp": 361,
+      "attack": 50,
+      "xp": 288,
+      "gold": 38,
+      "speed": 123,
+      "loot": "aur203Desert083",
+      "defense": 12,
+      "sourceArchetype": "desertSnake",
+      "speciesId": "desert-species-083",
+      "aur203Revision": 1,
+      "magicDefense": 7,
+      "abilityConfig": {
+        "abilityPattern": [
+          "shot",
+          "fan"
+        ],
+        "collisionRadius": 14,
+        "range": 285,
+        "radius": 60,
+        "cooldown": 6940,
+        "windup": 825,
+        "preferredDistance": 175,
+        "projectileMagic": false
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 120,
+          "durationMs": 1450
+        },
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert084": {
+      "family": "mammal",
+      "movementProfile": "heavy",
+      "name": "Соляной зонтонос",
+      "names": {
+        "ru": "Соляной зонтонос",
+        "en": "Salt parasol bearer",
+        "es": "Portador de parasol salino"
+      },
+      "level": 35,
+      "hp": 573,
+      "attack": 47,
+      "xp": 290,
+      "gold": 38,
+      "speed": 36,
+      "loot": "aur203Desert084",
+      "defense": 48,
+      "sourceArchetype": "scarab",
+      "speciesId": "desert-species-084",
+      "aur203Revision": 1,
+      "magicDefense": 29,
+      "abilityConfig": {
+        "abilityPattern": [
+          "stomp",
+          "frost"
+        ],
+        "collisionRadius": 23,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 155,
+          "windupMs": 900,
+          "durationMs": 1400,
+          "damageMultiplier": 0.5
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert085": {
+      "family": "construct",
+      "movementProfile": "fighter",
+      "name": "Термитовый горн",
+      "names": {
+        "ru": "Термитовый горн",
+        "en": "Termite trumpet",
+        "es": "Trompeta termitera"
+      },
+      "level": 35,
+      "hp": 536,
+      "attack": 56,
+      "xp": 290,
+      "gold": 38,
+      "speed": 59,
+      "loot": "aur203Desert085",
+      "defense": 31,
+      "sourceArchetype": "ancientSentinel",
+      "speciesId": "desert-species-085",
+      "aur203Revision": 1,
+      "magicDefense": 19,
+      "abilityConfig": {
+        "abilityPattern": [
+          "cleave",
+          "fan"
+        ],
+        "collisionRadius": 19,
+        "range": 235,
+        "radius": 90,
+        "cooldown": 7900,
+        "windup": 950,
+        "projectileMagic": true
+      },
+      "behaviorConfig": {
+        "guard": {
+          "range": 165,
+          "windupMs": 975,
+          "durationMs": 1550,
+          "damageMultiplier": 0.55
+        },
+        "pack": {
+          "radius": 160,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert086": {
+      "family": "arthropod",
+      "movementProfile": "predator",
+      "name": "Обсидиановый веретенник",
+      "names": {
+        "ru": "Обсидиановый веретенник",
+        "en": "Obsidian spindlewalker",
+        "es": "Andarín huso de obsidiana"
+      },
+      "level": 36,
+      "hp": 491,
+      "attack": 67,
+      "xp": 304,
+      "gold": 40,
+      "speed": 116,
+      "loot": "aur203Desert086",
+      "defense": 32,
+      "sourceArchetype": "fallenKnight",
+      "speciesId": "desert-species-086",
+      "aur203Revision": 1,
+      "magicDefense": 19,
+      "abilityConfig": {
+        "abilityPattern": [
+          "pounce",
+          "cleave"
+        ],
+        "collisionRadius": 17,
+        "range": 250,
+        "radius": 60,
+        "cooldown": 6580,
+        "windup": 750
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.3,
+          "distance": 100,
+          "durationMs": 1450
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    },
+    "aur203Desert087": {
+      "family": "cephalopod",
+      "movementProfile": "elemental",
+      "name": "Бронзовый пескокрут",
+      "names": {
+        "ru": "Бронзовый пескокрут",
+        "en": "Bronze sand whorl",
+        "es": "Remolino de bronce"
+      },
+      "level": 40,
+      "hp": 480,
+      "attack": 70,
+      "xp": 360,
+      "gold": 46,
+      "speed": 81,
+      "loot": "aur203Desert087",
+      "defense": 13,
+      "magicDefense": 30,
+      "magic": true,
+      "sourceArchetype": "voidElemental",
+      "speciesId": "desert-species-087",
+      "aur203Revision": 1,
+      "abilityConfig": {
+        "abilityPattern": [
+          "blink",
+          "fan"
+        ],
+        "collisionRadius": 18,
+        "range": 285,
+        "radius": 60,
+        "cooldown": 6760,
+        "windup": 825,
+        "preferredDistance": 175,
+        "elevation": 34,
+        "projectileMagic": true
+      },
+      "behaviorConfig": {
+        "retreat": {
+          "triggerRatio": 0.32999999999999996,
+          "distance": 110,
+          "durationMs": 1250
+        },
+        "pack": {
+          "radius": 180,
+          "maxAllies": 2
+        }
+      },
+      "respawnMs": 30000,
+      "boss": false
+    }
+  }
+}

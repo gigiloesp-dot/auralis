@@ -898,12 +898,22 @@ export function createAur203MonsterTypes(baseTypes){
   const base=baseTypes[row.baseType];
   if(!base||base.boss||!Number.isFinite(base.level)||!Number.isFinite(base.hp)||base.hp<=0||!Number.isFinite(base.attack)||base.attack<=0)throw new TypeError('Missing ordinary base archetype: '+row.baseType);
   if(Object.hasOwn(baseTypes,row.type))throw new RangeError('AUR-203 type already registered: '+row.type);
-  result[row.type]=freeze({...structuredClone(base),name:row.names.ru,names:row.names,family:row.family,sourceArchetype:row.baseType,speciesId:row.id,aur203Revision:1,
+  const generated={...structuredClone(base),name:row.names.ru,names:row.names,family:row.family,sourceArchetype:row.baseType,speciesId:row.id,aur203Revision:1,
    hp:Math.max(1,Math.round(base.hp*row.relativeStats.hp)),attack:Math.max(1,Math.round(base.attack*row.relativeStats.attack)),
    defense:Math.max(0,Math.round((base.defense||0)*row.relativeStats.defense)),
    magicDefense:Math.max(0,Math.round((base.magicDefense??(base.defense||0)*.6)*row.relativeStats.defense)),
    speed:row.speed,movementProfile:row.movementProfile,abilityConfig:row.abilityConfig,behaviorConfig:row.behaviorConfig,
-   loot:row.loot,respawnMs:30000,boss:false});
+   loot:row.loot,respawnMs:30000,boss:false};
+  // Four new species start below their borrowed archetype. Rebase only these
+  // new kinds with monsterKind's existing down-level ratio/rounding. Their
+  // current native encounter stays exact, and outdoor growth starts at its
+  // actual authored level. Original archetypes and all other80 stay untouched.
+  if(row.nativeLevel<base.level){
+   const ratio=(row.nativeLevel+5)/(base.level+5);generated.level=row.nativeLevel;
+   for(const field of ['hp','attack','magicDefense','xp','gold'])generated[field]=Math.round(generated[field]*ratio);
+   generated.defense*=ratio;
+  }
+  result[row.type]=freeze(generated);
  }
  return Object.freeze(result);
 }
