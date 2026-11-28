@@ -1,0 +1,7 @@
+{
+  "previousReleaseScreenshot": "docs/qa/release26/game.png",
+  "restoredSHA256": "6273135b38500dd434e6bfba4b9ef04152405ddcdd9b5811c2d2579e51cc0dfb",
+  "publicRelease27Screenshot": "docs/qa/release27/public/game.png",
+  "newScreenshotSHA256": "7dc05592d821c55520773ffe4a84df79a1fcdb0079799a34911313452f1906c8",
+  "restoration": "atomic replacement breaks mutable test-output hardlink; both images retained"
+}

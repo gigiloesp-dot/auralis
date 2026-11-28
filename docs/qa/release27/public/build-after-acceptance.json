@@ -1,0 +1,36 @@
+{
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site/",
+  "status": 200,
+  "build": {
+    "repository": "gigiloesp-dot/auralis",
+    "branch": "codex/auralis-master-development",
+    "sourceCommit": "88cedeb65929cfac0174cb685f90521615e6a731",
+    "exportedAt": "2026-11-27T17:31:00.223Z",
+    "pngCompression": {
+      "transform": "png-adaptive-deflate9-v1",
+      "files": 216,
+      "optimized": 105,
+      "originalBytes": 85987497,
+      "outputBytes": 83467102
+    },
+    "actorTextureDelivery": {
+      "manifest": "assets/actors/lossless-delivery.json",
+      "files": 344,
+      "sourceBytes": 356196526,
+      "deliveryBytes": 256125236
+    },
+    "externalActorDelivery": {
+      "manifest": "assets/actors/external-delivery.json",
+      "sourceCommit": "4a0eb5a77cbc75f9952922d4166af466971018e8",
+      "files": 73,
+      "bytes": 112635124
+    },
+    "release": 27,
+    "worldStage": "aur203-final",
+    "runtimeReusedFromSource": "5c97b503c9d90ebc8b21f5ddd7e067707ac818a5",
+    "runtimePatchedPaths": [],
+    "acceptanceWorkflowRun": 46129754050
+  },
+  "anonymousContext": true,
+  "physicalAndroid": false
+}

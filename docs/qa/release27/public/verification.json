@@ -1,0 +1,290 @@
+{
+  "url": "https://auralis-master-test.alertpine18.chatgpt.site",
+  "sourceCommit": "88cedeb65929cfac0174cb685f90521615e6a731",
+  "runtimeHashes": 1287,
+  "externalPinnedCORSHashes": 73,
+  "regions": [
+    {
+      "region": "forest",
+      "width": 18000,
+      "camps": 97,
+      "normal": 1067,
+      "bosses": 6,
+      "npcs": 15,
+      "dungeons": 3
+    },
+    {
+      "region": "north",
+      "width": 21000,
+      "camps": 94,
+      "normal": 1034,
+      "bosses": 6,
+      "npcs": 10,
+      "dungeons": 4
+    },
+    {
+      "region": "ancient",
+      "width": 15000,
+      "camps": 62,
+      "normal": 682,
+      "bosses": 6,
+      "npcs": 8,
+      "dungeons": 5
+    },
+    {
+      "region": "desert",
+      "width": 20000,
+      "camps": 88,
+      "normal": 968,
+      "bosses": 11,
+      "npcs": 7,
+      "dungeons": 5
+    }
+  ],
+  "maps": [
+    {
+      "region": "forest",
+      "language": "ru",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "forest",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 1.691182455942908e-05,
+      "roads": 344,
+      "expectedRoads": 344,
+      "towns": 3,
+      "expectedTowns": 3,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "north",
+      "language": "ru",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "north",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 8.695040423845057e-05,
+      "roads": 274,
+      "expectedRoads": 274,
+      "towns": 2,
+      "expectedTowns": 2,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "ancient",
+      "language": "ru",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "ancient",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 7.46614138051882e-05,
+      "roads": 207,
+      "expectedRoads": 207,
+      "towns": 2,
+      "expectedTowns": 2,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "desert",
+      "language": "ru",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "desert",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 4.75869595675249e-05,
+      "roads": 16,
+      "expectedRoads": 16,
+      "towns": 1,
+      "expectedTowns": 1,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "forest",
+      "language": "en",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "forest",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 1.691182455942908e-05,
+      "roads": 344,
+      "expectedRoads": 344,
+      "towns": 3,
+      "expectedTowns": 3,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "north",
+      "language": "en",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "north",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 8.695040423845057e-05,
+      "roads": 274,
+      "expectedRoads": 274,
+      "towns": 2,
+      "expectedTowns": 2,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "ancient",
+      "language": "en",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "ancient",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 7.46614138051882e-05,
+      "roads": 207,
+      "expectedRoads": 207,
+      "towns": 2,
+      "expectedTowns": 2,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "desert",
+      "language": "en",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "desert",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 4.75869595675249e-05,
+      "roads": 16,
+      "expectedRoads": 16,
+      "towns": 1,
+      "expectedTowns": 1,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "forest",
+      "language": "es",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "forest",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 1.691182455942908e-05,
+      "roads": 344,
+      "expectedRoads": 344,
+      "towns": 3,
+      "expectedTowns": 3,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "north",
+      "language": "es",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "north",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 8.695040423845057e-05,
+      "roads": 274,
+      "expectedRoads": 274,
+      "towns": 2,
+      "expectedTowns": 2,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "ancient",
+      "language": "es",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "ancient",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 7.46614138051882e-05,
+      "roads": 207,
+      "expectedRoads": 207,
+      "towns": 2,
+      "expectedTowns": 2,
+      "forbidden": 0,
+      "mini": "50%"
+    },
+    {
+      "region": "desert",
+      "language": "es",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "art": "desert",
+      "closeRight": 836,
+      "closeWidth": 44,
+      "maximumError": 4.75869595675249e-05,
+      "roads": 16,
+      "expectedRoads": 16,
+      "towns": 1,
+      "expectedTowns": 1,
+      "forbidden": 0,
+      "mini": "50%"
+    }
+  ],
+  "dungeonDifficulties": 51,
+  "dungeonScope": "entrance/session/exit; not51earnedfullclears",
+  "physicalAndroid": false,
+  "errors": []
+}

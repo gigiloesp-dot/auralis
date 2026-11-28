@@ -1,0 +1,40 @@
+{
+  "sourceCommit": "88cedeb65929cfac0174cb685f90521615e6a731",
+  "runId": 46129754050,
+  "jobId": 140932097353,
+  "environment": "Headless Chromium Linux mobile viewport844x390/touch; no physical Android",
+  "warmVisits": 12,
+  "steadyVisits": 48,
+  "jsHeapBefore": 14235544,
+  "jsHeapAfter": 14779136,
+  "jsHeapDelta": 543592,
+  "peakInstances": 11,
+  "peakChunks": 34,
+  "fps": [
+    {
+      "region": "forest",
+      "renderFps": 30.158331239004664,
+      "rafFps": 30.158331239004667,
+      "p95RafFrameMs": 36.40000000002328
+    },
+    {
+      "region": "north",
+      "renderFps": 35.373447805740895,
+      "rafFps": 35.373447805740895,
+      "p95RafFrameMs": 29.60000000000582
+    },
+    {
+      "region": "ancient",
+      "renderFps": 32.16188147006575,
+      "rafFps": 32.16188147006575,
+      "p95RafFrameMs": 35
+    },
+    {
+      "region": "desert",
+      "renderFps": 34.14911781445632,
+      "rafFps": 34.14911781445632,
+      "p95RafFrameMs": 32.10000000000582
+    }
+  ]
+}
+

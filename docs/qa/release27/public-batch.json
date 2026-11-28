@@ -1,0 +1,20 @@
+[
+  {
+    "test": "exact-runtime-and-game",
+    "exitCode": 0,
+    "durationSeconds": 242.22,
+    "log": "work/task10/release27-public-exact-runtime-and-game.log"
+  },
+  {
+    "test": "new-species-four-regions",
+    "exitCode": 0,
+    "durationSeconds": 114.81,
+    "log": "work/task10/release27-public-new-species-four-regions.log"
+  },
+  {
+    "test": "all100-materials",
+    "exitCode": 0,
+    "durationSeconds": 850.62,
+    "log": "work/task10/release27-public-all100-materials.log"
+  }
+]
